@@ -30,3 +30,5 @@ Report central estimates and subjective 80% credible intervals for uncertain tol
 - [Incoming timing](incoming-timing.md): packet count, distinct source directions, preparation and arrival tolerances.
 
 The receiver comparison uses this same reference in the adjacent [membrane assessment](../membrane-receiver/README.md). It does not grant a smaller receiver, a higher source rating or faster pulse cadence merely by choosing a launcher count.
+
+[Driver physics and cold-compression studies](driver-physics/README.md) retain the first-contact, neutralization, source-timing and numerical-failure research. Their earlier pulse sizes and material assumptions are recorded alongside the current launcher reference.

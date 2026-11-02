@@ -14,7 +14,7 @@ a=ap.parse_args();ROOT=Path(a.repo);OUT=Path(a.out);OUT.mkdir(parents=True,exist
 sys.path.insert(0,str(ROOT))
 import radial_pulse as rp
 import pulse_model as pm
-p=ROOT/'inputs/driver/delivery-screen.json'
+p=ROOT/'launcher-reference/driver-physics/delivery-screen.json'
 data=json.loads(p.read_text());rows=[]
 rydberg=13.605693123 # eV, infinite-nuclear-mass hydrogenic scale
 for case in data['cases']:

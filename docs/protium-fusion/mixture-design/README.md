@@ -70,3 +70,5 @@ At 20.78 mW/kg, each 1 MJ/kg of actual embodied manufacturing energy takes **1.5
 The next useful calculations are a finite contact-patch assembly with neighboring streams and seeds, a coupled capsule/neutralizer thermal and mechanical model, finite receiver panels and shielded joints, and a component bill for recovery and general services. These address mechanisms capable of changing the design substantially. The near-tied hydrogen and receiver choices provide room to simplify those components.
 
 The proposed [tamper study](tamper-study/TAMPER-STUDY.md) compares low-Z, bismuth, layered and fuel-liner concepts to improve confinement in smaller pulses. Its saved radius sweep is an untamped sensitivity; the tampered candidates require coupled simulations and whole-cycle accounting.
+
+[Foundational pulse screening](foundational-pulse-screening.md) retains earlier reaction-network constraints and rejected configurations that can still inform future optimization.

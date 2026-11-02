@@ -44,3 +44,5 @@ The automatic report ranks mass items from the selected record. In a 500 kg/m² 
 ## Verification
 
 [validation.json](validation.json) records 33 regression and physical-scaling checks against both exact earlier plant cases, payback/availability and power scaling, variable carbon composition, missing-data behavior and rejection of inconsistent records. The command-line regression adds five ledger identities. `validate.py` reruns those deterministic checks. Existing economics inputs, outputs and earlier research snapshots are preserved.
+
+[Alternative-energy comparisons](alternative-energy.md) retain general solar, deuterium-separation and construction-energy scales for future economic comparisons.

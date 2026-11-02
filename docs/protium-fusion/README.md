@@ -6,7 +6,7 @@ This research develops an ordinary-hydrogen reactor using staged, optically thic
 
 - [Mixtures and pulse methods](mixture-design/methods.md): fuel compositions, nuclear reaction network and spherical hydrodynamics.
 - [Pulse transport](transport/pulse/README.md): scattering, free–free absorption, thermalization and equation-of-state diagnostics.
-- [Launcher reference](launcher-reference/README.md): delivery geometry, timing and source requirements.
+- [Launcher reference](launcher-reference/README.md) and [driver-physics studies](launcher-reference/driver-physics/README.md): delivery geometry, cold compression, timing, source requirements and numerical failure cases.
 - [Component design](component-design/README.md): assembly, radiation transport, recovery, service equipment and the integrated plant.
 - [Tamper study](mixture-design/tamper-study/TAMPER-STUDY.md): an untamped radius sensitivity and candidate liners for future simulations.
 - [Sources](SOURCES.md): nuclear data and model references. Individual packets document additional sources and their scope.

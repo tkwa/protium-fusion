@@ -9,7 +9,7 @@ The [v0.1 release](https://github.com/tkwa/protium-fusion/releases/tag/v0.1) pre
 - [Design and research map](docs/protium-fusion/README.md): the physics models, interfaces and open questions.
 - [Pulse mixtures and reactor design](docs/protium-fusion/mixture-design/README.md): stage calculations, isotope balance and performance comparisons.
 - [Proposed tamper study](docs/protium-fusion/mixture-design/tamper-study/TAMPER-STUDY.md): candidate liners and an untamped radius sensitivity. The tamper candidates have not been simulated.
-- [Launcher](docs/protium-fusion/launcher-reference/README.md): packet delivery, timing and geometry.
+- [Launcher](docs/protium-fusion/launcher-reference/README.md) and [driver-physics studies](docs/protium-fusion/launcher-reference/driver-physics/README.md): packet delivery, cold compression, timing and geometry.
 - [Receiver and service studies](docs/protium-fusion/component-design/README.md): radiation, fuel recovery, materials and supporting components.
 - [Warm-buffer plant account](docs/protium-fusion/component-design/catcher-followup/plant-account/README.md): the complete balance behind the article's headline output, with [results](docs/protium-fusion/component-design/catcher-followup/plant-account/results.json) and [independent review](docs/protium-fusion/component-design/catcher-followup/plant-account/INDEPENDENT-REVIEW.md).
 
