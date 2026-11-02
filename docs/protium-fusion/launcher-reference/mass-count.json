@@ -1,0 +1,414 @@
+{
+  "scope": "Conditional 100/1000/10000-complex allocation, not component-resolved launchers or an optimization. Energy-cost sensitivities respect the >=50% premise; none assumes 100 MJ/kg is necessary.",
+  "baseline_station_mass_kg": 1.2152033263020295e+23,
+  "original_source_peak_W": 2.8388939373288513e+23,
+  "original_source_mean_W": 2.3176282938303096e+20,
+  "mean_to_peak_electric_ratio": 0.0008163842485820352,
+  "largest_stage_energy_over_peak_s": 239.20073133461838,
+  "equal_share_rows": [
+    {
+      "N_complexes": 100,
+      "electric_peak_W_per_complex": 2.8388939373288515e+21,
+      "electric_mean_W_per_complex": 2.31762829383031e+18,
+      "assigned_source_mass_components_kg_per_complex": {
+        "peak_driver_hardware": 2.8388939373288514e+19,
+        "average_driver_conditioning": 2.3176282938303094e+17,
+        "two_pulse_storage": 1.358131011980951e+19
+      },
+      "assigned_source_mass_sum_kg_per_complex": 4.220201232248105e+19,
+      "stored_electric_J_per_complex": 1.3581310119809512e+24,
+      "gross_flow_kg_s_per_complex": 448205.5066566686,
+      "largest_stage_electric_J_per_complex": 6.790655059904756e+23,
+      "stage_fuel_kg_per_complex_per_event": {
+        "c12": 113097335529.23254,
+        "c13": 113097335529.23254,
+        "n14": 113097335529.23254,
+        "n15": 1130973355.2923255
+      },
+      "stage_electric_J_per_complex_per_event": {
+        "c12": 6.790655059904756e+23,
+        "c13": 5.547110644201769e+23,
+        "n14": 5.821938610862115e+23,
+        "n15": 5.325027970943342e+21
+      },
+      "sphere_equal_share_area_m2": 1.52053084433746e+17,
+      "sqrt_equal_share_area_m": 389939847.1992135,
+      "equal_area_spherical_cap_halfangle_deg": 11.478340954533579,
+      "scope": "All N complexes share every event equally. Patch geometry is area-equivalent; neither one complex per packet nor one pencil beam per complex is assumed."
+    },
+    {
+      "N_complexes": 1000,
+      "electric_peak_W_per_complex": 2.8388939373288512e+20,
+      "electric_mean_W_per_complex": 2.3176282938303098e+17,
+      "assigned_source_mass_components_kg_per_complex": {
+        "peak_driver_hardware": 2.8388939373288515e+18,
+        "average_driver_conditioning": 2.3176282938303096e+16,
+        "two_pulse_storage": 1.358131011980951e+18
+      },
+      "assigned_source_mass_sum_kg_per_complex": 4.2202012322481055e+18,
+      "stored_electric_J_per_complex": 1.3581310119809511e+23,
+      "gross_flow_kg_s_per_complex": 44820.550665666866,
+      "largest_stage_electric_J_per_complex": 6.7906550599047556e+22,
+      "stage_fuel_kg_per_complex_per_event": {
+        "c12": 11309733552.923254,
+        "c13": 11309733552.923254,
+        "n14": 11309733552.923254,
+        "n15": 113097335.52923255
+      },
+      "stage_electric_J_per_complex_per_event": {
+        "c12": 6.7906550599047556e+22,
+        "c13": 5.547110644201769e+22,
+        "n14": 5.821938610862115e+22,
+        "n15": 5.325027970943342e+20
+      },
+      "sphere_equal_share_area_m2": 1.5205308443374598e+16,
+      "sqrt_equal_share_area_m": 123309806.76075442,
+      "equal_area_spherical_cap_halfangle_deg": 3.62430749400795,
+      "scope": "All N complexes share every event equally. Patch geometry is area-equivalent; neither one complex per packet nor one pencil beam per complex is assumed."
+    },
+    {
+      "N_complexes": 10000,
+      "electric_peak_W_per_complex": 2.8388939373288514e+19,
+      "electric_mean_W_per_complex": 2.3176282938303096e+16,
+      "assigned_source_mass_components_kg_per_complex": {
+        "peak_driver_hardware": 2.8388939373288515e+17,
+        "average_driver_conditioning": 2317628293830309.5,
+        "two_pulse_storage": 1.358131011980951e+17
+      },
+      "assigned_source_mass_sum_kg_per_complex": 4.2202012322481056e+17,
+      "stored_electric_J_per_complex": 1.358131011980951e+22,
+      "gross_flow_kg_s_per_complex": 4482.055066566686,
+      "largest_stage_electric_J_per_complex": 6.790655059904755e+21,
+      "stage_fuel_kg_per_complex_per_event": {
+        "c12": 1130973355.2923255,
+        "c13": 1130973355.2923255,
+        "n14": 1130973355.2923255,
+        "n15": 11309733.552923255
+      },
+      "stage_electric_J_per_complex_per_event": {
+        "c12": 6.790655059904755e+21,
+        "c13": 5.547110644201769e+21,
+        "n14": 5.821938610862115e+21,
+        "n15": 5.325027970943342e+19
+      },
+      "sphere_equal_share_area_m2": 1520530844337459.8,
+      "sqrt_equal_share_area_m": 38993984.71992135,
+      "equal_area_spherical_cap_halfangle_deg": 1.1459346897142422,
+      "scope": "All N complexes share every event equally. Patch geometry is area-equivalent; neither one complex per packet nor one pencil beam per complex is assumed."
+    }
+  ],
+  "overhead_limits": [
+    {
+      "effective_refurbishment_MJ_kg": 2.0,
+      "additional_standby_fraction_of_original_driver_mean": 0.0,
+      "additional_standby_W": 0.0,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.5231488879004295e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.4786703755883808e+23,
+      "final_total_mass_kg": 3.6938737018904104e+23,
+      "threshold_net_W": 3.6938737018904104e+20,
+      "additional_support_W": 2.8769647407312896e+18,
+      "additional_refurbishment_W": 1.5708864904735347e+18,
+      "bare_overhead_available_kg": 1.9792740787077748e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.957340751176762e+22,
+        "ten_year_spares": 2.478670375588381e+20,
+        "repair_throughput_hardware": 7.854432452367673e+19,
+        "support_streams": 3.976830569412044e+19,
+        "extra_radiator_panels": 4.2508516351594216e+16
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.9792740787077747e+21,
+        "1000": 1.979274078707775e+20,
+        "10000": 1.9792740787077747e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 2.0,
+      "additional_standby_fraction_of_original_driver_mean": 0.01,
+      "additional_standby_W": 2.31762829383031e+18,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.4999726049621268e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.456022574638166e+23,
+      "final_total_mass_kg": 3.6712259009401954e+23,
+      "threshold_net_W": 3.671225900940196e+20,
+      "additional_support_W": 2.8384698520286177e+18,
+      "additional_refurbishment_W": 1.5565331803674337e+18,
+      "bare_overhead_available_kg": 1.9611907671079452e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.912045149276332e+22,
+        "ten_year_spares": 2.4560225746381662e+20,
+        "repair_throughput_hardware": 7.782665901837168e+19,
+        "support_streams": 3.923619055210453e+19,
+        "extra_radiator_panels": 6.415322448089693e+16
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.9611907671079453e+21,
+        "1000": 1.9611907671079453e+20,
+        "10000": 1.9611907671079453e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 2.0,
+      "additional_standby_fraction_of_original_driver_mean": 0.1,
+      "additional_standby_W": 2.31762829383031e+19,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.2913860585173983e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.2520932695639157e+23,
+      "final_total_mass_kg": 3.467296595865945e+23,
+      "threshold_net_W": 3.467296595865945e+20,
+      "additional_support_W": 2.50198830952178e+18,
+      "additional_refurbishment_W": 1.4272905858264988e+18,
+      "bare_overhead_available_kg": 1.798360436549532e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.504186539127832e+22,
+        "ten_year_spares": 2.2520932695639156e+20,
+        "repair_throughput_hardware": 7.136452929132493e+19,
+        "support_streams": 3.458500360726915e+19,
+        "extra_radiator_panels": 2.5905030508693693e+17
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.798360436549532e+21,
+        "1000": 1.798360436549532e+20,
+        "10000": 1.7983604365495319e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 3.1,
+      "additional_standby_fraction_of_original_driver_mean": 0.0,
+      "additional_standby_W": 0.0,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.518913066231696e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.466131261634223e+23,
+      "final_total_mass_kg": 3.6813345879362526e+23,
+      "threshold_net_W": 3.681334587936253e+20,
+      "additional_support_W": 2.8556239563800586e+18,
+      "additional_refurbishment_W": 2.4225565033672054e+18,
+      "bare_overhead_available_kg": 1.9692621706467874e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.932262523268447e+22,
+        "ten_year_spares": 2.466131261634223e+20,
+        "repair_throughput_hardware": 7.814698397958726e+19,
+        "support_streams": 3.947331186822589e+19,
+        "extra_radiator_panels": 5.044404785972472e+16
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.9692621706467874e+21,
+        "1000": 1.9692621706467875e+20,
+        "10000": 1.9692621706467873e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 3.1,
+      "additional_standby_fraction_of_original_driver_mean": 0.01,
+      "additional_standby_W": 2.31762829383031e+18,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.4957367832933933e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.4435591356323503e+23,
+      "final_total_mass_kg": 3.6587624619343796e+23,
+      "threshold_net_W": 3.6587624619343806e+20,
+      "additional_support_W": 2.817381555574817e+18,
+      "additional_refurbishment_W": 2.4003832105294085e+18,
+      "bare_overhead_available_kg": 1.95123926517255e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.887118271264701e+22,
+        "ten_year_spares": 2.4435591356323502e+20,
+        "repair_throughput_hardware": 7.74317164686906e+19,
+        "support_streams": 3.89446868683542e+19,
+        "extra_radiator_panels": 7.201643275671108e+16
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.95123926517255e+21,
+        "1000": 1.95123926517255e+20,
+        "10000": 1.95123926517255e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 3.1,
+      "additional_standby_fraction_of_original_driver_mean": 0.1,
+      "additional_standby_W": 2.31762829383031e+19,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.2871502368486648e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.240311895740499e+23,
+      "final_total_mass_kg": 3.455515222042528e+23,
+      "threshold_net_W": 3.455515222042528e+20,
+      "additional_support_W": 2.483106908242414e+18,
+      "additional_refurbishment_W": 2.2007272025741967e+18,
+      "bare_overhead_available_kg": 1.7889533900207288e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.480623791480998e+22,
+        "ten_year_spares": 2.240311895740499e+20,
+        "repair_throughput_hardware": 7.09912000830386e+19,
+        "support_streams": 3.43240058524547e+19,
+        "extra_radiator_panels": 2.662616575013089e+17
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.7889533900207287e+21,
+        "1000": 1.788953390020729e+20,
+        "10000": 1.7889533900207288e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 10.0,
+      "additional_standby_fraction_of_original_driver_mean": 0.0,
+      "additional_standby_W": 0.0,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.4923429121278227e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.389363790397723e+23,
+      "final_total_mass_kg": 3.6045671166997526e+23,
+      "threshold_net_W": 3.604567116699753e+20,
+      "additional_support_W": 2.726475212031467e+18,
+      "additional_refurbishment_W": 7.57143696097841e+18,
+      "bare_overhead_available_kg": 1.9079666597730683e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.778727580795447e+22,
+        "ten_year_spares": 2.389363790397723e+20,
+        "repair_throughput_hardware": 7.571436960978412e+19,
+        "support_streams": 3.768808778377602e+19,
+        "extra_radiator_panels": 9.841807768266904e+16
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.9079666597730682e+21,
+        "1000": 1.9079666597730684e+20,
+        "10000": 1.9079666597730685e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 10.0,
+      "additional_standby_fraction_of_original_driver_mean": 0.01,
+      "additional_standby_W": 2.31762829383031e+18,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.46916662918952e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.3672552283109717e+23,
+      "final_total_mass_kg": 3.582458554613001e+23,
+      "threshold_net_W": 3.582458554613002e+20,
+      "additional_support_W": 2.689760932561003e+18,
+      "additional_refurbishment_W": 7.501379155293722e+18,
+      "bare_overhead_available_kg": 1.890313788170465e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.734510456621943e+22,
+        "ten_year_spares": 2.3672552283109717e+20,
+        "repair_throughput_hardware": 7.501379155293723e+19,
+        "support_streams": 3.7180586016844505e+19,
+        "extra_radiator_panels": 1.1954743035484338e+17
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.890313788170465e+21,
+        "1000": 1.8903137881704648e+20,
+        "10000": 1.890313788170465e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    },
+    {
+      "effective_refurbishment_MJ_kg": 10.0,
+      "additional_standby_fraction_of_original_driver_mean": 0.1,
+      "additional_standby_W": 2.31762829383031e+19,
+      "optimistic_extra_total_mass_kg_ignoring_added_loads": 2.2605800827447914e+23,
+      "extra_total_installed_mass_at_threshold_kg": 2.1681859882142118e+23,
+      "final_total_mass_kg": 3.3833893145162415e+23,
+      "threshold_net_W": 3.3833893145162416e+20,
+      "additional_support_W": 2.3688426538899625e+18,
+      "additional_refurbishment_W": 6.870566799167908e+18,
+      "bare_overhead_available_kg": 1.7313630046043345e+23,
+      "necessary_mass_additions_kg": {
+        "reserve": 4.3363719764284235e+22,
+        "ten_year_spares": 2.168185988214212e+20,
+        "repair_throughput_hardware": 6.870566799167908e+19,
+        "support_streams": 3.274453018747176e+19,
+        "extra_radiator_panels": 3.0979970292153e+17
+      },
+      "maximum_bare_fixed_overhead_per_complex_kg": {
+        "100": 1.7313630046043345e+21,
+        "1000": 1.7313630046043344e+20,
+        "10000": 1.7313630046043345e+19
+      },
+      "scope": "All additional unallocated station functions compete for this headroom. Added standby includes source-control/handling consumption. Factory throughput ratio is preserved from baseline, not inferred from efficiency."
+    }
+  ],
+  "fixed_per_complex_overhead_mass_only_scenarios": [
+    {
+      "N_complexes": 100,
+      "new_fixed_kg_per_complex": 1e+17,
+      "new_total_kg": 1e+19,
+      "mass_only_net_W_kg": 0.003076065154513859
+    },
+    {
+      "N_complexes": 1000,
+      "new_fixed_kg_per_complex": 1e+17,
+      "new_total_kg": 1e+20,
+      "mass_only_net_W_kg": 0.0030737888421743095
+    },
+    {
+      "N_complexes": 10000,
+      "new_fixed_kg_per_complex": 1e+17,
+      "new_total_kg": 1e+21,
+      "mass_only_net_W_kg": 0.0030512096514508677
+    },
+    {
+      "N_complexes": 100,
+      "new_fixed_kg_per_complex": 1e+18,
+      "new_total_kg": 1e+20,
+      "mass_only_net_W_kg": 0.0030737888421743095
+    },
+    {
+      "N_complexes": 1000,
+      "new_fixed_kg_per_complex": 1e+18,
+      "new_total_kg": 1e+21,
+      "mass_only_net_W_kg": 0.0030512096514508677
+    },
+    {
+      "N_complexes": 10000,
+      "new_fixed_kg_per_complex": 1e+18,
+      "new_total_kg": 1e+22,
+      "mass_only_net_W_kg": 0.0028424138986278434
+    },
+    {
+      "N_complexes": 100,
+      "new_fixed_kg_per_complex": 1e+19,
+      "new_total_kg": 1e+21,
+      "mass_only_net_W_kg": 0.0030512096514508677
+    },
+    {
+      "N_complexes": 1000,
+      "new_fixed_kg_per_complex": 1e+19,
+      "new_total_kg": 1e+22,
+      "mass_only_net_W_kg": 0.0028424138986278434
+    },
+    {
+      "N_complexes": 10000,
+      "new_fixed_kg_per_complex": 1e+19,
+      "new_total_kg": 1e+23,
+      "mass_only_net_W_kg": 0.0016875887508001862
+    },
+    {
+      "N_complexes": 100,
+      "new_fixed_kg_per_complex": 1e+20,
+      "new_total_kg": 1e+22,
+      "mass_only_net_W_kg": 0.0028424138986278434
+    },
+    {
+      "N_complexes": 1000,
+      "new_fixed_kg_per_complex": 1e+20,
+      "new_total_kg": 1e+23,
+      "mass_only_net_W_kg": 0.0016875887508001862
+    },
+    {
+      "N_complexes": 10000,
+      "new_fixed_kg_per_complex": 1e+20,
+      "new_total_kg": 1e+24,
+      "mass_only_net_W_kg": 0.0003333289736651703
+    }
+  ],
+  "unallocated_overhead_equation": "M_source(N) = P_peak/r_peak + 0.1 P_mean + E_store/100000 + H_shared + N*h_fixed. Existing service/reserve may cover documented items, but the same mass cannot be assigned twice.",
+  "threshold_equation": "P0 - S - r*x - k*x*(2*M0 + Mt + x) = 0.001*(M0+x), where x includes all new installed mass.",
+  "count_uncertainty": "No quantitative probability distribution for N is supported. 100, 1000, 10000 are design scenarios, not 80% credible bounds. Count should follow independent spatial channels, aperture and fidelity, dose/reliability and per-complex overhead.",
+  "hashes": {
+    "open-loop-redesign/operating-cases.json": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461",
+    "open-loop-redesign/station-inputs.json": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "manufacturing-efficiency/sensitivity.json": "521e13f2bd0bc0ede0cc296c453c944fd3cb9243883f6aabf41c68ce245ff74c"
+  },
+  "code_sha256": "58838047ee30feef2f675d3e7cf7569e0f38dcf69922219f2a1daf33adef9e25",
+  "checks": {
+    "share_sums_match_existing_allocation": true,
+    "threshold_power_mass_equalities_relative_1e12_inverse": true
+  }
+}

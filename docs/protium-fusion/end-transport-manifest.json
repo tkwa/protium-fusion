@@ -1,0 +1,95 @@
+{
+  "scope": "Conditional product-current and electrostatic transport screens. Selective extraction, neutralization, driven stability and electron control remain open.",
+  "upstream_git_commit": "8784367d",
+  "python": "3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:07:37) [GCC 12.3.0]",
+  "runs": [
+    {
+      "script": "end_transport_screen.py",
+      "seconds": 2.4868578559253365,
+      "exit_code": 0
+    },
+    {
+      "script": "end_transport_budget.py",
+      "seconds": 2.707976706093177,
+      "exit_code": 0
+    },
+    {
+      "script": "validate_end_transport.py",
+      "seconds": 2.253292348003015,
+      "exit_code": 0
+    },
+    {
+      "script": "plot_end_transport.py",
+      "seconds": 1.5609414521604776,
+      "exit_code": 0
+    }
+  ],
+  "input_files": {
+    "network-plant-manifest.json": {
+      "bytes": 3639,
+      "sha256": "a6a546078b5e4de20b824057941c684c5aa79ad221686d21609b1c0727e9f37e"
+    },
+    "network-plant.json": {
+      "bytes": 870330,
+      "sha256": "28b61aeba0a42d293ecc0a839462ff87d332a991287747ec4a2602db8102049e"
+    },
+    "network-plant-sensitivity.json": {
+      "bytes": 392050,
+      "sha256": "10d16daffa9017e4cb85fc14363e5589c7f12f531eee34ae973fdd05dca2714a"
+    },
+    "network-ion-budget.json": {
+      "bytes": 291213,
+      "sha256": "1a925618cd101aef22aa320081062ee3b881bcdd36c72f77dc1fceda7d181516"
+    },
+    "network-channel-family.json.gz": {
+      "bytes": 1473823,
+      "sha256": "e9d502cd7d8a65f1a1b85eee94f796978c8828f61d04b199e80dee384e7d077d"
+    },
+    "beam-data/tendl2025-proton-recycling.zip": {
+      "bytes": 12110585,
+      "sha256": "988d325a1cb4aa770e9ada29e209c166227451fea92d3b308b765d6328fa6c1c"
+    }
+  },
+  "files": {
+    "end_transport_screen.py": {
+      "bytes": 8010,
+      "sha256": "8adbd6c50ca820acdc45633e2d3bdd7f9a24703384a201152d7987803c10b0a6"
+    },
+    "end_transport_budget.py": {
+      "bytes": 2073,
+      "sha256": "8dc68c158fe77931a4145436db0ced275965d711b3eb4bf006f7fa1f3f761abe"
+    },
+    "validate_end_transport.py": {
+      "bytes": 7547,
+      "sha256": "52c591b9e8a102fb7f1dbf52a00a59c67389ad4759f6a700381bdd2a0f91f376"
+    },
+    "plot_end_transport.py": {
+      "bytes": 3215,
+      "sha256": "6a45332ece49b7c61ef5237e50f1655ccbb97d42a80e5b16b4209d6e94b3573f"
+    },
+    "end-transport-screen.json": {
+      "bytes": 130627,
+      "sha256": "f3c5654a28d26986ca5010d0a5ab99cf9163addebe634f8b119888cf8b685cdd"
+    },
+    "end-transport-budget.json": {
+      "bytes": 3577,
+      "sha256": "300039f5d6cb0e21d9eadea375bd2fe3f64cf88f6a4cc7ddd4527f1ccca938b7"
+    },
+    "end-transport-validation.json": {
+      "bytes": 39939,
+      "sha256": "7b7c91f2b4c0f2493fe650d37d0046a4c790cc875842500d2f4f94671bee2e4e"
+    },
+    "end-transport-summary.png": {
+      "bytes": 271387,
+      "sha256": "afe45d4ce7370aa96c13f6fef349018a1435d6d75475767f32d467af8b0cd4af"
+    },
+    "end-transport-summary.svg": {
+      "bytes": 145653,
+      "sha256": "0b012f3329e8238cedc861f47efc9d58c7a5b81be2d83df33855c64b73140d38"
+    },
+    "END-TRANSPORT.md": {
+      "bytes": 12691,
+      "sha256": "eeb009c52a9ba225465cb5861cba241b6b3ad512b9658dc64941d93235a0aef1"
+    }
+  }
+}

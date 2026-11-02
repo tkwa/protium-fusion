@@ -1,0 +1,297 @@
+{
+  "scope": "Apply prestress to exact relaxed-capture masses, and finite bulk heat storage.\nNo hydro or repeated plant scan. Full-retained pulse energy is a conservative\nhot-buffer scenario even when the plant routes some radiation into cold equipment.\n",
+  "code_sha256": "3ebc66b087723a1d2301bec2e04482dcc3e295fa8876d72ad21acfbe242895d9",
+  "input_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/receiver_prestress.py": "3d8c102d8dd2a4fea5ff4ff3e6e873f96817d39adcf25dae40ffc7dd60680c32",
+    "/home/tkwa/src/protium-fusion/output/current-rate128-receiver-tradeoff.json": "55582ba8b67e71bd07bb24c079e8daf4097241bce4b03d74aea14b66a489b710",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/current-rate128-reduced-inputs.json": "57eeff11dd9cf3ce618331fd94f07d49f235ae42d9f9530ffcd721bcb688f1ef"
+  },
+  "pulse_fluences": {
+    "A": {
+      "kinetic_smooth_J_m2": 25905111.95016462,
+      "kinetic_nodal_J_m2": 25928001.757978253,
+      "internal_J_m2": 1201730.42178473,
+      "prompt_J_m2": 19660.706248914095,
+      "delayed_J_m2": 5974482.117501986,
+      "total_smooth_J_m2": 33100985.195700247
+    },
+    "B1": {
+      "kinetic_smooth_J_m2": 172797.35273027385,
+      "kinetic_nodal_J_m2": 172855.19369281168,
+      "internal_J_m2": 8959.80117743068,
+      "prompt_J_m2": 12800.827735548368,
+      "delayed_J_m2": 9.678307344740631,
+      "total_smooth_J_m2": 194567.65995059762
+    },
+    "B2": {
+      "kinetic_smooth_J_m2": 27519871.712211534,
+      "kinetic_nodal_J_m2": 27535099.28271661,
+      "internal_J_m2": 1714034.8120681462,
+      "prompt_J_m2": 5583.948033306612,
+      "delayed_J_m2": 16680199.329346254,
+      "total_smooth_J_m2": 45919689.80165924
+    },
+    "C13": {
+      "kinetic_smooth_J_m2": 53829971.42881277,
+      "kinetic_nodal_J_m2": 53868147.72508265,
+      "internal_J_m2": 2328786.403529883,
+      "prompt_J_m2": 54273.9978734191,
+      "delayed_J_m2": 5708411.489318635,
+      "total_smooth_J_m2": 61921443.319534704
+    }
+  },
+  "rows": [
+    {
+      "receiver_kg_m2": 500.0,
+      "plant_mass_kg": 3.6230597630749305e+22,
+      "hot_fraction": 0.891432667259035,
+      "heat_routing": "cold_equipment",
+      "He_s": 3.9831653696049666e+32,
+      "frame_tension_N_m": 702021.5065892887,
+      "biaxial_prestrain": 0.00561617205271431,
+      "cold_stress_for_8kg_m2_equivalent_load_layer_Pa": 175505376.64732218,
+      "stream_axis_kg_m2": [
+        0.03840196451127425,
+        0.010971989860364071,
+        0.001828664976727346
+      ],
+      "stream_mass_kg": 7.785516203006e+17,
+      "stream_mass_fraction_of_existing_scalar_budget": 0.9549133380574435,
+      "stream_loss_W_m2_at_0p001_per_turn": 0.0024694393844076116,
+      "affine_modes": [
+        {
+          "attitude_days": 30.0,
+          "maximum_growth_per_s": -5.7191027284703326e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            45.910074356355985,
+            46.07737351678995,
+            46.61655999764997,
+            47.136557700915695,
+            48.1032660813652,
+            97.78229145518875,
+            163.8549593786758,
+            163.86322010313904,
+            163.87047717191285
+          ]
+        },
+        {
+          "attitude_days": 100.0,
+          "maximum_growth_per_s": -2.445998298396934e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            14.684766692282128,
+            14.711703871543843,
+            14.743029058049538,
+            45.95452358585856,
+            46.15601699432796,
+            46.621423316183574,
+            47.136557700915674,
+            48.103266081365206,
+            97.78229145518873
+          ]
+        },
+        {
+          "attitude_days": 300.0,
+          "maximum_growth_per_s": -8.645527488315924e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            1.5947165783163288,
+            1.6137812498385213,
+            1.635829666634704,
+            45.944132624962336,
+            46.13775352569219,
+            46.620309124996865,
+            47.136557700915674,
+            48.103266081365184,
+            97.7822914551888
+          ]
+        }
+      ],
+      "thermal_buffer": {
+        "density_kg_m3": 2000.0,
+        "cp_J_kg_K": 1800.0,
+        "bulk_k_W_m_K": 50.0,
+        "thickness_m": 0.25,
+        "bulk_diffusion_s": 4500.0,
+        "full_retained_all_stage_bulk_swing_upper_K_constant_mean_pickup": 156.818539974272,
+        "largest_single_stage_uniform_rise_K": 68.8016036883719,
+        "full_retained_mean_W_m2": 111.63881596978925,
+        "mean_front_back_gradient_K_if_steady_1D": 0.5581940798489462,
+        "B1_interval_s": 8327.19534045189,
+        "large_event_one_day_guard_capacity_fraction": 0.19075258597284062,
+        "bulk_buffer_scope": "For independently repeated stages and constant mean extraction, each zero-mean source contributes an energy range no greater than its total pulse energy, hence sum(E)/(Sigma cp). This is a bulk-mode energy bound, not a bound on local front/back temperature or a solved controller. Depositing all source heat here overstates hot-buffer energy when photons enter cold equipment. A finite temperature swing must be allowed; a fixed1000K back face would demand much larger instantaneous pickup."
+      }
+    },
+    {
+      "receiver_kg_m2": 750.0,
+      "plant_mass_kg": 4.100093534513798e+22,
+      "hot_fraction": 0.9274756982830179,
+      "heat_routing": "cold_equipment",
+      "He_s": 4.127946428622547e+32,
+      "frame_tension_N_m": 599334.3544706842,
+      "biaxial_prestrain": 0.004794674835765474,
+      "cold_stress_for_8kg_m2_equivalent_load_layer_Pa": 149833588.61767104,
+      "stream_axis_kg_m2": [
+        0.04345819740816887,
+        0.012416627830905394,
+        0.0020694379718175664
+      ],
+      "stream_mass_kg": 8.810603946456936e+17,
+      "stream_mass_fraction_of_existing_scalar_budget": 0.8972128235921496,
+      "stream_loss_W_m2_at_0p001_per_turn": 0.0027945805799488768,
+      "affine_modes": [
+        {
+          "attitude_days": 30.0,
+          "maximum_growth_per_s": -5.685502355860254e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            35.662029933994305,
+            35.810153511713175,
+            36.28599009749703,
+            36.74340703813892,
+            37.588148788309844,
+            76.25631577779433,
+            144.7908773238449,
+            144.79784897709746,
+            144.80397252694112
+          ]
+        },
+        {
+          "attitude_days": 100.0,
+          "maximum_growth_per_s": -3.057170243048581e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            12.964489193849833,
+            12.993328914990245,
+            13.027008477567257,
+            35.7076497910454,
+            35.89073663974836,
+            36.29095873871849,
+            36.74340703813888,
+            37.58814878830985,
+            76.25631577779436
+          ]
+        },
+        {
+          "attitude_days": 300.0,
+          "maximum_growth_per_s": -1.1040464070925971e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            1.4036618046875058,
+            1.4228899683471867,
+            1.4451685422751575,
+            35.694888719661556,
+            35.86836401088377,
+            36.28959865598368,
+            36.743407038138905,
+            37.58814878830984,
+            76.25631577779431
+          ]
+        }
+      ],
+      "thermal_buffer": {
+        "density_kg_m3": 2000.0,
+        "cp_J_kg_K": 1800.0,
+        "bulk_k_W_m_K": 50.0,
+        "thickness_m": 0.375,
+        "bulk_diffusion_s": 10125.0,
+        "full_retained_all_stage_bulk_swing_upper_K_constant_mean_pickup": 104.54569331618133,
+        "largest_single_stage_uniform_rise_K": 45.86773579224793,
+        "full_retained_mean_W_m2": 115.69669067589962,
+        "mean_front_back_gradient_K_if_steady_1D": 0.8677251800692471,
+        "B1_interval_s": 8035.132402891147,
+        "large_event_one_day_guard_capacity_fraction": 0.19768610714126472,
+        "bulk_buffer_scope": "For independently repeated stages and constant mean extraction, each zero-mean source contributes an energy range no greater than its total pulse energy, hence sum(E)/(Sigma cp). This is a bulk-mode energy bound, not a bound on local front/back temperature or a solved controller. Depositing all source heat here overstates hot-buffer energy when photons enter cold equipment. A finite temperature swing must be allowed; a fixed1000K back face would demand much larger instantaneous pickup."
+      }
+    },
+    {
+      "receiver_kg_m2": 1000.0,
+      "plant_mass_kg": 4.576796334501695e+22,
+      "hot_fraction": 0.9508209651217288,
+      "heat_routing": "cold_equipment",
+      "He_s": 4.2274099208858164e+32,
+      "frame_tension_N_m": 451362.5308709519,
+      "biaxial_prestrain": 0.003610900246967615,
+      "cold_stress_for_8kg_m2_equivalent_load_layer_Pa": 112840632.71773797,
+      "stream_axis_kg_m2": [
+        0.04851092223322766,
+        0.0138602634952079,
+        0.0023100439158679847
+      ],
+      "stream_mass_kg": 9.8349804723838e+17,
+      "stream_mass_fraction_of_existing_scalar_budget": 0.8461215133517563,
+      "stream_loss_W_m2_at_0p001_per_turn": 0.003119496188834226,
+      "affine_modes": [
+        {
+          "attitude_days": 30.0,
+          "maximum_growth_per_s": -5.633083366322453e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            28.470454904845433,
+            28.60333941337476,
+            29.02921124393319,
+            29.437041704045303,
+            30.185168605505684,
+            61.058949618039975,
+            129.7099482642783,
+            129.71597941813633,
+            129.72127620591448
+          ]
+        },
+        {
+          "attitude_days": 100.0,
+          "maximum_growth_per_s": -3.7051545256971106e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            11.602000234428361,
+            11.633018631992261,
+            11.669427651337841,
+            28.518053100572512,
+            28.68725279444379,
+            29.03436926645653,
+            29.437041704045317,
+            30.185168605505684,
+            61.05894961803996
+          ]
+        },
+        {
+          "attitude_days": 300.0,
+          "maximum_growth_per_s": -1.3714549092938733e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            1.2524322904040501,
+            1.2718253665777384,
+            1.294338172309723,
+            28.502511193203095,
+            28.660085565684188,
+            29.032723572700718,
+            29.437041704045324,
+            30.18516860550568,
+            61.05894961803997
+          ]
+        }
+      ],
+      "thermal_buffer": {
+        "density_kg_m3": 2000.0,
+        "cp_J_kg_K": 1800.0,
+        "bulk_k_W_m_K": 50.0,
+        "thickness_m": 0.5,
+        "bulk_diffusion_s": 18000.0,
+        "full_retained_all_stage_bulk_swing_upper_K_constant_mean_pickup": 78.409269987136,
+        "largest_single_stage_uniform_rise_K": 34.40080184418595,
+        "full_retained_mean_W_m2": 118.48441990080823,
+        "mean_front_back_gradient_K_if_steady_1D": 1.1848441990080822,
+        "B1_interval_s": 7846.079922874766,
+        "large_event_one_day_guard_capacity_fraction": 0.20244938373125726,
+        "bulk_buffer_scope": "For independently repeated stages and constant mean extraction, each zero-mean source contributes an energy range no greater than its total pulse energy, hence sum(E)/(Sigma cp). This is a bulk-mode energy bound, not a bound on local front/back temperature or a solved controller. Depositing all source heat here overstates hot-buffer energy when photons enter cold equipment. A finite temperature swing must be allowed; a fixed1000K back face would demand much larger instantaneous pickup."
+      }
+    }
+  ],
+  "limits": [
+    "No source or receiver spectrum was relabeled: actual archived nominal128 quartet used.",
+    "50 W/m/K bulk conductivity is a requirement with separately qualified damaged50\u2013100\u03bcm skin.",
+    "This bulk energy bound does not establish maximum surface temperature; prompt spectral deposition, contact, local plate stress and late-tail routing remain separate.",
+    "The relaxed-capture scalar routes specify the energy destination; actual radiation transport through cold services must realize that geometry."
+  ]
+}

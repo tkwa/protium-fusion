@@ -1,0 +1,207 @@
+{
+  "scope": "Conditional named allocations and explicit loads inside previously budgeted services/ordinary auxiliaries. They do not establish a qualified heat engine, guide controller, catcher recycling process, or pressure-pipe material.",
+  "input_sha256": {
+    "thermal": "01722faeaf6101777ce8208024963e31995961d9e38a3a8f15ace5c43dea07fa",
+    "mixture": "b17ad09c4acb782c063e88a8611e0d418dcf00040ca7889d4f1bc42d20443d53",
+    "guide": "65f2c4603f1541ab6bd76378900a16fbc0e7c41f39321c384c5426870df7e340"
+  },
+  "code_sha256": "b4f3eff76ce2a48a484ff8f82f4eeaea1341136803f5661089eee8dc26ba50b9",
+  "assumptions": {
+    "sector_side_m": 1000,
+    "helium_cp_J_kg_K": 5193.160985029239,
+    "hot_pipe_material_density_kg_m3": 8000,
+    "hot_and_cold_pressure_allowable_Pa": 100000000.0,
+    "Darcy_f": 0.015,
+    "minor_loss_coefficient": 6,
+    "pump_efficiency": 0.8,
+    "HX_rating_W_K_kg": 10.0,
+    "mesh_ideal_Eh_N_m": 100000000.0,
+    "mesh_ideal_kg_m2_at100GPa_density2000": 2.0,
+    "mesh_package_multiplier": 10.0,
+    "guide_selected_engineering_current_A_mm2": 30.0,
+    "guide_complete_conductor_kg_m2": 8.021415401354705,
+    "guide_effective_radiative_emissivity": 0.01,
+    "manufacturing_boundary": "No blanket atomization cost. Existing factory throughput capacity and 2 MJ/kg routine maintenance sensitivity retained. Surface recovery process throughput is separate and not derived here."
+  },
+  "cases": {
+    "frozen_thermal_reference": {
+      "original_mass_kg": 1.2185904856638899e+23,
+      "original_net_W_kg": 0.0053949931029369895,
+      "radius_m": 1100000000.0,
+      "area_m2": 1.5205308443374598e+19,
+      "selected_cases": null,
+      "hot_loop": {
+        "heat_W_m2": 105.61795837196411,
+        "mean_K": 980.0,
+        "deltaT_K": 20.0,
+        "gas_speed_m_s": 10.0,
+        "pressure_Pa": 2000000.0,
+        "density_kg_m3": 0.9824538139746894,
+        "pipe_inner_diameter_m": 11.47987029581386,
+        "pipe_wall_thickness_m": 0.1147987029581386,
+        "pressure_wall_allowable_Pa": 100000000.0,
+        "wall_kg_m2": 66.90601932580438,
+        "inventory_kg_m2": 0.20337894141244198,
+        "pump_W_m2": 0.5474242885064139
+      },
+      "cold_loop": {
+        "heat_W_m2": 65.26122964750515,
+        "mean_K": 215.0,
+        "deltaT_K": 20.0,
+        "gas_speed_m_s": 5.0,
+        "pressure_Pa": 2000000.0,
+        "density_kg_m3": 4.478161570675328,
+        "pipe_inner_diameter_m": 5.977463231158844,
+        "pipe_wall_thickness_m": 0.059774632311588444,
+        "pressure_wall_allowable_Pa": 100000000.0,
+        "wall_kg_m2": 18.139489302983332,
+        "inventory_kg_m2": 0.25133528436972846,
+        "pump_W_m2": 0.10818070946884106
+      },
+      "loop_interface_UA_W_K_m2": 18.11350464076773,
+      "retained_external_UA_W_K_m2": 2.7090066999245512,
+      "named_allocations_within_services_kg_m2": {
+        "hot_and_cold_helium_headers_and_inventory": 85.50022285456987,
+        "additional_loop_interface_HX_over_retained_external_HX": 1.5404497940843178,
+        "cold_cross_braced_mesh_package_requirement": 20.0,
+        "guide_coils_cryostats_trim_control_package_requirement": 50.0
+      },
+      "named_subtotal_kg_m2": 157.04067264865418,
+      "unallocated_remainder_of_1000_services_kg_m2": 842.9593273513458,
+      "lower_current_density_guide_package_200kg_m2_remaining_services": 692.9593273513458,
+      "named_electric_loads_within_ordinary_aux_W_m2": {
+        "external_helium_loop_pumps": 0.655604997975255,
+        "guide_radiative_cryocooling": 0.31945831170032074
+      },
+      "named_auxiliary_subtotal_W_m2": 0.9750633096755756,
+      "retained_ordinary_auxiliary_W_m2": 4.812854365075163,
+      "remaining_ordinary_auxiliary_W_m2": 3.8377910553995873,
+      "if_instead_additional_fixed_rate_net_W_kg": 0.005273326812662636,
+      "additional_power_convention_warning": "Extra subtraction is a separate conservative sensitivity; it also raises radiator load. A radiator-saturated point must reduce cadence or raise radiator temperature. Do not both itemize within the retained margin and subtract a second time.",
+      "ports": [
+        {
+          "spatial_outlet_count": 100000,
+          "radius_m": 100.0,
+          "area_fraction": 2.0661157024793386e-10,
+          "black_1000_to_200K_unbaffled_W_m2": 1.1696904586631403e-05
+        },
+        {
+          "spatial_outlet_count": 100000,
+          "radius_m": 250.0,
+          "area_fraction": 1.2913223140495868e-09,
+          "black_1000_to_200K_unbaffled_W_m2": 7.310565366644629e-05
+        },
+        {
+          "spatial_outlet_count": 1000000,
+          "radius_m": 100.0,
+          "area_fraction": 2.066115702479339e-09,
+          "black_1000_to_200K_unbaffled_W_m2": 0.00011696904586631405
+        },
+        {
+          "spatial_outlet_count": 1000000,
+          "radius_m": 250.0,
+          "area_fraction": 1.2913223140495867e-08,
+          "black_1000_to_200K_unbaffled_W_m2": 0.0007310565366644628
+        }
+      ],
+      "unchanged_separate_allocations": {
+        "receiver_kg_m2": 5000.0,
+        "insulation_kg_m2": 100.0,
+        "radiator_kg_m2_emitting_area": 20.0,
+        "dedicated_converter_and_internal_HX": "Retained from the station; not paid again from services."
+      }
+    },
+    "mixture_scan_003_top": {
+      "original_mass_kg": 1.219039274101317e+23,
+      "original_net_W_kg": 0.006572769848169694,
+      "radius_m": 1100000000.0,
+      "area_m2": 1.5205308443374598e+19,
+      "selected_cases": {
+        "A": "A-H3-fixed_energy-z64-k0p001-t1",
+        "B1": "B1-H2-fixed_energy-z64-k0p001-t1",
+        "B2": "B2-H2p5-fixed_energy-z64-k0p001-t1",
+        "C13": "C13-H4-fixed_energy-z64-k0p001-t1"
+      },
+      "hot_loop": {
+        "heat_W_m2": 123.39857513498252,
+        "mean_K": 980.0,
+        "deltaT_K": 20.0,
+        "gas_speed_m_s": 10.0,
+        "pressure_Pa": 2000000.0,
+        "density_kg_m3": 0.9824538139746894,
+        "pipe_inner_diameter_m": 12.408610990490283,
+        "pipe_wall_thickness_m": 0.12408610990490283,
+        "pressure_wall_allowable_Pa": 100000000.0,
+        "wall_kg_m2": 78.16954218790802,
+        "inventory_kg_m2": 0.23761746552959548,
+        "pump_W_m2": 0.6250583805957155
+      },
+      "cold_loop": {
+        "heat_W_m2": 73.48805246405558,
+        "mean_K": 215.0,
+        "deltaT_K": 20.0,
+        "gas_speed_m_s": 5.0,
+        "pressure_Pa": 2000000.0,
+        "density_kg_m3": 4.478161570675328,
+        "pipe_inner_diameter_m": 6.343043009392842,
+        "pipe_wall_thickness_m": 0.06343043009392842,
+        "pressure_wall_allowable_Pa": 100000000.0,
+        "wall_kg_m2": 20.426151158489215,
+        "inventory_kg_m2": 0.2830185803055433,
+        "pump_W_m2": 0.11862006448846472
+      },
+      "loop_interface_UA_W_K_m2": 20.940798064949366,
+      "retained_external_UA_W_K_m2": 3.165063706538624,
+      "named_allocations_within_services_kg_m2": {
+        "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+        "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+        "cold_cross_braced_mesh_package_requirement": 20.0,
+        "guide_coils_cryostats_trim_control_package_requirement": 50.0
+      },
+      "named_subtotal_kg_m2": 170.89390282807344,
+      "unallocated_remainder_of_1000_services_kg_m2": 829.1060971719265,
+      "lower_current_density_guide_package_200kg_m2_remaining_services": 679.1060971719265,
+      "named_electric_loads_within_ordinary_aux_W_m2": {
+        "external_helium_loop_pumps": 0.7436784450841802,
+        "guide_radiative_cryocooling": 0.31945831170032074
+      },
+      "named_auxiliary_subtotal_W_m2": 1.063136756784501,
+      "retained_ordinary_auxiliary_W_m2": 5.863790653712597,
+      "remaining_ordinary_auxiliary_W_m2": 4.800653896928096,
+      "if_instead_additional_fixed_rate_net_W_kg": 0.006440162780884561,
+      "additional_power_convention_warning": "Extra subtraction is a separate conservative sensitivity; it also raises radiator load. A radiator-saturated point must reduce cadence or raise radiator temperature. Do not both itemize within the retained margin and subtract a second time.",
+      "ports": [
+        {
+          "spatial_outlet_count": 100000,
+          "radius_m": 100.0,
+          "area_fraction": 2.0661157024793386e-10,
+          "black_1000_to_200K_unbaffled_W_m2": 1.1696904586631403e-05
+        },
+        {
+          "spatial_outlet_count": 100000,
+          "radius_m": 250.0,
+          "area_fraction": 1.2913223140495868e-09,
+          "black_1000_to_200K_unbaffled_W_m2": 7.310565366644629e-05
+        },
+        {
+          "spatial_outlet_count": 1000000,
+          "radius_m": 100.0,
+          "area_fraction": 2.066115702479339e-09,
+          "black_1000_to_200K_unbaffled_W_m2": 0.00011696904586631405
+        },
+        {
+          "spatial_outlet_count": 1000000,
+          "radius_m": 250.0,
+          "area_fraction": 1.2913223140495867e-08,
+          "black_1000_to_200K_unbaffled_W_m2": 0.0007310565366644628
+        }
+      ],
+      "unchanged_separate_allocations": {
+        "receiver_kg_m2": 5000.0,
+        "insulation_kg_m2": 100.0,
+        "radiator_kg_m2_emitting_area": 20.0,
+        "dedicated_converter_and_internal_HX": "Retained from the station; not paid again from services."
+      }
+    }
+  }
+}

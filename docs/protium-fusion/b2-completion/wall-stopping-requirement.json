@@ -1,0 +1,136 @@
+{
+  "scope": "Quantitative wall-entry requirements and bare Coulomb-barrier scales. These are not integrated nuclear probabilities or measured reactor performance.",
+  "station_inputs_sha256": "972a96a45647ad0607778c16d9051bdec6e5be7837a1429cad72ae34dea39083",
+  "structural_C_kg_per_He": 9.382144980667668e-30,
+  "structural_C_atoms_per_He": 0.0004708383143652798,
+  "incident_nuclei_per_He": 7.586936227406374,
+  "incident_CNO_nuclei_per_He": 4.727887777617061,
+  "incident_nuclei_by_species_per_He": {
+    "n": 1.9511001217240717e-19,
+    "p": 1.859048449643825,
+    "he4": 1.0,
+    "c12": 1.1334511755851637,
+    "c13": 0.012288889647307188,
+    "n13": 0.06869013464743395,
+    "n14": 0.9185918863026437,
+    "n15": 0.6612558600229309,
+    "o14": 0.9327490032576635,
+    "o15": 1.0007397462065017,
+    "o16": 0.00012108184230863364,
+    "o17": 2.6963605970187597e-11,
+    "o18": 3.074373956774518e-17,
+    "f17": 7.068530174359197e-11,
+    "f18": 2.0943836416631858e-11,
+    "f19": 5.0618248492354365e-11,
+    "ne18": 1.067609375947993e-15,
+    "ne19": 2.847478039528398e-12,
+    "ne20": 7.31239247676943e-11,
+    "ne21": 2.368113520283711e-18,
+    "ne22": 1.1730577983979593e-22,
+    "na21": 2.1715707809453342e-12,
+    "na22": 2.394689562042918e-18,
+    "na23": 1.3029472892257831e-17,
+    "mg22": 3.697819173753222e-13,
+    "mg23": 2.1350110203527083e-12,
+    "mg24": 7.359392678246504e-13
+  },
+  "baryons_per_He_all_passes": 71.36383373389603,
+  "initial_bulk_kinetic_MeV_per_He": 19.910491102008365,
+  "allowable_mean_net_C_destructions_per_incident_nucleus": 6.205908422749954e-05,
+  "allowable_mean_net_C_destructions_per_incident_CNO_nucleus_if_only_CNO_causes_loss": 9.958745564865979e-05,
+  "hot_tail_fraction_limits_if_destruction_yield_is_given": {
+    "1": 6.205908422749954e-05,
+    "10": 6.205908422749954e-06,
+    "100": 6.205908422749953e-07
+  },
+  "wall_entry_energy_scenarios": [
+    {
+      "wall_entry_keV_per_u": 1.0,
+      "maximum_residual_bulk_MeV_per_He_if_all_baryons_at_ceiling": 0.07136383373389603,
+      "minimum_fraction_initial_bulk_kinetic_removed": 0.9964157672772472,
+      "bare_Coulomb_2pi_eta_on_carbon": {
+        "p": 187.74,
+        "he4": 375.48,
+        "C": 1126.44,
+        "N": 1314.18,
+        "O": 1501.92
+      },
+      "log10_bare_nonresonant_Gamow_factor": {
+        "p": -81.5344460325165,
+        "he4": -163.068892065033,
+        "C": -489.20667619509896,
+        "N": -570.7411222276155,
+        "O": -652.275568260132
+      }
+    },
+    {
+      "wall_entry_keV_per_u": 10.0,
+      "maximum_residual_bulk_MeV_per_He_if_all_baryons_at_ceiling": 0.7136383373389603,
+      "minimum_fraction_initial_bulk_kinetic_removed": 0.9641576727724724,
+      "bare_Coulomb_2pi_eta_on_carbon": {
+        "p": 59.36860079200115,
+        "he4": 118.7372015840023,
+        "C": 356.2116047520069,
+        "N": 415.5802055440081,
+        "O": 474.9488063360092
+      },
+      "log10_bare_nonresonant_Gamow_factor": {
+        "p": -25.783455722283126,
+        "he4": -51.56691144456625,
+        "C": -154.70073433369873,
+        "N": -180.48419005598188,
+        "O": -206.267645778265
+      }
+    },
+    {
+      "wall_entry_keV_per_u": 100.0,
+      "maximum_residual_bulk_MeV_per_He_if_all_baryons_at_ceiling": 7.136383373389602,
+      "minimum_fraction_initial_bulk_kinetic_removed": 0.6415767277247241,
+      "bare_Coulomb_2pi_eta_on_carbon": {
+        "p": 18.774,
+        "he4": 37.548,
+        "C": 112.644,
+        "N": 131.418,
+        "O": 150.192
+      },
+      "log10_bare_nonresonant_Gamow_factor": {
+        "p": -8.15344460325165,
+        "he4": -16.3068892065033,
+        "C": -48.9206676195099,
+        "N": -57.07411222276155,
+        "O": -65.2275568260132
+      }
+    }
+  ],
+  "energy_interpretation": "Electromagnetic braking must transfer directed kinetic energy into captured fields/loads/coolant, not discard it. Retaining99% as heat/electric is not precluded by slowing; no hardware efficiency is calculated.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2308.16098",
+      "support": "LUNA measured proton captures on C12 and C13 down to60keV center-of-mass; radiative capture remains allowed."
+    },
+    {
+      "url": "https://arxiv.org/abs/2110.00303",
+      "support": "Direct C13(alpha,n)O16 data at230\u2013300keV; this exothermic carbon-consuming neutron channel remains open below that measured window."
+    },
+    {
+      "url": "https://arxiv.org/abs/1909.07012",
+      "support": "Measured C12+C13 proton branch0.22(7)nb at2.323MeV center-of-mass; deep sub-barrier fusion is very small but nonzero."
+    },
+    {
+      "url": "https://archive.int.washington.edu/PROGRAMS/solar_papers/14N%2Bp/bemmerer.pdf",
+      "support": "Primary LUNA paper states sigma=S(E)/E exp(\u22122\u03c0\u03b7),2\u03c0\u03b7=31.29Z1Z2sqrt(mu/E); warns about resonance extrapolation."
+    },
+    {
+      "url": "https://www.nist.gov/pml/stopping-power-range-tables-electrons-protons-and-helium-ions",
+      "support": "PSTAR/ASTAR stopping and range data are separate inputs needed for probability integrals; elastic nuclear stopping does not itself mean transmutation."
+    }
+  ],
+  "required_future_check": "For each projectile and wall isotope integrate reaction cross sections over the measured slowing spectrum and stopping trajectory, sum irreversible target-carbon changes and unrecycled ejecta, and compare with structural_C_atoms_per_He. Include neutral/high-energy tails, nuclear photons/neutrons, and damaged-material recycling.",
+  "limits": [
+    "A bare Gamow factor is not a rigorous cross-section bound: S factors, resonances and electronic screening enter.",
+    "No common positive kinetic threshold closes all CNO/alpha/proton reactions on natural carbon.",
+    "A1keV/u wall-entry ceiling is a candidate deep-sub-barrier requirement, not a demonstrated decelerator or a certified nuclear-loss bound.",
+    "The high-energy tail inequality is conditional on its actual destruction yield; values1,10,100 are examples, not estimated yields.",
+    "Nuclear stopping in range tables means elastic recoil energy transfer; it must not be counted automatically as nuclear transmutation."
+  ]
+}

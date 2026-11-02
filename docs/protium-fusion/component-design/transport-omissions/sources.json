@@ -1,0 +1,65 @@
+{
+  "cases": {
+    "original_B2": {
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/b2-completion/B2-64-compression-cap.json",
+      "trace": "/var/tmp/tkwa-chatgpt/protium-b2-completion/B2-64-compression-cap.npz"
+    },
+    "original_C13": {
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/b2-completion/regression-C13-compression_cap.json",
+      "trace": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.npz"
+    },
+    "original_A": {
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/b2-completion/regression-A-compression_cap.json",
+      "trace": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.npz"
+    },
+    "original_B1": {
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/b2-completion/regression-B1-compression_cap.json",
+      "trace": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.npz"
+    },
+    "selected003_A": {
+      "record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.npz"
+    },
+    "selected003_B1": {
+      "record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.npz"
+    },
+    "selected003_B2": {
+      "record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.npz"
+    },
+    "selected003_C13": {
+      "record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.npz"
+    },
+    "source64_A": {
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/launcher-mixture-yield/AH3-N2000-local-entropy-fixed-energy-reference-floor.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/launcher-mixture-yield/AH3-N2000-local-entropy-fixed-energy-reference-floor.npz"
+    },
+    "source64_C13": {
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/launcher-mixture-yield/C13H4-N2000-local-entropy-fixed-energy.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/launcher-mixture-yield/C13H4-N2000-local-entropy-fixed-energy.npz"
+    }
+  },
+  "families": {
+    "original64": {
+      "c12": "original_B2",
+      "c13": "original_C13",
+      "n14": "original_A",
+      "n15": "original_B1"
+    },
+    "selected003": {
+      "n14": "selected003_A",
+      "n15": "selected003_B1",
+      "c12": "selected003_B2",
+      "c13": "selected003_C13"
+    },
+    "source64": {
+      "n14": "source64_A",
+      "n15": "selected003_B1",
+      "c12": "selected003_B2",
+      "c13": "source64_C13"
+    }
+  },
+  "scope": "Explicit original, optimized003 and mapped-source64 traces; identical shared B1/B2 traces reduced once."
+}

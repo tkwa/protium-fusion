@@ -1,0 +1,639 @@
+{
+  "schema": 1,
+  "scope": "New cross-interface correction; frozenbuffer andgas packets untouched. Compatiblecoldpressure accounts actualfullprimary throughput. Two-bankworkincludes inactiveview andfinitecooldown.",
+  "pressure_cases": [
+    {
+      "cold_reservoir_temperature_K": 200.0,
+      "active_area_fraction_Hgetter_Hecryo": [
+        6.248393143661026e-05,
+        4.8666935800053074e-05
+      ],
+      "equivalent_panel_speed_H2_He_m3_s_per_wall_m2": [
+        0.0005101791638091474,
+        0.0005413669643996064
+      ],
+      "throughput_pressure": {
+        "continuous_mean": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            1.7508873738749154e-07,
+            7.538061712332285e-08
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.0003431906863467877,
+            0.00013924125792736986
+          ],
+          "sum_species_pressure_excess_Pa": 0.0004824319442741576
+        },
+        "finite_record_mean": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            1.763430564416938e-07,
+            7.53798265195718e-08
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.00034564927176771544,
+            0.00013923979754318862
+          ],
+          "sum_species_pressure_excess_Pa": 0.0004848890693109041
+        },
+        "individual_species_maximum": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            3.697223959368972e-07,
+            7.590516960653779e-08
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.0007246912891864131,
+            0.00014021019862325566
+          ],
+          "sum_species_pressure_excess_Pa": 0.0008649014878096687
+        },
+        "individual_species_minimum": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            8.55237858777295e-08,
+            7.407958171589908e-08
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.0001676348074256577,
+            0.00013683801670102966
+          ],
+          "sum_species_pressure_excess_Pa": 0.0003044728241266873
+        }
+      },
+      "passive_hot_outlet_with_panels_series_speed_H2_He_m3_s_per_wall_m2": [
+        1.4048324790768463e-06,
+        9.973280306284756e-07
+      ],
+      "passive_hot_outlet_speed_ratio_to_original": [
+        0.9987685498965652,
+        0.9991761250984997
+      ],
+      "additional_cold_manifold_sensitivity": [
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 0.1,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            5.1017916380914744e-05,
+            5.4136696439960645e-05
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            4.637992398264976e-05,
+            4.92151785817824e-05
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.003775097549814665,
+            0.0015316538372010685
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        },
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 1,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            0.0005101791638091474,
+            0.0005413669643996064
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            0.0002550895819045737,
+            0.0002706834821998032
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.0006863813726935755,
+            0.0002784825158547397
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        },
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 10,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            0.005101791638091473,
+            0.005413669643996064
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            0.0004637992398264976,
+            0.0004921517858178241
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.0003775097549814665,
+            0.0001531653837201068
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        },
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 100,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            0.05101791638091474,
+            0.05413669643996064
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            0.0005051278849595519,
+            0.000536006895445155
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.0003466225932102556,
+            0.00014063367050664354
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        }
+      ],
+      "equilibrium_requirement": "The tabulated pressure isP\u2212Peq. Add the actual reservoir-equivalent surface equilibrium pressure. Day\u2019s~1e\u22126Pa loaded6.5KHe scale is a qualification reference, not an assumed zero-pressure sink; Hgetter equilibrium depends onloading/temperature.",
+      "temperature_scope": "Speed scaling withsqrt(Tc/Tref) is a gas-reservoir equivalent, conditional on preserved net capture. It does not establish getter surface kinetics at200K."
+    },
+    {
+      "cold_reservoir_temperature_K": 300.0,
+      "active_area_fraction_Hgetter_Hecryo": [
+        6.248393143661026e-05,
+        4.8666935800053074e-05
+      ],
+      "equivalent_panel_speed_H2_He_m3_s_per_wall_m2": [
+        0.0006248393143661026,
+        0.0006630364131892508
+      ],
+      "throughput_pressure": {
+        "continuous_mean": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            2.626331060812373e-07,
+            1.1307092568498425e-07
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.00042032103301258776,
+            0.00017053501653265966
+          ],
+          "sum_species_pressure_excess_Pa": 0.0005908560495452474
+        },
+        "finite_record_mean": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            2.645145846625407e-07,
+            1.130697397793577e-07
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.0004233321728977471,
+            0.0001705332279346235
+          ],
+          "sum_species_pressure_excess_Pa": 0.0005938654008323706
+        },
+        "individual_species_maximum": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            5.545835939053458e-07,
+            1.1385775440980668e-07
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.0008875619397732184,
+            0.00017172172168062843
+          ],
+          "sum_species_pressure_excess_Pa": 0.0010592836614538468
+        },
+        "individual_species_minimum": {
+          "PV_throughput_at_cold_temperature_Pa_m3_s_per_wall_m2": [
+            1.2828567881659422e-07,
+            1.1111937257384861e-07
+          ],
+          "required_pressure_excess_over_equilibrium_Pa": [
+            0.00020530987066129093,
+            0.00016759165916598273
+          ],
+          "sum_species_pressure_excess_Pa": 0.00037290152982727366
+        }
+      },
+      "passive_hot_outlet_with_panels_series_speed_H2_He_m3_s_per_wall_m2": [
+        1.4048324790768463e-06,
+        9.973280306284756e-07
+      ],
+      "passive_hot_outlet_speed_ratio_to_original": [
+        0.9987685498965652,
+        0.9991761250984997
+      ],
+      "additional_cold_manifold_sensitivity": [
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 0.1,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            6.248393143661026e-05,
+            6.630364131892508e-05
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            5.680357403328206e-05,
+            6.0276037562659163e-05
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.004623531363138465,
+            0.0018758851818592565
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        },
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 1,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            0.0006248393143661026,
+            0.0006630364131892508
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            0.0003124196571830513,
+            0.0003315182065946254
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.0008406420660251755,
+            0.0003410700330653193
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        },
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 10,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            0.0062483931436610254,
+            0.006630364131892508
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            0.0005680357403328205,
+            0.0006027603756265917
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.00046235313631384653,
+            0.00018758851818592563
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        },
+        {
+          "cold_manifold_conductance_divided_by_panel_speed": 100,
+          "actual_cold_manifold_conductance_H2_He_m3_s_per_wall_m2": [
+            0.062483931436610254,
+            0.06630364131892508
+          ],
+          "effective_speed_H2_He_m3_s_per_wall_m2": [
+            0.0006186527865010916,
+            0.000656471696226981
+          ],
+          "continuous_mean_pressure_excess_H2_He_Pa": [
+            0.00042452424334271367,
+            0.00017224036669798628
+          ],
+          "scope": "An additional cold manifold between reservoir and active panels is distinct from the already-counted hot-buffer outlet. Its temperature isTc here."
+        }
+      ],
+      "equilibrium_requirement": "The tabulated pressure isP\u2212Peq. Add the actual reservoir-equivalent surface equilibrium pressure. Day\u2019s~1e\u22126Pa loaded6.5KHe scale is a qualification reference, not an assumed zero-pressure sink; Hgetter equilibrium depends onloading/temperature.",
+      "temperature_scope": "Speed scaling withsqrt(Tc/Tref) is a gas-reservoir equivalent, conditional on preserved net capture. It does not establish getter surface kinetics at200K."
+    }
+  ],
+  "original_coldpressure_target": {
+    "T_K": 300.0,
+    "partial_pressure_Pa": [
+      6.990425544452458e-05,
+      3.0095744555475422e-05
+    ],
+    "minimum_panel_area_multiplier_H_He_for_oldtarget_atcontinuousmean": [
+      6.012810383856401,
+      5.666416267532868
+    ],
+    "scope": "Zeroequilibrium/infiniteextra-manifold-conductance lower area requirement. Keepingexistingarea instead raisescompatiblecoldpressure bysubmillipascal."
+  },
+  "equilibrium_sensitivity": [
+    {
+      "reservoir_equivalent_equilibrium_H2_He_at300K_Pa": [
+        0,
+        0
+      ],
+      "required_mean_Pc300_H2_He_Pa": [
+        0.00042032103301258776,
+        0.00017053501653265966
+      ],
+      "hot_equilibrium_floor_Pa": [
+        0.0,
+        0.0
+      ],
+      "scope": "Explicit additive floor sensitivity. Only the~1e\u22126He scale has the cited6.5Kloadedpanel anchor; theH values and10\u22125He case are engineering comparisons."
+    },
+    {
+      "reservoir_equivalent_equilibrium_H2_He_at300K_Pa": [
+        0.0,
+        1e-06
+      ],
+      "required_mean_Pc300_H2_He_Pa": [
+        0.00042032103301258776,
+        0.00017153501653265966
+      ],
+      "hot_equilibrium_floor_Pa": [
+        0.0,
+        1.8257418583505536e-06
+      ],
+      "scope": "Explicit additive floor sensitivity. Only the~1e\u22126He scale has the cited6.5Kloadedpanel anchor; theH values and10\u22125He case are engineering comparisons."
+    },
+    {
+      "reservoir_equivalent_equilibrium_H2_He_at300K_Pa": [
+        1e-06,
+        1e-06
+      ],
+      "required_mean_Pc300_H2_He_Pa": [
+        0.0004213210330125878,
+        0.00017153501653265966
+      ],
+      "hot_equilibrium_floor_Pa": [
+        1.8257418583505536e-06,
+        1.8257418583505536e-06
+      ],
+      "scope": "Explicit additive floor sensitivity. Only the~1e\u22126He scale has the cited6.5Kloadedpanel anchor; theH values and10\u22125He case are engineering comparisons."
+    },
+    {
+      "reservoir_equivalent_equilibrium_H2_He_at300K_Pa": [
+        0.0001,
+        1e-05
+      ],
+      "required_mean_Pc300_H2_He_Pa": [
+        0.0005203210330125878,
+        0.00018053501653265966
+      ],
+      "hot_equilibrium_floor_Pa": [
+        0.0001825741858350554,
+        1.825741858350554e-05
+      ],
+      "scope": "Explicit additive floor sensitivity. Only the~1e\u22126He scale has the cited6.5Kloadedpanel anchor; theH values and10\u22125He case are engineering comparisons."
+    }
+  ],
+  "passive_series_equation": "Qhot=Sc[Pb\u2212sqrt(Th/Tc)Pc], Pc=Peq+(Tc/Th)Qhot/Spanel. HenceSeff_hot=[1/Sc+sqrt(Tc/Th)/Spanel]^-1 andfloor_hot=sqrt(Th/Tc)Peq. AconstantmeanPc shift describes a regulatedreservoir, whereaspassivefinitecapture slightly changestau.",
+  "cold_pressure_statistics_scope": "Finite-recordmean andindividualspeciespeaks are derivedfromthe originalbufferflow. Individualmaxima neednotcoincide. The separateplantagent closesnewpassivebuffer dynamics with these speeds.",
+  "capacity_sensitivity": {
+    "retained_He_area_fraction": 4.8666935800053074e-05,
+    "one_hour_mean_load_fraction_of_reference_capacity": 0.19038792668853272,
+    "individual_He_outlet_peak_over_continuous_mean": 1.006958718344754,
+    "minimum_area_fraction_at_reference_capacity_for_one_hour_mean": 9.265597005256033e-06,
+    "minimum_area_fraction_for_one_hour_at_maximum_saved_He_rate": 9.330073685111605e-06,
+    "scope": "Optional capacityscale only. Reducingarea raisespressure and changesloadingdependentspeed; noarea reduction selected. One-hourpeak-ratecapacity bounds aone-hourcohort conservatively. Regenerationwarmbank must remainisolated."
+  },
+  "two_bank_cycles": [
+    {
+      "standby_temperature_K": 85.0,
+      "fraction_of_Carnot": 0.15,
+      "period_s": 3600,
+      "active_bank_count": 1,
+      "installed_bank_count": 2,
+      "warmup_regeneration_to_standby_s": 300.0,
+      "standby_hold_s": 3200.0,
+      "cooldown_s": 100.0,
+      "cooldown_profile": "T(t)=Tstand*exp[-ln(Tstand/5)t/100], an explicit scheduling scenario, not a demonstratedcontroltrajectory.",
+      "cycling_heat_capacity_J_per_active_m2_K": 1000,
+      "thermal_mass_scope": "This new comparison explicitly extends the chosen constant CA=1000 from the original5-85K interval to5-200K. Actual C(T), adsorbed gas and structural thermal mass require an apparatus model.",
+      "active_bank_radiation_electric_W_m2": 1.1479921024622326,
+      "inactive_sensible_cooldown_electric_average_W_m2": 0.043858162075191234,
+      "inactive_radiation_during_cooldown_electric_average_W_m2": 0.010042162108835045,
+      "inactive_standby_radiation_electric_average_W_m2": 0.03424487138763486,
+      "total_inactive_bank_electric_average_W_m2": 0.08814519557166114,
+      "both_banks_total_radiation_and_cycle_electric_average_W_m2": 1.2361372980338938,
+      "warming_sensible_energy_J_m2_percycle": 3.893354864004246,
+      "electrical_heater_average_W_m2_if_full_sensible_heat_is_electrical": 0.0010814874622234016,
+      "total_inactive_electric_average_with_electrical_warming_W_m2": 0.08922668303388455,
+      "inactive_peak_cooldown_electric_W_m2_local_module": 2.940481657461721,
+      "both_banks_peak_electric_W_m2_local_module": 4.088473759923954,
+      "inactive_5K_end_cooling_load_W_m2": 0.011309544836391232,
+      "both_banks_5K_end_cooling_load_W_m2": 0.015724899076630588,
+      "peak_cooling_duty_scope": "Local instantaneous ratedduty perassociatedwallarea. Globally staggeredmodules canreduce plantwideelectricalpeak but donot remove localcoldflow/exchanger orsharedheadercapacity requirements.",
+      "scope": "Bothbanks havefull200Kradiativeview. The inactivebank isisolated from1000Kview andthe gasreservoir whileit regenerates. A nominal200K standby reached in300s requires a slightly warmer switched source or final electrical trim; exact equilibrium at200K is the limiting bookkeeping endpoint, not finite passive equilibration. Radiationabsorbedwhilewarming replaces partofheatdrawnfrom200K; itisnot additionally refrigerated. Actualcontactleaks,adsorptionheatandtemperaturedependentheatcapacity remain separate."
+    },
+    {
+      "standby_temperature_K": 200.0,
+      "fraction_of_Carnot": 0.15,
+      "period_s": 3600,
+      "active_bank_count": 1,
+      "installed_bank_count": 2,
+      "warmup_regeneration_to_standby_s": 300.0,
+      "standby_hold_s": 3200.0,
+      "cooldown_s": 100.0,
+      "cooldown_profile": "T(t)=Tstand*exp[-ln(Tstand/5)t/100], an explicit scheduling scenario, not a demonstratedcontroltrajectory.",
+      "cycling_heat_capacity_J_per_active_m2_K": 1000,
+      "thermal_mass_scope": "This new comparison explicitly extends the chosen constant CA=1000 from the original5-85K interval to5-200K. Actual C(T), adsorbed gas and structural thermal mass require an apparatus model.",
+      "active_bank_radiation_electric_W_m2": 1.1479921024622326,
+      "inactive_sensible_cooldown_electric_average_W_m2": 0.04891711006016519,
+      "inactive_radiation_during_cooldown_electric_average_W_m2": 0.007808415702269375,
+      "inactive_standby_radiation_electric_average_W_m2": 0.0,
+      "total_inactive_bank_electric_average_W_m2": 0.056725525762434566,
+      "both_banks_total_radiation_and_cycle_electric_average_W_m2": 1.204717628224667,
+      "warming_sensible_energy_J_m2_percycle": 9.49005248101035,
+      "electrical_heater_average_W_m2_if_full_sensible_heat_is_electrical": 0.0026361256891695418,
+      "total_inactive_electric_average_with_electrical_warming_W_m2": 0.05936165145160411,
+      "inactive_peak_cooldown_electric_W_m2_local_module": 3.4818360768397048,
+      "both_banks_peak_electric_W_m2_local_module": 4.629828179301938,
+      "inactive_5K_end_cooling_load_W_m2": 0.013391677218614242,
+      "both_banks_5K_end_cooling_load_W_m2": 0.0178070314588536,
+      "peak_cooling_duty_scope": "Local instantaneous ratedduty perassociatedwallarea. Globally staggeredmodules canreduce plantwideelectricalpeak but donot remove localcoldflow/exchanger orsharedheadercapacity requirements.",
+      "scope": "Bothbanks havefull200Kradiativeview. The inactivebank isisolated from1000Kview andthe gasreservoir whileit regenerates. A nominal200K standby reached in300s requires a slightly warmer switched source or final electrical trim; exact equilibrium at200K is the limiting bookkeeping endpoint, not finite passive equilibration. Radiationabsorbedwhilewarming replaces partofheatdrawnfrom200K; itisnot additionally refrigerated. Actualcontactleaks,adsorptionheatandtemperaturedependentheatcapacity remain separate."
+    },
+    {
+      "standby_temperature_K": 85.0,
+      "fraction_of_Carnot": 0.3,
+      "period_s": 3600,
+      "active_bank_count": 1,
+      "installed_bank_count": 2,
+      "warmup_regeneration_to_standby_s": 300.0,
+      "standby_hold_s": 3200.0,
+      "cooldown_s": 100.0,
+      "cooldown_profile": "T(t)=Tstand*exp[-ln(Tstand/5)t/100], an explicit scheduling scenario, not a demonstratedcontroltrajectory.",
+      "cycling_heat_capacity_J_per_active_m2_K": 1000,
+      "thermal_mass_scope": "This new comparison explicitly extends the chosen constant CA=1000 from the original5-85K interval to5-200K. Actual C(T), adsorbed gas and structural thermal mass require an apparatus model.",
+      "active_bank_radiation_electric_W_m2": 0.5739960512311163,
+      "inactive_sensible_cooldown_electric_average_W_m2": 0.021929081037595617,
+      "inactive_radiation_during_cooldown_electric_average_W_m2": 0.005021081054417523,
+      "inactive_standby_radiation_electric_average_W_m2": 0.01712243569381743,
+      "total_inactive_bank_electric_average_W_m2": 0.04407259778583057,
+      "both_banks_total_radiation_and_cycle_electric_average_W_m2": 0.6180686490169469,
+      "warming_sensible_energy_J_m2_percycle": 3.893354864004246,
+      "electrical_heater_average_W_m2_if_full_sensible_heat_is_electrical": 0.0010814874622234016,
+      "total_inactive_electric_average_with_electrical_warming_W_m2": 0.04515408524805398,
+      "inactive_peak_cooldown_electric_W_m2_local_module": 1.4702408287308606,
+      "both_banks_peak_electric_W_m2_local_module": 2.044236879961977,
+      "inactive_5K_end_cooling_load_W_m2": 0.011309544836391232,
+      "both_banks_5K_end_cooling_load_W_m2": 0.015724899076630588,
+      "peak_cooling_duty_scope": "Local instantaneous ratedduty perassociatedwallarea. Globally staggeredmodules canreduce plantwideelectricalpeak but donot remove localcoldflow/exchanger orsharedheadercapacity requirements.",
+      "scope": "Bothbanks havefull200Kradiativeview. The inactivebank isisolated from1000Kview andthe gasreservoir whileit regenerates. A nominal200K standby reached in300s requires a slightly warmer switched source or final electrical trim; exact equilibrium at200K is the limiting bookkeeping endpoint, not finite passive equilibration. Radiationabsorbedwhilewarming replaces partofheatdrawnfrom200K; itisnot additionally refrigerated. Actualcontactleaks,adsorptionheatandtemperaturedependentheatcapacity remain separate."
+    },
+    {
+      "standby_temperature_K": 200.0,
+      "fraction_of_Carnot": 0.3,
+      "period_s": 3600,
+      "active_bank_count": 1,
+      "installed_bank_count": 2,
+      "warmup_regeneration_to_standby_s": 300.0,
+      "standby_hold_s": 3200.0,
+      "cooldown_s": 100.0,
+      "cooldown_profile": "T(t)=Tstand*exp[-ln(Tstand/5)t/100], an explicit scheduling scenario, not a demonstratedcontroltrajectory.",
+      "cycling_heat_capacity_J_per_active_m2_K": 1000,
+      "thermal_mass_scope": "This new comparison explicitly extends the chosen constant CA=1000 from the original5-85K interval to5-200K. Actual C(T), adsorbed gas and structural thermal mass require an apparatus model.",
+      "active_bank_radiation_electric_W_m2": 0.5739960512311163,
+      "inactive_sensible_cooldown_electric_average_W_m2": 0.024458555030082596,
+      "inactive_radiation_during_cooldown_electric_average_W_m2": 0.0039042078511346873,
+      "inactive_standby_radiation_electric_average_W_m2": 0.0,
+      "total_inactive_bank_electric_average_W_m2": 0.028362762881217283,
+      "both_banks_total_radiation_and_cycle_electric_average_W_m2": 0.6023588141123335,
+      "warming_sensible_energy_J_m2_percycle": 9.49005248101035,
+      "electrical_heater_average_W_m2_if_full_sensible_heat_is_electrical": 0.0026361256891695418,
+      "total_inactive_electric_average_with_electrical_warming_W_m2": 0.030998888570386823,
+      "inactive_peak_cooldown_electric_W_m2_local_module": 1.7409180384198524,
+      "both_banks_peak_electric_W_m2_local_module": 2.314914089650969,
+      "inactive_5K_end_cooling_load_W_m2": 0.013391677218614242,
+      "both_banks_5K_end_cooling_load_W_m2": 0.0178070314588536,
+      "peak_cooling_duty_scope": "Local instantaneous ratedduty perassociatedwallarea. Globally staggeredmodules canreduce plantwideelectricalpeak but donot remove localcoldflow/exchanger orsharedheadercapacity requirements.",
+      "scope": "Bothbanks havefull200Kradiativeview. The inactivebank isisolated from1000Kview andthe gasreservoir whileit regenerates. A nominal200K standby reached in300s requires a slightly warmer switched source or final electrical trim; exact equilibrium at200K is the limiting bookkeeping endpoint, not finite passive equilibration. Radiationabsorbedwhilewarming replaces partofheatdrawnfrom200K; itisnot additionally refrigerated. Actualcontactleaks,adsorptionheatandtemperaturedependentheatcapacity remain separate."
+    },
+    {
+      "standby_temperature_K": 85.0,
+      "fraction_of_Carnot": 0.5,
+      "period_s": 3600,
+      "active_bank_count": 1,
+      "installed_bank_count": 2,
+      "warmup_regeneration_to_standby_s": 300.0,
+      "standby_hold_s": 3200.0,
+      "cooldown_s": 100.0,
+      "cooldown_profile": "T(t)=Tstand*exp[-ln(Tstand/5)t/100], an explicit scheduling scenario, not a demonstratedcontroltrajectory.",
+      "cycling_heat_capacity_J_per_active_m2_K": 1000,
+      "thermal_mass_scope": "This new comparison explicitly extends the chosen constant CA=1000 from the original5-85K interval to5-200K. Actual C(T), adsorbed gas and structural thermal mass require an apparatus model.",
+      "active_bank_radiation_electric_W_m2": 0.34439763073866975,
+      "inactive_sensible_cooldown_electric_average_W_m2": 0.013157448622557369,
+      "inactive_radiation_during_cooldown_electric_average_W_m2": 0.0030126486326505133,
+      "inactive_standby_radiation_electric_average_W_m2": 0.010273461416290458,
+      "total_inactive_bank_electric_average_W_m2": 0.026443558671498342,
+      "both_banks_total_radiation_and_cycle_electric_average_W_m2": 0.3708411894101681,
+      "warming_sensible_energy_J_m2_percycle": 3.893354864004246,
+      "electrical_heater_average_W_m2_if_full_sensible_heat_is_electrical": 0.0010814874622234016,
+      "total_inactive_electric_average_with_electrical_warming_W_m2": 0.027525046133721743,
+      "inactive_peak_cooldown_electric_W_m2_local_module": 0.8821444972385164,
+      "both_banks_peak_electric_W_m2_local_module": 1.2265421279771862,
+      "inactive_5K_end_cooling_load_W_m2": 0.011309544836391232,
+      "both_banks_5K_end_cooling_load_W_m2": 0.015724899076630588,
+      "peak_cooling_duty_scope": "Local instantaneous ratedduty perassociatedwallarea. Globally staggeredmodules canreduce plantwideelectricalpeak but donot remove localcoldflow/exchanger orsharedheadercapacity requirements.",
+      "scope": "Bothbanks havefull200Kradiativeview. The inactivebank isisolated from1000Kview andthe gasreservoir whileit regenerates. A nominal200K standby reached in300s requires a slightly warmer switched source or final electrical trim; exact equilibrium at200K is the limiting bookkeeping endpoint, not finite passive equilibration. Radiationabsorbedwhilewarming replaces partofheatdrawnfrom200K; itisnot additionally refrigerated. Actualcontactleaks,adsorptionheatandtemperaturedependentheatcapacity remain separate."
+    },
+    {
+      "standby_temperature_K": 200.0,
+      "fraction_of_Carnot": 0.5,
+      "period_s": 3600,
+      "active_bank_count": 1,
+      "installed_bank_count": 2,
+      "warmup_regeneration_to_standby_s": 300.0,
+      "standby_hold_s": 3200.0,
+      "cooldown_s": 100.0,
+      "cooldown_profile": "T(t)=Tstand*exp[-ln(Tstand/5)t/100], an explicit scheduling scenario, not a demonstratedcontroltrajectory.",
+      "cycling_heat_capacity_J_per_active_m2_K": 1000,
+      "thermal_mass_scope": "This new comparison explicitly extends the chosen constant CA=1000 from the original5-85K interval to5-200K. Actual C(T), adsorbed gas and structural thermal mass require an apparatus model.",
+      "active_bank_radiation_electric_W_m2": 0.34439763073866975,
+      "inactive_sensible_cooldown_electric_average_W_m2": 0.014675133018049557,
+      "inactive_radiation_during_cooldown_electric_average_W_m2": 0.0023425247106808123,
+      "inactive_standby_radiation_electric_average_W_m2": 0.0,
+      "total_inactive_bank_electric_average_W_m2": 0.01701765772873037,
+      "both_banks_total_radiation_and_cycle_electric_average_W_m2": 0.3614152884674001,
+      "warming_sensible_energy_J_m2_percycle": 9.49005248101035,
+      "electrical_heater_average_W_m2_if_full_sensible_heat_is_electrical": 0.0026361256891695418,
+      "total_inactive_electric_average_with_electrical_warming_W_m2": 0.01965378341789991,
+      "inactive_peak_cooldown_electric_W_m2_local_module": 1.0445508230519112,
+      "both_banks_peak_electric_W_m2_local_module": 1.388948453790581,
+      "inactive_5K_end_cooling_load_W_m2": 0.013391677218614242,
+      "both_banks_5K_end_cooling_load_W_m2": 0.0178070314588536,
+      "peak_cooling_duty_scope": "Local instantaneous ratedduty perassociatedwallarea. Globally staggeredmodules canreduce plantwideelectricalpeak but donot remove localcoldflow/exchanger orsharedheadercapacity requirements.",
+      "scope": "Bothbanks havefull200Kradiativeview. The inactivebank isisolated from1000Kview andthe gasreservoir whileit regenerates. A nominal200K standby reached in300s requires a slightly warmer switched source or final electrical trim; exact equilibrium at200K is the limiting bookkeeping endpoint, not finite passive equilibration. Radiationabsorbedwhilewarming replaces partofheatdrawnfrom200K; itisnot additionally refrigerated. Actualcontactleaks,adsorptionheatandtemperaturedependentheatcapacity remain separate."
+    }
+  ],
+  "representative_sequence": {
+    "standby_temperature_K": 200.0,
+    "fraction_of_Carnot": 0.3,
+    "period_s": 3600,
+    "active_bank_count": 1,
+    "installed_bank_count": 2,
+    "warmup_regeneration_to_standby_s": 300.0,
+    "standby_hold_s": 3200.0,
+    "cooldown_s": 100.0,
+    "cooldown_profile": "T(t)=Tstand*exp[-ln(Tstand/5)t/100], an explicit scheduling scenario, not a demonstratedcontroltrajectory.",
+    "cycling_heat_capacity_J_per_active_m2_K": 1000,
+    "thermal_mass_scope": "This new comparison explicitly extends the chosen constant CA=1000 from the original5-85K interval to5-200K. Actual C(T), adsorbed gas and structural thermal mass require an apparatus model.",
+    "active_bank_radiation_electric_W_m2": 0.5739960512311163,
+    "inactive_sensible_cooldown_electric_average_W_m2": 0.024458555030082596,
+    "inactive_radiation_during_cooldown_electric_average_W_m2": 0.0039042078511346873,
+    "inactive_standby_radiation_electric_average_W_m2": 0.0,
+    "total_inactive_bank_electric_average_W_m2": 0.028362762881217283,
+    "both_banks_total_radiation_and_cycle_electric_average_W_m2": 0.6023588141123335,
+    "warming_sensible_energy_J_m2_percycle": 9.49005248101035,
+    "electrical_heater_average_W_m2_if_full_sensible_heat_is_electrical": 0.0026361256891695418,
+    "total_inactive_electric_average_with_electrical_warming_W_m2": 0.030998888570386823,
+    "inactive_peak_cooldown_electric_W_m2_local_module": 1.7409180384198524,
+    "both_banks_peak_electric_W_m2_local_module": 2.314914089650969,
+    "inactive_5K_end_cooling_load_W_m2": 0.013391677218614242,
+    "both_banks_5K_end_cooling_load_W_m2": 0.0178070314588536,
+    "peak_cooling_duty_scope": "Local instantaneous ratedduty perassociatedwallarea. Globally staggeredmodules canreduce plantwideelectricalpeak but donot remove localcoldflow/exchanger orsharedheadercapacity requirements.",
+    "scope": "Bothbanks havefull200Kradiativeview. The inactivebank isisolated from1000Kview andthe gasreservoir whileit regenerates. A nominal200K standby reached in300s requires a slightly warmer switched source or final electrical trim; exact equilibrium at200K is the limiting bookkeeping endpoint, not finite passive equilibration. Radiationabsorbedwhilewarming replaces partofheatdrawnfrom200K; itisnot additionally refrigerated. Actualcontactleaks,adsorptionheatandtemperaturedependentheatcapacity remain separate."
+  },
+  "correction_relative_to_old_active_radiation_plus85K_sensible_cycle_at_eta0p3": {
+    "old_sensible_cycle_W_m2": 0.021929081037595617,
+    "new_full_inactive_bank_W_m2": 0.028362762881217283,
+    "additional_electric_W_m2": 0.006433681843621666,
+    "additional_electric_including_full_sensible_electric_warmup_W_m2": 0.009069807532791206,
+    "hot_to_cold_source_bypass_increment_W_m2": 0.0,
+    "rule": "Two explicit warming alternatives: a qualified switched connection drawsregenerationheatfrom200Kwaste reservoir, givingonlyadditionalrefrigeratorwork asnetdebit; or anelectricalheater suppliesfullsensibleenergy, addingthe separatelylistedheaterpower. Thelatter isaconservativeelectricalwarmingcomparison andrequiresnosilentfreewarmthermalconnection. Actualwarming radiationcanreduceheaterinput. Theexistinghotapertureenergy remainschargedonce; anynew1000Kview/conduction is separate."
+  },
+  "held_cold_inactive_bank_comparison_W_m2_eta0p3": 0.5739960512311163,
+  "checks": [
+    {
+      "name": "cold throughput closure200.0/continuous_mean",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cold throughput closure200.0/finite_record_mean",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cold throughput closure200.0/individual_species_maximum",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cold throughput closure200.0/individual_species_minimum",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cold throughput closure300.0/continuous_mean",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cold throughput closure300.0/finite_record_mean",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cold throughput closure300.0/individual_species_maximum",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cold throughput closure300.0/individual_species_minimum",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cycle reversible energy85.0/0.15",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cycle reversible energy200.0/0.15",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cycle reversible energy85.0/0.3",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cycle reversible energy200.0/0.3",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cycle reversible energy85.0/0.5",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cycle reversible energy200.0/0.5",
+      "passed": true,
+      "value": null
+    }
+  ],
+  "source_sha256": {
+    "inputs.json": "6e3944cf851b1deb7a6ada6e1077ff083696dbdaa80b0076c48a0e8430da66b3"
+  },
+  "code_sha256": "6c88adfd77b68157472e876a393f73a3042e53177e272f2a9106485b3a5350e4"
+}

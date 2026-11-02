@@ -1,0 +1,153 @@
+{
+  "scope": "Saved numerical, provenance and packaging checks for a conditional research checkpoint. This is not experimental reactor validation or a completed component design. No source hydrodynamics was rerun.",
+  "checked_utc": "2026-10-31T04:28:28.011118+00:00",
+  "python_AST_files": 7,
+  "parsed_result_JSONs": 6,
+  "source_and_code_hashes_verified": [
+    "docs/protium-fusion/open-loop-redesign/operating-cases.json",
+    "docs/protium-fusion/open-loop-redesign/station-inputs.json",
+    "docs/protium-fusion/cold-sink-redesign/heat-engine.json",
+    "docs/protium-fusion/open-loop-redesign/station.py",
+    "docs/protium-fusion/cold-sink-redesign/cases.py",
+    "docs/protium-fusion/cold-sink-redesign/station.py",
+    "docs/protium-fusion/membrane-receiver/pulse-loading.json",
+    "docs/protium-fusion/open-loop-redesign/station-inputs.json",
+    "docs/protium-fusion/open-loop-redesign/operating-cases.json",
+    "docs/protium-fusion/cold-sink-redesign/heat_engine.py",
+    "docs/protium-fusion/open-loop-redesign/station.py",
+    "docs/protium-fusion/open-loop-redesign/operating-cases.json",
+    "docs/protium-fusion/open-loop-redesign/station-inputs.json",
+    "docs/protium-fusion/cold-sink-redesign/environment.py",
+    "docs/slop-requests/articles/solar-dyson-swarm.json",
+    "docs/slop-requests/briefs/solar-dyson-swarm.json",
+    "docs/solar-dyson-swarm/engineering-notes.json",
+    "docs/protium-fusion/cold-sink-redesign/direct_recovery.py",
+    "docs/protium-fusion/open-loop-redesign/station-inputs.json",
+    "docs/protium-fusion/membrane-receiver/pulse-loading.json",
+    "docs/protium-fusion/membrane-receiver/stopping-results.json",
+    "docs/protium-fusion/cold-sink-redesign/cases.json",
+    "docs/protium-fusion/cold-sink-redesign/debris_temperature.py",
+    "docs/protium-fusion/membrane-receiver/pulse-loading.json"
+  ],
+  "local_markdown_links": [
+    {
+      "file": "README.md",
+      "target": "ACCOUNTING.md"
+    },
+    {
+      "file": "README.md",
+      "target": "cases.json"
+    },
+    {
+      "file": "README.md",
+      "target": "heat-engine.md"
+    },
+    {
+      "file": "README.md",
+      "target": "environment.md"
+    },
+    {
+      "file": "README.md",
+      "target": "direct-recovery.md"
+    },
+    {
+      "file": "README.md",
+      "target": "charge-state.md"
+    },
+    {
+      "file": "README.md",
+      "target": "debris-temperature.md"
+    },
+    {
+      "file": "environment.md",
+      "target": "../../slop-requests/articles/solar-dyson-swarm.json"
+    },
+    {
+      "file": "environment.md",
+      "target": "../../slop-requests/briefs/solar-dyson-swarm.json"
+    },
+    {
+      "file": "environment.md",
+      "target": "../../solar-dyson-swarm/engineering-notes.json"
+    },
+    {
+      "file": "environment.md",
+      "target": "environment.py"
+    },
+    {
+      "file": "environment.md",
+      "target": "environment.json"
+    },
+    {
+      "file": "direct-recovery.md",
+      "target": "charge-state.md"
+    },
+    {
+      "file": "charge-state.md",
+      "target": "debris-temperature.md"
+    },
+    {
+      "file": "charge-state.md",
+      "target": "charge-state.json"
+    },
+    {
+      "file": "debris-temperature.md",
+      "target": "charge-state.md"
+    },
+    {
+      "file": "debris-temperature.md",
+      "target": "debris-temperature.json"
+    },
+    {
+      "file": "ACCOUNTING.md",
+      "target": "heat-engine.md"
+    },
+    {
+      "file": "ACCOUNTING.md",
+      "target": "environment.md"
+    }
+  ],
+  "numerical_checks": {
+    "heat_engine": {
+      "count": 154,
+      "passed": 154,
+      "all_passed": true
+    },
+    "environment": {
+      "passed": true,
+      "count": 38
+    },
+    "charge_state": {
+      "passed": 21,
+      "total": 21
+    },
+    "debris_temperature": {
+      "count": 17,
+      "passed": 17,
+      "all_passed": true
+    },
+    "station": {
+      "cases": 36,
+      "historical_and_boundary_checks": 9,
+      "maximum_relative_closure_residual": 3.178744794037195e-16
+    },
+    "direct_recovery": {
+      "weighted_nodal_stage_K_matches_cycle_relative": 4.1866360156461724e-08,
+      "all_electrical_global_residual_abs_MeV": 8.881784197001252e-16,
+      "sum_individual_mean_equals_cycle_relative": 4.186635993441712e-08,
+      "prepared_energy_debited_once": true,
+      "driver_store_not_reused_for_output_without_schedule": true
+    }
+  },
+  "independent_reviews": {
+    "charge_state": "67 arithmetic/provenance comparisons and primary recombination-coefficient check; no material issue.",
+    "direct_recovery": "164 independently reconstructed equalities, maximum relative discrepancy1.85e-15; no material issue.",
+    "debris_temperature": "Independent recoil-kernel quadrature, ballistic identity, beta-angular formula and energy-ledger review; sharing and minority-tail qualifications incorporated."
+  },
+  "working_point": {
+    "mass_kg": 1.2185904856638899e+23,
+    "net_W": 6.574287265461322e+20,
+    "net_W_kg": 0.0053949931029369895,
+    "radiator_area_fraction": 0.7992470164662512
+  }
+}

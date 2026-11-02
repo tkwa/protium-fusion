@@ -1,0 +1,119 @@
+{
+  "scope": "Bounded photonuclear importance screen, not coupled shower/neutron transport.",
+  "code_sha256": "8bc89ff22d125e4f60f2efcad7bda1a397871ce50204a1f4a52ad83e67af5b9b",
+  "natural_C13_number_fraction_assumed": 0.0107,
+  "nist_table_E_MeV_mu_cm2_g": [
+    [
+      5.0,
+      0.02708
+    ],
+    [
+      6.0,
+      0.02469
+    ],
+    [
+      8.0,
+      0.02154
+    ],
+    [
+      20.0,
+      0.01575
+    ]
+  ],
+  "measured_nearby_examples": [
+    {
+      "E_MeV": 6.4,
+      "cross_section_mb_per_target_isotope": 0.0941,
+      "target_number_fraction": 0.0107,
+      "EM_mu_cm2_g": 0.023945464398713312,
+      "EM_cross_section_barn_per_carbon": 0.47758593555848006,
+      "nuclear_branch_first_interaction": 2.1082444065161636e-06,
+      "source": "Edge1960, effective mixed gamma energy; uncertainty0.0100mb"
+    },
+    {
+      "E_MeV": 6.61,
+      "cross_section_mb_per_target_isotope": 0.32,
+      "target_number_fraction": 0.0107,
+      "EM_mu_cm2_g": 0.023581475283466304,
+      "EM_cross_section_barn_per_carbon": 0.47032626920815085,
+      "nuclear_branch_first_interaction": 7.27999964587535e-06,
+      "source": "Green/Donahue1964, weighted mixed gamma energy; uncertainty0.04mb"
+    }
+  ],
+  "unmeasured_5p657_sensitivity": [
+    {
+      "E_MeV": 5.657,
+      "cross_section_mb_per_target_isotope": 0.0941,
+      "target_number_fraction": 0.0107,
+      "EM_mu_cm2_g": 0.02543765006652973,
+      "EM_cross_section_barn_per_carbon": 0.5073471828796784,
+      "nuclear_branch_first_interaction": 1.98457394811398e-06
+    },
+    {
+      "E_MeV": 5.657,
+      "cross_section_mb_per_target_isotope": 0.32,
+      "target_number_fraction": 0.0107,
+      "EM_mu_cm2_g": 0.02543765006652973,
+      "EM_cross_section_barn_per_carbon": 0.5073471828796784,
+      "nuclear_branch_first_interaction": 6.748784673893225e-06
+    },
+    {
+      "E_MeV": 5.657,
+      "cross_section_mb_per_target_isotope": 1.0,
+      "target_number_fraction": 0.0107,
+      "EM_mu_cm2_g": 0.02543765006652973,
+      "EM_cross_section_barn_per_carbon": 0.5073471828796784,
+      "nuclear_branch_first_interaction": 2.108964965571953e-05
+    },
+    {
+      "E_MeV": 5.657,
+      "cross_section_mb_per_target_isotope": 10.0,
+      "target_number_fraction": 0.0107,
+      "EM_mu_cm2_g": 0.02543765006652973,
+      "EM_cross_section_barn_per_carbon": 0.5073471828796784,
+      "nuclear_branch_first_interaction": 0.00021085647455461136
+    }
+  ],
+  "unmeasured_20MeV_total_nuclear_sensitivity": [
+    {
+      "E_MeV": 20.0,
+      "cross_section_mb_per_target_isotope": 5.0,
+      "target_number_fraction": 1.0,
+      "EM_mu_cm2_g": 0.01575,
+      "EM_cross_section_barn_per_carbon": 0.3141295720892449,
+      "nuclear_branch_first_interaction": 0.0156676172855637,
+      "prompt_fraction_times_first_branch": 0.0002202866990350256
+    },
+    {
+      "E_MeV": 20.0,
+      "cross_section_mb_per_target_isotope": 10.0,
+      "target_number_fraction": 1.0,
+      "EM_mu_cm2_g": 0.01575,
+      "EM_cross_section_barn_per_carbon": 0.3141295720892449,
+      "nuclear_branch_first_interaction": 0.030851859444798294,
+      "prompt_fraction_times_first_branch": 0.000433777143793864
+    },
+    {
+      "E_MeV": 20.0,
+      "cross_section_mb_per_target_isotope": 20.0,
+      "target_number_fraction": 1.0,
+      "EM_mu_cm2_g": 0.01575,
+      "EM_cross_section_barn_per_carbon": 0.3141295720892449,
+      "nuclear_branch_first_interaction": 0.05985701856601326,
+      "prompt_fraction_times_first_branch": 0.0008415896810381465
+    }
+  ],
+  "prompt_fraction_of_H_plus_U_scenario": 0.01406,
+  "full_prompt_loss_thermal_reserve": 0.01406,
+  "capture_if_all_other_energy_retained": 0.98594,
+  "capture_if_rest_has_99percent_capture": 0.9760806000000001,
+  "qualification": "First interaction in a homogeneous effectively thick slab only. Values5/10/20mb and assigning nearby6.4/6.61MeV cross sections to5.657MeV are sensitivities, not evaluated cross sections or confidence limits. Repeated Compton scattering, bremsstrahlung, secondary photons, nuclear branching and neutron capture/escape require coupled transport. The prompt fraction is a caller-supplied scenario, not recomputed for each hydro family. C13(gamma,n)C12 remains usable carbon; terminal isotope conversion is a separate ledger.",
+  "sources": {
+    "Edge1960": "https://doi.org/10.1103/PhysRev.119.1643",
+    "GreenDonahue1964": "https://doi.org/10.1103/PhysRev.135.B701",
+    "Fultz1966": "https://doi.org/10.1103/PhysRev.143.790",
+    "Carchon1976": "https://doi.org/10.1103/PhysRevC.14.456",
+    "NIST": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z06.html",
+    "original_figures_facsimile": "https://www.govinfo.gov/content/pkg/GOVPUB-C13-518f4d604594649e67f826fc87f6550e/pdf/GOVPUB-C13-518f4d604594649e67f826fc87f6550e.pdf"
+  }
+}

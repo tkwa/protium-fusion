@@ -1,0 +1,147 @@
+{
+  "scope": "Independent source-energy binning, raw prompt integral, timing quantiles, aggregate occupancy, and cold-heat interface. No independent thermal convolution or physical driver/collector validation.",
+  "input_sha256": {
+    "process.json": "c36c2a84c37e5af99588b579dbafa5a5b34023f386a2adfb6c66d4c3741bb88b",
+    "collector.json": "a06cda8a531c2d88c915ffc143cdd91537ce523e15a28871759416dbe5117a87",
+    "collector-inputs.json": "168515d97c33cb68b21557dfb00031ec950d8c097adfaa3611c8bd8c80be2721"
+  },
+  "stages": {
+    "c12": {
+      "relative_differences": {
+        "initial_K": 0.0,
+        "initial_U": 4.440892098500626e-16,
+        "source_peak": -2.220446049250313e-16,
+        "source_integral": 2.220446049250313e-16,
+        "prompt_raw_integral": 3.7058033088381224e-16,
+        "received_energy": 4.4853010194856324e-14,
+        "timing_mass999": 0.0,
+        "timing_energy99": -9.992007221626409e-16,
+        "timing_full_resolved": 0.0
+      },
+      "checks": {
+        "initial_K": true,
+        "initial_U": true,
+        "source_peak": true,
+        "source_integral": true,
+        "prompt_raw_integral": true,
+        "received_energy": true,
+        "timing_mass999": true,
+        "timing_energy99": true,
+        "timing_full_resolved": true
+      },
+      "source_peak_W": 3.122783331061736e+23,
+      "timing_s": {
+        "mass999": 3960.7878208783345,
+        "energy99": 988.5276203378006,
+        "full_resolved": 33586.16127254434
+      },
+      "trace_sha256_matches": true
+    },
+    "c13": {
+      "relative_differences": {
+        "initial_K": 0.0,
+        "initial_U": 1.3322676295501878e-15,
+        "source_peak": 2.220446049250313e-16,
+        "source_integral": 0.0,
+        "prompt_raw_integral": 9.034850345415204e-17,
+        "received_energy": -1.4432899320127035e-15,
+        "timing_mass999": 0.0,
+        "timing_energy99": -8.881784197001252e-16,
+        "timing_full_resolved": 0.0
+      },
+      "checks": {
+        "initial_K": true,
+        "initial_U": true,
+        "source_peak": true,
+        "source_integral": true,
+        "prompt_raw_integral": true,
+        "received_energy": true,
+        "timing_mass999": true,
+        "timing_energy99": true,
+        "timing_full_resolved": true
+      },
+      "source_peak_W": 2.306497978849237e+23,
+      "timing_s": {
+        "mass999": 4362.133442211581,
+        "energy99": 1063.9683222139292,
+        "full_resolved": 36844.61037094272
+      },
+      "trace_sha256_matches": true
+    },
+    "n14": {
+      "relative_differences": {
+        "initial_K": 0.0,
+        "initial_U": -4.440892098500626e-16,
+        "source_peak": 0.0,
+        "source_integral": -2.220446049250313e-16,
+        "prompt_raw_integral": 2.4769847138024916e-16,
+        "received_energy": -3.3084646133829665e-14,
+        "timing_mass999": 0.0,
+        "timing_energy99": -9.992007221626409e-16,
+        "timing_full_resolved": 0.0
+      },
+      "checks": {
+        "initial_K": true,
+        "initial_U": true,
+        "source_peak": true,
+        "source_integral": true,
+        "prompt_raw_integral": true,
+        "received_energy": true,
+        "timing_mass999": true,
+        "timing_energy99": true,
+        "timing_full_resolved": true
+      },
+      "source_peak_W": 2.480175795390554e+23,
+      "timing_s": {
+        "mass999": 4356.617640123344,
+        "energy99": 1087.97767040421,
+        "full_resolved": 36895.15409464353
+      },
+      "trace_sha256_matches": true
+    },
+    "n15": {
+      "relative_differences": {
+        "initial_K": 0.0,
+        "initial_U": 2.220446049250313e-16,
+        "source_peak": 0.0,
+        "source_integral": -2.220446049250313e-16,
+        "prompt_raw_integral": 4.915232947862663e-16,
+        "received_energy": 4.440892098500626e-16,
+        "timing_mass999": 0.0,
+        "timing_energy99": -9.992007221626409e-16,
+        "timing_full_resolved": 0.0
+      },
+      "checks": {
+        "initial_K": true,
+        "initial_U": true,
+        "source_peak": true,
+        "source_integral": true,
+        "prompt_raw_integral": true,
+        "received_energy": true,
+        "timing_mass999": true,
+        "timing_energy99": true,
+        "timing_full_resolved": true
+      },
+      "source_peak_W": 2.099892353539986e+21,
+      "timing_s": {
+        "mass999": 4855.742307812487,
+        "energy99": 1188.8803880285059,
+        "full_resolved": 41255.09057605603
+      },
+      "trace_sha256_matches": true
+    }
+  },
+  "aggregate_relative_differences": {
+    "mass999": 0.0,
+    "energy99": -8.881784197001252e-16,
+    "full_resolved": 0.0,
+    "peak_source": -2.220446049250313e-16
+  },
+  "all_checks_pass": true,
+  "checks_passed": 44,
+  "limits": [
+    "Velocity-bin quantiles inherit a chosen continuous interpolation and cannot establish clearing of the central zero-speed tail.",
+    "Source total prepared energy includes initial EOS heat and kinetic energy, but does not model their physical delivery, switching, focusing or protection.",
+    "Cold heat uses the same conservative neutrino convention as the cycle. Heat deposition and stopping-induced transmutation remain separate."
+  ]
+}

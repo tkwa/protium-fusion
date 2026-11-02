@@ -1,0 +1,1745 @@
+{
+  "scope": "Independent raw-trace arithmetic, elemental conservation, and discrete pressure work audit. Shared EOS/mass library and rate convention; no independent rates or driver validation.",
+  "inputs": {
+    "result": "docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-He-64-R3.json",
+    "trace": "/tmp/protium-small-stages/scaled-hot-He-64-R3.npz",
+    "result_sha256": "17c56b9490d3dfd249260be7622b84b5bb7601e65c21061575ea5ee4fba1cad1",
+    "trace_sha256": "5163f3c2c7a29785bfbe9b83dd20751f9bcac13a02bbd32c0dca106dcfc2f74a",
+    "eos_sha256": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f"
+  },
+  "samples": 160,
+  "units_reconstructed": {
+    "mass_kg": 1130973355292.3254,
+    "velocity_unit_cm_s": 410511307.108665,
+    "energy_unit_erg_g": 2.1456865895555664e+17,
+    "time_unit_s": 7.307959483819725e-07
+  },
+  "metadata_relative_errors": {},
+  "reported_field_relative_errors": {
+    "mass_kg": 0.0,
+    "elapsed_s": 0.0,
+    "elapsed_sound_times": 0.0,
+    "initial_energy_J": 0.0,
+    "initial_internal_energy_J": -1.4948321691882916e-16,
+    "initial_kinetic_energy_J": -1.9113049430875614e-16,
+    "nuclear_energy_J": 0.0,
+    "final_internal_J": 0.0,
+    "final_kinetic_J": 0.0,
+    "weak_energy_escaped_upper_J": 3.4448247747297557e-16,
+    "radiation_escaped_J": 1.1656655050142323e-16,
+    "mass_fraction_max_absolute": 5.048709793414476e-29
+  },
+  "reconstructed_result": {
+    "mass_kg": 1130973355292.3254,
+    "elapsed_s": 2.92318379352789e-06,
+    "elapsed_sound_times": 4.0,
+    "initial_energy_J": 2.4267143436110173e+25,
+    "initial_internal_energy_J": 1.7957564837915082e+24,
+    "initial_kinetic_energy_J": 2.2471386952318663e+25,
+    "nuclear_energy_J": 2.3115442320536634e+22,
+    "final_internal_J": 2.3419922624112777e+24,
+    "final_kinetic_J": 2.1947143839107626e+25,
+    "weak_energy_escaped_upper_J": 10.313191268427316,
+    "radiation_escaped_J": 1.1244392103582036e+21,
+    "output_mass_fractions": {
+      "n": 3.3946779252408353e-20,
+      "p": 8.783113687531849e-18,
+      "he4": 0.9996505803741284,
+      "c12": 0.0003494121248877003,
+      "c13": 8.081547036306979e-20,
+      "n13": 1.852312532598229e-18,
+      "n14": 1.4433745144365998e-30,
+      "n15": 3.2873089229918807e-17,
+      "o14": 3.2242629835845974e-25,
+      "o15": 1.922085472868339e-26,
+      "o16": 7.430489623424114e-09,
+      "o17": 2.923920701753491e-23,
+      "o18": 7.35433865029748e-26,
+      "f17": 8.520886348553483e-25,
+      "f18": -4.237396047813503e-31,
+      "f19": 2.778964630032039e-18,
+      "ne18": -1.152142735096686e-25,
+      "ne19": -4.9767721438262607e-26,
+      "ne20": 7.010364667187208e-11,
+      "ne21": -3.914480899145033e-24,
+      "ne22": 3.473630916057319e-18,
+      "na21": -4.687844876262714e-25,
+      "na22": 2.6346350257207384e-19,
+      "na23": 1.439808798598436e-16,
+      "mg22": 2.198883736300045e-25,
+      "mg23": 6.483676012874812e-19,
+      "mg24": 3.915618446579317e-13
+    }
+  },
+  "completion": {
+    "requested_sound_times": 4.0,
+    "complete": true,
+    "reported_success": true,
+    "reported_termination": "final_time"
+  },
+  "conservation": {
+    "max_baryon_absolute_all_cells_samples": 3.1086244689504383e-15,
+    "minimum_mass_fraction_all_cells_samples": -1.351444043960132e-12,
+    "max_energy_residual_fraction_initial_all_samples": 7.835963087145546e-08,
+    "final_energy_residual_fraction_initial": 6.849629393422632e-08,
+    "nuclear_mass_excess_minus_full_atomic_J": 89161184837632.0,
+    "final_nuclear_charge_change_per_baryon": 4.3857075284697895e-16,
+    "compensating_leptonic_charge_change_per_baryon": -4.3857075284697895e-16,
+    "independent_integrated_heat_available": false,
+    "max_integrated_heat_minus_mass_defect_fraction_initial": null,
+    "max_integrated_weak_charge_minus_abundance_charge": null,
+    "max_cell_integrated_weak_charge_error": null
+  },
+  "geometry": {
+    "minimum_shell_width_m": 0.046816533839010424,
+    "minimum_density_kg_m3": 3013266.6692728503,
+    "minimum_T_K": 7731309.696858206,
+    "max_sampled_T_K": 1591363703.8943577,
+    "final_minimum_velocity_m_s": 99921.27855575376,
+    "final_velocity_decreases_outward": 0
+  },
+  "viscosity_mode_used": "legacy",
+  "viscosity_reconstruction": {
+    "legacy": {
+      "negative_cell_samples": 81,
+      "most_negative_total_viscous_power_W": -6.851633498725284e+29,
+      "largest_positive_total_viscous_power_W": 2.9856290655715856e+30,
+      "sample_trapezoid_negative_viscous_work_J": -1.3206972293292454e+23,
+      "max_force_internal_work_cancellation_relative": 2.350912722624366e-16
+    },
+    "volume_gate": {
+      "negative_cell_samples": 0,
+      "most_negative_total_viscous_power_W": 0.0,
+      "largest_positive_total_viscous_power_W": 2.9856290655715856e+30,
+      "sample_trapezoid_negative_viscous_work_J": 0.0,
+      "max_force_internal_work_cancellation_relative": 2.582344501667395e-16
+    },
+    "divergence": {
+      "negative_cell_samples": 0,
+      "most_negative_total_viscous_power_W": 0.0,
+      "largest_positive_total_viscous_power_W": 2.778312414128417e+30,
+      "sample_trapezoid_negative_viscous_work_J": 0.0,
+      "max_force_internal_work_cancellation_relative": 2.582344501667395e-16
+    }
+  },
+  "sample_energies": [
+    {
+      "t_s": 0.0,
+      "K_J": 2.2471386952318663e+25,
+      "U_J": 1.7957564837915082e+24,
+      "nuclear_mass_excess_J": -0.0,
+      "nuclear_full_atomic_mass_J": -0.0,
+      "weak_J": 0.0,
+      "radiation_J": 0.0,
+      "nuclear_charge_change_per_baryon": 0.0
+    },
+    {
+      "t_s": 3.4733372791775044e-10,
+      "K_J": 2.2470077089566913e+25,
+      "U_J": 1.7970662343380223e+24,
+      "nuclear_mass_excess_J": 7.737769747004246e-18,
+      "nuclear_full_atomic_mass_J": -445873975.53368086,
+      "weak_J": 6.90906085502824e-107,
+      "radiation_J": 74847188479.46713,
+      "nuclear_charge_change_per_baryon": 2.1932510679734363e-21
+    },
+    {
+      "t_s": 2.230182066095397e-09,
+      "K_J": 2.2462971299618016e+25,
+      "U_J": 1.804171878053977e+24,
+      "nuclear_mass_excess_J": 3.424291038118111e-16,
+      "nuclear_full_atomic_mass_J": -3036064079.457849,
+      "weak_J": 4.4323837187370645e-103,
+      "radiation_J": 1586656754489.045,
+      "nuclear_charge_change_per_baryon": 1.493437865876007e-20
+    },
+    {
+      "t_s": 6.05828050509713e-09,
+      "K_J": 2.2448498716531193e+25,
+      "U_J": 1.8186446103990104e+24,
+      "nuclear_mass_excess_J": 3.0417520526202786e-15,
+      "nuclear_full_atomic_mass_J": -9325599518.352304,
+      "weak_J": 3.106660871789215e-100,
+      "radiation_J": 22245718385694.094,
+      "nuclear_charge_change_per_baryon": 4.5872560915082444e-20
+    },
+    {
+      "t_s": 1.5428068543978362e-08,
+      "K_J": 2.2412940432892104e+25,
+      "U_J": 1.8542026701264991e+24,
+      "nuclear_mass_excess_J": 3.191921551377399e-14,
+      "nuclear_full_atomic_mass_J": -32635570377.3518,
+      "weak_J": 3.3610589155374967e-97,
+      "radiation_J": 534169641877278.75,
+      "nuclear_charge_change_per_baryon": 1.6053414980853068e-19
+    },
+    {
+      "t_s": 3.308068461733404e-08,
+      "K_J": 2.2345407608051435e+25,
+      "U_J": 1.921734878768555e+24,
+      "nuclear_mass_excess_J": 4.015064277875797e-13,
+      "nuclear_full_atomic_mass_J": -135165672807.38597,
+      "weak_J": 6.923224219145312e-94,
+      "radiation_J": 9983411776109246.0,
+      "nuclear_charge_change_per_baryon": 6.648790297377508e-19
+    },
+    {
+      "t_s": 5.6868695197912964e-08,
+      "K_J": 2.2253040483133406e+25,
+      "U_J": 2.0141019572966085e+24,
+      "nuclear_mass_excess_J": 5.4867878531891786e-12,
+      "nuclear_full_atomic_mass_J": -619265104742.0302,
+      "weak_J": 1.8082014276455095e-90,
+      "radiation_J": 8.309893244941189e+16,
+      "nuclear_charge_change_per_baryon": 3.0461608590374932e-18
+    },
+    {
+      "t_s": 8.084793725419642e-08,
+      "K_J": 2.2157899578859126e+25,
+      "U_J": 2.1092426202210734e+24,
+      "nuclear_mass_excess_J": 6.046352910476341e-11,
+      "nuclear_full_atomic_mass_J": -2524862190461.2,
+      "weak_J": 2.6842640997653355e-87,
+      "radiation_J": 3.1243618992422637e+17,
+      "nuclear_charge_change_per_baryon": 1.2419780026601864e-17
+    },
+    {
+      "t_s": 1.0482717931047992e-07,
+      "K_J": 2.206021811842549e+25,
+      "U_J": 2.206923596012969e+24,
+      "nuclear_mass_excess_J": 3505731378.506333,
+      "nuclear_full_atomic_mass_J": -4278044412540.212,
+      "weak_J": 3.0141064954334973e-84,
+      "radiation_J": 7.868355541713993e+17,
+      "nuclear_charge_change_per_baryon": 2.1060916180388725e-17
+    },
+    {
+      "t_s": 1.2880642136676345e-07,
+      "K_J": 2.1959510884360727e+25,
+      "U_J": 2.307630048440666e+24,
+      "nuclear_mass_excess_J": 19895499759.69144,
+      "nuclear_full_atomic_mass_J": -4710782357854.472,
+      "weak_J": 3.07176680526215e-81,
+      "radiation_J": 1.568505072324239e+18,
+      "nuclear_charge_change_per_baryon": 2.327017236435856e-17
+    },
+    {
+      "t_s": 1.5621126943108748e-07,
+      "K_J": 2.1840113704349066e+25,
+      "U_J": 2.4270259180058017e+24,
+      "nuclear_mass_excess_J": 91454232358.81801,
+      "nuclear_full_atomic_mass_J": -6465367859177.561,
+      "weak_J": 7.2939038447972815e-78,
+      "radiation_J": 2.8800938309965614e+18,
+      "nuclear_charge_change_per_baryon": 3.225296349167086e-17
+    },
+    {
+      "t_s": 1.8019051148737103e-07,
+      "K_J": 2.1731366647632113e+25,
+      "U_J": 2.535771449393363e+24,
+      "nuclear_mass_excess_J": 314373069216.84174,
+      "nuclear_full_atomic_mass_J": -6877832279503.507,
+      "weak_J": 5.768581857055722e-75,
+      "radiation_J": 4.4055391255803013e+18,
+      "nuclear_charge_change_per_baryon": 3.537840943348243e-17
+    },
+    {
+      "t_s": 2.0416975354365453e-07,
+      "K_J": 2.161815964361843e+25,
+      "U_J": 2.648976579982883e+24,
+      "nuclear_mass_excess_J": 1014941019293.2319,
+      "nuclear_full_atomic_mass_J": -8221245850780.836,
+      "weak_J": 4.0664852238397904e-72,
+      "radiation_J": 6.279454661953814e+18,
+      "nuclear_charge_change_per_baryon": 4.5432740703346176e-17
+    },
+    {
+      "t_s": 2.2814899559993805e-07,
+      "K_J": 2.1500040524520424e+25,
+      "U_J": 2.7670934895721033e+24,
+      "nuclear_mass_excess_J": 3133414659644.4956,
+      "nuclear_full_atomic_mass_J": -6000079484041.202,
+      "weak_J": 2.566263208572891e-69,
+      "radiation_J": 8.489165447754872e+18,
+      "nuclear_charge_change_per_baryon": 4.492759587726513e-17
+    },
+    {
+      "t_s": 2.521282376562216e-07,
+      "K_J": 2.137654718484789e+25,
+      "U_J": 2.8905843012030706e+24,
+      "nuclear_mass_excess_J": 9278842470046.016,
+      "nuclear_full_atomic_mass_J": -772240443725.2905,
+      "weak_J": 1.4577784653968376e-66,
+      "radiation_J": 1.10173122635218e+19,
+      "nuclear_charge_change_per_baryon": 4.944120882706838e-17
+    },
+    {
+      "t_s": 2.761074797125051e-07,
+      "K_J": 2.1247201585034815e+25,
+      "U_J": 3.0199270741140006e+24,
+      "nuclear_mass_excess_J": 26435614412740.4,
+      "nuclear_full_atomic_mass_J": 15033979574514.86,
+      "weak_J": 7.504083433808947e-64,
+      "radiation_J": 1.3844152610004584e+19,
+      "nuclear_charge_change_per_baryon": 5.608456460290836e-17
+    },
+    {
+      "t_s": 3.0008672176878865e-07,
+      "K_J": 2.1111504332520675e+25,
+      "U_J": 3.155621221859788e+24,
+      "nuclear_mass_excess_J": 72566838270132.22,
+      "nuclear_full_atomic_mass_J": 60912666869525.93,
+      "weak_J": 3.526836292393722e-61,
+      "radiation_J": 1.6949001515432208e+19,
+      "nuclear_charge_change_per_baryon": 5.732679024406811e-17
+    },
+    {
+      "t_s": 3.274915698331127e-07,
+      "K_J": 2.094796843459227e+25,
+      "U_J": 3.319153257384926e+24,
+      "nuclear_mass_excess_J": 220160489311983.38,
+      "nuclear_full_atomic_mass_J": 209275492701732.84,
+      "weak_J": 3.607166180103677e-58,
+      "radiation_J": 2.081123042765044e+19,
+      "nuclear_charge_change_per_baryon": 5.354322465602535e-17
+    },
+    {
+      "t_s": 3.5147081188939623e-07,
+      "K_J": 2.079685021099094e+25,
+      "U_J": 3.4702678498373086e+24,
+      "nuclear_mass_excess_J": 559956433185039.2,
+      "nuclear_full_atomic_mass_J": 546080212778028.5,
+      "weak_J": 1.4317860247685122e-55,
+      "radiation_J": 2.444259312484186e+19,
+      "nuclear_charge_change_per_baryon": 6.825703426740304e-17
+    },
+    {
+      "t_s": 3.7545005394567965e-07,
+      "K_J": 2.0637617973100312e+25,
+      "U_J": 3.6294962419772513e+24,
+      "nuclear_mass_excess_J": 1376377913344360.5,
+      "nuclear_full_atomic_mass_J": 1363271886091034.5,
+      "weak_J": 5.320640556528847e-53,
+      "radiation_J": 2.828876757422323e+19,
+      "nuclear_charge_change_per_baryon": 6.446845935630953e-17
+    },
+    {
+      "t_s": 3.994292960019629e-07,
+      "K_J": 2.0469633855132815e+25,
+      "U_J": 3.7974763097090986e+24,
+      "nuclear_mass_excess_J": 3272481745262985.0,
+      "nuclear_full_atomic_mass_J": 3259586832317344.0,
+      "weak_J": 1.9686560652144545e-50,
+      "radiation_J": 3.2331370290479813e+19,
+      "nuclear_charge_change_per_baryon": 6.342998950373455e-17
+    },
+    {
+      "t_s": 4.234085380582461e-07,
+      "K_J": 2.0292215680997164e+25,
+      "U_J": 3.974890266156829e+24,
+      "nuclear_mass_excess_J": 7531629014544636.0,
+      "nuclear_full_atomic_mass_J": 7516401551776404.0,
+      "weak_J": 7.626046141451428e-48,
+      "radiation_J": 3.6553057346712646e+19,
+      "nuclear_charge_change_per_baryon": 7.490378629306828e-17
+    },
+    {
+      "t_s": 4.4738778011452937e-07,
+      "K_J": 2.010463304123088e+25,
+      "U_J": 4.1624685303699506e+24,
+      "nuclear_mass_excess_J": 1.6794795775829094e+16,
+      "nuclear_full_atomic_mass_J": 1.6781726394715086e+16,
+      "weak_J": 4.728665645289379e-45,
+      "radiation_J": 4.093754538933509e+19,
+      "nuclear_charge_change_per_baryon": 6.428819723311939e-17
+    },
+    {
+      "t_s": 4.713670221708126e-07,
+      "K_J": 1.990610380874412e+25,
+      "U_J": 4.3609932499713105e+24,
+      "nuclear_mass_excess_J": 3.631477176337986e+16,
+      "nuclear_full_atomic_mass_J": 3.629955085884754e+16,
+      "weak_J": 4.431698554970785e-42,
+      "radiation_J": 4.546959935837129e+19,
+      "nuclear_charge_change_per_baryon": 7.487152635129868e-17
+    },
+    {
+      "t_s": 4.987718702351364e-07,
+      "K_J": 1.9664733053920026e+25,
+      "U_J": 4.6023587102658784e+24,
+      "nuclear_mass_excess_J": 8.450765112304366e+16,
+      "nuclear_full_atomic_mass_J": 8.448813655464794e+16,
+      "weak_J": 1.11151959853103e-38,
+      "radiation_J": 5.081159107344525e+19,
+      "nuclear_charge_change_per_baryon": 9.599202978787265e-17
+    },
+    {
+      "t_s": 5.227511122914196e-07,
+      "K_J": 1.943985528862788e+25,
+      "U_J": 4.827231760279985e+24,
+      "nuclear_mass_excess_J": 1.7150979592172787e+17,
+      "nuclear_full_atomic_mass_J": 1.7149157739317472e+17,
+      "weak_J": 8.66982383582799e-36,
+      "radiation_J": 5.561323975553298e+19,
+      "nuclear_charge_change_per_baryon": 8.961681847430846e-17
+    },
+    {
+      "t_s": 5.467303543477028e-07,
+      "K_J": 1.9201206880011833e+25,
+      "U_J": 5.06587542712753e+24,
+      "nuclear_mass_excess_J": 3.3834266166462406e+17,
+      "nuclear_full_atomic_mass_J": 3.383228947740023e+17,
+      "weak_J": 5.47354082756608e-33,
+      "radiation_J": 6.052101155159096e+19,
+      "nuclear_charge_change_per_baryon": 9.72332009806938e-17
+    },
+    {
+      "t_s": 5.707095964039861e-07,
+      "K_J": 1.8947769814037621e+25,
+      "U_J": 5.319307800721675e+24,
+      "nuclear_mass_excess_J": 6.492454085242184e+17,
+      "nuclear_full_atomic_mass_J": 6.492284160538569e+17,
+      "weak_J": 2.8056960433981176e-30,
+      "radiation_J": 6.552361146879439e+19,
+      "nuclear_charge_change_per_baryon": 8.358584620905648e-17
+    },
+    {
+      "t_s": 5.946888384602693e-07,
+      "K_J": 1.8678472400551053e+25,
+      "U_J": 5.5886006896355e+24,
+      "nuclear_mass_excess_J": 1.2126505869353718e+18,
+      "nuclear_full_atomic_mass_J": 1.2126335915678308e+18,
+      "weak_J": 1.1804391616926657e-27,
+      "radiation_J": 7.061057884092595e+19,
+      "nuclear_charge_change_per_baryon": 8.360009696404584e-17
+    },
+    {
+      "t_s": 6.186680805165526e-07,
+      "K_J": 1.8392197130311968e+25,
+      "U_J": 5.874871790607069e+24,
+      "nuclear_mass_excess_J": 2.205968414432858e+18,
+      "nuclear_full_atomic_mass_J": 2.2059515988803077e+18,
+      "weak_J": 4.1307897281585263e-25,
+      "radiation_J": 7.577224377106968e+19,
+      "nuclear_charge_change_per_baryon": 8.271558690557999e-17
+    },
+    {
+      "t_s": 6.460729285808762e-07,
+      "K_J": 1.8042761140631e+25,
+      "U_J": 6.224303828891826e+24,
+      "nuclear_mass_excess_J": 4.234840994916601e+18,
+      "nuclear_full_atomic_mass_J": 4.234823800366205e+18,
+      "weak_J": 2.7065774534652744e-22,
+      "radiation_J": 8.175134614712422e+19,
+      "nuclear_charge_change_per_baryon": 8.457987382105839e-17
+    },
+    {
+      "t_s": 6.700521706371595e-07,
+      "K_J": 1.771622448204945e+25,
+      "U_J": 6.550838250697106e+24,
+      "nuclear_mass_excess_J": 7.29167966243298e+18,
+      "nuclear_full_atomic_mass_J": 7.291659084069463e+18,
+      "weak_J": 6.594429418515022e-20,
+      "radiation_J": 8.704395260120162e+19,
+      "nuclear_charge_change_per_baryon": 1.0122482584504537e-16
+    },
+    {
+      "t_s": 6.940314126934428e-07,
+      "K_J": 1.7369113454962138e+25,
+      "U_J": 6.897948886073738e+24,
+      "nuclear_mass_excess_J": 1.224217322315894e+19,
+      "nuclear_full_atomic_mass_J": 1.2242144579879563e+19,
+      "weak_J": 1.3219549171970958e-17,
+      "radiation_J": 9.238557675065885e+19,
+      "nuclear_charge_change_per_baryon": 1.4089608447733414e-16
+    },
+    {
+      "t_s": 7.180106547497261e-07,
+      "K_J": 1.7000388990133066e+25,
+      "U_J": 7.266675766848041e+24,
+      "nuclear_mass_excess_J": 2.004085584750093e+19,
+      "nuclear_full_atomic_mass_J": 2.0040832881676386e+19,
+      "weak_J": 2.031991197730857e-15,
+      "radiation_J": 9.776942537403235e+19,
+      "nuclear_charge_change_per_baryon": 1.1296872330931656e-16
+    },
+    {
+      "t_s": 7.419898968060094e-07,
+      "K_J": 1.6609163060435057e+25,
+      "U_J": 7.657908215362239e+24,
+      "nuclear_mass_excess_J": 3.197992859545404e+19,
+      "nuclear_full_atomic_mass_J": 3.197990373824635e+19,
+      "weak_J": 2.0771189336574034e-13,
+      "radiation_J": 1.0318932115968768e+20,
+      "nuclear_charge_change_per_baryon": 1.222724055378443e-16
+    },
+    {
+      "t_s": 7.659691388622926e-07,
+      "K_J": 1.6194760927642893e+25,
+      "U_J": 8.072322640618674e+24,
+      "nuclear_mass_excess_J": 4.97212075958825e+19,
+      "nuclear_full_atomic_mass_J": 4.972118275527992e+19,
+      "weak_J": 1.1846517977443859e-11,
+      "radiation_J": 1.086396801694001e+20,
+      "nuclear_charge_change_per_baryon": 1.2219071975988675e-16
+    },
+    {
+      "t_s": 7.899483809185759e-07,
+      "K_J": 1.5756751051337914e+25,
+      "U_J": 8.51035261045367e+24,
+      "nuclear_mass_excess_J": 7.528919452786755e+19,
+      "nuclear_full_atomic_mass_J": 7.528916791618306e+19,
+      "weak_J": 3.371534172445115e-10,
+      "radiation_J": 1.1411549315223542e+20,
+      "nuclear_charge_change_per_baryon": 1.3090266967719514e-16
+    },
+    {
+      "t_s": 8.173532289828995e-07,
+      "K_J": 1.522700055714677e+25,
+      "U_J": 9.040138648819164e+24,
+      "nuclear_mass_excess_J": 1.1711698803560817e+20,
+      "nuclear_full_atomic_mass_J": 1.1711696321774012e+20,
+      "weak_J": -0.00024545304613570997,
+      "radiation_J": 1.2039905110778718e+20,
+      "nuclear_charge_change_per_baryon": 1.2207885443883557e-16
+    },
+    {
+      "t_s": 8.413324710391828e-07,
+      "K_J": 1.4737911099734297e+25,
+      "U_J": 9.529273182561431e+24,
+      "nuclear_mass_excess_J": 1.6770837475523048e+20,
+      "nuclear_full_atomic_mass_J": 1.6770834335762953e+20,
+      "weak_J": -0.00021854298462547247,
+      "radiation_J": 1.259151311507464e+20,
+      "nuclear_charge_change_per_baryon": 1.544444698538653e-16
+    },
+    {
+      "t_s": 8.65311713095466e-07,
+      "K_J": 1.4225059231947754e+25,
+      "U_J": 1.0042186188066952e+25,
+      "nuclear_mass_excess_J": 2.3437724548944062e+20,
+      "nuclear_full_atomic_mass_J": 2.3437721275718304e+20,
+      "weak_J": -0.00021428121659464936,
+      "radiation_J": 1.3144452490377047e+20,
+      "nuclear_charge_change_per_baryon": 1.6100959141334618e-16
+    },
+    {
+      "t_s": 8.892909551517492e-07,
+      "K_J": 1.3688625992863691e+25,
+      "U_J": 1.0578699738532969e+25,
+      "nuclear_mass_excess_J": 3.20227785718187e+20,
+      "nuclear_full_atomic_mass_J": 3.202277522856439e+20,
+      "weak_J": -0.00018189464785864083,
+      "radiation_J": 1.3698449525933946e+20,
+      "nuclear_charge_change_per_baryon": 1.6445410273134898e-16
+    },
+    {
+      "t_s": 9.132701972080326e-07,
+      "K_J": 1.312887863386217e+25,
+      "U_J": 1.1138549889553486e+25,
+      "nuclear_mass_excess_J": 4.2856980348294083e+20,
+      "nuclear_full_atomic_mass_J": 4.285697713735953e+20,
+      "weak_J": 6.540457450545951e-05,
+      "radiation_J": 1.4253285202302704e+20,
+      "nuclear_charge_change_per_baryon": 1.5794549074400426e-16
+    },
+    {
+      "t_s": 9.372494392643158e-07,
+      "K_J": 1.2546177756629886e+25,
+      "U_J": 1.1721379554240901e+25,
+      "nuclear_mass_excess_J": 5.629122725150081e+20,
+      "nuclear_full_atomic_mass_J": 5.62912238513758e+20,
+      "weak_J": 0.5030764160685823,
+      "radiation_J": 1.480879632363568e+20,
+      "nuclear_charge_change_per_baryon": 1.6725169015063947e-16
+    },
+    {
+      "t_s": 9.61228681320599e-07,
+      "K_J": 1.194099116492827e+25,
+      "U_J": 1.2326724631586973e+25,
+      "nuclear_mass_excess_J": 7.269571097328691e+20,
+      "nuclear_full_atomic_mass_J": 7.269570763365676e+20,
+      "weak_J": 0.48302695392968,
+      "radiation_J": 1.536487734007282e+20,
+      "nuclear_charge_change_per_baryon": 1.642755272600557e-16
+    },
+    {
+      "t_s": 9.886335293849228e-07,
+      "K_J": 1.1222586196986132e+25,
+      "U_J": 1.3045352083536534e+25,
+      "nuclear_mass_excess_J": 9.558030889640958e+20,
+      "nuclear_full_atomic_mass_J": 9.558030554988977e+20,
+      "weak_J": 0.487879047330741,
+      "radiation_J": 1.6001041112632852e+20,
+      "nuclear_charge_change_per_baryon": 1.6461449878323432e-16
+    },
+    {
+      "t_s": 1.012612771441206e-06,
+      "K_J": 1.0571421547106579e+25,
+      "U_J": 1.369675217583089e+25,
+      "nuclear_mass_excess_J": 1.19681763372185e+21,
+      "nuclear_full_atomic_mass_J": 1.1968175976857993e+21,
+      "weak_J": 0.4879457431925695,
+      "radiation_J": 1.6558272791981972e+20,
+      "nuclear_charge_change_per_baryon": 1.7726007952199511e-16
+    },
+    {
+      "t_s": 1.0365920134974892e-06,
+      "K_J": 9.900217282542642e+24,
+      "U_J": 1.4368234390729774e+25,
+      "nuclear_mass_excess_J": 1.4803467091957907e+21,
+      "nuclear_full_atomic_mass_J": 1.480346675256356e+21,
+      "weak_J": 0.4880198093574184,
+      "radiation_J": 1.7116152584866333e+20,
+      "nuclear_charge_change_per_baryon": 1.6694687812408645e-16
+    },
+    {
+      "t_s": 1.0605712555537724e-06,
+      "K_J": 9.210211705369936e+24,
+      "U_J": 1.505856484510432e+25,
+      "nuclear_mass_excess_J": 1.810812459479729e+21,
+      "nuclear_full_atomic_mass_J": 1.8108124237792165e+21,
+      "weak_J": 0.4905634783397167,
+      "radiation_J": 1.767485258421281e+20,
+      "nuclear_charge_change_per_baryon": 1.7560929669624544e-16
+    },
+    {
+      "t_s": 1.0845504976100556e-06,
+      "K_J": 8.502986745353188e+24,
+      "U_J": 1.576616617831484e+25,
+      "nuclear_mass_excess_J": 2.1927828192206444e+21,
+      "nuclear_full_atomic_mass_J": 2.1927827825897832e+21,
+      "weak_J": 1.0409340624948902,
+      "radiation_J": 1.8234627737662833e+20,
+      "nuclear_charge_change_per_baryon": 1.801848885768183e-16
+    },
+    {
+      "t_s": 1.108529739666339e-06,
+      "K_J": 7.780589139688902e+24,
+      "U_J": 1.6488996333706773e+25,
+      "nuclear_mass_excess_J": 2.6309452259967023e+21,
+      "nuclear_full_atomic_mass_J": 2.630945189400407e+21,
+      "weak_J": 1.0675985974187854,
+      "radiation_J": 1.879582544843051e+20,
+      "nuclear_charge_change_per_baryon": 1.80015040244645e-16
+    },
+    {
+      "t_s": 1.1359345877306627e-06,
+      "K_J": 6.939907468522258e+24,
+      "U_J": 1.7330247229439667e+25,
+      "nuclear_mass_excess_J": 3.206608350687379e+21,
+      "nuclear_full_atomic_mass_J": 3.2066083129257985e+21,
+      "weak_J": 1.0646189400098913,
+      "radiation_J": 1.9439521101728478e+20,
+      "nuclear_charge_change_per_baryon": 1.8574632819782762e-16
+    },
+    {
+      "t_s": 1.1599138297869459e-06,
+      "K_J": 6.195274360482482e+24,
+      "U_J": 1.8075449209728434e+25,
+      "nuclear_mass_excess_J": 3.7811391257258765e+21,
+      "nuclear_full_atomic_mass_J": 3.7811390890826436e+21,
+      "weak_J": 1.0649334691688013,
+      "radiation_J": 2.000544239508908e+20,
+      "nuclear_charge_change_per_baryon": 1.8024529054476634e-16
+    },
+    {
+      "t_s": 1.183893071843229e-06,
+      "K_J": 5.447629793859529e+24,
+      "U_J": 1.8823733352759922e+25,
+      "nuclear_mass_excess_J": 4.4264060339466226e+21,
+      "nuclear_full_atomic_mass_J": 4.426405995384407e+21,
+      "weak_J": 1.0680039503311343,
+      "radiation_J": 2.0574631529648128e+20,
+      "nuclear_charge_change_per_baryon": 1.896852974200996e-16
+    },
+    {
+      "t_s": 1.2078723138995125e-06,
+      "K_J": 4.704331858037324e+24,
+      "U_J": 1.956774523544176e+25,
+      "nuclear_mass_excess_J": 5.146083000304899e+21,
+      "nuclear_full_atomic_mass_J": 5.146082961647888e+21,
+      "weak_J": 8.429851960837794,
+      "radiation_J": 2.1147982863487703e+20,
+      "nuclear_charge_change_per_baryon": 1.9014977114863156e-16
+    },
+    {
+      "t_s": 1.2318515559557957e-06,
+      "K_J": 3.975671956220511e+24,
+      "U_J": 2.0297195594441382e+25,
+      "nuclear_mass_excess_J": 5.942322598022577e+21,
+      "nuclear_full_atomic_mass_J": 5.942322559715862e+21,
+      "weak_J": 9.056925023500657,
+      "radiation_J": 2.1726584786497444e+20,
+      "nuclear_charge_change_per_baryon": 1.88424874391572e-16
+    },
+    {
+      "t_s": 1.2532428542616988e-06,
+      "K_J": 3.3491374405538686e+24,
+      "U_J": 2.0924499458565913e+25,
+      "nuclear_mass_excess_J": 6.716880349419257e+21,
+      "nuclear_full_atomic_mass_J": 6.716880309415545e+21,
+      "weak_J": 9.088891735128916,
+      "radiation_J": 2.2248240809421046e+20,
+      "nuclear_charge_change_per_baryon": 1.9677206393790192e-16
+    },
+    {
+      "t_s": 1.2559280100783237e-06,
+      "K_J": 3.272665534414534e+24,
+      "U_J": 2.100107208887743e+25,
+      "nuclear_mass_excess_J": 6.818263578268595e+21,
+      "nuclear_full_atomic_mass_J": 6.818263537734606e+21,
+      "weak_J": 9.110560756838066,
+      "radiation_J": 2.2314145175783457e+20,
+      "nuclear_charge_change_per_baryon": 1.9938157640260106e-16
+    },
+    {
+      "t_s": 1.2600016357349469e-06,
+      "K_J": 3.157742974026952e+24,
+      "U_J": 2.1116149170745306e+25,
+      "nuclear_mass_excess_J": 6.973786829122926e+21,
+      "nuclear_full_atomic_mass_J": 6.973786786137066e+21,
+      "weak_J": 9.113581982544671,
+      "radiation_J": 2.2414324039479614e+20,
+      "nuclear_charge_change_per_baryon": 2.1144174586391113e-16
+    },
+    {
+      "t_s": 1.2655883172738708e-06,
+      "K_J": 3.0024245625118695e+24,
+      "U_J": 2.127168279817387e+25,
+      "nuclear_mass_excess_J": 7.190377269636026e+21,
+      "nuclear_full_atomic_mass_J": 7.190377228169413e+21,
+      "weak_J": 9.113454270743722,
+      "radiation_J": 2.2552110613916536e+20,
+      "nuclear_charge_change_per_baryon": 2.0396953151808407e-16
+    },
+    {
+      "t_s": 1.2748138760197105e-06,
+      "K_J": 2.752319769564016e+24,
+      "U_J": 2.1522151063891638e+25,
+      "nuclear_mass_excess_J": 7.55612782521546e+21,
+      "nuclear_full_atomic_mass_J": 7.556127787386268e+21,
+      "weak_J": 9.113891711522653,
+      "radiation_J": 2.2780711918079538e+20,
+      "nuclear_charge_change_per_baryon": 1.8607654434640445e-16
+    },
+    {
+      "t_s": 1.2873946881337134e-06,
+      "K_J": 2.4257718820304113e+24,
+      "U_J": 2.184921007919523e+25,
+      "nuclear_mass_excess_J": 8.070164772447412e+21,
+      "nuclear_full_atomic_mass_J": 8.070164733330527e+21,
+      "weak_J": 9.11454718111681,
+      "radiation_J": 2.3094778654679905e+20,
+      "nuclear_charge_change_per_baryon": 1.9241206678396831e-16
+    },
+    {
+      "t_s": 1.3065977021804636e-06,
+      "K_J": 1.9652266487765553e+24,
+      "U_J": 2.23105656922238e+25,
+      "nuclear_mass_excess_J": 8.884760814435405e+21,
+      "nuclear_full_atomic_mass_J": 8.884760776127122e+21,
+      "weak_J": 9.115764217927229,
+      "radiation_J": 2.3580001775924347e+20,
+      "nuclear_charge_change_per_baryon": 1.884285478428254e-16
+    },
+    {
+      "t_s": 1.3171811631558247e-06,
+      "K_J": 1.7337973807248067e+24,
+      "U_J": 2.2542454421655167e+25,
+      "nuclear_mass_excess_J": 9.346660940519824e+21,
+      "nuclear_full_atomic_mass_J": 9.346660901511071e+21,
+      "weak_J": 9.116573717630002,
+      "radiation_J": 2.3850838602091423e+20,
+      "nuclear_charge_change_per_baryon": 1.9187647698230541e-16
+    },
+    {
+      "t_s": 1.3232158204221992e-06,
+      "K_J": 1.6096595170709267e+24,
+      "U_J": 2.2666857448572653e+25,
+      "nuclear_mass_excess_J": 9.613381715102672e+21,
+      "nuclear_full_atomic_mass_J": 9.613381677100267e+21,
+      "weak_J": 9.117088296010207,
+      "radiation_J": 2.400647299299417e+20,
+      "nuclear_charge_change_per_baryon": 1.8692827248830255e-16
+    },
+    {
+      "t_s": 1.32769249313182e-06,
+      "K_J": 1.5214176478535284e+24,
+      "U_J": 2.275529725037182e+25,
+      "nuclear_mass_excess_J": 9.81258286595597e+21,
+      "nuclear_full_atomic_mass_J": 9.81258282886098e+21,
+      "weak_J": 9.117497598950226,
+      "radiation_J": 2.4122527476064213e+20,
+      "nuclear_charge_change_per_baryon": 1.8246333825785855e-16
+    },
+    {
+      "t_s": 1.3294159410404582e-06,
+      "K_J": 1.4883414204684902e+24,
+      "U_J": 2.2788449981703665e+25,
+      "nuclear_mass_excess_J": 9.889545480322714e+21,
+      "nuclear_full_atomic_mass_J": 9.88954544467491e+21,
+      "weak_J": 9.11766180290057,
+      "radiation_J": 2.4167347927668503e+20,
+      "nuclear_charge_change_per_baryon": 1.753425872186374e-16
+    },
+    {
+      "t_s": 1.3343037711692904e-06,
+      "K_J": 1.3972999379162312e+24,
+      "U_J": 2.28797092043504e+25,
+      "nuclear_mass_excess_J": 1.0108556814554323e+22,
+      "nuclear_full_atomic_mass_J": 1.0108556778661493e+22,
+      "weak_J": 9.118148571982447,
+      "radiation_J": 2.4294903611256265e+20,
+      "nuclear_charge_change_per_baryon": 1.7654995988964305e-16
+    },
+    {
+      "t_s": 1.3408047529095745e-06,
+      "K_J": 1.2826935637326785e+24,
+      "U_J": 2.2994606621012588e+25,
+      "nuclear_mass_excess_J": 1.0401304574298113e+22,
+      "nuclear_full_atomic_mass_J": 1.040130453820584e+22,
+      "weak_J": 9.118847072663732,
+      "radiation_J": 2.4465608172080837e+20,
+      "nuclear_charge_change_per_baryon": 1.7753126899786958e-16
+    },
+    {
+      "t_s": 1.3479622983993867e-06,
+      "K_J": 1.1653263581406296e+24,
+      "U_J": 2.3112295721061024e+25,
+      "nuclear_mass_excess_J": 1.0725088608818817e+22,
+      "nuclear_full_atomic_mass_J": 1.0725088570228064e+22,
+      "weak_J": 9.119688751644743,
+      "radiation_J": 2.465501853412154e+20,
+      "nuclear_charge_change_per_baryon": 1.8981671734666937e-16
+    },
+    {
+      "t_s": 1.3568293771024669e-06,
+      "K_J": 1.0331428970538636e+24,
+      "U_J": 2.324487927377243e+25,
+      "nuclear_mass_excess_J": 1.1127541708581977e+22,
+      "nuclear_full_atomic_mass_J": 1.1127541669697537e+22,
+      "weak_J": 9.120845898051897,
+      "radiation_J": 2.4891944687211957e+20,
+      "nuclear_charge_change_per_baryon": 1.9126391098219196e-16
+    },
+    {
+      "t_s": 1.3639825297927327e-06,
+      "K_J": 9.37464951714598e+23,
+      "U_J": 2.334088037243819e+25,
+      "nuclear_mass_excess_J": 1.1452617315239835e+22,
+      "nuclear_full_atomic_mass_J": 1.1452617275171571e+22,
+      "weak_J": 9.121878565060607,
+      "radiation_J": 2.5085041330446588e+20,
+      "nuclear_charge_change_per_baryon": 1.9708615590760409e-16
+    },
+    {
+      "t_s": 1.3693570100595277e-06,
+      "K_J": 8.721557093479241e+23,
+      "U_J": 2.340643229109444e+25,
+      "nuclear_mass_excess_J": 1.1696747498349657e+22,
+      "nuclear_full_atomic_mass_J": 1.1696747458411924e+22,
+      "weak_J": 9.122716122905274,
+      "radiation_J": 2.523135438482422e+20,
+      "nuclear_charge_change_per_baryon": 1.9644491508644503e-16
+    },
+    {
+      "t_s": 1.3742154477632645e-06,
+      "K_J": 8.180477894395226e+23,
+      "U_J": 2.346075924766256e+25,
+      "nuclear_mass_excess_J": 1.1917142986158462e+22,
+      "nuclear_full_atomic_mass_J": 1.1917142942692256e+22,
+      "weak_J": 9.123520596918683,
+      "radiation_J": 2.5364576412792586e+20,
+      "nuclear_charge_change_per_baryon": 2.1380202513836642e-16
+    },
+    {
+      "t_s": 1.3765927280150638e-06,
+      "K_J": 7.93294796600745e+23,
+      "U_J": 2.348561923731572e+25,
+      "nuclear_mass_excess_J": 1.2024831068730204e+22,
+      "nuclear_full_atomic_mass_J": 1.2024831024099997e+22,
+      "weak_J": 9.123931012302132,
+      "radiation_J": 2.5430107350377923e+20,
+      "nuclear_charge_change_per_baryon": 2.1952999510727963e-16
+    },
+    {
+      "t_s": 1.3795160697403276e-06,
+      "K_J": 7.644186665187615e+23,
+      "U_J": 2.351462674550922e+25,
+      "nuclear_mass_excess_J": 1.2157079816765574e+22,
+      "nuclear_full_atomic_mass_J": 1.215707977489816e+22,
+      "weak_J": 9.124451074108341,
+      "radiation_J": 2.551101042152261e+20,
+      "nuclear_charge_change_per_baryon": 2.0593278208393777e-16
+    },
+    {
+      "t_s": 1.3845933696621968e-06,
+      "K_J": 7.183888552292637e+23,
+      "U_J": 2.356088426528293e+25,
+      "nuclear_mass_excess_J": 1.2386214988564773e+22,
+      "nuclear_full_atomic_mass_J": 1.238621494511809e+22,
+      "weak_J": 9.125395234199859,
+      "radiation_J": 2.5652388833572582e+20,
+      "nuclear_charge_change_per_baryon": 2.137032236665132e-16
+    },
+    {
+      "t_s": 1.395580878809526e-06,
+      "K_J": 6.36874335227869e+23,
+      "U_J": 2.364288848633428e+25,
+      "nuclear_mass_excess_J": 1.2878906106480578e+22,
+      "nuclear_full_atomic_mass_J": 1.287890606210937e+22,
+      "weak_J": 9.127620079897262,
+      "radiation_J": 2.596232332774797e+20,
+      "nuclear_charge_change_per_baryon": 2.1824955578463227e-16
+    },
+    {
+      "t_s": 1.4099081401718868e-06,
+      "K_J": 5.682239651295279e+23,
+      "U_J": 2.3712168519532784e+25,
+      "nuclear_mass_excess_J": 1.3512512635022845e+22,
+      "nuclear_full_atomic_mass_J": 1.3512512591453334e+22,
+      "weak_J": 9.13090216467516,
+      "radiation_J": 2.6375470140276258e+20,
+      "nuclear_charge_change_per_baryon": 2.1431150265920885e-16
+    },
+    {
+      "t_s": 1.4235037059390046e-06,
+      "K_J": 5.4287508964120885e+23,
+      "U_J": 2.373810259933553e+25,
+      "nuclear_mass_excess_J": 1.4101641411833566e+22,
+      "nuclear_full_atomic_mass_J": 1.4101641369551066e+22,
+      "weak_J": 9.134417536376578,
+      "radiation_J": 2.6778174545118675e+20,
+      "nuclear_charge_change_per_baryon": 2.0797879155168804e-16
+    },
+    {
+      "t_s": 1.4360223638494214e-06,
+      "K_J": 5.5395971676529924e+23,
+      "U_J": 2.3727544044865523e+25,
+      "nuclear_mass_excess_J": 1.4631402431917186e+22,
+      "nuclear_full_atomic_mass_J": 1.4631402388008374e+22,
+      "weak_J": 9.136779037700382,
+      "radiation_J": 2.7159418087518965e+20,
+      "nuclear_charge_change_per_baryon": 2.1597835664319003e-16
+    },
+    {
+      "t_s": 1.4504769971778195e-06,
+      "K_J": 6.077798687759475e+23,
+      "U_J": 2.367431387093997e+25,
+      "nuclear_mass_excess_J": 1.5225623697588677e+22,
+      "nuclear_full_atomic_mass_J": 1.5225623653242703e+22,
+      "weak_J": 9.200650682868352,
+      "radiation_J": 2.7613783112036588e+20,
+      "nuclear_charge_change_per_baryon": 2.1812923310793164e-16
+    },
+    {
+      "t_s": 1.463522371469713e-06,
+      "K_J": 6.938657225797427e+23,
+      "U_J": 2.3588742245453017e+25,
+      "nuclear_mass_excess_J": 1.5744087100217398e+22,
+      "nuclear_full_atomic_mass_J": 1.5744087053577493e+22,
+      "weak_J": 9.204968220198916,
+      "radiation_J": 2.803860320830614e+20,
+      "nuclear_charge_change_per_baryon": 2.2940592949095995e-16
+    },
+    {
+      "t_s": 1.4777269273981442e-06,
+      "K_J": 8.27566542873158e+23,
+      "U_J": 2.345558026872795e+25,
+      "nuclear_mass_excess_J": 1.6287799145421865e+22,
+      "nuclear_full_atomic_mass_J": 1.6287799098362437e+22,
+      "weak_J": 9.210136771844422,
+      "radiation_J": 2.8519145957259146e+20,
+      "nuclear_charge_change_per_baryon": 2.314749685966257e-16
+    },
+    {
+      "t_s": 1.4885503326661817e-06,
+      "K_J": 9.569066086311048e+23,
+      "U_J": 2.332663544747908e+25,
+      "nuclear_mass_excess_J": 1.6686724550284466e+22,
+      "nuclear_full_atomic_mass_J": 1.6686724501266672e+22,
+      "weak_J": 9.214311185252111,
+      "radiation_J": 2.889919910780713e+20,
+      "nuclear_charge_change_per_baryon": 2.411097586679648e-16
+    },
+    {
+      "t_s": 1.503466719977761e-06,
+      "K_J": 1.1729593198093266e+24,
+      "U_J": 2.311110448292401e+25,
+      "nuclear_mass_excess_J": 1.721385221096875e+22,
+      "nuclear_full_atomic_mass_J": 1.7213852162246511e+22,
+      "weak_J": 9.220380201545895,
+      "radiation_J": 2.9444479083477375e+20,
+      "nuclear_charge_change_per_baryon": 2.396522249251585e-16
+    },
+    {
+      "t_s": 1.5136177942348979e-06,
+      "K_J": 1.3441304727468848e+24,
+      "U_J": 2.2940272934274808e+25,
+      "nuclear_mass_excess_J": 1.7557195908718652e+22,
+      "nuclear_full_atomic_mass_J": 1.7557195859322735e+22,
+      "weak_J": 9.224711781276474,
+      "radiation_J": 2.9830720808405205e+20,
+      "nuclear_charge_change_per_baryon": 2.429646946527828e-16
+    },
+    {
+      "t_s": 1.5250597036822876e-06,
+      "K_J": 1.559435620979494e+24,
+      "U_J": 2.2725335348424513e+25,
+      "nuclear_mass_excess_J": 1.7929028667531038e+22,
+      "nuclear_full_atomic_mass_J": 1.7929028615575792e+22,
+      "weak_J": 9.229783696758332,
+      "radiation_J": 3.028146421454294e+20,
+      "nuclear_charge_change_per_baryon": 2.5554915753281423e-16
+    },
+    {
+      "t_s": 1.5385871300110348e-06,
+      "K_J": 1.8427155998630031e+24,
+      "U_J": 2.2442468801222764e+25,
+      "nuclear_mass_excess_J": 1.8347742654790646e+22,
+      "nuclear_full_atomic_mass_J": 1.8347742603342672e+22,
+      "weak_J": 9.23603443350018,
+      "radiation_J": 3.0835883638106744e+20,
+      "nuclear_charge_change_per_baryon": 2.5305928583432724e-16
+    },
+    {
+      "t_s": 1.5498217009444796e-06,
+      "K_J": 2.099748685283273e+24,
+      "U_J": 2.21857614748482e+25,
+      "nuclear_mass_excess_J": 1.8678258103873629e+22,
+      "nuclear_full_atomic_mass_J": 1.8678258053314758e+22,
+      "weak_J": 9.241433478205566,
+      "radiation_J": 3.131413331339298e+20,
+      "nuclear_charge_change_per_baryon": 2.4868050817376303e-16
+    },
+    {
+      "t_s": 1.5622742118535672e-06,
+      "K_J": 2.4056994210710911e+24,
+      "U_J": 2.1880153664161405e+25,
+      "nuclear_mass_excess_J": 1.902642465528736e+22,
+      "nuclear_full_atomic_mass_J": 1.9026424602663825e+22,
+      "weak_J": 9.247638653281747,
+      "radiation_J": 3.1862823737424806e+20,
+      "nuclear_charge_change_per_baryon": 2.588428132519475e-16
+    },
+    {
+      "t_s": 1.5816409636895516e-06,
+      "K_J": 2.920242283366072e+24,
+      "U_J": 2.136610591820274e+25,
+      "nuclear_mass_excess_J": 1.953039859000436e+22,
+      "nuclear_full_atomic_mass_J": 1.953039853875589e+22,
+      "weak_J": 9.257756614903204,
+      "radiation_J": 3.2753469576682216e+20,
+      "nuclear_charge_change_per_baryon": 2.5208275207371987e-16
+    },
+    {
+      "t_s": 1.5957099523312497e-06,
+      "K_J": 3.3186464484730045e+24,
+      "U_J": 2.0968033026534265e+25,
+      "nuclear_mass_excess_J": 1.9868436712726372e+22,
+      "nuclear_full_atomic_mass_J": 1.9868436662255813e+22,
+      "weak_J": 9.26547081396118,
+      "radiation_J": 3.342716587593643e+20,
+      "nuclear_charge_change_per_baryon": 2.482509554905801e-16
+    },
+    {
+      "t_s": 1.611447549160293e-06,
+      "K_J": 3.7831676025802647e+24,
+      "U_J": 2.0503854949860083e+25,
+      "nuclear_mass_excess_J": 2.0219341821729435e+22,
+      "nuclear_full_atomic_mass_J": 2.0219341769319953e+22,
+      "weak_J": 9.274471571716488,
+      "radiation_J": 3.420507134720288e+20,
+      "nuclear_charge_change_per_baryon": 2.577779178517531e-16
+    },
+    {
+      "t_s": 1.6277026792637665e-06,
+      "K_J": 4.2784539459755676e+24,
+      "U_J": 2.0008893351648186e+25,
+      "nuclear_mass_excess_J": 2.0552556300390768e+22,
+      "nuclear_full_atomic_mass_J": 2.055255624791226e+22,
+      "weak_J": 9.284188146927189,
+      "radiation_J": 3.503291553549117e+20,
+      "nuclear_charge_change_per_baryon": 2.5812812499663167e-16
+    },
+    {
+      "t_s": 1.6387464660541274e-06,
+      "K_J": 4.6218554403001723e+24,
+      "U_J": 1.9665696009525875e+25,
+      "nuclear_mass_excess_J": 2.0762570346400687e+22,
+      "nuclear_full_atomic_mass_J": 2.076257029271653e+22,
+      "weak_J": 9.291035500035788,
+      "radiation_J": 3.5608092050775146e+20,
+      "nuclear_charge_change_per_baryon": 2.640592536925389e-16
+    },
+    {
+      "t_s": 1.6531974848024357e-06,
+      "K_J": 5.077951166465973e+24,
+      "U_J": 1.9209848268638057e+25,
+      "nuclear_mass_excess_J": 2.1018101454139298e+22,
+      "nuclear_full_atomic_mass_J": 2.101810140012839e+22,
+      "weak_J": 9.30029542650606,
+      "radiation_J": 3.637481089433828e+20,
+      "nuclear_charge_change_per_baryon": 2.6566716893719354e-16
+    },
+    {
+      "t_s": 1.6649473813745753e-06,
+      "K_J": 5.452939251600936e+24,
+      "U_J": 1.883504607423498e+25,
+      "nuclear_mass_excess_J": 2.1210336892199446e+22,
+      "nuclear_full_atomic_mass_J": 2.1210336842320376e+22,
+      "weak_J": 9.308071619580021,
+      "radiation_J": 3.700903559973766e+20,
+      "nuclear_charge_change_per_baryon": 2.453468051763391e-16
+    },
+    {
+      "t_s": 1.676211222851877e-06,
+      "K_J": 5.814531229692216e+24,
+      "U_J": 1.8473619655346112e+25,
+      "nuclear_mass_excess_J": 2.1382045635168638e+22,
+      "nuclear_full_atomic_mass_J": 2.1382045584462715e+22,
+      "weak_J": 9.31572795718681,
+      "radiation_J": 3.762541572055683e+20,
+      "nuclear_charge_change_per_baryon": 2.494038818188262e-16
+    },
+    {
+      "t_s": 1.6843143372902296e-06,
+      "K_J": 6.07521233687709e+24,
+      "U_J": 1.8213050242677507e+25,
+      "nuclear_mass_excess_J": 2.1498219342201927e+22,
+      "nuclear_full_atomic_mass_J": 2.1498219290834198e+22,
+      "weak_J": 9.321353162387627,
+      "radiation_J": 3.807359367437322e+20,
+      "nuclear_charge_change_per_baryon": 2.526570907882936e-16
+    },
+    {
+      "t_s": 1.6896039913962681e-06,
+      "K_J": 6.245374791638085e+24,
+      "U_J": 1.8042957447676782e+25,
+      "nuclear_mass_excess_J": 2.1570832479328397e+22,
+      "nuclear_full_atomic_mass_J": 2.157083242925684e+22,
+      "weak_J": 9.32507591108419,
+      "radiation_J": 3.836820631893282e+20,
+      "nuclear_charge_change_per_baryon": 2.462869367589715e-16
+    },
+    {
+      "t_s": 1.6955247789098076e-06,
+      "K_J": 6.43564949223421e+24,
+      "U_J": 1.7852757757376358e+25,
+      "nuclear_mass_excess_J": 2.164915888577341e+22,
+      "nuclear_full_atomic_mass_J": 2.164915883542283e+22,
+      "weak_J": 9.329288262007951,
+      "radiation_J": 3.8699818855116505e+20,
+      "nuclear_charge_change_per_baryon": 2.47656806643908e-16
+    },
+    {
+      "t_s": 1.6997425351555881e-06,
+      "K_J": 6.570981963210457e+24,
+      "U_J": 1.7717476844826669e+25,
+      "nuclear_mass_excess_J": 2.170309135330579e+22,
+      "nuclear_full_atomic_mass_J": 2.1703091303678027e+22,
+      "weak_J": 9.332317066271116,
+      "radiation_J": 3.893720659668042e+20,
+      "nuclear_charge_change_per_baryon": 2.4410332613676006e-16
+    },
+    {
+      "t_s": 1.7027734267098653e-06,
+      "K_J": 6.66808577580816e+24,
+      "U_J": 1.762040913464529e+25,
+      "nuclear_mass_excess_J": 2.174090553363246e+22,
+      "nuclear_full_atomic_mass_J": 2.17409054862037e+22,
+      "weak_J": 9.334507431768678,
+      "radiation_J": 3.91083766445728e+20,
+      "nuclear_charge_change_per_baryon": 2.3328175882561626e-16
+    },
+    {
+      "t_s": 1.7042727242486036e-06,
+      "K_J": 6.716067710654586e+24,
+      "U_J": 1.7572444769046103e+25,
+      "nuclear_mass_excess_J": 2.175932328747288e+22,
+      "nuclear_full_atomic_mass_J": 2.1759323238270125e+22,
+      "weak_J": 9.335595105210032,
+      "radiation_J": 3.919322733693908e+20,
+      "nuclear_charge_change_per_baryon": 2.4200836528416856e-16
+    },
+    {
+      "t_s": 1.7047811936866634e-06,
+      "K_J": 6.732331706939399e+24,
+      "U_J": 1.7556186687922576e+25,
+      "nuclear_mass_excess_J": 2.1765526475072904e+22,
+      "nuclear_full_atomic_mass_J": 2.176552642430563e+22,
+      "weak_J": 9.33596459138847,
+      "radiation_J": 3.922202996728584e+20,
+      "nuclear_charge_change_per_baryon": 2.4970332966307424e-16
+    },
+    {
+      "t_s": 1.7054264710342504e-06,
+      "K_J": 6.752965219759907e+24,
+      "U_J": 1.7535560650359369e+25,
+      "nuclear_mass_excess_J": 2.1773367448038e+22,
+      "nuclear_full_atomic_mass_J": 2.177336739860665e+22,
+      "weak_J": 9.336433934520308,
+      "radiation_J": 3.925860143245187e+20,
+      "nuclear_charge_change_per_baryon": 2.431272475160989e-16
+    },
+    {
+      "t_s": 1.710567092569253e-06,
+      "K_J": 6.917063919624128e+24,
+      "U_J": 1.7371520255144515e+25,
+      "nuclear_mass_excess_J": 2.183459545262709e+22,
+      "nuclear_full_atomic_mass_J": 2.1834595404910684e+22,
+      "weak_J": 9.340190272975315,
+      "radiation_J": 3.9550711317945896e+20,
+      "nuclear_charge_change_per_baryon": 2.3469539648968576e-16
+    },
+    {
+      "t_s": 1.7219895535900632e-06,
+      "K_J": 7.279573337467632e+24,
+      "U_J": 1.700913266285596e+25,
+      "nuclear_mass_excess_J": 2.196295622204448e+22,
+      "nuclear_full_atomic_mass_J": 2.1962956171549597e+22,
+      "weak_J": 9.348639215672609,
+      "radiation_J": 4.0204521784727097e+20,
+      "nuclear_charge_change_per_baryon": 2.4836363506660554e-16
+    },
+    {
+      "t_s": 1.7367607701477603e-06,
+      "K_J": 7.742915357152592e+24,
+      "U_J": 1.654593305484822e+25,
+      "nuclear_mass_excess_J": 2.2113909804503067e+22,
+      "nuclear_full_atomic_mass_J": 2.211390975333413e+22,
+      "weak_J": 9.35974407956941,
+      "radiation_J": 4.1059399280393434e+20,
+      "nuclear_charge_change_per_baryon": 2.516830167165546e-16
+    },
+    {
+      "t_s": 1.752180644703055e-06,
+      "K_J": 8.218636066189108e+24,
+      "U_J": 1.6070343891595857e+25,
+      "nuclear_mass_excess_J": 2.2254493567985497e+22,
+      "nuclear_full_atomic_mass_J": 2.225449351731929e+22,
+      "weak_J": 9.37150214423749,
+      "radiation_J": 4.1962802143678346e+20,
+      "nuclear_charge_change_per_baryon": 2.492097141091942e-16
+    },
+    {
+      "t_s": 1.7696118738137686e-06,
+      "K_J": 8.745151843268499e+24,
+      "U_J": 1.5543957320666683e+25,
+      "nuclear_mass_excess_J": 2.2394053514011657e+22,
+      "nuclear_full_atomic_mass_J": 2.2394053460825173e+22,
+      "weak_J": 9.384933225500701,
+      "radiation_J": 4.299741267565921e+20,
+      "nuclear_charge_change_per_baryon": 2.6161313378663677e-16
+    },
+    {
+      "t_s": 1.7861877069751666e-06,
+      "K_J": 9.233706785979181e+24,
+      "U_J": 1.505550764579667e+25,
+      "nuclear_mass_excess_J": 2.2509284440518844e+22,
+      "nuclear_full_atomic_mass_J": 2.2509284387785143e+22,
+      "weak_J": 9.397791368097069,
+      "radiation_J": 4.399453393307241e+20,
+      "nuclear_charge_change_per_baryon": 2.593810085954629e-16
+    },
+    {
+      "t_s": 1.8032934269227772e-06,
+      "K_J": 9.724731561511868e+24,
+      "U_J": 1.45645751463751e+25,
+      "nuclear_mass_excess_J": 2.2611987506252657e+22,
+      "nuclear_full_atomic_mass_J": 2.2611987452842893e+22,
+      "weak_J": 9.41111494926995,
+      "radiation_J": 4.5037451135665753e+20,
+      "nuclear_charge_change_per_baryon": 2.6270797935396537e-16
+    },
+    {
+      "t_s": 1.8204799672864679e-06,
+      "K_J": 1.0204111578024158e+25,
+      "U_J": 1.4085272762322724e+25,
+      "nuclear_mass_excess_J": 2.2700247077537217e+22,
+      "nuclear_full_atomic_mass_J": 2.270024702532869e+22,
+      "weak_J": 9.424540825696447,
+      "radiation_J": 4.610003321999022e+20,
+      "nuclear_charge_change_per_baryon": 2.5680119159124504e-16
+    },
+    {
+      "t_s": 1.8390401589144848e-06,
+      "K_J": 1.0705707340106807e+25,
+      "U_J": 1.358374573833235e+25,
+      "nuclear_mass_excess_J": 2.278063088564824e+22,
+      "nuclear_full_atomic_mass_J": 2.278063083086878e+22,
+      "weak_J": 9.43907815952194,
+      "radiation_J": 4.7264797484604876e+20,
+      "nuclear_charge_change_per_baryon": 2.69440960153759e-16
+    },
+    {
+      "t_s": 1.8603411752511867e-06,
+      "K_J": 1.1260504083260481e+25,
+      "U_J": 1.3029011011794948e+25,
+      "nuclear_mass_excess_J": 2.2856244892086454e+22,
+      "nuclear_full_atomic_mass_J": 2.285624483897623e+22,
+      "weak_J": 9.455812116934727,
+      "radiation_J": 4.8624571507517725e+20,
+      "nuclear_charge_change_per_baryon": 2.612320446570295e-16
+    },
+    {
+      "t_s": 1.8816982670606368e-06,
+      "K_J": 1.1794308259702143e+25,
+      "U_J": 1.2495253552032173e+25,
+      "nuclear_mass_excess_J": 2.2916851426869272e+22,
+      "nuclear_full_atomic_mass_J": 2.29168513757165e+22,
+      "weak_J": 9.472647592035395,
+      "radiation_J": 5.00135734036576e+20,
+      "nuclear_charge_change_per_baryon": 2.516050558801912e-16
+    },
+    {
+      "t_s": 1.903215535251925e-06,
+      "K_J": 1.230954098952968e+25,
+      "U_J": 1.1980054782763661e+25,
+      "nuclear_mass_excess_J": 2.296507460093995e+22,
+      "nuclear_full_atomic_mass_J": 2.2965074551156022e+22,
+      "weak_J": 9.489670845650744,
+      "radiation_J": 5.143976670541063e+20,
+      "nuclear_charge_change_per_baryon": 2.4486978236968995e-16
+    },
+    {
+      "t_s": 1.92565021312848e-06,
+      "K_J": 1.2822989977485448e+25,
+      "U_J": 1.1466629665836638e+25,
+      "nuclear_mass_excess_J": 2.3004106009324116e+22,
+      "nuclear_full_atomic_mass_J": 2.3004105955792193e+22,
+      "weak_J": 9.507486100237662,
+      "radiation_J": 5.295590689331647e+20,
+      "nuclear_charge_change_per_baryon": 2.633056068139518e-16
+    },
+    {
+      "t_s": 1.946507315152766e-06,
+      "K_J": 1.3279071653854681e+25,
+      "U_J": 1.1010561575213198e+25,
+      "nuclear_mass_excess_J": 2.303205188643556e+22,
+      "nuclear_full_atomic_mass_J": 2.3032051834435915e+22,
+      "weak_J": 9.524106368000318,
+      "radiation_J": 5.4392202996688126e+20,
+      "nuclear_charge_change_per_baryon": 2.5576747011075235e-16
+    },
+    {
+      "t_s": 1.9701639538300116e-06,
+      "K_J": 1.3772300081814526e+25,
+      "U_J": 1.051734052383784e+25,
+      "nuclear_mass_excess_J": 2.305603115226092e+22,
+      "nuclear_full_atomic_mass_J": 2.3056031098858063e+22,
+      "weak_J": 9.543018088603949,
+      "radiation_J": 5.605203748483997e+20,
+      "nuclear_charge_change_per_baryon": 2.626691057903754e-16
+    },
+    {
+      "t_s": 1.994143195886296e-06,
+      "K_J": 1.4247374754347693e+25,
+      "U_J": 1.0042266485755833e+25,
+      "nuclear_mass_excess_J": 2.3073821208057884e+22,
+      "nuclear_full_atomic_mass_J": 2.30738211487517e+22,
+      "weak_J": 9.56224372650907,
+      "radiation_J": 5.776615037144708e+20,
+      "nuclear_charge_change_per_baryon": 2.917086078611282e-16
+    },
+    {
+      "t_s": 2.0181224379425806e-06,
+      "K_J": 1.4698597215605414e+25,
+      "U_J": 9.591039446918275e+24,
+      "nuclear_mass_excess_J": 2.308664054820611e+22,
+      "nuclear_full_atomic_mass_J": 2.308664048691117e+22,
+      "weak_J": 9.581514869888656,
+      "radiation_J": 5.950792264070343e+20,
+      "nuclear_charge_change_per_baryon": 3.0149955539830006e-16
+    },
+    {
+      "t_s": 2.0455272860069053e-06,
+      "K_J": 1.5186238772694828e+25,
+      "U_J": 9.103387882785506e+24,
+      "nuclear_mass_excess_J": 2.3096815617918777e+22,
+      "nuclear_full_atomic_mass_J": 2.3096815560808164e+22,
+      "weak_J": 9.603581618809367,
+      "radiation_J": 6.15258639945292e+20,
+      "nuclear_charge_change_per_baryon": 2.8091129102824847e-16
+    },
+    {
+      "t_s": 2.0695065280631897e-06,
+      "K_J": 1.5589458269082677e+25,
+      "U_J": 8.700156623260027e+24,
+      "nuclear_mass_excess_J": 2.310288842613035e+22,
+      "nuclear_full_atomic_mass_J": 2.310288836963339e+22,
+      "weak_J": 9.622917477874784,
+      "radiation_J": 6.330944176626911e+20,
+      "nuclear_charge_change_per_baryon": 2.7789411668947664e-16
+    },
+    {
+      "t_s": 2.093485770119474e-06,
+      "K_J": 1.5971794616397914e+25,
+      "U_J": 8.317806527913275e+24,
+      "nuclear_mass_excess_J": 2.3107085053918615e+22,
+      "nuclear_full_atomic_mass_J": 2.3107084997849147e+22,
+      "weak_J": 9.642271641183065,
+      "radiation_J": 6.510390403796441e+20,
+      "nuclear_charge_change_per_baryon": 2.7578230726913467e-16
+    },
+    {
+      "t_s": 2.1174650121757587e-06,
+      "K_J": 1.6334224802983304e+25,
+      "U_J": 7.955361206021515e+24,
+      "nuclear_mass_excess_J": 2.3109947026816555e+22,
+      "nuclear_full_atomic_mass_J": 2.3109946971564104e+22,
+      "weak_J": 9.661638783666653,
+      "radiation_J": 6.690370546324034e+20,
+      "nuclear_charge_change_per_baryon": 2.717699081274491e-16
+    },
+    {
+      "t_s": 2.141444254232043e-06,
+      "K_J": 1.6677717535116535e+25,
+      "U_J": 7.611852401692805e+24,
+      "nuclear_mass_excess_J": 2.3111873226911643e+22,
+      "nuclear_full_atomic_mass_J": 2.3111873167225468e+22,
+      "weak_J": 9.681014943788387,
+      "radiation_J": 6.870342258056327e+20,
+      "nuclear_charge_change_per_baryon": 2.935789895350751e-16
+    },
+    {
+      "t_s": 2.165423496288327e-06,
+      "K_J": 1.7003224332657585e+25,
+      "U_J": 7.286328939658596e+24,
+      "nuclear_mass_excess_J": 2.3113152676709194e+22,
+      "nuclear_full_atomic_mass_J": 2.3113152620835323e+22,
+      "weak_J": 9.700397249681004,
+      "radiation_J": 7.049786098111206e+20,
+      "nuclear_charge_change_per_baryon": 2.748288293153467e-16
+    },
+    {
+      "t_s": 2.1894027383446117e-06,
+      "K_J": 1.731167294048624e+25,
+      "U_J": 6.977863328021876e+24,
+      "nuclear_mass_excess_J": 2.3113991456870713e+22,
+      "nuclear_full_atomic_mass_J": 2.311399139853249e+22,
+      "weak_J": 9.719783662892992,
+      "radiation_J": 7.228214382833496e+20,
+      "nuclear_charge_change_per_baryon": 2.8695132422470806e-16
+    },
+    {
+      "t_s": 2.216807586408937e-06,
+      "K_J": 1.7644450130143718e+25,
+      "U_J": 6.645066531273541e+24,
+      "nuclear_mass_excess_J": 2.311459384968328e+22,
+      "nuclear_full_atomic_mass_J": 2.31145937915541e+22,
+      "weak_J": 9.74194279183702,
+      "radiation_J": 7.43031459173839e+20,
+      "nuclear_charge_change_per_baryon": 2.859227517757278e-16
+    },
+    {
+      "t_s": 2.2407868284652213e-06,
+      "K_J": 1.7919332451994816e+25,
+      "U_J": 6.370167053953691e+24,
+      "nuclear_mass_excess_J": 2.311491865002479e+22,
+      "nuclear_full_atomic_mass_J": 2.311491858954024e+22,
+      "weak_J": 9.761333788083995,
+      "radiation_J": 7.605109449968361e+20,
+      "nuclear_charge_change_per_baryon": 2.975087207722568e-16
+    },
+    {
+      "t_s": 2.2647660705215053e-06,
+      "K_J": 1.817987253070018e+25,
+      "U_J": 6.109609928149252e+24,
+      "nuclear_mass_excess_J": 2.311512304866926e+22,
+      "nuclear_full_atomic_mass_J": 2.3115122991345382e+22,
+      "weak_J": 9.780725764084323,
+      "radiation_J": 7.77762536197373e+20,
+      "nuclear_charge_change_per_baryon": 2.819667262347112e-16
+    },
+    {
+      "t_s": 2.28874531257779e-06,
+      "K_J": 1.8426862977257343e+25,
+      "U_J": 5.862602615749144e+24,
+      "nuclear_mass_excess_J": 2.3115250030953726e+22,
+      "nuclear_full_atomic_mass_J": 2.3115249974133842e+22,
+      "weak_J": 9.80011830776292,
+      "radiation_J": 7.947555321885257e+20,
+      "nuclear_charge_change_per_baryon": 2.794874749968217e-16
+    },
+    {
+      "t_s": 2.3127245546340743e-06,
+      "K_J": 1.8661060180147314e+25,
+      "U_J": 5.628388782439606e+24,
+      "nuclear_mass_excess_J": 2.3115327914755614e+22,
+      "nuclear_full_atomic_mass_J": 2.311532785624346e+22,
+      "weak_J": 9.819511150467777,
+      "radiation_J": 8.114638391719297e+20,
+      "nuclear_charge_change_per_baryon": 2.8780832323467917e-16
+    },
+    {
+      "t_s": 2.3367037966903588e-06,
+      "K_J": 1.8883184190378673e+25,
+      "U_J": 5.406248417548217e+24,
+      "nuclear_mass_excess_J": 2.3115375080444455e+22,
+      "nuclear_full_atomic_mass_J": 2.3115375025578186e+22,
+      "weak_J": 9.838904120509152,
+      "radiation_J": 8.278657883126298e+20,
+      "nuclear_charge_change_per_baryon": 2.69878559414205e-16
+    },
+    {
+      "t_s": 2.3641086447546834e-06,
+      "K_J": 1.9123132499756078e+25,
+      "U_J": 5.166281791549227e+24,
+      "nuclear_mass_excess_J": 2.311540623944922e+22,
+      "nuclear_full_atomic_mass_J": 2.3115406181532466e+22,
+      "weak_J": 9.861067535565729,
+      "radiation_J": 8.46213459647452e+20,
+      "nuclear_charge_change_per_baryon": 2.848764796502842e-16
+    },
+    {
+      "t_s": 2.388087886810968e-06,
+      "K_J": 1.9321643181951092e+25,
+      "U_J": 4.967755433324768e+24,
+      "nuclear_mass_excess_J": 2.3115421672826366e+22,
+      "nuclear_full_atomic_mass_J": 2.3115421615147937e+22,
+      "weak_J": 9.880460471974445,
+      "radiation_J": 8.619048840091067e+20,
+      "nuclear_charge_change_per_baryon": 2.83707283390704e-16
+    },
+    {
+      "t_s": 2.4120671288672524e-06,
+      "K_J": 1.9510112032494457e+25,
+      "U_J": 4.7792712491699516e+24,
+      "nuclear_mass_excess_J": 2.3115430658966125e+22,
+      "nuclear_full_atomic_mass_J": 2.3115430601526646e+22,
+      "weak_J": 9.899853323744352,
+      "radiation_J": 8.772474151407451e+20,
+      "nuclear_charge_change_per_baryon": 2.8253385514787096e-16
+    },
+    {
+      "t_s": 2.436046370923537e-06,
+      "K_J": 1.9689114608512166e+25,
+      "U_J": 4.600253691385783e+24,
+      "nuclear_mass_excess_J": 2.3115435827482545e+22,
+      "nuclear_full_atomic_mass_J": 2.3115435768800143e+22,
+      "weak_J": 9.919246073545173,
+      "radiation_J": 8.92234424677029e+20,
+      "nuclear_charge_change_per_baryon": 2.8864149464514613e-16
+    },
+    {
+      "t_s": 2.4600256129798214e-06,
+      "K_J": 1.9859194152992087e+25,
+      "U_J": 4.430159522101036e+24,
+      "nuclear_mass_excess_J": 2.31154387644437e+22,
+      "nuclear_full_atomic_mass_J": 2.3115438706236313e+22,
+      "weak_J": 9.9386387143316,
+      "radiation_J": 9.068619910800617e+20,
+      "nuclear_charge_change_per_baryon": 2.8631346837834867e-16
+    },
+    {
+      "t_s": 2.4840048550361054e-06,
+      "K_J": 2.0020862850163996e+25,
+      "U_J": 4.2684765600085786e+24,
+      "nuclear_mass_excess_J": 2.3115440413506257e+22,
+      "nuclear_full_atomic_mass_J": 2.3115440353626217e+22,
+      "weak_J": 9.958031245304682,
+      "radiation_J": 9.211285488856433e+20,
+      "nuclear_charge_change_per_baryon": 2.9453626604907316e-16
+    },
+    {
+      "t_s": 2.50798409709239e-06,
+      "K_J": 2.017460314322584e+25,
+      "U_J": 4.114722361921092e+24,
+      "nuclear_mass_excess_J": 2.3115441328585483e+22,
+      "nuclear_full_atomic_mass_J": 2.311544126710829e+22,
+      "weak_J": 9.977423669318616,
+      "radiation_J": 9.35034559041195e+20,
+      "nuclear_charge_change_per_baryon": 3.0239513422378575e-16
+    },
+    {
+      "t_s": 2.535388945156715e-06,
+      "K_J": 2.0341179301554116e+25,
+      "U_J": 3.9481307501056587e+24,
+      "nuclear_mass_excess_J": 2.311544188038039e+22,
+      "nuclear_full_atomic_mass_J": 2.3115441818512596e+22,
+      "weak_J": 9.999586314942205,
+      "radiation_J": 9.504885215793115e+20,
+      "nuclear_charge_change_per_baryon": 3.0431539768629603e-16
+    },
+    {
+      "t_s": 2.5593681872129995e-06,
+      "K_J": 2.047942453903699e+25,
+      "U_J": 3.8098723704274405e+24,
+      "nuclear_mass_excess_J": 2.311544212954716e+22,
+      "nuclear_full_atomic_mass_J": 2.311544206490325e+22,
+      "weak_J": 10.018978527379385,
+      "radiation_J": 9.636311101108937e+20,
+      "nuclear_charge_change_per_baryon": 3.1797041081049137e-16
+    },
+    {
+      "t_s": 2.5833474292692835e-06,
+      "K_J": 2.061107921532034e+25,
+      "U_J": 3.6782049007378977e+24,
+      "nuclear_mass_excess_J": 2.3115442262949063e+22,
+      "nuclear_full_atomic_mass_J": 2.311544220038396e+22,
+      "weak_J": 10.038370650691837,
+      "radiation_J": 9.764245335738784e+20,
+      "nuclear_charge_change_per_baryon": 3.0774678114434555e-16
+    },
+    {
+      "t_s": 2.607326671325568e-06,
+      "K_J": 2.0736517103577678e+25,
+      "U_J": 3.552754562376163e+24,
+      "nuclear_mass_excess_J": 2.3115442333594396e+22,
+      "nuclear_full_atomic_mass_J": 2.3115442272458758e+22,
+      "weak_J": 10.057762691075654,
+      "radiation_J": 9.888746909458246e+20,
+      "nuclear_charge_change_per_baryon": 3.0071578805496957e-16
+    },
+    {
+      "t_s": 2.6313059133818525e-06,
+      "K_J": 2.085608922186928e+25,
+      "U_J": 3.4331703305465453e+24,
+      "nuclear_mass_excess_J": 2.3115442370607267e+22,
+      "nuclear_full_atomic_mass_J": 2.3115442305618737e+22,
+      "weak_J": 10.07715465449308,
+      "radiation_J": 1.0009882292270799e+21,
+      "nuclear_charge_change_per_baryon": 3.196694648048139e-16
+    },
+    {
+      "t_s": 2.655285155438137e-06,
+      "K_J": 2.0970125127307212e+25,
+      "U_J": 3.3191226411153187e+24,
+      "nuclear_mass_excess_J": 2.311544238980233e+22,
+      "nuclear_full_atomic_mass_J": 2.311544232280933e+22,
+      "weak_J": 10.096546546572318,
+      "radiation_J": 1.012772376091701e+21,
+      "nuclear_charge_change_per_baryon": 3.29529180208165e-16
+    },
+    {
+      "t_s": 2.6792643974944214e-06,
+      "K_J": 2.1078934167737157e+25,
+      "U_J": 3.2103021380994664e+24,
+      "nuclear_mass_excess_J": 2.311544239965922e+22,
+      "nuclear_full_atomic_mass_J": 2.31154423315802e+22,
+      "weak_J": 10.115938372563434,
+      "radiation_J": 1.0242347952008166e+21,
+      "nuclear_charge_change_per_baryon": 3.348689104157687e-16
+    },
+    {
+      "t_s": 2.706669245558746e-06,
+      "K_J": 2.1197258737905883e+25,
+      "U_J": 3.0919648518154404e+24,
+      "nuclear_mass_excess_J": 2.3115442405149516e+22,
+      "nuclear_full_atomic_mass_J": 2.3115442335868443e+22,
+      "weak_J": 10.138100384704371,
+      "radiation_J": 1.0369509948294057e+21,
+      "nuclear_charge_change_per_baryon": 3.407764242232096e-16
+    },
+    {
+      "t_s": 2.7306484876150306e-06,
+      "K_J": 2.1295822185081728e+25,
+      "U_J": 2.993390604566512e+24,
+      "nuclear_mass_excess_J": 2.3115442407439468e+22,
+      "nuclear_full_atomic_mass_J": 2.3115442334171872e+22,
+      "weak_J": 10.157492084959157,
+      "radiation_J": 1.0477511284975255e+21,
+      "nuclear_charge_change_per_baryon": 3.603891332055102e-16
+    },
+    {
+      "t_s": 2.754627729671315e-06,
+      "K_J": 2.1390012560891443e+25,
+      "U_J": 2.8991897246252785e+24,
+      "nuclear_mass_excess_J": 2.3115442408584617e+22,
+      "nuclear_full_atomic_mass_J": 2.311544233317536e+22,
+      "weak_J": 10.176883733144859,
+      "radiation_J": 1.0582552081531138e+21,
+      "nuclear_charge_change_per_baryon": 3.7092309280396705e-16
+    },
+    {
+      "t_s": 2.7786069717275995e-06,
+      "K_J": 2.148006772870973e+25,
+      "U_J": 2.809124340404001e+24,
+      "nuclear_mass_excess_J": 2.3115442409153235e+22,
+      "nuclear_full_atomic_mass_J": 2.311544233162202e+22,
+      "weak_J": 10.196275332994034,
+      "radiation_J": 1.0684715994302892e+21,
+      "nuclear_charge_change_per_baryon": 3.813639047941576e-16
+    },
+    {
+      "t_s": 2.8025862137838836e-06,
+      "K_J": 2.156621096957041e+25,
+      "U_J": 2.722971162481457e+24,
+      "nuclear_mass_excess_J": 2.311544240943481e+22,
+      "nuclear_full_atomic_mass_J": 2.311544233086312e+22,
+      "weak_J": 10.215666887929533,
+      "radiation_J": 1.0784086495570699e+21,
+      "nuclear_charge_change_per_baryon": 3.864801325208535e-16
+    },
+    {
+      "t_s": 2.826565455840168e-06,
+      "K_J": 2.1648651909845707e+25,
+      "U_J": 2.64052055628134e+24,
+      "nuclear_mass_excess_J": 2.3115442409572577e+22,
+      "nuclear_full_atomic_mass_J": 2.311544232823386e+22,
+      "weak_J": 10.235058401089969,
+      "radiation_J": 1.0880746399173428e+21,
+      "nuclear_charge_change_per_baryon": 4.000908448757995e-16
+    },
+    {
+      "t_s": 2.853970303904493e-06,
+      "K_J": 2.1738588657936623e+25,
+      "U_J": 2.5505730827157794e+24,
+      "nuclear_mass_excess_J": 2.311544240964689e+22,
+      "nuclear_full_atomic_mass_J": 2.311544232620384e+22,
+      "weak_J": 10.257220082944999,
+      "radiation_J": 1.0988000597985806e+21,
+      "nuclear_charge_change_per_baryon": 4.1044200710969845e-16
+    },
+    {
+      "t_s": 2.8779495459607777e-06,
+      "K_J": 2.1813743642612878e+25,
+      "U_J": 2.4754089855676584e+24,
+      "nuclear_mass_excess_J": 2.3115442409676487e+22,
+      "nuclear_full_atomic_mass_J": 2.3115442323627153e+22,
+      "weak_J": 10.276611515978633,
+      "radiation_J": 1.1079125688775416e+21,
+      "nuclear_charge_change_per_baryon": 4.232656639484901e-16
+    },
+    {
+      "t_s": 2.901928788017062e-06,
+      "K_J": 2.1885775709545203e+25,
+      "U_J": 2.4033680519621718e+24,
+      "nuclear_mass_excess_J": 2.311544240969169e+22,
+      "nuclear_full_atomic_mass_J": 2.3115442322647384e+22,
+      "weak_J": 10.296002915514462,
+      "radiation_J": 1.1167792315274938e+21,
+      "nuclear_charge_change_per_baryon": 4.2815390281579503e-16
+    },
+    {
+      "t_s": 2.92318379352789e-06,
+      "K_J": 2.1947143839107626e+25,
+      "U_J": 2.3419922624112777e+24,
+      "nuclear_mass_excess_J": 2.311544240969782e+22,
+      "nuclear_full_atomic_mass_J": 2.3115442320536634e+22,
+      "weak_J": 10.313191268427316,
+      "radiation_J": 1.1244392103582036e+21,
+      "nuclear_charge_change_per_baryon": 4.3857075284697895e-16
+    }
+  ],
+  "limits": [
+    "Nuclear charge is not conserved alone under beta decay; signed weak-charge accumulator closes its change.",
+    "Integrated nuclear heating is an independent saved ODE variable, but shares reaction flows and mass/Q source with abundance integration.",
+    "Force/work cancellation is an algebraic semidiscrete check; positive viscosity entropy is a distinct requirement.",
+    "Sparse trace quadrature is not an accurate total viscous-work integral or a resolved shock study.",
+    "Conservation does not establish correct opacity, EOS, nuclear rates, multidimensional dynamics, driver preparation, or collection."
+  ],
+  "checks": {
+    "reported_fields_reproduce": true,
+    "metadata_units_reproduce": true,
+    "baryon_conservation_all_samples": true,
+    "roundoff_negativity_only": true,
+    "energy_residual_below_1e_4_input": true,
+    "semidiscrete_force_work_cancels": true,
+    "viscous_entropy_sign_valid_at_samples": false,
+    "requested_final_time_completed": true
+  },
+  "all_checks_pass": false
+}

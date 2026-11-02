@@ -1,0 +1,340 @@
+{
+  "scope": "Positive-prestress three-family support at reduced receiver masses.\nStatic construction plus global affine energy/control screen; no local network proof.\nThe comparison masses keep archived current128 rate and99% energy capture solely\nfor reference. No capture qualification or selected thinner plant is inferred.\n",
+  "code_sha256": "3d8c102d8dd2a4fea5ff4ff3e6e873f96817d39adcf25dae40ffc7dd60680c32",
+  "input_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/current-rate128-sigma2000.json": "b34381f2ac61a6173b738a7dfc39b8a7e9d31b3a408e6bf770292d0764c6a91f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/current-rate128-reduced-inputs.json": "57eeff11dd9cf3ce618331fd94f07d49f235ae42d9f9530ffcd721bcb688f1ef",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/plant_compare.py": "803f41c8dff52d4c91e824de50f0ddddfa59ff3dd3a01270b72435828ad71884",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/support-topology.json": "606b052f6c7f74e81adb7d1e23fb25427efe12c610a48da5ab8550fe2392b679",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/sector-account.json": "fa1ab40f1dfe8b7179917fd8a6038ab6ba0c9deb4d2fbfcbc6b88e29e485d6db"
+  },
+  "radius_m": 1100000000.0,
+  "n2_s2": 3.171308690689552e-16,
+  "target_minimum_effective_a_over_n2": 4.4,
+  "positive_family_limit": 4.0,
+  "prestress_area_quadratic": "(2 tr(E)^2 + 2 ||E||\u00b2 - 3 tr(E\u00b2))/15",
+  "prestress_normalized_energy": "3 T/(sigma R\u00b2) times surface-area expansion",
+  "rows": [
+    {
+      "receiver_kg_m2_comparison": 500.0,
+      "mass_kg_same_rate99pct_capture": 3.626520648407736e+22,
+      "body_kg_m2": 2385.0358984252753,
+      "a_over_n2": 2.867142704707157,
+      "effective_a_over_n2": 4.400000000000001,
+      "pretension_N_m": 701440.0154619343,
+      "added_inward_pressure_Pa": 0.0012753454826580624,
+      "frame_requirement": {
+        "existing_package_kg_m2": 20.0,
+        "extensional_modulus_N_m": 100000000.0,
+        "Poisson_ratio": 0.2,
+        "small_biaxial_prestrain": 0.005611520123695474,
+        "ideal_100GPa_2000density_sheet_kg_m2": 2.0,
+        "stress_in_ideal_1mm_load_layer_Pa": 701440015.4619342,
+        "stress_if_8kg_m2_is_loadbearing_at2000density_Pa": 175360003.86548355,
+        "scope": "Cold load-path and joint requirements. The20kg/m\u00b2 frame is retained inside services. An8kg/m\u00b2 equivalent load layer leaves12kg/m\u00b2 for joints/attachments, but geometry and material allowable must actually achieve E2D and tension together."
+      },
+      "stream_axis_kg_m2": [
+        0.038438647537340366,
+        0.010982470724954393,
+        0.0018304117874924021
+      ],
+      "stream_mass_kg": 7.792953226018956e+17,
+      "stream_mass_relative_to_existing_scalar_budget": 0.9544680062932793,
+      "stream_loss_W_m2_at_0p001_per_revolution": 0.0024717982874080118,
+      "heaviest_local_epsilon_ratio_to_old_tested": 0.6160964710255874,
+      "affine_cases": [
+        {
+          "attitude_days": 30.0,
+          "maximum_growth_per_s": -5.718953724182735e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            45.820760312443646,
+            45.987902622080604,
+            46.52656855247516,
+            47.04605324526339,
+            48.01176166795238,
+            97.5952135036689,
+            163.69858781944586,
+            163.70683747729865,
+            163.71408481320654
+          ]
+        },
+        {
+          "attitude_days": 100.0,
+          "maximum_growth_per_s": -2.4502703383062206e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            14.670662727543032,
+            14.6976128321391,
+            14.728953926456297,
+            45.86521480453915,
+            46.066554554679925,
+            46.53143229240082,
+            47.04605324526335,
+            48.011761667952385,
+            97.5952135036689
+          ]
+        },
+        {
+          "attitude_days": 300.0,
+          "maximum_growth_per_s": -8.661875781804635e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            1.5931498835364493,
+            1.6122157355946527,
+            1.6342658071483471,
+            45.85480793158344,
+            46.048263429186335,
+            46.53031644220858,
+            47.04605324526337,
+            48.01176166795239,
+            97.59521350366894
+          ]
+        }
+      ],
+      "nonlinear_check_max_second_order_error_over_a": 4.94785951607021e-08,
+      "nonlinear_check_max_first_order_residual_over_a": 7.35929945182895e-09
+    },
+    {
+      "receiver_kg_m2_comparison": 1000.0,
+      "mass_kg_same_rate99pct_capture": 4.5784653562226055e+22,
+      "body_kg_m2": 3011.0966661893517,
+      "a_over_n2": 3.619754254153138,
+      "effective_a_over_n2": 4.4,
+      "pretension_N_m": 450764.8051355375,
+      "added_inward_pressure_Pa": 0.0008195723729737046,
+      "frame_requirement": {
+        "existing_package_kg_m2": 20.0,
+        "extensional_modulus_N_m": 100000000.0,
+        "Poisson_ratio": 0.2,
+        "small_biaxial_prestrain": 0.0036061184410843003,
+        "ideal_100GPa_2000density_sheet_kg_m2": 2.0,
+        "stress_in_ideal_1mm_load_layer_Pa": 450764805.1355375,
+        "stress_if_8kg_m2_is_loadbearing_at2000density_Pa": 112691201.28388438,
+        "scope": "Cold load-path and joint requirements. The20kg/m\u00b2 frame is retained inside services. An8kg/m\u00b2 equivalent load layer leaves12kg/m\u00b2 for joints/attachments, but geometry and material allowable must actually achieve E2D and tension together."
+      },
+      "stream_axis_kg_m2": [
+        0.04852861272609453,
+        0.013865317921741296,
+        0.002310886320290217
+      ],
+      "stream_mass_kg": 9.83856699772455e+17,
+      "stream_mass_relative_to_existing_scalar_budget": 0.8459528533837402,
+      "stream_loss_W_m2_at_0p001_per_revolution": 0.003120633776464729,
+      "heaviest_local_epsilon_ratio_to_old_tested": 0.6160964710255874,
+      "affine_cases": [
+        {
+          "attitude_days": 30.0,
+          "maximum_growth_per_s": -5.632876367324092e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            28.449178189061143,
+            28.582014827990953,
+            29.007730191867296,
+            29.415405013096738,
+            30.163228709107365,
+            61.0138441931961,
+            129.66266405872625,
+            129.66869236528828,
+            129.67398665041938
+          ]
+        },
+        {
+          "attitude_days": 100.0,
+          "maximum_growth_per_s": -3.707474694519154e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            11.59772502337825,
+            11.628751604084332,
+            11.665170945891587,
+            28.496784660527627,
+            28.66594216529474,
+            29.01288901496446,
+            29.41540501309672,
+            30.163228709107347,
+            61.01384419319611
+          ]
+        },
+        {
+          "attitude_days": 300.0,
+          "maximum_growth_per_s": -1.3724396223102012e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            1.251957965677079,
+            1.2713516218947554,
+            1.2938652552637793,
+            28.48123217768535,
+            28.638756757964057,
+            29.011242240560417,
+            29.415405013096702,
+            30.163228709107358,
+            61.013844193196086
+          ]
+        }
+      ],
+      "nonlinear_check_max_second_order_error_over_a": 4.223786523209169e-08,
+      "nonlinear_check_max_first_order_residual_over_a": 1.0745223030450311e-08
+    },
+    {
+      "receiver_kg_m2_comparison": 1500.0,
+      "mass_kg_same_rate99pct_capture": 5.530417070775705e+22,
+      "body_kg_m2": 3637.1620420403056,
+      "a_over_n2": 4.3723713431562725,
+      "effective_a_over_n2": 4.4,
+      "pretension_N_m": 19280.412211481744,
+      "added_inward_pressure_Pa": 3.5055294929966804e-05,
+      "frame_requirement": {
+        "existing_package_kg_m2": 20.0,
+        "extensional_modulus_N_m": 100000000.0,
+        "Poisson_ratio": 0.2,
+        "small_biaxial_prestrain": 0.00015424329769185395,
+        "ideal_100GPa_2000density_sheet_kg_m2": 2.0,
+        "stress_in_ideal_1mm_load_layer_Pa": 19280412.211481743,
+        "stress_if_8kg_m2_is_loadbearing_at2000density_Pa": 4820103.052870436,
+        "scope": "Cold load-path and joint requirements. The20kg/m\u00b2 frame is retained inside services. An8kg/m\u00b2 equivalent load layer leaves12kg/m\u00b2 for joints/attachments, but geometry and material allowable must actually achieve E2D and tension together."
+      },
+      "stream_axis_kg_m2": [
+        0.05861865218149911,
+        0.016748186337571174,
+        0.002791364389595197
+      ],
+      "stream_mass_kg": 1.188419582606116e+18,
+      "stream_mass_relative_to_existing_scalar_budget": 0.7595927740669826,
+      "stream_loss_W_m2_at_0p001_per_revolution": 0.003769474041240442,
+      "heaviest_local_epsilon_ratio_to_old_tested": 0.6160964710255874,
+      "affine_cases": [
+        {
+          "attitude_days": 30.0,
+          "maximum_growth_per_s": -5.4970947851746764e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            19.293548582953033,
+            19.40373259863084,
+            19.755715706748706,
+            20.089732409572235,
+            20.694097393423394,
+            41.49889584741065,
+            107.34377515939188,
+            107.34852459309816,
+            107.35269499994264
+          ]
+        },
+        {
+          "attitude_days": 100.0,
+          "maximum_growth_per_s": -5.0651474539383176e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            9.57581064480752,
+            9.612285973222338,
+            9.655707342585185,
+            19.347495265011766,
+            19.498325015948947,
+            19.76149158573841,
+            20.089732409572232,
+            20.6940973934234,
+            41.49889584741064
+          ]
+        },
+        {
+          "attitude_days": 300.0,
+          "maximum_growth_per_s": -1.9872643681073677e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            1.027910521147223,
+            1.0476379607618678,
+            1.0706324308130772,
+            19.324689041180644,
+            19.458770903317653,
+            19.759112261218913,
+            20.089732409572232,
+            20.694097393423394,
+            41.498895847410665
+          ]
+        }
+      ],
+      "nonlinear_check_max_second_order_error_over_a": 4.2355381019844444e-08,
+      "nonlinear_check_max_first_order_residual_over_a": 5.536933264168673e-09
+    },
+    {
+      "receiver_kg_m2_comparison": 2000.0,
+      "mass_kg_same_rate99pct_capture": 6.482375792221752e+22,
+      "body_kg_m2": 4263.232026079888,
+      "a_over_n2": 5.12499397183888,
+      "effective_a_over_n2": 5.1372194861372895,
+      "pretension_N_m": 10000.0,
+      "added_inward_pressure_Pa": 1.8181818181818182e-05,
+      "frame_requirement": {
+        "existing_package_kg_m2": 20.0,
+        "extensional_modulus_N_m": 100000000.0,
+        "Poisson_ratio": 0.2,
+        "small_biaxial_prestrain": 8e-05,
+        "ideal_100GPa_2000density_sheet_kg_m2": 2.0,
+        "stress_in_ideal_1mm_load_layer_Pa": 10000000.0,
+        "stress_if_8kg_m2_is_loadbearing_at2000density_Pa": 2500000.0,
+        "scope": "Cold load-path and joint requirements. The20kg/m\u00b2 frame is retained inside services. An8kg/m\u00b2 equivalent load layer leaves12kg/m\u00b2 for joints/attachments, but geometry and material allowable must actually achieve E2D and tension together."
+      },
+      "stream_axis_kg_m2": [
+        0.07473893746397428,
+        0.025661247531692848,
+        0.009302017554265714
+      ],
+      "stream_mass_kg": 1.6680558266892844e+18,
+      "stream_mass_relative_to_existing_scalar_budget": 0.8253334405475558,
+      "stream_loss_W_m2_at_0p001_per_revolution": 0.005290802364815194,
+      "heaviest_local_epsilon_ratio_to_old_tested": 0.6701677000470733,
+      "affine_cases": [
+        {
+          "attitude_days": 30.0,
+          "maximum_growth_per_s": -5.5084701009995536e-12,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            13.757389895569938,
+            13.851516917618131,
+            14.151545582794856,
+            14.59567193122691,
+            15.100748650089557,
+            30.422631656096968,
+            91.57996239528023,
+            91.58387372105028,
+            91.58730778936578
+          ]
+        },
+        {
+          "attitude_days": 100.0,
+          "maximum_growth_per_s": -6.707370803231389e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            8.135722956510218,
+            8.180756242793878,
+            8.235717167407865,
+            13.823189057042303,
+            13.965783433689666,
+            14.158472493883119,
+            14.595671931226923,
+            15.100748650089553,
+            30.42263165609697
+          ]
+        },
+        {
+          "attitude_days": 300.0,
+          "maximum_growth_per_s": -2.8395215054805582e-11,
+          "growing": false,
+          "H_eigenvalues_over_a": [
+            0.8689016020146626,
+            0.8891758780588256,
+            0.9129189363250759,
+            13.788411767554583,
+            13.906247133962443,
+            14.154913070743138,
+            14.595671931226924,
+            15.100748650089551,
+            30.422631656096964
+          ]
+        }
+      ],
+      "nonlinear_check_max_second_order_error_over_a": 2.4829451996337716e-08,
+      "nonlinear_check_max_first_order_residual_over_a": 5.158824445330834e-09
+    }
+  ],
+  "qualification": "Static topology and9DOF affine screen only. Local flexible-guide instability/control remains separate; smaller positive epsilon is compared with its tested range, not proof of a full coupled network. No new plant performance/capture credit. Source, guide hardware, local frame and processing allocations do not shrink with stream mass."
+}

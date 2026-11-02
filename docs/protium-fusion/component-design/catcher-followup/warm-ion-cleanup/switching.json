@@ -1,0 +1,238 @@
+{
+  "scope": "Broad cleanup magnet interaction, cycle-energy and slow-tail requirements.",
+  "code_sha256": "be078534616503ba1432027698723cd2536bf49c10bf49e10be44d7572e0b6cc",
+  "source_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/input.json": "e0f4f1fd5eea5e9e7f33f2768679af57bf965d248d75a694e5b904d82f290261",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/events.csv": "36feead65d3b610ffdef9b1f9ca6c04edb66ecc5a01783970f5a49cafa3d5d9a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/schedule.json": "523e9448fae19a6f24f2144dd27340eea70f9bb5cfcc0094b6791b13d4df35ac",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-spectra.json": "c4a065e110afc72fd03a5aaff7af1161594a04554d9a874abceba1f023b0513e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/warm-ion-cleanup/coil-array.json": "70d60b52ae52625640580d089c8f70ee7c3a6ffa1c88271e5ccb72c6d3876f2d"
+  },
+  "event_rate_s": 0.00013225725725725726,
+  "events_per_year": 4173.721621621621,
+  "live_mass999_with10s_recovery": 0.7970058470499236,
+  "live_full_resolved_with10s_recovery": 0.00012037347569349155,
+  "field_Bmin_T": 0.2038231872994329,
+  "magnetic_pressure_at_Bmin_Pa": 16529.789290723646,
+  "rows": [
+    {
+      "pitch_m": 10.0,
+      "field_energy_J_m2": 739646.1671363844,
+      "unsigned_charge_and_discharge_throughput_W_m2": 195.6471468126022,
+      "cycle_loss_W_m2": {
+        "0.0001": 0.009782357340630111,
+        "0.001": 0.0978235734063011,
+        "0.01": 0.978235734063011,
+        "0.1": 9.78235734063011,
+        "1.0": 97.8235734063011
+      },
+      "cold_fraction_of_cycle_loss": {
+        "scope": "Loss location matters: dissipation at65K also incurs1/COP refrigerator work. Room-temperature recovery electronics are separately cooled.",
+        "refrigerator_multiplier_for_cold_loss": 13.846153846153847
+      },
+      "ramp_ratings": [
+        {
+          "each_ramp_s": 10.0,
+          "minimum_mean_ramp_converter_W_m2": 73964.61671363845,
+          "converter_kg_m2_at1kW_kg": 73.96461671363845,
+          "main_mass999_live_fraction_including_ramps": 0.7943610147175912,
+          "g_with_original_cloud_unchanged": 0.009966815396121344,
+          "required_ne_m3_to_restore_g001": 7.593614925979123e+16,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.2044846542694233,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        },
+        {
+          "each_ramp_s": 100.0,
+          "minimum_mean_ramp_converter_W_m2": 7396.461671363844,
+          "converter_kg_m2_at1kW_kg": 7.396461671363844,
+          "main_mass999_live_fraction_including_ramps": 0.7705575237266002,
+          "g_with_original_cloud_unchanged": 0.009668153961213453,
+          "required_ne_m3_to_restore_g001": 7.849677152384493e+16,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.21066085628687223,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        },
+        {
+          "each_ramp_s": 1000.0,
+          "minimum_mean_ramp_converter_W_m2": 739.6461671363844,
+          "converter_kg_m2_at1kW_kg": 0.7396461671363844,
+          "main_mass999_live_fraction_including_ramps": 0.5325226138166903,
+          "g_with_original_cloud_unchanged": 0.006681539612134535,
+          "required_ne_m3_to_restore_g001": 1.1842546358762805e+17,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.30696856708839904,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        }
+      ],
+      "independent_energy_store_kg_m2_at100kJ_kg": 7.396461671363844,
+      "integrated_tangential_B_Tm_on_ray_above_rail": 0.3515588261616205,
+      "1MeV_proton_rigidity_Tm": 0.14397409247972712,
+      "off_field_fraction_required_for0p01rad_1MeV_proton_reference": 0.00409530587104471,
+      "local_module_energy_J_at_length100p": 7396461671.363844,
+      "ampere_turns_per_rail": 3477806.3528233897,
+      "series_turns_reference_at20kA_supply": 174
+    },
+    {
+      "pitch_m": 50.0,
+      "field_energy_J_m2": 1214700.4904002773,
+      "unsigned_charge_and_discharge_throughput_W_m2": 321.30591049877205,
+      "cycle_loss_W_m2": {
+        "0.0001": 0.016065295524938603,
+        "0.001": 0.16065295524938605,
+        "0.01": 1.6065295524938603,
+        "0.1": 16.065295524938605,
+        "1.0": 160.65295524938603
+      },
+      "cold_fraction_of_cycle_loss": {
+        "scope": "Loss location matters: dissipation at65K also incurs1/COP refrigerator work. Room-temperature recovery electronics are separately cooled.",
+        "refrigerator_multiplier_for_cold_loss": 13.846153846153847
+      },
+      "ramp_ratings": [
+        {
+          "each_ramp_s": 10.0,
+          "minimum_mean_ramp_converter_W_m2": 121470.04904002773,
+          "converter_kg_m2_at1kW_kg": 121.47004904002773,
+          "main_mass999_live_fraction_including_ramps": 0.7943610147175912,
+          "g_with_original_cloud_unchanged": 0.009966815396121344,
+          "required_ne_m3_to_restore_g001": 7.593614925979123e+16,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.2044846542694233,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        },
+        {
+          "each_ramp_s": 100.0,
+          "minimum_mean_ramp_converter_W_m2": 12147.004904002773,
+          "converter_kg_m2_at1kW_kg": 12.147004904002774,
+          "main_mass999_live_fraction_including_ramps": 0.7705575237266002,
+          "g_with_original_cloud_unchanged": 0.009668153961213453,
+          "required_ne_m3_to_restore_g001": 7.849677152384493e+16,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.21066085628687223,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        },
+        {
+          "each_ramp_s": 1000.0,
+          "minimum_mean_ramp_converter_W_m2": 1214.7004904002772,
+          "converter_kg_m2_at1kW_kg": 1.2147004904002772,
+          "main_mass999_live_fraction_including_ramps": 0.5325226138166903,
+          "g_with_original_cloud_unchanged": 0.006681539612134535,
+          "required_ne_m3_to_restore_g001": 1.1842546358762805e+17,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.30696856708839904,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        }
+      ],
+      "independent_energy_store_kg_m2_at100kJ_kg": 12.147004904002774,
+      "integrated_tangential_B_Tm_on_ray_above_rail": 3.2215800767385487,
+      "1MeV_proton_rigidity_Tm": 0.14397409247972712,
+      "off_field_fraction_required_for0p01rad_1MeV_proton_reference": 0.0004469052112635457,
+      "local_module_energy_J_at_length100p": 303675122600.06934,
+      "ampere_turns_per_rail": 8481669.371332,
+      "series_turns_reference_at20kA_supply": 425
+    },
+    {
+      "pitch_m": 100.0,
+      "field_energy_J_m2": 2469661.0034324597,
+      "unsigned_charge_and_discharge_throughput_W_m2": 653.2611813383659,
+      "cycle_loss_W_m2": {
+        "0.0001": 0.0326630590669183,
+        "0.001": 0.326630590669183,
+        "0.01": 3.266305906691829,
+        "0.1": 32.663059066918294,
+        "1.0": 326.63059066918294
+      },
+      "cold_fraction_of_cycle_loss": {
+        "scope": "Loss location matters: dissipation at65K also incurs1/COP refrigerator work. Room-temperature recovery electronics are separately cooled.",
+        "refrigerator_multiplier_for_cold_loss": 13.846153846153847
+      },
+      "ramp_ratings": [
+        {
+          "each_ramp_s": 10.0,
+          "minimum_mean_ramp_converter_W_m2": 246966.10034324595,
+          "converter_kg_m2_at1kW_kg": 246.96610034324596,
+          "main_mass999_live_fraction_including_ramps": 0.7943610147175912,
+          "g_with_original_cloud_unchanged": 0.009966815396121344,
+          "required_ne_m3_to_restore_g001": 7.593614925979123e+16,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.2044846542694233,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        },
+        {
+          "each_ramp_s": 100.0,
+          "minimum_mean_ramp_converter_W_m2": 24696.610034324596,
+          "converter_kg_m2_at1kW_kg": 24.696610034324596,
+          "main_mass999_live_fraction_including_ramps": 0.7705575237266002,
+          "g_with_original_cloud_unchanged": 0.009668153961213453,
+          "required_ne_m3_to_restore_g001": 7.849677152384493e+16,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.21066085628687223,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        },
+        {
+          "each_ramp_s": 1000.0,
+          "minimum_mean_ramp_converter_W_m2": 2469.6610034324594,
+          "converter_kg_m2_at1kW_kg": 2.4696610034324595,
+          "main_mass999_live_fraction_including_ramps": 0.5325226138166903,
+          "g_with_original_cloud_unchanged": 0.006681539612134535,
+          "required_ne_m3_to_restore_g001": 1.1842546358762805e+17,
+          "required_Bmin_T_to_restore_g001_in_same_rotation_screen": 0.30696856708839904,
+          "scope": "Ramp energy/rating is evaluated at the archived base field. Restoringg=.01 at lowerduty requires re-solving cable/current/shield sizing at the listednewB, not silently retainingtheold hardware."
+        }
+      ],
+      "independent_energy_store_kg_m2_at100kJ_kg": 24.696610034324596,
+      "integrated_tangential_B_Tm_on_ray_above_rail": 8.425855323025369,
+      "1MeV_proton_rigidity_Tm": 0.14397409247972712,
+      "off_field_fraction_required_for0p01rad_1MeV_proton_reference": 0.00017087178329099542,
+      "local_module_energy_J_at_length100p": 2469661003432.4595,
+      "ampere_turns_per_rail": 16412041.178422153,
+      "series_turns_reference_at20kA_supply": 821
+    }
+  ],
+  "tails": [
+    {
+      "stage": "A",
+      "cut_after_focus_s": 1232.6467254948839,
+      "full_resolved_time_s": 25108.812420479848,
+      "smooth_quadrature_mass_fraction_later_than_mass999_cut": 0.0009970873731587652,
+      "peak_ballistic_ram_pressure_Pa_sampled": 0.06992752559270932,
+      "species_number_fraction_in_late_packets": {
+        "p": 0.0009081221457317111,
+        "he4": 0.0020105196381375845
+      }
+    },
+    {
+      "stage": "B1",
+      "cut_after_focus_s": 1529.2098383663706,
+      "full_resolved_time_s": 26104.74373135294,
+      "smooth_quadrature_mass_fraction_later_than_mass999_cut": 0.0009970873731587654,
+      "peak_ballistic_ram_pressure_Pa_sampled": 0.0004922214521324629,
+      "species_number_fraction_in_late_packets": {
+        "p": 0.0008287042160360944,
+        "he4": 0.0012499646588201396
+      }
+    },
+    {
+      "stage": "B2",
+      "cut_after_focus_s": 1254.0727620511814,
+      "full_resolved_time_s": 29118.07093124546,
+      "smooth_quadrature_mass_fraction_later_than_mass999_cut": 0.0009970873731587652,
+      "peak_ballistic_ram_pressure_Pa_sampled": 0.07150075377222592,
+      "species_number_fraction_in_late_packets": {
+        "p": 0.00011466170018300651,
+        "he4": 5.886073625129834e-06
+      }
+    },
+    {
+      "stage": "C13",
+      "cut_after_focus_s": 957.6935389357444,
+      "full_resolved_time_s": 13429.0498344272,
+      "smooth_quadrature_mass_fraction_later_than_mass999_cut": 0.0009970873731587652,
+      "peak_ballistic_ram_pressure_Pa_sampled": 0.1145458085667697,
+      "species_number_fraction_in_late_packets": {
+        "p": 0.00037648023781481846,
+        "he4": 0.0005244510308575703
+      }
+    }
+  ],
+  "conclusions": [
+    "Static broad fields are not a drop-in addition to the ballistic receiver. Outgoing charged ions are strongly turned; a locally quasineutral plasma does not remove collective magnetic stresses. Neutral trajectories require their actual charge-state distribution.",
+    "The cycle rows are conditional switching requirements, not a completed converter or AC-loss design. Off during main outgoing mass leaves charged slow tails that need a separate field-guided collection/routing calculation. Waiting for every resolved tail has almost no global cleanup live time because successiveB1 tails overlap.",
+    "Turning off only the electron population does not remove the magnet field. An alternative is a compact closed-flux magnet that keeps its integrated transverse field below the actual particle-transport acceptance, with its cold/hot pole placement and radiation/thermal mass accounted.",
+    "The99.9%main-mass timing is not a loss allocation. Diverted tails remain inside the closed station and may be recovered; their destination, gas release and collector heating must be explicitly modeled.",
+    "One-percent per-cycle loss means0.01 timesstoredenergy for the combined discharge/charge cycle. This is not independently applying1% to each leg. Recovery, switch/conductorAC loss and cryogenic dissipation must be separated.",
+    "A putative300kV collection cathode addressesion destination afterionization; it doesnot solve broadfield interference, cloudconfinement or molecular admission."
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "scope": "Arithmetic, physical-scaling and archived-point regression checks; no reactor simulation or money-price validation.",
+  "code_sha256": "3903b21d9c86248af6f30780e9ece116aa7a0c9273d57ec3db46360621b077a8",
+  "validation_code_sha256": "13f6d0ab7c04fa387d15ef72c2d07840d1933e4efa0eae35069600777b8c8557",
+  "prior_input_sha256": "f83d097e24f8f25aec63a82aa1b7b18f5971ce2985009903fc7cbb7efcb3ea57",
+  "prior_output_sha256": "458c41202d192d65c86a2c5eb2f9bab0898fc001274085465d33e678faa57857",
+  "checks": [
+    {
+      "name": "median_carbon64_sigma5000: all ledger identities",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma5000: archived numerical regression 1",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma5000: archived numerical regression 2",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma5000: archived numerical regression 3",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma5000: archived numerical regression 4",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma5000: archived numerical regression 5",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma5000: archived numerical regression 6",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma5000: generated report names exact power",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: all ledger identities",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: archived numerical regression 9",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: archived numerical regression 10",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: archived numerical regression 11",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: archived numerical regression 12",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: archived numerical regression 13",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: archived numerical regression 14",
+      "passed": true
+    },
+    {
+      "name": "median_carbon64_sigma2000: generated report names exact power",
+      "passed": true
+    },
+    {
+      "name": "half availability doubles energy payback",
+      "passed": true
+    },
+    {
+      "name": "half availability preserves installed mass and nominal export",
+      "passed": true
+    },
+    {
+      "name": "evaluation leaves caller input intact",
+      "passed": true
+    },
+    {
+      "name": "double net export halves embodied payback",
+      "passed": true
+    },
+    {
+      "name": "double net export leaves resource inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "half carbon fraction halves methane energy",
+      "passed": true
+    },
+    {
+      "name": "half carbon fraction leaves reactor power unchanged",
+      "passed": true
+    },
+    {
+      "name": "20 mW/kg scaling point",
+      "passed": true
+    },
+    {
+      "name": "minimal ledger does not invent feed/repair data",
+      "passed": true
+    },
+    {
+      "name": "mass ranking updates to services",
+      "passed": true
+    },
+    {
+      "name": "reject inconsistent mass",
+      "passed": true
+    },
+    {
+      "name": "reject inconsistent specific power",
+      "passed": true
+    },
+    {
+      "name": "reject infeasible plant",
+      "passed": true
+    },
+    {
+      "name": "reject efficiency below user premise",
+      "passed": true
+    },
+    {
+      "name": "reject invalid availability",
+      "passed": true
+    },
+    {
+      "name": "explicit nested JSON selection",
+      "passed": true
+    },
+    {
+      "name": "JSON pointer escaping",
+      "passed": true
+    }
+  ],
+  "passed": 33,
+  "count": 33,
+  "all_passed": true,
+  "20mW_kg_scaling_only": {
+    "scope": "Unit scaling illustration with arbitrary mass; not a selected reactor design.",
+    "years_per_MJ_kg": 1.5844043907014476,
+    "20year_energy_MJ_kg": 12.62304,
+    "solar_parity_au_at_declared_comparison": 142.88106942488918
+  }
+}

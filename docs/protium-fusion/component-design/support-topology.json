@@ -1,0 +1,100 @@
+{
+  "scope": "Three cold guide layers, latitude rings around orthogonal Hill-frame axes, equal opposite streams within each ring. Exact continuum support force in linear tidal field; global shear modes, guides, fault transfer and discrete coverage remain open.",
+  "input_sha256": "fa1ab40f1dfe8b7179917fd8a6038ab6ba0c9deb4d2fbfcbc6b88e29e485d6db",
+  "code_sha256": "e644206e22d2decb2b7453725e5957d9152879bcc528246e1c93ae8862914d22",
+  "geometry": {
+    "equatorial_speed_m_s": 10000.0,
+    "common_angular_speed_rad_s": 9.090909090909091e-06,
+    "counterstreams_per_ring": 2,
+    "radially_separate_axis_families": 3,
+    "axis_surface_stream_kg_m2": {
+      "solar_radial_x": 0.20964620530133468,
+      "orbital_tangent_y": 0.11738742869415032,
+      "orbital_normal_z": 0.08663450315842222
+    },
+    "total_stream_mass_kg": 6.289951618621347e+18,
+    "kinetic_energy_J": 2.096650539540449e+26,
+    "loss_W_at_0_001_per_revolution": 3.033566339128653e+17,
+    "stream_mass_delta_from_old_kg": 3.82088905748565e+17,
+    "stream_mass_delta_kg_m2": 0.025128652086965853,
+    "axis_rail_linear_kg_m_at_1km_pitch": {
+      "x": 209.64620530133467,
+      "y": 117.38742869415032,
+      "z": 86.63450315842222
+    },
+    "axis_max_normal_force_N_m_at_1km_pitch": {
+      "x": 19.05874593648497,
+      "y": 10.671584426740939,
+      "z": 7.87586392349293
+    },
+    "max_fractional_Coriolis_force_away_from_poles": 0.003917797093129944,
+    "ring_count_at_1km_meridional_pitch": 10367255.756846318,
+    "all_family_mass_positive": true
+  },
+  "breathing": {
+    "incoming_source": "opaque_driver message 2026-10-31, nodal quadrature of archived A/B1/B2/C13 initial profiles; values rounded to8digits",
+    "incoming_total_scope": "Launch reactions and capture separated in time; triangle bounds do not assume coincident timing. No launched radiation momentum added.",
+    "rows": [
+      {
+        "stage": "C13",
+        "incoming_reaction_impulse_Pa_s": 1.6655544998848721,
+        "outgoing_capture_impulse_Pa_s": 6.569934232291471,
+        "total_radial_impulse_Pa_s": 8.235488732176343,
+        "delta_v_m_s": 0.0010276064668800983,
+        "period_s": 15885706.54029858,
+        "constant_mean_support_free_mass_displacement_range_m": 2040.5318464712866,
+        "mean_added_radial_pressure_Pa": 5.184213060517453e-07,
+        "linear_radial_oscillator_range_bound_m": 2756.32583344162
+      },
+      {
+        "stage": "A",
+        "incoming_reaction_impulse_Pa_s": 1.706317309946122,
+        "outgoing_capture_impulse_Pa_s": 5.15910083434783,
+        "total_radial_impulse_Pa_s": 6.865418144293953,
+        "delta_v_m_s": 0.0008566520230121257,
+        "period_s": 648690.3901793147,
+        "constant_mean_support_free_mass_displacement_range_m": 69.46274188195439,
+        "mean_added_radial_pressure_Pa": 1.0583505241069126e-05,
+        "linear_radial_oscillator_range_bound_m": 92.61897410360552
+      },
+      {
+        "stage": "B1",
+        "incoming_reaction_impulse_Pa_s": 0.016145513648358152,
+        "outgoing_capture_impulse_Pa_s": 0.04343389419915349,
+        "total_radial_impulse_Pa_s": 0.059579407847511645,
+        "delta_v_m_s": 7.434189613760847e-06,
+        "period_s": 6774.3130579500075,
+        "constant_mean_support_free_mass_displacement_range_m": 0.006295190971972053,
+        "mean_added_radial_pressure_Pa": 8.794900285511919e-06,
+        "linear_radial_oscillator_range_bound_m": 0.008393588007756735
+      },
+      {
+        "stage": "B2",
+        "incoming_reaction_impulse_Pa_s": 1.842714806105017,
+        "outgoing_capture_impulse_Pa_s": 6.1781583895899335,
+        "total_radial_impulse_Pa_s": 8.02087319569495,
+        "delta_v_m_s": 0.0010008272045493078,
+        "period_s": 1133368.9623012526,
+        "constant_mean_support_free_mass_displacement_range_m": 141.78831128286404,
+        "mean_added_radial_pressure_Pa": 7.077018572494646e-06,
+        "linear_radial_oscillator_range_bound_m": 189.0634493484822
+      }
+    ],
+    "free_mass_periodic_range_sum_m": 2251.789194827077,
+    "linear_selfgravity_radial_mode_period_s": 113671643.86747701,
+    "selfgravity_to_solar_n2_ratio": 9.634228396109632,
+    "directional_tidal_stiffness_screen_s2": {
+      "x": -7.502592047604082e-16,
+      "y": 3.055311224067055e-15,
+      "z": 4.323834700342876e-15
+    },
+    "angular_average_common_mode_stiffness_s2": 2.209628906549841e-15,
+    "angular_average_common_mode_period_s": 133665767.67326719,
+    "linear_oscillator_range_sum_bound_m": 3038.0166504817157,
+    "scope": "Tide-free common spherical mode; impulses projected on uniform shell mass. Conserved stream angular momentum and linear self gravity; no damping is credited. Solar/shape modes require the next network model. This range is known ephemeris motion, not random differential aiming error."
+  },
+  "checks": {
+    "max_sample_vector_force_residual_Pa": 3.469446951953614e-18,
+    "energy_equals_trace_work_relative": -1.1102230246251565e-16
+  }
+}

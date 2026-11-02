@@ -1,0 +1,921 @@
+{
+  "scope": "Bounded whole-dispatch audit of the frozen representative-k comparison.\nAll75largepulse windows are resolved at0.25s. Remainingtimes have a positive\nbulk-plus-source-tail bound using exacteventspacing and20sbackgroundsampling.\n",
+  "code_sha256": "31f0adc420efecdb37fb516e258389d1ecda772a443ab8ae51ca78e8a4fa15fb",
+  "main_code_sha256": "e21e77c25c06552827ef1956e96483a77c1ddb5d9a74ba360d70cb571e286228",
+  "main_results_sha256": "25edb32295ef88cbcd485af074e9aef8685e79f549d55d7439a31d0042f2dba6",
+  "event_count": 4228,
+  "large_events_finely_resolved": 75,
+  "fine_samples": 1200000,
+  "fine_dt_s": 0.25,
+  "coarse_dt_s": 20.0,
+  "cases": [
+    {
+      "k_W_m_K": 933.6436869130292,
+      "representative_max_K": 1199.9999999961503,
+      "all_large_windows_max_K": 1199.9999999961503,
+      "difference_from_representative_K": 0.0,
+      "controlling_event_index": 1623,
+      "controlling_stage": "A",
+      "controlling_focus_s": 12264385.781079737,
+      "controlling_relative_prompt_time_s": 136.25,
+      "controller_was_in_old7": true,
+      "coarse_global_max_K": 1196.982944661513,
+      "maximum_sampled_outside_large_windows_K": 1189.3042164710057,
+      "outside_bound_K": 1189.6337293206723,
+      "outside_bound_components": {
+        "A": {
+          "front_nonuniform_plus_surface_bound_K": 6.380046601715142e-06,
+          "heat_flux_bound_W_m2": 0.06121305383620092
+        },
+        "B1": {
+          "front_nonuniform_plus_surface_bound_K": 0.25830250323557225,
+          "heat_flux_bound_W_m2": 2058.217868716732
+        },
+        "B2": {
+          "front_nonuniform_plus_surface_bound_K": 0.0007043816462723397,
+          "heat_flux_bound_W_m2": 6.732619820753718
+        },
+        "C13": {
+          "front_nonuniform_plus_surface_bound_K": 2.273176214417929e-06,
+          "heat_flux_bound_W_m2": 0.02181014243503434
+        }
+      },
+      "outside_bulk_sampling_guard_K": 0.06555661942011927,
+      "retained_old_tail_guard_K": 0.1,
+      "outside_sampled_bulk_max_K": 1189.2055171694085,
+      "minimum_B1_focus_gap_s": 5181.681034835987,
+      "profile_detail_index_check": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2945,
+          "masked_argmax_index": 2945,
+          "detail_index_matches": true,
+          "unmasked_time_s": 136.25,
+          "masked_time_s": 136.25,
+          "unmasked_max_K": 1199.9999999961503,
+          "masked_max_K": 1199.9999999961503
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2978,
+          "masked_argmax_index": 2978,
+          "detail_index_matches": true,
+          "unmasked_time_s": 144.5,
+          "masked_time_s": 144.5,
+          "unmasked_max_K": 1189.3048363556072,
+          "masked_max_K": 1189.3048363556072
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "unmasked_argmax_index": 2978,
+          "masked_argmax_index": 2978,
+          "detail_index_matches": true,
+          "unmasked_time_s": 144.5,
+          "masked_time_s": 144.5,
+          "unmasked_max_K": 1074.2262378614355,
+          "masked_max_K": 1074.2262378614355
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2899,
+          "masked_argmax_index": 2899,
+          "detail_index_matches": true,
+          "unmasked_time_s": 124.75,
+          "masked_time_s": 124.75,
+          "unmasked_max_K": 1189.5023634541901,
+          "masked_max_K": 1189.5023634541901
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2727,
+          "masked_argmax_index": 2727,
+          "detail_index_matches": true,
+          "unmasked_time_s": 81.75,
+          "masked_time_s": 81.75,
+          "unmasked_max_K": 1171.510071512915,
+          "masked_max_K": 1171.510071512915
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "unmasked_argmax_index": 2727,
+          "masked_argmax_index": 2727,
+          "detail_index_matches": true,
+          "unmasked_time_s": 81.75,
+          "masked_time_s": 81.75,
+          "unmasked_max_K": 1187.224393008747,
+          "masked_max_K": 1187.224393008747
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "unmasked_argmax_index": 2727,
+          "masked_argmax_index": 2727,
+          "detail_index_matches": true,
+          "unmasked_time_s": 81.75,
+          "masked_time_s": 81.75,
+          "unmasked_max_K": 1155.7957500172809,
+          "masked_max_K": 1155.7957500172809
+        }
+      ],
+      "scope": "Finequartersecondalllargeevents pluspositiveoutsidebound. The0.1Khistoricaltailguard appliesoutside; largewindow valuesretain theiroriginal separatelyqualifiedtailtruncation."
+    },
+    {
+      "k_W_m_K": 325.1429830942963,
+      "representative_max_K": 1250.0,
+      "all_large_windows_max_K": 1250.0,
+      "difference_from_representative_K": 0.0,
+      "controlling_event_index": 75,
+      "controlling_stage": "C13",
+      "controlling_focus_s": 563193.3982791438,
+      "controlling_relative_prompt_time_s": 85.25,
+      "controller_was_in_old7": true,
+      "coarse_global_max_K": 1248.989962900622,
+      "maximum_sampled_outside_large_windows_K": 1189.5023534179427,
+      "outside_bound_K": 1189.8571394863332,
+      "outside_bound_components": {
+        "A": {
+          "front_nonuniform_plus_surface_bound_K": 1.3650813226185917e-05,
+          "heat_flux_bound_W_m2": 0.06121305383620092
+        },
+        "B1": {
+          "front_nonuniform_plus_surface_bound_K": 0.4536352794893489,
+          "heat_flux_bound_W_m2": 2058.217868716732
+        },
+        "B2": {
+          "front_nonuniform_plus_surface_bound_K": 0.0015231133372428226,
+          "heat_flux_bound_W_m2": 6.732619820753718
+        },
+        "C13": {
+          "front_nonuniform_plus_surface_bound_K": 4.863536374017048e-06,
+          "heat_flux_bound_W_m2": 0.02181014243503434
+        }
+      },
+      "outside_bulk_sampling_guard_K": 0.06555661942011927,
+      "retained_old_tail_guard_K": 0.1,
+      "outside_sampled_bulk_max_K": 1189.2259537668506,
+      "minimum_B1_focus_gap_s": 5181.681034835987,
+      "profile_detail_index_check": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2945,
+          "masked_argmax_index": 2945,
+          "detail_index_matches": true,
+          "unmasked_time_s": 136.25,
+          "masked_time_s": 136.25,
+          "unmasked_max_K": 1228.7170486143978,
+          "masked_max_K": 1228.7170486143978
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2978,
+          "masked_argmax_index": 2978,
+          "detail_index_matches": true,
+          "unmasked_time_s": 144.5,
+          "masked_time_s": 144.5,
+          "unmasked_max_K": 1189.502870562807,
+          "masked_max_K": 1189.502870562807
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "unmasked_argmax_index": 2978,
+          "masked_argmax_index": 2978,
+          "detail_index_matches": true,
+          "unmasked_time_s": 144.5,
+          "masked_time_s": 144.5,
+          "unmasked_max_K": 1074.4242691557579,
+          "masked_max_K": 1074.4242691557579
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2899,
+          "masked_argmax_index": 2899,
+          "detail_index_matches": true,
+          "unmasked_time_s": 124.75,
+          "masked_time_s": 124.75,
+          "unmasked_max_K": 1227.4359966766624,
+          "masked_max_K": 1227.4359966766624
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2741,
+          "masked_argmax_index": 2741,
+          "detail_index_matches": true,
+          "unmasked_time_s": 85.25,
+          "masked_time_s": 85.25,
+          "unmasked_max_K": 1234.285678504168,
+          "masked_max_K": 1234.285678504168
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "unmasked_argmax_index": 2741,
+          "masked_argmax_index": 2741,
+          "detail_index_matches": true,
+          "unmasked_time_s": 85.25,
+          "masked_time_s": 85.25,
+          "unmasked_max_K": 1250.0,
+          "masked_max_K": 1250.0
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "unmasked_argmax_index": 2741,
+          "masked_argmax_index": 2741,
+          "detail_index_matches": true,
+          "unmasked_time_s": 85.25,
+          "masked_time_s": 85.25,
+          "unmasked_max_K": 1218.571357008534,
+          "masked_max_K": 1218.571357008534
+        }
+      ],
+      "scope": "Finequartersecondalllargeevents pluspositiveoutsidebound. The0.1Khistoricaltailguard appliesoutside; largewindow valuesretain theiroriginal separatelyqualifiedtailtruncation."
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "representative_max_K": 1198.8927980725243,
+      "all_large_windows_max_K": 1198.8927980725243,
+      "difference_from_representative_K": 0.0,
+      "controlling_event_index": 1623,
+      "controlling_stage": "A",
+      "controlling_focus_s": 12264385.781079737,
+      "controlling_relative_prompt_time_s": 136.25,
+      "controller_was_in_old7": true,
+      "coarse_global_max_K": 1195.722461426727,
+      "maximum_sampled_outside_large_windows_K": 1189.2959725043804,
+      "outside_bound_K": 1189.6232432382,
+      "outside_bound_components": {
+        "A": {
+          "front_nonuniform_plus_surface_bound_K": 6.124297335929524e-06,
+          "heat_flux_bound_W_m2": 0.06121305383620092
+        },
+        "B1": {
+          "front_nonuniform_plus_surface_bound_K": 0.248811393226839,
+          "heat_flux_bound_W_m2": 2058.217868716732
+        },
+        "B2": {
+          "front_nonuniform_plus_surface_bound_K": 0.0006759023084898613,
+          "heat_flux_bound_W_m2": 6.732619820753718
+        },
+        "C13": {
+          "front_nonuniform_plus_surface_bound_K": 2.1820565765792188e-06,
+          "heat_flux_bound_W_m2": 0.02181014243503434
+        }
+      },
+      "outside_bulk_sampling_guard_K": 0.06555661942011927,
+      "retained_old_tail_guard_K": 0.1,
+      "outside_sampled_bulk_max_K": 1189.2047925597158,
+      "minimum_B1_focus_gap_s": 5181.681034835987,
+      "profile_detail_index_check": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2945,
+          "masked_argmax_index": 2945,
+          "detail_index_matches": true,
+          "unmasked_time_s": 136.25,
+          "masked_time_s": 136.25,
+          "unmasked_max_K": 1198.8927980725243,
+          "masked_max_K": 1198.8927980725243
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2978,
+          "masked_argmax_index": 2978,
+          "detail_index_matches": true,
+          "unmasked_time_s": 144.5,
+          "masked_time_s": 144.5,
+          "unmasked_max_K": 1189.296562653969,
+          "masked_max_K": 1189.296562653969
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "unmasked_argmax_index": 2978,
+          "masked_argmax_index": 2978,
+          "detail_index_matches": true,
+          "unmasked_time_s": 144.5,
+          "masked_time_s": 144.5,
+          "unmasked_max_K": 1074.2179642624328,
+          "masked_max_K": 1074.2179642624328
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2899,
+          "masked_argmax_index": 2899,
+          "detail_index_matches": true,
+          "unmasked_time_s": 124.75,
+          "masked_time_s": 124.75,
+          "unmasked_max_K": 1188.0269560998036,
+          "masked_max_K": 1188.0269560998036
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "unmasked_argmax_index": 2727,
+          "masked_argmax_index": 2727,
+          "detail_index_matches": true,
+          "unmasked_time_s": 81.75,
+          "masked_time_s": 81.75,
+          "unmasked_max_K": 1168.6821445387582,
+          "masked_max_K": 1168.6821445387582
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "unmasked_argmax_index": 2727,
+          "masked_argmax_index": 2727,
+          "detail_index_matches": true,
+          "unmasked_time_s": 81.75,
+          "masked_time_s": 81.75,
+          "unmasked_max_K": 1184.3964660345905,
+          "masked_max_K": 1184.3964660345905
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "unmasked_argmax_index": 2727,
+          "masked_argmax_index": 2727,
+          "detail_index_matches": true,
+          "unmasked_time_s": 81.75,
+          "masked_time_s": 81.75,
+          "unmasked_max_K": 1152.967823043124,
+          "masked_max_K": 1152.967823043124
+        }
+      ],
+      "scope": "Finequartersecondalllargeevents pluspositiveoutsidebound. The0.1Khistoricaltailguard appliesoutside; largewindow valuesretain theiroriginal separatelyqualifiedtailtruncation."
+    }
+  ],
+  "frozen_table_detail_index_all_k": [
+    {
+      "k_W_m_K": 50.0,
+      "isothermal": false,
+      "stage": "A",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 136.25,
+      "masked_argmax_time_s": 136.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1353.1477480132246,
+      "independent_masked_max_K": 1353.1477480132246
+    },
+    {
+      "k_W_m_K": 50.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 0.25,
+      "masked_argmax_time_s": 0.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1190.4461522384256,
+      "independent_masked_max_K": 1190.4461522384256
+    },
+    {
+      "k_W_m_K": 50.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "unmasked_argmax_time_s": 0.25,
+      "masked_argmax_time_s": 0.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1075.3675256988934,
+      "independent_masked_max_K": 1075.3675256988934
+    },
+    {
+      "k_W_m_K": 50.0,
+      "isothermal": false,
+      "stage": "B2",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 124.75,
+      "masked_argmax_time_s": 124.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1394.4606032005106,
+      "independent_masked_max_K": 1394.4606032005106
+    },
+    {
+      "k_W_m_K": 50.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 88.5,
+      "masked_argmax_time_s": 88.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1480.3152194020645,
+      "independent_masked_max_K": 1480.3152194020645
+    },
+    {
+      "k_W_m_K": 50.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_1",
+      "unmasked_argmax_time_s": 88.5,
+      "masked_argmax_time_s": 88.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1496.0295408978964,
+      "independent_masked_max_K": 1496.0295408978964
+    },
+    {
+      "k_W_m_K": 50.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_3",
+      "unmasked_argmax_time_s": 88.5,
+      "masked_argmax_time_s": 88.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1464.6008979064309,
+      "independent_masked_max_K": 1464.6008979064309
+    },
+    {
+      "k_W_m_K": 100.0,
+      "isothermal": false,
+      "stage": "A",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 136.25,
+      "masked_argmax_time_s": 136.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1292.9710580645774,
+      "independent_masked_max_K": 1292.9710580645774
+    },
+    {
+      "k_W_m_K": 100.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 146.75,
+      "masked_argmax_time_s": 146.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.9588971452358,
+      "independent_masked_max_K": 1189.9588971452358
+    },
+    {
+      "k_W_m_K": 100.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "unmasked_argmax_time_s": 146.75,
+      "masked_argmax_time_s": 146.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1074.8802852528322,
+      "independent_masked_max_K": 1074.8802852528322
+    },
+    {
+      "k_W_m_K": 100.0,
+      "isothermal": false,
+      "stage": "B2",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 124.75,
+      "masked_argmax_time_s": 124.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1313.5472128393083,
+      "independent_masked_max_K": 1313.5472128393083
+    },
+    {
+      "k_W_m_K": 100.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 87.0,
+      "masked_argmax_time_s": 87.0,
+      "detail_matches": true,
+      "reported_phase_max_K": 1361.451514006833,
+      "independent_masked_max_K": 1361.451514006833
+    },
+    {
+      "k_W_m_K": 100.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_1",
+      "unmasked_argmax_time_s": 87.0,
+      "masked_argmax_time_s": 87.0,
+      "detail_matches": true,
+      "reported_phase_max_K": 1377.1658355026652,
+      "independent_masked_max_K": 1377.1658355026652
+    },
+    {
+      "k_W_m_K": 100.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_3",
+      "unmasked_argmax_time_s": 87.0,
+      "masked_argmax_time_s": 87.0,
+      "detail_matches": true,
+      "reported_phase_max_K": 1345.7371925111993,
+      "independent_masked_max_K": 1345.7371925111993
+    },
+    {
+      "k_W_m_K": 200.0,
+      "isothermal": false,
+      "stage": "A",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 136.25,
+      "masked_argmax_time_s": 136.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1250.5058760251327,
+      "independent_masked_max_K": 1250.5058760251327
+    },
+    {
+      "k_W_m_K": 200.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 144.75,
+      "masked_argmax_time_s": 144.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.6510498118876,
+      "independent_masked_max_K": 1189.6510498118876
+    },
+    {
+      "k_W_m_K": 200.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "unmasked_argmax_time_s": 144.75,
+      "masked_argmax_time_s": 144.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1074.572445565116,
+      "independent_masked_max_K": 1074.572445565116
+    },
+    {
+      "k_W_m_K": 200.0,
+      "isothermal": false,
+      "stage": "B2",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 124.75,
+      "masked_argmax_time_s": 124.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1256.4948997745214,
+      "independent_masked_max_K": 1256.4948997745214
+    },
+    {
+      "k_W_m_K": 200.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 85.25,
+      "masked_argmax_time_s": 85.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1277.7109857443515,
+      "independent_masked_max_K": 1277.7109857443515
+    },
+    {
+      "k_W_m_K": 200.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_1",
+      "unmasked_argmax_time_s": 85.25,
+      "masked_argmax_time_s": 85.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1293.4253072401837,
+      "independent_masked_max_K": 1293.4253072401837
+    },
+    {
+      "k_W_m_K": 200.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_3",
+      "unmasked_argmax_time_s": 85.25,
+      "masked_argmax_time_s": 85.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1261.9966642487177,
+      "independent_masked_max_K": 1261.9966642487177
+    },
+    {
+      "k_W_m_K": 500.0,
+      "isothermal": false,
+      "stage": "A",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 136.25,
+      "masked_argmax_time_s": 136.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1214.12109047659,
+      "independent_masked_max_K": 1214.12109047659
+    },
+    {
+      "k_W_m_K": 500.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 144.5,
+      "masked_argmax_time_s": 144.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.4045946249762,
+      "independent_masked_max_K": 1189.4045946249762
+    },
+    {
+      "k_W_m_K": 500.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "unmasked_argmax_time_s": 144.5,
+      "masked_argmax_time_s": 144.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1074.3259947853112,
+      "independent_masked_max_K": 1074.3259947853112
+    },
+    {
+      "k_W_m_K": 500.0,
+      "isothermal": false,
+      "stage": "B2",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 124.75,
+      "masked_argmax_time_s": 124.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1208.1576805305888,
+      "independent_masked_max_K": 1208.1576805305888
+    },
+    {
+      "k_W_m_K": 500.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 83.5,
+      "masked_argmax_time_s": 83.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1204.0216478982454,
+      "independent_masked_max_K": 1204.0216478982454
+    },
+    {
+      "k_W_m_K": 500.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_1",
+      "unmasked_argmax_time_s": 83.5,
+      "masked_argmax_time_s": 83.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1219.7359693940773,
+      "independent_masked_max_K": 1219.7359693940773
+    },
+    {
+      "k_W_m_K": 500.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_3",
+      "unmasked_argmax_time_s": 83.5,
+      "masked_argmax_time_s": 83.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1188.3073264026118,
+      "independent_masked_max_K": 1188.3073264026118
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "isothermal": false,
+      "stage": "A",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 136.25,
+      "masked_argmax_time_s": 136.25,
+      "detail_matches": true,
+      "reported_phase_max_K": 1198.8927980725243,
+      "independent_masked_max_K": 1198.8927980725243
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 144.5,
+      "masked_argmax_time_s": 144.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.296562653969,
+      "independent_masked_max_K": 1189.296562653969
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "unmasked_argmax_time_s": 144.5,
+      "masked_argmax_time_s": 144.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1074.2179642624328,
+      "independent_masked_max_K": 1074.2179642624328
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "isothermal": false,
+      "stage": "B2",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 124.75,
+      "masked_argmax_time_s": 124.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1188.0269560998036,
+      "independent_masked_max_K": 1188.0269560998036
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 81.75,
+      "masked_argmax_time_s": 81.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1168.6821445387582,
+      "independent_masked_max_K": 1168.6821445387582
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_1",
+      "unmasked_argmax_time_s": 81.75,
+      "masked_argmax_time_s": 81.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1184.3964660345905,
+      "independent_masked_max_K": 1184.3964660345905
+    },
+    {
+      "k_W_m_K": 1000.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_3",
+      "unmasked_argmax_time_s": 81.75,
+      "masked_argmax_time_s": 81.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1152.967823043124,
+      "independent_masked_max_K": 1152.967823043124
+    },
+    {
+      "k_W_m_K": 5000.0,
+      "isothermal": false,
+      "stage": "A",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 981.75,
+      "masked_argmax_time_s": 981.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.6486410764908,
+      "independent_masked_max_K": 1189.6486410764908
+    },
+    {
+      "k_W_m_K": 5000.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 223.75,
+      "masked_argmax_time_s": 223.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.2076754764112,
+      "independent_masked_max_K": 1189.2076754764112
+    },
+    {
+      "k_W_m_K": 5000.0,
+      "isothermal": false,
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "unmasked_argmax_time_s": 223.75,
+      "masked_argmax_time_s": 223.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1074.1290752311043,
+      "independent_masked_max_K": 1074.1290752311043
+    },
+    {
+      "k_W_m_K": 5000.0,
+      "isothermal": false,
+      "stage": "B2",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 1526.0,
+      "masked_argmax_time_s": 1526.0,
+      "detail_matches": true,
+      "reported_phase_max_K": 1176.573057020034,
+      "independent_masked_max_K": 1176.573057020034
+    },
+    {
+      "k_W_m_K": 5000.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 102.5,
+      "masked_argmax_time_s": 102.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1139.1419939298466,
+      "independent_masked_max_K": 1139.1419939298466
+    },
+    {
+      "k_W_m_K": 5000.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_1",
+      "unmasked_argmax_time_s": 102.5,
+      "masked_argmax_time_s": 102.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1154.8563154256785,
+      "independent_masked_max_K": 1154.8563154256785
+    },
+    {
+      "k_W_m_K": 5000.0,
+      "isothermal": false,
+      "stage": "C13",
+      "selection": "event_3",
+      "unmasked_argmax_time_s": 102.5,
+      "masked_argmax_time_s": 102.5,
+      "detail_matches": true,
+      "reported_phase_max_K": 1123.4276724342126,
+      "independent_masked_max_K": 1123.4276724342126
+    },
+    {
+      "k_W_m_K": null,
+      "isothermal": true,
+      "stage": "A",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 981.75,
+      "masked_argmax_time_s": 981.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.644237672597,
+      "independent_masked_max_K": 1189.644237672597
+    },
+    {
+      "k_W_m_K": null,
+      "isothermal": true,
+      "stage": "B1",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 236.75,
+      "masked_argmax_time_s": 236.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1189.2016023412198,
+      "independent_masked_max_K": 1189.2016023412198
+    },
+    {
+      "k_W_m_K": null,
+      "isothermal": true,
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "unmasked_argmax_time_s": 236.75,
+      "masked_argmax_time_s": 236.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1074.1230018885815,
+      "independent_masked_max_K": 1074.1230018885815
+    },
+    {
+      "k_W_m_K": null,
+      "isothermal": true,
+      "stage": "B2",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 1533.75,
+      "masked_argmax_time_s": 1533.75,
+      "detail_matches": true,
+      "reported_phase_max_K": 1176.5689272860395,
+      "independent_masked_max_K": 1176.5689272860395
+    },
+    {
+      "k_W_m_K": null,
+      "isothermal": true,
+      "stage": "C13",
+      "selection": "warmest_background",
+      "unmasked_argmax_time_s": 915.0,
+      "masked_argmax_time_s": 915.0,
+      "detail_matches": true,
+      "reported_phase_max_K": 1136.448836414552,
+      "independent_masked_max_K": 1136.448836414552
+    },
+    {
+      "k_W_m_K": null,
+      "isothermal": true,
+      "stage": "C13",
+      "selection": "event_1",
+      "unmasked_argmax_time_s": 915.0,
+      "masked_argmax_time_s": 915.0,
+      "detail_matches": true,
+      "reported_phase_max_K": 1152.163157910384,
+      "independent_masked_max_K": 1152.163157910384
+    },
+    {
+      "k_W_m_K": null,
+      "isothermal": true,
+      "stage": "C13",
+      "selection": "event_3",
+      "unmasked_argmax_time_s": 915.0,
+      "masked_argmax_time_s": 915.0,
+      "detail_matches": true,
+      "reported_phase_max_K": 1120.7345149189177,
+      "independent_masked_max_K": 1120.7345149189177
+    }
+  ],
+  "checks": [
+    {
+      "name": "outside_sample_under_bound_k933.6436869130292",
+      "passed": true
+    },
+    {
+      "name": "outside_sample_under_bound_k325.1429830942963",
+      "passed": true
+    },
+    {
+      "name": "outside_sample_under_bound_k1000.0",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Thisauditsresolvedmaterial/decaytemperature,notmicrosecondphotondeposition.",
+    "Source-tailboundusesminimumactualB1spacingandpositivekernel; it deliberatelyoverallocatesnonuniformsource contributions.",
+    "New k values do not replace the frozenrepresentativepacket; anymissedcontrollerisreportedexplicitly."
+  ]
+}

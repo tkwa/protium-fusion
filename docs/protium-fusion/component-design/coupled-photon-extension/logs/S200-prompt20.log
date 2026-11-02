@@ -1,0 +1,33 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+CUT_COMMAND None
+RESULT {"incident_energy_MeV": 20.0, "incident_particle": "gamma", "incident_calorimetric_energy_MeV": 20.0, "histories": 5000, "deposited_fraction": 0.18728845761401894, "leakage_fraction": 0.8127115423846751, "sampling_standard_error": 0.004912453596144484, "sampling_80pct_normal_interval": [0.8064159797856338, 0.8190071049837164], "max_abs_event_energy_residual_MeV": 1.0798082428209455e-09, "mean_energy_residual_MeV": -2.611837643939907e-11, "mean_abs_energy_residual_MeV": 2.6857622259512936e-11, "events_above_strict_relative_residual1e_7": 0, "max_steps": 575, "mean_steps": 52.7718, "mean_tracks": 13.2282, "residual_inside_kinetic_MeV": 0.0, "vacuum_deposit_MeV": 1.3997195304502768e-14, "escape_by_particle_MeV": {"gamma": 77443.30968208154, "e-": 3083.0633505282212, "e+": 744.7812058576718}, "seconds": 2.0072645619511604}
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_Galactic
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  100 eV     e-  100 eV     e+  100 eV  proton 1 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : ReceiverGraphite
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  100 eV     e-  31.5346 keV    e+  31.2287 keV proton 1 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+DUMP_COMMAND None
+COMPLETE /home/tkwa/src/protium-fusion/output/coupled-photon-extension/S200-prompt20.json

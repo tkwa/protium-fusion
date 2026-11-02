@@ -1,0 +1,77 @@
+{
+  "scope": "Reproduction of titanium side-network and cold capture-stock screen; no updated whole-plant claim.",
+  "python": "3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:07:37) [GCC 12.3.0]",
+  "endf_parserpy_version": "0.18.0",
+  "runs": [
+    {
+      "script": "catalyst_network.py",
+      "seconds": 3.7946311940904707,
+      "exit_code": 0
+    },
+    {
+      "script": "capture_bank_screen.py",
+      "seconds": 1.6232896910514683,
+      "exit_code": 0
+    },
+    {
+      "script": "compare_recycling_data.py",
+      "seconds": 2.5034202449023724,
+      "exit_code": 0
+    },
+    {
+      "script": "validate_recycling.py",
+      "seconds": 3.716903656022623,
+      "exit_code": 0
+    }
+  ],
+  "files": {
+    "read_recycling_endf.py": {
+      "bytes": 1454,
+      "sha256": "c693d238ac4cdd745e9924f4a3f6232a7e91710d4899eb6768846f85423708b0"
+    },
+    "catalyst_network.py": {
+      "bytes": 15016,
+      "sha256": "810b9353bad345eda3f639789bdf292e0f16ca11e904cbcd847b44e66c135861"
+    },
+    "capture_bank_screen.py": {
+      "bytes": 3892,
+      "sha256": "ea6854826a7396685ad2d9fc98a3412ddf5a6ca2cf204497e9ab3ccadd49fd49"
+    },
+    "compare_recycling_data.py": {
+      "bytes": 1688,
+      "sha256": "6250894033263bd8c7372e2c3ace77204fd6d4a6bcf35776d2d33822a6b9a18a"
+    },
+    "validate_recycling.py": {
+      "bytes": 3686,
+      "sha256": "00ff775b51587f67905c0a72814c4cd62e8f2dbeb779f9563df8b035d8f80a38"
+    },
+    "catalyst-network-audit.json": {
+      "bytes": 140770,
+      "sha256": "c2c53f51bc1b14a31809d319ff4f72a6b56ad6aeea99becb19ee4b332e57f951"
+    },
+    "capture-bank-screen.json": {
+      "bytes": 14891,
+      "sha256": "88c09a441ce782510880b9529920c87ba120b7010024d42e82fd5be09f68e05a"
+    },
+    "recycling-data-comparison.json": {
+      "bytes": 5223,
+      "sha256": "89337ea50933ae10d9b064f054b030f426520d40a26241f4d06596e5e68a6cda"
+    },
+    "recycling-comparison-input.json.gz": {
+      "bytes": 12872,
+      "sha256": "f0c4f3b34ad77af625694b8df69b95722bdc305dba99d6fe39a878eae7ba8a8a"
+    },
+    "recycling-validation.json": {
+      "bytes": 23250,
+      "sha256": "b46b66bbf2d5102ddf74cedd650cd244093df9aa145dd4529b9d0fc32793284a"
+    },
+    "CATALYST-RECYCLING.md": {
+      "bytes": 12981,
+      "sha256": "a9ddb07bd15da1c3ccacf5e5aad608929b0c9e3c8121333abfe7086ae7c02b1a"
+    },
+    "beam-data/tendl2025-proton-recycling.zip": {
+      "bytes": 12110585,
+      "sha256": "988d325a1cb4aa770e9ada29e209c166227451fea92d3b308b765d6328fa6c1c"
+    }
+  }
+}

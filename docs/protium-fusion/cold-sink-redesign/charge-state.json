@@ -1,0 +1,1890 @@
+{
+  "scope": "Charge-conditional rate diagnostics and neutral-atom threshold inventory; no collisional-radiative evolution or predicted wall charge fraction. Actual temperatures require a separate expansion/heating model.",
+  "receiver_radius_m": 1100000000.0,
+  "ionization_energies_eV": {
+    "1": [
+      13.5984
+    ],
+    "2": [
+      24.5874,
+      54.4178
+    ],
+    "6": [
+      11.2603,
+      24.3833,
+      47.8878,
+      64.4939,
+      392.087,
+      489.993
+    ],
+    "7": [
+      14.53414,
+      29.6013,
+      47.44924,
+      77.4735,
+      97.8902,
+      552.0718,
+      667.046
+    ],
+    "8": [
+      13.61806,
+      35.1173,
+      54.9355,
+      77.41353,
+      113.899,
+      138.1197,
+      739.29,
+      871.4101
+    ]
+  },
+  "rr_fit_coefficients": [
+    {
+      "ion": "H+",
+      "a_cm3_s": 7.982e-11,
+      "b": 0.748,
+      "T0_K": 3.148,
+      "T1_K": 703600.0
+    },
+    {
+      "ion": "He2+",
+      "a_cm3_s": 1.891e-10,
+      "b": 0.7524,
+      "T0_K": 9.37,
+      "T1_K": 2774000.0
+    },
+    {
+      "ion": "C6+",
+      "a_cm3_s": 6.556e-10,
+      "b": 0.7567,
+      "T0_K": 65.23,
+      "T1_K": 24460000.0
+    },
+    {
+      "ion": "N7+",
+      "a_cm3_s": 7.586e-10,
+      "b": 0.7563,
+      "T0_K": 90.15,
+      "T1_K": 33380000.0
+    },
+    {
+      "ion": "O8+",
+      "a_cm3_s": 8.616e-10,
+      "b": 0.7563,
+      "T0_K": 119.1,
+      "T1_K": 43520000.0
+    }
+  ],
+  "formulas": {
+    "ballistic_density": "m/[4pi/3*((r_outer+v_outer*t)^3-(r_inner+v_inner*t)^3)]",
+    "expansion_time": "rho/abs(d rho/dt)=V/(dV/dt)",
+    "radiative_test": "ne_upper*alpha_RR(Te)*t_exp",
+    "threebody_test": "n_ion^2*alpha3(Te)*t_exp, singly-ionized diagnostic only",
+    "atomic_energy": "sum(number_fluence_species*ground-state ionization threshold); not plasma thermodynamic free energy",
+    "50pct_production": "2*atomic threshold, no charge separation, electron collection, heating, beam transport or hardware power included"
+  },
+  "stages": {
+    "C13": {
+      "endpoint_temperature_K_range": [
+        27357947.399803333,
+        112883724.70319068
+      ],
+      "endpoint_density_kg_m3_range": [
+        548.5175360546085,
+        59525.08159456522
+      ],
+      "wall_ballistic_density_kg_m3_energy_quantiles_1_50_99": [
+        1.1857056110013572e-16,
+        5.199819170882313e-16,
+        6.432613120992708e-16
+      ],
+      "fully_stripped_electron_density_upper_cm3_energy_quantiles_1_50_99": [
+        35670.917581124864,
+        156099.07099176044,
+        193315.9609735061
+      ],
+      "fully_stripped_electron_density_upper_cm3_max": 196682.60072692172,
+      "expansion_time_s_energy_quantiles_1_50_99": [
+        19.58671680186674,
+        31.336720079439228,
+        89.40479976364489
+      ],
+      "atomic_threshold_inventory": {
+        "single_charge_known_J_m2": 80.26911290351997,
+        "fully_strip_known_J_m2": 7310.611602030568,
+        "omitted_trace_fullstrip_upper_J_m2": 1.328763366691033e-05,
+        "single_charge_50pct_production_J_m2": 160.53825238230726,
+        "fully_strip_50pct_production_J_m2": 14621.223230636404,
+        "single_charge_50pct_cost_over_kinetic": 4.700277928728289e-06,
+        "fully_strip_50pct_cost_over_kinetic": 0.00042808372348734745,
+        "known_elements_fraction_nuclei": 0.9999999997732653
+      },
+      "charge_fluence_C_m2": {
+        "single_all_nuclei": 5.742133636650587,
+        "fully_stripped": 35.791234747894286
+      },
+      "temperature_conditional_rates": {
+        "10.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.01566500030339153,
+            "bare_N7_Gamma_max": 0.4123259442656294
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 3.43781434088635e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.987669448444838e-05,
+                0.0001935789075461154,
+                0.00029406334960864255
+              ],
+              "n_alpha_texp_max_all_packets": 0.0003014328071530249
+            },
+            "He2+": {
+              "alpha_cm3_s": 1.5304499497531036e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00013300539540109054,
+                0.000861776698653335,
+                0.0013091144372756993
+              ],
+              "n_alpha_texp_max_all_packets": 0.001341921869004545
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.5433430204304356e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0013412588154547535,
+                0.008690366210608648,
+                0.013201428965645731
+              ],
+              "n_alpha_texp_max_all_packets": 0.013532267101091653
+            },
+            "N7+": {
+              "alpha_cm3_s": 2.1215476391141522e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0018437537447608108,
+                0.011946162112433127,
+                0.01814726867860371
+              ],
+              "n_alpha_texp_max_all_packets": 0.018602053425670804
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.792316870216606e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0024266929439163264,
+                0.01572317745116382,
+                0.023884886459950967
+              ],
+              "n_alpha_texp_max_all_packets": 0.024483460396326436
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.40542757474901e-13,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              0.0013305203993109753,
+              0.011317170363201668,
+              0.015869319739880663
+            ],
+            "maximum_all_packets": 0.016883461152394242
+          }
+        },
+        "197.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.0007951776803752047,
+            "bare_N7_Gamma_max": 0.020930250977950735
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 5.648334579925503e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.908745786047033e-06,
+                3.180504614321381e-05,
+                4.831465639459114e-05
+              ],
+              "n_alpha_texp_max_all_packets": 4.952545947340126e-05
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.6544450353972646e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.3068739461909934e-05,
+                0.00014946838867422105,
+                0.00022705560017522662
+              ],
+              "n_alpha_texp_max_all_packets": 0.00023274579110834522
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.9379616185953047e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0002553267075591304,
+                0.0016543284312248944,
+                0.0025130700756894812
+              ],
+              "n_alpha_texp_max_all_packets": 0.0025760495773971877
+            },
+            "N7+": {
+              "alpha_cm3_s": 4.095984843323875e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00035596595872413374,
+                0.0023063964271312415,
+                0.0035036185888488278
+              ],
+              "n_alpha_texp_max_all_packets": 0.0035914220110590173
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.456265677910172e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00047418262454183217,
+                0.0030723530839041695,
+                0.004667173973063539
+              ],
+              "n_alpha_texp_max_all_packets": 0.004784137003283091
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 8.085968312013948e-19,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              1.990322807685799e-09,
+              1.6929332540869565e-08,
+              2.3738883700768242e-08
+            ],
+            "maximum_all_packets": 2.5255935814053958e-08
+          }
+        },
+        "1000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.00015665000303391534,
+            "bare_N7_Gamma_max": 0.004123259442656295
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 2.0036127901807225e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.7412611985884306e-06,
+                1.128208613408162e-05,
+                1.713847898625481e-05
+              ],
+              "n_alpha_texp_max_all_packets": 1.7567982674601504e-05
+            },
+            "He2+": {
+              "alpha_cm3_s": 9.709857015175615e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                8.438455447692543e-06,
+                5.467495702348105e-05,
+                8.305605815139365e-05
+              ],
+              "n_alpha_texp_max_all_packets": 8.513750793139866e-05
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1239415437584598e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                9.767734610296942e-05,
+                0.0006328770393411123,
+                0.0009613957658827732
+              ],
+              "n_alpha_texp_max_all_packets": 0.0009854890957365315
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.578361518454288e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00013716920169898062,
+                0.0008887550872698788,
+                0.001350096977285822
+              ],
+              "n_alpha_texp_max_all_packets": 0.00138393146352203
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.1165849788119693e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00018394408915646667,
+                0.0011918218010030803,
+                0.0018104819134599145
+              ],
+              "n_alpha_texp_max_all_packets": 0.0018558540062891355
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749012e-22,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              1.3305203993109756e-12,
+              1.1317170363201671e-11,
+              1.586931973988067e-11
+            ],
+            "maximum_all_packets": 1.688346115239425e-11
+          }
+        },
+        "10000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 1.566500030339153e-05,
+            "bare_N7_Gamma_max": 0.00041232594426562945
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 4.192322735308633e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.643383066193442e-07,
+                2.360643056054481e-06,
+                3.5860239790246375e-06
+              ],
+              "n_alpha_texp_max_all_packets": 3.6758925447664406e-06
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.1879891060937634e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.901495414706158e-06,
+                1.232028547449806e-05,
+                1.8715594899731144e-05
+              ],
+              "n_alpha_texp_max_all_packets": 1.9184622346419026e-05
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.7196386243260937e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.3635311343237643e-05,
+                0.00015313935588549853,
+                0.00023263212154388133
+              ],
+              "n_alpha_texp_max_all_packets": 0.00023846206446420385
+            },
+            "N7+": {
+              "alpha_cm3_s": 3.8514041473067123e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.3471041084654096e-05,
+                0.00021686761803489096,
+                0.0003294409447258369
+              ],
+              "n_alpha_texp_max_all_packets": 0.00033769699247462756
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.2044341967205986e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.522969393971039e-05,
+                0.0002930550013172232,
+                0.00044517626635731645
+              ],
+              "n_alpha_texp_max_all_packets": 0.00045633273178918025
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286947e-26,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              4.207474935139411e-17,
+              3.5788035015872315e-16,
+              5.018319529549373e-16
+            ],
+            "maximum_all_packets": 5.339019202853702e-16
+          }
+        },
+        "100000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 1.5665000303391531e-06,
+            "bare_N7_Gamma_max": 4.1232594426562945e-05
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 6.924918119604155e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.01817441182388e-08,
+                3.899332399938894e-07,
+                5.923428132222396e-07
+              ],
+              "n_alpha_texp_max_all_packets": 6.071873874256242e-07
+            },
+            "He2+": {
+              "alpha_cm3_s": 4.2709464884021857e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.711711882629502e-07,
+                2.4049150810152627e-06,
+                3.6532770703813163e-06
+              ],
+              "n_alpha_texp_max_all_packets": 3.744831051194876e-06
+            },
+            "C6+": {
+              "alpha_cm3_s": 6.114910828998234e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.3142288827186205e-06,
+                3.443227704129591e-05,
+                5.230565070217755e-05
+              ],
+              "n_alpha_texp_max_all_packets": 5.36164712199129e-05
+            },
+            "N7+": {
+              "alpha_cm3_s": 8.763575953483793e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                7.616079735300322e-06,
+                4.9346569973159624e-05,
+                7.496177058726138e-05
+              ],
+              "n_alpha_texp_max_all_packets": 7.68403711899198e-05
+            },
+            "O8+": {
+              "alpha_cm3_s": 1.1957958655870667e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.0392192305736954e-05,
+                6.733372845516274e-05,
+                0.00010228584292659558
+              ],
+              "n_alpha_texp_max_all_packets": 0.00010484920615374408
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749011e-31,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              1.3305203993109754e-21,
+              1.131717036320167e-20,
+              1.5869319739880666e-20
+            ],
+            "maximum_all_packets": 1.6883461152394245e-20
+          }
+        },
+        "1000000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 1.566500030339153e-07,
+            "bare_N7_Gamma_max": 4.123259442656295e-06
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 7.275123148113306e-15,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.322523850339162e-09,
+                4.096528350952581e-08,
+                6.222986088300501e-08
+              ],
+              "n_alpha_texp_max_all_packets": 6.378938987014489e-08
+            },
+            "He2+": {
+              "alpha_cm3_s": 6.051178017171739e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.258841198604065e-08,
+                3.407340576830465e-07,
+                5.176049374292058e-07
+              ],
+              "n_alpha_texp_max_all_packets": 5.305765220085957e-07
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1839894996359745e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.0289587815349776e-06,
+                6.666892716100303e-06,
+                1.0127595141587819e-05
+              ],
+              "n_alpha_texp_max_all_packets": 1.0381400597187618e-05
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.7452008830518025e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.5166855573557554e-06,
+                9.827001893958652e-06,
+                1.4928078323096959e-05
+              ],
+              "n_alpha_texp_max_all_packets": 1.530218764194845e-05
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.4339330691934103e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.1152356553710482e-06,
+                1.3705164324067259e-05,
+                2.081934741320923e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.1341096543345924e-05
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286938e-35,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              4.2074749351394085e-26,
+              3.57880350158723e-25,
+              5.01831952954937e-25
+            ],
+            "maximum_all_packets": 5.3390192028537e-25
+          }
+        }
+      }
+    },
+    "A": {
+      "endpoint_temperature_K_range": [
+        30501091.03075446,
+        124115010.8900846
+      ],
+      "endpoint_density_kg_m3_range": [
+        1816.6612871944692,
+        97780.49312113269
+      ],
+      "wall_ballistic_density_kg_m3_energy_quantiles_1_50_99": [
+        8.794404948754895e-17,
+        6.906586490668887e-16,
+        1.2946459945371607e-15
+      ],
+      "fully_stripped_electron_density_upper_cm3_energy_quantiles_1_50_99": [
+        28099.538946321958,
+        210652.0744614674,
+        408276.37638414075
+      ],
+      "fully_stripped_electron_density_upper_cm3_max": 414079.54495881806,
+      "expansion_time_s_energy_quantiles_1_50_99": [
+        27.10593986442702,
+        43.2693655652678,
+        105.40977233090562
+      ],
+      "atomic_threshold_inventory": {
+        "single_charge_known_J_m2": 98.72113468774513,
+        "fully_strip_known_J_m2": 7617.69818115366,
+        "omitted_trace_fullstrip_upper_J_m2": 6.461675729164317e-08,
+        "single_charge_50pct_production_J_m2": 197.44226950472378,
+        "fully_strip_50pct_production_J_m2": 15235.396362436553,
+        "single_charge_50pct_cost_over_kinetic": 9.88049607339704e-06,
+        "fully_strip_50pct_cost_over_kinetic": 0.0007624166512738571,
+        "known_elements_fraction_nuclei": 0.9999999999990936
+      },
+      "charge_fluence_C_m2": {
+        "single_all_nuclei": 6.988246012194157,
+        "fully_stripped": 36.55130092276413
+      },
+      "temperature_conditional_rates": {
+        "10.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.020077194178030233,
+            "bare_N7_Gamma_max": 0.5919154271654024
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 3.43781434088635e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.447932996516265e-05,
+                0.0003911270826347166,
+                0.0005741816506517571
+              ],
+              "n_alpha_texp_max_all_packets": 0.0005796213751760012
+            },
+            "He2+": {
+              "alpha_cm3_s": 1.5304499497531036e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00015349545839377348,
+                0.0017412238259819658,
+                0.0025561481547679257
+              ],
+              "n_alpha_texp_max_all_packets": 0.002580364779923587
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.5433430204304356e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0015478856033025931,
+                0.017558925329573632,
+                0.025776820826343493
+              ],
+              "n_alpha_texp_max_all_packets": 0.026021027175060735
+            },
+            "N7+": {
+              "alpha_cm3_s": 2.1215476391141522e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0021277920746287007,
+                0.024137276085227692,
+                0.0354339590383125
+              ],
+              "n_alpha_texp_max_all_packets": 0.035769655896184874
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.792316870216606e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.002800535607477455,
+                0.031768753136271505,
+                0.04663710575104388
+              ],
+              "n_alpha_texp_max_all_packets": 0.047078939807575895
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.40542757474901e-13,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              0.0009866772027642104,
+              0.04364602176470855,
+              0.17489079254021092
+            ],
+            "maximum_all_packets": 0.1790355040220319
+          }
+        },
+        "197.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.001019146912590367,
+            "bare_N7_Gamma_max": 0.030046468384030578
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 5.648334579925503e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.664959547660692e-06,
+                6.426224359228954e-05,
+                9.433813903105825e-05
+              ],
+              "n_alpha_texp_max_all_packets": 9.523188665931542e-05
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.6544450353972646e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.662257969005191e-05,
+                0.0003020015741866561,
+                0.0004433437879009503
+              ],
+              "n_alpha_texp_max_all_packets": 0.000447543971018921
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.9379616185953047e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.000294660903783459,
+                0.0033425782861726096,
+                0.004906965543932286
+              ],
+              "n_alpha_texp_max_all_packets": 0.004953453516473119
+            },
+            "N7+": {
+              "alpha_cm3_s": 4.095984843323875e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00041080407183611114,
+                0.004660084703329958,
+                0.00684108885815492
+              ],
+              "n_alpha_texp_max_all_packets": 0.006905900470981622
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.456265677910172e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0005472325321609798,
+                0.006207703689230409,
+                0.009113021596533506
+              ],
+              "n_alpha_texp_max_all_packets": 0.009199357213515275
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 8.085968312013948e-19,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              1.4759684567799283e-09,
+              6.52899967772284e-08,
+              2.616187872258773e-07
+            ],
+            "maximum_all_packets": 2.6781885285269324e-07
+          }
+        },
+        "1000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.00020077194178030232,
+            "bare_N7_Gamma_max": 0.005919154271654024
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 2.0036127901807225e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.0095101033655594e-06,
+                2.2795507483715442e-05,
+                3.346421839744638e-05
+              ],
+              "n_alpha_texp_max_all_packets": 3.378125418097345e-05
+            },
+            "He2+": {
+              "alpha_cm3_s": 9.709857015175615e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                9.738436423372204e-06,
+                0.0001104710048468387,
+                0.00016217343857867129
+              ],
+              "n_alpha_texp_max_all_packets": 0.00016370984927729956
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1239415437584598e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0001127249685589794,
+                0.0012787310001995797,
+                0.0018772002989112288
+              ],
+              "n_alpha_texp_max_all_packets": 0.0018949846577309762
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.578361518454288e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0001583007172663942,
+                0.0017957337856027507,
+                0.002636169764064804
+              ],
+              "n_alpha_texp_max_all_packets": 0.0026611445038520758
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.1165849788119693e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00021228148075311452,
+                0.002408081489641319,
+                0.003535107298917243
+              ],
+              "n_alpha_texp_max_all_packets": 0.0035685984595071477
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749012e-22,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              9.866772027642108e-13,
+              4.364602176470856e-11,
+              1.7489079254021097e-10
+            ],
+            "maximum_all_packets": 1.7903550402203193e-10
+          }
+        },
+        "10000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 2.0077194178030234e-05,
+            "bare_N7_Gamma_max": 0.0005919154271654024
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 4.192322735308633e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.204662165493543e-07,
+                4.769690269258983e-06,
+                7.001991816706945e-06
+              ],
+              "n_alpha_texp_max_all_packets": 7.068327803864775e-06
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.1879891060937634e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.194429101419648e-06,
+                2.489319407755901e-05,
+                3.654366036011924e-05
+              ],
+              "n_alpha_texp_max_all_packets": 3.688987038832362e-05
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.7196386243260937e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.7276434448162762e-05,
+                0.0003094187805031687,
+                0.00045423238128945075
+              ],
+              "n_alpha_texp_max_all_packets": 0.00045853572156756876
+            },
+            "N7+": {
+              "alpha_cm3_s": 3.8514041473067123e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.862740138257339e-05,
+                0.0004381820304452335,
+                0.0006432591674096741
+              ],
+              "n_alpha_texp_max_all_packets": 0.0006493533236134317
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.2044341967205986e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.2197526148093405e-05,
+                0.0005921189925581781,
+                0.0008692414195383897
+              ],
+              "n_alpha_texp_max_all_packets": 0.0008774765030907541
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286947e-26,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              3.12014727609869e-17,
+              1.3802083958176079e-15,
+              5.530532462190521e-15
+            ],
+            "maximum_all_packets": 5.661599747458578e-15
+          }
+        },
+        "100000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 2.007719417803023e-06,
+            "bare_N7_Gamma_max": 5.9191542716540236e-05
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 6.924918119604155e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.945300506426001e-08,
+                7.878619241860336e-07,
+                1.1565955930934382e-06
+              ],
+              "n_alpha_texp_max_all_packets": 1.1675530338358259e-06
+            },
+            "He2+": {
+              "alpha_cm3_s": 4.2709464884021857e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.283517335005494e-07,
+                4.8591421015104745e-06,
+                7.133308728719282e-06
+              ],
+              "n_alpha_texp_max_all_packets": 7.200888795735657e-06
+            },
+            "C6+": {
+              "alpha_cm3_s": 6.114910828998234e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.132909089157425e-06,
+                6.957057583571768e-05,
+                0.00010213086703446798
+              ],
+              "n_alpha_texp_max_all_packets": 0.00010309844198476305
+            },
+            "N7+": {
+              "alpha_cm3_s": 8.763575953483793e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                8.789370135009326e-06,
+                9.970497404028328e-05,
+                0.0001463687101056781
+              ],
+              "n_alpha_texp_max_all_packets": 0.00014775538880054765
+            },
+            "O8+": {
+              "alpha_cm3_s": 1.1957958655870667e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.1993154991006181e-05,
+                0.00013604811137449003,
+                0.00019972109481872303
+              ],
+              "n_alpha_texp_max_all_packets": 0.0002016132272758663
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749011e-31,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              9.866772027642106e-22,
+              4.364602176470856e-20,
+              1.7489079254021098e-19
+            ],
+            "maximum_all_packets": 1.790355040220319e-19
+          }
+        },
+        "1000000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 2.007719417803023e-07,
+            "bare_N7_Gamma_max": 5.919154271654024e-06
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 7.275123148113306e-15,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                7.2965363073189885e-09,
+                8.277054577636721e-08,
+                1.2150866229738027e-07
+              ],
+              "n_alpha_texp_max_all_packets": 1.2265982003545304e-07
+            },
+            "He2+": {
+              "alpha_cm3_s": 6.051178017171739e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.068988690011996e-08,
+                6.884547476026585e-07,
+                1.0106640550552516e-06
+              ],
+              "n_alpha_texp_max_all_packets": 1.0202389588157872e-06
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1839894996359745e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.1874743830032255e-06,
+                1.3470487726901533e-05,
+                1.9774920279146217e-05
+              ],
+              "n_alpha_texp_max_all_packets": 1.9962265379229686e-05
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.7452008830518025e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.7503376021964644e-06,
+                1.985550301193966e-05,
+                2.914823851398655e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.9424385248566224e-05
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.4339330691934103e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.4410969611641094e-06,
+                2.769134823133986e-05,
+                4.065140140421474e-05
+              ],
+              "n_alpha_texp_max_all_packets": 4.10365276528721e-05
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286938e-35,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              3.120147276098689e-26,
+              1.3802083958176072e-24,
+              5.530532462190517e-24
+            ],
+            "maximum_all_packets": 5.661599747458575e-24
+          }
+        }
+      }
+    },
+    "B1": {
+      "endpoint_temperature_K_range": [
+        13015344.70863993,
+        39846594.48007821
+      ],
+      "endpoint_density_kg_m3_range": [
+        92.35385914995511,
+        919.9352066808115
+      ],
+      "wall_ballistic_density_kg_m3_energy_quantiles_1_50_99": [
+        1.3275554208879092e-18,
+        8.497031287708355e-18,
+        1.1730190712684955e-17
+      ],
+      "fully_stripped_electron_density_upper_cm3_energy_quantiles_1_50_99": [
+        399.73500375532046,
+        2558.512547097261,
+        3532.0402090949865
+      ],
+      "fully_stripped_electron_density_upper_cm3_max": 3580.18169216314,
+      "expansion_time_s_energy_quantiles_1_50_99": [
+        39.568462612914765,
+        53.797020257120664,
+        121.8229114668625
+      ],
+      "atomic_threshold_inventory": {
+        "single_charge_known_J_m2": 1.4700742583205801,
+        "fully_strip_known_J_m2": 56.72375975005907,
+        "omitted_trace_fullstrip_upper_J_m2": 1.5582073972758634e-08,
+        "single_charge_50pct_production_J_m2": 2.9401485478053084,
+        "fully_strip_50pct_production_J_m2": 113.44751953128228,
+        "single_charge_50pct_cost_over_kinetic": 2.1331596899712728e-05,
+        "fully_strip_50pct_cost_over_kinetic": 0.0008230933629935251,
+        "known_elements_fraction_nuclei": 0.9999999999829797
+      },
+      "charge_fluence_C_m2": {
+        "single_all_nuclei": 0.08970232557328725,
+        "fully_stripped": 0.3588292671202487
+      },
+      "temperature_conditional_rates": {
+        "10.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.004120754889901236,
+            "bare_N7_Gamma_max": 0.12719745504600097
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 3.43781434088635e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.074584534262008e-06,
+                4.5669074357533115e-06,
+                6.671967992205756e-06
+              ],
+              "n_alpha_texp_max_all_packets": 6.715123012782603e-06
+            },
+            "He2+": {
+              "alpha_cm3_s": 1.5304499497531036e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.783847187171649e-06,
+                2.0331008491208085e-05,
+                2.9702340108898806e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.9894458101682556e-05
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.5433430204304356e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.8241480672518574e-05,
+                0.0002050228434995856,
+                0.0002995256349605888
+              ],
+              "n_alpha_texp_max_all_packets": 0.00030146299961148604
+            },
+            "N7+": {
+              "alpha_cm3_s": 2.1215476391141522e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.631487496513153e-05,
+                0.0002818334769607504,
+                0.0004117411977070246
+              ],
+              "n_alpha_texp_max_all_packets": 0.00041440438492257173
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.792316870216606e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                8.728163379294177e-05,
+                0.00037094070281537653,
+                0.0005419213178736705
+              ],
+              "n_alpha_texp_max_all_packets": 0.0005454265243811343
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.40542757474901e-13,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              6.620246737513482e-07,
+              1.1937066894832533e-05,
+              2.3069765640106686e-05
+            ],
+            "maximum_all_packets": 2.362327090989133e-05
+          }
+        },
+        "197.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.0002091753751218902,
+            "bare_N7_Gamma_max": 0.00645672360639599
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 5.648334579925503e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.7655441458075803e-07,
+                7.503436379881313e-07,
+                1.0962054314083663e-06
+              ],
+              "n_alpha_texp_max_all_packets": 1.1032958083412509e-06
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.6544450353972646e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                8.297206594789658e-07,
+                3.526253476163211e-06,
+                5.151637219790604e-06
+              ],
+              "n_alpha_texp_max_all_packets": 5.184958574222194e-06
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.9379616185953047e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                9.183416568050962e-06,
+                3.9028863782275714e-05,
+                5.7018744870739675e-05
+              ],
+              "n_alpha_texp_max_all_packets": 5.738754836485674e-05
+            },
+            "N7+": {
+              "alpha_cm3_s": 4.095984843323875e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.2803140393185464e-05,
+                5.441243122188449e-05,
+                7.949318101969092e-05
+              ],
+              "n_alpha_texp_max_all_packets": 8.000735163121531e-05
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.456265677910172e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.70550766589542e-05,
+                7.248285632978374e-05,
+                0.00010589294927020896
+              ],
+              "n_alpha_texp_max_all_packets": 0.00010657787647759922
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 8.085968312013948e-19,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              9.903213871056878e-13,
+              1.7856634524325937e-11,
+              3.451001634040994e-11
+            ],
+            "maximum_all_packets": 3.533800376788356e-11
+          }
+        },
+        "1000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 4.1207548899012364e-05,
+            "bare_N7_Gamma_max": 0.00127197455046001
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 2.0036127901807225e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.26284930914171e-08,
+                2.6616661758085556e-07,
+                3.8885288963607176e-07
+              ],
+              "n_alpha_texp_max_all_packets": 3.9136803276523767e-07
+            },
+            "He2+": {
+              "alpha_cm3_s": 9.709857015175615e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.0350860005177097e-07,
+                1.28988984877159e-06,
+                1.8844489198751614e-06
+              ],
+              "n_alpha_texp_max_all_packets": 1.8966377421249432e-06
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1239415437584598e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.513192047555468e-06,
+                1.493081500212479e-05,
+                2.1812992970217742e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.1954081800615615e-05
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.578361518454288e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.933608127214881e-06,
+                2.096748177819667e-05,
+                3.063218803299657e-05
+              ],
+              "n_alpha_texp_max_all_packets": 3.083032038411427e-05
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.1165849788119693e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.615975320808672e-06,
+                2.811742205848138e-05,
+                4.107780651056342e-05
+              ],
+              "n_alpha_texp_max_all_packets": 4.134350226739048e-05
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749012e-22,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              6.620246737513485e-16,
+              1.1937066894832535e-14,
+              2.3069765640106693e-14
+            ],
+            "maximum_all_packets": 2.3623270909891334e-14
+          }
+        },
+        "10000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 4.120754889901237e-06,
+            "bare_N7_Gamma_max": 0.000127197455046001
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 4.192322735308633e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.3104271281956888e-08,
+                5.5692215967725526e-08,
+                8.136286701207978e-08
+              ],
+              "n_alpha_texp_max_all_packets": 8.188913095762019e-08
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.1879891060937634e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.839168789830354e-08,
+                2.9065978343061386e-07,
+                4.246358830241168e-07
+              ],
+              "n_alpha_texp_max_all_packets": 4.2738247447823955e-07
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.7196386243260937e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                8.500987298019528e-07,
+                3.612858817964698e-06,
+                5.278162242813815e-06
+              ],
+              "n_alpha_texp_max_all_packets": 5.312301974968203e-06
+            },
+            "N7+": {
+              "alpha_cm3_s": 3.8514041473067123e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.2038635369766083e-06,
+                5.116333953593115e-06,
+                7.4746459953546345e-06
+              ],
+              "n_alpha_texp_max_all_packets": 7.522992825272133e-06
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.2044341967205986e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.6267907288845523e-06,
+                6.913744279094525e-06,
+                1.0100550796209747e-05
+              ],
+              "n_alpha_texp_max_all_packets": 1.0165882266318285e-05
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286947e-26,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              2.0935058362841493e-20,
+              3.774831996946446e-19,
+              7.295300450902949e-19
+            ],
+            "maximum_all_packets": 7.470334185845494e-19
+          }
+        },
+        "100000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 4.1207548899012366e-07,
+            "bare_N7_Gamma_max": 1.2719745504600098e-05
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 6.924918119604155e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.164575853866151e-09,
+                9.199292607595924e-09,
+                1.3439594888283703e-08
+              ],
+              "n_alpha_texp_max_all_packets": 1.3526523661716953e-08
+            },
+            "He2+": {
+              "alpha_cm3_s": 4.2709464884021857e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.3350031700415622e-08,
+                5.673668017383272e-08,
+                8.288876431790122e-08
+              ],
+              "n_alpha_texp_max_all_packets": 8.342489793453533e-08
+            },
+            "C6+": {
+              "alpha_cm3_s": 6.114910828998234e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.9113855355954504e-07,
+                8.123251858539993e-07,
+                1.1867566215268556e-06
+              ],
+              "n_alpha_texp_max_all_packets": 1.1944326934866624e-06
+            },
+            "N7+": {
+              "alpha_cm3_s": 8.763575953483793e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.739299523084814e-07,
+                1.1641827107927917e-06,
+                1.7007986022838241e-06
+              ],
+              "n_alpha_texp_max_all_packets": 1.7117995541415629e-06
+            },
+            "O8+": {
+              "alpha_cm3_s": 1.1957958655870667e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.737792724906178e-07,
+                1.5885351821485055e-06,
+                2.3207511951770747e-06
+              ],
+              "n_alpha_texp_max_all_packets": 2.3357620683854904e-06
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749011e-31,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              6.620246737513483e-25,
+              1.1937066894832534e-23,
+              2.3069765640106692e-23
+            ],
+            "maximum_all_packets": 2.3623270909891335e-23
+          }
+        },
+        "1000000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 4.120754889901236e-08,
+            "bare_N7_Gamma_max": 1.2719745504600097e-06
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 7.275123148113306e-15,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.2740421804740311e-10,
+                9.6645166686266e-10,
+                1.4119258334076455e-09
+              ],
+              "n_alpha_texp_max_all_packets": 1.4210583245204428e-09
+            },
+            "He2+": {
+              "alpha_cm3_s": 6.051178017171739e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.891464071803975e-09,
+                8.038587061849185e-09,
+                1.1743876208073458e-08
+              ],
+              "n_alpha_texp_max_all_packets": 1.1819836887141972e-08
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1839894996359745e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.700888642838703e-08,
+                1.5728512111411107e-07,
+                2.2978378880816008e-07
+              ],
+              "n_alpha_texp_max_all_packets": 2.312700555507203e-07
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.7452008830518025e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.4551109866635574e-08,
+                2.3183831642396442e-07,
+                3.387013746847297e-07
+              ],
+              "n_alpha_texp_max_all_packets": 3.408921323159115e-07
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.4339330691934103e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                7.607935083864276e-08,
+                3.2333180124437477e-07,
+                4.723676709267179e-07
+              ],
+              "n_alpha_texp_max_all_packets": 4.754229968189425e-07
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286938e-35,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              2.0935058362841483e-29,
+              3.7748319969464442e-28,
+              7.295300450902945e-28
+            ],
+            "maximum_all_packets": 7.470334185845489e-28
+          }
+        }
+      }
+    },
+    "B2": {
+      "endpoint_temperature_K_range": [
+        30509867.765012376,
+        125883547.08547115
+      ],
+      "endpoint_density_kg_m3_range": [
+        1253.25063059345,
+        100381.28983597396
+      ],
+      "wall_ballistic_density_kg_m3_energy_quantiles_1_50_99": [
+        9.510443868209243e-17,
+        5.938061329266794e-16,
+        7.467879779016624e-16
+      ],
+      "fully_stripped_electron_density_upper_cm3_energy_quantiles_1_50_99": [
+        31992.32439188218,
+        189487.4916689847,
+        233354.16504514418
+      ],
+      "fully_stripped_electron_density_upper_cm3_max": 240286.2855300107,
+      "expansion_time_s_energy_quantiles_1_50_99": [
+        20.702817856466087,
+        35.016850294452496,
+        90.5088324564583
+      ],
+      "atomic_threshold_inventory": {
+        "single_charge_known_J_m2": 92.15298108201198,
+        "fully_strip_known_J_m2": 7878.925995770332,
+        "omitted_trace_fullstrip_upper_J_m2": 5.053092355563548e-06,
+        "single_charge_50pct_production_J_m2": 184.30597227020866,
+        "fully_strip_50pct_production_J_m2": 15757.852001646848,
+        "single_charge_50pct_cost_over_kinetic": 6.242835617063374e-06,
+        "fully_strip_50pct_cost_over_kinetic": 0.0005337519913900018,
+        "known_elements_fraction_nuclei": 0.9999999999465915
+      },
+      "charge_fluence_C_m2": {
+        "single_all_nuclei": 6.6422709873521475,
+        "fully_stripped": 37.71364724371078
+      },
+      "temperature_conditional_rates": {
+        "10.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.016746269965571242,
+            "bare_N7_Gamma_max": 0.448627398294537
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 3.43781434088635e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.9483481214777697e-05,
+                0.00023631861462211645,
+                0.0003949996465767608
+              ],
+              "n_alpha_texp_max_all_packets": 0.00040597573109397956
+            },
+            "He2+": {
+              "alpha_cm3_s": 1.5304499497531036e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00013125488426483592,
+                0.001052045794249881,
+                0.001758463748510735
+              ],
+              "n_alpha_texp_max_all_packets": 0.0018073272016590866
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.5433430204304356e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0013236062346254347,
+                0.010609086131765907,
+                0.017732776909050826
+              ],
+              "n_alpha_texp_max_all_packets": 0.018225527876717586
+            },
+            "N7+": {
+              "alpha_cm3_s": 2.1215476391141522e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0018194877256795389,
+                0.014583719457084338,
+                0.02437626016272282
+              ],
+              "n_alpha_texp_max_all_packets": 0.02505361745678248
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.792316870216606e-09,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.002394754743140441,
+                0.01919465069732127,
+                0.03208329675480718
+              ],
+              "n_alpha_texp_max_all_packets": 0.03297481394937596
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.40542757474901e-13,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              0.001989717852745299,
+              0.01953195244965068,
+              0.030760037042411672
+            ],
+            "maximum_all_packets": 0.03280759490681875
+          }
+        },
+        "197.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.0008500644652574235,
+            "bare_N7_Gamma_max": 0.02277296438043335
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 5.648334579925503e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.844140781583825e-06,
+                3.882718700004155e-05,
+                6.489850648079623e-05
+              ],
+              "n_alpha_texp_max_all_packets": 6.670187896061455e-05
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.6544450353972646e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.276512707682094e-05,
+                0.00018246906643419987,
+                0.0003049917031206017
+              ],
+              "n_alpha_texp_max_all_packets": 0.0003134666846541654
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.9379616185953047e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00025196630068527643,
+                0.00201958264954002,
+                0.003375673279383757
+              ],
+              "n_alpha_texp_max_all_packets": 0.003469475072722407
+            },
+            "N7+": {
+              "alpha_cm3_s": 4.095984843323875e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00035128101813961785,
+                0.002815618784805937,
+                0.004706224377083618
+              ],
+              "n_alpha_texp_max_all_packets": 0.004836998966295376
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.456265677910172e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0004679418103073735,
+                0.0037506887171850378,
+                0.006269166396716352
+              ],
+              "n_alpha_texp_max_all_packets": 0.006443371363275719
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 8.085968312013948e-19,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              2.9764149615664715e-09,
+              2.9217808655399845e-08,
+              4.601387797021127e-08
+            ],
+            "maximum_all_packets": 4.9076815689690265e-08
+          }
+        },
+        "1000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 0.00016746269965571244,
+            "bare_N7_Gamma_max": 0.004486273982945371
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 2.0036127901807225e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.7183441048114053e-06,
+                1.3773024132902548e-05,
+                2.3021206659869087e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.3660910295497476e-05
+            },
+            "He2+": {
+              "alpha_cm3_s": 9.709857015175615e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                8.327395214463439e-06,
+                6.674647699018943e-05,
+                0.00011156478241685368
+              ],
+              "n_alpha_texp_max_all_packets": 0.00011466489780066463
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1239415437584598e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                9.639179462893017e-05,
+                0.0007726080648926549,
+                0.001291391763881781
+              ],
+              "n_alpha_texp_max_all_packets": 0.0013272764166100766
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.578361518454288e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.00013536388985880204,
+                0.001084980660467575,
+                0.0018135134132899755
+              ],
+              "n_alpha_texp_max_all_packets": 0.0018639065634355222
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.1165849788119693e-10,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                0.0001815231634823946,
+                0.0014549605660027175,
+                0.0024319239949556295
+              ],
+              "n_alpha_texp_max_all_packets": 0.002499501278984662
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749012e-22,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              1.9897178527452995e-12,
+              1.9531952449650688e-11,
+              3.0760037042411684e-11
+            ],
+            "maximum_all_packets": 3.2807594906818765e-11
+          }
+        },
+        "10000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 1.6746269965571242e-05,
+            "bare_N7_Gamma_max": 0.0004486273982945371
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 4.192322735308633e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.595431758565805e-07,
+                2.8818423644178113e-06,
+                4.816915151839415e-06
+              ],
+              "n_alpha_texp_max_all_packets": 4.950765569876654e-06
+            },
+            "He2+": {
+              "alpha_cm3_s": 2.1879891060937634e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.8764694457299181e-06,
+                1.5040444395465815e-05,
+                2.513966252750036e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.5838232926303437e-05
+            },
+            "C6+": {
+              "alpha_cm3_s": 2.7196386243260937e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.332424219006219e-05,
+                0.00018695053549862075,
+                0.00031248234747556096
+              ],
+              "n_alpha_texp_max_all_packets": 0.0003211654758929028
+            },
+            "N7+": {
+              "alpha_cm3_s": 3.8514041473067123e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.303052188628597e-05,
+                0.0002647491697317009,
+                0.0004425204871936725
+              ],
+              "n_alpha_texp_max_all_packets": 0.00045481706089983335
+            },
+            "O8+": {
+              "alpha_cm3_s": 5.2044341967205986e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                4.463441671285737e-05,
+                0.00035775773712779397,
+                0.0005979815849527882
+              ],
+              "n_alpha_texp_max_all_packets": 0.0006145980464434865
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286947e-26,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              6.292040315774659e-17,
+              6.176545689100143e-16,
+              9.727177796517033e-16
+            ],
+            "maximum_all_packets": 1.037467244576869e-15
+          }
+        },
+        "100000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 1.6746269965571242e-06,
+            "bare_N7_Gamma_max": 4.48627398294537e-05
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 6.924918119604155e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.938967990941092e-08,
+                4.760254318953479e-07,
+                7.956625747018707e-07
+              ],
+              "n_alpha_texp_max_all_packets": 8.177721126288077e-07
+            },
+            "He2+": {
+              "alpha_cm3_s": 4.2709464884021857e-13,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                3.66286128551261e-07,
+                2.9358890771401435e-06,
+                4.907252650043243e-06
+              ],
+              "n_alpha_texp_max_all_packets": 5.043613328593251e-06
+            },
+            "C6+": {
+              "alpha_cm3_s": 6.114910828998234e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.244287232519002e-06,
+                4.203447633748795e-05,
+                7.025939672123089e-05
+              ],
+              "n_alpha_texp_max_all_packets": 7.221173537070654e-05
+            },
+            "N7+": {
+              "alpha_cm3_s": 8.763575953483793e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                7.515842956551292e-06,
+                6.024165132573829e-05,
+                0.0001006921567347413
+              ],
+              "n_alpha_texp_max_all_packets": 0.00010349014815604954
+            },
+            "O8+": {
+              "alpha_cm3_s": 1.1957958655870667e-11,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.0255418543240828e-05,
+                8.220014064329374e-05,
+                0.00013739512883731322
+              ],
+              "n_alpha_texp_max_all_packets": 0.0001412130070542737
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 5.405427574749011e-31,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              1.989717852745299e-21,
+              1.9531952449650684e-20,
+              3.0760037042411673e-20
+            ],
+            "maximum_all_packets": 3.280759490681876e-20
+          }
+        },
+        "1000000.0": {
+          "co_temperature_coupling_diagnostics": {
+            "electron_Gamma_max": 1.674626996557124e-07,
+            "bare_N7_Gamma_max": 4.48627398294537e-06
+          },
+          "radiative_bare_ion_capture": {
+            "H+": {
+              "alpha_cm3_s": 7.275123148113306e-15,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                6.239311824421877e-09,
+                5.000988573234482e-08,
+                8.359006006026104e-08
+              ],
+              "n_alpha_texp_max_all_packets": 8.591282559175505e-08
+            },
+            "He2+": {
+              "alpha_cm3_s": 6.051178017171739e-14,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                5.189628517011784e-08,
+                4.159637095123472e-07,
+                6.952711639278483e-07
+              ],
+              "n_alpha_texp_max_all_packets": 7.145910674361014e-07
+            },
+            "C6+": {
+              "alpha_cm3_s": 1.1839894996359745e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.0154164451478541e-06,
+                8.138855986299934e-06,
+                1.3603859532048726e-05
+              ],
+              "n_alpha_texp_max_all_packets": 1.3981877875300891e-05
+            },
+            "N7+": {
+              "alpha_cm3_s": 1.7452008830518025e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                1.4967241493967664e-06,
+                1.199667620252476e-05,
+                2.0052093093345496e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.0609292246426076e-05
+            },
+            "O8+": {
+              "alpha_cm3_s": 2.4339330691934103e-12,
+              "n_alpha_texp_energy_quantiles_1_50_99": [
+                2.0873966074936e-06,
+                1.6731086497429834e-05,
+                2.796552131070043e-05
+              ],
+              "n_alpha_texp_max_all_packets": 2.8742615488213012e-05
+            }
+          },
+          "three_body_singly_ionized_diagnostic": {
+            "alpha3_cm6_s": 1.7093462863286938e-35,
+            "n2_alpha3_texp_energy_quantiles_1_50_99": [
+              6.292040315774655e-26,
+              6.17654568910014e-25,
+              9.727177796517026e-25
+            ],
+            "maximum_all_packets": 1.0374672445768684e-24
+          }
+        }
+      }
+    }
+  },
+  "selected_station_averages": {
+    "single_charge_threshold_W_m2": 0.0004555542348238153,
+    "fully_strip_threshold_W_m2": 0.0275285309153331,
+    "trace_upper_W_m2": 7.694704338153276e-12,
+    "single_charge_current_A_m2": 3.0236499472553974e-05,
+    "fully_stripped_current_A_m2": 0.00014484414440126505,
+    "single_charge_50pct_production_W_m2": 0.0009111084850370393,
+    "single_charge_50pct_share_of_outgoing_kinetic": 1.1482145390646387e-05,
+    "single_charge_50pct_share_of_frozen_net": 4.1219196832447286e-05,
+    "fully_strip_50pct_production_W_m2": 0.05505706184605561,
+    "fully_strip_50pct_share_of_outgoing_kinetic": 0.0006938506218307481,
+    "fully_strip_50pct_share_of_frozen_net": 0.0024908206942629136
+  },
+  "blackbody_1000K": {
+    "carbon_first_ionization_x": 130.6703554040904,
+    "energy_fraction_above_carbon_ground_threshold": 6.260615259242061e-52,
+    "hemisphere_energy_flux_above_threshold_W_m2": 3.550003261320723e-47
+  },
+  "sources": [
+    {
+      "url": "https://physics.nist.gov/cuu/pdf/CODATA_RMP2000.pdf",
+      "use": "NIST static TableIII ground-state H/He/C successive and total binding energies; rounded atomic threshold arithmetic."
+    },
+    {
+      "url": "https://ft.nephy.chalmers.se/~vojtech/Theses/Doctoral_state_exam_Thesis_Vojtech_Horny.pdf",
+      "use": "Primary author-hosted plasma thesis,Table5.1,N/O successive thresholds reproduced fromNIST; rounded0.1eV totals sufficient."
+    },
+    {
+      "url": "https://www.pa.uky.edu/~verner/rec.html",
+      "use": "VernerFerland1996 author data and fit validity3\u20131e9K;bare-to-H-like RR subset."
+    },
+    {
+      "url": "https://www.pa.uky.edu/~verner/dima/rec//table1.dat",
+      "use": "Downloaded RR coefficients;electron countN=1 means recombinedH-likeproduct."
+    },
+    {
+      "url": "https://homepage.physics.uiowa.edu/~ghowes/teach/phys4731/resources/NRL_Plasma_Formulary_2023.pdf",
+      "use": "Previously retained primaryNRL reprint,p54\u201356 time-dependent charge kinetics,hydrogenicRR,singly-ionizedthreebody,conditionsforLTE."
+    },
+    {
+      "url": "https://arxiv.org/abs/astro-ph/0604144",
+      "use": "Badnell2006:level/metastable-resolvedRR and complementaryDR rates needed for a fullnetwork."
+    }
+  ],
+  "retained_atomic_source_sha256": {
+    "verner-table1.dat": "2382f6896fe58ee1da58c9bd563fd7d02c0d94410dbd4150767eed26a54f5091",
+    "NRL_Plasma_Formulary_2023.pdf": "1a13dc8f0a1e493806adde235b22ccdd80eed939936a4622b36d0b563bea2596"
+  },
+  "access_notes": [
+    "NISTASD CGI request returned403; no further attempt was made to that endpoint. Static NISTpaper and author-hosted NIST-reproduced table provide threshold values.",
+    "OfficialNRL publicindex returned403; the already retained authoritativereprint was used."
+  ],
+  "source_hashes": {
+    "membrane-receiver/pulse-loading.json": "6ff0345c6ff48ae89503d89a04b698d4b77643e76646081943dbabd28626689a",
+    "open-loop-redesign/station-inputs.json": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "open-loop-redesign/operating-cases.json": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461"
+  },
+  "checks": {
+    "passed": 21,
+    "total": 21,
+    "checks": [
+      {
+        "name": "C13 ballisticdensitypositive",
+        "passed": true
+      },
+      {
+        "name": "C13 masspacketclosure",
+        "passed": true
+      },
+      {
+        "name": "C13 chargeupper",
+        "passed": true
+      },
+      {
+        "name": "C13 knownspeciesdominance",
+        "passed": true
+      },
+      {
+        "name": "A ballisticdensitypositive",
+        "passed": true
+      },
+      {
+        "name": "A masspacketclosure",
+        "passed": true
+      },
+      {
+        "name": "A chargeupper",
+        "passed": true
+      },
+      {
+        "name": "A knownspeciesdominance",
+        "passed": true
+      },
+      {
+        "name": "B1 ballisticdensitypositive",
+        "passed": true
+      },
+      {
+        "name": "B1 masspacketclosure",
+        "passed": true
+      },
+      {
+        "name": "B1 chargeupper",
+        "passed": true
+      },
+      {
+        "name": "B1 knownspeciesdominance",
+        "passed": true
+      },
+      {
+        "name": "B2 ballisticdensitypositive",
+        "passed": true
+      },
+      {
+        "name": "B2 masspacketclosure",
+        "passed": true
+      },
+      {
+        "name": "B2 chargeupper",
+        "passed": true
+      },
+      {
+        "name": "B2 knownspeciesdominance",
+        "passed": true
+      },
+      {
+        "name": "Plancktail_wien_valid",
+        "passed": true
+      },
+      {
+        "name": "RR_vs_NRL_Seaton_15pct_H+",
+        "passed": true
+      },
+      {
+        "name": "RR_vs_NRL_Seaton_15pct_C6+",
+        "passed": true
+      },
+      {
+        "name": "RR_vs_NRL_Seaton_15pct_N7+",
+        "passed": true
+      },
+      {
+        "name": "RR_vs_NRL_Seaton_15pct_O8+",
+        "passed": true
+      }
+    ]
+  }
+}

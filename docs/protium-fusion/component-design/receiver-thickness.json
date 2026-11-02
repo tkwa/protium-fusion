@@ -1,0 +1,1398 @@
+{
+  "scope": "Receiver thickness: finite conduction, finite heat storage and local plate loads.\nActual selected pulse mixture, with all source heat retained for the thermal screen.\nPhoton-containment fractions are a separate study; no capture credit is inferred.\n",
+  "input_sha256": {
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/plant-scan-003.json": "b17ad09c4acb782c063e88a8611e0d418dcf00040ca7889d4f1bc42d20443d53",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/material_cycle.py": "845b6fceeead8ac69da4bb4310bbbfedeaf8b7c91356275d4eb510580511405e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/A-H3-fixed_energy-z64-k0p001-t1.receiver.json": "6063ea15b45a202d933cb743921659e67d4c461c524c8c8c0e6e3e53e772ae96",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json": "230f1b22fc32cd7e1203f12e5780446b641b4518c527e8efbe295e2fa627e48d",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.npz": "943ad86e1ad9fa21555a4d0440a7e073d6a6ec2222446b4377ae205ff4cfd9a2",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/B1-H2-fixed_energy-z64-k0p001-t1.receiver.json": "089c5d410d91f4f396e38db4146355845c1f6e4d8040a853148e57aa3bc79e5e",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.npz": "8fe8fd5fc9565f6b1864cabe0625ff59a322e626e697ebc877ee602e65f6878a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/B2-H2p5-fixed_energy-z64-k0p001-t1.receiver.json": "6cf2b1642d131b55d2776d5509bc57a77bf6deef432fc545a8df54b3ed477b91",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json": "f92988f64f7c658e34ce6f6bd37f396059f5e8a30c14866653a534093659a0d2",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.npz": "c0be8e6432572b7e345f49f1da33d3b11b3bbccb0c458ae7fc027f95672b1d21",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/C13-H4-fixed_energy-z64-k0p001-t1.receiver.json": "7c0dc3bb540b10b0ffaf7d84525a73b2b21516433eeb49c06eaad1e965410bd1",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json": "cf9dea85fb758573a00ba17adcf69aeed7ac1eb5d42ad3906ee4fd296a1f9170",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.npz": "e7402bcc400861ef39cc712bf1b9c95e0048abf6969981f3f6073fdebee32d17"
+  },
+  "code_sha256": "7042bfb18287a1173f5804afd0ace9b572c4ee7edfc237382a13214c54cd4158",
+  "reference": {
+    "radius_m": 1100000000.0,
+    "helium_per_s": 4.473376366393096e+32,
+    "fixed_original_plant_mass_kg": 1.219039274101317e+23,
+    "fixed_original_receiver_kg_m2": 5000.0,
+    "selected_cases": {
+      "A": "A-H3-fixed_energy-z64-k0p001-t1",
+      "B1": "B1-H2-fixed_energy-z64-k0p001-t1",
+      "B2": "B2-H2p5-fixed_energy-z64-k0p001-t1",
+      "C13": "C13-H4-fixed_energy-z64-k0p001-t1"
+    },
+    "total_received_heat_mean_W_m2_assuming_full_retention": 125.52841084845478,
+    "large_pulse_guard_s": 86400.0,
+    "large_guard_capacity_used": 0.2160372133014124,
+    "early_history_cut_s": 20000.0
+  },
+  "pulse_energy_fluence_J_m2": {
+    "A": {
+      "kinetic": 24658123.725696184,
+      "exact_nodal_kinetic_separate": 24697547.107919645,
+      "advected_internal": 1214580.87265484,
+      "prompt": 22021.974363925925,
+      "delayed": {
+        "n13": 0.034993749594855045,
+        "o14": 0.2698622888787492,
+        "o15": 5682334.951124888
+      },
+      "total": 31577061.82869588,
+      "interval_s": 707345.3089246377,
+      "early_slow_energy_fraction": 0.9999998992534272
+    },
+    "B1": {
+      "kinetic": 159642.78513030228,
+      "exact_nodal_kinetic_separate": 159701.75445268714,
+      "advected_internal": 9213.206589409912,
+      "prompt": 10650.034583819512,
+      "delayed": {
+        "n13": 8.814561160945738,
+        "o14": 0.000693265427538944,
+        "o15": 8.332806935116277e-16
+      },
+      "total": 179514.84155795808,
+      "interval_s": 6771.756982603364,
+      "early_slow_energy_fraction": 0.999999809276957
+    },
+    "B2": {
+      "kinetic": 30144979.041931763,
+      "exact_nodal_kinetic_separate": 30201714.081392687,
+      "advected_internal": 1394655.2217820014,
+      "prompt": 22373.169166998807,
+      "delayed": {
+        "n13": 255204.35115922883,
+        "o14": 17830076.566757515,
+        "o15": 0.1124567536701239
+      },
+      "total": 49647288.46325426,
+      "interval_s": 959692.2980143537,
+      "early_slow_energy_fraction": 0.9999999346137456
+    },
+    "C13": {
+      "kinetic": 51391430.08147107,
+      "exact_nodal_kinetic_separate": 51462302.78316093,
+      "advected_internal": 2444918.5049882713,
+      "prompt": 61189.647342733835,
+      "delayed": {
+        "n13": 0.02790074834064721,
+        "o14": 0.748620619915873,
+        "o15": 5281431.890489016
+      },
+      "total": 59178970.90081246,
+      "interval_s": 22374673.30151895,
+      "early_slow_energy_fraction": 0.9999999318602448
+    }
+  },
+  "thermal_rows": [
+    {
+      "sigma_kg_m2": 1000.0,
+      "thickness_m": 0.5,
+      "k_W_m_K": 100.0,
+      "cp_J_kg_K": 1000.0,
+      "diffusivity_m2_s": 5e-05,
+      "through_diffusion_s": 5000.0,
+      "fixed_back_slowest_decay_s": 2026.4236728467558,
+      "finite_bulk_nonuniform_slowest_decay_s": 506.60591821168896,
+      "mean_front_back_gradient_K": 0.6276420542422739,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 140.58283603432054,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 31.57706182869588,
+        "B1": 0.17951484155795808,
+        "B2": 49.647288463254256,
+        "C13": 59.17897090081246
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 334.45472287517583,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 334.45472287517583,
+          "flash_bound_K": 334.45472287517583,
+          "slow_material_plus_decay_peak_D_K": 193.2950193738922,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 122.94383716247573,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 122.94383716247573,
+          "flash_bound_K": 122.94383716247573,
+          "slow_material_plus_decay_peak_D_K": 1.147496604360399,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 369.53909032369944,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 369.53909032369944,
+          "flash_bound_K": 369.53909032369944,
+          "slow_material_plus_decay_peak_D_K": 281.815513908405,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 790.489855267883,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 790.489855267883,
+          "flash_bound_K": 790.489855267883,
+          "slow_material_plus_decay_peak_D_K": 427.1900024582122,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 11532.420410730178,
+          "time_s": 988.0747520702207,
+          "ratio_to_station_mean_heat": 91.87099822886141,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 66.0039210300364,
+          "time_s": 988.0747520702207,
+          "ratio_to_station_mean_heat": 0.5258086243895829,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 18180.276642619137,
+          "time_s": 966.7880271307188,
+          "ratio_to_station_mean_heat": 144.8299752999138,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 21724.484412022317,
+          "time_s": 945.9598956910504,
+          "ratio_to_station_mean_heat": 173.0642829394963,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 6.960372794776163e-13,
+          "old_B1_K": 0.10561824594387628,
+          "late_tails_K": 4.284344683859751e-05,
+          "total_K": 0.10566108939141092
+        },
+        "N": {
+          "old_large_K": 1.4155909922692762e-55,
+          "old_B1_K": 0.001975362441312652,
+          "late_tails_K": 1.428114894619917e-05,
+          "total_K": 0.001989643590258851
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1913.53935351975,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 2054.12312511731
+    },
+    {
+      "sigma_kg_m2": 2000.0,
+      "thickness_m": 1.0,
+      "k_W_m_K": 100.0,
+      "cp_J_kg_K": 1000.0,
+      "diffusivity_m2_s": 5e-05,
+      "through_diffusion_s": 20000.0,
+      "fixed_back_slowest_decay_s": 8105.694691387023,
+      "finite_bulk_nonuniform_slowest_decay_s": 2026.4236728467558,
+      "mean_front_back_gradient_K": 1.2552841084845479,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 70.29141801716027,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 15.78853091434794,
+        "B1": 0.08975742077897904,
+        "B2": 24.823644231627128,
+        "C13": 29.58948545040623
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 334.45472287517583,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 334.45472287517583,
+          "flash_bound_K": 334.45472287517583,
+          "slow_material_plus_decay_peak_D_K": 193.2950193738922,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 122.94383716247573,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 122.94383716247573,
+          "flash_bound_K": 122.94383716247573,
+          "slow_material_plus_decay_peak_D_K": 1.147496604360399,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 369.53909032369944,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 369.53909032369944,
+          "flash_bound_K": 369.53909032369944,
+          "slow_material_plus_decay_peak_D_K": 281.815513908405,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 790.489855267883,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 790.489855267883,
+          "flash_bound_K": 790.489855267883,
+          "slow_material_plus_decay_peak_D_K": 427.1900024582122,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 2919.0003193339276,
+          "time_s": 3494.5000006711853,
+          "ratio_to_station_mean_heat": 23.253702485391255,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 16.599525876722737,
+          "time_s": 3494.5000006711853,
+          "ratio_to_station_mean_heat": 0.13223720243509376,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 4587.279374008384,
+          "time_s": 3419.215757085844,
+          "ratio_to_station_mean_heat": 36.543754063344394,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 5472.208256253073,
+          "time_s": 3419.215757085844,
+          "ratio_to_station_mean_heat": 43.59338431249195,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 0.01638839345793303,
+          "old_B1_K": 0.2809289169383013,
+          "late_tails_K": 8.568689367719502e-05,
+          "total_K": 0.29740299728991154
+        },
+        "N": {
+          "old_large_K": 3.4801863973880814e-13,
+          "old_B1_K": 0.053796804192594465,
+          "late_tails_K": 2.856229789239834e-05,
+          "total_K": 0.053825366490834886
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1913.7310954276486,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 1983.9881498320908
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "thickness_m": 2.5,
+      "k_W_m_K": 100.0,
+      "cp_J_kg_K": 1000.0,
+      "diffusivity_m2_s": 5e-05,
+      "through_diffusion_s": 125000.0,
+      "fixed_back_slowest_decay_s": 50660.5918211689,
+      "finite_bulk_nonuniform_slowest_decay_s": 12665.147955292225,
+      "mean_front_back_gradient_K": 3.1382102712113698,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 28.116567206864108,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 6.315412365739176,
+        "B1": 0.035902968311591614,
+        "B2": 9.929457692650852,
+        "C13": 11.835794180162493
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 334.45472287517583,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 334.45472287517583,
+          "flash_bound_K": 334.45472287517583,
+          "slow_material_plus_decay_peak_D_K": 193.2950193738922,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 122.94383716247573,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 122.94383716247573,
+          "flash_bound_K": 122.94383716247573,
+          "slow_material_plus_decay_peak_D_K": 1.147496604360399,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 369.53909032369944,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 369.53909032369944,
+          "flash_bound_K": 369.53909032369944,
+          "slow_material_plus_decay_peak_D_K": 281.815513908405,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 790.489855267883,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 790.489855267883,
+          "flash_bound_K": 790.489855267883,
+          "slow_material_plus_decay_peak_D_K": 427.1900024582122,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 467.35788216721494,
+          "time_s": 21067.443513118273,
+          "ratio_to_station_mean_heat": 3.7231243429938474,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 2.656947094157898,
+          "time_s": 21067.443513118273,
+          "ratio_to_station_mean_heat": 0.021166101571743146,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 734.7949672131491,
+          "time_s": 21067.443513118273,
+          "ratio_to_station_mean_heat": 5.853614829078307,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 875.8715784541382,
+          "time_s": 21067.443513118273,
+          "ratio_to_station_mean_heat": 6.9774768320100975,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 7.800016041758222,
+          "old_B1_K": 0.7916926282539717,
+          "late_tails_K": 0.00021421723419298754,
+          "total_K": 8.591922887246387
+        },
+        "N": {
+          "old_large_K": 0.12525947290958903,
+          "old_B1_K": 0.2241199925940113,
+          "late_tails_K": 7.140574473099585e-05,
+          "total_K": 0.34945087124833135
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1922.0256153176051,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 1942.422745553673
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "thickness_m": 0.5,
+      "k_W_m_K": 100.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 2.777777777777778e-05,
+      "through_diffusion_s": 9000.0,
+      "fixed_back_slowest_decay_s": 3647.56261112416,
+      "finite_bulk_nonuniform_slowest_decay_s": 911.89065278104,
+      "mean_front_back_gradient_K": 0.6276420542422739,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 78.10157557462252,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 17.542812127053267,
+        "B1": 0.09973046753219893,
+        "B2": 27.581826924030143,
+        "C13": 32.877206056006926
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 249.28783191491567,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 249.28783191491567,
+          "flash_bound_K": 249.28783191491567,
+          "slow_material_plus_decay_peak_D_K": 144.0736010107206,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 91.63692576998686,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 91.63692576998686,
+          "flash_bound_K": 91.63692576998686,
+          "slow_material_plus_decay_peak_D_K": 0.8552934704333447,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 275.43817543574227,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 275.43817543574227,
+          "flash_bound_K": 275.43817543574227,
+          "slow_material_plus_decay_peak_D_K": 210.05288207107705,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 589.1963506343187,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 589.1963506343187,
+          "flash_bound_K": 589.1963506343187,
+          "slow_material_plus_decay_peak_D_K": 318.4086282682882,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 6465.149089115565,
+          "time_s": 1630.5577743857111,
+          "ratio_to_station_mean_heat": 51.503472762996026,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 36.828030879525265,
+          "time_s": 1666.4593721168362,
+          "ratio_to_station_mean_heat": 0.2933840286083619,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 10164.826329307905,
+          "time_s": 1630.5577743857111,
+          "ratio_to_station_mean_heat": 80.97630058887208,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 12136.855082058293,
+          "time_s": 1595.429627685683,
+          "ratio_to_station_mean_heat": 96.68612069590057,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 8.166867478039408e-07,
+          "old_B1_K": 0.12699862158781683,
+          "late_tails_K": 4.284344683859751e-05,
+          "total_K": 0.12704228172140325
+        },
+        "N": {
+          "old_large_K": 1.5647585597623222e-30,
+          "old_B1_K": 0.011117280319766809,
+          "late_tails_K": 1.428114894619917e-05,
+          "total_K": 0.011131561468713008
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1680.960318686027,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 1759.0505905494372
+    },
+    {
+      "sigma_kg_m2": 2000.0,
+      "thickness_m": 1.0,
+      "k_W_m_K": 100.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 2.777777777777778e-05,
+      "through_diffusion_s": 36000.0,
+      "fixed_back_slowest_decay_s": 14590.25044449664,
+      "finite_bulk_nonuniform_slowest_decay_s": 3647.56261112416,
+      "mean_front_back_gradient_K": 1.2552841084845479,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 39.05078778731126,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 8.771406063526634,
+        "B1": 0.049865233766099464,
+        "B2": 13.790913462015071,
+        "C13": 16.438603028003463
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 249.28783191491567,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 249.28783191491567,
+          "flash_bound_K": 249.28783191491567,
+          "slow_material_plus_decay_peak_D_K": 144.07360101072058,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 91.63692576998686,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 91.63692576998686,
+          "flash_bound_K": 91.63692576998686,
+          "slow_material_plus_decay_peak_D_K": 0.8552934704333447,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 275.43817543574227,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 275.43817543574227,
+          "flash_bound_K": 275.43817543574227,
+          "slow_material_plus_decay_peak_D_K": 210.05288207107705,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 589.1963506343187,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 589.1963506343187,
+          "flash_bound_K": 589.1963506343187,
+          "slow_material_plus_decay_peak_D_K": 318.4086282682882,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 1622.4622643217813,
+          "time_s": 6172.557951368453,
+          "ratio_to_station_mean_heat": 12.92506017845245,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 9.224510051715386,
+          "time_s": 6172.557951368453,
+          "ratio_to_station_mean_heat": 0.07348543639934829,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 2550.4326934361698,
+          "time_s": 6172.557951368453,
+          "ratio_to_station_mean_heat": 20.317573338160084,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 3040.7661976121444,
+          "time_s": 6033.271603059317,
+          "ratio_to_station_mean_heat": 24.223728931637115,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 0.3480112094013411,
+          "old_B1_K": 0.2960548566297318,
+          "late_tails_K": 8.568689367719502e-05,
+          "total_K": 0.64415175292475
+        },
+        "N": {
+          "old_large_K": 4.083433739019704e-07,
+          "old_B1_K": 0.06905795095379183,
+          "late_tails_K": 2.856229789239834e-05,
+          "total_K": 0.06908692159505814
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1681.4774281572302,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 1720.1623651312927
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "thickness_m": 2.5,
+      "k_W_m_K": 100.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 2.777777777777778e-05,
+      "through_diffusion_s": 225000.0,
+      "fixed_back_slowest_decay_s": 91189.065278104,
+      "finite_bulk_nonuniform_slowest_decay_s": 22797.266319526,
+      "mean_front_back_gradient_K": 3.1382102712113698,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 15.620315114924503,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 3.5085624254106533,
+        "B1": 0.019946093506439787,
+        "B2": 5.516365384806028,
+        "C13": 6.575441211201385
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 249.28783191491567,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 249.28783191491567,
+          "flash_bound_K": 249.28783191491567,
+          "slow_material_plus_decay_peak_D_K": 144.07360101072058,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 91.63692576998686,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 91.63692576998686,
+          "flash_bound_K": 91.63692576998686,
+          "slow_material_plus_decay_peak_D_K": 0.8552934704333447,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 275.43817543574227,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 275.43817543574227,
+          "flash_bound_K": 275.43817543574227,
+          "slow_material_plus_decay_peak_D_K": 210.05288207107708,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 589.1963506343187,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 589.1963506343187,
+          "flash_bound_K": 589.1963506343187,
+          "slow_material_plus_decay_peak_D_K": 318.4086282682882,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 259.6497187483137,
+          "time_s": 37710.37641030678,
+          "ratio_to_station_mean_heat": 2.068453802556124,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 1.4761067587536632,
+          "time_s": 37710.37641030678,
+          "ratio_to_station_mean_heat": 0.011759144792613564,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 408.23456690121657,
+          "time_s": 37710.37641030678,
+          "ratio_to_station_mean_heat": 3.2521288538740536,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 486.61159608129765,
+          "time_s": 37710.37641030678,
+          "ratio_to_station_mean_heat": 3.876505667460122,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 10.388472205201486,
+          "old_B1_K": 0.8068862911138649,
+          "late_tails_K": 0.00021421723419298754,
+          "total_K": 11.195572713549543
+        },
+        "N": {
+          "old_large_K": 0.7311564296326452,
+          "old_B1_K": 0.23931366778757823,
+          "late_tails_K": 7.140574473099585e-05,
+          "total_K": 0.9705415031649544
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1692.028849117855,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 1697.947168067597
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "thickness_m": 0.5,
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 1.388888888888889e-05,
+      "through_diffusion_s": 18000.0,
+      "fixed_back_slowest_decay_s": 7295.12522224832,
+      "finite_bulk_nonuniform_slowest_decay_s": 1823.78130556208,
+      "mean_front_back_gradient_K": 1.2552841084845479,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 78.10157557462252,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 17.542812127053267,
+        "B1": 0.09973046753219893,
+        "B2": 27.581826924030143,
+        "C13": 32.877206056006926
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 352.5462328286583,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 352.5462328286583,
+          "flash_bound_K": 352.5462328286583,
+          "slow_material_plus_decay_peak_D_K": 203.7508405292911,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 129.594183238092,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 129.594183238092,
+          "flash_bound_K": 129.594183238092,
+          "slow_material_plus_decay_peak_D_K": 1.2095676256959877,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 389.52840329652656,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 389.52840329652656,
+          "flash_bound_K": 389.52840329652656,
+          "slow_material_plus_decay_peak_D_K": 297.0596346404735,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 833.2494699677873,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 833.2494699677873,
+          "flash_bound_K": 833.2494699677873,
+          "slow_material_plus_decay_peak_D_K": 450.2978004736266,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 3242.8466466257755,
+          "time_s": 3133.9520798876965,
+          "ratio_to_station_mean_heat": 25.833567275385402,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 18.44152217195913,
+          "time_s": 3133.9520798876965,
+          "ratio_to_station_mean_heat": 0.14691114184678725,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 5096.0877671472845,
+          "time_s": 3133.9520798876965,
+          "ratio_to_station_mean_heat": 40.597086609338014,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 6079.175608521144,
+          "time_s": 3066.4353502491967,
+          "ratio_to_station_mean_heat": 48.428682936648336,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 0.007328132685687311,
+          "old_B1_K": 0.2778754439481906,
+          "late_tails_K": 8.568689367719502e-05,
+          "total_K": 0.2852892635275551
+        },
+        "N": {
+          "old_large_K": 1.0143459922255964e-14,
+          "old_B1_K": 0.05039472775936444,
+          "late_tails_K": 2.856229789239834e-05,
+          "total_K": 0.050423290057266985
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1963.1289424694069,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 2041.2048660886398
+    },
+    {
+      "sigma_kg_m2": 2000.0,
+      "thickness_m": 1.0,
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 1.388888888888889e-05,
+      "through_diffusion_s": 72000.0,
+      "fixed_back_slowest_decay_s": 29180.50088899328,
+      "finite_bulk_nonuniform_slowest_decay_s": 7295.12522224832,
+      "mean_front_back_gradient_K": 2.5105682169690957,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 39.05078778731126,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 8.771406063526634,
+        "B1": 0.049865233766099464,
+        "B2": 13.790913462015071,
+        "C13": 16.438603028003463
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 352.5462328286583,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 352.5462328286583,
+          "flash_bound_K": 352.5462328286583,
+          "slow_material_plus_decay_peak_D_K": 203.7508405292911,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 129.594183238092,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 129.594183238092,
+          "flash_bound_K": 129.594183238092,
+          "slow_material_plus_decay_peak_D_K": 1.2095676256959877,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 389.52840329652656,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 389.52840329652656,
+          "flash_bound_K": 389.52840329652656,
+          "slow_material_plus_decay_peak_D_K": 297.0596346404735,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 833.2494699677873,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 833.2494699677873,
+          "flash_bound_K": 833.2494699677873,
+          "slow_material_plus_decay_peak_D_K": 450.2978004736266,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 811.325279765425,
+          "time_s": 12028.507653178518,
+          "ratio_to_station_mean_heat": 6.463280099553751,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 4.612353679933383,
+          "time_s": 12028.507653178518,
+          "ratio_to_station_mean_heat": 0.03674350411001128,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 1275.602388373502,
+          "time_s": 12028.507653178518,
+          "ratio_to_station_mean_heat": 10.16186200200912,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 1520.6030849611966,
+          "time_s": 12028.507653178518,
+          "ratio_to_station_mean_heat": 12.113616946819771,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 3.5624521551384123,
+          "old_B1_K": 0.6181934792388507,
+          "late_tails_K": 0.00017137378735439005,
+          "total_K": 4.180817008164618
+        },
+        "N": {
+          "old_large_K": 0.0036640663428487274,
+          "old_B1_K": 0.1641350858537775,
+          "late_tails_K": 5.712459578479668e-05,
+          "total_K": 0.16785627679241102
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1967.024470214044,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 2002.4807253061444
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "thickness_m": 2.5,
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 1.388888888888889e-05,
+      "through_diffusion_s": 450000.0,
+      "fixed_back_slowest_decay_s": 182378.130556208,
+      "finite_bulk_nonuniform_slowest_decay_s": 45594.532639052,
+      "mean_front_back_gradient_K": 6.2764205424227395,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 15.620315114924503,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 3.5085624254106533,
+        "B1": 0.019946093506439787,
+        "B2": 5.516365384806028,
+        "C13": 6.575441211201385
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 352.5462328286583,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 352.5462328286583,
+          "flash_bound_K": 352.5462328286583,
+          "slow_material_plus_decay_peak_D_K": 203.7508405292911,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 129.594183238092,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 129.594183238092,
+          "flash_bound_K": 129.594183238092,
+          "slow_material_plus_decay_peak_D_K": 1.2095676256959877,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 389.52840329652656,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 389.52840329652656,
+          "flash_bound_K": 389.52840329652656,
+          "slow_material_plus_decay_peak_D_K": 297.05963464047346,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 833.2494699677873,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 833.2494699677873,
+          "flash_bound_K": 833.2494699677873,
+          "slow_material_plus_decay_peak_D_K": 450.2978004736266,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 129.81581392125761,
+          "time_s": 74372.06744048216,
+          "ratio_to_station_mean_heat": 1.0341548422689653,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 0.7379975149021955,
+          "time_s": 74372.06744048216,
+          "ratio_to_station_mean_heat": 0.005879127361798192,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 204.10477418302557,
+          "time_s": 74372.06744048216,
+          "ratio_to_station_mean_heat": 1.6259647740576653,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 243.2916082824531,
+          "time_s": 74372.06744048216,
+          "ratio_to_station_mean_heat": 1.9381397935178906,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 24.721698354212563,
+          "old_B1_K": 1.6398240538338786,
+          "late_tails_K": 0.0004284344683859751,
+          "total_K": 26.361950842514826
+        },
+        "N": {
+          "old_large_K": 3.6465804262063997,
+          "old_B1_K": 0.5046788072085081,
+          "late_tails_K": 0.0001428114894619917,
+          "total_K": 4.151402044904369
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 1989.205604048394,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 1983.6614404561121
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "thickness_m": 0.5,
+      "k_W_m_K": 25.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 6.944444444444445e-06,
+      "through_diffusion_s": 36000.0,
+      "fixed_back_slowest_decay_s": 14590.25044449664,
+      "finite_bulk_nonuniform_slowest_decay_s": 3647.56261112416,
+      "mean_front_back_gradient_K": 2.5105682169690957,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 78.10157557462252,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 17.542812127053267,
+        "B1": 0.09973046753219893,
+        "B2": 27.581826924030143,
+        "C13": 32.877206056006926
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 498.57566382983134,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 498.57566382983134,
+          "flash_bound_K": 498.57566382983134,
+          "slow_material_plus_decay_peak_D_K": 288.14720202144116,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 183.27385153997372,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 183.27385153997372,
+          "flash_bound_K": 183.27385153997372,
+          "slow_material_plus_decay_peak_D_K": 1.7105869408666894,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 550.8763508714845,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 550.8763508714845,
+          "flash_bound_K": 550.8763508714845,
+          "slow_material_plus_decay_peak_D_K": 420.1057641421541,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 1178.3927012686374,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 1178.3927012686374,
+          "flash_bound_K": 1178.3927012686374,
+          "slow_material_plus_decay_peak_D_K": 636.8172565365765,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 1622.4622643217813,
+          "time_s": 6172.557951368453,
+          "ratio_to_station_mean_heat": 12.92506017845245,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 9.224510051715386,
+          "time_s": 6172.557951368453,
+          "ratio_to_station_mean_heat": 0.07348543639934829,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 2550.4326934361698,
+          "time_s": 6172.557951368453,
+          "ratio_to_station_mean_heat": 20.317573338160084,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 3040.7661976121444,
+          "time_s": 6033.271603059317,
+          "ratio_to_station_mean_heat": 24.223728931637115,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 0.6960224188026822,
+          "old_B1_K": 0.5921097132594636,
+          "late_tails_K": 0.00017137378735439005,
+          "total_K": 1.2883035058495
+        },
+        "N": {
+          "old_large_K": 8.166867478039408e-07,
+          "old_B1_K": 0.13811590190758366,
+          "late_tails_K": 5.712459578479668e-05,
+          "total_K": 0.13817384319011627
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 2362.9548563144604,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 2440.3247302625855
+    },
+    {
+      "sigma_kg_m2": 2000.0,
+      "thickness_m": 1.0,
+      "k_W_m_K": 25.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 6.944444444444445e-06,
+      "through_diffusion_s": 144000.0,
+      "fixed_back_slowest_decay_s": 58361.00177798656,
+      "finite_bulk_nonuniform_slowest_decay_s": 14590.25044449664,
+      "mean_front_back_gradient_K": 5.021136433938191,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 39.05078778731126,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 8.771406063526634,
+        "B1": 0.049865233766099464,
+        "B2": 13.790913462015071,
+        "C13": 16.438603028003463
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 498.57566382983134,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 498.57566382983134,
+          "flash_bound_K": 498.57566382983134,
+          "slow_material_plus_decay_peak_D_K": 288.14720202144116,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 183.27385153997372,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 183.27385153997372,
+          "flash_bound_K": 183.27385153997372,
+          "slow_material_plus_decay_peak_D_K": 1.7105869408666894,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 550.8763508714845,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 550.8763508714845,
+          "flash_bound_K": 550.8763508714845,
+          "slow_material_plus_decay_peak_D_K": 420.10576414215416,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 1178.3927012686374,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 1178.3927012686374,
+          "flash_bound_K": 1178.3927012686374,
+          "slow_material_plus_decay_peak_D_K": 636.8172565365765,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 405.6666894689724,
+          "time_s": 24389.860947615958,
+          "ratio_to_station_mean_heat": 3.231672310093345,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 2.3062392056726386,
+          "time_s": 24389.860947615958,
+          "ratio_to_station_mean_heat": 0.018372248880429667,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 637.7992826592027,
+          "time_s": 24389.860947615958,
+          "ratio_to_station_mean_heat": 5.080915773156653,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 760.2461033440694,
+          "time_s": 24389.860947615958,
+          "ratio_to_station_mean_heat": 6.056366827282494,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 13.643883136215802,
+          "old_B1_K": 1.2732290115692138,
+          "late_tails_K": 0.0003427475747087801,
+          "total_K": 14.917454895359725
+        },
+        "N": {
+          "old_large_K": 0.348011617744715,
+          "old_B1_K": 0.3651128075835236,
+          "late_tails_K": 0.00011424919156959336,
+          "total_K": 0.7132386745198082
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 2376.5840077039707,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 2402.267435342765
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "thickness_m": 2.5,
+      "k_W_m_K": 25.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusivity_m2_s": 6.944444444444445e-06,
+      "through_diffusion_s": 900000.0,
+      "fixed_back_slowest_decay_s": 364756.261112416,
+      "finite_bulk_nonuniform_slowest_decay_s": 91189.065278104,
+      "mean_front_back_gradient_K": 12.552841084845479,
+      "all_stage_bulk_swing_upper_K_at_constant_mean_extraction": 15.620315114924503,
+      "per_stage_uniform_energy_rise_K": {
+        "A": 3.5085624254106533,
+        "B1": 0.019946093506439787,
+        "B2": 5.516365384806028,
+        "C13": 6.575441211201385
+      },
+      "isolated_peaks": {
+        "A": {
+          "fixed_back_isolated_front_rise_bound_K": 498.57566382983134,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 498.57566382983134,
+          "flash_bound_K": 498.57566382983134,
+          "slow_material_plus_decay_peak_D_K": 288.14720202144116,
+          "slow_peak_time_s": 110.5
+        },
+        "B1": {
+          "fixed_back_isolated_front_rise_bound_K": 183.27385153997372,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 183.27385153997372,
+          "flash_bound_K": 183.27385153997372,
+          "slow_material_plus_decay_peak_D_K": 1.7105869408666894,
+          "slow_peak_time_s": 159.75
+        },
+        "B2": {
+          "fixed_back_isolated_front_rise_bound_K": 550.8763508714845,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 550.8763508714845,
+          "flash_bound_K": 550.8763508714845,
+          "slow_material_plus_decay_peak_D_K": 420.10576414215416,
+          "slow_peak_time_s": 117.75
+        },
+        "C13": {
+          "fixed_back_isolated_front_rise_bound_K": 1178.3927012686374,
+          "finite_bulk_nonuniform_isolated_front_bound_K": 1178.3927012686374,
+          "flash_bound_K": 1178.3927012686374,
+          "slow_material_plus_decay_peak_D_K": 636.8172565365765,
+          "slow_peak_time_s": 80.0
+        }
+      },
+      "fixed_back_peak_heat_pickup": {
+        "A": {
+          "isolated_fixed_back_peak_W_m2": 64.91188573519501,
+          "time_s": 150811.52909375,
+          "ratio_to_station_mean_heat": 0.5171091173420528,
+          "early_fluence_fraction": 0.9999998992534272
+        },
+        "B1": {
+          "isolated_fixed_back_peak_W_m2": 0.3690228101525524,
+          "time_s": 150811.52909375,
+          "ratio_to_station_mean_heat": 0.002939755292513487,
+          "early_fluence_fraction": 0.999999809276957
+        },
+        "B2": {
+          "isolated_fixed_back_peak_W_m2": 102.05811600066527,
+          "time_s": 150811.52909375,
+          "ratio_to_station_mean_heat": 0.8130280253756719,
+          "early_fluence_fraction": 0.9999999346137456
+        },
+        "C13": {
+          "isolated_fixed_back_peak_W_m2": 121.65196312725257,
+          "time_s": 150811.52909375,
+          "ratio_to_station_mean_heat": 0.9691189612375314,
+          "early_fluence_fraction": 0.9999999318602448
+        }
+      },
+      "background_bounds": {
+        "D": {
+          "old_large_K": 55.01646407843575,
+          "old_B1_K": 3.316490452152188,
+          "late_tails_K": 0.0008568689367719502,
+          "total_K": 58.33381139952471
+        },
+        "N": {
+          "old_large_K": 11.119628634834132,
+          "old_B1_K": 1.046199958901443,
+          "late_tails_K": 0.0002856229789239834,
+          "total_K": 12.166114216714499
+        }
+      },
+      "fixed_1000K_back_front_temperature_bound_K": 2420.0003642081356,
+      "finite_buffer_front_temperature_bound_K_if_each_bulk_mode_minimum_1000K": 2391.545122321058
+    }
+  ],
+  "local_plate_rows": [
+    {
+      "sigma_kg_m2": 1000.0,
+      "tile_span_m": 100.0,
+      "flexural_rigidity_N_m": 108506944.44444445,
+      "first_mode_period_s": 9.66320872406151,
+      "uniform_peak_static_centre_deflection_m": 0.0005734405023063749,
+      "single_mode_impulsive_displacement_upper_m": 0.02024587062995705,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.02489502402142047,
+      "single_mode_impulsive_bending_stress_Pa": 62443.35433540934,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "tile_span_m": 250.0,
+      "flexural_rigidity_N_m": 108506944.44444445,
+      "first_mode_period_s": 60.395054525384445,
+      "uniform_peak_static_centre_deflection_m": 0.02240001962134277,
+      "single_mode_impulsive_displacement_upper_m": 0.1265366914372316,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.15559390013387797,
+      "single_mode_impulsive_bending_stress_Pa": 62443.354335409356,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "tile_span_m": 1000.0,
+      "flexural_rigidity_N_m": 108506944.44444445,
+      "first_mode_period_s": 966.3208724061511,
+      "uniform_peak_static_centre_deflection_m": 5.734405023063749,
+      "single_mode_impulsive_displacement_upper_m": 2.0245870629957055,
+      "all_mode_absolute_impulsive_displacement_upper_m": 2.4895024021420475,
+      "single_mode_impulsive_bending_stress_Pa": 62443.354335409356,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 2000.0,
+      "tile_span_m": 100.0,
+      "flexural_rigidity_N_m": 868055555.5555556,
+      "first_mode_period_s": 4.831604362030755,
+      "uniform_peak_static_centre_deflection_m": 7.168006278829686e-05,
+      "single_mode_impulsive_displacement_upper_m": 0.005061467657489263,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.006223756005355118,
+      "single_mode_impulsive_bending_stress_Pa": 31221.67716770467,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 2000.0,
+      "tile_span_m": 250.0,
+      "flexural_rigidity_N_m": 868055555.5555556,
+      "first_mode_period_s": 30.197527262692223,
+      "uniform_peak_static_centre_deflection_m": 0.002800002452667846,
+      "single_mode_impulsive_displacement_upper_m": 0.0316341728593079,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.03889847503346949,
+      "single_mode_impulsive_bending_stress_Pa": 31221.677167704678,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 2000.0,
+      "tile_span_m": 1000.0,
+      "flexural_rigidity_N_m": 868055555.5555556,
+      "first_mode_period_s": 483.16043620307556,
+      "uniform_peak_static_centre_deflection_m": 0.7168006278829686,
+      "single_mode_impulsive_displacement_upper_m": 0.5061467657489264,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.6223756005355119,
+      "single_mode_impulsive_bending_stress_Pa": 31221.677167704678,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "tile_span_m": 100.0,
+      "flexural_rigidity_N_m": 13563368055.555555,
+      "first_mode_period_s": 1.9326417448123019,
+      "uniform_peak_static_centre_deflection_m": 4.5875240184509995e-06,
+      "single_mode_impulsive_displacement_upper_m": 0.000809834825198282,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.0009958009608568188,
+      "single_mode_impulsive_bending_stress_Pa": 12488.670867081868,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "tile_span_m": 250.0,
+      "flexural_rigidity_N_m": 13563368055.555555,
+      "first_mode_period_s": 12.079010905076888,
+      "uniform_peak_static_centre_deflection_m": 0.00017920015697074217,
+      "single_mode_impulsive_displacement_upper_m": 0.005061467657489263,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.006223756005355118,
+      "single_mode_impulsive_bending_stress_Pa": 12488.670867081868,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "tile_span_m": 1000.0,
+      "flexural_rigidity_N_m": 13563368055.555555,
+      "first_mode_period_s": 193.2641744812302,
+      "uniform_peak_static_centre_deflection_m": 0.045875240184509995,
+      "single_mode_impulsive_displacement_upper_m": 0.0809834825198282,
+      "all_mode_absolute_impulsive_displacement_upper_m": 0.09958009608568189,
+      "single_mode_impulsive_bending_stress_Pa": 12488.670867081868,
+      "load_scope": "Uniform normal pulse, simply-supported square plate. The impulsive bound ignores finite pulse-duration reduction; higher modes, joints, thermal stress and the separate mean self-gravity load remain outside it."
+    }
+  ],
+  "plate_absolute_modal_factor": 1.2296346487853302,
+  "checks": [
+    {
+      "sigma": 1000.0,
+      "k": 100.0,
+      "cp": 1000.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 2000.0,
+      "k": 100.0,
+      "cp": 1000.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 5000.0,
+      "k": 100.0,
+      "cp": 1000.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 1000.0,
+      "k": 100.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 2000.0,
+      "k": 100.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 5000.0,
+      "k": 100.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 1000.0,
+      "k": 50.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 2000.0,
+      "k": 50.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 5000.0,
+      "k": 50.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 1000.0,
+      "k": 25.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 2000.0,
+      "k": 25.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    },
+    {
+      "sigma": 5000.0,
+      "k": 25.0,
+      "cp": 1800.0,
+      "D_long_resistance_relative": 0.0,
+      "N_long_resistance_relative": 0.0,
+      "D_early_halfspace_relative": 0.0
+    }
+  ],
+  "source_energy_convention": {
+    "mass_conserving_smooth_mean_W_m2": 125.52841084845478,
+    "exact_plant_ledger_full_source_W_m2": 125.65512639897226,
+    "relative_difference_from_velocity_interpolation": -0.0010084391631992595
+  },
+  "limitations": [
+    "Thermal calculation assigns full retained energy to the front surface; actual gamma containment/depth is separate and may reduce these temperature bounds.",
+    "Constant thermal properties and linear slab geometry; no vapor, cracking, high-temperature material degradation, 2D joints or radiative recirculation model.",
+    "Fixed-back calculation requires a heat sink able to accept its calculated transient flux. Mean-rated hardware is not credited with that peak for free.",
+    "Finite-buffer case extracts constant mean heat. Each stage bulk-energy mode is shifted so its minimum is1000K; their peak-to-peak sum bounds the variable bulk temperature without an infinite heat bath. It is a conservative all-phase bound, not a solved dispatch schedule.",
+    "The incoming prompt flash is evaluated separately from late material/decay heat and only its decaying tail is added at later times.",
+    "Delayed heating uses actual parent counts and existing non-neutrino decay ledger. The timing envelope permits a2R/c photon travel spread; charged-product transport is a separate source-history assumption.",
+    "No W/kg increase is assigned to a thinner receiver until actual photon containment, temperature-dependent engine performance, supports and process interfaces are integrated."
+  ],
+  "sources": {
+    "graphite_1000K_heat_capacity": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=921062",
+    "high_temperature_graphite_grade_measurements": "https://doi.org/10.1016/j.jnucmat.2020.152176",
+    "room_temperature_graphite_modulus_scale": "https://www.sglcarbon.com/pdf/SGL-Datasheet-SIGRAFINE-R6650-EN.pdf"
+  }
+}

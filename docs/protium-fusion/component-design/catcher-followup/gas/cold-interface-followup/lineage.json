@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "scope": "Numerical same-cohort check of the frozen ideal mobile routing only. This finite-record cavity replay uses all4096 packet nodes, exact saved chronological source bins and existing steady initial cavity stock; no new pulse or hot-buffer evolution. No total physical retention probability is assigned.",
+  "time_start_s": 0.0,
+  "time_end_s": 31968150.0,
+  "duration_s": 31968150.0,
+  "dt_s": 150.0,
+  "source_rule": "I is total arrival on the exact routed quadrature. J is the archived routed cavity impulse. L=I-J. Capture is the integral of lambda*G between each impulse, evaluated analytically.",
+  "equations": [
+    "J=f_packet I; L=(1-f_packet)I",
+    "dG/dt=J-C; dB/dt=L+C-O",
+    "integral(L+C)+deltaG=integral(I)",
+    "d(G+B)/dt=I-O; steady O=I",
+    "With a held solid cohort S: dS/dt=L-R; dB/dt=R+C-O, so d(G+B+S)/dt=I-O. Regeneration and delayed release replace immediate release of those atoms."
+  ],
+  "cases": [
+    {
+      "effective_capture_H_He": [
+        0.01,
+        0.01
+      ],
+      "species": [
+        {
+          "species": "H",
+          "incident_I_kg": 103966482046870.53,
+          "direct_local_L_kg": 103859388187880.19,
+          "cavity_injection_J_kg": 107093858983.966,
+          "initial_cavity_G_kg": 150521350580.06842,
+          "final_cavity_G_kg": 151008759517.40106,
+          "delta_cavity_G_kg": 487408937.3326416,
+          "captured_from_cavity_integral_C_kg": 106606450046.31067,
+          "physical_total_local_input_integral_L_plus_C_kg": 103965994637926.5,
+          "incident_nuclei": 6.212395699734492e+40,
+          "incident_mean_cavity_fraction": 0.0010300806267128052,
+          "combined_closure_relative_to_incident": -6.447390416632617e-14,
+          "false_extra_mass_if_I_plus_C_is_called_same_source_recovery_kg": 106606450046.31067,
+          "mean_local_input_minus_incident_kg_s": -15.246704527244823
+        },
+        {
+          "species": "He",
+          "incident_I_kg": 88203160451859.73,
+          "direct_local_L_kg": 88125957089997.45,
+          "cavity_injection_J_kg": 77203361860.32004,
+          "initial_cavity_G_kg": 154027196442.35425,
+          "final_cavity_G_kg": 154018413533.93652,
+          "delta_cavity_G_kg": -8782908.41772461,
+          "captured_from_cavity_integral_C_kg": 77212144768.98372,
+          "physical_total_local_input_integral_L_plus_C_kg": 88203169234766.44,
+          "incident_nuclei": 1.3270659472765213e+40,
+          "incident_mean_cavity_fraction": 0.0008752901989544552,
+          "combined_closure_relative_to_incident": -1.948626320411811e-14,
+          "false_extra_mass_if_I_plus_C_is_called_same_source_recovery_kg": 77212144768.98372,
+          "mean_local_input_minus_incident_kg_s": 0.27473933955279267
+        }
+      ]
+    },
+    {
+      "effective_capture_H_He": [
+        0.01,
+        0.01359546360457702
+      ],
+      "species": [
+        {
+          "species": "H",
+          "incident_I_kg": 103966482046870.53,
+          "direct_local_L_kg": 103859388187880.19,
+          "cavity_injection_J_kg": 107093858983.966,
+          "initial_cavity_G_kg": 150521350580.06842,
+          "final_cavity_G_kg": 151008759517.40106,
+          "delta_cavity_G_kg": 487408937.3326416,
+          "captured_from_cavity_integral_C_kg": 106606450046.31067,
+          "physical_total_local_input_integral_L_plus_C_kg": 103965994637926.5,
+          "incident_nuclei": 6.212395699734492e+40,
+          "incident_mean_cavity_fraction": 0.0010300806267128052,
+          "combined_closure_relative_to_incident": -6.447390416632617e-14,
+          "false_extra_mass_if_I_plus_C_is_called_same_source_recovery_kg": 106606450046.31067,
+          "mean_local_input_minus_incident_kg_s": -15.246704527244823
+        },
+        {
+          "species": "He",
+          "incident_I_kg": 88203160451859.73,
+          "direct_local_L_kg": 88125957089997.45,
+          "cavity_injection_J_kg": 77203361860.32004,
+          "initial_cavity_G_kg": 113293081370.53876,
+          "final_cavity_G_kg": 113284918633.14456,
+          "delta_cavity_G_kg": -8162737.394195557,
+          "captured_from_cavity_integral_C_kg": 77211524597.363,
+          "physical_total_local_input_integral_L_plus_C_kg": 88203168614594.81,
+          "incident_nuclei": 1.3270659472765213e+40,
+          "incident_mean_cavity_fraction": 0.0008752901989544552,
+          "combined_closure_relative_to_incident": -2.6217881401904364e-14,
+          "false_extra_mass_if_I_plus_C_is_called_same_source_recovery_kg": 77211524597.363,
+          "mean_local_input_minus_incident_kg_s": 0.25533968635018156
+        }
+      ]
+    },
+    {
+      "effective_capture_H_He": [
+        0.1,
+        0.1
+      ],
+      "species": [
+        {
+          "species": "H",
+          "incident_I_kg": 103966482046870.53,
+          "direct_local_L_kg": 103859388187880.19,
+          "cavity_injection_J_kg": 107093858983.966,
+          "initial_cavity_G_kg": 15052135058.00684,
+          "final_cavity_G_kg": 15273350258.607872,
+          "delta_cavity_G_kg": 221215200.60103226,
+          "captured_from_cavity_integral_C_kg": 106872643783.47054,
+          "physical_total_local_input_integral_L_plus_C_kg": 103966260831663.66,
+          "incident_nuclei": 6.212395699734492e+40,
+          "incident_mean_cavity_fraction": 0.0010300806267128052,
+          "combined_closure_relative_to_incident": -6.041610600201193e-14,
+          "false_extra_mass_if_I_plus_C_is_called_same_source_recovery_kg": 106872643783.47054,
+          "mean_local_input_minus_incident_kg_s": -6.919862444371422
+        },
+        {
+          "species": "He",
+          "incident_I_kg": 88203160451859.73,
+          "direct_local_L_kg": 88125957089997.45,
+          "cavity_injection_J_kg": 77203361860.32004,
+          "initial_cavity_G_kg": 15402719644.235424,
+          "final_cavity_G_kg": 15397662116.02535,
+          "delta_cavity_G_kg": -5057528.210073471,
+          "captured_from_cavity_integral_C_kg": 77208419388.4429,
+          "physical_total_local_input_integral_L_plus_C_kg": 88203165509385.89,
+          "incident_nuclei": 1.3270659472765213e+40,
+          "incident_mean_cavity_fraction": 0.0008752901989544552,
+          "combined_closure_relative_to_incident": -2.3206367997631565e-14,
+          "false_extra_mass_if_I_plus_C_is_called_same_source_recovery_kg": 77208419388.4429,
+          "mean_local_input_minus_incident_kg_s": 0.15820522019802433
+        }
+      ]
+    }
+  ],
+  "buffer_capacity_interface": "The frozen100%-incident hot-buffer response is a maximum-throughput capacity case. A separately added global-return envelope can be used for extra capacity margin only. It is not a same-cohort physical input history. Captured earlier steady cavity stock can make finite-interval returns differ from current arrivals; deltaG records it.",
+  "routing_roundoff_rule": "All4096 archived packet nodes per stage with species-specific routed weights; arrival_quantile_points is a baseline API parameter unused by this explicit override. Tiny negative finite-cap probability roundoff is projected to zero only in the auxiliary emitted-gas weights; per-stage absolute corrections are recorded. Original routing data and all hydro abundances are unchanged.",
+  "checks": [
+    {
+      "name": "local branch nonnegative p",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "local branch nonnegative he4",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "cohort closure H g0.01",
+      "passed": true,
+      "value": -6.447390416632617e-14
+    },
+    {
+      "name": "local+cavity partition H g0.01",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cohort closure He g0.01",
+      "passed": true,
+      "value": -1.948626320411811e-14
+    },
+    {
+      "name": "local+cavity partition He g0.01",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cohort closure H g0.01",
+      "passed": true,
+      "value": -6.447390416632617e-14
+    },
+    {
+      "name": "local+cavity partition H g0.01",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cohort closure He g0.01359546360457702",
+      "passed": true,
+      "value": -2.6217881401904364e-14
+    },
+    {
+      "name": "local+cavity partition He g0.01359546360457702",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cohort closure H g0.1",
+      "passed": true,
+      "value": -6.041610600201193e-14
+    },
+    {
+      "name": "local+cavity partition H g0.1",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cohort closure He g0.1",
+      "passed": true,
+      "value": -2.3206367997631565e-14
+    },
+    {
+      "name": "local+cavity partition He g0.1",
+      "passed": true,
+      "value": null
+    }
+  ],
+  "source_sha256": {
+    "inputs.json": "b8ab5bbbe4d66b60ae15aff0751d1578733788b30c1eae71f053a34df5df2082",
+    "route-inputs.json": "1b4341809d5f2a6e65a65515fdd19713d80a31a0fe650a1e4c49145b3a5cd0a2",
+    "chamber-dt150.0-q128-cap0.1_eta100000.0.npz": "223e40fb39ad3353dab014b98ef7d75c7021154574e1f278d36af01d73daa7c7",
+    "chamber-dt150.0-q128-cap0.1_eta100000.0.json": "2f1242f0b55d4797f19353726e411e8a55c40b40b61e8952dbda260495859971"
+  },
+  "code_sha256": "6517396c905e38be015b9dec811ab8e700363c82aa1579e25de1665795a0200b"
+}

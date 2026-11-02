@@ -1,0 +1,1032 @@
+{
+  "scope": "Energy-capital and fuel alternatives for the conditional protium plants.\n\nEngineering efficiencies, solar areal masses, and economic discount rates are\nexplicit scenarios. This is an energy/mass comparison, not a price forecast.\nThe opaque allocation is extended to include replacement manufacture and stock.\n",
+  "constants": {
+    "seconds_per_year": 31557600.0,
+    "solar_irradiance_W_m2": 1361.0,
+    "solar_luminosity_W": 3.828e+26,
+    "Jupiter_GM_m3_s2": 1.2668653e+17,
+    "Jupiter_equatorial_radius_m": 71492000.0,
+    "hydrogen_atomic_mass_kg": 1.6735328377687315e-27,
+    "deuterium_atomic_mass_kg": 3.344494686228154e-27
+  },
+  "nonneutral_reference": {
+    "net_W": 2159819767637.2124,
+    "bus_W": 2624255950017.9155,
+    "mass_kg": 1465649126909727.5,
+    "net_W_kg": 0.001473626755532629,
+    "neutral_hydrogen_feed_kg_s": 0.017855496291908877,
+    "helium_kg_s": 0.01772837243467877,
+    "net_J_per_kg_neutral_hydrogen": 120961060523191.58,
+    "useful_rest_mass_fraction": 0.0013458733077143425,
+    "stored_field_J": 1.2605291177077081e+21,
+    "field_charge_output_year_at_95percent": 19.467393077778475,
+    "replacement_W": 464436182380.70306,
+    "replacement_fraction_of_bus": 0.17697823353607425,
+    "replacement_fraction_year": 0.0001,
+    "embodied_J_kg": 100000000.0,
+    "already_includes_replacement": true
+  },
+  "opaque_replacement_cases": [
+    {
+      "total_mass_kg": 6.778058928645584e+25,
+      "net_W": 6.778058928645584e+22,
+      "net_W_kg": 0.001,
+      "helium_atoms_s": 1.3247771663337262e+35,
+      "gross_electric_W": 2.2555728128507813e+23,
+      "driver_electric_W": 1.4990661347992242e+23,
+      "support_loss_W": 3.050117381842903e+20,
+      "other_auxiliary_W": 7.565066780515569e+21,
+      "replacement_manufacturing_W": 0.0,
+      "waste_heat_W": 4.5114062988226275e+23,
+      "nuclear_captured_W": 5.189212191687186e+23,
+      "support_stored_energy_J": 3.8328905437536786e+30,
+      "hydrogen_atoms_s": 5.308270777587164e+35,
+      "radiator_area_m2": 1.0913716713096299e+21,
+      "radiator_area_over_collector": 0.21712149529923855,
+      "mass_budget_kg": {
+        "absorber": 5.026548245743669e+25,
+        "insulation": 5.0265482457436695e+23,
+        "processing_and_inventory_allowance": 5.026548245743669e+24,
+        "support_guides_controls_and_redundancy_allowance": 5.0265482457436695e+23,
+        "driver_facility_allowance": 1e+25,
+        "pulse_electrical_energy_storage": 1.3581310170620854e+24,
+        "circulating_support_streams": 7.665781087507358e+22,
+        "thermal_power_conversion": 2.2555728128507816e+22,
+        "driver_average_power_conditioning": 1.4990661347992242e+22,
+        "radiators": 1.0913716713096298e+22,
+        "replacement_manufacturing_equipment": 0.0,
+        "replacement_inventory": 0.0
+      },
+      "electric_balance_W": 8388608.0,
+      "thermal_balance_W": 0.0,
+      "closes": true,
+      "replacement_fraction_year": 0.0,
+      "embodied_J_kg": 100000000.0,
+      "factory_kg_W": 1.0,
+      "spare_years": 10.0,
+      "mass_relative_residual": 0.0,
+      "independent_quadratic_mass_relative_error": -1.1102230246251565e-16,
+      "mass_fixed_point_derivative": 0.0029802067019047973,
+      "throughput_over_original": 1.0,
+      "original_mean_pulse_interval_s": 621562.3326572154,
+      "revised_mean_pulse_interval_s": 621562.3326572154,
+      "radiator_area_exceeds_collector_area": false,
+      "allocation_warnings": []
+    },
+    {
+      "total_mass_kg": 6.779112868298295e+25,
+      "net_W": 6.7791128682982955e+22,
+      "net_W_kg": 0.001,
+      "helium_atoms_s": 1.3667821745265779e+35,
+      "gross_electric_W": 2.3270907683916175e+23,
+      "driver_electric_W": 1.5465973625966736e+23,
+      "support_loss_W": 3.0510659984349744e+20,
+      "other_auxiliary_W": 7.804934057949438e+21,
+      "replacement_manufacturing_W": 2.1481712387185005e+21,
+      "waste_heat_W": 4.675836425370213e+23,
+      "nuclear_captured_W": 5.353747712200042e+23,
+      "support_stored_energy_J": 3.834082610520369e+30,
+      "hydrogen_atoms_s": 5.476581315516721e+35,
+      "radiator_area_m2": 1.1311495964481229e+21,
+      "radiator_area_over_collector": 0.2250350620639017,
+      "mass_budget_kg": {
+        "absorber": 5.026548245743669e+25,
+        "insulation": 5.0265482457436695e+23,
+        "processing_and_inventory_allowance": 5.026548245743669e+24,
+        "support_guides_controls_and_redundancy_allowance": 5.0265482457436695e+23,
+        "driver_facility_allowance": 1e+25,
+        "pulse_electrical_energy_storage": 1.3581310170620854e+24,
+        "circulating_support_streams": 7.668165221040738e+22,
+        "thermal_power_conversion": 2.327090768391618e+22,
+        "driver_average_power_conditioning": 1.5465973625966737e+22,
+        "radiators": 1.131149596448123e+22,
+        "replacement_manufacturing_equipment": 2.1481712387185005e+21,
+        "replacement_inventory": 6.779112868298296e+21
+      },
+      "electric_balance_W": 0.0,
+      "thermal_balance_W": 0.0,
+      "closes": true,
+      "replacement_fraction_year": 1e-05,
+      "embodied_J_kg": 100000000.0,
+      "factory_kg_W": 1.0,
+      "spare_years": 10.0,
+      "mass_relative_residual": 2.220446049250313e-16,
+      "independent_quadratic_mass_relative_error": 0.0,
+      "mass_fixed_point_derivative": 0.0031355647596549296,
+      "throughput_over_original": 1.0317072253812307,
+      "original_mean_pulse_interval_s": 621562.3326572154,
+      "revised_mean_pulse_interval_s": 602459.997726137,
+      "radiator_area_exceeds_collector_area": false,
+      "allocation_warnings": []
+    },
+    {
+      "total_mass_kg": 6.788613111904457e+25,
+      "net_W": 6.788613111904457e+22,
+      "net_W_kg": 0.001,
+      "helium_atoms_s": 1.7454159223834228e+35,
+      "gross_electric_W": 2.971754648021436e+23,
+      "driver_electric_W": 1.975044533433041e+23,
+      "support_loss_W": 3.059623513612951e+20,
+      "other_auxiliary_W": 9.967101145883949e+21,
+      "replacement_manufacturing_W": 2.151181684254968e+22,
+      "waste_heat_W": 6.158011948833232e+23,
+      "nuclear_captured_W": 6.836873260023678e+23,
+      "support_stored_energy_J": 3.8448363012468147e+30,
+      "hydrogen_atoms_s": 6.993734924616956e+35,
+      "radiator_area_m2": 1.4897083852316156e+21,
+      "radiator_area_over_collector": 0.2963680665938213,
+      "mass_budget_kg": {
+        "absorber": 5.026548245743669e+25,
+        "insulation": 5.0265482457436695e+23,
+        "processing_and_inventory_allowance": 5.026548245743669e+24,
+        "support_guides_controls_and_redundancy_allowance": 5.0265482457436695e+23,
+        "driver_facility_allowance": 1e+25,
+        "pulse_electrical_energy_storage": 1.3581310170620854e+24,
+        "circulating_support_streams": 7.689672602493629e+22,
+        "thermal_power_conversion": 2.971754648021436e+22,
+        "driver_average_power_conditioning": 1.975044533433041e+22,
+        "radiators": 1.4897083852316155e+22,
+        "replacement_manufacturing_equipment": 2.151181684254968e+22,
+        "replacement_inventory": 6.788613111904457e+22
+      },
+      "electric_balance_W": 16777216.0,
+      "thermal_balance_W": 0.0,
+      "closes": true,
+      "replacement_fraction_year": 0.0001,
+      "embodied_J_kg": 100000000.0,
+      "factory_kg_W": 1.0,
+      "spare_years": 10.0,
+      "mass_relative_residual": 0.0,
+      "independent_quadratic_mass_relative_error": -2.220446049250313e-16,
+      "mass_fixed_point_derivative": 0.004533792228407885,
+      "throughput_over_original": 1.3175166108982685,
+      "original_mean_pulse_interval_s": 621562.3326572154,
+      "revised_mean_pulse_interval_s": 471768.1185313033,
+      "radiator_area_exceeds_collector_area": false,
+      "allocation_warnings": []
+    },
+    {
+      "total_mass_kg": 6.809820504189394e+25,
+      "net_W": 6.809820504189394e+22,
+      "net_W_kg": 0.001,
+      "helium_atoms_s": 2.5906357264159368e+35,
+      "gross_electric_W": 4.4108304860620705e+23,
+      "driver_electric_W": 2.9314622743828403e+23,
+      "support_loss_W": 3.078769688782539e+20,
+      "other_auxiliary_W": 1.4793682116792302e+22,
+      "replacement_manufacturing_W": 6.4737057040358514e+22,
+      "waste_heat_W": 9.466655482421385e+23,
+      "nuclear_captured_W": 1.0147637532840324e+24,
+      "support_stored_energy_J": 3.8688960945496636e+30,
+      "hydrogen_atoms_s": 1.0380459651161274e+36,
+      "radiator_area_m2": 2.290115084127762e+21,
+      "radiator_area_over_collector": 0.45560391986030635,
+      "mass_budget_kg": {
+        "absorber": 5.026548245743669e+25,
+        "insulation": 5.0265482457436695e+23,
+        "processing_and_inventory_allowance": 5.026548245743669e+24,
+        "support_guides_controls_and_redundancy_allowance": 5.0265482457436695e+23,
+        "driver_facility_allowance": 1e+25,
+        "pulse_electrical_energy_storage": 1.3581310170620854e+24,
+        "circulating_support_streams": 7.737792189099327e+22,
+        "thermal_power_conversion": 4.410830486062071e+22,
+        "driver_average_power_conditioning": 2.9314622743828406e+22,
+        "radiators": 2.290115084127762e+22,
+        "replacement_manufacturing_equipment": 6.4737057040358514e+22,
+        "replacement_inventory": 2.042946151256818e+23
+      },
+      "electric_balance_W": 16777216.0,
+      "thermal_balance_W": 0.0,
+      "closes": true,
+      "replacement_fraction_year": 0.0003,
+      "embodied_J_kg": 100000000.0,
+      "factory_kg_W": 1.0,
+      "spare_years": 10.0,
+      "mass_relative_residual": 0.0,
+      "independent_quadratic_mass_relative_error": -2.220446049250313e-16,
+      "mass_fixed_point_derivative": 0.007640996424550961,
+      "throughput_over_original": 1.9555256478230443,
+      "original_mean_pulse_interval_s": 621562.3326572154,
+      "revised_mean_pulse_interval_s": 317849.23575364973,
+      "radiator_area_exceeds_collector_area": false,
+      "allocation_warnings": []
+    },
+    {
+      "total_mass_kg": 6.8851026065726345e+25,
+      "net_W": 6.8851026065726345e+22,
+      "net_W_kg": 0.001,
+      "helium_atoms_s": 5.590953607358276e+35,
+      "gross_electric_W": 9.519188037915296e+23,
+      "driver_electric_W": 6.326504884756618e+23,
+      "support_loss_W": 3.147217128813267e+20,
+      "other_auxiliary_W": 3.192683153158677e+22,
+      "replacement_manufacturing_W": 2.1817573600567328e+23,
+      "waste_heat_W": 2.121150836870399e+24,
+      "nuclear_captured_W": 2.1900018629361253e+24,
+      "support_stored_energy_J": 3.9549096844526876e+30,
+      "hydrogen_atoms_s": 2.2402481267788683e+36,
+      "radiator_area_m2": 5.131357675630367e+21,
+      "radiator_area_over_collector": 1.0208511735613892,
+      "mass_budget_kg": {
+        "absorber": 5.026548245743669e+25,
+        "insulation": 5.0265482457436695e+23,
+        "processing_and_inventory_allowance": 5.026548245743669e+24,
+        "support_guides_controls_and_redundancy_allowance": 5.0265482457436695e+23,
+        "driver_facility_allowance": 1e+25,
+        "pulse_electrical_energy_storage": 1.3581310170620854e+24,
+        "circulating_support_streams": 7.909819368905374e+22,
+        "thermal_power_conversion": 9.519188037915296e+22,
+        "driver_average_power_conditioning": 6.3265048847566185e+22,
+        "radiators": 5.131357675630366e+22,
+        "replacement_manufacturing_equipment": 2.1817573600567328e+23,
+        "replacement_inventory": 6.885102606572634e+23
+      },
+      "electric_balance_W": 75497472.0,
+      "thermal_balance_W": 0.0,
+      "closes": true,
+      "replacement_fraction_year": 0.001,
+      "embodied_J_kg": 100000000.0,
+      "factory_kg_W": 1.0,
+      "spare_years": 10.0,
+      "mass_relative_residual": -2.220446049250313e-15,
+      "independent_quadratic_mass_relative_error": -2.220446049250313e-15,
+      "mass_fixed_point_derivative": 0.018516564622630405,
+      "throughput_over_original": 4.220297382412652,
+      "original_mean_pulse_interval_s": 621562.3326572154,
+      "revised_mean_pulse_interval_s": 147279.27355249115,
+      "radiator_area_exceeds_collector_area": true,
+      "allocation_warnings": [
+        "Radiator area exceeds the entire collector surface; additional geometry and support must be modeled."
+      ]
+    }
+  ],
+  "capital_scenarios": [
+    {
+      "construction_J_kg": 1000000.0,
+      "field_charge_included": false,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 1000000.0,
+      "simple_payback_year": 21.5034693792429,
+      "maximum_continuous_energy_growth_rate_year": 0.04650412370039649,
+      "ideal_continuous_energy_doubling_year": 14.905069172479333,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 21.5034693792429
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": 21.526622536511937
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": 21.57312900487908
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": 21.619904516638403
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": 21.7380377621466
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": 24.21157580903191
+        }
+      ]
+    },
+    {
+      "construction_J_kg": 1000000.0,
+      "field_charge_included": true,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 1905314.0558132527,
+      "simple_payback_year": 40.970862457021376,
+      "maximum_continuous_energy_growth_rate_year": 0.024407589687647033,
+      "ideal_continuous_energy_doubling_year": 28.39883779719368,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 40.970862457021376
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": 41.05502298950857
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": 41.22473662618589
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": 41.396336052368056
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": 41.83382130376571
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": 52.713900732878315
+        }
+      ]
+    },
+    {
+      "construction_J_kg": 10000000.0,
+      "field_charge_included": false,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 10000000.0,
+      "simple_payback_year": 215.034693792429,
+      "maximum_continuous_energy_growth_rate_year": 0.0046504123700396496,
+      "ideal_continuous_energy_doubling_year": 149.05069172479332,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 215.034693792429
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": 217.380377621466
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": 222.28419692797257
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": 227.49640363101952
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": 242.1157580903191
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": null
+        }
+      ]
+    },
+    {
+      "construction_J_kg": 10000000.0,
+      "field_charge_included": true,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 10905314.055813253,
+      "simple_payback_year": 234.50208687020748,
+      "maximum_continuous_energy_growth_rate_year": 0.004264354374609388,
+      "ideal_continuous_energy_doubling_year": 162.5444603495077,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 234.50208687020748
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": 237.29540397504158
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": 243.15927064558048
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": 249.4288524044231
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": 267.2287900412269
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": null
+        }
+      ]
+    },
+    {
+      "construction_J_kg": 100000000.0,
+      "field_charge_included": false,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 100000000.0,
+      "simple_payback_year": 2150.34693792429,
+      "maximum_continuous_energy_growth_rate_year": 0.0004650412370039649,
+      "ideal_continuous_energy_doubling_year": 1490.5069172479332,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 2150.34693792429
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": 2421.1575809031915
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": 3453.102398242331
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": null
+        }
+      ]
+    },
+    {
+      "construction_J_kg": 100000000.0,
+      "field_charge_included": true,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 100905314.05581325,
+      "simple_payback_year": 2169.8143310020687,
+      "maximum_continuous_energy_growth_rate_year": 0.0004608689258394647,
+      "ideal_continuous_energy_doubling_year": 1504.0006858726476,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 2169.8143310020687
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": 2445.9887075677116
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": 3508.4125621891703
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": null
+        }
+      ]
+    },
+    {
+      "construction_J_kg": 1000000000.0,
+      "field_charge_included": false,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 1000000000.0,
+      "simple_payback_year": 21503.4693792429,
+      "maximum_continuous_energy_growth_rate_year": 4.650412370039649e-05,
+      "ideal_continuous_energy_doubling_year": 14905.069172479334,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 21503.4693792429
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": null
+        }
+      ]
+    },
+    {
+      "construction_J_kg": 1000000000.0,
+      "field_charge_included": true,
+      "startup_charge_efficiency": 0.95,
+      "total_capital_energy_J_kg": 1000905314.0558132,
+      "simple_payback_year": 21522.936772320678,
+      "maximum_continuous_energy_growth_rate_year": 4.646206094356224e-05,
+      "ideal_continuous_energy_doubling_year": 14918.562941104046,
+      "discounted_payback": [
+        {
+          "rate_year": 0.0,
+          "payback_year": 21522.936772320678
+        },
+        {
+          "rate_year": 0.0001,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.0003,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.0005,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.001,
+          "payback_year": null
+        },
+        {
+          "rate_year": 0.01,
+          "payback_year": null
+        }
+      ]
+    }
+  ],
+  "solar_scenarios": [
+    {
+      "net_solar_efficiency": 0.1,
+      "complete_effective_areal_mass_kg_m2": 0.1,
+      "mass_crossover_AU_for_1mW_kg": 1166.6190466471905,
+      "mass_crossover_AU_for_nonneutral_reference": 961.0263897881996,
+      "net_W_kg_at_100AU": 0.1361
+    },
+    {
+      "net_solar_efficiency": 0.1,
+      "complete_effective_areal_mass_kg_m2": 1.0,
+      "mass_crossover_AU_for_1mW_kg": 368.9173349139343,
+      "mass_crossover_AU_for_nonneutral_reference": 303.90322832594927,
+      "net_W_kg_at_100AU": 0.013609999999999999
+    },
+    {
+      "net_solar_efficiency": 0.1,
+      "complete_effective_areal_mass_kg_m2": 10.0,
+      "mass_crossover_AU_for_1mW_kg": 116.66190466471906,
+      "mass_crossover_AU_for_nonneutral_reference": 96.10263897881997,
+      "net_W_kg_at_100AU": 0.001361
+    },
+    {
+      "net_solar_efficiency": 0.1,
+      "complete_effective_areal_mass_kg_m2": 100.0,
+      "mass_crossover_AU_for_1mW_kg": 36.89173349139343,
+      "mass_crossover_AU_for_nonneutral_reference": 30.390322832594926,
+      "net_W_kg_at_100AU": 0.0001361
+    },
+    {
+      "net_solar_efficiency": 0.3,
+      "complete_effective_areal_mass_kg_m2": 0.1,
+      "mass_crossover_AU_for_1mW_kg": 2020.6434618705002,
+      "mass_crossover_AU_for_nonneutral_reference": 1664.5465345276539,
+      "net_W_kg_at_100AU": 0.4083
+    },
+    {
+      "net_solar_efficiency": 0.3,
+      "complete_effective_areal_mass_kg_m2": 1.0,
+      "mass_crossover_AU_for_1mW_kg": 638.983567863838,
+      "mass_crossover_AU_for_nonneutral_reference": 526.3758320447494,
+      "net_W_kg_at_100AU": 0.04083
+    },
+    {
+      "net_solar_efficiency": 0.3,
+      "complete_effective_areal_mass_kg_m2": 10.0,
+      "mass_crossover_AU_for_1mW_kg": 202.06434618705003,
+      "mass_crossover_AU_for_nonneutral_reference": 166.45465345276537,
+      "net_W_kg_at_100AU": 0.004083
+    },
+    {
+      "net_solar_efficiency": 0.3,
+      "complete_effective_areal_mass_kg_m2": 100.0,
+      "mass_crossover_AU_for_1mW_kg": 63.89835678638379,
+      "mass_crossover_AU_for_nonneutral_reference": 52.637583204474936,
+      "net_W_kg_at_100AU": 0.0004083
+    },
+    {
+      "net_solar_efficiency": 0.6,
+      "complete_effective_areal_mass_kg_m2": 0.1,
+      "mass_crossover_AU_for_1mW_kg": 2857.6213884977833,
+      "mass_crossover_AU_for_nonneutral_reference": 2354.0242843301435,
+      "net_W_kg_at_100AU": 0.8166
+    },
+    {
+      "net_solar_efficiency": 0.6,
+      "complete_effective_areal_mass_kg_m2": 1.0,
+      "mass_crossover_AU_for_1mW_kg": 903.6592278065887,
+      "mass_crossover_AU_for_nonneutral_reference": 744.4078405831069,
+      "net_W_kg_at_100AU": 0.08166
+    },
+    {
+      "net_solar_efficiency": 0.6,
+      "complete_effective_areal_mass_kg_m2": 10.0,
+      "mass_crossover_AU_for_1mW_kg": 285.76213884977835,
+      "mass_crossover_AU_for_nonneutral_reference": 235.40242843301434,
+      "net_W_kg_at_100AU": 0.008166
+    },
+    {
+      "net_solar_efficiency": 0.6,
+      "complete_effective_areal_mass_kg_m2": 100.0,
+      "mass_crossover_AU_for_1mW_kg": 90.36592278065886,
+      "mass_crossover_AU_for_nonneutral_reference": 74.4407840583107,
+      "net_W_kg_at_100AU": 0.0008166
+    }
+  ],
+  "deuterium_scenarios": [
+    {
+      "D_over_H_number_ratio": 1.9e-05,
+      "D_atom_fraction": 1.899963900685887e-05,
+      "D_mass_fraction_in_hydrogen": 3.796936924424795e-05,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 103579787659636.6,
+      "net_J_per_kg_hydrogen_feed": 3932859203.8895392,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 558.2100881381983,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14701589.708993193,
+      "ideal_separation_fraction_of_D_work": 1.419349280508534e-07,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 549.1729186494098,
+      "D_kg_s_for_reference_power": 0.020851749327140782,
+      "protium_work_over_D_work_in_same_feed": 30756.51943084128,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.4505724101784106,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.7107950213334815e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 2664897079668.958,
+      "years_from_1e27kg_hydrogen_at_reference_power": 5.770147568813116e+16,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 325.56109669034413
+    },
+    {
+      "D_over_H_number_ratio": 1.9e-05,
+      "D_atom_fraction": 1.899963900685887e-05,
+      "D_mass_fraction_in_hydrogen": 3.796936924424795e-05,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 171354823183593.4,
+      "net_J_per_kg_hydrogen_feed": 6506234553.240678,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 558.2100881381983,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14701589.708993193,
+      "ideal_separation_fraction_of_D_work": 8.579618265685803e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 331.9615593264205,
+      "D_kg_s_for_reference_power": 0.012604371020961184,
+      "protium_work_over_D_work_in_same_feed": 18591.561606542808,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.27235997040811016,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.0341336283777981e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 4408610774427.136,
+      "years_from_1e27kg_hydrogen_at_reference_power": 9.545710014836323e+16,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 538.5844614988506
+    },
+    {
+      "D_over_H_number_ratio": 1.9e-05,
+      "D_atom_fraction": 1.899963900685887e-05,
+      "D_mass_fraction_in_hydrogen": 3.796936924424795e-05,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 207159575319273.2,
+      "net_J_per_kg_hydrogen_feed": 7865718407.7790785,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 558.2100881381983,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14701589.708993193,
+      "ideal_separation_fraction_of_D_work": 7.09674640254267e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 274.5864593247049,
+      "D_kg_s_for_reference_power": 0.010425874663570391,
+      "protium_work_over_D_work_in_same_feed": 15378.25971542064,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.2252862050892053,
+      "lift_only_D_from_Jupiter_energy_fraction": 8.553975106667408e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 5329794159337.916,
+      "years_from_1e27kg_hydrogen_at_reference_power": 1.1540295137626232e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 651.1221933806883
+    },
+    {
+      "D_over_H_number_ratio": 1.9e-05,
+      "D_atom_fraction": 1.899963900685887e-05,
+      "D_mass_fraction_in_hydrogen": 3.796936924424795e-05,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 342709646367186.8,
+      "net_J_per_kg_hydrogen_feed": 13012469106.481356,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 558.2100881381983,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14701589.708993193,
+      "ideal_separation_fraction_of_D_work": 4.2898091328429015e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 165.98077966321026,
+      "D_kg_s_for_reference_power": 0.006302185510480592,
+      "protium_work_over_D_work_in_same_feed": 9295.780803271404,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.13617998520405508,
+      "lift_only_D_from_Jupiter_energy_fraction": 5.1706681418889906e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 8817221548854.271,
+      "years_from_1e27kg_hydrogen_at_reference_power": 1.9091420029672646e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 1077.1689229977012
+    },
+    {
+      "D_over_H_number_ratio": 2.6e-05,
+      "D_atom_fraction": 2.599932401757554e-05,
+      "D_mass_fraction_in_hydrogen": 5.195735741230668e-05,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 103579787659636.6,
+      "net_J_per_kg_hydrogen_feed": 5381732048.122571,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 743.6733889490387,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14313148.820245646,
+      "ideal_separation_fraction_of_D_work": 1.3818476696707164e-07,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 401.3242852532337,
+      "D_kg_s_for_reference_power": 0.020851749327140782,
+      "protium_work_over_D_work_in_same_feed": 22476.232454826342,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.3292690595785113,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.7107950213334815e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 3646650254964.3506,
+      "years_from_1e27kg_hydrogen_at_reference_power": 7.895880956726533e+16,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 445.4984266783748
+    },
+    {
+      "D_over_H_number_ratio": 2.6e-05,
+      "D_atom_fraction": 2.599932401757554e-05,
+      "D_mass_fraction_in_hydrogen": 5.195735741230668e-05,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 171354823183593.4,
+      "net_J_per_kg_hydrogen_feed": 8903143792.472576,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 743.6733889490387,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14313148.820245646,
+      "ideal_separation_fraction_of_D_work": 8.352930226486954e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 242.59068683842838,
+      "D_kg_s_for_reference_power": 0.012604371020961184,
+      "protium_work_over_D_work_in_same_feed": 13586.33122666868,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.1990350702733877,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.0341336283777981e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 6032751406144.507,
+      "years_from_1e27kg_hydrogen_at_reference_power": 1.3062367820877653e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 737.0000060522407
+    },
+    {
+      "D_over_H_number_ratio": 2.6e-05,
+      "D_atom_fraction": 2.599932401757554e-05,
+      "D_mass_fraction_in_hydrogen": 5.195735741230668e-05,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 207159575319273.2,
+      "net_J_per_kg_hydrogen_feed": 10763464096.245142,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 743.6733889490387,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14313148.820245646,
+      "ideal_separation_fraction_of_D_work": 6.909238348353582e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 200.66214262661686,
+      "D_kg_s_for_reference_power": 0.010425874663570391,
+      "protium_work_over_D_work_in_same_feed": 11238.116227413171,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.16463452978925566,
+      "lift_only_D_from_Jupiter_energy_fraction": 8.553975106667408e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 7293300509928.701,
+      "years_from_1e27kg_hydrogen_at_reference_power": 1.5791761913453066e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 890.9968533567496
+    },
+    {
+      "D_over_H_number_ratio": 2.6e-05,
+      "D_atom_fraction": 2.599932401757554e-05,
+      "D_mass_fraction_in_hydrogen": 5.195735741230668e-05,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 342709646367186.8,
+      "net_J_per_kg_hydrogen_feed": 17806287584.945152,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 743.6733889490387,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14313148.820245646,
+      "ideal_separation_fraction_of_D_work": 4.176465113243477e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 121.29534341921419,
+      "D_kg_s_for_reference_power": 0.006302185510480592,
+      "protium_work_over_D_work_in_same_feed": 6793.16561333434,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.09951753513669385,
+      "lift_only_D_from_Jupiter_energy_fraction": 5.1706681418889906e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 12065502812289.014,
+      "years_from_1e27kg_hydrogen_at_reference_power": 2.6124735641755306e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 1474.0000121044814
+    },
+    {
+      "D_over_H_number_ratio": 3.3e-05,
+      "D_atom_fraction": 3.299891103593582e-05,
+      "D_mass_fraction_in_hydrogen": 6.594495424335464e-05,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 103579787659636.6,
+      "net_J_per_kg_hydrogen_feed": 6830564357.751124,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 924.4095134946414,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14017896.04832117,
+      "ideal_separation_fraction_of_D_work": 1.3533428060679182e-07,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 316.19931450998075,
+      "D_kg_s_for_reference_power": 0.020851749327140782,
+      "protium_work_over_D_work_in_same_feed": 17708.79449893895,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.259427736505842,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.7107950213334815e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 4628375964097.468,
+      "years_from_1e27kg_hydrogen_at_reference_power": 1.00215548737468e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 565.4324012220321
+    },
+    {
+      "D_over_H_number_ratio": 3.3e-05,
+      "D_atom_fraction": 3.299891103593582e-05,
+      "D_mass_fraction_in_hydrogen": 6.594495424335464e-05,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 171354823183593.4,
+      "net_J_per_kg_hydrogen_feed": 11299985974.220192,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 924.4095134946414,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14017896.04832117,
+      "ideal_separation_fraction_of_D_work": 8.180625317620667e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 191.1347299514025,
+      "D_kg_s_for_reference_power": 0.012604371020961184,
+      "protium_work_over_D_work_in_same_feed": 10704.531917044176,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.1568177035291535,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.0341336283777981e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 7656846599852.334,
+      "years_from_1e27kg_hydrogen_at_reference_power": 1.6578927242624035e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 935.4099996039314
+    },
+    {
+      "D_over_H_number_ratio": 3.3e-05,
+      "D_atom_fraction": 3.299891103593582e-05,
+      "D_mass_fraction_in_hydrogen": 6.594495424335464e-05,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 207159575319273.2,
+      "net_J_per_kg_hydrogen_feed": 13661128715.502249,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 924.4095134946414,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14017896.04832117,
+      "ideal_separation_fraction_of_D_work": 6.766714030339591e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 158.09965725499038,
+      "D_kg_s_for_reference_power": 0.010425874663570391,
+      "protium_work_over_D_work_in_same_feed": 8854.397249469475,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.129713868252921,
+      "lift_only_D_from_Jupiter_energy_fraction": 8.553975106667408e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 9256751928194.936,
+      "years_from_1e27kg_hydrogen_at_reference_power": 2.00431097474936e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 1130.8648024440643
+    },
+    {
+      "D_over_H_number_ratio": 3.3e-05,
+      "D_atom_fraction": 3.299891103593582e-05,
+      "D_mass_fraction_in_hydrogen": 6.594495424335464e-05,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 342709646367186.8,
+      "net_J_per_kg_hydrogen_feed": 22599971948.440384,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 924.4095134946414,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 14017896.04832117,
+      "ideal_separation_fraction_of_D_work": 4.090312658810333e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 95.56736497570125,
+      "D_kg_s_for_reference_power": 0.006302185510480592,
+      "protium_work_over_D_work_in_same_feed": 5352.265958522088,
+      "lift_all_feed_from_Jupiter_energy_fraction": 0.07840885176457675,
+      "lift_only_D_from_Jupiter_energy_fraction": 5.1706681418889906e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 15313693199704.668,
+      "years_from_1e27kg_hydrogen_at_reference_power": 3.315785448524807e+17,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 1870.8199992078628
+    },
+    {
+      "D_over_H_number_ratio": 1e-07,
+      "D_atom_fraction": 9.999999000000099e-08,
+      "D_mass_fraction_in_hydrogen": 1.9984633359822577e-07,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 103579787659636.6,
+      "net_J_per_kg_hydrogen_feed": 20700040.798661124,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 4.236679996030146,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 21199688.37931065,
+      "ideal_separation_fraction_of_D_work": 2.0467012781463571e-07,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 104338.91356276502,
+      "D_kg_s_for_reference_power": 0.020851749327140782,
+      "protium_work_over_D_work_in_same_feed": 5843517.976593328,
+      "lift_all_feed_from_Jupiter_energy_fraction": 85.60552453130768,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.7107950213334815e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 14026303870.43209,
+      "years_from_1e27kg_hydrogen_at_reference_power": 303703448042584.8,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 1.7135441760239176
+    },
+    {
+      "D_over_H_number_ratio": 1e-07,
+      "D_atom_fraction": 9.999999000000099e-08,
+      "D_mass_fraction_in_hydrogen": 1.9984633359822577e-07,
+      "net_D_energy_conversion_efficiency": 0.3,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 171354823183593.4,
+      "net_J_per_kg_hydrogen_feed": 34244633.1576134,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 4.236679996030146,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 21199688.37931065,
+      "ideal_separation_fraction_of_D_work": 1.2371807215835897e-07,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 63070.31404589694,
+      "D_kg_s_for_reference_power": 0.012604371020961184,
+      "protium_work_over_D_work_in_same_feed": 3532263.2882781825,
+      "lift_all_feed_from_Jupiter_energy_fraction": 51.7464398649833,
+      "lift_only_D_from_Jupiter_energy_fraction": 1.0341336283777981e-05,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 23204091009.870247,
+      "years_from_1e27kg_hydrogen_at_reference_power": 502424766602068.75,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 2.8347621281548085
+    },
+    {
+      "D_over_H_number_ratio": 1e-07,
+      "D_atom_fraction": 9.999999000000099e-08,
+      "D_mass_fraction_in_hydrogen": 1.9984633359822577e-07,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_secondary_burn",
+      "nuclear_J_per_kg_D": 345265958865455.3,
+      "net_J_per_kg_D": 207159575319273.2,
+      "net_J_per_kg_hydrogen_feed": 41400081.59732225,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 4.236679996030146,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 21199688.37931065,
+      "ideal_separation_fraction_of_D_work": 1.0233506390731786e-07,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 52169.45678138251,
+      "D_kg_s_for_reference_power": 0.010425874663570391,
+      "protium_work_over_D_work_in_same_feed": 2921758.988296664,
+      "lift_all_feed_from_Jupiter_energy_fraction": 42.80276226565384,
+      "lift_only_D_from_Jupiter_energy_fraction": 8.553975106667408e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 28052607740.86418,
+      "years_from_1e27kg_hydrogen_at_reference_power": 607406896085169.6,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 3.4270883520478352
+    },
+    {
+      "D_over_H_number_ratio": 1e-07,
+      "D_atom_fraction": 9.999999000000099e-08,
+      "D_mass_fraction_in_hydrogen": 1.9984633359822577e-07,
+      "net_D_energy_conversion_efficiency": 0.6,
+      "D_cycle": "DD_with_neutron_recapture",
+      "nuclear_J_per_kg_D": 571182743945311.4,
+      "net_J_per_kg_D": 342709646367186.8,
+      "net_J_per_kg_hydrogen_feed": 68489266.3152268,
+      "ideal_atomic_mixture_separation_J_per_kg_feed": 4.236679996030146,
+      "ideal_atomic_mixture_separation_J_per_kg_D": 21199688.37931065,
+      "ideal_separation_fraction_of_D_work": 6.185903607917948e-08,
+      "raw_hydrogen_feed_kg_s_for_reference_power": 31535.15702294847,
+      "D_kg_s_for_reference_power": 0.006302185510480592,
+      "protium_work_over_D_work_in_same_feed": 1766131.6441390913,
+      "lift_all_feed_from_Jupiter_energy_fraction": 25.87321993249165,
+      "lift_only_D_from_Jupiter_energy_fraction": 5.1706681418889906e-06,
+      "separator_mass_capacity_limit_kg_per_kg_s_if_D_reactor_1W_kg": 46408182019.74049,
+      "years_from_1e27kg_hydrogen_at_reference_power": 1004849533204137.5,
+      "years_from_1e27kg_hydrogen_at_solar_luminosity": 5.669524256309617
+    }
+  ],
+  "accretion_scenarios": [
+    {
+      "thin_disk_outgoing_radiation_fraction_of_rest_mass": 0.057,
+      "assumed_capture_conversion_efficiency": 0.3,
+      "useful_J_per_kg_feed": 1536871355639958.2,
+      "fuel_work_over_nonneutral_protium_reference": 12.705504969884895,
+      "feed_kg_s_for_reference_power": 0.001405335430132899
+    },
+    {
+      "thin_disk_outgoing_radiation_fraction_of_rest_mass": 0.057,
+      "assumed_capture_conversion_efficiency": 0.5,
+      "useful_J_per_kg_feed": 2561452259399930.5,
+      "fuel_work_over_nonneutral_protium_reference": 21.175841616474827,
+      "feed_kg_s_for_reference_power": 0.0008432012580797395
+    },
+    {
+      "thin_disk_outgoing_radiation_fraction_of_rest_mass": 0.302,
+      "assumed_capture_conversion_efficiency": 0.3,
+      "useful_J_per_kg_feed": 8142721919355568.0,
+      "fuel_work_over_nonneutral_protium_reference": 67.31688598079366,
+      "feed_kg_s_for_reference_power": 0.0002652454288661432
+    },
+    {
+      "thin_disk_outgoing_radiation_fraction_of_rest_mass": 0.302,
+      "assumed_capture_conversion_efficiency": 0.5,
+      "useful_J_per_kg_feed": 1.3571203198925946e+16,
+      "fuel_work_over_nonneutral_protium_reference": 112.19480996798941,
+      "feed_kg_s_for_reference_power": 0.00015914725731968593
+    }
+  ],
+  "nuclear_inputs": {
+    "atomic_masses_MeV": {
+      "p": 938.7830734839999,
+      "d": 1876.123927735,
+      "t": 2809.4321181600003,
+      "he3": 2809.41352614,
+      "he4": 3728.40132555,
+      "n": 939.56542052
+    },
+    "reaction_Q_MeV": {
+      "DD_Tp": 4.032663825999862,
+      "DD_He3n": 3.2689088100000845,
+      "DT": 17.589299825000126,
+      "DHe3": 18.353054840999903,
+      "np_capture": 2.2245662689997516,
+      "net_D": 23.846529920000194
+    },
+    "library": "pynucastro 3.1.0; same retained mass data as the nuclear ledgers"
+  },
+  "DD_nuclear_ledger": {
+    "six_D_secondary_burn_Q_MeV": 43.243927301999975,
+    "four_D_closed_Q_MeV": 47.69305984000039,
+    "two_np_capture_Q_MeV": 4.449132537999503,
+    "closure_residual_MeV": -9.094947017729282e-13
+  },
+  "limits": [
+    "Whole-plant isotope separation and conventional D reactor equipment are not designed here.",
+    "Atomic ideal-mixture entropy at 300 K is a reversible benchmark; molecular chemistry, throughput, pumping, cooling and finite recovery require separate costs.",
+    "Solar areal mass includes all hardware assigned to local useful electricity; transport and remote transmission must be added when needed.",
+    "Thin-disk energy fractions are published model results, not a demonstrated black-hole power plant. Seed mass, acquisition, feeding and heat rejection remain explicit requirements.",
+    "Opaque replacement cases preserve unproved pulse-driver, collection and structural assumptions; their increased cadence needs engineering qualification.",
+    "Discount and embodied-energy values are scenarios, not forecasts or market prices."
+  ]
+}

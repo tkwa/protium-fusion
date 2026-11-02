@@ -1,0 +1,1042 @@
+{
+  "scope": "Independent controls and bounded convergence report for axial drive screens.",
+  "checks": [
+    {
+      "name": "Gaussian Kubo integral zeta=0.1",
+      "pass_": true,
+      "values": 1.1102230246251565e-16
+    },
+    {
+      "name": "Gaussian Kubo integral zeta=0.5",
+      "pass_": true,
+      "values": 2.482534153247273e-16
+    },
+    {
+      "name": "Gaussian Kubo integral zeta=1.0",
+      "pass_": true,
+      "values": 1.1102230246251565e-16
+    },
+    {
+      "name": "Gaussian Kubo integral zeta=2.0",
+      "pass_": true,
+      "values": 2.2887833992611187e-16
+    },
+    {
+      "name": "Gaussian Kubo integral zeta=4.0",
+      "pass_": true,
+      "values": 4.462664456072159e-16
+    },
+    {
+      "name": "Cylindrical vacuum transfer k=10.0",
+      "pass_": true,
+      "values": 1.4283411970961168e-06
+    },
+    {
+      "name": "Cylindrical vacuum transfer k=40.0",
+      "pass_": true,
+      "values": 2.0838851755189403e-05
+    },
+    {
+      "name": "Cylindrical vacuum transfer k=80.0",
+      "pass_": true,
+      "values": 6.348602842642936e-05
+    },
+    {
+      "name": "Cylindrical vacuum transfer k=160.0",
+      "pass_": true,
+      "values": 0.0001385203816718361
+    },
+    {
+      "name": "Static screening converges with radial refinement",
+      "pass_": true,
+      "values": [
+        {
+          "ncore": 24,
+          "axis_FEM": 1.5785937612751734e-05,
+          "axis_ODE": 1.8237120771155577e-05,
+          "axis_relative_error": -0.13440625793742145,
+          "median_FEM": 0.0011623456466327681,
+          "median_ODE": 0.0011971361992286764,
+          "median_relative_error": -0.029061482409707518
+        },
+        {
+          "ncore": 36,
+          "axis_FEM": 1.7098476968415323e-05,
+          "axis_ODE": 1.8237120771155577e-05,
+          "axis_relative_error": -0.06243550267765785,
+          "median_FEM": 0.0011837897911016187,
+          "median_ODE": 0.0011971361992286764,
+          "median_relative_error": -0.011148612944506198
+        },
+        {
+          "ncore": 72,
+          "axis_FEM": 1.7937651347821078e-05,
+          "axis_ODE": 1.8237120771155577e-05,
+          "axis_relative_error": -0.016420871863071063,
+          "median_FEM": 0.0011905358867298024,
+          "median_ODE": 0.0011971361992286764,
+          "median_relative_error": -0.005513418191786967
+        },
+        {
+          "ncore": 144,
+          "axis_FEM": 1.815925062951808e-05,
+          "axis_ODE": 1.8237120771155577e-05,
+          "axis_relative_error": -0.004269870371240825,
+          "median_FEM": 0.0011958532887958234,
+          "median_ODE": 0.0011971361992286764,
+          "median_relative_error": -0.0010716495196450015
+        }
+      ]
+    },
+    {
+      "name": "Partition of unity in radial harmonics Z=1",
+      "pass_": true,
+      "values": [
+        3.469446951953614e-18,
+        1.734723475976807e-18
+      ]
+    },
+    {
+      "name": "Hamiltonian orbit accuracy Z=1",
+      "pass_": true,
+      "values": {
+        "Z": 1,
+        "mass_over_proton": 1.0,
+        "inventory_per_m": 1495774998252138.5,
+        "max_energy_error_over_T": 0.00031363131444095416,
+        "wall_crossings": 0,
+        "max_relative_orbit_period_jitter": 4.874751128261074e-07,
+        "minimum_sampled_peaks": 49,
+        "maximum_sine_coefficient": 0.00017536638118328948,
+        "maximum_lost_hat_variance": 0.001296005814936274,
+        "minimum_radial_period_s": 5.026987697951983e-10,
+        "maximum_radial_period_s": 6.601584367542792e-10
+      }
+    },
+    {
+      "name": "Uniform axial susceptibility Z=1 omega=10000000.0",
+      "pass_": true,
+      "values": 5.180419194147869e-16
+    },
+    {
+      "name": "Uniform axial susceptibility Z=1 omega=100000000.0",
+      "pass_": true,
+      "values": 7.178232167002782e-16
+    },
+    {
+      "name": "Uniform axial susceptibility Z=1 omega=1000000000.0",
+      "pass_": true,
+      "values": 1.1134011784676727e-15
+    },
+    {
+      "name": "Uniform axial susceptibility Z=1 omega=3000000000.0",
+      "pass_": true,
+      "values": 7.225545508683928e-16
+    },
+    {
+      "name": "Uniform axial susceptibility Z=1 omega=10000000000.0",
+      "pass_": true,
+      "values": 3.356249419270951e-13
+    },
+    {
+      "name": "Partition of unity in radial harmonics Z=22",
+      "pass_": true,
+      "values": [
+        3.469446951953614e-18,
+        1.734723475976807e-18
+      ]
+    },
+    {
+      "name": "Hamiltonian orbit accuracy Z=22",
+      "pass_": true,
+      "values": {
+        "Z": 22,
+        "mass_over_proton": 48.58228894248968,
+        "inventory_per_m": 64887707003070.016,
+        "max_energy_error_over_T": 6.898895959039919e-05,
+        "wall_crossings": 0,
+        "max_relative_orbit_period_jitter": 1.2923654878465656e-08,
+        "minimum_sampled_peaks": 3,
+        "maximum_sine_coefficient": 3.491119676339001e-06,
+        "maximum_lost_hat_variance": 0.0014934475697317984,
+        "minimum_radial_period_s": 1.7478640099727095e-09,
+        "maximum_radial_period_s": 1.0788161357386857e-08
+      }
+    },
+    {
+      "name": "Uniform axial susceptibility Z=22 omega=10000000.0",
+      "pass_": true,
+      "values": 3.975962811691902e-16
+    },
+    {
+      "name": "Uniform axial susceptibility Z=22 omega=100000000.0",
+      "pass_": true,
+      "values": 2.2450180567865247e-16
+    },
+    {
+      "name": "Uniform axial susceptibility Z=22 omega=1000000000.0",
+      "pass_": true,
+      "values": 7.939165682721638e-14
+    },
+    {
+      "name": "Uniform axial susceptibility Z=22 omega=3000000000.0",
+      "pass_": true,
+      "values": 5.716398278879119e-13
+    },
+    {
+      "name": "Uniform axial susceptibility Z=22 omega=10000000000.0",
+      "pass_": true,
+      "values": 6.520678903454135e-12
+    },
+    {
+      "name": "Radial harmonic truncation for reported bands",
+      "pass_": true,
+      "values": [
+        {
+          "k": 40.0,
+          "beta": 0.1,
+          "power_relative_change": 3.266022320369544e-07,
+          "field_relative_change": 7.498773445310237e-07
+        },
+        {
+          "k": 40.0,
+          "beta": 0.2,
+          "power_relative_change": 1.2998605120051465e-06,
+          "field_relative_change": 1.796373434177931e-07
+        },
+        {
+          "k": 40.0,
+          "beta": 0.3,
+          "power_relative_change": 7.78984211269318e-06,
+          "field_relative_change": 2.081506504930624e-07
+        },
+        {
+          "k": 80.0,
+          "beta": 0.1,
+          "power_relative_change": 6.847572144863534e-07,
+          "field_relative_change": 1.2176939392865808e-06
+        },
+        {
+          "k": 80.0,
+          "beta": 0.2,
+          "power_relative_change": 3.165290423101652e-07,
+          "field_relative_change": 5.155989564031518e-08
+        },
+        {
+          "k": 80.0,
+          "beta": 0.3,
+          "power_relative_change": 4.7073378648399e-06,
+          "field_relative_change": 2.741584949010407e-08
+        }
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.0",
+      "pass_": true,
+      "values": [
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.01",
+      "pass_": true,
+      "values": [
+        9.616730655454597e-06,
+        6.064930481290183e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.02",
+      "pass_": true,
+      "values": [
+        0.00019387189209307576,
+        0.00011965868419079988
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.03",
+      "pass_": true,
+      "values": [
+        0.0032208847427007046,
+        1.7474428288232603e-06
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.05",
+      "pass_": true,
+      "values": [
+        0.005431161725018704,
+        3.840513664879831e-06
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.075",
+      "pass_": true,
+      "values": [
+        0.014057314843954822,
+        9.126790886015628e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.1",
+      "pass_": true,
+      "values": [
+        0.050735949968029645,
+        0.000745675717195612
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.125",
+      "pass_": true,
+      "values": [
+        0.020127505489190758,
+        0.00063946502548621
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.15",
+      "pass_": true,
+      "values": [
+        0.0015971773684990503,
+        0.00015274739801836713
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.175",
+      "pass_": true,
+      "values": [
+        0.00013684108349693358,
+        8.170323502189069e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.2",
+      "pass_": true,
+      "values": [
+        9.46802748718255e-06,
+        4.55149369109011e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.225",
+      "pass_": true,
+      "values": [
+        4.6443118991082047e-07,
+        3.991706240773249e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.25",
+      "pass_": true,
+      "values": [
+        1.5433641423511698e-08,
+        0.00013733033294130266
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.275",
+      "pass_": true,
+      "values": [
+        5.338513399001144e-10,
+        0.0005850779005682497
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.3",
+      "pass_": true,
+      "values": [
+        7.98889720159021e-12,
+        4.20913280097457e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.325",
+      "pass_": true,
+      "values": [
+        9.04429110266819e-14,
+        1.3857381772661998e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.35",
+      "pass_": true,
+      "values": [
+        7.191947068399475e-16,
+        2.736898512607356e-06
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.4",
+      "pass_": true,
+      "values": [
+        1.540170755548483e-20,
+        2.2471348960734403e-08
+      ]
+    },
+    {
+      "name": "Passive species absorption k=40.0 beta=0.5",
+      "pass_": true,
+      "values": [
+        2.904217737977173e-20,
+        8.30672771053993e-08
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.0",
+      "pass_": true,
+      "values": [
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.01",
+      "pass_": true,
+      "values": [
+        1.3990585332548229e-05,
+        8.781582353112116e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.02",
+      "pass_": true,
+      "values": [
+        0.00030079443417747284,
+        0.00018790821300867738
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.03",
+      "pass_": true,
+      "values": [
+        0.004780398091387771,
+        2.205489273467844e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.05",
+      "pass_": true,
+      "values": [
+        0.007794297750884291,
+        0.00012825539607877289
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.075",
+      "pass_": true,
+      "values": [
+        0.022080163874665912,
+        0.0006891731638147252
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.1",
+      "pass_": true,
+      "values": [
+        0.04278853011600136,
+        0.002562430440349935
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.125",
+      "pass_": true,
+      "values": [
+        0.004372316509329106,
+        0.0019461369833560407
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.15",
+      "pass_": true,
+      "values": [
+        0.002195703665712002,
+        0.0021920842822879673
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.175",
+      "pass_": true,
+      "values": [
+        0.0001333404780612561,
+        6.202615191097507e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.2",
+      "pass_": true,
+      "values": [
+        8.757213887492715e-06,
+        3.4668212550071856e-08
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.225",
+      "pass_": true,
+      "values": [
+        4.381979492775838e-07,
+        8.9684219775404e-07
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.25",
+      "pass_": true,
+      "values": [
+        1.589830719457129e-08,
+        8.081613279379742e-07
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.275",
+      "pass_": true,
+      "values": [
+        2.2750043290229486e-08,
+        5.790994546701062e-07
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.3",
+      "pass_": true,
+      "values": [
+        3.082911434551753e-07,
+        4.5975930059471235e-07
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.325",
+      "pass_": true,
+      "values": [
+        2.071369308079658e-06,
+        1.3529369620522317e-07
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.35",
+      "pass_": true,
+      "values": [
+        8.601266440726174e-06,
+        9.182158350137509e-08
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.4",
+      "pass_": true,
+      "values": [
+        6.326616396964029e-05,
+        3.9660414800142784e-08
+      ]
+    },
+    {
+      "name": "Passive species absorption k=80.0 beta=0.5",
+      "pass_": true,
+      "values": [
+        0.0003929620646208501,
+        2.647261817742426e-09
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.0",
+      "pass_": true,
+      "values": [
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.01",
+      "pass_": true,
+      "values": [
+        9.132785427252067e-06,
+        5.7231985017420116e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.02",
+      "pass_": true,
+      "values": [
+        0.00025581988989404226,
+        0.00018139207959345195
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.03",
+      "pass_": true,
+      "values": [
+        0.002739616299485748,
+        9.440356748252e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.05",
+      "pass_": true,
+      "values": [
+        0.004425826760984115,
+        0.0003737950606794802
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.075",
+      "pass_": true,
+      "values": [
+        0.0027893995639341617,
+        0.0006689135888264028
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.1",
+      "pass_": true,
+      "values": [
+        0.006886672533613103,
+        5.2688072731516327e-05
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.125",
+      "pass_": true,
+      "values": [
+        0.001386659317807028,
+        1.7628727148733217e-06
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.15",
+      "pass_": true,
+      "values": [
+        0.00019138563152450643,
+        1.031365211017179e-06
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.175",
+      "pass_": true,
+      "values": [
+        6.367239673285006e-05,
+        1.8595684865476788e-07
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.2",
+      "pass_": true,
+      "values": [
+        0.00013594346880812816,
+        7.001555110343043e-08
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.225",
+      "pass_": true,
+      "values": [
+        0.0002776757742503195,
+        1.0895069512204142e-08
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.25",
+      "pass_": true,
+      "values": [
+        0.0003968732022795357,
+        3.992055372596438e-09
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.275",
+      "pass_": true,
+      "values": [
+        0.0003464598317154405,
+        1.071461212639475e-09
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.3",
+      "pass_": true,
+      "values": [
+        0.00018602832062091805,
+        9.507011014105354e-10
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.325",
+      "pass_": true,
+      "values": [
+        6.967701848145246e-05,
+        1.059158028171461e-09
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.35",
+      "pass_": true,
+      "values": [
+        1.9045025799663795e-05,
+        1.3481708542994697e-09
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.4",
+      "pass_": true,
+      "values": [
+        1.0446649358514162e-06,
+        1.5965652944986386e-09
+      ]
+    },
+    {
+      "name": "Passive species absorption k=160.0 beta=0.5",
+      "pass_": true,
+      "values": [
+        1.984799875018362e-06,
+        2.4958412703445654e-09
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.01 factor=1.0",
+      "pass_": true,
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.01 factor=2.0",
+      "pass_": true,
+      "values": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.01 factor=5.0",
+      "pass_": true,
+      "values": [
+        0.70483,
+        0.7048327646991336
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.01 factor=40.863458",
+      "pass_": true,
+      "values": [
+        0.9,
+        0.8999999997667454
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.1 factor=1.0",
+      "pass_": true,
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.1 factor=2.0",
+      "pass_": true,
+      "values": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.1 factor=5.0",
+      "pass_": true,
+      "values": [
+        0.70483,
+        0.7048327646991336
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.1 factor=40.863458",
+      "pass_": true,
+      "values": [
+        0.9,
+        0.8999999997667454
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.3 factor=1.0",
+      "pass_": true,
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.3 factor=2.0",
+      "pass_": true,
+      "values": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.3 factor=5.0",
+      "pass_": true,
+      "values": [
+        0.70483,
+        0.7048327646991335
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.3 factor=40.863458",
+      "pass_": true,
+      "values": [
+        0.9,
+        0.8999999997667454
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.9 factor=1.0",
+      "pass_": true,
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.9 factor=2.0",
+      "pass_": true,
+      "values": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.9 factor=5.0",
+      "pass_": true,
+      "values": [
+        0.70483,
+        0.7048327646991335
+      ]
+    },
+    {
+      "name": "Relativistic separatrix phase measure beta=0.9 factor=40.863458",
+      "pass_": true,
+      "values": [
+        0.9,
+        0.8999999997667454
+      ]
+    }
+  ],
+  "all_pass": true,
+  "count": 98,
+  "convergence": [
+    {
+      "k": 40.0,
+      "beta": 0.1,
+      "independent": -1.7654335799588416e-05,
+      "refined": -0.0011216293810547562
+    },
+    {
+      "k": 40.0,
+      "beta": 0.2,
+      "independent": -0.02749299062176369,
+      "refined": -0.0004714714267634035
+    },
+    {
+      "k": 40.0,
+      "beta": 0.25,
+      "independent": -0.004363374757370586,
+      "refined": -0.00197634323737117
+    },
+    {
+      "k": 40.0,
+      "beta": 0.3,
+      "independent": 0.1510947451860123,
+      "refined": 0.008375582920399083
+    },
+    {
+      "k": 80.0,
+      "beta": 0.1,
+      "independent": 0.0001498915801803058,
+      "refined": 0.0026794974277752903
+    },
+    {
+      "k": 80.0,
+      "beta": 0.2,
+      "independent": -8.797356592871175e-05,
+      "refined": 0.001501143536243088
+    },
+    {
+      "k": 80.0,
+      "beta": 0.25,
+      "independent": 0.24423243280022566,
+      "refined": 0.0025988092242785754
+    },
+    {
+      "k": 80.0,
+      "beta": 0.3,
+      "independent": -0.1943976962695767,
+      "refined": -0.0002853584066893067
+    },
+    {
+      "k": 160.0,
+      "beta": 0.1,
+      "independent": 0.0012346310256576842,
+      "refined": 0.006604995146741066
+    },
+    {
+      "k": 160.0,
+      "beta": 0.2,
+      "independent": -0.00037356207315997203,
+      "refined": -0.003045224183213402
+    },
+    {
+      "k": 160.0,
+      "beta": 0.25,
+      "independent": 0.0034361174286039464,
+      "refined": -0.002956709497176191
+    },
+    {
+      "k": 160.0,
+      "beta": 0.3,
+      "independent": 0.0013143103306731962,
+      "refined": -0.005031392486646302
+    }
+  ],
+  "derived_capture_costs": [
+    {
+      "k_per_m": 40.0,
+      "beta_phase": 0.1,
+      "median_trapping_threshold_V": 1280.7071876534662,
+      "wall_voltage_for_median_threshold_V": 665.876335776814,
+      "continuous_heat_MeV_per_primary": 663325.4335505601,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 2653301.7342022406,
+      "titanium_qPhi_over_T_at_median": 0.017609723830235163,
+      "seed_relative_change": -1.7654335799588416e-05,
+      "mesh_relative_change": -0.0011216293810547562
+    },
+    {
+      "k_per_m": 40.0,
+      "beta_phase": 0.2,
+      "median_trapping_threshold_V": 5162.137680366444,
+      "wall_voltage_for_median_threshold_V": 4960.76178350237,
+      "continuous_heat_MeV_per_primary": 39319.875253276456,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 157279.50101310582,
+      "titanium_qPhi_over_T_at_median": 0.0709793931050386,
+      "seed_relative_change": -0.02749299062176369,
+      "mesh_relative_change": -0.0004714714267634035
+    },
+    {
+      "k_per_m": 40.0,
+      "beta_phase": 0.25,
+      "median_trapping_threshold_V": 8113.172090004526,
+      "wall_voltage_for_median_threshold_V": 8989.453177344823,
+      "continuous_heat_MeV_per_primary": 322529.2168081075,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 1290116.86723243,
+      "titanium_qPhi_over_T_at_median": 0.11155611623756223,
+      "seed_relative_change": -0.004363374757370586,
+      "mesh_relative_change": -0.00197634323737117
+    },
+    {
+      "k_per_m": 40.0,
+      "beta_phase": 0.3,
+      "median_trapping_threshold_V": 11768.509855962788,
+      "wall_voltage_for_median_threshold_V": 12133.046435343731,
+      "continuous_heat_MeV_per_primary": 180061.00303872436,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 720244.0121548974,
+      "titanium_qPhi_over_T_at_median": 0.16181701051948832,
+      "seed_relative_change": 0.1510947451860123,
+      "mesh_relative_change": 0.008375582920399083
+    },
+    {
+      "k_per_m": 80.0,
+      "beta_phase": 0.1,
+      "median_trapping_threshold_V": 1280.7071876534662,
+      "wall_voltage_for_median_threshold_V": 1035.7490591710077,
+      "continuous_heat_MeV_per_primary": 1413783.210881511,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 5655132.843526044,
+      "titanium_qPhi_over_T_at_median": 0.017609723830235163,
+      "seed_relative_change": 0.0001498915801803058,
+      "mesh_relative_change": 0.0026794974277752903
+    },
+    {
+      "k_per_m": 80.0,
+      "beta_phase": 0.2,
+      "median_trapping_threshold_V": 5162.137680366444,
+      "wall_voltage_for_median_threshold_V": 7294.036758961424,
+      "continuous_heat_MeV_per_primary": 13592.67664955413,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 54370.70659821652,
+      "titanium_qPhi_over_T_at_median": 0.0709793931050386,
+      "seed_relative_change": -8.797356592871175e-05,
+      "mesh_relative_change": 0.001501143536243088
+    },
+    {
+      "k_per_m": 80.0,
+      "beta_phase": 0.25,
+      "median_trapping_threshold_V": 8113.172090004526,
+      "wall_voltage_for_median_threshold_V": 12652.881151908476,
+      "continuous_heat_MeV_per_primary": 3833.758342804328,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 15335.033371217312,
+      "titanium_qPhi_over_T_at_median": 0.11155611623756223,
+      "seed_relative_change": 0.24423243280022566,
+      "mesh_relative_change": 0.0025988092242785754
+    },
+    {
+      "k_per_m": 80.0,
+      "beta_phase": 0.3,
+      "median_trapping_threshold_V": 11768.509855962788,
+      "wall_voltage_for_median_threshold_V": 19096.909836908017,
+      "continuous_heat_MeV_per_primary": 8139.602093723642,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 32558.408374894567,
+      "titanium_qPhi_over_T_at_median": 0.16181701051948832,
+      "seed_relative_change": -0.1943976962695767,
+      "mesh_relative_change": -0.0002853584066893067
+    },
+    {
+      "k_per_m": 160.0,
+      "beta_phase": 0.1,
+      "median_trapping_threshold_V": 1280.7071876534662,
+      "wall_voltage_for_median_threshold_V": 3669.363777883804,
+      "continuous_heat_MeV_per_primary": 2715115.007784997,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 10860460.031139988,
+      "titanium_qPhi_over_T_at_median": 0.017609723830235163,
+      "seed_relative_change": 0.0012346310256576842,
+      "mesh_relative_change": 0.006604995146741066
+    },
+    {
+      "k_per_m": 160.0,
+      "beta_phase": 0.2,
+      "median_trapping_threshold_V": 5162.137680366444,
+      "wall_voltage_for_median_threshold_V": 25627.254919660605,
+      "continuous_heat_MeV_per_primary": 2595812.857421882,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 10383251.429687528,
+      "titanium_qPhi_over_T_at_median": 0.0709793931050386,
+      "seed_relative_change": -0.00037356207315997203,
+      "mesh_relative_change": -0.003045224183213402
+    },
+    {
+      "k_per_m": 160.0,
+      "beta_phase": 0.25,
+      "median_trapping_threshold_V": 8113.172090004526,
+      "wall_voltage_for_median_threshold_V": 43507.9309549826,
+      "continuous_heat_MeV_per_primary": 21831332.296328574,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 87325329.1853143,
+      "titanium_qPhi_over_T_at_median": 0.11155611623756223,
+      "seed_relative_change": 0.0034361174286039464,
+      "mesh_relative_change": -0.002956709497176191
+    },
+    {
+      "k_per_m": 160.0,
+      "beta_phase": 0.3,
+      "median_trapping_threshold_V": 11768.509855962788,
+      "wall_voltage_for_median_threshold_V": 66308.24100840282,
+      "continuous_heat_MeV_per_primary": 23768596.30717287,
+      "heat_for_half_initial_median_phases_MeV_per_primary": 95074385.22869147,
+      "titanium_qPhi_over_T_at_median": 0.16181701051948832,
+      "seed_relative_change": 0.0013143103306731962,
+      "mesh_relative_change": -0.005031392486646302
+    }
+  ],
+  "shot_diagnostic": {
+    "length_m": 10.0,
+    "burn_s": 0.001,
+    "primary_pn_per_shot": 2147842201.653997,
+    "main_thermal_inventory_J_per_m": 600.10975677963,
+    "source_primary_rate_per_m_s": 214784220165.3997,
+    "eventual_full_network_nuclear_W_per_m_upper_comparison": 0.5566745339449487,
+    "beta_point_one_wall_1kV_heat_W_per_m": 51481.625685225255,
+    "one_microsecond_burst_heat_J_per_m": 0.051481625685225255,
+    "average_heating_MeV_per_primary_at_one_Hz": 1.496027192476632,
+    "median_fixed_bucket_initial_phase_fraction": 0.39236005505718735,
+    "scope": "The0.1c wave only tests injection/capture; its~2.6keV particles cannot clear40MV end barriers. Whole-plasma dump/reload is a separate method."
+  },
+  "uncertainty_note": "Weak radial-harmonic absorption has~15\u201325% independent-ensemble variation at selected points. This is reported explicitly; no percent-level tail precision is claimed."
+}

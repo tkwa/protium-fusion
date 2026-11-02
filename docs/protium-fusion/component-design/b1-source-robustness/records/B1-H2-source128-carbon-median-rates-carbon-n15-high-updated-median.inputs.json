@@ -1,0 +1,700 @@
+{
+  "stage": "B1",
+  "case": "H2-rho1062p5",
+  "initial_Y": {
+    "p": 0.11764705882352941,
+    "n15": 0.058823529411764705
+  },
+  "physical_duration_s": 8.227795789289296e-05,
+  "duration_s": 8.227795789289296e-05,
+  "entropy_mapping_source": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/b1-source/entropy-map.json",
+  "entropy_mapping_sha256": "f04eed73de69678794e7efd02863367c37b827d77e319289176b61c4afc2e0c4",
+  "profile_source": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.initial.json",
+  "profile_sha256": "cb7ffef423545ec6e5c42901ddef6ab5d97486cc4ad91a32d723c941c0ec67d1",
+  "baseline_source": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json",
+  "baseline_sha256": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+  "code_sha256": "9071ffe7fdfc0011d2ba26abdea5492a42988bed48fbcb00d74cedf7e8f7247f",
+  "radial_module_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+  "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+  "FEOS_library_sha256": "678308b40e53362f0fc05c95444ba3a45e6c523b7702a84db1cbcd48c3d64bb2",
+  "FEOS_material_reference": {
+    "name": "H2-rho1062p5",
+    "h": 2,
+    "rho": 1062.5,
+    "T": 250.0,
+    "folder": "grid",
+    "tag": "2",
+    "entity": 1
+  },
+  "contact": {
+    "rho_kg_m3": 4452.733285163034,
+    "T_K": 12842407.67998336,
+    "p": 345920883905836.2,
+    "e": 123942641867.71545,
+    "s": 64489.42526572106,
+    "q": [
+      6.776410088042494,
+      0.9927838969814977
+    ],
+    "q_J_kg": 123942641866.57101,
+    "error": 9.233623553850482e-12
+  },
+  "target_factor_used_to_choose_one_contact_q": 0.9,
+  "temperature_ratio_mass_q10_q50_q90": [
+    0.8631706021590261,
+    0.9013976327764561,
+    0.9246496784433158
+  ],
+  "temperature_ratio_minmax": [
+    0.8548698218904264,
+    0.92584211212383
+  ],
+  "old_specific_internal_J_kg": 269446894621.06927,
+  "old_specific_kinetic_J_kg": 2555568184306.392,
+  "new_specific_internal_J_kg": 236834174373.06085,
+  "velocity_scale": 1.0063604901646737,
+  "prepared_energy_relative_error": -2.220446049250313e-16,
+  "contact_heat_J": 1.4006032421454134e+22,
+  "contact_heat_fraction_prepared": 0.04383711690617634,
+  "transverse_collision_speed_each_stream_m_s": 497880.7926935342,
+  "relative_transverse_pair_speed_m_s": 995761.5853870685,
+  "parcel_energy_allocation_scope": "Cold scalar allocation E_i=final hot specific internal+radial kinetic, zero cold binding reference; summed energy matches prepared input. Angle is a diagnostic for symmetric equal-energy colliding streams. Real pressure-work/geometry can redistribute local energy; no direct3Dlaunch solution claimed.",
+  "pair_half_angle_degrees_mass_q10_q50_q90": [
+    9.383921319172417,
+    12.707985663674972,
+    17.96308061967987
+  ],
+  "pair_half_angle_degrees_minmax": [
+    7.659800722068984,
+    32.9440422888705
+  ],
+  "cold_total_speed_m_s_mass_q10_q50_q90": [
+    1614500.3977064756,
+    2263428.8516994175,
+    3056126.18033669
+  ],
+  "cold_post_transverse_radial_speed_m_s_mass_q10_q50_q90": [
+    1535808.1002241136,
+    2207987.3071083794,
+    3015263.034567078
+  ],
+  "postshock_rarefaction_mass_fraction": 0.176025390625,
+  "cells": [
+    {
+      "index": 6,
+      "initial_T_K": 36612463.580481276,
+      "cold_energy_allocation_J_kg": 419093467684.46906,
+      "half_angle_degrees": 32.9440422888705,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 7,
+      "initial_T_K": 36646025.1618656,
+      "cold_energy_allocation_J_kg": 434117907599.0785,
+      "half_angle_degrees": 32.298232008190254,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 8,
+      "initial_T_K": 36685492.357260615,
+      "cold_energy_allocation_J_kg": 451331917787.93665,
+      "half_angle_degrees": 31.603469554265654,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 9,
+      "initial_T_K": 36731400.60802123,
+      "cold_energy_allocation_J_kg": 470755442293.5051,
+      "half_angle_degrees": 30.871383397664776,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 10,
+      "initial_T_K": 36784348.7080127,
+      "cold_energy_allocation_J_kg": 492411578398.0001,
+      "half_angle_degrees": 30.112699125122653,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 11,
+      "initial_T_K": 36845000.373418644,
+      "cold_energy_allocation_J_kg": 516326800024.11426,
+      "half_angle_degrees": 29.337019343045817,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 12,
+      "initial_T_K": 36914139.122273445,
+      "cold_energy_allocation_J_kg": 542532151161.3275,
+      "half_angle_degrees": 28.55268756288279,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 13,
+      "initial_T_K": 36992601.507065944,
+      "cold_energy_allocation_J_kg": 571061707984.2668,
+      "half_angle_degrees": 27.76682696652022,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 14,
+      "initial_T_K": 37081177.02868022,
+      "cold_energy_allocation_J_kg": 601949847726.9895,
+      "half_angle_degrees": 26.985448236400934,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 15,
+      "initial_T_K": 37180593.2656315,
+      "cold_energy_allocation_J_kg": 635229957459.6704,
+      "half_angle_degrees": 26.2135342408698,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 16,
+      "initial_T_K": 37291431.67177593,
+      "cold_energy_allocation_J_kg": 670930530571.1042,
+      "half_angle_degrees": 25.45519398621255,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 17,
+      "initial_T_K": 37413812.003373876,
+      "cold_energy_allocation_J_kg": 709063423225.2257,
+      "half_angle_degrees": 24.71394158182364,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 18,
+      "initial_T_K": 37546924.49121636,
+      "cold_energy_allocation_J_kg": 749605456493.1855,
+      "half_angle_degrees": 23.99299396416493,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 19,
+      "initial_T_K": 37688595.81870593,
+      "cold_energy_allocation_J_kg": 792478888699.4138,
+      "half_angle_degrees": 23.295459245617053,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 20,
+      "initial_T_K": 37834994.69685633,
+      "cold_energy_allocation_J_kg": 837535236199.9729,
+      "half_angle_degrees": 22.624382829932813,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 21,
+      "initial_T_K": 37980513.27845759,
+      "cold_energy_allocation_J_kg": 884545355498.282,
+      "half_angle_degrees": 21.982679109582826,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 22,
+      "initial_T_K": 38117887.68013126,
+      "cold_energy_allocation_J_kg": 933199844619.7487,
+      "half_angle_degrees": 21.372968918019627,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 23,
+      "initial_T_K": 38238655.75006839,
+      "cold_energy_allocation_J_kg": 983125183707.4594,
+      "half_angle_degrees": 20.79733289942115,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 24,
+      "initial_T_K": 38333976.79839674,
+      "cold_energy_allocation_J_kg": 1033918082346.9434,
+      "half_angle_degrees": 20.257024871041512,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 25,
+      "initial_T_K": 38395651.282530814,
+      "cold_energy_allocation_J_kg": 1085192298159.4275,
+      "half_angle_degrees": 19.75224271681792,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 26,
+      "initial_T_K": 38417015.10654069,
+      "cold_energy_allocation_J_kg": 1136623921269.3003,
+      "half_angle_degrees": 19.282064771807697,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 27,
+      "initial_T_K": 38393406.36690737,
+      "cold_energy_allocation_J_kg": 1187980239362.3508,
+      "half_angle_degrees": 18.84459559786676,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 28,
+      "initial_T_K": 38322121.47513772,
+      "cold_energy_allocation_J_kg": 1239125681776.4924,
+      "half_angle_degrees": 18.437266320592926,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 29,
+      "initial_T_K": 38202018.39384484,
+      "cold_energy_allocation_J_kg": 1290009488616.082,
+      "half_angle_degrees": 18.057175621687758,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 30,
+      "initial_T_K": 38033014.16695995,
+      "cold_energy_allocation_J_kg": 1340645517441.985,
+      "half_angle_degrees": 17.701371897169576,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 31,
+      "initial_T_K": 37815653.97290841,
+      "cold_energy_allocation_J_kg": 1391093036245.1143,
+      "half_angle_degrees": 17.367034740584216,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 32,
+      "initial_T_K": 37550810.85425364,
+      "cold_energy_allocation_J_kg": 1441442477151.3867,
+      "half_angle_degrees": 17.051564916889763,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 33,
+      "initial_T_K": 37239498.7269654,
+      "cold_energy_allocation_J_kg": 1491806277070.1267,
+      "half_angle_degrees": 16.752613128459732,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 34,
+      "initial_T_K": 36882760.15261125,
+      "cold_energy_allocation_J_kg": 1542313441723.564,
+      "half_angle_degrees": 16.46807579345398,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 35,
+      "initial_T_K": 36481597.62383195,
+      "cold_energy_allocation_J_kg": 1593106499927.709,
+      "half_angle_degrees": 16.19607606362552,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 36,
+      "initial_T_K": 36036929.53366417,
+      "cold_energy_allocation_J_kg": 1644339990113.3835,
+      "half_angle_degrees": 15.934939634249403,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 37,
+      "initial_T_K": 35549560.62080931,
+      "cold_energy_allocation_J_kg": 1696180018698.3894,
+      "half_angle_degrees": 15.683169738982606,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 38,
+      "initial_T_K": 35020161.225338854,
+      "cold_energy_allocation_J_kg": 1748804660837.0024,
+      "half_angle_degrees": 15.439423180415545,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 39,
+      "initial_T_K": 34449251.868161395,
+      "cold_energy_allocation_J_kg": 1802405097192.408,
+      "half_angle_degrees": 15.202488084769847,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 40,
+      "initial_T_K": 33837190.73472198,
+      "cold_energy_allocation_J_kg": 1857187452265.105,
+      "half_angle_degrees": 14.971263541308488,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 41,
+      "initial_T_K": 33184162.297155734,
+      "cold_energy_allocation_J_kg": 1913375355893.8877,
+      "half_angle_degrees": 14.744741023956996,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 42,
+      "initial_T_K": 32490165.631559443,
+      "cold_energy_allocation_J_kg": 1971213310373.8108,
+      "half_angle_degrees": 14.521987326848112,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 43,
+      "initial_T_K": 31755001.20163027,
+      "cold_energy_allocation_J_kg": 2030971004530.4065,
+      "half_angle_degrees": 14.30212867658497,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 44,
+      "initial_T_K": 30978255.030868046,
+      "cold_energy_allocation_J_kg": 2092948791799.5344,
+      "half_angle_degrees": 14.084335623629412,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 45,
+      "initial_T_K": 30159278.908610545,
+      "cold_energy_allocation_J_kg": 2157484651764.2947,
+      "half_angle_degrees": 13.867808245539909,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 46,
+      "initial_T_K": 29297165.245440852,
+      "cold_energy_allocation_J_kg": 2224963093910.5303,
+      "half_angle_degrees": 13.651761113623591,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 47,
+      "initial_T_K": 28390714.53454049,
+      "cold_energy_allocation_J_kg": 2295826663466.083,
+      "half_angle_degrees": 13.435407350505827,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 48,
+      "initial_T_K": 27438393.308232397,
+      "cold_energy_allocation_J_kg": 2370590995894.524,
+      "half_angle_degrees": 13.21794094688834,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 49,
+      "initial_T_K": 26438281.020715553,
+      "cold_energy_allocation_J_kg": 2449864857256.346,
+      "half_angle_degrees": 12.998516094685156,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 50,
+      "initial_T_K": 25387997.51140586,
+      "cold_energy_allocation_J_kg": 2534377244432.2397,
+      "half_angle_degrees": 12.776222037067056,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 51,
+      "initial_T_K": 24284559.692728,
+      "cold_energy_allocation_J_kg": 2625014279776.184,
+      "half_angle_degrees": 12.55005229489172,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 52,
+      "initial_T_K": 23124678.895879548,
+      "cold_energy_allocation_J_kg": 2722877429959.277,
+      "half_angle_degrees": 12.318849474255488,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 53,
+      "initial_T_K": 21904244.888297018,
+      "cold_energy_allocation_J_kg": 2829356235702.058,
+      "half_angle_degrees": 12.081258235410324,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 54,
+      "initial_T_K": 20617728.469299622,
+      "cold_energy_allocation_J_kg": 2946240030114.198,
+      "half_angle_degrees": 11.835647483479724,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 55,
+      "initial_T_K": 19258102.416697446,
+      "cold_energy_allocation_J_kg": 3075902122371.552,
+      "half_angle_degrees": 11.579970587284194,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 56,
+      "initial_T_K": 17816265.347358245,
+      "cold_energy_allocation_J_kg": 3221594323103.0083,
+      "half_angle_degrees": 11.311558554357125,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 57,
+      "initial_T_K": 16280127.924314806,
+      "cold_energy_allocation_J_kg": 3387955810340.984,
+      "half_angle_degrees": 11.026771634545248,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 58,
+      "initial_T_K": 14633279.819760453,
+      "cold_energy_allocation_J_kg": 3581960257821.2046,
+      "half_angle_degrees": 10.72036546946059,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 59,
+      "initial_T_K": 12854819.780372946,
+      "cold_energy_allocation_J_kg": 3814873546320.796,
+      "half_angle_degrees": 10.384201723500901,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 60,
+      "initial_T_K": 10908260.466482108,
+      "cold_energy_allocation_J_kg": 4106709197140.439,
+      "half_angle_degrees": 10.004494633444569,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 61,
+      "initial_T_K": 8728986.503864093,
+      "cold_energy_allocation_J_kg": 4499216308662.146,
+      "half_angle_degrees": 9.553862456527769,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 62,
+      "initial_T_K": 6183899.8155939635,
+      "cold_energy_allocation_J_kg": 5110409352502.753,
+      "half_angle_degrees": 8.959349417088552,
+      "contact_q_J_kg": 123942641866.57101
+    },
+    {
+      "index": 63,
+      "initial_T_K": 2629057.6383459656,
+      "cold_energy_allocation_J_kg": 6976216501480.051,
+      "half_angle_degrees": 7.659800722068984,
+      "contact_q_J_kg": 123942641866.57101
+    }
+  ],
+  "time_unit_s": 1.962088962729891e-05,
+  "opacity_m2_kg": 0.001,
+  "scope": "Full27network64 originalrates; actualB1density; fixedpreparedenergyandphysicalduration. The contact heating comes from transverse packet KE, not an added externalpreheater. Constant shock entropy is a controlledgeometrycandidate; coldgrain3Dmerger and sourcewaveform remain unqualified.",
+  "rate_update": {
+    "revision": "luna2023-public-repository-2026-10-31-plus-nacreii-n15-high",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "8ea157326095bca3024d34f3eb0cb23f0239387c5f919ee423ec96adeef437ee",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two measured carbon capture updates and one paired N15(p,alpha) evaluation sensitivity; all other physics unchanged.",
+    "carbon_kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+    "nitrogen15_evaluation": {
+      "data_sha256": "15661ce2f82ab1467a3f609ef6addc87eba19694ef9ada6b6071fec5fe0ed76c",
+      "doi": "10.1016/j.nuclphysa.2013.09.007",
+      "table": 35,
+      "curve": "high",
+      "temperature_range_GK": [
+        0.005000000000000002,
+        10.000000000000002
+      ],
+      "interpretation": "Adopted/low/high model evaluation limits; not assigned a Gaussian confidence level here.",
+      "reverse_policy": "Same forward/reverse factor preserves archived equilibrium ratio; no new Q or species."
+    },
+    "baseline_record": "/home/tkwa/src/protium-fusion/output/source128/B1-H2-source128-carbon-median.json",
+    "baseline_record_sha256": "af7576314952a5878063947ca5e06065949c481d3ad37803815edea840ed9a7d",
+    "initial_profile_sha256": "dae7ee697bbbb10cef6623e98d5d8c2d4cbb44a31a9ed328198b276627aaff44",
+    "runner_sha256": "3498c48393b720f0c7f96093b5b99c73648cbd35acfc82566b75711229ff0e41"
+  },
+  "runner_source_sha256": "3498c48393b720f0c7f96093b5b99c73648cbd35acfc82566b75711229ff0e41",
+  "zones": 128,
+  "source_refinement": {
+    "source_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median/records/B1-H2-constant-contact-T0p9-rates-updated-median.json",
+    "source_record_sha256": "c5d4b8c1539e49056fa736a6c4839a5e220a948e36a94444ce6b22a3a48a7b00",
+    "source_initial": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median/records/B1-H2-constant-contact-T0p9-rates-updated-median.initial.json",
+    "source_initial_sha256": "6bbb96098c93b1cc414998b8a7e37e1b753a320c7ffdde2a537643e5b29626b1",
+    "source_inputs": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median/records/B1-H2-constant-contact-T0p9-rates-updated-median.inputs.json",
+    "source_inputs_sha256": "abc4ae3bdebafabb430b4f493c44db90bc46241791789a04ae70313fe1eb4c1a",
+    "stage_map_sha256": "2427a67b2b5ef662b323ebb0f6b4f17ba0ee7a231934d84b1cea3b7c51d979fb",
+    "runner_sha256": "396f9630a77a5356e5efc05b118fd3c726cccabc73a78ee4bdfef8a482f285b4",
+    "parent_cell_for_each_new_cell": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6,
+      6,
+      7,
+      7,
+      8,
+      8,
+      9,
+      9,
+      10,
+      10,
+      11,
+      11,
+      12,
+      12,
+      13,
+      13,
+      14,
+      14,
+      15,
+      15,
+      16,
+      16,
+      17,
+      17,
+      18,
+      18,
+      19,
+      19,
+      20,
+      20,
+      21,
+      21,
+      22,
+      22,
+      23,
+      23,
+      24,
+      24,
+      25,
+      25,
+      26,
+      26,
+      27,
+      27,
+      28,
+      28,
+      29,
+      29,
+      30,
+      30,
+      31,
+      31,
+      32,
+      32,
+      33,
+      33,
+      34,
+      34,
+      35,
+      35,
+      36,
+      36,
+      37,
+      37,
+      38,
+      38,
+      39,
+      39,
+      40,
+      40,
+      41,
+      41,
+      42,
+      42,
+      43,
+      43,
+      44,
+      44,
+      45,
+      45,
+      46,
+      46,
+      47,
+      47,
+      48,
+      48,
+      49,
+      49,
+      50,
+      50,
+      51,
+      51,
+      52,
+      52,
+      53,
+      53,
+      54,
+      54,
+      55,
+      55,
+      56,
+      56,
+      57,
+      57,
+      58,
+      58,
+      59,
+      59,
+      60,
+      60,
+      61,
+      61,
+      62,
+      62,
+      63,
+      63
+    ],
+    "velocity_scale_after_interpolation": 0.9994591835881261,
+    "initial_energy_J": 3.195016782566003e+23,
+    "initial_internal_J": 2.6785314083858777e+22,
+    "initial_kinetic_J": 2.927163641727415e+23,
+    "remap_errors": {
+      "density_max_relative": 1.1546319456101628e-14,
+      "temperature_max_relative": 0.0,
+      "internal_energy_relative_to64": -1.9984014443252818e-15,
+      "total_energy_relative_to64": 0.0,
+      "mass_relative_to64": 0.0,
+      "kinetic_energy_relative_to64": -1.1102230246251565e-16
+    },
+    "no_source_retuning": true,
+    "scope": "Nested 64-to-128 source profile sensitivity; no contact-energy retuning.\nPreserves each piecewise-constant density/temperature field by enclosed mass,\nexact total pulse mass and prepared energy, composition and physical duration.\n"
+  }
+}

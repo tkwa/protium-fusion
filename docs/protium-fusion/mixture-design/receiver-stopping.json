@@ -1,0 +1,2945 @@
+{
+  "scope": "Species-resolved selected-mixture CSDA range and nuclear-event sensitivity. Coating penetration means redistribution into backing or another retained receiver reservoir, not escape from the closed station. No implantation-release yield or achieved catalyst return is inferred.",
+  "primary_stopping_source": "https://www-nds.iaea.org/stopping/",
+  "nuclear_C_C_source": "https://doi.org/10.1103/PhysRevC.85.014607",
+  "nuclear_scope": "Only C12/C13-on-carbon fusion uses the illustrative measured-fit extension documented in component-design/collection.md. Constant cross sections are sensitivity functions, not cross-section predictions or terminal catalyst destruction. Recoverable isotope conversion remains in the material loop.",
+  "range_scope": "CSDA path, not projected depth/straggling guarantee. Electronic multipliers 0.5 and 2 are sensitivity choices, not rigorous bounds or 80% credible intervals. Actual charge equilibration, damage and material phase need qualification.",
+  "velocity_quadrature_order_per_cell": 64,
+  "finite_flight_scope": "Actual one-body network decay, parent velocity inherited by daughter; recoil and charged decay products separate. All baryon mass retained; no normalization to nodal kinetic energy.",
+  "input_sha256": {
+    "docs/protium-fusion/membrane-receiver/stopping.py": "cb76f89d72c27102f7c00c41d81568bdf2e1fadc23375d89d0036584c8cee77c",
+    "docs/protium-fusion/component-design/collection-stopping-data.json": "ade5dfd4c38ecd4b4adadc23bac93c50ebc0066f105265c73fbe5d020cb4f096",
+    "docs/protium-fusion/membrane-receiver/stopping-data.json": "050dddf04b50c5fbdd5692a09837e0ad458876c5097bb84f53462c60ec8ade5d",
+    "docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5"
+  },
+  "code_sha256": "14749c3aec742a7c3665a44f164781ebbeea43fd6d85bcac923a9062e1586b08",
+  "weak_channels": [
+    {
+      "name": "n_to_p_beta_neg_reaclib",
+      "rate_s_inverse": 0.0011344469676125392
+    },
+    {
+      "name": "N13_to_C13_beta_pos_reaclib",
+      "rate_s_inverse": 0.001159113256783153
+    },
+    {
+      "name": "O14_to_N14_beta_pos_reaclib",
+      "rate_s_inverse": 0.009817978825996571
+    },
+    {
+      "name": "O15_to_N15_beta_pos_reaclib",
+      "rate_s_inverse": 0.005681556796002065
+    },
+    {
+      "name": "F17_to_O17_beta_pos_reaclib",
+      "rate_s_inverse": 0.01074644797435222
+    },
+    {
+      "name": "F18_to_O18_beta_pos_reaclib",
+      "rate_s_inverse": 0.00010518182907539113
+    },
+    {
+      "name": "Ne18_to_F18_beta_pos_reaclib",
+      "rate_s_inverse": 0.4150584189932429
+    },
+    {
+      "name": "Ne19_to_F19_beta_pos_reaclib",
+      "rate_s_inverse": 0.040299347549470434
+    },
+    {
+      "name": "Na21_to_Ne21_beta_pos_reaclib",
+      "rate_s_inverse": 0.030806486824283285
+    },
+    {
+      "name": "Na22_to_Ne22_beta_pos_reaclib",
+      "rate_s_inverse": 8.442393318448093e-09
+    },
+    {
+      "name": "Mg22_to_Na22_beta_pos_reaclib",
+      "rate_s_inverse": 0.17864583652321323
+    },
+    {
+      "name": "Mg23_to_Na23_beta_pos_reaclib",
+      "rate_s_inverse": 0.0613401913992572
+    }
+  ],
+  "cases": [
+    {
+      "case": "A-H2-fixed_energy-z64-k0p001-t1",
+      "record_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H2-fixed_energy-z64-k0p001-t1.json",
+      "radius_m": 1000000000.0,
+      "input_sha256": {
+        "record": "b08a4f6e5bbd3541a651202bfe0bf110bd7247444d1cc71be112972ee912ac51",
+        "trace": "d118587f843ecd4a90a41d7003006f423723f2d31dfeddd9d3d84e7e802f2a31"
+      },
+      "hydrogen_per_initial_catalyst": 2.0,
+      "initial_catalysts": 4.2568004648334804e+38,
+      "source_maximum_MeV_u": 1.1859028270331207,
+      "kinetic_fluence_J_m2_smooth": 29117107.8379303,
+      "CNO_nuclei_at_wall_per_initial_catalyst": 0.9999999999982635,
+      "wall_nuclei_per_initial_catalyst": {
+        "p": 1.2936956116179448,
+        "he4": 5.8314111301695905e-08,
+        "c12": 4.0348377516619e-08,
+        "c13": 1.041930002184092e-09,
+        "n13": 4.129596247558177e-09,
+        "n14": 0.2936957116506992,
+        "n15": 0.42626889622608716,
+        "o14": 1.8477887915435696e-09,
+        "o15": 0.28003534474844843
+      },
+      "rows": [
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.0066831461255986565,
+            "0.9": 0.011798225912036435,
+            "0.99": 0.020733019430337573,
+            "0.999": 0.02268288560241013,
+            "0.9999": 0.022866689596197906
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.3415730627993283,
+            "0.9": 5.899112956018217,
+            "0.99": 10.366509715168787,
+            "0.999": 11.341442801205064,
+            "0.9999": 11.433344798098952
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.04476677027028539,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 3.6536234545950464e-06,
+              "all_projectile_events_per_initial_catalyst": 1.1237326837999203e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 3.65354669401387e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00011236982333825941
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00010960128373068825,
+              "all_projectile_events_per_initial_catalyst": 0.0003370865050961644
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.013278263477847791,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.01920566742225966
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 8.685118132249751e-20
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.012930641515566966,
+            "0.9": 0.023179430022562123,
+            "0.99": 0.04102907478169288,
+            "0.999": 0.044925148920999136,
+            "0.9999": 0.04529242029391793
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 6.465320757783483,
+            "0.9": 11.589715011281061,
+            "0.99": 20.514537390846442,
+            "0.999": 22.462574460499567,
+            "0.9999": 22.646210146958968
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.08877331494322957,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 7.095178039691269e-06,
+              "all_projectile_events_per_initial_catalyst": 2.195314671232125e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 7.094884941467517e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002195181551200329
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00021282701049596154,
+              "all_projectile_events_per_initial_catalyst": 0.0006584657342530929
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.18723813088823713,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.2064954837311844
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 3.832284705633881e-21,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.004233813686099886
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 1.7350593646542346e-19
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.0034224432657793302,
+            "0.9": 0.005974021247887824,
+            "0.99": 0.0104439150110671,
+            "0.999": 0.011419306017157578,
+            "0.9999": 0.011511250148757092
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.711221632889665,
+            "0.9": 2.987010623943912,
+            "0.99": 5.22195750553355,
+            "0.999": 5.709653008578789,
+            "0.9999": 5.755625074378546
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.022528315687222297,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.8657989497351974e-06,
+              "all_projectile_events_per_initial_catalyst": 5.71665968162356e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.865779108527354e-05,
+              "all_projectile_events_per_initial_catalyst": 5.716571318262966e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 5.597205054539866e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00017149124891804366
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 1.3571858942207658e-15
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 4.3450186313148046e-20
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.010022771452023434,
+            "0.9": 0.017132852129836923,
+            "0.99": 0.02803477047475652,
+            "0.999": 0.030323010757901635,
+            "0.9999": 0.0305387909740278
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 4.357726718271058,
+            "0.9": 7.449066143407357,
+            "0.99": 12.189030641198487,
+            "0.999": 13.183917720826797,
+            "0.9999": 13.277735206099043
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.06699935068798324,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.397416635585417e-06,
+              "all_projectile_events_per_initial_catalyst": 8.150036195022135e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.3973844676053205e-05,
+              "all_projectile_events_per_initial_catalyst": 8.149859216517797e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 7.191938956952985e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002444839786381075
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.03183847336735903,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.05432709972710453
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0002295335279050764
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.0191859380669035,
+            "0.9": 0.03342178033052862,
+            "0.99": 0.05519973680178849,
+            "0.999": 0.059771848539481524,
+            "0.9999": 0.060203006498782304
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 8.341712203001522,
+            "0.9": 14.531208839360271,
+            "0.99": 23.999885565994994,
+            "0.999": 25.987760234557186,
+            "0.9999": 26.175220216861874
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.13238626712527848,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 4.60674733903861e-06,
+              "all_projectile_events_per_initial_catalyst": 1.5824381000677608e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 4.6066267341521976e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001582370421839329
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00013819076223964323,
+              "all_projectile_events_per_initial_catalyst": 0.0004746660131125452
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.37351249861684216,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.39947055799341663
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.005336667501863748,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.015431883822838879
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0001324091817727792
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.005178113589210971,
+            "0.9": 0.008727198283700506,
+            "0.99": 0.014181398345928839,
+            "0.999": 0.015326065374318222,
+            "0.9999": 0.015434005861976312
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 2.2513537344395522,
+            "0.9": 3.7944340363915243,
+            "0.99": 6.165825367795148,
+            "0.999": 6.663506684486183,
+            "0.9999": 6.710437331294049
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.03380647007814899,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.2352536983108014e-06,
+              "all_projectile_events_per_initial_catalyst": 4.164294036727174e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.235245253931153e-05,
+              "all_projectile_events_per_initial_catalyst": 4.164248314352054e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 3.7056794669048744e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001249244013644433
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0027435110437515455
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.00934912273433009,
+            "0.9": 0.014623833400610315,
+            "0.99": 0.023058207213750796,
+            "0.999": 0.02486623874267662,
+            "0.9999": 0.02503619388600258
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 2.3972109575205356,
+            "0.9": 3.749700871951363,
+            "0.99": 5.912360824038666,
+            "0.999": 6.375958651968364,
+            "0.9999": 6.419536893846815
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.06080311670659941,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.8390333322791863e-06,
+              "all_projectile_events_per_initial_catalyst": 9.520525956797419e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.8389896596122676e-05,
+              "all_projectile_events_per_initial_catalyst": 9.520283934440052e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 8.516677838775827e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002855923843615226
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.003303865306099697
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.017995041563113327,
+            "0.9": 0.028598607030224606,
+            "0.99": 0.04546182995327966,
+            "0.999": 0.04907500020658219,
+            "0.9999": 0.04941464573625076
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 4.61411322131111,
+            "0.9": 7.332976161596053,
+            "0.99": 11.656879475199913,
+            "0.999": 12.583333386303126,
+            "0.9999": 12.670421983654041
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.12024871210070634,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 5.479066118176859e-06,
+              "all_projectile_events_per_initial_catalyst": 1.85186403634236e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 5.4789015269610744e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001851771253505186
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00016435607387952963,
+              "all_projectile_events_per_initial_catalyst": 0.0005554695295914339
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.027541220484636645,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.051473885796236386
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0008569981835579402
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.004808524153972149,
+            "0.9": 0.007434617704946053,
+            "0.99": 0.01164819984048101,
+            "0.999": 0.012552577640039024,
+            "0.9999": 0.012637588345036454
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.2329549112749099,
+            "0.9": 1.9063122320374495,
+            "0.99": 2.9867179078156436,
+            "0.999": 3.2186096512920574,
+            "0.9999": 3.2404072679580653
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.030660563328121396,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.4570912088001315e-06,
+              "all_projectile_events_per_initial_catalyst": 4.858419261337946e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.457079803093353e-05,
+              "all_projectile_events_per_initial_catalyst": 4.8583568328707255e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 4.3711633726968995e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001457465432377706
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        }
+      ],
+      "checks": {
+        "baryon_mass_relative": -2.220446049250313e-16,
+        "smooth_kinetic_relative": -2.220446049250313e-16,
+        "64_vs_128_wall_species_L1_relative_nuclei": 2.4183024767601682e-15,
+        "CNO_range_quantile_64_vs_128_max_relative_carbon": 0.00189255226522822,
+        "CNO_range_quantile_64_vs_128_max_relative_aluminium": 0.0016452611130575168,
+        "CNO_range_quantile_64_vs_128_max_relative_alumina": 0.0015818408930527994
+      }
+    },
+    {
+      "case": "B1-H2-fixed_energy-z64-k0p001-t1",
+      "record_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json",
+      "radius_m": 1000000000.0,
+      "input_sha256": {
+        "record": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+        "trace": "8fe8fd5fc9565f6b1864cabe0625ff59a322e626e697ebc877ee602e65f6878a"
+      },
+      "hydrogen_per_initial_catalyst": 2.0,
+      "initial_catalysts": 4.006400437490335e+36,
+      "source_maximum_MeV_u": 0.5484156909579202,
+      "kinetic_fluence_J_m2_smooth": 193167.7700076659,
+      "CNO_nuclei_at_wall_per_initial_catalyst": 0.9999999999627935,
+      "wall_nuclei_per_initial_catalyst": {
+        "p": 1.2436655695378058,
+        "he4": 0.7561055264515391,
+        "c12": 0.7559676522867471,
+        "c13": 3.211645377236703e-05,
+        "n13": 0.00010575372148189246,
+        "n14": 3.4733449338291445e-09,
+        "n15": 0.24380344785229138,
+        "o14": 5.375726915032183e-10,
+        "o16": 9.102551464288873e-05,
+        "o17": 1.2294020321863706e-10
+      },
+      "rows": [
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.005349571521434079,
+            "0.9": 0.00880747092185864,
+            "0.99": 0.011059570696888843,
+            "0.999": 0.011476664889131268,
+            "0.9999": 0.011515137212446252
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 2.6747857607170396,
+            "0.9": 4.40373546092932,
+            "0.99": 5.529785348444422,
+            "0.999": 5.738332444565635,
+            "0.9999": 5.757568606223126
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.01888346855894055,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.753038110159195e-06,
+              "all_projectile_events_per_initial_catalyst": 1.0875714348279035e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.7529980233899035e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00010875507697827735
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 8.258726834396628e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0003262514548606599
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 1.8036114983210116e-18
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.010274247175439667,
+            "0.9": 0.017178871415773903,
+            "0.99": 0.021675647290972586,
+            "0.999": 0.022508602808089216,
+            "0.9999": 0.022585435504355753
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 5.137123587719834,
+            "0.9": 8.589435707886953,
+            "0.99": 10.837823645486294,
+            "0.999": 11.25430140404461,
+            "0.9999": 11.292717752177875
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.037044257948981765,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 5.29623827639504e-06,
+              "all_projectile_events_per_initial_catalyst": 2.0986597962493304e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 5.296088322509597e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002098582205820289
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00015887265343329766,
+              "all_projectile_events_per_initial_catalyst": 0.0006295229393582857
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.02863731437527502,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.08022612963436229
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 3.600786821768398e-18
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.002755651160283142,
+            "0.9": 0.004482793284893649,
+            "0.99": 0.005609773439302773,
+            "0.999": 0.005818474986269037,
+            "0.9999": 0.005837725172329129
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.377825580141571,
+            "0.9": 2.2413966424468246,
+            "0.99": 2.8048867196513867,
+            "0.999": 2.909237493134518,
+            "0.9999": 2.9188625861645643
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.009581966391387944,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.4168189026179617e-06,
+              "all_projectile_events_per_initial_catalyst": 5.585965607186725e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.4168083718441258e-05,
+              "all_projectile_events_per_initial_catalyst": 5.5859114225741145e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 4.250354911623292e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00016757373045282978
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 9.026124384138608e-19
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.007817818878342996,
+            "0.9": 0.013050842898227945,
+            "0.99": 0.0161790072678517,
+            "0.999": 0.01675461876629085,
+            "0.9999": 0.016807390223201265
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.3990516862360853,
+            "0.9": 5.674279520968671,
+            "0.99": 7.0343509860224795,
+            "0.999": 7.284616854909064,
+            "0.9999": 7.307560966609246
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.03179355831335263,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.8000588670665367e-06,
+              "all_projectile_events_per_initial_catalyst": 8.330713799666418e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.8000417042554465e-05,
+              "all_projectile_events_per_initial_catalyst": 8.330590012810159e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 5.400010696653222e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00024990944822059864
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.004798912836167543
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.014931728640894124,
+            "0.9": 0.02521471060822113,
+            "0.99": 0.03145865103684107,
+            "0.999": 0.032607849521468564,
+            "0.9999": 0.03271321078449666
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 6.492055930823532,
+            "0.9": 10.962917655748319,
+            "0.99": 13.677674363843943,
+            "0.999": 14.177325878899376,
+            "0.9999": 14.2231351236942
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.062033510061888696,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 3.4379606175354715e-06,
+              "all_projectile_events_per_initial_catalyst": 1.5976707659016144e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 3.4378973597253885e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00015976248402620362
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0001031327037920619,
+              "all_projectile_events_per_initial_catalyst": 0.00047925683709858794
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.15323617778895754,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.3150118003922871
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 4.67961326567691e-10
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.004043377055882546,
+            "0.9": 0.006696021302289068,
+            "0.99": 0.008261656675075503,
+            "0.999": 0.008549716157726503,
+            "0.9999": 0.008576124651302782
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.757990024296759,
+            "0.9": 2.911313609690899,
+            "0.99": 3.5920246413371753,
+            "0.999": 3.7172678946636966,
+            "0.9999": 3.7287498483925137
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.016196211127709314,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 9.31551992840359e-07,
+              "all_projectile_events_per_initial_catalyst": 4.296056750624353e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 9.315474311347812e-06,
+              "all_projectile_events_per_initial_catalyst": 4.296024037026723e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 2.7946118823914083e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00012887854024392484
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.007378192758008435,
+            "0.9": 0.011619754492205736,
+            "0.99": 0.013981982508774558,
+            "0.999": 0.014406560802796495,
+            "0.9999": 0.014445557977180605
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.8918442969252398,
+            "0.9": 2.9794242287707013,
+            "0.99": 3.5851237201986046,
+            "0.999": 3.693989949434999,
+            "0.9999": 3.703989224918104
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.028028568512818302,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.203092840633279e-06,
+              "all_projectile_events_per_initial_catalyst": 9.676097518436364e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.2030676269710073e-05,
+              "all_projectile_events_per_initial_catalyst": 9.675932267793731e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 6.609034794384908e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002902669517734805
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.014091186853561165,
+            "0.9": 0.022565554917339792,
+            "0.99": 0.02728252115463394,
+            "0.999": 0.028130507140501585,
+            "0.9999": 0.028208396074567994
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.6131248342464524,
+            "0.9": 5.786039722394818,
+            "0.99": 6.995518244777934,
+            "0.999": 7.21295054884656,
+            "0.9999": 7.23292207040205
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.05475409669703633,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 4.2121516468547505e-06,
+              "all_projectile_events_per_initial_catalyst": 1.8574464054952074e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 4.2120584390238325e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00018573849684207867
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0001263555396424018,
+              "all_projectile_events_per_initial_catalyst": 0.0005571745357226319
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.004828118723623669
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.0038194651184038347,
+            "0.9": 0.00593436615618637,
+            "0.99": 0.007116418632643439,
+            "0.999": 0.007328854408161833,
+            "0.9999": 0.007348366198960027
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 0.9793500303599576,
+            "0.9": 1.5216323477400948,
+            "0.99": 1.8247227263188306,
+            "0.999": 1.8791934379902138,
+            "0.9999": 1.8841964612718016
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.014266470544313173,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.1390399165938162e-06,
+              "all_projectile_events_per_initial_catalyst": 4.987786238029999e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.1390332332780957e-05,
+              "all_projectile_events_per_initial_catalyst": 4.987742609944399e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 3.4170551450126e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001496293698198699
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        }
+      ],
+      "checks": {
+        "baryon_mass_relative": 2.220446049250313e-16,
+        "smooth_kinetic_relative": 8.881784197001252e-16,
+        "64_vs_128_wall_species_L1_relative_nuclei": 1.4123805841951183e-15,
+        "CNO_range_quantile_64_vs_128_max_relative_carbon": 0.0007740071774497981,
+        "CNO_range_quantile_64_vs_128_max_relative_aluminium": 0.0007338716751608132,
+        "CNO_range_quantile_64_vs_128_max_relative_alumina": 0.0006256793087553447
+      }
+    },
+    {
+      "case": "B2-H2-fixed_energy-z64-k0p001-t1",
+      "record_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.json",
+      "radius_m": 1000000000.0,
+      "input_sha256": {
+        "record": "96132fe9689d6dfe8d16869cb3e804216948eebc55472340c0670118a178e823",
+        "trace": "ff379e99ca178d37674effe1b018d95d63f267e2458b0550a371ad30295c78d1"
+      },
+      "hydrogen_per_initial_catalyst": 2.0,
+      "initial_catalysts": 4.864914816952549e+38,
+      "source_maximum_MeV_u": 1.6412827627189164,
+      "kinetic_fluence_J_m2_smooth": 35660065.33026792,
+      "CNO_nuclei_at_wall_per_initial_catalyst": 0.9999999998615944,
+      "wall_nuclei_per_initial_catalyst": {
+        "p": 0.2957648358745155,
+        "c12": 0.1176496037535586,
+        "c13": 0.006516300071920507,
+        "n13": 0.05394933050061909,
+        "n14": 0.6112413333608768,
+        "n15": 1.6190102646849323e-09,
+        "o14": 0.21064342963559196,
+        "o15": 9.007595313423498e-10
+      },
+      "rows": [
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.006982063854177887,
+            "0.9": 0.015347673090851839,
+            "0.99": 0.03214684684925033,
+            "0.999": 0.03541527506422174,
+            "0.9999": 0.03572326519001213
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.491031927088943,
+            "0.9": 7.67383654542592,
+            "0.99": 16.073423424625165,
+            "0.999": 17.707637532110873,
+            "0.9999": 17.861632595006064
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.06981631381169824,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 4.261189329033612e-06,
+              "all_projectile_events_per_initial_catalyst": 8.549914317626126e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 4.261068059880435e-05,
+              "all_projectile_events_per_initial_catalyst": 8.549442768118099e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00012782395788460115,
+              "all_projectile_events_per_initial_catalyst": 0.0002564518518860923
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.05475795286708564,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.06210499544319456
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0025009478861606014
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 6.856296450979029e-07
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.013555351081457976,
+            "0.9": 0.03023803701413563,
+            "0.99": 0.06380581118849539,
+            "0.999": 0.07033778856212844,
+            "0.9999": 0.07095332020644082
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 6.777675540728988,
+            "0.9": 15.119018507067816,
+            "0.99": 31.902905594247695,
+            "0.999": 35.16889428106422,
+            "0.9999": 35.47666010322041
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.13884052062304927,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 8.31784960193009e-06,
+              "all_projectile_events_per_initial_catalyst": 1.6820705839200424e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 8.317380762778715e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001681885571818531
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00024949017232037525,
+              "all_projectile_events_per_initial_catalyst": 0.0005044423730395422
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.25721924087942777,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.2586372775453408
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.030785941099861908,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.03804852889480135
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0025009478861606014
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 1.370070263199634e-06
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.0035666783148243005,
+            "0.9": 0.007757002707649412,
+            "0.99": 0.016163667493068166,
+            "0.999": 0.01779849216629804,
+            "0.9999": 0.01795254336642744
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.7833391574121504,
+            "0.9": 3.8785013538247064,
+            "0.99": 8.081833746534084,
+            "0.999": 8.89924608314902,
+            "0.9999": 8.976271683213719
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.03505707644249482,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.1682457051908072e-06,
+              "all_projectile_events_per_initial_catalyst": 4.3265817560652255e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.1682146271492667e-05,
+              "all_projectile_events_per_initial_catalyst": 4.326462178868704e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 6.50443670347886e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001297858942482472
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0046946939387799876
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 3.4296364582091075e-07
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.01043578220543116,
+            "0.9": 0.02149967149567738,
+            "0.99": 0.04128582811046879,
+            "0.999": 0.04518730356361318,
+            "0.9999": 0.04557127749947695
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 4.537296611057026,
+            "0.9": 9.347683258990164,
+            "0.99": 17.95036004802991,
+            "0.999": 19.646653723310077,
+            "0.9999": 19.81359891281607
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.09967736888503617,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.7338826327949937e-06,
+              "all_projectile_events_per_initial_catalyst": 5.646915061450928e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.733835763395561e-05,
+              "all_projectile_events_per_initial_catalyst": 5.646713339286632e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 8.201194842872234e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00016938795353185337
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.08728702113512231,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.09348604981643907
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0049783137342076355
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.020055706594850377,
+            "0.9": 0.04220367830828345,
+            "0.99": 0.08178592512617934,
+            "0.999": 0.08958284177656116,
+            "0.9999": 0.09035018499065198
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 8.719872432543642,
+            "0.9": 18.349425351427588,
+            "0.99": 35.55909788094754,
+            "0.999": 38.949061641983114,
+            "0.9999": 39.28268912637042
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.19769621440901464,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 5.2904503309202425e-06,
+              "all_projectile_events_per_initial_catalyst": 1.1047823859853742e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 5.2902715105284866e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00011047037914245198
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00015869622512121884,
+              "all_projectile_events_per_initial_catalyst": 0.0003313587526876293
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.4074222301892614,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.4089908145932733
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0435340006405968,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.05375935082749544
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0048383333011953735
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.0053749887977687216,
+            "0.9": 0.010900115361632316,
+            "0.99": 0.02078866003457304,
+            "0.999": 0.022740152920498066,
+            "0.9999": 0.022932215560010513
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 2.3369516512037922,
+            "0.9": 4.73918059201405,
+            "0.99": 9.038547841118712,
+            "0.999": 9.887023008912204,
+            "0.9999": 9.970528504352396
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.05015124642000602,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.4011777553026084e-06,
+              "all_projectile_events_per_initial_catalyst": 2.870118397038618e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.4011656122882923e-05,
+              "all_projectile_events_per_initial_catalyst": 2.870066982164351e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 4.2034158854324834e-05,
+              "all_projectile_events_per_initial_catalyst": 8.60985819978451e-05
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 1.3712596435468868e-07,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.008411603881487468
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.00959551613471269,
+            "0.9": 0.018416331539650773,
+            "0.99": 0.03670719107251788,
+            "0.999": 0.04017095301004309,
+            "0.9999": 0.040498597324333155
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 2.4603887524904335,
+            "0.9": 4.7221362922181465,
+            "0.99": 9.412100275004585,
+            "0.999": 10.30024436154951,
+            "0.9999": 10.384255724187987
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.09150358644119057,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 3.242311696391046e-06,
+              "all_projectile_events_per_initial_catalyst": 6.721987755103047e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 3.24224686410537e-05,
+              "all_projectile_events_per_initial_catalyst": 6.721699654570157e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 9.7263084017798e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00020163178553427128
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0039844239420842465,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.013007101570387697
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.018537686683255044,
+            "0.9": 0.036194317212594876,
+            "0.99": 0.07267020608810652,
+            "0.999": 0.07959269287312228,
+            "0.9999": 0.08024751466539622
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 4.753252995706422,
+            "0.9": 9.28059415707561,
+            "0.99": 18.633386176437572,
+            "0.999": 20.40838278798007,
+            "0.9999": 20.576285811640055
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.1816062379964018,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 6.294108396352582e-06,
+              "all_projectile_events_per_initial_catalyst": 1.3176000187576495e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 6.293860460016813e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00013174875767380504
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00018879928658726736,
+              "all_projectile_events_per_initial_catalyst": 0.00039517133190707077
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.08810667795405357,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.09411080069621713
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.005612058533063412
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.004920885331884019,
+            "0.9": 0.009341195371341055,
+            "0.99": 0.01849303964594816,
+            "0.999": 0.020225550938524774,
+            "0.9999": 0.02038943151263368
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.2617654697138512,
+            "0.9": 2.39517830034386,
+            "0.99": 4.741805037422605,
+            "0.999": 5.186038702185839,
+            "0.9999": 5.228059362213765
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.04601623065705918,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.6570238893352234e-06,
+              "all_projectile_events_per_initial_catalyst": 3.411154440429012e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 1.657007133567628e-05,
+              "all_projectile_events_per_initial_catalyst": 3.4110810991042236e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 4.970909698795312e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00010232754388298047
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0007622978476531939
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        }
+      ],
+      "checks": {
+        "baryon_mass_relative": 4.440892098500626e-16,
+        "smooth_kinetic_relative": 8.881784197001252e-16,
+        "64_vs_128_wall_species_L1_relative_nuclei": 2.0320201279039128e-15,
+        "CNO_range_quantile_64_vs_128_max_relative_carbon": 0.0020471044133330007,
+        "CNO_range_quantile_64_vs_128_max_relative_aluminium": 0.0018603756886155232,
+        "CNO_range_quantile_64_vs_128_max_relative_alumina": 0.0018925825044953104
+      }
+    },
+    {
+      "case": "C13-H2-fixed_energy-z64-k0p001-t1",
+      "record_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H2-fixed_energy-z64-k0p001-t1.json",
+      "radius_m": 1000000000.0,
+      "input_sha256": {
+        "record": "b2db246afbddff67e7ba68beac788d0f2d3451072b504c1c91c4de45dce34189",
+        "trace": "68f5adbfb8ea2f91105c91fdfe9e9b82b171604d0210cb166d48cf6237ad0349"
+      },
+      "hydrogen_per_initial_catalyst": 2.0,
+      "initial_catalysts": 4.5405871624890455e+38,
+      "source_maximum_MeV_u": 2.395897450487123,
+      "kinetic_fluence_J_m2_smooth": 57293578.97101233,
+      "CNO_nuclei_at_wall_per_initial_catalyst": 0.9999999999672718,
+      "wall_nuclei_per_initial_catalyst": {
+        "p": 0.6608940255809614,
+        "he4": 7.805291226279565e-08,
+        "c12": 2.3644601687543065e-08,
+        "c13": 0.0834826646305398,
+        "n13": 2.402602004064614e-09,
+        "n14": 0.4939289174089421,
+        "n15": 0.22240066579776108,
+        "o14": 1.7616907910038065e-08,
+        "o15": 0.20018770636412347,
+        "o16": 2.100820976644177e-09
+      },
+      "rows": [
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.010668784743490286,
+            "0.9": 0.026425447785828428,
+            "0.99": 0.05616398067128911,
+            "0.999": 0.06130570154777982,
+            "0.9999": 0.06179156083966667
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 5.334392371745143,
+            "0.9": 13.212723892914214,
+            "0.99": 28.081990335644555,
+            "0.999": 30.652850773889906,
+            "0.9999": 30.89578041983334
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.12300634180345364,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 6.931188170938644e-06,
+              "all_projectile_events_per_initial_catalyst": 1.841372543977082e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 6.93083597959981e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001841192689560909
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0002079016036824311,
+              "all_projectile_events_per_initial_catalyst": 0.0005522379416939156
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.18149002886113988,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.19119665423306437
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.021945166966477702,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.029777375597493844
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0016362192379926566
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 5.340970973865609e-06
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.020910128029989067,
+            "0.9": 0.05240365346998248,
+            "0.99": 0.11176846448529051,
+            "0.999": 0.12204522441521302,
+            "0.9999": 0.12301631810658525
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 10.455064014994534,
+            "0.9": 26.20182673499124,
+            "0.99": 55.884232242645254,
+            "0.999": 61.022612207606514,
+            "0.9999": 61.50815905329262
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.245157242389775,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.3642639500394031e-05,
+              "all_projectile_events_per_initial_catalyst": 3.643894102015166e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 0.00013641259646364346,
+              "all_projectile_events_per_initial_catalyst": 0.0003643183174092205
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00040914582818322163,
+              "all_projectile_events_per_initial_catalyst": 0.0010924812985485628
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.5232979595275314,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.5281409935506859
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.11061150793864795,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.12043376879749236
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.020824684205689205,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.028734852908681312
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0016362192379926566
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 1.0673255177610598e-05
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.005413605136457225,
+            "0.9": 0.013291415685744086,
+            "0.99": 0.028183783680823814,
+            "0.999": 0.03075548016182079,
+            "0.9999": 0.0309984879947351
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 2.7068025682286128,
+            "0.9": 6.645707842872042,
+            "0.99": 14.091891840411908,
+            "0.999": 15.377740080910396,
+            "0.9999": 15.49924399736755
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.061660014294066236,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 3.5055499825103157e-06,
+              "all_projectile_events_per_initial_catalyst": 9.2783042632483e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 3.505460610593941e-05,
+              "all_projectile_events_per_initial_catalyst": 9.277850728040223e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00010515786066244815,
+              "all_projectile_events_per_initial_catalyst": 0.00027830529092599446
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.04430567156192715,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.05257071083111129
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.001770282891237899
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 2.671572670484313e-06
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.015725794733815093,
+            "0.9": 0.03468765631846815,
+            "0.99": 0.07021063680036145,
+            "0.999": 0.07654294426733044,
+            "0.9999": 0.07712409984290856
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 6.837302058180475,
+            "0.9": 15.081589703681805,
+            "0.99": 30.526363826244108,
+            "0.999": 33.27954098579585,
+            "0.9999": 33.53221732300373
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.1675213402190139,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 4.266616672077199e-06,
+              "all_projectile_events_per_initial_catalyst": 1.1831639209264782e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 4.266493226350285e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00011830933949857095
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0001279865677851425,
+              "all_projectile_events_per_initial_catalyst": 0.00035488101010947346
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.2768667023052305,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.2880363039285369
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.030784138718278908,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.041348387441249065
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0036715493226556423
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.030583912278680184,
+            "0.9": 0.06849332263125527,
+            "0.99": 0.13952998831615576,
+            "0.999": 0.15218576746437779,
+            "0.9999": 0.153347298936675
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 13.297353164643559,
+            "0.9": 29.779705491850113,
+            "0.99": 60.66521231137207,
+            "0.999": 66.16772498451209,
+            "0.9999": 66.67273866811956
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.33329628904241104,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 8.342539385866835e-06,
+              "all_projectile_events_per_initial_catalyst": 2.3318009169858255e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 8.342060325188924e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002331523578514694
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00025022987787121445,
+              "all_projectile_events_per_initial_catalyst": 0.0006992722511928965
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.6554355323982672,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.660937187576471
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.15197282645622795,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.16544439155938379
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.02971649445991456,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.040233700166300644
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0035239030749273253
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.008028982612451888,
+            "0.9": 0.0175093665982969,
+            "0.99": 0.035268791616378414,
+            "0.999": 0.03843605098028411,
+            "0.9999": 0.03872672632609684
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.4908620054138644,
+            "0.9": 7.612768086216043,
+            "0.99": 15.334257224512353,
+            "0.999": 16.711326513167005,
+            "0.9999": 16.837707098302975
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.08408422627636199,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.169844433697948e-06,
+              "all_projectile_events_per_initial_catalyst": 5.98025347654485e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.1698128620706064e-05,
+              "all_projectile_events_per_initial_catalyst": 5.9800749700950954e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 6.509228117789212e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00017939034980108824
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.05947190245604299,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0710094025441421
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0036715493226556423
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.01371886777737874,
+            "0.9": 0.02846038693776482,
+            "0.99": 0.06231959983772098,
+            "0.999": 0.06767489056572927,
+            "0.9999": 0.06817953963472478
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.5176584044560872,
+            "0.9": 7.29753511224739,
+            "0.99": 15.97938457377461,
+            "0.999": 17.352536042494688,
+            "0.9999": 17.48193323967302
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.15554603244486956,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 4.908757114078848e-06,
+              "all_projectile_events_per_initial_catalyst": 1.4010393998168079e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 4.908594418667435e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00014009373082856915
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.000147246987293369,
+              "all_projectile_events_per_initial_catalyst": 0.00042021314746393766
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.06550313736499704,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.07743904157278221
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.004646434758452735
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.026738090991373687,
+            "0.9": 0.05625791649797944,
+            "0.99": 0.12379994421592044,
+            "0.999": 0.13450383662837703,
+            "0.9999": 0.1355125125269654
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 6.855920767018894,
+            "0.9": 14.425106794353702,
+            "0.99": 31.7435754399796,
+            "0.999": 34.488163238045395,
+            "0.9999": 34.74679808383728
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.30960767879639506,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 9.614867469376026e-06,
+              "all_projectile_events_per_initial_catalyst": 2.7643620150406924e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 9.614235190752946e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002763959999403195
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0002883849122906994,
+              "all_projectile_events_per_initial_catalyst": 0.000828920115215928
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.26183043941016265,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.2743389760153473
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.03484535191581136,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.045933481461453214
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.004515786112309311
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.006986872134705124,
+            "0.9": 0.0143503250062095,
+            "0.99": 0.031315395543554024,
+            "0.999": 0.03399387782205497,
+            "0.9999": 0.034246280208472486
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.7915056755654164,
+            "0.9": 3.6795705144126925,
+            "0.99": 8.029588600911287,
+            "0.999": 8.716378928732045,
+            "0.9999": 8.78109748935192
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.07804789526938932,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.492189678087482e-06,
+              "all_projectile_events_per_initial_catalyst": 7.0751241113732605e-06
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.492148131022245e-05,
+              "all_projectile_events_per_initial_catalyst": 7.074865950847711e-05
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 7.47616742663601e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00021222876984835102
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.007715142885190072
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        }
+      ],
+      "checks": {
+        "baryon_mass_relative": 1.1102230246251565e-15,
+        "smooth_kinetic_relative": 2.220446049250313e-15,
+        "64_vs_128_wall_species_L1_relative_nuclei": 1.2962122664055085e-15,
+        "CNO_range_quantile_64_vs_128_max_relative_carbon": 0.0018356485631181307,
+        "CNO_range_quantile_64_vs_128_max_relative_aluminium": 0.0017666948487042866,
+        "CNO_range_quantile_64_vs_128_max_relative_alumina": 0.0017295529296623702
+      }
+    },
+    {
+      "case": "C13-H4-fixed_energy-z64-k0p001-t1",
+      "record_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json",
+      "radius_m": 1000000000.0,
+      "input_sha256": {
+        "record": "cf9dea85fb758573a00ba17adcf69aeed7ac1eb5d42ad3906ee4fd296a1f9170",
+        "trace": "e7402bcc400861ef39cc712bf1b9c95e0048abf6969981f3f6073fdebee32d17"
+      },
+      "hydrogen_per_initial_catalyst": 4.0,
+      "initial_catalysts": 4.006400437490335e+38,
+      "source_maximum_MeV_u": 2.730160541905418,
+      "kinetic_fluence_J_m2_smooth": 62183630.39857995,
+      "CNO_nuclei_at_wall_per_initial_catalyst": 0.9999999999834046,
+      "wall_nuclei_per_initial_catalyst": {
+        "p": 2.3515685648867177,
+        "he4": 6.879152003626538e-08,
+        "c12": 3.676820005306838e-08,
+        "c13": 0.06477079517801536,
+        "n13": 3.6960136151687796e-09,
+        "n14": 0.22202712292614116,
+        "n15": 0.3526290982252862,
+        "o14": 9.301651595046484e-09,
+        "o15": 0.3605729337270435,
+        "o16": 1.60661243892848e-10
+      },
+      "rows": [
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.01121287728309648,
+            "0.9": 0.028226979637082112,
+            "0.99": 0.06627300526482136,
+            "0.999": 0.07292196107060883,
+            "0.9999": 0.07355186473201543
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 5.606438641548239,
+            "0.9": 14.113489818541055,
+            "0.99": 33.136502632410675,
+            "0.999": 36.460980535304415,
+            "0.9999": 36.775932366007716
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.15108761173025,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 7.486739656441586e-06,
+              "all_projectile_events_per_initial_catalyst": 4.239211162784716e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 7.486308819929055e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00042387167099506505
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0002245605475386274,
+              "all_projectile_events_per_initial_catalyst": 0.0012712855060901544
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.21788155490202477,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.24509489500088466
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.035795916252365265,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.050057851358779666
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.006479101247465218
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 7.0434338797335135e-06
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.021970779340889174,
+            "0.9": 0.056003681416089496,
+            "0.99": 0.131973494534048,
+            "0.999": 0.1452630760729059,
+            "0.9999": 0.1465221024549977
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 10.985389670444587,
+            "0.9": 28.001840708044746,
+            "0.99": 65.986747267024,
+            "0.999": 72.63153803645295,
+            "0.9999": 73.26105122749885
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.30128755640590343,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.4746413385434478e-05,
+              "all_projectile_events_per_initial_catalyst": 8.39653098910683e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 0.00014744722160724515,
+              "all_projectile_events_per_initial_catalyst": 0.0008394573479397967
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00044222895865676337,
+              "all_projectile_events_per_initial_catalyst": 0.0025170680527210765
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.5485964839488564,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.5676329785981932
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.1285800250866165,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.1579971286869876
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0348444417578411,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.04915799666621734
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.006479101247465218
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 1.4075592059975819e-05
+        },
+        {
+          "material": "carbon",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2000.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.005688110650139812,
+            "0.9": 0.014192561561142458,
+            "0.99": 0.033239924943478424,
+            "0.999": 0.03656544508481094,
+            "0.9999": 0.03688049462395703
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 2.844055325069906,
+            "0.9": 7.096280780571229,
+            "0.99": 16.61996247173921,
+            "0.999": 18.28272254240547,
+            "0.9999": 18.440247311978517
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.07570468095730719,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 3.7846718555909127e-06,
+              "all_projectile_events_per_initial_catalyst": 2.1348301058023346e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 3.7845626803609085e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0002134705560423544
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00011352960274371975,
+              "all_projectile_events_per_initial_catalyst": 0.0006403286540414974
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.054025470954930564,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.07305938456975337
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.006479101247465218
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": 3.5231281078400883e-06
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.016592880184852173,
+            "0.9": 0.03679137571054765,
+            "0.99": 0.08253046824619079,
+            "0.999": 0.0904492492103124,
+            "0.9999": 0.0911749619664476
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 7.214295732544422,
+            "0.9": 15.99625030893376,
+            "0.99": 35.882812280952514,
+            "0.999": 39.32576052622278,
+            "0.9999": 39.64128781149896
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.20288413455713286,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 4.591063913341663e-06,
+              "all_projectile_events_per_initial_catalyst": 2.7833446066301432e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 4.590915302617104e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00027831501065342753
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0001377175526937486,
+              "all_projectile_events_per_initial_catalyst": 0.0008348153947446253
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.3154289502591083,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.35015361065344386
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.04383606849127572,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.06669049290952003
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.009600775030859258
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.032288700356110075,
+            "0.9": 0.07269716468993344,
+            "0.99": 0.16415277780611537,
+            "0.999": 0.17998001358159807,
+            "0.9999": 0.18143053422297442
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 14.038565372221772,
+            "0.9": 31.60746290866671,
+            "0.99": 71.3707729591806,
+            "0.999": 78.25217981808612,
+            "0.9999": 78.88284096651061
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.40397820032819526,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 8.986812865270259e-06,
+              "all_projectile_events_per_initial_catalyst": 5.4928030927524274e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 8.986234640328415e-05,
+              "all_projectile_events_per_initial_catalyst": 0.000549203682377068
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.000269548498628561,
+              "all_projectile_events_per_initial_catalyst": 0.0016471004335025595
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.6790651348641545,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.703273967101213
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.18640175177871932,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.22462633673003665
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.04332186626653117,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.06579613020333959
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.009426759679410361
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "aluminium",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 2300.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.008464785701664647,
+            "0.9": 0.018561676462283693,
+            "0.99": 0.041430818685083165,
+            "0.999": 0.045391501201715194,
+            "0.9999": 0.04575447079451823
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.680341609419412,
+            "0.9": 8.070294114036388,
+            "0.99": 18.013399428297028,
+            "0.999": 19.735435305093564,
+            "0.9999": 19.893248171529663
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.10177108818168316,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.332956609874294e-06,
+              "all_projectile_events_per_initial_catalyst": 1.4052601523983371e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.3329186764465773e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0001405210993973151
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 6.998503152553385e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00042153052963982173
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.06760555199728066,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.09932824823940971
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.009600775030942279
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 1.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.01458898598672275,
+            "0.9": 0.03027285587603886,
+            "0.99": 0.072827209516806,
+            "0.999": 0.07969544717167393,
+            "0.9999": 0.08034474283017716
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 3.7407656376212177,
+            "0.9": 7.762270737445863,
+            "0.99": 18.673643465847697,
+            "0.999": 20.434730044018956,
+            "0.9999": 20.601216110301834
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.1890166164501032,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 5.299318472536217e-06,
+              "all_projectile_events_per_initial_catalyst": 3.3181154526601665e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 5.299122422162809e-05,
+              "all_projectile_events_per_initial_catalyst": 0.000331783030759698
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.00015896060417065026,
+              "all_projectile_events_per_initial_catalyst": 0.0009951590494041804
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.06486767396607113,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.09994883726217031
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.011130771156078523
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 0.5,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.028440980500656927,
+            "0.9": 0.059880289571690205,
+            "0.99": 0.1448021804832905,
+            "0.999": 0.1585304476698697,
+            "0.9999": 0.15982827260419413
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 7.292559102732545,
+            "0.9": 15.353920402997487,
+            "0.99": 37.12876422648474,
+            "0.999": 40.64883273586403,
+            "0.9999": 40.981608360049776
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.37650717441829606,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 1.0385721181639597e-05,
+              "all_projectile_events_per_initial_catalyst": 6.553620171157358e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 0.00010384957765635759,
+              "all_projectile_events_per_initial_catalyst": 0.000655249545713749
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 0.0003114978504704168,
+              "all_projectile_events_per_initial_catalyst": 0.001964999252128917
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.31342388013043804,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.3495508405202089
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.047253917606405044,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.07285959062423575
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.011000798301200971
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        },
+        {
+          "material": "alumina",
+          "electronic_stopping_multiplier": 2.0,
+          "density_kg_m3": 3900.0,
+          "CNO_range_quantiles_kg_m2": {
+            "0.5": 0.007433674706818078,
+            "0.9": 0.015282338523262778,
+            "0.99": 0.036570824775007116,
+            "0.999": 0.04000597053833397,
+            "0.9999": 0.04033071425030076
+          },
+          "CNO_range_quantiles_um": {
+            "0.5": 1.9060704376456612,
+            "0.9": 3.9185483392981477,
+            "0.99": 9.377134557694133,
+            "0.999": 10.257941163675378,
+            "0.9999": 10.341208782128401
+          },
+          "maximum_packet_stopping_column_kg_m2": 0.09478840118946236,
+          "constant_cross_section_event_sensitivities": [
+            {
+              "sigma_barn": 0.1,
+              "CNO_event_fraction": 2.6895613136526433e-06,
+              "all_projectile_events_per_initial_catalyst": 1.6743776078768763e-05
+            },
+            {
+              "sigma_barn": 1.0,
+              "CNO_event_fraction": 2.6895113184813368e-05,
+              "all_projectile_events_per_initial_catalyst": 0.00016743055921287952
+            },
+            {
+              "sigma_barn": 3.0,
+              "CNO_event_fraction": 8.068200673841424e-05,
+              "all_projectile_events_per_initial_catalyst": 0.0005022436739406591
+            }
+          ],
+          "coatings": [
+            {
+              "thickness_um": 10.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.003374645607482314,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.02016305043711735
+            },
+            {
+              "thickness_um": 25.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 50.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            },
+            {
+              "thickness_um": 100.0,
+              "CNO_fraction_beyond_nominal_CSDA_range": 0.0,
+              "all_charged_mass_fraction_beyond_nominal_CSDA_range": 0.0
+            }
+          ],
+          "carbon_fusion_fit_events_per_initial_catalyst": null
+        }
+      ],
+      "checks": {
+        "baryon_mass_relative": 2.220446049250313e-16,
+        "smooth_kinetic_relative": -6.661338147750939e-16,
+        "64_vs_128_wall_species_L1_relative_nuclei": 6.400717977414785e-16,
+        "CNO_range_quantile_64_vs_128_max_relative_carbon": 0.002008825847897633,
+        "CNO_range_quantile_64_vs_128_max_relative_aluminium": 0.001985754722320543,
+        "CNO_range_quantile_64_vs_128_max_relative_alumina": 0.001892468954409754
+      }
+    }
+  ]
+}

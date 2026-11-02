@@ -1,0 +1,2876 @@
+{
+  "scope": "First component checkpoint; material-stopping depth and loss acceptance screen, not achievedreturn or nucleartransportclosure. Solid-state stopping used for molten-metal depth; density/phase/charge and straggling uncertainties require qualification.",
+  "source_hashes": {
+    "docs/protium-fusion/membrane-receiver/stopping.py": "cb76f89d72c27102f7c00c41d81568bdf2e1fadc23375d89d0036584c8cee77c",
+    "docs/protium-fusion/membrane-receiver/pulse-loading.json": "6ff0345c6ff48ae89503d89a04b698d4b77643e76646081943dbabd28626689a",
+    "docs/protium-fusion/open-loop-redesign/station-inputs.json": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "docs/protium-fusion/component-design/collection-stopping-data.json": "ade5dfd4c38ecd4b4adadc23bac93c50ebc0066f105265c73fbe5d020cb4f096",
+    "docs/protium-fusion/membrane-receiver/stopping-data.json": "050dddf04b50c5fbdd5692a09837e0ad458876c5097bb84f53462c60ec8ade5d"
+  },
+  "code_sha256": "c915c107293dac36df79952388e7e911b86503e2e06fd860448ff52aae1b591a",
+  "source": "https://www-nds.iaea.org/stopping/",
+  "C_fusion_model": {
+    "primary": "https://doi.org/10.1103/PhysRevC.85.014607",
+    "Rb_fm": 7.4,
+    "Vb_MeV": 5.7,
+    "hbaromega_MeV": 2.1,
+    "measured_fit_Ecm_MeV": [
+      4.9,
+      8.0
+    ],
+    "limitations": "C12+C13 measured fit appliedtoC12andC13 onnaturalcarbon asillustrativeenvelope; matchedGamowtail below4.9 and Wongextension above8 are labeledextrapolations. NoN/Omodelborrowed. Allcompoundfusion countedlost; nosecondarytransport or transferchannels."
+  },
+  "budget": {
+    "CNO_return_requirement": 0.9996276069128843,
+    "total_C_H": 0.007,
+    "fuel_C_H": 0.0056,
+    "remaining_material_C_H": 0.0014,
+    "carbon_atoms_all_material_budget_per_He": 0.00047040710785013404
+  },
+  "batch_extraction": {
+    "helium_per_s": 3.782247267560003e+32,
+    "gross_fuel_kg_s": 44820550.66566686,
+    "gross_fuel_kg_m2_year": 9.3022053117453e-05,
+    "synchronized_one_year_fuel_inventory_upper_kg": 1414429009686848.5,
+    "staggered_uniform_age_mean_fuel_inventory_kg": 707214504843424.2,
+    "scenarios": [
+      {
+        "material": "carbon",
+        "thickness_um": 10.0,
+        "whole_skin_kg_m2": 0.02,
+        "annual_processing_kg_s": 9636542983.861002,
+        "annual_processing_W_m2_at2MJkg": 0.001267523512561158,
+        "fuel_fraction_after_one_year_if_uniformly_mixed": 0.00465110265587265,
+        "scope": "Annualwhole-skinprocessing sensitivity; no everypulse release requirement. Chemicalregenerationenergy and yield need qualification."
+      },
+      {
+        "material": "carbon",
+        "thickness_um": 25.0,
+        "whole_skin_kg_m2": 0.049999999999999996,
+        "annual_processing_kg_s": 24091357459.652504,
+        "annual_processing_W_m2_at2MJkg": 0.0031688087814028946,
+        "fuel_fraction_after_one_year_if_uniformly_mixed": 0.0018604410623490602,
+        "scope": "Annualwhole-skinprocessing sensitivity; no everypulse release requirement. Chemicalregenerationenergy and yield need qualification."
+      },
+      {
+        "material": "alumina",
+        "thickness_um": 50.0,
+        "whole_skin_kg_m2": 0.19499999999999998,
+        "annual_processing_kg_s": 93956294092.64476,
+        "annual_processing_W_m2_at2MJkg": 0.012358354247471288,
+        "fuel_fraction_after_one_year_if_uniformly_mixed": 0.0004770361698330924,
+        "scope": "Annualwhole-skinprocessing sensitivity; no everypulse release requirement. Chemicalregenerationenergy and yield need qualification."
+      },
+      {
+        "material": "aluminium",
+        "thickness_um": 100.0,
+        "whole_skin_kg_m2": 0.22999999999999998,
+        "annual_processing_kg_s": 110820244314.40152,
+        "annual_processing_W_m2_at2MJkg": 0.014576520394453315,
+        "fuel_fraction_after_one_year_if_uniformly_mixed": 0.0004044437092063174,
+        "scope": "Annualwhole-skinprocessing sensitivity; no everypulse release requirement. Chemicalregenerationenergy and yield need qualification."
+      }
+    ]
+  },
+  "coverage": [
+    {
+      "material": "carbon",
+      "projectile": "C",
+      "measured_MeV_u_range": [
+        0.016666,
+        3.27
+      ],
+      "primary_DOIs": [
+        "10.1016/0168-583X(91)95439-K",
+        "10.1016/s0168-583x(02)01246-6",
+        "10.1103/physreva.25.1868"
+      ]
+    },
+    {
+      "material": "carbon",
+      "projectile": "N",
+      "measured_MeV_u_range": [
+        0.00107,
+        0.8264683
+      ],
+      "primary_DOIs": [
+        "10.1016/0168-583X(91)95439-K",
+        "10.1016/s0168-583x(02)01246-6",
+        "10.1139/p63-142"
+      ]
+    },
+    {
+      "material": "carbon",
+      "projectile": "O",
+      "measured_MeV_u_range": [
+        0.00125,
+        3.104
+      ],
+      "primary_DOIs": [
+        "10.1016/0168-583X(92)96006-K",
+        "10.1016/0168-583x(92)95123-9",
+        "10.1016/s0168-583x(02)01246-6",
+        "10.1139/p63-142"
+      ]
+    },
+    {
+      "material": "aluminium",
+      "projectile": "C",
+      "measured_MeV_u_range": [
+        0.00125,
+        4.083
+      ],
+      "primary_DOIs": [
+        "10.1016/0168-583X(91)95439-K",
+        "10.1016/0168-583x(91)95165-a",
+        "10.1016/0168-583x(91)95310-a",
+        "10.1016/0168-583x(93)95724-j",
+        "10.1016/s0168-583x(00)00158-0",
+        "10.1016/s0168-583x(02)01246-6",
+        "10.1016/s0168-583x(97)00585-5",
+        "10.1080/10420159108220624",
+        "10.1088/0370-1328/77/1/311",
+        "10.1103/physreva.25.1868",
+        "10.1139/p65-025",
+        "10.1139/p79-092"
+      ]
+    },
+    {
+      "material": "aluminium",
+      "projectile": "N",
+      "measured_MeV_u_range": [
+        0.00143,
+        1.559
+      ],
+      "primary_DOIs": [
+        "10.1002/pssb.2221160153",
+        "10.1016/0168-583X(91)95439-K",
+        "10.1016/0168-583x(85)90243-5",
+        "10.1016/0168-583x(92)95560-e",
+        "10.1016/0168-583x(93)95724-j",
+        "10.1016/s0168-583x(00)00158-0",
+        "10.1016/s0168-583x(02)01246-6",
+        "10.1080/10420159108220624",
+        "10.1088/0370-1328/76/3/123",
+        "10.1088/0370-1328/78/6/304",
+        "10.1103/physrevb.26.4864",
+        "10.1139/p65-025",
+        "10.1139/p70-220",
+        "10.1139/p79-092"
+      ]
+    },
+    {
+      "material": "aluminium",
+      "projectile": "O",
+      "measured_MeV_u_range": [
+        0.00125,
+        4.73
+      ],
+      "primary_DOIs": [
+        "10.1016/0029-554x(78)90633-x",
+        "10.1016/0029-5582(65)90478-5",
+        "10.1016/0168-583X(92)96006-K",
+        "10.1016/0168-583x(92)95123-9",
+        "10.1016/0168-583x(93)95724-j",
+        "10.1016/s0168-583x(00)00158-0",
+        "10.1016/s0168-583x(02)01246-6",
+        "10.1016/s0168-583x(99)01002-2",
+        "10.1016/s0169-4332(03)00936-x",
+        "10.1080/10420159108220624",
+        "10.1088/0370-1328/77/1/311",
+        "10.1139/p65-025",
+        "10.1139/p79-092"
+      ]
+    },
+    {
+      "material": "alumina",
+      "projectile": "C",
+      "measured_MeV_u_range": [
+        0.027086,
+        1.236508
+      ],
+      "primary_DOIs": [
+        "10.1016/j.nimb.2005.04.068",
+        "10.1016/j.nimb.2014.02.092"
+      ]
+    },
+    {
+      "material": "alumina",
+      "projectile": "N",
+      "measured_MeV_u_range": [
+        0.00684286,
+        0.093812
+      ],
+      "primary_DOIs": []
+    },
+    {
+      "material": "alumina",
+      "projectile": "O",
+      "measured_MeV_u_range": [
+        0.021304,
+        1.236508
+      ],
+      "primary_DOIs": [
+        "10.1016/j.nimb.2005.04.068",
+        "10.1016/j.nimb.2014.02.092"
+      ]
+    },
+    {
+      "material": "tin",
+      "projectile": "C",
+      "measured_MeV_u_range": [
+        1.336,
+        1.532
+      ],
+      "primary_DOIs": [
+        "10.1080/10420159108220624"
+      ]
+    },
+    {
+      "material": "tin",
+      "projectile": "N",
+      "measured_MeV_u_range": [
+        0.025,
+        0.025
+      ],
+      "primary_DOIs": [
+        "10.1016/0168-583x(85)90243-5"
+      ]
+    },
+    {
+      "material": "tin",
+      "projectile": "O",
+      "measured_MeV_u_range": [
+        0.1151718,
+        0.3057126
+      ],
+      "primary_DOIs": [
+        "10.1016/s0168-583x(98)00894-5"
+      ]
+    },
+    {
+      "material": "hydrogen",
+      "projectile": "C",
+      "measured_MeV_u_range": [
+        2.0,
+        5.0
+      ],
+      "primary_DOIs": [
+        "10.1103/physrev.128.1166"
+      ]
+    },
+    {
+      "material": "hydrogen",
+      "projectile": "N",
+      "measured_MeV_u_range": [
+        0.01071,
+        0.2681
+      ],
+      "primary_DOIs": [
+        "10.1103/physrev.91.289"
+      ]
+    },
+    {
+      "material": "hydrogen",
+      "projectile": "O",
+      "measured_MeV_u_range": [
+        0.003125,
+        0.00938
+      ],
+      "primary_DOIs": []
+    }
+  ],
+  "rows": [
+    {
+      "material": "carbon",
+      "stage": "C13",
+      "nuclei_per_He": 0.09069882961659283,
+      "CNO_nuclei_per_He": 0.08096900211225647,
+      "kinetic_fluence_J_m2": 34108878.22900215,
+      "max_source_MeV_u": 1.8190405642134622,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.007890176377217208,
+        "0.9": 0.020937447755136226,
+        "0.99": 0.039828922210053436,
+        "0.999": 0.04376176663631468,
+        "0.9999": 0.04376176663631468
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3.945088188608604,
+        "0.9": 10.468723877568111,
+        "0.99": 19.91446110502672,
+        "0.999": 21.88088331815734,
+        "0.9999": 21.88088331815734
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.008837919034840819,
+        "0.9": 0.03352823780601224,
+        "0.99": 0.06648955853213354,
+        "0.999": 0.07515778243264484,
+        "0.9999": 0.07515778243264484
+      },
+      "assumed_density_kg_m3": 2000.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 6.199671393132319e-07,
+          "CNO_projectile_reaction_probability": 5.155241993612707e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 6.199299717245164e-06,
+          "CNO_projectile_reaction_probability": 5.1550491896943756e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 1.8595421795282736e-05,
+          "CNO_projectile_reaction_probability": 0.00015463862355957246,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 1.493617068447221e-07,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.009729819707077317,
+          "mean_stopping_column_kg_m2": 0.041520809962548234,
+          "max_stopping_column_kg_m2": 0.07515778243264484,
+          "one_barn_reaction_probability": 0.00020815468717806578,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.776694451397035e-09,
+          "mean_stopping_column_kg_m2": 0.006468541497503292,
+          "max_stopping_column_kg_m2": 0.08106646892647515,
+          "one_barn_reaction_probability": 3.243167831982815e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 2.1425126469746138e-08,
+          "mean_stopping_column_kg_m2": 0.003131054059038431,
+          "max_stopping_column_kg_m2": 0.04040141328458003,
+          "one_barn_reaction_probability": 1.569849451586872e-05,
+          "C_fusion_fit_reactions_per_He": 1.3038188937167925e-18
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.0122888875476858,
+          "mean_stopping_column_kg_m2": 0.02350700707124043,
+          "max_stopping_column_kg_m2": 0.04376176663631468,
+          "one_barn_reaction_probability": 0.00011785238679352384,
+          "C_fusion_fit_reactions_per_He": 1.493617068434183e-07
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 1.6226769215413534e-09,
+          "mean_stopping_column_kg_m2": 0.004182663356732115,
+          "max_stopping_column_kg_m2": 0.03471229450823707,
+          "one_barn_reaction_probability": 2.097099651786473e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.06612102047052672,
+          "mean_stopping_column_kg_m2": 0.007911533863798234,
+          "max_stopping_column_kg_m2": 0.03737786691596297,
+          "one_barn_reaction_probability": 3.966624441807399e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.0014490602269373624,
+          "mean_stopping_column_kg_m2": 0.007520482260277884,
+          "max_stopping_column_kg_m2": 0.04004333926521482,
+          "one_barn_reaction_probability": 3.770565904463805e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 2.499230499701274e-10,
+          "mean_stopping_column_kg_m2": 0.004502270795491432,
+          "max_stopping_column_kg_m2": 0.030700539487232628,
+          "one_barn_reaction_probability": 2.2573442518806333e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.001110000270126975,
+          "mean_stopping_column_kg_m2": 0.008680004893288245,
+          "max_stopping_column_kg_m2": 0.03288869452600232,
+          "one_barn_reaction_probability": 4.35191731003137e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 1.0271506720660941e-08,
+          "mean_stopping_column_kg_m2": 0.003077345330469104,
+          "max_stopping_column_kg_m2": 0.03507677128517938,
+          "one_barn_reaction_probability": 1.5429215781383387e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o17",
+          "nuclei_per_He": 2.696743479274491e-11,
+          "mean_stopping_column_kg_m2": 0.0026605317474546757,
+          "max_stopping_column_kg_m2": 0.037264754390825106,
+          "one_barn_reaction_probability": 1.3339410949360508e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "f18",
+          "nuclei_per_He": 2.0156776662420977e-11,
+          "mean_stopping_column_kg_m2": 0.003134252993156217,
+          "max_stopping_column_kg_m2": 0.034512799592509656,
+          "one_barn_reaction_probability": 1.571453974547977e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "carbon",
+      "stage": "A",
+      "nuclei_per_He": 2.703121979769765,
+      "CNO_nuclei_per_He": 1.850651463008693,
+      "kinetic_fluence_J_m2": 19953251.145019997,
+      "max_source_MeV_u": 0.9523242929567967,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.005977358061793546,
+        "0.9": 0.009636615387367422,
+        "0.99": 0.016447278387588166,
+        "0.999": 0.018153913010654756,
+        "0.9999": 0.018153913010654756
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 2.988679030896773,
+        "0.9": 4.818307693683711,
+        "0.99": 8.223639193794083,
+        "0.999": 9.076956505327377,
+        "0.9999": 9.076956505327377
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.007106587034471196,
+        "0.9": 0.013005649602759342,
+        "0.99": 0.025863352549629414,
+        "0.999": 0.029348632532051434,
+        "0.9999": 0.029348632532051434
+      },
+      "assumed_density_kg_m3": 2000.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 1.0572030029731514e-05,
+          "CNO_projectile_reaction_probability": 3.159634872465788e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 0.00010571785593596066,
+          "CNO_projectile_reaction_probability": 3.159579689088868e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00031713727309968766,
+          "CNO_projectile_reaction_probability": 9.478371194431431e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 1.4725943592705188e-21,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.8524704392782072,
+          "mean_stopping_column_kg_m2": 0.011054007105611604,
+          "max_stopping_column_kg_m2": 0.029348632532051434,
+          "one_barn_reaction_probability": 5.542132950598163e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.74804157165339e-08,
+          "mean_stopping_column_kg_m2": 0.007942936564689262,
+          "max_stopping_column_kg_m2": 0.034036480234348174,
+          "one_barn_reaction_probability": 3.982381293267811e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 5.874817423129954e-08,
+          "mean_stopping_column_kg_m2": 0.004648001334161025,
+          "max_stopping_column_kg_m2": 0.019474122807553982,
+          "one_barn_reaction_probability": 2.330408160449389e-05,
+          "C_fusion_fit_reactions_per_He": 1.471972085084651e-21
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.789130886554777e-09,
+          "mean_stopping_column_kg_m2": 0.003925471219954363,
+          "max_stopping_column_kg_m2": 0.02109063219572265,
+          "one_barn_reaction_probability": 1.9681497716748444e-05,
+          "C_fusion_fit_reactions_per_He": 6.22274185867774e-25
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.65008566024853e-09,
+          "mean_stopping_column_kg_m2": 0.004046515999695799,
+          "max_stopping_column_kg_m2": 0.016861408953236057,
+          "one_barn_reaction_probability": 2.028840482633989e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.8524705569503775,
+          "mean_stopping_column_kg_m2": 0.007791464684809249,
+          "max_stopping_column_kg_m2": 0.018153913010654756,
+          "one_barn_reaction_probability": 3.906437313687801e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6668105421837605,
+          "mean_stopping_column_kg_m2": 0.004829995652018202,
+          "max_stopping_column_kg_m2": 0.01944631607155007,
+          "one_barn_reaction_probability": 2.4216543811673088e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 1.1431258602369785e-09,
+          "mean_stopping_column_kg_m2": 0.0041981831381334034,
+          "max_stopping_column_kg_m2": 0.015444250856065872,
+          "one_barn_reaction_probability": 2.1048839551287247e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.33137029653723926,
+          "mean_stopping_column_kg_m2": 0.00543134421795289,
+          "max_stopping_column_kg_m2": 0.01654273000105797,
+          "one_barn_reaction_probability": 2.7231564381530362e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "carbon",
+      "stage": "B1",
+      "nuclei_per_He": 3.322564057309049,
+      "CNO_nuclei_per_He": 1.661376690498307,
+      "kinetic_fluence_J_m2": 137785.55323628456,
+      "max_source_MeV_u": 0.44805548186245,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.004943640325048205,
+        "0.9": 0.007653092085679167,
+        "0.99": 0.009344218549630232,
+        "0.999": 0.00971097821321198,
+        "0.9999": 0.00971097821321198
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 2.4718201625241027,
+        "0.9": 3.826546042839584,
+        "0.99": 4.672109274815116,
+        "0.999": 4.85548910660599,
+        "0.9999": 4.85548910660599
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.006287309765809917,
+        "0.9": 0.00971097821321198,
+        "0.99": 0.01161798837749367,
+        "0.999": 0.012543246016576453,
+        "0.9999": 0.012543246016576453
+      },
+      "assumed_density_kg_m3": 2000.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 1.0565759740307371e-05,
+          "CNO_projectile_reaction_probability": 2.4936304789973406e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 0.00010565584302992055,
+          "CNO_projectile_reaction_probability": 2.493598213804331e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.0003169558337271613,
+          "CNO_projectile_reaction_probability": 7.480579546702081e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 7.285922031153766e-21,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.6611874520651072,
+          "mean_stopping_column_kg_m2": 0.008223638318749334,
+          "max_stopping_column_kg_m2": 0.012543246016576453,
+          "one_barn_reaction_probability": 4.123121875366232e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 0.9999999146890839,
+          "mean_stopping_column_kg_m2": 0.00737296520540979,
+          "max_stopping_column_kg_m2": 0.01578246570079607,
+          "one_barn_reaction_probability": 3.69662222314425e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.9999316634131963,
+          "mean_stopping_column_kg_m2": 0.0040595379052460485,
+          "max_stopping_column_kg_m2": 0.009503958267619966,
+          "one_barn_reaction_probability": 2.0353699916059612e-05,
+          "C_fusion_fit_reactions_per_He": 7.285918258951356e-21
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.7799522863805167e-05,
+          "mean_stopping_column_kg_m2": 0.0034460213623562137,
+          "max_stopping_column_kg_m2": 0.010289690723137158,
+          "one_barn_reaction_probability": 1.727766434432915e-05,
+          "C_fusion_fit_reactions_per_He": 3.7722024095838105e-27
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.0451063604216744e-05,
+          "mean_stopping_column_kg_m2": 0.0035640733505936536,
+          "max_stopping_column_kg_m2": 0.008424015212259108,
+          "one_barn_reaction_probability": 1.7869567118535172e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 6.631949498463084e-10,
+          "mean_stopping_column_kg_m2": 0.0033405295275219207,
+          "max_stopping_column_kg_m2": 0.009067546284733514,
+          "one_barn_reaction_probability": 1.674875967994845e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6612557041517065,
+          "mean_stopping_column_kg_m2": 0.0063558422487283335,
+          "max_stopping_column_kg_m2": 0.00971097821321198,
+          "one_barn_reaction_probability": 3.186672041716219e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 0.00012107154216209322,
+          "mean_stopping_column_kg_m2": 0.0041031590571176625,
+          "max_stopping_column_kg_m2": 0.009097846912453873,
+          "one_barn_reaction_probability": 2.057240447787474e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "carbon",
+      "stage": "B2",
+      "nuclei_per_He": 1.4705513607109713,
+      "CNO_nuclei_per_He": 1.134890621985191,
+      "kinetic_fluence_J_m2": 29471128.372122247,
+      "max_source_MeV_u": 1.6276712263917124,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.00701022564301794,
+        "0.9": 0.015419699186460235,
+        "0.99": 0.03177218404018825,
+        "0.999": 0.03540902961813122,
+        "0.9999": 0.03540902961813122
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3.50511282150897,
+        "0.9": 7.709849593230117,
+        "0.99": 15.886092020094123,
+        "0.999": 17.70451480906561,
+        "0.9999": 17.70451480906561
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.008504521084608642,
+        "0.9": 0.030433264844578645,
+        "0.99": 0.06002384751922425,
+        "0.999": 0.06328416310419088,
+        "0.9999": 0.06328416310419088
+      },
+      "assumed_density_kg_m3": 2000.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 9.715687025346948e-06,
+          "CNO_projectile_reaction_probability": 4.272176750582725e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 9.715151357955897e-05,
+          "CNO_projectile_reaction_probability": 4.2720550318036256e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00029141883579691876,
+          "CNO_projectile_reaction_probability": 0.0001281535370694466,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 7.78200721746307e-07,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.3356607385934342,
+          "mean_stopping_column_kg_m2": 0.028921036863310306,
+          "max_stopping_column_kg_m2": 0.06328416310419088,
+          "one_barn_reaction_probability": 0.00014499271455313764,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.1335194319986672,
+          "mean_stopping_column_kg_m2": 0.020028654630623755,
+          "max_stopping_column_kg_m2": 0.03540902961813122,
+          "one_barn_reaction_probability": 0.00010041494090546456,
+          "C_fusion_fit_reactions_per_He": 7.772212072776789e-07
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.008083067241992557,
+          "mean_stopping_column_kg_m2": 0.012990104755656838,
+          "max_stopping_column_kg_m2": 0.03835337170773461,
+          "one_barn_reaction_probability": 6.512802695718945e-05,
+          "C_fusion_fit_reactions_per_He": 9.795144686280067e-10
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 0.06053880985670132,
+          "mean_stopping_column_kg_m2": 0.011711741577910615,
+          "max_stopping_column_kg_m2": 0.030401897558016925,
+          "one_barn_reaction_probability": 5.8719079918217326e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.7215097379883343,
+          "mean_stopping_column_kg_m2": 0.006415839336863994,
+          "max_stopping_column_kg_m2": 0.03273591988839133,
+          "one_barn_reaction_probability": 3.216744350949722e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 1.927445503251466e-09,
+          "mean_stopping_column_kg_m2": 0.004787214112242968,
+          "max_stopping_column_kg_m2": 0.03506983891615638,
+          "one_barn_reaction_probability": 2.4002013553340818e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 0.21123957201797694,
+          "mean_stopping_column_kg_m2": 0.007351000566793202,
+          "max_stopping_column_kg_m2": 0.02710337896270413,
+          "one_barn_reaction_probability": 3.6856090581024046e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 9.322176082172269e-10,
+          "mean_stopping_column_kg_m2": 0.00590510588718026,
+          "max_stopping_column_kg_m2": 0.02903460542848616,
+          "one_barn_reaction_probability": 2.9606830448988246e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "aluminium",
+      "stage": "C13",
+      "nuclei_per_He": 0.09069882961659283,
+      "CNO_nuclei_per_He": 0.08096900211225647,
+      "kinetic_fluence_J_m2": 34108878.22900215,
+      "max_source_MeV_u": 1.8190405642134622,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.011725020294949541,
+        "0.9": 0.02832054126212816,
+        "0.99": 0.05071602143947194,
+        "0.999": 0.05542042767298503,
+        "0.9999": 0.05542042767298503
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 5.097834910847627,
+        "0.9": 12.31327880962094,
+        "0.99": 22.050444104118235,
+        "0.999": 24.095838118689144,
+        "0.9999": 24.095838118689144
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.013095870059468337,
+        "0.9": 0.04716355238856701,
+        "0.99": 0.0938359049564173,
+        "0.999": 0.10498551052839745,
+        "0.9999": 0.10498551052839745
+      },
+      "assumed_density_kg_m3": 2300.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 3.9492164988032573e-07,
+          "CNO_projectile_reaction_probability": 3.2382727053653177e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 3.949068655726617e-06,
+          "CNO_projectile_reaction_probability": 3.238201727768298e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 1.1846220467289485e-05,
+          "CNO_projectile_reaction_probability": 9.714132029516429e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.009729819707077317,
+          "mean_stopping_column_kg_m2": 0.061116286199202556,
+          "max_stopping_column_kg_m2": 0.10498551052839745,
+          "one_barn_reaction_probability": 0.00013639809028227266,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.776694451397035e-09,
+          "mean_stopping_column_kg_m2": 0.011712090276871678,
+          "max_stopping_column_kg_m2": 0.11415807992759125,
+          "one_barn_reaction_probability": 2.614036731151451e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 2.1425126469746138e-08,
+          "mean_stopping_column_kg_m2": 0.004597059512490869,
+          "max_stopping_column_kg_m2": 0.05117291678080196,
+          "one_barn_reaction_probability": 1.0260334813882463e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.0122888875476858,
+          "mean_stopping_column_kg_m2": 0.031097010961520184,
+          "max_stopping_column_kg_m2": 0.05542042767298503,
+          "one_barn_reaction_probability": 6.940410665313004e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 1.6226769215413534e-09,
+          "mean_stopping_column_kg_m2": 0.006297707374795441,
+          "max_stopping_column_kg_m2": 0.044019447439429434,
+          "one_barn_reaction_probability": 1.4056040166968124e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.06612102047052672,
+          "mean_stopping_column_kg_m2": 0.01152786798505188,
+          "max_stopping_column_kg_m2": 0.0473899554831321,
+          "one_barn_reaction_probability": 2.5729184933934943e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.0014490602269373624,
+          "mean_stopping_column_kg_m2": 0.011033320725474617,
+          "max_stopping_column_kg_m2": 0.050760056273987546,
+          "one_barn_reaction_probability": 2.462541168518539e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 2.499230499701274e-10,
+          "mean_stopping_column_kg_m2": 0.006803089493099569,
+          "max_stopping_column_kg_m2": 0.04159774075025471,
+          "one_barn_reaction_probability": 1.518401562042851e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.001110000270126975,
+          "mean_stopping_column_kg_m2": 0.01296361334565614,
+          "max_stopping_column_kg_m2": 0.04455414342128623,
+          "one_barn_reaction_probability": 2.8933633479176015e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 1.0271506720660941e-08,
+          "mean_stopping_column_kg_m2": 0.004682211583678432,
+          "max_stopping_column_kg_m2": 0.04751016893959417,
+          "one_barn_reaction_probability": 1.0450389380180173e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o17",
+          "nuclei_per_He": 2.696743479274491e-11,
+          "mean_stopping_column_kg_m2": 0.004073582909233824,
+          "max_stopping_column_kg_m2": 0.050465662889173465,
+          "one_barn_reaction_probability": 9.091978300194716e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "f18",
+          "nuclei_per_He": 2.0156776662420977e-11,
+          "mean_stopping_column_kg_m2": 0.005533898790985379,
+          "max_stopping_column_kg_m2": 0.05003780276236561,
+          "one_barn_reaction_probability": 1.2351284814128549e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "aluminium",
+      "stage": "A",
+      "nuclei_per_He": 2.703121979769765,
+      "CNO_nuclei_per_He": 1.850651463008693,
+      "kinetic_fluence_J_m2": 19953251.145019997,
+      "max_source_MeV_u": 0.9523242929567967,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.008938798613488074,
+        "0.9": 0.014193949299509059,
+        "0.99": 0.022927922760312483,
+        "0.999": 0.02498119041314291,
+        "0.9999": 0.02498119041314291
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3.886434179777423,
+        "0.9": 6.171282304134373,
+        "0.99": 9.96866206970108,
+        "0.999": 10.86138713614909,
+        "0.9999": 10.86138713614909
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.011083719411048486,
+        "0.9": 0.021613317793844053,
+        "0.99": 0.04041690595235484,
+        "0.999": 0.04512896061467914,
+        "0.9999": 0.04512896061467914
+      },
+      "assumed_density_kg_m3": 2300.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 7.5085585645374505e-06,
+          "CNO_projectile_reaction_probability": 2.088924861217613e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 7.508433543089682e-05,
+          "CNO_projectile_reaction_probability": 2.0889011743407312e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00022524467190817137,
+          "CNO_projectile_reaction_probability": 6.266545614979517e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.8524704392782072,
+          "mean_stopping_column_kg_m2": 0.01914517527411202,
+          "max_stopping_column_kg_m2": 0.04512896061467914,
+          "one_barn_reaction_probability": 4.272998936074141e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.74804157165339e-08,
+          "mean_stopping_column_kg_m2": 0.014378434254566643,
+          "max_stopping_column_kg_m2": 0.05269937951137829,
+          "one_barn_reaction_probability": 3.2091334993271914e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 5.874817423129954e-08,
+          "mean_stopping_column_kg_m2": 0.006793199649673534,
+          "max_stopping_column_kg_m2": 0.026320097771798275,
+          "one_barn_reaction_probability": 1.516193694409353e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.789130886554777e-09,
+          "mean_stopping_column_kg_m2": 0.005745133745801116,
+          "max_stopping_column_kg_m2": 0.028496920606880468,
+          "one_barn_reaction_probability": 1.2822740132227856e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.65008566024853e-09,
+          "mean_stopping_column_kg_m2": 0.006098767733442381,
+          "max_stopping_column_kg_m2": 0.023211183546551425,
+          "one_barn_reaction_probability": 1.3612030240088927e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.8524705569503775,
+          "mean_stopping_column_kg_m2": 0.011451796323232571,
+          "max_stopping_column_kg_m2": 0.02498119041314291,
+          "one_barn_reaction_probability": 2.555944275333677e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6668105421837605,
+          "mean_stopping_column_kg_m2": 0.007257009021281072,
+          "max_stopping_column_kg_m2": 0.026750792628642547,
+          "one_barn_reaction_probability": 1.6197115683403447e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 1.1431258602369785e-09,
+          "mean_stopping_column_kg_m2": 0.00633954401304403,
+          "max_stopping_column_kg_m2": 0.02221774290285157,
+          "one_barn_reaction_probability": 1.4149427897476e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.33137029653723926,
+          "mean_stopping_column_kg_m2": 0.008206122243948783,
+          "max_stopping_column_kg_m2": 0.02378998982674758,
+          "one_barn_reaction_probability": 1.8315459503949342e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "aluminium",
+      "stage": "B1",
+      "nuclei_per_He": 3.322564057309049,
+      "CNO_nuclei_per_He": 1.661376690498307,
+      "kinetic_fluence_J_m2": 137785.55323628456,
+      "max_source_MeV_u": 0.44805548186245,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.007273716687412285,
+        "0.9": 0.01136664081543632,
+        "0.99": 0.013801889528461883,
+        "0.999": 0.01432834396050362,
+        "0.9999": 0.01432834396050362
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3.162485516266211,
+        "0.9": 4.942017745841879,
+        "0.99": 6.000821534113862,
+        "0.999": 6.2297147654363565,
+        "0.9999": 6.2297147654363565
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.010150975182033607,
+        "0.9": 0.017576373479877207,
+        "0.99": 0.020427952508825085,
+        "0.999": 0.02174886207826405,
+        "0.9999": 0.022261329648221015
+      },
+      "assumed_density_kg_m3": 2300.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 7.92013468294698e-06,
+          "CNO_projectile_reaction_probability": 1.639522196955565e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 7.920031984733628e-05,
+          "CNO_projectile_reaction_probability": 1.6395082376677384e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00023759411320883243,
+          "CNO_projectile_reaction_probability": 4.9184316529600716e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.6611874520651072,
+          "mean_stopping_column_kg_m2": 0.014889099359521884,
+          "max_stopping_column_kg_m2": 0.02174886207826405,
+          "one_barn_reaction_probability": 3.323111880056061e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 0.9999999146890839,
+          "mean_stopping_column_kg_m2": 0.013436873788789312,
+          "max_stopping_column_kg_m2": 0.0272890201975937,
+          "one_barn_reaction_probability": 2.9989915937376553e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.9999316634131963,
+          "mean_stopping_column_kg_m2": 0.005939456866292288,
+          "max_stopping_column_kg_m2": 0.01380206464931519,
+          "one_barn_reaction_probability": 1.3256463977501215e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.7799522863805167e-05,
+          "mean_stopping_column_kg_m2": 0.005050342224441643,
+          "max_stopping_column_kg_m2": 0.014935904285496208,
+          "one_barn_reaction_probability": 1.1272025707738618e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.0451063604216744e-05,
+          "mean_stopping_column_kg_m2": 0.005394591791951625,
+          "max_stopping_column_kg_m2": 0.0124448233929198,
+          "one_barn_reaction_probability": 1.20403716080272e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 6.631949498463084e-10,
+          "mean_stopping_column_kg_m2": 0.005087503049878433,
+          "max_stopping_column_kg_m2": 0.013386785479309724,
+          "one_barn_reaction_probability": 1.135496898826594e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6612557041517065,
+          "mean_stopping_column_kg_m2": 0.009472615622150222,
+          "max_stopping_column_kg_m2": 0.01432834396050362,
+          "one_barn_reaction_probability": 2.1142150771225473e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 0.00012107154216209322,
+          "mean_stopping_column_kg_m2": 0.006193891285152971,
+          "max_stopping_column_kg_m2": 0.01376562442182233,
+          "one_barn_reaction_probability": 1.382433980494039e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "aluminium",
+      "stage": "B2",
+      "nuclei_per_He": 1.4705513607109713,
+      "CNO_nuclei_per_He": 1.134890621985191,
+      "kinetic_fluence_J_m2": 29471128.372122247,
+      "max_source_MeV_u": 1.6276712263917124,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.010474695272126633,
+        "0.9": 0.021592899554256487,
+        "0.99": 0.04083554711394855,
+        "0.999": 0.04517945057616507,
+        "0.9999": 0.04517945057616507
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 4.554215335707232,
+        "0.9": 9.38821719750282,
+        "0.99": 17.75458570171676,
+        "0.999": 19.643239380941335,
+        "0.9999": 19.643239380941335
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.012765995706063573,
+        "0.9": 0.04473551975637737,
+        "0.99": 0.08548094559637505,
+        "0.999": 0.08969839417052278,
+        "0.9999": 0.08969839417052278
+      },
+      "assumed_density_kg_m3": 2300.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 6.415328744555895e-06,
+          "CNO_projectile_reaction_probability": 2.739784378852882e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 6.415099637294489e-05,
+          "CNO_projectile_reaction_probability": 2.7397373555450033e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00019243771700149136,
+          "CNO_projectile_reaction_probability": 8.218898593311741e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.3356607385934342,
+          "mean_stopping_column_kg_m2": 0.04412829504355238,
+          "max_stopping_column_kg_m2": 0.08969839417052278,
+          "one_barn_reaction_probability": 9.848626978647245e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.1335194319986672,
+          "mean_stopping_column_kg_m2": 0.026804744179568688,
+          "max_stopping_column_kg_m2": 0.04517945057616507,
+          "one_barn_reaction_probability": 5.9824790236293396e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.008083067241992557,
+          "mean_stopping_column_kg_m2": 0.01829349037859115,
+          "max_stopping_column_kg_m2": 0.04892765374757155,
+          "one_barn_reaction_probability": 4.082917315339235e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 0.06053880985670132,
+          "mean_stopping_column_kg_m2": 0.016681911049911756,
+          "max_stopping_column_kg_m2": 0.03904120813247651,
+          "one_barn_reaction_probability": 3.723241736673105e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.7215097379883343,
+          "mean_stopping_column_kg_m2": 0.009502634810003404,
+          "max_stopping_column_kg_m2": 0.04202880540214341,
+          "one_barn_reaction_probability": 2.120911789689188e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 1.927445503251466e-09,
+          "mean_stopping_column_kg_m2": 0.0071888778554890275,
+          "max_stopping_column_kg_m2": 0.045015992924349574,
+          "one_barn_reaction_probability": 1.604503902398534e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 0.21123957201797694,
+          "mean_stopping_column_kg_m2": 0.011068870947844594,
+          "max_stopping_column_kg_m2": 0.036961186956867155,
+          "one_barn_reaction_probability": 2.4704812264787203e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 9.322176082172269e-10,
+          "mean_stopping_column_kg_m2": 0.008909815595669647,
+          "max_stopping_column_kg_m2": 0.03958642940829142,
+          "one_barn_reaction_probability": 1.9886020146762075e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "alumina",
+      "stage": "C13",
+      "nuclei_per_He": 0.09069882961659283,
+      "CNO_nuclei_per_He": 0.08096900211225647,
+      "kinetic_fluence_J_m2": 34108878.22900215,
+      "max_source_MeV_u": 1.8190405642134622,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.010490547272409702,
+        "0.9": 0.02467257171667014,
+        "0.99": 0.045066732385937384,
+        "0.999": 0.04923720126772543,
+        "0.9999": 0.04923720126772543
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 2.6898839160024877,
+        "0.9": 6.32630044017183,
+        "0.99": 11.555572406650612,
+        "0.999": 12.624923401980881,
+        "0.9999": 12.624923401980881
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.011538605749810202,
+        "0.9": 0.04199725216021172,
+        "0.99": 0.08638800159831186,
+        "0.999": 0.09689434302409586,
+        "0.9999": 0.09689434302409586
+      },
+      "assumed_density_kg_m3": 3900.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 4.6575795370621393e-07,
+          "CNO_projectile_reaction_probability": 3.776401005204522e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 4.657369999518118e-06,
+          "CNO_projectile_reaction_probability": 3.7763053278512716e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 1.3970713291154694e-05,
+          "CNO_projectile_reaction_probability": 0.00011328278182086922,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.009729819707077317,
+          "mean_stopping_column_kg_m2": 0.05567904811021136,
+          "max_stopping_column_kg_m2": 0.09689434302409586,
+          "one_barn_reaction_probability": 0.00016441548502368764,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.776694451397035e-09,
+          "mean_stopping_column_kg_m2": 0.010111952080953078,
+          "max_stopping_column_kg_m2": 0.10514684621026779,
+          "one_barn_reaction_probability": 2.9861926241658243e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 2.1425126469746138e-08,
+          "mean_stopping_column_kg_m2": 0.004357314296546163,
+          "max_stopping_column_kg_m2": 0.045462002688688725,
+          "one_barn_reaction_probability": 1.2867855491403943e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.0122888875476858,
+          "mean_stopping_column_kg_m2": 0.027700512191137554,
+          "max_stopping_column_kg_m2": 0.04923720126772543,
+          "one_barn_reaction_probability": 8.180084529156096e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 1.6226769215413534e-09,
+          "mean_stopping_column_kg_m2": 0.0057554451572279,
+          "max_stopping_column_kg_m2": 0.03555004600704664,
+          "one_barn_reaction_probability": 1.699672405379889e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.06612102047052672,
+          "mean_stopping_column_kg_m2": 0.010096867746651122,
+          "max_stopping_column_kg_m2": 0.03827495689889849,
+          "one_barn_reaction_probability": 2.9817373424419993e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.0014490602269373624,
+          "mean_stopping_column_kg_m2": 0.009743741415794751,
+          "max_stopping_column_kg_m2": 0.040999582541626334,
+          "one_barn_reaction_probability": 2.8774556366363305e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 2.499230499701274e-10,
+          "mean_stopping_column_kg_m2": 0.006485808894046397,
+          "max_stopping_column_kg_m2": 0.0384212697718498,
+          "one_barn_reaction_probability": 1.9153591809299077e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.001110000270126975,
+          "mean_stopping_column_kg_m2": 0.011941438001774352,
+          "max_stopping_column_kg_m2": 0.041154403804590955,
+          "one_barn_reaction_probability": 3.52645721628537e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 1.0271506720660941e-08,
+          "mean_stopping_column_kg_m2": 0.004445031682343944,
+          "max_stopping_column_kg_m2": 0.04388676466229262,
+          "one_barn_reaction_probability": 1.3126897988533369e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o17",
+          "nuclei_per_He": 2.696743479274491e-11,
+          "mean_stopping_column_kg_m2": 0.0038371451930460593,
+          "max_stopping_column_kg_m2": 0.04661917366893787,
+          "one_barn_reaction_probability": 1.1331723820561972e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "f18",
+          "nuclei_per_He": 2.0156776662420977e-11,
+          "mean_stopping_column_kg_m2": 0.004800252983005028,
+          "max_stopping_column_kg_m2": 0.04574550212536868,
+          "one_barn_reaction_probability": 1.4175915915631725e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "alumina",
+      "stage": "A",
+      "nuclei_per_He": 2.703121979769765,
+      "CNO_nuclei_per_He": 1.850651463008693,
+      "kinetic_fluence_J_m2": 19953251.145019997,
+      "max_source_MeV_u": 0.9523242929567967,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.008415006536726171,
+        "0.9": 0.012458599559931095,
+        "0.99": 0.019044070810256844,
+        "0.999": 0.020650205849790854,
+        "0.9999": 0.020650205849790854
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 2.1576939837759417,
+        "0.9": 3.19451270767464,
+        "0.99": 4.883095079553037,
+        "0.999": 5.29492457686945,
+        "0.9999": 5.29492457686945
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.010021457231522419,
+        "0.9": 0.01890100222433046,
+        "0.99": 0.03628793029381788,
+        "0.999": 0.040680768252161326,
+        "0.9999": 0.040680768252161326
+      },
+      "assumed_density_kg_m3": 3900.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 8.84279170247612e-06,
+          "CNO_projectile_reaction_probability": 2.5009553307447493e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 8.842620562193672e-05,
+          "CNO_projectile_reaction_probability": 2.5009221711538276e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.0002652672081175191,
+          "CNO_projectile_reaction_probability": 7.502545456620942e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.8524704392782072,
+          "mean_stopping_column_kg_m2": 0.016740421616347517,
+          "max_stopping_column_kg_m2": 0.040680768252161326,
+          "one_barn_reaction_probability": 4.943614240202775e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.74804157165339e-08,
+          "mean_stopping_column_kg_m2": 0.012425605207230852,
+          "max_stopping_column_kg_m2": 0.047430030523311455,
+          "one_barn_reaction_probability": 3.6694344045538835e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 5.874817423129954e-08,
+          "mean_stopping_column_kg_m2": 0.006376549954849776,
+          "max_stopping_column_kg_m2": 0.02348808889544007,
+          "one_barn_reaction_probability": 1.883092909289761e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.789130886554777e-09,
+          "mean_stopping_column_kg_m2": 0.005431518580168513,
+          "max_stopping_column_kg_m2": 0.025432254690635085,
+          "one_barn_reaction_probability": 1.604012268677505e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.65008566024853e-09,
+          "mean_stopping_column_kg_m2": 0.0056237682039051665,
+          "max_stopping_column_kg_m2": 0.019184131785435623,
+          "one_barn_reaction_probability": 1.6607872929691122e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.8524705569503775,
+          "mean_stopping_column_kg_m2": 0.010141408147117201,
+          "max_stopping_column_kg_m2": 0.020650205849790854,
+          "one_barn_reaction_probability": 2.9948953658342506e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6668105421837605,
+          "mean_stopping_column_kg_m2": 0.006660035514102771,
+          "max_stopping_column_kg_m2": 0.02211599521541447,
+          "one_barn_reaction_probability": 1.9668091357864933e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 1.1431258602369785e-09,
+          "mean_stopping_column_kg_m2": 0.006084102415796068,
+          "max_stopping_column_kg_m2": 0.020100475069178447,
+          "one_barn_reaction_probability": 1.7967309328082445e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.33137029653723926,
+          "mean_stopping_column_kg_m2": 0.007804997897686889,
+          "max_stopping_column_kg_m2": 0.021525086645030216,
+          "one_barn_reaction_probability": 2.304931888090165e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "alumina",
+      "stage": "B1",
+      "nuclei_per_He": 3.322564057309049,
+      "CNO_nuclei_per_He": 1.661376690498307,
+      "kinetic_fluence_J_m2": 137785.55323628456,
+      "max_source_MeV_u": 0.44805548186245,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.006918421296218637,
+        "0.9": 0.01034756609098409,
+        "0.99": 0.0121952127875235,
+        "0.999": 0.012583485454160383,
+        "0.9999": 0.012583485454160383
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 1.7739541785175992,
+        "0.9": 2.6532220746113055,
+        "0.99": 3.1269776378265384,
+        "0.999": 3.2265347318359954,
+        "0.9999": 3.2265347318359954
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.009154291886629997,
+        "0.9": 0.01516549704537168,
+        "0.99": 0.017769269930946217,
+        "0.999": 0.019024833004372466,
+        "0.9999": 0.019331609461641412
+      },
+      "assumed_density_kg_m3": 3900.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 9.298802192361418e-06,
+          "CNO_projectile_reaction_probability": 2.0242585982342306e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 9.29866333884028e-05,
+          "CNO_projectile_reaction_probability": 2.0242375480212793e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00027895064359461654,
+          "CNO_projectile_reaction_probability": 6.0725723127259304e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.6611874520651072,
+          "mean_stopping_column_kg_m2": 0.012871438670233337,
+          "max_stopping_column_kg_m2": 0.019024833004372466,
+          "one_barn_reaction_probability": 3.80109800083054e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 0.9999999146890839,
+          "mean_stopping_column_kg_m2": 0.011589074533007747,
+          "max_stopping_column_kg_m2": 0.02389671793941094,
+          "one_barn_reaction_probability": 3.422404250275804e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.9999316634131963,
+          "mean_stopping_column_kg_m2": 0.00563631551630987,
+          "max_stopping_column_kg_m2": 0.012420509801530342,
+          "one_barn_reaction_probability": 1.66449312446593e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.7799522863805167e-05,
+          "mean_stopping_column_kg_m2": 0.004802789015191372,
+          "max_stopping_column_kg_m2": 0.013442578964343152,
+          "one_barn_reaction_probability": 1.4183403176742873e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.0451063604216744e-05,
+          "mean_stopping_column_kg_m2": 0.005010385333657746,
+          "max_stopping_column_kg_m2": 0.010922500967672716,
+          "one_barn_reaction_probability": 1.4796475025906374e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 6.631949498463084e-10,
+          "mean_stopping_column_kg_m2": 0.004681453956963682,
+          "max_stopping_column_kg_m2": 0.011753134136643932,
+          "one_barn_reaction_probability": 1.3825085961164333e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6612557041517065,
+          "mean_stopping_column_kg_m2": 0.008696963147130496,
+          "max_stopping_column_kg_m2": 0.012583485454160383,
+          "one_barn_reaction_probability": 2.5683393647130122e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 0.00012107154216209322,
+          "mean_stopping_column_kg_m2": 0.005950274667845097,
+          "max_stopping_column_kg_m2": 0.012693129813187215,
+          "one_barn_reaction_probability": 1.7572091777712407e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "alumina",
+      "stage": "B2",
+      "nuclei_per_He": 1.4705513607109713,
+      "CNO_nuclei_per_He": 1.134890621985191,
+      "kinetic_fluence_J_m2": 29471128.372122247,
+      "max_source_MeV_u": 1.6276712263917124,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.009617565018569562,
+        "0.9": 0.018462402912325024,
+        "0.99": 0.03631173738151147,
+        "0.999": 0.04016430871475639,
+        "0.9999": 0.04016430871475639
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 2.466042312453734,
+        "0.9": 4.733949464698724,
+        "0.99": 9.31070189269525,
+        "0.999": 10.298540696091383,
+        "0.9999": 10.298540696091383
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.011413222862719362,
+        "0.9": 0.04031365524509698,
+        "0.99": 0.07852272588699777,
+        "0.999": 0.08249209604084848,
+        "0.9999": 0.08249209604084848
+      },
+      "assumed_density_kg_m3": 3900.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 7.633385310533413e-06,
+          "CNO_projectile_reaction_probability": 3.246421779681665e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 7.633058202414508e-05,
+          "CNO_projectile_reaction_probability": 3.246356819166614e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00022896994181504022,
+          "CNO_projectile_reaction_probability": 9.738637412148917e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.3356607385934342,
+          "mean_stopping_column_kg_m2": 0.03983865020243407,
+          "max_stopping_column_kg_m2": 0.08249209604084848,
+          "one_barn_reaction_probability": 0.00011764254316044942,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.1335194319986672,
+          "mean_stopping_column_kg_m2": 0.023881853762206116,
+          "max_stopping_column_kg_m2": 0.04016430871475639,
+          "one_barn_reaction_probability": 7.052474622725897e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.008083067241992557,
+          "mean_stopping_column_kg_m2": 0.016406653884006805,
+          "max_stopping_column_kg_m2": 0.043498061128848714,
+          "one_barn_reaction_probability": 4.84505564277987e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 0.06053880985670132,
+          "mean_stopping_column_kg_m2": 0.014118747491340376,
+          "max_stopping_column_kg_m2": 0.03164636065846209,
+          "one_barn_reaction_probability": 4.169435206975753e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.7215097379883343,
+          "mean_stopping_column_kg_m2": 0.008501971745716283,
+          "max_stopping_column_kg_m2": 0.03407100661096564,
+          "one_barn_reaction_probability": 2.5107524541018882e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 1.927445503251466e-09,
+          "mean_stopping_column_kg_m2": 0.006517696297873398,
+          "max_stopping_column_kg_m2": 0.03649536494975544,
+          "one_barn_reaction_probability": 1.924772836911721e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 0.21123957201797694,
+          "mean_stopping_column_kg_m2": 0.010251519556572962,
+          "max_stopping_column_kg_m2": 0.03407793706144009,
+          "one_barn_reaction_probability": 3.027413806420877e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 9.322176082172269e-10,
+          "mean_stopping_column_kg_m2": 0.008389426751783492,
+          "max_stopping_column_kg_m2": 0.03650085400207845,
+          "one_barn_reaction_probability": 2.4775182469152214e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "tin",
+      "stage": "C13",
+      "nuclei_per_He": 0.09069882961659283,
+      "CNO_nuclei_per_He": 0.08096900211225647,
+      "kinetic_fluence_J_m2": 34108878.22900215,
+      "max_source_MeV_u": 1.8190405642134622,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.02626516359386683,
+        "0.9": 0.1150158488619588,
+        "0.99": 0.16245463520315118,
+        "0.999": 0.1709423362040372,
+        "0.9999": 0.1709423362040372
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3.9201736707263923,
+        "0.9": 17.166544606262505,
+        "0.99": 24.246960478082265,
+        "0.999": 25.513781522990627,
+        "0.9999": 25.513781522990627
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.028446973870476094,
+        "0.9": 0.15320682273297448,
+        "0.99": 0.23810290922526792,
+        "0.999": 0.2575329813666606,
+        "0.9999": 0.2575329813666606
+      },
+      "assumed_density_kg_m3": 6700.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 2.456954467939906e-07,
+          "CNO_projectile_reaction_probability": 1.9502600831097657e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 2.4568899599881662e-06,
+          "CNO_projectile_reaction_probability": 1.95022645313714e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 7.370239860788593e-06,
+          "CNO_projectile_reaction_probability": 5.8504551721969774e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.009729819707077317,
+          "mean_stopping_column_kg_m2": 0.1778496680708077,
+          "max_stopping_column_kg_m2": 0.2575329813666606,
+          "one_barn_reaction_probability": 9.021861682054424e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.776694451397035e-09,
+          "mean_stopping_column_kg_m2": 0.047123206574734705,
+          "max_stopping_column_kg_m2": 0.2747839089272617,
+          "one_barn_reaction_probability": 2.3905188336949906e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 2.1425126469746138e-08,
+          "mean_stopping_column_kg_m2": 0.02791842500047769,
+          "max_stopping_column_kg_m2": 0.15803579020137978,
+          "one_barn_reaction_probability": 1.4162852726477055e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.0122888875476858,
+          "mean_stopping_column_kg_m2": 0.11911257797287951,
+          "max_stopping_column_kg_m2": 0.1709423362040372,
+          "one_barn_reaction_probability": 6.042365515922373e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 1.6226769215413534e-09,
+          "mean_stopping_column_kg_m2": 0.015030568860567957,
+          "max_stopping_column_kg_m2": 0.05938747970975263,
+          "one_barn_reaction_probability": 7.6249518674692984e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.06612102047052672,
+          "mean_stopping_column_kg_m2": 0.023987915914430797,
+          "max_stopping_column_kg_m2": 0.06388598908201029,
+          "one_barn_reaction_probability": 1.2168948095380868e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.0014490602269373624,
+          "mean_stopping_column_kg_m2": 0.02356267303507936,
+          "max_stopping_column_kg_m2": 0.06838038073454737,
+          "one_barn_reaction_probability": 1.1953224708874935e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 2.499230499701274e-10,
+          "mean_stopping_column_kg_m2": 0.015556626249364831,
+          "max_stopping_column_kg_m2": 0.056334104981470706,
+          "one_barn_reaction_probability": 7.891819397044752e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.001110000270126975,
+          "mean_stopping_column_kg_m2": 0.025918799169380686,
+          "max_stopping_column_kg_m2": 0.06029268684996072,
+          "one_barn_reaction_probability": 1.3148474115570112e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 1.0271506720660941e-08,
+          "mean_stopping_column_kg_m2": 0.011168042084015378,
+          "max_stopping_column_kg_m2": 0.06424772751388212,
+          "one_barn_reaction_probability": 5.665512251081497e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o17",
+          "nuclei_per_He": 2.696743479274491e-11,
+          "mean_stopping_column_kg_m2": 0.009819816405171154,
+          "max_stopping_column_kg_m2": 0.06819960556198686,
+          "one_barn_reaction_probability": 4.9815637146247115e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "f18",
+          "nuclei_per_He": 2.0156776662420977e-11,
+          "mean_stopping_column_kg_m2": 0.016100681391170064,
+          "max_stopping_column_kg_m2": 0.115768700242259,
+          "one_barn_reaction_probability": 8.167811316564439e-06,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "tin",
+      "stage": "A",
+      "nuclei_per_He": 2.703121979769765,
+      "CNO_nuclei_per_He": 1.850651463008693,
+      "kinetic_fluence_J_m2": 19953251.145019997,
+      "max_source_MeV_u": 0.9523242929567967,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.02095487932550251,
+        "0.9": 0.029608723054683306,
+        "0.99": 0.03994112923981714,
+        "0.999": 0.04214741922975187,
+        "0.9999": 0.04214741922975187
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3.1275939291794788,
+        "0.9": 4.419212396221389,
+        "0.99": 5.961362573107035,
+        "0.999": 6.290659586530129,
+        "0.9999": 6.290659586530129
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.02569075030982485,
+        "0.9": 0.09352974784920522,
+        "0.99": 0.13882254677886638,
+        "0.999": 0.14834826154240852,
+        "0.9999": 0.14834826154240852
+      },
+      "assumed_density_kg_m3": 6700.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 5.5529135063587e-06,
+          "CNO_projectile_reaction_probability": 1.0564487911518281e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 5.552828450738864e-05,
+          "CNO_projectile_reaction_probability": 1.0564431106306794e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.0001665791833924457,
+          "CNO_projectile_reaction_probability": 3.1692914622284194e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.8524704392782072,
+          "mean_stopping_column_kg_m2": 0.08319447035760058,
+          "max_stopping_column_kg_m2": 0.14834826154240852,
+          "one_barn_reaction_probability": 4.220346030755788e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.74804157165339e-08,
+          "mean_stopping_column_kg_m2": 0.05793667188826877,
+          "max_stopping_column_kg_m2": 0.16263671503968832,
+          "one_barn_reaction_probability": 2.9390693782095282e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 5.874817423129954e-08,
+          "mean_stopping_column_kg_m2": 0.040358100376557154,
+          "max_stopping_column_kg_m2": 0.10951912788231205,
+          "one_barn_reaction_probability": 2.0473363991180914e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.789130886554777e-09,
+          "mean_stopping_column_kg_m2": 0.03453522745858293,
+          "max_stopping_column_kg_m2": 0.11838326648592727,
+          "one_barn_reaction_probability": 1.7519480172711823e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.65008566024853e-09,
+          "mean_stopping_column_kg_m2": 0.014783572444725668,
+          "max_stopping_column_kg_m2": 0.03920154183040347,
+          "one_barn_reaction_probability": 7.4996531229019355e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.8524705569503775,
+          "mean_stopping_column_kg_m2": 0.024494004525892992,
+          "max_stopping_column_kg_m2": 0.04214741922975187,
+          "one_barn_reaction_probability": 1.2425688112852132e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6668105421837605,
+          "mean_stopping_column_kg_m2": 0.017304195018026998,
+          "max_stopping_column_kg_m2": 0.04508918517340362,
+          "one_barn_reaction_probability": 8.778348393039528e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 1.1431258602369785e-09,
+          "mean_stopping_column_kg_m2": 0.014748794536755644,
+          "max_stopping_column_kg_m2": 0.03746620265055571,
+          "one_barn_reaction_probability": 7.482011846063617e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.33137029653723926,
+          "mean_stopping_column_kg_m2": 0.018471136332685118,
+          "max_stopping_column_kg_m2": 0.04007720487277413,
+          "one_barn_reaction_probability": 9.37033316700109e-06,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "tin",
+      "stage": "B1",
+      "nuclei_per_He": 3.322564057309049,
+      "CNO_nuclei_per_He": 1.661376690498307,
+      "kinetic_fluence_J_m2": 137785.55323628456,
+      "max_source_MeV_u": 0.44805548186245,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.027161951464643938,
+        "0.9": 0.04844385514512716,
+        "0.99": 0.055169773108593306,
+        "0.999": 0.05882841784453536,
+        "0.9999": 0.061267403076968055
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 4.054022606663274,
+        "0.9": 7.230426141063756,
+        "0.99": 8.234294493819897,
+        "0.999": 8.780360872318711,
+        "0.9999": 9.144388518950457
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.04409913214316965,
+        "0.9": 0.07645105253131318,
+        "0.99": 0.09122509152043067,
+        "0.999": 0.09541217120319923,
+        "0.9999": 0.09541217120319923
+      },
+      "assumed_density_kg_m3": 6700.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 7.676502170602745e-06,
+          "CNO_projectile_reaction_probability": 1.5505757075207297e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 7.676404176938745e-05,
+          "CNO_projectile_reaction_probability": 1.5505631325594675e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.0002302855926004328,
+          "CNO_projectile_reaction_probability": 4.651605566226251e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.6611874520651072,
+          "mean_stopping_column_kg_m2": 0.06977641157271637,
+          "max_stopping_column_kg_m2": 0.09541217120319923,
+          "one_barn_reaction_probability": 3.539681052433715e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 0.9999999146890839,
+          "mean_stopping_column_kg_m2": 0.05440552612221331,
+          "max_stopping_column_kg_m2": 0.10501122140086563,
+          "one_barn_reaction_probability": 2.7599422706298286e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.9999316634131963,
+          "mean_stopping_column_kg_m2": 0.03627251219741804,
+          "max_stopping_column_kg_m2": 0.0723223746666859,
+          "one_barn_reaction_probability": 1.8400802977892897e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.7799522863805167e-05,
+          "mean_stopping_column_kg_m2": 0.030758467036200433,
+          "max_stopping_column_kg_m2": 0.07808821887748894,
+          "one_barn_reaction_probability": 1.5603573291741935e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.0451063604216744e-05,
+          "mean_stopping_column_kg_m2": 0.013393125126737314,
+          "max_stopping_column_kg_m2": 0.026316170843404332,
+          "one_barn_reaction_probability": 6.794287307533724e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 6.631949498463084e-10,
+          "mean_stopping_column_kg_m2": 0.012654026933187174,
+          "max_stopping_column_kg_m2": 0.02827105903671111,
+          "one_barn_reaction_probability": 6.419344994366617e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6612557041517065,
+          "mean_stopping_column_kg_m2": 0.021939452464882537,
+          "max_stopping_column_kg_m2": 0.030221847977526996,
+          "one_barn_reaction_probability": 1.1129786395281375e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 0.00012107154216209322,
+          "mean_stopping_column_kg_m2": 0.01455029050945345,
+          "max_stopping_column_kg_m2": 0.02857663494007204,
+          "one_barn_reaction_probability": 7.381310724641923e-06,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "tin",
+      "stage": "B2",
+      "nuclei_per_He": 1.4705513607109713,
+      "CNO_nuclei_per_He": 1.134890621985191,
+      "kinetic_fluence_J_m2": 29471128.372122247,
+      "max_source_MeV_u": 1.6276712263917124,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.02362401134443163,
+        "0.9": 0.08890565038998866,
+        "0.99": 0.13921140937973098,
+        "0.999": 0.14722352724380022,
+        "0.9999": 0.14722352724380022
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3.5259718424524817,
+        "0.9": 13.269500058207262,
+        "0.99": 20.777822295482235,
+        "0.999": 21.97366078265675,
+        "0.9999": 21.97366078265675
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.027608458368516543,
+        "0.9": 0.1475634016033998,
+        "0.99": 0.22335951482286098,
+        "0.999": 0.230823470624181,
+        "0.9999": 0.230823470624181
+      },
+      "assumed_density_kg_m3": 6700.0,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 4.305819857039415e-06,
+          "CNO_projectile_reaction_probability": 1.6511240264222979e-06,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 4.305707726060886e-05,
+          "CNO_projectile_reaction_probability": 1.6511012346607435e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00012916375693112892,
+          "CNO_projectile_reaction_probability": 4.9531517659767635e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.3356607385934342,
+          "mean_stopping_column_kg_m2": 0.14282249579162176,
+          "max_stopping_column_kg_m2": 0.230823470624181,
+          "one_barn_reaction_probability": 7.245078554873344e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.1335194319986672,
+          "mean_stopping_column_kg_m2": 0.10717276228155255,
+          "max_stopping_column_kg_m2": 0.14722352724380022,
+          "one_barn_reaction_probability": 5.436702084366102e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.008083067241992557,
+          "mean_stopping_column_kg_m2": 0.08635038808144498,
+          "max_stopping_column_kg_m2": 0.15922917033648468,
+          "one_barn_reaction_probability": 4.380437803256043e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 0.06053880985670132,
+          "mean_stopping_column_kg_m2": 0.03129509876988748,
+          "max_stopping_column_kg_m2": 0.054802080663096345,
+          "one_barn_reaction_probability": 1.5875825685350495e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.7215097379883343,
+          "mean_stopping_column_kg_m2": 0.021047682774343653,
+          "max_stopping_column_kg_m2": 0.0589478927132353,
+          "one_barn_reaction_probability": 1.0677393239097926e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 1.927445503251466e-09,
+          "mean_stopping_column_kg_m2": 0.016870746673453653,
+          "max_stopping_column_kg_m2": 0.06308958652323547,
+          "one_barn_reaction_probability": 8.558460323769513e-06,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 0.21123957201797694,
+          "mean_stopping_column_kg_m2": 0.022957251662987867,
+          "max_stopping_column_kg_m2": 0.052084209146237466,
+          "one_barn_reaction_probability": 1.1646107573318705e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 9.322176082172269e-10,
+          "mean_stopping_column_kg_m2": 0.019512506440662297,
+          "max_stopping_column_kg_m2": 0.05573924968091716,
+          "one_barn_reaction_probability": 9.89861130477314e-06,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "hydrogen",
+      "stage": "C13",
+      "nuclei_per_He": 0.09069882961659283,
+      "CNO_nuclei_per_He": 0.08096900211225647,
+      "kinetic_fluence_J_m2": 34108878.22900215,
+      "max_source_MeV_u": 1.8190405642134622,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.0024955269404080506,
+        "0.9": 0.023129632246421953,
+        "0.99": 0.03278928735658031,
+        "0.999": 0.03424723933784246,
+        "0.9999": 0.03424723933784246
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 2495526.9404080505,
+        "0.9": 23129632.24642195,
+        "0.99": 32789287.35658031,
+        "0.999": 34247239.33784246,
+        "0.9999": 34247239.33784246
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.00277610520822792,
+        "0.9": 0.022794329882956554,
+        "0.99": 0.03278928735658031,
+        "0.999": 0.03424723933784246,
+        "0.9999": 0.03424723933784246
+      },
+      "assumed_density_kg_m3": 0.001,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 3.5500109123013384e-06,
+          "CNO_projectile_reaction_probability": 3.398539184180635e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 3.548352880371113e-05,
+          "CNO_projectile_reaction_probability": 0.000339691417360056,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.00010634020543073144,
+          "CNO_projectile_reaction_probability": 0.0010179925277996192,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.009729819707077317,
+          "mean_stopping_column_kg_m2": 0.01373292783593439,
+          "max_stopping_column_kg_m2": 0.026002389855182915,
+          "one_barn_reaction_probability": 0.0008200617417214354,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.776694451397035e-09,
+          "mean_stopping_column_kg_m2": 0.0017592553038006664,
+          "max_stopping_column_kg_m2": 0.02788598647035477,
+          "one_barn_reaction_probability": 0.00010509703366298039,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 2.1425126469746138e-08,
+          "mean_stopping_column_kg_m2": 0.004843824482659533,
+          "max_stopping_column_kg_m2": 0.03161509528268534,
+          "one_barn_reaction_probability": 0.0002893316495084303,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.0122888875476858,
+          "mean_stopping_column_kg_m2": 0.023940879899485068,
+          "max_stopping_column_kg_m2": 0.03424723933784246,
+          "one_barn_reaction_probability": 0.0014291953902488064,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 1.6226769215413534e-09,
+          "mean_stopping_column_kg_m2": 0.001360357558839738,
+          "max_stopping_column_kg_m2": 0.010137554592986663,
+          "one_barn_reaction_probability": 8.126853678118605e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.06612102047052672,
+          "mean_stopping_column_kg_m2": 0.0024267122199504894,
+          "max_stopping_column_kg_m2": 0.01091709401398191,
+          "one_barn_reaction_probability": 0.00014496687242229481,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.0014490602269373624,
+          "mean_stopping_column_kg_m2": 0.0023299665125590782,
+          "max_stopping_column_kg_m2": 0.011696633903839498,
+          "one_barn_reaction_probability": 0.00013918790025652203,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 2.499230499701274e-10,
+          "mean_stopping_column_kg_m2": 0.0012149299697298323,
+          "max_stopping_column_kg_m2": 0.008571295049035496,
+          "one_barn_reaction_probability": 7.258116186211955e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.001110000270126975,
+          "mean_stopping_column_kg_m2": 0.002325409739774086,
+          "max_stopping_column_kg_m2": 0.00918329955698738,
+          "one_barn_reaction_probability": 0.00013891671712079197,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 1.0271506720660941e-08,
+          "mean_stopping_column_kg_m2": 0.0008511208266706385,
+          "max_stopping_column_kg_m2": 0.00979530487374482,
+          "one_barn_reaction_probability": 5.084734423530543e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o17",
+          "nuclei_per_He": 2.696743479274491e-11,
+          "mean_stopping_column_kg_m2": 0.0007450177443893756,
+          "max_stopping_column_kg_m2": 0.010407308635970725,
+          "one_barn_reaction_probability": 4.45087539679721e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "f18",
+          "nuclei_per_He": 2.0156776662420977e-11,
+          "mean_stopping_column_kg_m2": 0.0008640371939423609,
+          "max_stopping_column_kg_m2": 0.011597080820404232,
+          "one_barn_reaction_probability": 5.1618958133579095e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "hydrogen",
+      "stage": "A",
+      "nuclei_per_He": 2.703121979769765,
+      "CNO_nuclei_per_He": 1.850651463008693,
+      "kinetic_fluence_J_m2": 19953251.145019997,
+      "max_source_MeV_u": 0.9523242929567967,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.001853320067066375,
+        "0.9": 0.0029139225228271915,
+        "0.99": 0.004806160073765871,
+        "0.999": 0.005288816868806457,
+        "0.9999": 0.005288816868806457
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 1853320.0670663747,
+        "0.9": 2913922.5228271913,
+        "0.99": 4806160.073765871,
+        "0.999": 5288816.868806458,
+        "0.9999": 5288816.868806458
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.0020996364179551815,
+        "0.9": 0.003795411029291849,
+        "0.99": 0.008104353602304944,
+        "0.999": 0.009328727645061317,
+        "0.9999": 0.009328727645061317
+      },
+      "assumed_density_kg_m3": 0.001,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 3.747999876928142e-05,
+          "CNO_projectile_reaction_probability": 1.1557064106331202e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 0.00037476933016889077,
+          "CNO_projectile_reaction_probability": 0.0001155634074243605,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.0011241036540084047,
+          "CNO_projectile_reaction_probability": 0.00034664200556337336,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.8524704392782072,
+          "mean_stopping_column_kg_m2": 0.003159677884848149,
+          "max_stopping_column_kg_m2": 0.009328727645061317,
+          "one_barn_reaction_probability": 0.0001887475784226691,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 7.74804157165339e-08,
+          "mean_stopping_column_kg_m2": 0.002173025202246842,
+          "max_stopping_column_kg_m2": 0.010769394741709964,
+          "one_barn_reaction_probability": 0.00012981419519925331,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 5.874817423129954e-08,
+          "mean_stopping_column_kg_m2": 0.007424646847411628,
+          "max_stopping_column_kg_m2": 0.022011191834017327,
+          "one_barn_reaction_probability": 0.0004434571541655262,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.789130886554777e-09,
+          "mean_stopping_column_kg_m2": 0.006201791122423341,
+          "max_stopping_column_kg_m2": 0.02384301963636099,
+          "one_barn_reaction_probability": 0.0003704267612789717,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.65008566024853e-09,
+          "mean_stopping_column_kg_m2": 0.001328009440716596,
+          "max_stopping_column_kg_m2": 0.00491129309963255,
+          "one_barn_reaction_probability": 7.933630507530366e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.8524705569503775,
+          "mean_stopping_column_kg_m2": 0.0024011226477557634,
+          "max_stopping_column_kg_m2": 0.005288816868806457,
+          "one_barn_reaction_probability": 0.00014343958756509636,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6668105421837605,
+          "mean_stopping_column_kg_m2": 0.0015743448749832702,
+          "max_stopping_column_kg_m2": 0.005666340006928021,
+          "one_barn_reaction_probability": 9.405162410100087e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 1.1431258602369785e-09,
+          "mean_stopping_column_kg_m2": 0.0011360931363312023,
+          "max_stopping_column_kg_m2": 0.004160255017168424,
+          "one_barn_reaction_probability": 6.787165521295971e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 0.33137029653723926,
+          "mean_stopping_column_kg_m2": 0.0014586041842197062,
+          "max_stopping_column_kg_m2": 0.004457187716753663,
+          "one_barn_reaction_probability": 8.713793155456473e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "hydrogen",
+      "stage": "B1",
+      "nuclei_per_He": 3.322564057309049,
+      "CNO_nuclei_per_He": 1.661376690498307,
+      "kinetic_fluence_J_m2": 137785.55323628456,
+      "max_source_MeV_u": 0.44805548186245,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.0038438003596200344,
+        "0.9": 0.009094970848837904,
+        "0.99": 0.010512506774695136,
+        "0.999": 0.011284592115750159,
+        "0.9999": 0.011799593623754606
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 3843800.359620034,
+        "0.9": 9094970.848837903,
+        "0.99": 10512506.774695136,
+        "0.999": 11284592.11575016,
+        "0.9999": 11799593.623754606
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.0024236245494842247,
+        "0.9": 0.008110277935841065,
+        "0.99": 0.010188015818383902,
+        "0.999": 0.011170515633258207,
+        "0.9999": 0.011723416546761106
+      },
+      "assumed_density_kg_m3": 0.001,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 6.8106340716593e-05,
+          "CNO_projectile_reaction_probability": 2.8441898241046807e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 0.0006809662169737732,
+          "CNO_projectile_reaction_probability": 0.00028436826669014925,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.002042250980528853,
+          "CNO_projectile_reaction_probability": 0.0008527668469796913,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.6611874520651072,
+          "mean_stopping_column_kg_m2": 0.002250114728623262,
+          "max_stopping_column_kg_m2": 0.0035796138199599052,
+          "one_barn_reaction_probability": 0.00013441990037465042,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "he4",
+          "nuclei_per_He": 0.9999999146890839,
+          "mean_stopping_column_kg_m2": 0.002002806603023899,
+          "max_stopping_column_kg_m2": 0.004527956189989932,
+          "one_barn_reaction_probability": 0.0001196466659489592,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.9999316634131963,
+          "mean_stopping_column_kg_m2": 0.006567919252472322,
+          "max_stopping_column_kg_m2": 0.014136128071700923,
+          "one_barn_reaction_probability": 0.0003923017735733416,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 1.7799522863805167e-05,
+          "mean_stopping_column_kg_m2": 0.0054324792726702,
+          "max_stopping_column_kg_m2": 0.015311732413416086,
+          "one_barn_reaction_probability": 0.00032448557701508725,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 5.0451063604216744e-05,
+          "mean_stopping_column_kg_m2": 0.0011901407507622758,
+          "max_stopping_column_kg_m2": 0.0025560810909202652,
+          "one_barn_reaction_probability": 7.110031627707443e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 6.631949498463084e-10,
+          "mean_stopping_column_kg_m2": 0.0011191314329848444,
+          "max_stopping_column_kg_m2": 0.0027524374107355505,
+          "one_barn_reaction_probability": 6.685809631880023e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 0.6612557041517065,
+          "mean_stopping_column_kg_m2": 0.002028961801734429,
+          "max_stopping_column_kg_m2": 0.0029487930944141817,
+          "one_barn_reaction_probability": 0.00012120936676093946,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o16",
+          "nuclei_per_He": 0.00012107154216209322,
+          "mean_stopping_column_kg_m2": 0.0011194306766844327,
+          "max_stopping_column_kg_m2": 0.0024263857044401925,
+          "one_barn_reaction_probability": 6.687616663427042e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    },
+    {
+      "material": "hydrogen",
+      "stage": "B2",
+      "nuclei_per_He": 1.4705513607109713,
+      "CNO_nuclei_per_He": 1.134890621985191,
+      "kinetic_fluence_J_m2": 29471128.372122247,
+      "max_source_MeV_u": 1.6276712263917124,
+      "CNO_range_quantiles_kg_m2": {
+        "0.5": 0.002134417749948742,
+        "0.9": 0.017645399261997465,
+        "0.99": 0.028234241227211174,
+        "0.999": 0.02973597978722176,
+        "0.9999": 0.02973597978722176
+      },
+      "CNO_range_quantiles_um_at_assumed_density": {
+        "0.5": 2134417.749948742,
+        "0.9": 17645399.261997465,
+        "0.99": 28234241.22721117,
+        "0.999": 29735979.78722176,
+        "0.9999": 29735979.78722176
+      },
+      "all_nuclei_range_quantiles_kg_m2": {
+        "0.5": 0.00254279177955895,
+        "0.9": 0.017573673812017437,
+        "0.99": 0.028234241227211174,
+        "0.999": 0.02973597978722176,
+        "0.9999": 0.02973597978722176
+      },
+      "assumed_density_kg_m3": 0.001,
+      "constant_cross_section_acceptance_tests": [
+        {
+          "sigma_barn": 0.1,
+          "target_reactions_per_He": 4.89799971668654e-05,
+          "CNO_projectile_reaction_probability": 2.676462578145541e-05,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 1.0,
+          "target_reactions_per_He": 0.0004896216613630212,
+          "CNO_projectile_reaction_probability": 0.0002675423812676588,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        },
+        {
+          "sigma_barn": 3.0,
+          "target_reactions_per_He": 0.0014676775872168877,
+          "CNO_projectile_reaction_probability": 0.0008019355187539428,
+          "scope": "If each selected nonelastic event destroys one target atom and one incidentCNO, these are loss sensitivities. Actual channels can retain catalyst; this is not a cross-section prediction."
+        }
+      ],
+      "C_fusion_fit_reactions_per_He": 0.0,
+      "species": [
+        {
+          "species": "p",
+          "nuclei_per_He": 0.3356607385934342,
+          "mean_stopping_column_kg_m2": 0.009278038481280192,
+          "max_stopping_column_kg_m2": 0.021612604787989258,
+          "one_barn_reaction_probability": 0.0005541021051736637,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c12",
+          "nuclei_per_He": 0.1335194319986672,
+          "mean_stopping_column_kg_m2": 0.02150049265268991,
+          "max_stopping_column_kg_m2": 0.02973597978722176,
+          "one_barn_reaction_probability": 0.0012836368840218441,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "c13",
+          "nuclei_per_He": 0.008083067241992557,
+          "mean_stopping_column_kg_m2": 0.017071794212647633,
+          "max_stopping_column_kg_m2": 0.03221153172555625,
+          "one_barn_reaction_probability": 0.0010193547161150896,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n13",
+          "nuclei_per_He": 0.06053880985670132,
+          "mean_stopping_column_kg_m2": 0.0034705715358941043,
+          "max_stopping_column_kg_m2": 0.008854644746092974,
+          "one_barn_reaction_probability": 0.00020732064126867546,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n14",
+          "nuclei_per_He": 0.7215097379883343,
+          "mean_stopping_column_kg_m2": 0.002010431355277225,
+          "max_stopping_column_kg_m2": 0.00953550073514587,
+          "one_barn_reaction_probability": 0.00012010148059413168,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "n15",
+          "nuclei_per_He": 1.927445503251466e-09,
+          "mean_stopping_column_kg_m2": 0.0015488377247847777,
+          "max_stopping_column_kg_m2": 0.010216355918381475,
+          "one_barn_reaction_probability": 9.252746905388403e-05,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o14",
+          "nuclei_per_He": 0.21123957201797694,
+          "mean_stopping_column_kg_m2": 0.001964919887636744,
+          "max_stopping_column_kg_m2": 0.007497160815944965,
+          "one_barn_reaction_probability": 0.00011738343314730117,
+          "C_fusion_fit_reactions_per_He": null
+        },
+        {
+          "species": "o15",
+          "nuclei_per_He": 9.322176082172269e-10,
+          "mean_stopping_column_kg_m2": 0.0015859191042568023,
+          "max_stopping_column_kg_m2": 0.008032441881664057,
+          "one_barn_reaction_probability": 9.474308399770756e-05,
+          "C_fusion_fit_reactions_per_He": null
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "material": "carbon",
+      "all_projectiles_per_He": 7.586936227406378,
+      "CNO_per_He": 4.7278877776044475,
+      "one_barn_target_events_per_He": 0.00031472451226268535,
+      "CNO_one_barn_reaction_fraction": 3.226768870272386e-05,
+      "carbon_full_budget_barn_equivalent": 1.4946630768229072,
+      "carbon_fusion_fit_events_per_He": 9.275624285910378e-07
+    },
+    {
+      "material": "aluminium",
+      "all_projectiles_per_He": 7.586936227406378,
+      "CNO_per_He": 4.7278877776044475,
+      "one_barn_target_events_per_He": 0.0002223847203069046,
+      "CNO_one_barn_reaction_fraction": 2.1068953932338648e-05,
+      "carbon_full_budget_barn_equivalent": null,
+      "carbon_fusion_fit_events_per_He": 0.0
+    },
+    {
+      "material": "alumina",
+      "all_projectiles_per_He": 7.586936227406378,
+      "CNO_per_He": 4.7278877776044475,
+      "one_barn_target_events_per_He": 0.0002624007910340027,
+      "CNO_one_barn_reaction_fraction": 2.5341929632387935e-05,
+      "carbon_full_budget_barn_equivalent": null,
+      "carbon_fusion_fit_events_per_He": 0.0
+    },
+    {
+      "material": "tin",
+      "all_projectiles_per_He": 7.586936227406378,
+      "CNO_per_He": 4.7278877776044475,
+      "one_barn_target_events_per_He": 0.0001778062934973731,
+      "CNO_one_barn_reaction_fraction": 1.388126144175925e-05,
+      "carbon_full_budget_barn_equivalent": null,
+      "carbon_fusion_fit_events_per_He": 0.0
+    },
+    {
+      "material": "hydrogen",
+      "all_projectiles_per_He": 7.586936227406378,
+      "CNO_per_He": 4.7278877776044475,
+      "one_barn_target_events_per_He": 0.0015808407373093963,
+      "CNO_one_barn_reaction_fraction": 0.00021520100756412244,
+      "carbon_full_budget_barn_equivalent": null,
+      "carbon_fusion_fit_events_per_He": 0.0
+    }
+  ],
+  "checks": {
+    "all_ranges_positive": true,
+    "all_probabilities_0_1": true
+  }
+}

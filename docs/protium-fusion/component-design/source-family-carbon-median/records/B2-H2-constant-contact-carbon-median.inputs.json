@@ -1,0 +1,102 @@
+{
+  "stage": "B2",
+  "hydrogen_per_catalyst": 2,
+  "initial_Y": {
+    "p": 0.14285714285714285,
+    "c12": 0.07142857142857142
+  },
+  "duration_s": 6.306272486811078e-05,
+  "physical_duration_s": 6.306272486811078e-05,
+  "contact": {
+    "rho_kg_m3": 3761.2057185023837,
+    "T_K": 439706.51517972647,
+    "p": 8701260304398.5205,
+    "e": 3451030599.614409,
+    "s": 38524.95148729342,
+    "q": [
+      3.1667625815407505,
+      0.8326814279395723
+    ],
+    "q_J_kg": 3451030599.516882,
+    "error": 1.9730589466737277e-10
+  },
+  "target_reference_T_factor": 1.0,
+  "constant_contact_entropy_J_kg_K": 38524.951487294995,
+  "temperature_ratio_mass_q10_q50_q90": [
+    0.9970537081582843,
+    0.998007297052394,
+    1.0035185947168104
+  ],
+  "temperature_ratio_minmax": [
+    0.9969177098259715,
+    1.0313486999428523
+  ],
+  "old_specific_internal_J_kg": 252865044997.25055,
+  "new_specific_internal_J_kg": 252500731968.67358,
+  "old_specific_kinetic_J_kg": 3349689353722.192,
+  "velocity_scale": 1.000054378643055,
+  "prepared_energy_relative_error": 0.0,
+  "contact_heat_J": 3.899807663959469e+22,
+  "contact_heat_fraction_prepared": 0.0009571505815852191,
+  "transverse_collision_speed_each_stream_m_s": 83078.64466295634,
+  "pair_half_angle_degrees_mass_q10_q50_q90": [
+    1.3793792459850371,
+    1.8596358025549,
+    2.631281433272266
+  ],
+  "pair_half_angle_degrees_minmax": [
+    1.1293833033218412,
+    5.0416616117354165
+  ],
+  "postshock_rarefaction_mass_fraction": 0.0,
+  "cold_reference": {
+    "composition": "C12H2",
+    "rho_kg_m3": 944.2,
+    "T_K": 300,
+    "bulk_modulus_Pa": 2000000000.0
+  },
+  "rate_update": {
+    "revision": "luna2023-public-repository-2026-10-31",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged."
+  },
+  "FEOS_library_sha256": "678308b40e53362f0fc05c95444ba3a45e6c523b7702a84db1cbcd48c3d64bb2",
+  "FEOS_material_database_sha256": "282f80673e6cd9b2596e14a81a5c9513fe08a25dc00e5f349738d645b7ce9939",
+  "profile_source": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.initial.json",
+  "profile_sha256": "bb05ee3a1890d093957f76ae14a035ec4ee37eb7f37de7deffdeecbe6d67bef7",
+  "baseline_source": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.json",
+  "baseline_sha256": "96132fe9689d6dfe8d16869cb3e804216948eebc55472340c0670118a178e823",
+  "code_sha256": "54ecc5054790bf71a119e9087b26d8100d829425e5c9c2a58829c12898af1a6d",
+  "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+  "radial_module_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+  "scope": "Controlled collision-energy geometry, not temperature clipping. FEOSdefinesonecontactshockentropy andeachparcelmapsisentropicallytooriginalhotdensity. Anglesuseanexplicitlocalcoldenergyallocationequaltohotinternal+radialKE; actualpressurework/3Dgeometryremainsunresolved. Noexternalultrafastheateroradditionalinputenergy."
+}

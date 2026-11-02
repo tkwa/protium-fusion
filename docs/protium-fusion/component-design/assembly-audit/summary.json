@@ -1,0 +1,413 @@
+{
+  "scope": "Conditional assembly audit: kinematic and EOS checks, reversible FEOS pressure-work continuation, actual controlled FastEOS30us preparation radiation and separate A/C13 omission screens. These do not supply a 3D cold-source trajectory.",
+  "code_sha256": "05e92f7b9a38a0e01aba75b1f0fcfb8338660f78f5d7ed24c577d807ab4a00d6",
+  "backward_cases": {
+    "B1-backward-feos128": {
+      "stage": "B1",
+      "numerics": {
+        "zones": 128,
+        "rtol": 1e-09,
+        "atol": 1.0000000000000001e-11,
+        "max_step_s": 2e-07,
+        "samples": 801,
+        "requested_duration_s": 0.0001,
+        "elapsed_s": 9.999999999999999e-05,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "nfev": 7517,
+        "viscosity": 0.0,
+        "radiation": false,
+        "nuclear": false
+      },
+      "energy": {
+        "initial_total_J": 3.2022309498190735e+23,
+        "initial_internal_J": 2.7506730809165856e+22,
+        "initial_kinetic_J": 2.927163641727415e+23,
+        "initial_FEOS_energy_relative_to_source_FastEOS": 0.0022579434613412275,
+        "max_total_energy_residual_fraction": 3.6637359812630166e-14,
+        "final_internal_J": 2.775505904674564e+21,
+        "final_kinetic_J": 3.1744758907724256e+23,
+        "pressure_work_internal_to_kinetic_J": 2.4731224904501066e+22
+      },
+      "contact_active_mass_fraction": 0.9991760253906249,
+      "contact_crossed_mass_fraction": 0.8231506347656249,
+      "contact_not_crossed_active_mass_fraction": 0.17602539062499997,
+      "contact_crossing_time_mass_quantiles_s": [
+        4.973726915241506e-06,
+        2.346565489858396e-05,
+        2.960873955928582e-05
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        80.2255331137835,
+        122.50714612618995,
+        129.06248810860035
+      ],
+      "reverse_compression_max_mass_fraction": 4.768371582031252e-07,
+      "return_to_initial_max_dimensionless_error": 6.704728439110852e-11
+    },
+    "B1-backward-feos128-refined": {
+      "stage": "B1",
+      "numerics": {
+        "zones": 128,
+        "rtol": 3e-10,
+        "atol": 3e-12,
+        "max_step_s": 1e-07,
+        "samples": 801,
+        "requested_duration_s": 0.0001,
+        "elapsed_s": 9.999999999999999e-05,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "nfev": 15017,
+        "viscosity": 0.0,
+        "radiation": false,
+        "nuclear": false
+      },
+      "energy": {
+        "initial_total_J": 3.2022309498190735e+23,
+        "initial_internal_J": 2.7506730809165856e+22,
+        "initial_kinetic_J": 2.927163641727415e+23,
+        "initial_FEOS_energy_relative_to_source_FastEOS": 0.0022579434613412275,
+        "max_total_energy_residual_fraction": 4.207745263329343e-14,
+        "final_internal_J": 2.77550593300631e+21,
+        "final_kinetic_J": 3.174475890488937e+23,
+        "pressure_work_internal_to_kinetic_J": 2.47312248761522e+22
+      },
+      "contact_active_mass_fraction": 0.9991760253906249,
+      "contact_crossed_mass_fraction": 0.8231506347656249,
+      "contact_not_crossed_active_mass_fraction": 0.17602539062499997,
+      "contact_crossing_time_mass_quantiles_s": [
+        4.973726923433928e-06,
+        2.3465654921794832e-05,
+        2.9608739567916902e-05
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        80.22553311392707,
+        122.5071461133485,
+        129.06248815226752
+      ],
+      "reverse_compression_max_mass_fraction": 4.768371582031252e-07,
+      "return_to_initial_max_dimensionless_error": 1.5333571218301145e-11
+    },
+    "B2-backward-feos128": {
+      "stage": "B2",
+      "numerics": {
+        "zones": 128,
+        "rtol": 1e-09,
+        "atol": 1.0000000000000001e-11,
+        "max_step_s": 2e-07,
+        "samples": 801,
+        "requested_duration_s": 0.0004,
+        "elapsed_s": 0.0004,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "nfev": 30128,
+        "viscosity": 0.0,
+        "radiation": false,
+        "nuclear": false
+      },
+      "energy": {
+        "initial_total_J": 4.06973561090783e+25,
+        "initial_internal_J": 2.8091417501335655e+24,
+        "initial_kinetic_J": 3.788821435894474e+25,
+        "initial_FEOS_energy_relative_to_source_FastEOS": -0.0011430966511911667,
+        "max_total_energy_residual_fraction": 1.5192958002785417e-11,
+        "final_internal_J": 1.270881959410451e+22,
+        "final_kinetic_J": 4.068464728958286e+25,
+        "pressure_work_internal_to_kinetic_J": 2.7964329306381224e+24
+      },
+      "contact_active_mass_fraction": 0.999176025390625,
+      "contact_crossed_mass_fraction": 0.999176025390625,
+      "contact_not_crossed_active_mass_fraction": 0.0,
+      "contact_crossing_time_mass_quantiles_s": [
+        0.00012338041675044552,
+        0.00023575990735613962,
+        0.00024905693884325964
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        385.11959197619694,
+        630.8117513563377,
+        694.7106102329725
+      ],
+      "reverse_compression_max_mass_fraction": 0.0,
+      "return_to_initial_max_dimensionless_error": 8.663459005742169e-09
+    },
+    "B2-backward-feos128-refined": {
+      "stage": "B2",
+      "numerics": {
+        "zones": 128,
+        "rtol": 3e-10,
+        "atol": 3e-12,
+        "max_step_s": 1e-07,
+        "samples": 801,
+        "requested_duration_s": 0.0004,
+        "elapsed_s": 0.0004,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "nfev": 60182,
+        "viscosity": 0.0,
+        "radiation": false,
+        "nuclear": false
+      },
+      "energy": {
+        "initial_total_J": 4.06973561090783e+25,
+        "initial_internal_J": 2.8091417501335655e+24,
+        "initial_kinetic_J": 3.788821435894474e+25,
+        "initial_FEOS_energy_relative_to_source_FastEOS": -0.0011430966511911667,
+        "max_total_energy_residual_fraction": 3.3112401709445294e-12,
+        "final_internal_J": 1.2708455649668726e+22,
+        "final_kinetic_J": 4.068464765331071e+25,
+        "pressure_work_internal_to_kinetic_J": 2.796433294365975e+24
+      },
+      "contact_active_mass_fraction": 0.999176025390625,
+      "contact_crossed_mass_fraction": 0.999176025390625,
+      "contact_not_crossed_active_mass_fraction": 0.0,
+      "contact_crossing_time_mass_quantiles_s": [
+        0.00012338041717020444,
+        0.00023575994334043012,
+        0.0002490568406161424
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        385.1195906559787,
+        630.8118376706501,
+        694.710649325685
+      ],
+      "reverse_compression_max_mass_fraction": 0.0,
+      "return_to_initial_max_dimensionless_error": 3.2051739595750917e-09
+    },
+    "B2-backward-feos256": {
+      "stage": "B2",
+      "numerics": {
+        "zones": 256,
+        "rtol": 3e-10,
+        "atol": 3e-12,
+        "max_step_s": 1e-07,
+        "samples": 801,
+        "requested_duration_s": 0.0004,
+        "elapsed_s": 0.00039999999999999996,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "nfev": 60257,
+        "viscosity": 0.0,
+        "radiation": false,
+        "nuclear": false
+      },
+      "energy": {
+        "initial_total_J": 4.06973561090783e+25,
+        "initial_internal_J": 2.809141750133565e+24,
+        "initial_kinetic_J": 3.7888214358944735e+25,
+        "initial_FEOS_energy_relative_to_source_FastEOS": -0.0011430966511911667,
+        "max_total_energy_residual_fraction": 2.55306886742801e-12,
+        "final_internal_J": 1.2704557620692028e+22,
+        "final_kinetic_J": 4.068465155147975e+25,
+        "pressure_work_internal_to_kinetic_J": 2.7964371925350163e+24
+      },
+      "contact_active_mass_fraction": 0.999176025390625,
+      "contact_crossed_mass_fraction": 0.999176025390625,
+      "contact_not_crossed_active_mass_fraction": 0.0,
+      "contact_crossing_time_mass_quantiles_s": [
+        0.00012885401291409142,
+        0.00023502100728163965,
+        0.00024919532414907907
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        381.48448271421876,
+        629.8147838952501,
+        694.8091340184948
+      ],
+      "reverse_compression_max_mass_fraction": 0.0,
+      "return_to_initial_max_dimensionless_error": 5.9502618943163554e-09
+    }
+  },
+  "refinement_comparisons": {
+    "B1_time_EOS_refinement": {
+      "contact_crossing_time_mass_quantiles_s": [
+        1.647139535876363e-09,
+        9.891423236041419e-10,
+        2.915045982376796e-10
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        1.7896795156957523e-12,
+        -1.0482203993689154e-10,
+        3.3834135493293616e-10
+      ]
+    },
+    "B2_time_EOS_refinement": {
+      "contact_crossing_time_mass_quantiles_s": [
+        3.402151893538985e-09,
+        1.5263108510410461e-07,
+        -3.9439622800951923e-07
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        -3.4280734917402356e-09,
+        1.3683053978752469e-07,
+        5.627193822022036e-08
+      ]
+    },
+    "B2_128_to256": {
+      "contact_crossing_time_mass_quantiles_s": [
+        0.04436356975788236,
+        -0.003134273143777788,
+        0.0005560318383308616
+      ],
+      "contact_crossing_radius_mass_quantiles_m": [
+        -0.009438906848566742,
+        -0.0015805882449538844,
+        0.0001417636146867629
+      ]
+    }
+  },
+  "forward_B1_comparison": {
+    "k0": {
+      "prepared_J": 3.196326437256525e+23,
+      "radiation_escaped_J": 0.0,
+      "radiation_escaped_fraction_prepared": 0.0,
+      "energy_residual_fraction_initial": -3.512688478919252e-11,
+      "state_relative_to_no_radiation": {
+        "T_K": {
+          "mass_quantiles_relative": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_absolute_relative": 0.0,
+          "mass_weighted_absolute_change": 0.0
+        },
+        "rho_kg_m3": {
+          "mass_quantiles_relative": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_absolute_relative": 0.0,
+          "mass_weighted_absolute_change": 0.0
+        },
+        "velocity_m_s": {
+          "mass_quantiles_relative": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_absolute_relative": 0.0,
+          "mass_weighted_absolute_change": 0.0
+        },
+        "outer_radius_m": {
+          "mass_quantiles_relative": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_absolute_relative": 0.0,
+          "mass_weighted_absolute_change": 0.0
+        }
+      },
+      "temperature_relative_to_original_source128_mass_quantiles": [
+        -0.004213145418060559,
+        -0.0011525234233480694,
+        0.030065061464846696
+      ]
+    },
+    "k0p001": {
+      "prepared_J": 3.196326437256525e+23,
+      "radiation_escaped_J": 7.303449010114459e+18,
+      "radiation_escaped_fraction_prepared": 2.2849509127056382e-05,
+      "energy_residual_fraction_initial": -4.4946857254176264e-13,
+      "state_relative_to_no_radiation": {
+        "T_K": {
+          "mass_quantiles_relative": [
+            -0.0196677063439112,
+            -0.0010801741648497213,
+            0.07280451323387598
+          ],
+          "max_absolute_relative": 0.5420290094105724,
+          "mass_weighted_absolute_change": 466780.2185645813
+        },
+        "rho_kg_m3": {
+          "mass_quantiles_relative": [
+            -0.038779258813206895,
+            0.00020664917409831657,
+            0.037319035284634317
+          ],
+          "max_absolute_relative": 0.08431476615969724,
+          "mass_weighted_absolute_change": 201.84388107822866
+        },
+        "velocity_m_s": {
+          "mass_quantiles_relative": [
+            -0.00380314916905455,
+            -0.00041333163077942296,
+            0.004033753232068504
+          ],
+          "max_absolute_relative": 0.391258473644825,
+          "mass_weighted_absolute_change": 5488.582227430809
+        },
+        "outer_radius_m": {
+          "mass_quantiles_relative": [
+            -0.0004506707701726851,
+            -2.664031133451748e-05,
+            0.0004334448486148855
+          ],
+          "max_absolute_relative": 0.023543728192627067,
+          "mass_weighted_absolute_change": 0.024791161321064736
+        }
+      },
+      "temperature_relative_to_original_source128_mass_quantiles": [
+        -0.022493369668149014,
+        -0.0017698433768763033,
+        0.11763109321805709
+      ]
+    },
+    "k0p01": {
+      "prepared_J": 3.196326437256525e+23,
+      "radiation_escaped_J": 1.047115722729e+18,
+      "radiation_escaped_fraction_prepared": 3.2759974404484215e-06,
+      "energy_residual_fraction_initial": -3.2160251311177847e-13,
+      "state_relative_to_no_radiation": {
+        "T_K": {
+          "mass_quantiles_relative": [
+            -0.011056559653358422,
+            -0.0004148498190721105,
+            0.01739139865326576
+          ],
+          "max_absolute_relative": 0.07215115448622411,
+          "mass_weighted_absolute_change": 177837.37472972908
+        },
+        "rho_kg_m3": {
+          "mass_quantiles_relative": [
+            -0.0228004131904703,
+            -0.00015707973209676322,
+            0.023199748533550724
+          ],
+          "max_absolute_relative": 0.029009105647848088,
+          "mass_weighted_absolute_change": 152.5549601482207
+        },
+        "velocity_m_s": {
+          "mass_quantiles_relative": [
+            -0.0012832140478631195,
+            -3.185469448603511e-05,
+            0.001301676658301186
+          ],
+          "max_absolute_relative": 0.2616254575005925,
+          "mass_weighted_absolute_change": 1686.9375231942895
+        },
+        "outer_radius_m": {
+          "mass_quantiles_relative": [
+            -0.00022429660540012765,
+            2.5018996263028604e-05,
+            0.00022232364943382173
+          ],
+          "max_absolute_relative": 0.004222038332142408,
+          "mass_weighted_absolute_change": 0.013191345100049592
+        }
+      },
+      "temperature_relative_to_original_source128_mass_quantiles": [
+        -0.010562213513758202,
+        -0.0007463115207279097,
+        0.038238262197581765
+      ]
+    }
+  },
+  "validation": {
+    "passed": 51,
+    "count": 51,
+    "all_passed": true
+  }
+}

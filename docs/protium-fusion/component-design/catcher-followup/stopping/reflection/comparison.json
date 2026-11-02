@@ -1,0 +1,1708 @@
+{
+  "scope": "Convolve primary low-energy BCA coefficients and explicit high-energy sensitivities.",
+  "inputs_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/reflection/compare.py": "017044eb02c6da1418342b4cd61f7e913dc74f72538cdedc8b3ad25d6e8c05be",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/reflection/sources/primary-tables.json": "0a75fe592ab208dff665b560d6c4b9788be20d29bf1d189047dcb5c09b7e98b3",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/reflection/sources/eckstein-He-normal.json": "849aa2603d512efcd602764361a4a238f45201a03bc0f03de5687d4fe3a7c619",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/reflection/single-collision.json": "f82cb1d964de14d0baae8fef361f137a1c0fddf30844602a71e7658d0db45938",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-spectra.json": "c4a065e110afc72fd03a5aaff7af1161594a04554d9a874abceba1f023b0513e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/calculate.py": "bcb91c3205311fe489ba62e4e50010c4110abe31fd98b0aa93704e9e18f301e6"
+  },
+  "stages": [
+    {
+      "stage": "A",
+      "species": "p",
+      "nuclei_m2": 5.7892302578719646e+19,
+      "mean_incident_flux_m2_s": 71400670011926.77,
+      "unknown_incident_below1eV_fraction": 9.811362011568821e-08,
+      "incident_KE_J_m2": 3643818.80880668,
+      "column_event_probability_per_barn": 4.4888259096544724e-05,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 0.00019736777652726303,
+          "low_primary_R": 5.241294326403144e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00014495483326323162,
+          "mean_first_reflected_E_eV": 28105.813283664796,
+          "reflected_KE_J_m2": 51.45216128858528,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00019746589014737873,
+          "exit_below_1eV_fraction_bracket": [
+            2.244822182043984e-07,
+            5.859492316713543e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.218564800898843e-05,
+            2.0219897304411784e-05
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 0.00034232260979049457,
+          "low_primary_R": 5.241294326403144e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00028990966652646323,
+          "mean_first_reflected_E_eV": 32332.351478860124,
+          "reflected_KE_J_m2": 102.66066964399236,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00034242072341061024,
+          "exit_below_1eV_fraction_bracket": [
+            4.316176322339893e-07,
+            6.066627730743134e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.7510176079052123e-05,
+            2.5544425374475476e-05
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.0004872774430537262,
+          "low_primary_R": 5.241294326403144e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0004348644997896948,
+          "mean_first_reflected_E_eV": 34044.27649793242,
+          "reflected_KE_J_m2": 153.86917799939945,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00048737555667384186,
+          "exit_below_1eV_fraction_bracket": [
+            6.387530462635802e-07,
+            6.2737631447727245e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.2834704149115815e-05,
+            3.086895344453917e-05
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0015019612758963474,
+          "low_primary_R": 5.241294326403144e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.001449548332632316,
+          "mean_first_reflected_E_eV": 36775.51501113121,
+          "reflected_KE_J_m2": 512.328736487249,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0015020593895164632,
+          "exit_below_1eV_fraction_bracket": [
+            2.0887009444707166e-06,
+            7.723711042979862e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            6.010640063956167e-05,
+            6.814064993498503e-05
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 0.0002109639200883789,
+          "low_primary_R": 6.600908682514733e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00014495483326323162,
+          "mean_first_reflected_E_eV": 26342.910278154373,
+          "reflected_KE_J_m2": 51.54697173621547,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0002110620337084946,
+          "exit_below_1eV_fraction_bracket": [
+            2.2373300780992508e-07,
+            7.297802949949476e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.3362870050779957e-05,
+            2.3015987063158357e-05
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 0.0003559187533516105,
+          "low_primary_R": 6.600908682514733e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00028990966652646323,
+          "mean_first_reflected_E_eV": 31125.970683234264,
+          "reflected_KE_J_m2": 102.75548009162256,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0003560168669717262,
+          "exit_below_1eV_fraction_bracket": [
+            4.30868421839516e-07,
+            7.504938363979067e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.868739812084365e-05,
+            2.8340515133222052e-05
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.0005008735866148422,
+          "low_primary_R": 6.600908682514733e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0004348644997896948,
+          "mean_first_reflected_E_eV": 33140.55719775753,
+          "reflected_KE_J_m2": 153.96398844702966,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005009717002349579,
+          "exit_below_1eV_fraction_bracket": [
+            6.38003835869107e-07,
+            7.712073778008657e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.4011926190907342e-05,
+            3.366504320328574e-05
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.0015155574194574636,
+          "low_primary_R": 6.600908682514733e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.001449548332632316,
+          "mean_first_reflected_E_eV": 36452.34451834177,
+          "reflected_KE_J_m2": 512.4235469348791,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0015156555330775793,
+          "exit_below_1eV_fraction_bracket": [
+            2.0879517340762433e-06,
+            9.162021676215794e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            6.12836226813532e-05,
+            7.09367396937316e-05
+          ]
+        }
+      }
+    },
+    {
+      "stage": "A",
+      "species": "he4",
+      "nuclei_m2": 1722752275061.6694,
+      "mean_incident_flux_m2_s": 2124732.6712686224,
+      "unknown_incident_below1eV_fraction": 1.1428934692099949e-07,
+      "incident_KE_J_m2": 0.2394443153427973,
+      "column_event_probability_per_barn": 2.657644070649254e-05,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 7.002400338220691e-05,
+          "low_primary_R": 1.3619056154967864e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 4.17156351932368e-05,
+          "mean_first_reflected_E_eV": 23244.936562567505,
+          "reflected_KE_J_m2": 4.4927114623764e-07,
+          "all_reflected_eventually_warm_fraction_ceiling": 7.013829272912791e-05,
+          "exit_below_1eV_fraction_bracket": [
+            6.764034401132406e-08,
+            1.628351491680417e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.136255030524166e-06,
+            2.0316408376782284e-05
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 0.00011173963857544373,
+          "low_primary_R": 1.3619056154967864e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 8.34312703864736e-05,
+          "mean_first_reflected_E_eV": 28835.97968125661,
+          "reflected_KE_J_m2": 8.89355098174186e-07,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00011185392792236472,
+          "exit_below_1eV_fraction_bracket": [
+            8.297086654986472e-08,
+            1.629884543934271e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.728004282965164e-06,
+            2.090815762922328e-05
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.00015345527376868048,
+          "low_primary_R": 1.3619056154967864e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 0.00012514690557971037,
+          "mean_first_reflected_E_eV": 31387.258712848008,
+          "reflected_KE_J_m2": 1.3294390501107321e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00015356956311560148,
+          "exit_below_1eV_fraction_bracket": [
+            9.830138908840541e-08,
+            1.631417596188125e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            4.319753535406162e-06,
+            2.149990688166428e-05
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0004454647201213382,
+          "low_primary_R": 1.3619056154967864e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 0.00041715635193236803,
+          "mean_first_reflected_E_eV": 35866.96919973538,
+          "reflected_KE_J_m2": 4.410026713666554e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00044557900946825917,
+          "exit_below_1eV_fraction_bracket": [
+            2.0561504685819013e-07,
+            1.6421489619651034e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.461998302493146e-06,
+            2.564215164875126e-05
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 7.163178288171863e-05,
+          "low_primary_R": 1.5226835654479575e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 4.17156351932368e-05,
+          "mean_first_reflected_E_eV": 22738.548359932993,
+          "reflected_KE_J_m2": 4.495745540863836e-07,
+          "all_reflected_eventually_warm_fraction_ceiling": 7.174607222863963e-05,
+          "exit_below_1eV_fraction_bracket": [
+            8.536723394934232e-08,
+            1.6471359679743697e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.7507910378158913e-06,
+            1.9507669073351476e-05
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 0.00011334741807495544,
+          "low_primary_R": 1.5226835654479575e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 8.34312703864736e-05,
+          "mean_first_reflected_E_eV": 28436.652947037026,
+          "reflected_KE_J_m2": 8.896585060229296e-07,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00011346170742187644,
+          "exit_below_1eV_fraction_bracket": [
+            1.0069775648788299e-07,
+            1.6486690202282237e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.342540290256889e-06,
+            2.0099418325792472e-05
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.00015506305326819223,
+          "low_primary_R": 1.5226835654479575e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 0.00012514690557971037,
+          "mean_first_reflected_E_eV": 31068.907259189724,
+          "reflected_KE_J_m2": 1.3297424579594758e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00015517734261511322,
+          "exit_below_1eV_fraction_bracket": [
+            1.1602827902642366e-07,
+            1.6502020724820777e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.9342895426978875e-06,
+            2.069116757823347e-05
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.00044707249962085,
+          "low_primary_R": 1.5226835654479575e-05,
+          "He_5to20keV_primary_R": 1.4689312034002259e-05,
+          "high_model_R": 0.00041715635193236803,
+          "mean_first_reflected_E_eV": 35740.44176816855,
+          "reflected_KE_J_m2": 4.410330121515298e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00044718678896777097,
+          "exit_below_1eV_fraction_bracket": [
+            2.233419367962084e-07,
+            1.6609334382590562e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.076534309784871e-06,
+            2.4833412345320453e-05
+          ]
+        }
+      }
+    },
+    {
+      "stage": "B1",
+      "species": "p",
+      "nuclei_m2": 3.167458079592399e+17,
+      "mean_incident_flux_m2_s": 41145445422525.4,
+      "unknown_incident_below1eV_fraction": 1.0600545478254131e-07,
+      "incident_KE_J_m2": 13645.372927000904,
+      "column_event_probability_per_barn": 2.5893399628004812e-05,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 0.0002916930588541331,
+          "low_primary_R": 8.479099080696208e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00020690206804717097,
+          "mean_first_reflected_E_eV": 17819.154953260197,
+          "reflected_KE_J_m2": 0.2637755083803832,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00029179906430891564,
+          "exit_below_1eV_fraction_bracket": [
+            3.419685088644866e-07,
+            9.445741517029767e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.7059855009842102e-05,
+            2.9724800173641087e-05
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 0.0004985951269013041,
+          "low_primary_R": 8.479099080696208e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00041380413609434194,
+          "mean_first_reflected_E_eV": 20757.43647736166,
+          "reflected_KE_J_m2": 0.5252221300650285,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0004987011323560866,
+          "exit_below_1eV_fraction_bracket": [
+            6.695062879371993e-07,
+            9.773279296102479e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.5472830011967783e-05,
+            3.8137775175766774e-05
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.000705497194948475,
+          "low_primary_R": 8.479099080696208e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.000620706204141513,
+          "mean_first_reflected_E_eV": 21972.29081225712,
+          "reflected_KE_J_m2": 0.7866687517496737,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0007056032004032575,
+          "exit_below_1eV_fraction_bracket": [
+            9.97044067009912e-07,
+            1.0100817075175192e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.388580501409347e-05,
+            4.6550750177892455e-05
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0021538116712786722,
+          "low_primary_R": 8.479099080696208e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00206902068047171,
+          "mean_first_reflected_E_eV": 23940.913796085315,
+          "reflected_KE_J_m2": 2.616795103542191,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.002153917676733455,
+          "exit_below_1eV_fraction_bracket": [
+            3.289808520518902e-06,
+            1.2393581528684182e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            9.277663002897325e-05,
+            0.00010544157519277223
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 0.000314683481595599,
+          "low_primary_R": 0.00010778141354842795,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00020690206804717097,
+          "mean_first_reflected_E_eV": 16574.555085659595,
+          "reflected_KE_J_m2": 0.26468973272441654,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0003147894870503816,
+          "exit_below_1eV_fraction_bracket": [
+            3.4138722363049374e-07,
+            1.1889749313543267e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.858589843544043e-05,
+            3.4106347984222236e-05
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 0.0005215855496427701,
+          "low_primary_R": 0.00010778141354842795,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00041380413609434194,
+          "mean_first_reflected_E_eV": 19877.02988976156,
+          "reflected_KE_J_m2": 0.5261363544090617,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005216915550975526,
+          "exit_below_1eV_fraction_bracket": [
+            6.689250027032065e-07,
+            1.2217287092615979e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.6998873437566114e-05,
+            4.2519322986347924e-05
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.000728487617689941,
+          "low_primary_R": 0.00010778141354842795,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.000620706204141513,
+          "mean_first_reflected_E_eV": 21303.593971292565,
+          "reflected_KE_J_m2": 0.787582976093707,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0007285936231447235,
+          "exit_below_1eV_fraction_bracket": [
+            9.964627817759191e-07,
+            1.2544824871688692e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.54118484396918e-05,
+            5.093229798847361e-05
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.0021768020940201383,
+          "low_primary_R": 0.00010778141354842795,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00206902068047171,
+          "mean_first_reflected_E_eV": 23696.33628271817,
+          "reflected_KE_J_m2": 2.617709327886224,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.002176908099474921,
+          "exit_below_1eV_fraction_bracket": [
+            3.289227235284909e-06,
+            1.4837589325197682e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            9.430267345457157e-05,
+            0.00010982312300335339
+          ]
+        }
+      }
+    },
+    {
+      "stage": "B1",
+      "species": "he4",
+      "nuclei_m2": 2.101529392802899e+17,
+      "mean_incident_flux_m2_s": 27298976265072.37,
+      "unknown_incident_below1eV_fraction": 7.038063230860965e-08,
+      "incident_KE_J_m2": 23349.614133289848,
+      "column_event_probability_per_barn": 2.1441236228855132e-05,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 7.812694015046966e-05,
+          "low_primary_R": 1.2590327261356098e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 4.755036444177631e-05,
+          "mean_first_reflected_E_eV": 21829.08004191741,
+          "reflected_KE_J_m2": 0.05742250194101662,
+          "all_reflected_eventually_warm_fraction_ceiling": 7.819732078277827e-05,
+          "exit_below_1eV_fraction_bracket": [
+            5.135676270487291e-08,
+            1.9413793330542506e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.6973383421088293e-06,
+            2.294281545750759e-05
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 0.00012567730459224594,
+          "low_primary_R": 1.2590327261356098e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 9.510072888355262e-05,
+          "mean_first_reflected_E_eV": 26824.68027311876,
+          "reflected_KE_J_m2": 0.11351082349180422,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00012574768522455456,
+          "exit_below_1eV_fraction_bracket": [
+            6.895294690963347e-08,
+            1.9431389514747267e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.376532669266398e-06,
+            2.362200978466516e-05
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.0001732276690340223,
+          "low_primary_R": 1.2590327261356098e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 0.00014265109332532892,
+          "mean_first_reflected_E_eV": 29077.732354550877,
+          "reflected_KE_J_m2": 0.1695991450425918,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00017329804966633092,
+          "exit_below_1eV_fraction_bracket": [
+            8.654913111439404e-08,
+            1.9448985698952027e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            4.055726996423966e-06,
+            2.4301204111822726e-05
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0005060802201264562,
+          "low_primary_R": 1.2590327261356098e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 0.0004755036444177629,
+          "mean_first_reflected_E_eV": 32994.310221212225,
+          "reflected_KE_J_m2": 0.5622173958981049,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005061506007587648,
+          "exit_below_1eV_fraction_bracket": [
+            2.0972242054771794e-07,
+            1.9572158988385352e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.810087286526948e-06,
+            2.9055564401925707e-05
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 7.965674997286922e-05,
+          "low_primary_R": 1.4120137083755651e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 4.755036444177631e-05,
+          "mean_first_reflected_E_eV": 21423.919725076863,
+          "reflected_KE_J_m2": 0.05746023234402035,
+          "all_reflected_eventually_warm_fraction_ceiling": 7.972713060517783e-05,
+          "exit_below_1eV_fraction_bracket": [
+            6.278991524379479e-08,
+            1.9585452795554638e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.2723880252166716e-06,
+            2.2108585839619914e-05
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 0.00012720711441464549,
+          "low_primary_R": 1.4120137083755651e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 9.510072888355262e-05,
+          "mean_first_reflected_E_eV": 26510.892223262854,
+          "reflected_KE_J_m2": 0.11354855389480796,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0001272774950469541,
+          "exit_below_1eV_fraction_bracket": [
+            8.038609944855535e-08,
+            1.9603048979759398e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.9515823523742405e-06,
+            2.2787780166777485e-05
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.00017475747885642182,
+          "low_primary_R": 1.4120137083755651e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 0.00014265109332532892,
+          "mean_first_reflected_E_eV": 28829.60097929714,
+          "reflected_KE_J_m2": 0.16963687544559555,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00017482785948873044,
+          "exit_below_1eV_fraction_bracket": [
+            9.798228365331591e-08,
+            1.962064516396416e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.6307766795318086e-06,
+            2.3466974493935052e-05
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.0005076100299488558,
+          "low_primary_R": 1.4120137083755651e-05,
+          "He_5to20keV_primary_R": 1.798624844733727e-05,
+          "high_model_R": 0.0004755036444177629,
+          "mean_first_reflected_E_eV": 32897.08118722307,
+          "reflected_KE_J_m2": 0.5622551263011086,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005076804105811644,
+          "exit_below_1eV_fraction_bracket": [
+            2.211555730866398e-07,
+            1.9743818453397483e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.38513696963479e-06,
+            2.8221334784038036e-05
+          ]
+        }
+      }
+    },
+    {
+      "stage": "B2",
+      "species": "p",
+      "nuclei_m2": 1.249186407132431e+19,
+      "mean_incident_flux_m2_s": 12640312104680.324,
+      "unknown_incident_below1eV_fraction": 1.4822070846562976e-08,
+      "incident_KE_J_m2": 1500633.7876886548,
+      "column_event_probability_per_barn": 0.00010053698536764616,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 4.773856868386724e-05,
+          "low_primary_R": 6.545591062314524e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 4.119297762155271e-05,
+          "mean_first_reflected_E_eV": 144062.98810584427,
+          "reflected_KE_J_m2": 13.764468802959225,
+          "all_reflected_eventually_warm_fraction_ceiling": 4.7753390754713805e-05,
+          "exit_below_1eV_fraction_bracket": [
+            3.1753796888787875e-08,
+            7.410232122923638e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.4776438050174908e-06,
+            2.4575710946489568e-06
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 8.893154630541993e-05,
+          "low_primary_R": 6.545591062314524e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 8.238595524310542e-05,
+          "mean_first_reflected_E_eV": 154626.747718486,
+          "reflected_KE_J_m2": 27.52188074830277,
+          "all_reflected_eventually_warm_fraction_ceiling": 8.89463683762665e-05,
+          "exit_below_1eV_fraction_bracket": [
+            6.100314033324558e-08,
+            7.702725557368215e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.2312044812622905e-06,
+            3.2111317708937564e-06
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.00013012452392697265,
+          "low_primary_R": 6.545591062314524e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00012357893286465814,
+          "mean_first_reflected_E_eV": 158502.2567202402,
+          "reflected_KE_J_m2": 41.27929269364632,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00013013934599781922,
+          "exit_below_1eV_fraction_bracket": [
+            9.025248377770327e-08,
+            7.995218991812792e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.9847651575070897e-06,
+            3.964692447138556e-06
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.00041847536727784157,
+          "low_primary_R": 6.545591062314524e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0004119297762155272,
+          "mean_first_reflected_E_eV": 164267.43490365334,
+          "reflected_KE_J_m2": 137.58117631105117,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00041849018934868814,
+          "exit_below_1eV_fraction_bracket": [
+            2.949978878889071e-07,
+            1.004267303292483e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.259689891220687e-06,
+            9.239617180852153e-06
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 4.950189546656902e-05,
+          "low_primary_R": 8.30891784501631e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 4.119297762155271e-05,
+          "mean_first_reflected_E_eV": 138959.23036913647,
+          "reflected_KE_J_m2": 13.767239651801194,
+          "all_reflected_eventually_warm_fraction_ceiling": 4.9516717537415584e-05,
+          "exit_below_1eV_fraction_bracket": [
+            3.16464877037186e-08,
+            9.283101157451347e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.6050034945432247e-06,
+            2.795472587435008e-06
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 9.069487308812173e-05,
+          "low_primary_R": 8.30891784501631e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 8.238595524310542e-05,
+          "mean_first_reflected_E_eV": 151635.69615202508,
+          "reflected_KE_J_m2": 27.524651597144743,
+          "all_reflected_eventually_warm_fraction_ceiling": 9.07096951589683e-05,
+          "exit_below_1eV_fraction_bracket": [
+            6.08958311481763e-08,
+            9.575594591895924e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.3585641707880244e-06,
+            3.5490332636798078e-06
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.00013188785070967444,
+          "low_primary_R": 8.30891784501631e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00012357893286465814,
+          "mean_first_reflected_E_eV": 156393.59523593265,
+          "reflected_KE_J_m2": 41.28206354248829,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.000131902672780521,
+          "exit_below_1eV_fraction_bracket": [
+            9.0145174592634e-08,
+            9.8680880263405e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.1121248470328236e-06,
+            4.302593939924607e-06
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.00042023869406054333,
+          "low_primary_R": 8.30891784501631e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0004119297762155272,
+          "mean_first_reflected_E_eV": 163581.46112681704,
+          "reflected_KE_J_m2": 137.5839471598931,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0004202535161313899,
+          "exit_below_1eV_fraction_bracket": [
+            2.9489057870383784e-07,
+            1.191554206745254e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.387049580746421e-06,
+            9.577518673638205e-06
+          ]
+        }
+      }
+    },
+    {
+      "stage": "B2",
+      "species": "he4",
+      "nuclei_m2": 841042658.8908613,
+      "mean_incident_flux_m2_s": 851.0372544106335,
+      "unknown_incident_below1eV_fraction": 4.742325465675174e-10,
+      "incident_KE_J_m2": 8.45627118023089e-05,
+      "column_event_probability_per_barn": 1.9763955762705867e-05,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 2.9790987675243777e-05,
+          "low_primary_R": 3.636751648884833e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 2.970823859819286e-05,
+          "mean_first_reflected_E_eV": 54554.07879071664,
+          "reflected_KE_J_m2": 2.1899820064768564e-10,
+          "all_reflected_eventually_warm_fraction_ceiling": 2.9791461907790344e-05,
+          "exit_below_1eV_fraction_bracket": [
+            5.161575852889654e-09,
+            5.580606198388909e-08
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.9989890258734522e-07,
+            2.5289595403111944e-07
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 5.949922627343664e-05,
+          "low_primary_R": 3.636751648884833e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 5.941647719638572e-05,
+          "mean_first_reflected_E_eV": 54628.23001617089,
+          "reflected_KE_J_m2": 4.3798260841423295e-10,
+          "all_reflected_eventually_warm_fraction_ceiling": 5.949970050598321e-05,
+          "exit_below_1eV_fraction_bracket": [
+            1.0133955246076518e-08,
+            6.077844137707596e-08
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.9259567214629834e-07,
+            4.4559272359007257e-07
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 8.920746487162951e-05,
+          "low_primary_R": 3.636751648884833e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 8.91247157945786e-05,
+          "mean_first_reflected_E_eV": 54652.99294656903,
+          "reflected_KE_J_m2": 6.569670161807802e-10,
+          "all_reflected_eventually_warm_fraction_ceiling": 8.920793910417608e-05,
+          "exit_below_1eV_fraction_bracket": [
+            1.5106334639263386e-08,
+            6.575082077026283e-08
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            5.852924417052515e-07,
+            6.382894931490258e-07
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0002971651350589796,
+          "low_primary_R": 3.636751648884833e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 0.0002970823859819287,
+          "mean_first_reflected_E_eV": 54687.69966406678,
+          "reflected_KE_J_m2": 2.1898578705466112e-09,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00029716560929152615,
+          "exit_below_1eV_fraction_bracket": [
+            4.991299039157143e-08,
+            1.0055747652257086e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.934169828617924e-06,
+            1.987166880061698e-06
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 2.9795238112395637e-05,
+          "low_primary_R": 4.061795364070328e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 2.970823859819286e-05,
+          "mean_first_reflected_E_eV": 54546.40152621394,
+          "reflected_KE_J_m2": 2.1899862278666465e-10,
+          "all_reflected_eventually_warm_fraction_ceiling": 2.9795712344942204e-05,
+          "exit_below_1eV_fraction_bracket": [
+            5.224097598664744e-09,
+            5.6326781617706736e-08
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.9896767141338094e-07,
+            2.5076677594607197e-07
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 5.9503476710588494e-05,
+          "low_primary_R": 4.061795364070328e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 5.941647719638572e-05,
+          "mean_first_reflected_E_eV": 54624.38047473741,
+          "reflected_KE_J_m2": 4.379830305532119e-10,
+          "all_reflected_eventually_warm_fraction_ceiling": 5.9503950943135064e-05,
+          "exit_below_1eV_fraction_bracket": [
+            1.0196476991851608e-08,
+            6.12991610108936e-08
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.916644409723341e-07,
+            4.4346354550502515e-07
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 8.921171530878137e-05,
+          "low_primary_R": 4.061795364070328e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 8.91247157945786e-05,
+          "mean_first_reflected_E_eV": 54650.424154437635,
+          "reflected_KE_J_m2": 6.569674383197591e-10,
+          "all_reflected_eventually_warm_fraction_ceiling": 8.921218954132794e-05,
+          "exit_below_1eV_fraction_bracket": [
+            1.5168856385038472e-08,
+            6.627154040408047e-08
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            5.843612105312873e-07,
+            6.361603150639783e-07
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.00029716938549613145,
+          "low_primary_R": 4.061795364070328e-08,
+          "He_5to20keV_primary_R": 4.638156056206929e-08,
+          "high_model_R": 0.0002970823859819287,
+          "mean_first_reflected_E_eV": 54686.92800358548,
+          "reflected_KE_J_m2": 2.18985829268559e-09,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.000297169859728678,
+          "exit_below_1eV_fraction_bracket": [
+            4.997551213734652e-08,
+            1.0107819615638851e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.9332385974439593e-06,
+            1.9850377019766505e-06
+          ]
+        }
+      }
+    },
+    {
+      "stage": "C13",
+      "species": "p",
+      "nuclei_m2": 1.8266274921691994e+19,
+      "mean_incident_flux_m2_s": 1629828719693.4434,
+      "unknown_incident_below1eV_fraction": 2.1544601392014167e-08,
+      "incident_KE_J_m2": 3022170.9024760206,
+      "column_event_probability_per_barn": 0.00018611246972314265,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 5.479761194361067e-05,
+          "low_primary_R": 8.096598601819936e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 4.6701013341790745e-05,
+          "mean_first_reflected_E_eV": 149463.15832668927,
+          "reflected_KE_J_m2": 23.969345266779005,
+          "all_reflected_eventually_warm_fraction_ceiling": 5.481915654500269e-05,
+          "exit_below_1eV_fraction_bracket": [
+            4.67616589656919e-08,
+            9.338605103706494e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.7562816409874582e-06,
+            2.924011153004385e-06
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 0.00010149862528540143,
+          "low_primary_R": 8.096598601819936e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 9.340202668358149e-05,
+          "mean_first_reflected_E_eV": 161337.95210691038,
+          "reflected_KE_J_m2": 47.92444407585282,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00010152016988679344,
+          "exit_below_1eV_fraction_bracket": [
+            8.95983774342423e-08,
+            9.766972288391998e-07
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.8583491961170243e-06,
+            4.026078708133951e-06
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.00014819963862719215,
+          "low_primary_R": 8.096598601819936e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00014010304002537221,
+          "mean_first_reflected_E_eV": 165728.72085308714,
+          "reflected_KE_J_m2": 71.87954288492664,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00014822118322858416,
+          "exit_below_1eV_fraction_bracket": [
+            1.324350959027927e-07,
+            1.0195339473077503e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.9604167512465905e-06,
+            5.128146263263518e-06
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.00047510673201972743,
+          "low_primary_R": 8.096598601819936e-06,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0004670101334179075,
+          "mean_first_reflected_E_eV": 172294.8221762983,
+          "reflected_KE_J_m2": 239.5652345484433,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00047512827662111947,
+          "exit_below_1eV_fraction_bracket": [
+            4.322921251826455e-07,
+            1.319390976587603e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.1674889637153555e-05,
+            1.2842619149170483e-05
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 5.707957730291475e-05,
+          "low_primary_R": 1.0378563961124007e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 4.6701013341790745e-05,
+          "mean_first_reflected_E_eV": 143521.54689157725,
+          "reflected_KE_J_m2": 23.97497916888327,
+          "all_reflected_eventually_warm_fraction_ceiling": 5.7101121904306766e-05,
+          "exit_below_1eV_fraction_bracket": [
+            4.658854957559709e-08,
+            1.1783521992514705e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.8739052794538379e-06,
+            3.3205655730743987e-06
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 0.00010378059064470551,
+          "low_primary_R": 1.0378563961124007e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 9.340202668358149e-05,
+          "mean_first_reflected_E_eV": 157808.9440814739,
+          "reflected_KE_J_m2": 47.930077977957076,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00010380213524609752,
+          "exit_below_1eV_fraction_bracket": [
+            8.942526804414749e-08,
+            1.2211889177200208e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.9759728345834044e-06,
+            4.422633128203965e-06
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.00015048160398649623,
+          "low_primary_R": 1.0378563961124007e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00014010304002537221,
+          "mean_first_reflected_E_eV": 163228.3346963649,
+          "reflected_KE_J_m2": 71.8851767870309,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00015050314858788824,
+          "exit_below_1eV_fraction_bracket": [
+            1.322619865126979e-07,
+            1.2640256361885713e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            4.07804038971297e-06,
+            5.524700683333532e-06
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.0004773886973790315,
+          "low_primary_R": 1.0378563961124007e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0004670101334179075,
+          "mean_first_reflected_E_eV": 171475.26834655227,
+          "reflected_KE_J_m2": 239.57086845054755,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00047741024198042354,
+          "exit_below_1eV_fraction_bracket": [
+            4.321190157925507e-07,
+            1.563882665468424e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.1792513275619935e-05,
+            1.3239173569240496e-05
+          ]
+        }
+      }
+    },
+    {
+      "stage": "C13",
+      "species": "he4",
+      "nuclei_m2": 10922811624459.68,
+      "mean_incident_flux_m2_s": 974600.0299275449,
+      "unknown_incident_below1eV_fraction": 7.135930404138358e-09,
+      "incident_KE_J_m2": 1.5007127059802072,
+      "column_event_probability_per_barn": 2.6903598515253996e-05,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 4.0995988710935765e-05,
+          "low_primary_R": 4.097851499300023e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 3.9448550244719044e-05,
+          "mean_first_reflected_E_eV": 39769.53071758366,
+          "reflected_KE_J_m2": 2.8532292579466082e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 4.1003124641339906e-05,
+          "exit_below_1eV_fraction_bracket": [
+            1.4526023922180011e-08,
+            1.2023004585261386e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            5.036557431702623e-07,
+            1.7185483815463534e-06
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 8.044453895565482e-05,
+          "low_primary_R": 4.097851499300023e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 7.889710048943809e-05,
+          "mean_first_reflected_E_eV": 40502.36595885782,
+          "reflected_KE_J_m2": 5.701928905210071e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 8.045167488605896e-05,
+          "exit_below_1eV_fraction_bracket": [
+            2.5814910406195802e-08,
+            1.2135893450101546e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            9.400891592744477e-07,
+            2.1549817976505387e-06
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.00011989308920037388,
+          "low_primary_R": 4.097851499300023e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 0.00011834565073415716,
+          "mean_first_reflected_E_eV": 40752.95008742288,
+          "reflected_KE_J_m2": 8.55062855247353e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00011990022513077802,
+          "exit_below_1eV_fraction_bracket": [
+            3.71037968902116e-08,
+            1.2248782314941703e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.3765225753786332e-06,
+            2.5914152137547245e-06
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0003960329409134072,
+          "low_primary_R": 4.097851499300023e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 0.00039448550244719044,
+          "mean_first_reflected_E_eV": 41109.25093582888,
+          "reflected_KE_J_m2": 2.8491526083317773e-05,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0003960400768438113,
+          "exit_below_1eV_fraction_bracket": [
+            1.1612600227832212e-07,
+            1.3039004368822808e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            4.431556488107931e-06,
+            5.646449126484022e-06
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 4.1045689050807044e-05,
+          "low_primary_R": 4.594854898012874e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 3.9448550244719044e-05,
+          "mean_first_reflected_E_eV": 39722.29521306692,
+          "reflected_KE_J_m2": 2.853295313363787e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 4.1052824981211186e-05,
+          "exit_below_1eV_fraction_bracket": [
+            1.5616376564303818e-08,
+            1.2088642095466849e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            4.904389578446177e-07,
+            1.6915829596125214e-06
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 8.04942392955261e-05,
+          "low_primary_R": 4.594854898012874e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 7.889710048943809e-05,
+          "mean_first_reflected_E_eV": 40477.827109762526,
+          "reflected_KE_J_m2": 5.701994960627249e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 8.050137522593024e-05,
+          "exit_below_1eV_fraction_bracket": [
+            2.6905263048319613e-08,
+            1.2201530960307008e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            9.268723739488031e-07,
+            2.1280163757167068e-06
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.00011994278954024515,
+          "low_primary_R": 4.594854898012874e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 0.00011834565073415716,
+          "mean_first_reflected_E_eV": 40736.37810243666,
+          "reflected_KE_J_m2": 8.550694607890712e-06,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0001199499254706493,
+          "exit_below_1eV_fraction_bracket": [
+            3.819414953233541e-08,
+            1.2314419825147165e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.3633057900529884e-06,
+            2.564449791820892e-06
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.0003960826412532786,
+          "low_primary_R": 4.594854898012874e-07,
+          "He_5to20keV_primary_R": 1.137653316286707e-06,
+          "high_model_R": 0.00039448550244719044,
+          "mean_first_reflected_E_eV": 41104.187855118274,
+          "reflected_KE_J_m2": 2.849159213873495e-05,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0003960897771836827,
+          "exit_below_1eV_fraction_bracket": [
+            1.1721635492044594e-07,
+            1.310464187902827e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            4.4183397027822865e-06,
+            5.619483704550191e-06
+          ]
+        }
+      }
+    }
+  ],
+  "cadence_weighted": {
+    "p": {
+      "unknown_incident_below1eV_fraction": 9.138804299496532e-08,
+      "column_event_probability_per_barn": 4.608713212437061e-05,
+      "mean_incident_flux_m2_s": 126816256258825.92,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 0.00021122507662317062,
+          "low_primary_R": 5.7776636449785314e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00015344844017338536,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00021131646466616565,
+          "mean_reflected_power_W_m2": 0.00011378911827320479,
+          "mean_first_reflected_E_eV": 26513.675330345013,
+          "exit_below_1eV_fraction_bracket": [
+            2.4110646145242464e-07,
+            6.449565228437101e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.2565731947455643e-05,
+            2.131102542438411e-05
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 0.00036467351679655594,
+          "low_primary_R": 5.7776636449785314e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0003068968803467707,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00036476490483955084,
+          "mean_reflected_power_W_m2": 0.00022696679510494054,
+          "mean_first_reflected_E_eV": 30631.81835357734,
+          "exit_below_1eV_fraction_bracket": [
+            4.6746413316122583e-07,
+            6.675922900145901e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.8382430222125724e-05,
+            2.712772369905421e-05
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.0005181219569699412,
+          "low_primary_R": 5.7776636449785314e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00046034532052015596,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005182133450129362,
+          "mean_reflected_power_W_m2": 0.00034014447193667633,
+          "mean_first_reflected_E_eV": 32310.679988228912,
+          "exit_below_1eV_fraction_bracket": [
+            6.938218048700271e-07,
+            6.902280571854702e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.4199128496795818e-05,
+            3.294442197372429e-05
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0015922610381836385,
+          "low_primary_R": 5.7776636449785314e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0015344844017338532,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0015923524262266334,
+          "mean_reflected_power_W_m2": 0.0011323882097588266,
+          "mean_first_reflected_E_eV": 35002.23277567339,
+          "exit_below_1eV_fraction_bracket": [
+            2.2783255068316363e-06,
+            8.486784273816312e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            6.491601641948644e-05,
+            7.366130989641492e-05
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 0.00022654435204463232,
+          "low_primary_R": 7.309591187124704e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00015344844017338536,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00022663574008762735,
+          "mean_reflected_power_W_m2": 0.00011402811611244357,
+          "mean_first_reflected_E_eV": 24772.70254923532,
+          "exit_below_1eV_fraction_bracket": [
+            2.4048311925171557e-07,
+            8.074135948854382e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.3737866782621822e-05,
+            2.4345659358232525e-05
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 0.0003799927922180177,
+          "low_primary_R": 7.309591187124704e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0003068968803467707,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0003800841802610126,
+          "mean_reflected_power_W_m2": 0.00022720579294417933,
+          "mean_first_reflected_E_eV": 29427.86257549189,
+          "exit_below_1eV_fraction_bracket": [
+            4.668407909605168e-07,
+            8.300493620563183e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            1.955456505729191e-05,
+            3.016235763290262e-05
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.0005334412323914031,
+          "low_primary_R": 7.309591187124704e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.00046034532052015596,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005335326204343981,
+          "mean_reflected_power_W_m2": 0.00034038346977591515,
+          "mean_first_reflected_E_eV": 31404.83800928921,
+          "exit_below_1eV_fraction_bracket": [
+            6.931984626693178e-07,
+            8.526851292271984e-06
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.5371263331961998e-05,
+            3.59790559075727e-05
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.0016075803136051004,
+          "low_primary_R": 7.309591187124704e-05,
+          "He_5to20keV_primary_R": 0.0,
+          "high_model_R": 0.0015344844017338532,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0016076717016480955,
+          "mean_reflected_power_W_m2": 0.0011326272075980655,
+          "mean_first_reflected_E_eV": 34675.9995569525,
+          "exit_below_1eV_fraction_bracket": [
+            2.2777021646309265e-06,
+            1.0111354994233596e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            6.608815125465262e-05,
+            7.669594383026333e-05
+          ]
+        }
+      },
+      "single_collision_first_flight_inventory_relative_to_baseline_warm_inventory": 1.5292904724625324e-05,
+      "effective_backward_cross_section_barn_to_add_0p001_if_all_column_events_escape": 21.698030532717954
+    },
+    "he4": {
+      "unknown_incident_below1eV_fraction": 7.038063346603384e-08,
+      "column_event_probability_per_barn": 2.1441236823497424e-05,
+      "mean_incident_flux_m2_s": 27298979365256.113,
+      "scenarios": {
+        "old_primary_high_x1": {
+          "R": 7.81269381926845e-05,
+          "low_primary_R": 1.259032690617554e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 4.7550363697849124e-05,
+          "all_reflected_eventually_warm_fraction_ceiling": 7.819731882615054e-05,
+          "mean_reflected_power_W_m2": 7.459213718025722e-06,
+          "mean_first_reflected_E_eV": 21829.08047716472,
+          "exit_below_1eV_fraction_bracket": [
+            5.135676265592251e-08,
+            1.9413792436135413e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.697338297876117e-06,
+            2.2942814494654947e-05
+          ]
+        },
+        "old_primary_high_x2": {
+          "R": 0.00012567730189053358,
+          "low_primary_R": 1.259032690617554e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 9.510072739569825e-05,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00012574768252399964,
+          "mean_reflected_power_W_m2": 1.4745116696753293e-05,
+          "mean_first_reflected_E_eV": 26824.680725270984,
+          "exit_below_1eV_fraction_bracket": [
+            6.895294645877202e-08,
+            1.9431388619938263e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.3765326095456982e-06,
+            2.362200880632453e-05
+          ]
+        },
+        "old_primary_high_x3": {
+          "R": 0.00017322766558838275,
+          "low_primary_R": 1.259032690617554e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 0.00014265109109354738,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0001732980462218488,
+          "mean_reflected_power_W_m2": 2.203101967548086e-05,
+          "mean_first_reflected_E_eV": 29077.732802683087,
+          "exit_below_1eV_fraction_bracket": [
+            8.654913026162156e-08,
+            1.9448984803741113e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            4.05572692121528e-06,
+            2.4301203117994117e-05
+          ]
+        },
+        "old_primary_high_x10": {
+          "R": 0.0005060802114733265,
+          "low_primary_R": 1.259032690617554e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 0.0004755036369784911,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005061505921067924,
+          "mean_reflected_power_W_m2": 7.303234052657383e-05,
+          "mean_first_reflected_E_eV": 32994.310645127705,
+          "exit_below_1eV_fraction_bracket": [
+            2.0972241688156815e-07,
+            1.9572158090361062e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.810087102902355e-06,
+            2.9055563299681187e-05
+          ]
+        },
+        "new_primary_high_x1": {
+          "R": 7.96567479682637e-05,
+          "low_primary_R": 1.4120136681754723e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 4.7550363697849124e-05,
+          "all_reflected_eventually_warm_fraction_ceiling": 7.97271286017297e-05,
+          "mean_reflected_power_W_m2": 7.46411491740688e-06,
+          "mean_first_reflected_E_eV": 21423.920154093168,
+          "exit_below_1eV_fraction_bracket": [
+            6.278991531509574e-08,
+            1.9585451896507867e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.272387998769761e-06,
+            2.2108584907597287e-05
+          ]
+        },
+        "new_primary_high_x2": {
+          "R": 0.00012720711166611278,
+          "low_primary_R": 1.4120136681754723e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 9.510072739569825e-05,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0001272774922995788,
+          "mean_reflected_power_W_m2": 1.4750017896134452e-05,
+          "mean_first_reflected_E_eV": 26510.89267275346,
+          "exit_below_1eV_fraction_bracket": [
+            8.038609911794527e-08,
+            1.9603048080310714e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            2.9515823104393435e-06,
+            2.2787779219266877e-05
+          ]
+        },
+        "new_primary_high_x3": {
+          "R": 0.00017475747536396192,
+          "low_primary_R": 1.4120136681754723e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 0.00014265109109354738,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.00017482785599742798,
+          "mean_reflected_power_W_m2": 2.203592087486202e-05,
+          "mean_first_reflected_E_eV": 28829.60142610711,
+          "exit_below_1eV_fraction_bracket": [
+            9.798228292079479e-08,
+            1.9620644264113564e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            3.6307766221089243e-06,
+            2.3466973530936457e-05
+          ]
+        },
+        "new_primary_high_x10": {
+          "R": 0.0005076100212489057,
+          "low_primary_R": 1.4120136681754723e-05,
+          "He_5to20keV_primary_R": 1.7986247588659844e-05,
+          "high_model_R": 0.0004755036369784911,
+          "all_reflected_eventually_warm_fraction_ceiling": 0.0005076804018823716,
+          "mean_reflected_power_W_m2": 7.303724172595498e-05,
+          "mean_first_reflected_E_eV": 32897.08161115835,
+          "exit_below_1eV_fraction_bracket": [
+            2.2115556954074138e-07,
+            1.9743817550733513e-05
+          ],
+          "exit_below_100eV_fraction_bracket": [
+            8.385136803796e-06,
+            2.8221333712623534e-05
+          ]
+        }
+      },
+      "single_collision_first_flight_inventory_relative_to_baseline_warm_inventory": 5.674001860889376e-06,
+      "effective_backward_cross_section_barn_to_add_0p001_if_all_column_events_escape": 46.63910054405543
+    }
+  },
+  "primary_vs_single_collision": {
+    "p": [
+      {
+        "E_eV": 1000.0,
+        "primary_R": 0.109,
+        "model_R": 0.0786099124681011,
+        "primary_over_model": 1.3865935806025838
+      },
+      {
+        "E_eV": 2000.0,
+        "primary_R": 0.06,
+        "model_R": 0.03552246468488755,
+        "primary_over_model": 1.689071986762394
+      },
+      {
+        "E_eV": 5000.0,
+        "primary_R": 0.0197,
+        "model_R": 0.012190190821061464,
+        "primary_over_model": 1.6160534555343915
+      }
+    ],
+    "he4": [
+      {
+        "E_eV": 1000.0,
+        "primary_R": 0.0598,
+        "model_R": 0.022116674981228036,
+        "primary_over_model": 2.7038422389783467
+      },
+      {
+        "E_eV": 2000.0,
+        "primary_R": 0.0406,
+        "model_R": 0.0198643369018798,
+        "primary_over_model": 2.0438638450678885
+      },
+      {
+        "E_eV": 5000.0,
+        "primary_R": 0.0194,
+        "model_R": 0.008592655528949101,
+        "primary_over_model": 2.2577420838808675
+      }
+    ]
+  },
+  "angle_diagnostic": {
+    "H_on_C_1.00.txt": [
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 0.0,
+        "RN": 0.109,
+        "mean_reflected_energy_eV": 336.69724770642205
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 30.0,
+        "RN": 0.152,
+        "mean_reflected_energy_eV": 361.1842105263158
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 45.0,
+        "RN": 0.218,
+        "mean_reflected_energy_eV": 399.5412844036697
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 60.0,
+        "RN": 0.333,
+        "mean_reflected_energy_eV": 468.4684684684684
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 70.0,
+        "RN": 0.444,
+        "mean_reflected_energy_eV": 545.0450450450451
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 80.0,
+        "RN": 0.61,
+        "mean_reflected_energy_eV": 678.688524590164
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 85.0,
+        "RN": 0.782,
+        "mean_reflected_energy_eV": 824.8081841432224
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 0.0,
+        "RN": 0.0197,
+        "mean_reflected_energy_eV": 1289.3401015228428
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 30.0,
+        "RN": 0.0357,
+        "mean_reflected_energy_eV": 1257.7030812324929
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 45.0,
+        "RN": 0.0714,
+        "mean_reflected_energy_eV": 1281.5126050420167
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 60.0,
+        "RN": 0.162,
+        "mean_reflected_energy_eV": 1466.0493827160494
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 70.0,
+        "RN": 0.281,
+        "mean_reflected_energy_eV": 1779.359430604982
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 80.0,
+        "RN": 0.473,
+        "mean_reflected_energy_eV": 2463.002114164905
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 85.0,
+        "RN": 0.626,
+        "mean_reflected_energy_eV": 3170.926517571885
+      }
+    ],
+    "He_on_C_0.00.txt": [
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 0.0,
+        "RN": 0.0598,
+        "mean_reflected_energy_eV": 219.0635451505017
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 30.0,
+        "RN": 0.0956,
+        "mean_reflected_energy_eV": 269.8744769874477
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 45.0,
+        "RN": 0.156,
+        "mean_reflected_energy_eV": 328.8461538461538
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 60.0,
+        "RN": 0.268,
+        "mean_reflected_energy_eV": 421.6417910447761
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 70.0,
+        "RN": 0.39,
+        "mean_reflected_energy_eV": 517.9487179487179
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 80.0,
+        "RN": 0.599,
+        "mean_reflected_energy_eV": 691.1519198664441
+      },
+      {
+        "E_eV": 1000.0,
+        "angle_deg": 85.0,
+        "RN": 0.851,
+        "mean_reflected_energy_eV": 882.4911868390129
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 0.0,
+        "RN": 0.0194,
+        "mean_reflected_energy_eV": 969.0721649484536
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 30.0,
+        "RN": 0.0383,
+        "mean_reflected_energy_eV": 1159.2689295039165
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 45.0,
+        "RN": 0.0789,
+        "mean_reflected_energy_eV": 1387.8326996197718
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 60.0,
+        "RN": 0.175,
+        "mean_reflected_energy_eV": 1765.7142857142858
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 70.0,
+        "RN": 0.294,
+        "mean_reflected_energy_eV": 2193.877551020408
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 80.0,
+        "RN": 0.484,
+        "mean_reflected_energy_eV": 2944.2148760330574
+      },
+      {
+        "E_eV": 5000.0,
+        "angle_deg": 85.0,
+        "RN": 0.651,
+        "mean_reflected_energy_eV": 3663.5944700460827
+      }
+    ]
+  },
+  "method": [
+    "Log-log interpolation of primary RN/RE inside actual table domain. Native old/new TRIM split retained. He5\u201320keV uses the separate Eckstein2002 table; its5keV normalization differs modestly from newer EIRENE.",
+    "Above5keV H /20keV He, use the explicit single-collision Coulomb model times1,2,3,10. These are model sensitivities, not fitted posterior or confidence limits. No source table is extrapolated silently.",
+    "Incident below1eV is carried as zero-to-one reflection uncertainty. Multiplicity-free ultimate warm fraction from first-reflected incident atoms cannot exceed first reflection, even with arbitrarily many wall encounters.",
+    "Column-event sensitivity counts all collisions across the full stopping column as escaping. It is intentionally generous for an assumed integrated backward cross section. It neither validates a nuclear cross-section cap nor includes sputtered pre-existing target gas.",
+    "Normal-incidence family assumes a smooth macroscopic spherical surface and no trajectory-deflecting field. Angle tables diagnose local facet sensitivity; no roughness distribution is inferred."
+  ],
+  "checks": {
+    "number": 192,
+    "passed": 192
+  }
+}

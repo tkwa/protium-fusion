@@ -1,0 +1,718 @@
+{
+  "scope": "Finite-backing screen on the coherent source128 family, no new hydrodynamics.\nAll source heat retained for a conservative thermal-storage comparison.\nUses actual kinetic+advected-U arrival spectra and separate prompt proxies.\n",
+  "code_sha256": "3484b73865c77908bc42c0dba6da4ce1f1d412fecabf953cbb6be5828a19f4b6",
+  "input_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-thermal-input.json": "e3a4eaa2b73cae6384caf0f187bb91eb8859dfd3a6134b8605c21862965487b4",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/receiver_thickness.py": "7042bfb18287a1173f5804afd0ace9b572c4ee7edfc237382a13214c54cd4158",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/receiver-thickness-validation.json": "585b101f70c92a1302088d5293d215b517e8ff644e5d097e0189db71c28421be",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/material_cycle.py": "845b6fceeead8ac69da4bb4310bbbfedeaf8b7c91356275d4eb510580511405e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median128/records/A-H3-source128-carbon-median.json": "52f07535e65d203e5199c5906cdb630f7c3fc23cb1cf6050a36cefa239825edf",
+    "/home/tkwa/src/protium-fusion/output/source128/A-H3-source128-carbon-median.npz": "4ff47901afc37488a5a5aedc4b4ff73266a333d88f6184aa94e51edc2a4ee79c",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/assembly-burn/records/B1-delivered-k0p001.json": "1f3930ac627f1aa7cd3a371cd02d90b3aed28544cbad1946c2b05acf05540d83",
+    "/home/tkwa/src/protium-fusion/output/assembly-burn/B1-delivered-k0p001.npz": "52590920a1331274e0f552fed4f15ceb113511daa50abe6cd9da2591a5fc8ed5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median128/records/B2-H2-source128-carbon-median.json": "475630a144e95b3a6653517ea603241bce0bfbf4d4256f024061cddecbb292da",
+    "/home/tkwa/src/protium-fusion/output/source128/B2-H2-source128-carbon-median.npz": "dd9b9fce2f72df2d75e1fc79774b3bd304aac621eea112e1109a54b4a533687b",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/c13-polymer-source/records/C13-H2-source128-carbon-median.json": "86552f8dc4ed3aad297444692716990b7697897fd38efb7d8ab2fb99a49112a3",
+    "/home/tkwa/src/protium-fusion/output/c13-polymer-source/C13-H2-source128-carbon-median.npz": "e4982d051e776b14687097cc42e4b8275ab8aaf35f5d89f16a765cc66b88164f"
+  },
+  "reference": {
+    "source_family": "delivered-B1/C13-CH2 source128 carbon median, exact archived hot source family",
+    "selected_cases": {
+      "A": "A-H3-source128-carbon-median",
+      "B1": "B1-delivered-k0p001",
+      "B2": "B2-H2-source128-carbon-median",
+      "C13": "C13-H2-source128-carbon-median"
+    },
+    "radius_m": 1100000000.0,
+    "area_m2": 1.5205308443374598e+19,
+    "cadence_from_receiver_sigma": 2000,
+    "cadence_He_s": 4.4813882663536854e+32,
+    "B1_period_s": 7130.470369901413,
+    "B1_history_minimum_spacing_bound_s": 5174.316607695707,
+    "large_guard_s": 86400.0,
+    "large_guard_capacity_fraction": 0.21775516990892468,
+    "all_source_mean_W_m2": 125.795739191235,
+    "mean_smooth_vs_exact_nodal_relative": -0.0004541832346270924
+  },
+  "pulse_fluences": {
+    "A": {
+      "K_fluence": 25776646.84193177,
+      "K_nodal_fluence": 25799216.834363278,
+      "U_fluence": 1208371.1999449455,
+      "prompt_fluence": 20086.943097620016,
+      "decay_fluence": {
+        "n13": 0.029339389373362654,
+        "o14": 0.27585241158856094,
+        "o15": 5945220.701993189
+      },
+      "fluence": 32950325.99215933,
+      "period": 751013.2652194173,
+      "actual_early_fraction": 0.9999999719280223,
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median128/records/A-H3-source128-carbon-median.json",
+      "record_sha256": "52f07535e65d203e5199c5906cdb630f7c3fc23cb1cf6050a36cefa239825edf",
+      "trace": "/home/tkwa/src/protium-fusion/output/source128/A-H3-source128-carbon-median.npz",
+      "trace_sha256": "4ff47901afc37488a5a5aedc4b4ff73266a333d88f6184aa94e51edc2a4ee79c"
+    },
+    "B1": {
+      "K_fluence": 165617.96114869902,
+      "K_nodal_fluence": 165671.98299173056,
+      "U_fluence": 8147.504073907211,
+      "prompt_fluence": 14449.756311157194,
+      "decay_fluence": {
+        "n13": 12.880496555973663,
+        "o14": 0.0024716822922170637,
+        "o15": 5.673376635878621e-15
+      },
+      "fluence": 188228.1045020017,
+      "period": 7130.470369901413,
+      "actual_early_fraction": 0.9999999567383335,
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/assembly-burn/records/B1-delivered-k0p001.json",
+      "record_sha256": "1f3930ac627f1aa7cd3a371cd02d90b3aed28544cbad1946c2b05acf05540d83",
+      "trace": "/home/tkwa/src/protium-fusion/output/assembly-burn/B1-delivered-k0p001.npz",
+      "trace_sha256": "52590920a1331274e0f552fed4f15ceb113511daa50abe6cd9da2591a5fc8ed5"
+    },
+    "B2": {
+      "K_fluence": 27523839.339749668,
+      "K_nodal_fluence": 27539073.882391248,
+      "U_fluence": 1712837.2990698284,
+      "prompt_fluence": 5594.41909729416,
+      "decay_fluence": {
+        "n13": 594700.4110733847,
+        "o14": 16087125.991078176,
+        "o15": 0.022271240898032854
+      },
+      "fluence": 45924097.48233959,
+      "period": 915373.8982115707,
+      "actual_early_fraction": 0.9999999472250146,
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median128/records/B2-H2-source128-carbon-median.json",
+      "record_sha256": "475630a144e95b3a6653517ea603241bce0bfbf4d4256f024061cddecbb292da",
+      "trace": "/home/tkwa/src/protium-fusion/output/source128/B2-H2-source128-carbon-median.npz",
+      "trace_sha256": "dd9b9fce2f72df2d75e1fc79774b3bd304aac621eea112e1109a54b4a533687b"
+    },
+    "C13": {
+      "K_fluence": 49150091.08735926,
+      "K_nodal_fluence": 49179887.024085104,
+      "U_fluence": 2549006.034801782,
+      "prompt_fluence": 60067.57703200813,
+      "decay_fluence": {
+        "n13": 0.02765871900707795,
+        "o14": 13.837007569298388,
+        "o15": 3817986.184969736
+      },
+      "fluence": 55577164.74882907,
+      "period": 10380949.90644846,
+      "actual_early_fraction": 0.9999999845507324,
+      "record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/c13-polymer-source/records/C13-H2-source128-carbon-median.json",
+      "record_sha256": "86552f8dc4ed3aad297444692716990b7697897fd38efb7d8ab2fb99a49112a3",
+      "trace": "/home/tkwa/src/protium-fusion/output/c13-polymer-source/C13-H2-source128-carbon-median.npz",
+      "trace_sha256": "e4982d051e776b14687097cc42e4b8275ab8aaf35f5d89f16a765cc66b88164f"
+    }
+  },
+  "thermal_rows": [
+    {
+      "sigma_kg_m2": 200.0,
+      "thickness_m": 0.1,
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusion_time_s": 720.0000000000001,
+      "nonuniform_fundamental_decay_s": 72.9512522224832,
+      "bulk_mode_total_swing_upper_K": 373.99948979952774,
+      "constant_mean_pickup_W_m2": 125.795739191235,
+      "constant_mean_back_extraction_front_offset_K": 0.041931913063745004,
+      "bulk_floor_offset_to_keep_pickup_at_least1000K": 0.12579573919123502,
+      "additional_bulk_swing_for_bounded1day_dispatch_lateness_K": 30.1909774058964,
+      "old_big_nonuniform_background_K": 0.0,
+      "old_B1_nonuniform_background_K": 4.144790592392539e-16,
+      "late_tails_nonuniform_bound_K": 1.0711814149549e-05,
+      "common_background_upper_K": 374.0414324244056,
+      "slow_front_temperature_all_phase_bound_K": 1690.1485761709519,
+      "all_surface_photon_front_temperature_reference_bound_K": 2392.3342438737063,
+      "isolated_peaks": {
+        "A": {
+          "material_only_nonuniform_peak_K": 135.16896231902658,
+          "material_plus_decay_nonuniform_peak_K": 147.8187385380072,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 147.8969985340937,
+          "slow_peak_time_s": 116.5,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 205.86776101153026,
+          "full_front_peak_time_s": 136.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 72.14257037711188,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 4508910.648569493,
+          "material_contribution_at_slow_peak_K": 135.16896231902658,
+          "decay_contribution_at_slow_peak_K": 12.649776218980637,
+          "all_surface_prompt_flash_reference_K": 355.1065077432557,
+          "maximum_K_plus_U_flux_W_m2": 375933.9513215072,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.009407547920567057,
+          "curvature_peak_time_s": 139.75,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0011759434900708821,
+            "3.0": 0.010583491410637939,
+            "5.0": 0.029398587251772055,
+            "10.0": 0.11759434900708822,
+            "100.0": 11.759434900708822
+          },
+          "span_for1cm_one_axis_sag_m": 2.916129282326378,
+          "span_for10cm_one_axis_sag_m": 9.221610483663556
+        },
+        "B1": {
+          "material_only_nonuniform_peak_K": 0.8416225089100942,
+          "material_plus_decay_nonuniform_peak_K": 0.8416305976058399,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 1.2154859445817883,
+          "slow_peak_time_s": 0.25,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 1.2154859549666641,
+          "full_front_peak_time_s": 0.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 1.098447101284283,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 68652.94383026769,
+          "material_contribution_at_slow_peak_K": 2.806643806252396e-17,
+          "decay_contribution_at_slow_peak_K": 6.184731565250001e-07,
+          "all_surface_prompt_flash_reference_K": 221.69514570237155,
+          "maximum_K_plus_U_flux_W_m2": 2058.2046761479855,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 5.275215456537833e-05,
+          "curvature_peak_time_s": 162.5,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 6.594019320672291e-06,
+            "3.0": 5.934617388605062e-05,
+            "5.0": 0.0001648504830168073,
+            "10.0": 0.0006594019320672292,
+            "100.0": 0.06594019320672291
+          },
+          "span_for1cm_one_axis_sag_m": 38.94259538695557,
+          "span_for10cm_one_axis_sag_m": 123.14729942114577
+        },
+        "B2": {
+          "material_only_nonuniform_peak_K": 149.97248217069009,
+          "material_plus_decay_nonuniform_peak_K": 194.76433266804537,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 194.78661222220794,
+          "slow_peak_time_s": 111.5,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 281.05326011917185,
+          "full_front_peak_time_s": 125.0,
+          "free_plate_front_residual_thermal_strain_K_peak": 91.39917934964578,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 5712448.709352861,
+          "material_contribution_at_slow_peak_K": 149.49846374403188,
+          "decay_contribution_at_slow_peak_K": 45.265868924013475,
+          "all_surface_prompt_flash_reference_K": 178.09229255180205,
+          "maximum_K_plus_U_flux_W_m2": 458179.4281971532,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.012608031940080791,
+          "curvature_peak_time_s": 128.5,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.001576003992510099,
+            "3.0": 0.014184035932590891,
+            "5.0": 0.03940009981275247,
+            "10.0": 0.15760039925100988,
+            "100.0": 15.760039925100989
+          },
+          "span_for1cm_one_axis_sag_m": 2.5189604186367838,
+          "span_for10cm_one_axis_sag_m": 7.96565225870349
+        },
+        "C13": {
+          "material_only_nonuniform_peak_K": 306.0009763049442,
+          "material_plus_decay_nonuniform_peak_K": 314.615640255427,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 314.89165780196424,
+          "slow_peak_time_s": 83.75,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 406.9604724786237,
+          "full_front_peak_time_s": 90.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 164.30518410459953,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 10269074.006537471,
+          "material_contribution_at_slow_peak_K": 306.0009763049442,
+          "decay_contribution_at_slow_peak_K": 8.614663950482846,
+          "all_surface_prompt_flash_reference_K": 796.597665746929,
+          "maximum_K_plus_U_flux_W_m2": 866209.9049638317,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.018883232428166696,
+          "curvature_peak_time_s": 105.75,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.002360404053520837,
+            "3.0": 0.021243636481687533,
+            "5.0": 0.059010101338020926,
+            "10.0": 0.2360404053520837,
+            "100.0": 23.60404053520837
+          },
+          "span_for1cm_one_axis_sag_m": 2.058291232408352,
+          "span_for10cm_one_axis_sag_m": 6.508888382365374
+        }
+      },
+      "scope": "Constant mean extraction at back, finite uniform energy mode; all retained source heat at front for slow/decay upper screen. Volume-average perstage storage modes shifted so sum minimum is1000K. Actual pickup temperature need not be exactly1000K."
+    },
+    {
+      "sigma_kg_m2": 250.0,
+      "thickness_m": 0.125,
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusion_time_s": 1125.0,
+      "nonuniform_fundamental_decay_s": 113.98633159763,
+      "bulk_mode_total_swing_upper_K": 299.1995918396222,
+      "constant_mean_pickup_W_m2": 125.795739191235,
+      "constant_mean_back_extraction_front_offset_K": 0.05241489132968125,
+      "bulk_floor_offset_to_keep_pickup_at_least1000K": 0.15724467398904374,
+      "additional_bulk_swing_for_bounded1day_dispatch_lateness_K": 24.15278192471712,
+      "old_big_nonuniform_background_K": 2.5403488718028148e-251,
+      "old_B1_nonuniform_background_K": 1.1621975452350932e-10,
+      "late_tails_nonuniform_bound_K": 1.3389767686936248e-05,
+      "common_background_upper_K": 299.2520201208358,
+      "slow_front_temperature_all_phase_bound_K": 1632.8396089960409,
+      "all_surface_photon_front_temperature_reference_bound_K": 2317.5448315701365,
+      "isolated_peaks": {
+        "A": {
+          "material_only_nonuniform_peak_K": 143.51263275861456,
+          "material_plus_decay_nonuniform_peak_K": 157.81207972624566,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 157.89025588723499,
+          "slow_peak_time_s": 116.75,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 205.8427574996763,
+          "full_front_peak_time_s": 136.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 86.50792044094587,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 5406745.0275591165,
+          "material_contribution_at_slow_peak_K": 143.51164262766412,
+          "decay_contribution_at_slow_peak_K": 14.300437098581535,
+          "all_surface_prompt_flash_reference_K": 355.1065077432557,
+          "maximum_K_plus_U_flux_W_m2": 375933.9513215072,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.007314280050693221,
+          "curvature_peak_time_s": 145.5,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0009142850063366526,
+            "3.0": 0.008228565057029874,
+            "5.0": 0.022857125158416314,
+            "10.0": 0.09142850063366526,
+            "100.0": 9.142850063366526
+          },
+          "span_for1cm_one_axis_sag_m": 3.3071904192416484,
+          "span_for10cm_one_axis_sag_m": 10.458254380690763
+        },
+        "B1": {
+          "material_only_nonuniform_peak_K": 0.8948071290024023,
+          "material_plus_decay_nonuniform_peak_K": 0.8948163202384671,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 1.2154859466587635,
+          "slow_peak_time_s": 0.25,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 1.2154859549666641,
+          "full_front_peak_time_s": 0.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 1.1213147536209649,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 70082.17210131031,
+          "material_contribution_at_slow_peak_K": 2.2737367544323207e-17,
+          "decay_contribution_at_slow_peak_K": 6.20550131696721e-07,
+          "all_surface_prompt_flash_reference_K": 221.69514570237155,
+          "maximum_K_plus_U_flux_W_m2": 2058.2046761479855,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 4.105913725097495e-05,
+          "curvature_peak_time_s": 171.25,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 5.132392156371869e-06,
+            "3.0": 4.619152940734682e-05,
+            "5.0": 0.00012830980390929672,
+            "10.0": 0.0005132392156371869,
+            "100.0": 0.051323921563718684
+          },
+          "span_for1cm_one_axis_sag_m": 44.140788182768624,
+          "span_for10cm_one_axis_sag_m": 139.5854283725936
+        },
+        "B2": {
+          "material_only_nonuniform_peak_K": 160.93471680490143,
+          "material_plus_decay_nonuniform_peak_K": 210.11662275165892,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 210.13885251901846,
+          "slow_peak_time_s": 112.0,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 280.99326665424013,
+          "full_front_peak_time_s": 125.0,
+          "free_plate_front_residual_thermal_strain_K_peak": 108.99212893894217,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 6812008.058683886,
+          "material_contribution_at_slow_peak_K": 158.57151681810785,
+          "decay_contribution_at_slow_peak_K": 51.54510593355107,
+          "all_surface_prompt_flash_reference_K": 178.09229255180205,
+          "maximum_K_plus_U_flux_W_m2": 458179.4281971532,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.009927366245394179,
+          "curvature_peak_time_s": 141.0,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0012409207806742724,
+            "3.0": 0.011168287026068452,
+            "5.0": 0.03102301951685681,
+            "10.0": 0.12409207806742724,
+            "100.0": 12.409207806742725
+          },
+          "span_for1cm_one_axis_sag_m": 2.8387553865431236,
+          "span_for10cm_one_axis_sag_m": 8.976932741547973
+        },
+        "C13": {
+          "material_only_nonuniform_peak_K": 322.65001575164763,
+          "material_plus_decay_nonuniform_peak_K": 332.0989247291475,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 332.37210292854616,
+          "slow_peak_time_s": 85.5,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 406.95984219308525,
+          "full_front_peak_time_s": 90.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 194.8999640653027,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 12181247.754081417,
+          "material_contribution_at_slow_peak_K": 322.65001575164763,
+          "decay_contribution_at_slow_peak_K": 9.448908977499844,
+          "all_surface_prompt_flash_reference_K": 796.597665746929,
+          "maximum_K_plus_U_flux_W_m2": 866209.9049638317,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.014264967176958979,
+          "curvature_peak_time_s": 110.25,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0017831208971198723,
+            "3.0": 0.01604808807407885,
+            "5.0": 0.04457802242799681,
+            "10.0": 0.17831208971198723,
+            "100.0": 17.831208971198723
+          },
+          "span_for1cm_one_axis_sag_m": 2.368152168918503,
+          "span_for10cm_one_axis_sag_m": 7.4887546996502765
+        }
+      },
+      "scope": "Constant mean extraction at back, finite uniform energy mode; all retained source heat at front for slow/decay upper screen. Volume-average perstage storage modes shifted so sum minimum is1000K. Actual pickup temperature need not be exactly1000K."
+    },
+    {
+      "sigma_kg_m2": 350.0,
+      "thickness_m": 0.175,
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusion_time_s": 2204.9999999999995,
+      "nonuniform_fundamental_decay_s": 223.41320993135474,
+      "bulk_mode_total_swing_upper_K": 213.7139941711587,
+      "constant_mean_pickup_W_m2": 125.795739191235,
+      "constant_mean_back_extraction_front_offset_K": 0.07338084786155376,
+      "bulk_floor_offset_to_keep_pickup_at_least1000K": 0.22014254358466126,
+      "additional_bulk_swing_for_bounded1day_dispatch_lateness_K": 17.251987089083656,
+      "old_big_nonuniform_background_K": 1.4830889810940957e-127,
+      "old_B1_nonuniform_background_K": 5.5870044681771524e-06,
+      "late_tails_nonuniform_bound_K": 1.8745674761710744e-05,
+      "common_background_upper_K": 213.7873993516995,
+      "slow_front_temperature_all_phase_bound_K": 1567.9640243553852,
+      "all_surface_photon_front_temperature_reference_bound_K": 2232.0802108010002,
+      "isolated_peaks": {
+        "A": {
+          "material_only_nonuniform_peak_K": 153.49983138107217,
+          "material_plus_decay_nonuniform_peak_K": 169.5688105342872,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 169.64624410763406,
+          "slow_peak_time_s": 119.0,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 205.84188612959866,
+          "full_front_peak_time_s": 136.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 108.01137190428722,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 6750710.744017951,
+          "material_contribution_at_slow_peak_K": 153.38953990785438,
+          "decay_contribution_at_slow_peak_K": 16.179270626432803,
+          "all_surface_prompt_flash_reference_K": 355.1065077432557,
+          "maximum_K_plus_U_flux_W_m2": 375933.9513215072,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.004656743381792868,
+          "curvature_peak_time_s": 162.0,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0005820929227241085,
+            "3.0": 0.005238836304516976,
+            "5.0": 0.014552323068102712,
+            "10.0": 0.05820929227241085,
+            "100.0": 5.820929227241085
+          },
+          "span_for1cm_one_axis_sag_m": 4.144802492920432,
+          "span_for10cm_one_axis_sag_m": 13.10701632917249
+        },
+        "B1": {
+          "material_only_nonuniform_peak_K": 0.9569674410717166,
+          "material_plus_decay_nonuniform_peak_K": 0.9569779412690732,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 1.2154859490324494,
+          "slow_peak_time_s": 0.25,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 1.2154859549666641,
+          "full_front_peak_time_s": 0.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 1.1477799089327951,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 71736.24430829969,
+          "material_contribution_at_slow_peak_K": 2.2026824808563108e-17,
+          "decay_contribution_at_slow_peak_K": 6.229238176072589e-07,
+          "all_surface_prompt_flash_reference_K": 221.69514570237155,
+          "maximum_K_plus_U_flux_W_m2": 2058.2046761479855,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 2.6422680688906162e-05,
+          "curvature_peak_time_s": 189.25,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 3.3028350861132703e-06,
+            "3.0": 2.9725515775019432e-05,
+            "5.0": 8.257087715283176e-05,
+            "10.0": 0.00033028350861132705,
+            "100.0": 0.033028350861132705
+          },
+          "span_for1cm_one_axis_sag_m": 55.0245570644117,
+          "span_for10cm_one_axis_sag_m": 174.0029275654493
+        },
+        "B2": {
+          "material_only_nonuniform_peak_K": 173.4668648874234,
+          "material_plus_decay_nonuniform_peak_K": 230.1157722274371,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 230.13683539291094,
+          "slow_peak_time_s": 124.75,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 280.9915703990398,
+          "full_front_peak_time_s": 125.0,
+          "free_plate_front_residual_thermal_strain_K_peak": 135.81985538275546,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 8488740.961422216,
+          "material_contribution_at_slow_peak_K": 173.4632339754181,
+          "decay_contribution_at_slow_peak_K": 56.65253825201902,
+          "all_surface_prompt_flash_reference_K": 178.09229255180205,
+          "maximum_K_plus_U_flux_W_m2": 458179.4281971532,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.006436131071778559,
+          "curvature_peak_time_s": 152.25,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0008045163839723199,
+            "3.0": 0.007240647455750879,
+            "5.0": 0.020112909599307997,
+            "10.0": 0.08045163839723199,
+            "100.0": 8.045163839723198
+          },
+          "span_for1cm_one_axis_sag_m": 3.525596071161456,
+          "span_for10cm_one_axis_sag_m": 11.14891369461128
+        },
+        "C13": {
+          "material_only_nonuniform_peak_K": 342.26012023050674,
+          "material_plus_decay_nonuniform_peak_K": 352.69032608082045,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 352.96113905465313,
+          "slow_peak_time_s": 87.0,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 406.9598374093252,
+          "full_front_peak_time_s": 90.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 238.68469168690234,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 14917793.230431398,
+          "material_contribution_at_slow_peak_K": 342.26012023050674,
+          "decay_contribution_at_slow_peak_K": 10.430205850313698,
+          "all_surface_prompt_flash_reference_K": 796.597665746929,
+          "maximum_K_plus_U_flux_W_m2": 866209.9049638317,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.00875740683166478,
+          "curvature_peak_time_s": 122.25,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0010946758539580974,
+            "3.0": 0.009852082685622876,
+            "5.0": 0.027366896348952435,
+            "10.0": 0.10946758539580974,
+            "100.0": 10.946758539580975
+          },
+          "span_for1cm_one_axis_sag_m": 3.0224368157788226,
+          "span_for10cm_one_axis_sag_m": 9.557784421807822
+        }
+      },
+      "scope": "Constant mean extraction at back, finite uniform energy mode; all retained source heat at front for slow/decay upper screen. Volume-average perstage storage modes shifted so sum minimum is1000K. Actual pickup temperature need not be exactly1000K."
+    },
+    {
+      "sigma_kg_m2": 500.0,
+      "thickness_m": 0.25,
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0,
+      "diffusion_time_s": 4500.0,
+      "nonuniform_fundamental_decay_s": 455.94532639052,
+      "bulk_mode_total_swing_upper_K": 149.5997959198111,
+      "constant_mean_pickup_W_m2": 125.795739191235,
+      "constant_mean_back_extraction_front_offset_K": 0.1048297826593625,
+      "bulk_floor_offset_to_keep_pickup_at_least1000K": 0.3144893479780875,
+      "additional_bulk_swing_for_bounded1day_dispatch_lateness_K": 12.07639096235856,
+      "old_big_nonuniform_background_K": 6.994050234691913e-62,
+      "old_B1_nonuniform_background_K": 0.0014360567156566724,
+      "late_tails_nonuniform_bound_K": 2.6779535373872495e-05,
+      "common_background_upper_K": 149.70608853872147,
+      "slow_front_temperature_all_phase_bound_K": 1519.6718416322674,
+      "all_surface_photon_front_temperature_reference_bound_K": 2167.998899988022,
+      "isolated_peaks": {
+        "A": {
+          "material_only_nonuniform_peak_K": 162.82128646453737,
+          "material_plus_decay_nonuniform_peak_K": 180.3139424847634,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 180.3863084753014,
+          "slow_peak_time_s": 136.25,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 205.8418859554281,
+          "full_front_peak_time_s": 136.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 128.9220438382416,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 8057627.7398900995,
+          "material_contribution_at_slow_peak_K": 162.82128646453737,
+          "decay_contribution_at_slow_peak_K": 17.492656020226047,
+          "all_surface_prompt_flash_reference_K": 355.1065077432557,
+          "maximum_K_plus_U_flux_W_m2": 375933.9513215072,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.002708493679164383,
+          "curvature_peak_time_s": 184.5,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.00033856170989554786,
+            "3.0": 0.003047055389059931,
+            "5.0": 0.008464042747388696,
+            "10.0": 0.03385617098955478,
+            "100.0": 3.385617098955479
+          },
+          "span_for1cm_one_axis_sag_m": 5.434768884576758,
+          "span_for10cm_one_axis_sag_m": 17.1862482318753
+        },
+        "B1": {
+          "material_only_nonuniform_peak_K": 1.0045806761227083,
+          "material_plus_decay_nonuniform_peak_K": 1.004592162761403,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 1.2154859508127138,
+          "slow_peak_time_s": 0.25,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 1.2154859549666641,
+          "full_front_peak_time_s": 0.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 1.1678602672102754,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 72991.2667006422,
+          "material_contribution_at_slow_peak_K": 2.913225216616411e-17,
+          "decay_contribution_at_slow_peak_K": 6.247040820401623e-07,
+          "all_surface_prompt_flash_reference_K": 221.69514570237155,
+          "maximum_K_plus_U_flux_W_m2": 2058.2046761479855,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 1.554152565511331e-05,
+          "curvature_peak_time_s": 215.0,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 1.942690706889164e-06,
+            "3.0": 1.7484216362002476e-05,
+            "5.0": 4.85672676722291e-05,
+            "10.0": 0.0001942690706889164,
+            "100.0": 0.01942690706889164
+          },
+          "span_for1cm_one_axis_sag_m": 71.7460785481811,
+          "span_for10cm_one_axis_sag_m": 226.8810213975989
+        },
+        "B2": {
+          "material_only_nonuniform_peak_K": 182.8978567689758,
+          "material_plus_decay_nonuniform_peak_K": 245.34410761569984,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 245.36517078117367,
+          "slow_peak_time_s": 124.75,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 280.9915702308716,
+          "full_front_peak_time_s": 125.0,
+          "free_plate_front_residual_thermal_strain_K_peak": 167.22510466421977,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 10451569.041513735,
+          "material_contribution_at_slow_peak_K": 182.8596220895634,
+          "decay_contribution_at_slow_peak_K": 62.48448552613645,
+          "all_surface_prompt_flash_reference_K": 178.09229255180205,
+          "maximum_K_plus_U_flux_W_m2": 458179.4281971532,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.0037868281088714946,
+          "curvature_peak_time_s": 182.0,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0004733535136089368,
+            "3.0": 0.004260181622480432,
+            "5.0": 0.01183383784022342,
+            "10.0": 0.04733535136089368,
+            "100.0": 4.733535136089368
+          },
+          "span_for1cm_one_axis_sag_m": 4.596287618865388,
+          "span_for10cm_one_axis_sag_m": 14.53473765684653
+        },
+        "C13": {
+          "material_only_nonuniform_peak_K": 357.29453667175943,
+          "material_plus_decay_nonuniform_peak_K": 368.4817590038366,
+          "slow_plus_prompt_tail_nonuniform_peak_K": 368.7502671427334,
+          "slow_peak_time_s": 88.5,
+          "isolated_slow_full_front_rise_K_including_its_bulk_mode": 406.95983740930876,
+          "full_front_peak_time_s": 90.25,
+          "free_plate_front_residual_thermal_strain_K_peak": 278.89147365303654,
+          "front_stress_scale_Pa_at_E10GPa_nu0p2_alpha5em6": 17430717.103314783,
+          "material_contribution_at_slow_peak_K": 357.29453667175943,
+          "decay_contribution_at_slow_peak_K": 11.187222332077157,
+          "all_surface_prompt_flash_reference_K": 796.597665746929,
+          "maximum_K_plus_U_flux_W_m2": 866209.9049638317,
+          "free_plate_curvature_peak_1_m_at_alpha5em6": 0.0049447406894158755,
+          "curvature_peak_time_s": 137.25,
+          "free_plate_one_axis_sag_at_span_m": {
+            "1.0": 0.0006180925861769844,
+            "3.0": 0.00556283327559286,
+            "5.0": 0.015452314654424612,
+            "10.0": 0.06180925861769845,
+            "100.0": 6.180925861769844
+          },
+          "span_for1cm_one_axis_sag_m": 4.022288643593288,
+          "span_for10cm_one_axis_sag_m": 12.719593520384025
+        }
+      },
+      "scope": "Constant mean extraction at back, finite uniform energy mode; all retained source heat at front for slow/decay upper screen. Volume-average perstage storage modes shifted so sum minimum is1000K. Actual pickup temperature need not be exactly1000K."
+    }
+  ],
+  "finite_volume_kernel_validation": [
+    {
+      "cells": 128,
+      "max_relative_error": 0.0039322599663720315
+    },
+    {
+      "cells": 512,
+      "max_relative_error": 0.00024532216404526963
+    },
+    {
+      "cells": 1024,
+      "max_relative_error": 6.132505337230754e-05
+    }
+  ],
+  "actual_profile_timestep_refinement": [
+    {
+      "stage": "A",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "peak_K": [
+        180.2174803118763,
+        180.3139424847634,
+        180.30580126678896
+      ],
+      "finest_relative_to_base": -4.515024108653343e-05
+    },
+    {
+      "stage": "B1",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "peak_K": [
+        1.0047267177088277,
+        1.004592162761403,
+        1.0045371059769306
+      ],
+      "finest_relative_to_base": -5.480511048483461e-05
+    },
+    {
+      "stage": "B2",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "peak_K": [
+        245.4280857071273,
+        245.3441076156998,
+        245.43479297635267
+      ],
+      "finest_relative_to_base": 0.0003696251829079511
+    },
+    {
+      "stage": "C13",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "peak_K": [
+        368.50181947535157,
+        368.48175900383666,
+        368.4653842209059
+      ],
+      "finest_relative_to_base": -4.4438517051825777e-05
+    }
+  ],
+  "independent_integration_ledger_checks": [
+    {
+      "family": "source128",
+      "sigma": "5000",
+      "relative_residuals": {
+        "mass": -1.1102230246251565e-16,
+        "electrical": 2.220446049250313e-16,
+        "global_nonnu": 0.0,
+        "nuclear": 0.0,
+        "radiator": -1.1102230246251565e-16,
+        "period_n14": 0.0,
+        "period_n15": -1.1102230246251565e-16,
+        "period_c12": 0.0,
+        "period_c13": 0.0
+      }
+    },
+    {
+      "family": "source128",
+      "sigma": "2000",
+      "relative_residuals": {
+        "mass": 2.220446049250313e-16,
+        "electrical": 0.0,
+        "global_nonnu": 0.0,
+        "nuclear": 0.0,
+        "radiator": 0.0,
+        "period_n14": 0.0,
+        "period_n15": 0.0,
+        "period_c12": -2.220446049250313e-16,
+        "period_c13": 0.0
+      }
+    }
+  ],
+  "qualification": [
+    "All-source retention is a conservative hot-buffer screen, not inherited99% capture in thin receivers.",
+    "Constant k,cp,rho are requirements/scenarios; no high-temperature damage property law or coupled radiative-cooling/vapor model.",
+    "Photon grey flash and finite-depth spectral proxies remain separately identified; a grey luminosity does not determine an escaping spectrum.",
+    "The bulk-mode bound is valid for periodic stage streams with constant mean pickup. One-day separation between large pulses is an explicit dispatch requirement; arbitrary burst schedules can require more storage.",
+    "A positive back-face delay kernel maps the bulk-mode history to the pickup temperature with constant offset minus qmean*L/(2*k). Raising the bulk floor by that offset keeps pickup at least1000K without fixing its temperature.",
+    "A one-day bounded dispatch lateness relative to nominal stage release times adds at most qmean*86400/(Sigma*cp) to the summed bulk storage range; this is an explicit schedule acceptance sensitivity.",
+    "Free plate curvature uses a selected constant thermal-expansion coefficient5e-6/K. This is a thermal-strain/segmentation screen, not a fatigue/joint or irradiated-material qualification.",
+    "No fixed1000K back-face or instantaneous peak heat-engine capacity is assumed."
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "scope": "Replaceable economic inputs. Full scenario names and source hashes preserve separation of current comparison families.",
+  "assumptions": {
+    "year_s": 31557600.0,
+    "operating_fresh_C_H_ceiling": 0.007,
+    "resource_C_H_mass_ratio": 0.007,
+    "standard_methane_decomposition_G_J_mol": 50768.0,
+    "carbon_molar_mass_kg_mol": 0.0120107,
+    "hydrogen_atomic_mass_g_mol": 1.00794,
+    "methane_chemical_efficiencies": [
+      0.5,
+      0.99
+    ],
+    "whole_plant_embodied_J_kg_scenarios": [
+      1000000.0,
+      2000000.0,
+      10000000.0,
+      100000000.0,
+      1000000000.0
+    ],
+    "whole_plant_refurbishment_J_kg_scenarios": [
+      2000000.0,
+      10000000.0,
+      100000000.0,
+      1000000000.0
+    ],
+    "lifetimes_years": [
+      20.0,
+      100.0,
+      1000.0
+    ],
+    "construction_years": [
+      5.0,
+      20.0,
+      100.0
+    ],
+    "nominal_solar_irradiance_W_m2_at_au": 1361.0,
+    "nominal_solar_luminosity_W": 3.828e+26,
+    "comparison_solar_efficiency": 0.3,
+    "comparison_solar_complete_kg_m2": 1.0,
+    "comparison_solar_delivery_efficiency": 1.0
+  },
+  "primary_sources": {
+    "methane": "https://janaf.nist.gov/tables/C-067.html",
+    "graphite": "https://janaf.nist.gov/tables/C-002.html",
+    "nominal_solar": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+    "manufacturing_theory": "https://nanosystems.contact.ms/molecular_manufacturing_systems/"
+  },
+  "cases": {
+    "median_carbon64_sigma5000": {
+      "source": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/plant-carbon-only64.json",
+      "source_sha256": "357ed554c52725681f4383fdd0f6b6dca0b5b3861601c50e367c5704d200567c",
+      "scope": "Conditional 64-zone median-carbon-rate mixture comparison, fixed reference hot profiles; does not include later source-profile or spatial convergence updates.",
+      "plant": {
+        "mass_kg": 1.2192000330545527e+23,
+        "net_W": 7.994314020774174e+20,
+        "net_W_kg": 0.006557015915382994,
+        "area_m2": 1.5205308443374598e+19,
+        "radius_m": 1100000000.0,
+        "fresh_H_kg_s": 2990430.027983503,
+        "fresh_C_kg_s": 1072.4803779225183,
+        "fresh_C_H_mass_ratio": 0.0003586375096178758,
+        "recovered_H_kg_s": 3713056.400994887,
+        "recovered_CNO_kg_s": 38583217.168365695,
+        "gross_fuel_kg_s": 45232625.76026942,
+        "driver_W": 2.3562975718505762e+20,
+        "prepared_pulse_W": 1.4137785431103457e+20,
+        "ordinary_auxiliary_W": 8.895909497263553e+19,
+        "replacement_W": 7.726823542059933e+17,
+        "routine_repaired_kg_s": 386341177102.99664,
+        "factory_mass_per_repaired_kg_s": 99999999.99999999,
+        "mass_breakdown_kg": {
+          "receiver": 7.602654221687298e+22,
+          "insulation": 1.5205308443374597e+21,
+          "processing_structure_thermal_service": 1.52053084433746e+22,
+          "peak_driver_hardware": 2.838893937328852e+21,
+          "two_pulse_storage": 1.358131011980951e+21,
+          "average_driver_conditioning": 2.3562975718505763e+19,
+          "working_inventory": 608820999607353.0,
+          "inflight_fuel_inventory": 219157387643.5004,
+          "fresh_feed_buffer": 7753974501672.813,
+          "thermal_electric_converter": 1.1252207069114129e+20,
+          "incremental_heat_exchangers": 1.0347781846297215e+19,
+          "incremental_pump_hardware": 0.0,
+          "radiator_panels": 2.7369555195770988e+20,
+          "replacement_factory_capacity": 3.863411771029966e+19,
+          "ten_year_spares": 1.2192000330545527e+20,
+          "support_streams": 5.913072445813298e+18,
+          "installed_reserve": 2.4384000661091055e+22
+        },
+        "selected_cases": {
+          "A": "A-H3-fixed_energy-z64-k0p001-t1-rates-updated-median",
+          "B1": "B1-H2-fixed_energy-z64-k0p001-t1-rates-updated-median",
+          "B2": "B2-H2-fixed_energy-z64-k0p001-t1-rates-updated-median",
+          "C13": "C13-H4-fixed_energy-z64-k0p001-t1-rates-updated-median"
+        },
+        "receiver_areal_mass_kg_m2": 4999.999999999999
+      },
+      "cycle": {
+        "U_prepared_MeV_per_He": 1.9755304039731623,
+        "nuclear_Q_MeV_per_He": 26.73504331672203,
+        "gross_H_input_atoms_per_He": 8.967661809760857,
+        "gross_H_output_atoms_per_He": 4.967181546120392,
+        "carbon_return": 1.0,
+        "hydrogen_return": 1.0
+      }
+    },
+    "median_carbon64_sigma2000": {
+      "source": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/plant-carbon-only64-Sigma2000.json",
+      "source_sha256": "bbe49654a64cc2e21c945592d0ef5f6f4ce651bdcc51f16e8538ab95cecf00be",
+      "scope": "Conditional 64-zone median-carbon-rate mixture comparison, fixed reference hot profiles; does not include later source-profile or spatial convergence updates.",
+      "plant": {
+        "mass_kg": 6.48013332460782e+22,
+        "net_W": 8.006286653051635e+20,
+        "net_W_kg": 0.012355126433353403,
+        "area_m2": 1.5205308443374598e+19,
+        "radius_m": 1100000000.0,
+        "fresh_H_kg_s": 2992476.8731296896,
+        "fresh_C_kg_s": 1073.2144533683202,
+        "fresh_C_H_mass_ratio": 0.0003586375096178758,
+        "recovered_H_kg_s": 3715597.8587119295,
+        "recovered_CNO_kg_s": 38609626.03600223,
+        "gross_fuel_kg_s": 45263585.91637417,
+        "driver_W": 2.3579103754282497e+20,
+        "prepared_pulse_W": 1.4147462252569498e+20,
+        "ordinary_auxiliary_W": 8.902060882339933e+19,
+        "replacement_W": 4.1068606767357594e+17,
+        "routine_repaired_kg_s": 205343033836.788,
+        "factory_mass_per_repaired_kg_s": 99999999.99999999,
+        "mass_breakdown_kg": {
+          "receiver": 3.04106168867492e+22,
+          "insulation": 1.5205308443374597e+21,
+          "processing_structure_thermal_service": 1.52053084433746e+22,
+          "peak_driver_hardware": 2.838893937328852e+21,
+          "two_pulse_storage": 1.358131011980951e+21,
+          "average_driver_conditioning": 2.35791037542825e+19,
+          "working_inventory": 609237716365906.6,
+          "inflight_fuel_inventory": 219307393238.33173,
+          "fresh_feed_buffer": 7759281827015.286,
+          "thermal_electric_converter": 1.1259971257768182e+20,
+          "incremental_heat_exchangers": 1.0354921968222822e+19,
+          "incremental_pump_hardware": 0.0,
+          "radiator_panels": 2.7369555195769405e+20,
+          "replacement_factory_capacity": 2.0534303383678796e+19,
+          "ten_year_spares": 6.480133324607821e+19,
+          "support_streams": 2.0199289875624049e+18,
+          "installed_reserve": 1.2960266649215642e+22
+        },
+        "selected_cases": {
+          "A": "A-H3-fixed_energy-z64-k0p001-t1-rates-updated-median",
+          "B1": "B1-H2-fixed_energy-z64-k0p001-t1-rates-updated-median",
+          "B2": "B2-H2-fixed_energy-z64-k0p001-t1-rates-updated-median",
+          "C13": "C13-H4-fixed_energy-z64-k0p001-t1-rates-updated-median"
+        },
+        "receiver_areal_mass_kg_m2": 2000.0
+      },
+      "cycle": {
+        "U_prepared_MeV_per_He": 1.9755304039731623,
+        "nuclear_Q_MeV_per_He": 26.73504331672203,
+        "gross_H_input_atoms_per_He": 8.967661809760857,
+        "gross_H_output_atoms_per_He": 4.967181546120392,
+        "carbon_return": 1.0,
+        "hydrogen_return": 1.0
+      }
+    }
+  }
+}

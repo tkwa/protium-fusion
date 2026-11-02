@@ -1,0 +1,887 @@
+{
+  "scope": "One local straight rail family with paired equal counterstreams, flexible guide coupled to full receiver tributary mass, weak mesh tension. Linear Fourier screen; full-state feedback is mode-dependent and presumes sensors/communication. No certified three-family controller, finite-carrier result, saturation proof or failure recovery.",
+  "input_sha256": {
+    "guide": "65f2c4603f1541ab6bd76378900a16fbc0e7c41f39321c384c5426870df7e340",
+    "topology": "606b052f6c7f74e81adb7d1e23fb25427efe12c610a48da5ab8550fe2392b679",
+    "sector": "fa1ab40f1dfe8b7179917fd8a6038ab6ba0c9deb4d2fbfcbc6b88e29e485d6db"
+  },
+  "code_sha256": "f4eed90630ba391c7c0095bee21faf9a94ea2de6fe5d6da5270fe2d0dc672f3a",
+  "parameters": {
+    "stream_to_receiver_mass_ratio": 2.6159199937074395e-05,
+    "heaviest_family_kg_m2": 0.20964620530133468,
+    "receiver_total_kg_m2": 8014.243776783534,
+    "stream_m_s": 10000.0,
+    "quadrupole_transverse_omega_rad_s": 1.4027593670560299,
+    "mesh_pretension_N_m": 10000.0,
+    "critical_wavelength_m": 44791.611838359015,
+    "reference_displacement_m": 0.001,
+    "available_transverse_margin_m": 0.0296365749717125
+  },
+  "open_loop_fastest": {
+    "wavelength_m": 45687.444075126194,
+    "growth_per_s": 0.025723244847634875,
+    "nominal_instantaneous_feedback_growth_per_s": -0.005588010150503272,
+    "efold_s": 38.87534430136037
+  },
+  "open_loop_rows": [
+    {
+      "wavelength_m": 1000.0,
+      "growth_per_s": 2.460511965591734e-13,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0017859213315733374
+    },
+    {
+      "wavelength_m": 1122.018454301963,
+      "growth_per_s": 4.985159767152805e-13,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0018767289897095513
+    },
+    {
+      "wavelength_m": 1258.9254117941675,
+      "growth_per_s": 1.4129217373456124e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.001959098374930353
+    },
+    {
+      "wavelength_m": 1412.537544622754,
+      "growth_per_s": 1.495080717421647e-13,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002032397048112685
+    },
+    {
+      "wavelength_m": 1584.893192461114,
+      "growth_per_s": 3.986881913124392e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002096506260364311
+    },
+    {
+      "wavelength_m": 1778.2794100389228,
+      "growth_per_s": 5.4819645845513324e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00215173977967191
+    },
+    {
+      "wavelength_m": 1995.2623149688789,
+      "growth_per_s": 2.691145291358965e-13,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0021987306799936142
+    },
+    {
+      "wavelength_m": 2238.72113856834,
+      "growth_per_s": 5.980322869686588e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0022383136963836335
+    },
+    {
+      "wavelength_m": 2511.88643150958,
+      "growth_per_s": 8.889338573199068e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0022714224852782147
+    },
+    {
+      "wavelength_m": 2818.382931264455,
+      "growth_per_s": 1.544916741335702e-13,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0022990112877930556
+    },
+    {
+      "wavelength_m": 3162.2776601683795,
+      "growth_per_s": 1.993440956562196e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002322002671340086
+    },
+    {
+      "wavelength_m": 3548.133892335753,
+      "growth_per_s": 5.36166845469228e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0023412584049021445
+    },
+    {
+      "wavelength_m": 3981.0717055349733,
+      "growth_per_s": 4.132194040378139e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002357568714856089
+    },
+    {
+      "wavelength_m": 4466.835921509631,
+      "growth_per_s": 1.495080717421647e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0023716552251145185
+    },
+    {
+      "wavelength_m": 5011.872336272725,
+      "growth_per_s": 2.7906226672186603e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002384183935140101
+    },
+    {
+      "wavelength_m": 5623.413251903491,
+      "growth_per_s": 2.2426210761324705e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0023957860754492575
+    },
+    {
+      "wavelength_m": 6309.57344480193,
+      "growth_per_s": 2.43340186426091e-18,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002407086373256664
+    },
+    {
+      "wavelength_m": 7079.457843841381,
+      "growth_per_s": 1.275344733074032e-14,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0024187402165621007
+    },
+    {
+      "wavelength_m": 7943.282347242814,
+      "growth_per_s": 6.2295029892568625e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0024314837500043255
+    },
+    {
+      "wavelength_m": 8912.509381337459,
+      "growth_per_s": 6.2295029892568625e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002446204753010398
+    },
+    {
+      "wavelength_m": 10000.0,
+      "growth_per_s": 6.2295029892568625e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0024640485272645345
+    },
+    {
+      "wavelength_m": 11220.18454301963,
+      "growth_per_s": 4.98360239140549e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0024865843844761467
+    },
+    {
+      "wavelength_m": 12589.254117941662,
+      "growth_per_s": 2.9225129258193327e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00251607928014972
+    },
+    {
+      "wavelength_m": 14125.375446227554,
+      "growth_per_s": 8.318053899196451e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002555964204170867
+    },
+    {
+      "wavelength_m": 15848.93192461114,
+      "growth_per_s": 2.8412982139965016e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0026116503919106572
+    },
+    {
+      "wavelength_m": 17782.794100389227,
+      "growth_per_s": 1.1952152768176538e-17,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0026919725367275825
+    },
+    {
+      "wavelength_m": 19952.62314968879,
+      "growth_per_s": 6.471815171132873e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0028116843494261413
+    },
+    {
+      "wavelength_m": 22387.21138568338,
+      "growth_per_s": 4.808767319672189e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002995354483167027
+    },
+    {
+      "wavelength_m": 25118.864315095823,
+      "growth_per_s": 4.68053491587337e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.003281487402631641
+    },
+    {
+      "wavelength_m": 28183.82931264455,
+      "growth_per_s": 6.232541745411166e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0037188304321577096
+    },
+    {
+      "wavelength_m": 31622.776601683792,
+      "growth_per_s": 1.9467390285939114e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.004329876840212281
+    },
+    {
+      "wavelength_m": 35481.33892335753,
+      "growth_per_s": 3.5230791129396433e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005017413141261367
+    },
+    {
+      "wavelength_m": 39810.71705534969,
+      "growth_per_s": 6.229502989256863e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005518701988692864
+    },
+    {
+      "wavelength_m": 40312.45065452311,
+      "growth_per_s": 8.51917361961404e-18,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005550420913661572
+    },
+    {
+      "wavelength_m": 40536.40871371491,
+      "growth_per_s": 1.6246895489518977e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00556279694213372
+    },
+    {
+      "wavelength_m": 40760.3667729067,
+      "growth_per_s": 5.829924406145024e-17,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005574089583372609
+    },
+    {
+      "wavelength_m": 40984.3248320985,
+      "growth_per_s": 1.0202852645664967e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005584312855429403
+    },
+    {
+      "wavelength_m": 41208.2828912903,
+      "growth_per_s": 6.229492195237246e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005593482304611962
+    },
+    {
+      "wavelength_m": 41432.24095048209,
+      "growth_per_s": 1.9707033220529843e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005601614879970241
+    },
+    {
+      "wavelength_m": 41656.19900967389,
+      "growth_per_s": 7.7868842639619e-17,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0056087288082981804
+    },
+    {
+      "wavelength_m": 41880.15706886568,
+      "growth_per_s": 2.375656095811674e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005614843470513328
+    },
+    {
+      "wavelength_m": 42104.11512805748,
+      "growth_per_s": 6.229583108962534e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005619979280153354
+    },
+    {
+      "wavelength_m": 42328.07318724927,
+      "growth_per_s": 6.229502989256863e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005624157564687585
+    },
+    {
+      "wavelength_m": 42552.03124644107,
+      "growth_per_s": 6.229472214262476e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005627400450236121
+    },
+    {
+      "wavelength_m": 42775.989305632866,
+      "growth_per_s": 6.229539084388841e-16,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005629730750196096
+    },
+    {
+      "wavelength_m": 42999.94736482466,
+      "growth_per_s": 1.0169266672476424e-15,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005631171858228841
+    },
+    {
+      "wavelength_m": 43223.905424016455,
+      "growth_per_s": 0.0062542372679889905,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0056317476459360255
+    },
+    {
+      "wavelength_m": 43447.863483208246,
+      "growth_per_s": 0.012646576397492788,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005631482365527921
+    },
+    {
+      "wavelength_m": 43671.821542400045,
+      "growth_per_s": 0.015733781029118453,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005630400557679143
+    },
+    {
+      "wavelength_m": 43895.779601591836,
+      "growth_per_s": 0.017363555313161003,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005628526964726315
+    },
+    {
+      "wavelength_m": 44119.737660783634,
+      "growth_per_s": 0.017897930297214648,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005625886449288386
+    },
+    {
+      "wavelength_m": 44343.69571997543,
+      "growth_per_s": 0.017333614028342288,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0056225039183565965
+    },
+    {
+      "wavelength_m": 44567.65377916722,
+      "growth_per_s": 0.015201911112603866,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005618404252821787
+    },
+    {
+      "wavelength_m": 44668.359215096345,
+      "growth_per_s": 0.013186692960484437,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005616333656315396
+    },
+    {
+      "wavelength_m": 44791.611838359015,
+      "growth_per_s": 1.708450890194303e-09,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005613612242395383
+    },
+    {
+      "wavelength_m": 45015.56989755081,
+      "growth_per_s": 0.021408629641717115,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005608152525830056
+    },
+    {
+      "wavelength_m": 45239.527956742604,
+      "growth_per_s": 0.024424865453058227,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005602049536305156
+    },
+    {
+      "wavelength_m": 45463.4860159344,
+      "growth_per_s": 0.025550247517285983,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005595327451832249
+    },
+    {
+      "wavelength_m": 45687.444075126194,
+      "growth_per_s": 0.025723244847634875,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005588010150503272
+    },
+    {
+      "wavelength_m": 45911.402134318,
+      "growth_per_s": 0.02535206058190045,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005580121170383728
+    },
+    {
+      "wavelength_m": 46135.36019350978,
+      "growth_per_s": 0.02467794665918269,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005571683673848068
+    },
+    {
+      "wavelength_m": 46359.31825270159,
+      "growth_per_s": 0.023854872325455467,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005562720416137404
+    },
+    {
+      "wavelength_m": 46583.27631189338,
+      "growth_per_s": 0.022979105478630274,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0055532537179125065
+    },
+    {
+      "wavelength_m": 46807.23437108518,
+      "growth_per_s": 0.022107271548985716,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005543305441572372
+    },
+    {
+      "wavelength_m": 47031.19243027697,
+      "growth_per_s": 0.021269931388717116,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005532896971110692
+    },
+    {
+      "wavelength_m": 47255.15048946877,
+      "growth_per_s": 0.020481539462696007,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005522049195274695
+    },
+    {
+      "wavelength_m": 47479.10854866056,
+      "growth_per_s": 0.019747183411353335,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005510782493797358
+    },
+    {
+      "wavelength_m": 47703.06660785236,
+      "growth_per_s": 0.019066826793842494,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005499116726487491
+    },
+    {
+      "wavelength_m": 47927.02466704415,
+      "growth_per_s": 0.018437836503637405,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005487071224944597
+    },
+    {
+      "wavelength_m": 48150.98272623595,
+      "growth_per_s": 0.017856424798168437,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005474664786705759
+    },
+    {
+      "wavelength_m": 48374.94078542774,
+      "growth_per_s": 0.01731844011536427,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0054619156716057375
+    },
+    {
+      "wavelength_m": 48598.898844619536,
+      "growth_per_s": 0.016819780715649064,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005448841600143275
+    },
+    {
+      "wavelength_m": 48822.85690381133,
+      "growth_per_s": 0.016356595510786182,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005435459753717157
+    },
+    {
+      "wavelength_m": 49046.81496300313,
+      "growth_per_s": 0.015925367705946176,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005421786776489351
+    },
+    {
+      "wavelength_m": 49270.77302219492,
+      "growth_per_s": 0.01552293582508328,
+      "nominal_instantaneous_feedback_growth_per_s": -0.005407838778755062
+    },
+    {
+      "wavelength_m": 50118.72336272725,
+      "growth_per_s": 0.014214671249155554,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0053528029069192995
+    },
+    {
+      "wavelength_m": 56234.13251903491,
+      "growth_per_s": 0.00944366056319966,
+      "nominal_instantaneous_feedback_growth_per_s": -0.004903327900875441
+    },
+    {
+      "wavelength_m": 63095.7344480193,
+      "growth_per_s": 0.00722876598189612,
+      "nominal_instantaneous_feedback_growth_per_s": -0.004403219204887212
+    },
+    {
+      "wavelength_m": 70794.57843841374,
+      "growth_per_s": 0.005860134653147713,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00391921867517362
+    },
+    {
+      "wavelength_m": 79432.82347242821,
+      "growth_per_s": 0.0048976349325590245,
+      "nominal_instantaneous_feedback_growth_per_s": -0.003476376069987098
+    },
+    {
+      "wavelength_m": 89125.0938133746,
+      "growth_per_s": 0.004169725409450075,
+      "nominal_instantaneous_feedback_growth_per_s": -0.003080636092607941
+    },
+    {
+      "wavelength_m": 100000.0,
+      "growth_per_s": 0.0035934965777243573,
+      "nominal_instantaneous_feedback_growth_per_s": -0.002730352605827605
+    },
+    {
+      "wavelength_m": 112201.84543019652,
+      "growth_per_s": 0.0031231092910953984,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0024213153004052777
+    },
+    {
+      "wavelength_m": 125892.54117941661,
+      "growth_per_s": 0.0027307398808397564,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0021487873065648643
+    },
+    {
+      "wavelength_m": 141253.75446227554,
+      "growth_per_s": 0.0023982854464970845,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0019082699296180295
+    },
+    {
+      "wavelength_m": 158489.3192461114,
+      "growth_per_s": 0.0021133117017768164,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0016957446979150963
+    },
+    {
+      "wavelength_m": 177827.94100389228,
+      "growth_per_s": 0.0018668957134788935,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0015077090362666315
+    },
+    {
+      "wavelength_m": 199526.2314968883,
+      "growth_per_s": 0.0016523983069014906,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0013411369772183032
+    },
+    {
+      "wavelength_m": 223872.11385683378,
+      "growth_per_s": 0.0014647273211008075,
+      "nominal_instantaneous_feedback_growth_per_s": -0.001193418473950832
+    },
+    {
+      "wavelength_m": 251188.6431509582,
+      "growth_per_s": 0.001299875746547627,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0010622981669292906
+    },
+    {
+      "wavelength_m": 281838.2931264455,
+      "growth_per_s": 0.0011546213972723446,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0009458208087346715
+    },
+    {
+      "wavelength_m": 316227.7660168379,
+      "growth_per_s": 0.0010263253835664761,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0008422850013260082
+    },
+    {
+      "wavelength_m": 354813.389233576,
+      "growth_per_s": 0.0009127930857167915,
+      "nominal_instantaneous_feedback_growth_per_s": -0.000750204792808018
+    },
+    {
+      "wavelength_m": 398107.1705534969,
+      "growth_per_s": 0.0008121758206210782,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0006682780156029241
+    },
+    {
+      "wavelength_m": 446683.5921509635,
+      "growth_per_s": 0.0007228996736809316,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0005953601669920574
+    },
+    {
+      "wavelength_m": 501187.2336272725,
+      "growth_per_s": 0.0006436128720226905,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0005304427592353673
+    },
+    {
+      "wavelength_m": 562341.3251903491,
+      "growth_per_s": 0.0005731460695972888,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0004726352619512854
+    },
+    {
+      "wavelength_m": 630957.3444801943,
+      "growth_per_s": 0.0005104817935956027,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00042114989659341984
+    },
+    {
+      "wavelength_m": 707945.7843841374,
+      "growth_per_s": 0.00045473050736416775,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00037528878404047744
+    },
+    {
+      "wavelength_m": 794328.2347242822,
+      "growth_per_s": 0.00040511153466578505,
+      "nominal_instantaneous_feedback_growth_per_s": -0.0003344329416564372
+    },
+    {
+      "wavelength_m": 891250.9381337459,
+      "growth_per_s": 0.00036093761673317763,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00029803283059629204
+    },
+    {
+      "wavelength_m": 1000000.0,
+      "growth_per_s": 0.00032160222948841345,
+      "nominal_instantaneous_feedback_growth_per_s": -0.00026560019005289953
+    }
+  ],
+  "position_only_axis_servo_counterexamples": [
+    {
+      "position_gain": 1.0,
+      "velocity_lead": 0.0,
+      "actuator_time_s": 0.01,
+      "max_growth_per_s": 4.6686929874822304e-05,
+      "wavelength_m": 44668.359215096345
+    },
+    {
+      "position_gain": 1.0,
+      "velocity_lead": 1.0,
+      "actuator_time_s": 0.01,
+      "max_growth_per_s": 1.5276463178790973e-12,
+      "wavelength_m": 45015.56989755081
+    },
+    {
+      "position_gain": 0.99,
+      "velocity_lead": 1.0,
+      "actuator_time_s": 0.01,
+      "max_growth_per_s": 0.0055805979600680195,
+      "wavelength_m": 45015.56989755081
+    },
+    {
+      "position_gain": 1.01,
+      "velocity_lead": 1.0,
+      "actuator_time_s": 0.01,
+      "max_growth_per_s": 0.005625680384376119,
+      "wavelength_m": 44567.65377916722
+    }
+  ],
+  "full_state_feedback_robustness": [
+    {
+      "first_order_actuator_time_s": 0.001,
+      "tested_combinations": 2754,
+      "stable_combinations": 2754,
+      "all_tested_stable": true,
+      "worst": {
+        "growth_per_s": -6.451205431362851e-05,
+        "wavelength_m": 1000000.0,
+        "kappa_scale": 1.2,
+        "stream_mass_scale": 2.0,
+        "actuator_gain_scale": 0.8
+      },
+      "active_band_20_to_1000km": {
+        "tested": 2025,
+        "stable": 2025,
+        "worst_growth_per_s": -6.451205431362851e-05
+      }
+    },
+    {
+      "first_order_actuator_time_s": 0.01,
+      "tested_combinations": 2754,
+      "stable_combinations": 2754,
+      "all_tested_stable": true,
+      "worst": {
+        "growth_per_s": -6.451222786002079e-05,
+        "wavelength_m": 1000000.0,
+        "kappa_scale": 1.2,
+        "stream_mass_scale": 2.0,
+        "actuator_gain_scale": 0.8
+      },
+      "active_band_20_to_1000km": {
+        "tested": 2025,
+        "stable": 2025,
+        "worst_growth_per_s": -6.451222786002079e-05
+      }
+    },
+    {
+      "first_order_actuator_time_s": 0.1,
+      "tested_combinations": 2754,
+      "stable_combinations": 2385,
+      "all_tested_stable": false,
+      "worst": {
+        "growth_per_s": 1.9027197760126238,
+        "wavelength_m": 1000.0,
+        "kappa_scale": 0.8,
+        "stream_mass_scale": 0.5,
+        "actuator_gain_scale": 1.2
+      },
+      "active_band_20_to_1000km": {
+        "tested": 2025,
+        "stable": 2025,
+        "worst_growth_per_s": -6.451396734726129e-05
+      }
+    },
+    {
+      "first_order_actuator_time_s": 1.0,
+      "tested_combinations": 2754,
+      "stable_combinations": 1923,
+      "all_tested_stable": false,
+      "worst": {
+        "growth_per_s": 0.5851330110168886,
+        "wavelength_m": 1000.0,
+        "kappa_scale": 0.8,
+        "stream_mass_scale": 2.0,
+        "actuator_gain_scale": 1.2
+      },
+      "active_band_20_to_1000km": {
+        "tested": 2025,
+        "stable": 1923,
+        "worst_growth_per_s": 0.06930981839582434
+      }
+    }
+  ],
+  "modal_transients": [
+    {
+      "wavelength_m": 1000.0,
+      "seed": "guide_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.001002750702296291,
+      "maximum_guide_displacement_m": 0.0009999999999999998,
+      "maximum_command_acceleration_m_s2": 0.0010564982395900677,
+      "equivalent_quadrupole_axis_trim_m": 0.0005369111498278494,
+      "equivalent_dipole_trim_T": 0.004295289198622795,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 1.1197778821961322e-16
+    },
+    {
+      "wavelength_m": 1000.0,
+      "seed": "stream_plus_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.004191432120696663,
+      "maximum_guide_displacement_m": 1.3033495905407684e-05,
+      "maximum_command_acceleration_m_s2": 0.6859652024019077,
+      "equivalent_quadrupole_axis_trim_m": 0.3486067006665405,
+      "equivalent_dipole_trim_T": 2.788853605332324,
+      "within_position_and_trim_margin_separately": false,
+      "maximum_eigenvector_reconstruction_residual": 9.795766458582191e-14
+    },
+    {
+      "wavelength_m": 1000.0,
+      "seed": "open_loop_fastest_mode_positions_at_most_1mm",
+      "maximum_stream_relative_to_guide_m": 0.001000000006820442,
+      "maximum_guide_displacement_m": 1.3887642657220554e-06,
+      "maximum_command_acceleration_m_s2": 0.06484205987517686,
+      "equivalent_quadrupole_axis_trim_m": 0.0329526577709167,
+      "equivalent_dipole_trim_T": 0.2636212621673336,
+      "within_position_and_trim_margin_separately": false,
+      "maximum_eigenvector_reconstruction_residual": 4.594575436092229e-14
+    },
+    {
+      "wavelength_m": 10000.0,
+      "seed": "guide_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0011192143378581342,
+      "maximum_guide_displacement_m": 0.0010000000000000002,
+      "maximum_command_acceleration_m_s2": 0.0012418752811463494,
+      "equivalent_quadrupole_axis_trim_m": 0.0006311195420465504,
+      "equivalent_dipole_trim_T": 0.005048956336372403,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 2.2248022662063153e-16
+    },
+    {
+      "wavelength_m": 10000.0,
+      "seed": "stream_plus_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0012985064043169227,
+      "maximum_guide_displacement_m": 4.542456683564945e-06,
+      "maximum_command_acceleration_m_s2": 0.021500602568305684,
+      "equivalent_quadrupole_axis_trim_m": 0.010926580674114304,
+      "equivalent_dipole_trim_T": 0.08741264539291443,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 6.602276792961552e-16
+    },
+    {
+      "wavelength_m": 10000.0,
+      "seed": "open_loop_fastest_mode_positions_at_most_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0010000004356790309,
+      "maximum_guide_displacement_m": 1.6090523191576239e-06,
+      "maximum_command_acceleration_m_s2": 0.009897803078460967,
+      "equivalent_quadrupole_axis_trim_m": 0.005030051762024787,
+      "equivalent_dipole_trim_T": 0.040240414096198295,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 1.7945238797245108e-15
+    },
+    {
+      "wavelength_m": 40000.0,
+      "seed": "guide_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0020993209607293875,
+      "maximum_guide_displacement_m": 0.0010000015212469043,
+      "maximum_command_acceleration_m_s2": 0.003504939862720267,
+      "equivalent_quadrupole_axis_trim_m": 0.0017812062729993543,
+      "equivalent_dipole_trim_T": 0.014249650183994834,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 4.965068306494546e-16
+    },
+    {
+      "wavelength_m": 40000.0,
+      "seed": "stream_plus_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.001000008093490133,
+      "maximum_guide_displacement_m": 3.6460529582017945e-06,
+      "maximum_command_acceleration_m_s2": 0.0021588866653073926,
+      "equivalent_quadrupole_axis_trim_m": 0.0010971436377101378,
+      "equivalent_dipole_trim_T": 0.008777149101681102,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 3.342213888644167e-16
+    },
+    {
+      "wavelength_m": 40000.0,
+      "seed": "open_loop_fastest_mode_positions_at_most_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0010009218175834808,
+      "maximum_guide_displacement_m": 1.0468799532389135e-05,
+      "maximum_command_acceleration_m_s2": 0.001856046087651445,
+      "equivalent_quadrupole_axis_trim_m": 0.0009432404160380649,
+      "equivalent_dipole_trim_T": 0.007545923328304519,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 1.5700924586837752e-16
+    },
+    {
+      "wavelength_m": 44791.611838359015,
+      "seed": "guide_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0021358157531428013,
+      "maximum_guide_displacement_m": 0.0010000042406458707,
+      "maximum_command_acceleration_m_s2": 0.0037679037893391942,
+      "equivalent_quadrupole_axis_trim_m": 0.001914844228003422,
+      "equivalent_dipole_trim_T": 0.015318753824027377,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 9.400067946021237e-16
+    },
+    {
+      "wavelength_m": 44791.611838359015,
+      "seed": "stream_plus_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0009999999999999998,
+      "maximum_guide_displacement_m": 3.369308848560258e-06,
+      "maximum_command_acceleration_m_s2": 0.0018646287986942935,
+      "equivalent_quadrupole_axis_trim_m": 0.0009476021395904336,
+      "equivalent_dipole_trim_T": 0.007580817116723469,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 2.549916576856459e-16
+    },
+    {
+      "wavelength_m": 44791.611838359015,
+      "seed": "open_loop_fastest_mode_positions_at_most_1mm",
+      "maximum_stream_relative_to_guide_m": 0.000999999997647025,
+      "maximum_guide_displacement_m": 4.200530680972386e-06,
+      "maximum_command_acceleration_m_s2": 0.0018461942761031497,
+      "equivalent_quadrupole_axis_trim_m": 0.0009382337371170145,
+      "equivalent_dipole_trim_T": 0.007505869896936116,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 2.2887833992611187e-16
+    },
+    {
+      "wavelength_m": 50000.0,
+      "seed": "guide_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0021318558077467282,
+      "maximum_guide_displacement_m": 0.0010000074821523192,
+      "maximum_command_acceleration_m_s2": 0.00393789812802544,
+      "equivalent_quadrupole_axis_trim_m": 0.002001235148904219,
+      "equivalent_dipole_trim_T": 0.01600988119123375,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 3.9431282090270056e-16
+    },
+    {
+      "wavelength_m": 50000.0,
+      "seed": "stream_plus_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0009999999999999998,
+      "maximum_guide_displacement_m": 3.1191618186801106e-06,
+      "maximum_command_acceleration_m_s2": 0.001636993457036883,
+      "equivalent_quadrupole_axis_trim_m": 0.0008319181294796753,
+      "equivalent_dipole_trim_T": 0.0066553450358374025,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 1.2725048894527607e-16
+    },
+    {
+      "wavelength_m": 50000.0,
+      "seed": "open_loop_fastest_mode_positions_at_most_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0011780520955262087,
+      "maximum_guide_displacement_m": 0.0003335678416501343,
+      "maximum_command_acceleration_m_s2": 0.0038125818386526788,
+      "equivalent_quadrupole_axis_trim_m": 0.001937549559569593,
+      "equivalent_dipole_trim_T": 0.015500396476556743,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 5.551115123125783e-16
+    },
+    {
+      "wavelength_m": 100000.0,
+      "seed": "guide_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.00197924769955051,
+      "maximum_guide_displacement_m": 0.0010000209323950413,
+      "maximum_command_acceleration_m_s2": 0.004211051632782456,
+      "equivalent_quadrupole_axis_trim_m": 0.002140051435408872,
+      "equivalent_dipole_trim_T": 0.017120411483270977,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 6.667118051786499e-16
+    },
+    {
+      "wavelength_m": 100000.0,
+      "seed": "stream_plus_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.001,
+      "maximum_guide_displacement_m": 2.3846646572193386e-06,
+      "maximum_command_acceleration_m_s2": 0.001165784125729517,
+      "equivalent_quadrupole_axis_trim_m": 0.0005924501072896757,
+      "equivalent_dipole_trim_T": 0.004739600858317406,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 8.456220925994152e-17
+    },
+    {
+      "wavelength_m": 100000.0,
+      "seed": "open_loop_fastest_mode_positions_at_most_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0032022646774580747,
+      "maximum_guide_displacement_m": 0.0010224968524928082,
+      "maximum_command_acceleration_m_s2": 0.0078090408693214965,
+      "equivalent_quadrupole_axis_trim_m": 0.003968545289603992,
+      "equivalent_dipole_trim_T": 0.03174836231683194,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 8.95090418262362e-16
+    },
+    {
+      "wavelength_m": 1000000.0,
+      "seed": "guide_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.001961621958833665,
+      "maximum_guide_displacement_m": 0.0010000250490468908,
+      "maximum_command_acceleration_m_s2": 0.004244766212338597,
+      "equivalent_quadrupole_axis_trim_m": 0.0021571851446732376,
+      "equivalent_dipole_trim_T": 0.0172574811573859,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 9.09180472805593e-16
+    },
+    {
+      "wavelength_m": 1000000.0,
+      "seed": "stream_plus_offset_1mm",
+      "maximum_stream_relative_to_guide_m": 0.0010000000000000002,
+      "maximum_guide_displacement_m": 2.1865279907304345e-06,
+      "maximum_command_acceleration_m_s2": 0.0012159111847746128,
+      "equivalent_quadrupole_axis_trim_m": 0.0006179246191259034,
+      "equivalent_dipole_trim_T": 0.004943396953007227,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 2.864467739725608e-16
+    },
+    {
+      "wavelength_m": 1000000.0,
+      "seed": "open_loop_fastest_mode_positions_at_most_1mm",
+      "maximum_stream_relative_to_guide_m": 0.003903094264777703,
+      "maximum_guide_displacement_m": 0.0012473621452945066,
+      "maximum_command_acceleration_m_s2": 0.00920775803649996,
+      "equivalent_quadrupole_axis_trim_m": 0.0046793716917427515,
+      "equivalent_dipole_trim_T": 0.03743497353394201,
+      "within_position_and_trim_margin_separately": true,
+      "maximum_eigenvector_reconstruction_residual": 1.3753895253648724e-15
+    }
+  ],
+  "transient_interpretation": "The 1 km full-state controller unnecessarily damps already stable short waves and exceeds the reference trim in two 1 mm seeds. The 40\u20131000 km samples all fit separate position and trim margins. Do not convert an arbitrary short-wave LQR choice into a necessary alignment or latency requirement.",
+  "checks": {
+    "independent_polynomial_scaled_residual_max": 2.43470112937103e-15,
+    "actuator_reaction_residual_max": 0.0,
+    "CARE_relative_residual_max": 1.7982140929970102e-08
+  },
+  "sources": {
+    "fluid_conveying_pipe_theory_experiment": "https://journals.sagepub.com/doi/10.1243/JMES_JOUR_1970_012_017_02",
+    "electromagnetic_control_computation": "https://doi.org/10.1016/j.jsv.2018.06.045",
+    "semi_active_experimental_control": "https://www.ippt.pan.pl/repository/open/o6415.pdf"
+  },
+  "next_step": "Implement a real-space finite rail/carrier/actuator model with shared cross-braced deck, measurement noise, latency, field saturation, and discrete faults; compare hardware and AC losses with the existing service/auxiliary allowance. The full-state screen establishes a possible stabilization direction, not its installed cost."
+}

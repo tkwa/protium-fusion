@@ -1,0 +1,595 @@
+{
+  "scope": "Fixed profiles and settings; these calculations isolate hot burn response to whole-fluid preparation endpoints. Preparation is an auxiliary spherical model, and its FEOS/FastEOS bridge is explicit. No cold-launch, merger, 3D stability, or plant qualification is inferred.",
+  "code_sha256": "0cbc24d69a52daa1bcba9a66bc24b9208faaec21d66f803861171330fa3500f9",
+  "bridge_path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/assembly-burn/bridge.json",
+  "bridge_sha256": "1be6c03d8e6c8b0dcb197b28a5f1d93683d880d79fa4e294be6a2bc19974f07b",
+  "bridge_relative_FastEOS_minus_FEOS_total": -0.0018438747160578473,
+  "original_hot_reference": {
+    "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median128/records/B1-H2-source128-carbon-median.json",
+    "sha256": "af7576314952a5878063947ca5e06065949c481d3ad37803815edea840ed9a7d",
+    "initial_energy_J": 3.195016782566003e+23,
+    "initial_internal_energy_J": 2.6785314083858836e+22,
+    "initial_kinetic_energy_J": 2.927163641727415e+23,
+    "nuclear_energy_J": 2.582323259025591e+24,
+    "weak_energy_escaped_upper_J": 15653449248990.213,
+    "deposited_nuclear_over_initial_energy": 8.082346462468358,
+    "desired_product_per_initial_catalyst": 0.8096945614251616,
+    "peak_temperature_K": 542885862.9671212,
+    "final_internal_J": 1.2414022814594681e+23,
+    "final_kinetic_J": 2.5614936242339775e+24,
+    "radiation_escaped_J": 2.1619065482783155e+23,
+    "energy_residual_fraction_initial": -1.3460298039727516e-06,
+    "elapsed_s": 8.227795789289296e-05,
+    "wall_seconds": 143.30832051602192
+  },
+  "cases": {
+    "k0": {
+      "initial_energy_J": 3.196326437144248e+23,
+      "initial_internal_energy_J": 2.6765214791096636e+22,
+      "initial_kinetic_energy_J": 2.9286742892332814e+23,
+      "nuclear_energy_J": 2.5664530810591425e+24,
+      "weak_energy_escaped_upper_J": 15558072738849.928,
+      "deposited_nuclear_over_initial_energy": 8.029383517337413,
+      "desired_product_per_initial_catalyst": 0.8047206183903236,
+      "peak_temperature_K": 540321581.657867,
+      "final_internal_J": 1.2404752567342718e+23,
+      "final_kinetic_J": 2.5444647140121685e+24,
+      "radiation_escaped_J": 2.175730634198567e+23,
+      "energy_residual_fraction_initial": -1.3191786404961682e-06,
+      "elapsed_s": 8.227795789289296e-05,
+      "wall_seconds": 137.18875569477677,
+      "assembly_energy_ledger": {
+        "preparation_initial_FastEOS_J": 3.196326437256525e+23,
+        "preparation_escaped_radiation_J": 0.0,
+        "burn_start_J": 3.196326437144248e+23,
+        "burn_deposited_nuclear_J": 2.5664530810435845e+24,
+        "gain_over_preparation_FastEOS_energy": 8.029383517055365,
+        "gain_over_burn_start_energy": 8.029383517337413,
+        "combined_energy_residual_fraction_preparation": -1.3192137689367413e-06,
+        "scope": "Preescaped radiation is kept as energy leaving preparation; no receiver recovery or source physical attainability is credited. FEOS handoff discrepancy remains separately archived in bridge.json."
+      },
+      "output_mass_fractions": {
+        "n": 1.7434954233848495e-23,
+        "p": 0.07028222736065785,
+        "he4": 0.1893926482408358,
+        "c12": 0.5680380835696401,
+        "c13": 8.33590739263406e-12,
+        "n13": 0.00015150591521027282,
+        "n14": 5.242216318023725e-15,
+        "n15": 0.172055307836847,
+        "o14": 1.1169330975789226e-08,
+        "o15": 6.026956460630745e-20,
+        "o16": 8.021561049515854e-05,
+        "o17": 1.1218082901906937e-16,
+        "o18": -7.578791670611684e-25,
+        "f17": 2.2123479623243175e-10,
+        "f18": 8.991219661250805e-22,
+        "f19": 6.740566181674975e-11,
+        "ne18": 4.5560028187752174e-17,
+        "ne19": -9.362478829990191e-28,
+        "ne20": 2.544744387676664e-15,
+        "ne21": -5.666866536473222e-25,
+        "ne22": 2.24860077780735e-21,
+        "na21": 7.37328017934785e-22,
+        "na22": -1.247171716320088e-25,
+        "na23": 1.4284831858760107e-23,
+        "mg22": -6.520552952487159e-26,
+        "mg23": 2.4669468283093436e-27,
+        "mg24": 2.13422080191506e-25
+      },
+      "record_path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/assembly-burn/records/B1-delivered-k0.json",
+      "record_sha256": "5d18b8d312be652e4bf08831ef5cc434babf768bbd0ef8a71246b04fff6ef25c",
+      "preparation_radiation_fraction": 0.0,
+      "preparation_record_sha256": "35c246f5e6d3479c03f282327631bebaed4b7b6ad6071e00d1200d267c87a164",
+      "trace_path": "/home/tkwa/src/protium-fusion/output/assembly-burn/B1-delivered-k0.npz",
+      "trace_sha256": "194fe99baecb1aba1f03c1f417fef6a8026ac69caa09eca61c72c43f78e52713",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/assembly-audit/B1-forward-k0.json",
+        "baseline_record_sha256": "35c246f5e6d3479c03f282327631bebaed4b7b6ad6071e00d1200d267c87a164",
+        "initial_profile_sha256": "1f3f65bba5eafb68715cd727db5d22e81778c097da74d0e2b1f1b363718186f7",
+        "runner_sha256": "132fd04c8100265aa187949f9ea903fc58e694459a0c10f990d643c0f2970f69"
+      },
+      "deposited_nuclear_relative_to_delivered_no_prep_radiation": 0.0,
+      "deposited_nuclear_relative_to_original_hot_reference": -0.0061456976429966614,
+      "conversion_relative_to_delivered_no_prep_radiation": 0.0,
+      "conversion_relative_to_original_hot_reference": -0.006142986839485776
+    },
+    "k0p001": {
+      "initial_energy_J": 3.196253402764988e+23,
+      "initial_internal_energy_J": 2.6746565946305975e+22,
+      "initial_kinetic_energy_J": 2.928787743301928e+23,
+      "nuclear_energy_J": 2.543067142858408e+24,
+      "weak_energy_escaped_upper_J": 15942417484502.318,
+      "deposited_nuclear_over_initial_energy": 7.956400267395979,
+      "desired_product_per_initial_catalyst": 0.7973823636669017,
+      "peak_temperature_K": 541827974.0232949,
+      "final_internal_J": 1.2388531248741023e+23,
+      "final_kinetic_J": 2.5190936018147736e+24,
+      "radiation_escaped_J": 2.1971300164274388e+23,
+      "energy_residual_fraction_initial": -1.774496465758327e-06,
+      "elapsed_s": 8.227795789289296e-05,
+      "wall_seconds": 126.65030904300511,
+      "assembly_energy_ledger": {
+        "preparation_initial_FastEOS_J": 3.196326437256525e+23,
+        "preparation_escaped_radiation_J": 7.303449010114459e+18,
+        "burn_start_J": 3.196253402764988e+23,
+        "burn_deposited_nuclear_J": 2.5430671428424657e+24,
+        "gain_over_preparation_FastEOS_energy": 7.956218467551875,
+        "gain_over_burn_start_energy": 7.956400267395979,
+        "combined_energy_residual_fraction_preparation": -1.7744563691851226e-06,
+        "scope": "Preescaped radiation is kept as energy leaving preparation; no receiver recovery or source physical attainability is credited. FEOS handoff discrepancy remains separately archived in bridge.json."
+      },
+      "output_mass_fractions": {
+        "n": 1.5803978235916197e-23,
+        "p": 0.07071358153785554,
+        "he4": 0.1876667868529974,
+        "c12": 0.5628581390589895,
+        "c13": 8.54140461683756e-12,
+        "n13": 0.00015406239577676786,
+        "n14": 5.575359104972241e-15,
+        "n15": 0.1785285715781287,
+        "o14": 1.1776487495304495e-08,
+        "o15": 6.759969951794601e-20,
+        "o16": 7.884650118313019e-05,
+        "o17": 1.123806059706529e-16,
+        "o18": 5.381564168906897e-26,
+        "f17": 2.199542102298792e-10,
+        "f18": 9.23299607156782e-22,
+        "f19": 7.007872766068565e-11,
+        "ne18": 4.6381032857221394e-17,
+        "ne19": -1.5513716656931933e-28,
+        "ne20": 2.7924823730171267e-15,
+        "ne21": -8.587410051405197e-25,
+        "ne22": 2.5785330197253677e-21,
+        "na21": 8.51296755284609e-22,
+        "na22": -8.76131983384652e-25,
+        "na23": 1.723963349352202e-23,
+        "mg22": 4.982037151753982e-25,
+        "mg23": -4.121564132812632e-26,
+        "mg24": 1.301869764021439e-24
+      },
+      "record_path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/assembly-burn/records/B1-delivered-k0p001.json",
+      "record_sha256": "1f3930ac627f1aa7cd3a371cd02d90b3aed28544cbad1946c2b05acf05540d83",
+      "preparation_radiation_fraction": 2.2849509127056382e-05,
+      "preparation_record_sha256": "e12891ed24ff595deef193fd2b69ffb5f8fd854d081b42ffe61ae1e142e03eb5",
+      "trace_path": "/home/tkwa/src/protium-fusion/output/assembly-burn/B1-delivered-k0p001.npz",
+      "trace_sha256": "52590920a1331274e0f552fed4f15ceb113511daa50abe6cd9da2591a5fc8ed5",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/assembly-audit/B1-forward-k0p001.json",
+        "baseline_record_sha256": "e12891ed24ff595deef193fd2b69ffb5f8fd854d081b42ffe61ae1e142e03eb5",
+        "initial_profile_sha256": "2a9a3500d5ff4dd16ce0a3daf359ad92666b4374e2dab6be81ebbf8a62c0e4be",
+        "runner_sha256": "132fd04c8100265aa187949f9ea903fc58e694459a0c10f990d643c0f2970f69"
+      },
+      "deposited_nuclear_relative_to_delivered_no_prep_radiation": -0.009112162764187248,
+      "deposited_nuclear_relative_to_original_hot_reference": -0.01520185980996136,
+      "conversion_relative_to_delivered_no_prep_radiation": -0.009119009201106976,
+      "conversion_relative_to_original_hot_reference": -0.01520597808708124
+    },
+    "k0p01": {
+      "initial_energy_J": 3.19631596609827e+23,
+      "initial_internal_energy_J": 2.676304649143321e+22,
+      "initial_kinetic_energy_J": 2.9286855011839376e+23,
+      "nuclear_energy_J": 2.5643523626816767e+24,
+      "weak_energy_escaped_upper_J": 15609112528587.922,
+      "deposited_nuclear_over_initial_energy": 8.022837510011135,
+      "desired_product_per_initial_catalyst": 0.8040612274724964,
+      "peak_temperature_K": 540418542.5000917,
+      "final_internal_J": 1.2402342068832535e+23,
+      "final_kinetic_J": 2.5421503111282736e+24,
+      "radiation_escaped_J": 2.1780964149216772e+23,
+      "energy_residual_fraction_initial": -1.8332578305881011e-06,
+      "elapsed_s": 8.227795789289296e-05,
+      "wall_seconds": 137.9093322060071,
+      "assembly_energy_ledger": {
+        "preparation_initial_FastEOS_J": 3.196326437256525e+23,
+        "preparation_escaped_radiation_J": 1.047115722729e+18,
+        "burn_start_J": 3.19631596609827e+23,
+        "burn_deposited_nuclear_J": 2.564352362666068e+24,
+        "gain_over_preparation_FastEOS_energy": 8.022811227213406,
+        "gain_over_burn_start_energy": 8.022837510011135,
+        "combined_energy_residual_fraction_preparation": -1.833252146595463e-06,
+        "scope": "Preescaped radiation is kept as energy leaving preparation; no receiver recovery or source physical attainability is credited. FEOS handoff discrepancy remains separately archived in bridge.json."
+      },
+      "output_mass_fractions": {
+        "n": 1.7258385908528286e-23,
+        "p": 0.07032096606669676,
+        "he4": 0.18923761376652676,
+        "c12": 0.5675726311570564,
+        "c13": 8.36320774151509e-12,
+        "n13": 0.00015188391990988352,
+        "n14": 5.281301823948244e-15,
+        "n15": 0.17263682474253012,
+        "o14": 1.1242203409731159e-08,
+        "o15": 6.107259412464704e-20,
+        "o16": 8.00688077353287e-05,
+        "o17": 1.1223847660975714e-16,
+        "o18": 1.73772347143386e-25,
+        "f17": 2.2117808322512143e-10,
+        "f18": 9.018179839690006e-22,
+        "f19": 6.779387618808143e-11,
+        "ne18": 4.56565026996782e-17,
+        "ne19": 1.202734975023586e-28,
+        "ne20": 2.5762729069141775e-15,
+        "ne21": -1.7028899422405837e-24,
+        "ne22": 2.2908564555575873e-21,
+        "na21": 7.512019595512655e-22,
+        "na22": -5.447599772669439e-27,
+        "na23": 1.558615897726438e-23,
+        "mg22": 2.261139452631337e-25,
+        "mg23": -7.8450644030496885e-25,
+        "mg24": -8.244243679500655e-26
+      },
+      "record_path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/assembly-burn/records/B1-delivered-k0p01.json",
+      "record_sha256": "4a5c00d4bf0dd0eecd8e5b752d5e7c17241cb5a73faaadaab2c767c5f0baf09c",
+      "preparation_radiation_fraction": 3.2759974404484215e-06,
+      "preparation_record_sha256": "efb2a12c2d19c3eeae52911f16cd031904205b76557e3279055385487ef4489e",
+      "trace_path": "/home/tkwa/src/protium-fusion/output/assembly-burn/B1-delivered-k0p01.npz",
+      "trace_sha256": "262dd6c62eaca386447047f98dc4ae0a4895fcd6dc4badc815cf065a60e9fe50",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/assembly-audit/B1-forward-k0p01.json",
+        "baseline_record_sha256": "efb2a12c2d19c3eeae52911f16cd031904205b76557e3279055385487ef4489e",
+        "initial_profile_sha256": "07dafe4dcc8ff41d40ea355103fad595733f0540df132449d3cf31fd4335aa7a",
+        "runner_sha256": "132fd04c8100265aa187949f9ea903fc58e694459a0c10f990d643c0f2970f69"
+      },
+      "deposited_nuclear_relative_to_delivered_no_prep_radiation": -0.0008185298196304869,
+      "deposited_nuclear_relative_to_original_hot_reference": -0.006959197025843911,
+      "conversion_relative_to_delivered_no_prep_radiation": -0.0008194035330499894,
+      "conversion_relative_to_original_hot_reference": -0.006957356787416047
+    }
+  },
+  "checks": [
+    {
+      "name": "k0: source record hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: source trace hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: hot trace hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: exact delivered profile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: exact mass grid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: hot initial T",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: hot initial radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: hot initial velocity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: actual H2 composition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: physical duration complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: identical hot settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: preparation energy closure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: no burn energy renormalization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: combined energy closure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: baryon conservation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: negligible negative abundance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0: same rate metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: source record hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: source trace hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: hot trace hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: exact delivered profile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: exact mass grid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: hot initial T",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: hot initial radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: hot initial velocity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: actual H2 composition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: physical duration complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: identical hot settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: preparation energy closure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: no burn energy renormalization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: combined energy closure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: baryon conservation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: negligible negative abundance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p001: same rate metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: source record hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: source trace hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: hot trace hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: exact delivered profile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: exact mass grid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: hot initial T",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: hot initial radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: hot initial velocity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: actual H2 composition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: physical duration complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: identical hot settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: preparation energy closure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: no burn energy renormalization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: combined energy closure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: baryon conservation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: negligible negative abundance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "k0p01: same rate metadata",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "checks_passed": 51,
+  "checks_total": 51
+}

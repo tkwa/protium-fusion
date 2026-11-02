@@ -1,0 +1,80 @@
+{
+  "stage": "A",
+  "hydrogen_per_catalyst": 3.0,
+  "initial_Y": {
+    "p": 0.17647058823529413,
+    "n14": 0.058823529411764705
+  },
+  "initial_counts": {
+    "n14": 1.0,
+    "p": 3.0
+  },
+  "constraint": "fixed_energy",
+  "held_fixed": [
+    "total pulse mass",
+    "enclosed-mass density profile",
+    "temperature profile",
+    "physical final time unless temperature guard",
+    "total prepared energy at stated reference multiplier"
+  ],
+  "velocity_scale": 0.9912152457099462,
+  "temperature_factor": 1.0,
+  "prepared_energy_factor": 1.0,
+  "reference_specific_internal_J_kg": 216629935923.294,
+  "reference_specific_kinetic_J_kg": 2872004425064.2656,
+  "new_specific_internal_J_kg": 266868004250.483,
+  "specific_prepared_energy_J_kg": 3088634360987.56,
+  "initial_max_pressure_Pa": 1.0701903639708329e+18,
+  "initial_mass_weighted_pressure_Pa": 4.252951989816092e+17,
+  "initial_electrons_per_baryon": 0.5882352941176471,
+  "initial_ions_per_baryon": 0.23529411764705882,
+  "duration_s": 6.839495465719224e-05,
+  "zones": 64,
+  "opacity_m2_kg": 0.001,
+  "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+  "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+  "baseline_source": "b2-completion/regression-A-compression_cap.json",
+  "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+  "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+  "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+  "runner_source_sha256": "f6e3afce4d7935dcbfe3e5b2ddd2bd068d9d9067b2919eb310d0a0a8ab2344b8",
+  "scope": "Full 27-isotope spherical hydro sensitivity; prescribed hot inflow; constant grey opacity. Source preparation, 3D merger and apparatus not simulated.",
+  "rate_update": {
+    "revision": "luna2023-public-repository-2026-10-31",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "56e07d3438f7d24b94932cf902b586e5f335f9e1b124cf97a5ae81329c7fd401",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+    "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json",
+    "baseline_record_sha256": "230f1b22fc32cd7e1203f12e5780446b641b4518c527e8efbe295e2fa627e48d",
+    "initial_profile_sha256": "0a50032539da3e174639b45122e4ddd498fbaddcadbb391135f180bfe19670a4",
+    "runner_sha256": "f6e3afce4d7935dcbfe3e5b2ddd2bd068d9d9067b2919eb310d0a0a8ab2344b8"
+  }
+}

@@ -1,0 +1,908 @@
+{
+  "scope": "Independent numerical checks of resolved source quadrature and Bessel streaming.\n\nThis validates evaluation of the specified weak static-screened operator. It\nmakes no assertion about a stationary population, physical screening, curved\nion orbits, electron supply, collection or reactor power.\n",
+  "passed": 128,
+  "total": 128,
+  "checks": [
+    {
+      "name": "Stable Bessel recurrence against independent scipy.jv",
+      "passed": true,
+      "metric": 2.4631972518772078e-14,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Bessel squared completeness over 0<=x<=1000",
+      "passed": true,
+      "metric": 5.240252676230739e-14,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Bessel weighted squared identity",
+      "passed": true,
+      "metric": 5.1980436343803064e-14,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Streaming and full Bessel tables agree",
+      "passed": true,
+      "metric": 0.0,
+      "upper_limit": 1e-14
+    },
+    {
+      "name": "moments versus original, state 0, drift",
+      "passed": true,
+      "metric": 1.5199582530500912e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 0, diffusion",
+      "passed": true,
+      "metric": 3.444128065795979e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 0, divergence",
+      "passed": true,
+      "metric": 1.5202952958559284e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 0, polarization",
+      "passed": true,
+      "metric": 4.689909807841358e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 0, drift",
+      "passed": true,
+      "metric": 1.2016325070022148e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 0, diffusion",
+      "passed": true,
+      "metric": 3.55275328565809e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 0, divergence",
+      "passed": true,
+      "metric": 1.20189896273607e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 0, polarization",
+      "passed": true,
+      "metric": 3.478130202152819e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "aligned versus original, state 0, drift",
+      "passed": true,
+      "metric": 1.28855596087051e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 0, diffusion",
+      "passed": true,
+      "metric": 7.803494775468822e-11,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 0, divergence",
+      "passed": true,
+      "metric": 1.2900663084823583e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 0, polarization",
+      "passed": true,
+      "metric": 1.230816644143569e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "moments versus original, state 1, drift",
+      "passed": true,
+      "metric": 6.03527203362451e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 1, diffusion",
+      "passed": true,
+      "metric": 1.9476960586079726e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 1, divergence",
+      "passed": true,
+      "metric": 1.2075951324154488e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 1, polarization",
+      "passed": true,
+      "metric": 1.6447019043109572e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 1, drift",
+      "passed": true,
+      "metric": 0.0,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 1, diffusion",
+      "passed": true,
+      "metric": 1.9476960586079726e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 1, divergence",
+      "passed": true,
+      "metric": 6.037975662077244e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 1, polarization",
+      "passed": true,
+      "metric": 1.6447019043109572e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "aligned versus original, state 1, drift",
+      "passed": true,
+      "metric": 1.43173073174687e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 1, diffusion",
+      "passed": true,
+      "metric": 2.197458488093401e-13,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 1, divergence",
+      "passed": true,
+      "metric": 1.4323727427517203e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 1, polarization",
+      "passed": true,
+      "metric": 2.2145911141547038e-13,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "moments versus original, state 2, drift",
+      "passed": true,
+      "metric": 1.4462802361536324e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 2, diffusion",
+      "passed": true,
+      "metric": 6.290144158756514e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 2, divergence",
+      "passed": true,
+      "metric": 2.262137163863013e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 2, polarization",
+      "passed": true,
+      "metric": 7.502498421706602e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 2, drift",
+      "passed": true,
+      "metric": 4.289963790444161e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 2, diffusion",
+      "passed": true,
+      "metric": 7.678812266536108e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 2, divergence",
+      "passed": true,
+      "metric": 2.8554692704275693e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 2, polarization",
+      "passed": true,
+      "metric": 7.492444185437828e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "aligned versus original, state 2, drift",
+      "passed": true,
+      "metric": 3.694035380588175e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 2, diffusion",
+      "passed": true,
+      "metric": 6.700534706614504e-11,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 2, divergence",
+      "passed": true,
+      "metric": 3.688672013330571e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 2, polarization",
+      "passed": true,
+      "metric": 1.7644478028369928e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "moments versus original, state 3, drift",
+      "passed": true,
+      "metric": 4.5271477995968745e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 3, diffusion",
+      "passed": true,
+      "metric": 2.9417626988508082e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 3, divergence",
+      "passed": true,
+      "metric": 4.535524599482722e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 3, polarization",
+      "passed": true,
+      "metric": 0.0,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 3, drift",
+      "passed": true,
+      "metric": 1.8249516212496314e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 3, diffusion",
+      "passed": true,
+      "metric": 3.0987655294705536e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 3, divergence",
+      "passed": true,
+      "metric": 1.8283284172389124e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 3, polarization",
+      "passed": true,
+      "metric": 1.6447019426831214e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "aligned versus original, state 3, drift",
+      "passed": true,
+      "metric": 2.320321140002699e-13,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 3, diffusion",
+      "passed": true,
+      "metric": 2.198011542204804e-13,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 3, divergence",
+      "passed": true,
+      "metric": 2.320504214844317e-13,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 3, polarization",
+      "passed": true,
+      "metric": 2.2138555693461872e-13,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "moments versus original, state 4, drift",
+      "passed": true,
+      "metric": 3.5827369595656265e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 4, diffusion",
+      "passed": true,
+      "metric": 4.854130961956745e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 4, divergence",
+      "passed": true,
+      "metric": 3.5835873593139584e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "moments versus original, state 4, polarization",
+      "passed": true,
+      "metric": 3.113632780417788e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 4, drift",
+      "passed": true,
+      "metric": 3.4757653913160816e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 4, diffusion",
+      "passed": true,
+      "metric": 5.275189614643506e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 4, divergence",
+      "passed": true,
+      "metric": 3.4765904002540516e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "streamed versus original, state 4, polarization",
+      "passed": true,
+      "metric": 8.381617693159916e-17,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "aligned versus original, state 4, drift",
+      "passed": true,
+      "metric": 6.133009363559323e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 4, diffusion",
+      "passed": true,
+      "metric": 2.1694365775686565e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 4, divergence",
+      "passed": true,
+      "metric": 6.135349011349571e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "aligned versus original, state 4, polarization",
+      "passed": true,
+      "metric": 1.591468967813468e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "Independent aligned versus magnetic-axis integration: perpendicular_heating_eV_s",
+      "passed": true,
+      "metric": 9.332230639317526e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "Independent aligned versus magnetic-axis integration: parallel_heating_eV_s",
+      "passed": true,
+      "metric": 2.3300436465636673e-08,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "Independent aligned versus magnetic-axis integration: total_heating_eV_s",
+      "passed": true,
+      "metric": 2.634848661140498e-08,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "Independent aligned versus magnetic-axis integration: electron_radial_drift_m_s",
+      "passed": true,
+      "metric": 2.3985170535144753e-08,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "Independent aligned versus magnetic-axis integration: normalized drift",
+      "passed": true,
+      "metric": 1.0254479971061938e-08,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "Independent aligned versus magnetic-axis integration: normalized diffusion",
+      "passed": true,
+      "metric": 7.912442324677249e-10,
+      "upper_limit": 1e-07
+    },
+    {
+      "name": "Polar refinement at factor 1: perpendicular_heating_eV_s",
+      "passed": true,
+      "metric": 3.181507099685107e-14,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Polar refinement at factor 1: parallel_heating_eV_s",
+      "passed": true,
+      "metric": 2.416502996003825e-15,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Polar refinement at factor 1: total_heating_eV_s",
+      "passed": true,
+      "metric": 7.22579676570269e-15,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Polar refinement at factor 1: electron_radial_drift_m_s",
+      "passed": true,
+      "metric": 1.1346056746126767e-14,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Polar refinement at factor 1: normalized drift",
+      "passed": true,
+      "metric": 7.528410766666502e-15,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Polar refinement at factor 1: normalized diffusion",
+      "passed": true,
+      "metric": 2.2444491131819957e-15,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Radial refinement at factor 1: perpendicular_heating_eV_s",
+      "passed": true,
+      "metric": 1.5265551150153416e-05,
+      "upper_limit": 2e-05
+    },
+    {
+      "name": "Radial refinement at factor 1: parallel_heating_eV_s",
+      "passed": true,
+      "metric": 2.696889155203088e-06,
+      "upper_limit": 2e-05
+    },
+    {
+      "name": "Radial refinement at factor 1: total_heating_eV_s",
+      "passed": true,
+      "metric": 9.841179801865404e-07,
+      "upper_limit": 2e-05
+    },
+    {
+      "name": "Radial refinement at factor 1: electron_radial_drift_m_s",
+      "passed": true,
+      "metric": 5.222058018397227e-07,
+      "upper_limit": 2e-05
+    },
+    {
+      "name": "Radial refinement at factor 1: normalized drift",
+      "passed": true,
+      "metric": 2.528595947531565e-06,
+      "upper_limit": 2e-05
+    },
+    {
+      "name": "Radial refinement at factor 1: normalized diffusion",
+      "passed": true,
+      "metric": 4.38174422340576e-08,
+      "upper_limit": 2e-05
+    },
+    {
+      "name": "Radial refinement at factor 2: perpendicular_heating_eV_s",
+      "passed": true,
+      "metric": 6.9498022933478e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Radial refinement at factor 2: parallel_heating_eV_s",
+      "passed": true,
+      "metric": 1.5094855734976485e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Radial refinement at factor 2: total_heating_eV_s",
+      "passed": true,
+      "metric": 7.226034745609292e-15,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Radial refinement at factor 2: electron_radial_drift_m_s",
+      "passed": true,
+      "metric": 1.781199453899249e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Radial refinement at factor 2: normalized drift",
+      "passed": true,
+      "metric": 1.3858139370078379e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Radial refinement at factor 2: normalized diffusion",
+      "passed": true,
+      "metric": 4.85452091804465e-15,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Streaming versus full special-function table at factor 2: perpendicular_heating_eV_s",
+      "passed": true,
+      "metric": 7.779629432851468e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Streaming versus full special-function table at factor 2: parallel_heating_eV_s",
+      "passed": true,
+      "metric": 0.0,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Streaming versus full special-function table at factor 2: total_heating_eV_s",
+      "passed": true,
+      "metric": 0.0,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Streaming versus full special-function table at factor 2: electron_radial_drift_m_s",
+      "passed": true,
+      "metric": 1.3194070028883563e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Streaming versus full special-function table at factor 2: normalized drift",
+      "passed": true,
+      "metric": 1.7402655034430238e-16,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Streaming versus full special-function table at factor 2: normalized diffusion",
+      "passed": true,
+      "metric": 0.0,
+      "upper_limit": 1e-12
+    },
+    {
+      "name": "Independent recurrence and radial refinement at factor 4: perpendicular_heating_eV_s",
+      "passed": true,
+      "metric": 1.0423938828087554e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Independent recurrence and radial refinement at factor 4: parallel_heating_eV_s",
+      "passed": true,
+      "metric": 7.363254747483936e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Independent recurrence and radial refinement at factor 4: total_heating_eV_s",
+      "passed": true,
+      "metric": 8.498079386782885e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Independent recurrence and radial refinement at factor 4: electron_radial_drift_m_s",
+      "passed": true,
+      "metric": 8.52375955641453e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Independent recurrence and radial refinement at factor 4: normalized drift",
+      "passed": true,
+      "metric": 5.3613995520632665e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Independent recurrence and radial refinement at factor 4: normalized diffusion",
+      "passed": true,
+      "metric": 3.1161518799840077e-14,
+      "upper_limit": 1e-11
+    },
+    {
+      "name": "Three-grid refinement at factor 8: perpendicular_heating_eV_s",
+      "passed": true,
+      "metric": 5.263774516579969e-15,
+      "upper_limit": 1e-08
+    },
+    {
+      "name": "Three-grid refinement at factor 8: parallel_heating_eV_s",
+      "passed": true,
+      "metric": 1.659750098109056e-14,
+      "upper_limit": 1e-08
+    },
+    {
+      "name": "Three-grid refinement at factor 8: total_heating_eV_s",
+      "passed": true,
+      "metric": 1.8933047514941475e-14,
+      "upper_limit": 1e-08
+    },
+    {
+      "name": "Three-grid refinement at factor 8: electron_radial_drift_m_s",
+      "passed": true,
+      "metric": 1.2799067606666676e-14,
+      "upper_limit": 1e-08
+    },
+    {
+      "name": "Three-grid refinement at factor 8: normalized drift",
+      "passed": true,
+      "metric": 8.336007757086506e-15,
+      "upper_limit": 1e-08
+    },
+    {
+      "name": "Three-grid refinement at factor 8: normalized diffusion",
+      "passed": true,
+      "metric": 2.119151344660611e-15,
+      "upper_limit": 1e-08
+    },
+    {
+      "name": "Positive covariance matched-aligned-warm-cut1-128-64-64.json",
+      "passed": true,
+      "metric": -0.0013919378402368781,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-aligned-warm-cut1-128-64-64.json",
+      "passed": true,
+      "metric": -7.188833632685535,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-moment-warm-cut1-256-192-32.json",
+      "passed": true,
+      "metric": -0.0013919377290583207,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-moment-warm-cut1-256-192-32.json",
+      "passed": true,
+      "metric": -7.188833632685535,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-moment-warm-cut1-256-64-32.json",
+      "passed": true,
+      "metric": -0.001391937729058356,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-moment-warm-cut1-256-64-32.json",
+      "passed": true,
+      "metric": -7.188833632685535,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-moment-warm-cut1-384-192-32.json",
+      "passed": true,
+      "metric": -0.0013919378241411245,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-moment-warm-cut1-384-192-32.json",
+      "passed": true,
+      "metric": -7.188833632685535,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-moment-warm-cut2-512-192-32.json",
+      "passed": true,
+      "metric": -0.001392885241439057,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-moment-warm-cut2-512-192-32.json",
+      "passed": true,
+      "metric": -6.495686875840651,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-moment-warm-cut2-768-192-32.json",
+      "passed": true,
+      "metric": -0.0013928852414389656,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-moment-warm-cut2-768-192-32.json",
+      "passed": true,
+      "metric": -6.495686875840651,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-moment-warm-cut4-1024-256-32.json",
+      "passed": true,
+      "metric": -0.0013931488774367351,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-moment-warm-cut4-1024-256-32.json",
+      "passed": true,
+      "metric": -5.802539810023777,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-streaming-warm-cut2-512-192-32.json",
+      "passed": true,
+      "metric": -0.001392885241439057,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-streaming-warm-cut2-512-192-32.json",
+      "passed": true,
+      "metric": -6.495686875840651,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-streaming-warm-cut4-1536-256-32.json",
+      "passed": true,
+      "metric": -0.001393148877436907,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-streaming-warm-cut4-1536-256-32.json",
+      "passed": true,
+      "metric": -5.802539810023777,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-streaming-warm-cut8-2048-384-32.json",
+      "passed": true,
+      "metric": -0.0013932214139032273,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-streaming-warm-cut8-2048-384-32.json",
+      "passed": true,
+      "metric": -5.109392660353183,
+      "upper_limit": 0.0
+    },
+    {
+      "name": "Positive covariance matched-streaming-warm-cut8-3072-512-48.json",
+      "passed": true,
+      "metric": -0.0013932214139032548,
+      "upper_limit": 1e-13
+    },
+    {
+      "name": "Positive complementary logarithm matched-streaming-warm-cut8-3072-512-48.json",
+      "passed": true,
+      "metric": -5.109392660353183,
+      "upper_limit": 0.0
+    }
+  ],
+  "source_comparisons": [
+    {
+      "name": "Independent aligned versus magnetic-axis integration",
+      "left": "matched-aligned-warm-cut1-128-64-64.json",
+      "right": "matched-moment-warm-cut1-384-192-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 9.332230639317526e-10,
+        "parallel_heating_eV_s": 2.3300436465636673e-08,
+        "total_heating_eV_s": 2.634848661140498e-08,
+        "electron_radial_drift_m_s": 2.3985170535144753e-08,
+        "normalized_drift": 1.0254479971061938e-08,
+        "normalized_diffusion": 7.912442324677249e-10
+      }
+    },
+    {
+      "name": "Polar refinement at factor 1",
+      "left": "matched-moment-warm-cut1-256-64-32.json",
+      "right": "matched-moment-warm-cut1-256-192-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 3.181507099685107e-14,
+        "parallel_heating_eV_s": 2.416502996003825e-15,
+        "total_heating_eV_s": 7.22579676570269e-15,
+        "electron_radial_drift_m_s": 1.1346056746126767e-14,
+        "normalized_drift": 7.528410766666502e-15,
+        "normalized_diffusion": 2.2444491131819957e-15
+      }
+    },
+    {
+      "name": "Radial refinement at factor 1",
+      "left": "matched-moment-warm-cut1-256-192-32.json",
+      "right": "matched-moment-warm-cut1-384-192-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 1.5265551150153416e-05,
+        "parallel_heating_eV_s": 2.696889155203088e-06,
+        "total_heating_eV_s": 9.841179801865404e-07,
+        "electron_radial_drift_m_s": 5.222058018397227e-07,
+        "normalized_drift": 2.528595947531565e-06,
+        "normalized_diffusion": 4.38174422340576e-08
+      }
+    },
+    {
+      "name": "Radial refinement at factor 2",
+      "left": "matched-moment-warm-cut2-512-192-32.json",
+      "right": "matched-moment-warm-cut2-768-192-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 6.9498022933478e-14,
+        "parallel_heating_eV_s": 1.5094855734976485e-14,
+        "total_heating_eV_s": 7.226034745609292e-15,
+        "electron_radial_drift_m_s": 1.781199453899249e-14,
+        "normalized_drift": 1.3858139370078379e-14,
+        "normalized_diffusion": 4.85452091804465e-15
+      }
+    },
+    {
+      "name": "Streaming versus full special-function table at factor 2",
+      "left": "matched-moment-warm-cut2-512-192-32.json",
+      "right": "matched-streaming-warm-cut2-512-192-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 7.779629432851468e-16,
+        "parallel_heating_eV_s": 0.0,
+        "total_heating_eV_s": 0.0,
+        "electron_radial_drift_m_s": 1.3194070028883563e-16,
+        "normalized_drift": 1.7402655034430238e-16,
+        "normalized_diffusion": 0.0
+      }
+    },
+    {
+      "name": "Independent recurrence and radial refinement at factor 4",
+      "left": "matched-moment-warm-cut4-1024-256-32.json",
+      "right": "matched-streaming-warm-cut4-1536-256-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 1.0423938828087554e-14,
+        "parallel_heating_eV_s": 7.363254747483936e-14,
+        "total_heating_eV_s": 8.498079386782885e-14,
+        "electron_radial_drift_m_s": 8.52375955641453e-14,
+        "normalized_drift": 5.3613995520632665e-14,
+        "normalized_diffusion": 3.1161518799840077e-14
+      }
+    },
+    {
+      "name": "Three-grid refinement at factor 8",
+      "left": "matched-streaming-warm-cut8-2048-384-32.json",
+      "right": "matched-streaming-warm-cut8-3072-512-48.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 5.263774516579969e-15,
+        "parallel_heating_eV_s": 1.659750098109056e-14,
+        "total_heating_eV_s": 1.8933047514941475e-14,
+        "electron_radial_drift_m_s": 1.2799067606666676e-14,
+        "normalized_drift": 8.336007757086506e-15,
+        "normalized_diffusion": 2.119151344660611e-15
+      }
+    },
+    {
+      "name": "Filter scale 1 to 2",
+      "left": "matched-moment-warm-cut1-384-192-32.json",
+      "right": "matched-moment-warm-cut2-768-192-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 0.021878883027980082,
+        "parallel_heating_eV_s": 0.002645756991541054,
+        "total_heating_eV_s": 3.3918914725343345e-05,
+        "electron_radial_drift_m_s": 7.381888858822628e-05,
+        "normalized_drift": 0.0036339157971225235,
+        "normalized_diffusion": 0.0005695090868744559
+      }
+    },
+    {
+      "name": "Filter scale 2 to 4",
+      "left": "matched-moment-warm-cut2-768-192-32.json",
+      "right": "matched-streaming-warm-cut4-1536-256-32.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 0.007480210259441328,
+        "parallel_heating_eV_s": 0.0008937209976906789,
+        "total_heating_eV_s": 3.089334009619205e-05,
+        "electron_radial_drift_m_s": 4.579383398423926e-05,
+        "normalized_drift": 0.001252285235846092,
+        "normalized_diffusion": 0.0001544368567334954
+      }
+    },
+    {
+      "name": "Filter scale 4 to 8",
+      "left": "matched-streaming-warm-cut4-1536-256-32.json",
+      "right": "matched-streaming-warm-cut8-3072-512-48.json",
+      "relative_changes": {
+        "perpendicular_heating_eV_s": 0.0023766965293088205,
+        "parallel_heating_eV_s": 0.00028153509829647813,
+        "total_heating_eV_s": 1.3289226380371274e-05,
+        "electron_radial_drift_m_s": 1.825149140800154e-05,
+        "normalized_drift": 0.0003990151322630846,
+        "normalized_diffusion": 4.160913354366222e-05
+      }
+    }
+  ],
+  "seconds": 27.71274744695984
+}

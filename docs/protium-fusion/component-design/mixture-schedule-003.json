@@ -1,0 +1,771 @@
+{
+  "scope": "Chronological dispatch and finite stock screen for an archived mixture plant.\n\n99.9% main windows are serialized. For each species, the full omitted 0.1% pulse mass is conservatively withheld\nthrough the finite study horizon as retained slow-tail inventory.\nLong solid holds and the local hydrogen gas hold are distinct. Central seed\nassembly and the eventual wall-to-source geometry remain engineering inputs.\n",
+  "selected_cases": {
+    "A": "A-H3-fixed_energy-z64-k0p001-t1",
+    "B1": "B1-H2-fixed_energy-z64-k0p001-t1",
+    "B2": "B2-H2p5-fixed_energy-z64-k0p001-t1",
+    "C13": "C13-H4-fixed_energy-z64-k0p001-t1"
+  },
+  "days_requested": 370,
+  "count_horizon_s": 31968000.0,
+  "dispatch_end_s": 31968000.0,
+  "radius_m": 1100000000.0,
+  "phase_choices": {
+    "c12": 0.37,
+    "c13": 0.05,
+    "n14": 0.12,
+    "n15": 0.5
+  },
+  "event_count": 4802,
+  "occupied_fraction_requested_horizon": 0.7900705551169913,
+  "continuous_occupancy": 0.7898760334637706,
+  "stage_stats": {
+    "n14": {
+      "stage": "A",
+      "count": 46,
+      "target_count": 45.19433379518736,
+      "nominal_period_s": 707345.3089246377,
+      "min_interval_s": 704262.7261907496,
+      "max_interval_s": 711034.4831733555,
+      "max_dispatch_delay_s": 4712.185245236571
+    },
+    "n15": {
+      "stage": "B1",
+      "count": 4721,
+      "target_count": 4720.783702387099,
+      "nominal_period_s": 6771.756982603364,
+      "min_interval_s": 5271.42061310634,
+      "max_interval_s": 11625.139669831842,
+      "max_dispatch_delay_s": 5577.212663013488
+    },
+    "c12": {
+      "stage": "B2",
+      "count": 33,
+      "target_count": 33.31067683479718,
+      "nominal_period_s": 959692.2980143537,
+      "min_interval_s": 955120.8156190813,
+      "max_interval_s": 964335.9463325813,
+      "max_dispatch_delay_s": 4894.424966972321
+    },
+    "c13": {
+      "stage": "C13",
+      "count": 2,
+      "target_count": 1.4287582915380395,
+      "nominal_period_s": 22374673.30151895,
+      "min_interval_s": 22374401.64486446,
+      "max_interval_s": 22374401.64486446,
+      "max_dispatch_delay_s": 271.65665449458174
+    }
+  },
+  "max_dispatch_delay_s": 5577.212663013488,
+  "stock_cases": [
+    {
+      "solid_hold_days": 1,
+      "H_local_hold_s": 3600,
+      "minimum_starting_ready_atomic_kg": {
+        "c12": 7895824212278.407,
+        "c13": 8405184788417.322,
+        "n14": 13326072589756.33,
+        "n15": 3467886611969.836,
+        "p": 4863328661528.246
+      },
+      "total_starting_ready_kg": 37958296863950.14,
+      "max_ready_atomic_kg": {
+        "c12": 10245450518771.52,
+        "c13": 8739091728826.511,
+        "n14": 20416514844639.938,
+        "n15": 15412235866671.604,
+        "p": 5113395196559.114
+      },
+      "endpoint_ready_atomic_kg": {
+        "c12": 8867088965232.74,
+        "c13": 3220149727944.3887,
+        "n14": 2681437016285.252,
+        "n15": 4638159640364.972,
+        "p": 2781689938992.5
+      },
+      "uncredited_slow_tail_atomic_kg": {
+        "c12": 916241481577.5708,
+        "c13": 456108363541.85724,
+        "n14": 925251065988.9336,
+        "n15": 1087572729905.165,
+        "p": 1464521148208.477
+      },
+      "scope": "Finite chronological upper stock requirement: For every species, up to the full omitted 0.1% of pulse mass (plus a 1% atomic/baryonic mass margin) remains uncredited throughout the horizon; these independent upper bounds overallocate retained tails, with no fresh-loss debit. A steady rotating-skin plant also needs its resident age distribution."
+    },
+    {
+      "solid_hold_days": 30,
+      "H_local_hold_s": 3600,
+      "minimum_starting_ready_atomic_kg": {
+        "c12": 31772277999333.29,
+        "c13": 9406863974259.586,
+        "n14": 44423690228510.625,
+        "n15": 40391108326444.74,
+        "p": 4863328661528.314
+      },
+      "total_starting_ready_kg": 130857269190076.56,
+      "max_ready_atomic_kg": {
+        "c12": 31772651566406.855,
+        "c13": 9406877852721.676,
+        "n14": 44423690228510.625,
+        "n15": 40391108326444.74,
+        "p": 5113395196559.183
+      },
+      "endpoint_ready_atomic_kg": {
+        "c12": 8867088965233.168,
+        "c13": 3554042789890.574,
+        "n14": 8113785867289.008,
+        "n15": 9663481360746.672,
+        "p": 2781689938992.784
+      },
+      "uncredited_slow_tail_atomic_kg": {
+        "c12": 916241481577.5708,
+        "c13": 456108363541.85724,
+        "n14": 925251065988.9336,
+        "n15": 1087572729905.165,
+        "p": 1464521148208.477
+      },
+      "scope": "Finite chronological upper stock requirement: For every species, up to the full omitted 0.1% of pulse mass (plus a 1% atomic/baryonic mass margin) remains uncredited throughout the horizon; these independent upper bounds overallocate retained tails, with no fresh-loss debit. A steady rotating-skin plant also needs its resident age distribution."
+    },
+    {
+      "solid_hold_days": 365.25,
+      "H_local_hold_s": 3600,
+      "minimum_starting_ready_atomic_kg": {
+        "c12": 308839746670503.9,
+        "c13": 17301411080161.16,
+        "n14": 426377365069246.4,
+        "n15": 466115301669507.0,
+        "p": 4863328661528.379
+      },
+      "total_starting_ready_kg": 1223497153150947.0,
+      "max_ready_atomic_kg": {
+        "c12": 308840120237577.44,
+        "c13": 17301424958623.25,
+        "n14": 426377365069246.4,
+        "n15": 466115301669507.0,
+        "p": 5113395196559.247
+      },
+      "endpoint_ready_atomic_kg": {
+        "c12": 4409532485308.25,
+        "c13": 333998551248.2969,
+        "n14": 9598595070653.0,
+        "n15": 4093934499720.0625,
+        "p": 2781689938992.4365
+      },
+      "uncredited_slow_tail_atomic_kg": {
+        "c12": 916241481577.5708,
+        "c13": 456108363541.85724,
+        "n14": 925251065988.9336,
+        "n15": 1087572729905.165,
+        "p": 1464521148208.477
+      },
+      "scope": "Finite chronological upper stock requirement: For every species, up to the full omitted 0.1% of pulse mass (plus a 1% atomic/baryonic mass margin) remains uncredited throughout the horizon; these independent upper bounds overallocate retained tails, with no fresh-loss debit. A steady rotating-skin plant also needs its resident age distribution."
+    }
+  ],
+  "excerpt_near_first_C13": [
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 951431.8560557726,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 947619.714329454,
+      "focus_s": 951431.8560557726,
+      "main_capture_end_s": 952891.1349425614,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 958203.613038376,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 954391.4713120573,
+      "focus_s": 958203.613038376,
+      "main_capture_end_s": 959662.8919251647,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 964975.3700209794,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 961163.2282946608,
+      "focus_s": 964975.3700209794,
+      "main_capture_end_s": 966434.6489077682,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 971747.1270035828,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 967934.9852772641,
+      "focus_s": 971747.1270035828,
+      "main_capture_end_s": 973206.4058903715,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 978518.8839861861,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 974706.7422598675,
+      "focus_s": 978518.8839861861,
+      "main_capture_end_s": 979978.1628729749,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 985290.6409687895,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 981478.4992424708,
+      "focus_s": 985290.6409687895,
+      "main_capture_end_s": 986749.9198555782,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 992062.3979513928,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 988250.2562250742,
+      "focus_s": 992062.3979513928,
+      "main_capture_end_s": 993521.6768381816,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 998834.1549339963,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 995022.0132076776,
+      "focus_s": 998834.1549339963,
+      "main_capture_end_s": 1000293.433820785,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1005605.9119165996,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1001793.770190281,
+      "focus_s": 1005605.9119165996,
+      "main_capture_end_s": 1007065.1908033884,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1012377.668899203,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1008565.5271728843,
+      "focus_s": 1012377.668899203,
+      "main_capture_end_s": 1013836.9477859917,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1019149.4258818063,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1015337.2841554877,
+      "focus_s": 1019149.4258818063,
+      "main_capture_end_s": 1020608.704768595,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1025921.1828644096,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1022109.041138091,
+      "focus_s": 1025921.1828644096,
+      "main_capture_end_s": 1027380.4617511984,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1032692.939847013,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1028880.7981206944,
+      "focus_s": 1032692.939847013,
+      "main_capture_end_s": 1034152.2187338017,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1039464.6968296164,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1035652.5551032978,
+      "focus_s": 1039464.6968296164,
+      "main_capture_end_s": 1040923.9757164052,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1046236.4538122198,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1042424.3120859012,
+      "focus_s": 1046236.4538122198,
+      "main_capture_end_s": 1047695.7326990085,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1053008.210794823,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1049196.0690685043,
+      "focus_s": 1053008.210794823,
+      "main_capture_end_s": 1054467.4896816118,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1059779.9677774266,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1055967.8260511078,
+      "focus_s": 1059779.9677774266,
+      "main_capture_end_s": 1061239.2466642153,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1066551.72476003,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1062739.5830337112,
+      "focus_s": 1066551.72476003,
+      "main_capture_end_s": 1068011.0036468187,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1073323.4817426333,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1069511.3400163145,
+      "focus_s": 1073323.4817426333,
+      "main_capture_end_s": 1074782.760629422,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1080095.2387252366,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1076283.0969989179,
+      "focus_s": 1080095.2387252366,
+      "main_capture_end_s": 1081554.5176120254,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1086866.99570784,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1083054.8539815212,
+      "focus_s": 1086866.99570784,
+      "main_capture_end_s": 1088326.2745946287,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1093638.7526904433,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1089826.6109641246,
+      "focus_s": 1093638.7526904433,
+      "main_capture_end_s": 1095098.031577232,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1100410.5096730466,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1096598.367946728,
+      "focus_s": 1100410.5096730466,
+      "main_capture_end_s": 1101869.7885598354,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1107182.26665565,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1103370.1249293312,
+      "focus_s": 1107182.26665565,
+      "main_capture_end_s": 1108641.5455424387,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1113954.0236382533,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1110141.8819119346,
+      "focus_s": 1113954.0236382533,
+      "main_capture_end_s": 1115413.302525042,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "c13",
+      "stage": "C13",
+      "nominal_focus_s": 1118733.6650759475,
+      "incoming_s": 3592.0192053999835,
+      "outgoing_s": 951.4645927581214,
+      "main_launch_start_s": 1115413.302525042,
+      "focus_s": 1119005.321730442,
+      "main_capture_end_s": 1119956.7863232002,
+      "dispatch_delay_s": 271.65665449458174
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1120725.7806208567,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1119956.7863232002,
+      "focus_s": 1123768.928049519,
+      "main_capture_end_s": 1125228.2069363077,
+      "dispatch_delay_s": 3043.1474286622833
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1127497.53760346,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1125228.2069363077,
+      "focus_s": 1129040.3486626265,
+      "main_capture_end_s": 1130499.6275494152,
+      "dispatch_delay_s": 1542.8110591664445
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1134269.2945860636,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1130499.6275494152,
+      "focus_s": 1134311.769275734,
+      "main_capture_end_s": 1135771.0481625227,
+      "dispatch_delay_s": 42.474689670372754
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1141041.051568667,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1137228.9098423482,
+      "focus_s": 1141041.051568667,
+      "main_capture_end_s": 1142500.3304554557,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1147812.8085512703,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1144000.6668249515,
+      "focus_s": 1147812.8085512703,
+      "main_capture_end_s": 1149272.087438059,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1154584.5655338736,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1150772.4238075549,
+      "focus_s": 1154584.5655338736,
+      "main_capture_end_s": 1156043.8444206624,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1161356.322516477,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1157544.1807901582,
+      "focus_s": 1161356.322516477,
+      "main_capture_end_s": 1162815.6014032657,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1168128.0794990803,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1164315.9377727616,
+      "focus_s": 1168128.0794990803,
+      "main_capture_end_s": 1169587.358385869,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1174899.8364816837,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1171087.694755365,
+      "focus_s": 1174899.8364816837,
+      "main_capture_end_s": 1176359.1153684724,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1181671.593464287,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1177859.4517379683,
+      "focus_s": 1181671.593464287,
+      "main_capture_end_s": 1183130.8723510758,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1188443.3504468903,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1184631.2087205716,
+      "focus_s": 1188443.3504468903,
+      "main_capture_end_s": 1189902.629333679,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1195215.1074294937,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1191402.965703175,
+      "focus_s": 1195215.1074294937,
+      "main_capture_end_s": 1196674.3863162824,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1201986.864412097,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1198174.7226857783,
+      "focus_s": 1201986.864412097,
+      "main_capture_end_s": 1203446.1432988858,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1208758.6213947006,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1204946.4796683819,
+      "focus_s": 1208758.6213947006,
+      "main_capture_end_s": 1210217.9002814894,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1215530.378377304,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1211718.2366509852,
+      "focus_s": 1215530.378377304,
+      "main_capture_end_s": 1216989.6572640927,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1222302.1353599073,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1218489.9936335885,
+      "focus_s": 1222302.1353599073,
+      "main_capture_end_s": 1223761.414246696,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1229073.8923425106,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1225261.750616192,
+      "focus_s": 1229073.8923425106,
+      "main_capture_end_s": 1230533.1712292994,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1235845.649325114,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1232033.5075987952,
+      "focus_s": 1235845.649325114,
+      "main_capture_end_s": 1237304.9282119027,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1242617.4063077173,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1238805.2645813986,
+      "focus_s": 1242617.4063077173,
+      "main_capture_end_s": 1244076.685194506,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1249389.1632903207,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1245577.021564002,
+      "focus_s": 1249389.1632903207,
+      "main_capture_end_s": 1250848.4421771094,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1256160.920272924,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1252348.7785466053,
+      "focus_s": 1256160.920272924,
+      "main_capture_end_s": 1257620.1991597128,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1262932.6772555273,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1259120.5355292086,
+      "focus_s": 1262932.6772555273,
+      "main_capture_end_s": 1264391.956142316,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1269704.4342381307,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1265892.292511812,
+      "focus_s": 1269704.4342381307,
+      "main_capture_end_s": 1271163.7131249194,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1276476.191220734,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1272664.0494944153,
+      "focus_s": 1276476.191220734,
+      "main_capture_end_s": 1277935.4701075228,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1283247.9482033376,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1279435.8064770189,
+      "focus_s": 1283247.9482033376,
+      "main_capture_end_s": 1284707.2270901264,
+      "dispatch_delay_s": 0.0
+    },
+    {
+      "cat": "n15",
+      "stage": "B1",
+      "nominal_focus_s": 1290019.705185941,
+      "incoming_s": 3812.141726318677,
+      "outgoing_s": 1459.2788867887812,
+      "main_launch_start_s": 1286207.5634596222,
+      "focus_s": 1290019.705185941,
+      "main_capture_end_s": 1291478.9840727297,
+      "dispatch_delay_s": 0.0
+    }
+  ],
+  "events_csv": "mixture-schedule-003-events.csv",
+  "checks": [
+    {
+      "name": "disjoint main windows",
+      "passed": true
+    },
+    {
+      "name": "nonnegative dispatch delay",
+      "passed": true
+    },
+    {
+      "name": "n14 integer count within one expected shot",
+      "passed": true
+    },
+    {
+      "name": "n15 integer count within one expected shot",
+      "passed": true
+    },
+    {
+      "name": "c12 integer count within one expected shot",
+      "passed": true
+    },
+    {
+      "name": "c13 integer count within one expected shot",
+      "passed": true
+    }
+  ],
+  "sources_sha256": {
+    "mixture-schedule-003-input.json": "14953e99a31d3951ec18668152e63c94580d95cb1470d6007090ef93579e4fec"
+  },
+  "code_sha256": "99dff8ab9d2ae975a25c2a4b988474bfee3fea7a481f65471392cbc4cd029579",
+  "module_sha256": "845b6fceeead8ac69da4bb4310bbbfedeaf8b7c91356275d4eb510580511405e"
+}

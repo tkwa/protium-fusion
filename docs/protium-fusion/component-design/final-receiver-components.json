@@ -1,0 +1,3643 @@
+{
+  "scope": "Final delivered-B1/CH2 receiver support, guide and separated-prompt extension.\nExact final source128 family; hot capture and cold routing come from their separate plant ledger.\nExisting guide geometry/attenuation and frame are retained as requirements.\n",
+  "code_sha256": "95f5dc28e6f184af2f27b0dc911a0e71127493225671f06d7c124c764bf851a1",
+  "inputs_sha256": {
+    "/home/tkwa/src/protium-fusion/output/final-coupled-tradeoff-extended.json": "23d1031b371756d9805f78e46ad4fdc8de11595d1456e17eb5534a1ac3c21f46",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-thermal.json": "1615ab724e1c579388c098c0466963ddd304675bc4ed187d0753effd11de609d",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128_thermal_combine.py": "ef3c981df8e8701f01a587f513360c008a59c54d4a2c6d31d0002672d4eebabb",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-prompt-proxy.json": "13ccc5029a9cb1c238d05a6d6c7e7bdaae8f8f145b7f503db78569ee01e7524a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-prompt-radiance.json": "7eaa6d90249a38cce62680a27d88584b88c9fc98695eda4fcd34ed70b40e8ceb",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/receiver_prestress.py": "3d8c102d8dd2a4fea5ff4ff3e6e873f96817d39adcf25dae40ffc7dd60680c32",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/guide-gamma.json": "27521935bab32ef1637f3842110242aedf9b5082f90f20d792ff985830113f97",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/guide-component.json": "65f2c4603f1541ab6bd76378900a16fbc0e7c41f39321c384c5426870df7e340",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/guide_buffer_materials.py": "27760145bddd558203a4119b2e03c10f5dd93361dc6dda884fb559b2dddfb8c4",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/guide-buffer-materials.json": "4a801e01d2ce55a5d9d193c4aa798b1e2f4c772e275504d7c036614d93e2225a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/sector-allocations.json": "a37696d37140780eae1cc0c847140be48a9a0e07b757238df9cbc989064a64c0"
+  },
+  "rows": [
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 165.79216506429734
+        },
+        "subtotal_kg_m2": 336.68606789237083,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 63.31393210762917,
+          "700.0": 363.31393210762917,
+          "1000.0": 663.3139321076292,
+          "1500.0": 1163.3139321076292
+        },
+        "services_fraction_of_current_plant_mass": 0.49819807358390916,
+        "ordinary_auxiliary_W_m2": 4.588141539997942,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 1.0908001365006847
+        },
+        "remaining_auxiliary_W_m2": 2.434204646712756,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 99.04979344764538,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404928,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 200.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 20.56438922383407,
+      "plant_mass_kg": 3.0520608668739946e+22,
+      "plant_power_W": 6.276376760122924e+20,
+      "He_s": 3.983454870514221e+32,
+      "occupancy": 0.6562221460678748,
+      "B1_interval_s": 8021.781917447416,
+      "faster_thermal_cadence_ratio": 1.1250003858522908,
+      "support": {
+        "body_mass_kg": 3.0520608668739946e+22,
+        "body_kg_m2": 2007.2337751253363,
+        "a_over_n2": 2.4129723493018203,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 765236.645184286,
+        "pressure_Pa": 0.00139133935488052,
+        "prestrain": 0.006121893161474289,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 191.3091612960715,
+        "stream_axis_kg_m2": [
+          0.03234976532555753,
+          0.009242790093016437,
+          0.0015404650155027401
+        ],
+        "stream_kg_m2": 0.043133020434076706,
+        "stream_vs_scalar_budget": 1.0345517469200267,
+        "extra_stream_mass_kg_m2": 0.0014405477641610555,
+        "stream_dissipation_W_m2": 0.0020802525492627385,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.71478193959879e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              65.09806723475248,
+              65.29595786829313,
+              65.93752915669073,
+              66.55804486852197,
+              67.72071014169725,
+              137.81541754893314,
+              194.5100857152766,
+              194.52069437638963,
+              194.53001705805514
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.7793872713109252e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              17.448380820238402,
+              17.47333885715199,
+              17.502241630678586,
+              65.14246035936662,
+              65.37463171148653,
+              65.94241084666527,
+              66.558044868522,
+              67.72071014169725,
+              137.8154175489332
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.156256978865747e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.901754367625067,
+              1.9206254019954174,
+              1.942403765574341,
+              65.13447382378702,
+              65.3605581733637,
+              65.94154872103341,
+              66.55804486852193,
+              67.72071014169728,
+              137.81541754893317
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 200.0,
+        "mean_missed_hot_to_cold_W_m2": 11.819472032471834,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5331240.85520884,
+          "B1": 15402.529127807127,
+          "B2": 14675618.295606317,
+          "C13": 3642954.870856216
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3509459772816148,
+          "outer_shield_radius_m": 2.350945977281615,
+          "outer_intercept_fraction": 0.044314287667286394,
+          "buffer_kg_m2": 26.234126238229297,
+          "buffer_total_kg": 3.98897981194703e+20,
+          "local_graphite_shield_kg_m2": 139.55803882606804,
+          "shield_plus_buffer_kg_m2": 165.79216506429734,
+          "whole_pulse_absorbed_J_m2": 59233.93731931168,
+          "mean_load65K_W_m2": 0.04770591953378881,
+          "photon_refrigeration_electric_W_m2": 0.660543501237076,
+          "extra_IR_refrigeration_electric_W_m2": 0.43025663526360874,
+          "total_extra_electric_W_m2": 1.0908001365006847,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.28832706435244027,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 57386.486312078836,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 15.054843262794938,
+            "1000000.0": 1.5054843262794937,
+            "10000000.0": 0.15054843262794937
+          },
+          "buffer_storage_identity_relative_error": 9.667057267347118e-14
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.0418366335008074,
+          "outer_shield_radius_m": 3.0418366335008074,
+          "outer_intercept_fraction": 0.10950611880602908,
+          "buffer_kg_m2": 64.827790219373,
+          "buffer_total_kg": 9.857265459879494e+20,
+          "local_graphite_shield_kg_m2": 191.6499670663571,
+          "shield_plus_buffer_kg_m2": 256.4777572857301,
+          "whole_pulse_absorbed_J_m2": 146374.4295324837,
+          "mean_load65K_W_m2": 0.1178872631653393,
+          "photon_refrigeration_electric_W_m2": 1.6322851822893136,
+          "extra_IR_refrigeration_electric_W_m2": 0.7537972537701461,
+          "total_extra_electric_W_m2": 2.3860824360594597,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4357811284276358,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 57386.48631208107,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 37.20239096066512,
+            "1000000.0": 3.7202390960665115,
+            "10000000.0": 0.37202390960665116
+          },
+          "buffer_storage_identity_relative_error": 1.354041727393187e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.107803469253799,
+          "outer_shield_radius_m": 3.107803469253799,
+          "outer_intercept_fraction": 0.058580715286851645,
+          "buffer_kg_m2": 69.35974652235642,
+          "buffer_total_kg": 1.0546363394267079e+21,
+          "local_graphite_shield_kg_m2": 196.6237493043291,
+          "shield_plus_buffer_kg_m2": 265.9834958266855,
+          "whole_pulse_absorbed_J_m2": 78303.55851535904,
+          "mean_load65K_W_m2": 0.06306424037973188,
+          "photon_refrigeration_electric_W_m2": 0.8731971744885954,
+          "extra_IR_refrigeration_electric_W_m2": 0.7846891910808033,
+          "total_extra_electric_W_m2": 1.6578863655693987,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.44986016964551767,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 28693.243156042223,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 19.901560722074265,
+            "1000000.0": 1.9901560722074267,
+            "10000000.0": 0.19901560722074266
+          },
+          "buffer_storage_identity_relative_error": 1.942025586316182e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.394907102240899,
+          "outer_shield_radius_m": 4.394907102240899,
+          "outer_intercept_fraction": 0.15821665568067236,
+          "buffer_kg_m2": 187.32900545665476,
+          "buffer_total_kg": 2.848395308359039e+21,
+          "local_graphite_shield_kg_m2": 293.66907693155326,
+          "shield_plus_buffer_kg_m2": 480.998082388208,
+          "whole_pulse_absorbed_J_m2": 211484.73683756156,
+          "mean_load65K_W_m2": 0.17032590259550312,
+          "photon_refrigeration_electric_W_m2": 2.358358651322351,
+          "extra_IR_refrigeration_electric_W_m2": 1.3874333471206566,
+          "total_extra_electric_W_m2": 3.745791998443008,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.724561614601352,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 28693.24315604486,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 53.75076703747849,
+            "1000000.0": 5.375076703747849,
+            "10000000.0": 0.5375076703747849
+          },
+          "buffer_storage_identity_relative_error": 2.8596749152419804e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 165.79216506429734
+        },
+        "subtotal_kg_m2": 336.68606789237083,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 63.31393210762917,
+          "700.0": 363.31393210762917,
+          "1000.0": 663.3139321076292,
+          "1500.0": 1163.3139321076292
+        },
+        "services_fraction_of_current_plant_mass": 0.498221343809148,
+        "ordinary_auxiliary_W_m2": 4.532175360541861,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 1.118700842703918
+        },
+        "remaining_auxiliary_W_m2": 2.350337761053442,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 98.00738628309144,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404926,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 200.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 20.314398252675527,
+      "plant_mass_kg": 3.051918315486549e+22,
+      "plant_power_W": 6.199788409542839e+20,
+      "He_s": 3.964113807123607e+32,
+      "occupancy": 0.6530359585653199,
+      "B1_interval_s": 8060.92049926417,
+      "faster_thermal_cadence_ratio": 1.1304893059075458,
+      "support": {
+        "body_mass_kg": 3.051918315486549e+22,
+        "body_kg_m2": 2007.1400240594003,
+        "a_over_n2": 2.4128596475664144,
+        "effective_a_over_n2": 4.400000000000001,
+        "pretension_N_m": 765244.3048249785,
+        "pressure_Pa": 0.0013913532814999608,
+        "prestrain": 0.006121954438599828,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 191.31107620624462,
+        "stream_axis_kg_m2": [
+          0.032348254377993955,
+          0.00924235839371256,
+          0.0015403930656187627
+        ],
+        "stream_kg_m2": 0.04313100583732528,
+        "stream_vs_scalar_budget": 1.0345732874336993,
+        "extra_stream_mass_kg_m2": 0.0014413485059307318,
+        "stream_dissipation_W_m2": 0.0020801553877380944,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.714771752559189e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              65.10424922346054,
+              65.30214887317244,
+              65.94375061295109,
+              66.5642961056444,
+              67.72701944136288,
+              137.82827283478838,
+              194.51917107711898,
+              194.52978049105795,
+              194.539103835234
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.7792310826413893e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              17.449199575689793,
+              17.4741571539105,
+              17.503059369023052,
+              65.14864257319114,
+              65.38082314529979,
+              65.94863233363009,
+              66.56429610564442,
+              67.72701944136287,
+              137.82827283478835
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.155687413115374e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.9018453414235987,
+              1.9207163277354862,
+              1.942494624622671,
+              65.1406565872856,
+              65.36675056748533,
+              65.94777026594988,
+              66.56429610564446,
+              67.72701944136286,
+              137.82827283478838
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 200.0,
+        "mean_missed_hot_to_cold_W_m2": 12.318714877246975,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5331240.85520884,
+          "B1": 15402.529127807127,
+          "B2": 14675618.295606317,
+          "C13": 3642954.870856216
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3509459772816148,
+          "outer_shield_radius_m": 2.350945977281615,
+          "outer_intercept_fraction": 0.044314287667286394,
+          "buffer_kg_m2": 26.234126238229297,
+          "buffer_total_kg": 3.98897981194703e+20,
+          "local_graphite_shield_kg_m2": 139.55803882606804,
+          "shield_plus_buffer_kg_m2": 165.79216506429734,
+          "whole_pulse_absorbed_J_m2": 59233.93731931168,
+          "mean_load65K_W_m2": 0.04972097053735566,
+          "photon_refrigeration_electric_W_m2": 0.6884442074403092,
+          "extra_IR_refrigeration_electric_W_m2": 0.43025663526360874,
+          "total_extra_electric_W_m2": 1.118700842703918,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.28832706435244027,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 59810.43491142252,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 15.69074499829655,
+            "1000000.0": 1.569074499829655,
+            "10000000.0": 0.1569074499829655
+          },
+          "buffer_storage_identity_relative_error": 9.667057267347118e-14
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.0418366335008074,
+          "outer_shield_radius_m": 3.0418366335008074,
+          "outer_intercept_fraction": 0.10950611880602908,
+          "buffer_kg_m2": 64.827790219373,
+          "buffer_total_kg": 9.857265459879494e+20,
+          "local_graphite_shield_kg_m2": 191.6499670663571,
+          "shield_plus_buffer_kg_m2": 256.4777572857301,
+          "whole_pulse_absorbed_J_m2": 146374.4295324837,
+          "mean_load65K_W_m2": 0.12286670492582812,
+          "photon_refrigeration_electric_W_m2": 1.7012312989730047,
+          "extra_IR_refrigeration_electric_W_m2": 0.7537972537701461,
+          "total_extra_electric_W_m2": 2.455028552743151,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4357811284276358,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 59810.43491142485,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 38.77378327367313,
+            "1000000.0": 3.877378327367313,
+            "10000000.0": 0.38773783273673135
+          },
+          "buffer_storage_identity_relative_error": 1.354041727393187e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.107803469253799,
+          "outer_shield_radius_m": 3.107803469253799,
+          "outer_intercept_fraction": 0.058580715286851645,
+          "buffer_kg_m2": 69.35974652235642,
+          "buffer_total_kg": 1.0546363394267079e+21,
+          "local_graphite_shield_kg_m2": 196.6237493043291,
+          "shield_plus_buffer_kg_m2": 265.9834958266855,
+          "whole_pulse_absorbed_J_m2": 78303.55851535904,
+          "mean_load65K_W_m2": 0.06572801171268679,
+          "photon_refrigeration_electric_W_m2": 0.9100801621756633,
+          "extra_IR_refrigeration_electric_W_m2": 0.7846891910808033,
+          "total_extra_electric_W_m2": 1.6947693532564667,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.44986016964551767,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 29905.217455714188,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 20.742183024242845,
+            "1000000.0": 2.074218302424285,
+            "10000000.0": 0.20742183024242847
+          },
+          "buffer_storage_identity_relative_error": 1.942025586316182e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.394907102240899,
+          "outer_shield_radius_m": 4.394907102240899,
+          "outer_intercept_fraction": 0.15821665568067236,
+          "buffer_kg_m2": 187.32900545665476,
+          "buffer_total_kg": 2.848395308359039e+21,
+          "local_graphite_shield_kg_m2": 293.66907693155326,
+          "shield_plus_buffer_kg_m2": 480.998082388208,
+          "whole_pulse_absorbed_J_m2": 211484.73683756156,
+          "mean_load65K_W_m2": 0.17752030078156908,
+          "photon_refrigeration_electric_W_m2": 2.4579733954371106,
+          "extra_IR_refrigeration_electric_W_m2": 1.3874333471206566,
+          "total_extra_electric_W_m2": 3.845406742557767,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.724561614601352,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 29905.21745571693,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 56.02114643944444,
+            "1000000.0": 5.602114643944444,
+            "10000000.0": 0.5602114643944444
+          },
+          "buffer_storage_identity_relative_error": 2.8596749152419804e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 165.79216506429734
+        },
+        "subtotal_kg_m2": 336.68606789237083,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 63.31393210762917,
+          "700.0": 363.31393210762917,
+          "1000.0": 663.3139321076292,
+          "1500.0": 1163.3139321076292
+        },
+        "services_fraction_of_current_plant_mass": 0.4982124030472771,
+        "ordinary_auxiliary_W_m2": 4.553677769158591,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 1.1079812904438584
+        },
+        "remaining_auxiliary_W_m2": 2.3825597219302312,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 98.40788288684557,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404928,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 200.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 20.410448450763585,
+      "plant_mass_kg": 3.051973084245298e+22,
+      "plant_power_W": 6.229213930910661e+20,
+      "He_s": 3.971544713648769e+32,
+      "occupancy": 0.6542601033305253,
+      "B1_interval_s": 8045.838219935691,
+      "faster_thermal_cadence_ratio": 1.1283741187535339,
+      "support": {
+        "body_mass_kg": 3.051973084245298e+22,
+        "body_kg_m2": 2007.176043558086,
+        "a_over_n2": 2.412902947980866,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 765241.3624429372,
+        "pressure_Pa": 0.0013913479317144313,
+        "prestrain": 0.006121930899543498,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 191.3103406107343,
+        "stream_axis_kg_m2": [
+          0.032348834889513865,
+          0.00924252425414682,
+          0.0015404207090244707
+        ],
+        "stream_kg_m2": 0.04313177985268516,
+        "stream_vs_scalar_budget": 1.0345650113843117,
+        "extra_stream_mass_kg_m2": 0.0014410408676385049,
+        "stream_dissipation_W_m2": 0.002080192717547353,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.7147756673794576e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              65.1018739780081,
+              65.2997701635786,
+              65.94136020348186,
+              66.5618942539315,
+              67.72459528116971,
+              137.82333357596244,
+              194.51568034783187,
+              194.52628947251995,
+              194.53561256214581
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.779291090243098e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              17.448884997852332,
+              17.473842752302563,
+              17.50274518195729,
+              65.1462672412311,
+              65.3784442708778,
+              65.94624191236225,
+              66.56189425393153,
+              67.7245952811697,
+              137.82333357596247
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.155906239253892e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.9018103879571777,
+              1.9206813927332669,
+              1.9424597152436271,
+              65.13828104414155,
+              65.36437132411409,
+              65.94537982241704,
+              66.5618942539315,
+              67.7245952811697,
+              137.8233335759624
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 200.0,
+        "mean_missed_hot_to_cold_W_m2": 12.1269039701665,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5331240.85520884,
+          "B1": 15402.529127807127,
+          "B2": 14675618.295606317,
+          "C13": 3642954.870856216
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3509459772816148,
+          "outer_shield_radius_m": 2.350945977281615,
+          "outer_intercept_fraction": 0.044314287667286394,
+          "buffer_kg_m2": 26.234126238229297,
+          "buffer_total_kg": 3.98897981194703e+20,
+          "local_graphite_shield_kg_m2": 139.55803882606804,
+          "shield_plus_buffer_kg_m2": 165.79216506429734,
+          "whole_pulse_absorbed_J_m2": 59233.93731931168,
+          "mean_load65K_W_m2": 0.04894678065190691,
+          "photon_refrigeration_electric_W_m2": 0.6777246551802496,
+          "extra_IR_refrigeration_electric_W_m2": 0.43025663526360874,
+          "total_extra_electric_W_m2": 1.1079812904438584,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.28832706435244027,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 58879.145090401726,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 15.446429251006176,
+            "1000000.0": 1.5446429251006175,
+            "10000000.0": 0.15446429251006175
+          },
+          "buffer_storage_identity_relative_error": 9.667057267347118e-14
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.0418366335008074,
+          "outer_shield_radius_m": 3.0418366335008074,
+          "outer_intercept_fraction": 0.10950611880602908,
+          "buffer_kg_m2": 64.827790219373,
+          "buffer_total_kg": 9.857265459879494e+20,
+          "local_graphite_shield_kg_m2": 191.6499670663571,
+          "shield_plus_buffer_kg_m2": 256.4777572857301,
+          "whole_pulse_absorbed_J_m2": 146374.4295324837,
+          "mean_load65K_W_m2": 0.12095358538725177,
+          "photon_refrigeration_electric_W_m2": 1.674741951515794,
+          "extra_IR_refrigeration_electric_W_m2": 0.7537972537701461,
+          "total_extra_electric_W_m2": 2.42853920528594,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4357811284276358,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 58879.145090404,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 38.17004866216736,
+            "1000000.0": 3.8170048662167364,
+            "10000000.0": 0.38170048662167366
+          },
+          "buffer_storage_identity_relative_error": 1.354041727393187e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.107803469253799,
+          "outer_shield_radius_m": 3.107803469253799,
+          "outer_intercept_fraction": 0.058580715286851645,
+          "buffer_kg_m2": 69.35974652235642,
+          "buffer_total_kg": 1.0546363394267079e+21,
+          "local_graphite_shield_kg_m2": 196.6237493043291,
+          "shield_plus_buffer_kg_m2": 265.9834958266855,
+          "whole_pulse_absorbed_J_m2": 78303.55851535904,
+          "mean_load65K_W_m2": 0.06470458112980247,
+          "photon_refrigeration_electric_W_m2": 0.8959095848741881,
+          "extra_IR_refrigeration_electric_W_m2": 0.7846891910808033,
+          "total_extra_electric_W_m2": 1.6805987759549914,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.44986016964551767,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 29439.57254520374,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 20.419212894618546,
+            "1000000.0": 2.041921289461855,
+            "10000000.0": 0.20419212894618546
+          },
+          "buffer_storage_identity_relative_error": 1.942025586316182e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.394907102240899,
+          "outer_shield_radius_m": 4.394907102240899,
+          "outer_intercept_fraction": 0.15821665568067236,
+          "buffer_kg_m2": 187.32900545665476,
+          "buffer_total_kg": 2.848395308359039e+21,
+          "local_graphite_shield_kg_m2": 293.66907693155326,
+          "shield_plus_buffer_kg_m2": 480.998082388208,
+          "whole_pulse_absorbed_J_m2": 211484.73683756156,
+          "mean_load65K_W_m2": 0.17475618697120696,
+          "photon_refrigeration_electric_W_m2": 2.4197010503705583,
+          "extra_IR_refrigeration_electric_W_m2": 1.3874333471206566,
+          "total_extra_electric_W_m2": 3.8071343974912146,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.724561614601352,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 29439.57254520644,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 55.14885845962561,
+            "1000000.0": 5.514885845962561,
+            "10000000.0": 0.551488584596256
+          },
+          "buffer_storage_identity_relative_error": 2.8596749152419804e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 165.79216506429734
+        },
+        "subtotal_kg_m2": 336.68606789237083,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 63.31393210762917,
+          "700.0": 363.31393210762917,
+          "1000.0": 663.3139321076292,
+          "1500.0": 1163.3139321076292
+        },
+        "services_fraction_of_current_plant_mass": 0.49823553598900605,
+        "ordinary_auxiliary_W_m2": 4.498044949033127,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 1.1357158076943406
+        },
+        "remaining_auxiliary_W_m2": 2.2991923845542854,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 97.37168476064194,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404928,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 200.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 20.161932309941633,
+      "plant_mass_kg": 3.05183138195709e+22,
+      "plant_power_W": 6.153081774437448e+20,
+      "He_s": 3.9523188541902496e+32,
+      "occupancy": 0.6510928941706434,
+      "B1_interval_s": 8084.9768017529095,
+      "faster_thermal_cadence_ratio": 1.1338630388088542,
+      "support": {
+        "body_mass_kg": 3.05183138195709e+22,
+        "body_kg_m2": 2007.0828509150456,
+        "a_over_n2": 2.412790917546942,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 765248.9739895811,
+        "pressure_Pa": 0.0013913617708901475,
+        "prestrain": 0.006121991791916649,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 191.3122434973953,
+        "stream_axis_kg_m2": [
+          0.03234733294182358,
+          0.00924209512623531,
+          0.0015403491877058852
+        ],
+        "stream_kg_m2": 0.04312977725576477,
+        "stream_vs_scalar_budget": 1.0345864241395637,
+        "extra_stream_mass_kg_m2": 0.0014418367904386515,
+        "stream_dissipation_W_m2": 0.002080096134759807,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.714765536986278e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              65.10801967461937,
+              65.30592482315025,
+              65.94754513482746,
+              66.56810879044397,
+              67.73086753768057,
+              137.83611337919518,
+              194.52471211026617,
+              194.53532198336106,
+              194.5446457316084
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.779135835232179e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              17.44969892294124,
+              17.47465622144074,
+              17.503558096020654,
+              65.15241316170578,
+              65.38459935698361,
+              65.95242687423912,
+              66.56810879044396,
+              67.73086753768054,
+              137.83611337919524
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.1553400819303425e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.9019008250453528,
+              1.9207717820493022,
+              1.9425500382654528,
+              65.14442751100188,
+              65.37052736478412,
+              65.951564841899,
+              66.56810879044394,
+              67.73086753768051,
+              137.83611337919518
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 200.0,
+        "mean_missed_hot_to_cold_W_m2": 12.623173103633501,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5331240.85520884,
+          "B1": 15402.529127807127,
+          "B2": 14675618.295606317,
+          "C13": 3642954.870856216
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3509459772816148,
+          "outer_shield_radius_m": 2.350945977281615,
+          "outer_intercept_fraction": 0.044314287667286394,
+          "buffer_kg_m2": 26.234126238229297,
+          "buffer_total_kg": 3.98897981194703e+20,
+          "local_graphite_shield_kg_m2": 139.55803882606804,
+          "shield_plus_buffer_kg_m2": 165.79216506429734,
+          "whole_pulse_absorbed_J_m2": 59233.93731931168,
+          "mean_load65K_W_m2": 0.05094982911999729,
+          "photon_refrigeration_electric_W_m2": 0.7054591724307318,
+          "extra_IR_refrigeration_electric_W_m2": 0.43025663526360874,
+          "total_extra_electric_W_m2": 1.1357158076943406,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.28832706435244027,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 61288.65557924336,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 16.078543274372265,
+            "1000000.0": 1.6078543274372266,
+            "10000000.0": 0.16078543274372267
+          },
+          "buffer_storage_identity_relative_error": 9.667057267347118e-14
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.0418366335008074,
+          "outer_shield_radius_m": 3.0418366335008074,
+          "outer_intercept_fraction": 0.10950611880602908,
+          "buffer_kg_m2": 64.827790219373,
+          "buffer_total_kg": 9.857265459879494e+20,
+          "local_graphite_shield_kg_m2": 191.6499670663571,
+          "shield_plus_buffer_kg_m2": 256.4777572857301,
+          "whole_pulse_absorbed_J_m2": 146374.4295324837,
+          "mean_load65K_W_m2": 0.1259033673891154,
+          "photon_refrigeration_electric_W_m2": 1.743277394618521,
+          "extra_IR_refrigeration_electric_W_m2": 0.7537972537701461,
+          "total_extra_electric_W_m2": 2.4970746483886668,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4357811284276358,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 61288.65557924575,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 39.73208106718749,
+            "1000000.0": 3.973208106718748,
+            "10000000.0": 0.39732081067187486
+          },
+          "buffer_storage_identity_relative_error": 1.354041727393187e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.107803469253799,
+          "outer_shield_radius_m": 3.107803469253799,
+          "outer_intercept_fraction": 0.058580715286851645,
+          "buffer_kg_m2": 69.35974652235642,
+          "buffer_total_kg": 1.0546363394267079e+21,
+          "local_graphite_shield_kg_m2": 196.6237493043291,
+          "shield_plus_buffer_kg_m2": 265.9834958266855,
+          "whole_pulse_absorbed_J_m2": 78303.55851535904,
+          "mean_load65K_W_m2": 0.06735248586192771,
+          "photon_refrigeration_electric_W_m2": 0.932572881165153,
+          "extra_IR_refrigeration_electric_W_m2": 0.7846891910808033,
+          "total_extra_electric_W_m2": 1.7172620722459562,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.44986016964551767,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 30644.327789624673,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 21.2548280783637,
+            "1000000.0": 2.12548280783637,
+            "10000000.0": 0.212548280783637
+          },
+          "buffer_storage_identity_relative_error": 1.942025586316182e-13
+        },
+        {
+          "receiver_kg_m2": 200.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.394907102240899,
+          "outer_shield_radius_m": 4.394907102240899,
+          "outer_intercept_fraction": 0.15821665568067236,
+          "buffer_kg_m2": 187.32900545665476,
+          "buffer_total_kg": 2.848395308359039e+21,
+          "local_graphite_shield_kg_m2": 293.66907693155326,
+          "shield_plus_buffer_kg_m2": 480.998082388208,
+          "whole_pulse_absorbed_J_m2": 211484.73683756156,
+          "mean_load65K_W_m2": 0.1819077321380157,
+          "photon_refrigeration_electric_W_m2": 2.51872244498791,
+          "extra_IR_refrigeration_electric_W_m2": 1.3874333471206566,
+          "total_extra_electric_W_m2": 3.9061557921085663,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.724561614601352,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 30644.32778962749,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 57.40571447718644,
+            "1000000.0": 5.7405714477186445,
+            "10000000.0": 0.5740571447718644
+          },
+          "buffer_storage_identity_relative_error": 2.8596749152419804e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 160.36521517525492
+        },
+        "subtotal_kg_m2": 331.25911800332835,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 68.74088199667165,
+          "700.0": 368.74088199667165,
+          "1000.0": 668.7408819966716,
+          "1500.0": 1168.7408819966718
+        },
+        "services_fraction_of_current_plant_mass": 0.4830525578146619,
+        "ordinary_auxiliary_W_m2": 4.784497937624159,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.9605503925806744
+        },
+        "remaining_auxiliary_W_m2": 2.7608107882589836,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 102.70694516473166,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404935,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 250.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 20.792614432342308,
+      "plant_mass_kg": 3.1477544621984153e+22,
+      "plant_power_W": 6.545004486017668e+20,
+      "He_s": 4.051292156937749e+32,
+      "occupancy": 0.6673974527118088,
+      "B1_interval_s": 7887.460348801947,
+      "faster_thermal_cadence_ratio": 1.106162698900746,
+      "support": {
+        "body_mass_kg": 3.1477544621984153e+22,
+        "body_kg_m2": 2070.1681086712747,
+        "a_over_n2": 2.4886281142406124,
+        "effective_a_over_n2": 4.3999999999999995,
+        "pretension_N_m": 759179.8978193892,
+        "pressure_Pa": 0.001380327086944344,
+        "prestrain": 0.006073439182555114,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 189.7949744548473,
+        "stream_axis_kg_m2": [
+          0.03336405222445367,
+          0.009532586349843903,
+          0.001588764391640649
+        ],
+        "stream_kg_m2": 0.04448540296593822,
+        "stream_vs_scalar_budget": 1.0202913885658282,
+        "extra_stream_mass_kg_m2": 0.0008847184316219141,
+        "stream_dissipation_W_m2": 0.0021454762962011906,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.720381669572903e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              61.13674137541469,
+              61.32875706118415,
+              61.95052331445781,
+              62.55165525784023,
+              63.67652922855441,
+              129.57301760137892,
+              188.59684391916747,
+              188.6069702261957,
+              188.6158684484299
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.8854556241059793e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              16.915459403496456,
+              16.940729111530878,
+              16.97001163042968,
+              61.18101472449235,
+              61.4071983405305,
+              61.955387837608455,
+              62.5516552578402,
+              63.67652922855439,
+              129.5730176013789
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.5444686881984005e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.8425411244258938,
+              1.8614444521665061,
+              1.883267666700006,
+              61.172653866002925,
+              61.39247110174721,
+              61.95448628348429,
+              62.55165525784019,
+              63.676529228554436,
+              129.57301760137887
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 250.0,
+        "mean_missed_hot_to_cold_W_m2": 10.067427226609245,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5032022.4120935155,
+          "B1": 15401.880737832338,
+          "B2": 13836034.682986455,
+          "C13": 3450797.8376213415
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3052503772722297,
+          "outer_shield_radius_m": 2.3052503772722295,
+          "outer_intercept_fraction": 0.04345294589954121,
+          "buffer_kg_m2": 24.252543420167637,
+          "buffer_total_kg": 3.68767403239984e+20,
+          "local_graphite_shield_kg_m2": 136.1126717550873,
+          "shield_plus_buffer_kg_m2": 160.36521517525492,
+          "whole_pulse_absorbed_J_m2": 54759.72874945093,
+          "mean_load65K_W_m2": 0.039844478332499066,
+          "photon_refrigeration_electric_W_m2": 0.5516927769115256,
+          "extra_IR_refrigeration_electric_W_m2": 0.4088576156691488,
+          "total_extra_electric_W_m2": 0.9605503925806744,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.27857443291780604,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 51845.948181256,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 12.573961094256724,
+            "1000000.0": 1.2573961094256723,
+            "10000000.0": 0.12573961094256722
+          },
+          "buffer_storage_identity_relative_error": 2.325235371979206e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.9614291015711018,
+          "outer_shield_radius_m": 2.9614291015711016,
+          "outer_intercept_fraction": 0.10661144765655965,
+          "buffer_kg_m2": 59.50341708373876,
+          "buffer_total_kg": 9.047678101930133e+20,
+          "local_graphite_shield_kg_m2": 185.58738198786952,
+          "shield_plus_buffer_kg_m2": 245.09079907160827,
+          "whole_pulse_absorbed_J_m2": 134352.54697705392,
+          "mean_load65K_W_m2": 0.0977581019700899,
+          "photon_refrigeration_electric_W_m2": 1.3535737195858601,
+          "extra_IR_refrigeration_electric_W_m2": 0.7161428110896134,
+          "total_extra_electric_W_m2": 2.0697165306754735,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4186200664584759,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 51845.94818125812,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 30.850110787313092,
+            "1000000.0": 3.085011078731309,
+            "10000000.0": 0.3085011078731309
+          },
+          "buffer_storage_identity_relative_error": 2.733780256705583e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.024013782864394,
+          "outer_shield_radius_m": 3.024013782864394,
+          "outer_intercept_fraction": 0.057001316907606354,
+          "buffer_kg_m2": 63.628685452288614,
+          "buffer_total_kg": 9.674937881485105e+20,
+          "local_graphite_shield_kg_m2": 190.30615578734788,
+          "shield_plus_buffer_kg_m2": 253.93484123963648,
+          "whole_pulse_absorbed_J_m2": 71833.4876405922,
+          "mean_load65K_W_m2": 0.052267750538704305,
+          "photon_refrigeration_electric_W_m2": 0.7237073151512905,
+          "extra_IR_refrigeration_electric_W_m2": 0.7454509024820699,
+          "total_extra_electric_W_m2": 1.4691582176333604,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.43197726780788726,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 25922.974090625146,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 16.49444764400215,
+            "1000000.0": 1.6494447644002148,
+            "10000000.0": 0.1649444764400215
+          },
+          "buffer_storage_identity_relative_error": 1.2235737239864745e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.2433962354461303,
+          "outer_shield_radius_m": 4.243396235446131,
+          "outer_intercept_fraction": 0.1527622644760607,
+          "buffer_kg_m2": 170.5234651171512,
+          "buffer_total_kg": 2.592861883939313e+21,
+          "local_graphite_shield_kg_m2": 282.24542670607815,
+          "shield_plus_buffer_kg_m2": 452.76889182322935,
+          "whole_pulse_absorbed_J_m2": 192512.15292055238,
+          "mean_load65K_W_m2": 0.14007641164333942,
+          "photon_refrigeration_electric_W_m2": 1.9395195458308536,
+          "extra_IR_refrigeration_electric_W_m2": 1.3164815704364903,
+          "total_extra_electric_W_m2": 3.2560011162673437,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.692225248695491,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 25922.974090627,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 44.20475368075848,
+            "1000000.0": 4.420475368075848,
+            "10000000.0": 0.44204753680758474
+          },
+          "buffer_storage_identity_relative_error": 1.9396289485889876e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 160.36521517525492
+        },
+        "subtotal_kg_m2": 331.25911800332835,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 68.74088199667165,
+          "700.0": 368.74088199667165,
+          "1000.0": 668.7408819966716,
+          "1500.0": 1168.7408819966718
+        },
+        "services_fraction_of_current_plant_mass": 0.4830751844920882,
+        "ordinary_auxiliary_W_m2": 4.7266136354169355,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.9888464411795992
+        },
+        "remaining_auxiliary_W_m2": 2.6746304374528354,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 101.62881169425341,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404932,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 250.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 20.54192655061252,
+      "plant_mass_kg": 3.1476070250558756e+22,
+      "plant_power_W": 6.465791231888978e+20,
+      "He_s": 4.0312882195520256e+32,
+      "occupancy": 0.6641020653790104,
+      "B1_interval_s": 7926.599267766998,
+      "faster_thermal_cadence_ratio": 1.111651666238758,
+      "support": {
+        "body_mass_kg": 3.1476070250558756e+22,
+        "body_kg_m2": 2070.07114441495,
+        "a_over_n2": 2.488511549806374,
+        "effective_a_over_n2": 4.400000000000001,
+        "pretension_N_m": 759190.6349067232,
+        "pressure_Pa": 0.0013803466089213148,
+        "prestrain": 0.006073525079253785,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 189.7976587266808,
+        "stream_axis_kg_m2": [
+          0.03336248949121555,
+          0.009532139854633017,
+          0.0015886899757721722
+        ],
+        "stream_kg_m2": 0.04448331932162074,
+        "stream_vs_scalar_budget": 1.0203130574076245,
+        "extra_stream_mass_kg_m2": 0.0008856029161849461,
+        "stream_dissipation_W_m2": 0.0021453758045973203,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.720374867217971e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              61.14256669675515,
+              61.33459116929517,
+              61.95638698928529,
+              62.55754789239698,
+              63.68247832329543,
+              129.58514590020533,
+              188.6056780186573,
+              188.61580503511814,
+              188.62470388159542
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.8852903483626907e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              16.91625561129596,
+              16.941524833297144,
+              16.9708067595114,
+              61.18684018393253,
+              61.41303272495101,
+              61.961251533787525,
+              62.55754789239694,
+              63.682478323295456,
+              129.58514590020536
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.54386155656918e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.8426295901774217,
+              1.8615328681137107,
+              1.8833560134192124,
+              61.17847991046601,
+              61.398306507419605,
+              61.9603500412297,
+              62.557547892397004,
+              63.68247832329541,
+              129.58514590020533
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 250.0,
+        "mean_missed_hot_to_cold_W_m2": 10.583780570339824,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5032022.4120935155,
+          "B1": 15401.880737832338,
+          "B2": 13836034.682986455,
+          "C13": 3450797.8376213415
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3052503772722297,
+          "outer_shield_radius_m": 2.3052503772722295,
+          "outer_intercept_fraction": 0.04345294589954121,
+          "buffer_kg_m2": 24.252543420167637,
+          "buffer_total_kg": 3.68767403239984e+20,
+          "local_graphite_shield_kg_m2": 136.1126717550873,
+          "shield_plus_buffer_kg_m2": 160.36521517525492,
+          "whole_pulse_absorbed_J_m2": 54759.72874945093,
+          "mean_load65K_W_m2": 0.04188808184242141,
+          "photon_refrigeration_electric_W_m2": 0.5799888255104504,
+          "extra_IR_refrigeration_electric_W_m2": 0.4088576156691488,
+          "total_extra_electric_W_m2": 0.9888464411795992,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.27857443291780604,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 54505.10112069972,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 13.218873315503977,
+            "1000000.0": 1.3218873315503976,
+            "10000000.0": 0.13218873315503976
+          },
+          "buffer_storage_identity_relative_error": 2.325235371979206e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.9614291015711018,
+          "outer_shield_radius_m": 2.9614291015711016,
+          "outer_intercept_fraction": 0.10661144765655965,
+          "buffer_kg_m2": 59.50341708373876,
+          "buffer_total_kg": 9.047678101930133e+20,
+          "local_graphite_shield_kg_m2": 185.58738198786952,
+          "shield_plus_buffer_kg_m2": 245.09079907160827,
+          "whole_pulse_absorbed_J_m2": 134352.54697705392,
+          "mean_load65K_W_m2": 0.10277206648086312,
+          "photon_refrigeration_electric_W_m2": 1.4229978435811819,
+          "extra_IR_refrigeration_electric_W_m2": 0.7161428110896134,
+          "total_extra_electric_W_m2": 2.139140654670795,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4186200664584759,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 54505.10112070197,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 32.43239765176486,
+            "1000000.0": 3.243239765176486,
+            "10000000.0": 0.3243239765176486
+          },
+          "buffer_storage_identity_relative_error": 2.733780256705583e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.024013782864394,
+          "outer_shield_radius_m": 3.024013782864394,
+          "outer_intercept_fraction": 0.057001316907606354,
+          "buffer_kg_m2": 63.628685452288614,
+          "buffer_total_kg": 9.674937881485105e+20,
+          "local_graphite_shield_kg_m2": 190.30615578734788,
+          "shield_plus_buffer_kg_m2": 253.93484123963648,
+          "whole_pulse_absorbed_J_m2": 71833.4876405922,
+          "mean_load65K_W_m2": 0.05494853751162644,
+          "photon_refrigeration_electric_W_m2": 0.7608259040071355,
+          "extra_IR_refrigeration_electric_W_m2": 0.7454509024820699,
+          "total_extra_electric_W_m2": 1.5062768064892054,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.43197726780788726,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 27252.550560346863,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 17.340439673769026,
+            "1000000.0": 1.7340439673769024,
+            "10000000.0": 0.17340439673769026
+          },
+          "buffer_storage_identity_relative_error": 1.2235737239864745e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.2433962354461303,
+          "outer_shield_radius_m": 4.243396235446131,
+          "outer_intercept_fraction": 0.1527622644760607,
+          "buffer_kg_m2": 170.5234651171512,
+          "buffer_total_kg": 2.592861883939313e+21,
+          "local_graphite_shield_kg_m2": 282.24542670607815,
+          "shield_plus_buffer_kg_m2": 452.76889182322935,
+          "whole_pulse_absorbed_J_m2": 192512.15292055238,
+          "mean_load65K_W_m2": 0.14726086124518473,
+          "photon_refrigeration_electric_W_m2": 2.0389965403179424,
+          "extra_IR_refrigeration_electric_W_m2": 1.3164815704364903,
+          "total_extra_electric_W_m2": 3.355478110754433,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.692225248695491,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 27252.55056034882,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 46.471993548310415,
+            "1000000.0": 4.6471993548310415,
+            "10000000.0": 0.4647199354831042
+          },
+          "buffer_storage_identity_relative_error": 1.9396289485889876e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 160.36521517525492
+        },
+        "subtotal_kg_m2": 331.25911800332835,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 68.74088199667165,
+          "700.0": 368.74088199667165,
+          "1000.0": 668.7408819966716,
+          "1500.0": 1168.7408819966718
+        },
+        "services_fraction_of_current_plant_mass": 0.4830709414392359,
+        "ordinary_auxiliary_W_m2": 4.737467938164921,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.9835404451435134
+        },
+        "remaining_auxiliary_W_m2": 2.6907907362369072,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 101.83098027269496,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404935,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 250.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 20.588936631325772,
+      "plant_mass_kg": 3.147634672057216e+22,
+      "plant_power_W": 6.48064508015499e+20,
+      "He_s": 4.035039302043444e+32,
+      "occupancy": 0.664720007211568,
+      "B1_interval_s": 7919.230485085067,
+      "faster_thermal_cadence_ratio": 1.110618244556924,
+      "support": {
+        "body_mass_kg": 3.147634672057216e+22,
+        "body_kg_m2": 2070.089326881582,
+        "a_over_n2": 2.488533407643647,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 759188.6218484731,
+        "pressure_Pa": 0.0013803429488154057,
+        "prestrain": 0.006073508974787785,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 189.79715546211827,
+        "stream_axis_kg_m2": [
+          0.03336278253058937,
+          0.009532223580168392,
+          0.0015887039300280662
+        ],
+        "stream_kg_m2": 0.04448371004078583,
+        "stream_vs_scalar_budget": 1.0203089940567944,
+        "extra_stream_mass_kg_m2": 0.000885437066716867,
+        "stream_dissipation_W_m2": 0.002145394648502316,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.7203761429666405e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              61.141474286055335,
+              61.333497110864215,
+              61.95528738637042,
+              62.55644285882819,
+              63.68136270206808,
+              129.58287150664262,
+              188.60402140994097,
+              188.61414829336334,
+              188.62304702277774
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.8853213399789898e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              16.91610630296188,
+              16.941375616101254,
+              16.970657653452264,
+              61.185747747326076,
+              61.41193861468864,
+              61.96015192686772,
+              62.55644285882817,
+              63.68136270206811,
+              129.58287150664262
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.5439754020736e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.842613000696323,
+              1.8615162879717309,
+              1.883339446258673,
+              61.17738736415967,
+              61.397212205658214,
+              61.95925042276533,
+              62.556442858828184,
+              63.6813627020681,
+              129.58287150664256
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 250.0,
+        "mean_missed_hot_to_cold_W_m2": 10.486955432883768,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5032022.4120935155,
+          "B1": 15401.880737832338,
+          "B2": 13836034.682986455,
+          "C13": 3450797.8376213415
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3052503772722297,
+          "outer_shield_radius_m": 2.3052503772722295,
+          "outer_intercept_fraction": 0.04345294589954121,
+          "buffer_kg_m2": 24.252543420167637,
+          "buffer_total_kg": 3.68767403239984e+20,
+          "local_graphite_shield_kg_m2": 136.1126717550873,
+          "shield_plus_buffer_kg_m2": 160.36521517525492,
+          "whole_pulse_absorbed_J_m2": 54759.72874945093,
+          "mean_load65K_W_m2": 0.041504871017592995,
+          "photon_refrigeration_electric_W_m2": 0.5746828294743646,
+          "extra_IR_refrigeration_electric_W_m2": 0.4088576156691488,
+          "total_extra_electric_W_m2": 0.9835404451435134,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.27857443291780604,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 54006.46418534437,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 13.097941176247927,
+            "1000000.0": 1.3097941176247927,
+            "10000000.0": 0.13097941176247926
+          },
+          "buffer_storage_identity_relative_error": 2.325235371979206e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.9614291015711018,
+          "outer_shield_radius_m": 2.9614291015711016,
+          "outer_intercept_fraction": 0.10661144765655965,
+          "buffer_kg_m2": 59.50341708373876,
+          "buffer_total_kg": 9.047678101930133e+20,
+          "local_graphite_shield_kg_m2": 185.58738198786952,
+          "shield_plus_buffer_kg_m2": 245.09079907160827,
+          "whole_pulse_absorbed_J_m2": 134352.54697705392,
+          "mean_load65K_W_m2": 0.10183186185383794,
+          "photon_refrigeration_electric_W_m2": 1.4099796256685255,
+          "extra_IR_refrigeration_electric_W_m2": 0.7161428110896134,
+          "total_extra_electric_W_m2": 2.126122436758139,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4186200664584759,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 54006.46418534656,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 32.13569163638676,
+            "1000000.0": 3.213569163638676,
+            "10000000.0": 0.3213569163638676
+          },
+          "buffer_storage_identity_relative_error": 2.733780256705583e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.024013782864394,
+          "outer_shield_radius_m": 3.024013782864394,
+          "outer_intercept_fraction": 0.057001316907606354,
+          "buffer_kg_m2": 63.628685452288614,
+          "buffer_total_kg": 9.674937881485105e+20,
+          "local_graphite_shield_kg_m2": 190.30615578734788,
+          "shield_plus_buffer_kg_m2": 253.93484123963648,
+          "whole_pulse_absorbed_J_m2": 71833.4876405922,
+          "mean_load65K_W_m2": 0.0544458438227113,
+          "photon_refrigeration_electric_W_m2": 0.7538655298529258,
+          "extra_IR_refrigeration_electric_W_m2": 0.7454509024820699,
+          "total_extra_electric_W_m2": 1.4993164323349957,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.43197726780788726,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 27003.23209266921,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 17.18180161019594,
+            "1000000.0": 1.7181801610195941,
+            "10000000.0": 0.17181801610195943
+          },
+          "buffer_storage_identity_relative_error": 1.2235737239864745e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.2433962354461303,
+          "outer_shield_radius_m": 4.243396235446131,
+          "outer_intercept_fraction": 0.1527622644760607,
+          "buffer_kg_m2": 170.5234651171512,
+          "buffer_total_kg": 2.592861883939313e+21,
+          "local_graphite_shield_kg_m2": 282.24542670607815,
+          "shield_plus_buffer_kg_m2": 452.76889182322935,
+          "whole_pulse_absorbed_J_m2": 192512.15292055238,
+          "mean_load65K_W_m2": 0.14591365331346315,
+          "photon_refrigeration_electric_W_m2": 2.020342892032567,
+          "extra_IR_refrigeration_electric_W_m2": 1.3164815704364903,
+          "total_extra_electric_W_m2": 3.336824462469057,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.692225248695491,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 27003.232092671136,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 46.04684705804944,
+            "1000000.0": 4.604684705804944,
+            "10000000.0": 0.4604684705804944
+          },
+          "buffer_storage_identity_relative_error": 1.9396289485889876e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 160.36521517525492
+        },
+        "subtotal_kg_m2": 331.25911800332835,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 68.74088199667165,
+          "700.0": 368.74088199667165,
+          "1000.0": 668.7408819966716,
+          "1500.0": 1168.7408819966718
+        },
+        "services_fraction_of_current_plant_mass": 0.48309338907948185,
+        "ordinary_auxiliary_W_m2": 4.680046003977786,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 1.0116104706674105
+        },
+        "remaining_auxiliary_W_m2": 2.6052987765258746,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 100.76145871285678,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404933,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 250.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 20.340232357063634,
+      "plant_mass_kg": 3.1474884126126836e+22,
+      "plant_power_W": 6.402064565370737e+20,
+      "He_s": 4.015195152036321e+32,
+      "occupancy": 0.6614509427617714,
+      "B1_interval_s": 7958.369404050764,
+      "faster_thermal_cadence_ratio": 1.1161072118950266,
+      "support": {
+        "body_mass_kg": 3.1474884126126836e+22,
+        "body_kg_m2": 2069.9931371560815,
+        "a_over_n2": 2.4884177743024805,
+        "effective_a_over_n2": 4.400000000000001,
+        "pretension_N_m": 759199.2696916246,
+        "pressure_Pa": 0.0013803623085302265,
+        "prestrain": 0.006073594157532997,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 189.79981742290613,
+        "stream_axis_kg_m2": [
+          0.033361232280147576,
+          0.009531780651470739,
+          0.0015886301085784593
+        ],
+        "stream_kg_m2": 0.04448164304019678,
+        "stream_vs_scalar_budget": 1.020330490550476,
+        "extra_stream_mass_kg_m2": 0.0008863144166263905,
+        "stream_dissipation_W_m2": 0.0021452949596050064,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.7203693909485106e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              61.14725373614347,
+              61.339285278172895,
+              61.96110488649392,
+              62.56228908952919,
+              63.68726494619831,
+              129.59490428351234,
+              188.6127856082183,
+              188.62291319548646,
+              188.6318125442276
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -1.885157388958575e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              16.916896210518743,
+              16.9421650415218,
+              16.97144649094157,
+              61.19152733452187,
+              61.41772705629549,
+              61.96596944818451,
+              62.56228908952918,
+              63.68726494619831,
+              129.59490428351234
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -6.543373142330103e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.842700766438612,
+              1.8616040043076492,
+              1.8834270939199056,
+              61.183167531684475,
+              61.403001660324136,
+              61.96506800515465,
+              62.562289089529145,
+              63.687264946198326,
+              129.59490428351236
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 250.0,
+        "mean_missed_hot_to_cold_W_m2": 10.999184251236084,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 5032022.4120935155,
+          "B1": 15401.880737832338,
+          "B2": 13836034.682986455,
+          "C13": 3450797.8376213415
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.3052503772722297,
+          "outer_shield_radius_m": 2.3052503772722295,
+          "outer_intercept_fraction": 0.04345294589954121,
+          "buffer_kg_m2": 24.252543420167637,
+          "buffer_total_kg": 3.68767403239984e+20,
+          "local_graphite_shield_kg_m2": 136.1126717550873,
+          "shield_plus_buffer_kg_m2": 160.36521517525492,
+          "whole_pulse_absorbed_J_m2": 54759.72874945093,
+          "mean_load65K_W_m2": 0.04353215063876334,
+          "photon_refrigeration_electric_W_m2": 0.6027528549982617,
+          "extra_IR_refrigeration_electric_W_m2": 0.4088576156691488,
+          "total_extra_electric_W_m2": 1.0116104706674105,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.27857443291780604,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 56644.37635252123,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 13.737701969978378,
+            "1000000.0": 1.3737701969978378,
+            "10000000.0": 0.13737701969978378
+          },
+          "buffer_storage_identity_relative_error": 2.325235371979206e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.9614291015711018,
+          "outer_shield_radius_m": 2.9614291015711016,
+          "outer_intercept_fraction": 0.10661144765655965,
+          "buffer_kg_m2": 59.50341708373876,
+          "buffer_total_kg": 9.047678101930133e+20,
+          "local_graphite_shield_kg_m2": 185.58738198786952,
+          "shield_plus_buffer_kg_m2": 245.09079907160827,
+          "whole_pulse_absorbed_J_m2": 134352.54697705392,
+          "mean_load65K_W_m2": 0.1068057758369609,
+          "photon_refrigeration_electric_W_m2": 1.4788492038963819,
+          "extra_IR_refrigeration_electric_W_m2": 0.7161428110896134,
+          "total_extra_electric_W_m2": 2.194992014985995,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.4186200664584759,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 56644.37635252354,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 33.70533951552477,
+            "1000000.0": 3.3705339515524773,
+            "10000000.0": 0.33705339515524774
+          },
+          "buffer_storage_identity_relative_error": 2.733780256705583e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.024013782864394,
+          "outer_shield_radius_m": 3.024013782864394,
+          "outer_intercept_fraction": 0.057001316907606354,
+          "buffer_kg_m2": 63.628685452288614,
+          "buffer_total_kg": 9.674937881485105e+20,
+          "local_graphite_shield_kg_m2": 190.30615578734788,
+          "shield_plus_buffer_kg_m2": 253.93484123963648,
+          "whole_pulse_absorbed_J_m2": 71833.4876405922,
+          "mean_load65K_W_m2": 0.057105217215111914,
+          "photon_refrigeration_electric_W_m2": 0.7906876229784727,
+          "extra_IR_refrigeration_electric_W_m2": 0.7454509024820699,
+          "total_extra_electric_W_m2": 1.5361385254605426,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.43197726780788726,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 28322.188176257492,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 18.021036027876157,
+            "1000000.0": 1.8021036027876158,
+            "10000000.0": 0.18021036027876158
+          },
+          "buffer_storage_identity_relative_error": 1.2235737239864745e-13
+        },
+        {
+          "receiver_kg_m2": 250.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 3.2433962354461303,
+          "outer_shield_radius_m": 4.243396235446131,
+          "outer_intercept_fraction": 0.1527622644760607,
+          "buffer_kg_m2": 170.5234651171512,
+          "buffer_total_kg": 2.592861883939313e+21,
+          "local_graphite_shield_kg_m2": 282.24542670607815,
+          "shield_plus_buffer_kg_m2": 452.76889182322935,
+          "whole_pulse_absorbed_J_m2": 192512.15292055238,
+          "mean_load65K_W_m2": 0.1530407149946695,
+          "photon_refrigeration_electric_W_m2": 2.119025284541578,
+          "extra_IR_refrigeration_electric_W_m2": 1.3164815704364903,
+          "total_extra_electric_W_m2": 3.435506854978068,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.692225248695491,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 28322.188176259522,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 48.295976675157824,
+            "1000000.0": 4.829597667515783,
+            "10000000.0": 0.48295976675157826
+          },
+          "buffer_storage_identity_relative_error": 1.9396289485889876e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 150.50026961941063
+        },
+        "subtotal_kg_m2": 321.3941724474841,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 78.6058275525159,
+          "700.0": 378.6058275525159,
+          "1000.0": 678.6058275525158,
+          "1500.0": 1178.6058275525158
+        },
+        "services_fraction_of_current_plant_mass": 0.45540201186916596,
+        "ordinary_auxiliary_W_m2": 5.072829964093015,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.7648364396344984
+        },
+        "remaining_auxiliary_W_m2": 3.2448567676740154,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 108.07708591646674,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404945,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 350.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 20.78368953039368,
+      "plant_mass_kg": 3.3388759924369825e+22,
+      "plant_power_W": 6.939416200729533e+20,
+      "He_s": 4.1508940143803696e+32,
+      "occupancy": 0.6838055574269265,
+      "B1_interval_s": 7698.198541942018,
+      "faster_thermal_cadence_ratio": 1.0796200169959411,
+      "support": {
+        "body_mass_kg": 3.3388759924369825e+22,
+        "body_kg_m2": 2195.862060195056,
+        "a_over_n2": 2.6397296118638423,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 741614.7016902913,
+        "pressure_Pa": 0.0013483903667096204,
+        "prestrain": 0.00593291761352233,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 185.40367542257283,
+        "stream_axis_kg_m2": [
+          0.03538981020293449,
+          0.01011137434369557,
+          0.0016852290572825957
+        ],
+        "stream_kg_m2": 0.04718641360391266,
+        "stream_vs_scalar_budget": 0.9929554048512774,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.0022757427187398045,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.725004968113319e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              54.22532502176356,
+              54.40658183924856,
+              54.99226167093097,
+              55.55799995042805,
+              56.613872364420246,
+              115.16654656474022,
+              177.80128607449078,
+              177.8105693674162,
+              177.81872588899162
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.1043517047932635e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              15.942343616293103,
+              15.968259055998145,
+              15.998330378283748,
+              54.269528404657905,
+              54.48485718342345,
+              54.99711043861427,
+              55.55799995042803,
+              56.61387236442026,
+              115.1665465647402
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -7.354806948018305e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.7344232473554784,
+              1.753391263480731,
+              1.7753045439534387,
+              54.26038679686553,
+              54.46876815205133,
+              54.9961268726348,
+              55.557999950428034,
+              56.61387236442024,
+              115.16654656474023
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 350.0,
+        "mean_missed_hot_to_cold_W_m2": 7.494453003617326,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 4484764.879692308,
+          "B1": 15400.694860738862,
+          "B2": 12300472.732649894,
+          "C13": 3099350.972425522
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.220610500515118,
+          "outer_shield_radius_m": 2.220610500515118,
+          "outer_intercept_fraction": 0.04185752180941589,
+          "buffer_kg_m2": 20.76929422482458,
+          "buffer_total_kg": 3.1580352483965646e+20,
+          "local_graphite_shield_kg_m2": 129.73097539458604,
+          "shield_plus_buffer_kg_m2": 150.50026961941063,
+          "whole_pulse_absorbed_J_m2": 46894.91317941538,
+          "mean_load65K_W_m2": 0.028572212675937535,
+          "photon_refrigeration_electric_W_m2": 0.3956152524360582,
+          "extra_IR_refrigeration_electric_W_m2": 0.36922118719844016,
+          "total_extra_electric_W_m2": 0.7648364396344984,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.26051007830783396,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 43413.63018799364,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 9.016704587421664,
+            "1000000.0": 0.9016704587421664,
+            "10000000.0": 0.09016704587421664
+          },
+          "buffer_storage_identity_relative_error": 8.424890284765111e-14
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8129317824632118,
+          "outer_shield_radius_m": 2.812931782463212,
+          "outer_intercept_fraction": 0.10126554416867561,
+          "buffer_kg_m2": 50.24697571089899,
+          "buffer_total_kg": 7.640207640309708e+20,
+          "local_graphite_shield_kg_m2": 174.39094790497856,
+          "shield_plus_buffer_kg_m2": 224.63792361587755,
+          "whole_pulse_absorbed_J_m2": 113452.46198469496,
+          "mean_load65K_W_m2": 0.06912450951840815,
+          "photon_refrigeration_electric_W_m2": 0.9571085933318052,
+          "extra_IR_refrigeration_electric_W_m2": 0.6466022636263598,
+          "total_extra_electric_W_m2": 1.6037108569581648,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.38692687013337945,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 43413.63018799462,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 21.814036215781165,
+            "1000000.0": 2.1814036215781165,
+            "10000000.0": 0.21814036215781166
+          },
+          "buffer_storage_identity_relative_error": 1.0710079801816468e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8693091566898734,
+          "outer_shield_radius_m": 2.8693091566898734,
+          "outer_intercept_fraction": 0.05408520340520898,
+          "buffer_kg_m2": 53.67310123359952,
+          "buffer_total_kg": 8.161160593693504e+20,
+          "local_graphite_shield_kg_m2": 178.64170177775847,
+          "shield_plus_buffer_kg_m2": 232.31480301135798,
+          "whole_pulse_absorbed_J_m2": 60594.14911199422,
+          "mean_load65K_W_m2": 0.03691890650744038,
+          "photon_refrigeration_electric_W_m2": 0.51118485933379,
+          "extra_IR_refrigeration_electric_W_m2": 0.6730035043478461,
+          "total_extra_electric_W_m2": 1.1841883636816362,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3989592704514002,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 21706.81509399837,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 11.650720839992006,
+            "1000000.0": 1.1650720839992008,
+            "10000000.0": 0.11650720839992007
+          },
+          "buffer_storage_identity_relative_error": 1.557397399566409e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.9646542024657685,
+          "outer_shield_radius_m": 3.9646542024657685,
+          "outer_intercept_fraction": 0.14272755128876766,
+          "buffer_kg_m2": 141.64003880601766,
+          "buffer_total_kg": 2.153680477977046e+21,
+          "local_graphite_shield_kg_m2": 261.22877255269105,
+          "shield_plus_buffer_kg_m2": 402.86881135870874,
+          "whole_pulse_absorbed_J_m2": 159904.2618068152,
+          "mean_load65K_W_m2": 0.09742674133233307,
+          "photon_refrigeration_electric_W_m2": 1.3489856492169197,
+          "extra_IR_refrigeration_electric_W_m2": 1.1859480787147207,
+          "total_extra_electric_W_m2": 2.5349337279316404,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.6327344374917907,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 21706.815094000172,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 30.745541322692343,
+            "1000000.0": 3.0745541322692342,
+            "10000000.0": 0.30745541322692344
+          },
+          "buffer_storage_identity_relative_error": 2.3861228773798506e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 150.50026961941063
+        },
+        "subtotal_kg_m2": 321.3941724474841,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 78.6058275525159,
+          "700.0": 378.6058275525159,
+          "1000.0": 678.6058275525158,
+          "1500.0": 1178.6058275525158
+        },
+        "services_fraction_of_current_plant_mass": 0.45542312114193745,
+        "ordinary_auxiliary_W_m2": 5.012070805140615,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.7934473078715547
+        },
+        "remaining_auxiliary_W_m2": 3.1554867404845597,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 106.9454063366977,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404945,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 350.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 20.535613185849623,
+      "plant_mass_kg": 3.338721232520758e+22,
+      "plant_power_W": 6.85626877664294e+20,
+      "He_s": 4.129896570410827e+32,
+      "occupancy": 0.6803465028646102,
+      "B1_interval_s": 7737.338140184975,
+      "faster_thermal_cadence_ratio": 1.085109079598062,
+      "support": {
+        "body_mass_kg": 3.338721232520758e+22,
+        "body_kg_m2": 2195.76028000638,
+        "a_over_n2": 2.639607258013471,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 741631.873356075,
+        "pressure_Pa": 0.0013484215879201364,
+        "prestrain": 0.0059330549868486,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 185.40796833901877,
+        "stream_axis_kg_m2": [
+          0.03538816985328551,
+          0.010110905672367288,
+          0.0016851509453945485
+        ],
+        "stream_kg_m2": 0.04718422647104735,
+        "stream_vs_scalar_budget": 0.9929769474714413,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.0022756372360104977,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.725004352193044e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              54.230443384820425,
+              54.411708431625556,
+              54.99741577937417,
+              55.563181083011564,
+              56.61910617975996,
+              115.17722880178513,
+              177.80952773139575,
+              177.81881165016264,
+              177.82696872230431
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.1041707829034798e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              15.943086625158331,
+              15.969001528993008,
+              15.999072195527399,
+              54.27464674153244,
+              54.489983764313855,
+              55.00226455078486,
+              55.56318108301158,
+              56.61910617975996,
+              115.17722880178512
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -7.35413195673741e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.7345057958063501,
+              1.7534737594475915,
+              1.7753869667251692,
+              54.26550578453207,
+              54.473895867120085,
+              55.00128105304134,
+              55.56318108301157,
+              56.61910617975996,
+              115.17722880178516
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 350.0,
+        "mean_missed_hot_to_cold_W_m2": 8.036451336783115,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 4484764.879692308,
+          "B1": 15400.694860738862,
+          "B2": 12300472.732649894,
+          "C13": 3099350.972425522
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.220610500515118,
+          "outer_shield_radius_m": 2.220610500515118,
+          "outer_intercept_fraction": 0.04185752180941589,
+          "buffer_kg_m2": 20.76929422482458,
+          "buffer_total_kg": 3.1580352483965646e+20,
+          "local_graphite_shield_kg_m2": 129.73097539458604,
+          "shield_plus_buffer_kg_m2": 150.50026961941063,
+          "whole_pulse_absorbed_J_m2": 46894.91317941538,
+          "mean_load65K_W_m2": 0.030638553159724937,
+          "photon_refrigeration_electric_W_m2": 0.42422612067311455,
+          "extra_IR_refrigeration_electric_W_m2": 0.36922118719844016,
+          "total_extra_electric_W_m2": 0.7934473078715547,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.26051007830783396,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 46553.300980139684,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 9.668792051933357,
+            "1000000.0": 0.9668792051933357,
+            "10000000.0": 0.09668792051933356
+          },
+          "buffer_storage_identity_relative_error": 8.424890284765111e-14
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8129317824632118,
+          "outer_shield_radius_m": 2.812931782463212,
+          "outer_intercept_fraction": 0.10126554416867561,
+          "buffer_kg_m2": 50.24697571089899,
+          "buffer_total_kg": 7.640207640309708e+20,
+          "local_graphite_shield_kg_m2": 174.39094790497856,
+          "shield_plus_buffer_kg_m2": 224.63792361587755,
+          "whole_pulse_absorbed_J_m2": 113452.46198469496,
+          "mean_load65K_W_m2": 0.07412358936076578,
+          "photon_refrigeration_electric_W_m2": 1.0263266219182956,
+          "extra_IR_refrigeration_electric_W_m2": 0.6466022636263598,
+          "total_extra_electric_W_m2": 1.6729288855446554,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.38692687013337945,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 46553.300980140746,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 23.391625836113022,
+            "1000000.0": 2.339162583611302,
+            "10000000.0": 0.2339162583611302
+          },
+          "buffer_storage_identity_relative_error": 1.0710079801816468e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8693091566898734,
+          "outer_shield_radius_m": 2.8693091566898734,
+          "outer_intercept_fraction": 0.05408520340520898,
+          "buffer_kg_m2": 53.67310123359952,
+          "buffer_total_kg": 8.161160593693504e+20,
+          "local_graphite_shield_kg_m2": 178.64170177775847,
+          "shield_plus_buffer_kg_m2": 232.31480301135798,
+          "whole_pulse_absorbed_J_m2": 60594.14911199422,
+          "mean_load65K_W_m2": 0.03958887932329207,
+          "photon_refrigeration_electric_W_m2": 0.548153713707121,
+          "extra_IR_refrigeration_electric_W_m2": 0.6730035043478461,
+          "total_extra_electric_W_m2": 1.221157218054967,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3989592704514002,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 23276.650490071508,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 12.493300181327218,
+            "1000000.0": 1.2493300181327218,
+            "10000000.0": 0.12493300181327217
+          },
+          "buffer_storage_identity_relative_error": 1.557397399566409e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.9646542024657685,
+          "outer_shield_radius_m": 3.9646542024657685,
+          "outer_intercept_fraction": 0.14272755128876766,
+          "buffer_kg_m2": 141.64003880601766,
+          "buffer_total_kg": 2.153680477977046e+21,
+          "local_graphite_shield_kg_m2": 261.22877255269105,
+          "shield_plus_buffer_kg_m2": 402.86881135870874,
+          "whole_pulse_absorbed_J_m2": 159904.2618068152,
+          "mean_load65K_W_m2": 0.1044726366608396,
+          "photon_refrigeration_electric_W_m2": 1.4465441999193176,
+          "extra_IR_refrigeration_electric_W_m2": 1.1859480787147207,
+          "total_extra_electric_W_m2": 2.6324922786340386,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.6327344374917907,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 23276.65049007344,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 32.96905678688112,
+            "1000000.0": 3.2969056786881117,
+            "10000000.0": 0.3296905678688112
+          },
+          "buffer_storage_identity_relative_error": 2.3861228773798506e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 150.50026961941063
+        },
+        "subtotal_kg_m2": 321.3941724474841,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 78.6058275525159,
+          "700.0": 378.6058275525159,
+          "1000.0": 678.6058275525158,
+          "1500.0": 1178.6058275525158
+        },
+        "services_fraction_of_current_plant_mass": 0.4554256017821616,
+        "ordinary_auxiliary_W_m2": 5.004931108363188,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.7968093182626179
+        },
+        "remaining_auxiliary_W_m2": 3.144985033316069,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 106.81242475518677,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404942,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 350.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 20.50646068182826,
+      "plant_mass_kg": 3.3387030469682674e+22,
+      "plant_power_W": 6.846498276095497e+20,
+      "He_s": 4.127429199472362e+32,
+      "occupancy": 0.6799400357387065,
+      "B1_interval_s": 7741.963509233246,
+      "faster_thermal_cadence_ratio": 1.0857577561661318,
+      "support": {
+        "body_mass_kg": 3.3387030469682674e+22,
+        "body_kg_m2": 2195.7483200040174,
+        "a_over_n2": 2.639592880438045,
+        "effective_a_over_n2": 4.3999999999999995,
+        "pretension_N_m": 741633.8908531122,
+        "pressure_Pa": 0.0013484252560965677,
+        "prestrain": 0.005933071126824898,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 185.40847271327806,
+        "stream_axis_kg_m2": [
+          0.03538797709882186,
+          0.010110850599663388,
+          0.001685141766610563
+        ],
+        "stream_kg_m2": 0.04718396946509581,
+        "stream_vs_scalar_budget": 0.9929794789664015,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.0022756248409294094,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.725004279217062e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              54.231044881239036,
+              54.41231089510496,
+              54.99802147638662,
+              55.5637899557449,
+              56.61972124346696,
+              115.17848414850809,
+              177.81049624347395,
+              177.81978023578776,
+              177.8279373726303
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.1041495234827803e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              15.943173939271972,
+              15.969088780138936,
+              15.999159369619088,
+              54.27524823488271,
+              54.49058622645802,
+              55.00287024823607,
+              55.56378995574489,
+              56.61972124346696,
+              115.1784841485081
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -7.35405264178992e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.7345154964242624,
+              1.7534834538982438,
+              1.7753966525748095,
+              54.266107354353686,
+              54.47449846253601,
+              55.00188675851067,
+              55.56378995574487,
+              56.61972124346696,
+              115.17848414850809
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 350.0,
+        "mean_missed_hot_to_cold_W_m2": 8.100140561903595,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 4484764.879692308,
+          "B1": 15400.694860738862,
+          "B2": 12300472.732649894,
+          "C13": 3099350.972425522
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.220610500515118,
+          "outer_shield_radius_m": 2.220610500515118,
+          "outer_intercept_fraction": 0.04185752180941589,
+          "buffer_kg_m2": 20.76929422482458,
+          "buffer_total_kg": 3.1580352483965646e+20,
+          "local_graphite_shield_kg_m2": 129.73097539458604,
+          "shield_plus_buffer_kg_m2": 150.50026961941063,
+          "whole_pulse_absorbed_J_m2": 46894.91317941538,
+          "mean_load65K_W_m2": 0.03088136502130172,
+          "photon_refrigeration_electric_W_m2": 0.4275881310641777,
+          "extra_IR_refrigeration_electric_W_m2": 0.36922118719844016,
+          "total_extra_electric_W_m2": 0.7968093182626179,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.26051007830783396,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 46922.23790789223,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 9.745417647962311,
+            "1000000.0": 0.9745417647962312,
+            "10000000.0": 0.09745417647962312
+          },
+          "buffer_storage_identity_relative_error": 8.424890284765111e-14
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8129317824632118,
+          "outer_shield_radius_m": 2.812931782463212,
+          "outer_intercept_fraction": 0.10126554416867561,
+          "buffer_kg_m2": 50.24697571089899,
+          "buffer_total_kg": 7.640207640309708e+20,
+          "local_graphite_shield_kg_m2": 174.39094790497856,
+          "shield_plus_buffer_kg_m2": 224.63792361587755,
+          "whole_pulse_absorbed_J_m2": 113452.46198469496,
+          "mean_load65K_W_m2": 0.07471102201875106,
+          "photon_refrigeration_electric_W_m2": 1.0344603048750147,
+          "extra_IR_refrigeration_electric_W_m2": 0.6466022636263598,
+          "total_extra_electric_W_m2": 1.6810625685013745,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.38692687013337945,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 46922.23790789331,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 23.57700548458939,
+            "1000000.0": 2.357700548458939,
+            "10000000.0": 0.2357700548458939
+          },
+          "buffer_storage_identity_relative_error": 1.0710079801816468e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8693091566898734,
+          "outer_shield_radius_m": 2.8693091566898734,
+          "outer_intercept_fraction": 0.05408520340520898,
+          "buffer_kg_m2": 53.67310123359952,
+          "buffer_total_kg": 8.161160593693504e+20,
+          "local_graphite_shield_kg_m2": 178.64170177775847,
+          "shield_plus_buffer_kg_m2": 232.31480301135798,
+          "whole_pulse_absorbed_J_m2": 60594.14911199422,
+          "mean_load65K_W_m2": 0.03990262290759628,
+          "photon_refrigeration_electric_W_m2": 0.5524978556436408,
+          "extra_IR_refrigeration_electric_W_m2": 0.6730035043478461,
+          "total_extra_electric_W_m2": 1.2255013599914868,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3989592704514002,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 23461.118953947793,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 12.592310126687602,
+            "1000000.0": 1.2592310126687603,
+            "10000000.0": 0.12592310126687603
+          },
+          "buffer_storage_identity_relative_error": 1.557397399566409e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.9646542024657685,
+          "outer_shield_radius_m": 3.9646542024657685,
+          "outer_intercept_fraction": 0.14272755128876766,
+          "buffer_kg_m2": 141.64003880601766,
+          "buffer_total_kg": 2.153680477977046e+21,
+          "local_graphite_shield_kg_m2": 261.22877255269105,
+          "shield_plus_buffer_kg_m2": 402.86881135870874,
+          "whole_pulse_absorbed_J_m2": 159904.2618068152,
+          "mean_load65K_W_m2": 0.10530058683391759,
+          "photon_refrigeration_electric_W_m2": 1.4580081253927053,
+          "extra_IR_refrigeration_electric_W_m2": 1.1859480787147207,
+          "total_extra_electric_W_m2": 2.6439562041074263,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.6327344374917907,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 23461.118953949743,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 33.23033799070038,
+            "1000000.0": 3.323033799070038,
+            "10000000.0": 0.3323033799070038
+          },
+          "buffer_storage_identity_relative_error": 2.3861228773798506e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 150.50026961941063
+        },
+        "subtotal_kg_m2": 321.3941724474841,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 78.6058275525159,
+          "700.0": 378.6058275525159,
+          "1000.0": 678.6058275525158,
+          "1500.0": 1178.6058275525158
+        },
+        "services_fraction_of_current_plant_mass": 0.45544647581836106,
+        "ordinary_auxiliary_W_m2": 4.944855227406262,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.8250984378603621
+        },
+        "remaining_auxiliary_W_m2": 3.0566200327613995,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 105.69347168065605,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404943,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 350.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 20.261148839058418,
+      "plant_mass_kg": 3.338550027432577e+22,
+      "plant_power_W": 6.7642859012454e+20,
+      "He_s": 4.106667886016397e+32,
+      "occupancy": 0.6765198805934562,
+      "B1_interval_s": 7781.103107477153,
+      "faster_thermal_cadence_ratio": 1.091246818768386,
+      "support": {
+        "body_mass_kg": 3.338550027432577e+22,
+        "body_kg_m2": 2195.6476844027993,
+        "a_over_n2": 2.639471902539954,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 741650.8641582794,
+        "pressure_Pa": 0.001348456116651417,
+        "prestrain": 0.005933206913266235,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 185.41271603956986,
+        "stream_axis_kg_m2": [
+          0.035386355196020534,
+          0.01011038719886301,
+          0.0016850645331438355
+        ],
+        "stream_kg_m2": 0.04718180692802738,
+        "stream_vs_scalar_budget": 0.9930007803528239,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.0022755205444251483,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.725003664758211e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              54.23610647201369,
+              54.41738062346843,
+              55.0031184142386,
+              55.56891361657981,
+              56.62489699996476,
+              115.18904787641968,
+              177.818646057374,
+              177.82793066858423,
+              177.8360883498831
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.103970642568652e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              15.94390866804082,
+              15.969822979087342,
+              15.999892920221772,
+              54.28030979990836,
+              54.49565594370858,
+              55.00796718978869,
+              55.56891361657984,
+              56.624896999964754,
+              115.18904787641966
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -7.353385274773418e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.734597124961178,
+              1.7535650305415504,
+              1.7754781568465894,
+              54.27116956281877,
+              54.479569301152836,
+              55.006983767528496,
+              55.56891361657984,
+              56.624896999964754,
+              115.18904787641968
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 350.0,
+        "mean_missed_hot_to_cold_W_m2": 8.636043755811091,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 4484764.879692308,
+          "B1": 15400.694860738862,
+          "B2": 12300472.732649894,
+          "C13": 3099350.972425522
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.220610500515118,
+          "outer_shield_radius_m": 2.220610500515118,
+          "outer_intercept_fraction": 0.04185752180941589,
+          "buffer_kg_m2": 20.76929422482458,
+          "buffer_total_kg": 3.1580352483965646e+20,
+          "local_graphite_shield_kg_m2": 129.73097539458604,
+          "shield_plus_buffer_kg_m2": 150.50026961941063,
+          "whole_pulse_absorbed_J_m2": 46894.91317941538,
+          "mean_load65K_W_m2": 0.03292446810336102,
+          "photon_refrigeration_electric_W_m2": 0.45587725066192186,
+          "extra_IR_refrigeration_electric_W_m2": 0.36922118719844016,
+          "total_extra_electric_W_m2": 0.8250984378603621,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.26051007830783396,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 50026.60097023115,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 10.390171946186255,
+            "1000000.0": 1.0390171946186255,
+            "10000000.0": 0.10390171946186255
+          },
+          "buffer_storage_identity_relative_error": 8.424890284765111e-14
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8129317824632118,
+          "outer_shield_radius_m": 2.812931782463212,
+          "outer_intercept_fraction": 0.10126554416867561,
+          "buffer_kg_m2": 50.24697571089899,
+          "buffer_total_kg": 7.640207640309708e+20,
+          "local_graphite_shield_kg_m2": 174.39094790497856,
+          "shield_plus_buffer_kg_m2": 224.63792361587755,
+          "whole_pulse_absorbed_J_m2": 113452.46198469496,
+          "mean_load65K_W_m2": 0.07965388381404474,
+          "photon_refrigeration_electric_W_m2": 1.1028999297329274,
+          "extra_IR_refrigeration_electric_W_m2": 0.6466022636263598,
+          "total_extra_electric_W_m2": 1.7495021933592871,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.38692687013337945,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 50026.600970232306,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 25.136854038500985,
+            "1000000.0": 2.5136854038500984,
+            "10000000.0": 0.2513685403850099
+          },
+          "buffer_storage_identity_relative_error": 1.0710079801816468e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.8693091566898734,
+          "outer_shield_radius_m": 2.8693091566898734,
+          "outer_intercept_fraction": 0.05408520340520898,
+          "buffer_kg_m2": 53.67310123359952,
+          "buffer_total_kg": 8.161160593693504e+20,
+          "local_graphite_shield_kg_m2": 178.64170177775847,
+          "shield_plus_buffer_kg_m2": 232.31480301135798,
+          "whole_pulse_absorbed_J_m2": 60594.14911199422,
+          "mean_load65K_W_m2": 0.042542570066296186,
+          "photon_refrigeration_electric_W_m2": 0.5890509701487164,
+          "extra_IR_refrigeration_electric_W_m2": 0.6730035043478461,
+          "total_extra_electric_W_m2": 1.2620544744965625,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3989592704514002,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 25013.300485117372,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 13.425414091241485,
+            "1000000.0": 1.3425414091241485,
+            "10000000.0": 0.13425414091241486
+          },
+          "buffer_storage_identity_relative_error": 1.557397399566409e-13
+        },
+        {
+          "receiver_kg_m2": 350.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.9646542024657685,
+          "outer_shield_radius_m": 3.9646542024657685,
+          "outer_intercept_fraction": 0.14272755128876766,
+          "buffer_kg_m2": 141.64003880601766,
+          "buffer_total_kg": 2.153680477977046e+21,
+          "local_graphite_shield_kg_m2": 261.22877255269105,
+          "shield_plus_buffer_kg_m2": 402.86881135870874,
+          "whole_pulse_absorbed_J_m2": 159904.2618068152,
+          "mean_load65K_W_m2": 0.11226724628548741,
+          "photon_refrigeration_electric_W_m2": 1.5544695639529027,
+          "extra_IR_refrigeration_electric_W_m2": 1.1859480787147207,
+          "total_extra_electric_W_m2": 2.7404176426676234,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.6327344374917907,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 25013.30048511944,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 35.42884851378898,
+            "1000000.0": 3.5428848513788975,
+            "10000000.0": 0.35428848513788974
+          },
+          "buffer_storage_identity_relative_error": 2.3861228773798506e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 137.84495636083327
+        },
+        "subtotal_kg_m2": 308.73885918890676,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 91.26114081109324,
+          "700.0": 391.26114081109324,
+          "1000.0": 691.2611408110932,
+          "1500.0": 1191.2611408110934
+        },
+        "services_fraction_of_current_plant_mass": 0.41943541012805763,
+        "ordinary_auxiliary_W_m2": 5.358464950001515,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.5647756552038193
+        },
+        "remaining_auxiliary_W_m2": 3.730552538013195,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 113.39687109383613,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.48805246404959,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 500.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 20.219803445426734,
+      "plant_mass_kg": 3.625184730762783e+22,
+      "plant_power_W": 7.330052270938571e+20,
+      "He_s": 4.24954239810125e+32,
+      "occupancy": 0.7000565898035245,
+      "B1_interval_s": 7519.49345499799,
+      "faster_thermal_cadence_ratio": 1.0545578433000284,
+      "support": {
+        "body_mass_kg": 3.625184730762783e+22,
+        "body_kg_m2": 2384.157312075036,
+        "a_over_n2": 2.8660865225145926,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 701664.7569074403,
+        "pressure_Pa": 0.0012757541034680731,
+        "prestrain": 0.005613318055259523,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 175.41618922686004,
+        "stream_axis_kg_m2": [
+          0.03842448772068089,
+          0.010978425063051684,
+          0.0018297375105086147
+        ],
+        "stream_kg_m2": 0.051232650294241185,
+        "stream_vs_scalar_budget": 0.9546398571699669,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.002470887740008161,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.7190114360758865e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              45.85520543672414,
+              46.02240825689307,
+              46.5612750024735,
+              47.08095760405345,
+              48.0470517894663,
+              97.66736352240235,
+              163.75891257868625,
+              163.76716650478588,
+              163.7744175945294
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.4486210073308433e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              14.676103742000988,
+              14.703048855932126,
+              14.734383807867367,
+              45.89965789137688,
+              46.101056915220475,
+              46.56613857909139,
+              47.08095760405345,
+              48.04705178946631,
+              97.66736352240235
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -8.655563475946761e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.5937542811511491,
+              1.6128196775072559,
+              1.6348691102911144,
+              45.88925716261928,
+              46.08277646888782,
+              46.56502336948516,
+              47.08095760405347,
+              48.04705178946632,
+              97.66736352240237
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 500.0,
+        "mean_missed_hot_to_cold_W_m2": 4.945057497119538,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 3777516.5699981353,
+          "B1": 15399.162292395424,
+          "B2": 10315989.140361885,
+          "C13": 2645158.5919818045
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.1088340568061825,
+          "outer_shield_radius_m": 2.1088340568061827,
+          "outer_intercept_fraction": 0.039750585483013585,
+          "buffer_kg_m2": 16.541726271856444,
+          "buffer_total_kg": 2.515220501494502e+20,
+          "local_graphite_shield_kg_m2": 121.30323008897682,
+          "shield_plus_buffer_kg_m2": 137.84495636083327,
+          "whole_pulse_absorbed_J_m2": 37349.503019181604,
+          "mean_load65K_W_m2": 0.017903803251988853,
+          "photon_refrigeration_electric_W_m2": 0.2478988142583072,
+          "extra_IR_refrigeration_electric_W_m2": 0.3168768409455121,
+          "total_extra_electric_W_m2": 0.5647756552038193,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.2366540733895596,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 34156.112380256105,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 5.650010615049635,
+            "1000000.0": 0.5650010615049635,
+            "10000000.0": 0.05650010615049635
+          },
+          "buffer_storage_identity_relative_error": 7.694890226856432e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.617695995982644,
+          "outer_shield_radius_m": 2.6176959959826442,
+          "outer_intercept_fraction": 0.0942370558553752,
+          "buffer_kg_m2": 39.215613145909046,
+          "buffer_total_kg": 5.962854936796027e+20,
+          "local_graphite_shield_kg_m2": 159.67051640437433,
+          "shield_plus_buffer_kg_m2": 198.88612955028339,
+          "whole_pulse_absorbed_J_m2": 88544.78894891196,
+          "mean_load65K_W_m2": 0.042444700790691625,
+          "photon_refrigeration_electric_W_m2": 0.5876958571018841,
+          "extra_IR_refrigeration_electric_W_m2": 0.555174327028976,
+          "total_extra_electric_W_m2": 1.1428701841308602,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3452584673111195,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 34156.11238025641,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 13.394528896723301,
+            "1000000.0": 1.3394528896723301,
+            "10000000.0": 0.133945288967233
+          },
+          "buffer_storage_identity_relative_error": 8.595256428728981e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.6659941249910224,
+          "outer_shield_radius_m": 2.6659941249910224,
+          "outer_intercept_fraction": 0.05025280534551207,
+          "buffer_kg_m2": 41.82419656553363,
+          "buffer_total_kg": 6.359498091752674e+20,
+          "local_graphite_shield_kg_m2": 163.31210953897073,
+          "shield_plus_buffer_kg_m2": 205.13630610450437,
+          "whole_pulse_absorbed_J_m2": 47217.34993756512,
+          "mean_load65K_W_m2": 0.022634039947688644,
+          "photon_refrigeration_electric_W_m2": 0.31339439927568896,
+          "extra_IR_refrigeration_electric_W_m2": 0.5777920978606047,
+          "total_extra_electric_W_m2": 0.8911864971362937,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3555665462312866,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 17078.056190128893,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 7.142759790531793,
+            "1000000.0": 0.7142759790531793,
+            "10000000.0": 0.07142759790531793
+          },
+          "buffer_storage_identity_relative_error": 1.2620380631051392e-13
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.6005025252810197,
+          "outer_shield_radius_m": 3.6005025252810197,
+          "outer_intercept_fraction": 0.12961809091011672,
+          "buffer_kg_m2": 107.87800751421544,
+          "buffer_total_kg": 1.6403183785103283e+21,
+          "local_graphite_shield_kg_m2": 233.77238294062687,
+          "shield_plus_buffer_kg_m2": 341.6503904548423,
+          "whole_pulse_absorbed_J_m2": 121788.67855560801,
+          "mean_load65K_W_m2": 0.0583804431898194,
+          "photon_refrigeration_electric_W_m2": 0.808344598012884,
+          "extra_IR_refrigeration_electric_W_m2": 1.0154176802993056,
+          "total_extra_electric_W_m2": 1.8237622783121896,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.5550149832520531,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 17078.056190130064,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 18.423466740070445,
+            "1000000.0": 1.8423466740070447,
+            "10000000.0": 0.18423466740070446
+          },
+          "buffer_storage_identity_relative_error": 1.9499945261210113e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 137.84495636083327
+        },
+        "subtotal_kg_m2": 308.73885918890676,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 91.26114081109324,
+          "700.0": 391.26114081109324,
+          "1000.0": 691.2611408110932,
+          "1500.0": 1191.2611408110934
+        },
+        "services_fraction_of_current_plant_mass": 0.41945417622869346,
+        "ordinary_auxiliary_W_m2": 5.294789505526281,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.5932504953842377
+        },
+        "remaining_auxiliary_W_m2": 3.638402253357542,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 112.21087376749914,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.4880524640496,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 500.0,
+      "prompt_policy": "EM20",
+      "mW_kg": 19.980328118480003,
+      "plant_mass_kg": 3.6250225424110235e+22,
+      "plant_power_W": 7.242913983425884e+20,
+      "He_s": 4.227537130592975e+32,
+      "occupancy": 0.6964315094804194,
+      "B1_interval_s": 7558.63408461104,
+      "faster_thermal_cadence_ratio": 1.060047050544794,
+      "support": {
+        "body_mass_kg": 3.6250225424110235e+22,
+        "body_kg_m2": 2384.0506464639016,
+        "a_over_n2": 2.865958295711378,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 701692.0176169996,
+        "pressure_Pa": 0.0012758036683945446,
+        "prestrain": 0.005613536140935997,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 175.42300440424987,
+        "stream_axis_kg_m2": [
+          0.038422768634677425,
+          0.010977933895622122,
+          0.0018296556492703544
+        ],
+        "stream_kg_m2": 0.0512303581795699,
+        "stream_vs_scalar_budget": 0.9546607251016729,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.002470777194135413,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.7190184258116996e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              45.859389889044934,
+              46.02660005851215,
+              46.565491194489624,
+              47.0851978332644,
+              48.0513388718637,
+              97.67612834644947,
+              163.76623939013044,
+              163.77449383472145,
+              163.7817453804677
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.4484207947423727e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              14.676764585631693,
+              14.703709093788536,
+              14.735043300164156,
+              45.9038420968583,
+              46.10524832022864,
+              46.57035475133645,
+              47.08519783326439,
+              48.051338871863685,
+              97.6761283464495
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -8.65479727756296e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.5938276888815346,
+              1.612893029913531,
+              1.6349423851491143,
+              45.89344211386566,
+              46.08696917011108,
+              46.56923961948383,
+              47.0851978332644,
+              48.051338871863706,
+              97.67612834644942
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 500.0,
+        "mean_missed_hot_to_cold_W_m2": 5.5130703871156,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 3777516.5699981353,
+          "B1": 15399.162292395424,
+          "B2": 10315989.140361885,
+          "C13": 2645158.5919818045
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.1088340568061825,
+          "outer_shield_radius_m": 2.1088340568061827,
+          "outer_intercept_fraction": 0.039750585483013585,
+          "buffer_kg_m2": 16.541726271856444,
+          "buffer_total_kg": 2.515220501494502e+20,
+          "local_graphite_shield_kg_m2": 121.30323008897682,
+          "shield_plus_buffer_kg_m2": 137.84495636083327,
+          "whole_pulse_absorbed_J_m2": 37349.503019181604,
+          "mean_load65K_W_m2": 0.019960319487241286,
+          "photon_refrigeration_electric_W_m2": 0.2763736544387255,
+          "extra_IR_refrigeration_electric_W_m2": 0.3168768409455121,
+          "total_extra_electric_W_m2": 0.5932504953842377,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.2366540733895596,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 38079.44635876708,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 6.298997782505657,
+            "1000000.0": 0.6298997782505656,
+            "10000000.0": 0.06298997782505657
+          },
+          "buffer_storage_identity_relative_error": 7.694890226856432e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.617695995982644,
+          "outer_shield_radius_m": 2.6176959959826442,
+          "outer_intercept_fraction": 0.0942370558553752,
+          "buffer_kg_m2": 39.215613145909046,
+          "buffer_total_kg": 5.962854936796027e+20,
+          "local_graphite_shield_kg_m2": 159.67051640437433,
+          "shield_plus_buffer_kg_m2": 198.88612955028339,
+          "whole_pulse_absorbed_J_m2": 88544.78894891196,
+          "mean_load65K_W_m2": 0.047320101567160315,
+          "photon_refrigeration_electric_W_m2": 0.6552014063145275,
+          "extra_IR_refrigeration_electric_W_m2": 0.555174327028976,
+          "total_extra_electric_W_m2": 1.2103757333435035,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3452584673111195,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 38079.44635876743,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 14.933088372158185,
+            "1000000.0": 1.4933088372158185,
+            "10000000.0": 0.14933088372158185
+          },
+          "buffer_storage_identity_relative_error": 8.595256428728981e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.6659941249910224,
+          "outer_shield_radius_m": 2.6659941249910224,
+          "outer_intercept_fraction": 0.05025280534551207,
+          "buffer_kg_m2": 41.82419656553363,
+          "buffer_total_kg": 6.359498091752674e+20,
+          "local_graphite_shield_kg_m2": 163.31210953897073,
+          "shield_plus_buffer_kg_m2": 205.13630610450437,
+          "whole_pulse_absorbed_J_m2": 47217.34993756512,
+          "mean_load65K_W_m2": 0.025233893731079784,
+          "photon_refrigeration_electric_W_m2": 0.3493923747380278,
+          "extra_IR_refrigeration_electric_W_m2": 0.5777920978606047,
+          "total_extra_electric_W_m2": 0.9271844725986325,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3555665462312866,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 19039.723179384477,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 7.963211248079233,
+            "1000000.0": 0.7963211248079234,
+            "10000000.0": 0.07963211248079233
+          },
+          "buffer_storage_identity_relative_error": 1.2620380631051392e-13
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.6005025252810197,
+          "outer_shield_radius_m": 3.6005025252810197,
+          "outer_intercept_fraction": 0.12961809091011672,
+          "buffer_kg_m2": 107.87800751421544,
+          "buffer_total_kg": 1.6403183785103283e+21,
+          "local_graphite_shield_kg_m2": 233.77238294062687,
+          "shield_plus_buffer_kg_m2": 341.6503904548423,
+          "whole_pulse_absorbed_J_m2": 121788.67855560801,
+          "mean_load65K_W_m2": 0.06508629934514544,
+          "photon_refrigeration_electric_W_m2": 0.9011949140097062,
+          "extra_IR_refrigeration_electric_W_m2": 1.0154176802993056,
+          "total_extra_electric_W_m2": 1.9166125943090118,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.5550149832520531,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 19039.723179385786,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 20.539674002143617,
+            "1000000.0": 2.0539674002143617,
+            "10000000.0": 0.20539674002143618
+          },
+          "buffer_storage_identity_relative_error": 1.9499945261210113e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.0,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 137.84495636083327
+        },
+        "subtotal_kg_m2": 308.73885918890676,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 91.26114081109324,
+          "700.0": 391.26114081109324,
+          "1000.0": 691.2611408110932,
+          "1500.0": 1191.2611408110934
+        },
+        "services_fraction_of_current_plant_mass": 0.41946364328394753,
+        "ordinary_auxiliary_W_m2": 5.26266890737812,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.6076144139449657
+        },
+        "remaining_auxiliary_W_m2": 3.591917736648653,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 111.61260635314413,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.4880524640496,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 500.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 19.859518462906173,
+      "plant_mass_kg": 3.6249407277192008e+22,
+      "plant_power_W": 7.198957730908001e+20,
+      "He_s": 4.216436739215918e+32,
+      "occupancy": 0.6946028650276945,
+      "B1_interval_s": 7578.533303265213,
+      "faster_thermal_cadence_ratio": 1.0628377806960854,
+      "support": {
+        "body_mass_kg": 3.6249407277192008e+22,
+        "body_kg_m2": 2383.9968398001783,
+        "a_over_n2": 2.865893612666791,
+        "effective_a_over_n2": 4.4,
+        "pretension_N_m": 701705.7670849868,
+        "pressure_Pa": 0.0012758286674272488,
+        "prestrain": 0.005613646136679895,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 175.42644177124672,
+        "stream_axis_kg_m2": [
+          0.038421901454697704,
+          0.010977686129913632,
+          0.0018296143549856058
+        ],
+        "stream_kg_m2": 0.051229201939596944,
+        "stream_vs_scalar_budget": 0.9546712521187528,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.0024707214301029597,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.719021950419502e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              45.8615009189886,
+              46.028714795997175,
+              46.567618236368226,
+              47.08733700133778,
+              48.05350167625993,
+              97.68055013836995,
+              163.76993559373403,
+              163.7781902998987,
+              163.78544207569396
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.4483198011414162e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              14.677097965586697,
+              14.704042168175292,
+              14.735375998472316,
+              45.90595300232825,
+              46.10736285772061,
+              46.57248178324624,
+              47.087337001337794,
+              48.053501676259906,
+              97.68055013836997
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -8.654410787164177e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.5938647213454862,
+              1.6129300344697208,
+              1.634979350586859,
+              45.8955533955166,
+              46.08908436144458,
+              46.57136669061442,
+              47.08733700133779,
+              48.053501676259906,
+              97.68055013836994
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 500.0,
+        "mean_missed_hot_to_cold_W_m2": 5.799600209290266,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 3777516.5699981353,
+          "B1": 15399.162292395424,
+          "B2": 10315989.140361885,
+          "C13": 2645158.5919818045
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.1088340568061825,
+          "outer_shield_radius_m": 2.1088340568061827,
+          "outer_intercept_fraction": 0.039750585483013585,
+          "buffer_kg_m2": 16.541726271856444,
+          "buffer_total_kg": 2.515220501494502e+20,
+          "local_graphite_shield_kg_m2": 121.30323008897682,
+          "shield_plus_buffer_kg_m2": 137.84495636083327,
+          "whole_pulse_absorbed_J_m2": 37349.503019181604,
+          "mean_load65K_W_m2": 0.020997713605516097,
+          "photon_refrigeration_electric_W_m2": 0.2907375729994537,
+          "extra_IR_refrigeration_electric_W_m2": 0.3168768409455121,
+          "total_extra_electric_W_m2": 0.6076144139449657,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.2366540733895596,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 40058.54262047756,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 6.6263744687743475,
+            "1000000.0": 0.6626374468774348,
+            "10000000.0": 0.06626374468774347
+          },
+          "buffer_storage_identity_relative_error": 7.694890226856432e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.617695995982644,
+          "outer_shield_radius_m": 2.6176959959826442,
+          "outer_intercept_fraction": 0.0942370558553752,
+          "buffer_kg_m2": 39.215613145909046,
+          "buffer_total_kg": 5.962854936796027e+20,
+          "local_graphite_shield_kg_m2": 159.67051640437433,
+          "shield_plus_buffer_kg_m2": 198.88612955028339,
+          "whole_pulse_absorbed_J_m2": 88544.78894891196,
+          "mean_load65K_W_m2": 0.049779460750930746,
+          "photon_refrigeration_electric_W_m2": 0.6892540719359642,
+          "extra_IR_refrigeration_electric_W_m2": 0.555174327028976,
+          "total_extra_electric_W_m2": 1.2444283989649403,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3452584673111195,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 40058.54262047793,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 15.70920310593572,
+            "1000000.0": 1.570920310593572,
+            "10000000.0": 0.1570920310593572
+          },
+          "buffer_storage_identity_relative_error": 8.595256428728981e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.6659941249910224,
+          "outer_shield_radius_m": 2.6659941249910224,
+          "outer_intercept_fraction": 0.05025280534551207,
+          "buffer_kg_m2": 41.82419656553363,
+          "buffer_total_kg": 6.359498091752674e+20,
+          "local_graphite_shield_kg_m2": 163.31210953897073,
+          "shield_plus_buffer_kg_m2": 205.13630610450437,
+          "whole_pulse_absorbed_J_m2": 47217.34993756512,
+          "mean_load65K_W_m2": 0.026545370381267,
+          "photon_refrigeration_electric_W_m2": 0.3675512822021585,
+          "extra_IR_refrigeration_electric_W_m2": 0.5777920978606047,
+          "total_extra_electric_W_m2": 0.9453433800627632,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3555665462312866,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 20029.27131023977,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 8.377081803438715,
+            "1000000.0": 0.8377081803438715,
+            "10000000.0": 0.08377081803438714
+          },
+          "buffer_storage_identity_relative_error": 1.2620380631051392e-13
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.6005025252810197,
+          "outer_shield_radius_m": 3.6005025252810197,
+          "outer_intercept_fraction": 0.12961809091011672,
+          "buffer_kg_m2": 107.87800751421544,
+          "buffer_total_kg": 1.6403183785103283e+21,
+          "local_graphite_shield_kg_m2": 233.77238294062687,
+          "shield_plus_buffer_kg_m2": 341.6503904548423,
+          "whole_pulse_absorbed_J_m2": 121788.67855560801,
+          "mean_load65K_W_m2": 0.06846901795163303,
+          "photon_refrigeration_electric_W_m2": 0.9480325562533805,
+          "extra_IR_refrigeration_electric_W_m2": 1.0154176802993056,
+          "total_extra_electric_W_m2": 1.963450236552686,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.5550149832520531,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 20029.27131024115,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 21.607178809104546,
+            "1000000.0": 2.160717880910455,
+            "10000000.0": 0.2160717880910455
+          },
+          "buffer_storage_identity_relative_error": 1.9499945261210113e-13
+        }
+      ]
+    },
+    {
+      "additional_missed_hot_fraction_HplusUprecursor": 0.005,
+      "service_allocations": {
+        "named_services_kg_m2": {
+          "hot_and_cold_helium_headers_and_inventory": 99.11632939223237,
+          "additional_loop_interface_HX_over_retained_external_HX": 1.7775734358410742,
+          "cold_cross_braced_mesh_package_requirement": 20.0,
+          "guide_coils_cryostats_trim_control_package_requirement": 50.0,
+          "local_guide_photon_shield_and_polyethylene_buffer": 137.84495636083327
+        },
+        "subtotal_kg_m2": 308.73885918890676,
+        "unassigned_at_service_scenarios_kg_m2": {
+          "400.0": 91.26114081109324,
+          "700.0": 391.26114081109324,
+          "1000.0": 691.2611408110932,
+          "1500.0": 1191.2611408110934
+        },
+        "services_fraction_of_current_plant_mass": 0.4194821213523308,
+        "ordinary_auxiliary_W_m2": 5.199979184536782,
+        "named_auxiliary_W_m2": {
+          "external_helium_loop_pumps": 0.7436784450841802,
+          "guide_radiative_cryocooling": 0.31945831170032074,
+          "additional_guide_photon_and_buffer_IR_refrigeration": 0.6356484520823086
+        },
+        "remaining_auxiliary_W_m2": 3.5011939756699726,
+        "hot_loop_reference_W_m2": 123.39857513498252,
+        "current_hot_loop_W_m2": 110.4449687450909,
+        "cold_loop_reference_W_m2": 73.48805246405558,
+        "current_cold_with_environment_W_m2": 73.4880524640496,
+        "interpretation": "Retain the older higher-load helium/loop-HX allocations as conservative named subdivisions. Genericservices include these functions once. Separate source/converter/storage/radiator/insulation/stationHX/factory budgets remain outside this subtotal. The unassigned remainder is an allowance, not a measured bill of materials or a probabilistic bound."
+      },
+      "sigma_kg_m2": 500.0,
+      "prompt_policy": "all_to_cold",
+      "mW_kg": 19.623718732234327,
+      "plant_mass_kg": 3.624781050109017e+22,
+      "plant_power_W": 7.113168379327233e+20,
+      "He_s": 4.194772122148231e+32,
+      "occupancy": 0.6910339024140775,
+      "B1_interval_s": 7617.673932879646,
+      "faster_thermal_cadence_ratio": 1.068326987941045,
+      "support": {
+        "body_mass_kg": 3.624781050109017e+22,
+        "body_kg_m2": 2383.8918254160385,
+        "a_over_n2": 2.865767370866584,
+        "effective_a_over_n2": 4.400000000000001,
+        "pretension_N_m": 701732.5980539946,
+        "pressure_Pa": 0.001275877451007263,
+        "prestrain": 0.005613860784431957,
+        "stress_MPa_in8kg_m2_at2000density_load_layer": 175.43314951349865,
+        "stream_axis_kg_m2": [
+          0.03842020898084398,
+          0.010977202565955425,
+          0.001829533760992574
+        ],
+        "stream_kg_m2": 0.05122694530779198,
+        "stream_vs_scalar_budget": 0.9546917983507895,
+        "extra_stream_mass_kg_m2": 0.0,
+        "stream_dissipation_W_m2": 0.002470612595525233,
+        "affine_cases": [
+          {
+            "attitude_days": 30.0,
+            "maximum_growth_per_s": -5.71902882674518e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              45.86562142733457,
+              46.032842540816084,
+              46.57176999727919,
+              47.091512430495044,
+              48.05772323945683,
+              97.68918099779589,
+              163.77714994932091,
+              163.7854051660463,
+              163.79265739086955
+            ]
+          },
+          {
+            "attitude_days": 100.0,
+            "maximum_growth_per_s": -2.4481226962324553e-11,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              14.677748665946584,
+              14.704692272177514,
+              14.736025368508205,
+              45.9100732678215,
+              46.11149021235716,
+              46.57663352470991,
+              47.09151243049504,
+              48.05772323945681,
+              97.68918099779592
+            ]
+          },
+          {
+            "attitude_days": 300.0,
+            "maximum_growth_per_s": -8.653656498776575e-12,
+            "growing": false,
+            "H_eigenvalues_over_a": [
+              1.5939370023548132,
+              1.613002261011656,
+              1.6350515007817463,
+              45.899674395173555,
+              46.09321299213515,
+              46.575518508622544,
+              47.09151243049505,
+              48.05772323945685,
+              97.68918099779587
+            ]
+          }
+        ]
+      },
+      "guide_input": {
+        "receiver_kg_m2": 500.0,
+        "mean_missed_hot_to_cold_W_m2": 6.3588200300077276,
+        "pulse_photon_upper_fluence_J_m2_after_main_wall": {
+          "A": 3777516.5699981353,
+          "B1": 15399.162292395424,
+          "B2": 10315989.140361885,
+          "C13": 2645158.5919818045
+        }
+      },
+      "guide_buffer_cases": [
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.1088340568061825,
+          "outer_shield_radius_m": 2.1088340568061827,
+          "outer_intercept_fraction": 0.039750585483013585,
+          "buffer_kg_m2": 16.541726271856444,
+          "buffer_total_kg": 2.515220501494502e+20,
+          "local_graphite_shield_kg_m2": 121.30323008897682,
+          "shield_plus_buffer_kg_m2": 137.84495636083327,
+          "whole_pulse_absorbed_J_m2": 37349.503019181604,
+          "mean_load65K_W_m2": 0.02302239413765752,
+          "photon_refrigeration_electric_W_m2": 0.3187716111367965,
+          "extra_IR_refrigeration_electric_W_m2": 0.3168768409455121,
+          "total_extra_electric_W_m2": 0.6356484520823086,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.2366540733895596,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 43921.14180214903,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 7.265315052385409,
+            "1000000.0": 0.7265315052385409,
+            "10000000.0": 0.0726531505238541
+          },
+          "buffer_storage_identity_relative_error": 7.694890226856432e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_effective_density900",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.617695995982644,
+          "outer_shield_radius_m": 2.6176959959826442,
+          "outer_intercept_fraction": 0.0942370558553752,
+          "buffer_kg_m2": 39.215613145909046,
+          "buffer_total_kg": 5.962854936796027e+20,
+          "local_graphite_shield_kg_m2": 159.67051640437433,
+          "shield_plus_buffer_kg_m2": 198.88612955028339,
+          "whole_pulse_absorbed_J_m2": 88544.78894891196,
+          "mean_load65K_W_m2": 0.05457938835144962,
+          "photon_refrigeration_electric_W_m2": 0.7557146079431486,
+          "extra_IR_refrigeration_electric_W_m2": 0.555174327028976,
+          "total_extra_electric_W_m2": 1.3108889349721244,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3452584673111195,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 43921.141802149425,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 17.223945058397064,
+            "1000000.0": 1.7223945058397063,
+            "10000000.0": 0.17223945058397064
+          },
+          "buffer_storage_identity_relative_error": 8.595256428728981e-14
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 1.5707963267948966,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 1.6659941249910224,
+          "outer_shield_radius_m": 2.6659941249910224,
+          "outer_intercept_fraction": 0.05025280534551207,
+          "buffer_kg_m2": 41.82419656553363,
+          "buffer_total_kg": 6.359498091752674e+20,
+          "local_graphite_shield_kg_m2": 163.31210953897073,
+          "shield_plus_buffer_kg_m2": 205.13630610450437,
+          "whole_pulse_absorbed_J_m2": 47217.34993756512,
+          "mean_load65K_W_m2": 0.0291049773765408,
+          "photon_refrigeration_electric_W_m2": 0.4029919944444111,
+          "extra_IR_refrigeration_electric_W_m2": 0.5777920978606047,
+          "total_extra_electric_W_m2": 0.9807840923050157,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.3555665462312866,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 21960.5709010756,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 9.18483234057924,
+            "1000000.0": 0.9184832340579239,
+            "10000000.0": 0.0918483234057924
+          },
+          "buffer_storage_identity_relative_error": 1.2620380631051392e-13
+        },
+        {
+          "receiver_kg_m2": 500.0,
+          "material": "linear_polyethylene_half_accessible_capacity",
+          "angular_factor": 3.0,
+          "shield_column_kg_m2_radial": 2000.0,
+          "cold_radius_m": 2.6005025252810197,
+          "outer_shield_radius_m": 3.6005025252810197,
+          "outer_intercept_fraction": 0.12961809091011672,
+          "buffer_kg_m2": 107.87800751421544,
+          "buffer_total_kg": 1.6403183785103283e+21,
+          "local_graphite_shield_kg_m2": 233.77238294062687,
+          "shield_plus_buffer_kg_m2": 341.6503904548423,
+          "whole_pulse_absorbed_J_m2": 121788.67855560801,
+          "mean_load65K_W_m2": 0.075071064741389,
+          "photon_refrigeration_electric_W_m2": 1.0394455118038477,
+          "extra_IR_refrigeration_electric_W_m2": 1.0154176802993056,
+          "total_extra_electric_W_m2": 2.054863192103153,
+          "local_hot_to200K_leak_W_m2_at_effective_emissivity1em4": 0.5550149832520531,
+          "buffer_mean_dose_if_all_heat_is_ionizing_Gy_year": 21960.57090107711,
+          "buffer_recycle_kg_m2_year_at_chosen_dose_limit": {
+            "100000.0": 23.690626326828575,
+            "1000000.0": 2.3690626326828577,
+            "10000000.0": 0.23690626326828576
+          },
+          "buffer_storage_identity_relative_error": 1.9499945261210113e-13
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Thermal load retains all source heat at faster archivedsource1282000/.99 cadence; pulse transport and guide histories remain explicitly distinct from plant capture.",
+    "Prestress carries over the20kg/m2 frame,E2D1e8N/m,nu.2,8kg/m2 load layer and remaining joints. These are material/geometry acceptance conditions, not proof of local guide-network control.",
+    "Guide shield/buffer inventories must be named within1000kg/m2 services. Their refrigeration must fit the retained ordinaryaux allowance or receive a separate debit; no free added cooling.",
+    "Guide attenuation assumes closed local graphite shield and localized secondary energy deposition. Coupledguide-specific transport, heat access/quench and radiation lifetime remain unqualified.",
+    "The entireprompt pulse is conservatively put into cold surroundings for guidebuffer sizing even inEM20 cases. Uniform angular interception is explicit; changed sourceplacement needs re-evaluation.",
+    "Exact deliveredB1/CH2 pulse family used; pulse guidebuffer sizing conservatively retains an extra.005 wholepulse allowance even for primary extra0 plant rows."
+  ]
+}

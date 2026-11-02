@@ -1,0 +1,2279 @@
+{
+  "scope": "Exact delivered-B1/C13H2 family, representative350 cadence. Counts at wall include flight decays. Eventual N consists of arriving N14/N15/O14/O15; arriving N13 becomes C13. CSDA bins proxy stopping depth, not straggling or postimplant diffusion.",
+  "area_m2": 1.5205308443374598e+19,
+  "graphite_density_kg_m3": 2000.0,
+  "year_s": 31557600.0,
+  "atomic_mass_kg": {
+    "p": 1.6735328377636006e-27,
+    "he4": 6.646479071584586e-27,
+    "c12": 1.9926468799200004e-26,
+    "c13": 2.1592578700883825e-26,
+    "n14": 2.3252651436495097e-26,
+    "n15": 2.4908266828838274e-26
+  },
+  "mean_fully_decayed_N_output_atomic_kg_s": {
+    "n14": 11489689.69940098,
+    "n15": 12963096.570773697
+  },
+  "stage_fully_decayed_N_output_atomic_kg": {
+    "n14": {
+      "n14": 1836733376264.7388,
+      "n15": 8011737724121.52
+    },
+    "n15": {
+      "n14": 1332.1824335592157,
+      "n15": 20191252346.430717
+    },
+    "c12": {
+      "n14": 8670605666289.876,
+      "n15": 30012.56650773307
+    },
+    "c13": {
+      "n14": 5051619354931.83,
+      "n15": 5145091574371.467
+    }
+  },
+  "gas_N2_thresholds": [
+    {
+      "global_capture_g": 0.001,
+      "all_returned_N_as_cavity_N2_column_kg_m2": 0.008287260168772445,
+      "fraction_of_total_returned_N_entering_cavity_as_N2_for10percent_total_column_increase": 7.250560471405936e-07,
+      "N_mass_to_cavity_at_threshold_kg_s": 17.729640554626627,
+      "scope": "The threshold combines actual chemical liberation and cavity routing. N retained in the collection layer or isolated process loop contributes no cavity gas. The material remains recoverable station inventory."
+    },
+    {
+      "global_capture_g": 0.01,
+      "all_returned_N_as_cavity_N2_column_kg_m2": 0.0008287260168772444,
+      "fraction_of_total_returned_N_entering_cavity_as_N2_for10percent_total_column_increase": 7.250560471405937e-06,
+      "N_mass_to_cavity_at_threshold_kg_s": 177.29640554626633,
+      "scope": "The threshold combines actual chemical liberation and cavity routing. N retained in the collection layer or isolated process loop contributes no cavity gas. The material remains recoverable station inventory."
+    },
+    {
+      "global_capture_g": 0.1,
+      "all_returned_N_as_cavity_N2_column_kg_m2": 8.287260168772443e-05,
+      "fraction_of_total_returned_N_entering_cavity_as_N2_for10percent_total_column_increase": 7.250560471405938e-05,
+      "N_mass_to_cavity_at_threshold_kg_s": 1772.9640554626635,
+      "scope": "The threshold combines actual chemical liberation and cavity routing. N retained in the collection layer or isolated process loop contributes no cavity gas. The material remains recoverable station inventory."
+    },
+    {
+      "global_capture_g": 1.0,
+      "all_returned_N_as_cavity_N2_column_kg_m2": 8.287260168772443e-06,
+      "fraction_of_total_returned_N_entering_cavity_as_N2_for10percent_total_column_increase": 0.0007250560471405938,
+      "N_mass_to_cavity_at_threshold_kg_s": 17729.640554626632,
+      "scope": "The threshold combines actual chemical liberation and cavity routing. N retained in the collection layer or isolated process loop contributes no cavity gas. The material remains recoverable station inventory."
+    }
+  ],
+  "gas_baseline": {
+    "H_cavity_atomic_kg_s": 3326.1839693347874,
+    "He_cavity_atomic_kg_s": 2415.3599816830488,
+    "H_fraction_entering_cavity": 0.0010307227577661309,
+    "H2_column_kg_m2": 2.9697789651676876e-08,
+    "He_column_kg_m2": 3.0389491344281494e-08,
+    "total_column_kg_m2": 6.008728099595837e-08,
+    "H_column_fraction": 0.4942441921057208,
+    "total_returned_N_atomic_kg_s": 24452786.270174675
+  },
+  "stages": {
+    "A": {
+      "period_s": 810808.9541603646,
+      "H_nuclei_m2": 5.7892302578719646e+19,
+      "species": {
+        "n14": {
+          "nuclei_m2": 5.194914419842016e+18,
+          "kinetic_J_m2": 8557811.024355637,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 1.481264129000403,
+            "0.01": 2.489122709898406,
+            "0.1": 4.007310104068649,
+            "0.5": 6.295105468850189,
+            "0.9": 12.516738232712042,
+            "0.99": 16.879332714234415,
+            "0.999": 17.34155258750354,
+            "0.9999": 17.393892560281607,
+            "1.0": 17.393892560281607
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 337011194375.35205,
+              "mass_kg_m2_baryon": 7.834683557985177e-15
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 14643004267740.64,
+              "mass_kg_m2_baryon": 3.4041392894563396e-13
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 63159579036596.61,
+              "mass_kg_m2_baryon": 1.468305277883907e-12
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 250732073056639.72,
+              "mass_kg_m2_baryon": 5.828905635842178e-12
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 1223968082427606.0,
+              "mass_kg_m2_baryon": 2.84542554399954e-11
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 1.6656090887110904e+16,
+              "mass_kg_m2_baryon": 3.8721325460843066e-10
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 1.225435593582832e+18,
+              "mass_kg_m2_baryon": 2.848837147445034e-08
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 3.069801742896729e+18,
+              "mass_kg_m2_baryon": 7.1365360091155e-08
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 8.81468152725363e+17,
+              "mass_kg_m2_baryon": 2.0491972249898797e-08
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "n15": {
+          "nuclei_m2": 1.3145925140160719e+19,
+          "kinetic_J_m2": 7445956.947387479,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.10403500670405218,
+            "0.01": 0.37190188868690255,
+            "0.1": 1.1864218883831479,
+            "0.5": 2.7408461216936524,
+            "0.9": 4.933495703306911,
+            "0.99": 6.77550676170477,
+            "0.999": 8.297783111316592,
+            "0.9999": 10.6075520187721,
+            "1.0": 18.63412921807132
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 290183991660234.2,
+              "mass_kg_m2_baryon": 7.227927819806212e-12
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 1.2010787234873066e+16,
+              "mass_kg_m2_baryon": 2.9916572136190973e-10
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 4.822399594444698e+16,
+              "mass_kg_m2_baryon": 1.2011674381997126e-09
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 1.7699002753110355e+17,
+              "mass_kg_m2_baryon": 4.408482826710104e-09
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 6.904805147055055e+17,
+              "mass_kg_m2_baryon": 1.7198548040918516e-08
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 2.9276256484813414e+18,
+              "mass_kg_m2_baryon": 7.29215514252514e-08
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 8.055700900554307e+18,
+              "mass_kg_m2_baryon": 2.0065209081322842e-07
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 1.232908061631939e+18,
+              "mass_kg_m2_baryon": 3.0709380027988724e-08
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 1695020085544366.8,
+              "mass_kg_m2_baryon": 4.221970606077142e-11
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o14": {
+          "nuclei_m2": 55030409862.16713,
+          "kinetic_J_m2": 0.02829340434532594,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.5897538990276046,
+            "0.01": 0.9138191997343581,
+            "0.1": 1.4794359060096614,
+            "0.5": 2.4043630342558724,
+            "0.9": 3.5297468403795227,
+            "0.99": 4.535062419090394,
+            "0.999": 5.150698337601321,
+            "0.9999": 5.682293717966731,
+            "1.0": 14.163309041163092
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 3.868302076289854e-21,
+              "mass_kg_m2_baryon": 8.992853406724875e-47
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 48.78643722013573,
+              "mass_kg_m2_baryon": 1.134164988939691e-24
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 178135.8755886507,
+              "mass_kg_m2_baryon": 4.141222128091324e-21
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 21071328.152213536,
+              "mass_kg_m2_baryon": 4.898566901465856e-19
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 834413981.9671366,
+              "mass_kg_m2_baryon": 1.9398078206831777e-17
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 15680701440.1844,
+              "mass_kg_m2_baryon": 3.645378426636391e-16
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 38381491006.108444,
+              "mass_kg_m2_baryon": 8.922755134999946e-16
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 112553921.09250699,
+              "mass_kg_m2_baryon": 2.6166025630237023e-18
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 0.000402264780983998,
+              "mass_kg_m2_baryon": 9.351669375177102e-30
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o15": {
+          "nuclei_m2": 8.007854687101004e+18,
+          "kinetic_J_m2": 6129059.200868679,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.5780668210723138,
+            "0.01": 1.0100031750874243,
+            "0.1": 1.825196201335738,
+            "0.5": 3.245820479811903,
+            "0.9": 4.9213169139200055,
+            "0.99": 6.33837144916417,
+            "0.999": 7.439064964926859,
+            "0.9999": 10.172949186562054,
+            "1.0": 15.360687682254028
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 0.004443153169161871,
+              "mass_kg_m2_baryon": 1.1067044124421327e-28
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 454178878503.87726,
+              "mass_kg_m2_baryon": 1.1312726564703947e-14
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 126639429570602.81,
+              "mass_kg_m2_baryon": 3.154345802608879e-12
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 4061999619304217.0,
+              "mass_kg_m2_baryon": 1.0117663584553469e-10
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 7.283652550903051e+16,
+              "mass_kg_m2_baryon": 1.8142184412472894e-09
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 1.0172178487775757e+18,
+              "mass_kg_m2_baryon": 2.5336949657069633e-08
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 6.188723813769581e+18,
+              "mass_kg_m2_baryon": 1.5414926497743197e-07
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 7.238083804906788e+17,
+              "mass_kg_m2_baryon": 1.8028681388058738e-08
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 1079025326385164.2,
+              "mass_kg_m2_baryon": 2.6876455624700716e-11
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "B1": {
+      "period_s": 7698.198541942018,
+      "H_nuclei_m2": 3.167458079592399e+17,
+      "species": {
+        "n14": {
+          "nuclei_m2": 3405275644.0552225,
+          "kinetic_J_m2": 0.0008363737587037511,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.015470383636846299,
+            "0.01": 0.0707810284260959,
+            "0.1": 0.6679840085397547,
+            "0.5": 1.7056234168985356,
+            "0.9": 2.3245813212653315,
+            "0.99": 2.9715926036475673,
+            "0.999": 3.3709601473050452,
+            "0.9999": 3.6862719064145293,
+            "1.0": 5.269702885185832
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 1477126.4889106175,
+              "mass_kg_m2_baryon": 3.433956737604081e-20
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 49726695.19699384,
+              "mass_kg_m2_baryon": 1.156023680385264e-18
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 81320953.29297292,
+              "mass_kg_m2_baryon": 1.890512678265896e-18
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 125323409.97080061,
+              "mass_kg_m2_baryon": 2.9134618550245935e-18
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 267021617.2137165,
+              "mass_kg_m2_baryon": 6.207597578141222e-18
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 2044434148.1276023,
+              "mass_kg_m2_baryon": 4.752807880879764e-17
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 835971693.7018706,
+              "mass_kg_m2_baryon": 1.9434291183492154e-17
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 0.06235526189496376,
+              "mass_kg_m2_baryon": 1.4496068773852631e-27
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "n15": {
+          "nuclei_m2": 5.3311943211409896e+16,
+          "kinetic_J_m2": 58563.31563979047,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 2.2877159263047764,
+            "0.01": 3.030938514624154,
+            "0.1": 3.7516627159535965,
+            "0.5": 4.762472632254973,
+            "0.9": 6.447162853641251,
+            "0.99": 7.8931843492941836,
+            "0.999": 8.064526738698898,
+            "0.9999": 8.080777936318515,
+            "1.0": 8.080777936318515
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 33395.39156217333,
+              "mass_kg_m2_baryon": 8.318152850008924e-22
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 84870017.24988033,
+              "mass_kg_m2_baryon": 2.1139496883966328e-18
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 9565910578.440529,
+              "mass_kg_m2_baryon": 2.3826852334654054e-16
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 322433814110.88525,
+              "mass_kg_m2_baryon": 8.03120917085951e-15
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 6787299085478.537,
+              "mass_kg_m2_baryon": 1.6905862932203345e-13
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 27713177688089.08,
+              "mass_kg_m2_baryon": 6.902822131604907e-13
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 3.129473062737328e+16,
+              "mass_kg_m2_baryon": 7.79491841782153e-10
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 2.1982380022634948e+16,
+              "mass_kg_m2_baryon": 5.475390120664908e-10
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o14": {
+          "nuclei_m2": 362595020.6253109,
+          "kinetic_J_m2": 0.00011677059824924978,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.5596370352559521,
+            "0.01": 0.9170142270417545,
+            "0.1": 1.4093792790566626,
+            "0.5": 1.802647816691285,
+            "0.9": 2.404951015856979,
+            "0.99": 2.878183446086135,
+            "0.999": 3.1744103577091862,
+            "0.9999": 3.418732576802607,
+            "1.0": 4.587346691609194
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 5.555184844727225e-22,
+              "mass_kg_m2_baryon": 1.2914442039595336e-47
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 2.362638976642901,
+              "mass_kg_m2_baryon": 5.492556049382336e-26
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 3566.437642246579,
+              "mass_kg_m2_baryon": 8.291092646960534e-23
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 203616.94576051517,
+              "mass_kg_m2_baryon": 4.733594502799521e-21
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 5203747.909148258,
+              "mass_kg_m2_baryon": 1.209743737423025e-19
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 241041895.38698617,
+              "mass_kg_m2_baryon": 5.6036327756836114e-18
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 116142191.5831347,
+              "mass_kg_m2_baryon": 2.7000210496607157e-18
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 6.51274798433769e-08,
+              "mass_kg_m2_baryon": 1.5140541442478393e-33
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o15": {
+          "nuclei_m2": 0.004402675818589703,
+          "kinetic_J_m2": 1.2108508407316387e-15,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.3580873595397923,
+            "0.01": 0.6627712210048431,
+            "0.1": 1.2926609954878252,
+            "0.5": 1.7172968095381878,
+            "0.9": 2.173313525921572,
+            "0.99": 2.681087530970899,
+            "0.999": 3.0275422555598928,
+            "0.9999": 3.2847877086235546,
+            "1.0": 4.884328751960328
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 1.4645915060021145e-22,
+              "mass_kg_m2_baryon": 3.648017118490559e-48
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 6.871442963720951e-09,
+              "mass_kg_m2_baryon": 1.7115449227758488e-34
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 9.360122873944192e-07,
+              "mass_kg_m2_baryon": 2.3314274550540896e-32
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 1.5322560874386587e-05,
+              "mass_kg_m2_baryon": 3.8165566398413366e-31
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 0.00015747752702796255,
+              "mass_kg_m2_baryon": 3.9224637861223376e-30
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 0.003387576644441624,
+              "mass_kg_m2_baryon": 8.437805038795582e-29
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 0.0008413562025153715,
+              "mass_kg_m2_baryon": 2.095657264804493e-29
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 3.738167237037461e-24,
+              "mass_kg_m2_baryon": 9.31105910187733e-50
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "B2": {
+      "period_s": 988255.983544817,
+      "H_nuclei_m2": 1.249186407132431e+19,
+      "species": {
+        "n14": {
+          "nuclei_m2": 1.942398549978469e+19,
+          "kinetic_J_m2": 11289787.464430276,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.11188521217209584,
+            "0.01": 0.38001401174781574,
+            "0.1": 1.188533891715068,
+            "0.5": 2.7357458518287316,
+            "0.9": 4.962684193387499,
+            "0.99": 6.71131554815954,
+            "0.999": 7.640802224664566,
+            "0.9999": 8.322231518687124,
+            "1.0": 15.878578994916111
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 313361131145651.56,
+              "mass_kg_m2_baryon": 7.284877603098485e-12
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 1.5839600156682994e+16,
+              "mass_kg_m2_baryon": 3.6823184803293824e-10
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 6.925792500720572e+16,
+              "mass_kg_m2_baryon": 1.6100768620456548e-09
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 2.4618373227753098e+17,
+              "mass_kg_m2_baryon": 5.723167870115298e-09
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 1.0178682738594289e+18,
+              "mass_kg_m2_baryon": 2.3662940467548048e-08
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 4.3808839306238167e+18,
+              "mass_kg_m2_baryon": 1.0184480478257418e-07
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 1.182244112366957e+19,
+              "mass_kg_m2_baryon": 2.7484275487804407e-07
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 1.871137667886041e+18,
+              "mass_kg_m2_baryon": 4.3499360751162225e-08
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 59885173267961.625,
+              "mass_kg_m2_baryon": 1.3921833761018437e-12
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "n15": {
+          "nuclei_m2": 54718249684.88809,
+          "kinetic_J_m2": 0.021662977026188267,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.054568879722370754,
+            "0.01": 0.2078324814195333,
+            "0.1": 0.758990177098336,
+            "0.5": 2.031857817872441,
+            "0.9": 4.046537728083648,
+            "0.99": 6.063171547026271,
+            "0.999": 7.382527357590794,
+            "0.9999": 8.081240243224975,
+            "1.0": 17.01058437448678
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 3250553.636546354,
+              "mass_kg_m2_baryon": 8.096506952345874e-20
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 150553874.84247565,
+              "mass_kg_m2_baryon": 3.750008862059066e-18
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 607737679.1631165,
+              "mass_kg_m2_baryon": 1.5137582377427574e-17
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 1870325450.1541052,
+              "mass_kg_m2_baryon": 4.658622715855684e-17
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 6061185586.41455,
+              "mass_kg_m2_baryon": 1.5097253184231286e-16
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 18059015709.058178,
+              "mass_kg_m2_baryon": 4.498155163385131e-16
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 25937017754.45954,
+              "mass_kg_m2_baryon": 6.460414687856681e-16
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 2029159564.7576723,
+              "mass_kg_m2_baryon": 5.054248094467752e-17
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 3512.4019169463927,
+              "mass_kg_m2_baryon": 8.748720901035322e-23
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o14": {
+          "nuclei_m2": 5.09947308369334e+18,
+          "kinetic_J_m2": 4187778.9260803917,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.7543899547530918,
+            "0.01": 1.1848540812026465,
+            "0.1": 1.9692544734429667,
+            "0.5": 3.3882871838875106,
+            "0.9": 4.989041063637087,
+            "0.99": 6.159648995350608,
+            "0.999": 6.826055548706042,
+            "0.9999": 7.377646035038366,
+            "1.0": 13.174094605701413
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 5.652569626213953e-14,
+              "mass_kg_m2_baryon": 1.314083776740676e-39
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 1083604748.7013972,
+              "mass_kg_m2_baryon": 2.5191152251607242e-17
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 3960882179926.5103,
+              "mass_kg_m2_baryon": 9.208079437154838e-14
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 474984546810715.4,
+              "mass_kg_m2_baryon": 1.1042225544146849e-11
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 2.1643109034627396e+16,
+              "mass_kg_m2_baryon": 5.031491930455509e-10
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 5.189754856341626e+17,
+              "mass_kg_m2_baryon": 1.2064906959045278e-08
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 4.0550676669793787e+18,
+              "mass_kg_m2_baryon": 9.427037590216089e-08
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 5.033078619226331e+17,
+              "mass_kg_m2_baryon": 1.1700673141492311e-08
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 13609942623.31259,
+              "mass_kg_m2_baryon": 3.1639777988273053e-16
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o15": {
+          "nuclei_m2": 24525385818.076088,
+          "kinetic_J_m2": 0.014878073166719498,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.440003669751564,
+            "0.01": 0.764212583169888,
+            "0.1": 1.4624892467073858,
+            "0.5": 2.643167135802308,
+            "0.9": 4.372737216755264,
+            "0.99": 5.88566333429007,
+            "0.999": 6.732145428678235,
+            "0.9999": 7.292089874368171,
+            "1.0": 14.11273805495692
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 4.354645996249594e-11,
+              "mass_kg_m2_baryon": 1.0846589696978591e-36
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 5903.233168315185,
+              "mass_kg_m2_baryon": 1.4703823942854385e-22
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 1507752.8054409083,
+              "mass_kg_m2_baryon": 3.755523654315566e-20
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 41394351.121023975,
+              "mass_kg_m2_baryon": 1.0310540575952672e-18
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 617040541.2780797,
+              "mass_kg_m2_baryon": 1.536929886702392e-17
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 5844339434.333923,
+              "mass_kg_m2_baryon": 1.4557130923773638e-16
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 16953969138.469202,
+              "mass_kg_m2_baryon": 4.222909213253828e-16
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 1067128351.6882222,
+              "mass_kg_m2_baryon": 2.6580124755821352e-17
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 345.14702652005093,
+              "mass_kg_m2_baryon": 8.596951818860562e-24
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "C13": {
+      "period_s": 11207481.3144339,
+      "H_nuclei_m2": 1.8266274921691994e+19,
+      "species": {
+        "n14": {
+          "nuclei_m2": 1.428771581934114e+19,
+          "kinetic_J_m2": 23424298.815980628,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.323611180683198,
+            "0.01": 1.017449998477626,
+            "0.1": 2.692530785569806,
+            "0.5": 6.6273645067245015,
+            "0.9": 12.567712759979424,
+            "0.99": 17.031725865272076,
+            "0.999": 19.51316221553262,
+            "0.9999": 24.79071619899548,
+            "1.0": 36.439166488462114
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 16737681200137.7,
+              "mass_kg_m2_baryon": 3.8911002923975034e-13
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 1283351160897869.0,
+              "mass_kg_m2_baryon": 2.983476634372323e-11
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 7157404921206192.0,
+              "mass_kg_m2_baryon": 1.663921068199317e-10
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 2.6109833904313624e+16,
+              "mass_kg_m2_baryon": 6.069895890876996e-10
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 1.0316331781908776e+17,
+              "mass_kg_m2_baryon": 2.3982940727013396e-09
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 6.062131829395368e+17,
+              "mass_kg_m2_baryon": 1.4092969421426469e-08
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 3.8453282815452273e+18,
+              "mass_kg_m2_baryon": 8.939444969570772e-08
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 6.430209999078013e+18,
+              "mass_kg_m2_baryon": 1.4948660873875387e-07
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 3.267338947514536e+18,
+              "mass_kg_m2_baryon": 7.595761552640259e-08
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 894762777121659.2,
+              "mass_kg_m2_baryon": 2.0801039654500334e-11
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "n15": {
+          "nuclei_m2": 7.452635210816207e+18,
+          "kinetic_J_m2": 6472934.819558222,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.1390103368575174,
+            "0.01": 0.43133682190588485,
+            "0.1": 1.4260075813750261,
+            "0.5": 3.569631081188114,
+            "0.9": 7.476690451186306,
+            "0.99": 12.071942591312357,
+            "0.999": 15.772407341587623,
+            "0.9999": 18.79734652030314,
+            "1.0": 39.039726036315564
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 52751680810902.3,
+              "mass_kg_m2_baryon": 1.3139434022297525e-12
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 3687718016033533.5,
+              "mass_kg_m2_baryon": 9.185399748342492e-11
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 2.106563842676668e+16,
+              "mass_kg_m2_baryon": 5.247047335577436e-10
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 7.497635867482118e+16,
+              "mass_kg_m2_baryon": 1.8675175897643156e-09
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 2.651903606457994e+17,
+              "mass_kg_m2_baryon": 6.605384309071396e-09
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 1.1492674730165215e+18,
+              "mass_kg_m2_baryon": 2.862605305374893e-08
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 3.698708516795273e+18,
+              "mass_kg_m2_baryon": 9.21277498215704e-08
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 2.0159025136835692e+18,
+              "mass_kg_m2_baryon": 5.0212273176430614e-08
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 2.2377922052989094e+17,
+              "mass_kg_m2_baryon": 5.57391206974771e-09
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 4659346720491.396,
+              "mass_kg_m2_baryon": 1.1605540881315833e-13
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o14": {
+          "nuclei_m2": 3262591906815.748,
+          "kinetic_J_m2": 2.1206230930588004,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.663623467311181,
+            "0.01": 0.9852643194340552,
+            "0.1": 1.5730123318911426,
+            "0.5": 2.691916911182682,
+            "0.9": 4.5081019563652065,
+            "0.99": 6.5430777586471605,
+            "0.999": 8.246460769778105,
+            "0.9999": 9.553478471011246,
+            "1.0": 20.479808017830514
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 6.190293401871375e-22,
+              "mass_kg_m2_baryon": 1.4390913638533083e-47
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 31.33448713354027,
+              "mass_kg_m2_baryon": 7.284499602396613e-25
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 1176858.8956725735,
+              "mass_kg_m2_baryon": 2.7359082409960586e-20
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 515654133.0591796,
+              "mass_kg_m2_baryon": 1.1987693659179312e-17
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 34786391188.35615,
+              "mass_kg_m2_baryon": 8.086982617601355e-16
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 752460315319.8618,
+              "mass_kg_m2_baryon": 1.7492856495166987e-14
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 2291890992261.233,
+              "mass_kg_m2_baryon": 5.3280843406537815e-14
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 182835761000.32672,
+              "mass_kg_m2_baryon": 4.250482934776165e-15
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 101616022.68147948,
+              "mass_kg_m2_baryon": 2.3623232563715174e-18
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 4.280321847504122e-08,
+              "mass_kg_m2_baryon": 9.950698303562914e-34
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        },
+        "o15": {
+          "nuclei_m2": 6.13219970304603e+18,
+          "kinetic_J_m2": 7462130.256150095,
+          "CSDA_depth_um_quantiles_number": {
+            "0.001": 0.6731608613457823,
+            "0.01": 1.2020025582262923,
+            "0.1": 2.240489340512933,
+            "0.5": 4.409777587204986,
+            "0.9": 7.83386589249368,
+            "0.99": 11.491624795543142,
+            "0.999": 14.293542885721171,
+            "0.9999": 15.81728406464373,
+            "1.0": 31.135050917529355
+          },
+          "CSDA_stopping_depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                0.01
+              ],
+              "nuclei_m2": 0.0010210342129321904,
+              "mass_kg_m2_baryon": 2.5432007983636275e-29
+            },
+            {
+              "depth_um": [
+                0.01,
+                0.1
+              ],
+              "nuclei_m2": 173676254443.56332,
+              "mass_kg_m2_baryon": 4.32594308166448e-15
+            },
+            {
+              "depth_um": [
+                0.1,
+                0.25
+              ],
+              "nuclei_m2": 54846505977643.52,
+              "mass_kg_m2_baryon": 1.3661214876358126e-12
+            },
+            {
+              "depth_um": [
+                0.25,
+                0.5
+              ],
+              "nuclei_m2": 1699867819643520.5,
+              "mass_kg_m2_baryon": 4.234045383861344e-11
+            },
+            {
+              "depth_um": [
+                0.5,
+                1.0
+              ],
+              "nuclei_m2": 2.7902119846720564e+16,
+              "mass_kg_m2_baryon": 6.949884006965205e-10
+            },
+            {
+              "depth_um": [
+                1.0,
+                2.0
+              ],
+              "nuclei_m2": 4.085260974251085e+17,
+              "mass_kg_m2_baryon": 1.0175603167500455e-08
+            },
+            {
+              "depth_um": [
+                2.0,
+                5.0
+              ],
+              "nuclei_m2": 3.284118798021455e+18,
+              "mass_kg_m2_baryon": 8.180111345205091e-08
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "nuclei_m2": 2.237294157656579e+18,
+              "mass_kg_m2_baryon": 5.572671528397034e-08
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "nuclei_m2": 1.7260359351468995e+17,
+              "mass_kg_m2_baryon": 4.299225151000335e-09
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "nuclei_m2": 48579601091.66631,
+              "mass_kg_m2_baryon": 1.2100248817883388e-15
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            },
+            {
+              "depth_um": [
+                1000.0,
+                175000.0
+              ],
+              "nuclei_m2": 0.0,
+              "mass_kg_m2_baryon": 0.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "temperature_profiles": [
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/A-warmest_background.csv",
+      "sha256": "b6ac5642f0d685ddaaea405d2f479a3aadf52663de19a46fdd6938a10970838b",
+      "maximum_150um_skin_front_K": 1352.1505343378287,
+      "duration_above_K_s": {
+        "1100": 4600.25,
+        "1200": 616.25,
+        "1300": 83.75,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-warmest_background.csv",
+      "sha256": "717d28f82e61f0cdc0262c15cf6fc67a4fb1a4b3b8b6db1e6e5a6472888d4254",
+      "maximum_150um_skin_front_K": 1190.4461520740267,
+      "duration_above_K_s": {
+        "1100": 4600.25,
+        "1200": 0.0,
+        "1300": 0.0,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-ordinary_midyear.csv",
+      "sha256": "40f60004a509d61e4de818ae8a5da8585f60db261d7adb87ea6be3180ea4a846",
+      "maximum_150um_skin_front_K": 1075.367525638866,
+      "duration_above_K_s": {
+        "1100": 0.0,
+        "1200": 0.0,
+        "1300": 0.0,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      }
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B2-warmest_background.csv",
+      "sha256": "e914032717bb1cd82d3755d06a3c1a9e0fe86621137c1be9aa0aa344fef036e2",
+      "maximum_150um_skin_front_K": 1393.0822000230314,
+      "duration_above_K_s": {
+        "1100": 4600.25,
+        "1200": 481.5,
+        "1300": 121.0,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-warmest_background.csv",
+      "sha256": "eed598fd78699c4b5eb61d48d4d494c5488fd4b8ad8424efc5243b35d056dd72",
+      "maximum_150um_skin_front_K": 1477.8415865953684,
+      "duration_above_K_s": {
+        "1100": 3958.25,
+        "1200": 285.25,
+        "1300": 114.25,
+        "1400": 49.5,
+        "1500": 0.0,
+        "1600": 0.0
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_1.csv",
+      "sha256": "4463c1ba9136274573cafe502140c5b4d0a3bb7185889069281a2503e4f8af3f",
+      "maximum_150um_skin_front_K": 1493.5559080912003,
+      "duration_above_K_s": {
+        "1100": 3958.25,
+        "1200": 348.5,
+        "1300": 128.0,
+        "1400": 57.75,
+        "1500": 0.0,
+        "1600": 0.0
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_3.csv",
+      "sha256": "a3646cdbb154d4c10ad5e98723dee237a9122a163677c542b175322ac79d262a",
+      "maximum_150um_skin_front_K": 1462.1272650997348,
+      "duration_above_K_s": {
+        "1100": 3957.75,
+        "1200": 234.25,
+        "1300": 101.25,
+        "1400": 41.5,
+        "1500": 0.0,
+        "1600": 0.0
+      }
+    }
+  ],
+  "source_sha256": {
+    "stopping/stopping-results.json": "746f9c0b23f68684f816604e9617494ab8109142f05f484e22b4c0457d78a232",
+    "gas/chemistry-inputs.json": "17d6f05b19bc3d933d48d0ab5035fe58a7fa88dba86affd043340b6ee5d77476",
+    "gas/chemistry.json": "637892e50b1fd7296f47c9eb55450618aad46a3a403728f0005ef9892c3d539f",
+    "geometry/temperature-histories.json": "f7e67d3466af3bfeda6b0eb48a4ed2e9294e3a8e586228496d6f320217fe8d3f"
+  }
+}

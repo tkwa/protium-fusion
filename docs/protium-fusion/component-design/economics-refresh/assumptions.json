@@ -1,0 +1,58 @@
+{
+  "scope": "Replaceable economic scenarios. Receiver carbon fraction is a declared materials assumption; whole-plant carbon outside the receiver remains unassigned. Availability multiplies output and is an energy-equivalent comparison, not an outage-load model. No reactor performance or capture assumptions are inserted here.",
+  "assumptions": {
+    "year_s": 31557600.0,
+    "operating_fresh_C_H_ceiling": 0.007,
+    "resource_C_H_mass_ratio": 0.007,
+    "standard_methane_decomposition_G_J_mol": 50768.0,
+    "carbon_molar_mass_kg_mol": 0.0120107,
+    "hydrogen_atomic_mass_g_mol": 1.00794,
+    "methane_chemical_efficiencies": [
+      0.5,
+      0.99
+    ],
+    "whole_plant_embodied_J_kg_scenarios": [
+      1000000.0,
+      2000000.0,
+      10000000.0,
+      100000000.0,
+      1000000000.0
+    ],
+    "whole_plant_refurbishment_J_kg_scenarios": [
+      2000000.0,
+      10000000.0,
+      100000000.0,
+      1000000000.0
+    ],
+    "lifetimes_years": [
+      20.0,
+      100.0,
+      1000.0
+    ],
+    "construction_years": [
+      5.0,
+      20.0,
+      100.0
+    ],
+    "nominal_solar_irradiance_W_m2_at_au": 1361.0,
+    "nominal_solar_luminosity_W": 3.828e+26,
+    "comparison_solar_efficiency": 0.3,
+    "comparison_solar_complete_kg_m2": 1.0,
+    "comparison_solar_delivery_efficiency": 1.0,
+    "availability": 1.0,
+    "receiver_carbon_mass_fraction": 1.0,
+    "operating_fuel_C_H_allocation": 0.0056,
+    "operating_structural_C_H_allocation": 0.0014,
+    "incremental_recovered_H_processing_J_kg_scenarios": [
+      0.0,
+      100000000.0,
+      1000000000.0
+    ]
+  },
+  "primary_sources": {
+    "methane": "https://janaf.nist.gov/tables/C-067.html",
+    "graphite": "https://janaf.nist.gov/tables/C-002.html",
+    "nominal_solar": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+    "manufacturing_theory": "https://nanosystems.contact.ms/molecular_manufacturing_systems/"
+  }
+}

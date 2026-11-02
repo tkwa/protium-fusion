@@ -1,0 +1,23 @@
+# B2 EOS and artificial-dissipation audit ✨
+
+The legacy B2 trajectory is driven toward the cold EOS boundary by **negative artificial viscous dissipation**. Independent reconstruction confirms the implementer’s diagnosis. Correct the spherical compression switch and retry the original EOS and network before extending their domains.
+
+The [independent script](eos_independent_audit.py) and [results](eos-independent-audit.json) inspect 2,432 saved cell states and compare the interpolated EOS against direct pynucastro StellarEOS. Reproduce from the repository root with `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/protium-python NUMBA_CACHE_DIR=/tmp/protium-numba MPLCONFIGDIR=/tmp/protium-mpl OPENBLAS_NUM_THREADS=1 python3 docs/protium-fusion/b2-completion/eos_independent_audit.py`. The dependency directory is the recorded research environment. Input hashes include the source, table, archive and checker.
+
+## Demonstrated error
+
+The old scalar artificial pressure activates when radial velocity decreases across a cell, while its isotropic work uses the spherical volume rate `dV/dt = 4π Δ(r²v)`. These compression tests can have opposite signs. At the accepted outer endpoint, density is falling at 4.258e7 g/cm³/s, yet artificial pressure is 4.372e18 dyn/cm², 93 times the physical pressure. Artificial work cools at **7.198e13 K/s**, compared with physical adiabatic cooling of 3.137e10 K/s. Radiation actually heats this cell at 4.278e12 K/s.
+
+For isotropic pressure its specific heating is `−q (dV/dt)/m`. Setting q=0 for the same discrete dV/dt≥0 guarantees nonnegative artificial heating. Retaining the pressure in paired force/work equations preserves energy cancellation. Conservation alone did not reveal the entropy-sign error. Tensor viscosity requires its corresponding tensor force and work, rather than a radial trigger combined with isotropic work. The compression-only convention is described in this [primary Lagrangian-method paper](https://doi.org/10.1007/s40571-024-00890-0); [Tscharnuter and Winkler](https://doi.org/10.1016/0010-4655(79)90111-5) developed a spherical-capable tensor method.
+
+## EOS and physical cold-state scope
+
+At fixed composition consistency requires `rho² e_rho = P − T P_T`. At the accepted 301365 K endpoint the FastEOS adiabatic coefficient differs from the direct source by −1.07e−5, and its thermal-normalized identity residual is +1.87e−6. Across all saved states the maximum identity residual is 1.14e−4. Thus large interpolation cancellation is not the established cause. [Timmes and Swesty](https://www.pas.rochester.edu/~yishengtu/research_files/EOS_reference/HELM_Timmes_2000_ApJS_126_501.pdf) describe common-free-energy interpolation that enforces consistency.
+
+The actual saved table covers 1e5–3e9 K and rhoYe=1e−6–1e7 g/cm³; extend_eos.py explains its extension beyond the older builder defaults. The 80 kK exception was a Newton trial in a separate rate-floor sensitivity, rather than an accepted endpoint. Direct ideal Fermi-gas evaluation remains regular down to10 kK in the spot checks, but that is mathematical domain rather than material validation.
+
+The corrupted cold shell holds4.6146% of mass. Its electron Fermi energy is752 eV and carbon coupling Γ≈80.5. Local partial ionization, pressure ionization and Coulomb interactions can matter. The ideal cold internal energy is1.348e22 J (0.0331% of prepared input); the rigid-background ion–ion correction scale is−7.108e21 J (0.0174%); an isolated-atom hydrogenic binding upper scale is5.383e21 J (0.0132%, or0.00126% of released nuclear energy). The ion–ion pressure correction is−26.4% locally. These are energy scales, not bounds on changed shock dynamics or opacity, and should not be added as an exact correction.
+
+A realistic cold mixture requires a common free energy including degenerate electrons, bound states, ion interactions, pressure ionization and radiation, with consistent composition derivatives. [Potekhin et al.2005](https://arxiv.org/abs/physics/0510006) and [Massacrier et al.2011](https://arxiv.org/abs/1111.0532) provide relevant carbon/carbon–oxygen methods; their tables cannot simply substitute for this evolving H/C/N/O mixture. Dilute Saha equilibrium and a classical electron EOS would be inappropriate here. A frozen fully ionized EOS extension can complete that reduced model, while a temperature clamp or silent extrapolation cannot qualify cold material.
+
+For the corrected retry check nonnegative artificial heating, final-time success, domain compliance, shell ordering, energy/baryon closure, and tolerance/grid sensitivity. If that trajectory stays hot, a new cold EOS is unnecessary. The corrected runner and final result belong to the implementer’s files.

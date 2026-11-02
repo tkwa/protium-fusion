@@ -1,0 +1,743 @@
+{
+  "scope": "Independent limits and convergence of the transverse clearing diagnostics.\n\nThese checks qualify frozen orbits and a rigid-centroid closure. They do not\nqualify a self-consistent driven plasma, lepton capture, or electrical gain.\n",
+  "passed": 100,
+  "total": 100,
+  "checks": [
+    {
+      "name": "Exact free magnetic helix",
+      "metric": 4.4944153740298116e-14,
+      "upper_limit": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "Exact free magnetic speed",
+      "metric": 6.561418075534675e-14,
+      "upper_limit": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "Harmonic circular orbit lambda=0.24161984870956632, h=0.01",
+      "metric": 2.2156061888958123e-05,
+      "upper_limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Harmonic energy lambda=0.24161984870956632, h=0.01",
+      "metric": 2.0512702647579317e-11,
+      "upper_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Harmonic circular orbit lambda=0.24161984870956632, h=0.005",
+      "metric": 5.539000408428939e-06,
+      "upper_limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Harmonic energy lambda=0.24161984870956632, h=0.005",
+      "metric": 1.2827239270762902e-12,
+      "upper_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Second-order harmonic convergence lambda=0.24161984870956632",
+      "metric": 1.0878360340527138e-05,
+      "upper_limit": 0.02,
+      "passed": true
+    },
+    {
+      "name": "Harmonic circular orbit lambda=-1.2416198487095662, h=0.01",
+      "metric": 2.2156061893536743e-05,
+      "upper_limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Harmonic energy lambda=-1.2416198487095662, h=0.01",
+      "metric": 2.0505930287129104e-11,
+      "upper_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Harmonic circular orbit lambda=-1.2416198487095662, h=0.005",
+      "metric": 5.5390004004734825e-06,
+      "upper_limit": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Harmonic energy lambda=-1.2416198487095662, h=0.005",
+      "metric": 1.2779777236460177e-12,
+      "upper_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Second-order harmonic convergence lambda=-1.2416198487095662",
+      "metric": 1.0884932018839777e-05,
+      "upper_limit": 0.02,
+      "passed": true
+    },
+    {
+      "name": "Circular-response normalization from independently forced oscillator",
+      "metric": 2.692192246911418e-09,
+      "upper_limit": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "Nonlinear adaptive-ODE orbit Z=1.0",
+      "metric": 7.833856947227385e-07,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Nonlinear adaptive-ODE orbit Z=22.0",
+      "metric": 9.66452096963237e-09,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Mutual force from displaced density integral, d=9.423468198202453e-06",
+      "metric": 7.222195101963536e-07,
+      "upper_limit": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "Mutual force from displaced density integral, d=4.711734099101227e-06",
+      "metric": 1.8047848160396285e-07,
+      "upper_limit": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "Quadratic eigenproblem residual (-12480628749.463472+0j)",
+      "metric": 5.319341667221876e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Quadratic eigenproblem residual (-5037597309.723981+0j)",
+      "metric": 7.011876452655854e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Quadratic eigenproblem residual (-1422762602.5552456+0j)",
+      "metric": 2.477678665202417e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Quadratic eigenproblem residual (-145379428.2608332+0j)",
+      "metric": 6.081601228850569e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Equal-q/m common mode analytic frequency",
+      "metric": 2.220446049250313e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Equal-q/m common mode analytic frequency",
+      "metric": 2.7755575615628914e-17,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Internal forces cancel in total centroid equation",
+      "metric": 0.0,
+      "upper_limit": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "Uniform drive excites common translation at equal q/m",
+      "metric": 1.1102230246251565e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Uniform drive excites common translation at equal q/m",
+      "metric": 0.0,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval reference, Z=1",
+      "metric": 1.1102230246251565e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment reference, Z=1",
+      "metric": 1.9129260032668682e-05,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance reference, Z=1",
+      "metric": 0.00013420354233706355,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance reference, Z=1",
+      "metric": 0.0002781126894231267,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error reference, Z=1",
+      "metric": 0.00031363119611604873,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings reference, Z=1",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval reference, Z=22",
+      "metric": 0.0,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment reference, Z=22",
+      "metric": 1.5284068763943282e-06,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance reference, Z=22",
+      "metric": 0.0006880968503135687,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance reference, Z=22",
+      "metric": 0.0010567078391723328,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error reference, Z=22",
+      "metric": 6.899011685135292e-05,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings reference, Z=22",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval half_step, Z=1",
+      "metric": 0.0,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment half_step, Z=1",
+      "metric": 4.782233116840118e-06,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance half_step, Z=1",
+      "metric": 0.0001287114583665705,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance half_step, Z=1",
+      "metric": 0.0002729025357588455,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error half_step, Z=1",
+      "metric": 7.84063024354964e-05,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings half_step, Z=1",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval half_step, Z=22",
+      "metric": 0.0,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment half_step, Z=22",
+      "metric": 3.8210043773467817e-07,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance half_step, Z=22",
+      "metric": 0.0006883210731156719,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance half_step, Z=22",
+      "metric": 0.0010568261204606522,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error half_step, Z=22",
+      "metric": 1.724846581652173e-05,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings half_step, Z=22",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval independent, Z=1",
+      "metric": 2.220446049250313e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment independent, Z=1",
+      "metric": 1.9132095077090128e-05,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance independent, Z=1",
+      "metric": 0.00012008768197402375,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance independent, Z=1",
+      "metric": 0.00016315220333207314,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error independent, Z=1",
+      "metric": 0.0003442476669039962,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings independent, Z=1",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval independent, Z=22",
+      "metric": 1.1102230246251565e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment independent, Z=22",
+      "metric": 1.529259366472857e-06,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance independent, Z=22",
+      "metric": 0.0003152761582323471,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance independent, Z=22",
+      "metric": 0.0002473825800124452,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error independent, Z=22",
+      "metric": 6.833327537947298e-05,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings independent, Z=22",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval refined, Z=1",
+      "metric": 0.0,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment refined, Z=1",
+      "metric": 1.912716968366368e-05,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance refined, Z=1",
+      "metric": 4.9551609157427734e-05,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance refined, Z=1",
+      "metric": 6.502904277172483e-06,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error refined, Z=1",
+      "metric": 0.0004890641807246965,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings refined, Z=1",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval refined, Z=22",
+      "metric": 1.1102230246251565e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment refined, Z=22",
+      "metric": 1.5298083937409501e-06,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance refined, Z=22",
+      "metric": 0.00013715571252581604,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance refined, Z=22",
+      "metric": 0.00010491518644561992,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error refined, Z=22",
+      "metric": 8.600387978674462e-05,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings refined, Z=22",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval refined_independent, Z=1",
+      "metric": 2.220446049250313e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment refined_independent, Z=1",
+      "metric": 1.913165580313958e-05,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance refined_independent, Z=1",
+      "metric": 0.00027058731657492174,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance refined_independent, Z=1",
+      "metric": 8.428428284967815e-05,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error refined_independent, Z=1",
+      "metric": 0.0003442476669039962,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings refined_independent, Z=1",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Spectral Parseval refined_independent, Z=22",
+      "metric": 2.220446049250313e-16,
+      "upper_limit": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "Independent velocity second spectral moment refined_independent, Z=22",
+      "metric": 1.5277571066008022e-06,
+      "upper_limit": 3e-05,
+      "passed": true
+    },
+    {
+      "name": "Canonical velocity variance refined_independent, Z=22",
+      "metric": 0.0001248923311764072,
+      "upper_limit": 0.01,
+      "passed": true
+    },
+    {
+      "name": "Stationary spatial variance refined_independent, Z=22",
+      "metric": 4.299933138995904e-05,
+      "upper_limit": 0.006,
+      "passed": true
+    },
+    {
+      "name": "Rotating energy error refined_independent, Z=22",
+      "metric": 6.833327537947298e-05,
+      "upper_limit": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "No sampled wall crossings refined_independent, Z=22",
+      "metric": 0.0,
+      "upper_limit": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Broad-band orbit step refinement Z=1, (-1570000000.0, -1400000000.0)",
+      "metric": 4.418775144787723e-06,
+      "upper_limit": 0.003,
+      "passed": true
+    },
+    {
+      "name": "Broad-band independent 16384-particle ensembles Z=1, (-1570000000.0, -1400000000.0)",
+      "metric": 0.003782122882025507,
+      "upper_limit": 0.12,
+      "passed": true
+    },
+    {
+      "name": "Broad-band orbit step refinement Z=1, (-1400000000.0, -800000000.0)",
+      "metric": 2.7630931491495758e-05,
+      "upper_limit": 0.003,
+      "passed": true
+    },
+    {
+      "name": "Broad-band independent 16384-particle ensembles Z=1, (-1400000000.0, -800000000.0)",
+      "metric": 0.005821403896292043,
+      "upper_limit": 0.12,
+      "passed": true
+    },
+    {
+      "name": "Broad-band orbit step refinement Z=1, (-800000000.0, -140000000.0)",
+      "metric": 0.00014943491359864502,
+      "upper_limit": 0.003,
+      "passed": true
+    },
+    {
+      "name": "Broad-band independent 16384-particle ensembles Z=1, (-800000000.0, -140000000.0)",
+      "metric": 0.04544608727855226,
+      "upper_limit": 0.12,
+      "passed": true
+    },
+    {
+      "name": "Nonlinear source energy second-order convergence Z=1",
+      "metric": 7.635067433575671e-05,
+      "upper_limit": 0.05,
+      "passed": true
+    },
+    {
+      "name": "Broad-band orbit step refinement Z=22, (-1570000000.0, -1400000000.0)",
+      "metric": 3.0117473388546756e-06,
+      "upper_limit": 0.003,
+      "passed": true
+    },
+    {
+      "name": "Broad-band independent 16384-particle ensembles Z=22, (-1570000000.0, -1400000000.0)",
+      "metric": 0.05816415250697626,
+      "upper_limit": 0.12,
+      "passed": true
+    },
+    {
+      "name": "Broad-band orbit step refinement Z=22, (-1400000000.0, -800000000.0)",
+      "metric": 2.345424416350106e-06,
+      "upper_limit": 0.003,
+      "passed": true
+    },
+    {
+      "name": "Broad-band independent 16384-particle ensembles Z=22, (-1400000000.0, -800000000.0)",
+      "metric": 0.001647701958378045,
+      "upper_limit": 0.12,
+      "passed": true
+    },
+    {
+      "name": "Broad-band orbit step refinement Z=22, (-800000000.0, -140000000.0)",
+      "metric": 4.712130741602039e-06,
+      "upper_limit": 0.003,
+      "passed": true
+    },
+    {
+      "name": "Broad-band independent 16384-particle ensembles Z=22, (-800000000.0, -140000000.0)",
+      "metric": 0.0031689689881695404,
+      "upper_limit": 0.12,
+      "passed": true
+    },
+    {
+      "name": "Nonlinear source energy second-order convergence Z=22",
+      "metric": 0.0002172027804587806,
+      "upper_limit": 0.05,
+      "passed": true
+    }
+  ],
+  "details": {
+    "harmonic_orbits": [
+      {
+        "frequency": 0.24161984870956632,
+        "errors": [
+          2.2156061888958123e-05,
+          5.539000408428939e-06
+        ]
+      },
+      {
+        "frequency": -1.2416198487095662,
+        "errors": [
+          2.2156061893536743e-05,
+          5.5390004004734825e-06
+        ]
+      }
+    ],
+    "forced_harmonic": {
+      "energy": 0.02036250865086716,
+      "spectral_prediction": 0.020362508596047373
+    },
+    "finite_offset_force_coefficients": [
+      18699233.703570396,
+      18699243.833719812
+    ],
+    "broad_bands": [
+      {
+        "Z": 1,
+        "lab_frequency_band": [
+          -1570000000.0,
+          -1400000000.0
+        ],
+        "integrals": {
+          "reference": 46094.83451397949,
+          "half_step": 46094.630831270435,
+          "independent": 45513.42606171726,
+          "refined": 47820.99184786884,
+          "refined_independent": 47640.12698035986
+        },
+        "step_relative_change": 4.418775144787723e-06,
+        "seed_relative_change": 0.003782122882025507,
+        "initial_4096_seed_relative_change": 0.012613310328425165,
+        "reference_population_refinement_relative_change": 0.037447955982266246
+      },
+      {
+        "Z": 1,
+        "lab_frequency_band": [
+          -1400000000.0,
+          -800000000.0
+        ],
+        "integrals": {
+          "reference": 164816.91294363132,
+          "half_step": 164812.35889880115,
+          "independent": 163909.02574021366,
+          "refined": 162205.53584680092,
+          "refined_independent": 163149.79978517964
+        },
+        "step_relative_change": 2.7630931491495758e-05,
+        "seed_relative_change": 0.005821403896292043,
+        "initial_4096_seed_relative_change": 0.005508458975494568,
+        "reference_population_refinement_relative_change": 0.015844108776163712
+      },
+      {
+        "Z": 1,
+        "lab_frequency_band": [
+          -800000000.0,
+          -140000000.0
+        ],
+        "integrals": {
+          "reference": 10702.745553385232,
+          "half_step": 10701.146189528194,
+          "independent": 12962.46684252232,
+          "refined": 12443.576761335244,
+          "refined_independent": 11878.064885782238
+        },
+        "step_relative_change": 0.00014943491359864502,
+        "seed_relative_change": 0.04544608727855226,
+        "initial_4096_seed_relative_change": 0.21113472966965463,
+        "reference_population_refinement_relative_change": 0.16265276972780085
+      },
+      {
+        "Z": 22,
+        "lab_frequency_band": [
+          -1570000000.0,
+          -1400000000.0
+        ],
+        "integrals": {
+          "reference": 7987.31968954059,
+          "half_step": 7987.295633751771,
+          "independent": 8400.875259399494,
+          "refined": 7914.807360297934,
+          "refined_independent": 8375.165422665641
+        },
+        "step_relative_change": 3.0117473388546756e-06,
+        "seed_relative_change": 0.05816415250697626,
+        "initial_4096_seed_relative_change": 0.05177651401639216,
+        "reference_population_refinement_relative_change": 0.009078430820492978
+      },
+      {
+        "Z": 22,
+        "lab_frequency_band": [
+          -1400000000.0,
+          -800000000.0
+        ],
+        "integrals": {
+          "reference": 20010.762740676128,
+          "half_step": 20010.715806944605,
+          "independent": 19458.34136797983,
+          "refined": 19946.44377864724,
+          "refined_independent": 19979.309573123996
+        },
+        "step_relative_change": 2.345424416350106e-06,
+        "seed_relative_change": 0.001647701958378045,
+        "initial_4096_seed_relative_change": 0.027606212709392897,
+        "reference_population_refinement_relative_change": 0.0032142184114823946
+      },
+      {
+        "Z": 22,
+        "lab_frequency_band": [
+          -800000000.0,
+          -140000000.0
+        ],
+        "integrals": {
+          "reference": 13448.426071371983,
+          "half_step": 13448.362700630067,
+          "independent": 13629.481395868774,
+          "refined": 13275.723762474141,
+          "refined_independent": 13317.794119372928
+        },
+        "step_relative_change": 4.712130741602039e-06,
+        "seed_relative_change": 0.0031689689881695404,
+        "initial_4096_seed_relative_change": 0.013462937858743862,
+        "reference_population_refinement_relative_change": 0.012841823123486362
+      }
+    ]
+  }
+}

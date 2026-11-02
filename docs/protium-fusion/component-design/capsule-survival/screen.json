@@ -1,0 +1,1264 @@
+{
+  "schema": "capsule-survival-v1",
+  "scope": "Bounded sealed capsule thermodynamics and elastic stress, no material qualification or changed pulse simulation",
+  "constants": {
+    "inner_radius_m": 0.01,
+    "wall_T_K": 1000.0,
+    "R_m": 1100000000.0,
+    "speed_m_s": 2400000.0,
+    "flight_time_s": 458.3333333333333,
+    "absorptivity_reference": 0.02182,
+    "surface_field_V_m": 1000000000.0,
+    "electrostatic_pressure_Pa": 4427093.906400001,
+    "carbon_shell_density_kg_m3": 2000.0,
+    "Al_optical_coat_m": 1e-07
+  },
+  "nonmethane": {
+    "A_NH3": {
+      "cold_reference": {
+        "rho": 850.0,
+        "T": 150.0,
+        "M_per_catalyst": 17.0,
+        "fill": 0.8,
+        "pressure": 6060.0,
+        "latent_J_mol": 5650.0,
+        "molecular_mass_kg_mol": 0.017,
+        "Tm": 194.95
+      },
+      "IR_J_kg_core": 250184.42427359923,
+      "electric_J_kg_core": 19531.296645882354,
+      "total_J_kg_core": 269715.7209194816,
+      "shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 6060.0,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.002226440933246,
+          "thickness_m": 2.226440933245977e-05,
+          "carbon_skin_kg_per_core_kg": 0.019688838099943755,
+          "carbon_mass_fraction": 0.019308672767891936,
+          "aluminum_kg_per_core_kg": 0.00011964865434024033,
+          "reconstructed_max_hoop_Pa": 1000000000.0000118,
+          "thin_shell_mass_ratio": 0.019558031940000005,
+          "C12_atoms_per_native_catalyst": 0.027892520641586985,
+          "charge_energy_J_per_kg_carbon_skin": 991998.4382388795
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 6060.0,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0002217558759947,
+          "thickness_m": 2.2175587599471134e-06,
+          "carbon_skin_kg_per_core_kg": 0.0019571034291020277,
+          "carbon_mass_fraction": 0.001953280656830546,
+          "aluminum_kg_per_core_kg": 0.00011917048299285338,
+          "reconstructed_max_hoop_Pa": 10000000000.000448,
+          "thin_shell_mass_ratio": 0.0019558031940000004,
+          "C12_atoms_per_native_catalyst": 0.0027725631912278725,
+          "charge_energy_J_per_kg_carbon_skin": 9979695.684680212
+        }
+      },
+      "fusion_energy_J_kg": 332352.94117647054,
+      "melt_fraction_upper_ignoring_sensible_heat": 0.811534027545343,
+      "bulk_equilibrium_T_upper_K": 194.95,
+      "sensible_150K_to_melt_J_kg_primary_Cp": 117316.30444941172,
+      "estimated_melt_fraction_with_primary_Cp": 0.4585469168125997,
+      "liquid_density_reference_195p5K": 733.8429155197397,
+      "cavity_fraction_if_all_liquid": 0.9266288269859418
+    },
+    "B1_N15hydrazine": {
+      "cold_reference": {
+        "rho": 1062.5,
+        "T": 250.0,
+        "M_per_catalyst": 17.0,
+        "fill": 0.8,
+        "pressure": 319.0,
+        "latent_J_mol": 12657.0,
+        "molecular_mass_kg_mol": 0.034,
+        "Tm": 274.69
+      },
+      "IR_J_kg_core": 200147.5394188794,
+      "electric_J_kg_core": 15625.037316705882,
+      "total_J_kg_core": 215772.5767355853,
+      "shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 319.0,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.0022235576402576,
+          "thickness_m": 2.2235576402576117e-05,
+          "carbon_skin_kg_per_core_kg": 0.015730627153516252,
+          "carbon_mass_fraction": 0.015487006823452557,
+          "aluminum_kg_per_core_kg": 9.571837272778431e-05,
+          "reconstructed_max_hoop_Pa": 1000000000.0000241,
+          "thin_shell_mass_ratio": 0.015626163199058827,
+          "C12_atoms_per_native_catalyst": 0.022285055134148024,
+          "charge_energy_J_per_kg_carbon_skin": 993287.6270106772
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 319.0,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0002214686988304,
+          "thickness_m": 2.214686988304404e-06,
+          "carbon_skin_kg_per_core_kg": 0.0015636547117830698,
+          "carbon_mass_fraction": 0.001561213512917497,
+          "aluminum_kg_per_core_kg": 9.533633164956432e-05,
+          "reconstructed_max_hoop_Pa": 10000000000.000273,
+          "thin_shell_mass_ratio": 0.0015626163199058826,
+          "C12_atoms_per_native_catalyst": 0.002215177508359349,
+          "charge_energy_J_per_kg_carbon_skin": 9992639.167050064
+        }
+      },
+      "fusion_energy_J_kg": 372264.7058823529,
+      "melt_fraction_upper_ignoring_sensible_heat": 0.5796213643841274,
+      "bulk_equilibrium_T_upper_K": 274.69
+    },
+    "B2_CH2": {
+      "cold_reference": {
+        "rho": 944.2,
+        "T": 300.0,
+        "M_per_catalyst": 14.0,
+        "fill": 0.8,
+        "pressure": 1000000.0
+      },
+      "IR_J_kg_core": 225224.27518805265,
+      "electric_J_kg_core": 17582.717802372375,
+      "total_J_kg_core": 242806.99299042503,
+      "shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 1000000.0,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.0027256269808698,
+          "thickness_m": 2.7256269808697554e-05,
+          "carbon_skin_kg_per_core_kg": 0.021709352676139156,
+          "carbon_mass_fraction": 0.021248070813168502,
+          "aluminum_kg_per_core_kg": 0.00010781899137277381,
+          "reconstructed_max_hoop_Pa": 1000000000.0000001,
+          "thin_shell_mass_ratio": 0.021554333985384453,
+          "C12_atoms_per_native_catalyst": 0.02532757812216235,
+          "charge_energy_J_per_kg_carbon_skin": 809914.4209720088,
+          "effective_H_per_C_same_isotope_skin": 1.950596124277573
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 1000000.0,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.000271474893135,
+          "thickness_m": 2.714748931349487e-06,
+          "carbon_skin_kg_per_core_kg": 0.0021569736159318315,
+          "carbon_mass_fraction": 0.0021523310945481414,
+          "aluminum_kg_per_core_kg": 0.000107291867324555,
+          "reconstructed_max_hoop_Pa": 10000000000.000528,
+          "thin_shell_mass_ratio": 0.0021554333985384453,
+          "C12_atoms_per_native_catalyst": 0.002516469218587137,
+          "charge_energy_J_per_kg_carbon_skin": 8151568.323554336,
+          "effective_H_per_C_same_isotope_skin": 1.9949796950058116
+        }
+      },
+      "polymer_phase_scenarios": [
+        {
+          "initial_crystallinity": 0.25,
+          "Cp_J_kg_K": 1600.0,
+          "Tm_K": 400.0,
+          "pure_crystal_latent_J_kg": 281000.0,
+          "temperature_K": 407.8481206190156,
+          "melted_mass_fraction": 0.25,
+          "scope": "Piecewise screening model, phase-dependent measured capsule enthalpy and expansion still needed"
+        },
+        {
+          "initial_crystallinity": 0.5,
+          "Cp_J_kg_K": 1600.0,
+          "Tm_K": 400.0,
+          "pure_crystal_latent_J_kg": 281000.0,
+          "temperature_K": 400.0,
+          "melted_mass_fraction": 0.29468680779510686,
+          "scope": "Piecewise screening model, phase-dependent measured capsule enthalpy and expansion still needed"
+        },
+        {
+          "initial_crystallinity": 1.0,
+          "Cp_J_kg_K": 1600.0,
+          "Tm_K": 400.0,
+          "pure_crystal_latent_J_kg": 281000.0,
+          "temperature_K": 400.0,
+          "melted_mass_fraction": 0.29468680779510686,
+          "scope": "Piecewise screening model, phase-dependent measured capsule enthalpy and expansion still needed"
+        }
+      ]
+    },
+    "C13_CH2": {
+      "cold_reference": {
+        "rho": 1011.6428571428571,
+        "T": 300.0,
+        "M_per_catalyst": 15.0,
+        "fill": 0.8,
+        "pressure": 1000000.0
+      },
+      "IR_J_kg_core": 210209.32350884922,
+      "electric_J_kg_core": 16410.536615547553,
+      "total_J_kg_core": 226619.86012439677,
+      "shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 1000000.0,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.0027256269808698,
+          "thickness_m": 2.7256269808697554e-05,
+          "carbon_skin_kg_per_core_kg": 0.020262062497729882,
+          "carbon_mass_fraction": 0.019859664729790897,
+          "aluminum_kg_per_core_kg": 0.00010063105861458891,
+          "reconstructed_max_hoop_Pa": 1000000000.0000001,
+          "thin_shell_mass_ratio": 0.02011737838635883,
+          "C12_atoms_per_native_catalyst": 0.025327578122162353,
+          "charge_energy_J_per_kg_carbon_skin": 809914.4209720088,
+          "effective_H_per_C_same_isotope_skin": 1.9543096038464796
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 1000000.0,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.000271474893135,
+          "thickness_m": 2.714748931349487e-06,
+          "carbon_skin_kg_per_core_kg": 0.00201317537486971,
+          "carbon_mass_fraction": 0.0020091306425352616,
+          "aluminum_kg_per_core_kg": 0.00010013907616958469,
+          "reconstructed_max_hoop_Pa": 10000000000.000528,
+          "thin_shell_mass_ratio": 0.002011737838635883,
+          "C12_atoms_per_native_catalyst": 0.002516469218587137,
+          "charge_energy_J_per_kg_carbon_skin": 8151568.323554336,
+          "effective_H_per_C_same_isotope_skin": 1.9953649773427724
+        }
+      },
+      "polymer_phase_scope": "Same molecular thermodynamics approximately scaled14/15 perkg; use B2 scenarios as adjacent isotope reference, not isotope-specific calorimetry.",
+      "precooling_20_to300K_enthalpy_bounds_J_kg": [
+        251066.66666666666,
+        281866.6666666667
+      ],
+      "precooling_20_to300K_dose_fraction_of_lower_bound": 0.9026282267302049
+    }
+  },
+  "methane": [
+    {
+      "fill": 1.0,
+      "free_path_fraction": 0.2,
+      "IR_J_kg_core": 72946.71140551413,
+      "electric_J_kg_core": 28473.87210333646,
+      "total_J_kg_core": 101420.58350885058,
+      "temperature_K": 153.684358382283,
+      "pressure_Pa": 89404946.11840406,
+      "initial_pressure_Pa": 4502378.683946696,
+      "natural_density_kg_m3": 439.0,
+      "isotope_density_kg_m3": 466.4375,
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 2.4126749850896336e-15,
+      "mechanical_only_shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 89404946.11840406,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.047192990141931,
+          "thickness_m": 0.00047192990141931013,
+          "carbon_skin_kg_per_core_kg": 0.6361650278368848,
+          "carbon_mass_fraction": 0.3888147081825455,
+          "aluminum_kg_per_core_kg": 0.00019043422933789472,
+          "reconstructed_max_hoop_Pa": 999999999.9999993,
+          "thin_shell_mass_ratio": 0.6035023343414974,
+          "effective_H_per_C_if_C13_skin": 2.183515630999345,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.9012337894355867
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 89404946.11840406,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0046937487143968,
+          "thickness_m": 4.6937487143967615e-05,
+          "carbon_skin_kg_per_core_kg": 0.06066168943727856,
+          "carbon_mass_fraction": 0.05719230744485728,
+          "aluminum_kg_per_core_kg": 0.00017529073418232622,
+          "reconstructed_max_hoop_Pa": 9999999999.99995,
+          "thin_shell_mass_ratio": 0.06035023343414973,
+          "effective_H_per_C_if_C13_skin": 3.7060137009952863,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.08593739336947796
+        }
+      },
+      "geometry_corrected_10GPa": {
+        "fill": 1.0,
+        "free_path_fraction": 0.2,
+        "IR_J_kg_core": 73639.42348749908,
+        "electric_J_kg_core": 28880.421218175405,
+        "total_J_kg_core": 102519.84470567448,
+        "temperature_K": 154.24359147790415,
+        "pressure_Pa": 90266560.50873727,
+        "initial_pressure_Pa": 4502378.683946696,
+        "natural_density_kg_m3": 439.0,
+        "isotope_density_kg_m3": 466.4375,
+        "EOS_within_published_T_P_range": true,
+        "energy_closure_relative": 7.914531839312041e-16,
+        "shell": {
+          "valid": true,
+          "internal_pressure_Pa": 90266560.50873727,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0047368504252039,
+          "thickness_m": 4.736850425203887e-05,
+          "carbon_skin_kg_per_core_kg": 0.06122136756045036,
+          "carbon_mass_fraction": 0.057689535314565756,
+          "aluminum_kg_per_core_kg": 0.00017530577457170796,
+          "reconstructed_max_hoop_Pa": 9999999999.999979,
+          "thin_shell_mass_ratio": 0.060904400534993824,
+          "effective_H_per_C_if_C13_skin": 3.7035023723124763
+        },
+        "iterations": 34,
+        "geometry_fixed_point_error": 7.371880883511039e-13,
+        "scope": "10 GPa only; fixed inner volume, exact outer area, no shell heat capacity; no thermoelastic strain solution"
+      }
+    },
+    {
+      "fill": 0.8,
+      "free_path_fraction": 0.2,
+      "IR_J_kg_core": 91183.38925689265,
+      "electric_J_kg_core": 35592.340129170574,
+      "total_J_kg_core": 126775.72938606323,
+      "temperature_K": 140.12989092281896,
+      "pressure_Pa": 645500.6741179111,
+      "initial_pressure_Pa": 43872.18901595981,
+      "natural_density_kg_m3": 351.20000000000005,
+      "isotope_density_kg_m3": 373.15000000000003,
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 2.9737782489524005e-15,
+      "mechanical_only_shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 645500.6741179111,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.002547586655699,
+          "thickness_m": 2.5475866556989857e-05,
+          "carbon_skin_kg_per_core_kg": 0.04106791957520003,
+          "carbon_mass_fraction": 0.03944787732193063,
+          "aluminum_kg_per_core_kg": 0.00021817830562573349,
+          "reconstructed_max_hoop_Pa": 1000000000.0000104,
+          "thin_shell_mass_ratio": 0.040781947585565415,
+          "effective_H_per_C_if_C13_skin": 3.7961317705940387,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.05817955273153338
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 645500.6741179111,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0002537420739102,
+          "thickness_m": 2.5374207391015703e-06,
+          "carbon_skin_kg_per_core_kg": 0.0040810365439514695,
+          "carbon_mass_fraction": 0.004064449377510808,
+          "aluminum_kg_per_core_kg": 0.00021718105703111794,
+          "reconstructed_max_hoop_Pa": 9999999999.998556,
+          "thin_shell_mass_ratio": 0.004078194758556542,
+          "effective_H_per_C_if_C13_skin": 3.9787663580446595,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.005781468437264581
+        }
+      },
+      "geometry_corrected_10GPa": {
+        "fill": 0.8,
+        "free_path_fraction": 0.2,
+        "IR_J_kg_core": 91229.67561567159,
+        "electric_J_kg_core": 35619.44455391947,
+        "total_J_kg_core": 126849.12016959106,
+        "temperature_K": 140.15080409951955,
+        "pressure_Pa": 646198.0688773062,
+        "initial_pressure_Pa": 43872.18901595981,
+        "natural_density_kg_m3": 351.20000000000005,
+        "isotope_density_kg_m3": 373.15000000000003,
+        "EOS_within_published_T_P_range": true,
+        "energy_closure_relative": 5.66004455865485e-16,
+        "shell": {
+          "valid": true,
+          "internal_pressure_Pa": 646198.0688773062,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0002537769590967,
+          "thickness_m": 2.537769590966743e-06,
+          "carbon_skin_kg_per_core_kg": 0.004081597758909728,
+          "carbon_mass_fraction": 0.004065006039369483,
+          "aluminum_kg_per_core_kg": 0.00021718107218007766,
+          "reconstructed_max_hoop_Pa": 9999999999.998148,
+          "thin_shell_mass_ratio": 0.004078755440394457,
+          "effective_H_per_C_if_C13_skin": 3.9787634535447127
+        },
+        "iterations": 29,
+        "geometry_fixed_point_error": 9.490186414495838e-13,
+        "scope": "10 GPa only; fixed inner volume, exact outer area, no shell heat capacity; no thermoelastic strain solution"
+      }
+    },
+    {
+      "fill": 0.5,
+      "free_path_fraction": 0.2,
+      "IR_J_kg_core": 145893.42281102826,
+      "electric_J_kg_core": 56947.74420667292,
+      "total_J_kg_core": 202841.16701770117,
+      "temperature_K": 157.86722319070077,
+      "pressure_Pa": 1459972.0000364636,
+      "initial_pressure_Pa": 43872.18901595981,
+      "natural_density_kg_m3": 219.5,
+      "isotope_density_kg_m3": 233.21875,
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 4.738323712511572e-16,
+      "mechanical_only_shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 1459972.0000364636,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.0029566394025198,
+          "thickness_m": 2.9566394025197786e-05,
+          "carbon_skin_kg_per_core_kg": 0.07629034289337774,
+          "carbon_mass_fraction": 0.07088267900675145,
+          "aluminum_kg_per_core_kg": 0.0003493702099949052,
+          "reconstructed_max_hoop_Pa": 1000000000.0000018,
+          "thin_shell_mass_ratio": 0.07572803524291846,
+          "effective_H_per_C_if_C13_skin": 3.637142994923512,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.10807798576561846
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 1459972.0000364636,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.000294483683029,
+          "thickness_m": 2.9448368302897875e-06,
+          "carbon_skin_kg_per_core_kg": 0.007578389272244904,
+          "carbon_mass_fraction": 0.007521389256590381,
+          "aluminum_kg_per_core_kg": 0.00034751799922185715,
+          "reconstructed_max_hoop_Pa": 9999999999.998955,
+          "thin_shell_mass_ratio": 0.007572803524291846,
+          "effective_H_per_C_if_C13_skin": 3.9607481879370816,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.010736051469013614
+        }
+      },
+      "geometry_corrected_10GPa": {
+        "fill": 0.5,
+        "free_path_fraction": 0.2,
+        "IR_J_kg_core": 145979.39075962245,
+        "electric_J_kg_core": 56998.08645423714,
+        "total_J_kg_core": 202977.4772138596,
+        "temperature_K": 157.9001036569508,
+        "pressure_Pa": 1461946.7684229296,
+        "initial_pressure_Pa": 43872.18901595981,
+        "natural_density_kg_m3": 219.5,
+        "isotope_density_kg_m3": 233.21875,
+        "EOS_within_published_T_P_range": true,
+        "energy_closure_relative": 1.1047405640488396e-15,
+        "shell": {
+          "valid": true,
+          "internal_pressure_Pa": 1461946.7684229296,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.000294582465197,
+          "thickness_m": 2.9458246519697972e-06,
+          "carbon_skin_kg_per_core_kg": 0.007580932130380434,
+          "carbon_mass_fraction": 0.007523894000605666,
+          "aluminum_kg_per_core_kg": 0.00034751806785881086,
+          "reconstructed_max_hoop_Pa": 10000000000.001644,
+          "thin_shell_mass_ratio": 0.0075753437596543126,
+          "effective_H_per_C_if_C13_skin": 3.96073514664133
+        },
+        "iterations": 30,
+        "geometry_fixed_point_error": 5.535572000781031e-13,
+        "scope": "10 GPa only; fixed inner volume, exact outer area, no shell heat capacity; no thermoelastic strain solution"
+      }
+    },
+    {
+      "fill": 1.0,
+      "free_path_fraction": 1.0,
+      "IR_J_kg_core": 364733.55702757067,
+      "electric_J_kg_core": 28473.87210333646,
+      "total_J_kg_core": 393207.4291309071,
+      "temperature_K": 301.3667220052523,
+      "pressure_Pa": 287424301.15634906,
+      "initial_pressure_Pa": 4502378.683946696,
+      "natural_density_kg_m3": 439.0,
+      "isotope_density_kg_m3": 466.4375,
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 9.132980714880479e-16,
+      "mechanical_only_shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 287424301.15634906,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.1485793991514266,
+          "thickness_m": 0.0014857939915142659,
+          "carbon_skin_kg_per_core_kg": 2.2092808821534327,
+          "carbon_mass_fraction": 0.6884037151248044,
+          "aluminum_kg_per_core_kg": 0.00022909394190767087,
+          "reconstructed_max_hoop_Pa": 999999999.9999999,
+          "thin_shell_mass_ratio": 1.8771093344515553,
+          "effective_H_per_C_if_C13_skin": 1.0285262752066995,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 3.1298145830506967
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 287424301.15634906,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.014601092738145,
+          "thickness_m": 0.00014601092738145027,
+          "carbon_skin_kg_per_core_kg": 0.1905763013338997,
+          "carbon_mass_fraction": 0.16007063228151067,
+          "aluminum_kg_per_core_kg": 0.00017876488397313784,
+          "reconstructed_max_hoop_Pa": 9999999999.99998,
+          "thin_shell_mass_ratio": 0.18771093344515552,
+          "effective_H_per_C_if_C13_skin": 3.2020104442924517,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.2699830935563579
+        }
+      },
+      "geometry_corrected_10GPa": {
+        "fill": 1.0,
+        "free_path_fraction": 1.0,
+        "IR_J_kg_core": 375726.4110241558,
+        "electric_J_kg_core": 29770.801909620266,
+        "total_J_kg_core": 405497.2129337761,
+        "temperature_K": 307.3580298531183,
+        "pressure_Pa": 294552928.5735041,
+        "initial_pressure_Pa": 4502378.683946696,
+        "natural_density_kg_m3": 439.0,
+        "isotope_density_kg_m3": 466.4375,
+        "EOS_within_published_T_P_range": true,
+        "energy_closure_relative": 0.0,
+        "shell": {
+          "valid": true,
+          "internal_pressure_Pa": 294552928.5735041,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0149578362672813,
+          "thickness_m": 0.0001495783626728131,
+          "carbon_skin_kg_per_core_kg": 0.19530190440796902,
+          "carbon_mass_fraction": 0.1633912768713455,
+          "aluminum_kg_per_core_kg": 0.0001788906169881909,
+          "reconstructed_max_hoop_Pa": 10000000000.000017,
+          "thin_shell_mass_ratio": 0.19229587403236498,
+          "effective_H_per_C_if_C13_skin": 3.186248665474173
+        },
+        "iterations": 36,
+        "geometry_fixed_point_error": 9.71001057337162e-13,
+        "scope": "10 GPa only; fixed inner volume, exact outer area, no shell heat capacity; no thermoelastic strain solution"
+      }
+    },
+    {
+      "fill": 0.8,
+      "free_path_fraction": 1.0,
+      "IR_J_kg_core": 455916.9462844632,
+      "electric_J_kg_core": 35592.340129170574,
+      "total_J_kg_core": 491509.2864136338,
+      "temperature_K": 327.88770779637014,
+      "pressure_Pa": 130440893.35442747,
+      "initial_pressure_Pa": 43872.18901595981,
+      "natural_density_kg_m3": 351.20000000000005,
+      "isotope_density_kg_m3": 373.15000000000003,
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 1.1872063742383508e-16,
+      "mechanical_only_shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 130440893.35442747,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.0679353428760898,
+          "thickness_m": 0.0006793534287608983,
+          "carbon_skin_kg_per_core_kg": 1.1682443896142711,
+          "carbon_mass_fraction": 0.5387973769055161,
+          "aluminum_kg_per_core_kg": 0.0002475662806422982,
+          "reconstructed_max_hoop_Pa": 999999999.9999992,
+          "thin_shell_mass_ratio": 1.0842930772678074,
+          "effective_H_per_C_if_C13_skin": 1.58246364315349,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 1.6550128852868842
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 130440893.35442747,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0067465900769765,
+          "thickness_m": 6.746590076976533e-05,
+          "carbon_skin_kg_per_core_kg": 0.10921413235935444,
+          "carbon_mass_fraction": 0.09846081939746879,
+          "aluminum_kg_per_core_kg": 0.00022000973985571805,
+          "reconstructed_max_hoop_Pa": 9999999999.99996,
+          "thin_shell_mass_ratio": 0.10842930772678075,
+          "effective_H_per_C_if_C13_skin": 3.5001184066241624,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.1547200208424188
+        }
+      },
+      "geometry_corrected_10GPa": {
+        "fill": 0.8,
+        "free_path_fraction": 1.0,
+        "IR_J_kg_core": 462201.7610227893,
+        "electric_J_kg_core": 36330.83120603418,
+        "total_J_kg_core": 498532.59222882346,
+        "temperature_K": 331.49473084448834,
+        "pressure_Pa": 132885956.0808933,
+        "initial_pressure_Pa": 43872.18901595981,
+        "natural_density_kg_m3": 351.20000000000005,
+        "isotope_density_kg_m3": 373.15000000000003,
+        "EOS_within_published_T_P_range": true,
+        "energy_closure_relative": 1.1694079064838261e-16,
+        "shell": {
+          "valid": true,
+          "internal_pressure_Pa": 132885956.0808933,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.006868908646112,
+          "thickness_m": 6.868908646112005e-05,
+          "carbon_skin_kg_per_core_kg": 0.11120780246283885,
+          "carbon_mass_fraction": 0.10007831317991296,
+          "aluminum_kg_per_core_kg": 0.0002200632049713392,
+          "reconstructed_max_hoop_Pa": 10000000000.000038,
+          "thin_shell_mass_ratio": 0.11039505559744871,
+          "effective_H_per_C_if_C13_skin": 3.492151775268917
+        },
+        "iterations": 35,
+        "geometry_fixed_point_error": 7.154277170684509e-13,
+        "scope": "10 GPa only; fixed inner volume, exact outer area, no shell heat capacity; no thermoelastic strain solution"
+      }
+    },
+    {
+      "fill": 0.5,
+      "free_path_fraction": 1.0,
+      "IR_J_kg_core": 729467.1140551413,
+      "electric_J_kg_core": 56947.74420667292,
+      "total_J_kg_core": 786414.8582618142,
+      "temperature_K": 425.48586394700214,
+      "pressure_Pa": 63110219.57691104,
+      "initial_pressure_Pa": 43872.18901595981,
+      "natural_density_kg_m3": 219.5,
+      "isotope_density_kg_m3": 233.21875,
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 0.0,
+      "mechanical_only_shells": {
+        "1000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 63110219.57691104,
+          "allowable_Pa": 1000000000.0,
+          "outer_inner_radius_ratio": 1.0339444360660779,
+          "thickness_m": 0.0003394443606607789,
+          "carbon_skin_kg_per_core_kg": 0.9032643733557532,
+          "carbon_mass_fraction": 0.4745869181395734,
+          "aluminum_kg_per_core_kg": 0.00037129231181726164,
+          "reconstructed_max_hoop_Pa": 1000000000.0000001,
+          "thin_shell_mass_ratio": 0.8687635125817849,
+          "effective_H_per_C_if_C13_skin": 1.8338597579560065,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 1.2796245289206503
+        },
+        "10000000000": {
+          "valid": true,
+          "internal_pressure_Pa": 63110219.57691104,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0033783869690154,
+          "thickness_m": 3.378386969015379e-05,
+          "carbon_skin_kg_per_core_kg": 0.08720945431529821,
+          "carbon_mass_fraction": 0.08021403232758025,
+          "aluminum_kg_per_core_kg": 0.00034966409511396485,
+          "reconstructed_max_hoop_Pa": 9999999999.999804,
+          "thin_shell_mass_ratio": 0.08687635125817848,
+          "effective_H_per_C_if_C13_skin": 3.5905252526319518,
+          "natural_C12_atoms_per_core_C13_if_C12_skin": 0.12354672694667246
+        }
+      },
+      "geometry_corrected_10GPa": {
+        "fill": 0.5,
+        "free_path_fraction": 1.0,
+        "IR_J_kg_core": 734451.2586556285,
+        "electric_J_kg_core": 57532.390317210986,
+        "total_J_kg_core": 791983.6489728396,
+        "temperature_K": 428.1353123014746,
+        "pressure_Pa": 63751697.85535351,
+        "initial_pressure_Pa": 43872.18901595981,
+        "natural_density_kg_m3": 219.5,
+        "isotope_density_kg_m3": 233.21875,
+        "EOS_within_published_T_P_range": true,
+        "energy_closure_relative": 0.0,
+        "shell": {
+          "valid": true,
+          "internal_pressure_Pa": 63751697.85535351,
+          "allowable_Pa": 10000000000.0,
+          "outer_inner_radius_ratio": 1.0034104758264406,
+          "thickness_m": 3.410475826440607e-05,
+          "carbon_skin_kg_per_core_kg": 0.08804061580667988,
+          "carbon_mass_fraction": 0.08091666296979735,
+          "aluminum_kg_per_core_kg": 0.0003496864605562707,
+          "reconstructed_max_hoop_Pa": 9999999999.999922,
+          "thin_shell_mass_ratio": 0.08770151425872084,
+          "effective_H_per_C_if_C13_skin": 3.587025611964694
+        },
+        "iterations": 34,
+        "geometry_fixed_point_error": 5.355715870791755e-13,
+        "scope": "10 GPa only; fixed inner volume, exact outer area, no shell heat capacity; no thermoelastic strain solution"
+      }
+    }
+  ],
+  "ethane_100K_comparator": [
+    {
+      "fill": 1.0,
+      "initial_T_K": 100.0,
+      "natural_liquid_density_kg_m3": 640.9485188002081,
+      "isotope_liquid_density_kg_m3": 683.6784200535553,
+      "IR_J_kg_core": 258542.27356528165,
+      "electric_J_kg_core": 20573.562424795007,
+      "total_J_kg_core": 279115.83599007665,
+      "temperature_K": 279.4553923338673,
+      "pressure_Pa": 381546406.1604682,
+      "shell": {
+        "valid": true,
+        "internal_pressure_Pa": 381546406.1604682,
+        "allowable_Pa": 10000000000.0,
+        "outer_inner_radius_ratio": 1.0193119768879433,
+        "thickness_m": 0.00019311976887943284,
+        "carbon_skin_kg_per_core_kg": 0.17277710904575527,
+        "carbon_mass_fraction": 0.14732305713771776,
+        "aluminum_kg_per_core_kg": 0.00012309698088439191,
+        "reconstructed_max_hoop_Pa": 9999999999.999985,
+        "thin_shell_mass_ratio": 0.16936624972160158,
+        "effective_H_per_C_if_C13_skin": 2.473923303019521
+      },
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 2.7458348440452355e-15,
+      "isotope_scaling": "32/30 density and30/32 specificenergy; no isotope-specific EOS",
+      "scope": "New 100K liquid recipe; no matching FEOS entropy map or hydro run."
+    },
+    {
+      "fill": 0.8,
+      "initial_T_K": 100.0,
+      "natural_liquid_density_kg_m3": 640.9485188002081,
+      "isotope_liquid_density_kg_m3": 683.6784200535553,
+      "IR_J_kg_core": 313237.2865313048,
+      "electric_J_kg_core": 24539.591364602304,
+      "total_J_kg_core": 337776.87789590715,
+      "temperature_K": 275.90891368462763,
+      "pressure_Pa": 65804114.05844911,
+      "shell": {
+        "valid": true,
+        "internal_pressure_Pa": 65804114.05844911,
+        "allowable_Pa": 10000000000.0,
+        "outer_inner_radius_ratio": 1.0035131445431793,
+        "thickness_m": 3.513144543179303e-05,
+        "carbon_skin_kg_per_core_kg": 0.03867499409419517,
+        "carbon_mass_fraction": 0.037234933269884626,
+        "aluminum_kg_per_core_kg": 0.00014913833525445413,
+        "reconstructed_max_hoop_Pa": 10000000000.00011,
+        "thin_shell_mass_ratio": 0.03852206273346371,
+        "effective_H_per_C_if_C13_skin": 2.863688450568197
+      },
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 3.56522853486408e-16,
+      "isotope_scaling": "32/30 density and30/32 specificenergy; no isotope-specific EOS",
+      "scope": "New 100K liquid recipe; no matching FEOS entropy map or hydro run."
+    },
+    {
+      "fill": 0.5,
+      "initial_T_K": 100.0,
+      "natural_liquid_density_kg_m3": 640.9485188002081,
+      "isotope_liquid_density_kg_m3": 683.6784200535553,
+      "IR_J_kg_core": 498365.1842455147,
+      "electric_J_kg_core": 38933.07423600293,
+      "total_J_kg_core": 537298.2584815177,
+      "temperature_K": 320.08853570354836,
+      "pressure_Pa": 9396050.521081898,
+      "shell": {
+        "valid": true,
+        "internal_pressure_Pa": 9396050.521081898,
+        "allowable_Pa": 10000000000.0,
+        "outer_inner_radius_ratio": 1.0006914635590136,
+        "thickness_m": 6.914635590136164e-06,
+        "carbon_skin_kg_per_core_kg": 0.01214503961112335,
+        "carbon_mass_fraction": 0.011999307545675075,
+        "aluminum_kg_per_core_kg": 0.0002372813107603323,
+        "reconstructed_max_hoop_Pa": 10000000000.000816,
+        "thin_shell_mass_ratio": 0.012131268756207698,
+        "effective_H_per_C_if_C13_skin": 2.9558172097287434
+      },
+      "EOS_within_published_T_P_range": true,
+      "energy_closure_relative": 0.0,
+      "isotope_scaling": "32/30 density and30/32 specificenergy; no isotope-specific EOS",
+      "scope": "New 100K liquid recipe; no matching FEOS entropy map or hydro run."
+    }
+  ],
+  "protected_tube_examples": [
+    {
+      "free_path_fraction": 0.2,
+      "tip_radius_m": 220000000.0,
+      "outlet_count": 100000.0,
+      "bore_radius_m": 250.0,
+      "projected_intercepted_pulse_fraction": 3.228305785123967e-08,
+      "total_outer_cylindrical_area_m2": 1.3823007675795088e+17,
+      "tube_area_per_receiver_area": 0.00909090909090909,
+      "C13_kinetic_fluence_J_m2": 1264108717.459119,
+      "C13_advected_internal_upper_fluence_J_m2": 63606609.752805755,
+      "C13_prompt_fluence_J_m2": 1703005.4174050915,
+      "C13_peak_kinetic_flux_W_m2": 121343379.59547715,
+      "C13_kinetic_intercepted_energy_J": 2.48207166256774e+19,
+      "mass_equivalent_per_receiver_m2_at10_and100kg_per_tube_m2": [
+        0.09090909090909091,
+        0.9090909090909091
+      ],
+      "insulation_heat_per_receiver_m2_at1_and10W_per_tube_m2": [
+        0.00909090909090909,
+        0.09090909090909091
+      ],
+      "scope": "Radially aligned tip/disks only, no claim that sidewalls, permanent holes, shutter timing, support or local stopping are qualified. Hot exterior/cold interior with separately budgeted insulation."
+    },
+    {
+      "free_path_fraction": 0.5,
+      "tip_radius_m": 550000000.0,
+      "outlet_count": 100000.0,
+      "bore_radius_m": 250.0,
+      "projected_intercepted_pulse_fraction": 5.165289256198347e-09,
+      "total_outer_cylindrical_area_m2": 8.63937979737193e+16,
+      "tube_area_per_receiver_area": 0.005681818181818181,
+      "C13_kinetic_fluence_J_m2": 202257394.79345906,
+      "C13_advected_internal_upper_fluence_J_m2": 10177057.56044892,
+      "C13_prompt_fluence_J_m2": 272480.8667848146,
+      "C13_peak_kinetic_flux_W_m2": 7765976.294110535,
+      "C13_kinetic_intercepted_energy_J": 3.9713146601083837e+18,
+      "mass_equivalent_per_receiver_m2_at10_and100kg_per_tube_m2": [
+        0.05681818181818181,
+        0.5681818181818181
+      ],
+      "insulation_heat_per_receiver_m2_at1_and10W_per_tube_m2": [
+        0.005681818181818181,
+        0.05681818181818181
+      ],
+      "scope": "Radially aligned tip/disks only, no claim that sidewalls, permanent holes, shutter timing, support or local stopping are qualified. Hot exterior/cold interior with separately budgeted insulation."
+    }
+  ],
+  "pressure_limited_methane_paths": [
+    {
+      "fill": 1.0,
+      "pressure_cap_Pa": 30000000.0,
+      "temperature_at_cap_K": 116.9951425863809,
+      "allowed_core_heat_J_kg": 28984.06087665568,
+      "electric_retention_fraction": 1.0,
+      "maximum_free_path_fraction": 0.0013987985571633432,
+      "maximum_free_path_m": 1538678.4128796775,
+      "scope": "Thin geometry reference; pressure cap chosen, not a survival ceiling"
+    },
+    {
+      "fill": 0.8,
+      "pressure_cap_Pa": 30000000.0,
+      "temperature_at_cap_K": 189.55563794784229,
+      "allowed_core_heat_J_kg": 238450.57516580488,
+      "electric_retention_fraction": 1.0,
+      "maximum_free_path_fraction": 0.444945590835888,
+      "maximum_free_path_m": 489440149.9194768,
+      "scope": "Thin geometry reference; pressure cap chosen, not a survival ceiling"
+    },
+    {
+      "fill": 0.5,
+      "pressure_cap_Pa": 30000000.0,
+      "temperature_at_cap_K": 291.6666015427036,
+      "allowed_core_heat_J_kg": 531196.333579063,
+      "electric_retention_fraction": 1.0,
+      "maximum_free_path_fraction": 0.6501301843972379,
+      "maximum_free_path_m": 715143202.8369617,
+      "scope": "Thin geometry reference; pressure cap chosen, not a survival ceiling"
+    }
+  ],
+  "shell_inventory_scale": {
+    "1000000000": {
+      "gross_shell_carbon_kg_per_fresh_H_kg": {
+        "n14": 0.09650765352132375,
+        "n15": 0.08189832706296149,
+        "c12": 0.08940269511761365
+      },
+      "subtotal_excluding_methane": 0.2678086757018989,
+      "maximum_terminal_shell_loss_fraction_if_entire_remaining_budget_allocated": 0.024956866003651896,
+      "scope": "Inventory scale only against unchanged source128 fuel flows. Skins change actual inputs; this is not a re-solved isotope ledger or full material allowance."
+    },
+    "10000000000": {
+      "gross_shell_carbon_kg_per_fresh_H_kg": {
+        "n14": 0.009593022131748476,
+        "n15": 0.008140851839497407,
+        "c12": 0.008882773127263287
+      },
+      "subtotal_excluding_methane": 0.02661664709850917,
+      "maximum_terminal_shell_loss_fraction_if_entire_remaining_budget_allocated": 0.2511084589043568,
+      "scope": "Inventory scale only against unchanged source128 fuel flows. Skins change actual inputs; this is not a re-solved isotope ledger or full material allowance."
+    }
+  },
+  "legacy_passive_tracers": {
+    "A": {
+      "c12": {
+        "cold_output_nuclei_per_tag": {
+          "c12": 0.15233680749706272,
+          "c13": 0.07046989244651237,
+          "n14": 0.7771932885646005,
+          "n15": 1.1340015195788143e-08,
+          "o16": 1.4862795624882871e-10,
+          "o17": 3.1123877727958873e-12,
+          "o18": 6.700014403902089e-14,
+          "f19": 2.2191124992421994e-20,
+          "ne20": 1.9394445074276868e-22,
+          "ne21": 1.3940818888601696e-24,
+          "ne22": 1.1120238942319298e-25,
+          "na23": 1.5109993614367775e-31,
+          "mg24": 6.609081788491842e-35
+        },
+        "light_delta_per_tag": {
+          "n": -4.2209738676765483e-10,
+          "p": -1.624856503176909,
+          "he4": -1.518065534074131e-10
+        },
+        "cold_all_species_net_output_per_tag": {
+          "c12": 0.15233680749706272,
+          "c13": 0.07046989244651237,
+          "n14": 0.7771932885646005,
+          "n15": 1.1340015195788143e-08,
+          "o16": 1.4862795624882871e-10,
+          "o17": 3.1123877727958873e-12,
+          "o18": 6.700014403902089e-14,
+          "f19": 2.2191124992421994e-20,
+          "ne20": 1.9394445074276868e-22,
+          "ne21": 1.3940818888601696e-24,
+          "ne22": 1.1120238942319298e-25,
+          "na23": 1.5109993614367775e-31,
+          "mg24": 6.609081788491842e-35,
+          "p": -1.6248565035990066,
+          "he4": -1.518065534074131e-10
+        },
+        "baryon_residual_per_tag": 2.1316282072803006e-14,
+        "reusable_CNO_probability": 0.9999999998481908,
+        "noncycle_probability": 1.518092318519848e-10,
+        "sink_probability": 2.765668460318432e-31
+      },
+      "native_reconstruction_L1": 0.0032880779846916957
+    },
+    "B1": {
+      "c12": {
+        "cold_output_nuclei_per_tag": {
+          "c12": 0.9999177725708169,
+          "c13": 8.222630942076124e-05,
+          "n14": 1.1193198468245899e-09,
+          "n15": 1.8217752667644855e-21,
+          "o16": 4.426530223348713e-13,
+          "o17": 1.0869750639931067e-19,
+          "o18": 6.65351273569263e-26,
+          "f19": 7.67514380916545e-32,
+          "ne20": 1.2241245121127536e-26,
+          "ne21": 3.325461833151971e-34,
+          "ne22": 3.221331829134397e-39,
+          "na23": 3.1735112902740478e-46,
+          "mg24": 1.8359752763903097e-39
+        },
+        "light_delta_per_tag": {
+          "n": 8.103235399221765e-21,
+          "p": -8.222854806045489e-05,
+          "he4": -4.4265313103246905e-13
+        },
+        "cold_all_species_net_output_per_tag": {
+          "c12": 0.9999177725708169,
+          "c13": 8.222630942076124e-05,
+          "n14": 1.1193198468245899e-09,
+          "n15": 1.8217752667644855e-21,
+          "o16": 4.426530223348713e-13,
+          "o17": 1.0869750639931067e-19,
+          "o18": 6.65351273569263e-26,
+          "f19": 7.67514380916545e-32,
+          "ne20": 1.2241245121127536e-26,
+          "ne21": 3.325461833151971e-34,
+          "ne22": 3.221331829134397e-39,
+          "na23": 3.1735112902740478e-46,
+          "mg24": 1.8359752763903097e-39,
+          "p": -8.222854806045487e-05,
+          "he4": -4.4265313103246905e-13
+        },
+        "baryon_residual_per_tag": -1.7763568394002505e-15,
+        "reusable_CNO_probability": 0.9999999999995576,
+        "noncycle_probability": 4.424238753131249e-13,
+        "sink_probability": 4.0873826300008344e-82
+      },
+      "native_reconstruction_L1": 0.010899094548645499
+    }
+  },
+  "neighboring_nominal128_C13_mixtures": {
+    "3": {
+      "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/rate-results/carbon128/C13-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+      "sha256": "bc0c5870b755e3095db70518e6c954e43cb685401fab2804d9561dd43547d2cb",
+      "gain": 24.54626656329321,
+      "success": true,
+      "initial_energy_J": 3.3282663865210603e+25
+    },
+    "4": {
+      "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/rate-results/carbon128/C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+      "sha256": "1cf933fd010560b8a5e937c751efaab418991de942c846b466eb1da99219882e",
+      "gain": 24.69857201048668,
+      "success": true,
+      "initial_energy_J": 3.3282663865210603e+25
+    }
+  },
+  "neutralization_local_heat": [
+    {
+      "allowable_Pa": 1000000000.0,
+      "field_energy_per_skin_mass_thin_charge_limited_J_kg": 1000000.0,
+      "shell_sensible_allowance_J_kg": 1000000.0,
+      "maximum_skin_deposition_fraction_for_allowance": 1,
+      "scope": "Illustrative cp1000 J/kg/K and deltaT1000 K; no inferred electron energy-deposition fraction"
+    },
+    {
+      "allowable_Pa": 10000000000.0,
+      "field_energy_per_skin_mass_thin_charge_limited_J_kg": 10000000.0,
+      "shell_sensible_allowance_J_kg": 1000000.0,
+      "maximum_skin_deposition_fraction_for_allowance": 0.1,
+      "scope": "Illustrative cp1000 J/kg/K and deltaT1000 K; no inferred electron energy-deposition fraction"
+    }
+  ],
+  "thermal_gradient_reference": {
+    "absorbed_surface_flux_W_m2": 1237.2756982258,
+    "core_diffusivity_assumed_m2_s": 1e-07,
+    "diffusion_length_flight_m": 0.0067700320038633,
+    "diffusion_length_0p33ms_m": 5.744562646538028e-06,
+    "scope": "Diffusivity is an example; headspace/contact thermal resistance unresolved"
+  },
+  "provenance": {
+    "CoolProp_version": "8.0.0",
+    "CoolProp_git_revision": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+    "isotope_scaling": "Natural-methane EOS with rho13/rhonatural=17/16 and u13/unatural=16/17, matching stored source convention; no isotope-specific EOS",
+    "methane_EOS": "Setzmann/Wagner 1991, doi:10.1063/1.555898",
+    "sources": {
+      "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median128/integration.json": "8f7575828de7bd3610cdd65be1789b5c3ac07bf9589b44431bed0ee1ad62e5da",
+      "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/isotope-tracer-final8.json": "4c4a1d925648e9946601d635438a32b2f3af61648e3aa6b955a4cf2a3ea7f8ff",
+      "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/launcher-mixture-entropy.json": "a15124035cd5ce3d3f0d4a41170a79ebacd874ee7d7e37627e475853288b24cb",
+      "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/packet-radiation.json": "0ed83e07dac6dcf3397516a90da158ecae856abbd7ac3f6bf8b3dca5ff9cde5b"
+    },
+    "code_sha256": "615e06c275528a365ed6cfc9f3f2960c4f264d7459cf20a3e821a6242a412b5e"
+  },
+  "checks": [
+    {
+      "name": "A_NH3_total_dose_below_fusion",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "A_NH3_stress_1000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "A_NH3_stress_10000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "B1_N15hydrazine_total_dose_below_fusion",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "B1_N15hydrazine_stress_1000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "B1_N15hydrazine_stress_10000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "B2_CH2_stress_1000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "B2_CH2_stress_10000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "C13_CH2_stress_1000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "C13_CH2_stress_10000000000.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "NH3_complete_melt_volume_fits_20pct_headspace",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "precooled_C13polymer_reference_bulk_below300K",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(0.2, 1.0, 1000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(0.2, 1.0, 10000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_EOS_energy_(0.2, 1.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_domain_(0.2, 1.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(0.2, 0.8, 1000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(0.2, 0.8, 10000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_EOS_energy_(0.2, 0.8)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_domain_(0.2, 0.8)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(0.2, 0.5, 1000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(0.2, 0.5, 10000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_EOS_energy_(0.2, 0.5)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_domain_(0.2, 0.5)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(1.0, 1.0, 1000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(1.0, 1.0, 10000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_EOS_energy_(1.0, 1.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_domain_(1.0, 1.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(1.0, 0.8, 1000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(1.0, 0.8, 10000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_EOS_energy_(1.0, 0.8)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_domain_(1.0, 0.8)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(1.0, 0.5, 1000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_stress_(1.0, 0.5, 10000000000.0)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_EOS_energy_(1.0, 0.5)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "methane_domain_(1.0, 0.5)",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "reference_IR",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "field_pressure_energy_identity",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "thin_shell_limit",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "dose_inverse_filling_0.5",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "dose_inverse_filling_0.8",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "dose_inverse_filling_1.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "ethane_energy_1.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "ethane_domain_1.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "ethane_energy_0.8",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "ethane_domain_0.8",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "ethane_energy_0.5",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "ethane_domain_0.5",
+      "passed": true,
+      "value": null
+    }
+  ],
+  "all_checks_pass": true
+}

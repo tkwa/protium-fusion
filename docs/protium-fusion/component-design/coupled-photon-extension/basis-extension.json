@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "columns": {
+    "200": {
+      "sigma_kg_m2": 200,
+      "responses": [
+        {
+          "particle": "gamma",
+          "mode": "isotropic",
+          "energy_MeV": 2.5438523,
+          "calorimetric_energy_MeV": 2.5438523,
+          "histories": 20000,
+          "leakage_fraction": 0.33875852640233545,
+          "deposited_fraction": 0.6612414735976733,
+          "sampling_standard_error": 0.002860742229338045,
+          "sampling_80pct_half_width": 0.0036661886826277216,
+          "max_relative_event_energy_residual": 3.1961100432909006e-12,
+          "mean_absolute_relative_energy_residual": 1.1251355402919216e-14,
+          "event_archive": "events/S200-broad.json.gz",
+          "event_archive_record": 0,
+          "raw_name": "S200-broad"
+        },
+        {
+          "particle": "gamma",
+          "mode": "isotropic",
+          "energy_MeV": 5.657344,
+          "calorimetric_energy_MeV": 5.657344,
+          "histories": 20000,
+          "leakage_fraction": 0.4334839382338243,
+          "deposited_fraction": 0.566516060882712,
+          "sampling_standard_error": 0.003137000747088886,
+          "sampling_80pct_half_width": 0.004020228218546343,
+          "max_relative_event_energy_residual": 1.2293388529371896e-11,
+          "mean_absolute_relative_energy_residual": 8.555041119961971e-14,
+          "event_archive": "events/S200-broad.json.gz",
+          "event_archive_record": 1,
+          "raw_name": "S200-broad"
+        },
+        {
+          "particle": "gamma",
+          "mode": "radial",
+          "energy_MeV": 20.0,
+          "calorimetric_energy_MeV": 20.0,
+          "histories": 5000,
+          "leakage_fraction": 0.8127115423846751,
+          "deposited_fraction": 0.18728845761401894,
+          "sampling_standard_error": 0.004912453596144484,
+          "sampling_80pct_half_width": 0.006295562596804166,
+          "max_relative_event_energy_residual": 5.399036773212629e-11,
+          "mean_absolute_relative_energy_residual": 1.342882871568918e-12,
+          "event_archive": "events/S200-prompt20.json.gz",
+          "event_archive_record": 0,
+          "raw_name": "S200-prompt20"
+        }
+      ]
+    },
+    "350": {
+      "sigma_kg_m2": 350,
+      "responses": [
+        {
+          "particle": "gamma",
+          "mode": "isotropic",
+          "energy_MeV": 2.5438523,
+          "calorimetric_energy_MeV": 2.5438523,
+          "histories": 20000,
+          "leakage_fraction": 0.1752993544192047,
+          "deposited_fraction": 0.8247006455808031,
+          "sampling_standard_error": 0.0022889650967407404,
+          "sampling_80pct_half_width": 0.0029334268032050435,
+          "max_relative_event_energy_residual": 3.6060043839825084e-12,
+          "mean_absolute_relative_energy_residual": 1.0936601624322861e-14,
+          "event_archive": "events/S350-broad.json.gz",
+          "event_archive_record": 0,
+          "raw_name": "S350-broad"
+        },
+        {
+          "particle": "gamma",
+          "mode": "isotropic",
+          "energy_MeV": 5.657344,
+          "calorimetric_energy_MeV": 5.657344,
+          "histories": 20000,
+          "leakage_fraction": 0.2633563877093663,
+          "deposited_fraction": 0.7366436120659006,
+          "sampling_standard_error": 0.002785852305126785,
+          "sampling_80pct_half_width": 0.003570213383011265,
+          "max_relative_event_energy_residual": 1.3605228055268981e-11,
+          "mean_absolute_relative_energy_residual": 1.0283876528127678e-13,
+          "event_archive": "events/S350-broad.json.gz",
+          "event_archive_record": 1,
+          "raw_name": "S350-broad"
+        },
+        {
+          "particle": "gamma",
+          "mode": "radial",
+          "energy_MeV": 20.0,
+          "calorimetric_energy_MeV": 20.0,
+          "histories": 5000,
+          "leakage_fraction": 0.659280125696168,
+          "deposited_fraction": 0.34071987430179407,
+          "sampling_standard_error": 0.006095982745026653,
+          "sampling_80pct_half_width": 0.007812316230421778,
+          "max_relative_event_energy_residual": 5.295164307028699e-11,
+          "mean_absolute_relative_energy_residual": 2.097378337673206e-12,
+          "event_archive": "events/S350-prompt20.json.gz",
+          "event_archive_record": 0,
+          "raw_name": "S350-prompt20"
+        }
+      ]
+    }
+  },
+  "source_sha256": "f1f95c9c10bb2bea9302639f22e6202bd522ca1206a0ef3e34e6d298510b853e",
+  "scope": "Geant411.4.1 option4 EM with standard2gamma in-flight annihilation; natural carbon2000kg/m3,1000K, closed sphereR1e6m. Isotropic photon source25um below inner face; radial prompt and positron source1um inside cavity.10um production cuts,100eV electron tracking floor.",
+  "base_basis_reference": {
+    "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/coupled-photon-transport/basis.json",
+    "sha256": "9c2045d0485bb316716775e93ab80d93682667e596088ed04bd5aa0dab61cded"
+  },
+  "raw_inputs": {
+    "S200-broad": {
+      "path": "/home/tkwa/src/protium-fusion/output/coupled-photon-extension/S200-broad.json",
+      "sha256": "0dcad3c27a9e80da4e0ae9602373ea5d6e21bb4e4370e6d1f083de84d06172c9",
+      "log_sha256": "ce1b4ab7302b2dff882a4c0d5f2a7bc9471a853dcf2956ad443632f01bd8ba1e",
+      "source_sha256": "f1f95c9c10bb2bea9302639f22e6202bd522ca1206a0ef3e34e6d298510b853e",
+      "event_archive_sha256": "90bd5c8cca0bd9bffc73b76268b20811d9982ed392727d1cc4bef0771ac4772f"
+    },
+    "S200-prompt20": {
+      "path": "/home/tkwa/src/protium-fusion/output/coupled-photon-extension/S200-prompt20.json",
+      "sha256": "0c7337cd1e11eaf699b34969b0977bd7c47f478d92af94ecb30858ca583f8d00",
+      "log_sha256": "0585f21b864cc12086c9ecdca970508436c4fb2d69332f19d3d4b3b5a6ce92e8",
+      "source_sha256": "f1f95c9c10bb2bea9302639f22e6202bd522ca1206a0ef3e34e6d298510b853e",
+      "event_archive_sha256": "84983d046b34480c9ff337d770bc58e53f6302b2247e60049bd8d1530e326e4e"
+    },
+    "S350-broad": {
+      "path": "/home/tkwa/src/protium-fusion/output/coupled-photon-extension/S350-broad.json",
+      "sha256": "6abbeff5607b52c9c3c33b739fbd5185cfb20544cbc91c760a15970ef62c5c3f",
+      "log_sha256": "098406482abdbe64ad72db1c003fb0876cf922f1ce8e71335abb5ba943608a2b",
+      "source_sha256": "f1f95c9c10bb2bea9302639f22e6202bd522ca1206a0ef3e34e6d298510b853e",
+      "event_archive_sha256": "94558734b412dacbb1bfff949ba1e0c50c674c4e9edcc76bac467bbeae788877"
+    },
+    "S350-prompt20": {
+      "path": "/home/tkwa/src/protium-fusion/output/coupled-photon-extension/S350-prompt20.json",
+      "sha256": "7eeb1096eb30ea7a4dc9276691f30298682beb528785790c4403c644eb5207f1",
+      "log_sha256": "45337e2d6441aa2414598ce10e1e9ce6f9688865cf9c5cf6d58b19151ddc1d2a",
+      "source_sha256": "f1f95c9c10bb2bea9302639f22e6202bd522ca1206a0ef3e34e6d298510b853e",
+      "event_archive_sha256": "caa3dcb058f1a9e3442ab95144d9842989638fb28a946e66ef7d0e5a3600574e"
+    }
+  }
+}

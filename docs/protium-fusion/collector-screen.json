@@ -1,0 +1,745 @@
+{
+  "scope": "Ballistic and constant-property semi-infinite thermal screen; no validated collector design.",
+  "material_properties": {
+    "illustrative_carbon": {
+      "k_W_m_K": 100.0,
+      "rho_kg_m3": 2000.0,
+      "cp_J_kg_K": 1000.0
+    },
+    "tungsten_paper_constants": {
+      "k_W_m_K": 130.0,
+      "rho_kg_m3": 19300.0,
+      "cp_J_kg_K": 140.0
+    }
+  },
+  "rectangular_pulse_relative_error": 2.220446049250313e-16,
+  "limitations": [
+    "No continuing hydrodynamic acceleration or angular structure",
+    "No nonlinear material response, thermal radiation, active cooling, erosion or implantation",
+    "Gamma energy treated as surface heat for a conservative temperature screen; no photon transport",
+    "Escaped prompt energy and timing inherit the grey diffusion model and its resolution limits",
+    "Sum of separate peak temperatures is a conservative superposition screen, not a temperature history"
+  ],
+  "cases": [
+    {
+      "source": "compression-A-128-full-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        578.020112037922,
+        939.4205463915272,
+        2653.4395690252622
+      ],
+      "energy_quadrature_relative_error": 0.0001788216946521093,
+      "continuous_velocity_energy_normalization": 1.0003713997390629,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 348078998.5768119,
+      "peak_ballistic_kinetic_flux_W_m2": 584304.9315302274,
+      "peak_prompt_radiation_flux_W_m2": 186519936.43681413,
+      "prompt_radiation_fluence_J_m2": 47024.18247301425,
+      "cold_decay_energy_J": {
+        "n13": 7.311834947368375e+21,
+        "o14": 3.6783010127061707e+22,
+        "o15": 1.0353125214154199e+29
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 783.6703828724653,
+          "cold_decay_all_surface_absorption_peak_rise_K": 268.08511269988,
+          "prompt_all_surface_absorption_peak_rise_K": 157.27826136363984,
+          "sum_of_separate_peak_rises_K_upper_screen": 1209.0337569359851,
+          "peak_main_time_s": 1070.8893240725126,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 9.821851698495118
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 591.3356785725653,
+          "cold_decay_all_surface_absorption_peak_rise_K": 202.2895027020373,
+          "prompt_all_surface_absorption_peak_rise_K": 118.67776228480587,
+          "sum_of_separate_peak_rises_K_upper_screen": 912.3029435594085,
+          "peak_main_time_s": 1070.8893240725126,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 9.821851698495118
+        }
+      }
+    },
+    {
+      "source": "compression-A-512-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        441.83298330429227,
+        925.0472444541568,
+        2669.5730001131024
+      ],
+      "energy_quadrature_relative_error": 1.598843069117173e-05,
+      "continuous_velocity_energy_normalization": 1.0002386263514471,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 356017784.476622,
+      "peak_ballistic_kinetic_flux_W_m2": 490500.6517515221,
+      "peak_prompt_radiation_flux_W_m2": 498231446.36486155,
+      "prompt_radiation_fluence_J_m2": 94533.04644353781,
+      "cold_decay_energy_J": {
+        "n13": 0.0,
+        "o14": 0.0,
+        "o15": 1.0608818875010755e+29
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 792.9443536022192,
+          "cold_decay_all_surface_absorption_peak_rise_K": 274.7062087666255,
+          "prompt_all_surface_absorption_peak_rise_K": 306.98918037099577,
+          "sum_of_separate_peak_rises_K_upper_screen": 1374.6397427398406,
+          "peak_main_time_s": 1052.928970135855,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 9.938083684741624
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 598.3335566274178,
+          "cold_decay_all_surface_absorption_peak_rise_K": 207.28559598448592,
+          "prompt_all_surface_absorption_peak_rise_K": 231.64542039182976,
+          "sum_of_separate_peak_rises_K_upper_screen": 1037.2645730037334,
+          "peak_main_time_s": 1052.928970135855,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 9.938083684741624
+        }
+      }
+    },
+    {
+      "source": "compression-B1-64-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        898.4285149766117,
+        1209.1228572310233,
+        3321.491208949828
+      ],
+      "energy_quadrature_relative_error": 1.4540250245609343e-05,
+      "continuous_velocity_energy_normalization": 1.000383571815606,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 261550230.31163198,
+      "peak_ballistic_kinetic_flux_W_m2": 555353.7317921121,
+      "peak_prompt_radiation_flux_W_m2": 535288550.46151537,
+      "prompt_radiation_fluence_J_m2": 983157.956509938,
+      "cold_decay_energy_J": {
+        "n13": 1.7420992054792091e+25,
+        "o14": 1.4183805396414187e+21,
+        "o15": 63683124397.61615
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 601.1047542256796,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.020376897944936585,
+          "prompt_all_surface_absorption_peak_rise_K": 1416.4968833399541,
+          "sum_of_separate_peak_rises_K_upper_screen": 2017.6220144635786,
+          "peak_main_time_s": 1218.4056571054673,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 7.533730864786034
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 453.5767785817728,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.015375835347134636,
+          "prompt_all_surface_absorption_peak_rise_K": 1068.8487966529046,
+          "sum_of_separate_peak_rises_K_upper_screen": 1522.4409510700245,
+          "peak_main_time_s": 1218.4056571054673,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 7.533730864786036
+        }
+      }
+    },
+    {
+      "source": "compression-B2-64-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        623.8110510229296,
+        896.2018780204721,
+        2577.5415983606563
+      ],
+      "energy_quadrature_relative_error": -0.0004599418367187136,
+      "continuous_velocity_energy_normalization": 1.0005614020262426,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 372051843.2285242,
+      "peak_ballistic_kinetic_flux_W_m2": 1230926.0748543523,
+      "peak_prompt_radiation_flux_W_m2": 80216430.23575997,
+      "prompt_radiation_fluence_J_m2": 20555.337108814143,
+      "cold_decay_energy_J": {
+        "n13": 5.032093019756105e+27,
+        "o14": 2.8084092265441932e+29,
+        "o15": 6.257253239909064e+21
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 848.0379967140769,
+          "cold_decay_all_surface_absorption_peak_rise_K": 959.203511645213,
+          "prompt_all_surface_absorption_peak_rise_K": 76.64420660913292,
+          "sum_of_separate_peak_rises_K_upper_screen": 1883.885714968423,
+          "peak_main_time_s": 995.2644246611595,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 10.628580102624685
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 639.9056736125852,
+          "cold_decay_all_surface_absorption_peak_rise_K": 723.7880515132566,
+          "prompt_all_surface_absorption_peak_rise_K": 57.83356742121935,
+          "sum_of_separate_peak_rises_K_upper_screen": 1421.5272925470613,
+          "peak_main_time_s": 995.2644246611595,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 10.628580102624685
+        }
+      }
+    },
+    {
+      "source": "compression-B1-128-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        768.8867562641999,
+        1182.6813758787375,
+        3317.287286871142
+      ],
+      "energy_quadrature_relative_error": -2.9350432792285552e-05,
+      "continuous_velocity_energy_normalization": 1.0002781846519464,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 274310120.3064026,
+      "peak_ballistic_kinetic_flux_W_m2": 435603.7965961777,
+      "peak_prompt_radiation_flux_W_m2": 813388869.3764024,
+      "prompt_radiation_fluence_J_m2": 1234795.7929630422,
+      "cold_decay_energy_J": {
+        "n13": 1.8086662866576063e+25,
+        "o14": 1.504678740510584e+21,
+        "o15": 69957023839.08307
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 593.2994777518945,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.021155556538703178,
+          "prompt_all_surface_absorption_peak_rise_K": 1679.7626286266632,
+          "sum_of_separate_peak_rises_K_upper_screen": 2273.0832619350963,
+          "peak_main_time_s": 1270.0174238466868,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 7.435906231283526
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 447.6871359961306,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.015963389270295034,
+          "prompt_all_surface_absorption_peak_rise_K": 1267.501739952107,
+          "sum_of_separate_peak_rises_K_upper_screen": 1715.204839337508,
+          "peak_main_time_s": 1270.0174238466868,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 7.435906231283526
+        }
+      }
+    },
+    {
+      "source": "compression-B2-128-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        535.5940092673461,
+        884.0054139112434,
+        2586.8789636113625
+      ],
+      "energy_quadrature_relative_error": 2.548666940560551e-05,
+      "continuous_velocity_energy_normalization": 1.0003934357615083,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 382156561.87786746,
+      "peak_ballistic_kinetic_flux_W_m2": 707553.825758533,
+      "peak_prompt_radiation_flux_W_m2": 205350451.05396,
+      "prompt_radiation_fluence_J_m2": 47974.35090357308,
+      "cold_decay_energy_J": {
+        "n13": 4.288363214338685e+27,
+        "o14": 2.8985231677464555e+29,
+        "o15": 6.550541530158088e+21
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 852.0990973337057,
+          "cold_decay_all_surface_absorption_peak_rise_K": 989.3996678408893,
+          "prompt_all_surface_absorption_peak_rise_K": 168.3464305119557,
+          "sum_of_separate_peak_rises_K_upper_screen": 2009.8451956865508,
+          "peak_main_time_s": 1037.8375031093806,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 10.6794784508211
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 642.9700661724487,
+          "cold_decay_all_surface_absorption_peak_rise_K": 746.5732235760362,
+          "prompt_all_surface_absorption_peak_rise_K": 127.02949211525478,
+          "sum_of_separate_peak_rises_K_upper_screen": 1516.5727818637395,
+          "peak_main_time_s": 1037.8375031093806,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 10.6794784508211
+        }
+      }
+    },
+    {
+      "source": "compression-C13-64-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        582.8307065731415,
+        833.9047802537858,
+        2442.1690630331696
+      ],
+      "energy_quadrature_relative_error": -4.6159580524451904e-05,
+      "continuous_velocity_energy_normalization": 1.0005633469207085,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 15724839.78092767,
+      "peak_ballistic_kinetic_flux_W_m2": 59435.908672811864,
+      "peak_prompt_radiation_flux_W_m2": 41345916.62885176,
+      "prompt_radiation_fluence_J_m2": 4073.483337442044,
+      "cold_decay_energy_J": {
+        "n13": 8.675578933944339e+18,
+        "o14": 5.408572827762053e+19,
+        "o15": 1.9068668483883806e+26
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 36.94370562047297,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.493766114607131,
+          "prompt_all_surface_absorption_peak_rise_K": 23.802412380946006,
+          "sum_of_separate_peak_rises_K_upper_screen": 61.239884116026104,
+          "peak_main_time_s": 929.2003784098973,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.4630206853896088
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 27.87668350052055,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.37258205339739625,
+          "prompt_all_surface_absorption_peak_rise_K": 17.960632409456945,
+          "sum_of_separate_peak_rises_K_upper_screen": 46.209897963374885,
+          "peak_main_time_s": 929.2003784098973,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.46302068538960883
+        }
+      }
+    },
+    {
+      "source": "compression-He-64-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        749.3898939596194,
+        1392.0884867170012,
+        3441.282332181379
+      ],
+      "energy_quadrature_relative_error": 0.0002499917678895347,
+      "continuous_velocity_energy_normalization": 1.0028476250435225,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 667984408.2989042,
+      "peak_ballistic_kinetic_flux_W_m2": 745085.4343227566,
+      "peak_prompt_radiation_flux_W_m2": 20070256.541474245,
+      "prompt_radiation_fluence_J_m2": 999.8814702622232,
+      "cold_decay_energy_J": {
+        "n13": 1.0940537960585796e+21,
+        "o14": 3.854440880928244e+16,
+        "o15": 2191828705552.4634
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 1377.0691097640777,
+          "cold_decay_all_surface_absorption_peak_rise_K": 1.2796227502478532e-06,
+          "prompt_all_surface_absorption_peak_rise_K": 9.339717473941727,
+          "sum_of_separate_peak_rises_K_upper_screen": 1386.408828517642,
+          "peak_main_time_s": 1679.28159107515,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 17.259001833277893
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 1039.0977051842729,
+          "cold_decay_all_surface_absorption_peak_rise_K": 9.655674169555157e-07,
+          "prompt_all_surface_absorption_peak_rise_K": 7.0474887029489475,
+          "sum_of_separate_peak_rises_K_upper_screen": 1046.145194852789,
+          "peak_main_time_s": 1679.28159107515,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 17.259001833277893
+        }
+      }
+    },
+    {
+      "source": "compression-He-64-r30-burning.json",
+      "collector_radius_m": 10000000000.0,
+      "collector_area_m2": 1.2566370614359173e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        752.7956636414834,
+        1403.2120250441071,
+        3498.8100380204723
+      ],
+      "energy_quadrature_relative_error": 9.112688520529488e-05,
+      "continuous_velocity_energy_normalization": 1.00292381862832,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 17625224.10721509,
+      "peak_ballistic_kinetic_flux_W_m2": 19548.757521058058,
+      "peak_prompt_radiation_flux_W_m2": 5992016.523478542,
+      "prompt_radiation_fluence_J_m2": 89.70381417288834,
+      "cold_decay_energy_J": {
+        "n13": 1.2711454216057492e+16,
+        "o14": 268648688.55564827,
+        "o15": 2423.99593906788
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 35.85023960807624,
+          "cold_decay_all_surface_absorption_peak_rise_K": 1.486694737787518e-11,
+          "prompt_all_surface_absorption_peak_rise_K": 1.5294452199497781,
+          "sum_of_separate_peak_rises_K_upper_screen": 37.37968482804088,
+          "peak_main_time_s": 1697.7423320660014,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.44931612126950055
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 27.051584733783194,
+          "cold_decay_all_surface_absorption_peak_rise_K": 1.1218181276386384e-11,
+          "prompt_all_surface_absorption_peak_rise_K": 1.1540764417605318,
+          "sum_of_separate_peak_rises_K_upper_screen": 28.205661175554944,
+          "peak_main_time_s": 1697.7423320660014,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.4493161212695005
+        }
+      }
+    },
+    {
+      "source": "compression-A-128-full-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1156.040224075844,
+        1878.8410927830544,
+        5306.8791380505245
+      ],
+      "energy_quadrature_relative_error": 0.0001788216946521093,
+      "continuous_velocity_energy_normalization": 1.0003713997390629,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 87019749.64420298,
+      "peak_ballistic_kinetic_flux_W_m2": 73038.11644127843,
+      "peak_prompt_radiation_flux_W_m2": 46629984.10920353,
+      "prompt_radiation_fluence_J_m2": 11756.045618253562,
+      "cold_decay_energy_J": {
+        "n13": 7.311834947368375e+21,
+        "o14": 3.6783010127061707e+22,
+        "o15": 1.0353125214154199e+29
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 138.53466048604454,
+          "cold_decay_all_surface_absorption_peak_rise_K": 67.02250432156043,
+          "prompt_all_surface_absorption_peak_rise_K": 39.31956534090996,
+          "sum_of_separate_peak_rises_K_upper_screen": 244.87673014851492,
+          "peak_main_time_s": 2141.7786481450253,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.7362744849536265
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 104.53436706905235,
+          "cold_decay_all_surface_absorption_peak_rise_K": 50.5733008913168,
+          "prompt_all_surface_absorption_peak_rise_K": 29.669440571201466,
+          "sum_of_separate_peak_rises_K_upper_screen": 184.77710853157063,
+          "peak_main_time_s": 2141.7786481450253,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.7362744849536265
+        }
+      }
+    },
+    {
+      "source": "compression-A-512-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        883.6659666085845,
+        1850.0944889083137,
+        5339.146000226205
+      ],
+      "energy_quadrature_relative_error": 1.598843069117173e-05,
+      "continuous_velocity_energy_normalization": 1.0002386263514471,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 89004446.1191555,
+      "peak_ballistic_kinetic_flux_W_m2": 61312.58146894026,
+      "peak_prompt_radiation_flux_W_m2": 124557861.59121539,
+      "prompt_radiation_fluence_J_m2": 23633.261610884452,
+      "cold_decay_energy_J": {
+        "n13": 0.0,
+        "o14": 0.0,
+        "o15": 1.0608818875010755e+29
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 140.17408238392815,
+          "cold_decay_all_surface_absorption_peak_rise_K": 68.67794309643455,
+          "prompt_all_surface_absorption_peak_rise_K": 76.74729509274894,
+          "sum_of_separate_peak_rises_K_upper_screen": 285.59932057311164,
+          "peak_main_time_s": 2105.85794027171,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.756821591370048
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 105.77142882567804,
+          "cold_decay_all_surface_absorption_peak_rise_K": 51.82244853383377,
+          "prompt_all_surface_absorption_peak_rise_K": 57.91135509795744,
+          "sum_of_separate_peak_rises_K_upper_screen": 215.50523245746928,
+          "peak_main_time_s": 2105.85794027171,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.756821591370048
+        }
+      }
+    },
+    {
+      "source": "compression-B1-64-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1796.8570299532234,
+        2418.2457144620466,
+        6642.982417899656
+      ],
+      "energy_quadrature_relative_error": 1.4540250245609343e-05,
+      "continuous_velocity_energy_normalization": 1.000383571815606,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 65387557.577907994,
+      "peak_ballistic_kinetic_flux_W_m2": 69419.21647401401,
+      "peak_prompt_radiation_flux_W_m2": 133822137.61537884,
+      "prompt_radiation_fluence_J_m2": 245789.4891274845,
+      "cold_decay_energy_J": {
+        "n13": 1.7420992054792091e+25,
+        "o14": 1.4183805396414187e+21,
+        "o15": 63683124397.61615
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 106.26131197911278,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.005094237558237865,
+          "prompt_all_surface_absorption_peak_rise_K": 354.12422083498853,
+          "sum_of_separate_peak_rises_K_upper_screen": 460.3906270516595,
+          "peak_main_time_s": 2436.8113142109346,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.3317880455311497
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 80.18180398098019,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.0038439687005508223,
+          "prompt_all_surface_absorption_peak_rise_K": 267.21219916322616,
+          "sum_of_separate_peak_rises_K_upper_screen": 347.3978471129069,
+          "peak_main_time_s": 2436.8113142109346,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.3317880455311497
+        }
+      }
+    },
+    {
+      "source": "compression-B2-64-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1247.6221020458593,
+        1792.4037560409442,
+        5155.083196721313
+      ],
+      "energy_quadrature_relative_error": -0.0004599418367187136,
+      "continuous_velocity_energy_normalization": 1.0005614020262426,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 93012960.80713105,
+      "peak_ballistic_kinetic_flux_W_m2": 153865.75935679403,
+      "peak_prompt_radiation_flux_W_m2": 20054107.558939993,
+      "prompt_radiation_fluence_J_m2": 5138.834277203536,
+      "cold_decay_energy_J": {
+        "n13": 5.032093019756105e+27,
+        "o14": 2.8084092265441932e+29,
+        "o15": 6.257253239909064e+21
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 149.91335454509473,
+          "cold_decay_all_surface_absorption_peak_rise_K": 239.81101217142484,
+          "prompt_all_surface_absorption_peak_rise_K": 19.16105165228323,
+          "sum_of_separate_peak_rises_K_upper_screen": 408.8854183688028,
+          "peak_main_time_s": 1990.528849322319,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.8788852662375817
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 113.12041028280116,
+          "cold_decay_all_surface_absorption_peak_rise_K": 180.95465990660156,
+          "prompt_all_surface_absorption_peak_rise_K": 14.458391855304837,
+          "sum_of_separate_peak_rises_K_upper_screen": 308.53346204470756,
+          "peak_main_time_s": 1990.528849322319,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.8788852662375815
+        }
+      }
+    },
+    {
+      "source": "compression-B1-128-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1537.7735125283998,
+        2365.362751757475,
+        6634.574573742284
+      ],
+      "energy_quadrature_relative_error": -2.9350432792285552e-05,
+      "continuous_velocity_energy_normalization": 1.0002781846519464,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 68577530.07660066,
+      "peak_ballistic_kinetic_flux_W_m2": 54450.47457452221,
+      "peak_prompt_radiation_flux_W_m2": 203347217.3441006,
+      "prompt_radiation_fluence_J_m2": 308698.94824076054,
+      "cold_decay_energy_J": {
+        "n13": 1.8086662866576063e+25,
+        "o14": 1.504678740510584e+21,
+        "o15": 69957023839.08307
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 104.88152099820041,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.005288902294359177,
+          "prompt_all_surface_absorption_peak_rise_K": 419.9406571566658,
+          "sum_of_separate_peak_rises_K_upper_screen": 524.8274670571606,
+          "peak_main_time_s": 2540.0348476933736,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.3144949301019708
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 79.140652428212,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.003990857247501535,
+          "prompt_all_surface_absorption_peak_rise_K": 316.87543498802677,
+          "sum_of_separate_peak_rises_K_upper_screen": 396.02007827348626,
+          "peak_main_time_s": 2540.0348476933736,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.3144949301019708
+        }
+      }
+    },
+    {
+      "source": "compression-B2-128-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1071.1880185346922,
+        1768.0108278224868,
+        5173.757927222725
+      ],
+      "energy_quadrature_relative_error": 2.548666940560551e-05,
+      "continuous_velocity_energy_normalization": 1.0003934357615083,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 95539140.46946687,
+      "peak_ballistic_kinetic_flux_W_m2": 88444.22821981662,
+      "peak_prompt_radiation_flux_W_m2": 51337612.76349,
+      "prompt_radiation_fluence_J_m2": 11993.58772589327,
+      "cold_decay_energy_J": {
+        "n13": 4.288363214338685e+27,
+        "o14": 2.8985231677464555e+29,
+        "o15": 6.550541530158088e+21
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 150.63126249189983,
+          "cold_decay_all_surface_absorption_peak_rise_K": 247.3596391136438,
+          "prompt_all_surface_absorption_peak_rise_K": 42.086607627988926,
+          "sum_of_separate_peak_rises_K_upper_screen": 440.07750923353257,
+          "peak_main_time_s": 2075.675006218761,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.8878829080278012
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 113.66212347262542,
+          "cold_decay_all_surface_absorption_peak_rise_K": 186.6506419581456,
+          "prompt_all_surface_absorption_peak_rise_K": 31.757373028813696,
+          "sum_of_separate_peak_rises_K_upper_screen": 332.0701384595847,
+          "peak_main_time_s": 2075.675006218761,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 1.8878829080278015
+        }
+      }
+    },
+    {
+      "source": "compression-C13-64-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1165.661413146283,
+        1667.8095605075716,
+        4884.338126066339
+      ],
+      "energy_quadrature_relative_error": -4.6159580524451904e-05,
+      "continuous_velocity_energy_normalization": 1.0005633469207085,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 3931209.9452319173,
+      "peak_ballistic_kinetic_flux_W_m2": 7429.488584101483,
+      "peak_prompt_radiation_flux_W_m2": 10336479.15721294,
+      "prompt_radiation_fluence_J_m2": 1018.370834360511,
+      "cold_decay_energy_J": {
+        "n13": 8.675578933944339e+18,
+        "o14": 5.408572827762053e+19,
+        "o15": 1.9068668483883806e+26
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 6.5307861915990015,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.12344367036164189,
+          "prompt_all_surface_absorption_peak_rise_K": 5.950603095236501,
+          "sum_of_separate_peak_rises_K_upper_screen": 12.604832957197145,
+          "peak_main_time_s": 1858.4007568197947,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.08185126661715884
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 4.927947985052306,
+          "cold_decay_all_surface_absorption_peak_rise_K": 0.0931471294235054,
+          "prompt_all_surface_absorption_peak_rise_K": 4.490158102364236,
+          "sum_of_separate_peak_rises_K_upper_screen": 9.511253216840048,
+          "peak_main_time_s": 1858.4007568197947,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.08185126661715884
+        }
+      }
+    },
+    {
+      "source": "compression-He-64-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1498.7797879192387,
+        2784.1769734340023,
+        6882.564664362758
+      ],
+      "energy_quadrature_relative_error": 0.0002499917678895347,
+      "continuous_velocity_energy_normalization": 1.0028476250435225,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 166996102.07472605,
+      "peak_ballistic_kinetic_flux_W_m2": 93135.67929034457,
+      "peak_prompt_radiation_flux_W_m2": 5017564.135368561,
+      "prompt_radiation_fluence_J_m2": 249.9703675655558,
+      "cold_decay_energy_J": {
+        "n13": 1.0940537960585796e+21,
+        "o14": 3.854440880928244e+16,
+        "o15": 2191828705552.4634
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 243.43372641917537,
+          "cold_decay_all_surface_absorption_peak_rise_K": 3.1990654498509627e-07,
+          "prompt_all_surface_absorption_peak_rise_K": 2.3349293684854318,
+          "sum_of_separate_peak_rises_K_upper_screen": 245.76865610756735,
+          "peak_main_time_s": 3358.5631821503,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 3.050989308205463
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 183.68825841279482,
+          "cold_decay_all_surface_absorption_peak_rise_K": 2.41392501226313e-07,
+          "prompt_all_surface_absorption_peak_rise_K": 1.7618721757372369,
+          "sum_of_separate_peak_rises_K_upper_screen": 185.45013082992457,
+          "peak_main_time_s": 3358.5631821503,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 3.050989308205463
+        }
+      }
+    },
+    {
+      "source": "compression-He-64-r30-burning.json",
+      "collector_radius_m": 20000000000.0,
+      "collector_area_m2": 5.026548245743669e+21,
+      "arrival_1_50_99_percent_energy_s": [
+        1505.5913272829669,
+        2806.4240500882142,
+        6997.620076040945
+      ],
+      "energy_quadrature_relative_error": 9.112688520529488e-05,
+      "continuous_velocity_energy_normalization": 1.00292381862832,
+      "truncated_slow_tail_energy_fraction": 1e-06,
+      "kinetic_fluence_J_m2": 4406306.026803773,
+      "peak_ballistic_kinetic_flux_W_m2": 2443.5946901322573,
+      "peak_prompt_radiation_flux_W_m2": 1498004.1308696356,
+      "prompt_radiation_fluence_J_m2": 22.425953543222086,
+      "cold_decay_energy_J": {
+        "n13": 1.2711454216057492e+16,
+        "o14": 268648688.55564827,
+        "o15": 2423.99593906788
+      },
+      "thermal_results": {
+        "illustrative_carbon": {
+          "kinetic_plus_residual_heat_peak_rise_K": 6.337486883508317,
+          "cold_decay_all_surface_absorption_peak_rise_K": 3.716746884828165e-12,
+          "prompt_all_surface_absorption_peak_rise_K": 0.38236130498744453,
+          "sum_of_separate_peak_rises_K_upper_screen": 6.719848188499479,
+          "peak_main_time_s": 3395.4846641320028,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.07942861906152526
+        },
+        "tungsten_paper_constants": {
+          "kinetic_plus_residual_heat_peak_rise_K": 4.782089751775148,
+          "cold_decay_all_surface_absorption_peak_rise_K": 2.8045528952700115e-12,
+          "prompt_all_surface_absorption_peak_rise_K": 0.28851911044013295,
+          "sum_of_separate_peak_rises_K_upper_screen": 5.070608862218085,
+          "peak_main_time_s": 3395.4846641320028,
+          "main_equivalent_heat_flux_factor_MJ_m2_s_half": 0.07942861906152526
+        }
+      }
+    }
+  ]
+}

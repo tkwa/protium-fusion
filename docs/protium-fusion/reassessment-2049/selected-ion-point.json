@@ -1,0 +1,3139 @@
+{
+  "scope": "Conditional 60%/50 K ion commissioning ledger, including an 80 AU sky.\n\nUses the saved source family; no new plasma, material or nuclear-data fit.\nThe mass/power reserve and particle-processing costs are selected requirements.\nRun with docs/protium-fusion and /tmp/protium-python on PYTHONPATH.\n",
+  "selected_engineering_requirements": {
+    "heat": 0.6,
+    "radiator_K": 50.0,
+    "additional_integration_mass_kg": 100000000000000.0,
+    "additional_integration_power_W": 100000000000.0,
+    "extra_processing_cases_MeV_per_primary": [
+      1.0,
+      1.2,
+      1.5,
+      1.75,
+      2.0
+    ],
+    "relative_internal_Carnot": 0.85,
+    "solar_1AU_W_m2": 1361.0,
+    "distance_AU": 80.0,
+    "environmental_geometry": "outward spherical emitting area; full solar luminosity envelope, no credit for swarm interception; uniform 50 K requires sector-specific coolant loading"
+  },
+  "retained_plant_assumptions": {
+    "B": 140,
+    "heat": 0.6,
+    "core_radius": 1000,
+    "shield": 5,
+    "packing": 0.7,
+    "J": 100000000.0,
+    "sigma_hoop": 16000000000.0,
+    "rho_hoop": 1600,
+    "sigma_comp": 8000000000.0,
+    "rho_comp": 3500,
+    "Ecomp": 1000000000000.0,
+    "comp_mass_factor": 1.3,
+    "end_guard_radii": 3,
+    "end_system_fraction": 0.15,
+    "euler_safety": 2,
+    "global_margin": 1.2,
+    "stress_poisson": 0.2,
+    "heater": 0.95,
+    "direct": 0.95,
+    "potential_in": 0.999,
+    "potential_out": 0.999,
+    "end_barrier_kT": 25,
+    "end_in": 0.999,
+    "end_out": 0.999,
+    "extraction": 0.2,
+    "atomic": 0.1,
+    "neutron_capture": 0.995,
+    "neutron_leak": 1e-06,
+    "gamma_leak": 1e-05,
+    "coil_cold_K": 4.2,
+    "radiator_K": 50.0,
+    "hot_K": 300,
+    "ambient_K": 3,
+    "radiator_areal_mass": 1,
+    "radiator_emissivity": 0.9,
+    "cryo_Carnot_fraction": 0.3,
+    "warm_to_cold_W_m2": 0.05,
+    "outer_to_cold_W_m2": 0.001,
+    "J_fraction_of_critical": 0.1,
+    "power_law_n": 30,
+    "Ec_V_m": 0.0001,
+    "warm_water_density": 1000,
+    "wall_E": 1000000000000.0,
+    "wall_density": 3500,
+    "water_pressure": 10000.0,
+    "wall_buckling_safety": 3,
+    "conversion_kg_W": 0.1,
+    "Dplant_kg_W": 0.2,
+    "processing_kg_W": 0.1,
+    "other_fraction": 0.1,
+    "capture_stock_turnover_years": 1000,
+    "capture_processing_J_kg": 100000000.0,
+    "extra_processing_MeV_per_primary": 1.75,
+    "annual_replacement_fraction": 0.0001,
+    "embodied_J_kg": 100000000.0,
+    "manufacturing_kg_W": 1,
+    "replacement_inventory_years": 10
+  },
+  "source_rate_s": 2.687179356779016e+24,
+  "source_field_T": 137.14908499885485,
+  "source_loss_MeV_per_primary": {
+    "rotation_loss_MeV_per_pn": 2.3431134693512092,
+    "wall_loss_MeV_per_pn": 0.18908779569665596,
+    "potential_loss_MeV_per_pn": 0.49651550924966936,
+    "radiation_loss_MeV_per_pn": 0.02211803989153496,
+    "end_loss_MeV_per_pn": 1.6922777761661645,
+    "extraction_loss_MeV_per_pn": 0.25973419250263313,
+    "atomic_preparation_reserve_MeV_per_pn": 0.12986709625131657
+  },
+  "stored_field_energy_J": 1.2605291177077081e+21,
+  "refrigeration_W": 1404896446.3049295,
+  "cases": [
+    {
+      "extra_processing_MeV_per_primary": 1.0,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 640022807145.7415,
+      "total_mass_kg": 1334632982760386.8,
+      "net_mW_kg": 0.47954967051840647,
+      "bus_before_replacement_W": 1062942478717.8467,
+      "replacement_manufacturing_W": 422919671572.1052,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 430533597679.8489,
+      "generic_other_auxiliary_W": 129215830968.64964,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6285902932021.364,
+      "radiator_area_m2": 19707840345518.28,
+      "radiator_sphere_radius_m": 1252317.892680433,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6285902932021.364,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3346329827603867e+23,
+      "construction_energy_payback_years": 6607.884388654308,
+      "annual_replacement_kg": 133463298276.03868,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69857255853103.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 19707840345518.28,
+        "replacement_manufacturing_equipment": 422919671572.1052,
+        "replacement_inventory": 1334632982760.3867
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.0,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 596926574859.657,
+      "total_mass_kg": 1334768278138104.8,
+      "net_mW_kg": 0.4472136359820612,
+      "bus_before_replacement_W": 1019889118949.8618,
+      "replacement_manufacturing_W": 422962544090.20483,
+      "restored_generic_auxiliary_W": 43053359767.98488,
+      "extra_processing_W": 430533597679.8489,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6328999164307.448,
+      "radiator_area_m2": 19842957555340.418,
+      "radiator_sphere_radius_m": 1256603.513542577,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6328999164307.449,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3347682781381048e+23,
+      "construction_energy_payback_years": 7085.671201514982,
+      "annual_replacement_kg": 133476827813.81049,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69857255853103.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 19842957555340.418,
+        "replacement_manufacturing_equipment": 422962544090.20483,
+        "replacement_inventory": 1334768278138.1047
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.0,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 638770516739.8951,
+      "total_mass_kg": 1338584910731540.2,
+      "net_mW_kg": 0.4771983544852641,
+      "bus_before_replacement_W": 1062942478717.8467,
+      "replacement_manufacturing_W": 424171961977.95154,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 430533597679.8489,
+      "generic_other_auxiliary_W": 129215830968.64964,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6287155222427.21,
+      "radiator_area_m2": 23654564098294.86,
+      "radiator_sphere_radius_m": 1371995.044256303,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1257572724132.004,
+      "emitted_W": 7544727946559.214,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3385849107315403e+23,
+      "construction_energy_payback_years": 6640.443647004965,
+      "annual_replacement_kg": 133858491073.15404,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69857255853103.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 23654564098294.86,
+        "replacement_manufacturing_equipment": 424171961977.95154,
+        "replacement_inventory": 1338584910731.5403
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.0,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 595665698734.4951,
+      "total_mass_kg": 1338747300578845.8,
+      "net_mW_kg": 0.4449425955719515,
+      "bus_before_replacement_W": 1019889118949.8618,
+      "replacement_manufacturing_W": 424223420215.36676,
+      "restored_generic_auxiliary_W": 43053359767.98488,
+      "extra_processing_W": 430533597679.8489,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6330260040432.61,
+      "radiator_area_m2": 23816740097515.77,
+      "radiator_sphere_radius_m": 1376690.2183960238,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1266194659090.5845,
+      "emitted_W": 7596454699523.195,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3387473005788457e+23,
+      "construction_energy_payback_years": 7121.837317754551,
+      "annual_replacement_kg": 133874730057.88458,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69857255853103.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 23816740097515.77,
+        "replacement_manufacturing_equipment": 424223420215.36676,
+        "replacement_inventory": 1338747300578.8457
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.2,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 562446854154.8975,
+      "total_mass_kg": 1334885145052224.0,
+      "net_mW_kg": 0.421344754820006,
+      "bus_before_replacement_W": 985446431135.4739,
+      "replacement_manufacturing_W": 422999576980.5765,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 516640317215.8186,
+      "generic_other_auxiliary_W": 120605159015.05267,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6363478885012.208,
+      "radiator_area_m2": 19951059897701.746,
+      "radiator_sphere_radius_m": 1260021.7860500899,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6363478885012.208,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.334885145052224e+23,
+      "construction_energy_payback_years": 7520.70304697771,
+      "annual_replacement_kg": 133488514505.22241,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69865866525057.41,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 19951059897701.746,
+        "replacement_manufacturing_equipment": 422999576980.5765,
+        "replacement_inventory": 1334885145052.224
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.2,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 510731375411.59607,
+      "total_mass_kg": 1335047499505485.8,
+      "net_mW_kg": 0.38255670723384433,
+      "bus_before_replacement_W": 933782399413.8921,
+      "replacement_manufacturing_W": 423051024002.296,
+      "restored_generic_auxiliary_W": 51664031721.58185,
+      "extra_processing_W": 516640317215.8186,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6415194363755.51,
+      "radiator_area_m2": 20113200549488.312,
+      "radiator_sphere_radius_m": 1265131.4731777268,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6415194363755.51,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3350474995054858e+23,
+      "construction_energy_payback_years": 8283.239377282454,
+      "annual_replacement_kg": 133504749950.54858,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69865866525057.41,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 20113200549488.312,
+        "replacement_manufacturing_equipment": 423051024002.296,
+        "replacement_inventory": 1335047499505.4858
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.2,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 561179108909.4353,
+      "total_mass_kg": 1338885844788043.5,
+      "net_mW_kg": 0.41913887662190835,
+      "bus_before_replacement_W": 985446431135.4739,
+      "replacement_manufacturing_W": 424267322226.0386,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 516640317215.8186,
+      "generic_other_auxiliary_W": 120605159015.05267,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6364746630257.67,
+      "radiator_area_m2": 23946491188539.977,
+      "radiator_sphere_radius_m": 1380435.1564565888,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1273092754203.2385,
+      "emitted_W": 7637839384460.909,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3388858447880435e+23,
+      "construction_energy_payback_years": 7560.283615164086,
+      "annual_replacement_kg": 133888584478.80435,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69865866525057.41,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 23946491188539.977,
+        "replacement_manufacturing_equipment": 424267322226.0386,
+        "replacement_inventory": 1338885844788.0435
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.2,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 509453327302.9552,
+      "total_mass_kg": 1339080712604810.2,
+      "net_mW_kg": 0.3804500524183901,
+      "bus_before_replacement_W": 933782399413.8921,
+      "replacement_manufacturing_W": 424329072110.9369,
+      "restored_generic_auxiliary_W": 51664031721.58185,
+      "extra_processing_W": 516640317215.8186,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6416472411864.15,
+      "radiator_area_m2": 24141102387605.062,
+      "radiator_sphere_radius_m": 1386033.148354487,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1283439076153.5347,
+      "emitted_W": 7699911488017.685,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3390807126048103e+23,
+      "construction_energy_payback_years": 8329.105913535477,
+      "annual_replacement_kg": 133908071260.48103,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69865866525057.41,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 24141102387605.062,
+        "replacement_manufacturing_equipment": 424329072110.9369,
+        "replacement_inventory": 1339080712604.8103
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.5,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 446082924668.6312,
+      "total_mass_kg": 1335263388489980.2,
+      "net_mW_kg": 0.33407860090666947,
+      "bus_before_replacement_W": 869202359761.9147,
+      "replacement_manufacturing_W": 423119435093.28345,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 645800396519.7733,
+      "generic_other_auxiliary_W": 107689151084.6572,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6479842814498.475,
+      "radiator_area_m2": 20315889225976.95,
+      "radiator_sphere_radius_m": 1271490.108813594,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6479842814498.474,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3352633884899802e+23,
+      "construction_energy_payback_years": 9485.219265175729,
+      "annual_replacement_kg": 133526338848.99803,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69878782532987.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 20315889225976.95,
+        "replacement_manufacturing_equipment": 423119435093.28345,
+        "replacement_inventory": 1335263388489.9802
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.5,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 381438576239.5045,
+      "total_mass_kg": 1335466331556557.2,
+      "net_mW_kg": 0.28562200875174254,
+      "bus_before_replacement_W": 804622320109.9374,
+      "replacement_manufacturing_W": 423183743870.43286,
+      "restored_generic_auxiliary_W": 64580039651.977325,
+      "extra_processing_W": 645800396519.7733,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6544487162927.601,
+      "radiator_area_m2": 20518565040710.156,
+      "radiator_sphere_radius_m": 1277816.7026967478,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6544487162927.601,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3354663315565572e+23,
+      "construction_energy_payback_years": 11094.413890762758,
+      "annual_replacement_kg": 133546633155.65573,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69878782532987.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 20518565040710.156,
+        "replacement_manufacturing_equipment": 423183743870.43286,
+        "replacement_inventory": 1335466331556.5574
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.5,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 444791997163.74536,
+      "total_mass_kg": 1339337245872798.8,
+      "net_mW_kg": 0.3320985797523238,
+      "bus_before_replacement_W": 869202359761.9147,
+      "replacement_manufacturing_W": 424410362598.1693,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 645800396519.7733,
+      "generic_other_auxiliary_W": 107689151084.6572,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6481133742003.36,
+      "radiator_area_m2": 24384381823907.65,
+      "radiator_sphere_radius_m": 1392999.443918602,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1296372799310.09,
+      "emitted_W": 7777506541313.45,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3393372458727987e+23,
+      "construction_energy_payback_years": 9541.771553995097,
+      "annual_replacement_kg": 133933724587.27988,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69878782532987.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 24384381823907.65,
+        "replacement_manufacturing_equipment": 424410362598.1693,
+        "replacement_inventory": 1339337245872.7988
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.5,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 380134770155.6452,
+      "total_mass_kg": 1339580830643757.0,
+      "net_mW_kg": 0.2837714316746122,
+      "bus_before_replacement_W": 804622320109.9374,
+      "replacement_manufacturing_W": 424487549954.2922,
+      "restored_generic_auxiliary_W": 64580039651.977325,
+      "extra_processing_W": 645800396519.7733,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6545790969011.46,
+      "radiator_area_m2": 24627645822739.008,
+      "radiator_sphere_radius_m": 1399930.6356754575,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1309305701747.9604,
+      "emitted_W": 7855096670759.421,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.339580830643757e+23,
+      "construction_energy_payback_years": 11166.76461299467,
+      "annual_replacement_kg": 133958083064.3757,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69878782532987.81,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 24627645822739.008,
+        "replacement_manufacturing_equipment": 424487549954.2922,
+        "replacement_inventory": 1339580830643.757
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.75,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 349112983430.0761,
+      "total_mass_kg": 1335578591354776.8,
+      "net_mW_kg": 0.2613945638915527,
+      "bus_before_replacement_W": 772332300283.9486,
+      "replacement_manufacturing_W": 423219316853.8725,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 753433795939.7356,
+      "generic_other_auxiliary_W": 96925811142.66096,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6576812755737.029,
+      "radiator_area_m2": 20619913666206.285,
+      "radiator_sphere_radius_m": 1280968.615170734,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6576812755737.029,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3355785913547767e+23,
+      "construction_energy_payback_years": 12122.703449630917,
+      "annual_replacement_kg": 133557859135.47768,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69889545872929.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 20619913666206.285,
+        "replacement_manufacturing_equipment": 423219316853.8725,
+        "replacement_inventory": 1335578591354.7769
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.75,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 273694576929.42816,
+      "total_mass_kg": 1335815358265783.5,
+      "net_mW_kg": 0.20488952701124125,
+      "bus_before_replacement_W": 696988920689.9751,
+      "replacement_manufacturing_W": 423294343760.54694,
+      "restored_generic_auxiliary_W": 75343379593.97356,
+      "extra_processing_W": 753433795939.7356,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6652231162237.678,
+      "radiator_area_m2": 20856368783395.027,
+      "radiator_sphere_radius_m": 1288292.3167559484,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6652231162237.678,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3358153582657835e+23,
+      "construction_energy_payback_years": 15465.938291853437,
+      "annual_replacement_kg": 133581535826.57835,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69889545872929.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 20856368783395.027,
+        "replacement_manufacturing_equipment": 423294343760.54694,
+        "replacement_inventory": 1335815358265.7834
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.75,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 347802737375.6705,
+      "total_mass_kg": 1339713413443427.8,
+      "net_mW_kg": 0.2596098045191045,
+      "bus_before_replacement_W": 772332300283.9486,
+      "replacement_manufacturing_W": 424529562908.27814,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 753433795939.7356,
+      "generic_other_auxiliary_W": 96925811142.66096,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6578123001791.435,
+      "radiator_area_m2": 24749290686714.04,
+      "radiator_sphere_radius_m": 1403383.7591351748,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1315772836899.133,
+      "emitted_W": 7893895838690.567,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3397134134434278e+23,
+      "construction_energy_payback_years": 12206.044325917226,
+      "annual_replacement_kg": 133971341344.34279,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69889545872929.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 24749290686714.04,
+        "replacement_manufacturing_equipment": 424529562908.27814,
+        "replacement_inventory": 1339713413443.4277
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 1.75,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 272369305866.2202,
+      "total_mass_kg": 1339997595676212.8,
+      "net_mW_kg": 0.2032610407250563,
+      "bus_before_replacement_W": 696988920689.9751,
+      "replacement_manufacturing_W": 424619614823.7549,
+      "restored_generic_auxiliary_W": 75343379593.97356,
+      "extra_processing_W": 753433795939.7356,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6653556433300.885,
+      "radiator_area_m2": 25033098685350.625,
+      "radiator_sphere_radius_m": 1411407.3467076716,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1330861223076.6484,
+      "emitted_W": 7984417656377.533,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3399975956762127e+23,
+      "construction_energy_payback_years": 15589.848256701713,
+      "annual_replacement_kg": 133999759567.62128,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69889545872929.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 25033098685350.625,
+        "replacement_manufacturing_equipment": 424619614823.7549,
+        "replacement_inventory": 1339997595676.213
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 2.0,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 252143042191.52094,
+      "total_mass_kg": 1335893794219573.8,
+      "net_mW_kg": 0.1887448263346581,
+      "bus_before_replacement_W": 675462240805.9827,
+      "replacement_manufacturing_W": 423319198614.46173,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 861067195359.6978,
+      "generic_other_auxiliary_W": 86162471200.66475,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6673782696975.585,
+      "radiator_area_m2": 20923938106435.62,
+      "radiator_sphere_radius_m": 1290377.4987553258,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6673782696975.585,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3358937942195738e+23,
+      "construction_energy_payback_years": 16788.85107973434,
+      "annual_replacement_kg": 133589379421.95738,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69900309212871.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 20923938106435.62,
+        "replacement_manufacturing_equipment": 423319198614.46173,
+        "replacement_inventory": 1335893794219.5737
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 2.0,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 0.0,
+      "net_W": 165950577619.3521,
+      "total_mass_kg": 1336164384975009.5,
+      "net_mW_kg": 0.12419922240515034,
+      "bus_before_replacement_W": 589355521270.013,
+      "replacement_manufacturing_W": 423404943650.6608,
+      "restored_generic_auxiliary_W": 86106719535.96977,
+      "extra_processing_W": 861067195359.6978,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6759975161547.753,
+      "radiator_area_m2": 21194172526079.895,
+      "radiator_sphere_radius_m": 1298683.4337643753,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0,
+      "external_absorbed_W": 0.0,
+      "emitted_W": 6759975161547.753,
+      "usable_radiator_flux_mean_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_subsolar_W_m2": 0.31895442736579854,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3361643849750095e+23,
+      "construction_energy_payback_years": 25513.918042626086,
+      "annual_replacement_kg": 133616438497.50096,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69900309212871.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 21194172526079.895,
+        "replacement_manufacturing_equipment": 423404943650.6608,
+        "replacement_inventory": 1336164384975.0095
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 2.0,
+      "auxiliary_policy": "original 10% scaling",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 250813477587.5957,
+      "total_mass_kg": 1340089581014056.8,
+      "net_mW_kg": 0.18716172496304545,
+      "bus_before_replacement_W": 675462240805.9827,
+      "replacement_manufacturing_W": 424648763218.38696,
+      "restored_generic_auxiliary_W": 0.0,
+      "extra_processing_W": 861067195359.6978,
+      "generic_other_auxiliary_W": 86162471200.66475,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6675112261579.51,
+      "radiator_area_m2": 25114199549520.434,
+      "radiator_sphere_radius_m": 1413691.7981127338,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1335172874488.176,
+      "emitted_W": 8010285136067.686,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.3400895810140568e+23,
+      "construction_energy_payback_years": 16930.859031292683,
+      "annual_replacement_kg": 134008958101.40569,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69900309212871.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 25114199549520.434,
+        "replacement_manufacturing_equipment": 424648763218.38696,
+        "replacement_inventory": 1340089581014.057
+      }
+    },
+    {
+      "extra_processing_MeV_per_primary": 2.0,
+      "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+      "bolometric_absorptivity": 1.0,
+      "net_W": 164603841576.79547,
+      "total_mass_kg": 1340414360708668.0,
+      "net_mW_kg": 0.1228007147653734,
+      "bus_before_replacement_W": 589355521270.013,
+      "replacement_manufacturing_W": 424751679693.21747,
+      "restored_generic_auxiliary_W": 86106719535.96977,
+      "extra_processing_W": 861067195359.6978,
+      "generic_other_auxiliary_W": 172269190736.63452,
+      "nuclear_after_capture_W": 6925925739167.105,
+      "internal_waste_W": 6761321897590.31,
+      "radiator_area_m2": 25438551547962.246,
+      "radiator_sphere_radius_m": 1422791.4857694674,
+      "radiator_emission_flux_W_m2": 0.31895442736579854,
+      "solar_directional_flux_W_m2": 0.21265625,
+      "external_absorbed_flux_mean_W_m2": 0.0531640625,
+      "external_absorbed_W": 1352416744405.3364,
+      "emitted_W": 8113738641995.646,
+      "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+      "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+      "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+      "construction_energy_J": 1.340414360708668e+23,
+      "construction_energy_payback_years": 25804.481573721398,
+      "annual_replacement_kg": 134041436070.8668,
+      "mass_breakdown_kg": {
+        "circumferential_structure": 252105823541541.62,
+        "conductor": 2366544976191.2773,
+        "axial_compression_support": 716925935696259.0,
+        "water_moderator_and_shield": 18463177551677.516,
+        "channel_walls": 5553163974350.098,
+        "cold_decay_inventory": 9464631.201786157,
+        "capture_isotope_stock_lower_bound": 191490402512.325,
+        "active_plasma_ions": 155.7181239622403,
+        "conversion_and_potential_handling": 69900309212871.8,
+        "closed_D_plant": 1297376730479.3386,
+        "isotope_processing": 696459141066.0952,
+        "capture_bank_processing_equipment": 606796469.0354306,
+        "end_system_allowance": 145709745632098.78,
+        "additional_integration_reserve": 100000000000000.0,
+        "radiators": 25438551547962.246,
+        "replacement_manufacturing_equipment": 424751679693.21747,
+        "replacement_inventory": 1340414360708.668
+      }
+    }
+  ],
+  "selected_conservative_case": {
+    "extra_processing_MeV_per_primary": 1.75,
+    "auxiliary_policy": "hold zero-extra auxiliary draw fixed",
+    "bolometric_absorptivity": 1.0,
+    "net_W": 272369305866.2202,
+    "total_mass_kg": 1339997595676212.8,
+    "net_mW_kg": 0.2032610407250563,
+    "bus_before_replacement_W": 696988920689.9751,
+    "replacement_manufacturing_W": 424619614823.7549,
+    "restored_generic_auxiliary_W": 75343379593.97356,
+    "extra_processing_W": 753433795939.7356,
+    "generic_other_auxiliary_W": 172269190736.63452,
+    "nuclear_after_capture_W": 6925925739167.105,
+    "internal_waste_W": 6653556433300.885,
+    "radiator_area_m2": 25033098685350.625,
+    "radiator_sphere_radius_m": 1411407.3467076716,
+    "radiator_emission_flux_W_m2": 0.31895442736579854,
+    "solar_directional_flux_W_m2": 0.21265625,
+    "external_absorbed_flux_mean_W_m2": 0.0531640625,
+    "external_absorbed_W": 1330861223076.6484,
+    "emitted_W": 7984417656377.533,
+    "usable_radiator_flux_mean_W_m2": 0.26579036486579855,
+    "allowed_internal_flux_subsolar_W_m2": 0.10629817736579855,
+    "allowed_internal_flux_antisolar_W_m2": 0.31895442736579854,
+    "construction_energy_J": 1.3399975956762127e+23,
+    "construction_energy_payback_years": 15589.848256701713,
+    "annual_replacement_kg": 133999759567.62128,
+    "mass_breakdown_kg": {
+      "circumferential_structure": 252105823541541.62,
+      "conductor": 2366544976191.2773,
+      "axial_compression_support": 716925935696259.0,
+      "water_moderator_and_shield": 18463177551677.516,
+      "channel_walls": 5553163974350.098,
+      "cold_decay_inventory": 9464631.201786157,
+      "capture_isotope_stock_lower_bound": 191490402512.325,
+      "active_plasma_ions": 155.7181239622403,
+      "conversion_and_potential_handling": 69889545872929.8,
+      "closed_D_plant": 1297376730479.3386,
+      "isotope_processing": 696459141066.0952,
+      "capture_bank_processing_equipment": 606796469.0354306,
+      "end_system_allowance": 145709745632098.78,
+      "additional_integration_reserve": 100000000000000.0,
+      "radiators": 25033098685350.625,
+      "replacement_manufacturing_equipment": 424619614823.7549,
+      "replacement_inventory": 1339997595676.213
+    }
+  },
+  "engine": {
+    "terms_MeV_per_primary": {
+      "network_thermal": 15.326845366745959,
+      "primary_charged_converter_loss": 0.6059917874611856,
+      "rotation_converter_loss": 1.43177007734862,
+      "neutron_rotation": 0.5816629980059327,
+      "wall_converter_loss": 0.13016913471871258,
+      "potential_return_loss": 0.3544005385398605,
+      "end_return_loss": 1.2079061863317317,
+      "ion_radiation": 0.04886543696967027,
+      "failed_H_capture": -0.049486888418017634,
+      "shield_and_thermal_cold_leak": -8.901475546549929e-05
+    },
+    "hot_input_W": 8454834128112.916,
+    "electric_generation_W": 5072900476867.749,
+    "engine_cold_rejection_W": 3381933651245.1665
+  },
+  "exchanger": {
+    "feasible": true,
+    "relative_Carnot": 0.85,
+    "eta": 0.6,
+    "hot_reservoir_K": 300.0,
+    "radiator_surface_K": 50.0,
+    "selection": "minimum total conductance",
+    "engine_hot_K": 239.98680759450613,
+    "engine_cold_K": 70.58435517485474,
+    "hot_approach_K": 60.01319240549387,
+    "cold_approach_K": 20.584355174854736,
+    "hot_conductance_W_K": 140882925723.82675,
+    "cold_conductance_W_K": 164296312540.13925,
+    "total_conductance_W_K": 305179238263.966,
+    "engine_entropy_generation_W_K": 12682948352.992424
+  },
+  "pipe_screens": [
+    {
+      "Qcold_W": 3381933651245.1665,
+      "gas_R_J_kg_K": 2077.26439404998,
+      "gas_cp_J_kg_K": 5193.1609851249505,
+      "temperature_span_K": 10.292177587427368,
+      "mean_K": 60.29217758742737,
+      "path_length_m": 2822814.6934153433,
+      "velocity_m_s": 9.188779699083897,
+      "pressure_Pa": 100000.0,
+      "darcy_f": 0.005,
+      "parallel_pipes": 1,
+      "pump_efficiency": 0.8,
+      "wall_density_kg_m3": 1600.0,
+      "wall_stress_Pa": 1000000000.0,
+      "density_kg_m3": 0.7984491323781802,
+      "mass_flow_kg_s": 63487333.17459758,
+      "total_flow_area_m2": 8653304.611073557,
+      "diameter_per_pipe_m": 3319.2965555156384,
+      "wall_thickness_m": 0.16596482777578192,
+      "fluid_mass_kg": 19503457782198.938,
+      "pressure_wall_mass_kg": 7816536128875.898,
+      "pipe_and_fluid_mass_kg": 27319993911074.836,
+      "fluid_dissipation_W": 11396699212.822475,
+      "pump_electric_W": 14245874016.028093,
+      "pressure_drop_Pa": 143.3307109219409,
+      "pressure_drop_over_absolute_pressure": 0.0014333071092194089,
+      "Mach_number": 0.020112084790690186,
+      "constant_density_screen_pass": true,
+      "fluid_heat_relative_residual": 8.234132573478972e-17,
+      "span_fraction": 0.5,
+      "distance_factor": 1.0,
+      "radiator_sphere_radius_m": 1411407.3467076716,
+      "relative_Carnot": 0.85,
+      "objective_W_equivalent_at_target": 50223051588.43169,
+      "mass_fraction_of_allocated_radiators": 1.352040078780466,
+      "pump_fraction_of_allocated_auxiliaries": 0.14697709359440075,
+      "mass_fraction_of_total_plant": 0.022120865632977254,
+      "load_scope": "engine rejection only"
+    },
+    {
+      "Qcold_W": 6653556433300.885,
+      "gas_R_J_kg_K": 2077.26439404998,
+      "gas_cp_J_kg_K": 5193.1609851249505,
+      "temperature_span_K": 10.292177587427368,
+      "mean_K": 60.29217758742737,
+      "path_length_m": 2822814.6934153433,
+      "velocity_m_s": 10.123678005397176,
+      "pressure_Pa": 100000.0,
+      "darcy_f": 0.005,
+      "parallel_pipes": 1,
+      "pump_efficiency": 0.8,
+      "wall_density_kg_m3": 1600.0,
+      "wall_stress_Pa": 1000000000.0,
+      "density_kg_m3": 0.7984491323781802,
+      "mass_flow_kg_s": 124865353.62547885,
+      "total_flow_area_m2": 15447434.935517618,
+      "diameter_per_pipe_m": 4434.894026312749,
+      "wall_thickness_m": 0.22174470131563745,
+      "fluid_mass_kg": 34816571084599.227,
+      "pressure_wall_mass_kg": 13953678819698.121,
+      "pipe_and_fluid_mass_kg": 48770249904297.34,
+      "fluid_dissipation_W": 20363748741.674377,
+      "pump_electric_W": 25454685927.09297,
+      "pressure_drop_Pa": 130.2156045905709,
+      "pressure_drop_over_absolute_pressure": 0.001302156045905709,
+      "Mach_number": 0.022158358030772318,
+      "constant_density_screen_pass": true,
+      "fluid_heat_relative_residual": -8.255981770902025e-17,
+      "span_fraction": 0.5,
+      "distance_factor": 1.0,
+      "radiator_sphere_radius_m": 1411407.3467076716,
+      "relative_Carnot": 0.85,
+      "objective_W_equivalent_at_target": 89679295448.18542,
+      "mass_fraction_of_allocated_radiators": 2.413592504353343,
+      "pump_fraction_of_allocated_auxiliaries": 0.2626203033743747,
+      "mass_fraction_of_total_plant": 0.03948903314295209,
+      "load_scope": "all internal waste; self-friction deliberately counted twice"
+    },
+    {
+      "Qcold_W": 3381933651245.1665,
+      "gas_R_J_kg_K": 2077.26439404998,
+      "gas_cp_J_kg_K": 5193.1609851249505,
+      "temperature_span_K": 10.292177587427368,
+      "mean_K": 60.29217758742737,
+      "path_length_m": 2822814.6934153433,
+      "velocity_m_s": 7.533908168784283,
+      "pressure_Pa": 100000.0,
+      "darcy_f": 0.01,
+      "parallel_pipes": 1,
+      "pump_efficiency": 0.8,
+      "wall_density_kg_m3": 1600.0,
+      "wall_stress_Pa": 1000000000.0,
+      "density_kg_m3": 0.7984491323781802,
+      "mass_flow_kg_s": 63533785.177235425,
+      "total_flow_area_m2": 10561780.916811295,
+      "diameter_per_pipe_m": 3667.10746039891,
+      "wall_thickness_m": 0.1833553730199455,
+      "fluid_mass_kg": 23804922798194.15,
+      "pressure_wall_mass_kg": 9540464115394.783,
+      "pipe_and_fluid_mass_kg": 33345386913588.93,
+      "fluid_dissipation_W": 13879509287.031229,
+      "pump_electric_W": 17349386608.789036,
+      "pressure_drop_Pa": 174.4281741934646,
+      "pressure_drop_over_absolute_pressure": 0.001744281741934646,
+      "Mach_number": 0.016489958934478473,
+      "constant_density_screen_pass": true,
+      "fluid_heat_relative_residual": 6.2037985142649795e-18,
+      "span_fraction": 0.5,
+      "distance_factor": 1.0,
+      "radiator_sphere_radius_m": 1411407.3467076716,
+      "relative_Carnot": 0.85,
+      "objective_W_equivalent_at_target": 61261289009.48375,
+      "mass_fraction_of_allocated_radiators": 1.650230951601269,
+      "pump_fraction_of_allocated_auxiliaries": 0.17899655833937994,
+      "mass_fraction_of_total_plant": 0.026999596917776866,
+      "load_scope": "engine rejection only"
+    },
+    {
+      "Qcold_W": 6653556433300.885,
+      "gas_R_J_kg_K": 2077.26439404998,
+      "gas_cp_J_kg_K": 5193.1609851249505,
+      "temperature_span_K": 10.292177587427368,
+      "mean_K": 60.29217758742737,
+      "path_length_m": 2822814.6934153433,
+      "velocity_m_s": 8.300835840407528,
+      "pressure_Pa": 100000.0,
+      "darcy_f": 0.01,
+      "parallel_pipes": 1,
+      "pump_efficiency": 0.8,
+      "wall_density_kg_m3": 1600.0,
+      "wall_stress_Pa": 1000000000.0,
+      "density_kg_m3": 0.7984491323781802,
+      "mass_flow_kg_s": 124948395.27663615,
+      "total_flow_area_m2": 18852181.152482573,
+      "diameter_per_pipe_m": 4899.32062105061,
+      "wall_thickness_m": 0.24496603105253048,
+      "fluid_mass_kg": 42490439864937.836,
+      "pressure_wall_mass_kg": 17029188467249.793,
+      "pipe_and_fluid_mass_kg": 59519628332187.625,
+      "fluid_dissipation_W": 24802236564.893715,
+      "pump_electric_W": 31002795706.11714,
+      "pressure_drop_Pa": 158.4920256273251,
+      "pressure_drop_over_absolute_pressure": 0.001584920256273251,
+      "Mach_number": 0.018168583829746243,
+      "constant_density_screen_pass": true,
+      "fluid_heat_relative_residual": 1.2269306242868288e-16,
+      "span_fraction": 0.5,
+      "distance_factor": 1.0,
+      "radiator_sphere_radius_m": 1411407.3467076716,
+      "relative_Carnot": 0.85,
+      "objective_W_equivalent_at_target": 109383056130.79204,
+      "mass_fraction_of_allocated_radiators": 2.9455688475323316,
+      "pump_fraction_of_allocated_auxiliaries": 0.31986109108218297,
+      "mass_fraction_of_total_plant": 0.048192752353701726,
+      "load_scope": "all internal waste; self-friction deliberately counted twice"
+    }
+  ],
+  "startup": {
+    "cold_decay_inventory_total_kg": 9464631.201786155,
+    "V49_inventory_kg": 8986014.225702936,
+    "V49_flow_mass_kg_s": 0.21845645430055943,
+    "Ti49_maximum_bridge_kg": 8985895.619634073,
+    "Ti49_initial_bridge_consumption_kg_s": 0.2184535709019122,
+    "steady_Ti49_boundary_makeup_kg_year": 11.081431993510106,
+    "V49_decay_buildup": [
+      {
+        "years": 0,
+        "fraction": 0.0,
+        "inventory_kg": 0.0
+      },
+      {
+        "years": 1,
+        "fraction": 0.5356830611743336,
+        "inventory_kg": 4813655.608180658
+      },
+      {
+        "years": 2,
+        "fraction": 0.7844097803195624,
+        "inventory_kg": 7048717.444732103
+      },
+      {
+        "years": 3,
+        "fraction": 0.8998978091572263,
+        "inventory_kg": 8086494.514765741
+      },
+      {
+        "years": 5,
+        "fraction": 0.9784189466857133,
+        "inventory_kg": 8792086.573615102
+      },
+      {
+        "years": 6,
+        "fraction": 0.9899795513884769,
+        "inventory_kg": 8895970.331931865
+      }
+    ],
+    "all_decay_inventories": [
+      {
+        "nuclide": "23049",
+        "decays_per_primary_pn": 1.0001834131222656,
+        "mean_life_s": 41134121.00582612,
+        "kg_per_primary_pn_s": 3.3440321737489123e-18,
+        "inventory_kg": 8986014.225702936,
+        "equilibrium_activity_s": 2.6876722207349303e+24,
+        "half_life_days": 329.99999999999994,
+        "mean_life_years": 1.3034616385855111,
+        "time_to_90_percent_years": 3.0013313382965903,
+        "time_to_99_percent_years": 6.0026626765931805,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.5356830611743336,
+            "inventory_kg": 4813655.608180658
+          },
+          {
+            "years": 2,
+            "fraction": 0.7844097803195624,
+            "inventory_kg": 7048717.444732103
+          },
+          {
+            "years": 3,
+            "fraction": 0.8998978091572263,
+            "inventory_kg": 8086494.514765741
+          },
+          {
+            "years": 5,
+            "fraction": 0.9784189466857133,
+            "inventory_kg": 8792086.573615102
+          },
+          {
+            "years": 6,
+            "fraction": 0.9899795513884769,
+            "inventory_kg": 8895970.331931865
+          }
+        ]
+      },
+      {
+        "nuclide": "26055",
+        "decays_per_primary_pn": 0.008490513348071849,
+        "mean_life_s": 125481574.30422957,
+        "kg_per_primary_pn_s": 9.719370825117926e-20,
+        "inventory_kg": 261176.9264213712,
+        "equilibrium_activity_s": 2.2815532197395357e+22,
+        "half_life_days": 1006.680549087963,
+        "mean_life_years": 3.9762711455950255,
+        "time_to_90_percent_years": 9.155702665549462,
+        "time_to_99_percent_years": 18.311405331098925,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.22236024640451457,
+            "inventory_kg": 58075.365714229876
+          },
+          {
+            "years": 2,
+            "fraction": 0.39527641362795274,
+            "inventory_kg": 103237.0787982113
+          },
+          {
+            "years": 3,
+            "fraction": 0.5297428993002629,
+            "inventory_kg": 138356.62223278862
+          },
+          {
+            "years": 5,
+            "fraction": 0.715624439547934,
+            "inventory_kg": 186904.59159314574
+          },
+          {
+            "years": 6,
+            "fraction": 0.7788582592414773,
+            "inventory_kg": 203419.8062665886
+          }
+        ]
+      },
+      {
+        "nuclide": "24051",
+        "decays_per_primary_pn": 0.24716605413058682,
+        "mean_life_s": 3452960.160736038,
+        "kg_per_primary_pn_s": 7.219864651201608e-20,
+        "inventory_kg": 194010.7124944749,
+        "equilibrium_activity_s": 6.641795183562377e+23,
+        "half_life_days": 27.7015,
+        "mean_life_years": 0.10941770479174709,
+        "time_to_90_percent_years": 0.2519435759631,
+        "time_to_99_percent_years": 0.5038871519262,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.9998926363367486,
+            "inventory_kg": 193989.88279367148
+          },
+          {
+            "years": 2,
+            "fraction": 0.9999999884730438,
+            "inventory_kg": 194010.71025812192
+          },
+          {
+            "years": 3,
+            "fraction": 0.9999999999987624,
+            "inventory_kg": 194010.7124942348
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 194010.7124944749
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 194010.7124944749
+          }
+        ]
+      },
+      {
+        "nuclide": "25054",
+        "decays_per_primary_pn": 0.0013143701498207466,
+        "mean_life_s": 38900538.23520976,
+        "kg_per_primary_pn_s": 4.579691272851767e-21,
+        "inventory_kg": 12306.451848828285,
+        "equilibrium_activity_s": 3.5319483337648526e+21,
+        "half_life_days": 312.08099999999996,
+        "mean_life_years": 1.2326836716103178,
+        "time_to_90_percent_years": 2.8383590466270854,
+        "time_to_99_percent_years": 5.676718093254171,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.5556923862706987,
+            "inventory_kg": 6838.601594400841
+          },
+          {
+            "years": 2,
+            "fraction": 0.802590744382174,
+            "inventory_kg": 9877.044350054475
+          },
+          {
+            "years": 3,
+            "fraction": 0.9122895647083661,
+            "inventory_kg": 11227.047600272022
+          },
+          {
+            "years": 5,
+            "fraction": 0.9826851482591631,
+            "inventory_kg": 12093.367459610075
+          },
+          {
+            "years": 6,
+            "fraction": 0.9923068795409521,
+            "inventory_kg": 12211.776832331776
+          }
+        ]
+      },
+      {
+        "nuclide": "21046",
+        "decays_per_primary_pn": 0.002083544189553009,
+        "mean_life_s": 10440213.85783327,
+        "kg_per_primary_pn_s": 1.6599521054138594e-21,
+        "inventory_kg": 4460.589030909988,
+        "equilibrium_activity_s": 5.59885693510371e+21,
+        "half_life_days": 83.757,
+        "mean_life_years": 0.3308304135242626,
+        "time_to_90_percent_years": 0.7617651784900229,
+        "time_to_99_percent_years": 1.5235303569800458,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.9513302067118884,
+            "inventory_kg": 4243.49308483238
+          },
+          {
+            "years": 2,
+            "fraction": 0.9976312512212925,
+            "inventory_kg": 4450.023016090704
+          },
+          {
+            "years": 3,
+            "fraction": 0.9998847134865888,
+            "inventory_kg": 4460.074785152854
+          },
+          {
+            "years": 5,
+            "fraction": 0.9999997269152121,
+            "inventory_kg": 4460.587812790978
+          },
+          {
+            "years": 6,
+            "fraction": 0.9999999867090198,
+            "inventory_kg": 4460.588971624387
+          }
+        ]
+      },
+      {
+        "nuclide": "25052",
+        "decays_per_primary_pn": 0.015577713511681097,
+        "mean_life_s": 696911.7289199209,
+        "kg_per_primary_pn_s": 9.364379565021906e-22,
+        "inventory_kg": 2516.3767456170126,
+        "equilibrium_activity_s": 4.186011017440699e+22,
+        "half_life_days": 5.591,
+        "mean_life_years": 0.022083800064641192,
+        "time_to_90_percent_years": 0.050849828825503755,
+        "time_to_99_percent_years": 0.10169965765100751,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 2516.3767456170126
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 2516.3767456170126
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 2516.3767456170126
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 2516.3767456170126
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 2516.3767456170126
+          }
+        ]
+      },
+      {
+        "nuclide": "27057",
+        "decays_per_primary_pn": 0.0002544811475104581,
+        "mean_life_s": 33880928.98398365,
+        "kg_per_primary_pn_s": 8.151718704101299e-22,
+        "inventory_kg": 2190.51302239304,
+        "equilibrium_activity_s": 6.838364862795387e+20,
+        "half_life_days": 271.811,
+        "mean_life_years": 1.0736218528653525,
+        "time_to_90_percent_years": 2.472105673920408,
+        "time_to_99_percent_years": 4.944211347840816,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.6060087762250934,
+            "inventory_kg": 1327.4701160055367
+          },
+          {
+            "years": 2,
+            "fraction": 0.8447709155883515,
+            "inventory_kg": 1850.4816915351755
+          },
+          {
+            "years": 3,
+            "fraction": 0.9388411030671964,
+            "inventory_kg": 2056.54366222654
+          },
+          {
+            "years": 5,
+            "fraction": 0.9905063604254944,
+            "inventory_kg": 2169.7170812751797
+          },
+          {
+            "years": 6,
+            "fraction": 0.9962595893259627,
+            "inventory_kg": 2182.3196041024635
+          }
+        ]
+      },
+      {
+        "nuclide": "27056",
+        "decays_per_primary_pn": 0.00042320761382985006,
+        "mean_life_s": 9627378.69698784,
+        "kg_per_primary_pn_s": 3.784703221871804e-22,
+        "inventory_kg": 1017.0176369348943,
+        "equilibrium_activity_s": 1.1372347635152785e+21,
+        "half_life_days": 77.236,
+        "mean_life_years": 0.30507322156906225,
+        "time_to_90_percent_years": 0.7024570522565925,
+        "time_to_99_percent_years": 1.404914104513185,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.962292701021078,
+            "inventory_kg": 978.6686488321535
+          },
+          {
+            "years": 2,
+            "fraction": 0.9985781596037142,
+            "inventory_kg": 1015.5716001749652
+          },
+          {
+            "years": 3,
+            "fraction": 0.999946386239077,
+            "inventory_kg": 1016.9631107944532
+          },
+          {
+            "years": 5,
+            "fraction": 0.999999923769789,
+            "inventory_kg": 1017.0175594074252
+          },
+          {
+            "years": 6,
+            "fraction": 0.9999999971255646,
+            "inventory_kg": 1017.0176340115429
+          }
+        ]
+      },
+      {
+        "nuclide": "23048",
+        "decays_per_primary_pn": 0.0020092396014346776,
+        "mean_life_s": 1991078.4299592837,
+        "kg_per_primary_pn_s": 3.1855042758970083e-22,
+        "inventory_kg": 856.0021331121727,
+        "equilibrium_activity_s": 5.399187179798163e+21,
+        "half_life_days": 15.9735,
+        "mean_life_years": 0.06309346813316867,
+        "time_to_90_percent_years": 0.14527807918872904,
+        "time_to_99_percent_years": 0.2905561583774581,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.9999998691875498,
+            "inventory_kg": 856.0020211364363
+          },
+          {
+            "years": 2,
+            "fraction": 0.9999999999999829,
+            "inventory_kg": 856.002133112158
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 856.0021331121727
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 856.0021331121727
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 856.0021331121727
+          }
+        ]
+      },
+      {
+        "nuclide": "27058",
+        "decays_per_primary_pn": 3.548825163824931e-05,
+        "mean_life_s": 8830623.237990139,
+        "kg_per_primary_pn_s": 3.014891589880096e-23,
+        "inventory_kg": 81.0155444325246,
+        "equilibrium_activity_s": 9.536329721048264e+19,
+        "half_life_days": 70.844,
+        "mean_life_years": 0.2798255646180362,
+        "time_to_90_percent_years": 0.6443221737281323,
+        "time_to_99_percent_years": 1.2886443474562645,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.9719468653068439,
+            "inventory_kg": 78.74280445231962
+          },
+          {
+            "years": 2,
+            "fraction": 0.9992130216338876,
+            "inventory_kg": 80.95178695173739
+          },
+          {
+            "years": 3,
+            "fraction": 0.9999779227898948,
+            "inventory_kg": 81.01375583532838
+          },
+          {
+            "years": 5,
+            "fraction": 0.9999999826257132,
+            "inventory_kg": 81.0155430249373
+          },
+          {
+            "years": 6,
+            "fraction": 0.9999999995125968,
+            "inventory_kg": 81.01554439303737
+          }
+        ]
+      },
+      {
+        "nuclide": "26053",
+        "decays_per_primary_pn": 0.00459180575806661,
+        "mean_life_s": 736.6400878779048,
+        "kg_per_primary_pn_s": 2.973825045079803e-25,
+        "inventory_kg": 0.7991201271810873,
+        "equilibrium_activity_s": 1.2339005643415615e+22,
+        "half_life_days": 0.0059097222222222225,
+        "mean_life_years": 2.334271579200905e-05,
+        "time_to_90_percent_years": 5.374858941267674e-05,
+        "time_to_99_percent_years": 0.00010749717882535348,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.7991201271810873
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.7991201271810873
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.7991201271810873
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.7991201271810873
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.7991201271810873
+          }
+        ]
+      },
+      {
+        "nuclide": "20045",
+        "decays_per_primary_pn": 1.1140386776676994e-07,
+        "mean_life_s": 20269149.747749656,
+        "kg_per_primary_pn_s": 1.6856769959802306e-25,
+        "inventory_kg": 0.452971642579534,
+        "equilibrium_activity_s": 2.993621737282034e+17,
+        "half_life_days": 162.61,
+        "mean_life_years": 0.6422905971223939,
+        "time_to_90_percent_years": 1.4789287543042686,
+        "time_to_99_percent_years": 2.9578575086085372,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.7892173277354935,
+            "inventory_kg": 0.35749306929657687
+          },
+          {
+            "years": 2,
+            "fraction": 0.9555706650730337,
+            "inventory_kg": 0.4328464137589498
+          },
+          {
+            "years": 3,
+            "fraction": 0.9906350660571592,
+            "inventory_kg": 0.44872959306879656
+          },
+          {
+            "years": 5,
+            "fraction": 0.9995839222132846,
+            "inventory_kg": 0.45278317114104466
+          },
+          {
+            "years": 6,
+            "fraction": 0.9999122980122462,
+            "inventory_kg": 0.4529319160660837
+          }
+        ]
+      },
+      {
+        "nuclide": "21048",
+        "decays_per_primary_pn": 1.3974278569592004e-06,
+        "mean_life_s": 226808.97276823572,
+        "kg_per_primary_pn_s": 2.5237566177489964e-26,
+        "inventory_kg": 0.06781786684749533,
+        "equilibrium_activity_s": 3.7551392898087025e+18,
+        "half_life_days": 1.8195833333333333,
+        "mean_life_years": 0.007187142646089554,
+        "time_to_90_percent_years": 0.01654900751810759,
+        "time_to_99_percent_years": 0.03309801503621518,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.06781786684749533
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.06781786684749533
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.06781786684749533
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.06781786684749533
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.06781786684749533
+          }
+        ]
+      },
+      {
+        "nuclide": "21047",
+        "decays_per_primary_pn": 2.0715629325200983e-07,
+        "mean_life_s": 417473.93355367536,
+        "kg_per_primary_pn_s": 6.742708927241423e-27,
+        "inventory_kg": 0.018118868238052734,
+        "equilibrium_activity_s": 5.566661148536609e+17,
+        "half_life_days": 3.3492,
+        "mean_life_years": 0.013228950666516952,
+        "time_to_90_percent_years": 0.030460784600675583,
+        "time_to_99_percent_years": 0.06092156920135117,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.018118868238052734
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.018118868238052734
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.018118868238052734
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.018118868238052734
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.018118868238052734
+          }
+        ]
+      },
+      {
+        "nuclide": "26052",
+        "decays_per_primary_pn": 9.988253666905754e-07,
+        "mean_life_s": 42977.885268082224,
+        "kg_per_primary_pn_s": 3.702998043492614e-27,
+        "inventory_kg": 0.009950619900666436,
+        "equilibrium_activity_s": 2.684022906398145e+18,
+        "half_life_days": 0.34479166666666666,
+        "mean_life_years": 0.0013618870024362506,
+        "time_to_90_percent_years": 0.003135860710152057,
+        "time_to_99_percent_years": 0.006271721420304114,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.009950619900666436
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.009950619900666436
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.009950619900666436
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.009950619900666436
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.009950619900666436
+          }
+        ]
+      },
+      {
+        "nuclide": "25051",
+        "decays_per_primary_pn": 1.03875995939854e-05,
+        "mean_life_s": 3965.391589387405,
+        "kg_per_primary_pn_s": 3.4848115643855355e-27,
+        "inventory_kg": 0.009364313698081599,
+        "equilibrium_activity_s": 2.7913343195443655e+19,
+        "half_life_days": 0.0318125,
+        "mean_life_years": 0.00012565567690151993,
+        "time_to_90_percent_years": 0.00028933288848351604,
+        "time_to_99_percent_years": 0.0005786657769670321,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.009364313698081599
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.009364313698081599
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.009364313698081599
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.009364313698081599
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.009364313698081599
+          }
+        ]
+      },
+      {
+        "nuclide": "27055",
+        "decays_per_primary_pn": 3.278760286343695e-07,
+        "mean_life_s": 91045.59864042072,
+        "kg_per_primary_pn_s": 2.7234672398997088e-27,
+        "inventory_kg": 0.007318444945922421,
+        "equilibrium_activity_s": 8.810616957289632e+17,
+        "half_life_days": 0.7304166666666667,
+        "mean_life_years": 0.0028850609247984865,
+        "time_to_90_percent_years": 0.006643098277820611,
+        "time_to_99_percent_years": 0.013286196555641222,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.007318444945922421
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.007318444945922421
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.007318444945922421
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.007318444945922421
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.007318444945922421
+          }
+        ]
+      },
+      {
+        "nuclide": "22051",
+        "decays_per_primary_pn": 4.6337179948147095e-05,
+        "mean_life_s": 498.5954061312258,
+        "kg_per_primary_pn_s": 1.9545296183612632e-27,
+        "inventory_kg": 0.005252171642673555,
+        "equilibrium_activity_s": 1.2451631340801542e+20,
+        "half_life_days": 0.004,
+        "mean_life_years": 1.579953501315771e-05,
+        "time_to_90_percent_years": 3.637977379753443e-05,
+        "time_to_99_percent_years": 7.275954759506886e-05,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.005252171642673555
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.005252171642673555
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.005252171642673555
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.005252171642673555
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.005252171642673555
+          }
+        ]
+      },
+      {
+        "nuclide": "29061",
+        "decays_per_primary_pn": 1.3624131756779315e-07,
+        "mean_life_s": 17362.546278090496,
+        "kg_per_primary_pn_s": 2.3934654856438256e-28,
+        "inventory_kg": 0.000643167104418515,
+        "equilibrium_activity_s": 3.6610485610854803e+17,
+        "half_life_days": 0.13929166666666665,
+        "mean_life_years": 0.0005501858911352731,
+        "time_to_90_percent_years": 0.0012668498313037249,
+        "time_to_99_percent_years": 0.0025336996626074497,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.000643167104418515
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.000643167104418515
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.000643167104418515
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.000643167104418515
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.000643167104418515
+          }
+        ]
+      },
+      {
+        "nuclide": "27060",
+        "decays_per_primary_pn": 3.451430201009931e-12,
+        "mean_life_s": 239991136.6327972,
+        "kg_per_primary_pn_s": 8.243569850468086e-29,
+        "inventory_kg": 0.0002215195072834372,
+        "equilibrium_activity_s": 9274611987517.535,
+        "half_life_days": 1925.337728199074,
+        "mean_life_years": 7.604860212208698,
+        "time_to_90_percent_years": 17.510837758935285,
+        "time_to_99_percent_years": 35.02167551787057,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 0.12321621487043044,
+            "inventory_kg": 2.729479520742788e-05
+          },
+          {
+            "years": 2,
+            "fraction": 0.23125019413386472,
+            "inventory_kg": 5.1226429063732914e-05
+          },
+          {
+            "years": 3,
+            "fraction": 0.32597263539506816,
+            "inventory_kg": 7.220929758059902e-05
+          },
+          {
+            "years": 5,
+            "fraction": 0.48184159431149587,
+            "inventory_kg": 0.0001067373125605484
+          },
+          {
+            "years": 6,
+            "fraction": 0.5456871117637303,
+            "inventory_kg": 0.00012088034012882347
+          }
+        ]
+      },
+      {
+        "nuclide": "24049",
+        "decays_per_primary_pn": 2.1228615507202938e-07,
+        "mean_life_s": 3661.5600137761894,
+        "kg_per_primary_pn_s": 6.318317619149242e-29,
+        "inventory_kg": 0.00016978452675750982,
+        "equilibrium_activity_s": 5.704509736395463e+17,
+        "half_life_days": 0.029375,
+        "mean_life_years": 0.00011602783525287695,
+        "time_to_90_percent_years": 0.0002671639638256435,
+        "time_to_99_percent_years": 0.000534327927651287,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.00016978452675750982
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.00016978452675750982
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.00016978452675750982
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.00016978452675750982
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.00016978452675750982
+          }
+        ]
+      },
+      {
+        "nuclide": "29060",
+        "decays_per_primary_pn": 2.2610126595757353e-07,
+        "mean_life_s": 2051.512348144106,
+        "kg_per_primary_pn_s": 4.616617187159157e-29,
+        "inventory_kg": 0.00012405678403485293,
+        "equilibrium_activity_s": 6.075746544227936e+17,
+        "half_life_days": 0.016458333333333332,
+        "mean_life_years": 6.500850343955517e-05,
+        "time_to_90_percent_years": 0.00014968761093777188,
+        "time_to_99_percent_years": 0.00029937522187554376,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 0.00012405678403485293
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 0.00012405678403485293
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 0.00012405678403485293
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 0.00012405678403485293
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 0.00012405678403485293
+          }
+        ]
+      },
+      {
+        "nuclide": "23047",
+        "decays_per_primary_pn": 1.3941381140856466e-07,
+        "mean_life_s": 2821.9114999788126,
+        "kg_per_primary_pn_s": 3.0674623450307916e-29,
+        "inventory_kg": 8.242821491263694e-05,
+        "equilibrium_activity_s": 3.746299160669778e+17,
+        "half_life_days": 0.02263888888888889,
+        "mean_life_years": 8.942097941474677e-05,
+        "time_to_90_percent_years": 0.00020589941420132336,
+        "time_to_99_percent_years": 0.0004117988284026467,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 8.242821491263694e-05
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 8.242821491263694e-05
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 8.242821491263694e-05
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 8.242821491263694e-05
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 8.242821491263694e-05
+          }
+        ]
+      },
+      {
+        "nuclide": "29059",
+        "decays_per_primary_pn": 9.276994358504334e-07,
+        "mean_life_s": 117.57964583245052,
+        "kg_per_primary_pn_s": 1.0675665567980734e-29,
+        "inventory_kg": 2.8687428134154358e-05,
+        "equilibrium_activity_s": 2.4928947733128233e+18,
+        "half_life_days": 0.0009432870370370371,
+        "mean_life_years": 3.725874142281115e-06,
+        "time_to_90_percent_years": 8.579142258388473e-06,
+        "time_to_99_percent_years": 1.7158284516776947e-05,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 2.8687428134154358e-05
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 2.8687428134154358e-05
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 2.8687428134154358e-05
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 2.8687428134154358e-05
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 2.8687428134154358e-05
+          }
+        ]
+      },
+      {
+        "nuclide": "29062",
+        "decays_per_primary_pn": 4.0371541344396934e-08,
+        "mean_life_s": 837.2247861286834,
+        "kg_per_primary_pn_s": 3.476048134900402e-30,
+        "inventory_kg": 9.34076479127456e-06,
+        "equilibrium_activity_s": 1.08485572502014e+17,
+        "half_life_days": 0.006716666666666668,
+        "mean_life_years": 2.6530052542927327e-05,
+        "time_to_90_percent_years": 6.108770350169324e-05,
+        "time_to_99_percent_years": 0.00012217540700338648,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 9.34076479127456e-06
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 9.34076479127456e-06
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 9.34076479127456e-06
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 9.34076479127456e-06
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 9.34076479127456e-06
+          }
+        ]
+      },
+      {
+        "nuclide": "19042",
+        "decays_per_primary_pn": 4.711178443149304e-10,
+        "mean_life_s": 64168.190028659315,
+        "kg_per_primary_pn_s": 2.1064870046255235e-30,
+        "inventory_kg": 5.66050839415297e-06,
+        "equilibrium_activity_s": 1265978145853311.2,
+        "half_life_days": 0.5147916666666666,
+        "mean_life_years": 0.0020333672404954533,
+        "time_to_90_percent_years": 0.004682001096547269,
+        "time_to_99_percent_years": 0.009364002193094538,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 5.66050839415297e-06
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 5.66050839415297e-06
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 5.66050839415297e-06
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 5.66050839415297e-06
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 5.66050839415297e-06
+          }
+        ]
+      },
+      {
+        "nuclide": "25056",
+        "decays_per_primary_pn": 1.050081582656571e-09,
+        "mean_life_s": 13394.038467414772,
+        "kg_per_primary_pn_s": 1.30646453414286e-30,
+        "inventory_kg": 3.510704526512607e-06,
+        "equilibrium_activity_s": 2821757551848575.0,
+        "half_life_days": 0.10745416666666666,
+        "mean_life_years": 0.000424431467139921,
+        "time_to_90_percent_years": 0.0009772895692339743,
+        "time_to_99_percent_years": 0.0019545791384679486,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 3.510704526512607e-06
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 3.510704526512607e-06
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 3.510704526512607e-06
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 3.510704526512607e-06
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 3.510704526512607e-06
+          }
+        ]
+      },
+      {
+        "nuclide": "21044",
+        "decays_per_primary_pn": 6.677870117614714e-10,
+        "mean_life_s": 20993.463449198203,
+        "kg_per_primary_pn_s": 1.0233470525324665e-30,
+        "inventory_kg": 2.749917074385895e-06,
+        "equilibrium_activity_s": 1794463472730572.0,
+        "half_life_days": 0.16842083333333333,
+        "mean_life_years": 0.0006652427132987997,
+        "time_to_90_percent_years": 0.0015317779548647283,
+        "time_to_99_percent_years": 0.0030635559097294566,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 2.749917074385895e-06
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 2.749917074385895e-06
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 2.749917074385895e-06
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 2.749917074385895e-06
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 2.749917074385895e-06
+          }
+        ]
+      },
+      {
+        "nuclide": "28057",
+        "decays_per_primary_pn": 3.3871243347519847e-12,
+        "mean_life_s": 184895.79644032955,
+        "kg_per_primary_pn_s": 5.921382905791306e-32,
+        "inventory_kg": 1.591181790802654e-07,
+        "equilibrium_activity_s": 9101810591189.39,
+        "half_life_days": 1.4833333333333334,
+        "mean_life_years": 0.005858994234045984,
+        "time_to_90_percent_years": 0.01349083278325235,
+        "time_to_99_percent_years": 0.0269816655665047,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 1.591181790802654e-07
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 1.591181790802654e-07
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 1.591181790802654e-07
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 1.591181790802654e-07
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 1.591181790802654e-07
+          }
+        ]
+      },
+      {
+        "nuclide": "23053",
+        "decays_per_primary_pn": 4.669720499517712e-10,
+        "mean_life_s": 133.56470688550024,
+        "kg_per_primary_pn_s": 5.4834159940766674e-33,
+        "inventory_kg": 1.4734922263914707e-08,
+        "equilibrium_activity_s": 1254837652823178.8,
+        "half_life_days": 0.0010715277777777778,
+        "mean_life_years": 4.232410160642769e-06,
+        "time_to_90_percent_years": 9.745484543332574e-06,
+        "time_to_99_percent_years": 1.9490969086665147e-05,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 1.4734922263914707e-08
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 1.4734922263914707e-08
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 1.4734922263914707e-08
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 1.4734922263914707e-08
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 1.4734922263914707e-08
+          }
+        ]
+      },
+      {
+        "nuclide": "23052",
+        "decays_per_primary_pn": 1.4245092320377804e-10,
+        "mean_life_s": 324.0004522828434,
+        "kg_per_primary_pn_s": 3.9810885739886956e-33,
+        "inventory_kg": 1.0697899033531232e-08,
+        "equilibrium_activity_s": 382791180187305.25,
+        "half_life_days": 0.0025993055555555557,
+        "mean_life_years": 1.0266954783723839e-05,
+        "time_to_90_percent_years": 2.364053703544642e-05,
+        "time_to_99_percent_years": 4.728107407089284e-05,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 1.0697899033531232e-08
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 1.0697899033531232e-08
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 1.0697899033531232e-08
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 1.0697899033531232e-08
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 1.0697899033531232e-08
+          }
+        ]
+      },
+      {
+        "nuclide": "24048",
+        "decays_per_primary_pn": 1.2658199368097378e-13,
+        "mean_life_s": 111976.2182936378,
+        "kg_per_primary_pn_s": 1.12868287000684e-33,
+        "inventory_kg": 3.0329733086324738e-09,
+        "equilibrium_activity_s": 340148520359.4446,
+        "half_life_days": 0.8983333333333333,
+        "mean_life_years": 0.0035483122383716693,
+        "time_to_90_percent_years": 0.008170290865362941,
+        "time_to_99_percent_years": 0.016340581730725882,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 3.0329733086324738e-09
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 3.0329733086324738e-09
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 3.0329733086324738e-09
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 3.0329733086324738e-09
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 3.0329733086324738e-09
+          }
+        ]
+      },
+      {
+        "nuclide": "25057",
+        "decays_per_primary_pn": 2.3064356780056382e-11,
+        "mean_life_s": 123.20615649191748,
+        "kg_per_primary_pn_s": 2.6867499133403586e-34,
+        "inventory_kg": 7.219778903956022e-10,
+        "equilibrium_activity_s": 61978063416753.64,
+        "half_life_days": 0.000988425925925926,
+        "mean_life_years": 3.904167506144874e-06,
+        "time_to_90_percent_years": 8.989677900200926e-06,
+        "time_to_99_percent_years": 1.7979355800401852e-05,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 7.219778903956022e-10
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 7.219778903956022e-10
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 7.219778903956022e-10
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 7.219778903956022e-10
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 7.219778903956022e-10
+          }
+        ]
+      },
+      {
+        "nuclide": "27061",
+        "decays_per_primary_pn": 1.7246773978527257e-13,
+        "mean_life_s": 8564.414840733241,
+        "kg_per_primary_pn_s": 1.49452605547801e-34,
+        "inventory_kg": 4.0160595644488786e-10,
+        "equilibrium_activity_s": 463451750061.3194,
+        "half_life_days": 0.06870833333333332,
+        "mean_life_years": 0.0002713899295489277,
+        "time_to_90_percent_years": 0.0006248984061680653,
+        "time_to_99_percent_years": 0.0012497968123361305,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 4.0160595644488786e-10
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 4.0160595644488786e-10
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 4.0160595644488786e-10
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 4.0160595644488786e-10
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 4.0160595644488786e-10
+          }
+        ]
+      },
+      {
+        "nuclide": "28056",
+        "decays_per_primary_pn": 8.884457252223005e-16,
+        "mean_life_s": 757241.7730617991,
+        "kg_per_primary_pn_s": 6.249619035635927e-35,
+        "inventory_kg": 1.6793847260294044e-10,
+        "equilibrium_activity_s": 2387413012.4359274,
+        "half_life_days": 6.075,
+        "mean_life_years": 0.023995543801233272,
+        "time_to_90_percent_years": 0.055251781455005415,
+        "time_to_99_percent_years": 0.11050356291001083,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 1.6793847260294044e-10
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 1.6793847260294044e-10
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 1.6793847260294044e-10
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 1.6793847260294044e-10
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 1.6793847260294044e-10
+          }
+        ]
+      },
+      {
+        "nuclide": "29058",
+        "decays_per_primary_pn": 8.165031655780444e-12,
+        "mean_life_s": 4.622394911008239,
+        "kg_per_primary_pn_s": 3.631503590999457e-36,
+        "inventory_kg": 9.758501483802606e-12,
+        "equilibrium_activity_s": 21940904512860.395,
+        "half_life_days": 3.708333333333334e-05,
+        "mean_life_years": 1.4647485585114963e-07,
+        "time_to_90_percent_years": 3.372708195813088e-07,
+        "time_to_99_percent_years": 6.745416391626176e-07,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 9.758501483802606e-12
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 9.758501483802606e-12
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 9.758501483802606e-12
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 9.758501483802606e-12
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 9.758501483802606e-12
+          }
+        ]
+      },
+      {
+        "nuclide": "27054",
+        "decays_per_primary_pn": 2.950477874177105e-20,
+        "mean_life_s": 0.27882967055261,
+        "kg_per_primary_pn_s": 7.36986426803313e-46,
+        "inventory_kg": 1.9804147123321918e-21,
+        "equilibrium_activity_s": 79284.63236121951,
+        "half_life_days": 2.2369212962962967e-06,
+        "mean_life_years": 8.835579085627868e-09,
+        "time_to_90_percent_years": 2.034467269053669e-08,
+        "time_to_99_percent_years": 4.068934538107338e-08,
+        "buildup": [
+          {
+            "years": 0,
+            "fraction": 0.0,
+            "inventory_kg": 0.0
+          },
+          {
+            "years": 1,
+            "fraction": 1.0,
+            "inventory_kg": 1.9804147123321918e-21
+          },
+          {
+            "years": 2,
+            "fraction": 1.0,
+            "inventory_kg": 1.9804147123321918e-21
+          },
+          {
+            "years": 3,
+            "fraction": 1.0,
+            "inventory_kg": 1.9804147123321918e-21
+          },
+          {
+            "years": 5,
+            "fraction": 1.0,
+            "inventory_kg": 1.9804147123321918e-21
+          },
+          {
+            "years": 6,
+            "fraction": 1.0,
+            "inventory_kg": 1.9804147123321918e-21
+          }
+        ]
+      }
+    ],
+    "capture_bank": {
+      "scope": "Homogeneous 2200 m/s equivalent thermal-flux catalyst inventory screen; not neutron transport.\n\nMost tabulated cross sections are NIST total absorption values, so assigning\nall absorption to the desired capture gives a lower bound on required stock.\nV50 uses the 1991 measured radiative-capture value, 21(+4,-2) barn.\n",
+      "source_rate_s": 2.687179356779016e+24,
+      "equivalent_2200m_s_flux_m2_s": 82660134821208.48,
+      "inventory_rows": [
+        {
+          "target": "22048",
+          "capture_per_primary_pn": 0.017304833690101558,
+          "cross_section_barn": 7.84,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 488971.8537485184,
+          "inventory_kg": 57130887308.43184
+        },
+        {
+          "target": "22047",
+          "capture_per_primary_pn": 0.0020992310193324055,
+          "cross_section_barn": 1.7,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 2255023.1372872847,
+          "inventory_kg": 31297727850.57466
+        },
+        {
+          "target": "21045",
+          "capture_per_primary_pn": 1.5872470432565112e-05,
+          "cross_section_barn": 27.5,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 139401.43030503215,
+          "inventory_kg": 14007100.363671154
+        },
+        {
+          "target": "22046",
+          "capture_per_primary_pn": 0.0020835579503189375,
+          "cross_section_barn": 0.59,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 6497524.293878617,
+          "inventory_kg": 87601905516.2718
+        },
+        {
+          "target": "23050",
+          "capture_per_primary_pn": 0.0019661997026068734,
+          "cross_section_barn": 21.0,
+          "cross_section_kind": "measured radiative capture",
+          "mean_capture_time_years": 182549.49206611348,
+          "inventory_kg": 2524461457.5122347
+        },
+        {
+          "target": "24050",
+          "capture_per_primary_pn": 0.001887518960710891,
+          "cross_section_barn": 15.8,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 242629.07173344202,
+          "inventory_kg": 3220957234.379179
+        },
+        {
+          "target": "22050",
+          "capture_per_primary_pn": 4.6337179948147095e-05,
+          "cross_section_barn": 0.179,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 21416420.856918346,
+          "inventory_kg": 6979372283.212449
+        },
+        {
+          "target": "26054",
+          "capture_per_primary_pn": 0.00021021998603805382,
+          "cross_section_barn": 2.25,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 1703795.2592837259,
+          "inventory_kg": 2720501158.0789375
+        },
+        {
+          "target": "28058",
+          "capture_per_primary_pn": 8.569149235040691e-08,
+          "cross_section_barn": 4.6,
+          "cross_section_kind": "total absorption used as capture upper bound",
+          "mean_capture_time_years": 833378.1159539967,
+          "inventory_kg": 582603.5002196449
+        }
+      ],
+      "total_listed_inventory_lower_bound_kg": 191490402512.325,
+      "uncovered_capture_steps": [
+        {
+          "target": "20044",
+          "capture_rate_per_primary_pn": 1.1145051499136819e-08
+        },
+        {
+          "target": "19041",
+          "capture_rate_per_primary_pn": 1.0824152847149476e-13
+        },
+        {
+          "target": "20042",
+          "capture_rate_per_primary_pn": 4.711178443149304e-10
+        },
+        {
+          "target": "20043",
+          "capture_rate_per_primary_pn": 4.711225867289016e-10
+        }
+      ],
+      "uncovered_captures_per_primary_pn": 1.2087400171709122e-08,
+      "Ti49_makeup_kg_year": 11.081431993510106,
+      "processing_sensitivities": [
+        {
+          "mean_inventory_processing_years": 100,
+          "specific_electricity_J_kg": 10000000.0,
+          "isotope_inventory_throughput_kg_s": 60.67964690354305,
+          "power_W": 606796469.0354306,
+          "Ti49_product_recapture_probability_before_extraction": 5.7384927135099486e-05
+        },
+        {
+          "mean_inventory_processing_years": 100,
+          "specific_electricity_J_kg": 100000000.0,
+          "isotope_inventory_throughput_kg_s": 60.67964690354305,
+          "power_W": 6067964690.354305,
+          "Ti49_product_recapture_probability_before_extraction": 5.7384927135099486e-05
+        },
+        {
+          "mean_inventory_processing_years": 100,
+          "specific_electricity_J_kg": 1000000000.0,
+          "isotope_inventory_throughput_kg_s": 60.67964690354305,
+          "power_W": 60679646903.54305,
+          "Ti49_product_recapture_probability_before_extraction": 5.7384927135099486e-05
+        },
+        {
+          "mean_inventory_processing_years": 1000,
+          "specific_electricity_J_kg": 10000000.0,
+          "isotope_inventory_throughput_kg_s": 6.067964690354305,
+          "power_W": 60679646.90354305,
+          "Ti49_product_recapture_probability_before_extraction": 0.0005735530516503013
+        },
+        {
+          "mean_inventory_processing_years": 1000,
+          "specific_electricity_J_kg": 100000000.0,
+          "isotope_inventory_throughput_kg_s": 6.067964690354305,
+          "power_W": 606796469.0354306,
+          "Ti49_product_recapture_probability_before_extraction": 0.0005735530516503013
+        },
+        {
+          "mean_inventory_processing_years": 1000,
+          "specific_electricity_J_kg": 1000000000.0,
+          "isotope_inventory_throughput_kg_s": 6.067964690354305,
+          "power_W": 6067964690.354305,
+          "Ti49_product_recapture_probability_before_extraction": 0.0005735530516503013
+        },
+        {
+          "mean_inventory_processing_years": 10000,
+          "specific_electricity_J_kg": 10000000.0,
+          "isotope_inventory_throughput_kg_s": 0.6067964690354305,
+          "power_W": 6067964.690354305,
+          "Ti49_product_recapture_probability_before_extraction": 0.005706075881390535
+        },
+        {
+          "mean_inventory_processing_years": 10000,
+          "specific_electricity_J_kg": 100000000.0,
+          "isotope_inventory_throughput_kg_s": 0.6067964690354305,
+          "power_W": 60679646.90354305,
+          "Ti49_product_recapture_probability_before_extraction": 0.005706075881390535
+        },
+        {
+          "mean_inventory_processing_years": 10000,
+          "specific_electricity_J_kg": 1000000000.0,
+          "isotope_inventory_throughput_kg_s": 0.6067964690354305,
+          "power_W": 606796469.0354306,
+          "Ti49_product_recapture_probability_before_extraction": 0.005706075881390535
+        }
+      ]
+    },
+    "neutral_store_note": "Neutral/cold means outside the MeV ion plasma. Store heat at the warm process temperature, not on the 4.2 K coil circuit.",
+    "startup_scope": "Independent inventory fill law under fixed source flows; not a coupled transient isotope-network solution. Stable bridge replaces the future decay inventory, so its mass is not added twice.",
+    "weak_energy_note": "The underlying ledger assigns all weak ground-state Q and a known-isomer margin to escaping neutrinos, so no delayed weak-decay heat is credited. Actual electromagnetic decay energy requires warm-store heat handling and a later partition refinement."
+  },
+  "validation": {
+    "check_count": 118,
+    "all_passed": true
+  },
+  "input_sha256": {
+    "network_plant.py": "c4769a518778cfb343f8eb0df5aa5758150a0337860d8d8a9d9715b875b51793",
+    "network-ion-budget.json": "1a925618cd101aef22aa320081062ee3b881bcdd36c72f77dc1fceda7d181516",
+    "network-channel-family.json.gz": "e9d502cd7d8a65f1a1b85eee94f796978c8828f61d04b199e80dee384e7d077d",
+    "catalyst_network.py": "810b9353bad345eda3f639789bdf292e0f16ca11e904cbcd847b44e66c135861",
+    "capture_bank_screen.py": "ea6854826a7396685ad2d9fc98a3412ddf5a6ca2cf204497e9ab3ccadd49fd49",
+    "nonneutral_screen.py": "374d977d722ac2dd4fc5b05cf1cd90afc05cddd92febce80ab126167649ba29d",
+    "bundle_solenoid.py": "3a8911bc89ac876f71048d96ae1d90ad1a1f12e383a7e5a633d89c1ed21bfd2c",
+    "phase-two/plant-audit/heat_transport.py": "c1767adb1522cd7edccf307ecea4b6d9e220f5f59f5e0f6e27c714e22345822f",
+    "reassessment-2049/selected_ion_point.py": "f46daf414a1f43577bec76077a19cc24c86fa1db4474f4cd67feae16589fa3f0"
+  },
+  "primary_sources": [
+    {
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "use": "1361 W/m2 solar irradiance at Earth"
+    },
+    {
+      "url": "https://www.isotopes.gov/sites/default/files/2021-02/V-49.pdf",
+      "use": "DOE V49 product information: 330 day half-life, Ti49 daughter, production route"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10724407/",
+      "use": "Primary half-life measurement 328.6 +/- 3.3 d; saved network uses NUBASE-derived 330 d"
+    }
+  ]
+}

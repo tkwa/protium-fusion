@@ -1,0 +1,72 @@
+{
+  "stage": "B2",
+  "hydrogen_per_catalyst": 2,
+  "initial_Y": {
+    "p": 0.14285714285714285,
+    "c12": 0.07142857142857142
+  },
+  "duration_s": 6.306272486811078e-05,
+  "physical_duration_s": 6.306272486811078e-05,
+  "entropy_mapping_source": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/launcher-feos.json",
+  "entropy_mapping_sha256": "f729b5bb088ef3527a31c180facc0b5853130b3ccf1d76cb9ee29e7f83a3cfcd",
+  "entropy_reference_profile_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+  "source_profile": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.initial.json",
+  "source_profile_sha256": "bb05ee3a1890d093957f76ae14a035ec4ee37eb7f37de7deffdeecbe6d67bef7",
+  "baseline_source": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.json",
+  "baseline_sha256": "96132fe9689d6dfe8d16869cb3e804216948eebc55472340c0670118a178e823",
+  "code_sha256": "d2857507d41ee9e7a697a7f6c3050ee8aac002c564187f79005ec0a27fb24057",
+  "radial_module_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+  "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+  "rate_update": {
+    "revision": "luna2023-public-repository-2026-10-31",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged."
+  },
+  "old_specific_internal_J_kg": 252865044997.25052,
+  "new_specific_internal_J_kg": 206223101886.93402,
+  "old_specific_kinetic_J_kg": 3349689353722.192,
+  "velocity_scale": 1.0069380612989207,
+  "prepared_energy_relative_error": 0.0,
+  "effective_N": 2000,
+  "temperature_ratio_mass_q10_q50_q90": [
+    0.4653431694129979,
+    0.8992570817546255,
+    1.5369007899773752
+  ],
+  "cold_reference": {
+    "composition": "C12H2",
+    "rho_kg_m3": 944.2,
+    "T_K": 300,
+    "bulk_modulus_Pa": 2000000000.0
+  },
+  "scope": "Completed 1D prescribed hot-flow response if success; FEOS maps contactentropy, FastEOSburning, initialradialdensityunchanged. Physical cold3Ddelivery and geometry-induced angularstress not simulated."
+}

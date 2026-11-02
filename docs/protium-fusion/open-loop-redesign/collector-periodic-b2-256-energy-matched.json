@@ -1,0 +1,99 @@
+{
+  "scope": "Bounded periodic accumulation in a finite cooled carbon slab.\n\nThis is an explicit additional scheduling/cooling requirement: at least one\nspecified guard interval between any two large A/B2/C13 pulses, and periodic\nB1 pulses separated by at least their complete cavity slot. The front is heated, the back held\nat1000K. Constant properties and linear superposition remain assumptions.\n",
+  "radius_m": 1100000000.0,
+  "sigma_kg_m2": 5000.0,
+  "thickness_m": 2.5,
+  "thermal_diffusivity_m2_s": 5e-05,
+  "slowest_thermal_decay_time_s": 50660.591821168884,
+  "back_face_sink_K": 1000.0,
+  "He_rate_s": 3.784522298887282e+32,
+  "per_stage_intervals_s": {
+    "c12": 1201391.2601097985,
+    "c13": 27254905.41400911,
+    "n14": 647598.8942120979,
+    "n15": 6770.240719834992
+  },
+  "large_shots_per_year": 76.155577977068,
+  "large_shot_guard_s": 86400.0,
+  "large_guard_capacity_used": 0.20850260910901575,
+  "early_pulse_bound_cut_s": 20000.0,
+  "B1_minimum_spacing_bound_s": 5341.3165385937355,
+  "B1_mean_interval_s": 6770.240719834992,
+  "received_heat_mean_W_m2": 107.53283056780302,
+  "mean_front_to_sink_offset_K": 2.6883207641950753,
+  "mean_front_temperature_K": 1002.688320764195,
+  "isolated_stage_peak_bounds_K": {
+    "c12": 586.050042633606,
+    "c13": 853.5995227325413,
+    "n14": 422.9895503583481,
+    "n15": 104.63500714337907
+  },
+  "sum_all_stage_isolated_maxima_with_arbitrary_coincidence_K": 1967.2741228678742,
+  "old_large_pulse_background_upper_K": 6.914896917794695,
+  "old_B1_background_upper_K": 0.6748035520545103,
+  "large_late_tail_envelopes": {
+    "c12": {
+      "ballistic_W_m2": 3.103953114677288e-08,
+      "decay_W_m2": 2.8723259964680287e-08,
+      "decay_terms": {
+        "n13": 2.8723259964680287e-08,
+        "o14": 9.764852330523638e-81,
+        "o15": 6.411387491808722e-54
+      },
+      "temperature_upper_K": 1.4940697777863293e-09
+    },
+    "c13": {
+      "ballistic_W_m2": 8.940817777772545e-08,
+      "decay_W_m2": 2.040724694372914e-14,
+      "decay_terms": {
+        "n13": 2.040724694372914e-14,
+        "o14": 3.3030040224261483e-88,
+        "o15": 7.222935857543802e-47
+      },
+      "temperature_upper_K": 2.23520495462431e-09
+    },
+    "n14": {
+      "ballistic_W_m2": 9.582731044664904e-08,
+      "decay_W_m2": 2.8872650007928255e-15,
+      "decay_terms": {
+        "n13": 2.8872650007928255e-15,
+        "o14": 6.190629843539701e-89,
+        "o15": 1.1504650421199848e-45
+      },
+      "temperature_upper_K": 2.395682833347851e-09
+    }
+  },
+  "B1_late_tail_envelope": {
+    "ballistic_W_m2": 0.0001324292719430513,
+    "decay_W_m2": 0.00014666062519177106,
+    "decay_terms": {
+      "n13": 0.00014666062519176778,
+      "o14": 3.291488203254621e-18,
+      "o15": 5.479413432619937e-26
+    },
+    "temperature_upper_K": 6.977247428370558e-06
+  },
+  "accumulated_background_upper_K": 7.589707453221592,
+  "phase_independent_peak_rise_bound_with_guard_K": 965.824237329142,
+  "phase_independent_front_temperature_bound_K": 1965.8242373291419,
+  "extra_cold_inventory_upper_at_one_day_gross_flow_kg": 3801426879440.617,
+  "steady_resistance_mode_sum_relative_error": -2.026423667422783e-06,
+  "bound_logic": [
+    "At most one large pulse contributes its full isolated maximum; its predecessors are at least86400s apart.",
+    "Each old large pulse is bounded by the maximum full-pulse fluence deposited entirely at20000s, plus a separate late-tail bound.",
+    "B1 may have its isolated maximum at the same instant as the large-pulse maximum, with all previous pulses at their minimum allowable spacing included; irregular cadence can only reduce this bound.",
+    "Positive finite-slab impulse response decreases with age; the late ballistic t^-4 and beta-exponential flux envelopes are bounded by a constant flux timesL/k.",
+    "The sink is held at1000K, so mean and residual heating are included once. No free reset of absorber temperature is assumed."
+  ],
+  "limitations": [
+    "Requires the explicit large-pulse guard schedule, cold stock routing and distributed backside heat extraction. Mean count alone is only a scheduling-capacity check.",
+    "No nonlinear material, erosion, radiation cooling or multidimensional receiver calculation.",
+    "All incoming pulse heat is placed in the slab, conservative relative to99% captured-energy assumption.",
+    "Provisional64 pulse family; source refinement may change quantitative bounds."
+  ],
+  "input_sha256": {
+    "station-inputs-b2-256-energy-matched.json": "7fce1a26b860a02629f34e0a08a0b151e9b59d00b40e652aecea0da88b928ca1",
+    "collector-inputs-b2-256-energy-matched.json": "b6dcd5d86e5b1bb9d8eda6dd0fb1aca3ecd2be5917479d645ff146ee82a08ec8"
+  },
+  "script_sha256": "1af15cce2ad82181e2bb8b0a30e0e0128efbd1450be51c41037dcb09d2d636b4"
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "Manufacturing-energy sensitivity at fixed installed station hardware.\n\nAll 100 MJ/kg baseline manufacturing capacity, radiators, reserve and support\nmass are retained. Only the recurring manufacturing electricity changes.\nThe rows are effective TOTAL process costs, not claimed chemical efficiencies.\n",
+  "mass_kg": 1.2152033263020295e+23,
+  "refurbishment_mass_kg_s": 385074697157.5879,
+  "fresh_C_H_mass_budget": 0.007,
+  "carbon_budget_unchanged": true,
+  "user_premise": {
+    "minimum_efficiency_for_usable_energy_to_higher_energy_product": 0.5,
+    "higher_efficiency_allowed": true,
+    "definition": "Useful chemical free-energy increase divided by supplied electrical or usable supplementary chemical energy, with feed/product states specified."
+  },
+  "rows": [
+    {
+      "effective_total_MJ_kg": 0.1,
+      "routine_manufacturing_W": 3.850746971575879e+16,
+      "net_W": 3.745668633448453e+20,
+      "net_W_kg": 0.003082339022924544,
+      "construction_J_if_same_effective_total_cost": 1.2152033263020294e+28,
+      "construction_energy_repayment_years_if_same_cost": 1.0280532925921653,
+      "power_change_relative_residual": 4.374118909957087e-17
+    },
+    {
+      "effective_total_MJ_kg": 1.0,
+      "routine_manufacturing_W": 3.850746971575879e+17,
+      "net_W": 3.7422029611740345e+20,
+      "net_W_kg": 0.003079487095021281,
+      "construction_J_if_same_effective_total_cost": 1.2152033263020295e+29,
+      "construction_energy_repayment_years_if_same_cost": 10.290053777221615,
+      "power_change_relative_residual": -6.567254703975173e-17
+    },
+    {
+      "effective_total_MJ_kg": 1.5,
+      "routine_manufacturing_W": 5.776120457363818e+17,
+      "net_W": 3.7402775876882465e+20,
+      "net_W_kg": 0.0030779026906305796,
+      "construction_J_if_same_effective_total_cost": 1.822804989453044e+29,
+      "construction_energy_repayment_years_if_same_cost": 15.44302614430782,
+      "power_change_relative_residual": -1.09510588558525e-16
+    },
+    {
+      "effective_total_MJ_kg": 2.0,
+      "routine_manufacturing_W": 7.701493943151758e+17,
+      "net_W": 3.738352214202459e+20,
+      "net_W_kg": 0.0030763182862398783,
+      "construction_J_if_same_effective_total_cost": 2.430406652604059e+29,
+      "construction_energy_repayment_years_if_same_cost": 20.60130640952673,
+      "power_change_relative_residual": 4.3826796035309815e-17
+    },
+    {
+      "effective_total_MJ_kg": 3.1,
+      "routine_manufacturing_W": 1.1937315611885225e+18,
+      "net_W": 3.734116392533726e+20,
+      "net_W_kg": 0.003072832596580335,
+      "construction_J_if_same_effective_total_cost": 3.7671303115362914e+29,
+      "construction_energy_repayment_years_if_same_cost": 31.96824725590663,
+      "power_change_relative_residual": 6.581476691283407e-17
+    },
+    {
+      "effective_total_MJ_kg": 10.0,
+      "routine_manufacturing_W": 3.8507469715758787e+18,
+      "net_W": 3.707546238429852e+20,
+      "net_W_kg": 0.003050967815988655,
+      "construction_J_if_same_effective_total_cost": 1.2152033263020294e+30,
+      "construction_energy_repayment_years_if_same_cost": 103.86241260221402,
+      "power_change_relative_residual": -2.2095476288569005e-17
+    },
+    {
+      "effective_total_MJ_kg": 100.0,
+      "routine_manufacturing_W": 3.850746971575879e+19,
+      "net_W": 3.360979010988023e+20,
+      "net_W_kg": 0.0027657750256623948,
+      "construction_J_if_same_effective_total_cost": 1.2152033263020295e+31,
+      "construction_energy_repayment_years_if_same_cost": 1145.7218146815737,
+      "power_change_relative_residual": 2.4373850515632372e-17
+    }
+  ],
+  "limit_if_routine_manufacturing_electricity_vanishes_W_kg": 0.003082655903802684,
+  "limitations": [
+    "No component manufacturing recipes or material-weighted chemical work have been solved.",
+    "A dissipation estimate excludes energy retained in higher-energy products and is not automatically a total process cost.",
+    "The old manufacturing hardware mass and throughput remain allocated; lower electricity does not grant a smaller factory.",
+    "Other plant loads, source/receiver qualifications, transport, operating material return and membrane lifetime remain separate."
+  ],
+  "input_sha256": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461",
+  "code_sha256": "5210e073b31dbae33d75a3ef3fe0605ba02b2013ed52a24150f2bfc012a91709"
+}

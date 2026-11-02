@@ -1,0 +1,1223 @@
+{
+  "scope": "Export the declared 64-zone mixture sweep and median-carbon128 comparison.\n\nDefault plotting uses the compact CSV and provenance JSON only. --rebuild-data\nre-reads the exact run directories, checks constraints, and rewrites compact data.\n",
+  "input_directories": [
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/control",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128"
+  ],
+  "plotted_rows": 65,
+  "unique_source_records": 61,
+  "counts": {
+    "A": {
+      "frozen64_equal_energy": 11,
+      "frozen64_fixed_flow": 4,
+      "median_carbon128_equal_energy": 2
+    },
+    "B1": {
+      "frozen64_equal_energy": 9,
+      "frozen64_fixed_flow": 4,
+      "median_carbon128_equal_energy": 3
+    },
+    "B2": {
+      "frozen64_equal_energy": 9,
+      "frozen64_fixed_flow": 4,
+      "median_carbon128_equal_energy": 2
+    },
+    "C13": {
+      "frozen64_equal_energy": 10,
+      "frozen64_fixed_flow": 4,
+      "median_carbon128_equal_energy": 3
+    }
+  },
+  "shared_reference_rows": 4,
+  "excluded_records": [],
+  "baseline_durations_s": {
+    "A": 6.839495465719224e-05,
+    "B1": 8.227795789289296e-05,
+    "B2": 6.306272486811078e-05,
+    "C13": 7.000357811304867e-05
+  },
+  "baseline_record_sha256": {
+    "A": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+    "B1": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+    "B2": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+    "C13": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241"
+  },
+  "comparison": {
+    "all_series": "Prescribed spherical hot inflow, fixed pulse mass and enclosed-mass density/temperature profiles within each stage; fixed physical duration; compression-cap viscosity; full 27-isotope/194-rate network; grey opacity 0.001 m2/kg.",
+    "frozen64_equal_energy": "Frozen nuclear rates, 64 zones; total prepared energy fixed by adjusting radial velocity.",
+    "frozen64_fixed_flow": "Frozen nuclear rates, 64 zones; radial velocity fixed, so total prepared energy varies with composition. Shared baseline rows reuse the identical equal-energy input at H/catalyst 1,1,2,1.",
+    "median_carbon128_equal_energy": "128 zones and the public median 12C(p,gamma)13N / 13C(p,gamma)14N rate updates together; total prepared energy fixed. These points change both numerical resolution and the two rate pairs relative to the faint curve.",
+    "gain": "Recorded nuclear release minus modeled weak-energy escape, divided by initial internal-plus-bulk-kinetic prepared energy; (nuclear_energy_J - weak_energy_escaped_upper_J) / initial_energy_J. Subsequent radiative escape is not subtracted from this deposited-at-production gain. It is a hot-pulse diagnostic, not a whole-plant electrical gain.",
+    "line_scope": "Straight segments join sampled 64-zone cases as a visual guide. No smoothed optimum or unrun case is inferred.",
+    "uncertainty": "No error bars: these datasets are different modeling choices, not draws defining a confidence or credible interval. Mesh convergence and source formation remain separate studies."
+  },
+  "source_records": {
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/control/A-H1-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "de047f1cf49d4ca9768534400cb1656bde74da0cf3d1970d08f4b138fa27b1ce",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H0p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "a0a0407a8f338ef3134b2bf0472064ff2d24770783ce21de40431a490b12e884",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H0p5-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "c6605836ffe588442f3881eb093490506ba8408a61e87e621463ea46080d2a08",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H16-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "0a9f6200d23246ebb5369312d4c279428cdf9b98caedbd780189cbffdb471893",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H16-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "876b2f46850b223ca8a1692222e3e1fd529a94d01450a22f5e06e212d0da011e",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H2-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "b08a4f6e5bbd3541a651202bfe0bf110bd7247444d1cc71be112972ee912ac51",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H4-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "94105301b0a45c31574d937c24e8ac0fcc86c21d38ddaa6142aa8d94cbc24269",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H4-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "53e8702f7acb74e7a4f38b08de41ec1846a4417c37a48a9ac44c636c1116a6bd",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/A-H8-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "1f38ab66b20ec288bcceb534545147068bc0293ee0a1d97a816e2f247016e51d",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H0p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "aceb1677f0dd916b5472047d77eb474292f4076c5c84497634e678a739ebe308",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H0p5-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "84f1b58fb38b3740c7acbbd994e708c11f981c8ed6580e9c72f81b5b56ae032c",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H1-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "606bc31c3af9be00fc070f22f1337c958b3a2e038b26e2932db173a83abdf681",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H16-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "d27211fcf4d8382df127052523ad298358275629ef19eaaef9473b4336f2dcff",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H16-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "230aeb33b88fbfbba51de8f7139dac60e983dab59eb68f02ad6f81bcceab0d23",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H4-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "7de1ad4be6a958681b3e0d552451aa881d240586287b30c6343d759d7b23c95c",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H4-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "80d1a78b77f1bb09d73359f511689484c74fe5b158ef6e2a1b7fc2e01ba4bb3a",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H8-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "f9f65beadc641855f5f94ab76ebcc255796616f6f6bae1a6cee91e2c6131dcf0",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H0p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "3b02e57793f283c68f785c1fbce6b8008b62a74a98ce88f2c18921c15a5fa349",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H0p5-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "89a96f8c023bc732c05c62b438c271ca3221ff2b283d0cf1cd728e03b566a4e6",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H1-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "9451db73e654cbfc5450e68e3155aa6336e680fc2ca3ac8d0ce1742b2bdafa86",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H16-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "c9f258095f91d33174349ffe9a39f0e322a18c4f81c6625405a62d4281832ff2",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H16-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "322660284efa5b5e01a87e78b2a44693f1ae65ecefa7a75216c2cc35a3dc8801",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "96132fe9689d6dfe8d16869cb3e804216948eebc55472340c0670118a178e823",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H4-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "2257847e4a1bc212d998c0684c670c069892d350e9c7074b90cc7789d4e6f67f",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H4-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "38026df88f467522bff529b188e5ddf5e7c6fd19f209b950fb00112d796b16af",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H8-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "ec887736b320b900ad259e0c9777517d7e892277c4851083fcd47ddf59d96fd1",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H0p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "5f4fa4340ac2dac6a3181a760c8cd4f00e1b6d3a3d8118bc5253c32df7e65f4b",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H0p5-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "1c3d2d977ed4f8f291e82e3c79ebdf064662bf73c469a508f42c941cc6fbaaee",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H1-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "c89a15098a8972951649e13f91ec30f1912a50ff971742aa7628aaef655d6cfd",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H16-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "1186e2fdcd2bec9e5221d4800fdedb759be40e4486222b8a7710c1c14b309e9f",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H16-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "ee5d45f16be612ad1896dc7af230e7a5e6d1a6cd1946aaa6698639629025a3c3",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H2-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "b2db246afbddff67e7ba68beac788d0f2d3451072b504c1c91c4de45dce34189",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "cf9dea85fb758573a00ba17adcf69aeed7ac1eb5d42ad3906ee4fd296a1f9170",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_flow-z64-k0p001-t1.json": {
+      "sha256": "1449489075a0c9d9f3b2db20c55c0f14b130df354bb6b8b2ea3569c8d9811af3",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H8-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "5fa68b6daa300e4912778e77ff6c25c433d630aef69040f909704eb7afaba305",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "70cf2f9b116aa42c7ecbf816e45c39c534bc12588130ea50f1705215d5bc9850",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H1p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "09a02e79e596dc0a364b16b7b59137ee2fc3c0438d7723f169426ed1df37f486",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H2p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "e2c36b17931eecdc55dd3c7acdd5701ee85f7e0ff127825ba31c5e9f81b63328",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "230f1b22fc32cd7e1203f12e5780446b641b4518c527e8efbe295e2fa627e48d",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "d703c8aeca547d226da0bcc5ab26283d920196d07183b83af8f6e3a3741aa888",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H6-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "729157d4b4a4f86ef423281ae6799aebb06d36acffe1d39c7eb4919fd164a296",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B1-H1p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "bec3f53e3d83d4b20d790a759e213ab8249d6b5ca0f2e6afba24ade14c692a87",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B1-H2p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "3da80470ec8fc733ec5718aee61f8f3446d12b7025a4f445b77aa412f8e38780",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B1-H3-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "109bbc9eeaf98b8c98df613318a66d26e1a627eb792450afda1d36a8d2a9bdb8",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H1p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "b8e0406cc983adee806fff14212861cecefc5bb1f09dfdb1372156394bfc3200",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "f92988f64f7c658e34ce6f6bd37f396059f5e8a30c14866653a534093659a0d2",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H3-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "7e09eabc705cb3289e34bb192aa519bc8c5a81b6b6f9e4e3591c7ef59173d7f3",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/C13-H1p5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "492883e95ccc9d2046d084f98a9a86178a521a1029c8cf69d4fe7d82d827a5e9",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/C13-H3-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "d66c661500b0a051399c8b2ded201541dcd04f7ede66cf8180d5c8a413fa0d01",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/C13-H5-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "25f4d6b902f1f00693c95767a9bd4e2ec3e10b1969d4790d2fac8014490f324d",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/C13-H6-fixed_energy-z64-k0p001-t1.json": {
+      "sha256": "5882cfe097af66d15d86c5b8f7c3ec636c6f251a7cc40608a034734c85fefec1",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+      "rate_update": null,
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/A-H1-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "ac668e2f55881146bb609f985a988239b7b555678477dcf9c2446ce4eb66d843",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/A-H1-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "a50aa3ae75a228ff966a113aa39cb7c082df17b684dbeb1228655370ab2193fa",
+        "initial_profile_sha256": "dd56985011755db1da82f1b2d4cec04db04e92dd5f905c5fc8a44fb5b9b9cbe6",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/A-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "ddee3f442a99da357ad00f711d0d34b4fa8287b04f2d83a353a357b988415dca",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json",
+      "profile_source_sha256": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+      "baseline_source": "b2-completion/regression-A-compression_cap.json",
+      "baseline_source_sha256": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/A-H3-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "913a9b92d01e8b9f645c7c5532d4ca3db8439cc55fd841c49cc9ca8445bd9442",
+        "initial_profile_sha256": "d1e691400af1e19fe23d6b23d2bf039f22673ac64714efd8de157f8a3fb8e333",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H1-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "f0044d19570262e9ac4fde74addb396ca4bf52c2647df5cce24ed43d02b129c6",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B1-H1-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "48c2aaa4a3424b8cf53bef3ad3e51ce00f63e9223a89b52a5e0051f728938076",
+        "initial_profile_sha256": "9c3ef4b64e2f917814135f6cf554d4d3a7716b59610a847d17031cc11a36df54",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H1p5-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "f34c0a09418b967395c7e0825d3b66dab8c1cee7ca47963bfd8fb30f2f34584f",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B1-H1p5-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "6e0f76dc3142f2208bddaa802061d81d87f63484bf8caf17b91a27725277e40f",
+        "initial_profile_sha256": "ff078798e77f4cf301628570988e2496ca04b6f235739367fbb5800dd530b1af",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "d1e9d2084422e926d323933b022ac1b57e265303107bbbf6ee2efb85a4277bdf",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+      "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+      "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+      "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B1-H2-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "f320ca8508cb7f645204cccaf7f30a215d3710fdff7f24f0fa7086a75b60eb9f",
+        "initial_profile_sha256": "15030e6af2aaf276f87a94317db48b217aee1c974f35195f07950654aced7697",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B2-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "3b672b05718e531caaf33e7d35f653c861c8d83c540f11597e169a3fb85f550e",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B2-H2-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "2629ddc57062f50a1a5b05caaf50c732b559187263ab79103fffb6ed11ef7602",
+        "initial_profile_sha256": "0c78a6f66d073cf8277d4bb87cd30eea08803b8b79e3d018b942a72a906f3bc6",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B2-H2p5-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "511016a00563e7236637a961cbced0393fb5bf39b9f727176b627f4892e6786d",
+      "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+      "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+      "baseline_source": "b2-completion/B2-64-compression-cap.json",
+      "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B2-H2p5-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "c56d43e109402c4f737e26c5cc305e72a75602e5c2ebd25e41bd724d1b8da4c0",
+        "initial_profile_sha256": "ae7bd96c0778e5034d1a9ace2550b232dab71916dfb0dea70045cb56c81ba38d",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H1-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "4fe402be0bc84f7d7979dfc0a4bdca7b8a38c2ab91486249715ce7174f2463bb",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/C13-H1-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "d2737883b35d5b67da1d2521e7267877ff7d2834ced65c04f283f1ece5691253",
+        "initial_profile_sha256": "4a664e46f3a320e4defa3465354f0be3a41d3bbfd5ca847ef51b647ab1d2ca82",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "bc0c5870b755e3095db70518e6c954e43cb685401fab2804d9561dd43547d2cb",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/C13-H3-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "bfae54ccdcf83b6dd1f4b8780e7e24dff4a31e8439146fdebdf7cc5546cf3897",
+        "initial_profile_sha256": "1d2d10cbf538923fb0d906b11c53e950b4a7d492605d656c162009635cd18f1a",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    },
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median.json": {
+      "sha256": "1cf933fd010560b8a5e937c751efaab418991de942c846b466eb1da99219882e",
+      "profile_source": "reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json",
+      "profile_source_sha256": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+      "baseline_source": "b2-completion/regression-C13-compression_cap.json",
+      "baseline_source_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+      "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+      "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+      "runner_source_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2",
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/tail_energy/C13-H4-fixed_energy-z128-k0p001-t1.json",
+        "baseline_record_sha256": "6ea60dedf231965438747c5dd3886a6f776464f9ddcfac81d9e247ca62c548cb",
+        "initial_profile_sha256": "a3db9e70ecbca6a2507f830c7ce7a2ea69e5f79a0100778c2ca6a59801a552d1",
+        "runner_sha256": "0a1db5d7fc4381efb61308985fa630494d23af139ea219dd7d0ff9b40be31ef2"
+      },
+      "rtol": 1e-07,
+      "atol": 1e-12
+    }
+  },
+  "csv_sha256": "d9ab4886cd74102bbce71ee32b51b26f5a7c3c09d798c5f63e48f4ae4cac671b",
+  "builder_sha256": "b9e8e6763a55185c0e16aef9ef82c2414dc4e0e2b4f571cfcc582596da701023"
+}

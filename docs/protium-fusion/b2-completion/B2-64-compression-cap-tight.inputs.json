@@ -1,0 +1,35 @@
+{
+  "root": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion",
+  "output": "/var/tmp/tkwa-chatgpt/protium-b2-completion",
+  "zones": 64,
+  "source_zones": 64,
+  "rtol": 1e-08,
+  "atol": 1e-13,
+  "mode": "compression_cap",
+  "name": "B2-64-compression-cap-tight",
+  "time": 4,
+  "no_radiation": false,
+  "energy_match": false,
+  "trace_samples": 240,
+  "source_hashes": {
+    "/var/tmp/tkwa-chatgpt/protium-b2-completion/run.py": "82419d2b1b926d1d1951cefa59e77d414916e8d6f51ddf9736f5a17918265a7d",
+    "/var/tmp/tkwa-chatgpt/protium-b2-completion/radial_completion.py": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/radial_pulse.py": "bdc92a8652d0f646a72541e4f33b7825df6a98070d309adc58c97af20eede53e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/compression-B2-64-initial.json": "ca28c59ca6623522d4271518818544411743d61a832a623da4925af4736f2eb4"
+  },
+  "regridding": {
+    "source_zones": 64,
+    "zones": 64,
+    "density_conservative": true,
+    "parent_temperature_preserved": true,
+    "velocity_interpolation": "piecewise linear in radius",
+    "specific_kinetic_before_J_kg": 3349689353722.192,
+    "specific_kinetic_after_unscaled_J_kg": 3349689353722.192,
+    "relative_kinetic_quadrature_change": 0.0,
+    "velocity_energy_match_scale": 1.0,
+    "energy_match_requested": false
+  }
+}

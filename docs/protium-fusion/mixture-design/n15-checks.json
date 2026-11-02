@@ -1,0 +1,52 @@
+{
+  "identity_max_relative": 0.0,
+  "table_nodes_max_relative": 1.432187701766452e-14,
+  "paired_balance_max_relative": 2.220446049250313e-16,
+  "metadata": {
+    "revision": "luna2023-public-repository-2026-10-31-plus-nacreii-n15-high",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "8ea157326095bca3024d34f3eb0cb23f0239387c5f919ee423ec96adeef437ee",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two measured carbon capture updates and one paired N15(p,alpha) evaluation sensitivity; all other physics unchanged.",
+    "carbon_kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+    "nitrogen15_evaluation": {
+      "data_sha256": "15661ce2f82ab1467a3f609ef6addc87eba19694ef9ada6b6071fec5fe0ed76c",
+      "doi": "10.1016/j.nuclphysa.2013.09.007",
+      "table": 35,
+      "curve": "high",
+      "temperature_range_GK": [
+        0.005000000000000002,
+        10.000000000000002
+      ],
+      "interpretation": "Adopted/low/high model evaluation limits; not assigned a Gaussian confidence level here.",
+      "reverse_policy": "Same forward/reverse factor preserves archived equilibrium ratio; no new Q or species."
+    }
+  }
+}

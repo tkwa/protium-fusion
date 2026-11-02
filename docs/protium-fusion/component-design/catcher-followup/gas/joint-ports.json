@@ -1,0 +1,1902 @@
+{
+  "schema": 1,
+  "family": "delivered-B1-C13H2-source128",
+  "species": [
+    "H2",
+    "He"
+  ],
+  "aperture_model": {
+    "hot_gas_temperature_K": 1000,
+    "first_intercept_design_temperature_K": 300,
+    "He_final_radiation_shield_K": 200,
+    "He_sorber_temperature_K": 5,
+    "interpretation": "A locally enclosed gas manifold feeds a shared baffled mouth with no open view to the reactor cavity. The upstream manifold remains hot; all 1000 K radiation crossing its mouth is conservatively deposited in the downstream cold system. A 300 K first intercept/getter and 200 K He shield precede isolated 5 K sorbers. Molecular transmission must be demonstrated for the same baffles; .03/.1/.3 are conditional geometry cases. No ray-traced baffle or loaded-sorber performance is claimed.",
+    "conductance_formula": "C_i=a_mouth tau_i vbar_i/4; 1/S_i=1/C_i+1/(a_panel_i S_panel_i).",
+    "temperature_normalization": "The selected H speed is 10m3/s/m2 at300K. The Day low-load helium graph scale is13m3/s/m2 at273.15K, normalized to cryopanel area; it does not include this new admission path. Warm-equivalent speeds scale sqrt(1000/Tref) only with maintained capture.",
+    "optical_energy_rule": "Qhot_to_cold<=a_mouth sigmaSB 1000^4 for a sealed mouth with no additional warm view. All this heat is debited once from engine heat. Radiation from200K to5K is an internal downstream transfer, not an additional source. Refrigeration work is a separate electrical debit. The specified residual hot photon transmission adds5K refrigeration but does not add a second copy of hot bypass heat."
+  },
+  "scenarios": [
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0007292259241964483,
+        0.0005174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        6.347695999811471e-06,
+        4.983265069465911e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        96518675581908.52,
+        75772082436323.72
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0001158925429094017,
+        0.00012395291331665801
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0004521116603679321,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.035264709508698706,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 1.1330961069277382e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00011330961069277383
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0011330961069277383
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0024307530806548278,
+        0.0017249525026872222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.712223680192546e-06,
+        4.267698400520721e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        86856122954876.05,
+        64891670523213.984
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010429045877188778,
+        0.00010615402603058414
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0003871911654131186,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.03020091090222325,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.979922080713267e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.979922080713267e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009979922080713267
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.007292259241964484,
+        0.005174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.553380026536026e-06,
+        4.099508519573669e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        84440856206756.1,
+        62334291506359.6
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010139038369774732,
+        0.00010197049867589672
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0003719319718378095,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.02901069380334914,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.652888546109694e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.652888546109694e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009652888546109695
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0024307530806548278,
+        0.0017249525026872222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.712223680192546e-06,
+        4.267698400520721e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        86856122954876.05,
+        64891670523213.984
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010429045877188778,
+        0.00010615402603058414
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0003871911654131186,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.03020091090222325,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.979922080713267e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.979922080713267e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009979922080713267
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.008102510268849426,
+        0.005749841675624074
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.545669418183888e-06,
+        4.091446329997906e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        84323614028475.77,
+        62211703427131.17
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010124960789352886,
+        0.00010176996110229857
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.00037120052170130496,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.028953640692701788,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.637115748181794e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.637115748181794e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009637115748181794
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.024307530806548277,
+        0.01724952502687222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.499851697553878e-06,
+        4.043731348695661e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        83626941454124.11,
+        61486182419060.69
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010041309458944465,
+        0.00010058310652827589
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0003668715327512359,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.028615979554596403,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.543583046249539e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.543583046249539e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009543583046249538
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.007292259241964482,
+        0.005174857508061665
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.553380026536026e-06,
+        4.099508519573669e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        84440856206756.1,
+        62334291506359.6
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010139038369774732,
+        0.00010197049867589672
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0003719319718378095,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.02901069380334914,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.652888546109694e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.652888546109694e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009652888546109695
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.024307530806548273,
+        0.01724952502687222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.499851697553878e-06,
+        4.043731348695661e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        83626941454124.11,
+        61486182419060.69
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010041309458944465,
+        0.00010058310652827589
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0003668715327512359,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.028615979554596403,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.543583046249539e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.543583046249539e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009543583046249538
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0001,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.07292259241964483,
+        0.05174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.484746902421454e-06,
+        4.028072712063831e-06
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        83397268385161.61,
+        61248088019270.99
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.00010013732002209389,
+        0.00010019361618368737
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.00036545088742973925,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.028505169219519663,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.512819614485286e-06
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.512819614485287e-05
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009512819614485286
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0007292259241964483,
+        0.0005174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        8.712223314184278e-05,
+        0.0005948964336888573
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        1324720427197312.2,
+        9045583766102618.0
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0015906270784003824,
+        0.014797355759629906
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.05397256831269802,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 4.209860328390445,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0006820186668307001
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.006820186668307001
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.06820186668307
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0024307530806548278,
+        0.0017249525026872222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        3.4478212344695e-05,
+        2.8306433030779823e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        524251853277253.2,
+        430408045164734.06
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0006294831547880845,
+        0.0007040895458816288
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.002568129180013929,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.20031407604108645,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 6.278464537547482e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0006278464537547482
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.006278464537547482
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.007292259241964484,
+        0.005174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        2.9402108633623585e-05,
+        2.22513964907428e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        447068130659853.9,
+        338339346937567.4
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0005368066045617679,
+        0.0005534775658014991
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0020187799911701495,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.15746483931127167,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 5.165350512436638e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0005165350512436639
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.005165350512436638
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0024307530806548278,
+        0.0017249525026872222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        3.4478212344695e-05,
+        2.8306433030779823e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        524251853277253.2,
+        430408045164734.06
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0006294831547880845,
+        0.0007040895458816288
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.002568129180013929,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.20031407604108645,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 6.278464537547482e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0006278464537547482
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.006278464537547482
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.008102510268849426,
+        0.005749841675624074
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        2.9187251905795326e-05,
+        2.201592487649013e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        443801167842091.0,
+        334758928413196.25
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.000532883875346325,
+        0.0005476204837111171
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.001997416595684406,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.15579849446338367,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 5.1203176782285456e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0005120317678228546
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0051203176782285455
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.024307530806548277,
+        0.01724952502687222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        2.7961284704788183e-05,
+        2.0701504029262e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        425159958409316.75,
+        314772754006690.75
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0005105008789878889,
+        0.0005149257963792353
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0018781644621176426,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.14649682804517614,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 4.866278873405018e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0004866278873405018
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.004866278873405018
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.007292259241964482,
+        0.005174857508061665
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        2.9402108633623585e-05,
+        2.22513964907428e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        447068130659853.9,
+        338339346937567.4
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0005368066045617679,
+        0.0005534775658014991
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0020187799911701495,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.15746483931127167,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 5.165350512436638e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0005165350512436639
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.005165350512436638
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.024307530806548273,
+        0.01724952502687222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        2.7961284704788183e-05,
+        2.0701504029262e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        425159958409316.75,
+        314772754006690.75
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0005105008789878889,
+        0.0005149257963792353
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0018781644621176426,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.14649682804517614,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 4.866278873405018e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0004866278873405018
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.004866278873405018
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.0005,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.07292259241964483,
+        0.05174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        2.7575199592800342e-05,
+        2.0297561012374264e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        419289415196146.8,
+        308630675841365.44
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0005034519614894673,
+        0.0005048781844101371
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.0018415163317225401,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.14363827387435812,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 4.7872760605174606e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0004787276060517461
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.004787276060517461
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0007292259241964483,
+        0.0005174857508061666
+      ],
+      "finite_active_area_possible": false,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0024307530806548278,
+        0.0017249525026872222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        9.305437199481533e-05,
+        9.565878000192786e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        1414920428185686.2,
+        1454521255246226.8
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0016989326205345786,
+        0.002379400714244373
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.008678737585210889,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.6769415316464493,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00018871315199674317
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0018871315199674317
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.01887131519967432
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 3e-05,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.007292259241964484,
+        0.005174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 1.7011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        6.347695999811471e-05,
+        4.983265069465911e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        965186755819085.1,
+        757720824363237.2
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0011589254290940171,
+        0.0012395291331665803
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.004521116603679321,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.35264709508698705,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 1.7011123256999998e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.001326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00011330961069277383
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0011330961069277383
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.011330961069277383
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.0024307530806548278,
+        0.0017249525026872222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        9.305437199481533e-05,
+        9.565878000192786e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        1414920428185686.2,
+        1454521255246226.8
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0016989326205345786,
+        0.002379400714244373
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.008678737585210889,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.6769415316464493,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00018871315199674317
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0018871315199674317
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.01887131519967432
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.008102510268849426,
+        0.005749841675624074
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        6.248393143661026e-05,
+        4.8666935800053074e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        950087450248329.5,
+        739995769833716.5
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.001140795290981254,
+        0.0012105333331702286
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.00441535596498778,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.34439776526904686,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00011115086723666333
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0011115086723666333
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.011115086723666333
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.024307530806548277,
+        0.01724952502687222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.712223680192546e-05,
+        4.26769840052072e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        868561229548760.4,
+        648916705232139.8
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0010429045877188778,
+        0.0010615402603058413
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.003871911654131185,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.30200910902223244,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.979922080713267e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009979922080713267
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.009979922080713266
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.03,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.007292259241964482,
+        0.005174857508061665
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        6.347695999811471e-05,
+        4.983265069465911e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        965186755819085.1,
+        757720824363237.2
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0011589254290940171,
+        0.0012395291331665803
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.004521116603679321,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.35264709508698705,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00011330961069277383
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0011330961069277383
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.011330961069277383
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.024307530806548273,
+        0.01724952502687222
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.712223680192546e-05,
+        4.26769840052072e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        868561229548760.4,
+        648916705232139.8
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0010429045877188778,
+        0.0010615402603058413
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.003871911654131185,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.30200910902223244,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.979922080713267e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009979922080713267
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.009979922080713266
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 0.0003,
+      "net_molecular_transmission": 0.3,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.07292259241964483,
+        0.05174857508061666
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 17.011123256999998,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        5.5533800265360264e-05,
+        4.0995085195736685e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        844408562067560.9,
+        623342915063596.0
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.0010139038369774732,
+        0.001019704986758967
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.003719319718378095,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.2901069380334914,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 0.00017011123256999999,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.01326867614046
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0017011123256999998,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.13268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.017011123256999997,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 1.3268676140459998
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.17011123257,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 13.268676140459998
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 9.652888546109695e-05
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0009652888546109695
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.009652888546109696
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    }
+  ],
+  "representative_interface": {
+    "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+    "shared_mouth_area_fraction": 0.0001,
+    "net_molecular_transmission": 0.1,
+    "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+      0.008102510268849426,
+      0.005749841675624074
+    ],
+    "finite_active_area_possible": true,
+    "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+    "required_active_panel_area_fraction_Hgetter_Hecryo": [
+      6.248393143661026e-05,
+      4.8666935800053074e-05
+    ],
+    "required_active_panel_area_m2_Hgetter_Hecryo": [
+      950087450248329.5,
+      739995769833716.5
+    ],
+    "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+      0.001140795290981254,
+      0.0012105333331702286
+    ],
+    "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.00441535596498778,
+    "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.34439776526904686,
+    "hot_photon_leakage_into5K_sensitivity": [
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+        "additional5K_heat_W_m2": 0.0,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+        "additional5K_heat_W_m2": 5.670374419000001e-05,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+        "additional5K_heat_W_m2": 0.0005670374419000002,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+        "additional5K_heat_W_m2": 0.005670374419000001,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+        "additional5K_heat_W_m2": 0.05670374419000001,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+      }
+    ],
+    "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+      {
+        "kg_per_active_panel_m2": 1,
+        "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00011115086723666333
+      },
+      {
+        "kg_per_active_panel_m2": 10,
+        "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0011115086723666333
+      },
+      {
+        "kg_per_active_panel_m2": 100,
+        "Hgetter_Hecryo_total_kg_per_wall_m2": 0.011115086723666333
+      }
+    ],
+    "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+  },
+  "representative_pressure": {
+    "mean_total_source_pressure_Pa": 0.0014766525617735248,
+    "peak_pressure_by_stage_Pa": {
+      "A": 4.580685737713474,
+      "B1": 0.051828259013708244,
+      "B2": 3.2701858988335295,
+      "C13": 2.3407912622396623
+    },
+    "front_equivalent_open_fraction_for_f_0p001_species": [
+      1.065504177612394e-09,
+      1.42148180603447e-09
+    ],
+    "channel_plus_pump_speed": [
+      0.0008624625282065778,
+      0.0008165122034148893
+    ]
+  },
+  "gas_thermodynamics": {
+    "species": [
+      "H2",
+      "He"
+    ],
+    "sensible1000to300K_W_m2": [
+      2.1448370329967713e-06,
+      6.595803998290748e-07
+    ],
+    "He_refrigeration200to5K_reversible_W_m2": 5.114347701235377e-07,
+    "scope": "Ideal dilute-gas sensible and reversible cooling estimates; adsorption heat, solid hardware cycling, heat leaks and actual refrigerator efficiency are separate.",
+    "isothermal300K_compression_to1bar": [
+      {
+        "inlet_Pa": 0.001,
+        "reversible_W_m2": 6.9207240233813055e-06,
+        "electrical_W_m2_at_free_energy_efficiency0p5": 1.3841448046762611e-05
+      },
+      {
+        "inlet_Pa": 1.0,
+        "reversible_W_m2": 4.325452514613315e-06,
+        "electrical_W_m2_at_free_energy_efficiency0p5": 8.65090502922663e-06
+      },
+      {
+        "inlet_Pa": 1000.0,
+        "reversible_W_m2": 1.7301810058453264e-06,
+        "electrical_W_m2_at_free_energy_efficiency0p5": 3.4603620116906528e-06
+      }
+    ]
+  },
+  "requirements": [
+    "The retained surface channels and vias must actually supply the series conductance.",
+    "The active sorber must sustain its stated speed at the operating mixture, coverage and base pressure.",
+    "A real thermal enclosure must intercept1000K view; the5K stage needs a quantified residual hot transmission and200K view.",
+    "Local ports do not remove residual gas already in the reactor cavity. Global cleanup is a separate architecture.",
+    "Panel-area mass sensitivities exclude manifolds, refrigerators, controls, storage, shields, service and repair."
+  ],
+  "checks": {
+    "series_speed_checks": 52,
+    "all_pass": true
+  },
+  "source_sha256": {
+    "inputs.json": "b8ab5bbbe4d66b60ae15aff0751d1578733788b30c1eae71f053a34df5df2082",
+    "pumping-interfaces.json": "aaff4201ec4eae1e6c4dd98e0b1f4dccf9c0f61e8dde2957b50309dbaabc73ba"
+  },
+  "code_sha256": "5681ea2f5b8cb59db5f95f8ad7d17c35f2660136472f53baaefd25a8121322e4"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "graphite-material-geometry-screen-v1",
+  "input_sha256": "313576091d0b7e8373f9a0d1ad3323bb8c1d1c02ab3276d6ebd4435caddc7fb6",
+  "script_sha256": "f62613a43bee0f97356c502c5d9d683da29fb5ce2f746036cb772617533d488b",
+  "interpolation": "Piecewise linear in source temperature; no extrapolation or uncertainty distribution.",
+  "points": [
+    {
+      "T_K": 1000,
+      "material_basal_k_W_m_K": 423.313733065057,
+      "parallel_packing_upper_k_W_m_K": 377.9586902366581,
+      "material_to_required1250_ratio": 1.3019429570802026,
+      "parallel_packing_to_required1250_ratio": 1.1624490688216094
+    },
+    {
+      "T_K": 1100,
+      "material_basal_k_W_m_K": 399.95816355762827,
+      "parallel_packing_upper_k_W_m_K": 357.10550317645385,
+      "material_to_required1250_ratio": 1.2301106094532457,
+      "parallel_packing_to_required1250_ratio": 1.0983130441546838
+    },
+    {
+      "T_K": 1200,
+      "material_basal_k_W_m_K": 386.22027536231883,
+      "parallel_packing_upper_k_W_m_K": 344.83953157349896,
+      "material_to_required1250_ratio": 1.1878583851950508,
+      "parallel_packing_to_required1250_ratio": 1.0605878439241525
+    },
+    {
+      "T_K": 1250,
+      "material_basal_k_W_m_K": 367.66955072463765,
+      "parallel_packing_upper_k_W_m_K": 328.27638457556935,
+      "material_to_required1250_ratio": 1.1308038098192708,
+      "parallel_packing_to_required1250_ratio": 1.009646258767206
+    }
+  ],
+  "density_and_geometry": {
+    "solid_fill_fraction_for_archived_density": 0.8928571428571429,
+    "dense_material_thickness_m": 0.15625,
+    "archived_density_thickness_m": 0.175,
+    "packing_bound_scope": "Voigt parallel paths with zero void conductivity and perfect contacts. It is an upper bound for this assumed packing, not a measured assembly."
+  },
+  "contact_budget": [
+    {
+      "allocated_drop_K": 5,
+      "maximum_added_R_m2_K_W": 5.674402769108551e-06
+    },
+    {
+      "allocated_drop_K": 10,
+      "maximum_added_R_m2_K_W": 1.1348805538217102e-05
+    },
+    {
+      "allocated_drop_K": 20,
+      "maximum_added_R_m2_K_W": 2.2697611076434204e-05
+    }
+  ],
+  "existing_surface_R_m2_K_W": 4.15e-05,
+  "required1200_to_material1200_ratio": 2.417376972568669,
+  "checks": {
+    "passed": 15,
+    "names": [
+      "Celsius Kelvin conversion",
+      "interpolation preserves exact table knot",
+      "positive and ordered source temperatures",
+      "fill fraction bounded",
+      "packing no higher than material at1000K",
+      "packing no higher than material at1100K",
+      "packing no higher than material at1200K",
+      "packing no higher than material at1250K",
+      "constant325 material attainable over reviewed window",
+      "constant934 above measured material at1200K",
+      "dense thickness mass identity",
+      "surface resistance unchanged",
+      "contact drop5K",
+      "contact drop10K",
+      "contact drop20K"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "source_commit": "2d8c06196c732ca041a8f261e42e46f30774dbe6",
+  "scope": "Conditional catcher-interface requirements and modeled sensitivities; not measured recovery efficiency or a qualified reactor. The underlying selected-plant.json remains the separate allocated reference.",
+  "geometry": {
+    "rho_kg_m3": 2000.0,
+    "active_depth_m": 0.00015,
+    "cap_thickness_m": 1e-07,
+    "slot_full_width_m": 1e-07,
+    "slot_pitch_m": 2e-05,
+    "slot_projected_fraction": 0.004999999999999999,
+    "plenum_height_m": 5e-05,
+    "thermal_post_area_fraction": 0.25,
+    "post_conductivity_W_m_K": 50.0,
+    "gas_via_radius_m": 0.0005,
+    "gas_via_pitch_m": 0.01,
+    "gas_via_fraction": 0.007853981633974482,
+    "retained_graphite_sigma_kg_m2": 350.0,
+    "additional_physical_depth_m_preserving_mass": 0.0014238799126282953,
+    "active_solid_kg_m2": 0.2985,
+    "dogleg_stopping_pad_kg_m2_at_two_via_areas_200um": 0.006283185307179586,
+    "cap_full_area_kg_m2": 0.00019999999999999998,
+    "plenum_post_kg_m2": 0.025,
+    "gas_void_column_kg_m2_equivalent": 2.8477598252565905,
+    "new_mass_scope": "Active carbon, posts and vias substitute inside the350kg/m\u00b2 stock. Added gas seals, compressors, valves and rework tools remain service hardware; no zero hardware-mass credit is claimed.",
+    "skin_and_post_extra_resistance_m2_K_W": 4.15e-05,
+    "cap_diffusion_time_width2_over_alpha_k4_s": 9e-09
+  },
+  "case_rows": [
+    {
+      "label": "warm_compression_buffer_reference",
+      "scenario": {
+        "architecture": "warm_compression_buffer",
+        "refrigerator_fraction_Carnot": 0.3,
+        "ambient_cleanup_electrical_W_m2": 1.0,
+        "local_warm_booster_electrical_W_m2": 0.13,
+        "warm_bearing_support_bypass_W_m2": 0.5,
+        "warm_compressed_outlet_hot_to_cold_W_m2": 0.014113332167913861,
+        "downstream_extra_electrical_reserve_W_m2": 0.005,
+        "warm_motor_fraction_recovered_as_hot_heat": 0.0,
+        "new_service_hardware_kg_m2": 300.0,
+        "source_peak_hardware_multiplier": 1.0,
+        "repair_electrical_work_multiplier": 1.0
+      },
+      "net_mW_kg": 20.657644114442963,
+      "mass_kg": 3.3388138518676135e+22,
+      "net_W": 6.897202831625364e+20,
+      "radiator_K": 200.18862258959285,
+      "radiator_area_fraction": 0.8999999999963992,
+      "energy_balance": {
+        "helium_per_s": 4.1508940143803696e+32,
+        "nuclear_total_W": 1.7779702544763697e+21,
+        "neutrino_W": 1.3426473749623192e+20,
+        "nuclear_non_neutrino_W": 1.6437055169801376e+21,
+        "prepared_pulse_W": 1.2880068801858747e+20,
+        "captured_pulse_W": 1.772506204998725e+21,
+        "engine_hot_W": 1.6355281265082489e+21,
+        "gross_electric_W": 9.813168759049493e+20,
+        "driver_W": 2.1466781336431244e+20,
+        "ordinary_auxiliary_W": 7.666490625406368e+19,
+        "pump_W": 0.0,
+        "replacement_W": 2.1160125306535437e+17,
+        "support_W": 5.227187097141596e+16,
+        "cold_rejection_W": 9.539852338176012e+20,
+        "environment_absorbed_W": 1.676446077115823e+20,
+        "cold_heat_components_W": {
+          "engine_cold_rejection": 6.542112506032996e+20,
+          "hot_to_cold_bypass": 2.3022608956099408e+19,
+          "captured_source_ineligible_for_hot_engine": 1.1395546953437664e+20,
+          "driver_preparation_loss": 8.586712534572497e+19,
+          "ordinary_auxiliaries_after_hot_return": 7.666490625406368e+19,
+          "external_heat_loop_pumps": 0.0,
+          "routine_refurbishment": 2.1160125306535437e+17,
+          "support_dissipation": 5.227187097141596e+16
+        }
+      }
+    },
+    {
+      "label": "warm_compression_buffer_source_peak_hardware_multiplier_1.5",
+      "scenario": {
+        "architecture": "warm_compression_buffer",
+        "refrigerator_fraction_Carnot": 0.3,
+        "ambient_cleanup_electrical_W_m2": 1.0,
+        "local_warm_booster_electrical_W_m2": 0.13,
+        "warm_bearing_support_bypass_W_m2": 0.5,
+        "warm_compressed_outlet_hot_to_cold_W_m2": 0.014113332167913861,
+        "downstream_extra_electrical_reserve_W_m2": 0.005,
+        "warm_motor_fraction_recovered_as_hot_heat": 0.0,
+        "new_service_hardware_kg_m2": 300.0,
+        "source_peak_hardware_multiplier": 1.5,
+        "repair_electrical_work_multiplier": 1.0
+      },
+      "net_mW_kg": 19.606589819859725,
+      "mass_kg": 3.5177191394887093e+22,
+      "net_W": 6.897047626942504e+20,
+      "radiator_K": 200.1893151097387,
+      "radiator_area_fraction": 0.8999999999963998
+    },
+    {
+      "label": "direct_cold_local_port_reference",
+      "scenario": {
+        "architecture": "direct_cold_local_port",
+        "refrigerator_fraction_Carnot": 0.3,
+        "ambient_cleanup_electrical_W_m2": 1.0,
+        "local_warm_booster_electrical_W_m2": 0.0,
+        "warm_bearing_support_bypass_W_m2": 0.5,
+        "warm_compressed_outlet_hot_to_cold_W_m2": 0.014113332167913861,
+        "downstream_extra_electrical_reserve_W_m2": 0.005,
+        "warm_motor_fraction_recovered_as_hot_heat": 0.0,
+        "new_service_hardware_kg_m2": 300.0,
+        "source_peak_hardware_multiplier": 1.0,
+        "repair_electrical_work_multiplier": 1.0
+      },
+      "net_mW_kg": 19.272924386292235,
+      "mass_kg": 3.338130688612368e+22,
+      "net_W": 6.43355403531878e+20,
+      "radiator_K": 202.22610750061125,
+      "radiator_area_fraction": 0.8999999999963992
+    }
+  ],
+  "maintenance_scenarios_W_m2": {
+    "full100nm_face_each_pulse_at2MJkg": 0.052893986668713984,
+    "all_Ed25_proxy_defects_at10eV_electrical_per_event": 0.18940849643963228,
+    "full150um_monthly_hot_service_at2MJkg": 0.22815423226100842,
+    "selective_gas_100eV_useful_at50pct": 0.004938396589206173
+  },
+  "full_layer_rework_examples_at_2MJ_kg": [
+    {
+      "depth_um": 0.1,
+      "schedule": "each_pulse",
+      "electric_W_m2_at2MJkg": 0.052893986668713984
+    },
+    {
+      "depth_um": 100,
+      "schedule": "each_pulse",
+      "electric_W_m2_at2MJkg": 52.89398666871398
+    }
+  ],
+  "buffer_capacity": {
+    "temperature_K": 1000,
+    "volume_m3_per_m2": 0.5,
+    "modeled_pressure_Pa_range": [
+      0.68,
+      1.691
+    ],
+    "scope": "Full-incident H/He source capacity response within enclosed warm buffer, not central cavity pressure."
+  },
+  "requirements": [
+    "Complete hot pump and local booster",
+    "Capture and retention under mixed irradiation",
+    "Carbon emission and dust sources",
+    "Capsule response to the full gas/dust environment",
+    "Recovery equipment, seals and service-mass closure"
+  ],
+  "source_sha256": {
+    "plant-account/results.json": "1e4f725953035424880f50c104e1ba11668df56e682d15daa49f9abe7e624197",
+    "geometry/results.json": "627d6073a91d47baf81ea086facf5e937d1f2850a155e9c95b7c6c7ed543e1e5"
+  }
+}

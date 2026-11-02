@@ -1,0 +1,76 @@
+{
+  "stage": "B1",
+  "case": "B1-delivered-k0",
+  "initial_Y": {
+    "p": 0.11764705882352941,
+    "n15": 0.058823529411764705
+  },
+  "hydrogen_per_catalyst": 2.0,
+  "duration_s": 8.227795789289296e-05,
+  "physical_duration_s": 8.227795789289296e-05,
+  "zones": 128,
+  "T0_K": 200000000.0,
+  "rho0_kg_m3": 1000000.0,
+  "R0_m": 30,
+  "rtol": 1e-07,
+  "atol": 1e-12,
+  "opacity_m2_kg": 0.001,
+  "radiation": true,
+  "art_linear": 0.5,
+  "art_quad": 2.0,
+  "viscosity_mode": "compression_cap",
+  "preparation_record": "/home/tkwa/src/protium-fusion/output/assembly-audit/B1-forward-k0.json",
+  "preparation_record_sha256": "35c246f5e6d3479c03f282327631bebaed4b7b6ad6071e00d1200d267c87a164",
+  "preparation_trace_sha256": "4edc7db4228e91d2a04fcdbc6636f5233c2d79d5cea41ee7de7baf6b10552f03",
+  "preparation_profile_sha256": "62d50b229c96f3b0ee68c1433bc2e5b9c0283de0974be308e772d73f4c4dd919",
+  "preparation_initial_energy_J": 3.196326437256525e+23,
+  "preparation_escaped_radiation_J": 0.0,
+  "burn_start_energy_J": 3.196326437144248e+23,
+  "burn_start_internal_J": 2.676521479109663e+22,
+  "burn_start_kinetic_J": 2.9286742892332818e+23,
+  "burn_start_rho_reconstruction_max_relative": 1.1102230246251565e-14,
+  "preparation_plus_escape_energy_relative_error": -3.512690138762764e-11,
+  "hot_settings_reference": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source-family-carbon-median128/records/B1-H2-source128-carbon-median.json",
+  "hot_settings_reference_sha256": "af7576314952a5878063947ca5e06065949c481d3ad37803815edea840ed9a7d",
+  "scope": "All hot settings and composition held fixed; only the delivered preparation endpoint differs. Preescaped radiation remains a separate outer energy account. The30us precursor is an auxiliary spherical-fluid boundary construction, not a qualified3D cold-launch trajectory.",
+  "rate_update": {
+    "revision": "luna2023-public-repository-2026-10-31",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged.",
+    "baseline_record": "/home/tkwa/src/protium-fusion/output/assembly-audit/B1-forward-k0.json",
+    "baseline_record_sha256": "35c246f5e6d3479c03f282327631bebaed4b7b6ad6071e00d1200d267c87a164",
+    "initial_profile_sha256": "1f3f65bba5eafb68715cd727db5d22e81778c097da74d0e2b1f1b363718186f7",
+    "runner_sha256": "132fd04c8100265aa187949f9ea903fc58e694459a0c10f990d643c0f2970f69"
+  },
+  "runner_sha256": "132fd04c8100265aa187949f9ea903fc58e694459a0c10f990d643c0f2970f69",
+  "bridge_sha256": "1be6c03d8e6c8b0dcb197b28a5f1d93683d880d79fa4e294be6a2bc19974f07b"
+}

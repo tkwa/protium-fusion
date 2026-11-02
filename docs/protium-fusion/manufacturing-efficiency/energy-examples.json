@@ -1,0 +1,200 @@
+{
+  "scope": "Independent arithmetic and conditional cost sensitivity; no future manufacturing hardware is demonstrated by these calculations.",
+  "premise": "For a declared positive useful free-energy increase, supplied usable energy = deltaG/eta with eta >=0.5; all losses inside that conversion boundary are already included. Chemical energy consumed must be counted. Zero-net graphite chemistry needs explicit dissipation rather than this ratio.",
+  "input_sha256": {
+    "open-loop-redesign/station-inputs.json": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "open-loop-redesign/operating-cases.json": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461",
+    "open-loop-redesign/station.py": "5b2a4cc27ab0e87d9c2d51d1f345597a6cf8d9f0bbeb02b10ad24677f4022f08"
+  },
+  "code_sha256": "dd47db723a1e7f8c9e2a7b4904664fe9dc2d5b3937b58c40526187fa5ad2a479",
+  "transcribed_data": {
+    "carbon_gas_298": {
+      "dHf_J_mol": 716670.0,
+      "dGf_J_mol": 671244.0,
+      "source": "https://janaf.nist.gov/tables/C-003.html"
+    },
+    "methane_gas_298": {
+      "dHf_J_mol": -74873.0,
+      "dGf_J_mol": -50768.0,
+      "source": "https://janaf.nist.gov/tables/C-067.html"
+    },
+    "graphite_heating": {
+      "T_initial_K": 298.15,
+      "T_final_K": 1000.0,
+      "dH_J_mol": 11795.0,
+      "S_initial_J_mol_K": 5.74,
+      "S_final_J_mol_K": 24.457,
+      "source": "https://janaf.nist.gov/tables/C-002.html"
+    },
+    "graphite_basal_cleavage": {
+      "cleavage_J_m2": 0.39,
+      "uncertainty_J_m2": 0.02,
+      "selected_density_kg_m3": 2000.0,
+      "source": "https://arxiv.org/abs/1506.00536",
+      "scope": "Ideal AB stacking estimate from measured incommensurate cleavage plus modeled twist boundary; room-temperature basal surfaces."
+    }
+  },
+  "methane_to_graphite": {
+    "reaction": "CH4(g) -> C(graphite) + 2 H2(g), all standard states at 298.15 K",
+    "dG_J_kg_C": 4226897.682899415,
+    "dH_J_kg_C": 6233858.143155687,
+    "input_usable_J_kg_C_at_efficiency": {
+      "0.5": 8453795.36579883,
+      "0.9": 4696552.98099935,
+      "0.99": 4269593.619090318,
+      "1.0": 4226897.682899415
+    },
+    "alternative_fixed_dissipation_J_kg_C": {
+      "100000.0": {
+        "input_J_kg_C": 4326897.682899415,
+        "efficiency": 0.9768887532526559
+      },
+      "2000000.0": {
+        "input_J_kg_C": 6226897.682899415,
+        "efficiency": 0.6788127729330627
+      },
+      "3100000.0": {
+        "input_J_kg_C": 7326897.682899415,
+        "efficiency": 0.5769014207424742
+      }
+    },
+    "note": "Efficiency and fixed dissipation are alternative bookkeeping choices for the same conversion, not additive penalties. H2 is retained as a useful product; oxidizing it requires a separately counted oxidant and changes the reaction."
+  },
+  "carbon_atomization": {
+    "dG_J_kg_C": 55887167.27584571,
+    "dH_J_kg_C": 59669294.878733136,
+    "input_at_50pct_J_kg_C": 111774334.55169141,
+    "note": "A specified high-energy monatomic gas endpoint, not a compulsory graphite recycling step."
+  },
+  "graphite_heating": {
+    "heat_J_kg": 982041.0134296919,
+    "availability_relative_298K_J_kg": 517415.8417078107,
+    "note": "Availability and heat are distinct. A loop retaining hot graphite does not repeat the full cold-to-hot step every pass."
+  },
+  "basal_surface_examples": [
+    {
+      "plate_thickness_m": 2.5,
+      "retained_surface_energy_J_kg": 7.8e-05
+    },
+    {
+      "plate_thickness_m": 0.001,
+      "retained_surface_energy_J_kg": 0.195
+    },
+    {
+      "plate_thickness_m": 1e-06,
+      "retained_surface_energy_J_kg": 195.0
+    },
+    {
+      "plate_thickness_m": 1e-08,
+      "retained_surface_energy_J_kg": 19500.0
+    }
+  ],
+  "ideal_isotope_separation_examples": [
+    {
+      "T_K": 298.15,
+      "ideal_complete_C12_C13_separation_J_kg": 12217.372174168353
+    },
+    {
+      "T_K": 1000.0,
+      "ideal_complete_C12_C13_separation_J_kg": 40977.26706076927
+    }
+  ],
+  "sensitivity_scope": "Secondary mass-reallocation calculation using the old 1 kg/W manufacturing mass and resized radiators. Prefer sensitivity.json for fixed installed hardware; lower energy does not independently establish lower factory mass.",
+  "initial_cost_scope": "The same-cost fabrication arithmetic assumes delivered feed already has suitable chemical free energy. In canon, methane-to-graphite upgrading must be added once for fresh receiver carbon; a 2 MJ/kg refurbishment cost cannot replace that initial chemistry charge.",
+  "secondary_mass_reallocation_sensitivity": [
+    {
+      "replacement_energy_J_kg": 0.0,
+      "mass_kg": 1.2147167225563292e+23,
+      "net_W": 3.746056708454081e+20,
+      "net_W_kg": 0.003083893255845391,
+      "replacement_W": 0.0,
+      "radiator_area_fraction": 0.041308666201608155,
+      "net_increase_fraction": 0.11457307415700191,
+      "fabrication_arithmetic_years_if_delivered_feed_is_already_suitable": 0.0
+    },
+    {
+      "replacement_energy_J_kg": 100000.0,
+      "mass_kg": 1.21471720896541e+23,
+      "net_W": 3.745671784799622e+20,
+      "net_W_kg": 0.003083575137615658,
+      "replacement_W": 3.849206558690806e+16,
+      "radiator_area_fraction": 0.04130987589432196,
+      "net_increase_fraction": 0.11445854691562385,
+      "fabrication_arithmetic_years_if_delivered_feed_is_already_suitable": 1.0276411762267428
+    },
+    {
+      "replacement_energy_J_kg": 1000000.0,
+      "mass_kg": 1.2147215866646678e+23,
+      "net_W": 3.742207458037251e+20,
+      "net_W_kg": 0.003080712073548021,
+      "replacement_W": 3.849220430782657e+17,
+      "radiator_area_fraction": 0.04132076317234225,
+      "net_increase_fraction": 0.11342779761577826,
+      "fabrication_arithmetic_years_if_delivered_feed_is_already_suitable": 10.285962159889268
+    },
+    {
+      "replacement_energy_J_kg": 2000000.0,
+      "mass_kg": 1.2147264508119627e+23,
+      "net_W": 3.738358176792972e+20,
+      "net_W_kg": 0.0030775308912505623,
+      "replacement_W": 7.698471688670638e+17,
+      "radiator_area_fraction": 0.04133286023995721,
+      "net_increase_fraction": 0.11228251190239091,
+      "fabrication_arithmetic_years_if_delivered_feed_is_already_suitable": 20.593189107617643
+    },
+    {
+      "replacement_energy_J_kg": 3100000.0,
+      "mass_kg": 1.214731801418983e+23,
+      "net_W": 3.7341239318181183e+20,
+      "net_W_kg": 0.0030740315907232525,
+      "replacement_W": 1.1932683678096077e+18,
+      "radiator_area_fraction": 0.04134616712623248,
+      "net_increase_fraction": 0.11102268702368434,
+      "fabrication_arithmetic_years_if_delivered_feed_is_already_suitable": 31.955778372589094
+    },
+    {
+      "replacement_energy_J_kg": 10000000.0,
+      "mass_kg": 1.2147653653928253e+23,
+      "net_W": 3.707562817006117e+20,
+      "net_W_kg": 0.0030520814328676405,
+      "replacement_W": 3.849359157200881e+18,
+      "radiator_area_fraction": 0.04142964026872818,
+      "net_increase_fraction": 0.10311989598417926,
+      "fabrication_arithmetic_years_if_delivered_feed_is_already_suitable": 103.8245161901064
+    },
+    {
+      "replacement_energy_J_kg": 100000000.0,
+      "mass_kg": 1.2152033263020295e+23,
+      "net_W": 3.360979010988023e+20,
+      "net_W_kg": 0.0027657750256623948,
+      "replacement_W": 3.8507469715758785e+19,
+      "radiator_area_fraction": 0.04251884302362838,
+      "net_increase_fraction": 0.0,
+      "fabrication_arithmetic_years_if_delivered_feed_is_already_suitable": 1145.7218146815737
+    }
+  ],
+  "receiver_only_fixed_mass_sensitivity": {
+    "scope": "Fixed-installed-mass diagnostic only; other component maintenance remains 100 MJ/kg.",
+    "refurbished_receiver_kg_s": 240913574596.52505,
+    "old_receiver_refurbishment_W": 2.4091357459652506e+19,
+    "new_receiver_refurbishment_W_at_2MJkg": 4.818271491930501e+17,
+    "saved_W": 2.3609530310459453e+19,
+    "net_W_at_fixed_mass": 3.5970743140926174e+20,
+    "new_same_material_processing_allowance_J_kg": 2000000.0,
+    "receiver_startup_methane_upgrade_J_at_50pct": 6.427128302707098e+29,
+    "receiver_startup_methane_upgrade_years_of_old_net_output_at_50pct": 60.59645281400989,
+    "net_material_C_allowance_kg_s": 3548.559221698208,
+    "makeup_from_methane_at_50pct_W_for_net_material_allowance": 29998793503.65501,
+    "note": "Fresh synthesis applies to net new material, whereas refurbishment applies to gross returned material. 2 MJ/kg is a sensitivity, not a graphite-specific measured cost."
+  },
+  "transport_example": {
+    "selected_speed_m_s": 30000.0,
+    "kinetic_J_kg": 450000000.0,
+    "source_electric_J_kg_if_separately_selected_50pct_acceleration": 900000000.0,
+    "note": "Separate transport example; manufacturing premise does not fix propulsion efficiency. Net journey cost also depends on braking recovery and orbital changes."
+  },
+  "checks": {
+    "baseline_reproduced": true,
+    "all_mass_and_energy_residuals_below_1e10_inverse": true
+  }
+}

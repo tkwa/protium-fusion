@@ -1,0 +1,133 @@
+{
+  "case": "selected003_B2",
+  "stage": "B2",
+  "duration_s": 6.306272486811078e-05,
+  "saved_samples": 400,
+  "zones": 64,
+  "mass_kg": 11309733552923.254,
+  "prepared_J": 4.074393035942854e+25,
+  "nuclear_J": 4.400288021288534e+26,
+  "state_ranges": {
+    "rho_kg_m3": [
+      1282.9797368769348,
+      195757973.0035442
+    ],
+    "T_K": [
+      2200041.185772032,
+      1645712542.3448155
+    ],
+    "record_peak_T_K": 1646071782.5941658,
+    "T_over_TF_mass_time_quantiles": [
+      0.7482410451597297,
+      5.337301665962062,
+      77.49913279539103
+    ],
+    "T_over_TF_range": [
+      0.7432603265683295,
+      121.34970614722708
+    ],
+    "Gamma_dominant_range": [
+      0.10771456186944835,
+      6.384974977179974
+    ],
+    "pair_carrier_multiplier_max": 1.0842419178029223,
+    "approximate_impact_log_range": [
+      1.077376406711859,
+      5.0301899140165975
+    ]
+  },
+  "thermal_neutrinos": {
+    "components_J": {
+      "pair": 95859548657500.9,
+      "plasma": 5182909.542761789,
+      "photo": 113283022014.83363,
+      "brems": 64490342.468790084,
+      "recombination": 472702.8274629443
+    },
+    "total_J": 95972901825470.58,
+    "fraction_prepared": 2.355514084646022e-12,
+    "fraction_nuclear": 2.1810595434015904e-13,
+    "midpoint_interpolated_J": 95174073728618.56,
+    "midpoint_vs_trapezoid_relative": -0.008323475498372535,
+    "charge_square_matched_effective_ion_J": 95972928146853.25,
+    "effective_ion_relative_change": 2.7425848525552965e-07,
+    "T_below1e7_floor_diagnostic_J": 1.0054213057837919e-05,
+    "all_mass_peak_T_envelope_J": 4.5340771069783284e+21,
+    "peak_T_envelope_fraction_prepared": 0.00011128227117463397,
+    "envelope_maximizing_state_rho_T_Ye_Z": [
+      1282.9797368769348,
+      1646071782.5941658,
+      0.5862068717226633,
+      7.588235297447831
+    ],
+    "minimum_instantaneous_thermal_cooling_time_s": 4257605.5301747,
+    "energy_limited_envelope_J": 2.4174543294988908e+16,
+    "energy_limited_envelope_fraction_prepared": 5.933287015201931e-10,
+    "maximum_grid_loss_per_internal_energy_s_inverse": 9.413184783291968e-07,
+    "maximum_trace_internal_J": 4.072386244874618e+26,
+    "rhoYe_below1_g_cm3_fraction_loss": 5.489390069219696e-17
+  },
+  "conduction": {
+    "model": "max(classical Lorentz,relativistic-degenerate e-ion) at lnLambda1, multiplied by diagnostic pair-carrier enhancement; no e-e resistance. Max adjacent conductivity at each interface. Sensitivity envelope, not calibrated interpolation.",
+    "absolute_heat_crossing_all_interfaces_J": 7.974271932646138e+20,
+    "fraction_prepared": 1.9571680646172158e-05,
+    "fraction_nuclear": 1.8122159036105631e-06,
+    "100fold_conductivity_fraction_prepared": 0.0019571680646172157,
+    "max_integrated_local_abs_deltaT_over_T_total_Cv": 4.0797397328902145e-06,
+    "mass_fraction_local_deltaT_over_T_above1pct": 0.0,
+    "max_integrated_local_abs_deltaTe_over_T_electron_Cv": 9.636579002434899e-06,
+    "total_Cv_diffusion_length_m_mass_quantiles": [
+      0.011314595386499919,
+      0.011876047587665594,
+      0.02330319586627936
+    ],
+    "electron_Cv_diffusion_length_m_mass_quantiles": [
+      0.031189103868177304,
+      0.03367339945780531,
+      0.07209820132614823
+    ],
+    "maximum_diffusion_length_over_minimum_zone_width": 0.05528859833817852,
+    "max_effective_heat_mfp_m": 7.460260349012547e-06,
+    "max_mfp_over_L_T": 1.7306341560299457e-07,
+    "max_mfp_over_zone_width": 2.702942611411493e-07,
+    "max_mfp_over_L_T_state": {
+      "cell": 34,
+      "time_s": 2.8459494605993877e-05,
+      "rho_kg_m3": 142886080.03715664,
+      "T_K": 788282735.9430044,
+      "T_over_TF": 1.428062958607385,
+      "Gamma": 0.25013574925035104,
+      "mean_free_path_m": 4.081265144939743e-08,
+      "L_T_m": 0.23582483511721028
+    },
+    "largest_local_temperature_integral_cell": 36,
+    "largest_face_power_state": {
+      "face": 50,
+      "time_s": 2.94622259194414e-05,
+      "power_W": 2.9835374194449296e+26,
+      "adjacent_T_K": [
+        1607453350.537795,
+        820155310.4479085
+      ]
+    },
+    "discrete_energy_closure_relative": 7.561238417015189e-17,
+    "minimum_entropy_production_W_K": 2955.0285223878764
+  },
+  "checks": {
+    "positive_finite_neutrino_components": true,
+    "positive_EOS_heat_capacity": true,
+    "conduction_energy_conservation": true,
+    "conduction_nonnegative_entropy": true
+  },
+  "source_sha256": {
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json": "f92988f64f7c658e34ce6f6bd37f396059f5e8a30c14866653a534093659a0d2",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.npz": "c0be8e6432572b7e345f49f1da33d3b11b3bbccb0c458ae7fc027f95672b1d21",
+    "/tmp/protium-python/pynucastro/neutrino_cooling/sneut5_mod.py": "e66c8cfc456b54242889e6f7e140de2b8ab578b716fafe553561abee08bbbc3a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/phase-two/pulse-transport/microphysics.py": "c9629901a736a97a2a6ff94b64f513a5d33dc93dc2bd3fa8d36daa91726743db",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f"
+  },
+  "code_sha256": "32c79e1e3bd80e66babb1b315fef7b41ae0b1715bdb7f4aea9b922900ea24484",
+  "pynucastro_version": "3.1.0",
+  "diagnostic_trace_sha256": "e4be2d6e95a7cdbc9e50c5c794961a37aefb8df2489c2e8a59e95212887bcfba"
+}

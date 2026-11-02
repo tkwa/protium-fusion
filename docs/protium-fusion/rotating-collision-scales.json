@@ -1,0 +1,987 @@
+{
+  "scope": "Encounter-ordering probes in the saved rigidly rotating ion equilibrium.\n\nThe co-rotating thermal equation has effective cyclotron frequency Omega_i+2w\nand force q E + m w(Omega_i+w)r. These are local ordering diagnostics, not a\ncurved-orbit collision operator or a dynamic dielectric calculation.\n",
+  "coordinate_convention": "Signed rigid rotation w<0; positive-ion laboratory Omega>0; thermal u=v-w cross r. Electron GC follows the leading local E cross B orbit.",
+  "rows": [
+    {
+      "reaction_fraction_inside": 0.1,
+      "local_state": {
+        "radius_m": 0.0019174517660320949,
+        "proton_density_m-3": 1.578114149013656e+19,
+        "catalyst_density_m-3": 3.383361145771974e+17,
+        "ion_temperature_eV": 1600000.0,
+        "radial_E_V_m": 406533042.64327073,
+        "ExB_azimuthal_m_s": -2964168.8287360077,
+        "ion_azimuthal_m_s": -5703542.606028082,
+        "relative_azimuthal_m_s": -2739373.777292074,
+        "ion_static_screening_m": 0.0007017842277800357,
+        "species": [
+          [
+            1.6726218993985744e-27,
+            1.578114149013656e+19,
+            1,
+            1600000.0
+          ],
+          [
+            8.125980040811745e-26,
+            3.383361145771974e+17,
+            22,
+            1600000.0
+          ]
+        ]
+      },
+      "ion_rotation_rad_s": -2974542936.1338177,
+      "electron_GC_rotation_rad_s": -1545889644.3950458,
+      "relative_GC_rotation_rad_s": 1428653291.738772,
+      "electron_cyclotron_rotation_fraction": 0.0002466243341717344,
+      "species": [
+        {
+          "charge": 1,
+          "mass_kg": 1.6726218993985744e-27,
+          "laboratory_cyclotron_rad_s": 13137282217.735888,
+          "rotating_thermal_cyclotron_rad_s": 7188196345.468252,
+          "thermal_speed_m_s": 17507788.70793835,
+          "effective_radial_acceleration_m_s2": -1.9022494042452064e+16,
+          "force_gradient_eigenvalues_s-2": [
+            -1.0283155232455074e+19,
+            -9.92071580596602e+18
+          ],
+          "log_density_first_derivative_m-1": -124.11802575860776,
+          "log_density_second_derivative_m-2": -67095.56187392022,
+          "density_scale_m": 0.008056847455379773,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 7.017842277800357e-05,
+              "characteristic_relative_speed_m_s": 17720802.299374852,
+              "time_s": 3.960228300751332e-12,
+              "laboratory_ion_turn_rad": 0.052026636833634884,
+              "rotating_thermal_turn_rad": 0.028466898598680672,
+              "force_gradient_time_squared": [
+                -0.00016127492103359804,
+                -0.00015559063556234493
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0021255645761718662,
+              "electron_GC_curvature_displacement_over_distance": 0.0004373055480741516,
+              "log_density_change_linear_over_distance": 0.008710407286058713
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0007017842277800357,
+              "characteristic_relative_speed_m_s": 17720802.299374852,
+              "time_s": 3.9602283007513324e-11,
+              "laboratory_ion_turn_rad": 0.5202663683363489,
+              "rotating_thermal_turn_rad": 0.28466898598680673,
+              "force_gradient_time_squared": [
+                -0.016127492103359807,
+                -0.015559063556234497
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.021255645761718664,
+              "electron_GC_curvature_displacement_over_distance": 0.004373055480741516,
+              "log_density_change_linear_over_distance": 0.08710407286058713
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 7.017842277800357e-05,
+              "characteristic_relative_speed_m_s": 26844360.866664372,
+              "time_s": 2.6142705772202576e-12,
+              "laboratory_ion_turn_rad": 0.03434441036646582,
+              "rotating_thermal_turn_rad": 0.018791890209239832,
+              "force_gradient_time_squared": [
+                -7.027930564574994e-05,
+                -6.780224576903999e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0009262643042152899,
+              "electron_GC_curvature_displacement_over_distance": 0.00019056608477447556,
+              "log_density_change_linear_over_distance": 0.008710407286058713
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0007017842277800357,
+              "characteristic_relative_speed_m_s": 26844360.866664372,
+              "time_s": 2.614270577220258e-11,
+              "laboratory_ion_turn_rad": 0.34344410366465833,
+              "rotating_thermal_turn_rad": 0.18791890209239837,
+              "force_gradient_time_squared": [
+                -0.007027930564574996,
+                -0.006780224576904001
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.009262643042152902,
+              "electron_GC_curvature_displacement_over_distance": 0.001905660847744756,
+              "log_density_change_linear_over_distance": 0.08710407286058713
+            }
+          ]
+        },
+        {
+          "charge": 22,
+          "mass_kg": 8.125980040811745e-26,
+          "laboratory_cyclotron_rad_s": 5949085872.267635,
+          "rotating_thermal_cyclotron_rad_s": 0.0,
+          "thermal_speed_m_s": 2511841.956505293,
+          "effective_radial_acceleration_m_s2": 668662532350388.0,
+          "force_gradient_eigenvalues_s-2": [
+            1.8459752254808883e+17,
+            3.4872456465181075e+17
+          ],
+          "log_density_first_derivative_m-1": 211.95924487241535,
+          "log_density_second_derivative_m-2": 58515.543479125925,
+          "density_scale_m": 0.004717888104394456,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 7.017842277800357e-05,
+              "characteristic_relative_speed_m_s": 3716654.235488659,
+              "time_s": 1.888215000144522e-11,
+              "laboratory_ion_turn_rad": 0.11233153181163608,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                6.581558637001299e-05,
+                0.00012433271794429101
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0016985419460906926,
+              "electron_GC_curvature_displacement_over_distance": 0.009941397245102918,
+              "log_density_change_linear_over_distance": 0.01487496549836275
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0007017842277800357,
+              "characteristic_relative_speed_m_s": 3716654.235488659,
+              "time_s": 1.8882150001445223e-10,
+              "laboratory_ion_turn_rad": 1.1233153181163609,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                0.006581558637001299,
+                0.012433271794429103
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.01698541946090693,
+              "electron_GC_curvature_displacement_over_distance": 0.0994139724510292,
+              "log_density_change_linear_over_distance": 0.1487496549836275
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 7.017842277800357e-05,
+              "characteristic_relative_speed_m_s": 20503814.15523337,
+              "time_s": 3.4227008812451276e-12,
+              "laboratory_ion_turn_rad": 0.020361941457613376,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                2.1625380690739803e-06,
+                4.0852668891281325e-06
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 5.5809904962173205e-05,
+              "electron_GC_curvature_displacement_over_distance": 0.000326649828529333,
+              "log_density_change_linear_over_distance": 0.01487496549836275
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0007017842277800357,
+              "characteristic_relative_speed_m_s": 20503814.15523337,
+              "time_s": 3.422700881245128e-11,
+              "laboratory_ion_turn_rad": 0.20361941457613375,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                0.00021625380690739804,
+                0.00040852668891281334
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.000558099049621732,
+              "electron_GC_curvature_displacement_over_distance": 0.0032664982852933303,
+              "log_density_change_linear_over_distance": 0.1487496549836275
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reaction_fraction_inside": 0.5,
+      "local_state": {
+        "radius_m": 0.004099751222077789,
+        "proton_density_m-3": 1.0205540684038267e+19,
+        "catalyst_density_m-3": 5.502461120088289e+17,
+        "ion_temperature_eV": 1600000.0,
+        "radial_E_V_m": 849276264.9137883,
+        "ExB_azimuthal_m_s": -6192358.227697104,
+        "ion_azimuthal_m_s": -12194886.037537474,
+        "relative_azimuthal_m_s": -6002527.80984037,
+        "ion_static_screening_m": 0.0005654734603303477,
+        "species": [
+          [
+            1.6726218993985744e-27,
+            1.0205540684038267e+19,
+            1,
+            1600000.0
+          ],
+          [
+            8.125980040811745e-26,
+            5.502461120088289e+17,
+            22,
+            1600000.0
+          ]
+        ]
+      },
+      "ion_rotation_rad_s": -2974542936.1338177,
+      "electron_GC_rotation_rad_s": -1510422923.7984748,
+      "relative_GC_rotation_rad_s": 1464120012.335343,
+      "electron_cyclotron_rotation_fraction": 0.0002466243341717344,
+      "species": [
+        {
+          "charge": 1,
+          "mass_kg": 1.6726218993985744e-27,
+          "laboratory_cyclotron_rad_s": 13137282217.735888,
+          "rotating_thermal_cyclotron_rad_s": 7188196345.468252,
+          "thermal_speed_m_s": 17507788.70793835,
+          "effective_radial_acceleration_m_s2": -4.258268973776702e+16,
+          "force_gradient_eigenvalues_s-2": [
+            -1.1400725524369551e+19,
+            -1.0386652123780758e+19
+          ],
+          "log_density_first_derivative_m-1": -277.84366077066096,
+          "log_density_second_derivative_m-2": -74387.48784163709,
+          "density_scale_m": 0.003599146358877789,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.654734603303477e-05,
+              "characteristic_relative_speed_m_s": 18508187.52740853,
+              "time_s": 3.055261135067632e-12,
+              "laboratory_ion_turn_rad": 0.04013782778026357,
+              "rotating_thermal_turn_rad": 0.021961816925544338,
+              "force_gradient_time_squared": [
+                -0.00010642144737411254,
+                -9.695545691556095e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.003514694153324784,
+              "electron_GC_curvature_displacement_over_distance": 0.0007253795477849258,
+              "log_density_change_linear_over_distance": 0.015711321628683692
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005654734603303477,
+              "characteristic_relative_speed_m_s": 18508187.52740853,
+              "time_s": 3.0552611350676314e-11,
+              "laboratory_ion_turn_rad": 0.4013782778026356,
+              "rotating_thermal_turn_rad": 0.21961816925544334,
+              "force_gradient_time_squared": [
+                -0.01064214473741125,
+                -0.009695545691556092
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.03514694153324783,
+              "electron_GC_curvature_displacement_over_distance": 0.007253795477849256,
+              "log_density_change_linear_over_distance": 0.15711321628683692
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.654734603303477e-05,
+              "characteristic_relative_speed_m_s": 27370529.438721005,
+              "time_s": 2.065993869780152e-12,
+              "laboratory_ion_turn_rad": 0.02714154452741414,
+              "rotating_thermal_turn_rad": 0.0148507695845135,
+              "force_gradient_time_squared": [
+                -4.866206641556687e-05,
+                -4.4333665818233796e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.001607122291038296,
+              "electron_GC_curvature_displacement_over_distance": 0.00033168565737239184,
+              "log_density_change_linear_over_distance": 0.015711321628683692
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005654734603303477,
+              "characteristic_relative_speed_m_s": 27370529.438721005,
+              "time_s": 2.0659938697801515e-11,
+              "laboratory_ion_turn_rad": 0.27141544527414135,
+              "rotating_thermal_turn_rad": 0.14850769584513498,
+              "force_gradient_time_squared": [
+                -0.004866206641556685,
+                -0.004433366581823378
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.01607122291038296,
+              "electron_GC_curvature_displacement_over_distance": 0.0033168565737239177,
+              "log_density_change_linear_over_distance": 0.15711321628683692
+            }
+          ]
+        },
+        {
+          "charge": 22,
+          "mass_kg": 8.125980040811745e-26,
+          "laboratory_cyclotron_rad_s": 5949085872.267635,
+          "rotating_thermal_cyclotron_rad_s": 0.0,
+          "thermal_speed_m_s": 2511841.956505293,
+          "effective_radial_acceleration_m_s2": 564658728499072.0,
+          "force_gradient_eigenvalues_s-2": [
+            -3.2148292276035174e+17,
+            1.3772999821508637e+17
+          ],
+          "log_density_first_derivative_m-1": 178.99109328375704,
+          "log_density_second_derivative_m-2": -101906.82781064554,
+          "density_scale_m": 0.005586870171325711,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.654734603303477e-05,
+              "characteristic_relative_speed_m_s": 6506895.582562192,
+              "time_s": 8.690372438828712e-12,
+              "laboratory_ion_turn_rad": 0.05169977190057993,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -2.4279217542785397e-05,
+                1.0401723861781241e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.00037706880256714945,
+              "electron_GC_curvature_displacement_over_distance": 0.005868747351241361,
+              "log_density_change_linear_over_distance": 0.010121471288747816
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005654734603303477,
+              "characteristic_relative_speed_m_s": 6506895.582562192,
+              "time_s": 8.69037243882871e-11,
+              "laboratory_ion_turn_rad": 0.5169977190057992,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.002427921754278539,
+                0.0010401723861781238
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0037706880256714935,
+              "electron_GC_curvature_displacement_over_distance": 0.058687473512413595,
+              "log_density_change_linear_over_distance": 0.10121471288747814
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.654734603303477e-05,
+              "characteristic_relative_speed_m_s": 21188028.84481093,
+              "time_s": 2.6688346729754212e-12,
+              "laboratory_ion_turn_rad": 0.015877126648416093,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -2.2898195058158956e-06,
+                9.810064986997452e-07
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 3.5562080929147074e-05,
+              "electron_GC_curvature_displacement_over_distance": 0.0005534928024717613,
+              "log_density_change_linear_over_distance": 0.010121471288747816
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005654734603303477,
+              "characteristic_relative_speed_m_s": 21188028.84481093,
+              "time_s": 2.6688346729754212e-11,
+              "laboratory_ion_turn_rad": 0.15877126648416093,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.0002289819505815896,
+                9.810064986997452e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0003556208092914708,
+              "electron_GC_curvature_displacement_over_distance": 0.005534928024717615,
+              "log_density_change_linear_over_distance": 0.10121471288747814
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reaction_fraction_inside": 0.9,
+      "local_state": {
+        "radius_m": 0.005774809014748515,
+        "proton_density_m-3": 5.708586046755638e+18,
+        "catalyst_density_m-3": 5.031535512199014e+17,
+        "ion_temperature_eV": 1600000.0,
+        "radial_E_V_m": 1134667570.7175012,
+        "ExB_azimuthal_m_s": -8273242.0032330165,
+        "ion_azimuthal_m_s": -17177417.362342086,
+        "relative_azimuthal_m_s": -8904175.35910907,
+        "ion_static_screening_m": 0.0005956274813804498,
+        "species": [
+          [
+            1.6726218993985744e-27,
+            5.708586046755638e+18,
+            1,
+            1600000.0
+          ],
+          [
+            8.125980040811745e-26,
+            5.031535512199014e+17,
+            22,
+            1600000.0
+          ]
+        ]
+      },
+      "ion_rotation_rad_s": -2974542936.1338177,
+      "electron_GC_rotation_rad_s": -1432643396.8818111,
+      "relative_GC_rotation_rad_s": 1541899539.2520065,
+      "electron_cyclotron_rotation_fraction": 0.0002466243341717344,
+      "species": [
+        {
+          "charge": 1,
+          "mass_kg": 1.6726218993985744e-27,
+          "laboratory_cyclotron_rad_s": 13137282217.735888,
+          "rotating_thermal_cyclotron_rad_s": 7188196345.468252,
+          "thermal_speed_m_s": 17507788.70793835,
+          "effective_radial_acceleration_m_s2": -6.588169913264859e+16,
+          "force_gradient_eigenvalues_s-2": [
+            -1.996922420829284e+19,
+            -1.1408463719646953e+19
+          ],
+          "log_density_first_derivative_m-1": -429.86510663208855,
+          "log_density_second_derivative_m-2": -130295.25356312384,
+          "density_scale_m": 0.002326311171973948,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.956274813804498e-05,
+              "characteristic_relative_speed_m_s": 19641970.47822796,
+              "time_s": 3.032422241142608e-12,
+              "laboratory_ion_turn_rad": 0.03983778678522959,
+              "rotating_thermal_turn_rad": 0.02179764647169794,
+              "force_gradient_time_squared": [
+                -0.000183628691573757,
+                -0.00010490749384422584
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.005085567406680393,
+              "electron_GC_curvature_displacement_over_distance": 0.0010598011995578782,
+              "log_density_change_linear_over_distance": 0.02560394707966094
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005956274813804498,
+              "characteristic_relative_speed_m_s": 19641970.47822796,
+              "time_s": 3.032422241142608e-11,
+              "laboratory_ion_turn_rad": 0.3983778678522959,
+              "rotating_thermal_turn_rad": 0.2179764647169794,
+              "force_gradient_time_squared": [
+                -0.018362869157375696,
+                -0.010490749384422585
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.050855674066803934,
+              "electron_GC_curvature_displacement_over_distance": 0.01059801199557878,
+              "log_density_change_linear_over_distance": 0.2560394707966094
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.956274813804498e-05,
+              "characteristic_relative_speed_m_s": 28149598.229348697,
+              "time_s": 2.115935994992107e-12,
+              "laboratory_ion_turn_rad": 0.027797648320877097,
+              "rotating_thermal_turn_rad": 0.015209763386446992,
+              "force_gradient_time_squared": [
+                -8.940591378091857e-05,
+                -5.107780417768623e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.002476082562000332,
+              "electron_GC_curvature_displacement_over_distance": 0.0005160004891421179,
+              "log_density_change_linear_over_distance": 0.02560394707966094
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005956274813804498,
+              "characteristic_relative_speed_m_s": 28149598.229348697,
+              "time_s": 2.1159359949921067e-11,
+              "laboratory_ion_turn_rad": 0.27797648320877094,
+              "rotating_thermal_turn_rad": 0.15209763386446992,
+              "force_gradient_time_squared": [
+                -0.008940591378091856,
+                -0.005107780417768623
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.024760825620003316,
+              "electron_GC_curvature_displacement_over_distance": 0.005160004891421179,
+              "log_density_change_linear_over_distance": 0.2560394707966094
+            }
+          ]
+        },
+        {
+          "charge": 22,
+          "mass_kg": 8.125980040811745e-26,
+          "laboratory_cyclotron_rad_s": 5949085872.267635,
+          "rotating_thermal_cyclotron_rad_s": 0.0,
+          "thermal_speed_m_s": 2511841.956505293,
+          "effective_radial_acceleration_m_s2": -1876738356892328.0,
+          "force_gradient_eigenvalues_s-2": [
+            -4.201641209856735e+18,
+            -3.24987086516498e+17
+          ],
+          "log_density_first_derivative_m-1": -594.9070356188988,
+          "log_density_second_derivative_m-2": -1331877.6736833542,
+          "density_scale_m": 0.001680934902643522,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.956274813804498e-05,
+              "characteristic_relative_speed_m_s": 9251685.729650866,
+              "time_s": 6.4380427392979246e-12,
+              "laboratory_ion_turn_rad": 0.03830046910541251,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.00017415128162800463,
+                -1.347019290857754e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0006529902822698092,
+              "electron_GC_curvature_displacement_over_distance": 0.004776972828964644,
+              "log_density_change_linear_over_distance": 0.035434297928119425
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005956274813804498,
+              "characteristic_relative_speed_m_s": 9251685.729650866,
+              "time_s": 6.438042739297924e-11,
+              "laboratory_ion_turn_rad": 0.38300469105412505,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.017415128162800456,
+                -0.0013470192908577535
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.00652990282269809,
+              "electron_GC_curvature_displacement_over_distance": 0.047769728289646436,
+              "log_density_change_linear_over_distance": 0.35434297928119424
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 5.956274813804498e-05,
+              "characteristic_relative_speed_m_s": 22185278.115146495,
+              "time_s": 2.6847870839797974e-12,
+              "laboratory_ion_turn_rad": 0.015972028911350834,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -3.028577305719164e-05,
+                -2.3425334666051043e-06
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0001135582541368722,
+              "electron_GC_curvature_displacement_over_distance": 0.0008307393069172189,
+              "log_density_change_linear_over_distance": 0.035434297928119425
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0005956274813804498,
+              "characteristic_relative_speed_m_s": 22185278.115146495,
+              "time_s": 2.6847870839797974e-11,
+              "laboratory_ion_turn_rad": 0.15972028911350836,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.003028577305719164,
+                -0.00023425334666051043
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.001135582541368722,
+              "electron_GC_curvature_displacement_over_distance": 0.008307393069172189,
+              "log_density_change_linear_over_distance": 0.35434297928119424
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reaction_fraction_inside": 0.99,
+      "local_state": {
+        "radius_m": 0.006621597704948005,
+        "proton_density_m-3": 3.7438040202301783e+18,
+        "catalyst_density_m-3": 1.4757393244811245e+17,
+        "ion_temperature_eV": 1600000.0,
+        "radial_E_V_m": 1160474840.9320302,
+        "ExB_azimuthal_m_s": -8461411.470165621,
+        "ion_azimuthal_m_s": -19696226.67917299,
+        "relative_azimuthal_m_s": -11234815.209007367,
+        "ion_static_screening_m": 0.0010845712212754727,
+        "species": [
+          [
+            1.6726218993985744e-27,
+            3.7438040202301783e+18,
+            1,
+            1600000.0
+          ],
+          [
+            8.125980040811745e-26,
+            1.4757393244811245e+17,
+            22,
+            1600000.0
+          ]
+        ]
+      },
+      "ion_rotation_rad_s": -2974542936.1338177,
+      "electron_GC_rotation_rad_s": -1277850429.337139,
+      "relative_GC_rotation_rad_s": 1696692506.7966788,
+      "electron_cyclotron_rotation_fraction": 0.0002466243341717344,
+      "species": [
+        {
+          "charge": 1,
+          "mass_kg": 1.6726218993985744e-27,
+          "laboratory_cyclotron_rad_s": 13137282217.735888,
+          "rotating_thermal_cyclotron_rad_s": 7188196345.468252,
+          "thermal_speed_m_s": 17507788.70793835,
+          "effective_radial_acceleration_m_s2": -8.900766612781674e+16,
+          "force_gradient_eigenvalues_s-2": [
+            -3.490049848640743e+19,
+            -1.3442022619602145e+19
+          ],
+          "log_density_first_derivative_m-1": -580.7574849287146,
+          "log_density_second_derivative_m-2": -227718.87642372408,
+          "density_scale_m": 0.0017218891291995067,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00010845712212754727,
+              "characteristic_relative_speed_m_s": 20802493.557801116,
+              "time_s": 5.213659690661214e-12,
+              "laboratory_ion_turn_rad": 0.06849331874344995,
+              "rotating_thermal_turn_rad": 0.037476809534926075,
+              "force_gradient_time_squared": [
+                -0.0009486739831947303,
+                -0.00036538438399950484
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.011153847488547947,
+              "electron_GC_curvature_displacement_over_distance": 0.002388726148886141,
+              "log_density_change_linear_over_distance": 0.06298728546940079
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0010845712212754727,
+              "characteristic_relative_speed_m_s": 20802493.557801116,
+              "time_s": 5.213659690661214e-11,
+              "laboratory_ion_turn_rad": 0.6849331874344996,
+              "rotating_thermal_turn_rad": 0.3747680953492608,
+              "force_gradient_time_squared": [
+                -0.09486739831947304,
+                -0.03653843839995049
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.1115384748854795,
+              "electron_GC_curvature_displacement_over_distance": 0.023887261488861413,
+              "log_density_change_linear_over_distance": 0.6298728546940079
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00010845712212754727,
+              "characteristic_relative_speed_m_s": 28971306.7435442,
+              "time_s": 3.743604770320388e-12,
+              "laboratory_ion_turn_rad": 0.04918079237936127,
+              "rotating_thermal_turn_rad": 0.02690976612889453,
+              "force_gradient_time_squared": [
+                -0.0004891157120811373,
+                -0.00018838425668785458
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.00575068163926416,
+              "electron_GC_curvature_displacement_over_distance": 0.0012315753483032456,
+              "log_density_change_linear_over_distance": 0.06298728546940079
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0010845712212754727,
+              "characteristic_relative_speed_m_s": 28971306.7435442,
+              "time_s": 3.743604770320387e-11,
+              "laboratory_ion_turn_rad": 0.4918079237936126,
+              "rotating_thermal_turn_rad": 0.2690976612889452,
+              "force_gradient_time_squared": [
+                -0.0489115712081137,
+                -0.01883842566878545
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.05750681639264159,
+              "electron_GC_curvature_displacement_over_distance": 0.012315753483032451,
+              "log_density_change_linear_over_distance": 0.6298728546940079
+            }
+          ]
+        },
+        {
+          "charge": 22,
+          "mass_kg": 8.125980040811745e-26,
+          "laboratory_cyclotron_rad_s": 5949085872.267635,
+          "rotating_thermal_cyclotron_rad_s": 0.0,
+          "thermal_speed_m_s": 2511841.956505293,
+          "effective_radial_acceleration_m_s2": -8249608500418840.0,
+          "force_gradient_eigenvalues_s-2": [
+            -1.0963118309204105e+19,
+            -1.2458637428628895e+18
+          ],
+          "log_density_first_derivative_m-1": -2615.0422726625225,
+          "log_density_second_derivative_m-2": -3475197.3766165585,
+          "density_scale_m": 0.00038240299610217904,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00010845712212754727,
+              "characteristic_relative_speed_m_s": 11512185.839144694,
+              "time_s": 9.421071171276817e-12,
+              "laboratory_ion_turn_rad": 0.056046761406670816,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.0009730489093429438,
+                -0.00011057860747200687
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0033755600328021803,
+              "electron_GC_curvature_displacement_over_distance": 0.007799765981712796,
+              "log_density_change_linear_over_distance": 0.283619959134858
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0010845712212754727,
+              "characteristic_relative_speed_m_s": 11512185.839144694,
+              "time_s": 9.421071171276815e-11,
+              "laboratory_ion_turn_rad": 0.5604676140667081,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.09730489093429436,
+                -0.011057860747200684
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.033755600328021794,
+              "electron_GC_curvature_displacement_over_distance": 0.07799765981712793,
+              "log_density_change_linear_over_distance": 2.8361995913485796
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00010845712212754727,
+              "characteristic_relative_speed_m_s": 23219028.812617812,
+              "time_s": 4.671044728133026e-12,
+              "laboratory_ion_turn_rad": 0.027788446200866405,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.00023920053834504404,
+                -2.71830759818745e-05
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.0008297997863309061,
+              "electron_GC_curvature_displacement_over_distance": 0.0019173838065867526,
+              "log_density_change_linear_over_distance": 0.283619959134858
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0010845712212754727,
+              "characteristic_relative_speed_m_s": 23219028.812617812,
+              "time_s": 4.671044728133026e-11,
+              "laboratory_ion_turn_rad": 0.277884462008664,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.0239200538345044,
+                -0.0027183075981874493
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.00829799786330906,
+              "electron_GC_curvature_displacement_over_distance": 0.019173838065867522,
+              "log_density_change_linear_over_distance": 2.8361995913485796
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reaction_fraction_inside": 0.999,
+      "local_state": {
+        "radius_m": 0.007100958017072384,
+        "proton_density_m-3": 2.756744561807653e+18,
+        "catalyst_density_m-3": 2.7346622034929356e+16,
+        "ion_temperature_eV": 1600000.0,
+        "radial_E_V_m": 1123239993.8625674,
+        "ExB_azimuthal_m_s": -8189919.705785468,
+        "ion_azimuthal_m_s": -21122104.509465463,
+        "relative_azimuthal_m_s": -12932184.803679995,
+        "ion_static_screening_m": 0.0023513693289273253,
+        "species": [
+          [
+            1.6726218993985744e-27,
+            2.756744561807653e+18,
+            1,
+            1600000.0
+          ],
+          [
+            8.125980040811745e-26,
+            2.7346622034929356e+16,
+            22,
+            1600000.0
+          ]
+        ]
+      },
+      "ion_rotation_rad_s": -2974542936.1338177,
+      "electron_GC_rotation_rad_s": -1153354193.3489766,
+      "relative_GC_rotation_rad_s": 1821188742.784841,
+      "electron_cyclotron_rotation_fraction": 0.0002466243341717344,
+      "species": [
+        {
+          "charge": 1,
+          "mass_kg": 1.6726218993985744e-27,
+          "laboratory_cyclotron_rad_s": 13137282217.735888,
+          "rotating_thermal_cyclotron_rad_s": 7188196345.468252,
+          "thermal_speed_m_s": 17507788.70793835,
+          "effective_radial_acceleration_m_s2": -1.0706515469294872e+17,
+          "force_gradient_eigenvalues_s-2": [
+            -3.956032779427954e+19,
+            -1.5077564806824479e+19
+          ],
+          "log_density_first_derivative_m-1": -698.5790400760601,
+          "log_density_second_derivative_m-2": -258123.34456415052,
+          "density_scale_m": 0.001431477245425402,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00023513693289273254,
+              "characteristic_relative_speed_m_s": 21766122.05328146,
+              "time_s": 1.0802885893827986e-11,
+              "laboratory_ion_turn_rad": 0.14192056075321627,
+              "rotating_thermal_turn_rad": 0.07765326490252486,
+              "force_gradient_time_squared": [
+                -0.00461678296856393,
+                -0.0017595871492660335
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.02656910235368721,
+              "electron_GC_curvature_displacement_over_distance": 0.005844610747623253,
+              "log_density_change_linear_over_distance": 0.16426173286663406
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0023513693289273253,
+              "characteristic_relative_speed_m_s": 21766122.05328146,
+              "time_s": 1.0802885893827986e-10,
+              "laboratory_ion_turn_rad": 1.4192056075321626,
+              "rotating_thermal_turn_rad": 0.7765326490252487,
+              "force_gradient_time_squared": [
+                -0.461678296856393,
+                -0.17595871492660334
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.2656910235368721,
+              "electron_GC_curvature_displacement_over_distance": 0.05844610747623252,
+              "log_density_change_linear_over_distance": 1.6426173286663406
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00023513693289273254,
+              "characteristic_relative_speed_m_s": 29670809.652662296,
+              "time_s": 7.924857314152674e-12,
+              "laboratory_ion_turn_rad": 0.1041110870713121,
+              "rotating_thermal_turn_rad": 0.0569654303839496,
+              "force_gradient_time_squared": [
+                -0.002484521644652581,
+                -0.0009469217824990888
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.014298161799288316,
+              "electron_GC_curvature_displacement_over_distance": 0.0031452771347308776,
+              "log_density_change_linear_over_distance": 0.16426173286663406
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0023513693289273253,
+              "characteristic_relative_speed_m_s": 29670809.652662296,
+              "time_s": 7.924857314152673e-11,
+              "laboratory_ion_turn_rad": 1.041110870713121,
+              "rotating_thermal_turn_rad": 0.569654303839496,
+              "force_gradient_time_squared": [
+                -0.24845216446525809,
+                -0.09469217824990887
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.14298161799288314,
+              "electron_GC_curvature_displacement_over_distance": 0.031452771347308776,
+              "log_density_change_linear_over_distance": 1.6426173286663406
+            }
+          ]
+        },
+        {
+          "charge": 22,
+          "mass_kg": 8.125980040811745e-26,
+          "laboratory_cyclotron_rad_s": 5949085872.267635,
+          "rotating_thermal_cyclotron_rad_s": 0.0,
+          "thermal_speed_m_s": 2511841.956505293,
+          "effective_radial_acceleration_m_s2": -1.4106071148216112e+16,
+          "force_gradient_eigenvalues_s-2": [
+            -1.307327505572015e+19,
+            -1.986502541530562e+18
+          ],
+          "log_density_first_derivative_m-1": -4471.481568112895,
+          "log_density_second_derivative_m-2": -4144095.6757059405,
+          "density_scale_m": 0.00022363952188268358,
+          "encounters": [
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00023513693289273254,
+              "characteristic_relative_speed_m_s": 13173866.319763236,
+              "time_s": 1.7848741378222705e-11,
+              "laboratory_ion_turn_rad": 0.10618369517094346,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.004164852183330865,
+                -0.000632855150069366
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.00955587409482091,
+              "electron_GC_curvature_displacement_over_distance": 0.015954794261070986,
+              "log_density_change_linear_over_distance": 1.0514104614124522
+            },
+            {
+              "electron_probe": "cold",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0023513693289273253,
+              "characteristic_relative_speed_m_s": 13173866.319763236,
+              "time_s": 1.7848741378222706e-10,
+              "laboratory_ion_turn_rad": 1.0618369517094346,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.4164852183330866,
+                -0.0632855150069366
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.09555874094820913,
+              "electron_GC_curvature_displacement_over_distance": 0.1595479426107099,
+              "log_density_change_linear_over_distance": 10.514104614124522
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 0.1,
+              "distance_m": 0.00023513693289273254,
+              "characteristic_relative_speed_m_s": 24086170.928920288,
+              "time_s": 9.762321025896375e-12,
+              "laboratory_ion_turn_rad": 0.05807688609570141,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.0012459211797379247,
+                -0.00018931947653110903
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.002858652696798607,
+              "electron_GC_curvature_displacement_over_distance": 0.004772898343857082,
+              "log_density_change_linear_over_distance": 1.0514104614124522
+            },
+            {
+              "electron_probe": "warm",
+              "screening_length_fraction": 1.0,
+              "distance_m": 0.0023513693289273253,
+              "characteristic_relative_speed_m_s": 24086170.928920288,
+              "time_s": 9.762321025896374e-11,
+              "laboratory_ion_turn_rad": 0.5807688609570141,
+              "rotating_thermal_turn_rad": 0.0,
+              "force_gradient_time_squared": [
+                -0.12459211797379245,
+                -0.0189319476531109
+              ],
+              "constant_ion_acceleration_displacement_over_distance": 0.028586526967986064,
+              "electron_GC_curvature_displacement_over_distance": 0.047728983438570814,
+              "log_density_change_linear_over_distance": 10.514104614124522
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seconds": 0.10579289612360299
+}

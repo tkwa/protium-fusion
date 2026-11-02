@@ -1,0 +1,386 @@
+{
+  "scope": "Conditional honeycomb tip: finite100mm graphite fin and actual pulse history.\nOne-dimensional axial heat conduction, full nominaltip energy retention,\ninsulated sidefaces (no radiativecooling credit), bottom on actualreceiverfront.\n",
+  "code_sha256": "724296b7bec044ae4fc1b8cd6bd9833a7e6bc6f7baedeea512644b484c2d7f1e",
+  "input_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/geometry/temperature-histories.json": "f7e67d3466af3bfeda6b0eb48a4ed2e9294e3a8e586228496d6f320217fe8d3f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/geometry/temperature_histories.py": "d1691b1a6b6ade21eac1ca5ebf9ef4ed856de73530606953dfa37951988d6e69",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128_thin_thermal.py": "3484b73865c77908bc42c0dba6da4ce1f1d412fecabf953cbb6be5828a19f4b6",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-thermal-input.json": "e3a4eaa2b73cae6384caf0f187bb91eb8859dfd3a6134b8605c21862965487b4",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-prompt-proxy.json": "13ccc5029a9cb1c238d05a6d6c7e7bdaae8f8f145b7f503db78569ee01e7524a"
+  },
+  "parameters": {
+    "depth_m": 0.1,
+    "rho_kg_m3": 2000.0,
+    "cp_J_kg_K": 1800.0,
+    "k_W_m_K": 50.0,
+    "dt_s": 0.25,
+    "history_start_relative_s": -20000.0,
+    "late_end_relative_s": 4000.0,
+    "bottom_boundary": "Actual fullyretained-source receiverfrontT(t) withconstantmeanbackpickup; hoodbottomloadsare smallandnotfed back into the existingreceiver solution.",
+    "side_boundary": "Insulated: no side radiation credit; lateralrecoil/chargedsecondary energy escape can reduce actualtipretention.",
+    "tip_source": "Full incidentmaterial kinetic+advectedinternal+delayedenergy assigned to projectedtiparea, pluspromptenergy. No1/tipfraction fluxamplification.",
+    "initial_condition": "Steady axialprofile with actual initialbaseT andinitialtipq,20000s beforetargetevent. Slowestfinmode~292s, so initialuncertainty is exponentiallyerased."
+  },
+  "rows": [
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 100,
+      "dx_m": 0.001,
+      "maximum_tip_material_phase_K": 1350.455833918578,
+      "peak_relative_time_s": 138.0,
+      "receiver_front_at_tip_peak_K": 1342.278149483955,
+      "incident_flux_at_tip_peak_W_m2": 225810.4004378697,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1356.007510030802,
+      "tip_pre_prompt_K": 1137.8990058914087,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1210.2000510466103,
+      "prompt_duration_s": 6.659472170103566e-05,
+      "max_base_front_saved_window_K": 1342.8016561309923
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 200,
+      "dx_m": 0.0005,
+      "maximum_tip_material_phase_K": 1350.4738007490507,
+      "peak_relative_time_s": 136.5,
+      "receiver_front_at_tip_peak_K": 1342.529354839545,
+      "incident_flux_at_tip_peak_W_m2": 237297.69401384614,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1356.0063367279229,
+      "tip_pre_prompt_K": 1137.8990058938614,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1210.200051049063,
+      "prompt_duration_s": 6.659472170103566e-05,
+      "max_base_front_saved_window_K": 1342.8016561309923
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 100,
+      "dx_m": 0.001,
+      "maximum_tip_material_phase_K": 1191.1943464767617,
+      "peak_relative_time_s": 0.25,
+      "receiver_front_at_tip_peak_K": 1190.4461505327877,
+      "incident_flux_at_tip_peak_W_m2": 0.0410997079783033,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1191.194347422055,
+      "tip_pre_prompt_K": 1189.2976841401064,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1244.1109973720813,
+      "prompt_duration_s": 8.102689932206793e-05,
+      "max_base_front_saved_window_K": 1190.4461505327877
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 200,
+      "dx_m": 0.0005,
+      "maximum_tip_material_phase_K": 1191.4501356973312,
+      "peak_relative_time_s": 0.25,
+      "receiver_front_at_tip_peak_K": 1190.4461505327877,
+      "incident_flux_at_tip_peak_W_m2": 0.0410997079783033,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1191.4501366426246,
+      "tip_pre_prompt_K": 1189.2976841327113,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1244.1109973646862,
+      "prompt_duration_s": 8.102689932206793e-05,
+      "max_base_front_saved_window_K": 1190.4461505327877
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 100,
+      "dx_m": 0.001,
+      "maximum_tip_material_phase_K": 1076.115596285089,
+      "peak_relative_time_s": 0.25,
+      "receiver_front_at_tip_peak_K": 1075.3675250761103,
+      "incident_flux_at_tip_peak_W_m2": 0.015006819387045007,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1076.1155966302458,
+      "tip_pre_prompt_K": 1074.2189338206274,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1129.0322470526023,
+      "prompt_duration_s": 8.102689932206793e-05,
+      "max_base_front_saved_window_K": 1075.3675250761103
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 200,
+      "dx_m": 0.0005,
+      "maximum_tip_material_phase_K": 1076.3713855153835,
+      "peak_relative_time_s": 0.25,
+      "receiver_front_at_tip_peak_K": 1075.3675250761103,
+      "incident_flux_at_tip_peak_W_m2": 0.015006819387045007,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1076.3713858605404,
+      "tip_pre_prompt_K": 1074.2189338229728,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1129.0322470549477,
+      "prompt_duration_s": 8.102689932206793e-05,
+      "max_base_front_saved_window_K": 1075.3675250761103
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 100,
+      "dx_m": 0.001,
+      "maximum_tip_material_phase_K": 1393.2786849324398,
+      "peak_relative_time_s": 125.25,
+      "receiver_front_at_tip_peak_K": 1379.5300954769075,
+      "incident_flux_at_tip_peak_W_m2": 313856.4676440169,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1401.0299743751477,
+      "tip_pre_prompt_K": 1104.4532729941357,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1120.6482671847134,
+      "prompt_duration_s": 6.199247289722944e-05,
+      "max_base_front_saved_window_K": 1380.254876801203
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 200,
+      "dx_m": 0.0005,
+      "maximum_tip_material_phase_K": 1393.3875183082018,
+      "peak_relative_time_s": 125.25,
+      "receiver_front_at_tip_peak_K": 1379.5300954769075,
+      "incident_flux_at_tip_peak_W_m2": 313856.4676440169,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1401.0512930070488,
+      "tip_pre_prompt_K": 1104.453272996475,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1120.6482671870529,
+      "prompt_duration_s": 6.199247289722944e-05,
+      "max_base_front_saved_window_K": 1380.254876801203
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 100,
+      "dx_m": 0.001,
+      "maximum_tip_material_phase_K": 1459.9300879290372,
+      "peak_relative_time_s": 103.0,
+      "receiver_front_at_tip_peak_K": 1453.3846220938212,
+      "incident_flux_at_tip_peak_W_m2": 465476.7080554269,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1471.0766425188567,
+      "tip_pre_prompt_K": 1048.7735315019918,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1264.8925127524158,
+      "prompt_duration_s": 6.709038616638475e-05,
+      "max_base_front_saved_window_K": 1455.1345137671844
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 200,
+      "dx_m": 0.0005,
+      "maximum_tip_material_phase_K": 1459.945289961709,
+      "peak_relative_time_s": 103.0,
+      "receiver_front_at_tip_peak_K": 1453.3846220938212,
+      "incident_flux_at_tip_peak_W_m2": 465476.7080554269,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1471.0976160717066,
+      "tip_pre_prompt_K": 1048.7735315042585,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1264.8925127546825,
+      "prompt_duration_s": 6.709038616638475e-05,
+      "max_base_front_saved_window_K": 1455.1345137671844
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 100,
+      "dx_m": 0.001,
+      "maximum_tip_material_phase_K": 1475.6444094248557,
+      "peak_relative_time_s": 103.0,
+      "receiver_front_at_tip_peak_K": 1469.0989435896531,
+      "incident_flux_at_tip_peak_W_m2": 465476.7080554269,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1486.7909640146756,
+      "tip_pre_prompt_K": 1064.4878529978162,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1280.6068342482401,
+      "prompt_duration_s": 6.709038616638475e-05,
+      "max_base_front_saved_window_K": 1470.8488352630166
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 200,
+      "dx_m": 0.0005,
+      "maximum_tip_material_phase_K": 1475.6596114575693,
+      "peak_relative_time_s": 103.0,
+      "receiver_front_at_tip_peak_K": 1469.0989435896531,
+      "incident_flux_at_tip_peak_W_m2": 465476.7080554269,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1486.8119375675662,
+      "tip_pre_prompt_K": 1064.4878530001167,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1280.6068342505407,
+      "prompt_duration_s": 6.709038616638475e-05,
+      "max_base_front_saved_window_K": 1470.8488352630166
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 100,
+      "dx_m": 0.001,
+      "maximum_tip_material_phase_K": 1444.2157664334115,
+      "peak_relative_time_s": 103.0,
+      "receiver_front_at_tip_peak_K": 1437.6703005981872,
+      "incident_flux_at_tip_peak_W_m2": 465476.7080554269,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1455.3623210232308,
+      "tip_pre_prompt_K": 1033.059210006366,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1249.17819125679,
+      "prompt_duration_s": 6.709038616638475e-05,
+      "max_base_front_saved_window_K": 1439.4201922715508
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "wall_axial_k_W_m_K": 50.0,
+      "cells": 200,
+      "dx_m": 0.0005,
+      "maximum_tip_material_phase_K": 1444.230968466051,
+      "peak_relative_time_s": 103.0,
+      "receiver_front_at_tip_peak_K": 1437.6703005981872,
+      "incident_flux_at_tip_peak_W_m2": 465476.7080554269,
+      "maximum_tip_plus100um_k4_damage_resistance_K": 1455.383294576049,
+      "tip_pre_prompt_K": 1033.0592100086003,
+      "prompt_Teff_microsecond_tip_peak_K_proxy": 1249.1781912590243,
+      "prompt_duration_s": 6.709038616638475e-05,
+      "max_base_front_saved_window_K": 1439.4201922715508
+    }
+  ],
+  "profiles": [
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "file": "/home/tkwa/src/protium-fusion/output/catcher-followup/recapture-hood/tip-A-warmest_background.csv",
+      "sha256": "9578cda83bc729226fdfe95dc742e0cd61346855c057b8c565fdda372689ca61"
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "file": "/home/tkwa/src/protium-fusion/output/catcher-followup/recapture-hood/tip-B1-warmest_background.csv",
+      "sha256": "e2f93dc5cda4de12a9424d58b6186b09bfe4b5463c99c523121c8270b9d37594"
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "file": "/home/tkwa/src/protium-fusion/output/catcher-followup/recapture-hood/tip-B1-ordinary_midyear.csv",
+      "sha256": "c1d2b2c19243fc6629be505c26647d375fa61b5bbc52f84fd56a33a400f6b281"
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "file": "/home/tkwa/src/protium-fusion/output/catcher-followup/recapture-hood/tip-B2-warmest_background.csv",
+      "sha256": "cbe3d8fd0b70e96c3387a357a73b84dca5a073d6cf1a9132a55d866d9f6022d1"
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "file": "/home/tkwa/src/protium-fusion/output/catcher-followup/recapture-hood/tip-C13-warmest_background.csv",
+      "sha256": "1a888ae188e307fe455e4b9755de80fad84b2cd4425287711d95e6b146422986"
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "file": "/home/tkwa/src/protium-fusion/output/catcher-followup/recapture-hood/tip-C13-event_1.csv",
+      "sha256": "a7a78555f87af6edd0de7c9268267a8a7cbb0b0c21a28fe6104c086a210d8d92"
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "file": "/home/tkwa/src/protium-fusion/output/catcher-followup/recapture-hood/tip-C13-event_3.csv",
+      "sha256": "55b53463c72564d815dcb70c02dfc2ff8f92ad498c127ccc249e1088202d9b80"
+    }
+  ],
+  "checks": [
+    {
+      "name": "fin_energy_k50.0_N100",
+      "relative_residual": -4.215756152404583e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N200",
+      "relative_residual": 1.531228367234332e-09
+    },
+    {
+      "name": "fin_energy_k50.0_N100",
+      "relative_residual": -2.964874336862814e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N200",
+      "relative_residual": 1.6365363879107395e-09
+    },
+    {
+      "name": "fin_energy_k50.0_N100",
+      "relative_residual": -3.361136667309184e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N200",
+      "relative_residual": 4.216066569360606e-09
+    },
+    {
+      "name": "fin_energy_k50.0_N100",
+      "relative_residual": -3.689278967291396e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N200",
+      "relative_residual": 1.5064537267215385e-09
+    },
+    {
+      "name": "fin_energy_k50.0_N100",
+      "relative_residual": -5.159152876580515e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N200",
+      "relative_residual": 6.431632368110714e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N100",
+      "relative_residual": -7.305897943754039e-11
+    },
+    {
+      "name": "fin_energy_k50.0_N200",
+      "relative_residual": 9.142145369127069e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N100",
+      "relative_residual": -5.516192122346843e-10
+    },
+    {
+      "name": "fin_energy_k50.0_N200",
+      "relative_residual": 9.143112523613756e-10
+    },
+    {
+      "name": "mesh:A/warmest_background",
+      "peak_K_difference_200minus100": 0.017966830472687434
+    },
+    {
+      "name": "mesh:B1/warmest_background",
+      "peak_K_difference_200minus100": 0.255789220569568
+    },
+    {
+      "name": "mesh:B1/ordinary_midyear",
+      "peak_K_difference_200minus100": 0.25578923029456746
+    },
+    {
+      "name": "mesh:B2/warmest_background",
+      "peak_K_difference_200minus100": 0.10883337576206031
+    },
+    {
+      "name": "mesh:C13/warmest_background",
+      "peak_K_difference_200minus100": 0.015202032671822963
+    },
+    {
+      "name": "mesh:C13/event_1",
+      "peak_K_difference_200minus100": 0.015202032713659719
+    },
+    {
+      "name": "mesh:C13/event_3",
+      "peak_K_difference_200minus100": 0.0152020326395359
+    }
+  ],
+  "limits": [
+    "This one-dimensionalfin model doesnotpredict thinwalllateraliontransport, anisotropicconductivity, joints, thermalwarping or temperaturedependentproperties.",
+    "All tips experience the same sourcefluences perprojectedarea as the floor. More side interception frommisalignment needsitsownheatdistribution.",
+    "The prompt microsecondtemperature uses theexistingfinite-depthTeffproxy andnot a newphoton/electron transportcalculation.",
+    "Temperature profiles are conditional calculations, not materialallowables or measuredhotwallperformance."
+  ]
+}

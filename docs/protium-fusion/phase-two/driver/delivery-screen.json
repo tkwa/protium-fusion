@@ -1,0 +1,2037 @@
+{
+  "scope": "Necessary remote driver delivery constraints, not a realizable driver or a burn result.",
+  "load_bearing_conductive_shell_scenarios": [
+    {
+      "grain_surface_field_V_m": 1000000000.0,
+      "electrostatic_pressure_Pa": 4427093.906400001,
+      "shell_allowable_tensile_stress_Pa": 1000000000.0,
+      "core_density_kg_m3": 1000.0,
+      "shell_density_kg_m3": 2000.0,
+      "minimum_shell_thickness_over_radius": 0.0022135469532000005,
+      "thin_shell_mass_over_core_mass": 0.013281281719200002,
+      "qualification": "Spherical membrane carrying the entire electric stress; core support, adhesion, field evaporation, defects and other pressure loads excluded."
+    },
+    {
+      "grain_surface_field_V_m": 1000000000.0,
+      "electrostatic_pressure_Pa": 4427093.906400001,
+      "shell_allowable_tensile_stress_Pa": 10000000000.0,
+      "core_density_kg_m3": 1000.0,
+      "shell_density_kg_m3": 2000.0,
+      "minimum_shell_thickness_over_radius": 0.00022135469532000003,
+      "thin_shell_mass_over_core_mass": 0.0013281281719200002,
+      "qualification": "Spherical membrane carrying the entire electric stress; core support, adhesion, field evaporation, defects and other pressure loads excluded."
+    },
+    {
+      "grain_surface_field_V_m": 1000000000.0,
+      "electrostatic_pressure_Pa": 4427093.906400001,
+      "shell_allowable_tensile_stress_Pa": 100000000000.0,
+      "core_density_kg_m3": 1000.0,
+      "shell_density_kg_m3": 2000.0,
+      "minimum_shell_thickness_over_radius": 2.2135469532000002e-05,
+      "thin_shell_mass_over_core_mass": 0.000132812817192,
+      "qualification": "Spherical membrane carrying the entire electric stress; core support, adhesion, field evaporation, defects and other pressure loads excluded."
+    }
+  ],
+  "constants": {
+    "epsilon0_F_m": 8.8541878128e-12,
+    "sigma_W_m2_K4": 5.670374419e-08,
+    "source_radius_m": 20000000000.0
+  },
+  "assumptions": [
+    "Straight line constant-speed flight after source acceleration.",
+    "Spherical rigid pellets; surface field sets their charge.",
+    "Radiation is isotropic blackbody cavity irradiation with specified Planck-mean absorptivity.",
+    "Cold-pellet emission neglected; heat allowance is an explicit scenario, not a measured latent heat.",
+    "Full deposition of intercepted stationary-gas kinetic energy; transparency would relax the gas bound.",
+    "No collisions, gravity, charged-pellet space charge, ablation, or active corrections in the trajectory map."
+  ],
+  "cases": [
+    {
+      "stage": "A",
+      "zones": 128,
+      "tag": "",
+      "inputs": {
+        "compression-A-128-initial.json": "bd9eb136c6506fc7c1cbe388997cee8922a1985adcfeaeea060feb8dd17bc169",
+        "compression-A-128-burning.json": "430fe59085d3fd7c284353ed60372e01121809ef31615fb6fff580321db2b4b2"
+      },
+      "mass_kg": 1.1309733552923254e+16,
+      "input_energy_J": 3.493163179147695e+28,
+      "kinetic_energy_J": 3.2488668625154805e+28,
+      "kinetic_ledger_relative_error": 0.0,
+      "input_internal_energy_J": 2.442963166322141e+27,
+      "energy_rms_speed_m_s": 2396926.7837907122,
+      "maximum_speed_m_s": 4453822.0930423485,
+      "launch_schedule": {
+        "source_radius_m": 20000000000.0,
+        "mass_weighted_flight_time_quantiles_s": {
+          "0.01": 4880.356061474037,
+          "0.05": 5796.396205660464,
+          "0.5": 8777.429545858178,
+          "0.95": 16820.20654457407,
+          "0.99": 28820.449753486042
+        },
+        "energy_weighted_flight_time_quantiles_s": {
+          "0.01": 4880.356061474037,
+          "0.05": 5069.612334563526,
+          "0.5": 7575.455950355416,
+          "0.95": 12086.778566780704,
+          "0.99": 15915.911657986086
+        },
+        "peak_kinetic_source_power_W": 7.36774315346763e+24,
+        "electrical_peak_at_assumed_30pct_conversion_W": 2.4559143844892104e+25,
+        "largest_source_bin_duration_s": 566969.6872209948,
+        "smallest_source_bin_duration_s": 92.5132053547004,
+        "qualification": "Kinematic time-of-flight schedule; centroid cell quadrature. No source or accelerator design; kinetic power only."
+      },
+      "contact_backmaps": [
+        {
+          "material_density_kg_m3": 100.0,
+          "ballistic_lookback_s": 0.010623199505033732,
+          "outer_radius_m": 49092.3837337166,
+          "uniform_solid_ball_radius_m": 29999.99999999998,
+          "minimum_cell_density_kg_m3": 1.2374422260966293,
+          "maximum_cell_density_kg_m3": 99.99999999999531,
+          "mean_density_kg_m3": 22.820302836047286,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 1000.0,
+          "ballistic_lookback_s": 0.004738114205665903,
+          "outer_radius_m": 22881.26080795341,
+          "uniform_solid_ball_radius_m": 13924.766500838328,
+          "minimum_cell_density_kg_m3": 12.221153744557968,
+          "maximum_cell_density_kg_m3": 999.999999999955,
+          "mean_density_kg_m3": 225.384429603928,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 2000.0,
+          "ballistic_lookback_s": 0.0036869145320790123,
+          "outer_radius_m": 18199.404477533215,
+          "uniform_solid_ball_radius_m": 11052.094495921154,
+          "minimum_cell_density_kg_m3": 24.28696192192578,
+          "maximum_cell_density_kg_m3": 1999.99999999998,
+          "mean_density_kg_m3": 447.91152020918554,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 3000.0,
+          "ballistic_lookback_s": 0.003175655805580016,
+          "outer_radius_m": 15922.349066191291,
+          "uniform_solid_ball_radius_m": 9654.893846056293,
+          "minimum_cell_density_kg_m3": 36.26754616558351,
+          "maximum_cell_density_kg_m3": 2999.999999999775,
+          "mean_density_kg_m3": 668.8709616945074,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        }
+      ],
+      "ideal_fully_ionized_contact_isentropes": [
+        {
+          "requested_density_kg_m3": 1000.0,
+          "density_kg_m3": 999.9999999999998,
+          "temperature_K": 161177.9843778776,
+          "specific_internal_J_kg": 1531312165.786942,
+          "pressure_Pa": 1020843300670.2307,
+          "sound_speed_m_s": 41247.587547000905,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 2000.0,
+          "density_kg_m3": 1999.9999999999998,
+          "temperature_K": 255844.62589297752,
+          "specific_internal_J_kg": 2430762486.2135925,
+          "pressure_Pa": 3240857807995.134,
+          "sound_speed_m_s": 51967.381890887846,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 3000.0,
+          "density_kg_m3": 2999.9999999999977,
+          "temperature_K": 335241.0047418496,
+          "specific_internal_J_kg": 3185151458.5823274,
+          "pressure_Pa": 6369893435310.459,
+          "sound_speed_m_s": 59486.5309775922,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        }
+      ],
+      "cold_pellet_acceleration_survival_trade": [
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.00026781460046362506,
+          "maximum_speed_Planck_absorptivity_limit": 0.04328317485774504,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009246778267125544,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.08042613639352289,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 719114821254246.5,
+          "gas_mass_fraction_of_this_pulse": 0.06358371025181006
+        },
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.026781460046362508,
+          "maximum_speed_Planck_absorptivity_limit": 4.328317485774505,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.09246778267125544,
+          "maximum_Planck_absorptivity_for_cold_flight": 8.04261363935229,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.191148212542465e+16,
+          "gas_mass_fraction_of_this_pulse": 6.358371025181006
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.00026781460046362506,
+          "maximum_speed_Planck_absorptivity_limit": 0.005609499461563758,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009246778267125544,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.010423227276600567,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 719114821254246.5,
+          "gas_mass_fraction_of_this_pulse": 0.06358371025181006
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.026781460046362508,
+          "maximum_speed_Planck_absorptivity_limit": 0.560949946156376,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.09246778267125544,
+          "maximum_Planck_absorptivity_for_cold_flight": 1.0423227276600568,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.191148212542465e+16,
+          "gas_mass_fraction_of_this_pulse": 6.358371025181006
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.00026781460046362506,
+          "maximum_speed_Planck_absorptivity_limit": 0.0003505937163477349,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009246778267125544,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.0006514517047875355,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 719114821254246.5,
+          "gas_mass_fraction_of_this_pulse": 0.06358371025181006
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.026781460046362508,
+          "maximum_speed_Planck_absorptivity_limit": 0.0350593716347735,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.09246778267125544,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.06514517047875355,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.191148212542465e+16,
+          "gas_mass_fraction_of_this_pulse": 6.358371025181006
+        }
+      ],
+      "granular_preheat_requirements": [
+        {
+          "pellet_radius_m": 0.001,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 51961524.227066316,
+          "expansion_length_if_vaporized_at_that_radius_m": 1126569.401869704,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13837.103370860781,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008461804442251447,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02909328489149598,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.01,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 16431676.725154983,
+          "expansion_length_if_vaporized_at_that_radius_m": 356252.5252161818,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13837.103370860781,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008461804442251447,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02909328489149598,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.1,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 5196152.422706632,
+          "expansion_length_if_vaporized_at_that_radius_m": 112656.9401869704,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13837.103370860781,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008461804442251447,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02909328489149598,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 1.0,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 1643167.6725154982,
+          "expansion_length_if_vaporized_at_that_radius_m": 35625.25252161818,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13837.103370860781,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008461804442251447,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02909328489149598,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        }
+      ],
+      "uncorrected_pointing_requirements": [
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-09,
+          "uncorrelated_transverse_velocity_error_m_s": 0.003595390175686068,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.003595390175686068,
+          "fractional_longitudinal_velocity_error": 1.4999999999999998e-09,
+          "arrival_time_error_s": 1.2516026856921906e-05,
+          "equivalent_unfocused_proton_temperature_K": 1.554740348790442e-09
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.7190780351372136,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.7190780351372136,
+          "fractional_longitudinal_velocity_error": 3e-07,
+          "arrival_time_error_s": 1.2516026856921906e-05,
+          "equivalent_unfocused_proton_temperature_K": 6.218961395161766e-05
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 71.90780351372138,
+          "uncorrelated_longitudinal_velocity_error_m_s": 71.90780351372138,
+          "fractional_longitudinal_velocity_error": 3.0000000000000004e-05,
+          "arrival_time_error_s": 1.2516026856921906e-05,
+          "equivalent_unfocused_proton_temperature_K": 0.621896139516177
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-08,
+          "uncorrelated_transverse_velocity_error_m_s": 0.03595390175686068,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.03595390175686068,
+          "fractional_longitudinal_velocity_error": 1.5e-08,
+          "arrival_time_error_s": 0.00012516026856921906,
+          "equivalent_unfocused_proton_temperature_K": 1.554740348790442e-07
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-06,
+          "uncorrelated_transverse_velocity_error_m_s": 7.190780351372136,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7.190780351372136,
+          "fractional_longitudinal_velocity_error": 2.9999999999999997e-06,
+          "arrival_time_error_s": 0.00012516026856921906,
+          "equivalent_unfocused_proton_temperature_K": 0.006218961395161768
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.0003,
+          "uncorrelated_transverse_velocity_error_m_s": 719.0780351372136,
+          "uncorrelated_longitudinal_velocity_error_m_s": 719.0780351372136,
+          "fractional_longitudinal_velocity_error": 0.0003,
+          "arrival_time_error_s": 0.00012516026856921906,
+          "equivalent_unfocused_proton_temperature_K": 62.18961395161768
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.35953901756860684,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.35953901756860684,
+          "fractional_longitudinal_velocity_error": 1.5e-07,
+          "arrival_time_error_s": 0.0012516026856921906,
+          "equivalent_unfocused_proton_temperature_K": 1.554740348790442e-05
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 71.90780351372136,
+          "uncorrelated_longitudinal_velocity_error_m_s": 71.90780351372136,
+          "fractional_longitudinal_velocity_error": 2.9999999999999997e-05,
+          "arrival_time_error_s": 0.0012516026856921906,
+          "equivalent_unfocused_proton_temperature_K": 0.6218961395161767
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.003,
+          "uncorrelated_transverse_velocity_error_m_s": 7190.780351372137,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7190.780351372137,
+          "fractional_longitudinal_velocity_error": 0.003,
+          "arrival_time_error_s": 0.0012516026856921906,
+          "equivalent_unfocused_proton_temperature_K": 6218.96139516177
+        }
+      ]
+    },
+    {
+      "stage": "A",
+      "zones": 512,
+      "tag": "",
+      "inputs": {
+        "compression-A-512-initial.json": "51299f9bc67c37abe36fa2bec46fdd4c7b08cde7556dce17562d42ad68e31d8c",
+        "compression-A-512-burning.json": "680d6a6f9f49dbeeb5721c4432e0b8959338cd21f76f5a98c9a7f84016a6e294"
+      },
+      "mass_kg": 1.1309733552923254e+16,
+      "input_energy_J": 3.4931631940889902e+28,
+      "kinetic_energy_J": 3.249408492388586e+28,
+      "kinetic_ledger_relative_error": 0.0,
+      "input_internal_energy_J": 2.4375470170040395e+27,
+      "energy_rms_speed_m_s": 2397126.5754566025,
+      "maximum_speed_m_s": 4730936.428489927,
+      "launch_schedule": {
+        "source_radius_m": 20000000000.0,
+        "mass_weighted_flight_time_quantiles_s": {
+          "0.01": 5024.95615252495,
+          "0.05": 5814.35208004093,
+          "0.5": 8764.943615150805,
+          "0.95": 16691.806266611435,
+          "0.99": 28749.779490430967
+        },
+        "energy_weighted_flight_time_quantiles_s": {
+          "0.01": 4509.827558413921,
+          "0.05": 5249.344691515036,
+          "0.5": 7575.29910060785,
+          "0.95": 12066.523524942888,
+          "0.99": 15841.664544180152
+        },
+        "peak_kinetic_source_power_W": 7.423313922462439e+24,
+        "electrical_peak_at_assumed_30pct_conversion_W": 2.4744379741541463e+25,
+        "largest_source_bin_duration_s": 2261967.9610448293,
+        "smallest_source_bin_duration_s": 23.02891329783961,
+        "qualification": "Kinematic time-of-flight schedule; centroid cell quadrature. No source or accelerator design; kinetic power only."
+      },
+      "contact_backmaps": [
+        {
+          "material_density_kg_m3": 100.0,
+          "ballistic_lookback_s": 0.010620205302010327,
+          "outer_radius_m": 52136.001806021384,
+          "uniform_solid_ball_radius_m": 29999.99999999998,
+          "minimum_cell_density_kg_m3": 0.3242857441980115,
+          "maximum_cell_density_kg_m3": 99.9999999999946,
+          "mean_density_kg_m3": 19.052439668533616,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 1000.0,
+          "ballistic_lookback_s": 0.004736757824138574,
+          "outer_radius_m": 24301.78580785072,
+          "uniform_solid_ball_radius_m": 13924.766500838328,
+          "minimum_cell_density_kg_m3": 3.206245215684687,
+          "maximum_cell_density_kg_m3": 999.9999999999975,
+          "mean_density_kg_m3": 188.1261630727994,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 2000.0,
+          "ballistic_lookback_s": 0.0036856709278943623,
+          "outer_radius_m": 19329.16052090057,
+          "uniform_solid_ball_radius_m": 11052.094495921154,
+          "minimum_cell_density_kg_m3": 6.3759878743844824,
+          "maximum_cell_density_kg_m3": 1999.9999999999648,
+          "mean_density_kg_m3": 373.87358812140724,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 3000.0,
+          "ballistic_lookback_s": 0.003174551179463563,
+          "outer_radius_m": 16911.085483728693,
+          "uniform_solid_ball_radius_m": 9654.893846056293,
+          "minimum_cell_density_kg_m3": 9.524987764907948,
+          "maximum_cell_density_kg_m3": 2999.9999999998417,
+          "mean_density_kg_m3": 558.2764517588706,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        }
+      ],
+      "ideal_fully_ionized_contact_isentropes": [
+        {
+          "requested_density_kg_m3": 1000.0,
+          "density_kg_m3": 999.9999999999998,
+          "temperature_K": 161177.9841022445,
+          "specific_internal_J_kg": 1531312163.6495845,
+          "pressure_Pa": 1020843299245.4136,
+          "sound_speed_m_s": 41247.58751821647,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 2000.0,
+          "density_kg_m3": 1999.9999999999998,
+          "temperature_K": 255844.62468533035,
+          "specific_internal_J_kg": 2430762476.848784,
+          "pressure_Pa": 3240857795509.9487,
+          "sound_speed_m_s": 51967.381790791456,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 3000.0,
+          "density_kg_m3": 2999.9999999999977,
+          "temperature_K": 335241.0038073141,
+          "specific_internal_J_kg": 3185151451.335194,
+          "pressure_Pa": 6369893420818.133,
+          "sound_speed_m_s": 59486.53090992617,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        }
+      ],
+      "cold_pellet_acceleration_survival_trade": [
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.00023735902845151895,
+          "maximum_speed_Planck_absorptivity_limit": 0.0407478653227163,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009245236961576798,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.08041943317145038,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 718875108944295.8,
+          "gas_mass_fraction_of_this_pulse": 0.06356251503011637
+        },
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.023735902845151896,
+          "maximum_speed_Planck_absorptivity_limit": 4.074786532271629,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.092452369615768,
+          "maximum_Planck_absorptivity_for_cold_flight": 8.041943317145039,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.1887510894429576e+16,
+          "gas_mass_fraction_of_this_pulse": 6.356251503011637
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.00023735902845151895,
+          "maximum_speed_Planck_absorptivity_limit": 0.005280923345824032,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009245236961576798,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.01042235853901997,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 718875108944295.8,
+          "gas_mass_fraction_of_this_pulse": 0.06356251503011637
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.023735902845151896,
+          "maximum_speed_Planck_absorptivity_limit": 0.5280923345824031,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.092452369615768,
+          "maximum_Planck_absorptivity_for_cold_flight": 1.0422358539019971,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.1887510894429576e+16,
+          "gas_mass_fraction_of_this_pulse": 6.356251503011637
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.00023735902845151895,
+          "maximum_speed_Planck_absorptivity_limit": 0.000330057709114002,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009245236961576798,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.0006513974086887482,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 718875108944295.8,
+          "gas_mass_fraction_of_this_pulse": 0.06356251503011637
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.023735902845151896,
+          "maximum_speed_Planck_absorptivity_limit": 0.033005770911400195,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.092452369615768,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.06513974086887482,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.1887510894429576e+16,
+          "gas_mass_fraction_of_this_pulse": 6.356251503011637
+        }
+      ],
+      "granular_preheat_requirements": [
+        {
+          "pellet_radius_m": 0.001,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 51961524.227066316,
+          "expansion_length_if_vaporized_at_that_radius_m": 1126475.5042920767,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13838.256765215963,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008460393948005948,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029090859333080782,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.01,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 16431676.725154983,
+          "expansion_length_if_vaporized_at_that_radius_m": 356222.83219497435,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13838.256765215963,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008460393948005948,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029090859333080782,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.1,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 5196152.422706632,
+          "expansion_length_if_vaporized_at_that_radius_m": 112647.55042920768,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13838.256765215963,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008460393948005948,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029090859333080782,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 1.0,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 1643167.6725154982,
+          "expansion_length_if_vaporized_at_that_radius_m": 35622.28321949743,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13838.256765215963,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008460393948005948,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029090859333080782,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        }
+      ],
+      "uncorrected_pointing_requirements": [
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-09,
+          "uncorrelated_transverse_velocity_error_m_s": 0.0035956898631849038,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.0035956898631849038,
+          "fractional_longitudinal_velocity_error": 1.5e-09,
+          "arrival_time_error_s": 1.2514983692208923e-05,
+          "equivalent_unfocused_proton_temperature_K": 1.554999544951277e-09
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.7191379726369808,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.7191379726369808,
+          "fractional_longitudinal_velocity_error": 3e-07,
+          "arrival_time_error_s": 1.2514983692208923e-05,
+          "equivalent_unfocused_proton_temperature_K": 6.219998179805108e-05
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 71.91379726369807,
+          "uncorrelated_longitudinal_velocity_error_m_s": 71.91379726369807,
+          "fractional_longitudinal_velocity_error": 2.9999999999999997e-05,
+          "arrival_time_error_s": 1.2514983692208923e-05,
+          "equivalent_unfocused_proton_temperature_K": 0.6219998179805107
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-08,
+          "uncorrelated_transverse_velocity_error_m_s": 0.03595689863184903,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.03595689863184903,
+          "fractional_longitudinal_velocity_error": 1.5e-08,
+          "arrival_time_error_s": 0.0001251498369220892,
+          "equivalent_unfocused_proton_temperature_K": 1.5549995449512766e-07
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-06,
+          "uncorrelated_transverse_velocity_error_m_s": 7.191379726369807,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7.191379726369807,
+          "fractional_longitudinal_velocity_error": 3e-06,
+          "arrival_time_error_s": 0.0001251498369220892,
+          "equivalent_unfocused_proton_temperature_K": 0.006219998179805107
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.0003,
+          "uncorrelated_transverse_velocity_error_m_s": 719.1379726369807,
+          "uncorrelated_longitudinal_velocity_error_m_s": 719.1379726369807,
+          "fractional_longitudinal_velocity_error": 0.0003,
+          "arrival_time_error_s": 0.0001251498369220892,
+          "equivalent_unfocused_proton_temperature_K": 62.199981798051084
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.3595689863184904,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.3595689863184904,
+          "fractional_longitudinal_velocity_error": 1.5e-07,
+          "arrival_time_error_s": 0.0012514983692208921,
+          "equivalent_unfocused_proton_temperature_K": 1.554999544951277e-05
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 71.91379726369807,
+          "uncorrelated_longitudinal_velocity_error_m_s": 71.91379726369807,
+          "fractional_longitudinal_velocity_error": 2.9999999999999997e-05,
+          "arrival_time_error_s": 0.0012514983692208921,
+          "equivalent_unfocused_proton_temperature_K": 0.6219998179805107
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.003,
+          "uncorrelated_transverse_velocity_error_m_s": 7191.379726369808,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7191.379726369808,
+          "fractional_longitudinal_velocity_error": 0.003,
+          "arrival_time_error_s": 0.0012514983692208921,
+          "equivalent_unfocused_proton_temperature_K": 6219.998179805108
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "zones": 128,
+      "tag": "",
+      "inputs": {
+        "compression-B1-128-initial.json": "1853a81b6e359bdd2d6b112102841c91f52429e84361adbca407cd349671154b",
+        "compression-B1-128-burning.json": "43b6bc072797db2caa50673f4ac614d583eb47b6655b5d0c351bea1ba4c011a6"
+      },
+      "mass_kg": 1.4137166941154068e+16,
+      "input_energy_J": 3.993770992182257e+28,
+      "kinetic_energy_J": 3.65150949028141e+28,
+      "kinetic_ledger_relative_error": -2.220446049250313e-16,
+      "input_internal_energy_J": 3.4226150190084694e+27,
+      "energy_rms_speed_m_s": 2272846.0575044155,
+      "maximum_speed_m_s": 4269155.883556125,
+      "launch_schedule": {
+        "source_radius_m": 20000000000.0,
+        "mass_weighted_flight_time_quantiles_s": {
+          "0.01": 5095.882047934721,
+          "0.05": 6069.259578472247,
+          "0.5": 9284.485969646637,
+          "0.95": 18248.675530505512,
+          "0.99": 31582.24265730655
+        },
+        "energy_weighted_flight_time_quantiles_s": {
+          "0.01": 5095.882047934721,
+          "0.05": 5285.062133126613,
+          "0.5": 7950.591768914381,
+          "0.95": 12826.489210877893,
+          "0.99": 17011.632990017006
+        },
+        "peak_kinetic_source_power_W": 7.749128523089615e+24,
+        "electrical_peak_at_assumed_30pct_conversion_W": 2.583042841029872e+25,
+        "largest_source_bin_duration_s": 622876.1839459067,
+        "smallest_source_bin_duration_s": 100.88264996127145,
+        "qualification": "Kinematic time-of-flight schedule; centroid cell quadrature. No source or accelerator design; kinetic power only."
+      },
+      "contact_backmaps": [
+        {
+          "material_density_kg_m3": 100.0,
+          "ballistic_lookback_s": 0.010442419589409814,
+          "outer_radius_m": 54568.69951719768,
+          "uniform_solid_ball_radius_m": 32316.520350478237,
+          "minimum_cell_density_kg_m3": 1.1083565103522859,
+          "maximum_cell_density_kg_m3": 100.00000000000085,
+          "mean_density_kg_m3": 20.770309393053118,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 1000.0,
+          "ballistic_lookback_s": 0.003792397730746469,
+          "outer_radius_m": 26178.719573508228,
+          "uniform_solid_ball_radius_m": 14999.999999999993,
+          "minimum_cell_density_kg_m3": 9.98314815424002,
+          "maximum_cell_density_kg_m3": 999.9999999999952,
+          "mean_density_kg_m3": 188.11722959214367,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 2000.0,
+          "ballistic_lookback_s": 0.0026134079386148233,
+          "outer_radius_m": 21145.428365776803,
+          "uniform_solid_ball_radius_m": 11905.507889761491,
+          "minimum_cell_density_kg_m3": 18.89613483123624,
+          "maximum_cell_density_kg_m3": 1999.9999999999895,
+          "mean_density_kg_m3": 356.9639137223187,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 3000.0,
+          "ballistic_lookback_s": 0.0020431615492120937,
+          "outer_radius_m": 18710.9576373815,
+          "uniform_solid_ball_radius_m": 10400.419115259516,
+          "minimum_cell_density_kg_m3": 27.22694701537894,
+          "maximum_cell_density_kg_m3": 2999.9999999996935,
+          "mean_density_kg_m3": 515.2117163049987,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        }
+      ],
+      "ideal_fully_ionized_contact_isentropes": [
+        {
+          "requested_density_kg_m3": 1000.0,
+          "density_kg_m3": 999.9999999999998,
+          "temperature_K": 5854514.727650521,
+          "specific_internal_J_kg": 46597030852.32318,
+          "pressure_Pa": 30738371585324.42,
+          "sound_speed_m_s": 225229.35213870415,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 2000.0,
+          "density_kg_m3": 1999.9999999999998,
+          "temperature_K": 9077404.13497661,
+          "specific_internal_J_kg": 73478761361.2144,
+          "pressure_Pa": 96115024820771.02,
+          "sound_speed_m_s": 280587.9053939483,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 3000.0,
+          "density_kg_m3": 2999.9999999999977,
+          "temperature_K": 11651061.93368692,
+          "specific_internal_J_kg": 95703381587.3284,
+          "pressure_Pa": 186402939386310.0,
+          "sound_speed_m_s": 318110.4596724011,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        }
+      ],
+      "cold_pellet_acceleration_survival_trade": [
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.0002914848281147661,
+          "maximum_speed_Planck_absorptivity_limit": 0.04515542784018972,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0010283949547799647,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.08481681361654009,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 889482129953634.1,
+          "gas_mass_fraction_of_this_pulse": 0.06291799012179045
+        },
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.02914848281147661,
+          "maximum_speed_Planck_absorptivity_limit": 4.515542784018972,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.10283949547799648,
+          "maximum_Planck_absorptivity_for_cold_flight": 8.48168136165401,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 8.894821299536344e+16,
+          "gas_mass_fraction_of_this_pulse": 6.291799012179046
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.0002914848281147661,
+          "maximum_speed_Planck_absorptivity_limit": 0.005852143448088588,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0010283949547799647,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.010992259044703597,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 889482129953634.1,
+          "gas_mass_fraction_of_this_pulse": 0.06291799012179045
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.02914848281147661,
+          "maximum_speed_Planck_absorptivity_limit": 0.5852143448088588,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.10283949547799648,
+          "maximum_Planck_absorptivity_for_cold_flight": 1.0992259044703598,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 8.894821299536344e+16,
+          "gas_mass_fraction_of_this_pulse": 6.291799012179046
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.0002914848281147661,
+          "maximum_speed_Planck_absorptivity_limit": 0.00036575896550553673,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0010283949547799647,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.0006870161902939748,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 889482129953634.1,
+          "gas_mass_fraction_of_this_pulse": 0.06291799012179045
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.02914848281147661,
+          "maximum_speed_Planck_absorptivity_limit": 0.036575896550553676,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.10283949547799648,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.06870161902939749,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 8.894821299536344e+16,
+          "gas_mass_fraction_of_this_pulse": 6.291799012179046
+        }
+      ],
+      "granular_preheat_requirements": [
+        {
+          "pellet_radius_m": 0.001,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 58094750.193111256,
+          "expansion_length_if_vaporized_at_that_radius_m": 7171926.236380439,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 2430.0898368872845,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.02844800263445717,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.16947546990765783,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.01,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 18371173.070873834,
+          "expansion_length_if_vaporized_at_that_radius_m": 2267962.211768134,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 2430.0898368872845,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.02844800263445717,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.16947546990765783,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.1,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 5809475.019311125,
+          "expansion_length_if_vaporized_at_that_radius_m": 717192.6236380439,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 2430.0898368872845,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.02844800263445717,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.16947546990765783,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 1.0,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 1837117.3070873837,
+          "expansion_length_if_vaporized_at_that_radius_m": 226796.22117681347,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 2430.0898368872845,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.02844800263445717,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.16947546990765783,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        }
+      ],
+      "uncorrected_pointing_requirements": [
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-09,
+          "uncorrelated_transverse_velocity_error_m_s": 0.0034092690862566233,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.0034092690862566233,
+          "fractional_longitudinal_velocity_error": 1.5e-09,
+          "arrival_time_error_s": 1.3199310134070406e-05,
+          "equivalent_unfocused_proton_temperature_K": 1.397939497991276e-09
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.6818538172513247,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.6818538172513247,
+          "fractional_longitudinal_velocity_error": 3e-07,
+          "arrival_time_error_s": 1.3199310134070406e-05,
+          "equivalent_unfocused_proton_temperature_K": 5.591757991965104e-05
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 68.18538172513247,
+          "uncorrelated_longitudinal_velocity_error_m_s": 68.18538172513247,
+          "fractional_longitudinal_velocity_error": 3.0000000000000004e-05,
+          "arrival_time_error_s": 1.3199310134070406e-05,
+          "equivalent_unfocused_proton_temperature_K": 0.5591757991965105
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-08,
+          "uncorrelated_transverse_velocity_error_m_s": 0.03409269086256623,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.03409269086256623,
+          "fractional_longitudinal_velocity_error": 1.5e-08,
+          "arrival_time_error_s": 0.00013199310134070407,
+          "equivalent_unfocused_proton_temperature_K": 1.3979394979912756e-07
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-06,
+          "uncorrelated_transverse_velocity_error_m_s": 6.818538172513247,
+          "uncorrelated_longitudinal_velocity_error_m_s": 6.818538172513247,
+          "fractional_longitudinal_velocity_error": 3e-06,
+          "arrival_time_error_s": 0.00013199310134070407,
+          "equivalent_unfocused_proton_temperature_K": 0.005591757991965105
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.0003,
+          "uncorrelated_transverse_velocity_error_m_s": 681.8538172513247,
+          "uncorrelated_longitudinal_velocity_error_m_s": 681.8538172513247,
+          "fractional_longitudinal_velocity_error": 0.00030000000000000003,
+          "arrival_time_error_s": 0.00013199310134070407,
+          "equivalent_unfocused_proton_temperature_K": 55.91757991965105
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.34092690862566233,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.34092690862566233,
+          "fractional_longitudinal_velocity_error": 1.5e-07,
+          "arrival_time_error_s": 0.0013199310134070406,
+          "equivalent_unfocused_proton_temperature_K": 1.397939497991276e-05
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 68.18538172513246,
+          "uncorrelated_longitudinal_velocity_error_m_s": 68.18538172513246,
+          "fractional_longitudinal_velocity_error": 2.9999999999999997e-05,
+          "arrival_time_error_s": 0.0013199310134070406,
+          "equivalent_unfocused_proton_temperature_K": 0.5591757991965102
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.003,
+          "uncorrelated_transverse_velocity_error_m_s": 6818.5381725132465,
+          "uncorrelated_longitudinal_velocity_error_m_s": 6818.5381725132465,
+          "fractional_longitudinal_velocity_error": 0.003,
+          "arrival_time_error_s": 0.0013199310134070406,
+          "equivalent_unfocused_proton_temperature_K": 5591.757991965103
+        }
+      ]
+    },
+    {
+      "stage": "B2",
+      "zones": 128,
+      "tag": "",
+      "inputs": {
+        "compression-B2-128-initial.json": "b4543dea041dab8712489570084a2828762c938d9ae4eeec2b670b7f97e843a1",
+        "compression-B2-128-burning.json": "d2a1e9799ffde6e62a192278530e02e92b107e9644ea907fdfa973edd3292ddb"
+      },
+      "mass_kg": 1.1309733552923254e+16,
+      "input_energy_J": 4.074393051186256e+28,
+      "kinetic_energy_J": 3.789234199632766e+28,
+      "kinetic_ledger_relative_error": -1.1102230246251565e-16,
+      "input_internal_energy_J": 2.8515885155348994e+27,
+      "energy_rms_speed_m_s": 2588597.546944884,
+      "maximum_speed_m_s": 4810489.051239734,
+      "launch_schedule": {
+        "source_radius_m": 20000000000.0,
+        "mass_weighted_flight_time_quantiles_s": {
+          "0.01": 4518.436804899519,
+          "0.05": 5366.452836958844,
+          "0.5": 8128.1394929526605,
+          "0.95": 15576.124755532053,
+          "0.99": 26687.618321991
+        },
+        "energy_weighted_flight_time_quantiles_s": {
+          "0.01": 4518.436804899519,
+          "0.05": 4693.48051303911,
+          "0.5": 7014.09800592437,
+          "0.95": 11193.305837139718,
+          "0.99": 14738.775662569773
+        },
+        "peak_kinetic_source_power_W": 9.276727637894531e+24,
+        "electrical_peak_at_assumed_30pct_conversion_W": 3.0922425459648437e+25,
+        "largest_source_bin_duration_s": 525027.0038820093,
+        "smallest_source_bin_duration_s": 85.71463788524125,
+        "qualification": "Kinematic time-of-flight schedule; centroid cell quadrature. No source or accelerator design; kinetic power only."
+      },
+      "contact_backmaps": [
+        {
+          "material_density_kg_m3": 100.0,
+          "ballistic_lookback_s": 0.00983833144373639,
+          "outer_radius_m": 49099.63956920085,
+          "uniform_solid_ball_radius_m": 29999.99999999998,
+          "minimum_cell_density_kg_m3": 1.237171083270931,
+          "maximum_cell_density_kg_m3": 99.99999999999804,
+          "mean_density_kg_m3": 22.810187330314076,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 1000.0,
+          "ballistic_lookback_s": 0.004388613569468879,
+          "outer_radius_m": 22883.831402691507,
+          "uniform_solid_ball_radius_m": 13924.766500838328,
+          "minimum_cell_density_kg_m3": 12.22005195174341,
+          "maximum_cell_density_kg_m3": 999.9999999999949,
+          "mean_density_kg_m3": 225.30848424248853,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 2000.0,
+          "ballistic_lookback_s": 0.003415165597642232,
+          "outer_radius_m": 18201.0705922679,
+          "uniform_solid_ball_radius_m": 11052.094495921154,
+          "minimum_cell_density_kg_m3": 24.28655219865279,
+          "maximum_cell_density_kg_m3": 1999.9999999999898,
+          "mean_density_kg_m3": 447.7885268387656,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 3000.0,
+          "ballistic_lookback_s": 0.0029417218415636534,
+          "outer_radius_m": 15923.574587274083,
+          "uniform_solid_ball_radius_m": 9654.893846056293,
+          "minimum_cell_density_kg_m3": 36.268796821821965,
+          "maximum_cell_density_kg_m3": 3000.0000000000564,
+          "mean_density_kg_m3": 668.7165392609932,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        }
+      ],
+      "ideal_fully_ionized_contact_isentropes": [
+        {
+          "requested_density_kg_m3": 1000.0,
+          "density_kg_m3": 999.9999999999998,
+          "temperature_K": 158718.01775871706,
+          "specific_internal_J_kg": 1776104115.9252892,
+          "pressure_Pa": 1184035977436.8445,
+          "sound_speed_m_s": 44422.38926991874,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 2000.0,
+          "density_kg_m3": 1999.9999999999998,
+          "temperature_K": 251940.8392102665,
+          "specific_internal_J_kg": 2819342749.2120323,
+          "pressure_Pa": 3758954977659.057,
+          "sound_speed_m_s": 55967.40002992798,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 3000.0,
+          "density_kg_m3": 2999.9999999999977,
+          "temperature_K": 330126.7354160617,
+          "specific_internal_J_kg": 3694332650.040483,
+          "pressure_Pa": 7388230477275.791,
+          "sound_speed_m_s": 64065.42692207148,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        }
+      ],
+      "cold_pellet_acceleration_survival_trade": [
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.00022957337516391966,
+          "maximum_speed_Planck_absorptivity_limit": 0.040074004614719765,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0007928132681797283,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.07447104346751686,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 528638966241917.0,
+          "gas_mass_fraction_of_this_pulse": 0.04674194699355039
+        },
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.02295733751639197,
+          "maximum_speed_Planck_absorptivity_limit": 4.007400461471978,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.07928132681797284,
+          "maximum_Planck_absorptivity_for_cold_flight": 7.447104346751687,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 5.2863896624191704e+16,
+          "gas_mass_fraction_of_this_pulse": 4.674194699355039
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.00022957337516391966,
+          "maximum_speed_Planck_absorptivity_limit": 0.005193590998067682,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0007928132681797283,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.009651447233390186,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 528638966241917.0,
+          "gas_mass_fraction_of_this_pulse": 0.04674194699355039
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.02295733751639197,
+          "maximum_speed_Planck_absorptivity_limit": 0.5193590998067683,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.07928132681797284,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.9651447233390188,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 5.2863896624191704e+16,
+          "gas_mass_fraction_of_this_pulse": 4.674194699355039
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.00022957337516391966,
+          "maximum_speed_Planck_absorptivity_limit": 0.0003245994373792301,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0007928132681797283,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.0006032154520868866,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 528638966241917.0,
+          "gas_mass_fraction_of_this_pulse": 0.04674194699355039
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.02295733751639197,
+          "maximum_speed_Planck_absorptivity_limit": 0.03245994373792302,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.07928132681797284,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.060321545208688675,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 5.2863896624191704e+16,
+          "gas_mass_fraction_of_this_pulse": 4.674194699355039
+        }
+      ],
+      "granular_preheat_requirements": [
+        {
+          "pellet_radius_m": 0.001,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 51961524.227066316,
+          "expansion_length_if_vaporized_at_that_radius_m": 1123446.7157759902,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13875.564411929045,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008414896944360012,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029012511704317335,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.01,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 16431676.725154983,
+          "expansion_length_if_vaporized_at_that_radius_m": 355265.0451687949,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13875.564411929045,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008414896944360012,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029012511704317335,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.1,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 5196152.422706632,
+          "expansion_length_if_vaporized_at_that_radius_m": 112344.67157759903,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13875.564411929045,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008414896944360012,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029012511704317335,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 1.0,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 1643167.6725154982,
+          "expansion_length_if_vaporized_at_that_radius_m": 35526.50451687948,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13875.564411929045,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008414896944360012,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.029012511704317335,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        }
+      ],
+      "uncorrected_pointing_requirements": [
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-09,
+          "uncorrelated_transverse_velocity_error_m_s": 0.0038828963204173257,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.0038828963204173257,
+          "fractional_longitudinal_velocity_error": 1.4999999999999998e-09,
+          "arrival_time_error_s": 1.1589287039001722e-05,
+          "equivalent_unfocused_proton_temperature_K": 1.8133323249276871e-09
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.7765792640834653,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.7765792640834653,
+          "fractional_longitudinal_velocity_error": 3.0000000000000004e-07,
+          "arrival_time_error_s": 1.1589287039001722e-05,
+          "equivalent_unfocused_proton_temperature_K": 7.253329299710751e-05
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 77.65792640834653,
+          "uncorrelated_longitudinal_velocity_error_m_s": 77.65792640834653,
+          "fractional_longitudinal_velocity_error": 3e-05,
+          "arrival_time_error_s": 1.1589287039001722e-05,
+          "equivalent_unfocused_proton_temperature_K": 0.725332929971075
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-08,
+          "uncorrelated_transverse_velocity_error_m_s": 0.03882896320417326,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.03882896320417326,
+          "fractional_longitudinal_velocity_error": 1.5000000000000002e-08,
+          "arrival_time_error_s": 0.00011589287039001723,
+          "equivalent_unfocused_proton_temperature_K": 1.8133323249276874e-07
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-06,
+          "uncorrelated_transverse_velocity_error_m_s": 7.765792640834653,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7.765792640834653,
+          "fractional_longitudinal_velocity_error": 3.0000000000000005e-06,
+          "arrival_time_error_s": 0.00011589287039001723,
+          "equivalent_unfocused_proton_temperature_K": 0.007253329299710752
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.0003,
+          "uncorrelated_transverse_velocity_error_m_s": 776.5792640834652,
+          "uncorrelated_longitudinal_velocity_error_m_s": 776.5792640834652,
+          "fractional_longitudinal_velocity_error": 0.0003,
+          "arrival_time_error_s": 0.00011589287039001723,
+          "equivalent_unfocused_proton_temperature_K": 72.5332929971075
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.3882896320417326,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.3882896320417326,
+          "fractional_longitudinal_velocity_error": 1.5e-07,
+          "arrival_time_error_s": 0.0011589287039001723,
+          "equivalent_unfocused_proton_temperature_K": 1.8133323249276874e-05
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 77.65792640834653,
+          "uncorrelated_longitudinal_velocity_error_m_s": 77.65792640834653,
+          "fractional_longitudinal_velocity_error": 3e-05,
+          "arrival_time_error_s": 0.0011589287039001723,
+          "equivalent_unfocused_proton_temperature_K": 0.725332929971075
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.003,
+          "uncorrelated_transverse_velocity_error_m_s": 7765.792640834652,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7765.792640834652,
+          "fractional_longitudinal_velocity_error": 0.003,
+          "arrival_time_error_s": 0.0011589287039001723,
+          "equivalent_unfocused_proton_temperature_K": 7253.329299710749
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "zones": 64,
+      "tag": "",
+      "inputs": {
+        "compression-C13-64-initial.json": "5b0c3672195b8a021b07cf093041003b8fe384c84f0c58336f7587bd47e97c6e",
+        "compression-C13-64-burning.json": "d22902f836185ce67ac8a1a96274c01aa7358505237ca16dcaff45e03d87a797"
+      },
+      "mass_kg": 418879020478639.06,
+      "input_energy_J": 1.2326912542670596e+27,
+      "kinetic_energy_J": 1.1462369024504796e+27,
+      "kinetic_ledger_relative_error": 2.220446049250313e-16,
+      "input_internal_energy_J": 8.64543518165804e+25,
+      "energy_rms_speed_m_s": 2339418.3185954783,
+      "maximum_speed_m_s": 4191148.4855696764,
+      "launch_schedule": {
+        "source_radius_m": 20000000000.0,
+        "mass_weighted_flight_time_quantiles_s": {
+          "0.01": 5246.895757383759,
+          "0.05": 5784.257353704954,
+          "0.5": 9010.801837634343,
+          "0.95": 17391.3949754438,
+          "0.99": 29716.111800982802
+        },
+        "energy_weighted_flight_time_quantiles_s": {
+          "0.01": 5246.895757383759,
+          "0.05": 5246.895757383759,
+          "0.5": 7761.164867078265,
+          "0.95": 12415.137592101013,
+          "0.99": 16416.421225341455
+        },
+        "peak_kinetic_source_power_W": 2.4953632440881203e+23,
+        "electrical_peak_at_assumed_30pct_conversion_W": 8.317877480293735e+23,
+        "largest_source_bin_duration_s": 291503.8365899667,
+        "smallest_source_bin_duration_s": 190.85824679528923,
+        "qualification": "Kinematic time-of-flight schedule; centroid cell quadrature. No source or accelerator design; kinetic power only."
+      },
+      "contact_backmaps": [
+        {
+          "material_density_kg_m3": 100.0,
+          "ballistic_lookback_s": 0.003629702617043179,
+          "outer_radius_m": 15781.715221980205,
+          "uniform_solid_ball_radius_m": 9999.999999999995,
+          "minimum_cell_density_kg_m3": 2.44779757006105,
+          "maximum_cell_density_kg_m3": 99.99999999999967,
+          "mean_density_kg_m3": 25.44118833364158,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 1000.0,
+          "ballistic_lookback_s": 0.0016188547529751812,
+          "outer_radius_m": 7353.953241780598,
+          "uniform_solid_ball_radius_m": 4641.588833612776,
+          "minimum_cell_density_kg_m3": 24.172482778494366,
+          "maximum_cell_density_kg_m3": 999.999999999994,
+          "mean_density_kg_m3": 251.4417597117858,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 2000.0,
+          "ballistic_lookback_s": 0.0012597832393326073,
+          "outer_radius_m": 5849.031211166313,
+          "uniform_solid_ball_radius_m": 3684.031498640385,
+          "minimum_cell_density_kg_m3": 48.02435274487634,
+          "maximum_cell_density_kg_m3": 2000.0000000001326,
+          "mean_density_kg_m3": 499.74468458080156,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 3000.0,
+          "ballistic_lookback_s": 0.001085171702321393,
+          "outer_radius_m": 5117.208332258768,
+          "uniform_solid_ball_radius_m": 3218.297948685431,
+          "minimum_cell_density_kg_m3": 71.69600260997521,
+          "maximum_cell_density_kg_m3": 3000.0000000000064,
+          "mean_density_kg_m3": 746.2781132825895,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        }
+      ],
+      "ideal_fully_ionized_contact_isentropes": [
+        {
+          "requested_density_kg_m3": 1000.0,
+          "density_kg_m3": 999.9999999999998,
+          "temperature_K": 160695.84603551697,
+          "specific_internal_J_kg": 1456865177.7327397,
+          "pressure_Pa": 971214510879.5842,
+          "sound_speed_m_s": 40232.477056077674,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 2000.0,
+          "density_kg_m3": 1999.9999999999998,
+          "temperature_K": 255079.64287649377,
+          "specific_internal_J_kg": 2312588818.613948,
+          "pressure_Pa": 3083305697243.518,
+          "sound_speed_m_s": 50688.49844239533,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 3000.0,
+          "density_kg_m3": 2999.9999999999977,
+          "temperature_K": 334238.9900362575,
+          "specific_internal_J_kg": 3030304036.6412387,
+          "pressure_Pa": 6060231508055.827,
+          "sound_speed_m_s": 58022.64727463317,
+          "reached_requested_density": true,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        }
+      ],
+      "cold_pellet_acceleration_survival_trade": [
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.0003024362784753771,
+          "maximum_speed_Planck_absorptivity_limit": 0.04599587943547584,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009706981628921509,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.08240320207211896,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 792475360370398.0,
+          "gas_mass_fraction_of_this_pulse": 1.8918955632221992
+        },
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.030243627847537712,
+          "maximum_speed_Planck_absorptivity_limit": 4.599587943547585,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0970698162892151,
+          "maximum_Planck_absorptivity_for_cold_flight": 8.240320207211896,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.92475360370398e+16,
+          "gas_mass_fraction_of_this_pulse": 189.18955632221994
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.0003024362784753771,
+          "maximum_speed_Planck_absorptivity_limit": 0.005961065974837669,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009706981628921509,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.010679454988546618,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 792475360370398.0,
+          "gas_mass_fraction_of_this_pulse": 1.8918955632221992
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.030243627847537712,
+          "maximum_speed_Planck_absorptivity_limit": 0.5961065974837669,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0970698162892151,
+          "maximum_Planck_absorptivity_for_cold_flight": 1.0679454988546617,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.92475360370398e+16,
+          "gas_mass_fraction_of_this_pulse": 189.18955632221994
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.0003024362784753771,
+          "maximum_speed_Planck_absorptivity_limit": 0.0003725666234273543,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0009706981628921509,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.0006674659367841636,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 792475360370398.0,
+          "gas_mass_fraction_of_this_pulse": 1.8918955632221992
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.030243627847537712,
+          "maximum_speed_Planck_absorptivity_limit": 0.03725666234273543,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.0970698162892151,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.06674659367841636,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 7.92475360370398e+16,
+          "gas_mass_fraction_of_this_pulse": 189.18955632221994
+        }
+      ],
+      "granular_preheat_requirements": [
+        {
+          "pellet_radius_m": 0.001,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 10000000.0,
+          "expansion_length_if_vaporized_at_that_radius_m": 216671.37527087203,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13845.852947808846,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008451088401009787,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02907485197062445,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.01,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 3162277.6601683795,
+          "expansion_length_if_vaporized_at_that_radius_m": 68517.5049617038,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13845.852947808846,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008451088401009787,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02907485197062445,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 0.1,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 1000000.0,
+          "expansion_length_if_vaporized_at_that_radius_m": 21667.137527087198,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13845.852947808846,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008451088401009787,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02907485197062445,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        },
+        {
+          "pellet_radius_m": 1.0,
+          "pellet_material_density_kg_m3": 1000.0,
+          "mean_projected_grain_optical_depth_one_radius_m": 316227.7660168379,
+          "expansion_length_if_vaporized_at_that_radius_m": 6851.750496170379,
+          "maximum_vaporization_distance_for_300m_sound_expansion_m": 13845.852947808846,
+          "contact_thermal_to_inflow_kinetic_energy_ratio": 0.0008451088401009787,
+          "maximum_symmetric_jet_merge_half_angle_rad_if_all_contact_heat_is_from_merger": 0.02907485197062445,
+          "qualification": "Opaque grains; independently expanding vapor at diagnostic contact sound speed. Collisional collective focusing, recombination, and radiation cooling omitted; not a universal focus bound."
+        }
+      ],
+      "uncorrected_pointing_requirements": [
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-09,
+          "uncorrelated_transverse_velocity_error_m_s": 0.003509127477893217,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.003509127477893217,
+          "fractional_longitudinal_velocity_error": 1.4999999999999998e-09,
+          "arrival_time_error_s": 1.2823700559039466e-05,
+          "equivalent_unfocused_proton_temperature_K": 1.4810308515867587e-09
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.7018254955786436,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.7018254955786436,
+          "fractional_longitudinal_velocity_error": 3.0000000000000004e-07,
+          "arrival_time_error_s": 1.2823700559039466e-05,
+          "equivalent_unfocused_proton_temperature_K": 5.924123406347038e-05
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 70.18254955786435,
+          "uncorrelated_longitudinal_velocity_error_m_s": 70.18254955786435,
+          "fractional_longitudinal_velocity_error": 3e-05,
+          "arrival_time_error_s": 1.2823700559039466e-05,
+          "equivalent_unfocused_proton_temperature_K": 0.5924123406347036
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-08,
+          "uncorrelated_transverse_velocity_error_m_s": 0.035091274778932174,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.035091274778932174,
+          "fractional_longitudinal_velocity_error": 1.5e-08,
+          "arrival_time_error_s": 0.00012823700559039464,
+          "equivalent_unfocused_proton_temperature_K": 1.481030851586759e-07
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-06,
+          "uncorrelated_transverse_velocity_error_m_s": 7.0182549557864355,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7.0182549557864355,
+          "fractional_longitudinal_velocity_error": 3e-06,
+          "arrival_time_error_s": 0.00012823700559039464,
+          "equivalent_unfocused_proton_temperature_K": 0.0059241234063470375
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.0003,
+          "uncorrelated_transverse_velocity_error_m_s": 701.8254955786435,
+          "uncorrelated_longitudinal_velocity_error_m_s": 701.8254955786435,
+          "fractional_longitudinal_velocity_error": 0.00030000000000000003,
+          "arrival_time_error_s": 0.00012823700559039464,
+          "equivalent_unfocused_proton_temperature_K": 59.241234063470365
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.35091274778932174,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.35091274778932174,
+          "fractional_longitudinal_velocity_error": 1.5e-07,
+          "arrival_time_error_s": 0.0012823700559039465,
+          "equivalent_unfocused_proton_temperature_K": 1.4810308515867591e-05
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 70.18254955786435,
+          "uncorrelated_longitudinal_velocity_error_m_s": 70.18254955786435,
+          "fractional_longitudinal_velocity_error": 3e-05,
+          "arrival_time_error_s": 0.0012823700559039465,
+          "equivalent_unfocused_proton_temperature_K": 0.5924123406347036
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.003,
+          "uncorrelated_transverse_velocity_error_m_s": 7018.254955786435,
+          "uncorrelated_longitudinal_velocity_error_m_s": 7018.254955786435,
+          "fractional_longitudinal_velocity_error": 0.003,
+          "arrival_time_error_s": 0.0012823700559039465,
+          "equivalent_unfocused_proton_temperature_K": 5924.123406347036
+        }
+      ]
+    },
+    {
+      "stage": "He",
+      "zones": 64,
+      "tag": "-r30",
+      "inputs": {
+        "compression-He-64-r30-initial.json": "5228de3164335162f803e26b61b3c686f5b6a46889e4e41c51988e659369858e",
+        "compression-He-64-r30-burning.json": "c78abcb0015348e9a876ac36607c2e6acd8624ac419e82ae30978580b3e950f3"
+      },
+      "mass_kg": 1130973355292325.5,
+      "input_energy_J": 2.426714343610998e+28,
+      "kinetic_energy_J": 2.2471386952318477e+28,
+      "kinetic_ledger_relative_error": 2.220446049250313e-16,
+      "input_internal_energy_J": 1.79575648379151e+27,
+      "energy_rms_speed_m_s": 6303819.222936914,
+      "maximum_speed_m_s": 11299226.172551122,
+      "launch_schedule": {
+        "source_radius_m": 20000000000.0,
+        "mass_weighted_flight_time_quantiles_s": {
+          "0.01": 1946.5627132116247,
+          "0.05": 2146.8202463951393,
+          "0.5": 3341.536542841459,
+          "0.95": 6517.304738921594,
+          "0.99": 11196.136715811763
+        },
+        "energy_weighted_flight_time_quantiles_s": {
+          "0.01": 1946.5627132116247,
+          "0.05": 1946.5627132116247,
+          "0.5": 2878.0403881054185,
+          "0.95": 4606.839258119754,
+          "0.99": 6115.036427884764
+        },
+        "peak_kinetic_source_power_W": 1.3253751598896116e+25,
+        "electrical_peak_at_assumed_30pct_conversion_W": 4.417917199632039e+25,
+        "largest_source_bin_duration_s": 109965.74724665517,
+        "smallest_source_bin_duration_s": 70.91937588192059,
+        "qualification": "Kinematic time-of-flight schedule; centroid cell quadrature. No source or accelerator design; kinetic power only."
+      },
+      "contact_backmaps": [
+        {
+          "material_density_kg_m3": 100.0,
+          "ballistic_lookback_s": 0.0019192988038886434,
+          "outer_radius_m": 21874.69621395923,
+          "uniform_solid_ball_radius_m": 13924.76650083833,
+          "minimum_cell_density_kg_m3": 2.47426014158077,
+          "maximum_cell_density_kg_m3": 99.99999999999976,
+          "mean_density_kg_m3": 25.795127142004564,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 1000.0,
+          "ballistic_lookback_s": 0.0008829561477555243,
+          "outer_radius_m": 10164.826150048742,
+          "uniform_solid_ball_radius_m": 6463.304070095648,
+          "minimum_cell_density_kg_m3": 24.649324382747764,
+          "maximum_cell_density_kg_m3": 999.999999999973,
+          "mean_density_kg_m3": 257.0773996674839,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 2000.0,
+          "ballistic_lookback_s": 0.0006977605046291493,
+          "outer_radius_m": 8072.25869219277,
+          "uniform_solid_ball_radius_m": 5129.927840030088,
+          "minimum_cell_density_kg_m3": 49.208377916868855,
+          "maximum_cell_density_kg_m3": 1999.9999999999943,
+          "mean_density_kg_m3": 513.3086114635923,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        },
+        {
+          "material_density_kg_m3": 3000.0,
+          "ballistic_lookback_s": 0.0006076858614274566,
+          "outer_radius_m": 7054.484926244999,
+          "uniform_solid_ball_radius_m": 4481.404746557163,
+          "minimum_cell_density_kg_m3": 73.7177118254402,
+          "maximum_cell_density_kg_m3": 3000.0000000000073,
+          "mean_density_kg_m3": 769.0734780309591,
+          "qualification": "Constant-velocity backward map; pressure acceleration omitted. First contact of densest cells, not a delivered fluid state."
+        }
+      ],
+      "ideal_fully_ionized_contact_isentropes": [
+        {
+          "requested_density_kg_m3": 1000.0,
+          "density_kg_m3": 5481.092622285483,
+          "temperature_K": 100000.99999999985,
+          "specific_internal_J_kg": 1950573096.1435184,
+          "pressure_Pa": 7127260857489.749,
+          "sound_speed_m_s": 46552.81511154748,
+          "reached_requested_density": false,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 2000.0,
+          "density_kg_m3": 5481.092622285483,
+          "temperature_K": 100000.99999999985,
+          "specific_internal_J_kg": 1950573096.1435184,
+          "pressure_Pa": 7127260857489.749,
+          "sound_speed_m_s": 46552.81511154748,
+          "reached_requested_density": false,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        },
+        {
+          "requested_density_kg_m3": 3000.0,
+          "density_kg_m3": 5481.092622285483,
+          "temperature_K": 100000.99999999985,
+          "specific_internal_J_kg": 1950573096.1435184,
+          "pressure_Pa": 7127260857489.749,
+          "sound_speed_m_s": 46552.81511154748,
+          "reached_requested_density": false,
+          "qualification": "Fully ionized ideal-ion/electron/radiation EOS only; not a physical cold-material isentrope."
+        }
+      ],
+      "cold_pellet_acceleration_survival_trade": [
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 4.1610465717028076e-05,
+          "maximum_speed_Planck_absorptivity_limit": 0.017060952448827334,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.00013368801650221672,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.030580756462211315,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 15031499690863.771,
+          "gas_mass_fraction_of_this_pulse": 0.013290763766029256
+        },
+        {
+          "wall_temperature_K": 300.0,
+          "maximum_speed_pellet_radius_m": 0.004161046571702808,
+          "maximum_speed_Planck_absorptivity_limit": 1.7060952448827338,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.013368801650221675,
+          "maximum_Planck_absorptivity_for_cold_flight": 3.058075646221133,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 1503149969086377.8,
+          "gas_mass_fraction_of_this_pulse": 1.329076376602926
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 4.1610465717028076e-05,
+          "maximum_speed_Planck_absorptivity_limit": 0.0022110994373680227,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.00013368801650221672,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.003963266037502587,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 15031499690863.771,
+          "gas_mass_fraction_of_this_pulse": 0.013290763766029256
+        },
+        {
+          "wall_temperature_K": 500.0,
+          "maximum_speed_pellet_radius_m": 0.004161046571702808,
+          "maximum_speed_Planck_absorptivity_limit": 0.22110994373680232,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.013368801650221675,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.39632660375025885,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 1503149969086377.8,
+          "gas_mass_fraction_of_this_pulse": 1.329076376602926
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 4.1610465717028076e-05,
+          "maximum_speed_Planck_absorptivity_limit": 0.00013819371483550142,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 1000000.0,
+          "accelerator_length_m": 100000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.00013368801650221672,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.0002477041273439117,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 15031499690863.771,
+          "gas_mass_fraction_of_this_pulse": 0.013290763766029256
+        },
+        {
+          "wall_temperature_K": 1000.0,
+          "maximum_speed_pellet_radius_m": 0.004161046571702808,
+          "maximum_speed_Planck_absorptivity_limit": 0.013819371483550145,
+          "pellet_density_kg_m3": 1000.0,
+          "surface_field_V_m": 1000000000.0,
+          "accelerator_gradient_V_m": 10000000.0,
+          "accelerator_length_m": 1000000000.0,
+          "allowable_absorbed_heat_J_kg": 1000000.0,
+          "maximum_accelerable_pellet_radius_m": 0.013368801650221675,
+          "maximum_Planck_absorptivity_for_cold_flight": 0.02477041273439118,
+          "surface_maxwell_pressure_Pa": 4427093.906400001,
+          "maximum_uniform_cavity_gas_mass_kg": 1503149969086377.8,
+          "gas_mass_fraction_of_this_pulse": 1.329076376602926
+        }
+      ],
+      "granular_preheat_requirements": [],
+      "uncorrected_pointing_requirements": [
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-09,
+          "uncorrelated_transverse_velocity_error_m_s": 0.009455728834405371,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.009455728834405371,
+          "fractional_longitudinal_velocity_error": 1.5e-09,
+          "arrival_time_error_s": 4.759019721067313e-06,
+          "equivalent_unfocused_proton_temperature_K": 1.075364841543615e-08
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 1.8911457668810743,
+          "uncorrelated_longitudinal_velocity_error_m_s": 1.8911457668810743,
+          "fractional_longitudinal_velocity_error": 3e-07,
+          "arrival_time_error_s": 4.759019721067313e-06,
+          "equivalent_unfocused_proton_temperature_K": 0.00043014593661744603
+        },
+        {
+          "footprint_tolerance_m": 30.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 189.11457668810743,
+          "uncorrelated_longitudinal_velocity_error_m_s": 189.11457668810743,
+          "fractional_longitudinal_velocity_error": 3e-05,
+          "arrival_time_error_s": 4.759019721067313e-06,
+          "equivalent_unfocused_proton_temperature_K": 4.301459366174461
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-08,
+          "uncorrelated_transverse_velocity_error_m_s": 0.0945572883440537,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.0945572883440537,
+          "fractional_longitudinal_velocity_error": 1.5e-08,
+          "arrival_time_error_s": 4.759019721067313e-05,
+          "equivalent_unfocused_proton_temperature_K": 1.0753648415436149e-06
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-06,
+          "uncorrelated_transverse_velocity_error_m_s": 18.911457668810744,
+          "uncorrelated_longitudinal_velocity_error_m_s": 18.911457668810744,
+          "fractional_longitudinal_velocity_error": 3e-06,
+          "arrival_time_error_s": 4.759019721067313e-05,
+          "equivalent_unfocused_proton_temperature_K": 0.04301459366174461
+        },
+        {
+          "footprint_tolerance_m": 300.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.0003,
+          "uncorrelated_transverse_velocity_error_m_s": 1891.1457668810742,
+          "uncorrelated_longitudinal_velocity_error_m_s": 1891.1457668810742,
+          "fractional_longitudinal_velocity_error": 0.0003,
+          "arrival_time_error_s": 4.759019721067313e-05,
+          "equivalent_unfocused_proton_temperature_K": 430.145936617446
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 20000000000.0,
+          "angular_error_rad": 1.5e-07,
+          "uncorrelated_transverse_velocity_error_m_s": 0.9455728834405371,
+          "uncorrelated_longitudinal_velocity_error_m_s": 0.9455728834405371,
+          "fractional_longitudinal_velocity_error": 1.5e-07,
+          "arrival_time_error_s": 0.0004759019721067313,
+          "equivalent_unfocused_proton_temperature_K": 0.00010753648415436151
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 100000000.0,
+          "angular_error_rad": 3e-05,
+          "uncorrelated_transverse_velocity_error_m_s": 189.11457668810743,
+          "uncorrelated_longitudinal_velocity_error_m_s": 189.11457668810743,
+          "fractional_longitudinal_velocity_error": 3e-05,
+          "arrival_time_error_s": 0.0004759019721067313,
+          "equivalent_unfocused_proton_temperature_K": 4.301459366174461
+        },
+        {
+          "footprint_tolerance_m": 3000.0,
+          "distance_after_last_correction_m": 1000000.0,
+          "angular_error_rad": 0.003,
+          "uncorrelated_transverse_velocity_error_m_s": 18911.457668810745,
+          "uncorrelated_longitudinal_velocity_error_m_s": 18911.457668810745,
+          "fractional_longitudinal_velocity_error": 0.003,
+          "arrival_time_error_s": 0.0004759019721067313,
+          "equivalent_unfocused_proton_temperature_K": 43014.59366174461
+        }
+      ]
+    }
+  ]
+}

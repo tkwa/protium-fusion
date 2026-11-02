@@ -1,0 +1,10 @@
+"""Count affected histories in the defective optional branch; never production."""
+from pathlib import Path
+import json,subprocess,os,math,hashlib
+P=Path(__file__).resolve().parent;env=os.environ.copy();env.update(PYTHONFAULTHANDLER='1',PYTHONDONTWRITEBYTECODE='1',PYTHONPYCACHEPREFIX=str(P/'cache'));results=[]
+for j,(particle,E,mode,depth) in enumerate([('gamma',5.657344,'isotropic',25),('gamma',20.,'radial',0),('e+',4.12,'radial',0)]):
+ name=f'diagnostic3g-{particle.replace("+","plus")}-{E}';out=P/(name+'.json');cmd=[str(P/'venv/bin/python'),'-u',str(P/'transport_v3.py'),'--three-gamma','--particle',particle,'--energies',str(E),'--histories','10000','--sigma','500','--mode',mode,'--depth-um',str(depth),'--seed',str(771111+3571*j),'--out',str(out)]
+ with (P/(name+'.log')).open('w') as f:r=subprocess.run(cmd,env=env,stdout=f,stderr=subprocess.STDOUT,timeout=300)
+ path=out if r.returncode==0 else out.with_suffix('.energy-failure.json');assert r.returncode in [0,2] and path.exists();d=json.loads(path.read_text());rec=d['records'][0];events=rec['events'];k=sum(any(len(v)==3 for v in e['annihilation_photons_by_parent'].values()) for e in events);N=len(events);z=1.2815515655446004;center=(k/N+z*z/(2*N))/(1+z*z/N);half=z*math.sqrt(k/N*(1-k/N)/N+z*z/(4*N*N))/(1+z*z/N)
+ row={'name':name,'returncode':r.returncode,'histories':N,'affected_by_three_gamma_events':k,'affected_fraction':k/N,'affected_fraction_80pct_Wilson_upper':center+half,'max_abs_energy_residual_MeV':rec['max_abs_event_energy_residual_MeV'],'mean_energy_residual_MeV':rec['mean_energy_residual_MeV'],'raw_path':str(path),'raw_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'command':cmd,'scope':'Diagnostic branch occurrence only; energy-defective results are excluded from production. Does not bound unimplemented soft radiative corrections.'};results.append(row);print(json.dumps(row),flush=True)
+(P/'three-gamma-diagnostic.json').write_text(json.dumps({'rows':results,'source_sha256':hashlib.sha256((P/'transport_v3.py').read_bytes()).hexdigest()},indent=2)+'\n')

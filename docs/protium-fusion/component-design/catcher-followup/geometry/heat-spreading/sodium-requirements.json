@@ -1,0 +1,200 @@
+{
+  "scope": "Bounded sodium spreader flow/geometry requirements, not a fullheatpipe design.\nANLcorrelations supplyfluidproperties. Vaporvoids,liquidarea,wick andwallgeometry\nareexplicitchoices; capillary,wetting,contacts andstartup remain qualifications.\n",
+  "code_sha256": "a279ed93daa0aa208a813bf3a2107a4e4205d58da721f3028f4b29973a0675d3",
+  "source_results_sha256": "25edb32295ef88cbcd485af074e9aef8685e79f549d55d7439a31d0042f2dba6",
+  "primary_property_sources": {
+    "ANL_SAS4A": "https://sas-doc.nse.anl.gov/5.4/Part04/Ch12/12.13.html",
+    "surface_tension_Fink_Leibowitz1995": "https://doi.org/10.2172/94649",
+    "vapor_viscosity_Golden_Tokar1967": "https://digital.library.unt.edu/ark:/67531/metadc1033805/m2/1/high_res_d/4511962.pdf"
+  },
+  "property_scope": "Pv,Hvap,rhol,rhov,mul useofficialANLcorrelations. Surface tensionusesFinkLeibowitz\u00a71.6. VaporviscosityusesGoldenTokarANL7323\u00a7V.B.2eq5.20 (smoothedStefanovdata). Formulaevaluationisnotnewmeasurement.",
+  "properties": [
+    {
+      "T_K": 1000.0,
+      "P_sat_Pa": 19218.5454369265,
+      "latent_J_kg": 4015170.0,
+      "rho_liquid_kg_m3": 779.284,
+      "rho_vapor_kg_m3": 0.05823988009206206,
+      "mu_liquid_Pa_s": 0.00018582729999999998,
+      "mu_vapor_Pa_s": 1.869652210861626e-05,
+      "surface_tension_N_m": 0.1354549666878353,
+      "dPsat_dT_Pa_K": 233.85391303579198
+    },
+    {
+      "T_K": 1100.0,
+      "P_sat_Pa": 57930.588708251875,
+      "latent_J_kg": 3925565.4699999997,
+      "rho_liquid_kg_m3": 755.57434,
+      "rho_vapor_kg_m3": 0.16304886538798732,
+      "mu_liquid_Pa_s": 0.00017149655296769346,
+      "mu_vapor_Pa_s": 1.9304883528747496e-05,
+      "surface_tension_N_m": 0.12535517993773898,
+      "dPsat_dT_Pa_K": 579.5930591518628
+    },
+    {
+      "T_K": 1200.0,
+      "P_sat_Pa": 144662.74513230874,
+      "latent_J_kg": 3835323.36,
+      "rho_liquid_kg_m3": 731.6437599999999,
+      "rho_vapor_kg_m3": 0.3804657895073321,
+      "mu_liquid_Pa_s": 0.00015997232407407403,
+      "mu_vapor_Pa_s": 1.991324494887873e-05,
+      "surface_tension_N_m": 0.11534571734609324,
+      "dPsat_dT_Pa_K": 1210.9693279965645
+    }
+  ],
+  "peak_W_m2": 881150.784976221,
+  "mean_W_m2": 116.51853171568968,
+  "cases": [
+    {
+      "vapor_area_fraction": 0.02,
+      "vapor_radius_m": 0.002,
+      "liquid_return_area_fraction": 0.005,
+      "wick_solid_volume_fraction": 0.002,
+      "wall_thickness_m": 2e-05,
+      "wall_solid_volume_fraction": 0.0004,
+      "wall_wick_density_scenario_kg_m3": 8000.0,
+      "total_thickness_retaining350carbon_m": 0.17993008431009663,
+      "thickness_added_m": 0.004930084310096644,
+      "peak_phase_flow_kg_m2_s": 0.21945541159557902,
+      "mean_phase_flow_kg_m2_s": 2.9019576186236118e-05,
+      "vapor_peak_velocity_m_s": 188.40647615403503,
+      "vapor_Reynolds": 2347.5533077292844,
+      "laminar_vapor_pressure_drop_Pa": 1267.6239424091502,
+      "laminar_formula_scope": "Validiflaminarfullydevelopedcontinuumflow; neartransitionthis isareference,notqualifiedloss.",
+      "saturation_temperature_drop_equivalent_K": 5.42058042114154,
+      "ideal_monatomic_sodium_vapor_sound_speed_scale_m_s": 776.3796691840515,
+      "velocity_over_ideal_sound_scale": 0.24267311939278857,
+      "liquid_return_peak_velocity_m_s": 0.05632231935868798,
+      "uniform_wick_requirements": [
+        {
+          "fine_meniscus_radius_m": 1e-06,
+          "ideal_wetting_capillary_Pa": 270909.93337567063,
+          "minimum_uniform_return_Darcy_permeability_m2": 6.984025122608822e-12,
+          "scope": "Zero contactangle and noextrahead. A uniformwickmustmeet permeabilityandmeniscusradius simultaneously; hierarchicalreturncanseparate them."
+        },
+        {
+          "fine_meniscus_radius_m": 1e-05,
+          "ideal_wetting_capillary_Pa": 27090.99333756706,
+          "minimum_uniform_return_Darcy_permeability_m2": 7.292575319598972e-11,
+          "scope": "Zero contactangle and noextrahead. A uniformwickmustmeet permeabilityandmeniscusradius simultaneously; hierarchicalreturncanseparate them."
+        },
+        {
+          "fine_meniscus_radius_m": 0.0001,
+          "ideal_wetting_capillary_Pa": 2709.0993337567056,
+          "minimum_uniform_return_Darcy_permeability_m2": 1.3064313650472181e-09,
+          "scope": "Zero contactangle and noextrahead. A uniformwickmustmeet permeabilityandmeniscusradius simultaneously; hierarchicalreturncanseparate them."
+        }
+      ],
+      "hierarchical_return_example": {
+        "artery_radius_m": 0.002,
+        "arterial_liquid_pressure_drop_Pa": 3.7663773264003195,
+        "fine_wet_area_fraction": 0.5,
+        "fine_layer_thickness_m": 0.0001,
+        "fine_Darcy_permeability_m2_scenario": 1e-12,
+        "fine_layer_pressure_drop_Pa": 10.466224536162718,
+        "total_vapor_plus_liquid_pressure_drop_Pa": 1281.8565442717133,
+        "scope": "Specifiedseparatedreturn/evaporationgeometry; notamodelofentrainment,boiling,wettingorcondenserinterface."
+      },
+      "added_inventory_kg_m2": {
+        "wall": 0.5757762697923092,
+        "wick_solid": 2.878881348961546,
+        "liquid": 0.7010831791075467,
+        "vapor": 0.0002095821307034929,
+        "total": 4.155950379992105
+      },
+      "thinwall_hoop_stress_Pa_by_T": {
+        "1000.0": 1921854.54369265,
+        "1100.0": 5793058.870825187,
+        "1200.0": 14466274.513230873
+      },
+      "evaporator_local_flux_W_m2_by_area_fraction": {
+        "0.05": 17623015.69952442,
+        "0.2": 4405753.924881105,
+        "1.0": 881150.784976221
+      }
+    },
+    {
+      "vapor_area_fraction": 0.05,
+      "vapor_radius_m": 0.002,
+      "liquid_return_area_fraction": 0.005,
+      "wick_solid_volume_fraction": 0.002,
+      "wall_thickness_m": 2e-05,
+      "wall_solid_volume_fraction": 0.001,
+      "wall_wick_density_scenario_kg_m3": 8000.0,
+      "total_thickness_retaining350carbon_m": 0.18577494692144372,
+      "thickness_added_m": 0.010774946921443734,
+      "peak_phase_flow_kg_m2_s": 0.21945541159557902,
+      "mean_phase_flow_kg_m2_s": 2.9019576186236118e-05,
+      "vapor_peak_velocity_m_s": 75.36259046161402,
+      "vapor_Reynolds": 939.0213230917138,
+      "laminar_vapor_pressure_drop_Pa": 523.5206141771293,
+      "laminar_formula_scope": "Validiflaminarfullydevelopedcontinuumflow; neartransitionthis isareference,notqualifiedloss.",
+      "saturation_temperature_drop_equivalent_K": 2.2386651879415123,
+      "ideal_monatomic_sodium_vapor_sound_speed_scale_m_s": 776.3796691840515,
+      "velocity_over_ideal_sound_scale": 0.09706924775711544,
+      "liquid_return_peak_velocity_m_s": 0.05632231935868798,
+      "uniform_wick_requirements": [
+        {
+          "fine_meniscus_radius_m": 1e-06,
+          "ideal_wetting_capillary_Pa": 270909.93337567063,
+          "minimum_uniform_return_Darcy_permeability_m2": 7.191050348334821e-12,
+          "scope": "Zero contactangle and noextrahead. A uniformwickmustmeet permeabilityandmeniscusradius simultaneously; hierarchicalreturncanseparate them."
+        },
+        {
+          "fine_meniscus_radius_m": 1e-05,
+          "ideal_wetting_capillary_Pa": 27090.99333756706,
+          "minimum_uniform_return_Darcy_permeability_m2": 7.318582117002531e-11,
+          "scope": "Zero contactangle and noextrahead. A uniformwickmustmeet permeabilityandmeniscusradius simultaneously; hierarchicalreturncanseparate them."
+        },
+        {
+          "fine_meniscus_radius_m": 0.0001,
+          "ideal_wetting_capillary_Pa": 2709.0993337567056,
+          "minimum_uniform_return_Darcy_permeability_m2": 8.896327047179355e-10,
+          "scope": "Zero contactangle and noextrahead. A uniformwickmustmeet permeabilityandmeniscusradius simultaneously; hierarchicalreturncanseparate them."
+        }
+      ],
+      "hierarchical_return_example": {
+        "artery_radius_m": 0.002,
+        "arterial_liquid_pressure_drop_Pa": 3.888724615347082,
+        "fine_wet_area_fraction": 0.5,
+        "fine_layer_thickness_m": 0.0001,
+        "fine_Darcy_permeability_m2_scenario": 1e-12,
+        "fine_layer_pressure_drop_Pa": 10.466224536162718,
+        "total_vapor_plus_liquid_pressure_drop_Pa": 537.8755633286391,
+        "scope": "Specifiedseparatedreturn/evaporationgeometry; notamodelofentrainment,boiling,wettingorcondenserinterface."
+      },
+      "added_inventory_kg_m2": {
+        "wall": 1.4861995753715498,
+        "wick_solid": 2.9723991507430996,
+        "liquid": 0.7238572186836517,
+        "vapor": 0.0005409755316407039,
+        "total": 5.182996920329941
+      },
+      "thinwall_hoop_stress_Pa_by_T": {
+        "1000.0": 1921854.54369265,
+        "1100.0": 5793058.870825187,
+        "1200.0": 14466274.513230873
+      },
+      "evaporator_local_flux_W_m2_by_area_fraction": {
+        "0.05": 17623015.69952442,
+        "0.2": 4405753.924881105,
+        "1.0": 881150.784976221
+      }
+    }
+  ],
+  "checks_passed": 3,
+  "checks": [
+    "carbon_mass",
+    "carbon_mass",
+    "positive_properties"
+  ],
+  "limits": [
+    "Vaporflowisaverysmallpartofthefullthermalresistance; thisdoesnotestablishtheoverallk933transientresponse.",
+    "Fineevaporatorandcondenserthermalcontacts,wickdryout,entrainment,boiling,freeze/startup,corrosion,gasgeneration andshockresponse requiretheirownqualification.",
+    "Thewall/wickdensity is aninventoryscenario,notaselectedqualifiedNa-facingalloy.",
+    "Fullcarbonmassretentiondoesnotpreserveaphotontransportmodelifchannelscreatecontinuouslowdensitypaths; blind/staggeredgeometryorcoupledtransportmustbechecked.",
+    "TheNa loop issealedfromcatchermaterialandgasrecovery; noashorHHe isroutedthroughit.",
+    "Promptmicrosecondheatmustbufferlocallybeforephasecirculation; onlymaterial/delayedpeak isusedhere."
+  ]
+}

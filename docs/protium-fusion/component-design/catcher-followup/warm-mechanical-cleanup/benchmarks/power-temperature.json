@@ -1,0 +1,67 @@
+{
+  "schema": "warm-pump-power-temperature-benchmarks-v1",
+  "retrieved_date": "2026-10-31",
+  "scope": "Official manufacturer specifications and nominal aperture normalization; no prediction of 1000 K hardware losses.",
+  "preserved_benchmark_results_sha256": "b3814922eff794fc88345cc5ca23dcb915c6a34bba40c88ef6ba1eccb86e73cf",
+  "sources": {
+    "pfeiffer_manual": "https://www.pfeiffervacuum.com/de/assets/123614/1/Instruction%20Manual%20HiPace%20700%20H%20with%20TC%20400_DE_de%2CEN_en.pdf",
+    "edwards_product": "https://us.my.edwardsvacuum.com/en_US/USD/Catalog/Pumps/Turbomolecular-Pumps-Mechanical/nEXT-Pumps/nEXT85/p/B8G410B01",
+    "edwards_manual": "https://us.my.edwardsvacuum.com/medias/B8G000880-Instructions.pdf?attachment=true&context=bWFzdGVyfHJvb3R8Mjc0NzAxNnxhcHBsaWNhdGlvbi9wZGZ8YUdOakwyZzFZUzh4TVRneU56ZzROakEzTXpRME9UUXZRamhITURBd09EZ3dJQzBnU1c1emRISjFZM1JwYjI1ekxuQmtaZ3w2M2NkMjBlNGQ0NjRhNGEzMzAxYWE5MTU2ZjY2NGE1MDNmMGY2YzkwYjc3MjNmMTdlODk0MDM5YThkMmVkMWVi"
+  },
+  "models": {
+    "HiPace700H": {
+      "power_at_ultimate_W": null,
+      "maximum_power_consumption_W": 420,
+      "supply_V": 48,
+      "maximum_rotor_temperature_C": 90,
+      "maximum_HV_flange_bakeout_temperature_C": 120,
+      "ambient_air_cooled_C": [
+        5,
+        35
+      ],
+      "ambient_water_cooled_C": [
+        5,
+        40
+      ],
+      "maximum_incident_thermal_power_W": 4.2,
+      "nominal_aperture_m2": 0.020106192982974676,
+      "maximum_power_per_nominal_inlet_W_m2": 20889.086280811265,
+      "source_locations": "English manual printed pages79 and121; Table2 and Table20. No ultimate-pressure power identified."
+    },
+    "nEXT85H_ISO63_B8G410B01": {
+      "power_at_ultimate_W": 20,
+      "total_rated_power_W": 80,
+      "supply_V_options": [
+        24,
+        48
+      ],
+      "controller_adjustable_maximum_power_limit_W": [
+        50,
+        120
+      ],
+      "controller_default_maximum_power_limit_W": 80,
+      "maximum_inlet_flange_temperature_C": 120,
+      "ambient_C": [
+        5,
+        40
+      ],
+      "cooling_water_C": [
+        10,
+        40
+      ],
+      "surface_temperature_above_which_manual_requests_more_cooling_C": 60,
+      "explicit_continuous_rotor_temperature_limit_C": null,
+      "nominal_aperture_m2": 0.0031172453105244723,
+      "ultimate_power_per_nominal_inlet_W_m2": 6415.921112296109,
+      "rated_power_per_nominal_inlet_W_m2": 25663.684449184435,
+      "source_locations": "Official product Performance Data and Environment; official B8G000880_H manual printed pages20,56,64. Analogue0\u2013100 C display range is not an operating limit."
+    }
+  },
+  "normalization_formula": "A = pi * (nominal_diameter/2)^2; quoted power/A. Diameter includes potential hub/blade blockage and is an explicit nominal approximation.",
+  "interpretation": [
+    "Ultimate-pressure power is a complete pump specification; its bearing, motor and controller partition is not given.",
+    "Rated/maximum power and supply voltage cannot be substituted for ultimate-pressure consumption.",
+    "These small-device area normalizations are comparisons, not similarity laws for enlarged future machines.",
+    "The proposed 1000 K first stage requires a new thermal, rotor, bearing and clearance design."
+  ]
+}

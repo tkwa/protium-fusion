@@ -1,0 +1,24 @@
+{
+  "reviewer": "independent plant_redteam agent",
+  "scope": "Read-only independent recomputation of all archived production histories and heat/source partition algebra",
+  "production_histories_recomputed": 605000,
+  "maximum_mean_or_SE_absolute_difference": 5.56e-17,
+  "maximum_event_energy_relative_error": 5.65e-11,
+  "independent_component_identities": 110,
+  "maximum_identity_absolute_error": 2.35e-17,
+  "findings": [
+    "BroadD uplift fits within available bulk kinetic energy; fixed totalH and leakage subtraction do not add energy twice.",
+    "EM20 to all-to-cold difference equals the saved prompt energy previously retained.",
+    "No numerical or bookkeeping issue found. Sampling intervals do not represent source/geometry/model credibility."
+  ],
+  "native_code_review": {
+    "reviewer": "independent plant_redteam agent",
+    "findings": [
+      "Native spherical shell retains inward exits for true cavity return; only outer final positions are lost.",
+      "Native energy deposition and escape are separate. PostUserTrackingAction follows alive and stop-but-alive tracking loop.",
+      "Electron K and positron K+2mec2 are consistent calorimetric escape accounts; independent event closure confirms.",
+      "README states static reduced geometry, source positions/angles, photonuclear omission, two-gamma approximation and sampling-only uncertainty."
+    ],
+    "verdict": "No obvious native scoring, geometry or rest-energy accounting issue. Source-response assumption remains conditional."
+  }
+}

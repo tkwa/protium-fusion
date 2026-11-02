@@ -1,0 +1,89 @@
+{
+  "scope": "Real Geant4 option4 electromagnetic receiver transport, native energy scorers.\n\nNo photonuclear physics. Closed cavity returns are tracked by native geometry.\nEscaped calorimetric energy is K for e- and K+2mec2 for e+, preserving positron\nannihilation potential. Single-purpose process exits after validation/persistence,\navoiding the observed Python/Geant4 destruction-order crash after completed runs.\nDefault disables the defective Geant4 11.4.1 in-flight3gamma branch, retaining\nstandard2gamma annihilation. This approximation and its sensitivity are explicit.\nCuts are applied through Geant4 UI because inherited Python physics-list methods\nmisaddress the base object in this wheel; actual material-couple tables are logged.\n",
+  "geant4_version": "$Name: geant4-11-04-patch-01 [MT]$",
+  "geant4_version_number": 1141,
+  "binding_version": "0.1.3",
+  "parameters": {
+    "three_gamma": false,
+    "particle": "gamma",
+    "normal_exit": false,
+    "sigma": 200.0,
+    "radius_m": 1000000.0,
+    "depth_um": 0.0,
+    "mode": "radial",
+    "energies": "20",
+    "histories": 5000,
+    "cut_um": 10.0,
+    "seed": 681923,
+    "out": "/home/tkwa/src/protium-fusion/output/coupled-photon-extension/S200-prompt20.json",
+    "data": "/home/tkwa/src/protium-fusion/output/coupled-photon-transport/data"
+  },
+  "thickness_m": 0.1,
+  "graphite_density_kg_m3": 2000,
+  "surface_tolerance_m": 1e-12,
+  "radial_tolerance_m": 1e-12,
+  "radius_ulp_m": 1.1920928955078125e-10,
+  "requested_cut_m": 9.999999999999999e-06,
+  "cut_configuration": "Geant4 UI /run/setCut after Initialize; actual built material-couple table printed by /run/dumpCouples and verified by campaign script",
+  "production_thresholds_MeV": {
+    "gamma": 9.999999999999999e-05,
+    "e-": 0.031534571033653945,
+    "e+": 0.031228732176513056
+  },
+  "lowest_electron_energy_MeV": 9.999999999999999e-05,
+  "source_surface_zero_offset_m": -1e-06,
+  "energy_closure_policy": "max event residual<1e-4 and mean absolute residual<1e-7 of calorimetric input; no event renormalization. A documented S250 pair-recoil boundary step contributes217eV excess to one of20000 5.657MeV events, ensemble relative1.92e-9.",
+  "electron_rest_energy_MeV": 0.51099891,
+  "physics": "G4EmStandardPhysics_option4 with explicit /process/em/3GammaAnnihilationOnFly setting;default false uses standard two-gamma in-flight model;at-rest Allison model unchanged; fluorescence+Auger+deexcitationIgnoreCut;100eV lowest electron; no photonuclear/hadronic processes",
+  "scoring": "Native G4PSEnergyDeposit for hot graphite and vacuum; Python tracking callbacks only tally final outer escapes and residuals. World boundary10m outside receiver.",
+  "secondary_creator_counts": {
+    "primary": 5000,
+    "conv": 1755,
+    "annihil": 984,
+    "compt": 20097,
+    "eIoni": 29037,
+    "eBrem": 3644,
+    "phot": 5624
+  },
+  "particle_track_counts": {
+    "gamma": 9637,
+    "C12": 497,
+    "e+": 585,
+    "e-": 55414,
+    "C13": 8
+  },
+  "records": [
+    {
+      "incident_energy_MeV": 20.0,
+      "incident_particle": "gamma",
+      "incident_calorimetric_energy_MeV": 20.0,
+      "histories": 5000,
+      "deposited_fraction": 0.18728845761401894,
+      "leakage_fraction": 0.8127115423846751,
+      "sampling_standard_error": 0.004912453596144484,
+      "sampling_80pct_normal_interval": [
+        0.8064159797856338,
+        0.8190071049837164
+      ],
+      "max_abs_event_energy_residual_MeV": 1.0798082428209455e-09,
+      "mean_energy_residual_MeV": -2.611837643939907e-11,
+      "mean_abs_energy_residual_MeV": 2.6857622259512936e-11,
+      "events_above_strict_relative_residual1e_7": 0,
+      "max_steps": 575,
+      "mean_steps": 52.7718,
+      "mean_tracks": 13.2282,
+      "residual_inside_kinetic_MeV": 0.0,
+      "vacuum_deposit_MeV": 1.3997195304502768e-14,
+      "escape_by_particle_MeV": {
+        "gamma": 77443.30968208154,
+        "e-": 3083.0633505282212,
+        "e+": 744.7812058576718
+      },
+      "seconds": 2.0072645619511604
+    }
+  ],
+  "elapsed_seconds": 2.031573900952935,
+  "process_exit": "All requested histories, energy checks and output persistence completed before os._exit to avoid observed binding destruction-order fault. No physics steps or remaining tracks truncated.",
+  "code_sha256": "f1f95c9c10bb2bea9302639f22e6202bd522ca1206a0ef3e34e6d298510b853e",
+  "archive_note": "Per-event tallies are preserved losslessly in ../events/S200-prompt20.json.gz; original raw file hash is in run-provenance.json."
+}

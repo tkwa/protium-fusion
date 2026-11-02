@@ -1,0 +1,108 @@
+{
+  "stage": "C13",
+  "hydrogen_per_catalyst": 2,
+  "initial_Y": {
+    "p": 0.13333333333333333,
+    "c13": 0.06666666666666667
+  },
+  "duration_s": 7.000357811304867e-05,
+  "physical_duration_s": 7.000357811304867e-05,
+  "contact": {
+    "rho_kg_m3": 4047.811567918975,
+    "T_K": 467802.01379872445,
+    "p": 9351093737871.496,
+    "e": 3466656483.6912246,
+    "s": 36476.34688920513,
+    "q": [
+      3.2170417120985473,
+      0.8387228346157687
+    ],
+    "q_J_kg": 3466656483.522558,
+    "error": 8.354819520921761e-10
+  },
+  "target_reference_T_factor": 1.0,
+  "constant_contact_entropy_J_kg_K": 36476.34688920778,
+  "temperature_ratio_mass_q10_q50_q90": [
+    0.9966331512182025,
+    0.9983886146794152,
+    1.0021476492232932
+  ],
+  "temperature_ratio_minmax": [
+    0.9965228552769855,
+    1.0322282599194381
+  ],
+  "old_specific_internal_J_kg": 235253879803.3089,
+  "new_specific_internal_J_kg": 234937234953.007,
+  "old_specific_kinetic_J_kg": 2707579716537.955,
+  "velocity_scale": 1.0000584720721608,
+  "prepared_energy_relative_error": 2.220446049250313e-16,
+  "contact_heat_J": 3.916588749510336e+22,
+  "contact_heat_fraction_prepared": 0.0011767654071716993,
+  "transverse_collision_speed_each_stream_m_s": 83266.51768295055,
+  "pair_half_angle_degrees_mass_q10_q50_q90": [
+    1.5400467335102546,
+    2.0605981154691344,
+    2.8767501415939822
+  ],
+  "pair_half_angle_degrees_minmax": [
+    1.1944492339714095,
+    5.2631924949303555
+  ],
+  "postshock_rarefaction_mass_fraction": 0.0,
+  "cold_reference": {
+    "composition": "C13H2",
+    "rho_kg_m3": 1011.6428571428571,
+    "T_K": 300,
+    "bulk_modulus_Pa": 2000000000.0,
+    "density_scope": "C12H2 reference944.2 multiplied15/14; isotope volume assumption; condensed bulk FEOS, no capsule void/shell model"
+  },
+  "rate_update": {
+    "revision": "luna2023-public-repository-2026-10-31",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged."
+  },
+  "FEOS_library_sha256": "678308b40e53362f0fc05c95444ba3a45e6c523b7702a84db1cbcd48c3d64bb2",
+  "FEOS_material_database_sha256": "051bf2f582b2d236a5eb0f124def2113ad7021bbfb57ba95395d11b5b2f447c6",
+  "profile_source": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/source-aware128/C13-H2-fixed_energy-z128-k0p001-t1-rates-carbon-median.initial.json",
+  "profile_sha256": "fab6a701a6f38668103fce7dc5469644034501d14d8ae13d6b040c882fca17b5",
+  "baseline_source": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/b2-completion/regression-C13-compression_cap.json",
+  "baseline_sha256": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+  "nominal_input_source": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/source-aware128/C13-H2-fixed_energy-z128-k0p001-t1-rates-carbon-median.inputs.json",
+  "nominal_input_sha256": "20d55e3697159032e1e1fef4a4f61dcdfdcc5954bf44811479f1f7cb99fc35f4",
+  "nominal_record_expected": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/source-aware128/C13-H2-fixed_energy-z128-k0p001-t1-rates-carbon-median.json",
+  "zones": 128,
+  "initial_energy_J": 3.3282663865210615e+25,
+  "code_sha256": "ecb32caf891788b5be3fe7c2aab1921435704cb3d3925b0addc77de094ae258f",
+  "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+  "radial_module_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+  "scope": "Controlled collision-energy geometry, not temperature clipping. FEOSdefinesonecontactshockentropy andeachparcelmapsisentropicallytooriginalhotdensity. Anglesuseanexplicitlocalcoldenergyallocationequaltohotinternal+radialKE; actualpressurework/3Dgeometryremainsunresolved. Noexternalultrafastheateroradditionalinputenergy. Reflective/structuralcapsuleskinandporosityarenotincluded;actualskin-adjustedH/Cisaseparatesmallinputcorrection."
+}

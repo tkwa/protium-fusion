@@ -1,0 +1,34 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+CUT_COMMAND None
+RESULT {"incident_energy_MeV": 2.5438523, "incident_particle": "gamma", "incident_calorimetric_energy_MeV": 2.5438523, "histories": 20000, "deposited_fraction": 0.8247006455808031, "leakage_fraction": 0.17529935441920466, "sampling_standard_error": 0.0022889650967407404, "sampling_80pct_normal_interval": [0.17236592761495723, 0.1782327812234521], "max_abs_event_energy_residual_MeV": 9.173106718662893e-12, "mean_energy_residual_MeV": 1.9928103611732694e-14, "mean_abs_energy_residual_MeV": 2.7768365384872594e-14, "events_above_strict_relative_residual1e_7": 0, "max_steps": 467, "mean_steps": 74.6014, "mean_tracks": 20.66895, "residual_inside_kinetic_MeV": 0.0, "vacuum_deposit_MeV": 1.5034845131884366e-13, "escape_by_particle_MeV": {"gamma": 8852.567141202866, "e-": 66.14617735336188, "e+": 0}, "seconds": 7.763991381041706}
+RESULT {"incident_energy_MeV": 5.657344, "incident_particle": "gamma", "incident_calorimetric_energy_MeV": 5.657344, "histories": 20000, "deposited_fraction": 0.7366436120659006, "leakage_fraction": 0.2633563877093663, "sampling_standard_error": 0.0027858523051267855, "sampling_80pct_normal_interval": [0.2597861743250864, 0.26692660109364624], "max_abs_event_energy_residual_MeV": 7.696954185121285e-11, "mean_energy_residual_MeV": 9.273510848117894e-14, "mean_abs_energy_residual_MeV": 5.818159731774131e-13, "events_above_strict_relative_residual1e_7": 0, "max_steps": 939, "mean_steps": 98.30895, "mean_tracks": 25.5099, "residual_inside_kinetic_MeV": 0.0, "vacuum_deposit_MeV": 2.542970666036465e-05, "escape_by_particle_MeV": {"gamma": 29294.798924836647, "e-": 473.441590905602, "e+": 29.713081641049634}, "seconds": 8.697493783896789}
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_Galactic
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  100 eV     e-  100 eV     e+  100 eV  proton 1 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : ReceiverGraphite
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  100 eV     e-  31.5346 keV    e+  31.2287 keV proton 1 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+DUMP_COMMAND None
+COMPLETE /home/tkwa/src/protium-fusion/output/coupled-photon-extension/S350-broad.json

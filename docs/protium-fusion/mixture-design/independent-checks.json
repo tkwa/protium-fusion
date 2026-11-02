@@ -1,0 +1,43 @@
+{
+  "co_shifted_kernel_bit_identical_to_current": true,
+  "independent_table_nodes_max_relative": 1.432187701766452e-14,
+  "paired_equilibrium_ratio_max_relative": 2.220446049250313e-16,
+  "metadata": {
+    "revision": "luna2023-public-repository-2026-10-31",
+    "mode": "updated",
+    "quantile": {
+      "C12_p_to_N13_reaclib": "plus1sigma",
+      "C13_p_to_N14_reaclib": "minus1sigma"
+    },
+    "quantile_interpretation": "Independent named per-reaction curve choices; pointwise source sigma labels, not a joint posterior sample.",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "7f622ff32c2991398d9e77b6740e1b3ab3b05febcaf4b998ea62b390e1ce1b32",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged."
+  }
+}

@@ -1,0 +1,1316 @@
+{
+  "scope": "Narrow regression of A,B1,C13 and the3m helium factory only. Frozen hot inflows,64zones,full network,radiation and4sound times retained. Corrected continuous compression-cap scalar viscosity; no physical driver or multidimensional validation.",
+  "legacy_tolerances": {
+    "rtol": 1e-06,
+    "atol": 1e-11
+  },
+  "corrected_tolerances": {
+    "rtol": 1e-07,
+    "atol": 1e-12
+  },
+  "limitations": [
+    "The continuous cap limits the old radial-gradient viscosity when local volume compression is weaker; it preserves homologous compression and the planar-shock limit. This changes the physical approximation in addition to eliminating negative expansion heating.",
+    "Old and new integrations have different tolerances and the corrected run carries two passive diagnostic state variables. Changes are not a strict same-tolerance one-line subtraction.",
+    "Stored trace checks sample the history; nonnegative viscous heat also follows algebraically from the corrected compression measure.",
+    "The helium factory remains a small positive carbon yield; a successful numerical integration does not establish favorable complete-cycle economics."
+  ],
+  "legacy_sign_audit": [
+    {
+      "stage": "A",
+      "trace": "/tmp/protium-small-stages/scaled-hot-A-64-R30.npz",
+      "trace_sha256": "8d5dd9bfe88d01d26a44015d85c35b1afc701bd3be00b68694db0890a3070cd4",
+      "stored_snapshots": 160,
+      "snapshots_with_negative_viscous_heat": 64,
+      "maximum_mass_fraction_with_negative_viscous_heat": 0.0799560546875,
+      "final_mass_fraction_with_negative_viscous_heat": 0.0,
+      "scope": "Sign-only diagnostic on saved legacy trace; no integration of erroneous heat."
+    },
+    {
+      "stage": "B1",
+      "trace": "/tmp/protium-small-stages/scaled-hot-B1-64-R30.npz",
+      "trace_sha256": "20a4b83492d777fea915672201ae44a0ab6afddb78521b9d9424446b2e43e778",
+      "stored_snapshots": 160,
+      "snapshots_with_negative_viscous_heat": 71,
+      "maximum_mass_fraction_with_negative_viscous_heat": 0.048305511474609375,
+      "final_mass_fraction_with_negative_viscous_heat": 0.0,
+      "scope": "Sign-only diagnostic on saved legacy trace; no integration of erroneous heat."
+    },
+    {
+      "stage": "C13",
+      "trace": "/tmp/protium-small-stages/scaled-hot-C13-64-R30.npz",
+      "trace_sha256": "35a344f550a3a3fb8c0704a13cae5a971d1aa8913bde2d25b71ca02893253a58",
+      "stored_snapshots": 160,
+      "snapshots_with_negative_viscous_heat": 61,
+      "maximum_mass_fraction_with_negative_viscous_heat": 0.046146392822265625,
+      "final_mass_fraction_with_negative_viscous_heat": 0.0,
+      "scope": "Sign-only diagnostic on saved legacy trace; no integration of erroneous heat."
+    },
+    {
+      "stage": "He",
+      "trace": "/tmp/protium-small-stages/scaled-hot-He-64-R3.npz",
+      "trace_sha256": "5163f3c2c7a29785bfbe9b83dd20751f9bcac13a02bbd32c0dca106dcfc2f74a",
+      "stored_snapshots": 160,
+      "snapshots_with_negative_viscous_heat": 59,
+      "maximum_mass_fraction_with_negative_viscous_heat": 0.046146392822265625,
+      "final_mass_fraction_with_negative_viscous_heat": 0.0,
+      "scope": "Sign-only diagnostic on saved legacy trace; no integration of erroneous heat."
+    }
+  ],
+  "stages": [
+    {
+      "stage": "A",
+      "meaning": "",
+      "success": true,
+      "termination_reason": "final_time",
+      "values": {
+        "initial_energy_J": {
+          "legacy": 3.4931631665172685e+25,
+          "corrected": 3.4931631665172685e+25,
+          "relative_change": 0.0
+        },
+        "nuclear_energy_J": {
+          "legacy": 2.857981044923336e+26,
+          "corrected": 2.8631152167818934e+26,
+          "relative_change": 0.0017964331385882382
+        },
+        "integrated_nuclear_energy_J": {
+          "legacy": null,
+          "corrected": 2.8631152167906163e+26,
+          "relative_change": null
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "legacy": 8.181641273025248,
+          "corrected": 8.196339044267944,
+          "relative_change": 0.001796433105806683
+        },
+        "desired_product_per_initial_catalyst": {
+          "legacy": 0.5383999928290476,
+          "corrected": 0.5393671923506786,
+          "relative_change": 0.0017964330135831208
+        },
+        "final_internal_J": {
+          "legacy": 1.663282124876786e+25,
+          "corrected": 1.7124028145268731e+25,
+          "relative_change": 0.029532385946687167
+        },
+        "final_kinetic_J": {
+          "legacy": 3.040368569081941e+26,
+          "corrected": 3.0384816564650838e+26,
+          "relative_change": -0.0006206196959294141
+        },
+        "weak_energy_escaped_upper_J": {
+          "legacy": 2.512644111957703e+19,
+          "corrected": 2.5180948035429274e+19,
+          "relative_change": 0.0021693050596718333
+        },
+        "radiation_escaped_J": {
+          "legacy": 6.007686052437466e+22,
+          "corrected": 2.70929665516503e+23,
+          "relative_change": 3.509717437824171
+        },
+        "peak_temperature_K": {
+          "legacy": 1149051043.9435542,
+          "corrected": 1144863831.5682194,
+          "relative_change": -0.0036440612428880748
+        },
+        "energy_residual_fraction_initial": {
+          "legacy": 1.2592146160131472e-06,
+          "corrected": -1.3469512207017522e-07,
+          "relative_change": -1.1069675656216882
+        },
+        "elapsed_s": {
+          "legacy": 6.839495465719224e-05,
+          "corrected": 6.839495465719224e-05,
+          "relative_change": 0.0
+        }
+      },
+      "products": {
+        "n": {
+          "legacy": 4.586073676218874e-25,
+          "corrected": 6.961504288782119e-21,
+          "difference": 6.961045681414497e-21
+        },
+        "p": {
+          "legacy": 0.03077332158460661,
+          "corrected": 0.030708841591424518,
+          "difference": -6.447999318209136e-05
+        },
+        "he4": {
+          "legacy": 1.1140577804262322e-08,
+          "corrected": 1.1164416749471605e-08,
+          "difference": 2.383894520928243e-11
+        },
+        "c12": {
+          "legacy": 2.533236981168562e-08,
+          "corrected": 2.539567299645374e-08,
+          "difference": 6.330318476812018e-11
+        },
+        "c13": {
+          "legacy": 1.4239309161398604e-16,
+          "corrected": 1.4263591633460127e-16,
+          "difference": 2.428247206152362e-19
+        },
+        "n13": {
+          "legacy": 3.478710000222116e-09,
+          "corrected": 3.483811442685118e-09,
+          "difference": 5.101442463001946e-12
+        },
+        "n14": {
+          "legacy": 0.430826556312516,
+          "corrected": 0.4299238365050852,
+          "difference": -0.0009027198074307852
+        },
+        "n15": {
+          "legacy": 8.362406711965596e-08,
+          "corrected": 8.38067070856232e-08,
+          "difference": 1.8263996596723537e-10
+        },
+        "o14": {
+          "legacy": 5.692519429379576e-09,
+          "corrected": 5.696609193394453e-09,
+          "difference": 4.089764014877336e-12
+        },
+        "o15": {
+          "legacy": 0.5383999928290476,
+          "corrected": 0.5393671923506785,
+          "difference": 0.0009671995216309348
+        },
+        "o16": {
+          "legacy": 3.909905301354305e-12,
+          "corrected": 3.91762725214993e-12,
+          "difference": 7.721950795625173e-15
+        },
+        "o17": {
+          "legacy": 5.738566015346309e-17,
+          "corrected": 5.754172419839286e-17,
+          "difference": 1.560640449297679e-19
+        },
+        "o18": {
+          "legacy": 1.6688540407240475e-23,
+          "corrected": 1.673883072143277e-23,
+          "difference": 5.029031419229557e-26
+        },
+        "f17": {
+          "legacy": 1.505937344092409e-15,
+          "corrected": 1.5047888041209918e-15,
+          "difference": -1.148539971417297e-18
+        },
+        "f18": {
+          "legacy": 5.283825408817811e-15,
+          "corrected": 5.292251505191039e-15,
+          "difference": 8.4260963732277e-18
+        },
+        "f19": {
+          "legacy": 1.9833585855704483e-18,
+          "corrected": 1.9859572451961608e-18,
+          "difference": 2.5986596257124413e-21
+        },
+        "ne18": {
+          "legacy": 8.847795357892778e-18,
+          "corrected": 8.784670015482286e-18,
+          "difference": -6.312534241049259e-20
+        },
+        "ne19": {
+          "legacy": 1.669053763004853e-12,
+          "corrected": 1.6704498263935305e-12,
+          "difference": 1.3960633886774552e-15
+        },
+        "ne20": {
+          "legacy": 3.895664490135896e-22,
+          "corrected": 3.94960528056557e-22,
+          "difference": 5.3940790429674194e-24
+        },
+        "ne21": {
+          "legacy": -3.3151033071705995e-25,
+          "corrected": 7.178109180944434e-26,
+          "difference": 4.032914225265043e-25
+        },
+        "ne22": {
+          "legacy": 9.580804291440645e-24,
+          "corrected": 1.720210635224387e-26,
+          "difference": -9.5636021850884e-24
+        },
+        "na21": {
+          "legacy": 1.469675244899956e-24,
+          "corrected": 6.246597901252224e-25,
+          "difference": -8.450154547747337e-25
+        },
+        "na22": {
+          "legacy": 1.3486357505125272e-23,
+          "corrected": 6.899265204408746e-24,
+          "difference": -6.587092300716526e-24
+        },
+        "na23": {
+          "legacy": 1.621386282197768e-24,
+          "corrected": -1.2081540477901867e-25,
+          "difference": -1.7422016869767866e-24
+        },
+        "mg22": {
+          "legacy": 2.1486399302738084e-26,
+          "corrected": 3.9308584447570445e-26,
+          "difference": 1.782218514483236e-26
+        },
+        "mg23": {
+          "legacy": 1.0909383067250483e-23,
+          "corrected": 6.82349045705947e-24,
+          "difference": -4.085892610191014e-24
+        },
+        "mg24": {
+          "legacy": 1.9703477846576207e-24,
+          "corrected": 5.798174321715929e-28,
+          "difference": -1.969767967225449e-24
+        }
+      },
+      "inputs": {
+        "stage": "A",
+        "radius_m": 30,
+        "zones": 64,
+        "rtol": 1e-07,
+        "atol": 1e-12,
+        "mode": "compression_cap",
+        "final_time_units": 4,
+        "radiation": true,
+        "trace_samples": 120,
+        "original_profile_loaded_exactly": true,
+        "source_hashes": {
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression_runner.py": "f44e65a6d9235dfa1e083660acda7d1d655c4cbd608024841e16469ffc7ebc4e",
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/model/radial_completion.py": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/radial_pulse.py": "bdc92a8652d0f646a72541e4f33b7825df6a98070d309adc58c97af20eede53e",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-A-64-R30.json": "4d2d097f7840c0bfbe7d1f2fbcc7eefcaf32c73bb86220acc7e7b08955f1e51e",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-A-64-R30-inputs.json": "adfb055d39f09ca643cd21f31e4af5c0a4163b2692551fbe761489b6cdecc33b"
+        }
+      },
+      "corrected_metadata_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.json",
+      "corrected_trace_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.npz"
+    },
+    {
+      "stage": "B1",
+      "meaning": "",
+      "success": true,
+      "termination_reason": "final_time",
+      "values": {
+        "initial_energy_J": {
+          "legacy": 3.195016782566005e+23,
+          "corrected": 3.195016782566005e+23,
+          "relative_change": 0.0
+        },
+        "nuclear_energy_J": {
+          "legacy": 2.0343326710214145e+24,
+          "corrected": 2.039050284919667e+24,
+          "relative_change": 0.002318998247166526
+        },
+        "integrated_nuclear_energy_J": {
+          "legacy": null,
+          "corrected": 2.0390502849232286e+24,
+          "relative_change": null
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "legacy": 6.3672049615479,
+          "corrected": 6.381970498692948,
+          "relative_change": 0.002318998247145876
+        },
+        "desired_product_per_initial_catalyst": {
+          "legacy": 0.6004770494359101,
+          "corrected": 0.6018693226514725,
+          "relative_change": 0.002318611871794829
+        },
+        "final_internal_J": {
+          "legacy": 1.2630426058995288e+23,
+          "corrected": 1.2626190130889958e+23,
+          "relative_change": -0.00033537491811796993
+        },
+        "final_kinetic_J": {
+          "legacy": 2.1187687651054175e+24,
+          "corrected": 2.0957580320356454e+24,
+          "relative_change": -0.010860426795383349
+        },
+        "weak_energy_escaped_upper_J": {
+          "legacy": 3107131215969.6284,
+          "corrected": 3156388809524.735,
+          "relative_change": 0.015853078010332755
+        },
+        "radiation_escaped_J": {
+          "legacy": 1.0876326958797349e+23,
+          "corrected": 1.3653241812106099e+23,
+          "relative_change": 0.2553173386409311
+        },
+        "peak_temperature_K": {
+          "legacy": 457495001.9094029,
+          "corrected": 459603563.8390775,
+          "relative_change": 0.0046089288863797595
+        },
+        "energy_residual_fraction_initial": {
+          "legacy": 6.090761232875677e-06,
+          "corrected": 1.21530659042112e-06,
+          "relative_change": -0.8004672086206
+        },
+        "elapsed_s": {
+          "legacy": 8.227795789289296e-05,
+          "corrected": 8.227795789289296e-05,
+          "relative_change": 0.0
+        }
+      },
+      "products": {
+        "n": {
+          "legacy": 6.452070505880598e-23,
+          "corrected": 6.736579582736851e-23,
+          "difference": 2.845090768562525e-24
+        },
+        "p": {
+          "legacy": 0.02496056667424698,
+          "corrected": 0.02487347751356016,
+          "difference": -8.708916068682002e-05
+        },
+        "he4": {
+          "legacy": 0.1501293865569578,
+          "corrected": 0.1504776009520018,
+          "difference": 0.00034821439504401086
+        },
+        "c12": {
+          "legacy": 0.4503577870769325,
+          "corrected": 0.4514019919886044,
+          "difference": 0.0010442049116718977
+        },
+        "c13": {
+          "legacy": 1.6666661927569128e-12,
+          "corrected": 1.6930817376342544e-12,
+          "difference": 2.641554487734161e-14
+        },
+        "n13": {
+          "legacy": 3.290331544511833e-05,
+          "corrected": 3.337810082907882e-05,
+          "difference": 4.747853839604923e-07
+        },
+        "n14": {
+          "legacy": 1.6367553858507967e-16,
+          "corrected": 1.6926044914320583e-16,
+          "difference": 5.584910558126153e-18
+        },
+        "n15": {
+          "legacy": 0.37444646629985595,
+          "corrected": 0.37314067674513096,
+          "difference": -0.0013057895547249898
+        },
+        "o14": {
+          "legacy": 3.7715539519783677e-10,
+          "corrected": 3.8975992674659655e-10,
+          "difference": 1.2604531548759786e-11
+        },
+        "o15": {
+          "legacy": 4.331840853084272e-22,
+          "corrected": 4.468232149492824e-22,
+          "difference": 1.3639129640855127e-23
+        },
+        "o16": {
+          "legacy": 7.28896179147685e-05,
+          "corrected": 7.287422704941076e-05,
+          "difference": -1.5390865357745314e-08
+        },
+        "o17": {
+          "legacy": 2.1104924737247138e-17,
+          "corrected": 2.1266969905171035e-17,
+          "difference": 1.620451679238972e-19
+        },
+        "o18": {
+          "legacy": -4.427982057009581e-29,
+          "corrected": 1.6115879256839728e-31,
+          "difference": 4.4440979362664204e-29
+        },
+        "f17": {
+          "legacy": 4.491028347507216e-11,
+          "corrected": 4.519082908119285e-11,
+          "difference": 2.805456061206934e-13
+        },
+        "f18": {
+          "legacy": 3.0705632563349286e-23,
+          "corrected": 3.153285771162657e-23,
+          "difference": 8.272251482772826e-25
+        },
+        "f19": {
+          "legacy": 3.491426034007694e-11,
+          "corrected": 3.618033425181267e-11,
+          "difference": 1.2660739117357327e-12
+        },
+        "ne18": {
+          "legacy": 1.6822801778591468e-18,
+          "corrected": 1.7257315911441928e-18,
+          "difference": 4.3451413285046035e-20
+        },
+        "ne19": {
+          "legacy": -1.2953623406582334e-26,
+          "corrected": 1.0875651794062634e-30,
+          "difference": 1.295471097176174e-26
+        },
+        "ne20": {
+          "legacy": 1.282442522034896e-16,
+          "corrected": 1.347561384077344e-16,
+          "difference": 6.511886204244797e-18
+        },
+        "ne21": {
+          "legacy": -1.8362879191940092e-28,
+          "corrected": 9.99675454390295e-30,
+          "difference": 1.9362554646330388e-28
+        },
+        "ne22": {
+          "legacy": 8.629626698669373e-23,
+          "corrected": 9.695478260462405e-23,
+          "difference": 1.0658515617930325e-23
+        },
+        "na21": {
+          "legacy": 3.873864849973169e-24,
+          "corrected": 4.496805819392097e-24,
+          "difference": 6.22940969418928e-25
+        },
+        "na22": {
+          "legacy": -3.3800410118973776e-31,
+          "corrected": 2.297812096620633e-32,
+          "difference": 3.609822221559441e-31
+        },
+        "na23": {
+          "legacy": 4.994100588312752e-25,
+          "corrected": 5.769169073967939e-25,
+          "difference": 7.750684856551876e-26
+        },
+        "mg22": {
+          "legacy": 2.9628628987144704e-29,
+          "corrected": 7.375749755030319e-29,
+          "difference": 4.4128868563158483e-29
+        },
+        "mg23": {
+          "legacy": 3.8028174795768575e-25,
+          "corrected": 2.8384582108616712e-36,
+          "difference": -3.802817479548473e-25
+        },
+        "mg24": {
+          "legacy": 6.457503531967377e-29,
+          "corrected": 7.4327293609922e-29,
+          "difference": 9.752258290248233e-30
+        }
+      },
+      "inputs": {
+        "stage": "B1",
+        "radius_m": 30,
+        "zones": 64,
+        "rtol": 1e-07,
+        "atol": 1e-12,
+        "mode": "compression_cap",
+        "final_time_units": 4,
+        "radiation": true,
+        "trace_samples": 120,
+        "original_profile_loaded_exactly": true,
+        "source_hashes": {
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression_runner.py": "f44e65a6d9235dfa1e083660acda7d1d655c4cbd608024841e16469ffc7ebc4e",
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/model/radial_completion.py": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/radial_pulse.py": "bdc92a8652d0f646a72541e4f33b7825df6a98070d309adc58c97af20eede53e",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-B1-64-R30.json": "6fd3eb320aa5a6f8ac5484f3c1d30dcf128f3d564b63d88f98673d9f0488ab5d",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-B1-64-R30-inputs.json": "cae5b70d063b6870de0ca555536ec52279f99ac3307d88d92d2af685dc8b408a"
+        }
+      },
+      "corrected_metadata_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.json",
+      "corrected_trace_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.npz"
+    },
+    {
+      "stage": "C13",
+      "meaning": "",
+      "success": true,
+      "termination_reason": "final_time",
+      "values": {
+        "initial_energy_J": {
+          "legacy": 3.328266386521061e+25,
+          "corrected": 3.328266386521061e+25,
+          "relative_change": 0.0
+        },
+        "nuclear_energy_J": {
+          "legacy": 5.151978898759275e+26,
+          "corrected": 5.171786210048705e+26,
+          "relative_change": 0.003844602565084232
+        },
+        "integrated_nuclear_energy_J": {
+          "legacy": null,
+          "corrected": 5.171786210065815e+26,
+          "relative_change": null
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "legacy": 15.47946673384714,
+          "corrected": 15.538979131684965,
+          "relative_change": 0.003844602586192236
+        },
+        "desired_product_per_initial_catalyst": {
+          "legacy": 0.813129455657683,
+          "corrected": 0.8166213800066037,
+          "relative_change": 0.004294426089995973
+        },
+        "final_internal_J": {
+          "legacy": 2.9617587610542436e+25,
+          "corrected": 3.0380239617897443e+25,
+          "relative_change": 0.02574997050345651
+        },
+        "final_kinetic_J": {
+          "legacy": 5.185389049655835e+26,
+          "corrected": 5.1933815009397675e+26,
+          "relative_change": 0.0015413407185838057
+        },
+        "weak_energy_escaped_upper_J": {
+          "legacy": 1.7605835981330706e+18,
+          "corrected": 1.7564776257736678e+18,
+          "relative_change": -0.0023321655181592904
+        },
+        "radiation_escaped_J": {
+          "legacy": 3.248527513801352e+23,
+          "corrected": 7.427778151749336e+23,
+          "relative_change": 1.2865061540013008
+        },
+        "peak_temperature_K": {
+          "legacy": 1577332213.461732,
+          "corrected": 1598249832.8532538,
+          "relative_change": 0.013261391108988052
+        },
+        "energy_residual_fraction_initial": {
+          "legacy": 2.3836642243462493e-05,
+          "corrected": -3.4728756910333793e-06,
+          "relative_change": -1.1456948363600103
+        },
+        "elapsed_s": {
+          "legacy": 7.000357811304867e-05,
+          "corrected": 7.000357811304867e-05,
+          "relative_change": 0.0
+        }
+      },
+      "products": {
+        "n": {
+          "legacy": 5.963061697636114e-19,
+          "corrected": 6.132974333157598e-23,
+          "difference": -5.962448400202798e-19
+        },
+        "p": {
+          "legacy": 0.008823614955664647,
+          "corrected": 0.008583372693590104,
+          "difference": -0.0002402422620745425
+        },
+        "he4": {
+          "legacy": 2.316962980175675e-08,
+          "corrected": 2.7441522581127347e-08,
+          "difference": 4.271892779370598e-09
+        },
+        "c12": {
+          "legacy": 1.8744080709532935e-07,
+          "corrected": 2.2680771200317443e-07,
+          "difference": 3.9366904907845076e-08
+        },
+        "c13": {
+          "legacy": 0.14411468259399904,
+          "corrected": 0.14093182672559892,
+          "difference": -0.003182855868400114
+        },
+        "n13": {
+          "legacy": 2.1391582670985675e-08,
+          "corrected": 2.462364916166067e-08,
+          "difference": 3.232066490674996e-09
+        },
+        "n14": {
+          "legacy": 0.813129455657683,
+          "corrected": 0.8166213800066037,
+          "difference": 0.0034919243489206497
+        },
+        "n15": {
+          "legacy": 9.765057304586966e-09,
+          "corrected": 1.024491445355426e-08,
+          "difference": 4.798571489672931e-10
+        },
+        "o14": {
+          "legacy": 2.6302378386110752e-08,
+          "corrected": 3.039419825691439e-08,
+          "difference": 4.091819870803636e-09
+        },
+        "o15": {
+          "legacy": 0.03393185932124579,
+          "corrected": 0.03386295533876932,
+          "difference": -6.890398247647034e-05
+        },
+        "o16": {
+          "legacy": 1.187938136333434e-07,
+          "corrected": 1.4497973933723624e-07,
+          "difference": 2.6185925703892836e-08
+        },
+        "o17": {
+          "legacy": 3.295908788877078e-10,
+          "corrected": 4.0436915598159003e-10,
+          "difference": 7.477827709388224e-11
+        },
+        "o18": {
+          "legacy": 3.169438412572822e-16,
+          "corrected": 4.881822779596586e-16,
+          "difference": 1.7123843670237636e-16
+        },
+        "f17": {
+          "legacy": 6.211426987981313e-14,
+          "corrected": 7.299478513737408e-14,
+          "difference": 1.0880515257560955e-14
+        },
+        "f18": {
+          "legacy": 2.7281230681513385e-10,
+          "corrected": 3.3243951712270903e-10,
+          "difference": 5.962721030757518e-11
+        },
+        "f19": {
+          "legacy": 2.683877894836995e-17,
+          "corrected": 3.7497500150188565e-17,
+          "difference": 1.0658721201818616e-17
+        },
+        "ne18": {
+          "legacy": 1.405486443736908e-15,
+          "corrected": 1.7066957889910446e-15,
+          "difference": 3.012093452541366e-16
+        },
+        "ne19": {
+          "legacy": 5.662372803211726e-12,
+          "corrected": 6.8198731424628e-12,
+          "difference": 1.1575003392510736e-12
+        },
+        "ne20": {
+          "legacy": 4.535026748162934e-17,
+          "corrected": 7.010512181924968e-17,
+          "difference": 2.475485433762034e-17
+        },
+        "ne21": {
+          "legacy": 1.893025650493005e-18,
+          "corrected": 2.8868123336139913e-18,
+          "difference": 9.937866831209864e-19
+        },
+        "ne22": {
+          "legacy": 9.1717355499568e-24,
+          "corrected": 2.6420835956018254e-24,
+          "difference": -6.529651954354974e-24
+        },
+        "na21": {
+          "legacy": 1.4490877192168503e-20,
+          "corrected": 2.4179928019596797e-20,
+          "difference": 9.689050827428294e-21
+        },
+        "na22": {
+          "legacy": 9.276179569446085e-20,
+          "corrected": 1.4452470402096075e-19,
+          "difference": 5.17629083264999e-20
+        },
+        "na23": {
+          "legacy": -1.591089511409167e-24,
+          "corrected": 8.975296857223562e-24,
+          "difference": 1.056638636863273e-23
+        },
+        "mg22": {
+          "legacy": 6.850104415778715e-23,
+          "corrected": 1.2502426049237739e-22,
+          "difference": 5.652321633459023e-23
+        },
+        "mg23": {
+          "legacy": 1.8855079851196475e-21,
+          "corrected": 3.0494421933009543e-21,
+          "difference": 1.1639342081813068e-21
+        },
+        "mg24": {
+          "legacy": 9.435732689604489e-25,
+          "corrected": 1.681216529593287e-24,
+          "difference": 7.37643260632838e-25
+        }
+      },
+      "inputs": {
+        "stage": "C13",
+        "radius_m": 30,
+        "zones": 64,
+        "rtol": 1e-07,
+        "atol": 1e-12,
+        "mode": "compression_cap",
+        "final_time_units": 4,
+        "radiation": true,
+        "trace_samples": 120,
+        "original_profile_loaded_exactly": true,
+        "source_hashes": {
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression_runner.py": "f44e65a6d9235dfa1e083660acda7d1d655c4cbd608024841e16469ffc7ebc4e",
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/model/radial_completion.py": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/radial_pulse.py": "bdc92a8652d0f646a72541e4f33b7825df6a98070d309adc58c97af20eede53e",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-C13-64-R30.json": "0dd0f0ad149940bceca1f4a70b74488942a443f588e2b1d2d3de37792e895ce6",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-C13-64-R30-inputs.json": "8c6657cfb01e800cc54b4cda9af53a957473ddac9b5c3aad68ebd519ac5e3781"
+        }
+      },
+      "corrected_metadata_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.json",
+      "corrected_trace_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.npz"
+    },
+    {
+      "stage": "He",
+      "meaning": "He denotes the helium-4 triple-alpha factory at3m reference radius, not helium-3 fuel",
+      "success": true,
+      "termination_reason": "final_time",
+      "values": {
+        "initial_energy_J": {
+          "legacy": 2.4267143436110173e+25,
+          "corrected": 2.4267143436110173e+25,
+          "relative_change": 0.0
+        },
+        "nuclear_energy_J": {
+          "legacy": 2.3115442320536634e+22,
+          "corrected": 2.3107423308668438e+22,
+          "relative_change": -0.00034691146104837145
+        },
+        "integrated_nuclear_energy_J": {
+          "legacy": null,
+          "corrected": 2.3107423326357546e+22,
+          "relative_change": null
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "legacy": 0.000952540721630228,
+          "corrected": 0.0009522102743367791,
+          "relative_change": -0.00034691146104848247
+        },
+        "desired_product_per_initial_catalyst": {
+          "legacy": 0.0003494121248877003,
+          "corrected": 0.0003492909089014681,
+          "relative_change": -0.00034691408110443245
+        },
+        "final_internal_J": {
+          "legacy": 2.3419922624112777e+24,
+          "corrected": 2.3987856524384944e+24,
+          "relative_change": 0.024250033161400397
+        },
+        "final_kinetic_J": {
+          "legacy": 2.1947143839107626e+25,
+          "corrected": 2.18898575613258e+25,
+          "relative_change": -0.002610192843396253
+        },
+        "weak_energy_escaped_upper_J": {
+          "legacy": 10.313191268427312,
+          "corrected": 1.215973710856916,
+          "relative_change": -0.8820953011334635
+        },
+        "radiation_escaped_J": {
+          "legacy": 1.1244392103582035e+21,
+          "corrected": 1.6082224226120937e+21,
+          "relative_change": 0.4302439898905477
+        },
+        "peak_temperature_K": {
+          "legacy": 1591886478.4904578,
+          "corrected": 1607285185.4149635,
+          "relative_change": 0.009673244375508316
+        },
+        "energy_residual_fraction_initial": {
+          "legacy": 6.84999681025278e-08,
+          "corrected": 2.3767447903734534e-08,
+          "relative_change": -0.6530297960407742
+        },
+        "elapsed_s": {
+          "legacy": 2.92318379352789e-06,
+          "corrected": 2.92318379352789e-06,
+          "relative_change": 0.0
+        }
+      },
+      "products": {
+        "n": {
+          "legacy": 3.3946779252408353e-20,
+          "corrected": 3.696693847341469e-20,
+          "difference": 3.0201592210063354e-21
+        },
+        "p": {
+          "legacy": 8.783113687531849e-18,
+          "corrected": 9.398940251628248e-18,
+          "difference": 6.158265640963995e-19
+        },
+        "he4": {
+          "legacy": 0.9996505803741284,
+          "corrected": 0.9996507015928268,
+          "difference": 1.2121869841230648e-07
+        },
+        "c12": {
+          "legacy": 0.0003494121248877003,
+          "corrected": 0.0003492909089014681,
+          "difference": -1.2121598623216238e-07
+        },
+        "c13": {
+          "legacy": 8.081547036306979e-20,
+          "corrected": 8.080082435662307e-20,
+          "difference": -1.4646006446718057e-23
+        },
+        "n13": {
+          "legacy": 1.852312532598229e-18,
+          "corrected": 1.852530959673534e-18,
+          "difference": 2.18427075305173e-22
+        },
+        "n14": {
+          "legacy": 1.4433745144365998e-30,
+          "corrected": 2.1510387660972945e-30,
+          "difference": 7.076642516606947e-31
+        },
+        "n15": {
+          "legacy": 3.2873089229918807e-17,
+          "corrected": 4.023814918842851e-17,
+          "difference": 7.365059958509706e-18
+        },
+        "o14": {
+          "legacy": 3.224262983584597e-25,
+          "corrected": 2.617894583578941e-27,
+          "difference": -3.1980840377488074e-25
+        },
+        "o15": {
+          "legacy": 1.922085472868339e-26,
+          "corrected": -1.4944210312980525e-26,
+          "difference": -3.416506504166391e-26
+        },
+        "o16": {
+          "legacy": 7.430489623424114e-09,
+          "corrected": 7.4278062789957186e-09,
+          "difference": -2.683344428395187e-12
+        },
+        "o17": {
+          "legacy": 2.923920701753492e-23,
+          "corrected": 2.9271543523752964e-23,
+          "difference": 3.233650621804501e-26
+        },
+        "o18": {
+          "legacy": 7.35433865029748e-26,
+          "corrected": 1.1920453225156784e-26,
+          "difference": -6.162293327781802e-26
+        },
+        "f17": {
+          "legacy": 8.520886348553481e-25,
+          "corrected": 7.8256059660031925e-25,
+          "difference": -6.952803825502887e-26
+        },
+        "f18": {
+          "legacy": -4.237396047813503e-31,
+          "corrected": -9.749939512325853e-32,
+          "difference": 3.2624020965809175e-31
+        },
+        "f19": {
+          "legacy": 2.778964630032039e-18,
+          "corrected": 3.314154017941566e-18,
+          "difference": 5.351893879095269e-19
+        },
+        "ne18": {
+          "legacy": -1.152142735096686e-25,
+          "corrected": -2.9990931023305766e-25,
+          "difference": -1.8469503672338905e-25
+        },
+        "ne19": {
+          "legacy": -4.9767721438262607e-26,
+          "corrected": 1.7927447633449032e-25,
+          "difference": 2.290421977727529e-25
+        },
+        "ne20": {
+          "legacy": 7.010364667187208e-11,
+          "corrected": 7.007415517981425e-11,
+          "difference": -2.949149205783117e-14
+        },
+        "ne21": {
+          "legacy": -3.914480899145033e-24,
+          "corrected": 3.6052028449278034e-24,
+          "difference": 7.519683744072836e-24
+        },
+        "ne22": {
+          "legacy": 3.473630916057319e-18,
+          "corrected": 4.087326330446466e-18,
+          "difference": 6.136954143891475e-19
+        },
+        "na21": {
+          "legacy": -4.687844876262714e-25,
+          "corrected": -3.08903713244404e-25,
+          "difference": 1.5988077438186743e-25
+        },
+        "na22": {
+          "legacy": 2.6346350257207384e-19,
+          "corrected": 3.2872707442779982e-19,
+          "difference": 6.526357185572598e-20
+        },
+        "na23": {
+          "legacy": 1.439808798598436e-16,
+          "corrected": 1.4485291708719239e-16,
+          "difference": 8.720372273487962e-19
+        },
+        "mg22": {
+          "legacy": 2.198883736300045e-25,
+          "corrected": 2.8813160708684295e-26,
+          "difference": -1.9107521292132018e-25
+        },
+        "mg23": {
+          "legacy": 6.483676012874812e-19,
+          "corrected": 6.495662172517371e-19,
+          "difference": 1.1986159642558802e-21
+        },
+        "mg24": {
+          "legacy": 3.9156184465793175e-13,
+          "corrected": 3.9146294059068585e-13,
+          "difference": -9.890406724590134e-17
+        }
+      },
+      "inputs": {
+        "stage": "He",
+        "radius_m": 3,
+        "zones": 64,
+        "rtol": 1e-07,
+        "atol": 1e-12,
+        "mode": "compression_cap",
+        "final_time_units": 4,
+        "radiation": true,
+        "trace_samples": 120,
+        "original_profile_loaded_exactly": true,
+        "source_hashes": {
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression_runner.py": "f44e65a6d9235dfa1e083660acda7d1d655c4cbd608024841e16469ffc7ebc4e",
+          "/var/tmp/tkwa-chatgpt/protium-b2-regression/model/radial_completion.py": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/radial_pulse.py": "bdc92a8652d0f646a72541e4f33b7825df6a98070d309adc58c97af20eede53e",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-He-64-R3.json": "17c56b9490d3dfd249260be7622b84b5bb7601e65c21061575ea5ee4fba1cad1",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-He-64-R3-initial.json": "1857f11f28b87b751806fdba0c203f31a67e39e6fb0a3fa8db7da52c1b7d5991",
+          "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-He-64-R3-inputs.json": "52579d5fabd57a1ac727b39f64db377c1d3d88ba3a27e971f6741944eb46d18a"
+        }
+      },
+      "corrected_metadata_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-He-compression_cap.json",
+      "corrected_trace_path": "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-He-compression_cap.npz"
+    }
+  ],
+  "checks": [
+    {
+      "stage": "A",
+      "check": "full requested duration",
+      "value": 4.0,
+      "limit": 4,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "energy residual relative to initial",
+      "value": -1.3469512207017522e-07,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "independent integrated nuclear energy agrees with isotope mass difference",
+      "value": 2.4971369396926905e-11,
+      "limit": 5e-06,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "final cell baryon residual",
+      "value": 6.661338147750939e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "stored trace baryon residual",
+      "value": 6.661338147750939e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "minimum final mass fraction",
+      "value": -4.2977355206098496e-18,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "minimum stored trace mass fraction",
+      "value": -2.0902177201598092e-13,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "initial energy unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "mass unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "positive physical shell widths",
+      "value": 0.006926385709078109,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "stage": "A",
+      "check": "no expanding cell receives scalar artificial pressure in stored trace",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "full requested duration",
+      "value": 4.0,
+      "limit": 4,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "energy residual relative to initial",
+      "value": 1.21530659042112e-06,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "independent integrated nuclear energy agrees with isotope mass difference",
+      "value": 1.1147364388325937e-11,
+      "limit": 5e-06,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "final cell baryon residual",
+      "value": 5.773159728050814e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "stored trace baryon residual",
+      "value": 5.773159728050814e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "minimum final mass fraction",
+      "value": 3.094015358399297e-92,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "minimum stored trace mass fraction",
+      "value": -2.485739945472446e-34,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "initial energy unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "mass unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "positive physical shell widths",
+      "value": 0.0065478360807680325,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "stage": "B1",
+      "check": "no expanding cell receives scalar artificial pressure in stored trace",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "full requested duration",
+      "value": 4.0,
+      "limit": 4,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "energy residual relative to initial",
+      "value": -3.4728756910333793e-06,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "independent integrated nuclear energy agrees with isotope mass difference",
+      "value": 5.1407469627494643e-11,
+      "limit": 5e-06,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "final cell baryon residual",
+      "value": 1.6653345369377348e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "stored trace baryon residual",
+      "value": 1.7319479184152442e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "minimum final mass fraction",
+      "value": -3.9998733107525763e-19,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "minimum stored trace mass fraction",
+      "value": -2.0489088787811197e-13,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "initial energy unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "mass unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "positive physical shell widths",
+      "value": 0.00945147461541701,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "stage": "C13",
+      "check": "no expanding cell receives scalar artificial pressure in stored trace",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "full requested duration",
+      "value": 4.0,
+      "limit": 4,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "energy residual relative to initial",
+      "value": 2.3767447903734534e-08,
+      "limit": 5e-05,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "independent integrated nuclear energy agrees with isotope mass difference",
+      "value": 7.289324377143675e-13,
+      "limit": 5e-06,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "final cell baryon residual",
+      "value": 3.6637359812630166e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "stored trace baryon residual",
+      "value": 3.885780586188048e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "minimum final mass fraction",
+      "value": -2.019555900065117e-23,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "minimum stored trace mass fraction",
+      "value": -1.0086852962949585e-13,
+      "limit": -1e-12,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "initial energy unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "mass unchanged",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "positive physical shell widths",
+      "value": 0.015605495975458045,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "stage": "He",
+      "check": "no expanding cell receives scalar artificial pressure in stored trace",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    }
+  ],
+  "checks_passed": 44,
+  "checks_total": 44,
+  "hashes": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-A-64-R30.json": "4d2d097f7840c0bfbe7d1f2fbcc7eefcaf32c73bb86220acc7e7b08955f1e51e",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.json": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.npz": "46217f1e130f675881aba204523ac5861a51517e087a3ab9a46593ca4286077c",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.inputs.json": "d6782e487fba5da37d3fe59124c3a98546fd534318bb14417fe78d8a14a5baa1",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-B1-64-R30.json": "6fd3eb320aa5a6f8ac5484f3c1d30dcf128f3d564b63d88f98673d9f0488ab5d",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.json": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.npz": "906322b40dd28f298231d41d4414c4310c20cd94fa90cf1bff8639ad747d1107",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.inputs.json": "c8186957f19c765fdebf811a98256231e36cb356f36bad38887981d3c4b19b19",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-C13-64-R30.json": "0dd0f0ad149940bceca1f4a70b74488942a443f588e2b1d2d3de37792e895ce6",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.json": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.npz": "3ed673fa2c6a32e47331c82ead9b285ed7983311c6422a33c63d96be385e38ea",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.inputs.json": "6a95029dfcf6f5ef687bf77019cfe00ab9c1bfa697e28c9dce40ef21194e5cf4",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-He-64-R3.json": "17c56b9490d3dfd249260be7622b84b5bb7601e65c21061575ea5ee4fba1cad1",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-He-compression_cap.json": "a3f347bb0b04d95cfd6a956a79a4f3f2f10538cf7ac013864445b3ba43cb198d",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-He-compression_cap.npz": "96907614e3604627fa0ddd630d4dfca53b08de8c934c883db60d111d63da1e9f",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-He-compression_cap.inputs.json": "65165c25f2ffc68d5d622a566e3f2e162a2272c510ac4d56202b961360ccc2b7",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression_compare.py": "21339307ef34901eca46fefad0cb257a7839a92840aad3d2a9aff8b2a582d70c",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression_runner.py": "f44e65a6d9235dfa1e083660acda7d1d655c4cbd608024841e16469ffc7ebc4e",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression_sign_audit.py": "e2a564f2756f24f4ca131512881985ea1802172ba3f0e7c514e15fb6240ea863",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/model/radial_completion.py": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-legacy-sign.json": "58e2c271f97dd94ff688242576c4ca389d514ca76801f9f7e53732d5be45dec1"
+  }
+}

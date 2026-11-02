@@ -1,0 +1,1412 @@
+{
+  "scope": "Diagnostic contingency only: first correct the isotropic artificial-viscosity activation and retain original rates if the corrected trajectory stays hot. Cold nuclear-rate audit only. The anchor continuation is a physically motivated approximation, not an evaluated low-energy rate. No completed hydrodynamics is claimed.",
+  "summary": {
+    "trace_samples": 160,
+    "cold_cells_ever": 4,
+    "cold_zone_ids": [
+      60,
+      61,
+      62,
+      63
+    ],
+    "min_temperature_K": 301365.40238366614,
+    "cold_neutron_max_Y": 6.726357262944305e-64,
+    "all_temperature_neutron_max_Y": 1.777092994945551e-11,
+    "maximum_mass_weighted_cold_neutron_Y": 3.1039712451872734e-65,
+    "sum_percell_cold_neutron_max_Y_weighted": 3.1039712451872734e-65,
+    "upper_source_neutrons_Y_over_entire_saved_duration_at10MK": 8.475622801156475e-103,
+    "ten_MeV_per_available_cold_neutron_energy_over_initial": 8.313204006108836e-63,
+    "cold_material_fraction_ever": 0.176025390625,
+    "cold_neutron_inventory_at_one_absolute_tolerance_Y": 1.76025390625e-12,
+    "ten_MeV_per_atol_scale_cold_neutron_energy_over_initial": 4.714396065329318e-10,
+    "abundance_error_note": "The very small positive Y from the saved trace is below atol and cannot establish physical precision. The atol-scale calculation is a sensitivity scale, not a rigorous global ODE error bound.",
+    "maximum_negative_baryon_fraction_massweighted": 1.77347608317743e-12,
+    "c2_negative_inventory_energy_over_initial_bound": 4.4244184478884603e-08,
+    "maximum_positive_cold_neutron_source_dY_s_at_actual_T": 2.626543536887128e-100,
+    "maximum_positive_cold_neutron_source_dY_s_at10MK": 5.220570937990151e-97
+  },
+  "regularized_reactions": [
+    {
+      "index": 61,
+      "reaction": "C12 + n \u27f6 C13 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "C12_n_to_C13_reaclib",
+      "Q_MeV": 4.946308800001134,
+      "anchor10MK": 512.8772242258844,
+      "rate_at_301365K": 1.618181223907131e-05,
+      "conservative_swave_unitarity_at301365K": 548572869449.47144,
+      "coefficients": [
+        [
+          7.98821,
+          -0.00836732,
+          1.49573,
+          -0.841102,
+          0.0340543,
+          -0.0026392,
+          1.6662
+        ]
+      ],
+      "reverse_indices": [
+        12
+      ]
+    },
+    {
+      "index": 65,
+      "reaction": "N13 + n \u27f6 N14 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "N13_n_to_N14_reaclib",
+      "Q_MeV": 10.553381299999387,
+      "anchor10MK": 654207.5930768247,
+      "rate_at_301365K": 0.015039191980599255,
+      "conservative_swave_unitarity_at301365K": 543711089250.833,
+      "coefficients": [
+        [
+          13.9377,
+          -0.0054652,
+          1.72241e-10,
+          -5.62522e-10,
+          5.59212e-11,
+          -4.6549e-12,
+          0.0
+        ],
+        [
+          -3.63074,
+          -2.99547,
+          9.44873e-10,
+          -2.33713e-09,
+          1.97507e-10,
+          -1.49747e-11,
+          -1.5
+        ]
+      ],
+      "reverse_indices": [
+        14
+      ]
+    },
+    {
+      "index": 67,
+      "reaction": "N14 + n \u27f6 N15 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "N14_n_to_N15_reaclib",
+      "Q_MeV": 10.83329680000054,
+      "anchor10MK": 23249.039478762053,
+      "rate_at_301365K": 2.087812527793188e-07,
+      "conservative_swave_unitarity_at301365K": 539555346985.3329,
+      "coefficients": [
+        [
+          10.1651,
+          -0.0114078,
+          1.396,
+          -3.47552,
+          0.351773,
+          -0.0229344,
+          1.02161
+        ]
+      ],
+      "reverse_indices": [
+        16
+      ]
+    },
+    {
+      "index": 72,
+      "reaction": "O14 + n \u27f6 O15 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "O14_n_to_O15_reaclib",
+      "Q_MeV": 13.223499099999685,
+      "anchor10MK": 29399.487268700337,
+      "rate_at_301365K": 1.5787669682243961e+22,
+      "conservative_swave_unitarity_at301365K": 539555346985.3329,
+      "coefficients": [
+        [
+          9.87196,
+          0.0160481,
+          -1.38986,
+          1.74662,
+          -0.0276897,
+          0.00321014,
+          -1.06122
+        ]
+      ],
+      "reverse_indices": [
+        18
+      ]
+    },
+    {
+      "index": 74,
+      "reaction": "O15 + n \u27f6 O16 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "O15_n_to_O16_reaclib",
+      "Q_MeV": 15.663920200001598,
+      "anchor10MK": 3309.998129373001,
+      "rate_at_301365K": 3.8421804969766374e+18,
+      "conservative_swave_unitarity_at301365K": 535962311010.5063,
+      "coefficients": [
+        [
+          8.08476,
+          0.0135346,
+          -1.11761,
+          1.0167,
+          0.0449976,
+          -0.00204682,
+          -0.789217
+        ]
+      ],
+      "reverse_indices": [
+        20
+      ]
+    },
+    {
+      "index": 76,
+      "reaction": "O16 + n \u27f6 O17 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "O16_n_to_O17_reaclib",
+      "Q_MeV": 4.143080199998735,
+      "anchor10MK": 209.18291524340387,
+      "rate_at_301365K": 8.449934630552646e+26,
+      "conservative_swave_unitarity_at301365K": 532824975644.91815,
+      "coefficients": [
+        [
+          7.21546,
+          0.0235015,
+          -2.11246,
+          4.87742,
+          -0.314426,
+          0.0169515,
+          -0.984784
+        ]
+      ],
+      "reverse_indices": [
+        23
+      ]
+    },
+    {
+      "index": 79,
+      "reaction": "O17 + n \u27f6 O18 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "O17_n_to_O18_reaclib",
+      "Q_MeV": 8.045370200001344,
+      "anchor10MK": 71.54023365132521,
+      "rate_at_301365K": 71.5402335567816,
+      "conservative_swave_unitarity_at301365K": 530061841795.9927,
+      "coefficients": [
+        [
+          4.27026,
+          -5.69067e-13,
+          7.48144e-11,
+          -2.47239e-10,
+          2.48052e-11,
+          -2.07736e-12,
+          8.43048e-11
+        ],
+        [
+          20.1798,
+          -2.12961,
+          16.8052,
+          -30.138,
+          1.14711,
+          -0.0220312,
+          13.7452
+        ]
+      ],
+      "reverse_indices": [
+        24
+      ]
+    },
+    {
+      "index": 84,
+      "reaction": "F17 + n \u27f6 F18 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "F17_n_to_F18_reaclib",
+      "Q_MeV": 9.149918099999127,
+      "anchor10MK": 671.0165294283868,
+      "rate_at_301365K": 2.639071903071215e+32,
+      "conservative_swave_unitarity_at301365K": 530061841795.9927,
+      "coefficients": [
+        [
+          3.42798,
+          0.0273799,
+          -2.71353,
+          6.19871,
+          -0.26836,
+          0.0115489,
+          -2.52002
+        ]
+      ],
+      "reverse_indices": [
+        26
+      ]
+    },
+    {
+      "index": 87,
+      "reaction": "F18 + n \u27f6 F19 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "F18_n_to_F19_reaclib",
+      "Q_MeV": 10.431863199998702,
+      "anchor10MK": 59200.95862272172,
+      "rate_at_301365K": 4.38520154480798e+68,
+      "conservative_swave_unitarity_at301365K": 527609746273.6441,
+      "coefficients": [
+        [
+          0.814964,
+          0.0604483,
+          -6.65988,
+          18.3243,
+          -1.47263,
+          0.0955082,
+          -6.75505
+        ]
+      ],
+      "reverse_indices": [
+        29
+      ]
+    },
+    {
+      "index": 92,
+      "reaction": "Ne18 + n \u27f6 Ne19 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Ne18_n_to_Ne19_reaclib",
+      "Q_MeV": 11.636868099997741,
+      "anchor10MK": 12716.848039378152,
+      "rate_at_301365K": 11068.129671120432,
+      "conservative_swave_unitarity_at301365K": 527609746273.6441,
+      "coefficients": [
+        [
+          9.249,
+          0.0,
+          0.0,
+          0.937162,
+          -0.0221952,
+          -0.00101206,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        34
+      ]
+    },
+    {
+      "index": 94,
+      "reaction": "Ne19 + n \u27f6 Ne20 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Ne19_n_to_Ne20_reaclib",
+      "Q_MeV": 16.865300300002787,
+      "anchor10MK": 849.5741490859627,
+      "rate_at_301365K": 673.14005407725,
+      "conservative_swave_unitarity_at301365K": 525418980913.4018,
+      "coefficients": [
+        [
+          6.40633,
+          0.0,
+          0.0,
+          1.57592,
+          -0.11175,
+          0.00226473,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        37
+      ]
+    },
+    {
+      "index": 96,
+      "reaction": "Ne20 + n \u27f6 Ne21 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Ne20_n_to_Ne21_reaclib",
+      "Q_MeV": 6.761165899995035,
+      "anchor10MK": 5305.556783406328,
+      "rate_at_301365K": 5305.556783406328,
+      "conservative_swave_unitarity_at301365K": 523449891699.2992,
+      "coefficients": [
+        [
+          12.7344,
+          -1.70393,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          8.57651,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        40
+      ]
+    },
+    {
+      "index": 99,
+      "reaction": "Ne21 + n \u27f6 Ne22 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Ne21_n_to_Ne22_reaclib",
+      "Q_MeV": 10.364254100004473,
+      "anchor10MK": 260400.0237342544,
+      "rate_at_301365K": 3.124697847388834e+68,
+      "conservative_swave_unitarity_at301365K": 521670459593.32745,
+      "coefficients": [
+        [
+          23.5205,
+          0.0482005,
+          -0.238173,
+          -12.2336,
+          1.14968,
+          -0.0768882,
+          2.63636
+        ]
+      ],
+      "reverse_indices": [
+        42
+      ]
+    },
+    {
+      "index": 102,
+      "reaction": "Na21 + n \u27f6 Na22 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Na21_n_to_Na22_reaclib",
+      "Q_MeV": 11.06784810000238,
+      "anchor10MK": 2601.8748808940245,
+      "rate_at_301365K": 2145.329723995412,
+      "conservative_swave_unitarity_at301365K": 521670459593.32745,
+      "coefficients": [
+        [
+          7.58321,
+          0.0,
+          0.0,
+          1.31089,
+          -0.164931,
+          0.00903374,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        46
+      ]
+    },
+    {
+      "index": 104,
+      "reaction": "Na22 + n \u27f6 Na23 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Na22_n_to_Na23_reaclib",
+      "Q_MeV": 12.419781599997009,
+      "anchor10MK": 481439.9667879331,
+      "rate_at_301365K": 415062.3416767609,
+      "conservative_swave_unitarity_at301365K": 520054547685.73193,
+      "coefficients": [
+        [
+          12.8678,
+          0.0,
+          0.0,
+          1.02148,
+          -0.334638,
+          0.0258708,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        49
+      ]
+    },
+    {
+      "index": 107,
+      "reaction": "Mg22 + n \u27f6 Mg23 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Mg22_n_to_Mg23_reaclib",
+      "Q_MeV": 13.144998099996087,
+      "anchor10MK": 19991.15134839139,
+      "rate_at_301365K": 13403.906727064661,
+      "conservative_swave_unitarity_at301365K": 520054547685.73193,
+      "coefficients": [
+        [
+          9.32079,
+          0.0,
+          0.0,
+          2.72435,
+          -0.470498,
+          0.0357362,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        54
+      ]
+    },
+    {
+      "index": 108,
+      "reaction": "Mg23 + n \u27f6 Mg24 + \ud835\udefe",
+      "label": "reaclib",
+      "fname": "Mg23_n_to_Mg24_reaclib",
+      "Q_MeV": 16.531226099999913,
+      "anchor10MK": 1952.3960046055051,
+      "rate_at_301365K": 1319.4628198677794,
+      "conservative_swave_unitarity_at301365K": 518580609979.5113,
+      "coefficients": [
+        [
+          7.00613,
+          0.0,
+          0.0,
+          2.66964,
+          -0.448904,
+          0.0326505,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        57
+      ]
+    },
+    {
+      "index": 116,
+      "reaction": "N13 + n \u27f6 p + C13",
+      "label": "reaclib",
+      "fname": "N13_n_to_p_C13_reaclib",
+      "Q_MeV": 3.002817736000111,
+      "anchor10MK": 67808297.19400814,
+      "rate_at_301365K": 56344719.06380131,
+      "conservative_swave_unitarity_at301365K": 543711089250.833,
+      "coefficients": [
+        [
+          17.7625,
+          0.0,
+          0.0,
+          1.26126,
+          -0.204952,
+          0.0310523,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        114
+      ]
+    },
+    {
+      "index": 125,
+      "reaction": "O14 + n \u27f6 p + N14",
+      "label": "reaclib",
+      "fname": "O14_n_to_p_N14_reaclib",
+      "Q_MeV": 5.926711235999392,
+      "anchor10MK": 818205.2328454568,
+      "rate_at_301365K": 365488.78436323314,
+      "conservative_swave_unitarity_at301365K": 539555346985.3329,
+      "coefficients": [
+        [
+          12.4418,
+          0.0,
+          0.0,
+          5.48024,
+          -0.764072,
+          0.0587804,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        118
+      ]
+    },
+    {
+      "index": 127,
+      "reaction": "O15 + n \u27f6 p + N15",
+      "label": "reaclib",
+      "fname": "O15_n_to_p_N15_reaclib",
+      "Q_MeV": 3.5365089360002457,
+      "anchor10MK": 104611883.80873157,
+      "rate_at_301365K": 99575155.18047786,
+      "conservative_swave_unitarity_at301365K": 535962311010.5063,
+      "coefficients": [
+        [
+          18.3942,
+          0.0,
+          0.0,
+          0.331392,
+          0.0171473,
+          0.0,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        121
+      ]
+    },
+    {
+      "index": 128,
+      "reaction": "O15 + n \u27f6 He4 + C12",
+      "label": "reaclib",
+      "fname": "O15_n_to_He4_C12_reaclib",
+      "Q_MeV": 8.502002229999562,
+      "anchor10MK": 35940319.48113068,
+      "rate_at_301365K": 35260857.23765799,
+      "conservative_swave_unitarity_at301365K": 535962311010.5063,
+      "coefficients": [
+        [
+          17.3699,
+          0.0,
+          0.0,
+          0.124787,
+          0.0588937,
+          -0.00679206,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        109
+      ]
+    },
+    {
+      "index": 142,
+      "reaction": "F17 + n \u27f6 p + O17",
+      "label": "reaclib",
+      "fname": "F17_n_to_p_O17_reaclib",
+      "Q_MeV": 3.54281123599867,
+      "anchor10MK": 180005866.50179055,
+      "rate_at_301365K": 180005866.50179055,
+      "conservative_swave_unitarity_at301365K": 530061841795.9927,
+      "coefficients": [
+        [
+          19.0085,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        136
+      ]
+    },
+    {
+      "index": 143,
+      "reaction": "F17 + n \u27f6 He4 + N14",
+      "label": "reaclib",
+      "fname": "F17_n_to_He4_N14_reaclib",
+      "Q_MeV": 4.734685429997626,
+      "anchor10MK": 282796087.31305736,
+      "rate_at_301365K": 313596429.3594646,
+      "conservative_swave_unitarity_at301365K": 530061841795.9927,
+      "coefficients": [
+        [
+          19.6113,
+          0.0,
+          0.0,
+          -0.712285,
+          0.240317,
+          -0.0201705,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        119
+      ]
+    },
+    {
+      "index": 146,
+      "reaction": "F18 + n \u27f6 p + O18",
+      "label": "reaclib",
+      "fname": "F18_n_to_p_O18_reaclib",
+      "Q_MeV": 2.4382633360020236,
+      "anchor10MK": 180005866.50179055,
+      "rate_at_301365K": 180005866.50179055,
+      "conservative_swave_unitarity_at301365K": 527609746273.6441,
+      "coefficients": [
+        [
+          19.0085,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        139
+      ]
+    },
+    {
+      "index": 147,
+      "reaction": "F18 + n \u27f6 He4 + N15",
+      "label": "reaclib",
+      "fname": "F18_n_to_He4_N15_reaclib",
+      "Q_MeV": 6.418064130000857,
+      "anchor10MK": 210539881.58960506,
+      "rate_at_301365K": 164367859.7644051,
+      "conservative_swave_unitarity_at301365K": 527609746273.6441,
+      "coefficients": [
+        [
+          18.8011,
+          0.0,
+          0.0,
+          1.74308,
+          -1.15123,
+          0.135196,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        123
+      ]
+    },
+    {
+      "index": 156,
+      "reaction": "Ne18 + n \u27f6 p + F18",
+      "label": "reaclib",
+      "fname": "Ne18_n_to_p_F18_reaclib",
+      "Q_MeV": 5.226847035999526,
+      "anchor10MK": 128411956.78550293,
+      "rate_at_301365K": 117562477.08010699,
+      "conservative_swave_unitarity_at301365K": 527609746273.6441,
+      "coefficients": [
+        [
+          18.5429,
+          0.0,
+          0.0,
+          0.590026,
+          0.0742242,
+          -0.0116856,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        148
+      ]
+    },
+    {
+      "index": 157,
+      "reaction": "Ne18 + n \u27f6 He4 + O15",
+      "label": "reaclib",
+      "fname": "Ne18_n_to_He4_O15_reaclib",
+      "Q_MeV": 8.108402229998319,
+      "anchor10MK": 75162090.48284206,
+      "rate_at_301365K": 71002584.25313124,
+      "conservative_swave_unitarity_at301365K": 527609746273.6441,
+      "coefficients": [
+        [
+          18.0529,
+          0.0,
+          0.0,
+          0.377325,
+          0.0968945,
+          -0.007769,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        129
+      ]
+    },
+    {
+      "index": 159,
+      "reaction": "Ne19 + n \u27f6 p + F19",
+      "label": "reaclib",
+      "fname": "Ne19_n_to_p_F19_reaclib",
+      "Q_MeV": 4.021842136000487,
+      "anchor10MK": 20976254.104217354,
+      "rate_at_301365K": 8758672.85135349,
+      "conservative_swave_unitarity_at301365K": 525418980913.4018,
+      "coefficients": [
+        [
+          15.6732,
+          0.0,
+          0.0,
+          4.34441,
+          -1.71268,
+          0.0,
+          0.0
+        ],
+        [
+          20.353,
+          0.0,
+          0.0,
+          -1.58171,
+          0.0324472,
+          0.0,
+          1.0
+        ]
+      ],
+      "reverse_indices": [
+        152
+      ]
+    },
+    {
+      "index": 160,
+      "reaction": "Ne19 + n \u27f6 He4 + O16",
+      "label": "reaclib",
+      "fname": "Ne19_n_to_He4_O16_reaclib",
+      "Q_MeV": 12.135454330000357,
+      "anchor10MK": 66148705.523662336,
+      "rate_at_301365K": 51409292.0713587,
+      "conservative_swave_unitarity_at301365K": 525418980913.4018,
+      "coefficients": [
+        [
+          17.6409,
+          0.0,
+          0.0,
+          1.70736,
+          -0.132579,
+          0.00454218,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        133
+      ]
+    },
+    {
+      "index": 168,
+      "reaction": "Ne21 + n \u27f6 He4 + O18",
+      "label": "reaclib",
+      "fname": "Ne21_n_to_He4_O18_reaclib",
+      "Q_MeV": 0.6974385300054564,
+      "anchor10MK": 18.73474834856786,
+      "rate_at_301365K": 862859.8034772882,
+      "conservative_swave_unitarity_at301365K": 521670459593.32745,
+      "coefficients": [
+        [
+          1.11027,
+          -7.35566,
+          0.0,
+          11.656,
+          -1.24869,
+          0.0,
+          1.0
+        ],
+        [
+          2.59673,
+          0.0033365,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.28452,
+          -0.331353,
+          0.0,
+          6.51299,
+          -0.334277,
+          0.0,
+          2.0
+        ]
+      ],
+      "reverse_indices": [
+        141
+      ]
+    },
+    {
+      "index": 174,
+      "reaction": "Na21 + n \u27f6 p + Ne21",
+      "label": "reaclib",
+      "fname": "Na21_n_to_p_Ne21_reaclib",
+      "Q_MeV": 4.329267035998782,
+      "anchor10MK": 96317979.500821,
+      "rate_at_301365K": 69909385.93760279,
+      "conservative_swave_unitarity_at301365K": 521670459593.32745,
+      "coefficients": [
+        [
+          17.9167,
+          0.0,
+          0.0,
+          2.17917,
+          -0.303135,
+          0.019321,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        169
+      ]
+    },
+    {
+      "index": 175,
+      "reaction": "Na21 + n \u27f6 He4 + F18",
+      "label": "reaclib",
+      "fname": "Na21_n_to_He4_F18_reaclib",
+      "Q_MeV": 2.58844223000051,
+      "anchor10MK": 8702999.737075793,
+      "rate_at_301365K": 7418481.264432019,
+      "conservative_swave_unitarity_at301365K": 521670459593.32745,
+      "coefficients": [
+        [
+          15.7482,
+          0.0,
+          0.0,
+          1.06229,
+          0.212448,
+          -0.020685,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        150
+      ]
+    },
+    {
+      "index": 178,
+      "reaction": "Na22 + n \u27f6 p + Ne22",
+      "label": "reaclib",
+      "fname": "Na22_n_to_p_Ne22_reaclib",
+      "Q_MeV": 3.625673035998375,
+      "anchor10MK": 337839104.10481817,
+      "rate_at_301365K": 340340431.12924933,
+      "conservative_swave_unitarity_at301365K": 520054547685.73193,
+      "coefficients": [
+        [
+          19.6489,
+          0.0,
+          0.0,
+          -0.0514777,
+          0.0274055,
+          -0.00690277,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        172
+      ]
+    },
+    {
+      "index": 179,
+      "reaction": "Na22 + n \u27f6 He4 + F19",
+      "label": "reaclib",
+      "fname": "Na22_n_to_He4_F19_reaclib",
+      "Q_MeV": 1.9524573299968324,
+      "anchor10MK": 3284038.3268284695,
+      "rate_at_301365K": 3278291.4959590007,
+      "conservative_swave_unitarity_at301365K": 520054547685.73193,
+      "coefficients": [
+        [
+          6.59038,
+          0.0,
+          0.0,
+          6.22036,
+          -0.0209891,
+          -0.0689843,
+          1.0
+        ],
+        [
+          15.0061,
+          0.0,
+          0.0,
+          -0.0532251,
+          1.00044,
+          -0.13238,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        154
+      ]
+    },
+    {
+      "index": 185,
+      "reaction": "Mg22 + n \u27f6 p + Na22",
+      "label": "reaclib",
+      "fname": "Mg22_n_to_p_Na22_reaclib",
+      "Q_MeV": 5.563747036001587,
+      "anchor10MK": 100327514.63880603,
+      "rate_at_301365K": 67700819.3182391,
+      "conservative_swave_unitarity_at301365K": 520054547685.73193,
+      "coefficients": [
+        [
+          17.8512,
+          0.0,
+          0.0,
+          2.67784,
+          -0.418718,
+          0.031411,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        180
+      ]
+    },
+    {
+      "index": 186,
+      "reaction": "Mg22 + n \u27f6 He4 + Ne19",
+      "label": "reaclib",
+      "fname": "Mg22_n_to_He4_Ne19_reaclib",
+      "Q_MeV": 3.4943622299979324,
+      "anchor10MK": 18000606.2103964,
+      "rate_at_301365K": 13232586.829361245,
+      "conservative_swave_unitarity_at301365K": 520054547685.73193,
+      "coefficients": [
+        [
+          16.2584,
+          0.0,
+          0.0,
+          2.08592,
+          -0.188654,
+          0.0101103,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        161
+      ]
+    },
+    {
+      "index": 187,
+      "reaction": "Mg23 + n \u27f6 p + Na23",
+      "label": "reaclib",
+      "fname": "Mg23_n_to_p_Na23_reaclib",
+      "Q_MeV": 4.838530536002509,
+      "anchor10MK": 350644258.43414086,
+      "rate_at_301365K": 303329631.86595577,
+      "conservative_swave_unitarity_at301365K": 518580609979.5113,
+      "coefficients": [
+        [
+          19.4638,
+          0.0,
+          0.0,
+          0.993488,
+          -0.257094,
+          0.0284334,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        182
+      ]
+    },
+    {
+      "index": 188,
+      "reaction": "Mg23 + n \u27f6 He4 + Ne20",
+      "label": "reaclib",
+      "fname": "Mg23_n_to_He4_Ne20_reaclib",
+      "Q_MeV": 7.214664430004632,
+      "anchor10MK": 75270338.68066932,
+      "rate_at_301365K": 57513928.67358331,
+      "conservative_swave_unitarity_at301365K": 518580609979.5113,
+      "coefficients": [
+        [
+          17.7448,
+          0.0,
+          0.0,
+          1.83199,
+          -0.290485,
+          0.0242929,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        165
+      ]
+    },
+    {
+      "index": 189,
+      "reaction": "Mg23 + n \u27f6 C12 + C12",
+      "label": "reaclib",
+      "fname": "Mg23_n_to_C12_C12_reaclib",
+      "Q_MeV": 2.5976480999997875,
+      "anchor10MK": 3.2485209830598675e-05,
+      "rate_at_301365K": 5.807839389111793e-06,
+      "conservative_swave_unitarity_at301365K": 518580609979.5113,
+      "coefficients": [
+        [
+          -12.8267,
+          0.0,
+          0.0,
+          11.4826,
+          1.82849,
+          -0.34844,
+          0.0
+        ]
+      ],
+      "reverse_indices": [
+        111
+      ]
+    }
+  ],
+  "temperature_scans": [
+    {
+      "T_K": 100.0,
+      "large_extrapolations": [
+        {
+          "index": 72,
+          "reaction": "O14 + n \u27f6 O15 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 29399.487268700337,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 74,
+          "reaction": "O15 + n \u27f6 O16 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 3309.998129373001,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 76,
+          "reaction": "O16 + n \u27f6 O17 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 209.18291524340387,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 84,
+          "reaction": "F17 + n \u27f6 F18 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 671.0165294283868,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 87,
+          "reaction": "F18 + n \u27f6 F19 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 59200.95862272172,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 99,
+          "reaction": "Ne21 + n \u27f6 Ne22 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 260400.0237342544,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 135,
+          "reaction": "O16 + C12 \u27f6 He4 + Mg24",
+          "coefficient": "inf",
+          "anchor10MK": 2.421879241123474e-180,
+          "is_regularized_exothermic_neutron_binary": false
+        },
+        {
+          "index": 168,
+          "reaction": "Ne21 + n \u27f6 He4 + O18",
+          "coefficient": "inf",
+          "anchor10MK": 18.73474834856786,
+          "is_regularized_exothermic_neutron_binary": true
+        }
+      ],
+      "maximum_rate": "inf",
+      "unfixed_large_extrapolation_count": 1
+    },
+    {
+      "T_K": 1000.0,
+      "large_extrapolations": [
+        {
+          "index": 72,
+          "reaction": "O14 + n \u27f6 O15 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 29399.487268700337,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 74,
+          "reaction": "O15 + n \u27f6 O16 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 3309.998129373001,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 76,
+          "reaction": "O16 + n \u27f6 O17 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 209.18291524340387,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 84,
+          "reaction": "F17 + n \u27f6 F18 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 671.0165294283868,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 87,
+          "reaction": "F18 + n \u27f6 F19 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 59200.95862272172,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 99,
+          "reaction": "Ne21 + n \u27f6 Ne22 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 260400.0237342544,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 135,
+          "reaction": "O16 + C12 \u27f6 He4 + Mg24",
+          "coefficient": "inf",
+          "anchor10MK": 2.421879241123474e-180,
+          "is_regularized_exothermic_neutron_binary": false
+        },
+        {
+          "index": 168,
+          "reaction": "Ne21 + n \u27f6 He4 + O18",
+          "coefficient": "inf",
+          "anchor10MK": 18.73474834856786,
+          "is_regularized_exothermic_neutron_binary": true
+        }
+      ],
+      "maximum_rate": "inf",
+      "unfixed_large_extrapolation_count": 1
+    },
+    {
+      "T_K": 10000.0,
+      "large_extrapolations": [
+        {
+          "index": 72,
+          "reaction": "O14 + n \u27f6 O15 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 29399.487268700337,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 74,
+          "reaction": "O15 + n \u27f6 O16 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 3309.998129373001,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 76,
+          "reaction": "O16 + n \u27f6 O17 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 209.18291524340387,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 84,
+          "reaction": "F17 + n \u27f6 F18 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 671.0165294283868,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 87,
+          "reaction": "F18 + n \u27f6 F19 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 59200.95862272172,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 99,
+          "reaction": "Ne21 + n \u27f6 Ne22 + \ud835\udefe",
+          "coefficient": "inf",
+          "anchor10MK": 260400.0237342544,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 135,
+          "reaction": "O16 + C12 \u27f6 He4 + Mg24",
+          "coefficient": "inf",
+          "anchor10MK": 2.421879241123474e-180,
+          "is_regularized_exothermic_neutron_binary": false
+        },
+        {
+          "index": 168,
+          "reaction": "Ne21 + n \u27f6 He4 + O18",
+          "coefficient": 1.0717645720121875e+146,
+          "anchor10MK": 18.73474834856786,
+          "is_regularized_exothermic_neutron_binary": true
+        }
+      ],
+      "maximum_rate": "inf",
+      "unfixed_large_extrapolation_count": 1
+    },
+    {
+      "T_K": 100000.0,
+      "large_extrapolations": [
+        {
+          "index": 72,
+          "reaction": "O14 + n \u27f6 O15 + \ud835\udefe",
+          "coefficient": 1.8158769746830206e+65,
+          "anchor10MK": 29399.487268700337,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 74,
+          "reaction": "O15 + n \u27f6 O16 + \ud835\udefe",
+          "coefficient": 1.0269108042569357e+55,
+          "anchor10MK": 3309.998129373001,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 76,
+          "reaction": "O16 + n \u27f6 O17 + \ud835\udefe",
+          "coefficient": 2.9605345596263365e+89,
+          "anchor10MK": 209.18291524340387,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 84,
+          "reaction": "F17 + n \u27f6 F18 + \ud835\udefe",
+          "coefficient": 1.6359887032726294e+105,
+          "anchor10MK": 671.0165294283868,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 87,
+          "reaction": "F18 + n \u27f6 F19 + \ud835\udefe",
+          "coefficient": 8.980755460574879e+227,
+          "anchor10MK": 59200.95862272172,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 99,
+          "reaction": "Ne21 + n \u27f6 Ne22 + \ud835\udefe",
+          "coefficient": 3.3608627295371884e+206,
+          "anchor10MK": 260400.0237342544,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 135,
+          "reaction": "O16 + C12 \u27f6 He4 + Mg24",
+          "coefficient": "inf",
+          "anchor10MK": 2.421879241123474e-180,
+          "is_regularized_exothermic_neutron_binary": false
+        },
+        {
+          "index": 168,
+          "reaction": "Ne21 + n \u27f6 He4 + O18",
+          "coefficient": 4149357923689092.0,
+          "anchor10MK": 18.73474834856786,
+          "is_regularized_exothermic_neutron_binary": true
+        }
+      ],
+      "maximum_rate": "inf",
+      "unfixed_large_extrapolation_count": 1
+    },
+    {
+      "T_K": 301365.40238366614,
+      "large_extrapolations": [
+        {
+          "index": 72,
+          "reaction": "O14 + n \u27f6 O15 + \ud835\udefe",
+          "coefficient": 1.5787669682243961e+22,
+          "anchor10MK": 29399.487268700337,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 74,
+          "reaction": "O15 + n \u27f6 O16 + \ud835\udefe",
+          "coefficient": 3.8421804969766374e+18,
+          "anchor10MK": 3309.998129373001,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 76,
+          "reaction": "O16 + n \u27f6 O17 + \ud835\udefe",
+          "coefficient": 8.449934630552646e+26,
+          "anchor10MK": 209.18291524340387,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 84,
+          "reaction": "F17 + n \u27f6 F18 + \ud835\udefe",
+          "coefficient": 2.639071903071215e+32,
+          "anchor10MK": 671.0165294283868,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 87,
+          "reaction": "F18 + n \u27f6 F19 + \ud835\udefe",
+          "coefficient": 4.38520154480798e+68,
+          "anchor10MK": 59200.95862272172,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 99,
+          "reaction": "Ne21 + n \u27f6 Ne22 + \ud835\udefe",
+          "coefficient": 3.124697847388834e+68,
+          "anchor10MK": 260400.0237342544,
+          "is_regularized_exothermic_neutron_binary": true
+        }
+      ],
+      "maximum_rate": 4.38520154480798e+68,
+      "unfixed_large_extrapolation_count": 0
+    },
+    {
+      "T_K": 1000000.0,
+      "large_extrapolations": [
+        {
+          "index": 87,
+          "reaction": "F18 + n \u27f6 F19 + \ud835\udefe",
+          "coefficient": 5.535173703849488e+18,
+          "anchor10MK": 59200.95862272172,
+          "is_regularized_exothermic_neutron_binary": true
+        },
+        {
+          "index": 99,
+          "reaction": "Ne21 + n \u27f6 Ne22 + \ud835\udefe",
+          "coefficient": 4.718270207409594e+21,
+          "anchor10MK": 260400.0237342544,
+          "is_regularized_exothermic_neutron_binary": true
+        }
+      ],
+      "maximum_rate": 4.718270207409594e+21,
+      "unfixed_large_extrapolation_count": 0
+    },
+    {
+      "T_K": 10000000.0,
+      "large_extrapolations": [],
+      "maximum_rate": 350644258.43414086,
+      "unfixed_large_extrapolation_count": 0
+    },
+    {
+      "T_K": 100000000.0,
+      "large_extrapolations": [],
+      "maximum_rate": 438925151.9235727,
+      "unfixed_large_extrapolation_count": 0
+    },
+    {
+      "T_K": 1000000000.0,
+      "large_extrapolations": [],
+      "maximum_rate": 609791345.4636755,
+      "unfixed_large_extrapolation_count": 0
+    },
+    {
+      "T_K": 2800000000.0,
+      "large_extrapolations": [],
+      "maximum_rate": 280783823906.9468,
+      "unfixed_large_extrapolation_count": 0
+    }
+  ],
+  "neutron_source_at_cold_endpoint": [
+    {
+      "zone": 63,
+      "T_K": 301365.40238366614,
+      "rho_g_cm3": 272.64886110909265,
+      "source_channels": [
+        {
+          "index": 115,
+          "reaction": "C13 + He4 \u27f6 n + O16",
+          "actual_dY_n_s": 2.773365746228668e-281,
+          "at10MK_dY_n_s": 5.220570937990151e-97
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "nuclear_stoichiometry_baryon_identity": true,
+    "reaction_Q_mass_identity": true,
+    "source_budget_finite": true,
+    "all_selected_regularizations_are_binary_exothermic_neutron_channels": true
+  },
+  "input_sha256": {
+    "/tmp/protium-small-stages/scaled-hot-B2-64-R30-tight.npz": "2707846f6ad493a96db6d90d679931e86bc9b634d0b7cd163d68750920323968",
+    "docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-B2-64-R30-tight.json": "83e60fc80f668c84115b2b19b10c78e5ab8729ea2eff2bea8618345792e4fcf1",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/radial_pulse.py": "bdc92a8652d0f646a72541e4f33b7825df6a98070d309adc58c97af20eede53e"
+  },
+  "proposed_rule": {
+    "threshold_K": 10000000.0,
+    "classification": "binary exothermic neutron-induced reactions only",
+    "below_threshold": "constant N_A<sigma v> equal to10MK value, matching s-wave1/v cross-section asymptote",
+    "weak_charged_and_reverse_reactions": "retain actual-temperature evaluation except diagnosed C12+O16 charged-fit overflow: if needed below10MK, use a matched Gamow-suppressed continuation. Reverse-pair correction must be consistent if its cold flow is material",
+    "sensitivities": "zero cold neutron-induced rates versus capped upper-rate stress, with all hot coefficients unchanged",
+    "physical_status": "Approximate asymptotic continuation and bounded trace-inventory sensitivity, not a measured rate replacement."
+  }
+}

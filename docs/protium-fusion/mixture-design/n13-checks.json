@@ -1,0 +1,113 @@
+{
+  "checks": {
+    "identity_kernel_max_relative": 0.0
+  },
+  "rates": [
+    {
+      "T9": 0.3,
+      "Li2006_Eq17": 0.06738916784906399,
+      "JINA_lg06": 0.06573365773654805,
+      "ratio": 1.025185120827309
+    },
+    {
+      "T9": 0.5,
+      "Li2006_Eq17": 8.064596418639827,
+      "JINA_lg06": 8.389528439967911,
+      "ratio": 0.9612693343072656
+    },
+    {
+      "T9": 0.7,
+      "Li2006_Eq17": 121.73535691128629,
+      "JINA_lg06": 120.23635905687401,
+      "ratio": 1.0124670928675013
+    },
+    {
+      "T9": 1,
+      "Li2006_Eq17": 949.3757730292177,
+      "JINA_lg06": 904.3123604254474,
+      "ratio": 1.0498316893319577
+    },
+    {
+      "T9": 1.25,
+      "Li2006_Eq17": 2266.1534746413613,
+      "JINA_lg06": 2585.7963257161396,
+      "ratio": 0.8763851398906088
+    },
+    {
+      "T9": 1.5,
+      "Li2006_Eq17": 3774.2221211726433,
+      "JINA_lg06": 6289.675631047374,
+      "ratio": 0.6000662581933736
+    },
+    {
+      "T9": 1.75,
+      "Li2006_Eq17": 5191.692822947072,
+      "JINA_lg06": 14564.502460396505,
+      "ratio": 0.3564620787468859
+    },
+    {
+      "T9": 2,
+      "Li2006_Eq17": 6429.796962546847,
+      "JINA_lg06": 32473.377108459023,
+      "ratio": 0.1980021031096252
+    },
+    {
+      "T9": 3,
+      "Li2006_Eq17": 9972.885850270297,
+      "JINA_lg06": 472374.51389203366,
+      "ratio": 0.02111224369007704
+    },
+    {
+      "T9": 10,
+      "Li2006_Eq17": 7996.134684043906,
+      "JINA_lg06": 21352075.268092755,
+      "ratio": 0.00037448981345587724
+    }
+  ],
+  "metadata": {
+    "revision": "luna2023-public-repository-2026-10-31-plus-li2006-eq17-sensitivity",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "148b2fdb55f0aa002b7f7ab9d2e6639ba5e1f40d9a54ea0fcf734a7fe8cdbb67",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Three capture pairs changed; N13 source-fit discrepancy separate from new measured carbon normalization.",
+    "carbon_kernel_sha256": "56e07d3438f7d24b94932cf902b586e5f335f9e1b124cf97a5ae81329c7fd401",
+    "nitrogen_source_fit": {
+      "data_sha256": "8bb7064b71f36a9c43e0b532df94664ada41bd65106bdfde026d6e3325b2b989",
+      "doi": "10.1103/PhysRevC.74.035801",
+      "source_equation": 17,
+      "temperature_range_GK": [
+        0.01,
+        10.0
+      ],
+      "interpretation": "Separate source-fit sensitivity; discrepancy with JINA lg06 version5 is unresolved. Published<5% fit residual is not a rate uncertainty.",
+      "uncertainty_selector_scope": "Quantile selector applies only to the two carbon captures; N13 source fit held fixed."
+    }
+  }
+}

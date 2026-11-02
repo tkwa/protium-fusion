@@ -1,0 +1,94 @@
+{
+  "scope": "Chosen fictional open-range scenario: arithmetic only, no measured or predicted deployment performance.",
+  "source_hot_diagnostic_sha256": "74d58442148ab4cdfea59665b92416a7b7c9d74e2ef215375b3764feb419be9b",
+  "scenario_inputs": {
+    "range_launch_radius_m": 1000000000.0,
+    "heliocentric_distance_AU": 120.0,
+    "pulse_mass_kg": 11309733552923.254,
+    "delivered_energy_J": 3.4931631665172685e+25,
+    "chosen_fictional_nuclear_over_delivered_Q": 2.6,
+    "driver_efficiency": 0.3,
+    "thermal_conversion_efficiency": 0.4,
+    "solar_irradiance_at_1AU_W_m2": 1361.0
+  },
+  "energy_accounting": {
+    "convention": "Q is deposited nuclear energy / delivered pulse energy. The fluence uses immediate capture heat; O15 decay, neutrinos and later processing are separate. Recover the delivered input heat once.",
+    "chosen_nuclear_energy_J": 9.082224232944899e+25,
+    "delivered_plus_nuclear_J": 1.2575387399462168e+26,
+    "electric_driver_input_J": 1.164387722172423e+26,
+    "electric_return_at_complete_collection_J": 5.0301549597848675e+25,
+    "net_electric_at_complete_collection_before_auxiliaries_J": -6.613722261939362e+25,
+    "breakeven_Q_at_complete_collection_before_auxiliaries": 7.333333333333334,
+    "breakeven_Q_at_99percent_collection_before_auxiliaries": 7.417508417508419,
+    "isotropic_energy_fluence_at_range_J_m2": 10007175.329599695,
+    "uniform_mass_column_at_range_kg_m2": 8.999999999999999e-07,
+    "fluence_over_assumed_10MJ_per_kg_sacrificial_enthalpy_kg_m2": 1.0007175329599696,
+    "shield_qualification": "The last value is a toy energy/enthalpy quotient, not an ablation depth or a validated shield. Spectrum, ion stopping, impulse, nonuniformity and surface transients remain unknown.",
+    "maximum_isotropic_energy_intercept_fraction_for_collector_projected_area_1e12m2": 7.957747154594766e-08
+  },
+  "flight_and_source_requirements": {
+    "rms_inflow_speed_m_s": 2396666.1949734534,
+    "rms_speed_flight_time_s": 417.2462573625429,
+    "photon_flight_time_s": 3.3356409519815204,
+    "all_outward_energy_as_kinetic_characteristic_speed_m_s": 4715736.146044479,
+    "corresponding_debris_time_s": 212.05596942458112,
+    "pointing_30m_angular_error_rad": 3e-08,
+    "pointing_30m_uncorrelated_transverse_velocity_error_m_s": 0.07189998584920361,
+    "pointing_30m_arrival_error_s": 1.2517387720876288e-05,
+    "qualification": "Characteristic flight and ballistic sensitivities only; all-kinetic outward speed is illustrative. Arrival distributions and useful diagnostic/shield timing require a computed outgoing spectrum."
+  },
+  "open_space_thermal_environment": {
+    "solar_irradiance_W_m2": 0.09451388888888888,
+    "black_isothermal_sphere_equilibrium_K": 25.407151444166633,
+    "assumed_radiation_geometry": "Direct sunlight only. Nearby equipment and prior shots can dominate local radiation and residual gas.",
+    "solar_absorbed_energy_per_kg_during_flight_for_black_maximum_grain_J_kg": 3.1978969619326962
+  },
+  "accelerator_scenario": {
+    "grain_density_kg_m3": 1000.0,
+    "surface_field_V_m": 1000000000.0,
+    "applied_gradient_V_m": 10000000.0,
+    "length_m": 100000000.0,
+    "maximum_grain_radius_at_rms_speed_m": 0.009248789175457356,
+    "constant_acceleration_time_from_rest_s": 83.44925147250858,
+    "integrated_accelerating_voltage_V": 1000000000000000.0,
+    "surface_maxwell_pressure_Pa": 4427093.906400001,
+    "thin_shell_mass_over_core_at_1GPa_and_shell_density2000_kg_m3": 0.013281281719200002,
+    "qualification": "An example necessary requirement; no demonstrated material or accelerator. Acceleration may occur outside the range launch radius. Film mass, core strength, hydrogen retention and composition must be counted."
+  },
+  "charge_neutralization_requirement": {
+    "initial_grain_charge_per_mass_C_kg": 0.002872004425064265,
+    "total_charge_if_all_grains_remain_at_accelerating_charge_C": 32481604810.293377,
+    "uniform_sphere_radius_where_Coulomb_energy_equals_initial_kinetic_m": 175158.06331696274,
+    "uniform_30m_sphere_Coulomb_over_initial_kinetic": 5838.6021105654245,
+    "maximum_residual_net_charge_fraction_for_1percent_kinetic_penalty_at_30m": 0.0013087164460630146,
+    "isolated_grain_field_self_energy_per_kg_J_kg": 13281.2817192,
+    "charge_compensating_electron_mass_kg": 0.1846783901215292,
+    "qualification": "Unscreened uniform-sphere electrostatic example, not the real beam geometry. Charged grains cannot coast inward unchanged; a discharge or charge-neutralization system must act before convergence. Electron mass is small, but its transport, currents, grain heating and final trajectory corrections are unmodeled."
+  },
+  "gravity": {
+    "solar_tidal_acceleration_across_range_m_s2": 4.587981472155158e-11,
+    "tidal_displacement_during_rms_flight_m": 3.993710309179359e-06,
+    "pulse_self_gravity_acceleration_at_range_m_s2": 7.548455465227567e-16,
+    "uniform_30m_sphere_binding_J_per_kg": 15.096910930455133,
+    "binding_over_delivered_energy": 4.887891917911593e-12,
+    "circular_orbit_angular_frequency_s_inverse": 1.5145925973929684e-10,
+    "orbital_frame_rotation_length_during_rms_flight_m": 63.19580926912288,
+    "qualification": "Tidal and self-gravity perturbations are small over flight. Rotation of orbit-following nodes requires predictable aiming corrections; no gravity-supported full collector shell is assumed."
+  },
+  "checks": {
+    "uniform_sphere_Coulomb_field_integral": true,
+    "breakeven_reconstructs_zero": true,
+    "full_capture_scenario_loses_electricity": true,
+    "fluence_integrates_to_energy": true,
+    "accelerator_work_matches_kinetic_energy": true
+  },
+  "primary_constant_source": "https://arxiv.org/abs/1510.07674",
+  "remaining_requirements": [
+    "Measured partially ionized cold-material EOS and shock Hugoniot.",
+    "Discrete pellet collision, vaporization, ionization and multidimensional liner formation.",
+    "Full reaction network and delayed O15 decay heat/neutrino accounting.",
+    "Source hardware, pellet coating/strength/retention, field emission and finite accelerator geometry.",
+    "Open-range diagnostic capture, spectrum-dependent shielding and safe shot cadence.",
+    "Other catalytic stages, separation and recovery before any closed hydrogen-to-helium cycle claim."
+  ]
+}

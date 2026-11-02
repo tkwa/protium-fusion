@@ -1,0 +1,36 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+CUT_COMMAND None
+RESULT {"incident_energy_MeV": 0.5, "incident_particle": "e+", "incident_calorimetric_energy_MeV": 1.52199782, "histories": 10000, "deposited_fraction": 0.9830330503082676, "leakage_fraction": 0.016966949691732517, "sampling_standard_error": 0.0005532336843864544, "sampling_80pct_normal_interval": [0.016257952197143107, 0.017675947186321928], "max_abs_event_energy_residual_MeV": 2.220446049250313e-15, "mean_energy_residual_MeV": 1.7190693313295924e-16, "mean_abs_energy_residual_MeV": 4.0238923304514174e-16, "events_above_strict_relative_residual1e_7": 0, "max_steps": 456, "mean_steps": 142.5191, "mean_tracks": 46.3691, "residual_inside_kinetic_MeV": 0.0, "vacuum_deposit_MeV": 2.1055595028739722e-13, "escape_by_particle_MeV": {"gamma": 258.0041437233829, "e-": 0.23246070528281915, "e+": 0}, "seconds": 8.108742519980296}
+RESULT {"incident_energy_MeV": 1.0, "incident_particle": "e+", "incident_calorimetric_energy_MeV": 2.02199782, "histories": 10000, "deposited_fraction": 0.9859116790135458, "leakage_fraction": 0.014088320986454215, "sampling_standard_error": 0.0004680363494367576, "sampling_80pct_normal_interval": [0.013488508269888615, 0.014688133703019815], "max_abs_event_energy_residual_MeV": 2.6645352591003757e-15, "mean_energy_residual_MeV": 1.462385768036256e-16, "mean_abs_energy_residual_MeV": 5.023093052614058e-16, "events_above_strict_relative_residual1e_7": 0, "max_steps": 714, "mean_steps": 148.8954, "mean_tracks": 47.3067, "residual_inside_kinetic_MeV": 0.0, "vacuum_deposit_MeV": 1.4712640568999478e-13, "escape_by_particle_MeV": {"gamma": 284.6530899836029, "e-": 0.21245323710413733, "e+": 0}, "seconds": 7.376260326942429}
+RESULT {"incident_energy_MeV": 1.8, "incident_particle": "e+", "incident_calorimetric_energy_MeV": 2.82199782, "histories": 10000, "deposited_fraction": 0.9891521146357165, "leakage_fraction": 0.010847885364283482, "sampling_standard_error": 0.00041455065485654786, "sampling_80pct_normal_interval": [0.010316617323365748, 0.011379153405201216], "max_abs_event_energy_residual_MeV": 3.6903813338540203e-13, "mean_energy_residual_MeV": -1.4517276269998548e-16, "mean_abs_energy_residual_MeV": 1.007771643912747e-15, "events_above_strict_relative_residual1e_7": 0, "max_steps": 636, "mean_steps": 157.9754, "mean_tracks": 49.3623, "residual_inside_kinetic_MeV": 0.0, "vacuum_deposit_MeV": 1.8880705652098192e-13, "escape_by_particle_MeV": {"gamma": 306.0924262737582, "e-": 0.03466222242096234, "e+": 0}, "seconds": 7.574994714930654}
+RESULT {"incident_energy_MeV": 4.12, "incident_particle": "e+", "incident_calorimetric_energy_MeV": 5.14199782, "histories": 10000, "deposited_fraction": 0.987308493934126, "leakage_fraction": 0.012691506065874023, "sampling_standard_error": 0.0005790526634260055, "sampling_80pct_normal_interval": [0.011949420218263954, 0.013433591913484092], "max_abs_event_energy_residual_MeV": 7.51665396592216e-12, "mean_energy_residual_MeV": -1.0409451078885468e-16, "mean_abs_energy_residual_MeV": 6.8741456971110895e-15, "events_above_strict_relative_residual1e_7": 0, "max_steps": 401, "mean_steps": 181.8847, "mean_tracks": 55.8397, "residual_inside_kinetic_MeV": 0.0, "vacuum_deposit_MeV": 8.947298548667122e-14, "escape_by_particle_MeV": {"gamma": 650.844303281573, "e-": 1.7526619508379324, "e+": 0}, "seconds": 8.817524346057326}
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_Galactic
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  100 eV     e-  100 eV     e+  100 eV  proton 1 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : ReceiverGraphite
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  100 eV     e-  31.5346 keV    e+  31.2287 keV proton 1 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+DUMP_COMMAND None
+COMPLETE /home/tkwa/src/protium-fusion/output/coupled-photon-transport/final-S500-positron.json

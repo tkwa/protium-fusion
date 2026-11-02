@@ -1,0 +1,402 @@
+{
+  "criterion": "Same1000K,globalg=.01,300K material comparison as the leakage follow-up. No minimum anisotropy or total retention probability is inferred.",
+  "source_geometry": {
+    "cap_um": 0.1,
+    "pitch_um": 20.0,
+    "active_depth_um": 150.0,
+    "anisotropy": 10000.0,
+    "maximum_absolute_refinement_difference": 8.453040964858088e-06
+  },
+  "mean_ideal_mobile_front_fractions_H_He": [
+    0.002212793481395226,
+    0.0018190368123738967
+  ],
+  "plenum_leak_fraction_of_locally_retained_gas": 0.001,
+  "definition": "f_total_i=f_front_i+(1\u2212f_front_i)*f_plenum+(1\u2212f_front_i)*(1\u2212f_plenum)*delta. Thus a .001 plenum leak acts on the remaining population, not on gas already in the cavity. delta is an additional conditional thermal-release path.",
+  "cases": [
+    {
+      "additional_fraction_of_post_plenum_retained_gas_delta": 0,
+      "total_thermal_cavity_fractions_H_He": [
+        0.0032105806879138307,
+        0.0028172177755615225
+      ],
+      "steady": {
+        "species_column_kg_m2": [
+          9.250513701283299e-08,
+          9.779018564333583e-08
+        ],
+        "total_column_kg_m2": 1.9029532265616882e-07,
+        "species_pressure_Pa": [
+          3.46890346494631e-10,
+          1.8466909740568896e-10
+        ],
+        "mean_speed_m_s": [
+          3241.0041075397703,
+          2299.9366702496295
+        ],
+        "steady_inventory_kg": [
+          468856380292.25116,
+          495643311813.9279
+        ],
+        "effective_capture_residence_s": [
+          45253465.22254197,
+          63769871.82466543
+        ]
+      },
+      "capsules": [
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 245009.66347921177,
+          "gas_heat_J_kg_core": 42945.6789411684,
+          "total_energy_J_kg_core": 287955.34242038016,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 137934.3710553635,
+          "gas_heat_J_kg_core": 151965.73637054753,
+          "total_energy_J_kg_core": 289900.107425911,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 130710.10004737966,
+          "gas_heat_J_kg_core": 21472.8394705842,
+          "total_energy_J_kg_core": 152182.93951796385,
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.01383652926623292,
+            0.018146288957623807
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 77172.45383545553,
+          "gas_heat_J_kg_core": 75982.86818527376,
+          "total_energy_J_kg_core": 153155.3220207293,
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.0038717664081012633,
+            0.005089709086763751
+          ]
+        }
+      ]
+    },
+    {
+      "additional_fraction_of_post_plenum_retained_gas_delta": 0.001,
+      "total_thermal_cavity_fractions_H_He": [
+        0.004207370107225917,
+        0.003814400557785961
+      ],
+      "steady": {
+        "species_column_kg_m2": [
+          1.2122521938096114e-07,
+          1.3240401288806472e-07
+        ],
+        "total_column_kg_m2": 2.5362923226902587e-07,
+        "species_pressure_Pa": [
+          4.5458943916936773e-10,
+          2.500345959267171e-10
+        ],
+        "mean_speed_m_s": [
+          3241.0041075397703,
+          2299.9366702496295
+        ],
+        "steady_inventory_kg": [
+          614422283934.4221,
+          671081285034.5232
+        ],
+        "effective_capture_residence_s": [
+          45253465.22254197,
+          63769871.82466543
+        ]
+      },
+      "capsules": [
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 245009.66347921177,
+          "gas_heat_J_kg_core": 57238.819257797026,
+          "total_energy_J_kg_core": 302248.4827370088,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 137934.3710553635,
+          "gas_heat_J_kg_core": 202542.8292659599,
+          "total_energy_J_kg_core": 340477.2003213234,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 130710.10004737966,
+          "gas_heat_J_kg_core": 28619.409628898513,
+          "total_energy_J_kg_core": 159329.50967627816,
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.01383652926623292,
+            0.018146288957623807
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 77172.45383545553,
+          "gas_heat_J_kg_core": 101271.41463297996,
+          "total_energy_J_kg_core": 178443.86846843548,
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.0038717664081012633,
+            0.005089709086763751
+          ]
+        }
+      ]
+    },
+    {
+      "additional_fraction_of_post_plenum_retained_gas_delta": 0.003,
+      "total_thermal_cavity_fractions_H_He": [
+        0.006200948945850089,
+        0.0058087661222348385
+      ],
+      "steady": {
+        "species_column_kg_m2": [
+          1.7866538411721746e-07,
+          2.0163166737752256e-07
+        ],
+        "total_column_kg_m2": 3.8029705149474e-07,
+        "species_pressure_Pa": [
+          6.699876245188412e-10,
+          3.8076559296877337e-10
+        ],
+        "mean_speed_m_s": [
+          3241.0041075397703,
+          2299.9366702496295
+        ],
+        "steady_inventory_kg": [
+          905554091218.7642,
+          1021957231475.714
+        ],
+        "effective_capture_residence_s": [
+          45253465.22254197,
+          63769871.82466543
+        ]
+      },
+      "capsules": [
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 245009.66347921177,
+          "gas_heat_J_kg_core": 85825.09989105427,
+          "total_energy_J_kg_core": 330834.76337026607,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 137934.3710553635,
+          "gas_heat_J_kg_core": 303697.0150567847,
+          "total_energy_J_kg_core": 441631.3861121482,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 130710.10004737966,
+          "gas_heat_J_kg_core": 42912.549945527135,
+          "total_energy_J_kg_core": 173622.64999290678,
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.01383652926623292,
+            0.018146288957623807
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 77172.45383545553,
+          "gas_heat_J_kg_core": 151848.50752839234,
+          "total_energy_J_kg_core": 229020.96136384786,
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.0038717664081012633,
+            0.005089709086763751
+          ]
+        }
+      ]
+    },
+    {
+      "additional_fraction_of_post_plenum_retained_gas_delta": 0.004,
+      "total_thermal_cavity_fractions_H_He": [
+        0.007197738365162175,
+        0.006805948904459277
+      ],
+      "steady": {
+        "species_column_kg_m2": [
+          2.0738546648534561e-07,
+          2.3624549462225142e-07
+        ],
+        "total_column_kg_m2": 4.4363096110759706e-07,
+        "species_pressure_Pa": [
+          7.776867171935778e-10,
+          4.4613109148980133e-10
+        ],
+        "mean_speed_m_s": [
+          3241.0041075397703,
+          2299.9366702496295
+        ],
+        "steady_inventory_kg": [
+          1051119994860.935,
+          1197395204696.3093
+        ],
+        "effective_capture_residence_s": [
+          45253465.22254197,
+          63769871.82466543
+        ]
+      },
+      "capsules": [
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 245009.66347921177,
+          "gas_heat_J_kg_core": 100118.24020768289,
+          "total_energy_J_kg_core": 345127.9036868947,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.01,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 137934.3710553635,
+          "gas_heat_J_kg_core": 354274.107952197,
+          "total_energy_J_kg_core": 492208.4790075605,
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0,
+            0
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.5,
+          "IR_plus_field_J_kg_core": 130710.10004737966,
+          "gas_heat_J_kg_core": 50059.120103841444,
+          "total_energy_J_kg_core": 180769.2201512211,
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.01383652926623292,
+            0.018146288957623807
+          ]
+        },
+        {
+          "radius_m": 0.02,
+          "mass_speed_quantile": 0.999,
+          "IR_plus_field_J_kg_core": 77172.45383545553,
+          "gas_heat_J_kg_core": 177137.0539760985,
+          "total_energy_J_kg_core": 254309.50781155404,
+          "within300K_material_cases": [
+            false,
+            true
+          ],
+          "additional_post_plenum_leak_fraction_limit_from_delta0": [
+            0.0038717664081012633,
+            0.005089709086763751
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": [
+    "Only flow-weighted steady gas columns are evaluated for this eta1e4 comparison; the packet-specific eta1e4 transient is not integrated.",
+    "The .003 additional leakage case passes the median and99.9percent-speed2cm bulk comparisons. It does not qualify coating, plumes, fastreflection, gas chemistry, or the global cleanup apparatus.",
+    "The samecase is more restrictive for1cm because the fullflight IR dose is larger.",
+    "Eta1e4 suffices for this conditional heat screen; neither eta1e4 nor eta1e5 is established as a minimum material requirement. Performance must be assessed by total species-resolved cavity source, effective cleanup, and capsule/delivery acceptance."
+  ],
+  "checks_passed": 4,
+  "source_sha256": {
+    "anisotropy-inputs.json": "0525814dc8675f2a884ea625299bad34e902de7535b79b88568255d53b571d79",
+    "calculate.py": "9aa2920961a595d2b59371687934aff60746564cfaddac91d04587153877374e"
+  },
+  "frozen_source_sha256": {
+    "inputs.json": "b8ab5bbbe4d66b60ae15aff0751d1578733788b30c1eae71f053a34df5df2082",
+    "pellet-interfaces.json": "3754367c89fba4e7cc4008e809c75f813e7df6df7b0a19d6b2c758c03a9e4007"
+  },
+  "code_sha256": "6a86cdb39d8387a11858cadfd5047c721c48d7c4e6f4d20c98565af66d75da3d"
+}

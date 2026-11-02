@@ -1,0 +1,267 @@
+{
+  "scope": "Exact-family representative350 receiver T(t), with conserved source heat.\nLinear constant-property backing, chronological main-window schedule and finite\nbulk storage. Prompt microsecond peaks are separate interval bounds, not dwell.\n",
+  "code_sha256": "d1691b1a6b6ade21eac1ca5ebf9ef4ed856de73530606953dfa37951988d6e69",
+  "inputs_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128_thin_thermal.py": "3484b73865c77908bc42c0dba6da4ce1f1d412fecabf953cbb6be5828a19f4b6",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-thermal-input.json": "e3a4eaa2b73cae6384caf0f187bb91eb8859dfd3a6134b8605c21862965487b4",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/selected-plant/point.json": "d13704b81aa56057642641e6c2a05c95c3c47381b32173183ecaf520ce8d511c",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/events.csv": "36feead65d3b610ffdef9b1f9ca6c04edb66ecc5a01783970f5a49cafa3d5d9a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-prompt-proxy.json": "13ccc5029a9cb1c238d05a6d6c7e7bdaae8f8f145b7f503db78569ee01e7524a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-audit.json": "48b465430bbccdff908344156d9f3083218c3ec253894e2a2fb6da4421cdc04b"
+  },
+  "model": {
+    "sigma_kg_m2": 350.0,
+    "rho_kg_m3": 2000.0,
+    "cp_J_kg_K": 1800.0,
+    "k_W_m_K": 50.0,
+    "mean_full_source_pickup_W_m2": 116.51853171568968,
+    "selected_rate_He_s": 4.1508940143803696e+32,
+    "coarse_background_spacing_s": 60.0,
+    "local_profile_spacing_s": 0.25,
+    "initial_bulk_offset_K": 1021.5085022259937,
+    "minimum_sampled_bulk_K": 1000.215004433523,
+    "bulk_missed_minimum_bound_K": 0.011097003020541873,
+    "steady_back_extraction_front_offset_K": 0.06796914350081898,
+    "history_cutoff_s": 20000.0,
+    "pulse_energy_not_yet_arrived_at_cutoff_fraction": {
+      "A": 2.805486061180434e-08,
+      "B1": 3.9940486610449646e-08,
+      "B2": 5.2768542487814434e-08,
+      "C13": 1.5432826987388134e-08
+    },
+    "maximum_coarse_front_K": 1462.3955866907359,
+    "time_reference": "Absolute dispatch focus times plus common R/c for prompt arrival; material arrival already references that clock."
+  },
+  "profiles": [
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "event_index": 1623,
+      "focus_s": 12264385.781079737,
+      "prompt_arrival_s": 12264389.450284785,
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/A-warmest_background.csv",
+      "sha256": "b6ac5642f0d685ddaaea405d2f479a3aadf52663de19a46fdd6938a10970838b",
+      "maximum_bulk_front_K": 1342.8016561309923,
+      "maximum_skin_front_K": 1349.0342416022165,
+      "maximum_150um_skin_front_K": 1352.1505343378287,
+      "duration_above_K_s": {
+        "1100": 4600.25,
+        "1200": 616.25,
+        "1300": 83.75,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      },
+      "prompt_interval_upper": {
+        "duration_s": 6.659472170103566e-05,
+        "start_relative_s": 0.0,
+        "upper_increment_bulk_K": 72.30104515520156,
+        "upper_increment_skin4_K": 83.18152485195114,
+        "preflash_background_K": 1137.8323996893853,
+        "interpretation": "Conservative rectangular interval at the finite-depth Teff proxy peak. This interval is microseconds long; no peak is held through the material pulse. Radiation/thermal transfer remains a proxy.",
+        "short_time_upper_csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/A-warmest_background-prompt-upper.csv",
+        "short_time_upper_sha256": "5bd18814f3780be9647a5b2459384cb943827efec0c54a055b476acdb01d323b",
+        "short_time_scope": "Until0.25s, upper history is min(finite-depth peak, wholepromptenergy surfaceimpulse at its finalemissiontime). Use this rather than linearly interpolating the coarse prompttail; the low-k surface bound is conservative for the finite100um skin."
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "event_index": 1624,
+      "focus_s": 12269270.899001703,
+      "prompt_arrival_s": 12269274.56820675,
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-warmest_background.csv",
+      "sha256": "717d28f82e61f0cdc0262c15cf6fc67a4fb1a4b3b8b6db1e6e5a6472888d4254",
+      "maximum_bulk_front_K": 1190.4461505327877,
+      "maximum_skin_front_K": 1190.4461515602804,
+      "maximum_150um_skin_front_K": 1190.4461520740267,
+      "duration_above_K_s": {
+        "1100": 4600.25,
+        "1200": 0.0,
+        "1300": 0.0,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      },
+      "prompt_interval_upper": {
+        "duration_s": 8.102689932206793e-05,
+        "start_relative_s": 0.0,
+        "upper_increment_bulk_K": 54.81331323197484,
+        "upper_increment_skin4_K": 61.91827591910307,
+        "preflash_background_K": 1189.2309540353333,
+        "interpretation": "Conservative rectangular interval at the finite-depth Teff proxy peak. This interval is microseconds long; no peak is held through the material pulse. Radiation/thermal transfer remains a proxy.",
+        "short_time_upper_csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-warmest_background-prompt-upper.csv",
+        "short_time_upper_sha256": "3d27ef3067411c5445034cf93aa8f6c1b5a867ccd90afa90d7317edf8127e201",
+        "short_time_scope": "Until0.25s, upper history is min(finite-depth peak, wholepromptenergy surfaceimpulse at its finalemissiontime). Use this rather than linearly interpolating the coarse prompttail; the low-k surface bound is conservative for the finite100um skin."
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "event_index": 2114,
+      "focus_s": 15985309.2723426,
+      "prompt_arrival_s": 15985312.941547647,
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-ordinary_midyear.csv",
+      "sha256": "40f60004a509d61e4de818ae8a5da8585f60db261d7adb87ea6be3180ea4a846",
+      "maximum_bulk_front_K": 1075.3675250761103,
+      "maximum_skin_front_K": 1075.3675254512807,
+      "maximum_150um_skin_front_K": 1075.367525638866,
+      "duration_above_K_s": {
+        "1100": 0.0,
+        "1200": 0.0,
+        "1300": 0.0,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      },
+      "prompt_interval_upper": {
+        "duration_s": 8.102689932206793e-05,
+        "start_relative_s": 0.0,
+        "upper_increment_bulk_K": 54.81331323197484,
+        "upper_increment_skin4_K": 61.91827591910307,
+        "preflash_background_K": 1074.1523285862052,
+        "interpretation": "Conservative rectangular interval at the finite-depth Teff proxy peak. This interval is microseconds long; no peak is held through the material pulse. Radiation/thermal transfer remains a proxy.",
+        "short_time_upper_csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-ordinary_midyear-prompt-upper.csv",
+        "short_time_upper_sha256": "f4d539eab7cb2ddfc9fa6542d55fdb2535e5ec57b2671d7b54ef19bc72a5214f",
+        "short_time_scope": "Until0.25s, upper history is min(finite-depth peak, wholepromptenergy surfaceimpulse at its finalemissiontime). Use this rather than linearly interpolating the coarse prompttail; the low-k surface bound is conservative for the finite100um skin."
+      }
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "event_index": 3055,
+      "focus_s": 23095542.33544237,
+      "prompt_arrival_s": 23095546.00464742,
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B2-warmest_background.csv",
+      "sha256": "e914032717bb1cd82d3755d06a3c1a9e0fe86621137c1be9aa0aa344fef036e2",
+      "maximum_bulk_front_K": 1380.254876801203,
+      "maximum_skin_front_K": 1388.774690093409,
+      "maximum_150um_skin_front_K": 1393.0822000230314,
+      "duration_above_K_s": {
+        "1100": 4600.25,
+        "1200": 481.5,
+        "1300": 121.0,
+        "1400": 0.0,
+        "1500": 0.0,
+        "1600": 0.0
+      },
+      "prompt_interval_upper": {
+        "duration_s": 6.199247289722944e-05,
+        "start_relative_s": 0.0,
+        "upper_increment_bulk_K": 16.19499419057776,
+        "upper_increment_skin4_K": 19.10273216827855,
+        "preflash_background_K": 1104.3866664059972,
+        "interpretation": "Conservative rectangular interval at the finite-depth Teff proxy peak. This interval is microseconds long; no peak is held through the material pulse. Radiation/thermal transfer remains a proxy.",
+        "short_time_upper_csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B2-warmest_background-prompt-upper.csv",
+        "short_time_upper_sha256": "c9cb20e267ea08bf3e30f610b9dd955e9c02230fce59c6d9cc0c1042646468c8",
+        "short_time_scope": "Until0.25s, upper history is min(finite-depth peak, wholepromptenergy surfaceimpulse at its finalemissiontime). Use this rather than linearly interpolating the coarse prompttail; the low-k surface bound is conservative for the finite100um skin."
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "event_index": 1557,
+      "focus_s": 11771770.475346722,
+      "prompt_arrival_s": 11771774.144551769,
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-warmest_background.csv",
+      "sha256": "eed598fd78699c4b5eb61d48d4d494c5488fd4b8ad8424efc5243b35d056dd72",
+      "maximum_bulk_front_K": 1455.1345137671844,
+      "maximum_skin_front_K": 1470.1203206636026,
+      "maximum_150um_skin_front_K": 1477.8415865953684,
+      "duration_above_K_s": {
+        "1100": 3958.25,
+        "1200": 285.25,
+        "1300": 114.25,
+        "1400": 49.5,
+        "1500": 0.0,
+        "1600": 0.0
+      },
+      "prompt_interval_upper": {
+        "duration_s": 6.709038616638475e-05,
+        "start_relative_s": 0.0,
+        "upper_increment_bulk_K": 216.11898125042393,
+        "upper_increment_skin4_K": 245.94236329524261,
+        "preflash_background_K": 1048.7069254066716,
+        "interpretation": "Conservative rectangular interval at the finite-depth Teff proxy peak. This interval is microseconds long; no peak is held through the material pulse. Radiation/thermal transfer remains a proxy.",
+        "short_time_upper_csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-warmest_background-prompt-upper.csv",
+        "short_time_upper_sha256": "3172a7fe076f75bbcbade5b3dce79ffee74c82cad5a2f50569f7313461d1783e",
+        "short_time_scope": "Until0.25s, upper history is min(finite-depth peak, wholepromptenergy surfaceimpulse at its finalemissiontime). Use this rather than linearly interpolating the coarse prompttail; the low-k surface bound is conservative for the finite100um skin."
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "event_index": 75,
+      "focus_s": 563193.3982791438,
+      "prompt_arrival_s": 563197.067484191,
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_1.csv",
+      "sha256": "4463c1ba9136274573cafe502140c5b4d0a3bb7185889069281a2503e4f8af3f",
+      "maximum_bulk_front_K": 1470.8488352630166,
+      "maximum_skin_front_K": 1485.8346421594345,
+      "maximum_150um_skin_front_K": 1493.5559080912003,
+      "duration_above_K_s": {
+        "1100": 3958.25,
+        "1200": 348.5,
+        "1300": 128.0,
+        "1400": 57.75,
+        "1500": 0.0,
+        "1600": 0.0
+      },
+      "prompt_interval_upper": {
+        "duration_s": 6.709038616638475e-05,
+        "start_relative_s": 0.0,
+        "upper_increment_bulk_K": 216.11898125042393,
+        "upper_increment_skin4_K": 245.94236329524261,
+        "preflash_background_K": 1064.421246902504,
+        "interpretation": "Conservative rectangular interval at the finite-depth Teff proxy peak. This interval is microseconds long; no peak is held through the material pulse. Radiation/thermal transfer remains a proxy.",
+        "short_time_upper_csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_1-prompt-upper.csv",
+        "short_time_upper_sha256": "4199be5090f8c6cc60d90b27b6643d936c61c630bd2bd5c407d053fc9262dbe8",
+        "short_time_scope": "Until0.25s, upper history is min(finite-depth peak, wholepromptenergy surfaceimpulse at its finalemissiontime). Use this rather than linearly interpolating the coarse prompttail; the low-k surface bound is conservative for the finite100um skin."
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "event_index": 3039,
+      "focus_s": 22980347.5524143,
+      "prompt_arrival_s": 22980351.22161935,
+      "csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_3.csv",
+      "sha256": "a3646cdbb154d4c10ad5e98723dee237a9122a163677c542b175322ac79d262a",
+      "maximum_bulk_front_K": 1439.4201922715508,
+      "maximum_skin_front_K": 1454.4059991679687,
+      "maximum_150um_skin_front_K": 1462.1272650997348,
+      "duration_above_K_s": {
+        "1100": 3957.75,
+        "1200": 234.25,
+        "1300": 101.25,
+        "1400": 41.5,
+        "1500": 0.0,
+        "1600": 0.0
+      },
+      "prompt_interval_upper": {
+        "duration_s": 6.709038616638475e-05,
+        "start_relative_s": 0.0,
+        "upper_increment_bulk_K": 216.11898125042393,
+        "upper_increment_skin4_K": 245.94236329524261,
+        "preflash_background_K": 1032.9926039110385,
+        "interpretation": "Conservative rectangular interval at the finite-depth Teff proxy peak. This interval is microseconds long; no peak is held through the material pulse. Radiation/thermal transfer remains a proxy.",
+        "short_time_upper_csv": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_3-prompt-upper.csv",
+        "short_time_upper_sha256": "fcb2e7f4e88c3cbf1b65b54e26db57761d5aecad0ec5ed7ba04eda7b10746e3a",
+        "short_time_scope": "Until0.25s, upper history is min(finite-depth peak, wholepromptenergy surfaceimpulse at its finalemissiontime). Use this rather than linearly interpolating the coarse prompttail; the low-k surface bound is conservative for the finite100um skin."
+      }
+    }
+  ],
+  "coarse_history": {
+    "npz": "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/scheduled-coarse.npz",
+    "sha256": "27f0e107ce558a31a4f7e1deee3437109b0c109ad0f245a5217466b96ccccc29"
+  },
+  "limits": [
+    "Heat-deposition curves conserve stage energy. Delayed heat is assigned its exponential radioactive time law without the larger envelope used for worst-case thermal bounds; full angular/relativistic arrival smearing is not solved.",
+    "All source heat is retained for this hot receiver history, a conservative reference rather than the coupled hot/cold capture partition.",
+    "The initial bulk offset is chosen to maintain minimum1000K during the finite archived schedule; startup heat and initial nonuniform state are explicit operating assumptions, not generated energy.",
+    "Nonuniform contributions older than20000s are omitted from the representative curves. The separate serialized-window thermal audit bounds total old tails/background corrections at about0.1K for350; add that bound when a strict upper curve is needed.",
+    "Microsecond prompt intervals are exported separately. The0.25s curves must not be used to infer an unresolved prompt temperature history.",
+    "The k4 skin is a quasi-steady resistance on the material/decay pulse; its millisecond transient, contact resistance and damaged-material kinetics are unresolved.",
+    "These are physical-model temperature histories for rate integration, not measured temperatures or a credible interval."
+  ]
+}

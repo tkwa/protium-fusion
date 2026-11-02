@@ -1,0 +1,1011 @@
+{
+  "scope": "C13 local random-motion and conditional temperature screen at receiver. Initial radial velocity spread and successive arrival speeds are coherent flow; only peculiar velocity relative to local mean contributes to temperature. No new hydro, collisional-radiative, kinetic-electron or magnetic evolution.",
+  "source_sha256": "6ff0345c6ff48ae89503d89a04b698d4b77643e76646081943dbabd28626689a",
+  "code_sha256": "146bfbf045f330c8982c383072ee8f6b222d60f0c3cc09bcf78509422a238894",
+  "primary_sources": {
+    "beta_Q_convention": "https://www.nndc.bnl.gov/nudat3/help/betadecay.jsp",
+    "O15_endpoint_primary_review": "https://lss.fnal.gov/archive/2024/pub/fermilab-pub-24-0489-sqms-v.pdf",
+    "nuclear_levels_N15": "https://nucldata.tunl.duke.edu/nucldata/HTML/A=15/15_04_1991.pdf",
+    "collision_formulary": "https://www.nrl.navy.mil/Portals/38/PDF%20Files/NRL_Plasma_Formulary_2023.pdf",
+    "particle_stopping": "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-passage-particles-matter.pdf",
+    "lepton_escape_and_thermalization": "https://arxiv.org/abs/1605.07218",
+    "collective_self_confinement": "https://academic.oup.com/mnras/article/541/3/2197/8203299"
+  },
+  "constants": {
+    "kB_J_K": 1.380649e-23,
+    "eV_J": 1.602176634e-19,
+    "atomic_mass_kg": 1.6605390666e-27
+  },
+  "radius_m": 1100000000.0,
+  "endpoint": {
+    "time_s": 7.000357811304867e-05,
+    "outer_radius_m": 811.8841984105429,
+    "gas_temperature_min_max_K": [
+      27357947.399803333,
+      112883724.70319068
+    ],
+    "gas_density_min_max_kg_m3": [
+      548.5175360546085,
+      59525.08159456522
+    ],
+    "energy_fluences_J_m2": {
+      "ions": 55887.21968284752,
+      "electrons_EOS": 375023.5136020515,
+      "radiation": 1567091.4598988248
+    },
+    "bulk_kinetic_J_m2": 34108878.22900207,
+    "internal_to_bulk_ratio": 0.05857718860671483
+  },
+  "wall": {
+    "energy_arrival_1_50_99_s": [
+      59.100713872022865,
+      94.33837343481528,
+      268.5835157599453
+    ],
+    "ion_density_energy_quantiles_m3": {
+      "0.01": 8326439470.128512,
+      "0.1": 12993555455.531002,
+      "0.5": 24337791149.761032,
+      "0.9": 28065826029.25104,
+      "0.99": 29911729232.26938
+    },
+    "electron_density_full_strip_energy_quantiles_m3": {
+      "0.01": 35670917581.12486,
+      "0.1": 50498370901.35645,
+      "0.5": 156099070991.7604,
+      "0.9": 181213880001.25723,
+      "0.99": 193315960973.50568
+    },
+    "expansion_time_energy_quantiles_s": {
+      "0.01": 19.58671680186674,
+      "0.1": 21.577140168674543,
+      "0.5": 31.33672007943922,
+      "0.9": 52.25237826042673,
+      "0.99": 89.40479976364342
+    },
+    "gas_only_adiabatic_temperature_energy_quantiles_K": {
+      "0.01": 2.764690393881967e-06,
+      "0.1": 7.331254946528412e-06,
+      "0.5": 1.2793625526773428e-05,
+      "0.9": 1.53830966648219e-05,
+      "0.99": 1.6289158426290718e-05
+    },
+    "force_free_from_endpoint_geometric_temperature_bound_energy_quantiles_K": {
+      "0.01": 0.005119060440870983,
+      "0.1": 0.014929778257260964,
+      "0.5": 0.036462508288799725,
+      "0.9": 0.04328646883689334,
+      "0.99": 0.051973825924847186
+    },
+    "electron_per_nucleus_full_strip": 6.233089825609053,
+    "kinetic_MeV_per_nucleus": 5.940105261795675,
+    "initial_number_fractions": {
+      "p": 0.10727613297997067,
+      "c12": 2.3622274466292002e-07,
+      "c13": 0.13549113119974235,
+      "n14": 0.7290173262320169,
+      "o15": 0.028214914499591705,
+      "o16": 1.1324850347111656e-07
+    }
+  },
+  "recoil": {
+    "dominant_parent": "o15",
+    "lifetime_half_s": 121.99951623253882,
+    "beta_spectrum_scenarios": {
+      "-0.3333333333333333": {
+        "beta_endpoint_MeV": 1.732,
+        "daughter_A": 15,
+        "daughter_Z": 7,
+        "angular_correlation_coefficient_scenario": -0.3333333333333333,
+        "mean_positron_kinetic_MeV": 0.7358498443631236,
+        "mean_neutrino_MeV": 0.9961501556368763,
+        "mean_daughter_recoil_eV": 84.05053284783908,
+        "positron_momentum_endpoint_MeV_c": 2.184015650768098,
+        "daughter_recoil_max_eV": 170.69080560674323,
+        "scope": "Allowed beta phase-space approximation with repulsive point Fermi factor. Angular coefficient is a sensitivity, not an evaluated O15 mixing-ratio fit; endpoint and lifetime are evaluated-source inputs."
+      },
+      "0.0": {
+        "beta_endpoint_MeV": 1.732,
+        "daughter_A": 15,
+        "daughter_Z": 7,
+        "angular_correlation_coefficient_scenario": 0.0,
+        "mean_positron_kinetic_MeV": 0.7358498443631236,
+        "mean_neutrino_MeV": 0.9961501556368763,
+        "mean_daughter_recoil_eV": 90.90123227929244,
+        "positron_momentum_endpoint_MeV_c": 2.184015650768098,
+        "daughter_recoil_max_eV": 170.69080560674323,
+        "scope": "Allowed beta phase-space approximation with repulsive point Fermi factor. Angular coefficient is a sensitivity, not an evaluated O15 mixing-ratio fit; endpoint and lifetime are evaluated-source inputs."
+      },
+      "1.0": {
+        "beta_endpoint_MeV": 1.732,
+        "daughter_A": 15,
+        "daughter_Z": 7,
+        "angular_correlation_coefficient_scenario": 1.0,
+        "mean_positron_kinetic_MeV": 0.7358498443631236,
+        "mean_neutrino_MeV": 0.9961501556368763,
+        "mean_daughter_recoil_eV": 111.45333057365264,
+        "positron_momentum_endpoint_MeV_c": 2.184015650768098,
+        "daughter_recoil_max_eV": 170.69080560674323,
+        "scope": "Allowed beta phase-space approximation with repulsive point Fermi factor. Angular coefficient is a sensitivity, not an evaluated O15 mixing-ratio fit; endpoint and lifetime are evaluated-source inputs."
+      }
+    },
+    "decayed_O15_per_all_nuclei": 0.015976605859676186,
+    "recoil_without_spatial_filter_J_m2": 8.339261405950813,
+    "recoil_with_decaytime_squared_filter_J_m2": 2.106386477703812,
+    "filtered_ion_temperature_number_mean_K": 2837.9230437369856,
+    "filtered_ion_temperature_energy_quantiles_K": {
+      "0.01": 0.0002253317457709814,
+      "0.1": 0.00024216369162362552,
+      "0.5": 2942.0406437124616,
+      "0.9": 3892.3784636473724,
+      "0.99": 3923.1363856492426
+    },
+    "unfiltered_ion_temperature_number_mean_K": 11235.441530888002,
+    "bulk_fraction_with_filtered_recoil": 0.9999999382452178,
+    "O15_positron_kinetic_energy_unfiltered_J_m2": 67506.72189809481,
+    "O15_positron_kinetic_energy_filtered_J_m2": 17051.29977803427,
+    "kernel": "For x=lambda*t/gamma,I2=[2-exp(-x)*(x\u00b2+2x+2)]/x\u00b2 = integral0^t lambda/gamma*exp(-lambda*tau/gamma)*(tau/t)^2dtau. A kick at tau becomes local peculiar velocity approximately(tau/t)*delta_v in homologous expansion. Finite source size/early acceleration and perturbed arrival sampling remain unresolved.",
+    "scope": "O15 dominates. O14,N13 initial abundances <3e-8 each, so their gamma/beta recoils are negligible here; other stages differ. Effective Ti can describe a cold core plus minority fast daughters instead of Maxwellian equilibrium."
+  },
+  "beta_retention_branches": [
+    {
+      "instantaneous_positron_energy_deposition_fraction": 0.0,
+      "late_thermal_energy_J_m2": 0.0,
+      "electron_only_temperature_equivalent_full_strip_number_mean_K": 0.0,
+      "common_particle_temperature_if_equilibrated_K": 392.35279972456607,
+      "random_energy_fraction_of_bulk_plus_random": 6.175478224415358e-08,
+      "bulk_fraction_of_bulk_plus_random": 0.9999999382452178,
+      "additional_coherent_energy_in_ideal_closed_branch_J_m2": 6.232874928247009,
+      "energy_closed_bulk_fraction": 0.9999999382452291,
+      "energy_closed_total_increment_J_m2": 8.339261405950813,
+      "scope": "Conditional instantaneous local beta kinetic-energy deposition followed by nonrelativistic adiabatic dilution. Fixed-KF fractions are diagnostic ratios against the archived trajectory. Energy-closed branch assigns raw-minus-filtered recoil/beta energy to additional coherent expansion work, with no new radiation loss. This is a global ideal ledger, not a recalculated parcel trajectory. No annihilation photons or neutrinos added. Actual confinement/delayed thermalization changes the kernel; no retention probability assigned."
+    },
+    {
+      "instantaneous_positron_energy_deposition_fraction": 1e-06,
+      "late_thermal_energy_J_m2": 0.017051299778034244,
+      "electron_only_temperature_equivalent_full_strip_number_mean_K": 3.6856718069652095,
+      "common_particle_temperature_if_equilibrated_K": 395.5289144963185,
+      "random_energy_fraction_of_bulk_plus_random": 6.225469014347035e-08,
+      "bulk_fraction_of_bulk_plus_random": 0.9999999377453098,
+      "additional_coherent_energy_in_ideal_closed_branch_J_m2": 6.283330350367069,
+      "energy_closed_bulk_fraction": 0.9999999377453214,
+      "energy_closed_total_increment_J_m2": 8.406768127848908,
+      "scope": "Conditional instantaneous local beta kinetic-energy deposition followed by nonrelativistic adiabatic dilution. Fixed-KF fractions are diagnostic ratios against the archived trajectory. Energy-closed branch assigns raw-minus-filtered recoil/beta energy to additional coherent expansion work, with no new radiation loss. This is a global ideal ledger, not a recalculated parcel trajectory. No annihilation photons or neutrinos added. Actual confinement/delayed thermalization changes the kernel; no retention probability assigned."
+    },
+    {
+      "instantaneous_positron_energy_deposition_fraction": 0.001,
+      "late_thermal_energy_J_m2": 17.051299778034267,
+      "electron_only_temperature_equivalent_full_strip_number_mean_K": 3685.6718069652143,
+      "common_particle_temperature_if_equilibrated_K": 3568.4675714769774,
+      "random_energy_fraction_of_bulk_plus_random": 5.616624319030238e-07,
+      "bulk_fraction_of_bulk_plus_random": 0.9999994383375681,
+      "additional_coherent_energy_in_ideal_closed_branch_J_m2": 56.688297048307604,
+      "energy_closed_bulk_fraction": 0.9999994383385016,
+      "energy_closed_total_increment_J_m2": 75.84598330404562,
+      "scope": "Conditional instantaneous local beta kinetic-energy deposition followed by nonrelativistic adiabatic dilution. Fixed-KF fractions are diagnostic ratios against the archived trajectory. Energy-closed branch assigns raw-minus-filtered recoil/beta energy to additional coherent expansion work, with no new radiation loss. This is a global ideal ledger, not a recalculated parcel trajectory. No annihilation photons or neutrinos added. Actual confinement/delayed thermalization changes the kernel; no retention probability assigned."
+    },
+    {
+      "instantaneous_positron_energy_deposition_fraction": 0.01,
+      "late_thermal_energy_J_m2": 170.5129977803426,
+      "electron_only_temperature_equivalent_full_strip_number_mean_K": 36856.71806965213,
+      "common_particle_temperature_if_equilibrated_K": 32153.500517248704,
+      "random_energy_fraction_of_bulk_plus_random": 5.060808787243427e-06,
+      "bulk_fraction_of_bulk_plus_random": 0.9999949391912127,
+      "additional_coherent_energy_in_ideal_closed_branch_J_m2": 510.78709612885245,
+      "energy_closed_bulk_fraction": 0.9999949392669978,
+      "energy_closed_total_increment_J_m2": 683.4064803868989,
+      "scope": "Conditional instantaneous local beta kinetic-energy deposition followed by nonrelativistic adiabatic dilution. Fixed-KF fractions are diagnostic ratios against the archived trajectory. Energy-closed branch assigns raw-minus-filtered recoil/beta energy to additional coherent expansion work, with no new radiation loss. This is a global ideal ledger, not a recalculated parcel trajectory. No annihilation photons or neutrinos added. Actual confinement/delayed thermalization changes the kernel; no retention probability assigned."
+    },
+    {
+      "instantaneous_positron_energy_deposition_fraction": 0.1,
+      "late_thermal_energy_J_m2": 1705.1299778034272,
+      "electron_only_temperature_equivalent_full_strip_number_mean_K": 368567.18069652154,
+      "common_particle_temperature_if_equilibrated_K": 318003.8299749658,
+      "random_energy_fraction_of_bulk_plus_random": 5.005004578460093e-05,
+      "bulk_fraction_of_bulk_plus_random": 0.9999499499542154,
+      "additional_coherent_energy_in_ideal_closed_branch_J_m2": 5051.775086934303,
+      "energy_closed_bulk_fraction": 0.9999499573655257,
+      "energy_closed_total_increment_J_m2": 6759.011451215432,
+      "scope": "Conditional instantaneous local beta kinetic-energy deposition followed by nonrelativistic adiabatic dilution. Fixed-KF fractions are diagnostic ratios against the archived trajectory. Energy-closed branch assigns raw-minus-filtered recoil/beta energy to additional coherent expansion work, with no new radiation loss. This is a global ideal ledger, not a recalculated parcel trajectory. No annihilation photons or neutrinos added. Actual confinement/delayed thermalization changes the kernel; no retention probability assigned."
+    },
+    {
+      "instantaneous_positron_energy_deposition_fraction": 1.0,
+      "late_thermal_energy_J_m2": 17051.29977803427,
+      "electron_only_temperature_equivalent_full_strip_number_mean_K": 3685671.806965215,
+      "common_particle_temperature_if_equilibrated_K": 3176507.1245521354,
+      "random_energy_fraction_of_bulk_plus_random": 0.0004997198712939607,
+      "bulk_fraction_of_bulk_plus_random": 0.9995002801287061,
+      "additional_coherent_energy_in_ideal_closed_branch_J_m2": 50461.6549949888,
+      "energy_closed_bulk_fraction": 0.999501017968171,
+      "energy_closed_total_increment_J_m2": 67515.06115950076,
+      "scope": "Conditional instantaneous local beta kinetic-energy deposition followed by nonrelativistic adiabatic dilution. Fixed-KF fractions are diagnostic ratios against the archived trajectory. Energy-closed branch assigns raw-minus-filtered recoil/beta energy to additional coherent expansion work, with no new radiation loss. This is a global ideal ledger, not a recalculated parcel trajectory. No annihilation photons or neutrinos added. Actual confinement/delayed thermalization changes the kernel; no retention probability assigned."
+    }
+  ],
+  "direct_crossing_positron_stopping_scenarios": [
+    {
+      "mass_stopping_power_MeV_cm2_g_scenario": 1.0,
+      "single_column_energy_lost_MeV": 7.438016528925622e-08,
+      "fraction_of_mean_positron_kinetic": 1.010806292330361e-07,
+      "scope": "Order-of-magnitude direct-crossing stopping diagnostic;1kg/m\u00b2=.1g/cm\u00b2. Column is one receiver-normal pulse fluence, not a complete angular/time-dependent path. Magnetic/collective confinement and early dense deposition excluded."
+    },
+    {
+      "mass_stopping_power_MeV_cm2_g_scenario": 3.0,
+      "single_column_energy_lost_MeV": 2.2314049586776865e-07,
+      "fraction_of_mean_positron_kinetic": 3.032418876991083e-07,
+      "scope": "Order-of-magnitude direct-crossing stopping diagnostic;1kg/m\u00b2=.1g/cm\u00b2. Column is one receiver-normal pulse fluence, not a complete angular/time-dependent path. Magnetic/collective confinement and early dense deposition excluded."
+    },
+    {
+      "mass_stopping_power_MeV_cm2_g_scenario": 10.0,
+      "single_column_energy_lost_MeV": 7.438016528925621e-07,
+      "fraction_of_mean_positron_kinetic": 1.010806292330361e-06,
+      "scope": "Order-of-magnitude direct-crossing stopping diagnostic;1kg/m\u00b2=.1g/cm\u00b2. Column is one receiver-normal pulse fluence, not a complete angular/time-dependent path. Magnetic/collective confinement and early dense deposition excluded."
+    }
+  ],
+  "fixed_charge_collision_checks": [
+    {
+      "trial_Ti_K": 100.0,
+      "fixed_ion_charge_scenario": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 39.9052531767998,
+        "0.1": 52.02406902484938,
+        "0.5": 137.13110677392936,
+        "0.9": 172.56447898808696,
+        "0.99": 196.74653857983526
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.0005459402073614,
+        "0.1": 0.0006332622318968462,
+        "0.5": 0.0007806124835958402,
+        "0.9": 0.0008185916224457394,
+        "0.99": 0.0008361583573529173
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 100.0,
+      "fixed_ion_charge_scenario": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 3232.3255073207833,
+        "0.1": 4213.949591012801,
+        "0.5": 11107.619648688275,
+        "0.9": 13977.722798035042,
+        "0.99": 15936.469624966656
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.004913461866252601,
+        "0.1": 0.005699360087071616,
+        "0.5": 0.007025512352362562,
+        "0.9": 0.0073673246020116556,
+        "0.99": 0.007525425216176257
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 100.0,
+      "fixed_ion_charge_scenario": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 95812.51287749632,
+        "0.1": 124909.7897286634,
+        "0.5": 329251.7873642043,
+        "0.9": 414327.3140503967,
+        "0.99": 472388.4391301845
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.02675107016070861,
+        "0.1": 0.031029849362945474,
+        "0.5": 0.03825001169619618,
+        "0.9": 0.04011098949984124,
+        "0.99": 0.040971759510292964
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 1000.0,
+      "fixed_ion_charge_scenario": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 1.2619149064435726,
+        "0.1": 1.64514551268339,
+        "0.5": 4.336466354653615,
+        "0.9": 5.456967968426231,
+        "0.99": 6.221671836664692
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 5.4594020736140004e-05,
+        "0.1": 6.332622318968463e-05,
+        "0.5": 7.806124835958402e-05,
+        "0.9": 8.185916224457394e-05,
+        "0.99": 8.361583573529173e-05
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 1000.0,
+      "fixed_ion_charge_scenario": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 102.21510742192937,
+        "0.1": 133.2567865273546,
+        "0.5": 351.25377472694277,
+        "0.9": 442.0144054425246,
+        "0.99": 503.9554187698401
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.0004913461866252601,
+        "0.1": 0.0005699360087071617,
+        "0.5": 0.0007025512352362562,
+        "0.9": 0.0007367324602011655,
+        "0.99": 0.0007525425216176255
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 1000.0,
+      "fixed_ion_charge_scenario": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 3029.857690371018,
+        "0.1": 3949.9943759528196,
+        "0.5": 10411.855717523329,
+        "0.9": 13102.18009219138,
+        "0.99": 14938.234079831926
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.002675107016070861,
+        "0.1": 0.003102984936294547,
+        "0.5": 0.003825001169619618,
+        "0.9": 0.004011098949984125,
+        "0.99": 0.004097175951029296
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 3000.0,
+      "fixed_ion_charge_scenario": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.24285563697653267,
+        "0.1": 0.31660840153462,
+        "0.5": 0.8345533390636732,
+        "0.9": 1.0501939751766831,
+        "0.99": 1.1973613032359576
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 1.819800691204667e-05,
+        "0.1": 2.1108741063228206e-05,
+        "0.5": 2.602041611986134e-05,
+        "0.9": 2.7286387414857982e-05,
+        "0.99": 2.787194524509724e-05
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 3000.0,
+      "fixed_ion_charge_scenario": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 19.671306595099146,
+        "0.1": 25.645280524304223,
+        "0.5": 67.59882046415751,
+        "0.9": 85.06571198931132,
+        "0.99": 96.98626556211258
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.00016378206220842004,
+        "0.1": 0.00018997866956905386,
+        "0.5": 0.0002341837450787521,
+        "0.9": 0.0002455774867337219,
+        "0.99": 0.0002508475072058752
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 3000.0,
+      "fixed_ion_charge_scenario": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 583.0963843806551,
+        "0.1": 760.1767720846227,
+        "0.5": 2003.7625670918792,
+        "0.9": 2521.515734399216,
+        "0.99": 2874.8644890695346
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.000891702338690287,
+        "0.1": 0.0010343283120981825,
+        "0.5": 0.001275000389873206,
+        "0.9": 0.0013370329833280413,
+        "0.99": 0.0013657253170097654
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 10000.0,
+      "fixed_ion_charge_scenario": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.0399052531767998,
+        "0.1": 0.052024069024849386,
+        "0.5": 0.13713110677392934,
+        "0.9": 0.17256447898808694,
+        "0.99": 0.19674653857983526
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 5.459402073614001e-06,
+        "0.1": 6.332622318968462e-06,
+        "0.5": 7.806124835958402e-06,
+        "0.9": 8.185916224457393e-06,
+        "0.99": 8.361583573529173e-06
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 10000.0,
+      "fixed_ion_charge_scenario": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 3.2323255073207835,
+        "0.1": 4.213949591012801,
+        "0.5": 11.107619648688276,
+        "0.9": 13.97772279803504,
+        "0.99": 15.936469624966657
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 4.913461866252601e-05,
+        "0.1": 5.699360087071616e-05,
+        "0.5": 7.025512352362561e-05,
+        "0.9": 7.367324602011655e-05,
+        "0.99": 7.525425216176256e-05
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 10000.0,
+      "fixed_ion_charge_scenario": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 95.81251287749635,
+        "0.1": 124.9097897286634,
+        "0.5": 329.2517873642043,
+        "0.9": 414.3273140503967,
+        "0.99": 472.38843913018445
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 0.00026751070160708606,
+        "0.1": 0.0003102984936294547,
+        "0.5": 0.0003825001169619618,
+        "0.9": 0.0004011098949984124,
+        "0.99": 0.0004097175951029296
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 100000.0,
+      "fixed_ion_charge_scenario": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.0012619149064435724,
+        "0.1": 0.0016451455126833894,
+        "0.5": 0.004336466354653614,
+        "0.9": 0.00545696796842623,
+        "0.99": 0.0062216718366646905
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 5.459402073614e-07,
+        "0.1": 6.332622318968463e-07,
+        "0.5": 7.806124835958403e-07,
+        "0.9": 8.185916224457394e-07,
+        "0.99": 8.361583573529174e-07
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 100000.0,
+      "fixed_ion_charge_scenario": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.10221510742192935,
+        "0.1": 0.13325678652735456,
+        "0.5": 0.3512537747269427,
+        "0.9": 0.4420144054425245,
+        "0.99": 0.5039554187698401
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 4.913461866252601e-06,
+        "0.1": 5.699360087071617e-06,
+        "0.5": 7.025512352362563e-06,
+        "0.9": 7.367324602011656e-06,
+        "0.99": 7.5254252161762565e-06
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    },
+    {
+      "trial_Ti_K": 100000.0,
+      "fixed_ion_charge_scenario": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "nu_ii_times_local_expansion_time_energy_quantiles": {
+        "0.01": 3.0298576903710175,
+        "0.1": 3.949994375952819,
+        "0.5": 10.411855717523325,
+        "0.9": 13.102180092191377,
+        "0.99": 14.938234079831922
+      },
+      "Gamma_ii_energy_quantiles": {
+        "0.01": 2.6751070160708608e-05,
+        "0.1": 3.102984936294547e-05,
+        "0.5": 3.8250011696196184e-05,
+        "0.9": 4.011098949984124e-05,
+        "0.99": 4.097175951029296e-05
+      },
+      "scope": "NRL weak-coupling like-ion relaxation estimate, N14 mass proxy, n_i from exact shell expansion; charge is assumed, not predicted. Invalid when strong coupling or neutral fraction dominates."
+    }
+  ],
+  "electron_ion_equal_temperature_relaxation_checks": [
+    {
+      "trial_common_temperature_K": 400.0,
+      "nitrogen_proxy_ion_charge": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.08887606269051028,
+        "0.1": 0.1158668108076578,
+        "0.5": 0.3054152491768802,
+        "0.9": 0.38433164136938813,
+        "0.99": 0.4381893686901457
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.08887606269051028,
+        "0.1": 0.1158668108076578,
+        "0.5": 0.3054152491768802,
+        "0.9": 0.38433164136938813,
+        "0.99": 0.4381893686901457
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 46.36416965886793,
+        "0.1": 49.66563897954786,
+        "0.5": 57.485114405256056,
+        "0.9": 107.07501494596795,
+        "0.99": 165.15018748333878
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 400.0,
+      "nitrogen_proxy_ion_charge": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.7998845642145924,
+        "0.1": 1.04280129726892,
+        "0.5": 2.748737242591922,
+        "0.9": 3.458984772324493,
+        "0.99": 3.943704318211312
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 2.3996536926437773,
+        "0.1": 3.1284038918067605,
+        "0.5": 8.246211727775766,
+        "0.9": 10.376954316973478,
+        "0.99": 11.831112954633936
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 2.575787203270441,
+        "0.1": 2.7592021655304366,
+        "0.5": 3.1936174669586705,
+        "0.9": 5.948611941442664,
+        "0.99": 9.175010415741045
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 400.0,
+      "nitrogen_proxy_ion_charge": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 4.354927071835004,
+        "0.1": 5.677473729575232,
+        "0.5": 14.965347209667131,
+        "0.9": 18.83225042710002,
+        "0.99": 21.471279065817143
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 30.484489502845026,
+        "0.1": 39.74231610702663,
+        "0.5": 104.75743046766992,
+        "0.9": 131.82575298970013,
+        "0.99": 150.29895346071999
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 0.23655188601463228,
+        "0.1": 0.2533961172425911,
+        "0.5": 0.2932914000268166,
+        "0.9": 0.5463010966631017,
+        "0.99": 0.8426029973639733
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 1000.0,
+      "nitrogen_proxy_ion_charge": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.022484063005594006,
+        "0.1": 0.029312242189760997,
+        "0.5": 0.07726462556374458,
+        "0.9": 0.09722906908786093,
+        "0.99": 0.11085411612257068
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.022484063005594006,
+        "0.1": 0.029312242189760997,
+        "0.5": 0.07726462556374458,
+        "0.9": 0.09722906908786093,
+        "0.99": 0.11085411612257068
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 183.2704724306183,
+        "0.1": 196.32067577876504,
+        "0.5": 227.22986634495587,
+        "0.9": 423.2511596572871,
+        "0.99": 652.8134355639771
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 1000.0,
+      "nitrogen_proxy_ion_charge": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.20235656705034605,
+        "0.1": 0.263810179707849,
+        "0.5": 0.6953816300737012,
+        "0.9": 0.8750616217907483,
+        "0.99": 0.9976870451031361
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.6070697011510381,
+        "0.1": 0.7914305391235469,
+        "0.5": 2.086144890221104,
+        "0.9": 2.625184865372245,
+        "0.99": 2.993061135309408
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 10.181692912812128,
+        "0.1": 10.906704209931393,
+        "0.5": 12.623881463608663,
+        "0.9": 23.513953314293733,
+        "0.99": 36.26741308688762
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 1000.0,
+      "nitrogen_proxy_ion_charge": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 1.1017190872741063,
+        "0.1": 1.436299867298289,
+        "0.5": 3.7859666526234856,
+        "0.9": 4.7642243853051855,
+        "0.99": 5.431851690005964
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 7.712033610918744,
+        "0.1": 10.054099071088023,
+        "0.5": 26.5017665683644,
+        "0.9": 33.3495706971363,
+        "0.99": 38.02296183004175
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 0.9350534307684605,
+        "0.1": 1.0016361009120667,
+        "0.5": 1.159336052780387,
+        "0.9": 2.1594446921290156,
+        "0.99": 3.3306807936937606
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 3000.0,
+      "nitrogen_proxy_ion_charge": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.004327059942918735,
+        "0.1": 0.0056411436396033385,
+        "0.5": 0.014869584122687858,
+        "0.9": 0.018711743070311076,
+        "0.99": 0.021333884594714737
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.004327059942918735,
+        "0.1": 0.0056411436396033385,
+        "0.5": 0.014869584122687858,
+        "0.9": 0.018711743070311076,
+        "0.99": 0.021333884594714737
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 952.3013093309462,
+        "0.1": 1020.1121550752333,
+        "0.5": 1180.7210205196466,
+        "0.9": 2199.277538666604,
+        "0.99": 3392.1181147811994
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 3000.0,
+      "nitrogen_proxy_ion_charge": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.03894353948626861,
+        "0.1": 0.05077029275643004,
+        "0.5": 0.13382625710419072,
+        "0.9": 0.16840568763279964,
+        "0.99": 0.19200496135243264
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.11683061845880584,
+        "0.1": 0.15231087826929013,
+        "0.5": 0.4014787713125722,
+        "0.9": 0.505217062898399,
+        "0.99": 0.5760148840572978
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 52.905628296163684,
+        "0.1": 56.67289750417962,
+        "0.5": 65.5956122510915,
+        "0.9": 122.182085481478,
+        "0.99": 188.45100637673332
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 3000.0,
+      "nitrogen_proxy_ion_charge": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.21202593720301802,
+        "0.1": 0.2764160383405636,
+        "0.5": 0.7286096220117052,
+        "0.9": 0.9168754104452427,
+        "0.99": 1.0453603451410223
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 1.4841815604211261,
+        "0.1": 1.9349122683839453,
+        "0.5": 5.100267354081936,
+        "0.9": 6.418127873116699,
+        "0.99": 7.317522415987156
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 4.858680149647684,
+        "0.1": 5.204653852424659,
+        "0.5": 6.0240868393859515,
+        "0.9": 11.220803768707164,
+        "0.99": 17.30672507541428
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 10000.0,
+      "nitrogen_proxy_ion_charge": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.0007110085015240822,
+        "0.1": 0.0009269344864612626,
+        "0.5": 0.0024433219934150417,
+        "0.9": 0.0030746531309551054,
+        "0.99": 0.003505514949521166
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.0007110085015240822,
+        "0.1": 0.0009269344864612626,
+        "0.5": 0.0024433219934150417,
+        "0.9": 0.0030746531309551054,
+        "0.99": 0.003505514949521166
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 5795.52120735849,
+        "0.1": 6208.204872443482,
+        "0.5": 7185.639300657007,
+        "0.9": 13384.37686824599,
+        "0.99": 20643.773435417348
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 10000.0,
+      "nitrogen_proxy_ion_charge": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.00639907651371674,
+        "0.1": 0.008342410378151362,
+        "0.5": 0.021989897940735376,
+        "0.9": 0.027671878178595948,
+        "0.99": 0.03154963454569049
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.01919722954115022,
+        "0.1": 0.025027231134454084,
+        "0.5": 0.06596969382220613,
+        "0.9": 0.08301563453578784,
+        "0.99": 0.09464890363707149
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 321.9734004088051,
+        "0.1": 344.90027069130457,
+        "0.5": 399.2021833698338,
+        "0.9": 743.5764926803329,
+        "0.99": 1146.8763019676305
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 10000.0,
+      "nitrogen_proxy_ion_charge": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.03483941657468003,
+        "0.1": 0.04541978983660187,
+        "0.5": 0.11972277767733706,
+        "0.9": 0.1506580034168002,
+        "0.99": 0.17177023252653717
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.24387591602276024,
+        "0.1": 0.3179385288562131,
+        "0.5": 0.8380594437413594,
+        "0.9": 1.0546060239176014,
+        "0.99": 1.2023916276857602
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 29.56898575182903,
+        "0.1": 31.674514655323883,
+        "0.5": 36.66142500335207,
+        "0.9": 68.2876370828877,
+        "0.99": 105.32537467049666
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 100000.0,
+      "nitrogen_proxy_ion_charge": 1,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 2.2484063005594e-05,
+        "0.1": 2.931224218976099e-05,
+        "0.5": 7.726462556374457e-05,
+        "0.9": 9.722906908786091e-05,
+        "0.99": 0.00011085411612257066
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 2.2484063005594e-05,
+        "0.1": 2.931224218976099e-05,
+        "0.5": 7.726462556374457e-05,
+        "0.9": 9.722906908786091e-05,
+        "0.99": 0.00011085411612257066
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 183270.4724306183,
+        "0.1": 196320.6757787651,
+        "0.5": 227229.8663449559,
+        "0.9": 423251.1596572872,
+        "0.99": 652813.4355639772
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 100000.0,
+      "nitrogen_proxy_ion_charge": 3,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.00020235656705034602,
+        "0.1": 0.0002638101797078489,
+        "0.5": 0.0006953816300737012,
+        "0.9": 0.000875061621790748,
+        "0.99": 0.000997687045103136
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.000607069701151038,
+        "0.1": 0.0007914305391235467,
+        "0.5": 0.0020861448902211037,
+        "0.9": 0.0026251848653722444,
+        "0.99": 0.0029930611353094078
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 10181.69291281213,
+        "0.1": 10906.704209931393,
+        "0.5": 12623.881463608664,
+        "0.9": 23513.953314293736,
+        "0.99": 36267.41308688763
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    },
+    {
+      "trial_common_temperature_K": 100000.0,
+      "nitrogen_proxy_ion_charge": 7,
+      "Coulomb_logarithm_assumed": 10,
+      "electron_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.0011017190872741063,
+        "0.1": 0.0014362998672982886,
+        "0.5": 0.003785966652623485,
+        "0.9": 0.004764224385305185,
+        "0.99": 0.0054318516900059635
+      },
+      "ion_relaxation_times_local_expansion_time_energy_quantiles": {
+        "0.01": 0.007712033610918743,
+        "0.1": 0.010054099071088021,
+        "0.5": 0.026501766568364397,
+        "0.9": 0.033349570697136295,
+        "0.99": 0.038022961830041745
+      },
+      "temperature_difference_decay_time_s_energy_quantiles": {
+        "0.01": 935.0534307684607,
+        "0.1": 1001.6361009120666,
+        "0.5": 1159.3360527803873,
+        "0.9": 2159.444692129016,
+        "0.99": 3330.680793693761
+      },
+      "scope": "NRL near-equal-temperature two-species energy exchange. N14 proxy with n_e=Z*n_i; not actual charge prediction or integration from unequal temperatures. High charge can share recoil energy with electrons within flight time; warm beta-heated electrons can couple much more slowly."
+    }
+  ],
+  "temperature_to_bulk_fraction_mapping": [
+    {
+      "ion_temperature_K": 3000.0,
+      "electron_temperature_K": 100.0,
+      "electrons_full_strip_scenario": true,
+      "thermal_J_m2": 2.6893220597550425,
+      "bulk_percent_of_bulk_plus_thermal": 99.99999211547846
+    },
+    {
+      "ion_temperature_K": 3000.0,
+      "electron_temperature_K": 10000.0,
+      "electrons_full_strip_scenario": true,
+      "thermal_J_m2": 48.49043421616698,
+      "bulk_percent_of_bulk_plus_thermal": 99.9998578365288
+    },
+    {
+      "ion_temperature_K": 10000.0,
+      "electron_temperature_K": 10000.0,
+      "electrons_full_strip_scenario": true,
+      "thermal_J_m2": 53.68603153036011,
+      "bulk_percent_of_bulk_plus_thermal": 99.99984260418456
+    },
+    {
+      "ion_temperature_K": 100000.0,
+      "electron_temperature_K": 100000.0,
+      "electrons_full_strip_scenario": true,
+      "thermal_J_m2": 536.8603153036012,
+      "bulk_percent_of_bulk_plus_thermal": 99.99842606414126
+    },
+    {
+      "ion_temperature_K": 10000000.0,
+      "electron_temperature_K": 10000000.0,
+      "electrons_full_strip_scenario": true,
+      "thermal_J_m2": 53686.03153036012,
+      "bulk_percent_of_bulk_plus_thermal": 99.84285128270544
+    }
+  ],
+  "energy_upper_scope": {
+    "all_inflight_decay_total_Q_including_unrecoverable_neutrino_J_m2": 252667.07215107064,
+    "all_decay_Q_over_bulk": 0.007407662909776759,
+    "note": "This total mass-difference Q is an intentionally loose ceiling, not heat deposited in the plume."
+  },
+  "judgment": {
+    "conditional_ion_temperature_central_K": 3000,
+    "conditional_subjective80pct_interval_K": [
+      1000,
+      10000
+    ],
+    "conditions": "Pulse-number-averaged recoil-equivalent ion second moment, or characteristic O15-bearing stream; monotone expansion, no strong shocks/external braking, no significant beta energy transferred to ions beyond daughter recoil, and negligible net recoil-energy transfer to electrons/radiation. Interval is subjective judgment around the computed recoil scale, including momentum correlations, phase-space filtering and unresolved early thermal tail. It is neither a spatial percentile band nor a Monte Carlo confidence interval. Cold O15-poor outer parcels fall far below it.",
+    "fully_stripped_recoil_shared_common_temperature_K": 392.35279972456607,
+    "unconditional_ion_temperature": "No preferred unconditional value: sharing with electrons, radiative losses, and beta deposition are not solved. Full-strip equilibration can give about400K instead of the ion-retained3000K scale.",
+    "electron_temperature": "No defensible unconditional central or80%interval from saved state; separate beta deposition/charge/thermalization branches supplied. A common Ti=Te is an extra assumption."
+  },
+  "checks": {
+    "count": 17,
+    "passed": 17,
+    "all_passed": true
+  }
+}

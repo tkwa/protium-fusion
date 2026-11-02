@@ -1,0 +1,509 @@
+{
+  "scope": "Conditional repeatable sector first checkpoint; no completed global guide topology or recovery design. Scalar choices do not become measured hardware.",
+  "input_sha256": {
+    "thermal": "01722faeaf6101777ce8208024963e31995961d9e38a3a8f15ace5c43dea07fa",
+    "pulse": "6ff0345c6ff48ae89503d89a04b698d4b77643e76646081943dbabd28626689a",
+    "timing": "ad28076e8127e4a345167f9cc56c99537f8d785eb8b4a693623e0f78388def10",
+    "old": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461"
+  },
+  "code_sha256": "f8e6564645fd75f28b9b0cc0dcc855bb14b3b02284edc8a6fd12d51352a540e0",
+  "reference": {
+    "radius_m": 1100000000.0,
+    "mass_kg": 1.2185904856638899e+23,
+    "area_m2": 1.5205308443374598e+19,
+    "net_W_m2": 43.23678990100285,
+    "receiver_kg_m2": 5000.0,
+    "service_kg_m2": 1000.0,
+    "insulation_kg_m2": 100.0,
+    "radiator_kg_m2_emitter": 20.0
+  },
+  "support": {
+    "total_areal_mass_kg_m2": 8014.243776783534,
+    "self_acceleration_m_s2": 3.3608423464737605e-06,
+    "maximum_tidal_acceleration_m_s2": 1.0465318679275525e-06,
+    "conservative_uniform_support_pressure_Pa": 0.03532177136972194,
+    "stream_speed_m_s": 10000.0,
+    "stream_mass_kg": 5.907862712872782e+18,
+    "stream_kinetic_J": 2.953931356436391e+26,
+    "orbital_period_s": 691150.3837897545,
+    "loss_fraction_orbit": 0.001,
+    "support_W": 4.273934335736355e+17,
+    "tangential_drag_over_normal_force": 7.957747154594768e-05,
+    "stream_areal_mass_kg_m2": 0.38853948506694136,
+    "passive_shell_screen": {
+      "graphite_modulus_Pa_assumed": 10000000000.0,
+      "poisson_ratio_assumed": 0.2,
+      "thickness_m": 2.5,
+      "classical_buckling_pressure_Pa": 6.087351766413115e-08,
+      "compressive_membrane_stress_Pa": 7770789.701338828,
+      "ideal_equal_face_sandwich_separation_m": 854786.867147271,
+      "scope": "Perfect homogeneous shell and ideal sandwich scaling; real imperfections/core shear reduce buckling strength."
+    },
+    "local_rails": [
+      {
+        "local_rail_pitch_m": 100.0,
+        "length_per_area_m_m2": 0.02,
+        "combined_counterstream_linear_kg_m": 19.42697425334707,
+        "normal_force_per_rail_length_N_m": 1.7660885684860972,
+        "counterstream_mass_flow_each_kg_s": 97134.87126673534,
+        "kinetic_J_per_rail_m": 971348712.6673534,
+        "linear_drag_N_m": 0.00014054086280632585
+      },
+      {
+        "local_rail_pitch_m": 1000.0,
+        "length_per_area_m_m2": 0.002,
+        "combined_counterstream_linear_kg_m": 194.26974253347066,
+        "normal_force_per_rail_length_N_m": 17.660885684860972,
+        "counterstream_mass_flow_each_kg_s": 971348.7126673533,
+        "kinetic_J_per_rail_m": 9713487126.673532,
+        "linear_drag_N_m": 0.0014054086280632587
+      },
+      {
+        "local_rail_pitch_m": 10000.0,
+        "length_per_area_m_m2": 0.0002,
+        "combined_counterstream_linear_kg_m": 1942.6974253347066,
+        "normal_force_per_rail_length_N_m": 176.6088568486097,
+        "counterstream_mass_flow_each_kg_s": 9713487.126673533,
+        "kinetic_J_per_rail_m": 97134871266.73532,
+        "linear_drag_N_m": 0.014054086280632583
+      }
+    ],
+    "guide_fault": [
+      {
+        "radial_clearance_m": 0.1,
+        "time_to_boundary_s": 1.4833030731802705,
+        "stream_path_before_boundary_m": 14833.030731802706
+      },
+      {
+        "radial_clearance_m": 1.0,
+        "time_to_boundary_s": 4.690616171577072,
+        "stream_path_before_boundary_m": 46906.16171577072
+      },
+      {
+        "radial_clearance_m": 10.0,
+        "time_to_boundary_s": 14.833030731802706,
+        "stream_path_before_boundary_m": 148330.30731802707
+      },
+      {
+        "radial_clearance_m": 100.0,
+        "time_to_boundary_s": 46.90616171577072,
+        "stream_path_before_boundary_m": 469061.6171577072
+      }
+    ],
+    "outgoing_capture": {
+      "C13": {
+        "momentum_fluence_Pa_s": 6.569934232291471,
+        "peak_pressure_Pa": 0.09450673200507068,
+        "interval_s": 15885706.54029858,
+        "bulk_radial_delta_v_m_s": 0.0008197821797390187,
+        "ideal_stop_time_if_all_outward_support_removed_s": 186.0023995830306,
+        "impulsive_displacement_to_stop_m": 0.07624072628343238,
+        "scope": "Outgoing capture only; whole installed areal mass responds, impulse applied instantly, outward support removed. Finite arrival generally reduces peak displacement; localized footprints/launch recoil need their own loads."
+      },
+      "A": {
+        "momentum_fluence_Pa_s": 5.15910083434783,
+        "peak_pressure_Pa": 0.1044432803138943,
+        "interval_s": 648690.3901793147,
+        "bulk_radial_delta_v_m_s": 0.0006437414406201658,
+        "ideal_stop_time_if_all_outward_support_removed_s": 146.06008233126852,
+        "impulsive_displacement_to_stop_m": 0.04701246390851541,
+        "scope": "Outgoing capture only; whole installed areal mass responds, impulse applied instantly, outward support removed. Finite arrival generally reduces peak displacement; localized footprints/launch recoil need their own loads."
+      },
+      "B1": {
+        "momentum_fluence_Pa_s": 0.04343389419915349,
+        "peak_pressure_Pa": 0.000678027074544323,
+        "interval_s": 6774.3130579500075,
+        "bulk_radial_delta_v_m_s": 5.419587350833669e-06,
+        "ideal_stop_time_if_all_outward_support_removed_s": 1.2296635337033328,
+        "impulsive_displacement_to_stop_m": 3.3321344665200064e-06,
+        "scope": "Outgoing capture only; whole installed areal mass responds, impulse applied instantly, outward support removed. Finite arrival generally reduces peak displacement; localized footprints/launch recoil need their own loads."
+      },
+      "B2": {
+        "momentum_fluence_Pa_s": 6.1781583895899335,
+        "peak_pressure_Pa": 0.08306435791869522,
+        "interval_s": 1133368.9623012526,
+        "bulk_radial_delta_v_m_s": 0.000770897237676678,
+        "ideal_stop_time_if_all_outward_support_removed_s": 174.91077457360737,
+        "impulsive_displacement_to_stop_m": 0.06741911647934103,
+        "scope": "Outgoing capture only; whole installed areal mass responds, impulse applied instantly, outward support removed. Finite arrival generally reduces peak displacement; localized footprints/launch recoil need their own loads."
+      }
+    },
+    "mean_capture_pressure_Pa": 2.0229379031111953e-05,
+    "unsupported_sector_fall": [
+      {
+        "allowed_differential_displacement_m": 0.01,
+        "time_s": 67.3635606350994
+      },
+      {
+        "allowed_differential_displacement_m": 0.1,
+        "time_s": 213.0222829057729
+      },
+      {
+        "allowed_differential_displacement_m": 1.0,
+        "time_s": 673.6356063509941
+      }
+    ]
+  },
+  "thermal": {
+    "hot_input_W_m2": 105.61795837196411,
+    "cold_plus_environment_W_m2": 65.26122964750515,
+    "loops": [
+      {
+        "sector_side_m": 100.0,
+        "hot": {
+          "sector_side_m": 100.0,
+          "thermal_W": 1056179.583719641,
+          "mean_T_K": 980.0,
+          "gas_deltaT_K": 20.0,
+          "pressure_Pa": 2000000.0,
+          "gas_speed_m_s": 10.0,
+          "gas_density_kg_m3": 0.9824538139746894,
+          "gas_flow_kg_s": 10.1689470706221,
+          "main_pipe_bore_m": 1.147987029581386,
+          "wall_thickness_m": 0.011479870295813861,
+          "wall_allowable_Pa": 100000000.0,
+          "pipe_wall_density_kg_m3": 8000.0,
+          "header_wall_kg_m2": 6.690601932580485,
+          "gas_inventory_kg_m2": 0.0203378941412442,
+          "pressure_loss_Pa": 423.10699534212864,
+          "pump_W": 5474.242885064139,
+          "pump_fraction_of_thermal": 0.005183060692941076,
+          "scope": "Two full-flow 2L headers; pressure wall only, no channels/HX/supports. 100 MPa allowable at hot temperature is a selected material requirement."
+        },
+        "cold": {
+          "sector_side_m": 100.0,
+          "thermal_W": 652612.2964750514,
+          "mean_T_K": 215.0,
+          "gas_deltaT_K": 20.0,
+          "pressure_Pa": 2000000.0,
+          "gas_speed_m_s": 5.0,
+          "gas_density_kg_m3": 4.478161570675328,
+          "gas_flow_kg_s": 6.283382109243211,
+          "main_pipe_bore_m": 0.5977463231158844,
+          "wall_thickness_m": 0.0059774632311588435,
+          "wall_allowable_Pa": 100000000.0,
+          "pipe_wall_density_kg_m3": 8000.0,
+          "header_wall_kg_m2": 1.8139489302983307,
+          "gas_inventory_kg_m2": 0.025133528436972846,
+          "pressure_loss_Pa": 616.8024639075853,
+          "pump_W": 1081.8070946884106,
+          "pump_fraction_of_thermal": 0.0016576566217516354,
+          "scope": "Two full-flow 2L headers; pressure wall only, no channels/HX/supports. 100 MPa allowable at hot temperature is a selected material requirement."
+        },
+        "combined_header_wall_and_gas_kg_m2": 8.550022285457032,
+        "additional_external_pump_W_m2": 0.655604997975255,
+        "service_allowance_kg_m2": 1000.0
+      },
+      {
+        "sector_side_m": 1000.0,
+        "hot": {
+          "sector_side_m": 1000.0,
+          "thermal_W": 105617958.37196411,
+          "mean_T_K": 980.0,
+          "gas_deltaT_K": 20.0,
+          "pressure_Pa": 2000000.0,
+          "gas_speed_m_s": 10.0,
+          "gas_density_kg_m3": 0.9824538139746894,
+          "gas_flow_kg_s": 1016.89470706221,
+          "main_pipe_bore_m": 11.47987029581386,
+          "wall_thickness_m": 0.1147987029581386,
+          "wall_allowable_Pa": 100000000.0,
+          "pipe_wall_density_kg_m3": 8000.0,
+          "header_wall_kg_m2": 66.90601932580438,
+          "gas_inventory_kg_m2": 0.20337894141244198,
+          "pressure_loss_Pa": 423.10699534212864,
+          "pump_W": 547424.2885064139,
+          "pump_fraction_of_thermal": 0.005183060692941076,
+          "scope": "Two full-flow 2L headers; pressure wall only, no channels/HX/supports. 100 MPa allowable at hot temperature is a selected material requirement."
+        },
+        "cold": {
+          "sector_side_m": 1000.0,
+          "thermal_W": 65261229.64750515,
+          "mean_T_K": 215.0,
+          "gas_deltaT_K": 20.0,
+          "pressure_Pa": 2000000.0,
+          "gas_speed_m_s": 5.0,
+          "gas_density_kg_m3": 4.478161570675328,
+          "gas_flow_kg_s": 628.3382109243212,
+          "main_pipe_bore_m": 5.977463231158844,
+          "wall_thickness_m": 0.059774632311588444,
+          "wall_allowable_Pa": 100000000.0,
+          "pipe_wall_density_kg_m3": 8000.0,
+          "header_wall_kg_m2": 18.139489302983332,
+          "gas_inventory_kg_m2": 0.25133528436972846,
+          "pressure_loss_Pa": 616.8024639075853,
+          "pump_W": 108180.70946884106,
+          "pump_fraction_of_thermal": 0.0016576566217516354,
+          "scope": "Two full-flow 2L headers; pressure wall only, no channels/HX/supports. 100 MPa allowable at hot temperature is a selected material requirement."
+        },
+        "combined_header_wall_and_gas_kg_m2": 85.50022285456987,
+        "additional_external_pump_W_m2": 0.6556049979752551,
+        "service_allowance_kg_m2": 1000.0
+      },
+      {
+        "sector_side_m": 10000.0,
+        "hot": {
+          "sector_side_m": 10000.0,
+          "thermal_W": 10561795837.19641,
+          "mean_T_K": 980.0,
+          "gas_deltaT_K": 20.0,
+          "pressure_Pa": 2000000.0,
+          "gas_speed_m_s": 10.0,
+          "gas_density_kg_m3": 0.9824538139746894,
+          "gas_flow_kg_s": 101689.47070622098,
+          "main_pipe_bore_m": 114.79870295813859,
+          "wall_thickness_m": 1.1479870295813859,
+          "wall_allowable_Pa": 100000000.0,
+          "pipe_wall_density_kg_m3": 8000.0,
+          "header_wall_kg_m2": 669.0601932580497,
+          "gas_inventory_kg_m2": 2.0337894141244193,
+          "pressure_loss_Pa": 423.10699534212864,
+          "pump_W": 54742428.850641385,
+          "pump_fraction_of_thermal": 0.005183060692941076,
+          "scope": "Two full-flow 2L headers; pressure wall only, no channels/HX/supports. 100 MPa allowable at hot temperature is a selected material requirement."
+        },
+        "cold": {
+          "sector_side_m": 10000.0,
+          "thermal_W": 6526122964.750514,
+          "mean_T_K": 215.0,
+          "gas_deltaT_K": 20.0,
+          "pressure_Pa": 2000000.0,
+          "gas_speed_m_s": 5.0,
+          "gas_density_kg_m3": 4.478161570675328,
+          "gas_flow_kg_s": 62833.82109243212,
+          "main_pipe_bore_m": 59.77463231158844,
+          "wall_thickness_m": 0.5977463231158845,
+          "wall_allowable_Pa": 100000000.0,
+          "pipe_wall_density_kg_m3": 8000.0,
+          "header_wall_kg_m2": 181.39489302983384,
+          "gas_inventory_kg_m2": 2.5133528436972843,
+          "pressure_loss_Pa": 616.8024639075853,
+          "pump_W": 10818070.946884105,
+          "pump_fraction_of_thermal": 0.0016576566217516354,
+          "scope": "Two full-flow 2L headers; pressure wall only, no channels/HX/supports. 100 MPa allowable at hot temperature is a selected material requirement."
+        },
+        "combined_header_wall_and_gas_kg_m2": 855.0022285457052,
+        "additional_external_pump_W_m2": 0.6556049979752548,
+        "service_allowance_kg_m2": 1000.0
+      }
+    ],
+    "ties": [
+      {
+        "allowable_Pa": 10000000.0,
+        "conductivity_W_m_K": 1.0,
+        "length_m": 1.0,
+        "solid_cross_section_fraction": 5.59060206734465e-08,
+        "bridge_heat_W_m2": 4.4724816538757196e-05,
+        "tie_mass_kg_m2_at_density3000": 0.0001677180620203395,
+        "scope": "Axial strength/thermal lower bound. Buckling, lateral stability, joints, seismic/stream impact loads require extra structure."
+      },
+      {
+        "allowable_Pa": 10000000.0,
+        "conductivity_W_m_K": 10.0,
+        "length_m": 1.0,
+        "solid_cross_section_fraction": 5.59060206734465e-08,
+        "bridge_heat_W_m2": 0.00044724816538757194,
+        "tie_mass_kg_m2_at_density3000": 0.0001677180620203395,
+        "scope": "Axial strength/thermal lower bound. Buckling, lateral stability, joints, seismic/stream impact loads require extra structure."
+      },
+      {
+        "allowable_Pa": 100000000.0,
+        "conductivity_W_m_K": 20.0,
+        "length_m": 1.0,
+        "solid_cross_section_fraction": 5.59060206734465e-09,
+        "bridge_heat_W_m2": 8.944963307751439e-05,
+        "tie_mass_kg_m2_at_density3000": 1.677180620203395e-05,
+        "scope": "Axial strength/thermal lower bound. Buckling, lateral stability, joints, seismic/stream impact loads require extra structure."
+      },
+      {
+        "allowable_Pa": 100000000.0,
+        "conductivity_W_m_K": 100.0,
+        "length_m": 1.0,
+        "solid_cross_section_fraction": 5.59060206734465e-09,
+        "bridge_heat_W_m2": 0.00044724816538757194,
+        "tie_mass_kg_m2_at_density3000": 1.677180620203395e-05,
+        "scope": "Axial strength/thermal lower bound. Buckling, lateral stability, joints, seismic/stream impact loads require extra structure."
+      }
+    ],
+    "black_hot_cold_flux_W_m2": 56613.018199296,
+    "max_unbaffled_hot_opening_fraction_for_1W_m2": 1.7663781790959793e-05,
+    "mean_through_receiver_gradient_K_at_k100": 2.6404489592991025,
+    "receiver_diffusion_time_s_at_alpha5e_5": 125000.0,
+    "unbaffled_circular_ports": [
+      {
+        "count": 1000,
+        "radius_m": 10000.0,
+        "opening_fraction": 2.0661157024793388e-08,
+        "bypass_W_m2": 0.0011696904586631404
+      },
+      {
+        "count": 1000,
+        "radius_m": 100000.0,
+        "opening_fraction": 2.066115702479339e-06,
+        "bypass_W_m2": 0.11696904586631404
+      },
+      {
+        "count": 1000,
+        "radius_m": 1000000.0,
+        "opening_fraction": 0.00020661157024793385,
+        "bypass_W_m2": 11.696904586631407
+      }
+    ],
+    "added_loop_UA_W_K_m2": {
+      "receiver_to_hot_loop": 5.801659348573832,
+      "hot_loop_to_950K_isothermal_cycle_bound": 3.6604395031012293,
+      "230K_isothermal_cycle_to_cold_loop_bound": 3.3997109287545126,
+      "cold_loop_to_200K_radiator": 5.251694860338154
+    },
+    "sum_loop_UA_W_K_m2": 18.11350464076773,
+    "additional_UA_over_old_external_minimum_W_K_m2": 15.404497940843179,
+    "actual_candidate_source_ports": [
+      {
+        "count": 100000,
+        "radius_m": 100.0,
+        "opening_fraction": 2.0661157024793386e-10,
+        "unbaffled_bypass_W_m2": 1.1696904586631405e-05
+      },
+      {
+        "count": 1000000,
+        "radius_m": 100.0,
+        "opening_fraction": 2.066115702479339e-09,
+        "unbaffled_bypass_W_m2": 0.00011696904586631404
+      }
+    ]
+  },
+  "manufacturing": {
+    "shots_per_year": {
+      "C13": 1.9865405369251432,
+      "A": 48.6481694160394,
+      "B1": 4658.420673807734,
+      "B2": 27.84406583353383
+    },
+    "baseline_gross_handled_kg_year_m2": 0.8014243776783534,
+    "retained_factory_mass_per_kg_s": 99999999.99999999,
+    "baseline_factory_kg_m2": 2.5395606056175164,
+    "processed_depth_scenarios": [
+      {
+        "events": "large",
+        "events_per_year": 78.47877578649837,
+        "depth_processed_m": 1e-07,
+        "gross_flow_kg_s_m2": 4.973684677320097e-10,
+        "gross_kg_year_m2": 0.015695755157299672,
+        "factory_mass_kg_m2_at_retained_coefficient": 0.04973684677320097,
+        "electric_W_m2_at_2MJkg": 0.0009947369354640196,
+        "fraction_of_reference_net_power": 2.3006725007606247e-05,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "large",
+        "events_per_year": 78.47877578649837,
+        "depth_processed_m": 1e-06,
+        "gross_flow_kg_s_m2": 4.973684677320099e-09,
+        "gross_kg_year_m2": 0.15695755157299676,
+        "factory_mass_kg_m2_at_retained_coefficient": 0.4973684677320098,
+        "electric_W_m2_at_2MJkg": 0.009947369354640198,
+        "fraction_of_reference_net_power": 0.00023006725007606254,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "large",
+        "events_per_year": 78.47877578649837,
+        "depth_processed_m": 1e-05,
+        "gross_flow_kg_s_m2": 4.973684677320099e-08,
+        "gross_kg_year_m2": 1.5695755157299676,
+        "factory_mass_kg_m2_at_retained_coefficient": 4.973684677320098,
+        "electric_W_m2_at_2MJkg": 0.09947369354640198,
+        "fraction_of_reference_net_power": 0.0023006725007606254,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "large",
+        "events_per_year": 78.47877578649837,
+        "depth_processed_m": 0.0001,
+        "gross_flow_kg_s_m2": 4.973684677320099e-07,
+        "gross_kg_year_m2": 15.695755157299674,
+        "factory_mass_kg_m2_at_retained_coefficient": 49.73684677320098,
+        "electric_W_m2_at_2MJkg": 0.9947369354640198,
+        "fraction_of_reference_net_power": 0.02300672500760625,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "large",
+        "events_per_year": 78.47877578649837,
+        "depth_processed_m": 0.001,
+        "gross_flow_kg_s_m2": 4.9736846773200985e-06,
+        "gross_kg_year_m2": 156.95755157299675,
+        "factory_mass_kg_m2_at_retained_coefficient": 497.3684677320098,
+        "electric_W_m2_at_2MJkg": 9.947369354640196,
+        "fraction_of_reference_net_power": 0.2300672500760625,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "all",
+        "events_per_year": 4736.8994495942325,
+        "depth_processed_m": 1e-07,
+        "gross_flow_kg_s_m2": 3.0020657144993486e-08,
+        "gross_kg_year_m2": 0.9473798899188465,
+        "factory_mass_kg_m2_at_retained_coefficient": 3.002065714499348,
+        "electric_W_m2_at_2MJkg": 0.06004131428998697,
+        "fraction_of_reference_net_power": 0.0013886626279948305,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "all",
+        "events_per_year": 4736.8994495942325,
+        "depth_processed_m": 1e-06,
+        "gross_flow_kg_s_m2": 3.0020657144993486e-07,
+        "gross_kg_year_m2": 9.473798899188465,
+        "factory_mass_kg_m2_at_retained_coefficient": 30.020657144993482,
+        "electric_W_m2_at_2MJkg": 0.6004131428998697,
+        "fraction_of_reference_net_power": 0.013886626279948305,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "all",
+        "events_per_year": 4736.8994495942325,
+        "depth_processed_m": 1e-05,
+        "gross_flow_kg_s_m2": 3.0020657144993487e-06,
+        "gross_kg_year_m2": 94.73798899188465,
+        "factory_mass_kg_m2_at_retained_coefficient": 300.2065714499348,
+        "electric_W_m2_at_2MJkg": 6.004131428998697,
+        "fraction_of_reference_net_power": 0.13886626279948305,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "all",
+        "events_per_year": 4736.8994495942325,
+        "depth_processed_m": 0.0001,
+        "gross_flow_kg_s_m2": 3.0020657144993488e-05,
+        "gross_kg_year_m2": 947.3798899188465,
+        "factory_mass_kg_m2_at_retained_coefficient": 3002.0657144993484,
+        "electric_W_m2_at_2MJkg": 60.04131428998698,
+        "fraction_of_reference_net_power": 1.3886626279948309,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      },
+      {
+        "events": "all",
+        "events_per_year": 4736.8994495942325,
+        "depth_processed_m": 0.001,
+        "gross_flow_kg_s_m2": 0.00030020657144993486,
+        "gross_kg_year_m2": 9473.798899188465,
+        "factory_mass_kg_m2_at_retained_coefficient": 30020.65714499348,
+        "electric_W_m2_at_2MJkg": 600.4131428998697,
+        "fraction_of_reference_net_power": 13.886626279948306,
+        "scope": "Hypothetical processed depth, not predicted erosion or imported makeup. Actual process energy and factory throughput remain recipe-specific."
+      }
+    ],
+    "depth_for_10pct_net_electric_at_2MJkg": {
+      "large": 0.00043465551905774946,
+      "all": 7.201173127586484e-06
+    },
+    "scope": "2 MJ/kg is effective total cost sensitivity, consistent with accepted high manufacturing efficiency. No atomization charge; feed/product free energy must be declared separately."
+  },
+  "checks": {
+    "support_mass_relative": 2.220446049250313e-16,
+    "support_power_relative": 2.220446049250313e-16,
+    "pressure_force_relative": 2.220446049250313e-16,
+    "mean_capture_pressure_fraction_of_static_support": 0.0005727170027620051
+  }
+}

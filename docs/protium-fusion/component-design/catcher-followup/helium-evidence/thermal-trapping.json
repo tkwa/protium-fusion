@@ -1,0 +1,2514 @@
+{
+  "scope": "Conditional He trap kinetics along archived chronological receiver T(t).\nRun with numpy/scipy: python thermal_trapping.py\nNo measured trapped fraction, trap-energy distribution or repair work is inferred.\n",
+  "code_sha256": "901ea92c8b119ccfb1b181b936d56ba52d1b656b89d1e1ae68fbf226be154f3b",
+  "inputs_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/geometry/temperature-histories.json": "f7e67d3466af3bfeda6b0eb48a4ed2e9294e3a8e586228496d6f320217fe8d3f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-spectra.json": "c4a065e110afc72fd03a5aaff7af1161594a04554d9a874abceba1f023b0513e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-stopping.json": "592cd0140de66f1569a70536bc3d76a56b9c571eea4d8ebd9d4cdb39b633f7aa",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/A-warmest_background.csv": "b6ac5642f0d685ddaaea405d2f479a3aadf52663de19a46fdd6938a10970838b",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/A-warmest_background-prompt-upper.csv": "5bd18814f3780be9647a5b2459384cb943827efec0c54a055b476acdb01d323b",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-warmest_background.csv": "717d28f82e61f0cdc0262c15cf6fc67a4fb1a4b3b8b6db1e6e5a6472888d4254",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-warmest_background-prompt-upper.csv": "3d27ef3067411c5445034cf93aa8f6c1b5a867ccd90afa90d7317edf8127e201",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-ordinary_midyear.csv": "40f60004a509d61e4de818ae8a5da8585f60db261d7adb87ea6be3180ea4a846",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B1-ordinary_midyear-prompt-upper.csv": "f4d539eab7cb2ddfc9fa6542d55fdb2535e5ec57b2671d7b54ef19bc72a5214f",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B2-warmest_background.csv": "e914032717bb1cd82d3755d06a3c1a9e0fe86621137c1be9aa0aa344fef036e2",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/B2-warmest_background-prompt-upper.csv": "c9cb20e267ea08bf3e30f610b9dd955e9c02230fce59c6d9cc0c1042646468c8",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-warmest_background.csv": "eed598fd78699c4b5eb61d48d4d494c5488fd4b8ad8424efc5243b35d056dd72",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-warmest_background-prompt-upper.csv": "3172a7fe076f75bbcbade5b3dce79ffee74c82cad5a2f50569f7313461d1783e",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_1.csv": "4463c1ba9136274573cafe502140c5b4d0a3bb7185889069281a2503e4f8af3f",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_1-prompt-upper.csv": "4199be5090f8c6cc60d90b27b6643d936c61c630bd2bd5c407d053fc9262dbe8",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_3.csv": "a3646cdbb154d4c10ad5e98723dee237a9122a163677c542b175322ac79d262a",
+    "/home/tkwa/src/protium-fusion/output/catcher-followup/geometry/C13-event_3-prompt-upper.csv": "fcb2e7f4e88c3cbf1b65b54e26db57761d5aecad0ec5ed7ba04eda7b10746e3a"
+  },
+  "model": {
+    "trap_law": "S=exp[-integral nu exp(-E/kT) dt]; single first-order trap, no retrapping or irradiation detrapping",
+    "acceptance": "95% survival of the He number-weighted cohort, assuming all selected atoms initially occupy the same trap type",
+    "attempt_frequency_s": [
+      1000000000000.0,
+      10000000000000.0
+    ],
+    "covered_cohort": "Only arrivals whose complete postimplant hold interval fits the archived -600..4000s profile. No omitted-tail renormalization is used in the all-cohort bounds.",
+    "missing_interval": "Bracket unrecorded durations at1000K and1668K. These are explicit conditional temperature bounds, not a reconstructed trajectory or credible interval.",
+    "surface_temperature": "Front-surface T(t) used for micron implants, plus0.1K old-tail allowance. Prompt upper curve replaces the first0.25s; newly implanted atoms do not encounter their own earlier prompt.",
+    "mobile_kernel": "erfc(depth/(2sqrt(integral Ddt))) in an absorbing-front half-space. Jung mobile/orientation D reference; mean projected depths omit straggling. Neither a trapped fraction nor real total leakage is inferred.",
+    "energy": "E is an activation barrier, not the input work per recovered atom or defect."
+  },
+  "postimplant_rows": [
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999056131273161,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.899787627876809,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.899776624837511,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.899997183195407
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.157957049976216,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.157946010666604,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.158167232853983
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9959891126505782,
+        "Jung_hold1050": 0.9867974282664443
+      }
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9998108513847179,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9724785309282327,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9724592868689763,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.972881868310416
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.222645953574817,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.222626357712723,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.223051391002049
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9982896348301831,
+        "Jung_hold1050": 0.9958241615680236
+      }
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.035440184391461,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.167683278534317
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.279609720592382,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.49864827321115
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999056131273161,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9072384334343297,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9072273796722112,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9074489326911364
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.166195238199196,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.166184144501132,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.1664064371211325
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9960185991017136,
+        "Jung_hold1050": 0.9867974282664443
+      }
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9998108513847179,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9766371297057335,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.976617738212326,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.977041937764698
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.227547206225021,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.22752744933409,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.227954329121722
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9982928124419018,
+        "Jung_hold1050": 0.9958241615680236
+      }
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.037850629473003,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.167683495572155
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.28260187355471,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.498648400858452
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999246451108871,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.610496128078459,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.6104884562849966,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.6106469041960043
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 3.846631697459333,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.84662402164743,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.846782473609314
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9950573772215552,
+        "Jung_hold1050": 0.9894166035675569
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9998329230519503,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.845160657164703,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.8451489988406875,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.845495144903462
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.0812059293139376,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.081194260184898,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.08154041708286
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9984329189768806,
+        "Jung_hold1050": 0.9966527746298252
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9800598108386884,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.178788099084506
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.21603571740707,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.50975431649441
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999246451108871,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.610520753852105,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.6105130819440805,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.6106715310134945
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 3.846657944685802,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.84665026875635,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.84680872188169
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9950576493468307,
+        "Jung_hold1050": 0.9894166035675569
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9998329230519503,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.8451638705570192,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.845152212040775,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.845498358581431
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.081209343977445,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.081197674645095,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.081543832032782
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9984329293760854,
+        "Jung_hold1050": 0.9966527746298252
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9800607036644813,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.17878809909853
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.216036664923903,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.509754316500331
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999246451108871,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.261364861720624,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.2613584284179193,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.2615010579921173
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 3.474666396360058,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.4746598823344783,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.47480259266752
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9908986252060485,
+        "Jung_hold1050": 0.9894166035675569
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9998329230519503,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.4731953055261884,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.4731854049228486,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.4734974363182545
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 3.6864065406748714,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.6863965302489685,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.686708671500057
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9971126635882364,
+        "Jung_hold1050": 0.9966527746298252
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.5952464746970145,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.178786896806416
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.8083402164635864,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.509753840020044
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999246451108871,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.2613895014295955,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.26138306787458,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.2615256987471737
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 3.474692659599814,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.474686145332315,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.474828856955644
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9908992392209497,
+        "Jung_hold1050": 0.9894166035675569
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9998329230519503,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.473198523564031,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.473188622745384,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.473500654642823
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 3.6864099607070604,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.6863999500570848,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.6867120918198193
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9971126870902611,
+        "Jung_hold1050": 0.9966527746298252
+      }
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.5952473664003763,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.178786896806494
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.8083411634812614,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.509753840020067
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999997851639298,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.8913293438908743,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.8913293188777587,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.8913298201137763
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.148909284951411,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.148909259819369,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.148909763225262
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9969440664359701,
+        "Jung_hold1050": 0.9902759034046494
+      }
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999995536698231,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9544168592111455,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9544168129627826,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9544178100182252
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.204509418810288,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.2045093716890625,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.2045103756970885
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9986770538406736,
+        "Jung_hold1050": 0.9969248633876339
+      }
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.006526225458779,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.169785213626231
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.250535836140551,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.500750703847214
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999997851639298,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.8961687424480633,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.896168717343501,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.8961692203662004
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.154284673122201,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.154284647887125,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.154285153317122
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9969572057502257,
+        "Jung_hold1050": 0.9902759034046494
+      }
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999995536698231,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.95737614042536,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9573760939363893,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9573770939382684
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.207995370135791,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.207995322747458,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.207996330223108
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9986786010747498,
+        "Jung_hold1050": 0.9969248633876339
+      }
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.008407508736834,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.169785345747134
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.252873537004898,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.5007507826182005
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999976868131735,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9532362227804194,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9532359082387027,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.953242200245958
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.224665742624849,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.22466542021462,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.2246718691863165
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9958436890766548,
+        "Jung_hold1050": 0.9866324542859547
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999947547734354,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9701617335123327,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.970161061919913,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.970174734649488
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.237067363155903,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.237066665005365,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.2370807908980295
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9979531828246277,
+        "Jung_hold1050": 0.9957720221545779
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9856949417170338,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.168665808127291
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.247888967322219,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.499630295456777
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999976868131735,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9668958372409597,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.966895514702338,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9669019665325975
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.240234352327516,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.240234020449554,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.24024065869703
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9958683143805512,
+        "Jung_hold1050": 0.9866324542859547
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999947547734354,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9822186564051854,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.982217966262377,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9822319875628005
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.251287664332404,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.251286944209856,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.251301491793164
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9979581875143748,
+        "Jung_hold1050": 0.9957720221545779
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9963998332257784,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.168667474939652
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.260983930981318,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.499631523932223
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999976868131735,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9989004466606266,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9989001297844786,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9989064685194236
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.273217077704006,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.2732167530454905,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.273223247023994
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9961035904864617,
+        "Jung_hold1050": 0.9866324542859547
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999947547734354,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 4.017046164911006,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.017045490305055,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.017059244227561
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.286596151178299,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.286595449956894,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.286609653361342
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9980985733070332,
+        "Jung_hold1050": 0.9957720221545779
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.033875256084338,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.168670075269643
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.2984509642945214,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.4996332084371495
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999976868131735,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 4.012415520561728,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.012415195843658,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.012421691301406
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.288628111069454,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.2886277771195305,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.288634456844702
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9961261848047716,
+        "Jung_hold1050": 0.9866324542859547
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999947547734354,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 4.028886270636902,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.028885577857377,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.028899671567721
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.3005875111084535,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.300586788331059,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.300601403904328
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9981030133972975,
+        "Jung_hold1050": 0.9957720221545779
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.0443005242191505,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.1686726374544465
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.311248775107464,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.499635149404502
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999976868131735,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9076114111402673,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9076110989183954,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9076173445348252
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.176155802183664,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.176155482006262,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.1761618863047
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9955592082503313,
+        "Jung_hold1050": 0.9866324542859547
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999947547734354,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.923366095670154,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.923365427125286,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9233790195294347
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.187626122027564,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.187625426979013,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.187639475992844
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9977925615433832,
+        "Jung_hold1050": 0.9957720221545778
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "bulk_k50",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9376584745589653,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.168663138976426
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.197470077531292,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.4996285140733026
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 100.0,
+      "fully_covered_He_number_fraction": 0.9999976868131735,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.9214175706766436,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9214172502992204,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9214236589070417
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.191883822526827,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.191883492701703,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.191890089874953
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9955860949203278,
+        "Jung_hold1050": 0.9866324542859547
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 1000.0,
+      "fully_covered_He_number_fraction": 0.9999947547734354,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": 3.935641753113517,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9356410656324288,
+          "E95_all_cohort_eV_uncovered_at1668K": 3.9356550154777903
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": 4.202076347642216,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.202075630198085,
+          "E95_all_cohort_eV_uncovered_at1668K": 4.202090110517063
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {
+        "Jung_extrapolate": 0.9977982170586066,
+        "Jung_hold1050": 0.9957720221545778
+      }
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "100um_skin_k4",
+      "repair_after_local_implantation_s": 4000.0,
+      "fully_covered_He_number_fraction": 0.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 3.9486461247757587,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.168664213313995
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_covered_cohort_eV": null,
+          "E95_all_cohort_eV_uncovered_at1000K": 4.210863036353419,
+          "E95_all_cohort_eV_uncovered_at1668K": 5.499629283971255
+        }
+      ],
+      "conditional_mobile_front_release_fraction_covered": {}
+    }
+  ],
+  "preexisting_trap_rows": [
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.704009550606936,
+          "first_quarter_second_hazard_fraction": 0.00021700784979770266
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.9536647840669925,
+          "first_quarter_second_hazard_fraction": 0.00017178429466811583
+        }
+      ]
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.058720574413766,
+          "first_quarter_second_hazard_fraction": 5.908946994384964e-06
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.316151413985895,
+          "first_quarter_second_hazard_fraction": 4.324247638699889e-06
+        }
+      ]
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.093676086463711,
+          "first_quarter_second_hazard_fraction": 4.142882429184773e-06
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.345508916511438,
+          "first_quarter_second_hazard_fraction": 3.2093451846865074e-06
+        }
+      ]
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.7251846662804815,
+          "first_quarter_second_hazard_fraction": 0.00024399957115724485
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.9768233514375004,
+          "first_quarter_second_hazard_fraction": 0.00019510681739833173
+        }
+      ]
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.070056185628625,
+          "first_quarter_second_hazard_fraction": 7.655815116438089e-06
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.32879141784304,
+          "first_quarter_second_hazard_fraction": 5.716382998553755e-06
+        }
+      ]
+    },
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.10201152167597,
+          "first_quarter_second_hazard_fraction": 5.556049582744501e-06
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.3552752188319515,
+          "first_quarter_second_hazard_fraction": 4.3835935603190445e-06
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.6086873234145185,
+          "first_quarter_second_hazard_fraction": 0.0026854320950218504
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.8447046390460526,
+          "first_quarter_second_hazard_fraction": 0.0026991879307295187
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.845473759147084,
+          "first_quarter_second_hazard_fraction": 0.00026790552012881386
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.08153836996017,
+          "first_quarter_second_hazard_fraction": 0.000269174269335132
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.986236294058004,
+          "first_quarter_second_hazard_fraction": 6.806328567808609e-05
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.222220310772837,
+          "first_quarter_second_hazard_fraction": 6.844254516777061e-05
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.608769863895153,
+          "first_quarter_second_hazard_fraction": 0.0032616571896897494
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.844794167809642,
+          "first_quarter_second_hazard_fraction": 0.003327845212406301
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.845495765789611,
+          "first_quarter_second_hazard_fraction": 0.00033053449072444557
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.081561914135108,
+          "first_quarter_second_hazard_fraction": 0.0003372646289998367
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.986242101018534,
+          "first_quarter_second_hazard_fraction": 8.476077828687147e-05
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.222226516709713,
+          "first_quarter_second_hazard_fraction": 8.658056538337053e-05
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.2595561364817733,
+          "first_quarter_second_hazard_fraction": 0.002707878456814157
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.4727394397540965,
+          "first_quarter_second_hazard_fraction": 0.0027236005144513483
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.473508606020205,
+          "first_quarter_second_hazard_fraction": 0.00027011241988537704
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.686739206176902,
+          "first_quarter_second_hazard_fraction": 0.0002715704364070689
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.6005237274898843,
+          "first_quarter_second_hazard_fraction": 6.874819971752445e-05
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.8136737416986586,
+          "first_quarter_second_hazard_fraction": 6.918385123695938e-05
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.2596409493643184,
+          "first_quarter_second_hazard_fraction": 0.0033691585760992683
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.472831698646642,
+          "first_quarter_second_hazard_fraction": 0.0034476866089604673
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.4735308982812807,
+          "first_quarter_second_hazard_fraction": 0.0003422010616860377
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.6867630901814916,
+          "first_quarter_second_hazard_fraction": 0.0003502452161274116
+        }
+      ]
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.6005296222776217,
+          "first_quarter_second_hazard_fraction": 8.803754747397923e-05
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 3.813680051506684,
+          "first_quarter_second_hazard_fraction": 9.022197512732818e-05
+        }
+      ]
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.8596376259487113,
+          "first_quarter_second_hazard_fraction": 1.2344456096091112e-05
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.122190358995596,
+          "first_quarter_second_hazard_fraction": 7.843282620428077e-06
+        }
+      ]
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.134516645672127,
+          "first_quarter_second_hazard_fraction": 6.89132277881618e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.400053100956497,
+          "first_quarter_second_hazard_fraction": 4.243553273509301e-07
+        }
+      ]
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.1470176576841755,
+          "first_quarter_second_hazard_fraction": 6.043809388711097e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.409364698555796,
+          "first_quarter_second_hazard_fraction": 3.8483842342460776e-07
+        }
+      ]
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 3.890260771909288,
+          "first_quarter_second_hazard_fraction": 9.763530805861426e-06
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.155063926484561,
+          "first_quarter_second_hazard_fraction": 6.096550704680047e-06
+        }
+      ]
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.151636206649877,
+          "first_quarter_second_hazard_fraction": 6.319400323408597e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.4188666787096125,
+          "first_quarter_second_hazard_fraction": 3.8471249937735796e-07
+        }
+      ]
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.162366399625928,
+          "first_quarter_second_hazard_fraction": 5.647645463996647e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.426713888946186,
+          "first_quarter_second_hazard_fraction": 3.5435814216572934e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.231334048915207,
+          "first_quarter_second_hazard_fraction": 1.1159001708892144e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.517687861834731,
+          "first_quarter_second_hazard_fraction": 6.878498954722062e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.303607116728403,
+          "first_quarter_second_hazard_fraction": 5.497775147539572e-08
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.587455483528171,
+          "first_quarter_second_hazard_fraction": 3.513035268196438e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.3042056353666,
+          "first_quarter_second_hazard_fraction": 5.4657138806065896e-08
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.58778680201348,
+          "first_quarter_second_hazard_fraction": 3.501864272595142e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.278031794643653,
+          "first_quarter_second_hazard_fraction": 9.2232279428773e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.567320711190022,
+          "first_quarter_second_hazard_fraction": 6.540874276955111e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.340439421920626,
+          "first_quarter_second_hazard_fraction": 5.204838424285158e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.627250570461092,
+          "first_quarter_second_hazard_fraction": 3.7869191118127374e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.340855151599253,
+          "first_quarter_second_hazard_fraction": 5.18505218561528e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.627473722503469,
+          "first_quarter_second_hazard_fraction": 3.779224164359629e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.277436215863456,
+          "first_quarter_second_hazard_fraction": 1.2375161050560182e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.566880222752478,
+          "first_quarter_second_hazard_fraction": 7.58886372921952e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.3509793086314055,
+          "first_quarter_second_hazard_fraction": 6.059908124712745e-08
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.637848262469607,
+          "first_quarter_second_hazard_fraction": 3.854972655191414e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.351662356608212,
+          "first_quarter_second_hazard_fraction": 6.019949090472645e-08
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.638229908596444,
+          "first_quarter_second_hazard_fraction": 3.8409836463834645e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.324167909076824,
+          "first_quarter_second_hazard_fraction": 9.843850766802658e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.616548906076712,
+          "first_quarter_second_hazard_fraction": 6.988107833650723e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.387717520648402,
+          "first_quarter_second_hazard_fraction": 5.532088475641097e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.677555334989784,
+          "first_quarter_second_hazard_fraction": 4.031171775195247e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.3881948698726845,
+          "first_quarter_second_hazard_fraction": 5.508210241166868e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.677814037902738,
+          "first_quarter_second_hazard_fraction": 4.0217827433176433e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.185236746076219,
+          "first_quarter_second_hazard_fraction": 1.0063989627496415e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.46850023992105,
+          "first_quarter_second_hazard_fraction": 6.235741638388753e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.256253634837034,
+          "first_quarter_second_hazard_fraction": 4.9885066394578904e-08
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.537079577365739,
+          "first_quarter_second_hazard_fraction": 3.201749028083363e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "bulk_k50",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.25677611056281,
+          "first_quarter_second_hazard_fraction": 4.962874176188844e-08
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.537366058395239,
+          "first_quarter_second_hazard_fraction": 3.1928616233676516e-08
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 100.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.231900176276306,
+          "first_quarter_second_hazard_fraction": 8.634853022047374e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.51809689211265,
+          "first_quarter_second_hazard_fraction": 6.116279942742468e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 1000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.293178657349885,
+          "first_quarter_second_hazard_fraction": 4.892744555045076e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.576961435371237,
+          "first_quarter_second_hazard_fraction": 3.553806284240247e-07
+        }
+      ]
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "temperature_model": "100um_skin_k4",
+      "hold_after_prompt_s": 4000.0,
+      "requirements": [
+        {
+          "attempt_frequency_s": 1000000000000.0,
+          "E95_eV": 4.293539306226224,
+          "first_quarter_second_hazard_fraction": 4.876424619182174e-07
+        },
+        {
+          "attempt_frequency_s": 10000000000000.0,
+          "E95_eV": 4.577153124233623,
+          "first_quarter_second_hazard_fraction": 3.547531308799812e-07
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "profile hash A-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "prompt hash A-warmest_background-prompt-upper.csv",
+      "pass_": true
+    },
+    {
+      "name": "increasing time A-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "positive T A-warmest_background.csvbulk_k50",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', 'bulk_k50', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', 'bulk_k50', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "positive T A-warmest_background.csv100um_skin_k4",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('A-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', '100um_skin_k4', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('A-warmest_background.csv', '100um_skin_k4', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "profile hash B1-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "prompt hash B1-warmest_background-prompt-upper.csv",
+      "pass_": true
+    },
+    {
+      "name": "increasing time B1-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "positive T B1-warmest_background.csvbulk_k50",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', 'bulk_k50', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', 'bulk_k50', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "positive T B1-warmest_background.csv100um_skin_k4",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', '100um_skin_k4', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-warmest_background.csv', '100um_skin_k4', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "profile hash B1-ordinary_midyear.csv",
+      "pass_": true
+    },
+    {
+      "name": "prompt hash B1-ordinary_midyear-prompt-upper.csv",
+      "pass_": true
+    },
+    {
+      "name": "increasing time B1-ordinary_midyear.csv",
+      "pass_": true
+    },
+    {
+      "name": "positive T B1-ordinary_midyear.csvbulk_k50",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', 'bulk_k50', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', 'bulk_k50', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "positive T B1-ordinary_midyear.csv100um_skin_k4",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B1-ordinary_midyear.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', '100um_skin_k4', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B1-ordinary_midyear.csv', '100um_skin_k4', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "profile hash B2-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "prompt hash B2-warmest_background-prompt-upper.csv",
+      "pass_": true
+    },
+    {
+      "name": "increasing time B2-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "positive T B2-warmest_background.csvbulk_k50",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', 'bulk_k50', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', 'bulk_k50', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "positive T B2-warmest_background.csv100um_skin_k4",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('B2-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', '100um_skin_k4', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('B2-warmest_background.csv', '100um_skin_k4', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "profile hash C13-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "prompt hash C13-warmest_background-prompt-upper.csv",
+      "pass_": true
+    },
+    {
+      "name": "increasing time C13-warmest_background.csv",
+      "pass_": true
+    },
+    {
+      "name": "positive T C13-warmest_background.csvbulk_k50",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', 'bulk_k50', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', 'bulk_k50', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "positive T C13-warmest_background.csv100um_skin_k4",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-warmest_background.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', '100um_skin_k4', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-warmest_background.csv', '100um_skin_k4', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "profile hash C13-event_1.csv",
+      "pass_": true
+    },
+    {
+      "name": "prompt hash C13-event_1-prompt-upper.csv",
+      "pass_": true
+    },
+    {
+      "name": "increasing time C13-event_1.csv",
+      "pass_": true
+    },
+    {
+      "name": "positive T C13-event_1.csvbulk_k50",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', 'bulk_k50', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', 'bulk_k50', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "positive T C13-event_1.csv100um_skin_k4",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_1.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', '100um_skin_k4', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_1.csv', '100um_skin_k4', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "profile hash C13-event_3.csv",
+      "pass_": true
+    },
+    {
+      "name": "prompt hash C13-event_3-prompt-upper.csv",
+      "pass_": true
+    },
+    {
+      "name": "increasing time C13-event_3.csv",
+      "pass_": true
+    },
+    {
+      "name": "positive T C13-event_3.csvbulk_k50",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', 'bulk_k50', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', 'bulk_k50', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', 'bulk_k50', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', 'bulk_k50', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', 'bulk_k50', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', 'bulk_k50', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "positive T C13-event_3.csv100um_skin_k4",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', '100um_skin_k4', 100.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', '100um_skin_k4', 100.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', '100um_skin_k4', 1000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "root survival ('C13-event_3.csv', '100um_skin_k4', 1000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', '100um_skin_k4', 4000.0, 1000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "ordered missing-temperature bound ('C13-event_3.csv', '100um_skin_k4', 4000.0, 10000000000000.0)",
+      "pass_": true
+    },
+    {
+      "name": "constant T identity 1000.0",
+      "pass_": true
+    },
+    {
+      "name": "constant T identity 1668.0",
+      "pass_": true
+    }
+  ]
+}

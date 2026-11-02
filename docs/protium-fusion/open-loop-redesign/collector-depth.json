@@ -1,0 +1,680 @@
+{
+  "scope": "Monoenergetic finite-depth prompt deposition sensitivity, not transport.\n\nInsulated semi-infinite constant-property carbon with prescribed volume heat\nsource q(t)*mu*exp(-mu*x). This normalizes ALL prompt energy to that deposition\nprofile. XCOM total attenuation and energy-absorption coefficients provide two\nillustrative depths; neither substitution solves scattering/secondary escape.\n",
+  "baseline_unchanged": true,
+  "radius_reference_m": 1000000000.0,
+  "material_properties": {
+    "k_W_m_K": 100.0,
+    "density_kg_m3": 2000.0,
+    "cp_J_kg_K": 1000.0
+  },
+  "stages": {
+    "c12": {
+      "surface_peak_rise_K": 450.2991137045426,
+      "prompt_fluence_J_m2": 28821.571305224323,
+      "monoenergetic_sensitivities": [
+        {
+          "photon_energy_keV": 1,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 221.10000000000002,
+            "deposition_e_folding_depth_m": 2.2614201718679327e-06,
+            "prompt_peak_rise_K": 396.45320387909754,
+            "ratio_to_surface_peak": 0.8804219058250794,
+            "adiabatic_no_diffusion_peak_K": 6372.449415585098
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 220.9,
+            "deposition_e_folding_depth_m": 2.2634676324128565e-06,
+            "prompt_peak_rise_K": 396.40817224200504,
+            "ratio_to_surface_peak": 0.8803219019926889,
+            "adiabatic_no_diffusion_peak_K": 6366.685101324053
+          }
+        },
+        {
+          "photon_energy_keV": 3,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 9.033,
+            "deposition_e_folding_depth_m": 5.535259603675413e-05,
+            "prompt_peak_rise_K": 151.12588258796018,
+            "ratio_to_surface_peak": 0.335612214167313,
+            "adiabatic_no_diffusion_peak_K": 260.3452536000913
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 8.963,
+            "deposition_e_folding_depth_m": 5.578489345085351e-05,
+            "prompt_peak_rise_K": 150.47453264146543,
+            "ratio_to_surface_peak": 0.3341657313147571,
+            "adiabatic_no_diffusion_peak_K": 258.3277436087256
+          }
+        },
+        {
+          "photon_energy_keV": 5,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 1.9120000000000001,
+            "deposition_e_folding_depth_m": 0.0002615062761506276,
+            "prompt_peak_rise_K": 48.17990443929935,
+            "ratio_to_surface_peak": 0.10699533481851779,
+            "adiabatic_no_diffusion_peak_K": 55.10684433558891
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 1.866,
+            "deposition_e_folding_depth_m": 0.0002679528403001072,
+            "prompt_peak_rise_K": 47.16627813816413,
+            "ratio_to_surface_peak": 0.10474432816474877,
+            "adiabatic_no_diffusion_peak_K": 53.781052055548585
+          }
+        },
+        {
+          "photon_energy_keV": 10,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.23730000000000004,
+            "deposition_e_folding_depth_m": 0.0021070375052675934,
+            "prompt_peak_rise_K": 6.721684461510608,
+            "ratio_to_surface_peak": 0.014927154544481173,
+            "adiabatic_no_diffusion_peak_K": 6.8393588707297335
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.20779999999999998,
+            "deposition_e_folding_depth_m": 0.0024061597690086625,
+            "prompt_peak_rise_K": 5.898725129114912,
+            "ratio_to_surface_peak": 0.013099570817688257,
+            "adiabatic_no_diffusion_peak_K": 5.9891225172256135
+          }
+        },
+        {
+          "photon_energy_keV": 30,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.02562,
+            "deposition_e_folding_depth_m": 0.0195160031225605,
+            "prompt_peak_rise_K": 0.7370191757497585,
+            "ratio_to_surface_peak": 0.0016367324592012039,
+            "adiabatic_no_diffusion_peak_K": 0.7384086568398472
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.006614000000000001,
+            "deposition_e_folding_depth_m": 0.07559721802237676,
+            "prompt_peak_rise_K": 0.19053316210490895,
+            "ratio_to_surface_peak": 0.0004231257764143071,
+            "adiabatic_no_diffusion_peak_K": 0.19062587261275368
+          }
+        },
+        {
+          "photon_energy_keV": 100,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.01514,
+            "deposition_e_folding_depth_m": 0.03302509907529722,
+            "prompt_peak_rise_K": 0.4358730493527526,
+            "ratio_to_surface_peak": 0.0009679633738714053,
+            "adiabatic_no_diffusion_peak_K": 0.4363585895610963
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.002147,
+            "deposition_e_folding_depth_m": 0.23288309268747087,
+            "prompt_peak_rise_K": 0.061870141586826084,
+            "ratio_to_surface_peak": 0.0001373978755539397,
+            "adiabatic_no_diffusion_peak_K": 0.06187991359231663
+          }
+        }
+      ]
+    },
+    "c13": {
+      "surface_peak_rise_K": 727.8105751660497,
+      "prompt_fluence_J_m2": 59108.38045204103,
+      "monoenergetic_sensitivities": [
+        {
+          "photon_energy_keV": 1,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 221.10000000000002,
+            "deposition_e_folding_depth_m": 2.2614201718679327e-06,
+            "prompt_peak_rise_K": 649.4984165092684,
+            "ratio_to_surface_peak": 0.8924003561793336,
+            "adiabatic_no_diffusion_peak_K": 13068.862917946271
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 220.9,
+            "deposition_e_folding_depth_m": 2.2634676324128565e-06,
+            "prompt_peak_rise_K": 649.4415098314474,
+            "ratio_to_surface_peak": 0.8923221673211846,
+            "adiabatic_no_diffusion_peak_K": 13057.041241855864
+          }
+        },
+        {
+          "photon_energy_keV": 3,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 9.033,
+            "deposition_e_folding_depth_m": 5.535259603675413e-05,
+            "prompt_peak_rise_K": 298.05212662786687,
+            "ratio_to_surface_peak": 0.4095188182170428,
+            "adiabatic_no_diffusion_peak_K": 533.9260006232867
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 8.963,
+            "deposition_e_folding_depth_m": 5.578489345085351e-05,
+            "prompt_peak_rise_K": 296.8170055760885,
+            "ratio_to_surface_peak": 0.4078217817986085,
+            "adiabatic_no_diffusion_peak_K": 529.7884139916438
+          }
+        },
+        {
+          "photon_energy_keV": 5,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 1.9120000000000001,
+            "deposition_e_folding_depth_m": 0.0002615062761506276,
+            "prompt_peak_rise_K": 97.60686481660699,
+            "ratio_to_surface_peak": 0.1341102591073756,
+            "adiabatic_no_diffusion_peak_K": 113.01522342430246
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 1.866,
+            "deposition_e_folding_depth_m": 0.0002679528403001072,
+            "prompt_peak_rise_K": 95.57836209083402,
+            "ratio_to_surface_peak": 0.1313231290559743,
+            "adiabatic_no_diffusion_peak_K": 110.29623792350856
+          }
+        },
+        {
+          "photon_energy_keV": 10,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.23730000000000004,
+            "deposition_e_folding_depth_m": 0.0021070375052675934,
+            "prompt_peak_rise_K": 13.76189738808272,
+            "ratio_to_surface_peak": 0.01890862520779249,
+            "adiabatic_no_diffusion_peak_K": 14.02641868126934
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.20779999999999998,
+            "deposition_e_folding_depth_m": 0.0024061597690086625,
+            "prompt_peak_rise_K": 12.079475375750407,
+            "ratio_to_surface_peak": 0.016597004478802028,
+            "adiabatic_no_diffusion_peak_K": 12.282721457934125
+          }
+        },
+        {
+          "photon_energy_keV": 30,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.02562,
+            "deposition_e_folding_depth_m": 0.0195160031225605,
+            "prompt_peak_rise_K": 1.5112287088609595,
+            "ratio_to_surface_peak": 0.0020764038891797816,
+            "adiabatic_no_diffusion_peak_K": 1.5143567071812911
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.006614000000000001,
+            "deposition_e_folding_depth_m": 0.07559721802237676,
+            "prompt_peak_rise_K": 0.3907340907703731,
+            "ratio_to_surface_peak": 0.0005368623431738777,
+            "adiabatic_no_diffusion_peak_K": 0.3909428283097994
+          }
+        },
+        {
+          "photon_energy_keV": 100,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.01514,
+            "deposition_e_folding_depth_m": 0.03302509907529722,
+            "prompt_peak_rise_K": 0.8938077523709301,
+            "ratio_to_surface_peak": 0.001228077446067623,
+            "adiabatic_no_diffusion_peak_K": 0.8949008800439011
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.002147,
+            "deposition_e_folding_depth_m": 0.23288309268747087,
+            "prompt_peak_rise_K": 0.1268836904897551,
+            "ratio_to_surface_peak": 0.0001743361457214422,
+            "adiabatic_no_diffusion_peak_K": 0.1269056928305321
+          }
+        }
+      ]
+    },
+    "n14": {
+      "surface_peak_rise_K": 314.858303474076,
+      "prompt_fluence_J_m2": 21559.897748592583,
+      "monoenergetic_sensitivities": [
+        {
+          "photon_energy_keV": 1,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 221.10000000000002,
+            "deposition_e_folding_depth_m": 2.2614201718679327e-06,
+            "prompt_peak_rise_K": 284.8028153911281,
+            "ratio_to_surface_peak": 0.9045428125880042,
+            "adiabatic_no_diffusion_peak_K": 4766.89339221382
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 220.9,
+            "deposition_e_folding_depth_m": 2.2634676324128565e-06,
+            "prompt_peak_rise_K": 284.77712104980134,
+            "ratio_to_surface_peak": 0.9044612065415913,
+            "adiabatic_no_diffusion_peak_K": 4762.581412664102
+          }
+        },
+        {
+          "photon_energy_keV": 3,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 9.033,
+            "deposition_e_folding_depth_m": 5.535259603675413e-05,
+            "prompt_peak_rise_K": 109.48834223827811,
+            "ratio_to_surface_peak": 0.34773846212791043,
+            "adiabatic_no_diffusion_peak_K": 194.75055636303682
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 8.963,
+            "deposition_e_folding_depth_m": 5.578489345085351e-05,
+            "prompt_peak_rise_K": 109.03439158571469,
+            "ratio_to_surface_peak": 0.34629670039714255,
+            "adiabatic_no_diffusion_peak_K": 193.2413635206353
+          }
+        },
+        {
+          "photon_energy_keV": 5,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 1.9120000000000001,
+            "deposition_e_folding_depth_m": 0.0002615062761506276,
+            "prompt_peak_rise_K": 35.71502792424829,
+            "ratio_to_surface_peak": 0.11343206620304012,
+            "adiabatic_no_diffusion_peak_K": 41.222524495309024
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 1.866,
+            "deposition_e_folding_depth_m": 0.0002679528403001072,
+            "prompt_peak_rise_K": 34.970639074149794,
+            "ratio_to_surface_peak": 0.1110678635065094,
+            "adiabatic_no_diffusion_peak_K": 40.23076919887376
+          }
+        },
+        {
+          "photon_energy_keV": 10,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.23730000000000004,
+            "deposition_e_folding_depth_m": 0.0021070375052675934,
+            "prompt_peak_rise_K": 5.022020706387624,
+            "ratio_to_surface_peak": 0.01595009771372002,
+            "adiabatic_no_diffusion_peak_K": 5.116163735741021
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.20779999999999998,
+            "deposition_e_folding_depth_m": 0.0024061597690086625,
+            "prompt_peak_rise_K": 4.4078176192770675,
+            "ratio_to_surface_peak": 0.013999369146826349,
+            "adiabatic_no_diffusion_peak_K": 4.480146752157538
+          }
+        },
+        {
+          "photon_energy_keV": 30,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.02562,
+            "deposition_e_folding_depth_m": 0.0195160031225605,
+            "prompt_peak_rise_K": 0.5512520047181042,
+            "ratio_to_surface_peak": 0.0017507939242373887,
+            "adiabatic_no_diffusion_peak_K": 0.552364580318942
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.006614000000000001,
+            "deposition_e_folding_depth_m": 0.07559721802237676,
+            "prompt_peak_rise_K": 0.14252292344718284,
+            "ratio_to_surface_peak": 0.0004526573441913928,
+            "adiabatic_no_diffusion_peak_K": 0.14259716370919134
+          }
+        },
+        {
+          "photon_energy_keV": 100,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.01514,
+            "deposition_e_folding_depth_m": 0.03302509907529722,
+            "prompt_peak_rise_K": 0.3260280569452935,
+            "ratio_to_surface_peak": 0.0010354754927787292,
+            "adiabatic_no_diffusion_peak_K": 0.32641685191369174
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.002147,
+            "deposition_e_folding_depth_m": 0.23288309268747087,
+            "prompt_peak_rise_K": 0.04628127514535693,
+            "ratio_to_surface_peak": 0.00014699080390988487,
+            "adiabatic_no_diffusion_peak_K": 0.04628910046622828
+          }
+        }
+      ]
+    },
+    "n15": {
+      "surface_peak_rise_K": 125.40654230664069,
+      "prompt_fluence_J_m2": 10864.904618128421,
+      "monoenergetic_sensitivities": [
+        {
+          "photon_energy_keV": 1,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 221.10000000000002,
+            "deposition_e_folding_depth_m": 2.2614201718679327e-06,
+            "prompt_peak_rise_K": 111.73542973554235,
+            "ratio_to_surface_peak": 0.8909856509904396,
+            "adiabatic_no_diffusion_peak_K": 2402.2304110681944
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 220.9,
+            "deposition_e_folding_depth_m": 2.2634676324128565e-06,
+            "prompt_peak_rise_K": 111.72400400105852,
+            "ratio_to_surface_peak": 0.8908945414336837,
+            "adiabatic_no_diffusion_peak_K": 2400.0574301445686
+          }
+        },
+        {
+          "photon_energy_keV": 3,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 9.033,
+            "deposition_e_folding_depth_m": 5.535259603675413e-05,
+            "prompt_peak_rise_K": 54.985816576768116,
+            "ratio_to_surface_peak": 0.43846051063522895,
+            "adiabatic_no_diffusion_peak_K": 98.14268341555403
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 8.963,
+            "deposition_e_folding_depth_m": 5.578489345085351e-05,
+            "prompt_peak_rise_K": 54.756160985976884,
+            "ratio_to_surface_peak": 0.43662922187973735,
+            "adiabatic_no_diffusion_peak_K": 97.38214009228504
+          }
+        },
+        {
+          "photon_energy_keV": 5,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 1.9120000000000001,
+            "deposition_e_folding_depth_m": 0.0002615062761506276,
+            "prompt_peak_rise_K": 17.949546581751946,
+            "ratio_to_surface_peak": 0.14313086264560423,
+            "adiabatic_no_diffusion_peak_K": 20.773697629861545
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 1.866,
+            "deposition_e_folding_depth_m": 0.0002679528403001072,
+            "prompt_peak_rise_K": 17.576246993693527,
+            "ratio_to_surface_peak": 0.14015414722715633,
+            "adiabatic_no_diffusion_peak_K": 20.273912017427634
+          }
+        },
+        {
+          "photon_energy_keV": 10,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.23730000000000004,
+            "deposition_e_folding_depth_m": 0.0021070375052675934,
+            "prompt_peak_rise_K": 2.5297018036713035,
+            "ratio_to_surface_peak": 0.02017200823132293,
+            "adiabatic_no_diffusion_peak_K": 2.578241865881875
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.20779999999999998,
+            "deposition_e_folding_depth_m": 0.0024061597690086625,
+            "prompt_peak_rise_K": 2.2204302733408747,
+            "ratio_to_surface_peak": 0.01770585674798001,
+            "adiabatic_no_diffusion_peak_K": 2.2577271796470857
+          }
+        },
+        {
+          "photon_energy_keV": 30,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.02562,
+            "deposition_e_folding_depth_m": 0.0195160031225605,
+            "prompt_peak_rise_K": 0.27778475781173206,
+            "ratio_to_surface_peak": 0.002215073892496775,
+            "adiabatic_no_diffusion_peak_K": 0.2783588563164502
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.006614000000000001,
+            "deposition_e_folding_depth_m": 0.07559721802237676,
+            "prompt_peak_rise_K": 0.07182216775794945,
+            "ratio_to_surface_peak": 0.0005727146800868795,
+            "adiabatic_no_diffusion_peak_K": 0.07186047914430138
+          }
+        },
+        {
+          "photon_energy_keV": 100,
+          "total_attenuation_depth": {
+            "mass_coefficient_m2_kg": 0.01514,
+            "deposition_e_folding_depth_m": 0.03302509907529722,
+            "prompt_peak_rise_K": 0.16429402638120408,
+            "ratio_to_surface_peak": 0.0013100913505730567,
+            "adiabatic_no_diffusion_peak_K": 0.1644946559184643
+          },
+          "energy_absorption_depth": {
+            "mass_coefficient_m2_kg": 0.002147,
+            "deposition_e_folding_depth_m": 0.23288309268747087,
+            "prompt_peak_rise_K": 0.023322911921063075,
+            "ratio_to_surface_peak": 0.0001859784305673186,
+            "adiabatic_no_diffusion_peak_K": 0.023326950215121725
+          }
+        }
+      ]
+    }
+  },
+  "radius_sensitivities": [
+    {
+      "energy_keV": 1,
+      "deposition_model": "total_attenuation_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 985736040.0474234,
+      "stage_radii_m": {
+        "c12": 872554970.7218683,
+        "c13": 985736040.0474234,
+        "n14": 723534694.7754161,
+        "n15": 337498326.61478776
+      }
+    },
+    {
+      "energy_keV": 1,
+      "deposition_model": "energy_absorption_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 985709377.1327732,
+      "stage_radii_m": {
+        "c12": 872531304.2872276,
+        "c13": 985709377.1327732,
+        "n14": 723518632.7328835,
+        "n15": 337481479.326884
+      }
+    },
+    {
+      "energy_keV": 3,
+      "deposition_model": "total_attenuation_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 808502826.5286564,
+      "stage_radii_m": {
+        "c12": 735265327.2331914,
+        "c13": 808502826.5286564,
+        "n14": 607007911.1018901,
+        "n15": 239914988.65085855
+      }
+    },
+    {
+      "energy_keV": 3,
+      "deposition_model": "energy_absorption_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 807829994.7847855,
+      "stage_radii_m": {
+        "c12": 734876243.2619091,
+        "c13": 807829994.7847855,
+        "n14": 606686509.5327803,
+        "n15": 239441205.53574193
+      }
+    },
+    {
+      "energy_keV": 5,
+      "deposition_model": "total_attenuation_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 693834378.0662436,
+      "stage_radii_m": {
+        "c12": 671922476.4692109,
+        "c13": 693834378.0662436,
+        "n14": 553282976.7828243,
+        "n15": 145776807.87107968
+      }
+    },
+    {
+      "energy_keV": 5,
+      "deposition_model": "energy_absorption_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 692614288.4283029,
+      "stage_radii_m": {
+        "c12": 671279598.1992648,
+        "c13": 692614288.4283029,
+        "n14": 552725148.3373759,
+        "n15": 144539537.25776207
+      }
+    },
+    {
+      "energy_keV": 10,
+      "deposition_model": "total_attenuation_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 645307960.1204394,
+      "stage_radii_m": {
+        "c12": 645307960.1204394,
+        "c13": 642342480.874046,
+        "n14": 530013386.35220563,
+        "n15": 83082441.91308476
+      }
+    },
+    {
+      "energy_keV": 10,
+      "deposition_model": "energy_absorption_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 644772927.6782786,
+      "stage_radii_m": {
+        "c12": 644772927.6782786,
+        "c13": 641286743.7291697,
+        "n14": 529542073.00022346,
+        "n15": 81465382.14278707
+      }
+    },
+    {
+      "energy_keV": 30,
+      "deposition_model": "total_attenuation_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 641411086.9612483,
+      "stage_radii_m": {
+        "c12": 641411086.9612483,
+        "c13": 634634649.5327046,
+        "n14": 526577601.85072905,
+        "n15": 70813067.19248563
+      }
+    },
+    {
+      "energy_keV": 30,
+      "deposition_model": "energy_absorption_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 641054546.4706622,
+      "stage_radii_m": {
+        "c12": 641054546.4706622,
+        "c13": 633927298.1976957,
+        "n14": 526262902.6666182,
+        "n15": 69631507.224303
+      }
+    },
+    {
+      "energy_keV": 100,
+      "deposition_model": "total_attenuation_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 641214626.5679871,
+      "stage_radii_m": {
+        "c12": 641214626.5679871,
+        "c13": 634244929.9948313,
+        "n14": 526404203.90268695,
+        "n15": 70163261.68552679
+      }
+    },
+    {
+      "energy_keV": 100,
+      "deposition_model": "energy_absorption_depth",
+      "allowed_rise_K": 1000.0,
+      "minimum_R_m": 640970586.5882326,
+      "stage_radii_m": {
+        "c12": 640970586.5882326,
+        "c13": 633760675.8135233,
+        "n14": 526188787.41683275,
+        "n15": 69351790.38511992
+      }
+    }
+  ],
+  "soft_component_limits_with10keV_hard_component": [
+    {
+      "radius_m": 650000000.0,
+      "allowed_rise_K": 1000.0,
+      "maximum_soft_surface_component_energy_fraction_raw": 0.016309555329397086,
+      "per_stage_raw_limits": {
+        "c12": 0.016309555329397086,
+        "c13": 0.01714984671632123,
+        "n14": 0.5377649319179735,
+        "n15": 3.4050913939684557
+      }
+    },
+    {
+      "radius_m": 700000000.0,
+      "allowed_rise_K": 1000.0,
+      "maximum_soft_surface_component_energy_fraction_raw": 0.1318227787870984,
+      "per_stage_raw_limits": {
+        "c12": 0.1946251591631849,
+        "c13": 0.1318227787870984,
+        "n14": 0.782981201403629,
+        "n15": 3.9548847525502375
+      }
+    },
+    {
+      "radius_m": 750000000.0,
+      "allowed_rise_K": 1000.0,
+      "maximum_soft_surface_component_energy_fraction_raw": 0.25144870471470954,
+      "per_stage_raw_limits": {
+        "c12": 0.3815527218118094,
+        "c13": 0.25144870471470954,
+        "n14": 1.0415513196051385,
+        "n15": 4.545322170512419
+      }
+    },
+    {
+      "radius_m": 800000000.0,
+      "allowed_rise_K": 1000.0,
+      "maximum_soft_surface_component_energy_fraction_raw": 0.3763531235175525,
+      "per_stage_raw_limits": {
+        "c12": 0.5775147410376373,
+        "c13": 0.3763531235175525,
+        "n14": 1.3139174279358723,
+        "n15": 5.176411127415644
+      }
+    }
+  ],
+  "checks": [
+    {
+      "test": "Prompt surface kernel agrees baseline c12",
+      "error": 0.0
+    },
+    {
+      "test": "Prompt surface kernel agrees baseline c13",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "test": "Prompt surface kernel agrees baseline n14",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "test": "Prompt surface kernel agrees baseline n15",
+      "error": 0.0
+    },
+    {
+      "test": "Surface rectangular exact",
+      "error": -3.3306690738754696e-16
+    },
+    {
+      "test": "Large mu approaches surface result",
+      "error": -3.9633271553540794e-08
+    },
+    {
+      "test": "Small mu approaches adiabatic depth result",
+      "error": -1.6820633483072278e-05
+    }
+  ],
+  "all_checks_passed": true,
+  "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z06.html",
+  "limitations": [
+    "No escaping photon spectrum is calculated by the grey pulse model; these cases cannot replace the baseline without that spectrum.",
+    "Total-mu depth puts all heat at the primary interaction depth; mu_en depth puts all heat at an energy-absorption length. Both prescribe deposition and omit actual multiple scattering, electron transport and escaping energy.",
+    "Total-mu is the more concentrated of these two profiles, not a universal upper bound for arbitrary material/spectral response.",
+    "Constant properties, flat semi-infinite wall, no erosion or nonlinear radiation-hydrodynamic response.",
+    "The bulk kinetic and delayed-decay terms are retained from the provisional64-zone baseline."
+  ],
+  "input_sha256": {
+    "collector.json": "a06cda8a531c2d88c915ffc143cdd91537ce523e15a28871759416dbe5117a87",
+    "collector-inputs.json": "168515d97c33cb68b21557dfb00031ec950d8c097adfaa3611c8bd8c80be2721"
+  },
+  "code_sha256": "8e1bdfd9c5cd296d4eb9f7d8c2e7464a1d26939e7a78f439c0b740a04a177a23"
+}

@@ -1,0 +1,803 @@
+{
+  "scope": "Closed material reservoirs: incomplete extraction creates stock, not loss.\n\nReturns are eventual fractions. An extraction pass can leave retained residue;\nonly explicitly irreversible escape/disposal enters fresh-makeup accounting.\nNuclear side products are separately held for optional nuclear reprocessing.\n",
+  "perfect_eventual_return_cycle": {
+    "feasible": true,
+    "stage_attempts_per_He": {
+      "c12": 1.1333950031834032,
+      "c13": 0.0808757301845105,
+      "n14": 1.8495094439441138,
+      "n15": 1.6613766906492917
+    },
+    "stage_pulse_data": {
+      "c12": {
+        "stage": "B2",
+        "mass_kg": 11309733552923.254,
+        "attempts_per_pulse": 4.864914816952549e+38,
+        "pulses_per_He": 2.3297324739046054e-39,
+        "input_counts": {
+          "p": 2.0,
+          "c12": 1.0
+        },
+        "protons_per_catalyst": 2.0,
+        "gross_fuel_kg_per_He": 2.6348653529453815e-26
+      },
+      "c13": {
+        "stage": "C13",
+        "mass_kg": 11309733552923.254,
+        "attempts_per_pulse": 4.864914816952549e+38,
+        "pulses_per_He": 1.662428495205846e-40,
+        "input_counts": {
+          "p": 1.0,
+          "c13": 1.0
+        },
+        "protons_per_catalyst": 1.0,
+        "gross_fuel_kg_per_He": 1.8801623331565273e-27
+      },
+      "n14": {
+        "stage": "A",
+        "mass_kg": 11309733552923.254,
+        "attempts_per_pulse": 4.5405871624890455e+38,
+        "pulses_per_He": 4.0732825464146695e-39,
+        "input_counts": {
+          "p": 1.0,
+          "n14": 1.0
+        },
+        "protons_per_catalyst": 1.0,
+        "gross_fuel_kg_per_He": 4.606774028572265e-26
+      },
+      "n15": {
+        "stage": "B1",
+        "mass_kg": 113097335529.23254,
+        "attempts_per_pulse": 4.256800464833481e+36,
+        "pulses_per_He": 3.902876595636441e-37,
+        "input_counts": {
+          "p": 1.0,
+          "n15": 1.0
+        },
+        "protons_per_catalyst": 1.0,
+        "gross_fuel_kg_per_He": 4.414049438658835e-26
+      }
+    },
+    "input_catalyst_matrix_F": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "output_catalyst_matrix_M": [
+      [
+        0.11764960375355858,
+        2.646089973370365e-07,
+        3.174459124556715e-08,
+        0.6018693226514723
+      ],
+      [
+        0.06046563057253958,
+        0.15177276299149772,
+        4.019782598447344e-09,
+        4.108074156573606e-05
+      ],
+      [
+        0.8218847629964684,
+        0.8166214104008008,
+        0.46063268807324365,
+        4.454401097223378e-10
+      ],
+      [
+        2.5197697144552453e-09,
+        0.03160543454477148,
+        0.5393672761573852,
+        0.39801672186147286
+      ]
+    ],
+    "states": [
+      "c12",
+      "c13",
+      "n14",
+      "n15"
+    ],
+    "stage_order": [
+      "c12",
+      "c13",
+      "n14",
+      "n15"
+    ],
+    "carbon_return": 1.0,
+    "hydrogen_return": 1.0,
+    "other_returns": {},
+    "fresh_carbon_C13_number_fraction": 0.0107,
+    "external_input_atoms_per_He": {
+      "n15": 0.0,
+      "c12": 0.00011978658021156443,
+      "n14": 0.0,
+      "c13": 1.2955791047037249e-06,
+      "p": 4.000483032429087
+    },
+    "ash_atoms_per_He": {
+      "n15": 0.0,
+      "c12": 0.0,
+      "n14": 0.0,
+      "o17": 9.761781976231711e-11,
+      "ne20": 7.302755842412385e-11,
+      "ne22": 3.692969908354331e-13,
+      "mg24": 7.349694080865794e-13,
+      "o16": 0.00012108183045031068,
+      "o18": 2.0920811547038476e-11,
+      "na23": 2.132210402074697e-12,
+      "c13": 0.0,
+      "f19": 5.3463751755483966e-11,
+      "p": 0.0,
+      "ne21": 2.1687113349956072e-12,
+      "he4": 1.0
+    },
+    "returned_atoms_per_He": {
+      "c12": 1.1332752166031916,
+      "c13": 0.08087443460540579,
+      "n14": 1.8495094439441138,
+      "n15": 1.6613766906492917,
+      "p": 1.8580688387156343
+    },
+    "fresh_carbon_kg_per_He": 2.4148984469301433e-30,
+    "fresh_hydrogen_kg_per_He": 6.694939721686184e-27,
+    "fresh_C_H_mass_ratio": 0.00036070503205694706,
+    "gross_H_input_atoms_per_He": 5.858551871144722,
+    "gross_H_output_atoms_per_He": 1.8580688387156343,
+    "nuclear_H_consumed_atoms_per_He": 4.000483032429087,
+    "unreturned_H_atoms_per_He": 0.0,
+    "gross_fuel_kg_per_He": 1.1843705053492134e-25,
+    "returned_fuel_kg_per_He": 1.118260123975159e-25,
+    "nuclear_Q_MeV_per_He": 26.735066809716,
+    "neutrino_MeV_per_He": 2.0266502984234314,
+    "H_nonnu_MeV_per_He": 24.70841651129257,
+    "U_prepared_MeV_per_He": 2.293376538946677,
+    "escaped_prompt_MeV_per_He": 0.34551596726128747,
+    "bulk_kinetic_MeV_per_He": 19.896486090736012,
+    "hot_internal_MeV_per_He": 1.0875436707975887,
+    "delayed_decay_heat_MeV_per_He": 5.67224732144436,
+    "eta_driver": 0.6,
+    "eta_heat": 0.6,
+    "energy_capture_fraction": 0.99,
+    "preaux_net_MeV_per_He": 12.216770840264319,
+    "preaux_electric_J_per_He": 1.957342478320404e-12,
+    "baryon_residual_per_He": -5.285931954116836e-15,
+    "mass_defect_Q_residual_MeV_per_He": -5.680789172402001e-12,
+    "energy_partition_residual_MeV_per_He": 4.440892098500626e-15,
+    "stationary_matrix_condition_number": 68707.78794858253
+  },
+  "frozen_He_rate_s": 3.782247267560003e+32,
+  "perfect_return_fresh_C_kg_s": 913.3743052336429,
+  "perfect_return_fresh_H_kg_s": 2532191.7468826496,
+  "perfect_return_gross_fuel_kg_s": 44795821.07635722,
+  "retained_CNO_output_kg_s": 41119258.36279759,
+  "prompt_unburned_H_output_kg_s": 1176104.6204659685,
+  "prompt_He_product_kg_s": 2513862.7307395553,
+  "available_C_H_budget": 0.007,
+  "carbon_budget_interpretation": "Available supply ceiling; no requirement to consume all of it. Ordinary retained fuel, rejects and catchers are inventory, not physical escape.",
+  "extraction_cases": [
+    {
+      "extracted_fraction_per_pass": 0.1,
+      "irreversible_loss_per_pass": 0,
+      "eventual_return": 1.0000000000000002,
+      "eventual_irreversible_loss": 0.0,
+      "expected_processing_passes": 10.000000000000002,
+      "monthly_cycle_residence_s_from_random_arrival": 24624000.000000004,
+      "monthly_cycle_mean_inventory_kg": 1012520617925528.0
+    },
+    {
+      "extracted_fraction_per_pass": 0.1,
+      "irreversible_loss_per_pass": 1e-06,
+      "eventual_return": 0.9999900000899986,
+      "eventual_irreversible_loss": 9.999910000809987e-06,
+      "expected_processing_passes": 9.999910000809987,
+      "monthly_cycle_residence_s_from_random_arrival": 24623766.722099487,
+      "monthly_cycle_mean_inventory_kg": 1012511025711266.1
+    },
+    {
+      "extracted_fraction_per_pass": 0.1,
+      "irreversible_loss_per_pass": 1e-05,
+      "eventual_return": 0.9999000089991911,
+      "eventual_irreversible_loss": 9.999100080992721e-05,
+      "expected_processing_passes": 9.99910008099272,
+      "monthly_cycle_residence_s_from_random_arrival": 24621667.40993313,
+      "monthly_cycle_mean_inventory_kg": 1012424703551913.8
+    },
+    {
+      "extracted_fraction_per_pass": 0.5,
+      "irreversible_loss_per_pass": 0,
+      "eventual_return": 1.0,
+      "eventual_irreversible_loss": 0.0,
+      "expected_processing_passes": 2.0,
+      "monthly_cycle_residence_s_from_random_arrival": 3888000.0,
+      "monthly_cycle_mean_inventory_kg": 159871676514557.0
+    },
+    {
+      "extracted_fraction_per_pass": 0.5,
+      "irreversible_loss_per_pass": 1e-06,
+      "eventual_return": 0.9999980000019998,
+      "eventual_irreversible_loss": 1.9999980000019997e-06,
+      "expected_processing_passes": 1.9999980000019997,
+      "monthly_cycle_residence_s_from_random_arrival": 3887994.8160051834,
+      "monthly_cycle_mean_inventory_kg": 159871463352534.78
+    },
+    {
+      "extracted_fraction_per_pass": 0.5,
+      "irreversible_loss_per_pass": 1e-05,
+      "eventual_return": 0.999980000199998,
+      "eventual_irreversible_loss": 1.999980000199998e-05,
+      "expected_processing_passes": 1.9999800001999979,
+      "monthly_cycle_residence_s_from_random_arrival": 3887948.1605183943,
+      "monthly_cycle_mean_inventory_kg": 159869544913519.5
+    },
+    {
+      "extracted_fraction_per_pass": 0.9,
+      "irreversible_loss_per_pass": 0,
+      "eventual_return": 1.0,
+      "eventual_irreversible_loss": 0.0,
+      "expected_processing_passes": 1.1111111111111112,
+      "monthly_cycle_residence_s_from_random_arrival": 1584000.0000000002,
+      "monthly_cycle_mean_inventory_kg": 65132905246671.38
+    },
+    {
+      "extracted_fraction_per_pass": 0.9,
+      "irreversible_loss_per_pass": 1e-06,
+      "eventual_return": 0.9999988888890123,
+      "eventual_irreversible_loss": 1.1111109876543346e-06,
+      "expected_processing_passes": 1.1111109876543348,
+      "monthly_cycle_residence_s_from_random_arrival": 1583999.6800000358,
+      "monthly_cycle_mean_inventory_kg": 65132892088510.17
+    },
+    {
+      "extracted_fraction_per_pass": 0.9,
+      "irreversible_loss_per_pass": 1e-05,
+      "eventual_return": 0.9999888889012346,
+      "eventual_irreversible_loss": 1.1111098765445816e-05,
+      "expected_processing_passes": 1.1111098765445815,
+      "monthly_cycle_residence_s_from_random_arrival": 1583996.8000035551,
+      "monthly_cycle_mean_inventory_kg": 65132773665190.805
+    },
+    {
+      "extracted_fraction_per_pass": 0.99,
+      "irreversible_loss_per_pass": 0,
+      "eventual_return": 1.0,
+      "eventual_irreversible_loss": 0.0,
+      "expected_processing_passes": 1.0101010101010102,
+      "monthly_cycle_residence_s_from_random_arrival": 1322181.8181818184,
+      "monthly_cycle_mean_inventory_kg": 54367135784411.65
+    },
+    {
+      "extracted_fraction_per_pass": 0.99,
+      "irreversible_loss_per_pass": 1e-06,
+      "eventual_return": 0.999998989899,
+      "eventual_irreversible_loss": 1.0101009998979697e-06,
+      "expected_processing_passes": 1.0101009998979698,
+      "monthly_cycle_residence_s_from_random_arrival": 1322181.7917355376,
+      "monthly_cycle_mean_inventory_kg": 54367134696960.2
+    },
+    {
+      "extracted_fraction_per_pass": 0.99,
+      "irreversible_loss_per_pass": 1e-05,
+      "eventual_return": 0.9999898989909194,
+      "eventual_irreversible_loss": 1.0101009080706155e-05,
+      "expected_processing_passes": 1.0101009080706154,
+      "monthly_cycle_residence_s_from_random_arrival": 1322181.5537190351,
+      "monthly_cycle_mean_inventory_kg": 54367124909898.14
+    }
+  ],
+  "skin_batch_cases": [
+    {
+      "material_case": "graphite10um",
+      "rho_kg_m3": 2000,
+      "thickness_m": 1e-05,
+      "sigma_kg_m2": 0.02,
+      "batch_interval_days": 1,
+      "gross_skin_processed_kg_s": 3519747324855.231,
+      "skin_over_fuel_throughput": 85598.51186517756,
+      "end_of_batch_CNO_loading_kg_m2": 2.336489217417835e-07,
+      "CNO_mass_fraction_relative_skin_at_end": 1.1682446087089174e-05,
+      "mean_uniform_age_trapped_CNO_kg": 1776351961272.8557,
+      "cold_start_one_complete_period_CNO_stock_kg": 3552703922545.7114,
+      "electric_W_by_J_kg": {
+        "2000000.0": 7.039494649710462e+18,
+        "30000000.0": 1.0559241974565693e+20,
+        "100000000.0": 3.519747324855231e+20
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.46296296296296297,
+        "30000000.0": 6.944444444444445,
+        "100000000.0": 23.14814814814815
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "graphite10um",
+      "rho_kg_m3": 2000,
+      "thickness_m": 1e-05,
+      "sigma_kg_m2": 0.02,
+      "batch_interval_days": 30,
+      "gross_skin_processed_kg_s": 117324910828.5077,
+      "skin_over_fuel_throughput": 2853.283728839252,
+      "end_of_batch_CNO_loading_kg_m2": 7.009467652253505e-06,
+      "CNO_mass_fraction_relative_skin_at_end": 0.00035047338261267523,
+      "mean_uniform_age_trapped_CNO_kg": 53290558838185.67,
+      "cold_start_one_complete_period_CNO_stock_kg": 106581117676371.34,
+      "electric_W_by_J_kg": {
+        "2000000.0": 2.3464982165701542e+17,
+        "30000000.0": 3.519747324855231e+18,
+        "100000000.0": 1.173249108285077e+19
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.015432098765432098,
+        "30000000.0": 0.23148148148148148,
+        "100000000.0": 0.7716049382716049
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "graphite10um",
+      "rho_kg_m3": 2000,
+      "thickness_m": 1e-05,
+      "sigma_kg_m2": 0.02,
+      "batch_interval_days": 365.25,
+      "gross_skin_processed_kg_s": 9636542983.861002,
+      "skin_over_fuel_throughput": 234.3559530874129,
+      "end_of_batch_CNO_loading_kg_m2": 8.534026866618642e-05,
+      "CNO_mass_fraction_relative_skin_at_end": 0.004267013433309321,
+      "mean_uniform_age_trapped_CNO_kg": 648812553854910.6,
+      "cold_start_one_complete_period_CNO_stock_kg": 1297625107709821.2,
+      "electric_W_by_J_kg": {
+        "2000000.0": 1.9273085967722004e+16,
+        "30000000.0": 2.890962895158301e+17,
+        "100000000.0": 9.636542983861002e+17
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.001267523512561158,
+        "30000000.0": 0.01901285268841737,
+        "100000000.0": 0.0633761756280579
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "graphite50um",
+      "rho_kg_m3": 2000,
+      "thickness_m": 5e-05,
+      "sigma_kg_m2": 0.1,
+      "batch_interval_days": 1,
+      "gross_skin_processed_kg_s": 17598736624276.156,
+      "skin_over_fuel_throughput": 427992.5593258878,
+      "end_of_batch_CNO_loading_kg_m2": 2.336489217417835e-07,
+      "CNO_mass_fraction_relative_skin_at_end": 2.3364892174178347e-06,
+      "mean_uniform_age_trapped_CNO_kg": 1776351961272.8557,
+      "cold_start_one_complete_period_CNO_stock_kg": 3552703922545.7114,
+      "electric_W_by_J_kg": {
+        "2000000.0": 3.5197473248552313e+19,
+        "30000000.0": 5.279620987282847e+20,
+        "100000000.0": 1.7598736624276157e+21
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 2.314814814814815,
+        "30000000.0": 34.72222222222222,
+        "100000000.0": 115.74074074074075
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "graphite50um",
+      "rho_kg_m3": 2000,
+      "thickness_m": 5e-05,
+      "sigma_kg_m2": 0.1,
+      "batch_interval_days": 30,
+      "gross_skin_processed_kg_s": 586624554142.5386,
+      "skin_over_fuel_throughput": 14266.418644196261,
+      "end_of_batch_CNO_loading_kg_m2": 7.009467652253505e-06,
+      "CNO_mass_fraction_relative_skin_at_end": 7.009467652253504e-05,
+      "mean_uniform_age_trapped_CNO_kg": 53290558838185.67,
+      "cold_start_one_complete_period_CNO_stock_kg": 106581117676371.34,
+      "electric_W_by_J_kg": {
+        "2000000.0": 1.1732491082850772e+18,
+        "30000000.0": 1.7598736624276156e+19,
+        "100000000.0": 5.8662455414253855e+19
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.07716049382716049,
+        "30000000.0": 1.1574074074074074,
+        "100000000.0": 3.8580246913580245
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "graphite50um",
+      "rho_kg_m3": 2000,
+      "thickness_m": 5e-05,
+      "sigma_kg_m2": 0.1,
+      "batch_interval_days": 365.25,
+      "gross_skin_processed_kg_s": 48182714919.305016,
+      "skin_over_fuel_throughput": 1171.7797654370647,
+      "end_of_batch_CNO_loading_kg_m2": 8.534026866618642e-05,
+      "CNO_mass_fraction_relative_skin_at_end": 0.0008534026866618642,
+      "mean_uniform_age_trapped_CNO_kg": 648812553854910.6,
+      "cold_start_one_complete_period_CNO_stock_kg": 1297625107709821.2,
+      "electric_W_by_J_kg": {
+        "2000000.0": 9.636542983861003e+16,
+        "30000000.0": 1.4454814475791506e+18,
+        "100000000.0": 4.818271491930501e+18
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.00633761756280579,
+        "30000000.0": 0.09506426344208685,
+        "100000000.0": 0.3168808781402895
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "alumina50um",
+      "rho_kg_m3": 3900,
+      "thickness_m": 5e-05,
+      "sigma_kg_m2": 0.195,
+      "batch_interval_days": 1,
+      "gross_skin_processed_kg_s": 34317536417338.508,
+      "skin_over_fuel_throughput": 834585.4906854813,
+      "end_of_batch_CNO_loading_kg_m2": 2.336489217417835e-07,
+      "CNO_mass_fraction_relative_skin_at_end": 1.1981995986758127e-06,
+      "mean_uniform_age_trapped_CNO_kg": 1776351961272.8557,
+      "cold_start_one_complete_period_CNO_stock_kg": 3552703922545.7114,
+      "electric_W_by_J_kg": {
+        "2000000.0": 6.8635072834677015e+19,
+        "30000000.0": 1.0295260925201553e+21,
+        "100000000.0": 3.4317536417338507e+21
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 4.513888888888889,
+        "30000000.0": 67.70833333333333,
+        "100000000.0": 225.69444444444446
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "alumina50um",
+      "rho_kg_m3": 3900,
+      "thickness_m": 5e-05,
+      "sigma_kg_m2": 0.195,
+      "batch_interval_days": 30,
+      "gross_skin_processed_kg_s": 1143917880577.9502,
+      "skin_over_fuel_throughput": 27819.51635618271,
+      "end_of_batch_CNO_loading_kg_m2": 7.009467652253505e-06,
+      "CNO_mass_fraction_relative_skin_at_end": 3.594598796027438e-05,
+      "mean_uniform_age_trapped_CNO_kg": 53290558838185.67,
+      "cold_start_one_complete_period_CNO_stock_kg": 106581117676371.34,
+      "electric_W_by_J_kg": {
+        "2000000.0": 2.2878357611559004e+18,
+        "30000000.0": 3.4317536417338507e+19,
+        "100000000.0": 1.1439178805779502e+20
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.15046296296296297,
+        "30000000.0": 2.2569444444444446,
+        "100000000.0": 7.523148148148148
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "alumina50um",
+      "rho_kg_m3": 3900,
+      "thickness_m": 5e-05,
+      "sigma_kg_m2": 0.195,
+      "batch_interval_days": 365.25,
+      "gross_skin_processed_kg_s": 93956294092.64478,
+      "skin_over_fuel_throughput": 2284.970542602276,
+      "end_of_batch_CNO_loading_kg_m2": 8.534026866618642e-05,
+      "CNO_mass_fraction_relative_skin_at_end": 0.0004376424034163406,
+      "mean_uniform_age_trapped_CNO_kg": 648812553854910.6,
+      "cold_start_one_complete_period_CNO_stock_kg": 1297625107709821.2,
+      "electric_W_by_J_kg": {
+        "2000000.0": 1.8791258818528954e+17,
+        "30000000.0": 2.8186888227793434e+18,
+        "100000000.0": 9.395629409264478e+18
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.01235835424747129,
+        "30000000.0": 0.18537531371206936,
+        "100000000.0": 0.6179177123735645
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "Al100um",
+      "rho_kg_m3": 2300,
+      "thickness_m": 0.0001,
+      "sigma_kg_m2": 0.23,
+      "batch_interval_days": 1,
+      "gross_skin_processed_kg_s": 40477094235835.16,
+      "skin_over_fuel_throughput": 984382.8864495419,
+      "end_of_batch_CNO_loading_kg_m2": 2.336489217417835e-07,
+      "CNO_mass_fraction_relative_skin_at_end": 1.015864877138189e-06,
+      "mean_uniform_age_trapped_CNO_kg": 1776351961272.8557,
+      "cold_start_one_complete_period_CNO_stock_kg": 3552703922545.7114,
+      "electric_W_by_J_kg": {
+        "2000000.0": 8.095418847167031e+19,
+        "30000000.0": 1.2143128270750548e+21,
+        "100000000.0": 4.0477094235835156e+21
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 5.324074074074074,
+        "30000000.0": 79.86111111111111,
+        "100000000.0": 266.2037037037037
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "Al100um",
+      "rho_kg_m3": 2300,
+      "thickness_m": 0.0001,
+      "sigma_kg_m2": 0.23,
+      "batch_interval_days": 30,
+      "gross_skin_processed_kg_s": 1349236474527.8386,
+      "skin_over_fuel_throughput": 32812.7628816514,
+      "end_of_batch_CNO_loading_kg_m2": 7.009467652253505e-06,
+      "CNO_mass_fraction_relative_skin_at_end": 3.0475946314145672e-05,
+      "mean_uniform_age_trapped_CNO_kg": 53290558838185.67,
+      "cold_start_one_complete_period_CNO_stock_kg": 106581117676371.34,
+      "electric_W_by_J_kg": {
+        "2000000.0": 2.6984729490556774e+18,
+        "30000000.0": 4.047709423583516e+19,
+        "100000000.0": 1.3492364745278387e+20
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.17746913580246915,
+        "30000000.0": 2.662037037037037,
+        "100000000.0": 8.873456790123457
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "Al100um",
+      "rho_kg_m3": 2300,
+      "thickness_m": 0.0001,
+      "sigma_kg_m2": 0.23,
+      "batch_interval_days": 365.25,
+      "gross_skin_processed_kg_s": 110820244314.40154,
+      "skin_over_fuel_throughput": 2695.0934605052485,
+      "end_of_batch_CNO_loading_kg_m2": 8.534026866618642e-05,
+      "CNO_mass_fraction_relative_skin_at_end": 0.00037104464637472355,
+      "mean_uniform_age_trapped_CNO_kg": 648812553854910.6,
+      "cold_start_one_complete_period_CNO_stock_kg": 1297625107709821.2,
+      "electric_W_by_J_kg": {
+        "2000000.0": 2.2164048862880307e+17,
+        "30000000.0": 3.324607329432046e+18,
+        "100000000.0": 1.1082024431440153e+19
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.014576520394453316,
+        "30000000.0": 0.21864780591679975,
+        "100000000.0": 0.7288260197226658
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "Sn100um",
+      "rho_kg_m3": 7000,
+      "thickness_m": 0.0001,
+      "sigma_kg_m2": 0.7000000000000001,
+      "batch_interval_days": 1,
+      "gross_skin_processed_kg_s": 123191156369933.11,
+      "skin_over_fuel_throughput": 2995947.915281215,
+      "end_of_batch_CNO_loading_kg_m2": 2.336489217417835e-07,
+      "CNO_mass_fraction_relative_skin_at_end": 3.3378417391683356e-07,
+      "mean_uniform_age_trapped_CNO_kg": 1776351961272.8557,
+      "cold_start_one_complete_period_CNO_stock_kg": 3552703922545.7114,
+      "electric_W_by_J_kg": {
+        "2000000.0": 2.463823127398662e+20,
+        "30000000.0": 3.695734691097993e+21,
+        "100000000.0": 1.231911563699331e+22
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 16.203703703703706,
+        "30000000.0": 243.0555555555556,
+        "100000000.0": 810.1851851851852
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "Sn100um",
+      "rho_kg_m3": 7000,
+      "thickness_m": 0.0001,
+      "sigma_kg_m2": 0.7000000000000001,
+      "batch_interval_days": 30,
+      "gross_skin_processed_kg_s": 4106371878997.7705,
+      "skin_over_fuel_throughput": 99864.93050937385,
+      "end_of_batch_CNO_loading_kg_m2": 7.009467652253505e-06,
+      "CNO_mass_fraction_relative_skin_at_end": 1.0013525217505006e-05,
+      "mean_uniform_age_trapped_CNO_kg": 53290558838185.67,
+      "cold_start_one_complete_period_CNO_stock_kg": 106581117676371.34,
+      "electric_W_by_J_kg": {
+        "2000000.0": 8.212743757995542e+18,
+        "30000000.0": 1.231911563699331e+20,
+        "100000000.0": 4.10637187899777e+20
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.5401234567901235,
+        "30000000.0": 8.101851851851853,
+        "100000000.0": 27.006172839506174
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    },
+    {
+      "material_case": "Sn100um",
+      "rho_kg_m3": 7000,
+      "thickness_m": 0.0001,
+      "sigma_kg_m2": 0.7000000000000001,
+      "batch_interval_days": 365.25,
+      "gross_skin_processed_kg_s": 337279004435.13513,
+      "skin_over_fuel_throughput": 8202.458358059454,
+      "end_of_batch_CNO_loading_kg_m2": 8.534026866618642e-05,
+      "CNO_mass_fraction_relative_skin_at_end": 0.00012191466952312344,
+      "mean_uniform_age_trapped_CNO_kg": 648812553854910.6,
+      "cold_start_one_complete_period_CNO_stock_kg": 1297625107709821.2,
+      "electric_W_by_J_kg": {
+        "2000000.0": 6.745580088702702e+17,
+        "30000000.0": 1.0118370133054054e+19,
+        "100000000.0": 3.372790044351351e+19
+      },
+      "electric_W_m2_by_J_kg": {
+        "2000000.0": 0.044363322939640536,
+        "30000000.0": 0.6654498440946081,
+        "100000000.0": 2.2181661469820266
+      },
+      "scope": "C/N-bearing retained fuel only; H/He require a separate prompt local gas loop. Whole chosen skin batch processed, no assertion that all skin must be chemically reduced or atomized. Costs are explicit scenarios; stock is recyclable fuel, not fresh ongoing loss."
+    }
+  ],
+  "held_nuclear_sideproducts": {
+    "o17": {
+      "atoms_per_He": 9.761781976231711e-11,
+      "kg_s": 0.0010422090954881184,
+      "one_year_inventory_kg": 32889.61775177585
+    },
+    "ne20": {
+      "atoms_per_He": 7.302755842412385e-11,
+      "kg_s": 0.0009169625550218628,
+      "one_year_inventory_kg": 28937.137526357936
+    },
+    "ne22": {
+      "atoms_per_He": 3.692969908354331e-13,
+      "kg_s": 5.100671660754292e-06,
+      "one_year_inventory_kg": 160.96495600141967
+    },
+    "mg24": {
+      "atoms_per_He": 7.349694080865794e-13,
+      "kg_s": 1.1071558410045424e-05,
+      "one_year_inventory_kg": 349.39181168084946
+    },
+    "o16": {
+      "atoms_per_He": 0.00012108183045031068,
+      "kg_s": 1216.3538082518367,
+      "one_year_inventory_kg": 38385206939.28816
+    },
+    "o18": {
+      "atoms_per_He": 2.0920811547038476e-11,
+      "kg_s": 0.0002364992516594461,
+      "one_year_inventory_kg": 7463.348784168136
+    },
+    "na23": {
+      "atoms_per_He": 2.132210402074697e-12,
+      "kg_s": 3.078673871340613e-05,
+      "one_year_inventory_kg": 971.5555856221854
+    },
+    "f19": {
+      "atoms_per_He": 5.3463751755483966e-11,
+      "kg_s": 0.000637933701819384,
+      "one_year_inventory_kg": 20131.656588535392
+    },
+    "ne21": {
+      "atoms_per_He": 2.1687113349956072e-12,
+      "kg_s": 2.8595176784425176e-05,
+      "one_year_inventory_kg": 902.3951508921759
+    }
+  },
+  "optional_O16_nuclear_recovery": {
+    "stoichiometry": "O16 + 2p -> N14 + He4 + positron/neutrino (net atomic-mass convention)",
+    "candidate_channels": [
+      "O16(p,gamma)F17",
+      "F17 beta+ O17",
+      "O17(p,alpha)N14"
+    ],
+    "Q_atomic_MeV_per_restored_O16": 4.552607357996749,
+    "candidate_O16_rate_atoms_per_He": 0.00012108183045031068,
+    "additional_protons_per_existing_He_if_all_O16_restored": 0.00024216366090062136,
+    "additional_He_per_existing_He_if_all_O16_restored": 0.00012108183045031068,
+    "scope": "Stoichiometric opportunity only. Requires its own rates, residence/preparation and apparatus. No energy or recovered-catalyst credit taken in the present station."
+  },
+  "alumina_thermodynamic_reference": {
+    "source": "https://janaf.nist.gov/tables/Al-096.html",
+    "deltaG_reduction_J_kg_298K": 15518387.858922943,
+    "deltaG_reduction_J_kg_1000K": 13352487.659533568,
+    "50pct_free_energy_conversion_electric_J_kg_1000K": 26704975.319067135,
+    "scope": "Full Al2O3->Al+O2 reduction at standard chemical activities, if chosen. It is not a mandatory regeneration step; sensible heat and thermal integration are separate."
+  },
+  "checks": [
+    {
+      "name": "eventualclosure (0.1, 0)",
+      "passed": true
+    },
+    {
+      "name": "no invented loss 0.1",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.1, 1e-06)",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.1, 1e-05)",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.5, 0)",
+      "passed": true
+    },
+    {
+      "name": "no invented loss 0.5",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.5, 1e-06)",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.5, 1e-05)",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.9, 0)",
+      "passed": true
+    },
+    {
+      "name": "no invented loss 0.9",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.9, 1e-06)",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.9, 1e-05)",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.99, 0)",
+      "passed": true
+    },
+    {
+      "name": "no invented loss 0.99",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.99, 1e-06)",
+      "passed": true
+    },
+    {
+      "name": "eventualclosure (0.99, 1e-05)",
+      "passed": true
+    }
+  ],
+  "code_sha256": "1dab0aa7f061bf1c6eff94bba597ffee1ddacc2a8794cf7bc67443064d7312ca",
+  "module_sha256": "845b6fceeead8ac69da4bb4310bbbfedeaf8b7c91356275d4eb510580511405e"
+}

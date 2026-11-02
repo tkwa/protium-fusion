@@ -1,0 +1,1536 @@
+{
+  "scope": "Bounded warm mechanical chamber-cleanup requirements, not a qualified pump.\nWarm baffle conductance + molecular pump in series; hot rotor compresses gas\nbefore a small thermally isolated downstream aperture. Separate species cases.\n",
+  "code_sha256": "13e8d32acd012fcde0dae2b063b74f2f792197da8d2824acfc33ca2c912c283b",
+  "benchmark_sha256": "b3814922eff794fc88345cc5ca23dcb915c6a34bba40c88ef6ba1eccb86e73cf",
+  "reference": {
+    "target_g_H2": 0.01,
+    "species_Pin_Pa": 1e-10,
+    "species_hot_forepressure_Pa": 0.001,
+    "chosen_zero_flow_K0_H2": 1000000000.0,
+    "finite_flow_speed_fraction": 0.99,
+    "hot_entrance_fraction": 0.1,
+    "baffle_molecular_transmission": 0.3,
+    "effective_baffle_beta": 0.03,
+    "required_pump_aperture_fraction": 0.2448342151012169,
+    "pump_capture_H2_requirement": 0.062198930772986556,
+    "pump_capture_He_comparison": 0.103441530960302,
+    "temperature_K": 1000.0,
+    "tip_speed_m_s": 700.0,
+    "rotor_density_kg_m3": 1800.0,
+    "rotor_radius_m": 1.0,
+    "commercial_whole_pump_mass_per_nominal_aperture_kg_m2": 586.8838526513641,
+    "package_mass_at_benchmark_areal_density_kg_m2_receiver": 143.68924741947495,
+    "extra_baffle_column_if350kg_per_mouth_m2": 35.0,
+    "scope": "H2 sets this reference geometry. Preserving cold measured light-gas capture at1000K is an engineering requirement. Baffle and pump are connected by a warm molecular-flow volume; conductances combine in series. g is the isotropic-wall-encounter equivalent, not a directional plume guarantee."
+  },
+  "species": [
+    {
+      "species": "H",
+      "assumed_capture_alpha": 0.04398128573213142,
+      "mean_speed_1000K_m_s": 4583.437928367747,
+      "g_if_K1e9_for_this_species": 0.007844689479264016,
+      "required_gross_speed_per_receiver_area_m_s": 11.458594820919368,
+      "number_rate_m2_s_at_target_g": 82994264443.16672,
+      "mass_rate_kg_m2_s": 1.3889568972395665e-16,
+      "ideal_isothermal_compression_W_m2": 1.8469072734915403e-08,
+      "electric_compression_W_m2_at50percent": 3.6938145469830805e-08,
+      "cold_pump_speed_m3_s_per_receiver_m2_at300K_P1e4minus": 3.4375784462758107e-06,
+      "warm_to_cold_aperture_fraction_at_tau0p3": 4.07784202012088e-09,
+      "all_hot_aperture_radiation_to_cold_W_m2_upper": 0.00022935595657904226,
+      "thermal_reverse_flux_fraction": 0.18257418583505539,
+      "scope": "Separate single-species case; Pin andPf are partialpressures. H alpha is an explicit same-S0 light-gas extrapolation, not a measurement. AtomicH also needs its own compression stages or demonstrated recombination."
+    },
+    {
+      "species": "H2",
+      "assumed_capture_alpha": 0.062198930772986556,
+      "mean_speed_1000K_m_s": 3240.819263839994,
+      "g_if_K1e9_for_this_species": 0.01,
+      "required_gross_speed_per_receiver_area_m_s": 8.102048159599985,
+      "number_rate_m2_s_at_target_g": 58682895939.51819,
+      "mass_rate_kg_m2_s": 1.9643791292861576e-16,
+      "ideal_isothermal_compression_W_m2": 1.3058958720510338e-08,
+      "electric_compression_W_m2_at50percent": 2.6117917441020677e-08,
+      "cold_pump_speed_m3_s_per_receiver_m2_at300K_P1e4minus": 2.4306144478799957e-06,
+      "warm_to_cold_aperture_fraction_at_tau0p3": 4.077842020120881e-09,
+      "all_hot_aperture_radiation_to_cold_W_m2_upper": 0.0002293559565790423,
+      "thermal_reverse_flux_fraction": 0.18257418583505539,
+      "scope": "Separate single-species case; Pin andPf are partialpressures. H alpha is an explicit same-S0 light-gas extrapolation, not a measurement. AtomicH also needs its own compression stages or demonstrated recombination."
+    },
+    {
+      "species": "He",
+      "assumed_capture_alpha": 0.103441530960302,
+      "mean_speed_1000K_m_s": 2299.9370305679095,
+      "g_if_K1e9_for_this_species": 0.01359546360457702,
+      "required_gross_speed_per_receiver_area_m_s": 5.749842576419773,
+      "number_rate_m2_s_at_target_g": 41645940252.87943,
+      "mass_rate_kg_m2_s": 2.767987835781682e-16,
+      "ideal_isothermal_compression_W_m2": 9.267651262468654e-09,
+      "electric_compression_W_m2_at50percent": 1.8535302524937307e-08,
+      "cold_pump_speed_m3_s_per_receiver_m2_at300K_P1e4minus": 1.7249527729259322e-06,
+      "warm_to_cold_aperture_fraction_at_tau0p3": 4.077842020120881e-09,
+      "all_hot_aperture_radiation_to_cold_W_m2_upper": 0.0002293559565790423,
+      "thermal_reverse_flux_fraction": 0.18257418583505539,
+      "scope": "Separate single-species case; Pin andPf are partialpressures. H alpha is an explicit same-S0 light-gas extrapolation, not a measurement. AtomicH also needs its own compression stages or demonstrated recombination."
+    }
+  ],
+  "network_requirements": [
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.9944812448441185,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 583.6449843636408
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.49724062242205924,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 291.8224921818204
+    },
+    {
+      "entrance_fraction": 0.03,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.24862031121102962,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 145.9112460909102
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.9944812448441185,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 583.6449843636408
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.49724062242205924,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 291.8224921818204
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.24862031121102962,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 145.9112460909102
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.5449981963270025,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 319.8506411484358
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.27249909816350126,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 159.9253205742179
+    },
+    {
+      "entrance_fraction": 0.05,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.13624954908175063,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 79.96266028710895
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": false,
+      "required_pump_aperture_fraction": null,
+      "whole_pump_mass_at_benchmark_density_kg_m2": null
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.4896684302024338,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 287.3784948389499
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.2448342151012169,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 143.68924741947495
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.12241710755060844,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 71.84462370973748
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.40702396940877406,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 238.87579528807228
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.20351198470438703,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 119.43789764403614
+    },
+    {
+      "entrance_fraction": 0.1,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.10175599235219351,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 59.71894882201807
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.6562223180263907,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 385.12628219913694
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.3281111590131954,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 192.56314109956847
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.1640555795065977,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 96.28157054978423
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.390545266193844,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 229.2047104585957
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.195272633096922,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 114.60235522929786
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.097636316548461,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 57.30117761464893
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.36129093913812527,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 212.03581828941248
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.18064546956906263,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 106.01790914470624
+    },
+    {
+      "entrance_fraction": 0.2,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.09032273478453132,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 53.00895457235312
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.4896684302024338,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 287.3784948389499
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.2448342151012169,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 143.68924741947495
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.1,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.12241710755060844,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 71.84462370973748
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.3658584604925896,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 214.71642281898787
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.1829292302462948,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 107.35821140949393
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.3,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.0914646151231474,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 53.679105704746966
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 0.5,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.3482479449454132,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 204.38109560748427
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 1.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.1741239724727066,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 102.19054780374213
+    },
+    {
+      "entrance_fraction": 0.3,
+      "baffle_transmission": 0.5,
+      "capture_relative_to_H2_benchmark": 2.0,
+      "finite_pump_possible": true,
+      "required_pump_aperture_fraction": 0.0870619862363533,
+      "whole_pump_mass_at_benchmark_density_kg_m2": 51.09527390187107
+    }
+  ],
+  "compression_similarity": [
+    {
+      "species": "H2",
+      "tip_m_s": 500.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 99695.03428596049,
+      "log_compression_length_factor_for_K1e8": 1.6004245839810298,
+      "log_compression_length_factor_for_K1e9": 1.8004776569786582,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 700.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 9957330.857081492,
+      "log_compression_length_factor_for_K1e8": 1.1431604171293068,
+      "log_compression_length_factor_for_K1e9": 1.28605546927047,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 1000.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 9939099861.278837,
+      "log_compression_length_factor_for_K1e8": 0.8002122919905149,
+      "log_compression_length_factor_for_K1e9": 0.9002388284893291,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 1500.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 990878901441780.5,
+      "log_compression_length_factor_for_K1e8": 0.5334748613270099,
+      "log_compression_length_factor_for_K1e9": 0.600159218992886,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 2000.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 9.8785706052473e+19,
+      "log_compression_length_factor_for_K1e8": 0.40010614599525746,
+      "log_compression_length_factor_for_K1e9": 0.45011941424466456,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 500.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 1451706.3347102038,
+      "log_compression_length_factor_for_K1e8": 1.2983053214937275,
+      "log_compression_length_factor_for_K1e9": 1.460593486680443,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 700.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 423282467.9689029,
+      "log_compression_length_factor_for_K1e8": 0.927360943924091,
+      "log_compression_length_factor_for_K1e9": 1.0432810619146022,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 1000.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 2107451282237.7346,
+      "log_compression_length_factor_for_K1e8": 0.6491526607468637,
+      "log_compression_length_factor_for_K1e9": 0.7302967433402215,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 1500.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 3.0594003765176663e+18,
+      "log_compression_length_factor_for_K1e8": 0.43276844049790913,
+      "log_compression_length_factor_for_K1e9": 0.4868644955601477,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 2000.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 4.4413509070054716e+24,
+      "log_compression_length_factor_for_K1e8": 0.32457633037343186,
+      "log_compression_length_factor_for_K1e9": 0.36514837167011077,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 500.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 3424.4903593677477,
+      "log_compression_length_factor_for_K1e8": 2.263342152221291,
+      "log_compression_length_factor_for_K1e9": 2.546259921248952,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 700.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 88804.36784513693,
+      "log_compression_length_factor_for_K1e8": 1.6166729658723504,
+      "log_compression_length_factor_for_K1e9": 1.818757086606394,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 1000.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 11727134.221402647,
+      "log_compression_length_factor_for_K1e8": 1.1316710761106454,
+      "log_compression_length_factor_for_K1e9": 1.273129960624476,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 1500.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 40159458084.20503,
+      "log_compression_length_factor_for_K1e8": 0.7544473840737635,
+      "log_compression_length_factor_for_K1e9": 0.8487533070829839,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 2000.0,
+      "reference_tip_assumption_m_s": 400.0,
+      "same_geometry_allhot_similarity_K0": 137525677046793.06,
+      "log_compression_length_factor_for_K1e8": 0.5658355380553227,
+      "log_compression_length_factor_for_K1e9": 0.636564980312238,
+      "scope": "Similarity of lnK withu/sqrtT. Reference400m/s is a source-scale assumption, not measured tip speed of this exactmodel. Added effective compression length neednotscale wholepackage mass."
+    }
+  ],
+  "pressure_backstream_requirements": [
+    {
+      "Pin_species_Pa": 1e-10,
+      "Pfore_species_Pa": 0.0001,
+      "K0_for90percent_speed": 10000000.0,
+      "K0_for99percent_speed": 100000000.0,
+      "floor_with_K1e9_Pa": 1e-13
+    },
+    {
+      "Pin_species_Pa": 1e-11,
+      "Pfore_species_Pa": 0.0001,
+      "K0_for90percent_speed": 100000000.0,
+      "K0_for99percent_speed": 1000000000.0000001,
+      "floor_with_K1e9_Pa": 1e-13
+    },
+    {
+      "Pin_species_Pa": 1e-10,
+      "Pfore_species_Pa": 0.001,
+      "K0_for90percent_speed": 99999999.99999999,
+      "K0_for99percent_speed": 1000000000.0,
+      "floor_with_K1e9_Pa": 1e-12
+    },
+    {
+      "Pin_species_Pa": 1e-11,
+      "Pfore_species_Pa": 0.001,
+      "K0_for90percent_speed": 1000000000.0,
+      "K0_for99percent_speed": 10000000000.000002,
+      "floor_with_K1e9_Pa": 1e-12
+    },
+    {
+      "Pin_species_Pa": 1e-10,
+      "Pfore_species_Pa": 0.01,
+      "K0_for90percent_speed": 999999999.9999999,
+      "K0_for99percent_speed": 10000000000.0,
+      "floor_with_K1e9_Pa": 1.0000000000000001e-11
+    },
+    {
+      "Pin_species_Pa": 1e-11,
+      "Pfore_species_Pa": 0.01,
+      "K0_for90percent_speed": 10000000000.0,
+      "K0_for99percent_speed": 100000000000.00002,
+      "floor_with_K1e9_Pa": 1.0000000000000001e-11
+    },
+    {
+      "Pin_species_Pa": 1e-10,
+      "Pfore_species_Pa": 1.0,
+      "K0_for90percent_speed": 99999999999.99998,
+      "K0_for99percent_speed": 1000000000000.0,
+      "floor_with_K1e9_Pa": 1e-09
+    },
+    {
+      "Pin_species_Pa": 1e-11,
+      "Pfore_species_Pa": 1.0,
+      "K0_for90percent_speed": 1000000000000.0,
+      "K0_for99percent_speed": 10000000000000.0,
+      "floor_with_K1e9_Pa": 1e-09
+    },
+    {
+      "Pin_species_Pa": 1e-10,
+      "Pfore_species_Pa": 4.0,
+      "K0_for90percent_speed": 399999999999.99994,
+      "K0_for99percent_speed": 4000000000000.0,
+      "floor_with_K1e9_Pa": 4e-09
+    },
+    {
+      "Pin_species_Pa": 1e-11,
+      "Pfore_species_Pa": 4.0,
+      "K0_for90percent_speed": 4000000000000.0,
+      "K0_for99percent_speed": 40000000000000.0,
+      "floor_with_K1e9_Pa": 4e-09
+    }
+  ],
+  "ideal_drag_channels": [
+    {
+      "species": "H",
+      "tip_m_s": 500,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 189.96760527341553,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 500,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 379.93521054683106,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 500,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 569.9028158202466,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 700,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 135.69114662386824,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 700,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 271.38229324773647,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 700,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 407.0734398716047,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 1000,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 94.98380263670776,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 1000,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 189.96760527341553,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 1000,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 284.9514079101233,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 2000,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 47.49190131835388,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 2000,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 94.98380263670776,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H",
+      "tip_m_s": 2000,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 142.47570395506165,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 500,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 134.32071826810633,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 500,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 268.64143653621267,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 500,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 402.962154804319,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 700,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 95.94337019150453,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 700,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 191.88674038300906,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 700,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 287.8301105745136,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 1000,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 67.16035913405317,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 1000,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 134.32071826810633,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 1000,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 201.4810774021595,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 2000,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 33.58017956702658,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 2000,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 67.16035913405317,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "H2",
+      "tip_m_s": 2000,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 100.74053870107976,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 500,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 95.32441298539186,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 500,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 190.64882597078372,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 500,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 285.9732389561756,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 700,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 68.08886641813704,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 700,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 136.1777328362741,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 700,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 204.26659925441112,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 1000,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 47.66220649269593,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 1000,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 95.32441298539186,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 1000,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 142.9866194780878,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 2000,
+      "geometry_factor": 1.0,
+      "ideal_L_over_h_for_K1e9": 23.831103246347965,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 2000,
+      "geometry_factor": 2.0,
+      "ideal_L_over_h_for_K1e9": 47.66220649269593,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    },
+    {
+      "species": "He",
+      "tip_m_s": 2000,
+      "geometry_factor": 3.0,
+      "ideal_L_over_h_for_K1e9": 71.4933097390439,
+      "scope": "Manufacturer idealHolweck exponential channel model. Inter-groove/land backflow, accommodation and tolerances lower achievedK; not a selectedphysical channel."
+    }
+  ],
+  "rotor_stress": [
+    {
+      "density_kg_m3": 1500.0,
+      "tip_m_s": 500.0,
+      "thin_ring_hoop_Pa": 375000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 150000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1500.0,
+      "tip_m_s": 700.0,
+      "thin_ring_hoop_Pa": 735000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 294000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1500.0,
+      "tip_m_s": 1000.0,
+      "thin_ring_hoop_Pa": 1500000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 600000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1500.0,
+      "tip_m_s": 1500.0,
+      "thin_ring_hoop_Pa": 3375000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 1350000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1500.0,
+      "tip_m_s": 2000.0,
+      "thin_ring_hoop_Pa": 6000000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 2400000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1800.0,
+      "tip_m_s": 500.0,
+      "thin_ring_hoop_Pa": 450000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 180000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1800.0,
+      "tip_m_s": 700.0,
+      "thin_ring_hoop_Pa": 882000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 352800000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1800.0,
+      "tip_m_s": 1000.0,
+      "thin_ring_hoop_Pa": 1800000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 720000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1800.0,
+      "tip_m_s": 1500.0,
+      "thin_ring_hoop_Pa": 4050000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 1620000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 1800.0,
+      "tip_m_s": 2000.0,
+      "thin_ring_hoop_Pa": 7200000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 2880000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 2000.0,
+      "tip_m_s": 500.0,
+      "thin_ring_hoop_Pa": 500000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 200000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 2000.0,
+      "tip_m_s": 700.0,
+      "thin_ring_hoop_Pa": 980000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 392000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 2000.0,
+      "tip_m_s": 1000.0,
+      "thin_ring_hoop_Pa": 2000000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 800000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 2000.0,
+      "tip_m_s": 1500.0,
+      "thin_ring_hoop_Pa": 4500000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 1800000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    },
+    {
+      "density_kg_m3": 2000.0,
+      "tip_m_s": 2000.0,
+      "thin_ring_hoop_Pa": 8000000000.0,
+      "uniform_isotropic_solid_disk_max_Pa_nu0p2": 3200000000.0,
+      "scope": "Geometry reference stresses; an anisotropicbladedrotor, hubhole, joins and margins need their ownanalysis."
+    }
+  ],
+  "bearing_drive_loss_requirements": [
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 0.01283150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 34.71318443275354,
+      "equivalent_rotational_Q_omegaE_overP": 20994533944.929344,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 0.12831509894526089,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 3.4713184432753548,
+      "equivalent_rotational_Q_omegaE_overP": 2099453394.4929345,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 0.6415754947263045,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 0.6942636886550709,
+      "equivalent_rotational_Q_omegaE_overP": 419890678.89858687,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 0.01283150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 347.13184432753553,
+      "equivalent_rotational_Q_omegaE_overP": 209945339449.29352,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 0.12831509894526089,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 34.71318443275356,
+      "equivalent_rotational_Q_omegaE_overP": 20994533944.92935,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 0.6415754947263045,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 6.942636886550712,
+      "equivalent_rotational_Q_omegaE_overP": 4198906788.9858704,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 0.01283150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 1041.3955329826065,
+      "equivalent_rotational_Q_omegaE_overP": 629836018347.8804,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 0.12831509894526089,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 104.13955329826065,
+      "equivalent_rotational_Q_omegaE_overP": 62983601834.78804,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 0.1,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 0.6415754947263045,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 20.82791065965213,
+      "equivalent_rotational_Q_omegaE_overP": 12596720366.957607,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 1.283150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 34.71318443275354,
+      "equivalent_rotational_Q_omegaE_overP": 2099453394.4929345,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 12.83150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 3.4713184432753548,
+      "equivalent_rotational_Q_omegaE_overP": 209945339.44929346,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 64.15754947263045,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 0.6942636886550709,
+      "equivalent_rotational_Q_omegaE_overP": 41989067.88985869,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 1.283150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 347.13184432753553,
+      "equivalent_rotational_Q_omegaE_overP": 20994533944.92935,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 12.83150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 34.71318443275356,
+      "equivalent_rotational_Q_omegaE_overP": 2099453394.4929352,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 64.15754947263045,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 6.942636886550712,
+      "equivalent_rotational_Q_omegaE_overP": 419890678.89858705,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 1.283150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 1041.3955329826065,
+      "equivalent_rotational_Q_omegaE_overP": 62983601834.78804,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 12.83150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 104.13955329826065,
+      "equivalent_rotational_Q_omegaE_overP": 6298360183.478805,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 1.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 64.15754947263045,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 20.82791065965213,
+      "equivalent_rotational_Q_omegaE_overP": 1259672036.695761,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 128.3150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 34.71318443275354,
+      "equivalent_rotational_Q_omegaE_overP": 209945339.44929346,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 1283.1509894526089,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 3.4713184432753548,
+      "equivalent_rotational_Q_omegaE_overP": 20994533.944929346,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 10.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 6415.754947263044,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 299921.91349899065,
+      "free_coast_energy_timescale_days": 0.6942636886550709,
+      "equivalent_rotational_Q_omegaE_overP": 4198906.788985869,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 128.3150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 347.13184432753553,
+      "equivalent_rotational_Q_omegaE_overP": 2099453394.4929352,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 1283.1509894526089,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 34.71318443275356,
+      "equivalent_rotational_Q_omegaE_overP": 209945339.44929352,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 100.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 6415.754947263044,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 2999219.1349899075,
+      "free_coast_energy_timescale_days": 6.942636886550712,
+      "equivalent_rotational_Q_omegaE_overP": 41989067.88985871,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 0.1,
+      "allowed_loss_W_per_pump": 128.3150989452609,
+      "allowed_loss_W_per_pump_aperture_m2": 0.40843964540927835,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 1041.3955329826065,
+      "equivalent_rotational_Q_omegaE_overP": 6298360183.478804,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        0.1,
+        0.04000000000000001
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 1.0,
+      "allowed_loss_W_per_pump": 1283.1509894526089,
+      "allowed_loss_W_per_pump_aperture_m2": 4.084396454092783,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 104.13955329826065,
+      "equivalent_rotational_Q_omegaE_overP": 629836018.3478804,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        1.0,
+        0.4
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    },
+    {
+      "radius_m": 10.0,
+      "rotor_mass_per_pump_aperture_kg_m2_requirement": 300.0,
+      "loss_budget_W_m2_receiver": 5.0,
+      "allowed_loss_W_per_pump": 6415.754947263044,
+      "allowed_loss_W_per_pump_aperture_m2": 20.421982270463914,
+      "stored_rotor_J_m2_receiver_disk_model": 8997657.40496972,
+      "free_coast_energy_timescale_days": 20.82791065965213,
+      "equivalent_rotational_Q_omegaE_overP": 125967203.66957608,
+      "net_electric_penalty_W_m2_if_fraction0_or1_recovered_at60percent": [
+        5.0,
+        2.0
+      ],
+      "scope": "Specified loss and arealmass requirements, not a prediction. Radius/count are varied without asserting same package mass for geometricallyscaled commercial hardware."
+    }
+  ],
+  "thermal_isolation_requirements": [
+    {
+      "warm_to_cold_heat_budget_W_m2_receiver": 0.1,
+      "allowed_effective_cold_view_emissivity_times_viewfactor_per_pump_area": 7.2618665482936046e-06,
+      "allowed_G_W_K_per_pump_aperture_m2": 0.0005834852077275405,
+      "support_area_fraction_per_pump_aperture_at_k10_L0p1m": 5.834852077275406e-06
+    },
+    {
+      "warm_to_cold_heat_budget_W_m2_receiver": 1.0,
+      "allowed_effective_cold_view_emissivity_times_viewfactor_per_pump_area": 7.261866548293604e-05,
+      "allowed_G_W_K_per_pump_aperture_m2": 0.005834852077275405,
+      "support_area_fraction_per_pump_aperture_at_k10_L0p1m": 5.834852077275405e-05
+    },
+    {
+      "warm_to_cold_heat_budget_W_m2_receiver": 5.0,
+      "allowed_effective_cold_view_emissivity_times_viewfactor_per_pump_area": 0.0003630933274146802,
+      "allowed_G_W_K_per_pump_aperture_m2": 0.02917426038637702,
+      "support_area_fraction_per_pump_aperture_at_k10_L0p1m": 0.00029174260386377024
+    }
+  ],
+  "local_molecular_windage_screens": [
+    {
+      "species": "H",
+      "local_pressure_Pa": 1e-10,
+      "fully_accommodating_shear_power_W_per_moving_surface_m2": 6.805888796473876e-09,
+      "scope": "One-sidedincidentMaxwellian at rest, full accommodation, wall speedu; an upper-order local drag estimate for this definedflow, nottotalpumpheat or an intrinsicbearingloss."
+    },
+    {
+      "species": "H",
+      "local_pressure_Pa": 0.001,
+      "fully_accommodating_shear_power_W_per_moving_surface_m2": 0.06805888796473876,
+      "scope": "One-sidedincidentMaxwellian at rest, full accommodation, wall speedu; an upper-order local drag estimate for this definedflow, nottotalpumpheat or an intrinsicbearingloss."
+    },
+    {
+      "species": "H2",
+      "local_pressure_Pa": 1e-10,
+      "fully_accommodating_shear_power_W_per_moving_surface_m2": 9.625457733502172e-09,
+      "scope": "One-sidedincidentMaxwellian at rest, full accommodation, wall speedu; an upper-order local drag estimate for this definedflow, nottotalpumpheat or an intrinsicbearingloss."
+    },
+    {
+      "species": "H2",
+      "local_pressure_Pa": 0.001,
+      "fully_accommodating_shear_power_W_per_moving_surface_m2": 0.0962545773350217,
+      "scope": "One-sidedincidentMaxwellian at rest, full accommodation, wall speedu; an upper-order local drag estimate for this definedflow, nottotalpumpheat or an intrinsicbearingloss."
+    },
+    {
+      "species": "He",
+      "local_pressure_Pa": 1e-10,
+      "fully_accommodating_shear_power_W_per_moving_surface_m2": 1.3563140395330238e-08,
+      "scope": "One-sidedincidentMaxwellian at rest, full accommodation, wall speedu; an upper-order local drag estimate for this definedflow, nottotalpumpheat or an intrinsicbearingloss."
+    },
+    {
+      "species": "He",
+      "local_pressure_Pa": 0.001,
+      "fully_accommodating_shear_power_W_per_moving_surface_m2": 0.1356314039533024,
+      "scope": "One-sidedincidentMaxwellian at rest, full accommodation, wall speedu; an upper-order local drag estimate for this definedflow, nottotalpumpheat or an intrinsicbearingloss."
+    }
+  ],
+  "rework_energy_sensitivity": [
+    {
+      "fraction_of_benchmark_package_reworked_per_year": 0.0001,
+      "electric_W_m2_at2MJkg": 0.000910647498032011,
+      "scope": "Conditional same-materialrework dissipation. No fullrotorreplacement rate is inferred; moving or localrepair maycostless."
+    },
+    {
+      "fraction_of_benchmark_package_reworked_per_year": 0.01,
+      "electric_W_m2_at2MJkg": 0.0910647498032011,
+      "scope": "Conditional same-materialrework dissipation. No fullrotorreplacement rate is inferred; moving or localrepair maycostless."
+    },
+    {
+      "fraction_of_benchmark_package_reworked_per_year": 1.0,
+      "electric_W_m2_at2MJkg": 9.10647498032011,
+      "scope": "Conditional same-materialrework dissipation. No fullrotorreplacement rate is inferred; moving or localrepair maycostless."
+    }
+  ],
+  "concrete_downstream_conduit": {
+    "unit_radius_m": 1.0,
+    "units_per_receiver_m2": 0.07793315114276607,
+    "pipe_radius_m": 0.001,
+    "pipe_length_m": 0.1,
+    "pipe_wall_m": 1e-05,
+    "pipe_conductivity_W_m_K_scenario": 10.0,
+    "bend_transmission_multiplier_scenario": 0.5,
+    "diffuse_longtube_transmission_estimate": 0.013333333333333332,
+    "pipe_projected_area_per_receiver_area": 2.4483421510121683e-07,
+    "net_aperture_beta": 3.2644562013495577e-09,
+    "required_beta_at_target_flow": 1.2233526060362642e-09,
+    "conductance_margin": 2.6684507681939644,
+    "all_admitted_hot_radiation_to_cold_W_m2_upper": 0.013770564266772157,
+    "pipe_wall_conduction_W_m2": 0.00034276790114170364,
+    "scope": "Gas-only conduit to300Kintercept; a molecular-flow longtube+bend estimate, not a ray-traced model. Warm support/bearing heatpaths are separate. First300Kintercept blocks broad5Kview."
+  },
+  "idle_loss_primary_comparison": {
+    "primary_measured_module_input_W": 48.0,
+    "primary_disk_diameter_m": 0.26,
+    "primary_measured_input_W_per_disk_m2": 904.075416379997,
+    "chosen_receiver_idle_budget_W_m2": 1.0,
+    "required_idle_W_per_pump_aperture_m2": 4.084396454092783,
+    "ratio_measured_areal_to_required": 221.34859496170242,
+    "module_radius_m_if48W_per_module_held_fixed": 1.9341125238343224,
+    "scope": "Ordinary-temperature1994 measured completeinput; fixed48W enlargedmodule calculation doesnotpredict itsmass,hotbearings orloss."
+  },
+  "checks_passed": 8,
+  "checks": [
+    "network:H2",
+    "network:He",
+    "target_g_H2",
+    "cold_flux:H",
+    "cold_flux:H2",
+    "cold_flux:He",
+    "concrete_conduit_flow_margin",
+    "stress_reference"
+  ],
+  "limits": [
+    "No1000K pump, bearing, motor, materialstrength or bladecapture is experimentallyvalidatedbythispacket.",
+    "Commercial capture values are a transparent performance target atpreservedmolecularspeedratio; their actualhotperformance requires moving-walltransport.",
+    "A useful coldoutlet requires thermaltranspiration/reversefluxaccounting, not merely a volume-flow ratio.",
+    "Forelinepartialpressure must be maintained independently of directcatcher pulsepressure.",
+    "Motor/bearingidleloss, hotstatorclearance, radiationbaffletransmission and contamination protection are substantive apparatus requirements.",
+    "The current aperture/mass calculations do not claim a posteriorprobability distribution; no evidence-backed80% credibleinterval for the completehotpump is available."
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "scope": "Analytic numerical checks and provenance, not independent physical validation of collector assumptions.",
+  "all_passed": true,
+  "count": 27,
+  "checks": [
+    {
+      "name": "Rectangular-flux semi-infinite analytic temperature",
+      "relative_or_absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Ballistic radius factor2 gives temperature factor2^-2.5",
+      "relative_or_absolute_error": -4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Uniform dm/dv mass quantile",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Uniform dm/dv kinetic-energy quantile",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Current input hash process.json",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Current input hash collector-inputs.json",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Current code hash open-loop-redesign/collector.py",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Current code hash collector_screen.py",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Current code hash cycle_ledger.py",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Current code hash nuclear_screen.py",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Current code hash fast_eos.py",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Current code hash electron-eos.npz",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Reconstruct combined cycle occupancy mass999",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Reconstruct combined cycle occupancy energy99",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Reconstruct combined cycle occupancy full_resolved",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Initial EOS reconstruction c12",
+      "relative_or_absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Ballistic energy integration c12",
+      "relative_or_absolute_error": 4.7336813934206745e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Reduced record matches canonical process c12",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Initial EOS reconstruction c13",
+      "relative_or_absolute_error": 1.3322676295501878e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Ballistic energy integration c13",
+      "relative_or_absolute_error": 7.299820866291107e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Reduced record matches canonical process c13",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Initial EOS reconstruction n14",
+      "relative_or_absolute_error": -4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Ballistic energy integration n14",
+      "relative_or_absolute_error": -5.370748194077901e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Reduced record matches canonical process n14",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Initial EOS reconstruction n15",
+      "relative_or_absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Ballistic energy integration n15",
+      "relative_or_absolute_error": -6.100160393129883e-05,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "name": "Reduced record matches canonical process n15",
+      "relative_or_absolute_error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    }
+  ],
+  "script_sha256": "068779c90d8d5a250ab996040687c5ecc0acbe9186efa5f5dc495765bb0d59cc"
+}

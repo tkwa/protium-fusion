@@ -1,0 +1,3367 @@
+{
+  "scope": "Trapezoid integration of saved trajectory reaction flows; check quadrature error before quantitative attribution. No modified rates or screening fed back into hydro.",
+  "code_sha256": "ce314cf9c00675dc4ea3ca4a986ebc40ea5bb1f20adc2647a4fe1cd00ed559c6",
+  "cases": [
+    {
+      "case": "A-H1-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/control/A-H1-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "de047f1cf49d4ca9768534400cb1656bde74da0cf3d1970d08f4b138fa27b1ce",
+      "trace_sha256": "d3ee42cd5b7acf521029e7f7bb8f3f8faf00d68b85ff3ddba616aa7bbd74c055",
+      "Tmax_GK": 1.1448593907579248,
+      "density_max_kg_m3": 193302513.98249188,
+      "initial_catalysts": 4.5405871624890455e+38,
+      "neutron_produced_per_initial_catalyst": 9.65756347308394e-24,
+      "neutron_producers": [],
+      "all_rates": [
+        {
+          "index": 68,
+          "reaction": "N14 + p \u27f6 O15 + \ud835\udefe",
+          "source_label": "im05",
+          "gross_events_per_initial_catalyst": 0.53944676949964,
+          "Q_MeV": 7.2967878640010895,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6642875806545538,
+            1.0157989059514407,
+            1.083012543609995
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            21816038.192563295,
+            74639318.66701226,
+            165151686.32917958
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.01786365846780403,
+            0.02234350385592339,
+            0.04386866761272062
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.03085928807615004,
+            0.0367077910652416,
+            0.05884067911018831
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12615013651298387,
+            0.15005831769493097,
+            0.2405356754812403
+          ],
+          "flow_fraction_T_above_1GK": 0.5564976367408493,
+          "diagnostic_flow_multiplier_weak": 1.0261379116685438
+        },
+        {
+          "index": 3,
+          "reaction": "O15 \u27f6 N15 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 1.2567778489669632e-07,
+          "Q_MeV": 2.7541619000003266,
+          "flow_weighted_T_GK_5_50_95": [
+            0.08817380622263123,
+            0.213163655587293,
+            1.0063647305853944
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            53320.35193329653,
+            522009.2113417625,
+            44018170.62401963
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1246101219983928,
+            0.1379802425072946,
+            0.15807667280589252
+          ],
+          "flow_fraction_T_above_1GK": 0.05290120430467817,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 4.195993948648719e-08,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.31616509852904606,
+            0.646181625424876,
+            1.052665036356334
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            1523682.9179254337,
+            11101093.907525703,
+            59787998.959981285
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.017401758298491863,
+            0.018251633702508333,
+            0.02022377518885601
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.030054037537401792,
+            0.0313018738132231,
+            0.03395686672014836
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12285834102050282,
+            0.12795938924145547,
+            0.1388127737013672
+          ],
+          "flow_fraction_T_above_1GK": 0.15841099837219547,
+          "diagnostic_flow_multiplier_weak": 1.0187728454934608
+        },
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 1.0136755014774473e-08,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6744587403434169,
+            0.9899557651018833,
+            1.0734277772884016
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            12570684.862791711,
+            40783885.23552723,
+            74713478.80276918
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.014683569053141065,
+            0.015467292682282871,
+            0.018686042731726495
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.026557805016731054,
+            0.027723413194235363,
+            0.03199362193941621
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12170367985774845,
+            0.12704519073883175,
+            0.146613830455926
+          ],
+          "flow_fraction_T_above_1GK": 0.4666850177111673,
+          "diagnostic_flow_multiplier_weak": 1.0160935860766536
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 6.104545943186987e-09,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            0.7806529714241474,
+            1.0169546498263564,
+            1.0778301596455242
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            19086514.07268197,
+            45022978.00332776,
+            74995118.17753421
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.017116888452043292,
+            0.018135566750899678,
+            0.021800383187014244
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.029758470937168203,
+            0.031180216253047035,
+            0.035851811187748044
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12165008997867263,
+            0.12746206351617706,
+            0.14655914499426084
+          ],
+          "flow_fraction_T_above_1GK": 0.5773919411690269,
+          "diagnostic_flow_multiplier_weak": 1.0188397599834385
+        },
+        {
+          "index": 127,
+          "reaction": "O15 + n \u27f6 p + N15",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 2.5415871425434025e-10,
+          "Q_MeV": 3.5365089360002457,
+          "flow_weighted_T_GK_5_50_95": [
+            0.7489130176230865,
+            0.9151955018714104,
+            1.0617989637980536
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            95377081.51091179,
+            157386154.27619562,
+            184084306.9457773
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.17250968204010805,
+            0.21345174009305876,
+            0.23453717765910348
+          ],
+          "flow_fraction_T_above_1GK": 0.2794566090235685,
+          "diagnostic_flow_multiplier_weak": 1.0
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 7.945147221211091e-05,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 3.936228898858628,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 3.935649156287469,
+      "nuclear_deposition_quadrature_relative": 0.00014730545029206787,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "A-H3-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "230f1b22fc32cd7e1203f12e5780446b641b4518c527e8efbe295e2fa627e48d",
+      "trace_sha256": "943ad86e1ad9fa21555a4d0440a7e073d6a6ec2222446b4377ae205ff4cfd9a2",
+      "Tmax_GK": 1.1842498030057853,
+      "density_max_kg_m3": 167211077.80904657,
+      "initial_catalysts": 4.006400437490335e+38,
+      "neutron_produced_per_initial_catalyst": 2.2124636267494885e-22,
+      "neutron_producers": [],
+      "all_rates": [
+        {
+          "index": 68,
+          "reaction": "N14 + p \u27f6 O15 + \ud835\udefe",
+          "source_label": "im05",
+          "gross_events_per_initial_catalyst": 0.767474371980229,
+          "Q_MeV": 7.2967878640010895,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6735462998262206,
+            1.060035613913656,
+            1.1629067723959636
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            18778442.426849924,
+            70795382.41160579,
+            147511665.9472271
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.015656361724218942,
+            0.019544820017982016,
+            0.03828369254587124
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02981318692791578,
+            0.035068030111508934,
+            0.056485134599034426
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12187376428007639,
+            0.14335511483258404,
+            0.23090641051209373
+          ],
+          "flow_fraction_T_above_1GK": 0.6583425786139999,
+          "diagnostic_flow_multiplier_weak": 1.022707090617645
+        },
+        {
+          "index": 3,
+          "reaction": "O15 \u27f6 N15 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 1.8093333083629607e-07,
+          "Q_MeV": 2.7541619000003266,
+          "flow_weighted_T_GK_5_50_95": [
+            0.08030897277584204,
+            0.19426529656699573,
+            0.9928171899735656
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            29763.95230892096,
+            351600.12927902874,
+            34468445.60723635
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12182277919355865,
+            0.13711580675465498,
+            0.15191851122440964
+          ],
+          "flow_fraction_T_above_1GK": 0.047265281906442816,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 6.404839147273889e-08,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.27829458968663395,
+            0.5815946426641329,
+            1.0646118721004239
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            926388.9990452691,
+            6992113.432932433,
+            47576613.1248038
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.015525991793019145,
+            0.016757371808978842,
+            0.01903208003477592
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.029496933565846147,
+            0.030712852723035734,
+            0.03338448925206516
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12058094752100772,
+            0.12555152128439817,
+            0.13647294345131494
+          ],
+          "flow_fraction_T_above_1GK": 0.1371421969975646,
+          "diagnostic_flow_multiplier_weak": 1.0172355303241942
+        },
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 2.109927235222974e-08,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6075933825723394,
+            0.9477037235035665,
+            1.1035676688764993
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            8018007.647363697,
+            29440317.256123412,
+            59278617.24875677
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.01335640045753548,
+            0.014160201455873314,
+            0.015559042168588675
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.026265761116827883,
+            0.02710164235587496,
+            0.029286089549535342
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12036536077317679,
+            0.12419586644380715,
+            0.1342063044960451
+          ],
+          "flow_fraction_T_above_1GK": 0.36559799981791957,
+          "diagnostic_flow_multiplier_weak": 1.014375660790735
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 1.561725343424908e-08,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            0.7122299903499018,
+            0.985805605128334,
+            1.1095841976326126
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            12599858.285784228,
+            33548070.959752243,
+            61266062.49657647
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.015691346612358947,
+            0.016547798121699812,
+            0.018282325979087053
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02950354731927976,
+            0.030414918833565056,
+            0.0330426099434995
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12060798398071006,
+            0.12433359296616137,
+            0.13507537000956554
+          ],
+          "flow_fraction_T_above_1GK": 0.4507991070965098,
+          "diagnostic_flow_multiplier_weak": 1.0168243956296252
+        },
+        {
+          "index": 127,
+          "reaction": "O15 + n \u27f6 p + N15",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 6.818600260980291e-10,
+          "Q_MeV": 3.5365089360002457,
+          "flow_weighted_T_GK_5_50_95": [
+            0.7700976101449789,
+            1.109998377950149,
+            1.126792960317728
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            70341878.87640296,
+            109100711.13940121,
+            140104198.37162676
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1594904876843037,
+            0.1625479043275417,
+            0.19338061138333862
+          ],
+          "flow_fraction_T_above_1GK": 0.8772094793760087,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 128,
+          "reaction": "O15 + n \u27f6 He4 + C12",
+          "source_label": "cf88",
+          "gross_events_per_initial_catalyst": 2.0572227074911936e-10,
+          "Q_MeV": 8.502002229999562,
+          "flow_weighted_T_GK_5_50_95": [
+            0.7700976101449789,
+            1.109998377950149,
+            1.126792960317728
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            61717590.164420925,
+            109100711.13940121,
+            140104198.37162676
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1555894690652729,
+            0.1625479043275417,
+            0.19338061138333862
+          ],
+          "flow_fraction_T_above_1GK": 0.87574976691952,
+          "diagnostic_flow_multiplier_weak": 1.0
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.00013453678959629567,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 5.600098118922715,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 5.599116426307875,
+      "nuclear_deposition_quadrature_relative": 0.00017532991638247175,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "B1-H1-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H1-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "606bc31c3af9be00fc070f22f1337c958b3a2e038b26e2932db173a83abdf681",
+      "trace_sha256": "169dbc66323490b13f40a0e024e5b7745c11707a437eaae5470800976b972f38",
+      "Tmax_GK": 0.4595386693366189,
+      "density_max_kg_m3": 2102802.604237135,
+      "initial_catalysts": 4.256800464833481e+36,
+      "neutron_produced_per_initial_catalyst": 5.1672042457882836e-21,
+      "neutron_producers": [],
+      "all_rates": [
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 0.6023113264249601,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.24979901911343813,
+            0.35097405859890596,
+            0.44169068751230556
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            576207.4523659516,
+            952455.5483299122,
+            1941687.8055024764
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.008715667504930562,
+            0.011333811578386017,
+            0.02045299554967364
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02102302341044258,
+            0.02441252111476294,
+            0.03558397474714445
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.08594032586230207,
+            0.0997963032605922,
+            0.14546425247885608
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.0125221459011853
+        },
+        {
+          "index": 70,
+          "reaction": "N15 + p \u27f6 O16 + \ud835\udefe",
+          "source_label": "li10",
+          "gross_events_per_initial_catalyst": 7.290649199637926e-05,
+          "Q_MeV": 12.12741126400033,
+          "flow_weighted_T_GK_5_50_95": [
+            0.23688298847724384,
+            0.3448447921312069,
+            0.43351785141315996
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            559978.1349195177,
+            936011.023194555,
+            1933938.7207438832
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.00874489335106083,
+            0.011562887867677318,
+            0.022033414390334644
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.021069498141171115,
+            0.024717014403727408,
+            0.03736592562155166
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.08613031059595314,
+            0.10104104584426321,
+            0.15274871560422662
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.0129868991596045
+        },
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 4.1129089303112484e-05,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.3078112256057211,
+            0.36535260604049175,
+            0.4419022154570224
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            494120.9723745783,
+            747334.6652377809,
+            1877500.472922318
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.00695861223817058,
+            0.008123108488895255,
+            0.011170605895491176
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.017996548844766633,
+            0.019717366387667985,
+            0.023800947676706083
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.08247090517337503,
+            0.09035671603774902,
+            0.10907011759940254
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.0085266680775282
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 4.4568565238195663e-10,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            0.31409532201353335,
+            0.3672795867828445,
+            0.4393441245934447
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            445957.2030718617,
+            714924.2625247688,
+            1698175.010046941
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.007931368603570702,
+            0.009125747803615218,
+            0.011257062392360932
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.019905801393946963,
+            0.02163833751308884,
+            0.024426430763835674
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.08137321758849977,
+            0.0884556774107774,
+            0.09985316471912757
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.0093214404028088
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.0004010027118036552,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 2.991736955510891,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 2.989745693209525,
+      "nuclear_deposition_quadrature_relative": 0.0006660306613663902,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "B1-H2-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+      "trace_sha256": "8fe8fd5fc9565f6b1864cabe0625ff59a322e626e697ebc877ee602e65f6878a",
+      "Tmax_GK": 0.48174488686546696,
+      "density_max_kg_m3": 1883415.7038682338,
+      "initial_catalysts": 4.006400437490335e+36,
+      "neutron_produced_per_initial_catalyst": 8.946595392528558e-21,
+      "neutron_producers": [],
+      "all_rates": [
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 0.7570770639874747,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.2428257163612225,
+            0.35137303452950236,
+            0.4652056574219184
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            494887.3143535008,
+            851826.1002087322,
+            1772510.8450888912
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.00796770483467557,
+            0.010181259637819342,
+            0.019255445541081977
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.020492885698170038,
+            0.023525835559810002,
+            0.035157046073870137
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.08377316812979596,
+            0.09617160837050324,
+            0.14371900449121747
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.0114099537194408
+        },
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 0.00013820868563241094,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.3081078668535147,
+            0.36542634813269304,
+            0.4652056574219184
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            388690.06303897145,
+            615988.5689131945,
+            1666773.4482645416
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.006313422441608574,
+            0.00710496797304588,
+            0.009163849281419112
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.017490028576157276,
+            0.018803749812084273,
+            0.021666152577404146
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.08014972762976938,
+            0.08616998075757341,
+            0.09928721501525993
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.0073651100799135
+        },
+        {
+          "index": 70,
+          "reaction": "N15 + p \u27f6 O16 + \ud835\udefe",
+          "source_label": "li10",
+          "gross_events_per_initial_catalyst": 9.108653249999179e-05,
+          "Q_MeV": 12.12741126400033,
+          "flow_weighted_T_GK_5_50_95": [
+            0.22832579635643058,
+            0.34284713181004545,
+            0.4587802907501941
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            486765.3199989144,
+            819051.4520890297,
+            1716355.5018689602
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.007975783967157294,
+            0.010440229222543602,
+            0.021023214916299403
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.020509872207790287,
+            0.023915933146113552,
+            0.03724369641771936
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.0838426075317091,
+            0.0977662940173057,
+            0.15224905304845834
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.011939862959426
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 4.0125413028629146e-09,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            0.30689074814758693,
+            0.36787391867136043,
+            0.4617815636478905
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            347592.75549800706,
+            594687.7894588116,
+            1488913.418551365
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.007280457820482499,
+            0.008031135483403411,
+            0.00936789254467528
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.019468226647179933,
+            0.02066257487489291,
+            0.022470457368274507
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.07958444936082452,
+            0.08446684300510555,
+            0.09185731237616615
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.008125010096978
+        },
+        {
+          "index": 77,
+          "reaction": "O16 + p \u27f6 F17 + \ud835\udefe",
+          "source_label": "ia08",
+          "gross_events_per_initial_catalyst": 1.3894734214708833e-10,
+          "Q_MeV": 0.6002689640008612,
+          "flow_weighted_T_GK_5_50_95": [
+            0.293841602547699,
+            0.35958221704473503,
+            0.45319465077567245
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            350462.6051074559,
+            582800.135163381,
+            1487724.4975154484
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.008419009452181832,
+            0.00938566560933733,
+            0.012811854411471276
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0216368464788832,
+            0.023102404488646422,
+            0.027593644782835207
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.08017330302376562,
+            0.08560379061955867,
+            0.10224565982216942
+          ],
+          "flow_fraction_T_above_1GK": 0.0,
+          "diagnostic_flow_multiplier_weak": 1.009873366455009
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.0009719328955776207,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 3.760634354210664,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 3.7558088027610954,
+      "nuclear_deposition_quadrature_relative": 0.001284823510190769,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "B2-H2-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "96132fe9689d6dfe8d16869cb3e804216948eebc55472340c0670118a178e823",
+      "trace_sha256": "ff379e99ca178d37674effe1b018d95d63f267e2458b0550a371ad30295c78d1",
+      "Tmax_GK": 1.6465142754637592,
+      "density_max_kg_m3": 210782962.2481929,
+      "initial_catalysts": 4.864914816952549e+38,
+      "neutron_produced_per_initial_catalyst": 1.899374035664432e-12,
+      "neutron_producers": [],
+      "all_rates": [
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 1.020137224327511,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6787541543210777,
+            1.23490986190601,
+            1.6176808182405051
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            28487757.517769866,
+            138988213.1333497,
+            204911761.655275
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.012639266787189666,
+            0.017197300062448562,
+            0.038802592414440056
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.025240445944714595,
+            0.031085995177054418,
+            0.05766689893182801
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11566675599836368,
+            0.1424545440673402,
+            0.264264076099923
+          ],
+          "flow_fraction_T_above_1GK": 0.7183054912887692,
+          "diagnostic_flow_multiplier_weak": 1.0215952905545167
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 0.8202103375677164,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            0.9656343346858935,
+            1.3841361722989454,
+            1.62188272706269
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            41431449.23873126,
+            153267367.54714042,
+            206226315.04921088
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.014745811251721275,
+            0.019330735666666533,
+            0.02801496817195723
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.027933852628039928,
+            0.03345049931772188,
+            0.045939966640677246
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.114191206020863,
+            0.13674278696725342,
+            0.18779866368992323
+          ],
+          "flow_fraction_T_above_1GK": 0.9268298095279985,
+          "diagnostic_flow_multiplier_weak": 1.020401373916701
+        },
+        {
+          "index": 13,
+          "reaction": "N13 \u27f6 p + C12",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 0.1412419045697312,
+          "Q_MeV": -1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2910305720161592,
+            1.5428234411469508,
+            1.6391834729864583
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            75815584.50121462,
+            172257371.70256677,
+            209295765.82587674
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12153132714144017,
+            0.13176321180277356,
+            0.1455716862395609
+          ],
+          "flow_fraction_T_above_1GK": 0.9999139588339335,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 2,
+          "reaction": "O14 \u27f6 N14 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 2.8542092512692486e-07,
+          "Q_MeV": 5.1443641999994725,
+          "flow_weighted_T_GK_5_50_95": [
+            0.08875423272261483,
+            0.21006307714698302,
+            1.1720567776582542
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            29890.01382300339,
+            420978.65489045373,
+            55546011.74367576
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11593189947355513,
+            0.13143526520448787,
+            0.14728378922772895
+          ],
+          "flow_fraction_T_above_1GK": 0.08460363475533937,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 17,
+          "reaction": "O14 \u27f6 p + N13",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 5.607247451726493e-08,
+          "Q_MeV": -4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            1.510766144475628,
+            1.618159985277621,
+            1.644148342674282
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            138144020.88742828,
+            192965528.29555443,
+            209704211.7364427
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12745262712033026,
+            0.13285895611695137,
+            0.13720486287379546
+          ],
+          "flow_fraction_T_above_1GK": 0.9999999997582459,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 68,
+          "reaction": "N14 + p \u27f6 O15 + \ud835\udefe",
+          "source_label": "im05",
+          "gross_events_per_initial_catalyst": 2.5217678938948345e-09,
+          "Q_MeV": 7.2967878640010895,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6553825531977291,
+            1.14461236370077,
+            1.365666684227309
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            9738240.073597597,
+            52043291.162484266,
+            94498645.12951681
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.015492677983117138,
+            0.01774160116877028,
+            0.018365135743600183
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.027858106130950282,
+            0.03013878561927711,
+            0.030967633255006354
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11388156080401095,
+            0.12320478394787701,
+            0.12659304235933783
+          ],
+          "flow_fraction_T_above_1GK": 0.697823265810172,
+          "diagnostic_flow_multiplier_weak": 1.0176674095057476
+        },
+        {
+          "index": 1,
+          "reaction": "N13 \u27f6 C13 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 2.468664105054974e-09,
+          "Q_MeV": 2.220470700000078,
+          "flow_weighted_T_GK_5_50_95": [
+            0.06113417486922003,
+            0.14432291105166872,
+            0.9427374907342079
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            9058.648269293866,
+            115432.30143173996,
+            37470620.25511403
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1093957785397035,
+            0.12280108791241458,
+            0.14398394952827934
+          ],
+          "flow_fraction_T_above_1GK": 0.04102401356744788,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 116,
+          "reaction": "N13 + n \u27f6 p + C13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.453371904398144e-09,
+          "Q_MeV": 3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            0.3912530583867261,
+            1.0171586987593038,
+            1.0171586987593038
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            1645563.875830476,
+            57382064.43821389,
+            159316125.863592
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11284404673677799,
+            0.1418082468577369,
+            0.22264242610094903
+          ],
+          "flow_fraction_T_above_1GK": 0.50474609344452,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 64,
+          "reaction": "C13 + p \u27f6 N14 + \ud835\udefe",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.5966866510029115e-10,
+          "Q_MeV": 7.550563563999276,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6454616388550544,
+            1.0831825876759276,
+            1.4440694017907185
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            9718526.38610018,
+            64098238.76574375,
+            181113665.07984892
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.011266357957579952,
+            0.01519293588578238,
+            0.03752692543890875
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023302228736880932,
+            0.026911776837182065,
+            0.05595864939448658
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10678469039059374,
+            0.12332578955723959,
+            0.2564358593222648
+          ],
+          "flow_fraction_T_above_1GK": 0.5897968922321802,
+          "diagnostic_flow_multiplier_weak": 1.0186357887102209
+        },
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.189048490013067e-10,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.4904530187950529,
+            0.7888980231968933,
+            1.3252204461762398
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            3109805.9336125236,
+            147762433.5610627,
+            189240258.58138776
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.012695632501350055,
+            0.023651949177671976,
+            0.04188112285299535
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02722555098569334,
+            0.039632004957927146,
+            0.06130512810607686
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11129572934447624,
+            0.16201225457270832,
+            0.25061013269144733
+          ],
+          "flow_fraction_T_above_1GK": 0.24185283536252342,
+          "diagnostic_flow_multiplier_weak": 1.027339250728016
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.005129561597525756,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 5.502967581062848,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 5.517429770101613,
+      "nuclear_deposition_quadrature_relative": -0.0026211822608298574,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "B2-H2p5-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "f92988f64f7c658e34ce6f6bd37f396059f5e8a30c14866653a534093659a0d2",
+      "trace_sha256": "c0be8e6432572b7e345f49f1da33d3b11b3bbccb0c458ae7fc027f95672b1d21",
+      "Tmax_GK": 1.6457125423448156,
+      "density_max_kg_m3": 195757973.0035442,
+      "initial_catalysts": 4.697159133609357e+38,
+      "neutron_produced_per_initial_catalyst": 8.812692320406156e-13,
+      "neutron_producers": [],
+      "all_rates": [
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 1.0077021874245853,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6412873629934073,
+            1.2286005924863745,
+            1.619731268985232
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            33139842.61911407,
+            141565675.72040078,
+            189519699.16043574
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.012657277275010046,
+            0.017658733769846252,
+            0.04083626376053751
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.025558947545218442,
+            0.032139753442466466,
+            0.060461730723867645
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11712632002473863,
+            0.1472834920357574,
+            0.2770716599141864
+          ],
+          "flow_fraction_T_above_1GK": 0.7094084866678707,
+          "diagnostic_flow_multiplier_weak": 1.0224752827991896
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 0.8789913242951929,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            0.9805688308663626,
+            1.3910212257980612,
+            1.622802329717744
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            45352671.30319032,
+            156159961.4605921,
+            191542204.32369956
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.01476682348751172,
+            0.01922037027083925,
+            0.028010163556877132
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.028220937434490147,
+            0.03352309779816328,
+            0.046094423526153595
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11536478421343603,
+            0.13703956336065948,
+            0.1884300702583486
+          ],
+          "flow_fraction_T_above_1GK": 0.9368574798899302,
+          "diagnostic_flow_multiplier_weak": 1.0203564451886276
+        },
+        {
+          "index": 13,
+          "reaction": "N13 \u27f6 p + C12",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 0.09813144710477505,
+          "Q_MeV": -1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            1.3569212898041265,
+            1.5626685907517854,
+            1.6402555567550816
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            91606318.84324029,
+            172839570.5772109,
+            194578163.37863216
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12253889874495055,
+            0.13151634135563642,
+            0.1460640649800977
+          ],
+          "flow_fraction_T_above_1GK": 0.9999602233031737,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 2,
+          "reaction": "O14 \u27f6 N14 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 2.9174124177957714e-07,
+          "Q_MeV": 5.1443641999994725,
+          "flow_weighted_T_GK_5_50_95": [
+            0.08609512987356796,
+            0.20827208356169383,
+            1.1518290208665607
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            27973.28786283475,
+            431444.27873819077,
+            53392032.694871515
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1175956500310859,
+            0.1348797507159816,
+            0.1515174706171073
+          ],
+          "flow_fraction_T_above_1GK": 0.08225004321757248,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 17,
+          "reaction": "O14 \u27f6 p + N13",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 6.437127524282379e-08,
+          "Q_MeV": -4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            1.521215998836702,
+            1.6188089847606186,
+            1.6427747520712939
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            132594026.29519132,
+            179666209.8635743,
+            195007066.40198448
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.12666983520479905,
+            0.13095386682346374,
+            0.13529965440372574
+          ],
+          "flow_fraction_T_above_1GK": 0.9999999997761078,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 68,
+          "reaction": "N14 + p \u27f6 O15 + \ud835\udefe",
+          "source_label": "im05",
+          "gross_events_per_initial_catalyst": 1.2963036806648476e-08,
+          "Q_MeV": 7.2967878640010895,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6251795513648332,
+            1.087013402043509,
+            1.282541268629917
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            9355807.485200582,
+            45531116.446970746,
+            74211787.64615113
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.016664535373015186,
+            0.017678908017875666,
+            0.018487235208517236
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.029258577395174127,
+            0.030433636946555518,
+            0.031361619560439175
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.11960656783360898,
+            0.12441011101489877,
+            0.1282036247581265
+          ],
+          "flow_fraction_T_above_1GK": 0.6332528794587379,
+          "diagnostic_flow_multiplier_weak": 1.0178191015487932
+        },
+        {
+          "index": 1,
+          "reaction": "N13 \u27f6 C13 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 1.358019496904187e-09,
+          "Q_MeV": 2.220470700000078,
+          "flow_weighted_T_GK_5_50_95": [
+            0.054211315443311335,
+            0.12254252742972169,
+            0.742725874898396
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            7161.626858162041,
+            57181.348517260194,
+            79686633.04354306
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10903875584835744,
+            0.12216969022011914,
+            0.14482872268062683
+          ],
+          "flow_fraction_T_above_1GK": 0.026535830894843487,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 116,
+          "reaction": "N13 + n \u27f6 p + C13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 2.655476208594653e-10,
+          "Q_MeV": 3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            0.7900490939944069,
+            0.8985304961317393,
+            1.2081303335868112
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            45352671.30319032,
+            117937899.8336942,
+            125042639.40562351
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.14140422680548095,
+            0.20584774553766702,
+            0.23191544528139252
+          ],
+          "flow_fraction_T_above_1GK": 0.07259928330601814,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.8298751631657843e-10,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.8271840283660943,
+            1.0345267899150508,
+            1.4385350662542447
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            136292142.16717875,
+            154447080.54311782,
+            179236044.7565971
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.020422800020574852,
+            0.02986735383844714,
+            0.03831088853801346
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.035699774289400514,
+            0.04848197541864918,
+            0.05826425152135042
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1459376311267269,
+            0.1981901786713139,
+            0.23817928868312907
+          ],
+          "flow_fraction_T_above_1GK": 0.5306069342835747,
+          "diagnostic_flow_multiplier_weak": 1.0293674251117304
+        },
+        {
+          "index": 64,
+          "reaction": "C13 + p \u27f6 N14 + \ud835\udefe",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.1353956050810274e-10,
+          "Q_MeV": 7.550563563999276,
+          "flow_weighted_T_GK_5_50_95": [
+            0.5619780923507821,
+            0.9643762514092208,
+            1.461453247207413
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            8977179.550481511,
+            116152655.16731523,
+            173183778.9630389
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.011165851491348888,
+            0.02025309289768104,
+            0.047113697317738276
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023233335620573947,
+            0.036179998700114194,
+            0.06652527643066207
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10646898110038147,
+            0.1657983020915498,
+            0.3048584376632373
+          ],
+          "flow_fraction_T_above_1GK": 0.4482293945464315,
+          "diagnostic_flow_multiplier_weak": 1.0242615839390035
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.005216480638111198,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 5.834545252270431,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 5.84703003882403,
+      "nuclear_deposition_quadrature_relative": -0.0021352355761303787,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "C13-H1-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H1-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "c89a15098a8972951649e13f91ec30f1912a50ff971742aa7628aaef655d6cfd",
+      "trace_sha256": "faf3f1dc0f6e94d8e21638a6e68aa7cc1b5211ad7cc8146374a97f114014a106",
+      "Tmax_GK": 1.5978595675193923,
+      "density_max_kg_m3": 137503464.69653624,
+      "initial_catalysts": 4.864914816952549e+38,
+      "neutron_produced_per_initial_catalyst": 2.2354239659783309e-07,
+      "neutron_producers": [
+        {
+          "index": 114,
+          "reaction": "C13 + p \u27f6 n + N13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 9.66645715243503e-08,
+          "Q_MeV": -3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            1.3274113095751081,
+            1.5074473641607424,
+            1.5902523306840264
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            65118773.628913246,
+            108744843.84289902,
+            134883859.7714684
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.011084169852245671,
+            0.012415911760974474,
+            0.013652716050881197
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.022844025751190766,
+            0.024652141940144964,
+            0.02658531130189213
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10468493141408308,
+            0.11297079666791196,
+            0.12182973003852243
+          ],
+          "flow_fraction_T_above_1GK": 0.999993643428534,
+          "diagnostic_flow_multiplier_weak": 1.012478494901437
+        },
+        {
+          "index": 115,
+          "reaction": "C13 + He4 \u27f6 n + O16",
+          "source_label": "gl12",
+          "gross_events_per_initial_catalyst": 1.268496752076698e-07,
+          "Q_MeV": 2.2156091700016987,
+          "flow_weighted_T_GK_5_50_95": [
+            1.0978875042087286,
+            1.4130338711081687,
+            1.5840019789585538
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            34002744.0944167,
+            78040772.97259778,
+            130767410.01332064
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.021967443338998707,
+            0.024000885242012954,
+            0.02569841018440968
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.042159160249184875,
+            0.044749171913259875,
+            0.047192468823935435
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1029599336575889,
+            0.1092851884190544,
+            0.11525214047270237
+          ],
+          "flow_fraction_T_above_1GK": 0.9861273873812724,
+          "diagnostic_flow_multiplier_weak": 1.0242199636549845
+        }
+      ],
+      "all_rates": [
+        {
+          "index": 64,
+          "reaction": "C13 + p \u27f6 N14 + \ud835\udefe",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 0.8506252625790327,
+          "Q_MeV": 7.550563563999276,
+          "flow_weighted_T_GK_5_50_95": [
+            0.7269725219672366,
+            1.1443737912928147,
+            1.4768088573600175
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            14881910.797241045,
+            56361996.27926961,
+            116842485.15996535
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.009151872684974627,
+            0.012393010454523864,
+            0.022968152924227762
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.020433908169890783,
+            0.025017006492945318,
+            0.0396029880590448
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09364033724113557,
+            0.1146428233545105,
+            0.18148447799476639
+          ],
+          "flow_fraction_T_above_1GK": 0.7330623809898786,
+          "diagnostic_flow_multiplier_weak": 1.0137794831345837
+        },
+        {
+          "index": 68,
+          "reaction": "N14 + p \u27f6 O15 + \ud835\udefe",
+          "source_label": "im05",
+          "gross_events_per_initial_catalyst": 0.03157041598032222,
+          "Q_MeV": 7.2967878640010895,
+          "flow_weighted_T_GK_5_50_95": [
+            0.8350186270657741,
+            1.2392972761698484,
+            1.522007330658972
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            9983606.932478413,
+            47984644.32611167,
+            113510999.85523394
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.01020395385145505,
+            0.012673208558499002,
+            0.01665510186605888
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.022029050102100337,
+            0.02518070445042249,
+            0.031059710720026498
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09005287713617335,
+            0.10293657118969413,
+            0.12696944717961098
+          ],
+          "flow_fraction_T_above_1GK": 0.85472242578963,
+          "diagnostic_flow_multiplier_weak": 1.0130837818410103
+        },
+        {
+          "index": 127,
+          "reaction": "O15 + n \u27f6 p + N15",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.7198766670597152e-07,
+          "Q_MeV": 3.5365089360002457,
+          "flow_weighted_T_GK_5_50_95": [
+            1.1450369752884446,
+            1.4700260127365512,
+            1.5855645638957734
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            38950622.04883328,
+            95613475.98409747,
+            133272415.53070891
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10355847815022054,
+            0.11037022827243015,
+            0.11890983954788861
+          ],
+          "flow_fraction_T_above_1GK": 0.9919086464639356,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.7083511044548042e-07,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            1.150397192542157,
+            1.4702974278992793,
+            1.5855645638957734
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            39131621.984648466,
+            95941420.27376446,
+            133272415.53070891
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.012823486791065741,
+            0.014173771177726627,
+            0.01553056863991502
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.025271362864208856,
+            0.027012120325016608,
+            0.029128836363428588
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10330717504960751,
+            0.11042324301510964,
+            0.11907619756629602
+          ],
+          "flow_fraction_T_above_1GK": 0.9888036769076848,
+          "diagnostic_flow_multiplier_weak": 1.0142686503565639
+        },
+        {
+          "index": 115,
+          "reaction": "C13 + He4 \u27f6 n + O16",
+          "source_label": "gl12",
+          "gross_events_per_initial_catalyst": 1.268496752076698e-07,
+          "Q_MeV": 2.2156091700016987,
+          "flow_weighted_T_GK_5_50_95": [
+            1.0978875042087286,
+            1.4130338711081687,
+            1.5840019789585538
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            34002744.0944167,
+            78040772.97259778,
+            130767410.01332064
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.021967443338998707,
+            0.024000885242012954,
+            0.02569841018440968
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.042159160249184875,
+            0.044749171913259875,
+            0.047192468823935435
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1029599336575889,
+            0.1092851884190544,
+            0.11525214047270237
+          ],
+          "flow_fraction_T_above_1GK": 0.9861273873812724,
+          "diagnostic_flow_multiplier_weak": 1.0242199636549845
+        },
+        {
+          "index": 114,
+          "reaction": "C13 + p \u27f6 n + N13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 9.66645715243503e-08,
+          "Q_MeV": -3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            1.3274113095751081,
+            1.5074473641607424,
+            1.5902523306840264
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            65118773.628913246,
+            108744843.84289902,
+            134883859.7714684
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.011084169852245671,
+            0.012415911760974474,
+            0.013652716050881197
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.022844025751190766,
+            0.024652141940144964,
+            0.02658531130189213
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10468493141408308,
+            0.11297079666791196,
+            0.12182973003852243
+          ],
+          "flow_fraction_T_above_1GK": 0.999993643428534,
+          "diagnostic_flow_multiplier_weak": 1.012478494901437
+        },
+        {
+          "index": 13,
+          "reaction": "N13 \u27f6 p + C12",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 8.529603338269375e-08,
+          "Q_MeV": -1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2413626378542646,
+            1.5078070174294236,
+            1.5905819390026728
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            49714288.626309335,
+            100137966.98701763,
+            133272415.53070891
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10389210713499712,
+            0.11030700260575263,
+            0.11542579797656675
+          ],
+          "flow_fraction_T_above_1GK": 0.9998173218779914,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 128,
+          "reaction": "O15 + n \u27f6 He4 + C12",
+          "source_label": "cf88",
+          "gross_events_per_initial_catalyst": 5.131456232619485e-08,
+          "Q_MeV": 8.502002229999562,
+          "flow_weighted_T_GK_5_50_95": [
+            1.1438791868066667,
+            1.4700260127365512,
+            1.5850807662660227
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            38834817.95841244,
+            95332194.15128806,
+            133272415.53070891
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10351035826110265,
+            0.11034654538521647,
+            0.11890983954788861
+          ],
+          "flow_fraction_T_above_1GK": 0.9917708720865065,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 4.3915156240779045e-08,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            1.1947693764766087,
+            1.4293008476851425,
+            1.583279229422219
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            41091064.52835806,
+            81606448.77031103,
+            129657427.90765028
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010778917064360617,
+            0.011976123663516062,
+            0.012821441687632142
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0222153399608886,
+            0.02383030685179864,
+            0.025057046080462126
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10180391869086111,
+            0.10920465882538492,
+            0.11482630859125022
+          ],
+          "flow_fraction_T_above_1GK": 0.9959553032201947,
+          "diagnostic_flow_multiplier_weak": 1.0119782207933907
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 3.0293974749780494e-08,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2468220617520929,
+            1.4940322169943139,
+            1.5893716390904367
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            45167668.36994521,
+            99299534.51607569,
+            133559048.2937435
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.01244770141406257,
+            0.014140872220481052,
+            0.0152868455085651
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.024779131155214778,
+            0.02701587974137553,
+            0.02871433461227694
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10129497382408369,
+            0.11043861118840377,
+            0.11738174977593807
+          ],
+          "flow_fraction_T_above_1GK": 0.9980247869399613,
+          "diagnostic_flow_multiplier_weak": 1.01414045566953
+        },
+        {
+          "index": 3,
+          "reaction": "O15 \u27f6 N15 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 8.182067035270042e-09,
+          "Q_MeV": 2.7541619000003266,
+          "flow_weighted_T_GK_5_50_95": [
+            0.07756401439834934,
+            0.18285700014312115,
+            1.0172991528794821
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            9745.719328739231,
+            157712.40988314804,
+            23859327.24714525
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09221753083315865,
+            0.10377074010447933,
+            0.11756043021062194
+          ],
+          "flow_fraction_T_above_1GK": 0.05396073365431609,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 120,
+          "reaction": "N14 + He4 \u27f6 p + O17",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 2.8792788288379353e-09,
+          "Q_MeV": -1.1918741939989559,
+          "flow_weighted_T_GK_5_50_95": [
+            1.1809536584116351,
+            1.4434882912181914,
+            1.5850807662660227
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            43587328.76869902,
+            85265422.84620295,
+            129956717.76267989
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.026131848865028156,
+            0.028165938856652892,
+            0.029798978096966938
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.04809989682985169,
+            0.05058559024818782,
+            0.05278403503819335
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10430863743029564,
+            0.10969907089532506,
+            0.11446658175553322
+          ],
+          "flow_fraction_T_above_1GK": 0.9989350778536183,
+          "diagnostic_flow_multiplier_weak": 1.0284823663839446
+        },
+        {
+          "index": 137,
+          "reaction": "O17 + p \u27f6 He4 + N14",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 2.5366922161234113e-09,
+          "Q_MeV": 1.1918741939989559,
+          "flow_weighted_T_GK_5_50_95": [
+            1.212909883861714,
+            1.4542446566037739,
+            1.5850807662660227
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            46606250.26029349,
+            87425254.70576787,
+            129956717.76267989
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.014910203942442071,
+            0.016100094494124056,
+            0.017023934257868807
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02811710123187715,
+            0.029618814685676564,
+            0.03089177772397431
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1041852785438599,
+            0.1097497367426935,
+            0.11446658175553322
+          ],
+          "flow_fraction_T_above_1GK": 0.9987884642696038,
+          "diagnostic_flow_multiplier_weak": 1.0161791837476146
+        },
+        {
+          "index": 69,
+          "reaction": "N14 + He4 \u27f6 F18 + \ud835\udefe",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 8.467693799454588e-10,
+          "Q_MeV": 4.415232670002297,
+          "flow_weighted_T_GK_5_50_95": [
+            1.0776149103374888,
+            1.3081572260497727,
+            1.5683407018602358
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            32298645.48400724,
+            60031524.01773119,
+            120950044.53858344
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.025662530366060633,
+            0.027787780028458258,
+            0.029353102283403345
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.047465092464885436,
+            0.05007334909577393,
+            0.05213530680820327
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10293201122715294,
+            0.1085882332394144,
+            0.11305976048994504
+          ],
+          "flow_fraction_T_above_1GK": 0.9839933067330935,
+          "diagnostic_flow_multiplier_weak": 1.028044163599597
+        },
+        {
+          "index": 149,
+          "reaction": "F18 + p \u27f6 He4 + O15",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 5.971034548930954e-10,
+          "Q_MeV": 2.8815551939987927,
+          "flow_weighted_T_GK_5_50_95": [
+            1.1482962187451617,
+            1.3652932086028653,
+            1.573957027842139
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            37713581.45859574,
+            69893339.44642207,
+            124290981.9288249
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.016411785319815343,
+            0.01788270148114034,
+            0.018965749973503893
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.030197133244823638,
+            0.03197653104924521,
+            0.033360932212228675
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10265784118973316,
+            0.10870706234389628,
+            0.11341345727152738
+          ],
+          "flow_fraction_T_above_1GK": 0.9941655356673793,
+          "diagnostic_flow_multiplier_weak": 1.0179585960645552
+        },
+        {
+          "index": 67,
+          "reaction": "N14 + n \u27f6 N15 + \ud835\udefe",
+          "source_label": "ks03",
+          "gross_events_per_initial_catalyst": 2.4922373008467513e-10,
+          "Q_MeV": 10.83329680000054,
+          "flow_weighted_T_GK_5_50_95": [
+            1.185717078345623,
+            1.4784379264929517,
+            1.5855645638957734
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            43870073.08447769,
+            102506190.99439813,
+            133559048.2937435
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10426213965716231,
+            0.1117328378139159,
+            0.12217301760216462
+          ],
+          "flow_fraction_T_above_1GK": 0.9946614526419377,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 77,
+          "reaction": "O16 + p \u27f6 F17 + \ud835\udefe",
+          "source_label": "ia08",
+          "gross_events_per_initial_catalyst": 1.2861791653940213e-10,
+          "Q_MeV": 0.6002689640008612,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2040601234444663,
+            1.424802807734864,
+            1.5835531199943453
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            43327784.90024186,
+            81423121.89480428,
+            128657563.0489126
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.014586399235503847,
+            0.016019170364735734,
+            0.016993581856930985
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02772132764719533,
+            0.029512805921738185,
+            0.030856233012214972
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10271877668720229,
+            0.10935693122167171,
+            0.11433487416359946
+          ],
+          "flow_fraction_T_above_1GK": 0.9974737477450912,
+          "diagnostic_flow_multiplier_weak": 1.0160568727773525
+        },
+        {
+          "index": 25,
+          "reaction": "F17 \u27f6 p + O16",
+          "source_label": "ia08",
+          "gross_events_per_initial_catalyst": 1.285651150758327e-10,
+          "Q_MeV": -0.6002689640008612,
+          "flow_weighted_T_GK_5_50_95": [
+            1.203794712340993,
+            1.4247551273063086,
+            1.5835531199943453
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            43327068.140752815,
+            81168180.96610089,
+            128192093.37892218
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10271877668720229,
+            0.10935693122167171,
+            0.11432925825283724
+          ],
+          "flow_fraction_T_above_1GK": 0.9977470391648021,
+          "diagnostic_flow_multiplier_weak": 1.0
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.0024334651537033514,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 6.653064693772812,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 6.635213907358774,
+      "nuclear_deposition_quadrature_relative": 0.0026903106159457124,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "C13-H3-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/C13-H3-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "d66c661500b0a051399c8b2ded201541dcd04f7ede66cf8180d5c8a413fa0d01",
+      "trace_sha256": "0047935429ccd85ad8e3bbbd10c29ee20f41424a64129d972b46bf51ee750c17",
+      "Tmax_GK": 1.5374778639643922,
+      "density_max_kg_m3": 110628651.0011876,
+      "initial_catalysts": 4.2568004648334804e+38,
+      "neutron_produced_per_initial_catalyst": 2.4240465344358925e-08,
+      "neutron_producers": [
+        {
+          "index": 114,
+          "reaction": "C13 + p \u27f6 n + N13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 2.382629770525636e-08,
+          "Q_MeV": -3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2544605059169305,
+            1.4067044900798664,
+            1.5040996529942918
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            50738345.430345275,
+            89284904.0339406,
+            106565171.62588967
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010445602989749971,
+            0.012143436935467418,
+            0.01306419001471274
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023045922274730995,
+            0.02554585389344482,
+            0.02728077609081629
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10561014153027504,
+            0.1170663171140078,
+            0.12501676390559993
+          ],
+          "flow_fraction_T_above_1GK": 0.9999490648379393,
+          "diagnostic_flow_multiplier_weak": 1.012094044029735
+        },
+        {
+          "index": 115,
+          "reaction": "C13 + He4 \u27f6 n + O16",
+          "source_label": "gl12",
+          "gross_events_per_initial_catalyst": 4.139722660688703e-10,
+          "Q_MeV": 2.2156091700016987,
+          "flow_weighted_T_GK_5_50_95": [
+            1.3075301091949292,
+            1.430145710031742,
+            1.5120088623095047
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            56510682.75132273,
+            93514266.33846527,
+            107194803.85609396
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.021580091093076924,
+            0.024286873870934835,
+            0.02591947786297364
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.044243149715380556,
+            0.04793532248578301,
+            0.05069926317266656
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10804939502053838,
+            0.1170663171140078,
+            0.12381633651840386
+          ],
+          "flow_fraction_T_above_1GK": 0.9999565867257285,
+          "diagnostic_flow_multiplier_weak": 1.024362052525528
+        }
+      ],
+      "all_rates": [
+        {
+          "index": 64,
+          "reaction": "C13 + p \u27f6 N14 + \ud835\udefe",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 0.9492833031566841,
+          "Q_MeV": 7.550563563999276,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6794490757392988,
+            1.0815620986886705,
+            1.3803703708833719
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            11446303.871808363,
+            48007439.66924,
+            96706696.93641002
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.00828011300797767,
+            0.012399446547636781,
+            0.02305815651718782
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.020011183966849422,
+            0.026498772859814057,
+            0.041683849994796
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09170316317713981,
+            0.12143315935644147,
+            0.19102022670205956
+          ],
+          "flow_fraction_T_above_1GK": 0.6074595228896192,
+          "diagnostic_flow_multiplier_weak": 1.0137207038320266
+        },
+        {
+          "index": 68,
+          "reaction": "N14 + p \u27f6 O15 + \ud835\udefe",
+          "source_label": "im05",
+          "gross_events_per_initial_catalyst": 0.6170098465552087,
+          "Q_MeV": 7.2967878640010895,
+          "flow_weighted_T_GK_5_50_95": [
+            0.8973182771278264,
+            1.2810587996694296,
+            1.4865826081939812
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            10499422.60425734,
+            40543236.354305044,
+            88282993.39299853
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.009956571953204115,
+            0.01170605550616584,
+            0.013625682288738247
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02205266200312754,
+            0.02429697421298963,
+            0.027669086593711863
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09014940057283082,
+            0.09932395738545773,
+            0.1131088650643229
+          ],
+          "flow_fraction_T_above_1GK": 0.9055808144238161,
+          "diagnostic_flow_multiplier_weak": 1.0118383330394125
+        },
+        {
+          "index": 3,
+          "reaction": "O15 \u27f6 N15 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 1.5778532211050282e-07,
+          "Q_MeV": 2.7541619000003266,
+          "flow_weighted_T_GK_5_50_95": [
+            0.07967709008311022,
+            0.18089334004941876,
+            1.0608207397624316
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            8970.271730550847,
+            107667.93631659973,
+            19377565.206514273
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09133299035907744,
+            0.09726728372522589,
+            0.10304868978267961
+          ],
+          "flow_fraction_T_above_1GK": 0.06302152316151782,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 6.451553372270136e-08,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.3258030519217794,
+            0.8900850209748312,
+            1.4736439720267083
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            579385.8213608216,
+            11045145.605082627,
+            103812593.17764345
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010300312168900393,
+            0.011586763474255175,
+            0.014834847325210268
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0221848145692204,
+            0.02347478221868646,
+            0.02987753359576218
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.0906896289867857,
+            0.09596290666823824,
+            0.12213680796769964
+          ],
+          "flow_fraction_T_above_1GK": 0.44382902829099563,
+          "diagnostic_flow_multiplier_weak": 1.01210963061627
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 5.67926138665754e-08,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            1.0265710071706486,
+            1.4613639213423633,
+            1.5308557711806268
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            17375487.942706715,
+            84789676.37225671,
+            109009632.41706283
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.011091517399204446,
+            0.013409213936273128,
+            0.014353131129260469
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023055273872576054,
+            0.02726768612175945,
+            0.02874734000754672
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09424799234488856,
+            0.11146797418543355,
+            0.11751667301553692
+          ],
+          "flow_fraction_T_above_1GK": 0.9576211572146809,
+          "diagnostic_flow_multiplier_weak": 1.0132070488978673
+        },
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 4.2980414874622165e-08,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.8348550927392802,
+            1.4446020676745697,
+            1.5308369393268275
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            9204571.743540432,
+            77585825.80963588,
+            108312550.63228467
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.00924356685035664,
+            0.011216609253908062,
+            0.01225876616475502
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02019097403432491,
+            0.023903229549291458,
+            0.025607108625921467
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09252706834550199,
+            0.1095388340565246,
+            0.11734702278024842
+          ],
+          "flow_fraction_T_above_1GK": 0.8829848241895587,
+          "diagnostic_flow_multiplier_weak": 1.0110227830049532
+        },
+        {
+          "index": 114,
+          "reaction": "C13 + p \u27f6 n + N13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 2.382629770525636e-08,
+          "Q_MeV": -3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2544605059169305,
+            1.4067044900798664,
+            1.5040996529942918
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            50738345.430345275,
+            89284904.0339406,
+            106565171.62588967
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010445602989749971,
+            0.012143436935467418,
+            0.01306419001471274
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023045922274730995,
+            0.02554585389344482,
+            0.02728077609081629
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10561014153027504,
+            0.1170663171140078,
+            0.12501676390559993
+          ],
+          "flow_fraction_T_above_1GK": 0.9999490648379393,
+          "diagnostic_flow_multiplier_weak": 1.012094044029735
+        },
+        {
+          "index": 127,
+          "reaction": "O15 + n \u27f6 p + N15",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.8715744503409235e-08,
+          "Q_MeV": 3.5365089360002457,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2555677304838857,
+            1.4067044900798664,
+            1.5040996529942918
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            50738345.430345275,
+            89284904.0339406,
+            106565171.62588967
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10561014153027504,
+            0.1170663171140078,
+            0.12482252157832129
+          ],
+          "flow_fraction_T_above_1GK": 0.9985298282860201,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 13,
+          "reaction": "N13 \u27f6 p + C12",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 5.86739631149126e-09,
+          "Q_MeV": -1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            1.3629957592218882,
+            1.4885222738083186,
+            1.53260941548387
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            55921581.975181684,
+            93207594.71254085,
+            109533380.17138216
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10368363050536676,
+            0.1130624467198049,
+            0.11743280322730636
+          ],
+          "flow_fraction_T_above_1GK": 0.9998912763109039,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 128,
+          "reaction": "O15 + n \u27f6 He4 + C12",
+          "source_label": "cf88",
+          "gross_events_per_initial_catalyst": 5.587546030706688e-09,
+          "Q_MeV": 8.502002229999562,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2555677304838857,
+            1.4067044900798664,
+            1.5040996529942918
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            50738345.430345275,
+            89284904.0339406,
+            106565171.62588967
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10561014153027504,
+            0.1170663171140078,
+            0.12482252157832129
+          ],
+          "flow_fraction_T_above_1GK": 0.9985073480267092,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 120,
+          "reaction": "N14 + He4 \u27f6 p + O17",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 4.790486085526751e-10,
+          "Q_MeV": -1.1918741939989559,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2717920812786705,
+            1.4622578065360046,
+            1.530484891232123
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            39388936.976244085,
+            78824412.23721485,
+            107099254.93508866
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.023758593643779385,
+            0.026336216081189707,
+            0.02831492644189098
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.045759281282558295,
+            0.05027958674910243,
+            0.05348470242014632
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09923281742698083,
+            0.10903547678926265,
+            0.1159860374034715
+          ],
+          "flow_fraction_T_above_1GK": 0.9998813006928846,
+          "diagnostic_flow_multiplier_weak": 1.0265674060611711
+        },
+        {
+          "index": 137,
+          "reaction": "O17 + p \u27f6 He4 + N14",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 4.77351678707156e-10,
+          "Q_MeV": 1.1918741939989559,
+          "flow_weighted_T_GK_5_50_95": [
+            1.271691131920644,
+            1.4622578065360046,
+            1.530484891232123
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            39375272.181700185,
+            78824412.23721485,
+            107099254.93508866
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.013575361725691541,
+            0.01504814317864669,
+            0.016179957966794847
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.026778453640546918,
+            0.029417627254527744,
+            0.031301842263490254
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09922504558724594,
+            0.10900425560717732,
+            0.1159860374034715
+          ],
+          "flow_fraction_T_above_1GK": 0.999875828117489,
+          "diagnostic_flow_multiplier_weak": 1.0150939260044658
+        },
+        {
+          "index": 115,
+          "reaction": "C13 + He4 \u27f6 n + O16",
+          "source_label": "gl12",
+          "gross_events_per_initial_catalyst": 4.139722660688703e-10,
+          "Q_MeV": 2.2156091700016987,
+          "flow_weighted_T_GK_5_50_95": [
+            1.3075301091949292,
+            1.430145710031742,
+            1.5120088623095047
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            56510682.75132273,
+            93514266.33846527,
+            107194803.85609396
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.021580091093076924,
+            0.024286873870934835,
+            0.02591947786297364
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.044243149715380556,
+            0.04793532248578301,
+            0.05069926317266656
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10804939502053838,
+            0.1170663171140078,
+            0.12381633651840386
+          ],
+          "flow_fraction_T_above_1GK": 0.9999565867257285,
+          "diagnostic_flow_multiplier_weak": 1.024362052525528
+        },
+        {
+          "index": 149,
+          "reaction": "F18 + p \u27f6 He4 + O15",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 1.11478606000884e-10,
+          "Q_MeV": 2.8815551939987927,
+          "flow_weighted_T_GK_5_50_95": [
+            1.205683450360796,
+            1.4179212348537924,
+            1.5250026001970391
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            30989048.54670032,
+            67190328.9408676,
+            105168581.49329606
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.014851043620090378,
+            0.016512054842232466,
+            0.01809513312500173
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.028511079366925145,
+            0.031341668805131576,
+            0.03395190667200535
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09692595101885716,
+            0.10654879165955088,
+            0.11542252752819959
+          ],
+          "flow_fraction_T_above_1GK": 0.9976534563261198,
+          "diagnostic_flow_multiplier_weak": 1.016634194492408
+        },
+        {
+          "index": 69,
+          "reaction": "N14 + He4 \u27f6 F18 + \ud835\udefe",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 1.0978987052957304e-10,
+          "Q_MeV": 4.415232670002297,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2050900543424485,
+            1.4172856636667082,
+            1.5250026001970391
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            30901244.560488038,
+            66943252.225764595,
+            105054439.82833469
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.023097882591797177,
+            0.025680636709286452,
+            0.028147984861113803
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.04469036029133676,
+            0.04912759933539668,
+            0.053224850815035536
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09691477311787615,
+            0.10653729601591176,
+            0.11542252752819959
+          ],
+          "flow_fraction_T_above_1GK": 0.9976675684621651,
+          "diagnostic_flow_multiplier_weak": 1.025990664022683
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.021781782090037005,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 11.66981458054509,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 11.50535932635563,
+      "nuclear_deposition_quadrature_relative": 0.014293795571663548,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    },
+    {
+      "case": "C13-H4-fixed_energy-z64-k0p001-t1",
+      "source_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json",
+      "record_sha256": "cf9dea85fb758573a00ba17adcf69aeed7ac1eb5d42ad3906ee4fd296a1f9170",
+      "trace_sha256": "e7402bcc400861ef39cc712bf1b9c95e0048abf6969981f3f6073fdebee32d17",
+      "Tmax_GK": 1.51335220340375,
+      "density_max_kg_m3": 105822125.87032813,
+      "initial_catalysts": 4.006400437490335e+38,
+      "neutron_produced_per_initial_catalyst": 1.5550160860037714e-08,
+      "neutron_producers": [
+        {
+          "index": 114,
+          "reaction": "C13 + p \u27f6 n + N13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.539983797651978e-08,
+          "Q_MeV": -3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2430257141813026,
+            1.3763681071551723,
+            1.4643952415390027
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            52609693.86450843,
+            88886923.63030517,
+            102091884.63642786
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010685624999426728,
+            0.012205830577144739,
+            0.01317349755903408
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023998164588138863,
+            0.026339214473748818,
+            0.02802272648418961
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10997388294583942,
+            0.12070196780186573,
+            0.12841682249811354
+          ],
+          "flow_fraction_T_above_1GK": 0.9998385374308186,
+          "diagnostic_flow_multiplier_weak": 1.0122515606925782
+        },
+        {
+          "index": 115,
+          "reaction": "C13 + He4 \u27f6 n + O16",
+          "source_label": "gl12",
+          "gross_events_per_initial_catalyst": 1.502632281911848e-10,
+          "Q_MeV": 2.2156091700016987,
+          "flow_weighted_T_GK_5_50_95": [
+            1.275604271521593,
+            1.3949413108764053,
+            1.4647157042928172
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            59209951.49351651,
+            92663625.17335086,
+            102659804.18975875
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.021738228684379555,
+            0.024426547280420336,
+            0.026234034058142737
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.045358700185173434,
+            0.04935471736585609,
+            0.05230934134098699
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1107737614852093,
+            0.12053272398317856,
+            0.1277484248335882
+          ],
+          "flow_fraction_T_above_1GK": 0.9999587416848873,
+          "diagnostic_flow_multiplier_weak": 1.0246799621035836
+        }
+      ],
+      "all_rates": [
+        {
+          "index": 64,
+          "reaction": "C13 + p \u27f6 N14 + \ud835\udefe",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 0.9606269938297801,
+          "Q_MeV": 7.550563563999276,
+          "flow_weighted_T_GK_5_50_95": [
+            0.6765787246433331,
+            1.0296105150739316,
+            1.3496661281915352
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            12130702.560094178,
+            51281212.35128433,
+            94934202.72391061
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.008182019002929957,
+            0.012857974707180597,
+            0.025084518133341657
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0206026067269427,
+            0.027662559758826987,
+            0.04500478919120464
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.0944134145028662,
+            0.12676632405476207,
+            0.2062387479816662
+          ],
+          "flow_fraction_T_above_1GK": 0.5551433478291745,
+          "diagnostic_flow_multiplier_weak": 1.0142325078225876
+        },
+        {
+          "index": 68,
+          "reaction": "N14 + p \u27f6 O15 + \ud835\udefe",
+          "source_label": "im05",
+          "gross_events_per_initial_catalyst": 0.7134158480464456,
+          "Q_MeV": 7.2967878640010895,
+          "flow_weighted_T_GK_5_50_95": [
+            0.9211553519245056,
+            1.3059759618968836,
+            1.4948113639692822
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            11941666.71680228,
+            44763579.234057084,
+            92546191.2702313
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.009923601805973051,
+            0.011863090810556618,
+            0.013840720450587944
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.022475094876264288,
+            0.025045393406403604,
+            0.028566636759840117
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09187627011312195,
+            0.10238343118748229,
+            0.1167779735578477
+          ],
+          "flow_fraction_T_above_1GK": 0.9225014349027152,
+          "diagnostic_flow_multiplier_weak": 1.0119699347673259
+        },
+        {
+          "index": 3,
+          "reaction": "O15 \u27f6 N15 + e\u207a + \ud835\udf08",
+          "source_label": "wc12",
+          "gross_events_per_initial_catalyst": 1.7872797638424409e-07,
+          "Q_MeV": 2.7541619000003266,
+          "flow_weighted_T_GK_5_50_95": [
+            0.07702776942628321,
+            0.17744138428194853,
+            1.0688960352167578
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            8614.181818601704,
+            110455.40591493531,
+            20455771.26755177
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09342234355926103,
+            0.1008155607068962,
+            0.10878402495334086
+          ],
+          "flow_fraction_T_above_1GK": 0.06419967264150757,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 122,
+          "reaction": "N15 + p \u27f6 He4 + C12",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 6.547052909993045e-08,
+          "Q_MeV": 4.965493293999316,
+          "flow_weighted_T_GK_5_50_95": [
+            0.3051946762704264,
+            0.749287211745858,
+            1.4288590565419568
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            520971.7220141556,
+            6915319.95477864,
+            97286920.6725607
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010291254000678901,
+            0.011694603787444538,
+            0.014833976730889833
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02262213335900678,
+            0.024155300131368154,
+            0.03038118476187463
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09247735088416419,
+            0.09874480582846787,
+            0.124195690959531
+          ],
+          "flow_fraction_T_above_1GK": 0.3601567508709258,
+          "diagnostic_flow_multiplier_weak": 1.0120016184512366
+        },
+        {
+          "index": 66,
+          "reaction": "N13 + p \u27f6 O14 + \ud835\udefe",
+          "source_label": "lg06",
+          "gross_events_per_initial_catalyst": 4.298967821226812e-08,
+          "Q_MeV": 4.626670064000791,
+          "flow_weighted_T_GK_5_50_95": [
+            0.9210785826122412,
+            1.4288590565419568,
+            1.5067908908583503
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            12902721.954985086,
+            80873159.82773924,
+            104600472.86301279
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010977398747586967,
+            0.013321968656706576,
+            0.01442247110220844
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023349186808997353,
+            0.027819985603324802,
+            0.02957299638113375
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09544948335015688,
+            0.11372572733980288,
+            0.12089188581966241
+          ],
+          "flow_fraction_T_above_1GK": 0.9175806723320937,
+          "diagnostic_flow_multiplier_weak": 1.01308397237945
+        },
+        {
+          "index": 62,
+          "reaction": "C12 + p \u27f6 N13 + \ud835\udefe",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 3.435925762973243e-08,
+          "Q_MeV": 1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            0.74134573544261,
+            1.3398266056253918,
+            1.5067908908583503
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            6721484.867701,
+            54728275.5188611,
+            103839637.08656284
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.009170037539765395,
+            0.01048027635053063,
+            0.012272739060747455
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.02050165692573912,
+            0.023063788121845816,
+            0.026180918813743678
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.09395080239016926,
+            0.10569201348227858,
+            0.1199765628101505
+          ],
+          "flow_fraction_T_above_1GK": 0.8025194150059469,
+          "diagnostic_flow_multiplier_weak": 1.0108009155198432
+        },
+        {
+          "index": 114,
+          "reaction": "C13 + p \u27f6 n + N13",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.539983797651978e-08,
+          "Q_MeV": -3.002817736000111,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2430257141813026,
+            1.3763681071551723,
+            1.4643952415390027
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            52609693.86450843,
+            88886923.63030517,
+            102091884.63642786
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.010685624999426728,
+            0.012205830577144739,
+            0.01317349755903408
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.023998164588138863,
+            0.026339214473748818,
+            0.02802272648418961
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10997388294583942,
+            0.12070196780186573,
+            0.12841682249811354
+          ],
+          "flow_fraction_T_above_1GK": 0.9998385374308186,
+          "diagnostic_flow_multiplier_weak": 1.0122515606925782
+        },
+        {
+          "index": 127,
+          "reaction": "O15 + n \u27f6 p + N15",
+          "source_label": "nacr",
+          "gross_events_per_initial_catalyst": 1.2000414522415004e-08,
+          "Q_MeV": 3.5365089360002457,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2430257141813026,
+            1.3777845109303768,
+            1.4643952415390027
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            52609693.86450843,
+            88886923.63030517,
+            102091884.63642786
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10997388294583942,
+            0.12069090717197783,
+            0.12841682249811354
+          ],
+          "flow_fraction_T_above_1GK": 0.9998891209257664,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 128,
+          "reaction": "O15 + n \u27f6 He4 + C12",
+          "source_label": "cf88",
+          "gross_events_per_initial_catalyst": 3.5858026296673147e-09,
+          "Q_MeV": 8.502002229999562,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2430257141813026,
+            1.3777845109303768,
+            1.4643952415390027
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            52609693.86450843,
+            88886923.63030517,
+            102091884.63642786
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10997388294583942,
+            0.12069090717197783,
+            0.12841682249811354
+          ],
+          "flow_fraction_T_above_1GK": 0.9998866506104882,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 13,
+          "reaction": "N13 \u27f6 p + C12",
+          "source_label": "ls09",
+          "gross_events_per_initial_catalyst": 2.2780931503815653e-09,
+          "Q_MeV": -1.9434910639993177,
+          "flow_weighted_T_GK_5_50_95": [
+            1.322638737741282,
+            1.4678992817158165,
+            1.5105801875280995
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            49529824.26505657,
+            93588655.1254574,
+            104910623.42847906
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10360180309985825,
+            0.1161824047937418,
+            0.12070196780186573
+          ],
+          "flow_fraction_T_above_1GK": 0.9997861476814998,
+          "diagnostic_flow_multiplier_weak": 1.0
+        },
+        {
+          "index": 120,
+          "reaction": "N14 + He4 \u27f6 p + O17",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 2.3888211923675485e-10,
+          "Q_MeV": -1.1918741939989559,
+          "flow_weighted_T_GK_5_50_95": [
+            1.2819683899720191,
+            1.4664729736640727,
+            1.5114917281938722
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            41630359.75894627,
+            82075265.69245802,
+            103513208.19334492
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.02386921305406663,
+            0.02635235168046664,
+            0.02829992502405463
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.046896841290117834,
+            0.051315277743709524,
+            0.05473747826542083
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10169971116697095,
+            0.11128145907958739,
+            0.11870278629564525
+          ],
+          "flow_fraction_T_above_1GK": 0.9999294741174805,
+          "diagnostic_flow_multiplier_weak": 1.0265999512652937
+        },
+        {
+          "index": 137,
+          "reaction": "O17 + p \u27f6 He4 + N14",
+          "source_label": "il10",
+          "gross_events_per_initial_catalyst": 2.380383334570445e-10,
+          "Q_MeV": 1.1918741939989559,
+          "flow_weighted_T_GK_5_50_95": [
+            1.281946323366958,
+            1.4666159093689082,
+            1.5114917281938722
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            41627135.80077227,
+            82044106.9573708,
+            103513208.19334492
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.013639482754391382,
+            0.015058486674552365,
+            0.01617138572803122
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.027444442151934808,
+            0.03003019206930172,
+            0.03203486952289535
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.10169280348283202,
+            0.11127405701120825,
+            0.1187022010851948
+          ],
+          "flow_fraction_T_above_1GK": 0.9999271804459016,
+          "diagnostic_flow_multiplier_weak": 1.015112653652037
+        },
+        {
+          "index": 115,
+          "reaction": "C13 + He4 \u27f6 n + O16",
+          "source_label": "gl12",
+          "gross_events_per_initial_catalyst": 1.502632281911848e-10,
+          "Q_MeV": 2.2156091700016987,
+          "flow_weighted_T_GK_5_50_95": [
+            1.275604271521593,
+            1.3949413108764053,
+            1.4647157042928172
+          ],
+          "flow_weighted_density_kg_m3_5_50_95": [
+            59209951.49351651,
+            92663625.17335086,
+            102659804.18975875
+          ],
+          "flow_weighted_classical_weak_screen_h_5_50_95": [
+            0.021738228684379555,
+            0.024426547280420336,
+            0.026234034058142737
+          ],
+          "flow_weighted_ion_sphere_h_5_50_95": [
+            0.045358700185173434,
+            0.04935471736585609,
+            0.05230934134098699
+          ],
+          "flow_weighted_carbon_Gamma_5_50_95": [
+            0.1107737614852093,
+            0.12053272398317856,
+            0.1277484248335882
+          ],
+          "flow_fraction_T_above_1GK": 0.9999587416848873,
+          "diagnostic_flow_multiplier_weak": 1.0246799621035836
+        }
+      ],
+      "net_species_change_quadrature_max_absolute_per_initial_catalyst": 0.02561155076401045,
+      "nuclear_deposition_MeV_per_initial_catalyst_from_sampled_flows": 12.45891989423554,
+      "record_nuclear_deposition_MeV_per_initial_catalyst": 12.265592494282586,
+      "nuclear_deposition_quadrature_relative": 0.0157617660983822,
+      "screening_scope": "Classical Debye-Huckel and ion-sphere exponents are diagnostics, not a consistent intermediate-coupling correction. Degenerate electron response and Coulomb EOS are omitted here and in the source model."
+    }
+  ]
+}

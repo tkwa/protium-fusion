@@ -1,0 +1,231 @@
+{
+  "scope": "Primary commercial pump benchmarks plus explicitly conditional scale checks.",
+  "benchmarks": [
+    {
+      "model": "Pfeiffer HiPace700H",
+      "nominal_inlet_diameter_m": 0.16,
+      "speed_L_s": {
+        "H2": 555.0,
+        "He": 655.0
+      },
+      "K0": {
+        "H2": 20000000.0,
+        "He": 1000000000.0
+      },
+      "rpm": 49200.0,
+      "mass_kg": 11.8,
+      "source": "https://www.pfeiffervacuum.com/global/assets/134975/1/Product%20Leaflet%20HiPace%20700%20H%20Global%20EN.pdf",
+      "manual": "https://www.pfeiffervacuum.com/de/assets/123614/1/Instruction%20Manual%20HiPace%20700%20H%20with%20TC%20400_DE_de%2CEN_en.pdf"
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "nominal_inlet_diameter_m": 0.063,
+      "speed_L_s": {
+        "H2": 54.0,
+        "He": 78.0
+      },
+      "K0": {
+        "H2": 500000.0,
+        "He": 20000000.0
+      },
+      "rpm": 90000.0,
+      "mass_kg": 3.0,
+      "source": "https://www.edwardsvacuum.cn/content/dam/brands/edwards-vacuum/general-vacuum/downloads/turbomolecular-pumps/3601-0243-01-nEXT85-datasheet.pdf",
+      "rpm_source": "https://digitalbrochure.edwardsvacuum.com/nEXT-TURBOMOLECULAR-PUMPS/en/technical-specifications.html"
+    }
+  ],
+  "calculations": [
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "H2",
+      "T_K": 300.0,
+      "nominal_inlet_area_m2": 0.020106192982974676,
+      "mean_thermal_speed_m_s": 1775.1710583738184,
+      "nominal_speed_m3_s": 0.555,
+      "effective_aperture_capture_if_same_speed": 0.062198930772986556,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.16077446791646574,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "H2",
+      "T_K": 1000.0,
+      "nominal_inlet_area_m2": 0.020106192982974676,
+      "mean_thermal_speed_m_s": 3241.0041070055345,
+      "nominal_speed_m3_s": 0.555,
+      "effective_aperture_capture_if_same_speed": 0.03406775743706697,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.2935326758291297,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "H2",
+      "all_hot_K0_if_lnK_scales_u_over_sqrtT": 9975.595293458467,
+      "same_K0_required_speed_multiplier_300to1000": 1.8257418583505538,
+      "same_speed_required_log_compression_length_multiplier_300to1000": 1.8257418583505538,
+      "scope": "Similar-geometry, fully molecular and all-stage1000K heuristic. A hot entrance followed by shielded cooler stages must be treated stagewise. No prediction for the commercial pump at1000K."
+    },
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "H2",
+      "pressure_ratio_requested": 10000000.0,
+      "zero_throughput_K0": 20000000.0,
+      "signed_speed_fraction_at_Pin1e10minus_Pout1e3minus": 0.5,
+      "feasible_forward_flow_at_those_partial_pressures": true,
+      "scope": "Isothermal molecular Q=S0(Pin-Pout/K0), using separate species partial pressures. A negative result denotes backflow, not negative available hardware size."
+    },
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "He",
+      "T_K": 300.0,
+      "nominal_inlet_area_m2": 0.020106192982974676,
+      "mean_thermal_speed_m_s": 1259.7271951291787,
+      "nominal_speed_m3_s": 0.655,
+      "effective_aperture_capture_if_same_speed": 0.103441530960302,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.09667296981362083,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "He",
+      "T_K": 1000.0,
+      "nominal_inlet_area_m2": 0.020106192982974676,
+      "mean_thermal_speed_m_s": 2299.9366702498774,
+      "nominal_speed_m3_s": 0.655,
+      "effective_aperture_capture_if_same_speed": 0.05665725988982642,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.17649988755978713,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "He",
+      "all_hot_K0_if_lnK_scales_u_over_sqrtT": 85016.46002445224,
+      "same_K0_required_speed_multiplier_300to1000": 1.8257418583505538,
+      "same_speed_required_log_compression_length_multiplier_300to1000": 1.8257418583505538,
+      "scope": "Similar-geometry, fully molecular and all-stage1000K heuristic. A hot entrance followed by shielded cooler stages must be treated stagewise. No prediction for the commercial pump at1000K."
+    },
+    {
+      "model": "Pfeiffer HiPace700H",
+      "species": "He",
+      "pressure_ratio_requested": 10000000.0,
+      "zero_throughput_K0": 1000000000.0,
+      "signed_speed_fraction_at_Pin1e10minus_Pout1e3minus": 0.99,
+      "feasible_forward_flow_at_those_partial_pressures": true,
+      "scope": "Isothermal molecular Q=S0(Pin-Pout/K0), using separate species partial pressures. A negative result denotes backflow, not negative available hardware size."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "H2",
+      "T_K": 300.0,
+      "nominal_inlet_area_m2": 0.0031172453105244723,
+      "mean_thermal_speed_m_s": 1775.1710583738184,
+      "nominal_speed_m3_s": 0.054,
+      "effective_aperture_capture_if_same_speed": 0.03903395545231245,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.2561872063469699,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "H2",
+      "T_K": 1000.0,
+      "nominal_inlet_area_m2": 0.0031172453105244723,
+      "mean_thermal_speed_m_s": 3241.0041070055345,
+      "nominal_speed_m3_s": 0.054,
+      "effective_aperture_capture_if_same_speed": 0.0213797779098833,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.4677317062015536,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "H2",
+      "all_hot_K0_if_lnK_scales_u_over_sqrtT": 1322.6789011880433,
+      "same_K0_required_speed_multiplier_300to1000": 1.8257418583505538,
+      "same_speed_required_log_compression_length_multiplier_300to1000": 1.8257418583505538,
+      "scope": "Similar-geometry, fully molecular and all-stage1000K heuristic. A hot entrance followed by shielded cooler stages must be treated stagewise. No prediction for the commercial pump at1000K."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "H2",
+      "pressure_ratio_requested": 10000000.0,
+      "zero_throughput_K0": 500000.0,
+      "signed_speed_fraction_at_Pin1e10minus_Pout1e3minus": -19.0,
+      "feasible_forward_flow_at_those_partial_pressures": false,
+      "scope": "Isothermal molecular Q=S0(Pin-Pout/K0), using separate species partial pressures. A negative result denotes backflow, not negative available hardware size."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "He",
+      "T_K": 300.0,
+      "nominal_inlet_area_m2": 0.0031172453105244723,
+      "mean_thermal_speed_m_s": 1259.7271951291787,
+      "nominal_speed_m3_s": 0.078,
+      "effective_aperture_capture_if_same_speed": 0.07945241615709958,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.12586149652424933,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "He",
+      "T_K": 1000.0,
+      "nominal_inlet_area_m2": 0.0031172453105244723,
+      "mean_thermal_speed_m_s": 2299.9366702498774,
+      "nominal_speed_m3_s": 0.078,
+      "effective_aperture_capture_if_same_speed": 0.04351788057753136,
+      "aperture_fraction_for_global_g0p01_if_same_speed": 0.22979060255896477,
+      "scope": "DN-derived nominal inlet area; actual bore/hub/baffle layout may differ.1000K row holds measured room-temperature speed fixed as a comparison, not a predicted hot-pump speed."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "He",
+      "all_hot_K0_if_lnK_scales_u_over_sqrtT": 9975.595293458467,
+      "same_K0_required_speed_multiplier_300to1000": 1.8257418583505538,
+      "same_speed_required_log_compression_length_multiplier_300to1000": 1.8257418583505538,
+      "scope": "Similar-geometry, fully molecular and all-stage1000K heuristic. A hot entrance followed by shielded cooler stages must be treated stagewise. No prediction for the commercial pump at1000K."
+    },
+    {
+      "model": "Edwards nEXT85H ISO63",
+      "species": "He",
+      "pressure_ratio_requested": 10000000.0,
+      "zero_throughput_K0": 20000000.0,
+      "signed_speed_fraction_at_Pin1e10minus_Pout1e3minus": 0.5,
+      "feasible_forward_flow_at_those_partial_pressures": true,
+      "scope": "Isothermal molecular Q=S0(Pin-Pout/K0), using separate species partial pressures. A negative result denotes backflow, not negative available hardware size."
+    }
+  ],
+  "required_compression_margin": [
+    {
+      "retained_zero_backpressure_speed_fraction": 0.5,
+      "K0_min_for_Pout_over_Pin1e7": 20000000.0
+    },
+    {
+      "retained_zero_backpressure_speed_fraction": 0.9,
+      "K0_min_for_Pout_over_Pin1e7": 100000000.00000001
+    },
+    {
+      "retained_zero_backpressure_speed_fraction": 0.99,
+      "K0_min_for_Pout_over_Pin1e7": 999999999.9999992
+    }
+  ],
+  "tip_speed_primary_presentation": {
+    "source": "https://indico.cern.ch/event/161398/contributions/235875/attachments/187008/262586/Turbopumps_from_theory_to_practice.pdf",
+    "author": "Florian Henss, Pfeiffer Vacuum R&D,2011-12-06,slide12",
+    "indexed_tip_speed_m_s": [
+      300,
+      400
+    ],
+    "all_hot_similar_ratio_m_s": [
+      547.7225575051662,
+      730.2967433402215
+    ],
+    "access": "Search-indexed primary slide text read; direct PDF fetch returned403. This is an engineering reference, not a tested hot-rotor rating."
+  },
+  "theory_sources": {
+    "manufacturer": "https://www.pfeiffervacuum.com/no/en/knowledge/vacuum-technology/knowledge-book/4-vacuum-generation/4.9-turbomolecular-pumps.html",
+    "primary_DSMC": "https://arxiv.org/abs/physics/0401028"
+  },
+  "checks": {
+    "capture_within0and1": true,
+    "row_count": 16
+  },
+  "code_sha256": "317df978e804bc7b244a602fe416da4399d499c439ec5dec9cc0d7a0169baef7"
+}

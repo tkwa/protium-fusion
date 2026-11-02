@@ -1,0 +1,163 @@
+{
+  "status": "Separate conditional component candidate;5000kg/m\u00b2 remains the controlled mixture-comparison receiver.",
+  "code_sha256": "32ba0989115369b745de1cd0e44337c5a8097736300f2eddc89b4cfaf655dd97",
+  "input_sha256": {
+    "thermal": "403c081b520d545739c57d037f104e09576ed8c7eef87510a5e186de37c0f29b",
+    "thermal_validation": "585b101f70c92a1302088d5293d215b517e8ff644e5d097e0189db71c28421be",
+    "support": "050e98cf78374dee8f4e5958f17097024dea6942712027b78712970d6dbe94ab",
+    "photons": "04d5972a6829a4150207d4f349b8b3255addcaccee438009bda91d5772e2a1f0",
+    "spectrum": "5dc8f40eb5d91c6101ba7c79ff08ffa9feef45cc52017e34dd8283ffb1c617b7",
+    "sector_allocations": "a37696d37140780eae1cc0c847140be48a9a0e07b757238df9cbc989064a64c0"
+  },
+  "source": {
+    "selected_cases": {
+      "A": "A-H3-fixed_energy-z64-k0p001-t1",
+      "B1": "B1-H2-fixed_energy-z64-k0p001-t1",
+      "B2": "B2-H2p5-fixed_energy-z64-k0p001-t1",
+      "C13": "C13-H4-fixed_energy-z64-k0p001-t1"
+    },
+    "radius_m": 1100000000.0,
+    "held_comparison_helium_per_s": 4.473376366393096e+32,
+    "hydro_zones": 64,
+    "hydro_opacity_m2_kg": 0.001
+  },
+  "receiver": {
+    "material": "Graphite body; renewable catcher skin remains a separate interface.",
+    "areal_mass_kg_m2": 2000.0,
+    "density_kg_m3": 2000.0,
+    "thickness_m": 1.0,
+    "whole_body_graphite_kg": 3.0410616886749194e+22,
+    "controlled_thermal_property_scenario": {
+      "k_W_m_K": 50.0,
+      "cp_J_kg_K": 1800.0
+    },
+    "nominal_volume_average_minimum_K": 1000.0,
+    "all_stage_bulk_temperature_swing_bound_K": 39.05078778731126,
+    "conditional_front_temperature_screen_K": 2002.4807253061444,
+    "large_pulse_guard_s": 86400.0,
+    "mean_front_to_back_gradient_K": 2.5105682169690957,
+    "thermal_scope": "Full-retention surface-deposition/ballistic/decay screen. Bulk storage is finite; local pickup temperature and variable-temperature engine operation remain to be matched."
+  },
+  "capture": {
+    "performance_target": 0.99,
+    "conditional_local_cascade_loss_bound_fraction_of_HplusU": 0.008390473439638934,
+    "remaining_loss_fraction_of_HplusU_for_target": 0.0016095265603610666,
+    "qualified_total_capture": false,
+    "conditions": [
+      "Doppler scenarios boost both delayed-photon energy and its total source energy. The actual maximum resolved final bulk factor is recorded;1.10 is an additional finite envelope, not a mathematically absolute thermal-particle speed limit. Saved grey-prompt energy is already a model escape-energy account and its20MeV scenario is specified in the laboratory frame.",
+      "Piecewise log-linear NIST coefficient interpolation, with no smaller energy-absorption coefficient below1keV than the stated minimum; low-energy photons ultimately absorbed rather than upgraded back into hard photons.",
+      "Local charged-secondary energy deposition and photon regeneration at the collision location. Nonlocal electron and positron transport is not solved.",
+      "No photon energy upscatter by a hot material. Receiver at~1000K, apart from transient heating, versus keV/MeV photons.",
+      "Closed shell returns inner-directed photons to another receiver patch; no ports/gaps and no credit for heat received in cold components.",
+      "Energy-weighted exponential transport bound uses the minimum mu_en over all down-scattered photon energies, not incident mu_en.",
+      "Removing20/50kg/m2 from the bound illustrates sensitivity to an assumed boundary layer; it is not a rigorous replacement for coupled electron-photon transport."
+    ],
+    "source_geometry_requirement": "Radioactive skin and processing hold-up must remain inside the credited shield or have separately enclosed shielding."
+  },
+  "support": {
+    "receiver_sigma_kg_m2": 2000.0,
+    "mass_kg_at_same_rate99pct_capture_reference": 6.478493430391156e+22,
+    "total_installed_kg_m2": 4260.678732376538,
+    "self_coefficient_a_s2": 1.6243203870195224e-15,
+    "a_over_solar_n2": 5.121924560003456,
+    "positive_three_family_stream_solution": true,
+    "axis_stream_kg_m2_diagnostic": [
+      0.07456914386279212,
+      0.02552084706602677,
+      0.009171414800438317
+    ],
+    "heaviest_local_stream_to_body_ratio": 1.7501705372936825e-05,
+    "ratio_to_old_local_control_epsilon": 0.6690458964737814,
+    "static_support_pressure_upper_Pa": 0.012071714132726891,
+    "global_affine_control_cases": [
+      {
+        "active_attitude_response_days": 30.0,
+        "positive_growth_detected": false,
+        "largest_growth_per_s": -5.5055525876497835e-12,
+        "H_eigenvalues_in_units_a": [
+          13.777410437157556,
+          13.871593345523396,
+          14.171802921336285,
+          14.612835182791557,
+          15.118211217168325,
+          30.44860118594748,
+          91.63484352449204,
+          91.6387577857742,
+          91.64219443313253
+        ]
+      },
+      {
+        "active_attitude_response_days": 100.0,
+        "positive_growth_detected": false,
+        "largest_growth_per_s": -6.695733947625786e-11,
+        "H_eigenvalues_in_units_a": [
+          8.140813009064596,
+          8.185786599851518,
+          8.240665349782251,
+          13.843121814933525,
+          13.985714961444558,
+          14.178721287899267,
+          14.612835182791557,
+          15.118211217168326,
+          30.44860118594749
+        ]
+      },
+      {
+        "active_attitude_response_days": 300.0,
+        "positive_growth_detected": false,
+        "largest_growth_per_s": -2.8332775600800986e-11,
+        "H_eigenvalues_in_units_a": [
+          0.8694646291840078,
+          0.8897330143316747,
+          0.913468575870438,
+          13.80842728545144,
+          13.926315226323236,
+          14.175169946809161,
+          14.612835182791562,
+          15.118211217168332,
+          30.448601185947474
+        ]
+      }
+    ],
+    "illustrative_attitude_correction": {
+      "angle_rad": 1e-06,
+      "response_s": 8640000,
+      "body_angular_momentum_change_kg_m2_s": 6.048593403374458e+27,
+      "per_axis_counterstream_maximum_net_L": [
+        8.314876773808939e+30,
+        2.84571724341761e+30,
+        1.0226640666205004e+30
+      ],
+      "required_differential_speed_fraction": [
+        0.0007274423383431183,
+        0.0021255075209476197,
+        0.005914545744589094
+      ]
+    },
+    "minimum_uniform_prestress_N_m_to_restore_nonnegative_family_densities": 0.0,
+    "scope": "Same archived source/storage/service budgets and rate.99% capture is retained only to obtain the comparison mass; photon qualification is separate. Negative diagnostic stream density invalidates this topology rather than representing negative material."
+  },
+  "retained_budgets": {
+    "services_kg_m2": 1000.0,
+    "insulation_kg_m2": 100.0,
+    "source": "Archived source hardware unchanged.",
+    "electrical_storage": "Archived store unchanged. No free receiver-energy buffer in that store.",
+    "converter_and_radiator": "The parent station ledger may resize according to its declared ratings and capture/rate assumptions; none is optimized in this packet.",
+    "guide_package_kg_m2_within_services": 50.0,
+    "cold_mesh_package_kg_m2_within_services": 20.0
+  },
+  "next_requirements": [
+    "Coupled photon/charged-secondary containment and source placement",
+    "Actual hot graphite property/joint/thermal-shock design and renewable catcher process",
+    "Finite-buffer heat pickup and converter performance over the resulting temperature cycle",
+    "Local tile/subframe/guide controller implementation within the retained services and auxiliary allowance"
+  ],
+  "lighter_1000_branch": "Remains a transport-optimization sensitivity. Its current three-family support construction also requires prestress or another force topology before use.",
+  "checks": {
+    "same_selected_stage_family": true,
+    "thermal_validation_passed": true,
+    "positive_stream_family_densities": true,
+    "tested_affine_controls_non_growing": true,
+    "positive_conditional_capture_headroom": true
+  }
+}

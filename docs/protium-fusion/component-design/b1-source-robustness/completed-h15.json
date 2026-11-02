@@ -1,0 +1,107 @@
+{
+  "carbon": {
+    "record": "docs/protium-fusion/component-design/b1-source-robustness/records/B1-H1p5-source128-carbon.json",
+    "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-carbon.npz",
+    "gain": 8.013658093101654,
+    "rate_update": {
+      "revision": "luna2023-public-repository-2026-10-31",
+      "mode": "updated",
+      "quantile": "median",
+      "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+      "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+      "source_doi": "10.1103/PhysRevLett.131.162701",
+      "temperature_range_GK": [
+        0.007000000000000003,
+        10.000000000000002
+      ],
+      "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+      "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+      "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+      "pairs": [
+        {
+          "forward": "C12_p_to_N13_reaclib",
+          "reverse": "N13_to_p_C12_reaclib",
+          "indices": [
+            62,
+            13
+          ]
+        },
+        {
+          "forward": "C13_p_to_N14_reaclib",
+          "reverse": "N14_to_p_C13_reaclib",
+          "indices": [
+            64,
+            15
+          ]
+        }
+      ],
+      "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged."
+    },
+    "scope": "Inherited input contact-scope text describes the64 original-rate profile construction. Actual result is128 with top-level rate_update, same physical duration and total energy, no contact retuning.",
+    "hashes": {
+      ".json": "10dd99f5d91e9b800510c3a6478b54836472668151445fc91f45edb2af301483",
+      ".initial.json": "be13812a2332227776e4ddc5de7f2752126f9c99fcd6d56232ebab1b10ecb261",
+      ".inputs.json": "c8b30e4c4741df3f98d28c2c4eed05321c6599facfc67b98defe85359215f9ec",
+      ".npz": "026c817d2fd1bf129b20ce168f14194f4d50819e6f231e62be209d377d122543"
+    }
+  },
+  "low": {
+    "record": "docs/protium-fusion/component-design/b1-source-robustness/records/B1-H1p5-source128-low.json",
+    "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-low.npz",
+    "gain": 8.17640821712588,
+    "rate_update": {
+      "revision": "luna2023-public-repository-2026-10-31-plus-nacreii-n15-low",
+      "mode": "updated",
+      "quantile": "median",
+      "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+      "kernel_sha256": "8ea157326095bca3024d34f3eb0cb23f0239387c5f919ee423ec96adeef437ee",
+      "source_doi": "10.1103/PhysRevLett.131.162701",
+      "temperature_range_GK": [
+        0.007000000000000003,
+        10.000000000000002
+      ],
+      "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+      "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+      "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+      "pairs": [
+        {
+          "forward": "C12_p_to_N13_reaclib",
+          "reverse": "N13_to_p_C12_reaclib",
+          "indices": [
+            62,
+            13
+          ]
+        },
+        {
+          "forward": "C13_p_to_N14_reaclib",
+          "reverse": "N14_to_p_C13_reaclib",
+          "indices": [
+            64,
+            15
+          ]
+        }
+      ],
+      "scope": "Two measured carbon capture updates and one paired N15(p,alpha) evaluation sensitivity; all other physics unchanged.",
+      "carbon_kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+      "nitrogen15_evaluation": {
+        "data_sha256": "15661ce2f82ab1467a3f609ef6addc87eba19694ef9ada6b6071fec5fe0ed76c",
+        "doi": "10.1016/j.nuclphysa.2013.09.007",
+        "table": 35,
+        "curve": "low",
+        "temperature_range_GK": [
+          0.005000000000000002,
+          10.000000000000002
+        ],
+        "interpretation": "Adopted/low/high model evaluation limits; not assigned a Gaussian confidence level here.",
+        "reverse_policy": "Same forward/reverse factor preserves archived equilibrium ratio; no new Q or species."
+      }
+    },
+    "scope": "Inherited input contact-scope text describes the64 original-rate profile construction. Actual result is128 with top-level rate_update, same physical duration and total energy, no contact retuning.",
+    "hashes": {
+      ".json": "6a4e46ee18a679451f1ae3c352bfa577ba47950209b522bbb3ab7eec71b1d277",
+      ".initial.json": "be13812a2332227776e4ddc5de7f2752126f9c99fcd6d56232ebab1b10ecb261",
+      ".inputs.json": "c824db44cc61c822dab8ccf6923d6d669de0f827047596b230d10e49aaff95ed",
+      ".npz": "0e882398e02f010a1248480623487ca6b44eb9ef8772c5891a677b8997fc9369"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "B2",
+  "hydrogen_per_catalyst": 2.5,
+  "initial_Y": {
+    "p": 0.1724137931034483,
+    "c12": 0.06896551724137931
+  },
+  "initial_counts": {
+    "c12": 1.0,
+    "p": 2.5
+  },
+  "constraint": "fixed_energy",
+  "held_fixed": [
+    "total pulse mass",
+    "enclosed-mass density profile",
+    "temperature profile",
+    "physical final time unless temperature guard",
+    "total prepared energy at stated reference multiplier"
+  ],
+  "velocity_scale": 0.9979985668697626,
+  "temperature_factor": 1.0,
+  "prepared_energy_factor": 1.0,
+  "reference_specific_internal_J_kg": 252865044997.25052,
+  "reference_specific_kinetic_J_kg": 3349689353722.192,
+  "new_specific_internal_J_kg": 266259985527.8775,
+  "specific_prepared_energy_J_kg": 3602554398719.443,
+  "initial_max_pressure_Pa": 1.0771253233260687e+18,
+  "initial_mass_weighted_pressure_Pa": 4.2807788239448237e+17,
+  "initial_electrons_per_baryon": 0.5862068965517242,
+  "initial_ions_per_baryon": 0.2413793103448276,
+  "duration_s": 6.306272486811078e-05,
+  "zones": 64,
+  "opacity_m2_kg": 0.001,
+  "profile_source": "b2-completion/B2-64-compression-cap.initial.json",
+  "profile_source_sha256": "d4df42a9b0e5a1e3c41b31ba608f0de609c1bb0335d35787b27dd290e1be2690",
+  "baseline_source": "b2-completion/B2-64-compression-cap.json",
+  "baseline_source_sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b",
+  "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+  "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+  "runner_source_sha256": "b7acba694794618b32481b2d93823b86d941583b2ed846d0166906fd1b240bf0",
+  "scope": "Full 27-isotope spherical hydro sensitivity; prescribed hot inflow; constant grey opacity. Source preparation, 3D merger and apparatus not simulated."
+}

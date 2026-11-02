@@ -1,0 +1,1408 @@
+{
+  "scope": "Fixed-mass heat-spreading sensitivity on actual final350 dispatch.\nEffectivebulkconductivity changes the nonuniformmode, not the nuclear/source\nenergy,meanpickup,storageheatcapacity,skinorpostmass. Highk mayrepresent a\nfuture heatspreader; no qualifiedhardware or materialproperty is asserted.\n",
+  "code_sha256": "e21e77c25c06552827ef1956e96483a77c1ddb5d9a74ba360d70cb571e286228",
+  "input_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/geometry/temperature-histories.json": "f7e67d3466af3bfeda6b0eb48a4ed2e9294e3a8e586228496d6f320217fe8d3f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/geometry/temperature_histories.py": "d1691b1a6b6ade21eac1ca5ebf9ef4ed856de73530606953dfa37951988d6e69",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128_thin_thermal.py": "3484b73865c77908bc42c0dba6da4ce1f1d412fecabf953cbb6be5828a19f4b6",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/receiver_thickness.py": "7042bfb18287a1173f5804afd0ace9b572c4ee7edfc237382a13214c54cd4158",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-thermal-input.json": "e3a4eaa2b73cae6384caf0f187bb91eb8859dfd3a6134b8605c21862965487b4",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/events.csv": "36feead65d3b610ffdef9b1f9ca6c04edb66ecc5a01783970f5a49cafa3d5d9a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/selected-plant/point.json": "d13704b81aa56057642641e6c2a05c95c3c47381b32173183ecaf520ce8d511c"
+  },
+  "parameters": {
+    "sigma_kg_m2": 350.0,
+    "thickness_m": 0.175,
+    "rho_kg_m3": 2000.0,
+    "cp_J_kg_K": 1800.0,
+    "dt_s": 0.25,
+    "mean_pickup_W_m2": 116.51853171568968,
+    "skin_depth_m": 0.00015,
+    "skin_k_W_m_K": 4.0,
+    "skin_resistance_m2_K_W": 3.75e-05,
+    "post_resistance_m2_K_W": 4e-06,
+    "total_skin_post_resistance_m2_K_W": 4.15e-05,
+    "min_pickup_temperature_K": 1000.0,
+    "whole_schedule_events": 4228,
+    "background_nonuniform_cutoff_s": 20000.0
+  },
+  "conductivity_cases": [
+    {
+      "bulk_effective_k_W_m_K": 50.0,
+      "isothermal_limit": false,
+      "through_depth_conductance_W_m2_K": 285.7142857142857,
+      "nonuniform_fundamental_decay_s": 223.41320993135477,
+      "new_initial_bulk_offset_K": 1021.5085022259937,
+      "maximum_sampled_whole_schedule_bulk_K": 1189.8424991610932,
+      "maximum_material_front_over_profiles_K": 1496.0295408978964,
+      "controlling_profile": "C13/event_1",
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1353.1477480132246,
+          "max_front_time_s": 136.25,
+          "body_front_at_peak_K": 1342.8016561309923,
+          "bulk_at_front_peak_K": 1173.9279858945908,
+          "skin_and_post_rise_at_peak_K": 10.346091882232244,
+          "max_bulk_K": 1189.8428907350913,
+          "max_material_plus_decay_flux_W_m2": 395058.0109840957,
+          "duration_above_K_s": {
+            "1200": 619.5,
+            "1250": 195.25,
+            "1300": 91.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k50-A-warmest_background.csv",
+          "history_sha256": "5791523780fe6e816e811a6c69c57b1188afee32172dedc4ee605fec953d2e7b"
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1190.4461522384256,
+          "max_front_time_s": 0.25,
+          "body_front_at_peak_K": 1190.4461505327877,
+          "bulk_at_front_peak_K": 1189.1857931571499,
+          "skin_and_post_rise_at_peak_K": 1.7056378810995868e-06,
+          "max_bulk_K": 1189.398645999727,
+          "max_material_plus_decay_flux_W_m2": 2058.2424657386123,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k50-B1-warmest_background.csv",
+          "history_sha256": "5fbb53b55fc4f9c44e9a1af186dc8001fc35fc0c8949d3863882eab34aeeceab"
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "max_front_material_phase_K": 1075.3675256988934,
+          "max_front_time_s": 0.25,
+          "body_front_at_peak_K": 1075.3675250761103,
+          "bulk_at_front_peak_K": 1074.1072030276075,
+          "skin_and_post_rise_at_peak_K": 6.227830045623678e-07,
+          "max_bulk_K": 1074.3200451392484,
+          "max_material_plus_decay_flux_W_m2": 2058.2176617626315,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k50-B1-ordinary_midyear.csv",
+          "history_sha256": "6c278f1bfdab053635d99f86404af00159973fe2b3efd088cf730285dcde4ff0"
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1394.4606032005106,
+          "max_front_time_s": 124.75,
+          "body_front_at_peak_K": 1380.1596702341642,
+          "bulk_at_front_peak_K": 1153.785267667146,
+          "skin_and_post_rise_at_peak_K": 14.300932966346418,
+          "max_bulk_K": 1176.767923076075,
+          "max_material_plus_decay_flux_W_m2": 529155.7034659113,
+          "duration_above_K_s": {
+            "1200": 483.0,
+            "1250": 225.75,
+            "1300": 126.25,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k50-B2-warmest_background.csv",
+          "history_sha256": "65f317c3addaddd774df3e86df215528429453ff6156d318a73343dac1868a9b"
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1480.3152194020645,
+          "max_front_time_s": 88.5,
+          "body_front_at_peak_K": 1454.6512790325926,
+          "bulk_at_front_peak_K": 1102.5126025703928,
+          "skin_and_post_rise_at_peak_K": 25.66394036947186,
+          "max_bulk_K": 1136.6475280431857,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 289.75,
+            "1250": 172.25,
+            "1300": 118.0,
+            "1400": 56.75,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k50-C13-warmest_background.csv",
+          "history_sha256": "fd79a5514c0ac608cc551199b89c67d829ed905758f723160a4a30b81fc3f8fa"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "max_front_material_phase_K": 1496.0295408978964,
+          "max_front_time_s": 88.5,
+          "body_front_at_peak_K": 1470.3656005284245,
+          "bulk_at_front_peak_K": 1118.2269240662247,
+          "skin_and_post_rise_at_peak_K": 25.66394036947186,
+          "max_bulk_K": 1152.3618495390178,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 352.0,
+            "1250": 196.75,
+            "1300": 132.25,
+            "1400": 65.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k50-C13-event_1.csv",
+          "history_sha256": "3a0dcf432f39aa93b30a093ae465cfb47257f80dfb4039d3a4e20ef4280cd1ad"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "max_front_material_phase_K": 1464.6008979064309,
+          "max_front_time_s": 88.5,
+          "body_front_at_peak_K": 1438.936957536959,
+          "bulk_at_front_peak_K": 1086.7982810747592,
+          "skin_and_post_rise_at_peak_K": 25.66394036947186,
+          "max_bulk_K": 1120.9332065475521,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 242.5,
+            "1250": 151.75,
+            "1300": 106.0,
+            "1400": 49.25,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k50-C13-event_3.csv",
+          "history_sha256": "6c7e1802d44511e66a2d896eab5de80947aa0cad7543c6c50eb72646b35acfc8"
+        }
+      ]
+    },
+    {
+      "bulk_effective_k_W_m_K": 100.0,
+      "isothermal_limit": false,
+      "through_depth_conductance_W_m2_K": 571.4285714285714,
+      "nonuniform_fundamental_decay_s": 111.70660496567739,
+      "new_initial_bulk_offset_K": 1021.4065485107425,
+      "maximum_sampled_whole_schedule_bulk_K": 1189.7405454458421,
+      "maximum_material_front_over_profiles_K": 1377.1658355026652,
+      "controlling_profile": "C13/event_1",
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1292.9710580645774,
+          "max_front_time_s": 136.25,
+          "body_front_at_peak_K": 1282.6249661823451,
+          "bulk_at_front_peak_K": 1173.8260321793398,
+          "skin_and_post_rise_at_peak_K": 10.346091882232244,
+          "max_bulk_K": 1189.74093701984,
+          "max_material_plus_decay_flux_W_m2": 395058.0109840957,
+          "duration_above_K_s": {
+            "1200": 324.25,
+            "1250": 97.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k100-A-warmest_background.csv",
+          "history_sha256": "2f42bd4a829f69f0638261b3a58fbba40c308768e1ff351666d4bc46d3511b59"
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.9588971452358,
+          "max_front_time_s": 146.75,
+          "body_front_at_peak_K": 1189.891212589325,
+          "bulk_at_front_peak_K": 1189.2140558115311,
+          "skin_and_post_rise_at_peak_K": 0.06768455591087101,
+          "max_bulk_K": 1189.2966922844757,
+          "max_material_plus_decay_flux_W_m2": 2058.2424657386123,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k100-B1-warmest_background.csv",
+          "history_sha256": "f6e8fe68a5c7b5947d414da95e313872e9106144b906f6305276eebd6a1af0c9"
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "max_front_material_phase_K": 1074.8802852528322,
+          "max_front_time_s": 146.75,
+          "body_front_at_peak_K": 1074.8126017171282,
+          "bulk_at_front_peak_K": 1074.1354597927982,
+          "skin_and_post_rise_at_peak_K": 0.06768353570402716,
+          "max_bulk_K": 1074.2180914239973,
+          "max_material_plus_decay_flux_W_m2": 2058.2176617626315,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k100-B1-ordinary_midyear.csv",
+          "history_sha256": "872c9099ead106084b8af0deebe4dcd126e7dd17f66f9f9e22859af097a159d5"
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1313.5472128393083,
+          "max_front_time_s": 124.75,
+          "body_front_at_peak_K": 1299.2462798729618,
+          "bulk_at_front_peak_K": 1153.683313951895,
+          "skin_and_post_rise_at_peak_K": 14.300932966346418,
+          "max_bulk_K": 1176.6659693608237,
+          "max_material_plus_decay_flux_W_m2": 529155.7034659113,
+          "duration_above_K_s": {
+            "1200": 269.75,
+            "1250": 115.0,
+            "1300": 27.75,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k100-B2-warmest_background.csv",
+          "history_sha256": "fdbc148579c83667f1bda8b7905308895124cd6ae5e04cf87271243c60a20051"
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1361.451514006833,
+          "max_front_time_s": 87.0,
+          "body_front_at_peak_K": 1334.8339221689685,
+          "bulk_at_front_peak_K": 1100.9311066060284,
+          "skin_and_post_rise_at_peak_K": 26.617591837864502,
+          "max_bulk_K": 1136.5455743279347,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 155.75,
+            "1250": 96.0,
+            "1300": 57.75,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k100-C13-warmest_background.csv",
+          "history_sha256": "03a0aca9ad437ce3d2c8ca2313685a613deaf02887179926eef40d49b25c1ec3"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "max_front_material_phase_K": 1377.1658355026652,
+          "max_front_time_s": 87.0,
+          "body_front_at_peak_K": 1350.5482436648008,
+          "bulk_at_front_peak_K": 1116.6454281018605,
+          "skin_and_post_rise_at_peak_K": 26.617591837864502,
+          "max_bulk_K": 1152.2598958237668,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 187.25,
+            "1250": 110.5,
+            "1300": 67.5,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k100-C13-event_1.csv",
+          "history_sha256": "52adc9930d243b5e7e0c26636d93f96950cb125aef40eec08dcef9a536618633"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "max_front_material_phase_K": 1345.7371925111993,
+          "max_front_time_s": 87.0,
+          "body_front_at_peak_K": 1319.1196006733348,
+          "bulk_at_front_peak_K": 1085.2167851103945,
+          "skin_and_post_rise_at_peak_K": 26.617591837864502,
+          "max_bulk_K": 1120.8312528323008,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 132.75,
+            "1250": 81.5,
+            "1300": 47.5,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k100-C13-event_3.csv",
+          "history_sha256": "e024b1a3c78a1a2690a55a6277d08e0baed72da067f99dd68d7d0d72bc961009"
+        }
+      ]
+    },
+    {
+      "bulk_effective_k_W_m_K": 200.0,
+      "isothermal_limit": false,
+      "through_depth_conductance_W_m2_K": 1142.857142857143,
+      "nonuniform_fundamental_decay_s": 55.85330248283869,
+      "new_initial_bulk_offset_K": 1021.3555716531168,
+      "maximum_sampled_whole_schedule_bulk_K": 1189.6895685882164,
+      "maximum_material_front_over_profiles_K": 1293.4253072401837,
+      "controlling_profile": "C13/event_1",
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1250.5058760251327,
+          "max_front_time_s": 136.25,
+          "body_front_at_peak_K": 1240.1597841429004,
+          "bulk_at_front_peak_K": 1173.775055321714,
+          "skin_and_post_rise_at_peak_K": 10.346091882232244,
+          "max_bulk_K": 1189.6899601622144,
+          "max_material_plus_decay_flux_W_m2": 395058.0109840957,
+          "duration_above_K_s": {
+            "1200": 179.75,
+            "1250": 1.5,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k200-A-warmest_background.csv",
+          "history_sha256": "54c1655d46a134f22602823cc3265daa5a380b902575e33ee755b301905ff9bf"
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.6510498118876,
+          "max_front_time_s": 144.75,
+          "body_front_at_peak_K": 1189.5804040363848,
+          "bulk_at_front_peak_K": 1189.1581914482904,
+          "skin_and_post_rise_at_peak_K": 0.07064577550273035,
+          "max_bulk_K": 1189.2457154268502,
+          "max_material_plus_decay_flux_W_m2": 2058.2424657386123,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k200-B1-warmest_background.csv",
+          "history_sha256": "f164d6119ded286fa35de6cf799f995972a0e31c43bda70edf4792738b65f1cd"
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "max_front_material_phase_K": 1074.572445565116,
+          "max_front_time_s": 144.75,
+          "body_front_at_peak_K": 1074.5018008106383,
+          "bulk_at_front_peak_K": 1074.0795955076276,
+          "skin_and_post_rise_at_peak_K": 0.07064475447770352,
+          "max_bulk_K": 1074.1671145663715,
+          "max_material_plus_decay_flux_W_m2": 2058.2176617626315,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k200-B1-ordinary_midyear.csv",
+          "history_sha256": "0d360fc0ff8f4bbec4f6ea5cf9e4b78c6912d6fa67ee46ab5a1dccfbb1a59162"
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1256.4948997745214,
+          "max_front_time_s": 124.75,
+          "body_front_at_peak_K": 1242.193966808175,
+          "bulk_at_front_peak_K": 1153.6323370942691,
+          "skin_and_post_rise_at_peak_K": 14.300932966346418,
+          "max_bulk_K": 1176.6149925031982,
+          "max_material_plus_decay_flux_W_m2": 529155.7034659113,
+          "duration_above_K_s": {
+            "1200": 142.5,
+            "1250": 19.25,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k200-B2-warmest_background.csv",
+          "history_sha256": "0ee3bedd8bcb211140db6885d9a85241a94260cb12a0aea408407ec8b1d0e993"
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1277.7109857443515,
+          "max_front_time_s": 85.25,
+          "body_front_at_peak_K": 1249.8252105244187,
+          "bulk_at_front_peak_K": 1099.0794422908646,
+          "skin_and_post_rise_at_peak_K": 27.885775219932928,
+          "max_bulk_K": 1136.494597470309,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 88.25,
+            "1250": 41.5,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k200-C13-warmest_background.csv",
+          "history_sha256": "56fea9db859648c7edb47a00f75a13597c69fad0ce97a468a55d336b62ca378c"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "max_front_material_phase_K": 1293.4253072401837,
+          "max_front_time_s": 85.25,
+          "body_front_at_peak_K": 1265.5395320202508,
+          "bulk_at_front_peak_K": 1114.7937637866967,
+          "skin_and_post_rise_at_peak_K": 27.885775219932928,
+          "max_bulk_K": 1152.208918966141,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 108.25,
+            "1250": 55.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k200-C13-event_1.csv",
+          "history_sha256": "b29c05418e0b15977f402eb386ad819124e54582de306230d37e2d28fdb2ca0c"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "max_front_material_phase_K": 1261.9966642487177,
+          "max_front_time_s": 85.25,
+          "body_front_at_peak_K": 1234.1108890287849,
+          "bulk_at_front_peak_K": 1083.3651207952307,
+          "skin_and_post_rise_at_peak_K": 27.885775219932928,
+          "max_bulk_K": 1120.7802759746753,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 70.75,
+            "1250": 30.75,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k200-C13-event_3.csv",
+          "history_sha256": "0769e62854f5e5d557302035d8d94c9e0e3e80fb52ff2c2f5fd75c6f1fc70e4b"
+        }
+      ]
+    },
+    {
+      "bulk_effective_k_W_m_K": 500.0,
+      "isothermal_limit": false,
+      "through_depth_conductance_W_m2_K": 2857.1428571428573,
+      "nonuniform_fundamental_decay_s": 22.341320993135476,
+      "new_initial_bulk_offset_K": 1021.3249855385415,
+      "maximum_sampled_whole_schedule_bulk_K": 1189.6589824736411,
+      "maximum_material_front_over_profiles_K": 1219.7359693940773,
+      "controlling_profile": "C13/event_1",
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1214.12109047659,
+          "max_front_time_s": 136.25,
+          "body_front_at_peak_K": 1203.7749985943578,
+          "bulk_at_front_peak_K": 1173.7444692071388,
+          "skin_and_post_rise_at_peak_K": 10.346091882232244,
+          "max_bulk_K": 1189.659374047639,
+          "max_material_plus_decay_flux_W_m2": 395058.0109840957,
+          "duration_above_K_s": {
+            "1200": 73.5,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k500-A-warmest_background.csv",
+          "history_sha256": "aaee56fdc85327d76c3c3082a229f325c807bd0ddb26c16ba7e567ca66d35075"
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.4045946249762,
+          "max_front_time_s": 144.5,
+          "body_front_at_peak_K": 1189.3334775048254,
+          "bulk_at_front_peak_K": 1189.1269760522423,
+          "skin_and_post_rise_at_peak_K": 0.07111712015071134,
+          "max_bulk_K": 1189.2151293122747,
+          "max_material_plus_decay_flux_W_m2": 2058.2424657386123,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k500-B1-warmest_background.csv",
+          "history_sha256": "a7f3f926286788468267826e3488a4925ea07273538e7b9013b83d42201f7132"
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "max_front_material_phase_K": 1074.3259947853112,
+          "max_front_time_s": 144.5,
+          "body_front_at_peak_K": 1074.2548786862878,
+          "bulk_at_front_peak_K": 1074.0483801213422,
+          "skin_and_post_rise_at_peak_K": 0.07111609902334223,
+          "max_bulk_K": 1074.1365284517963,
+          "max_material_plus_decay_flux_W_m2": 2058.2176617626315,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k500-B1-ordinary_midyear.csv",
+          "history_sha256": "1d221202adfe588d2306521c3bd0d5a104ceea100807e0d4f422146008a17d1e"
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1208.1576805305888,
+          "max_front_time_s": 124.75,
+          "body_front_at_peak_K": 1193.8567475642424,
+          "bulk_at_front_peak_K": 1153.6017509796939,
+          "skin_and_post_rise_at_peak_K": 14.300932966346418,
+          "max_bulk_K": 1176.5844063886227,
+          "max_material_plus_decay_flux_W_m2": 529155.7034659113,
+          "duration_above_K_s": {
+            "1200": 29.75,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k500-B2-warmest_background.csv",
+          "history_sha256": "54b3c4e46efc2ca72b1ecca73afbe4bedb05d64b0319403695db5c287c36eef6"
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1204.0216478982454,
+          "max_front_time_s": 83.5,
+          "body_front_at_peak_K": 1175.0005509860955,
+          "bulk_at_front_peak_K": 1097.1763500440352,
+          "skin_and_post_rise_at_peak_K": 29.021096912149996,
+          "max_bulk_K": 1136.4640113557336,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 15.75,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k500-C13-warmest_background.csv",
+          "history_sha256": "ad517be115e465db53fedb85d0aa78f702070b4b301eca104f20a65611a5d550"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "max_front_material_phase_K": 1219.7359693940773,
+          "max_front_time_s": 83.5,
+          "body_front_at_peak_K": 1190.7148724819274,
+          "bulk_at_front_peak_K": 1112.890671539867,
+          "skin_and_post_rise_at_peak_K": 29.021096912149996,
+          "max_bulk_K": 1152.1783328515658,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 42.25,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k500-C13-event_1.csv",
+          "history_sha256": "efdc9f091317873575571704862e65919c7ad4d230d3bb95f6fee7c254700609"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "max_front_material_phase_K": 1188.3073264026118,
+          "max_front_time_s": 83.5,
+          "body_front_at_peak_K": 1159.286229490462,
+          "bulk_at_front_peak_K": 1081.4620285484016,
+          "skin_and_post_rise_at_peak_K": 29.021096912149996,
+          "max_bulk_K": 1120.7496898600998,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k500-C13-event_3.csv",
+          "history_sha256": "1a1ed8872a78a5bba6a57084eaa1c543b83cbd54b85e39155a95f2ac3d0a828c"
+        }
+      ]
+    },
+    {
+      "bulk_effective_k_W_m_K": 1000.0,
+      "isothermal_limit": false,
+      "through_depth_conductance_W_m2_K": 5714.285714285715,
+      "nonuniform_fundamental_decay_s": 11.170660496567738,
+      "new_initial_bulk_offset_K": 1021.3147901670163,
+      "maximum_sampled_whole_schedule_bulk_K": 1189.6487871021159,
+      "maximum_material_front_over_profiles_K": 1198.8927980725243,
+      "controlling_profile": "A/warmest_background",
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1198.8927980725243,
+          "max_front_time_s": 136.25,
+          "body_front_at_peak_K": 1188.546706190292,
+          "bulk_at_front_peak_K": 1173.7342738356135,
+          "skin_and_post_rise_at_peak_K": 10.346091882232244,
+          "max_bulk_K": 1189.649178676114,
+          "max_material_plus_decay_flux_W_m2": 395058.0109840957,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k1000-A-warmest_background.csv",
+          "history_sha256": "bfe4e380565e6e07419051b2c2d0b42290b12becdabd6b8bdcf8d62148b3b6a6"
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.296562653969,
+          "max_front_time_s": 144.5,
+          "body_front_at_peak_K": 1189.2254455338182,
+          "bulk_at_front_peak_K": 1189.116780680717,
+          "skin_and_post_rise_at_peak_K": 0.07111712015071134,
+          "max_bulk_K": 1189.2049339407497,
+          "max_material_plus_decay_flux_W_m2": 2058.2424657386123,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k1000-B1-warmest_background.csv",
+          "history_sha256": "54d09468e5a8cefe89e1d6387383b983f305cad4826d79dec1f48f51c7d4e0f2"
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "max_front_material_phase_K": 1074.2179642624328,
+          "max_front_time_s": 144.5,
+          "body_front_at_peak_K": 1074.1468481634095,
+          "bulk_at_front_peak_K": 1074.0381847498172,
+          "skin_and_post_rise_at_peak_K": 0.07111609902334223,
+          "max_bulk_K": 1074.126333080271,
+          "max_material_plus_decay_flux_W_m2": 2058.2176617626315,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k1000-B1-ordinary_midyear.csv",
+          "history_sha256": "2e2baeec570201f7543e08d37b1f17d755ef35408a1eb1456c71b77e268b7183"
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1188.0269560998036,
+          "max_front_time_s": 124.75,
+          "body_front_at_peak_K": 1173.7260231334571,
+          "bulk_at_front_peak_K": 1153.5915556081686,
+          "skin_and_post_rise_at_peak_K": 14.300932966346418,
+          "max_bulk_K": 1176.5742110170977,
+          "max_material_plus_decay_flux_W_m2": 529155.7034659113,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k1000-B2-warmest_background.csv",
+          "history_sha256": "fe65973d651db22541a0760aa29603d2145e01042716c1d91956f5d7284aaa64"
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1168.6821445387582,
+          "max_front_time_s": 81.75,
+          "body_front_at_peak_K": 1138.446706503641,
+          "bulk_at_front_peak_K": 1095.2169379084187,
+          "skin_and_post_rise_at_peak_K": 30.23543803511721,
+          "max_bulk_K": 1136.4538159842084,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k1000-C13-warmest_background.csv",
+          "history_sha256": "ff794639c0526e66d8dc46ba5b40798f7ef41d767a64a7665a4e7c4832b37a07"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "max_front_material_phase_K": 1184.3964660345905,
+          "max_front_time_s": 81.75,
+          "body_front_at_peak_K": 1154.1610279994734,
+          "bulk_at_front_peak_K": 1110.9312594042508,
+          "skin_and_post_rise_at_peak_K": 30.23543803511721,
+          "max_bulk_K": 1152.1681374800405,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k1000-C13-event_1.csv",
+          "history_sha256": "d142f0b8d99e703da46ff143248a19004adc812cc660e852a08dd5e7249c81d2"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "max_front_material_phase_K": 1152.967823043124,
+          "max_front_time_s": 81.75,
+          "body_front_at_peak_K": 1122.732385008007,
+          "bulk_at_front_peak_K": 1079.5026164127846,
+          "skin_and_post_rise_at_peak_K": 30.23543803511721,
+          "max_bulk_K": 1120.7394944885748,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k1000-C13-event_3.csv",
+          "history_sha256": "c665fa1854ec5177c6aacc0483dbb208a2907dd545250d03f44ddc27468050cc"
+        }
+      ]
+    },
+    {
+      "bulk_effective_k_W_m_K": 5000.0,
+      "isothermal_limit": false,
+      "through_depth_conductance_W_m2_K": 28571.428571428572,
+      "nonuniform_fundamental_decay_s": 2.234132099313548,
+      "new_initial_bulk_offset_K": 1021.3066338697962,
+      "maximum_sampled_whole_schedule_bulk_K": 1189.6406308048959,
+      "maximum_material_front_over_profiles_K": 1189.6486410764908,
+      "controlling_profile": "A/warmest_background",
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.6486410764908,
+          "max_front_time_s": 981.75,
+          "body_front_at_peak_K": 1189.6426922990288,
+          "bulk_at_front_peak_K": 1189.64032796944,
+          "skin_and_post_rise_at_peak_K": 0.005948777461887642,
+          "max_bulk_K": 1189.6410223788937,
+          "max_material_plus_decay_flux_W_m2": 395058.0109840957,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k5000-A-warmest_background.csv",
+          "history_sha256": "2833c45d7e0e28db2731824f1d6d4fdceb0764cc7c625f1a486b386cb1a86bf0"
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.2076754764112,
+          "max_front_time_s": 223.75,
+          "body_front_at_peak_K": 1189.1947602388057,
+          "bulk_at_front_peak_K": 1189.190359538135,
+          "skin_and_post_rise_at_peak_K": 0.012915237605587396,
+          "max_bulk_K": 1189.1967776435295,
+          "max_material_plus_decay_flux_W_m2": 2058.2424657386123,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k5000-B1-warmest_background.csv",
+          "history_sha256": "60dee9d59d46085c123d9fe243b198b9cf2309bdaddcf772bf134a726209a042"
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "max_front_material_phase_K": 1074.1290752311043,
+          "max_front_time_s": 223.75,
+          "body_front_at_peak_K": 1074.11616098294,
+          "bulk_at_front_peak_K": 1074.1117605605755,
+          "skin_and_post_rise_at_peak_K": 0.012914248164163603,
+          "max_bulk_K": 1074.118176783051,
+          "max_material_plus_decay_flux_W_m2": 2058.2176617626315,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k5000-B1-ordinary_midyear.csv",
+          "history_sha256": "45e8a7ed4bd6887a499fa25b75284072842c9dbf2591263df15526ecbbaab3e6"
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1176.573057020034,
+          "max_front_time_s": 1526.0,
+          "body_front_at_peak_K": 1176.568022952998,
+          "bulk_at_front_peak_K": 1176.5659258005353,
+          "skin_and_post_rise_at_peak_K": 0.005034067035820753,
+          "max_bulk_K": 1176.5660547198775,
+          "max_material_plus_decay_flux_W_m2": 529155.7034659113,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k5000-B2-warmest_background.csv",
+          "history_sha256": "3cc42e38c4c2c9a3cc74fd16637b29dd2afb7b3d10229a75d829cac44298bc71"
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1139.1419939298466,
+          "max_front_time_s": 102.5,
+          "body_front_at_peak_K": 1119.4772952086817,
+          "bulk_at_front_peak_K": 1113.8470314516928,
+          "skin_and_post_rise_at_peak_K": 19.66469872116511,
+          "max_bulk_K": 1136.4456596869884,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k5000-C13-warmest_background.csv",
+          "history_sha256": "ed038eabfbb940e6d49afe0d24286fa5ddeb1f0bce450a02952426ac6bb46a7c"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "max_front_material_phase_K": 1154.8563154256785,
+          "max_front_time_s": 102.5,
+          "body_front_at_peak_K": 1135.1916167045135,
+          "bulk_at_front_peak_K": 1129.5613529475247,
+          "skin_and_post_rise_at_peak_K": 19.66469872116511,
+          "max_bulk_K": 1152.1599811828205,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k5000-C13-event_1.csv",
+          "history_sha256": "df20aba1b073d6e98dd29f26a791bcfc752652e9e6b4323620b4c560ea395ab0"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "max_front_material_phase_K": 1123.4276724342126,
+          "max_front_time_s": 102.5,
+          "body_front_at_peak_K": 1103.7629737130476,
+          "bulk_at_front_peak_K": 1098.1327099560588,
+          "skin_and_post_rise_at_peak_K": 19.66469872116511,
+          "max_bulk_K": 1120.7313381913546,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/k5000-C13-event_3.csv",
+          "history_sha256": "a2c71751a62a1390342c0920117dc85aef479ce7b5888ee4346a4ec1af129334"
+        }
+      ]
+    },
+    {
+      "bulk_effective_k_W_m_K": null,
+      "isothermal_limit": true,
+      "through_depth_conductance_W_m2_K": null,
+      "nonuniform_fundamental_decay_s": 0.0,
+      "new_initial_bulk_offset_K": 1021.3045947954912,
+      "maximum_sampled_whole_schedule_bulk_K": 1189.6385917305906,
+      "maximum_material_front_over_profiles_K": 1189.644237672597,
+      "controlling_profile": "A/warmest_background",
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.644237672597,
+          "max_front_time_s": 981.75,
+          "body_front_at_peak_K": 1189.638288895135,
+          "bulk_at_front_peak_K": 1189.638288895135,
+          "skin_and_post_rise_at_peak_K": 0.005948777461887642,
+          "max_bulk_K": 1189.6389833045887,
+          "max_material_plus_decay_flux_W_m2": 395058.0109840957,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/kinf-A-warmest_background.csv",
+          "history_sha256": "fb0670ac1b9f1e8624f4399e63849eed92408d66eae3f381a63b63d68f6d09dd"
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1189.2016023412198,
+          "max_front_time_s": 236.75,
+          "body_front_at_peak_K": 1189.1915599180875,
+          "bulk_at_front_peak_K": 1189.1915599180875,
+          "skin_and_post_rise_at_peak_K": 0.010042423132341344,
+          "max_bulk_K": 1189.1947385692245,
+          "max_material_plus_decay_flux_W_m2": 2058.2424657386123,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/kinf-B1-warmest_background.csv",
+          "history_sha256": "ebfb32142d122aaea561b57f502279c338b8f534c6ecfe4d95da607da2603559"
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "max_front_material_phase_K": 1074.1230018885815,
+          "max_front_time_s": 236.75,
+          "body_front_at_peak_K": 1074.1129604498342,
+          "bulk_at_front_peak_K": 1074.1129604498342,
+          "skin_and_post_rise_at_peak_K": 0.010041438747200456,
+          "max_bulk_K": 1074.116137708746,
+          "max_material_plus_decay_flux_W_m2": 2058.2176617626315,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/kinf-B1-ordinary_midyear.csv",
+          "history_sha256": "843ecd0f072af6260f6d28ef52b58a522dae8fb51590853b7d1a98e2dec01144"
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1176.5689272860395,
+          "max_front_time_s": 1533.75,
+          "body_front_at_peak_K": 1176.5639386234163,
+          "bulk_at_front_peak_K": 1176.5639386234163,
+          "skin_and_post_rise_at_peak_K": 0.004988662623294117,
+          "max_bulk_K": 1176.5640156455725,
+          "max_material_plus_decay_flux_W_m2": 529155.7034659113,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/kinf-B2-warmest_background.csv",
+          "history_sha256": "0598f1cca69987e7a9a3ef1d9462026fcc999eac893d3896c5781c5c00f020b8"
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "max_front_material_phase_K": 1136.448836414552,
+          "max_front_time_s": 915.0,
+          "body_front_at_peak_K": 1136.4432129315446,
+          "bulk_at_front_peak_K": 1136.4432129315446,
+          "skin_and_post_rise_at_peak_K": 0.005623483007465504,
+          "max_bulk_K": 1136.4436206126834,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/kinf-C13-warmest_background.csv",
+          "history_sha256": "cafa74d9224774b00bc9c379b85328ae52c31b0c88881d7179ba424576f3a30f"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "max_front_material_phase_K": 1152.163157910384,
+          "max_front_time_s": 915.0,
+          "body_front_at_peak_K": 1152.1575344273765,
+          "bulk_at_front_peak_K": 1152.1575344273765,
+          "skin_and_post_rise_at_peak_K": 0.005623483007465504,
+          "max_bulk_K": 1152.1579421085155,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/kinf-C13-event_1.csv",
+          "history_sha256": "d6aef2db4c97d42b0844ab32fd326bc847c48568870cb66556c3e694767d4089"
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "max_front_material_phase_K": 1120.7345149189177,
+          "max_front_time_s": 915.0,
+          "body_front_at_peak_K": 1120.7288914359103,
+          "bulk_at_front_peak_K": 1120.7288914359103,
+          "skin_and_post_rise_at_peak_K": 0.005623483007465504,
+          "max_bulk_K": 1120.7292991170498,
+          "max_material_plus_decay_flux_W_m2": 881150.7852335251,
+          "duration_above_K_s": {
+            "1200": 0.0,
+            "1250": 0.0,
+            "1300": 0.0,
+            "1400": 0.0,
+            "1500": 0.0
+          },
+          "scope": "Material/decay andresolvedprompttail; microsecondprompt interval is separate.",
+          "history_file": "/home/tkwa/src/protium-fusion/output/catcher-followup/heat-spreading/kinf-C13-event_3.csv",
+          "history_sha256": "51c7e7cd912099adefb8f37a7e3fcadd8f7c0cb43a45e5deddc27c8ad8b92126"
+        }
+      ]
+    }
+  ],
+  "chosen_screens": [
+    {
+      "chosen_screen_K": 1200.0,
+      "finite_bulk_k_solution": true,
+      "required_effective_k_W_m_K": 933.6436869130292,
+      "through_depth_conductance_W_m2_K": 5335.106782360167,
+      "controlling_profile": "A/warmest_background",
+      "front_K": 1199.9999999961503,
+      "fundamental_decay_s": 11.964586333253179,
+      "status": "Chosencomparison,notfailuretemperature;allotherparametersfixed."
+    },
+    {
+      "chosen_screen_K": 1250.0,
+      "finite_bulk_k_solution": true,
+      "required_effective_k_W_m_K": 325.1429830942963,
+      "through_depth_conductance_W_m2_K": 1857.9599033959792,
+      "controlling_profile": "C13/event_1",
+      "front_K": 1250.0,
+      "fundamental_decay_s": 34.35614814829967,
+      "status": "Chosencomparison,notfailuretemperature;allotherparametersfixed."
+    }
+  ],
+  "infinite_bulk_skin_resistance_screens": [
+    {
+      "chosen_screen_K": 1200.0,
+      "maximum_total_resistance_m2_K_W": 0.00010389307932899762,
+      "actual_total_resistance_m2_K_W": 4.15e-05,
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00010389307932899762,
+          "controlling_time_s": 135.0,
+          "bulk_K": 1173.2230263900074,
+          "flux_W_m2": 257735.87406335457
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.005320261960106554,
+          "controlling_time_s": 124.5,
+          "bulk_K": 1189.049610904855,
+          "flux_W_m2": 2058.2424657386123
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.06123209735450619,
+          "controlling_time_s": 124.5,
+          "bulk_K": 1073.9710157581865,
+          "flux_W_m2": 2058.2176617626315
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.0001326029526976507,
+          "controlling_time_s": 123.75,
+          "bulk_K": 1153.028876263599,
+          "flux_W_m2": 354223.81463480974
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00013554570043373783,
+          "controlling_time_s": 74.5,
+          "bulk_K": 1086.3946925778807,
+          "flux_W_m2": 838132.8736993453
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00011679649969367841,
+          "controlling_time_s": 74.5,
+          "bulk_K": 1102.1090140737126,
+          "flux_W_m2": 838132.8736993453
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00015349626938520556,
+          "controlling_time_s": 70.5,
+          "bulk_K": 1065.44107746287,
+          "flux_W_m2": 876626.663801506
+        }
+      ]
+    },
+    {
+      "chosen_screen_K": 1250.0,
+      "maximum_total_resistance_m2_K_W": 0.00017468129349569613,
+      "actual_total_resistance_m2_K_W": 4.15e-05,
+      "profiles": [
+        {
+          "stage": "A",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00023490572930744616,
+          "controlling_time_s": 100.25,
+          "bulk_K": 1157.198609811032,
+          "flux_W_m2": 395058.0109840957
+        },
+        {
+          "stage": "B1",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.029612832360483173,
+          "controlling_time_s": 124.5,
+          "bulk_K": 1189.049610904855,
+          "flux_W_m2": 2058.2424657386123
+        },
+        {
+          "stage": "B1",
+          "selection": "ordinary_midyear",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.08552496050931005,
+          "controlling_time_s": 124.5,
+          "bulk_K": 1073.9710157581865,
+          "flux_W_m2": 2058.2176617626315
+        },
+        {
+          "stage": "B2",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00023205764707530602,
+          "controlling_time_s": 82.5,
+          "bulk_K": 1127.2053725172223,
+          "flux_W_m2": 529155.7034659113
+        },
+        {
+          "stage": "C13",
+          "selection": "warmest_background",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00019260719302022884,
+          "controlling_time_s": 70.5,
+          "bulk_K": 1081.155398958504,
+          "flux_W_m2": 876626.663801506
+        },
+        {
+          "stage": "C13",
+          "selection": "event_1",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00017468129349569613,
+          "controlling_time_s": 70.5,
+          "bulk_K": 1096.8697204543362,
+          "flux_W_m2": 876626.663801506
+        },
+        {
+          "stage": "C13",
+          "selection": "event_3",
+          "maximum_total_skin_post_resistance_m2_K_W": 0.00021053309254453565,
+          "controlling_time_s": 70.5,
+          "bulk_K": 1065.44107746287,
+          "flux_W_m2": 876626.663801506
+        }
+      ]
+    }
+  ],
+  "spreader_energy_flux_requirements": [
+    {
+      "stage": "A",
+      "material_plus_delayed_peak_W_m2": 395058.0107222206,
+      "total_prompt_plus_material_plus_delayed_fluence_J_m2": 32950325.99215933,
+      "constant_cycle_mean_contribution_W_m2": 40.63882844791857,
+      "evaporation_mass_flux_kg_m2_s_for_latent_Jkg": {
+        "1000000.0": 0.3950580107222206,
+        "4000000.0": 0.09876450268055514,
+        "20000000.0": 0.01975290053611103
+      },
+      "phase_moved_kg_m2_if_all_stageheat_transported_for_latent_Jkg": {
+        "1000000.0": 32.95032599215933,
+        "4000000.0": 8.237581498039832,
+        "20000000.0": 1.6475162996079664
+      },
+      "scope": "Latentheatsaredeclaredenergy-scale sensitivities,notassignedNa/Liproperties. A distributedspreader needtransport onlythenonuniformpart; thesearefullincomingheatrequirements."
+    },
+    {
+      "stage": "B1",
+      "material_plus_delayed_peak_W_m2": 2058.2176088397655,
+      "total_prompt_plus_material_plus_delayed_fluence_J_m2": 188228.1045020017,
+      "constant_cycle_mean_contribution_W_m2": 24.450928808406328,
+      "evaporation_mass_flux_kg_m2_s_for_latent_Jkg": {
+        "1000000.0": 0.0020582176088397657,
+        "4000000.0": 0.0005145544022099414,
+        "20000000.0": 0.00010291088044198828
+      },
+      "phase_moved_kg_m2_if_all_stageheat_transported_for_latent_Jkg": {
+        "1000000.0": 0.1882281045020017,
+        "4000000.0": 0.047057026125500424,
+        "20000000.0": 0.009411405225100084
+      },
+      "scope": "Latentheatsaredeclaredenergy-scale sensitivities,notassignedNa/Liproperties. A distributedspreader needtransport onlythenonuniformpart; thesearefullincomingheatrequirements."
+    },
+    {
+      "stage": "B2",
+      "material_plus_delayed_peak_W_m2": 529155.7030183222,
+      "total_prompt_plus_material_plus_delayed_fluence_J_m2": 45924097.48233959,
+      "constant_cycle_mean_contribution_W_m2": 46.46984004853936,
+      "evaporation_mass_flux_kg_m2_s_for_latent_Jkg": {
+        "1000000.0": 0.5291557030183223,
+        "4000000.0": 0.13228892575458057,
+        "20000000.0": 0.02645778515091611
+      },
+      "phase_moved_kg_m2_if_all_stageheat_transported_for_latent_Jkg": {
+        "1000000.0": 45.92409748233959,
+        "4000000.0": 11.481024370584898,
+        "20000000.0": 2.2962048741169796
+      },
+      "scope": "Latentheatsaredeclaredenergy-scale sensitivities,notassignedNa/Liproperties. A distributedspreader needtransport onlythenonuniformpart; thesearefullincomingheatrequirements."
+    },
+    {
+      "stage": "C13",
+      "material_plus_delayed_peak_W_m2": 881150.784976221,
+      "total_prompt_plus_material_plus_delayed_fluence_J_m2": 55577164.74882907,
+      "constant_cycle_mean_contribution_W_m2": 4.95893441082541,
+      "evaporation_mass_flux_kg_m2_s_for_latent_Jkg": {
+        "1000000.0": 0.881150784976221,
+        "4000000.0": 0.22028769624405525,
+        "20000000.0": 0.044057539248811055
+      },
+      "phase_moved_kg_m2_if_all_stageheat_transported_for_latent_Jkg": {
+        "1000000.0": 55.57716474882907,
+        "4000000.0": 13.894291187207267,
+        "20000000.0": 2.778858237441453
+      },
+      "scope": "Latentheatsaredeclaredenergy-scale sensitivities,notassignedNa/Liproperties. A distributedspreader needtransport onlythenonuniformpart; thesearefullincomingheatrequirements."
+    }
+  ],
+  "checks": [
+    {
+      "name": "reference_A/warmest_background",
+      "max_body_temperature_replay_abs_K": 0.0
+    },
+    {
+      "name": "reference_B1/warmest_background",
+      "max_body_temperature_replay_abs_K": 0.0
+    },
+    {
+      "name": "reference_B1/ordinary_midyear",
+      "max_body_temperature_replay_abs_K": 0.0
+    },
+    {
+      "name": "reference_B2/warmest_background",
+      "max_body_temperature_replay_abs_K": 0.0
+    },
+    {
+      "name": "reference_C13/warmest_background",
+      "max_body_temperature_replay_abs_K": 0.0
+    },
+    {
+      "name": "reference_C13/event_1",
+      "max_body_temperature_replay_abs_K": 0.0
+    },
+    {
+      "name": "reference_C13/event_3",
+      "max_body_temperature_replay_abs_K": 0.0
+    },
+    {
+      "name": "monotonic_k_curve",
+      "passed": true
+    }
+  ],
+  "checks_passed": 8,
+  "limits": [
+    "Effectivek is a bulkresponse requirement,notatensorpropertyclaimforordinaryirradiatedgraphite.",
+    "Uniformstoredenergy,meanheatpickupandmassremainfixed; a heatpipeorphase-change networkmustfititsownmassandworking-fluidinventoryintotheplant.",
+    "Fixed150umskinandpostsretain theirseriesresistance; increasingonlybulkconductivitycannotremoveit.",
+    "Microsecondprompt finite-depth absorption is not recomputed andnot includedin1200/1250material-phasecomparisons.",
+    "SevenactualrepresentativeprofilesincludeallC13eventsandthewarmestA/B1/B2;thisisnotanexhaustivefine-timeintegrationofall4228events.",
+    "The entireincomingheat isretainedforthis conservative thermalcomparison; no extraescapingradiationcredit.",
+    "Selectedconstantk/cp,contactresistance,irradiationdamage,capillary/sonic/boiling limitsandmechanicalcycling requirecomponentqualification."
+  ]
+}

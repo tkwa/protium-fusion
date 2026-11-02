@@ -1,0 +1,79 @@
+{
+  "scope": "Optional shared regional cold station; no replacement of the frozen local buffer or qualified pipe design is implied. Header molecular conductance is a comparison at transitional Knudsen number.",
+  "receiver_region_area_m2": 1000000.0,
+  "active_area_Hgetter_Hecryo_m2": [
+    62.48393143661026,
+    48.666935800053075
+  ],
+  "installed_He_two_bank_area_m2": 97.33387160010615,
+  "steady_active_5K_view_heat_W": 4415.354240239356,
+  "unphased_regional_two_bank_end_cooldown_5K_heat_W": 17807.0314588536,
+  "steady_active_refrigerator_electric_W_eta0p3": 573996.0512311163,
+  "unphased_regional_two_bank_peak_electric_W_eta0p3": 2314914.0896509686,
+  "mean_inactive_refrigerator_electric_W_eta0p3": 28362.762881217284,
+  "mean_full_electrical_warmup_W": 2636.1256891695416,
+  "hot_header": {
+    "temperature_K": 1000.0,
+    "chosen_total_pressure_Pa": 1.0,
+    "radius_m": 1.0,
+    "length_m": 500.0,
+    "molecular_transmission": 0.005333333333333333,
+    "mean_speed_H2_He_m_s": [
+      3241.00410753977,
+      2299.9366702496295
+    ],
+    "region_throughput_H2_He_Pa_m3_s": [
+      0.8754436869374577,
+      0.37690308561661423
+    ],
+    "region_total_throughput_Pa_m3_s": 1.2523467725540718,
+    "molecular_conductance_H2_He_m3_s": [
+      13.575886259335046,
+      9.633952195970675
+    ],
+    "mean_partial_pressure_drop_H2_He_Pa": [
+      0.06448519604644487,
+      0.039122374488660114
+    ],
+    "mean_total_pressure_drop_Pa": 0.10360757053510498,
+    "selected_collision_cross_section_m2": 1e-19,
+    "hard_sphere_mean_free_path_m": 0.09762662703384258,
+    "Kn_based_on_diameter": 0.04881331351692129,
+    "header_volume_per_receiver_area_m": 0.0015707963267948964,
+    "skin_mass_sensitivity": [
+      {
+        "wall_thickness_m": 0.001,
+        "skin_density_kg_m3": 2000.0,
+        "thin_wall_skin_mass_kg_per_receiver_m2": 0.006283185307179586,
+        "pressure_only_hoop_stress_Pa_at1Pa": 1000.0
+      },
+      {
+        "wall_thickness_m": 0.01,
+        "skin_density_kg_m3": 2000.0,
+        "thin_wall_skin_mass_kg_per_receiver_m2": 0.06283185307179587,
+        "pressure_only_hoop_stress_Pa_at1Pa": 100.0
+      },
+      {
+        "wall_thickness_m": 0.1,
+        "skin_density_kg_m3": 2000.0,
+        "thin_wall_skin_mass_kg_per_receiver_m2": 0.6283185307179587,
+        "pressure_only_hoop_stress_Pa_at1Pa": 10.0
+      }
+    ],
+    "bare_external_surface_area_per_receiver_m2": 0.003141592653589793,
+    "bare_1000K_to200K_radiation_W_per_receiver_m2": 177.85504207245356,
+    "scope": "The chosen1e-19m2 collision area is an order-of-magnitude diagnostic. A multicomponent transitional/viscous calculation must establish actual conductance and pressure loss. Skin masses exclude supports, joints, bends, shields, insulation and service access. The header must remain within a warm enclosure or receive charged insulation; its bare cold-view radiation is prohibitive."
+  },
+  "topology_requirements": [
+    "Retain the local0.5m3/m2,3.15kg/m2 warm buffer. A regional header transports gas to a shared cold station and does not replace that storage.",
+    "Warm headers end before the shielded/throttled cold interface. Retain the original1mm-radius terminal cold conduit equivalent, either distributed or as parallel channels at the station; no metre-radius open cold aperture is credited.",
+    "One regional refrigerator can serve physically subdivided alternating banks through shared headers. Staggering must exist within this connected apparatus. Numerical staggering between independent units does not reduce each units local peak rating.",
+    "The17.8kW unphased cold-load figure is at the end of the selected100s cooldown. It is a required regional peak, while actual refrigeration capacity and control must accommodate the full varying-temperature cycle.",
+    "The central0.3Carnot efficiency with subjective80%interval0.15-0.5 is conditional on a large industrial helium refrigeration cycle rejecting near200K. CERN industrial performance motivates the scale; no small standalone5K cooler efficiency is inferred."
+  ],
+  "source_sha256": {
+    "inputs.json": "6e3944cf851b1deb7a6ada6e1077ff083696dbdaa80b0076c48a0e8430da66b3",
+    "results.json": "06c4e14322d914e833eabb5fd2122402e85dd6557bf8c0b3415853e405d293c0"
+  },
+  "code_sha256": "fe62a2091f44e7a20649f3ab012a0cb6c652fe3adab26f820c4656b57dad41d4"
+}

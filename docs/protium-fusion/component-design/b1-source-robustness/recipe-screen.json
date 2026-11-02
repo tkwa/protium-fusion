@@ -1,0 +1,67 @@
+{
+  "scope": "Cold-feed stoichiometry and explicitly conditional phase/IR requirements.",
+  "H_per_N": 1.5,
+  "isotope": "15N/protium",
+  "per_catalyst_N_atom": {
+    "N2H4_molecules": 0.375,
+    "N2_molecules": 0.125,
+    "H_atoms": 1.5,
+    "N_atoms": 1.0
+  },
+  "payload_mass_fraction": {
+    "hydrazine": 0.7727272727272727,
+    "nitrogen": 0.22727272727272727
+  },
+  "alternative_NH3_N2_payload_mass_fraction": {
+    "ammonia": 0.5454545454545454,
+    "nitrogen": 0.45454545454545453
+  },
+  "cold_state_scope": "Selected physical candidates are a50K sealed heterogeneous solid composite or separately conditioned hydrazine/N2 populations. The computational FEOSrho1000,T250 reference is a homogenized contact surrogate, not a claim of condensedN2at250K. Actual mixture density, void fraction, molecularEOS, interface mixing and capsule stresses remain requirements.",
+  "bulk_density_target_kg_m3": 1000,
+  "density_example": {
+    "hydrazine_reference_kg_m3": 1062.5,
+    "nitrogen_reference_kg_m3": 1000,
+    "additive_volume_mixture_kg_m3": 1047.6190476190477,
+    "scope": "Illustrative density choices, not measured15N composite data. Cryocrystal experiments show comparable molar-volume scales under specified containment pressure."
+  },
+  "IR_reference": {
+    "radius_m": 1100000000.0,
+    "speed_m_s": 2400000.0,
+    "grain_radius_m": 0.01,
+    "density_kg_m3": 1000.0,
+    "cavity_K": 1000,
+    "Planck_absorptivity": 0.02182,
+    "flight_s": 458.3333333333333,
+    "absorbed_J_kg": 170125.40850604748,
+    "conditional_N2_heat_allowance_J_kg": 30000,
+    "max_absorptivity_for_allowance": 0.0038477497614751105,
+    "max_free_path_m_at_reference_absorptivity": 193974552.59498727,
+    "grain_radius_m_for_full_path": 0.05670846950201583,
+    "scope": "Reuse radiation-interface smoothAl absorptivity reference.30kJ/kg is a chosen small-temperature-change budget, not a measured loss-of-function point. Capsule pressure/headspace may permit greater warming, with geometry/scattering consequences."
+  },
+  "chemical_energy_scale": {
+    "hydrazine_formation_J_mol": 50370,
+    "decomposition_to_N2_H2_J_kg_mixture": 1144772.7272727273,
+    "comparison_contact_q_J_kg": 113862490149.77106,
+    "fraction_contact_heat": 1.0053993424585482e-05,
+    "scope": "Thermochemical scale for one product convention. Small energy fraction does not establish stability or prevent fragmentation during flight."
+  },
+  "sources": [
+    {
+      "title": "NASA hydrazine/ammonia property table",
+      "url": "https://ntrs.nasa.gov/api/citations/20120003055/downloads/20120003055.pdf",
+      "use": "Natural hydrazine melting274.63K, liquid density1.004g/mL at298K, heat of formation50.37kJ/mol."
+    },
+    {
+      "title": "NIST nitrogen phase change data",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&Mask=4",
+      "use": "Triplepoint63.14K, boiling77.34K, critical126.19K. CondensedN2requires a cryogenic or compressed-state design."
+    },
+    {
+      "title": "Konstantinov etal2005 nitrogen measurements",
+      "url": "https://nasplib.isofts.kiev.ua/bitstreams/6dfa3e52-8cf2-48d1-9002-389dd9cdc4cc/download",
+      "use": "Confined solid samples20Kto melting; molar volumes27.36\u201328.76cm3/mol. Not a zero-pressure15N density measurement."
+    }
+  ],
+  "code_sha256": "d191c114ffe01dc7288892ac826095e8602058adf81dc694061d058b91891826"
+}

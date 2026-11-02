@@ -1,0 +1,122 @@
+{
+  "scope": "Closed graphite processing/isotope-pool screen at an archived plant point.\n\nWhole chosen skin treatment costs are scenario inputs, not established process\nrequirements. Molecular processing does not require atomic vaporization.\n",
+  "reference_plant": {
+    "selected_cases": {
+      "A": "A-H3-fixed_energy-z64-k0p001-t1",
+      "B1": "B1-H2-fixed_energy-z64-k0p001-t1",
+      "B2": "B2-H2p5-fixed_energy-z64-k0p001-t1",
+      "C13": "C13-H4-fixed_energy-z64-k0p001-t1"
+    },
+    "helium_per_s": 4.473376366393096e+32,
+    "radius_m": 1100000000.0,
+    "net_W": 8.012464584547807e+20
+  },
+  "isotope_pool": {
+    "c12": {
+      "fuel_draw_nuclei_s": 4.894442878543457e+32,
+      "collected_return_nuclei_s": 4.8939101018182906e+32,
+      "fresh_supply_nuclei_s": 5.3277672516634415e+28,
+      "pool_balance_nuclei_s": 0.0,
+      "fuel_draw_kg_s": 9752896.330876285,
+      "collected_return_kg_s": 9751834.694997188,
+      "fresh_supply_kg_s": 1061.6358790967113
+    },
+    "c13": {
+      "fuel_draw_nuclei_s": 1.7905961725118694e+31,
+      "collected_return_nuclei_s": 1.7905385488288686e+31,
+      "fresh_supply_nuclei_s": 5.762368300076791e+26,
+      "pool_balance_nuclei_s": 0.0,
+      "fuel_draw_kg_s": 386635.88776463893,
+      "collected_return_kg_s": 386623.4453255366,
+      "fresh_supply_kg_s": 12.442439102288624
+    }
+  },
+  "skin_cases": [
+    {
+      "thickness_m": 5e-05,
+      "density_kg_m3": 2000.0,
+      "skin_mass_kg": 1.52053084433746e+18,
+      "annual_processing_kg_s": 48182714919.305016,
+      "wall_C13_mass_fraction_if_natural": 0.011584294079394467,
+      "wall_C13_inventory_kg_if_natural": 1.7614276457595108e+16,
+      "natural_C13_through_processing_kg_s": 558162739.1688565,
+      "scenarios": [
+        {
+          "electric_J_kg": 2000000.0,
+          "electric_W": 9.636542983861003e+16,
+          "electric_W_m2": 0.00633761756280579,
+          "fraction_reference_net": 0.00012026939878705066
+        },
+        {
+          "electric_J_kg": 20000000.0,
+          "electric_W": 9.636542983861004e+17,
+          "electric_W_m2": 0.0633761756280579,
+          "fraction_reference_net": 0.0012026939878705067
+        },
+        {
+          "electric_J_kg": 100000000.0,
+          "electric_W": 4.818271491930501e+18,
+          "electric_W_m2": 0.3168808781402895,
+          "fraction_reference_net": 0.006013469939352532
+        }
+      ]
+    },
+    {
+      "thickness_m": 0.0001,
+      "density_kg_m3": 2000.0,
+      "skin_mass_kg": 3.04106168867492e+18,
+      "annual_processing_kg_s": 96365429838.61003,
+      "wall_C13_mass_fraction_if_natural": 0.011584294079394467,
+      "wall_C13_inventory_kg_if_natural": 3.5228552915190216e+16,
+      "natural_C13_through_processing_kg_s": 1116325478.337713,
+      "scenarios": [
+        {
+          "electric_J_kg": 2000000.0,
+          "electric_W": 1.9273085967722006e+17,
+          "electric_W_m2": 0.01267523512561158,
+          "fraction_reference_net": 0.00024053879757410132
+        },
+        {
+          "electric_J_kg": 20000000.0,
+          "electric_W": 1.9273085967722007e+18,
+          "electric_W_m2": 0.1267523512561158,
+          "fraction_reference_net": 0.0024053879757410133
+        },
+        {
+          "electric_J_kg": 100000000.0,
+          "electric_W": 9.636542983861002e+18,
+          "electric_W_m2": 0.633761756280579,
+          "fraction_reference_net": 0.012026939878705064
+        }
+      ]
+    }
+  ],
+  "molecular_route_thermodynamics": {
+    "reaction": "C(graphite) + H2O(g) -> CO(g) + H2(g)",
+    "temperature_K": 1000.0,
+    "standard_pressure_Pa": 100000.0,
+    "deltaH_J_per_kg_C": 11312463.575056197,
+    "deltaG_J_per_kg_C": -639830.155690617,
+    "reverse_standard_deltaG_electric_J_kg_at50pct": 1279660.311381234,
+    "sources": [
+      "https://janaf.nist.gov/tables/C-093.html",
+      "https://janaf.nist.gov/tables/H-064.html"
+    ],
+    "scope": "Reaction inventory only. Gas activities, kinetics, pressure work, isotope separation and deposition hardware set the actual route. A closed cycle returns H/O reagents; no extra nuclear energy is created, and heat/work are counted once. The tabulated endothermic heat is not all an electrical minimum."
+  },
+  "checks": [
+    {
+      "name": "c12 reservoir isotope balance",
+      "passed": true
+    },
+    {
+      "name": "c13 reservoir isotope balance",
+      "passed": true
+    }
+  ],
+  "sources_sha256": {
+    "material-plant-003.json": "0900a58202ae218b546ee6fd36dcb449c00eb2fb07d39038bc267e652e1d18ce"
+  },
+  "code_sha256": "8dc327d0458a49b21299337b768ec083658c7d55b597c00a0ea83cc22b2fc78d",
+  "module_sha256": "845b6fceeead8ac69da4bb4310bbbfedeaf8b7c91356275d4eb510580511405e"
+}

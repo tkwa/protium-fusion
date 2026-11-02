@@ -1,0 +1,2715 @@
+{
+  "scope": "Directional thermal environment screen at5AU; direct sunlight fixed tozero.\nRun python environment.py --root /path/to/website [--output environment.json].\nNumPy required only for angular quadrature. No assumed actual Dyson radius/temperature.\n",
+  "constants": {
+    "sigma_W_m2_K4": 5.670374419e-08,
+    "AU_m": 149597870700.0,
+    "Lsun_W": 3.828e+26,
+    "distance_AU": 5,
+    "CMB_K": 2.725
+  },
+  "accepted_direct_solar_absorbed_W_m2": 0.0,
+  "epsilon_reference": 0.9,
+  "canonical_inputs_sha256": {
+    "docs/slop-requests/articles/solar-dyson-swarm.json": "9629e1734c561790ffb76a5fbf0016bcbf7a17f47821a65795134f3601635436",
+    "docs/slop-requests/briefs/solar-dyson-swarm.json": "91e9e4ae47d5ae1583ba27a9a69c713d287e78572778bb9ddcf2ab0e1ec5f981",
+    "docs/solar-dyson-swarm/engineering-notes.json": "0da7064dcb95dd140ce59372a9a5d1e427da33b86b95892ba9f35b279ddc42f4"
+  },
+  "code_sha256": "26ef93692c2594c2456278c44318531f61c3ed0cc0d75e96a7f51c6b3452e8e5",
+  "canon_scope": "Layered independentlyorbitingcollectors;90%capture;directionalwasteheat/coolingrights. Exactorbitalradii/temperatures unspecified.0.4AU is archivedillustration,notadoptedradius.",
+  "compact_external_benchmark": {
+    "normal_incident_W_m2_per_fIR": 54.44665861634302,
+    "spherical_mean_incident_W_m2_per_fIR": 13.611664654085756,
+    "at_fIR09_spherical_incident_W_m2": 12.25049818867718,
+    "at_fIR09_alpha09_spherical_absorbed_W_m2": 11.025448369809462
+  },
+  "gross_emission_W_m2": {
+    "197": 76.86332202720526,
+    "200": 81.6533916336,
+    "250": 199.34910066796874,
+    "300": 413.3702951451,
+    "450": 2092.687119172069
+  },
+  "CMB_absorbed_W_m2_alpha09": 2.8139752447294343e-06,
+  "absorbed_heat_cases": [
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0,
+      "net_rejection_W_m2": 76.86331921323001,
+      "emitting_area_per_W_m2_W": 0.013010106904515205,
+      "area_multiplier_vs_zero_IR": 1.0000000366101187
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0.1,
+      "net_rejection_W_m2": 76.76331921323002,
+      "emitting_area_per_W_m2_W": 0.013027055242650996,
+      "area_multiplier_vs_zero_IR": 1.001302742182076
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 1,
+      "net_rejection_W_m2": 75.86331921323001,
+      "emitting_area_per_W_m2_W": 0.013181600941942536,
+      "area_multiplier_vs_zero_IR": 1.0131816380346412
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 5,
+      "net_rejection_W_m2": 71.86331921323001,
+      "emitting_area_per_W_m2_W": 0.013915304928135025,
+      "area_multiplier_vs_zero_IR": 1.0695765637979986
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 10,
+      "net_rejection_W_m2": 66.86331921323001,
+      "emitting_area_per_W_m2_W": 0.014955883311909132,
+      "area_multiplier_vs_zero_IR": 1.1495588752045767
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 12.25,
+      "net_rejection_W_m2": 64.61331921323001,
+      "emitting_area_per_W_m2_W": 0.015476685181578525,
+      "area_multiplier_vs_zero_IR": 1.189589437025346
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 25,
+      "net_rejection_W_m2": 51.863319213230014,
+      "emitting_area_per_W_m2_W": 0.019281450072422403,
+      "area_multiplier_vs_zero_IR": 1.4820363060680832
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 50,
+      "net_rejection_W_m2": 26.863319213230014,
+      "emitting_area_per_W_m2_W": 0.03722548178288804,
+      "area_multiplier_vs_zero_IR": 2.861274193895986
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 100,
+      "net_rejection_W_m2": -23.136680786769986,
+      "emitting_area_per_W_m2_W": null,
+      "area_multiplier_vs_zero_IR": null
+    },
+    {
+      "radiator_K": 197,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 400,
+      "net_rejection_W_m2": -323.13668078677,
+      "emitting_area_per_W_m2_W": null,
+      "area_multiplier_vs_zero_IR": null
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0,
+      "net_rejection_W_m2": 81.65338881962475,
+      "emitting_area_per_W_m2_W": 0.012246889130456491,
+      "area_multiplier_vs_zero_IR": 1.000000034462443
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0.1,
+      "net_rejection_W_m2": 81.55338881962476,
+      "emitting_area_per_W_m2_W": 0.012261906150972394,
+      "area_multiplier_vs_zero_IR": 1.0012262251197974
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 1,
+      "net_rejection_W_m2": 80.65338881962475,
+      "emitting_area_per_W_m2_W": 0.012398735064144979,
+      "area_multiplier_vs_zero_IR": 1.0123987699538786
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 5,
+      "net_rejection_W_m2": 76.65338881962475,
+      "emitting_area_per_W_m2_W": 0.013045737643160542,
+      "area_multiplier_vs_zero_IR": 1.0652287249261854
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 10,
+      "net_rejection_W_m2": 71.65338881962475,
+      "emitting_area_per_W_m2_W": 0.013956074045811432,
+      "area_multiplier_vs_zero_IR": 1.1395607797301612
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 12.25,
+      "net_rejection_W_m2": 69.40338881962475,
+      "emitting_area_per_W_m2_W": 0.014408518330408045,
+      "area_multiplier_vs_zero_IR": 1.1765043900927123
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 25,
+      "net_rejection_W_m2": 56.65338881962475,
+      "emitting_area_per_W_m2_W": 0.01765119476230872,
+      "area_multiplier_vs_zero_IR": 1.4412799187277432
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 50,
+      "net_rejection_W_m2": 31.65338881962475,
+      "emitting_area_per_W_m2_W": 0.031592193989036996,
+      "area_multiplier_vs_zero_IR": 2.5796097883515015
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 100,
+      "net_rejection_W_m2": -18.34661118037525,
+      "emitting_area_per_W_m2_W": null,
+      "area_multiplier_vs_zero_IR": null
+    },
+    {
+      "radiator_K": 200,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 400,
+      "net_rejection_W_m2": -318.34661118037525,
+      "emitting_area_per_W_m2_W": null,
+      "area_multiplier_vs_zero_IR": null
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0,
+      "net_rejection_W_m2": 199.3490978539935,
+      "emitting_area_per_W_m2_W": 0.005016325685769675,
+      "area_multiplier_vs_zero_IR": 1.0000000141158163
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0.1,
+      "net_rejection_W_m2": 199.2490978539935,
+      "emitting_area_per_W_m2_W": 0.005018843301026054,
+      "area_multiplier_vs_zero_IR": 1.0005018984530034
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 1,
+      "net_rejection_W_m2": 198.3490978539935,
+      "emitting_area_per_W_m2_W": 0.005041616073979367,
+      "area_multiplier_vs_zero_IR": 1.0050416302609622
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 5,
+      "net_rejection_W_m2": 194.3490978539935,
+      "emitting_area_per_W_m2_W": 0.005145380200073061,
+      "area_multiplier_vs_zero_IR": 1.0257269154793378
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 10,
+      "net_rejection_W_m2": 189.3490978539935,
+      "emitting_area_per_W_m2_W": 0.005281250406437621,
+      "area_multiplier_vs_zero_IR": 1.052812518925684
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 12.25,
+      "net_rejection_W_m2": 187.0990978539935,
+      "emitting_area_per_W_m2_W": 0.0053447612066006315,
+      "area_multiplier_vs_zero_IR": 1.0654733398208835
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 25,
+      "net_rejection_W_m2": 174.3490978539935,
+      "emitting_area_per_W_m2_W": 0.005735619009841036,
+      "area_multiplier_vs_zero_IR": 1.1433904913859159
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 50,
+      "net_rejection_W_m2": 149.3490978539935,
+      "emitting_area_per_W_m2_W": 0.006695721730958288,
+      "area_multiplier_vs_zero_IR": 1.3347861053895096
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 100,
+      "net_rejection_W_m2": 99.3490978539935,
+      "emitting_area_per_W_m2_W": 0.010065516663972438,
+      "area_multiplier_vs_zero_IR": 2.0065516947213586
+    },
+    {
+      "radiator_K": 250,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 400,
+      "net_rejection_W_m2": -200.6509021460065,
+      "emitting_area_per_W_m2_W": null,
+      "area_multiplier_vs_zero_IR": null
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0,
+      "net_rejection_W_m2": 413.37029233112474,
+      "emitting_area_per_W_m2_W": 0.002419138526769029,
+      "area_multiplier_vs_zero_IR": 1.000000006807396
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0.1,
+      "net_rejection_W_m2": 413.2702923311247,
+      "emitting_area_per_W_m2_W": 0.002419723891498036,
+      "area_multiplier_vs_zero_IR": 1.000241979198193
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 1,
+      "net_rejection_W_m2": 412.37029233112474,
+      "emitting_area_per_W_m2_W": 0.0024250049496703824,
+      "area_multiplier_vs_zero_IR": 1.0024250117735742
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 5,
+      "net_rejection_W_m2": 408.37029233112474,
+      "emitting_area_per_W_m2_W": 0.0024487579502701817,
+      "area_multiplier_vs_zero_IR": 1.0122437966420952
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 10,
+      "net_rejection_W_m2": 403.37029233112474,
+      "emitting_area_per_W_m2_W": 0.0024791116723566365,
+      "area_multiplier_vs_zero_IR": 1.0247911236997251
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 12.25,
+      "net_rejection_W_m2": 401.12029233112474,
+      "emitting_area_per_W_m2_W": 0.002493017728393806,
+      "area_multiplier_vs_zero_IR": 1.0305394741881142
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 25,
+      "net_rejection_W_m2": 388.37029233112474,
+      "emitting_area_per_W_m2_W": 0.0025748622377825938,
+      "area_multiplier_vs_zero_IR": 1.0643715631901634
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 50,
+      "net_rejection_W_m2": 363.37029233112474,
+      "emitting_area_per_W_m2_W": 0.0027520136376166385,
+      "area_multiplier_vs_zero_IR": 1.1376006896249302
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 100,
+      "net_rejection_W_m2": 313.37029233112474,
+      "emitting_area_per_W_m2_W": 0.0031911129563722126,
+      "area_multiplier_vs_zero_IR": 1.319111304616934
+    },
+    {
+      "radiator_K": 300,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 400,
+      "net_rejection_W_m2": 13.370292331124743,
+      "emitting_area_per_W_m2_W": 0.0747926803120151,
+      "area_multiplier_vs_zero_IR": 30.91707233527079
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0,
+      "net_rejection_W_m2": 2092.6871163580936,
+      "emitting_area_per_W_m2_W": 0.00047785452119584006,
+      "area_multiplier_vs_zero_IR": 1.0000000013446708
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 0.1,
+      "net_rejection_W_m2": 2092.5871163580937,
+      "emitting_area_per_W_m2_W": 0.0004778773567813915,
+      "area_multiplier_vs_zero_IR": 1.0000477890804131
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 1,
+      "net_rejection_W_m2": 2091.6871163580936,
+      "emitting_area_per_W_m2_W": 0.0004780829753070973,
+      "area_multiplier_vs_zero_IR": 1.0004780843206207
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 5,
+      "net_rejection_W_m2": 2087.6871163580936,
+      "emitting_area_per_W_m2_W": 0.0004789989803378532,
+      "area_multiplier_vs_zero_IR": 1.0023949962495806
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 10,
+      "net_rejection_W_m2": 2082.6871163580936,
+      "emitting_area_per_W_m2_W": 0.0004801489345882436,
+      "area_multiplier_vs_zero_IR": 1.0048014906970097
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 12.25,
+      "net_rejection_W_m2": 2080.4371163580936,
+      "emitting_area_per_W_m2_W": 0.0004806682173362436,
+      "area_multiplier_vs_zero_IR": 1.0058881870149574
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 25,
+      "net_rejection_W_m2": 2067.6871163580936,
+      "emitting_area_per_W_m2_W": 0.00048363216663135336,
+      "area_multiplier_vs_zero_IR": 1.0120908055267128
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 50,
+      "net_rejection_W_m2": 2042.6871163580936,
+      "emitting_area_per_W_m2_W": 0.0004895512347397089,
+      "area_multiplier_vs_zero_IR": 1.0244775631145704
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 100,
+      "net_rejection_W_m2": 1992.6871163580936,
+      "emitting_area_per_W_m2_W": 0.0005018349302260938,
+      "area_multiplier_vs_zero_IR": 1.0501834944347606
+    },
+    {
+      "radiator_K": 450,
+      "epsilon": 0.9,
+      "net_absorbed_environment_W_m2": 400,
+      "net_rejection_W_m2": 1692.6871163580936,
+      "emitting_area_per_W_m2_W": 0.0005907766357621681,
+      "area_multiplier_vs_zero_IR": 1.236310655967298
+    }
+  ],
+  "external_uniform_source_spheres": [
+    {
+      "IR_luminosity_fraction_Lsun": 0.5,
+      "source_sphere_radius_AU": 0.4,
+      "effective_black_outward_temperature_K": 523.344159126549,
+      "angular_radius_deg": 4.588565735785835,
+      "normal_incident_W_m2": 27.22332930817151,
+      "spherical_receiver_mean_incident_W_m2_exact": 6.816756644638525,
+      "small_source_spherical_mean_incident_W_m2": 6.805832327042878,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 6.135080980174672,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.0064,
+          "incident_W_m2": 27.223329308171508,
+          "absorbed_W_m2_alpha09": 24.500996377354358,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 52.362322853885104,
+            "200": 57.15239246027984,
+            "250": 174.84810149464857,
+            "300": 388.8692959717798,
+            "450": 2068.1861199987484
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.005542562584220407,
+          "incident_W_m2": 23.57609475646597,
+          "absorbed_W_m2_alpha09": 21.218485280819376,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 55.64483394800728,
+            "200": 60.434903554402005,
+            "250": 178.13061258877076,
+            "300": 392.15180706590206,
+            "450": 2071.4686310928705
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.0032000000000000006,
+          "incident_W_m2": 13.611664654085756,
+          "absorbed_W_m2_alpha09": 12.25049818867718,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 64.61282103355755,
+            "200": 69.40289063995229,
+            "250": 187.09859967432104,
+            "300": 401.1197941514523,
+            "450": 2080.4366181784208
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.00010885910025754426,
+          "incident_W_m2": 0.46304798976599765,
+          "absorbed_W_m2_alpha09": 0.4167431907893979,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.44657602274695,
+            "200": 81.23664562914169,
+            "250": 198.9323546635104,
+            "300": 412.9535491406417,
+            "450": 2092.27037316761
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 0.5,
+      "source_sphere_radius_AU": 1,
+      "effective_black_outward_temperature_K": 330.9919085970983,
+      "angular_radius_deg": 11.536959032815489,
+      "normal_incident_W_m2": 27.22332930817151,
+      "spherical_receiver_mean_incident_W_m2_exact": 6.875286828269962,
+      "small_source_spherical_mean_incident_W_m2": 6.805832327042878,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 6.187758145442966,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.04,
+          "incident_W_m2": 27.223329308171515,
+          "absorbed_W_m2_alpha09": 24.500996377354365,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 52.36232294843467,
+            "200": 57.1523925548294,
+            "250": 174.84810158919817,
+            "300": 388.8692960663294,
+            "450": 2068.186120093298
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.034641016151377546,
+          "incident_W_m2": 23.576094756465977,
+          "absorbed_W_m2_alpha09": 21.218485280819383,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 55.6448340298896,
+            "200": 60.43490363628433,
+            "250": 178.13061267065308,
+            "300": 392.1518071477843,
+            "450": 2071.468631174753
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.020000000000000007,
+          "incident_W_m2": 13.611664654085763,
+          "absorbed_W_m2_alpha09": 12.250498188677186,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 64.61282108083235,
+            "200": 69.40289068722707,
+            "250": 187.09859972159583,
+            "300": 401.1197941987271,
+            "450": 2080.436618225696
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.0017184727502808446,
+          "incident_W_m2": 1.1695637397003655,
+          "absorbed_W_m2_alpha09": 1.052607365730329,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 75.81071185233543,
+            "200": 80.60078145873017,
+            "250": 198.2964904930989,
+            "300": 412.3176849702302,
+            "450": 2091.6345089971987
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 0.5,
+      "source_sphere_radius_AU": 2,
+      "effective_black_outward_temperature_K": 234.04662308688611,
+      "angular_radius_deg": 23.578178478201835,
+      "normal_incident_W_m2": 27.22332930817151,
+      "spherical_receiver_mean_incident_W_m2_exact": 7.10229957340738,
+      "small_source_spherical_mean_incident_W_m2": 6.805832327042878,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 6.3920696160666415,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.16000000000000006,
+          "incident_W_m2": 27.22332930817152,
+          "absorbed_W_m2_alpha09": 24.500996377354365,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 52.36232328611169,
+            "200": 57.15239289250642,
+            "250": 174.8481019268752,
+            "300": 388.86929640400643,
+            "450": 2068.186120430975
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.13856406460551024,
+          "incident_W_m2": 23.576094756465984,
+          "absorbed_W_m2_alpha09": 21.218485280819387,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 55.64483432232648,
+            "200": 60.434903928721226,
+            "250": 178.13061296309,
+            "300": 392.15180744022126,
+            "450": 2071.46863146719
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.08000000000000003,
+          "incident_W_m2": 13.61166465408576,
+          "absorbed_W_m2_alpha09": 12.250498188677183,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 64.61282124967086,
+            "200": 69.40289085606558,
+            "250": 187.09859989043434,
+            "300": 401.11979436756565,
+            "450": 2080.436618394534
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.01429554860325472,
+          "incident_W_m2": 2.432327670421091,
+          "absorbed_W_m2_alpha09": 2.1890949033789817,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 74.67422435007836,
+            "200": 79.4642939564731,
+            "250": 197.16000299084183,
+            "300": 411.1811974679731,
+            "450": 2090.498021494942
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 0.5,
+      "source_sphere_radius_AU": 4,
+      "effective_black_outward_temperature_K": 165.49595429854915,
+      "angular_radius_deg": 53.13010235415599,
+      "normal_incident_W_m2": 27.22332930817151,
+      "spherical_receiver_mean_incident_W_m2_exact": 8.507290408803598,
+      "small_source_spherical_mean_incident_W_m2": 6.805832327042878,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 7.6565613679232385,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.64,
+          "incident_W_m2": 27.223329308171515,
+          "absorbed_W_m2_alpha09": 24.500996377354365,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 52.362324636819814,
+            "200": 57.15239424321455,
+            "250": 174.84810327758328,
+            "300": 388.8692977547146,
+            "450": 2068.186121781683
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.5542562584220406,
+          "incident_W_m2": 23.576094756465974,
+          "absorbed_W_m2_alpha09": 21.218485280819376,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 55.64483549207403,
+            "200": 60.43490509846877,
+            "250": 178.1306141328375,
+            "300": 392.1518086099688,
+            "450": 2071.4686326369374
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.34271305124491236,
+          "incident_W_m2": 14.577797269138294,
+          "absorbed_W_m2_alpha09": 13.120017542224465,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 63.743302635391586,
+            "200": 68.53337224178632,
+            "250": 186.22908127615506,
+            "300": 400.25027575328636,
+            "450": 2079.5670997802545
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.1423784899326471,
+          "incident_W_m2": 6.056275809119741,
+          "absorbed_W_m2_alpha09": 5.4506482282077675,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 71.4126713856718,
+            "200": 76.20274099206654,
+            "250": 193.89845002643528,
+            "300": 407.91964450356653,
+            "450": 2087.2364685305356
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.02271305124491233,
+          "incident_W_m2": 0.9661326150525366,
+          "absorbed_W_m2_alpha09": 0.8695193535472829,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 75.9937999235967,
+            "200": 80.78386952999143,
+            "250": 198.4795785643602,
+            "300": 412.50077304149147,
+            "450": 2091.81759706846
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 0.9,
+      "source_sphere_radius_AU": 0.4,
+      "effective_black_outward_temperature_K": 606.1854497325421,
+      "angular_radius_deg": 4.588565735785835,
+      "normal_incident_W_m2": 49.00199275470872,
+      "spherical_receiver_mean_incident_W_m2_exact": 12.270161960349347,
+      "small_source_spherical_mean_incident_W_m2": 12.25049818867718,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 11.043145764314414,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.0064,
+          "incident_W_m2": 49.00199275470872,
+          "absorbed_W_m2_alpha09": 44.10179347923785,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 32.76152575200161,
+            "200": 37.55159535839635,
+            "250": 155.24730439276507,
+            "300": 369.2684988698963,
+            "450": 2048.585322896865
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.005542562584220407,
+          "incident_W_m2": 42.43697056163875,
+          "absorbed_W_m2_alpha09": 38.193273505474885,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 38.67004572335178,
+            "200": 43.460115329746515,
+            "250": 161.15582436411523,
+            "300": 375.17701884124654,
+            "450": 2054.4938428682153
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.0032000000000000006,
+          "incident_W_m2": 24.500996377354365,
+          "absorbed_W_m2_alpha09": 22.050896739618928,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 54.81242248261581,
+            "200": 59.60249208901054,
+            "250": 177.2982011233793,
+            "300": 391.3193956005106,
+            "450": 2070.636219627479
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.00010885910025754426,
+          "incident_W_m2": 0.833486381578796,
+          "absorbed_W_m2_alpha09": 0.7501377434209163,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.11318147011544,
+            "200": 80.90325107651017,
+            "250": 198.5989601108789,
+            "300": 412.62015458801017,
+            "450": 2091.9369786149787
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 0.9,
+      "source_sphere_radius_AU": 1,
+      "effective_black_outward_temperature_K": 383.385341121668,
+      "angular_radius_deg": 11.536959032815489,
+      "normal_incident_W_m2": 49.00199275470872,
+      "spherical_receiver_mean_incident_W_m2_exact": 12.375516290885926,
+      "small_source_spherical_mean_incident_W_m2": 12.25049818867718,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 11.137964661797334,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.04,
+          "incident_W_m2": 49.00199275470871,
+          "absorbed_W_m2_alpha09": 44.10179347923784,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 32.76152584655119,
+            "200": 37.551595452945925,
+            "250": 155.24730448731466,
+            "300": 369.26849896444594,
+            "450": 2048.5853229914146
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.034641016151377546,
+          "incident_W_m2": 42.436970561638745,
+          "absorbed_W_m2_alpha09": 38.19327350547487,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 38.67004580523411,
+            "200": 43.46011541162885,
+            "250": 161.15582444599758,
+            "300": 375.17701892312886,
+            "450": 2054.4938429500976
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.020000000000000007,
+          "incident_W_m2": 24.50099637735436,
+          "absorbed_W_m2_alpha09": 22.050896739618924,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 54.8124225298906,
+            "200": 59.60249213628533,
+            "250": 177.29820117065407,
+            "300": 391.31939564778537,
+            "450": 2070.6362196747536
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.0017184727502808446,
+          "incident_W_m2": 2.1052147314606575,
+          "absorbed_W_m2_alpha09": 1.8946932583145917,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 74.96862595975117,
+            "200": 79.7586955661459,
+            "250": 197.45440460051466,
+            "300": 411.47559907764594,
+            "450": 2090.792423104614
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 0.9,
+      "source_sphere_radius_AU": 2,
+      "effective_black_outward_temperature_K": 271.09437451464913,
+      "angular_radius_deg": 23.578178478201835,
+      "normal_incident_W_m2": 49.00199275470872,
+      "spherical_receiver_mean_incident_W_m2_exact": 12.784139232133276,
+      "small_source_spherical_mean_incident_W_m2": 12.25049818867718,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 11.50572530891995,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.16000000000000006,
+          "incident_W_m2": 49.00199275470871,
+          "absorbed_W_m2_alpha09": 44.101793479237834,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 32.76152618422822,
+            "200": 37.551595790622954,
+            "250": 155.2473048249917,
+            "300": 369.26849930212296,
+            "450": 2048.5853233290914
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.13856406460551024,
+          "incident_W_m2": 42.436970561638745,
+          "absorbed_W_m2_alpha09": 38.19327350547488,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 38.670046097671,
+            "200": 43.46011570406573,
+            "250": 161.15582473843446,
+            "300": 375.17701921556574,
+            "450": 2054.4938432425342
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.08000000000000003,
+          "incident_W_m2": 24.500996377354355,
+          "absorbed_W_m2_alpha09": 22.050896739618917,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 54.81242269872912,
+            "200": 59.602492305123846,
+            "250": 177.2982013394926,
+            "300": 391.3193958166239,
+            "450": 2070.6362198435922
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.01429554860325472,
+          "incident_W_m2": 4.378189806757961,
+          "absorbed_W_m2_alpha09": 3.940370826082165,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 72.92294842737518,
+            "200": 77.71301803376991,
+            "250": 195.40872706813863,
+            "300": 409.4299215452699,
+            "450": 2088.746745572239
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 0.9,
+      "source_sphere_radius_AU": 4,
+      "effective_black_outward_temperature_K": 191.692670560834,
+      "angular_radius_deg": 53.13010235415599,
+      "normal_incident_W_m2": 49.00199275470872,
+      "spherical_receiver_mean_incident_W_m2_exact": 15.313122735846472,
+      "small_source_spherical_mean_incident_W_m2": 12.25049818867718,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 13.781810462261825,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.64,
+          "incident_W_m2": 49.00199275470871,
+          "absorbed_W_m2_alpha09": 44.10179347923784,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 32.76152753493634,
+            "200": 37.55159714133107,
+            "250": 155.2473061756998,
+            "300": 369.2685006528311,
+            "450": 2048.5853246797997
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.5542562584220406,
+          "incident_W_m2": 42.43697056163874,
+          "absorbed_W_m2_alpha09": 38.19327350547486,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 38.670047267418546,
+            "200": 43.46011687381328,
+            "250": 161.15582590818204,
+            "300": 375.17702038531326,
+            "450": 2054.493844412282
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.34271305124491236,
+          "incident_W_m2": 26.24003508444892,
+          "absorbed_W_m2_alpha09": 23.61603157600403,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 53.247288601612034,
+            "200": 58.037358208006765,
+            "250": 175.7330672423755,
+            "300": 389.7542617195068,
+            "450": 2069.071085746475
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.1423784899326471,
+          "incident_W_m2": 10.901296456415531,
+          "absorbed_W_m2_alpha09": 9.811166810773978,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 67.05215280310559,
+            "200": 71.84222240950032,
+            "250": 189.53793144386907,
+            "300": 403.5591259210003,
+            "450": 2082.8759499479693
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.02271305124491233,
+          "incident_W_m2": 1.7390387070945652,
+          "absorbed_W_m2_alpha09": 1.5651348363851088,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 75.29818444075887,
+            "200": 80.08825404715361,
+            "250": 197.78396308152236,
+            "300": 411.8051575586536,
+            "450": 2091.1219815856225
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 1.0,
+      "source_sphere_radius_AU": 0.4,
+      "effective_black_outward_temperature_K": 622.3645976284083,
+      "angular_radius_deg": 4.588565735785835,
+      "normal_incident_W_m2": 54.44665861634302,
+      "spherical_receiver_mean_incident_W_m2_exact": 13.63351328927705,
+      "small_source_spherical_mean_incident_W_m2": 13.611664654085756,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 12.270161960349345,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.0064,
+          "incident_W_m2": 54.446658616343015,
+          "absorbed_W_m2_alpha09": 49.001992754708716,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 27.861326476530746,
+            "200": 32.65139608292549,
+            "250": 150.3471051172942,
+            "300": 364.3682995944255,
+            "450": 2043.6851236213938
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.005542562584220407,
+          "incident_W_m2": 47.15218951293194,
+          "absorbed_W_m2_alpha09": 42.43697056163875,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 34.42634866718791,
+            "200": 39.21641827358264,
+            "250": 156.91212730795138,
+            "300": 370.9333217850827,
+            "450": 2050.2501458120514
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.0032000000000000006,
+          "incident_W_m2": 27.22332930817151,
+          "absorbed_W_m2_alpha09": 24.50099637735436,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 52.36232284488038,
+            "200": 57.15239245127511,
+            "250": 174.84810148564387,
+            "300": 388.8692959627751,
+            "450": 2068.186119989744
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.00010885910025754426,
+          "incident_W_m2": 0.9260959795319953,
+          "absorbed_W_m2_alpha09": 0.8334863815787958,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.02983283195756,
+            "200": 80.81990243835229,
+            "250": 198.51561147272105,
+            "300": 412.5368059498523,
+            "450": 2091.8536299768207
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 1.0,
+      "source_sphere_radius_AU": 1,
+      "effective_black_outward_temperature_K": 393.6179327119996,
+      "angular_radius_deg": 11.536959032815489,
+      "normal_incident_W_m2": 54.44665861634302,
+      "spherical_receiver_mean_incident_W_m2_exact": 13.750573656539917,
+      "small_source_spherical_mean_incident_W_m2": 13.611664654085756,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 12.375516290885924,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.04,
+          "incident_W_m2": 54.446658616343,
+          "absorbed_W_m2_alpha09": 49.00199275470871,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 27.861326571080326,
+            "200": 32.651396177475064,
+            "250": 150.34710521184383,
+            "300": 364.36829968897507,
+            "450": 2043.6851237159437
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.034641016151377546,
+          "incident_W_m2": 47.15218951293193,
+          "absorbed_W_m2_alpha09": 42.436970561638745,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 34.42634874907024,
+            "200": 39.216418355464974,
+            "250": 156.91212738983373,
+            "300": 370.93332186696495,
+            "450": 2050.2501458939337
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.020000000000000007,
+          "incident_W_m2": 27.22332930817151,
+          "absorbed_W_m2_alpha09": 24.500996377354358,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 52.362322892155156,
+            "200": 57.152392498549894,
+            "250": 174.84810153291863,
+            "300": 388.86929601004994,
+            "450": 2068.1861200370186
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.0017184727502808446,
+          "incident_W_m2": 2.33912747940073,
+          "absorbed_W_m2_alpha09": 2.105214731460657,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 74.7581044866051,
+            "200": 79.54817409299983,
+            "250": 197.2438831273686,
+            "300": 411.2650776044998,
+            "450": 2090.581901631468
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 1.0,
+      "source_sphere_radius_AU": 2,
+      "effective_black_outward_temperature_K": 278.3299094172851,
+      "angular_radius_deg": 23.578178478201835,
+      "normal_incident_W_m2": 54.44665861634302,
+      "spherical_receiver_mean_incident_W_m2_exact": 14.204599146814756,
+      "small_source_spherical_mean_incident_W_m2": 13.611664654085756,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 12.784139232133281,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.16000000000000006,
+          "incident_W_m2": 54.44665861634303,
+          "absorbed_W_m2_alpha09": 49.00199275470872,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 27.86132690875733,
+            "200": 32.651396515152065,
+            "250": 150.34710554952082,
+            "300": 364.3683000266521,
+            "450": 2043.6851240536205
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.13856406460551024,
+          "incident_W_m2": 47.15218951293196,
+          "absorbed_W_m2_alpha09": 42.436970561638766,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 34.4263490415071,
+            "200": 39.21641864790183,
+            "250": 156.9121276822706,
+            "300": 370.9333221594019,
+            "450": 2050.2501461863703
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.08000000000000003,
+          "incident_W_m2": 27.223329308171515,
+          "absorbed_W_m2_alpha09": 24.50099637735436,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 52.362323060993674,
+            "200": 57.15239266738841,
+            "250": 174.84810170175714,
+            "300": 388.8692961788884,
+            "450": 2068.186120205857
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.01429554860325472,
+          "incident_W_m2": 4.864655340842181,
+          "absorbed_W_m2_alpha09": 4.3781898067579625,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 72.48512944669937,
+            "200": 77.27519905309411,
+            "250": 194.97090808746287,
+            "300": 408.9921025645941,
+            "450": 2088.308926591563
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    },
+    {
+      "IR_luminosity_fraction_Lsun": 1.0,
+      "source_sphere_radius_AU": 4,
+      "effective_black_outward_temperature_K": 196.8089663559998,
+      "angular_radius_deg": 53.13010235415599,
+      "normal_incident_W_m2": 54.44665861634302,
+      "spherical_receiver_mean_incident_W_m2_exact": 17.01458081760719,
+      "small_source_spherical_mean_incident_W_m2": 13.611664654085756,
+      "spherical_receiver_mean_absorbed_W_m2_alpha09": 15.31312273584647,
+      "directions": [
+        {
+          "normal_to_source_angle_deg": 0,
+          "view_factor": 0.64,
+          "incident_W_m2": 54.446658616343,
+          "absorbed_W_m2_alpha09": 49.00199275470871,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 27.861328259465473,
+            "200": 32.65139786586021,
+            "250": 150.34710690022897,
+            "300": 364.36830137736024,
+            "450": 2043.6851254043286
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 30,
+          "view_factor": 0.5542562584220406,
+          "incident_W_m2": 47.152189512931926,
+          "absorbed_W_m2_alpha09": 42.43697056163873,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 34.42635021125468,
+            "200": 39.21641981764941,
+            "250": 156.91212885201816,
+            "300": 370.9333233291494,
+            "450": 2050.2501473561183
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 60,
+          "view_factor": 0.34271305124491236,
+          "incident_W_m2": 29.155594538276574,
+          "absorbed_W_m2_alpha09": 26.24003508444892,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 50.62328509316714,
+            "200": 55.41335469956188,
+            "250": 173.1090637339306,
+            "300": 387.1302582110619,
+            "450": 2066.4470822380304
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 90,
+          "view_factor": 0.1423784899326471,
+          "incident_W_m2": 12.112551618239477,
+          "absorbed_W_m2_alpha09": 10.901296456415528,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 65.96202315746405,
+            "200": 70.75209276385877,
+            "250": 188.44780179822752,
+            "300": 402.4689962753588,
+            "450": 2081.7858203023275
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 120,
+          "view_factor": 0.02271305124491233,
+          "incident_W_m2": 1.932265230105072,
+          "absorbed_W_m2_alpha09": 1.739038707094565,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 75.12428057004941,
+            "200": 79.91435017644415,
+            "250": 197.61005921081292,
+            "300": 411.63125368794414,
+            "450": 2090.948077714913
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 150,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        },
+        {
+          "normal_to_source_angle_deg": 180,
+          "view_factor": 0.0,
+          "incident_W_m2": 0.0,
+          "absorbed_W_m2_alpha09": 0.0,
+          "net_rejection_by_temperature_W_m2": {
+            "197": 76.86331921323003,
+            "200": 81.65338881962475,
+            "250": 199.3490978539935,
+            "300": 413.37029233112474,
+            "450": 2092.6871163580936
+          }
+        }
+      ]
+    }
+  ],
+  "local_view_geometries": [
+    {
+      "geometry": "clear_open_sky",
+      "fixed_external_patches": [],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 76.86331921323001,
+          "external_incident_W_m2": 3.1266391608104826e-06,
+          "first_pass_absorbed_external_W_m2": 2.8139752447294343e-06,
+          "sky_view_factor": 1.0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 76.86332233986917
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 81.65338881962475,
+          "external_incident_W_m2": 3.1266391608104826e-06,
+          "first_pass_absorbed_external_W_m2": 2.8139752447294343e-06,
+          "sky_view_factor": 1.0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 81.65339194626391
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 199.3490978539935,
+          "external_incident_W_m2": 3.1266391608104826e-06,
+          "first_pass_absorbed_external_W_m2": 2.8139752447294343e-06,
+          "sky_view_factor": 1.0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 199.34910098063267
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 413.37029233112474,
+          "external_incident_W_m2": 3.1266391608104826e-06,
+          "first_pass_absorbed_external_W_m2": 2.8139752447294343e-06,
+          "sky_view_factor": 1.0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 413.3702954577639
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2092.6871163580936,
+          "external_incident_W_m2": 3.1266391608104826e-06,
+          "first_pass_absorbed_external_W_m2": 2.8139752447294343e-06,
+          "sky_view_factor": 1.0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2092.6871194847326
+        }
+      ]
+    },
+    {
+      "geometry": "self_view_10pct",
+      "fixed_external_patches": [],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 69.87574473930002,
+          "external_incident_W_m2": 2.8139752447294343e-06,
+          "first_pass_absorbed_external_W_m2": 2.532577720256491e-06,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.1,
+          "radiosity_W_m2": 77.63971950363917
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 74.23035347238613,
+          "external_incident_W_m2": 2.8139752447294343e-06,
+          "first_pass_absorbed_external_W_m2": 2.532577720256491e-06,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.1,
+          "radiosity_W_m2": 82.47817365151263
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 181.22645259453955,
+          "external_incident_W_m2": 2.8139752447294343e-06,
+          "first_pass_absorbed_external_W_m2": 2.532577720256491e-06,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.1,
+          "radiosity_W_m2": 201.3627282316831
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 375.7911748464771,
+          "external_incident_W_m2": 2.8139752447294343e-06,
+          "first_pass_absorbed_external_W_m2": 2.532577720256491e-06,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.1,
+          "radiosity_W_m2": 417.5457529560581
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 1902.4428330528126,
+          "external_incident_W_m2": 2.8139752447294343e-06,
+          "first_pass_absorbed_external_W_m2": 2.532577720256491e-06,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.1,
+          "radiosity_W_m2": 2113.8253731853197
+        }
+      ]
+    },
+    {
+      "geometry": "self_view_50pct",
+      "fixed_external_patches": [],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 40.45437853327896,
+          "external_incident_W_m2": 1.5633195804052413e-06,
+          "first_pass_absorbed_external_W_m2": 1.4069876223647172e-06,
+          "sky_view_factor": 0.5,
+          "self_view_factor": 0.5,
+          "radiosity_W_m2": 80.90876019319708
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 42.97546779980251,
+          "external_incident_W_m2": 1.5633195804052413e-06,
+          "first_pass_absorbed_external_W_m2": 1.4069876223647172e-06,
+          "sky_view_factor": 0.5,
+          "self_view_factor": 0.5,
+          "radiosity_W_m2": 85.95093872624417
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 104.92057781789131,
+          "external_incident_W_m2": 1.5633195804052413e-06,
+          "first_pass_absorbed_external_W_m2": 1.4069876223647172e-06,
+          "sky_view_factor": 0.5,
+          "self_view_factor": 0.5,
+          "radiosity_W_m2": 209.8411587624218
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 217.56331175322356,
+          "external_incident_W_m2": 1.5633195804052413e-06,
+          "first_pass_absorbed_external_W_m2": 1.4069876223647172e-06,
+          "sky_view_factor": 0.5,
+          "self_view_factor": 0.5,
+          "radiosity_W_m2": 435.1266266330863
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 1101.4142717674179,
+          "external_incident_W_m2": 1.5633195804052413e-06,
+          "first_pass_absorbed_external_W_m2": 1.4069876223647172e-06,
+          "sky_view_factor": 0.5,
+          "self_view_factor": 0.5,
+          "radiosity_W_m2": 2202.828546661475
+        }
+      ]
+    },
+    {
+      "geometry": "300K_patch_view001",
+      "fixed_external_patches": [
+        {
+          "F": 0.01,
+          "J_W_m2": 459.300327939
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 72.72961628991877,
+          "external_incident_W_m2": 4.593006374762769,
+          "first_pass_absorbed_external_W_m2": 4.133705737286492,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 77.32262266468153
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 77.5196858963135,
+          "external_incident_W_m2": 4.593006374762769,
+          "first_pass_absorbed_external_W_m2": 4.133705737286492,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 82.11269227107627
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 195.21539493068224,
+          "external_incident_W_m2": 4.593006374762769,
+          "first_pass_absorbed_external_W_m2": 4.133705737286492,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 199.80840130544502
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 409.23658940781354,
+          "external_incident_W_m2": 4.593006374762769,
+          "first_pass_absorbed_external_W_m2": 4.133705737286492,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 413.8295957825763
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2088.553413434782,
+          "external_incident_W_m2": 4.593006374762769,
+          "first_pass_absorbed_external_W_m2": 4.133705737286492,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2093.146419809545
+        }
+      ]
+    },
+    {
+      "geometry": "300K_patch_view01",
+      "fixed_external_patches": [
+        {
+          "F": 0.1,
+          "J_W_m2": 459.300327939
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 35.52628998011753,
+          "external_incident_W_m2": 45.93003560787525,
+          "first_pass_absorbed_external_W_m2": 41.337032047087725,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 81.45632558799278
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 40.31635958651227,
+          "external_incident_W_m2": 45.93003560787525,
+          "first_pass_absorbed_external_W_m2": 41.337032047087725,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 86.24639519438752
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 158.01206862088102,
+          "external_incident_W_m2": 45.93003560787525,
+          "first_pass_absorbed_external_W_m2": 41.337032047087725,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 203.94210422875628
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 372.03326309801224,
+          "external_incident_W_m2": 45.93003560787525,
+          "first_pass_absorbed_external_W_m2": 41.337032047087725,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 417.9632987058875
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2051.350087124981,
+          "external_incident_W_m2": 45.93003560787525,
+          "first_pass_absorbed_external_W_m2": 41.337032047087725,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2097.2801227328564
+        }
+      ]
+    },
+    {
+      "geometry": "450K_shield_view001",
+      "fixed_external_patches": [
+        {
+          "F": 0.01,
+          "J_W_m2": 2325.2079101911872
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 55.93644804964909,
+          "external_incident_W_m2": 23.25208219728464,
+          "first_pass_absorbed_external_W_m2": 20.926873977556177,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 79.18853024693372
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 60.726517656043825,
+          "external_incident_W_m2": 23.25208219728464,
+          "first_pass_absorbed_external_W_m2": 20.926873977556177,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 83.97859985332846
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 178.42222669041257,
+          "external_incident_W_m2": 23.25208219728464,
+          "first_pass_absorbed_external_W_m2": 20.926873977556177,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 201.6743088876972
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 392.44342116754376,
+          "external_incident_W_m2": 23.25208219728464,
+          "first_pass_absorbed_external_W_m2": 20.926873977556177,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 415.6955033648284
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2071.7602451945127,
+          "external_incident_W_m2": 23.25208219728464,
+          "first_pass_absorbed_external_W_m2": 20.926873977556177,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2095.0123273917975
+        }
+      ]
+    },
+    {
+      "geometry": "450K_shield_view01",
+      "fixed_external_patches": [
+        {
+          "F": 0.1,
+          "J_W_m2": 2325.2079101911872
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": -132.40539242257933,
+          "external_incident_W_m2": 232.520793833094,
+          "first_pass_absorbed_external_W_m2": 209.2687144497846,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 100.11540141051465
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": -127.6153228161846,
+          "external_incident_W_m2": 232.520793833094,
+          "first_pass_absorbed_external_W_m2": 209.2687144497846,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 104.90547101690939
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": -9.919613781815855,
+          "external_incident_W_m2": 232.520793833094,
+          "first_pass_absorbed_external_W_m2": 209.2687144497846,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 222.60118005127813
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 204.10158069531542,
+          "external_incident_W_m2": 232.520793833094,
+          "first_pass_absorbed_external_W_m2": 209.2687144497846,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 436.6223745284094
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 1883.4184047222843,
+          "external_incident_W_m2": 232.520793833094,
+          "first_pass_absorbed_external_W_m2": 209.2687144497846,
+          "sky_view_factor": 0.9,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2115.9391985553784
+        }
+      ]
+    },
+    {
+      "geometry": "1000K_collector_view0001",
+      "fixed_external_patches": [
+        {
+          "F": 0.001,
+          "J_W_m2": 56703.74419
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 25.82994944504398,
+          "external_incident_W_m2": 56.70374731351252,
+          "first_pass_absorbed_external_W_m2": 51.03337258216127,
+          "sky_view_factor": 0.999,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 82.5336967585565
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 30.620019051438717,
+          "external_incident_W_m2": 56.70374731351252,
+          "first_pass_absorbed_external_W_m2": 51.03337258216127,
+          "sky_view_factor": 0.999,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 87.32376636495124
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 148.31572808580745,
+          "external_incident_W_m2": 56.70374731351252,
+          "first_pass_absorbed_external_W_m2": 51.03337258216127,
+          "sky_view_factor": 0.999,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 205.01947539932
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 362.33692256293875,
+          "external_incident_W_m2": 56.70374731351252,
+          "first_pass_absorbed_external_W_m2": 51.03337258216127,
+          "sky_view_factor": 0.999,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 419.04066987645126
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2041.6537465899075,
+          "external_incident_W_m2": 56.70374731351252,
+          "first_pass_absorbed_external_W_m2": 51.03337258216127,
+          "sky_view_factor": 0.999,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2098.35749390342
+        }
+      ]
+    },
+    {
+      "geometry": "1000K_collector_view001",
+      "fixed_external_patches": [
+        {
+          "F": 0.01,
+          "J_W_m2": 56703.74419
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": -433.47037846863026,
+          "external_incident_W_m2": 567.0374449953728,
+          "first_pass_absorbed_external_W_m2": 510.3337004958355,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 133.5670665267425
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": -428.6803088622355,
+          "external_incident_W_m2": 567.0374449953728,
+          "first_pass_absorbed_external_W_m2": 510.3337004958355,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 138.35713613313726
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": -310.98459982786676,
+          "external_incident_W_m2": 567.0374449953728,
+          "first_pass_absorbed_external_W_m2": 510.3337004958355,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 256.052845167506
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": -96.96340535073551,
+          "external_incident_W_m2": 567.0374449953728,
+          "first_pass_absorbed_external_W_m2": 510.3337004958355,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 470.07403964463725
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 1582.353418676233,
+          "external_incident_W_m2": 567.0374449953728,
+          "first_pass_absorbed_external_W_m2": 510.3337004958355,
+          "sky_view_factor": 0.99,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2149.390863671606
+        }
+      ]
+    },
+    {
+      "geometry": "complete_black_bath_150K",
+      "fixed_external_patches": [
+        {
+          "F": 1.0,
+          "J_W_m2": 28.7062704961875
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 51.027678580636504,
+          "external_incident_W_m2": 28.7062704961875,
+          "first_pass_absorbed_external_W_m2": 25.83564344656875,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 79.733949076824
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 55.81774818703124,
+          "external_incident_W_m2": 28.7062704961875,
+          "first_pass_absorbed_external_W_m2": 25.83564344656875,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 84.52401868321874
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 173.5134572214,
+          "external_incident_W_m2": 28.7062704961875,
+          "first_pass_absorbed_external_W_m2": 25.83564344656875,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 202.2197277175875
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 387.5346516985312,
+          "external_incident_W_m2": 28.7062704961875,
+          "first_pass_absorbed_external_W_m2": 25.83564344656875,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 416.24092219471873
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2066.8514757254998,
+          "external_incident_W_m2": 28.7062704961875,
+          "first_pass_absorbed_external_W_m2": 25.83564344656875,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2095.5577462216875
+        }
+      ]
+    },
+    {
+      "geometry": "complete_black_bath_197K",
+      "fixed_external_patches": [
+        {
+          "F": 1.0,
+          "J_W_m2": 85.40369114133918
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": 0.0,
+          "external_incident_W_m2": 85.40369114133918,
+          "first_pass_absorbed_external_W_m2": 76.86332202720527,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 85.40369114133918
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 4.790069606394724,
+          "external_incident_W_m2": 85.40369114133918,
+          "first_pass_absorbed_external_W_m2": 76.86332202720527,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 90.1937607477339
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 122.48577864076347,
+          "external_incident_W_m2": 85.40369114133918,
+          "first_pass_absorbed_external_W_m2": 76.86332202720527,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 207.88946978210265
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 336.50697311789474,
+          "external_incident_W_m2": 85.40369114133918,
+          "first_pass_absorbed_external_W_m2": 76.86332202720527,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 421.9106642592339
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2015.8237971448639,
+          "external_incident_W_m2": 85.40369114133918,
+          "first_pass_absorbed_external_W_m2": 76.86332202720527,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2101.227488286203
+        }
+      ]
+    },
+    {
+      "geometry": "complete_black_bath_200K",
+      "fixed_external_patches": [
+        {
+          "F": 1.0,
+          "J_W_m2": 90.725990704
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": -4.790069606394738,
+          "external_incident_W_m2": 90.725990704,
+          "first_pass_absorbed_external_W_m2": 81.6533916336,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 85.93592109760526
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": 0.0,
+          "external_incident_W_m2": 90.725990704,
+          "first_pass_absorbed_external_W_m2": 81.6533916336,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 90.725990704
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 117.69570903436875,
+          "external_incident_W_m2": 90.725990704,
+          "first_pass_absorbed_external_W_m2": 81.6533916336,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 208.42169973836874
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 331.71690351149994,
+          "external_incident_W_m2": 90.725990704,
+          "first_pass_absorbed_external_W_m2": 81.6533916336,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 422.44289421549996
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 2011.0337275384688,
+          "external_incident_W_m2": 90.725990704,
+          "first_pass_absorbed_external_W_m2": 81.6533916336,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2101.759718242469
+        }
+      ]
+    },
+    {
+      "geometry": "complete_black_bath_250K",
+      "fixed_external_patches": [
+        {
+          "F": 1.0,
+          "J_W_m2": 221.4990007421875
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": -122.48577864076348,
+          "external_incident_W_m2": 221.4990007421875,
+          "first_pass_absorbed_external_W_m2": 199.34910066796874,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 99.013222101424
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": -117.69570903436875,
+          "external_incident_W_m2": 221.4990007421875,
+          "first_pass_absorbed_external_W_m2": 199.34910066796874,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 103.80329170781874
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": 0.0,
+          "external_incident_W_m2": 221.4990007421875,
+          "first_pass_absorbed_external_W_m2": 199.34910066796874,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 221.4990007421875
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 214.02119447713125,
+          "external_incident_W_m2": 221.4990007421875,
+          "first_pass_absorbed_external_W_m2": 199.34910066796874,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 435.52019521931874
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 1893.3380185041,
+          "external_incident_W_m2": 221.4990007421875,
+          "first_pass_absorbed_external_W_m2": 199.34910066796874,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2114.8370192462876
+        }
+      ]
+    },
+    {
+      "geometry": "complete_black_bath_300K",
+      "fixed_external_patches": [
+        {
+          "F": 1.0,
+          "J_W_m2": 459.300327939
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": -336.50697311789474,
+          "external_incident_W_m2": 459.300327939,
+          "first_pass_absorbed_external_W_m2": 413.3702951451,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 122.79335482110525
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": -331.71690351150005,
+          "external_incident_W_m2": 459.300327939,
+          "first_pass_absorbed_external_W_m2": 413.3702951451,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 127.58342442749998
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": -214.02119447713127,
+          "external_incident_W_m2": 459.300327939,
+          "first_pass_absorbed_external_W_m2": 413.3702951451,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 245.27913346186872
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": 0.0,
+          "external_incident_W_m2": 459.300327939,
+          "first_pass_absorbed_external_W_m2": 413.3702951451,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 459.300327939
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 1679.3168240269688,
+          "external_incident_W_m2": 459.300327939,
+          "first_pass_absorbed_external_W_m2": 413.3702951451,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2138.617151965969
+        }
+      ]
+    },
+    {
+      "geometry": "complete_black_bath_450K",
+      "fixed_external_patches": [
+        {
+          "F": 1.0,
+          "J_W_m2": 2325.2079101911872
+        }
+      ],
+      "rows": [
+        {
+          "radiator_K": 197,
+          "net_rejection_W_m2": -2015.8237971448634,
+          "external_incident_W_m2": 2325.2079101911872,
+          "first_pass_absorbed_external_W_m2": 2092.6871191720684,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 309.38411304632393
+        },
+        {
+          "radiator_K": 200,
+          "net_rejection_W_m2": -2011.0337275384686,
+          "external_incident_W_m2": 2325.2079101911872,
+          "first_pass_absorbed_external_W_m2": 2092.6871191720684,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 314.1741826527186
+        },
+        {
+          "radiator_K": 250,
+          "net_rejection_W_m2": -1893.3380185040999,
+          "external_incident_W_m2": 2325.2079101911872,
+          "first_pass_absorbed_external_W_m2": 2092.6871191720684,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 431.8698916870874
+        },
+        {
+          "radiator_K": 300,
+          "net_rejection_W_m2": -1679.3168240269686,
+          "external_incident_W_m2": 2325.2079101911872,
+          "first_pass_absorbed_external_W_m2": 2092.6871191720684,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 645.8910861642187
+        },
+        {
+          "radiator_K": 450,
+          "net_rejection_W_m2": 4.547473508864641e-13,
+          "external_incident_W_m2": 2325.2079101911872,
+          "first_pass_absorbed_external_W_m2": 2092.6871191720684,
+          "sky_view_factor": 0,
+          "self_view_factor": 0.0,
+          "radiosity_W_m2": 2325.2079101911877
+        }
+      ]
+    }
+  ],
+  "energy_balanced_enclosing_black_shells": [
+    {
+      "enclosing_shell_radius_AU": 5,
+      "luminosity_fraction": 0.9,
+      "equal_inner_outer_black_temperature_K": 171.45513686499902,
+      "absorbed_W_m2_alpha09": 44.10179347923785,
+      "net_rejection_by_temperature_W_m2": {
+        "197": 32.76152854796741,
+        "200": 37.55159815436215,
+        "250": 155.24730718873093,
+        "300": 369.2685016658622,
+        "450": 2048.585325692831
+      }
+    },
+    {
+      "enclosing_shell_radius_AU": 6,
+      "luminosity_fraction": 0.9,
+      "equal_inner_outer_black_temperature_K": 156.51641010182593,
+      "absorbed_W_m2_alpha09": 30.626245471692954,
+      "net_rejection_by_temperature_W_m2": {
+        "197": 46.2370765555123,
+        "200": 51.02714616190705,
+        "250": 168.72285519627582,
+        "300": 382.74404967340706,
+        "450": 2062.060873700376
+      }
+    },
+    {
+      "enclosing_shell_radius_AU": 10,
+      "luminosity_fraction": 0.9,
+      "equal_inner_outer_black_temperature_K": 121.23708994650842,
+      "absorbed_W_m2_alpha09": 11.02544836980946,
+      "net_rejection_by_temperature_W_m2": {
+        "197": 65.8378736573958,
+        "200": 70.62794326379054,
+        "250": 188.3236522981593,
+        "300": 402.34484677529053,
+        "450": 2081.6616708022593
+      }
+    }
+  ],
+  "warm_view_limits": [
+    {
+      "radiator_K": 197,
+      "warm_black_patch_K": 200,
+      "F_max_for_positive_net": 0.941336550625,
+      "F_max_for_80pct_clear_sky_capacity": 0.188267310125
+    },
+    {
+      "radiator_K": 197,
+      "warm_black_patch_K": 250,
+      "F_max_for_positive_net": 0.38557145113600005,
+      "F_max_for_80pct_clear_sky_capacity": 0.07711429022720001
+    },
+    {
+      "radiator_K": 197,
+      "warm_black_patch_K": 300,
+      "F_max_for_positive_net": 0.18594302234567897,
+      "F_max_for_80pct_clear_sky_capacity": 0.03718860446913579
+    },
+    {
+      "radiator_K": 197,
+      "warm_black_patch_K": 450,
+      "F_max_for_positive_net": 0.03672948589544276,
+      "F_max_for_80pct_clear_sky_capacity": 0.007345897179088553
+    },
+    {
+      "radiator_K": 197,
+      "warm_black_patch_K": 1000,
+      "F_max_for_positive_net": 0.0015061384810000002,
+      "F_max_for_80pct_clear_sky_capacity": 0.00030122769620000004
+    },
+    {
+      "radiator_K": 200,
+      "warm_black_patch_K": 200,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 0.2
+    },
+    {
+      "radiator_K": 200,
+      "warm_black_patch_K": 250,
+      "F_max_for_positive_net": 0.4096000000000001,
+      "F_max_for_80pct_clear_sky_capacity": 0.08192000000000002
+    },
+    {
+      "radiator_K": 200,
+      "warm_black_patch_K": 300,
+      "F_max_for_positive_net": 0.19753086419753083,
+      "F_max_for_80pct_clear_sky_capacity": 0.039506172839506165
+    },
+    {
+      "radiator_K": 200,
+      "warm_black_patch_K": 450,
+      "F_max_for_positive_net": 0.039018442310623375,
+      "F_max_for_80pct_clear_sky_capacity": 0.007803688462124675
+    },
+    {
+      "radiator_K": 200,
+      "warm_black_patch_K": 1000,
+      "F_max_for_positive_net": 0.0016000000000000003,
+      "F_max_for_80pct_clear_sky_capacity": 0.0003200000000000001
+    },
+    {
+      "radiator_K": 250,
+      "warm_black_patch_K": 200,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 0.48828125
+    },
+    {
+      "radiator_K": 250,
+      "warm_black_patch_K": 250,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 0.2
+    },
+    {
+      "radiator_K": 250,
+      "warm_black_patch_K": 300,
+      "F_max_for_positive_net": 0.4822530864197532,
+      "F_max_for_80pct_clear_sky_capacity": 0.09645061728395064
+    },
+    {
+      "radiator_K": 250,
+      "warm_black_patch_K": 450,
+      "F_max_for_positive_net": 0.09525986892242037,
+      "F_max_for_80pct_clear_sky_capacity": 0.019051973784484075
+    },
+    {
+      "radiator_K": 250,
+      "warm_black_patch_K": 1000,
+      "F_max_for_positive_net": 0.00390625,
+      "F_max_for_80pct_clear_sky_capacity": 0.00078125
+    },
+    {
+      "radiator_K": 300,
+      "warm_black_patch_K": 200,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 1.0
+    },
+    {
+      "radiator_K": 300,
+      "warm_black_patch_K": 250,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 0.41472
+    },
+    {
+      "radiator_K": 300,
+      "warm_black_patch_K": 300,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 0.2
+    },
+    {
+      "radiator_K": 300,
+      "warm_black_patch_K": 450,
+      "F_max_for_positive_net": 0.19753086419753083,
+      "F_max_for_80pct_clear_sky_capacity": 0.039506172839506165
+    },
+    {
+      "radiator_K": 300,
+      "warm_black_patch_K": 1000,
+      "F_max_for_positive_net": 0.0081,
+      "F_max_for_80pct_clear_sky_capacity": 0.00162
+    },
+    {
+      "radiator_K": 450,
+      "warm_black_patch_K": 200,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 1.0
+    },
+    {
+      "radiator_K": 450,
+      "warm_black_patch_K": 250,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 1.0
+    },
+    {
+      "radiator_K": 450,
+      "warm_black_patch_K": 300,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 1.0
+    },
+    {
+      "radiator_K": 450,
+      "warm_black_patch_K": 450,
+      "F_max_for_positive_net": 1.0,
+      "F_max_for_80pct_clear_sky_capacity": 0.2
+    },
+    {
+      "radiator_K": 450,
+      "warm_black_patch_K": 1000,
+      "F_max_for_positive_net": 0.04100625,
+      "F_max_for_80pct_clear_sky_capacity": 0.00820125
+    }
+  ],
+  "area_accounting": {
+    "emitting_area": "Sumofphysicalradiatingfaces. A_two_sided_panel=2A_planform onlyifbothfacescountedwiththeirviewfactors.",
+    "plant_balance": "Q_cold_internal+Q_IR_abs_oncollector+Q_conduction+Q_other=\u03a3 A_emit_i q_net_i; do notcountthe same externalIR twice.",
+    "collector_routing": "Q_IR_collector=q_abs_collector*A_collector. Its contribution peremittingarea isQ_IR_collector/A_emit, notq_abs_collector repeatedonA_emit.",
+    "projection": "Small centralisotropic source heats a fullysphericalreceiver byprojectedarea\u03c0R\u00b2; outwardemittingarea4\u03c0R\u00b2 givesfactor1/4. A facing flatpanel usesitsprojectedarea,notfactor1/4."
+  },
+  "assumptions": [
+    "Fixedblackexternalradiosity or statedisotropicluminositybenchmarks;actualswarmhasdirectionaland spectral structure.",
+    "GrayalphaIR=epsilon=.9 fordirectionalcases. A spectralmodelmay use differentPlanckmeanabsorptionforwarmandcold spectra whileobeyingKirchhoffat each wavelength/direction.",
+    "No uniform300K enclosingshell at5AU isimpliedbycanon. Itsenergybudget requiresadditionalpower or differentinner/outersurfaces/escapeemissivity.",
+    "Opposite-facing lowIRpanels requireactualspaceview andthermalrouting. Shieldtemperature, occlusionandconduction remainengineeringinputs.",
+    "Same-temperature selfview solvedas grayradiosity;external fixedsurfaces do notreactthermally in thisscreen. A finite shieldmustgets itsownbalance.",
+    "No probability distribution overunknowngeometry isassigned. Tablesareconditionalcases."
+  ],
+  "sources": {
+    "NASA_thermal_balance": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+    "Dyson_radiative_thermodynamics": "https://arxiv.org/abs/2309.06564"
+  },
+  "checks": {
+    "passed": true,
+    "count": 38
+  }
+}

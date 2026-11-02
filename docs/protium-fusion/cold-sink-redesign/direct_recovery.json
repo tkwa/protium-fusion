@@ -1,0 +1,1408 @@
+{
+  "scope": "Conditional upstream direct-recovery requirements; fully stripped diagnostics, not a charge-state calculation or a complete converter design. Frozen pulse and cycle inputs are not edited.",
+  "input_sha256": {
+    "station": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "wall": "6ff0345c6ff48ae89503d89a04b698d4b77643e76646081943dbabd28626689a",
+    "stopping": "6e1edbf7a029b524b6370f6a5cfff95b30c3f197bedc2f0e30a8fa4103430a8a",
+    "matched_thermal_cases": "01722faeaf6101777ce8208024963e31995961d9e38a3a8f15ace5c43dea07fa"
+  },
+  "code_sha256": "663270e891869ff0f3befc37061fafb0c2cc687e716d07fa8186f576fc91ce90",
+  "reference": {
+    "radius_m": 1100000000.0,
+    "area_m2": 1.5205308443374598e+19,
+    "helium_per_s": 3.782247267560003e+32,
+    "timing": "mass999,80percent occupancy",
+    "H_nonnu_MeV_per_He": 24.72803748527787,
+    "U_prepared_MeV_per_He": 2.2947465362042574,
+    "K_MeV_per_He": 19.910491102008365,
+    "capture": 0.99,
+    "eligible_K_fraction_assumed": 1.0,
+    "driver_efficiency": 0.6,
+    "mean_K_W_m2": 79.35002162394221,
+    "peak_K_W_m2": 636158.2759635198,
+    "peak_to_mean_K": 8017.115344699192,
+    "sum_stage_pulse_K_J": 1.274185317142371e+27,
+    "existing_two_driver_pulse_storage_J": 1.358131011980951e+26
+  },
+  "stages": {
+    "C13": {
+      "pulse_kinetic_J_exact_nodal": 5.193381500939768e+26,
+      "fluence_K_J_m2_exact_nodal": 34155055.25770954,
+      "fluence_K_J_m2_smooth": 34108878.22900214,
+      "peak_K_W_m2_smooth_exact_cell_endpoint": 636158.2759635198,
+      "whole_receiver_peak_K_W": 9.672982804830736e+24,
+      "pulse_interval_s_at_reference_rate": 15885706.54029858,
+      "mean_K_W_m2_this_stage": 2.150049490783781,
+      "arrival_1_50_99_percent_energy_s": [
+        59.100713872022865,
+        94.33837343481528,
+        268.5835157599453
+      ],
+      "fully_stripped_charge_fluence_C_m2": 35.79123474789427,
+      "fully_stripped_peak_current_A_m2_quadrature_sample": 0.3671981915890909,
+      "fully_stripped_sum_local_peak_currents_A": 5.583361762961487e+18,
+      "fully_stripped_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 174618.92244058312,
+        "0.1": 510227.0040440968,
+        "0.5": 1395342.443761269,
+        "0.9": 2967220.067924055,
+        "0.99": 3827228.152066516
+      },
+      "singly_ionized_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 996464.1284611807,
+        "0.1": 3179178.5661329078,
+        "0.5": 9498355.113785049,
+        "0.9": 17803320.40754433,
+        "0.99": 22963368.9123991
+      },
+      "species_fraction_of_K": {
+        "n14": 0.6470207084562025,
+        "c13": 0.3042088551777442,
+        "p": 0.021588560251847206,
+        "o15": 0.014020076032329642,
+        "n15": 0.013161707429255914,
+        "c12": 4.8596496470234126e-08,
+        "o16": 2.8560952062894458e-08,
+        "he4": 7.0656644263054824e-09
+      },
+      "shared_shell_ramp_ideal_limits": [
+        {
+          "V_over_Eperu_MeV_in_MV": 1.0,
+          "ideal_recovered_fraction_of_all_K": 0.49912255219002405,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.0,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.75,
+          "ideal_recovered_fraction_of_all_K": 0.8356844858918091,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.021588560251847203,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.875,
+          "ideal_recovered_fraction_of_all_K": 0.8953762264036884,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.02158856857180224,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 2.0,
+          "ideal_recovered_fraction_of_all_K": 0.9401132270627718,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.03560864460414217,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        }
+      ],
+      "sample_at_largest_quadrature_Kflux": {
+        "time_s": 71.25392714707085,
+        "velocity_m_s": 15437751.300587477,
+        "Kflux_W_m2": 631730.2815917775,
+        "fully_stripped_current_A_m2": 0.2557360468588603,
+        "fully_stripped_electron_density_m3": 103394518155.9932,
+        "total_ion_density_m3": 27369060704.86942,
+        "ion_inertial_length_c_over_omega_pi_m": 966.6951606434255,
+        "electron_inertial_length_m": 16.52648201851765,
+        "B_matching_peak_ram_pressure_T": 0.0004873615948295766,
+        "N14_gyroradius_at_that_B_m": 656.6008442510035
+      },
+      "scope": "Saved64-zone ballistic reconstruction and finite-flight nuclear daughters; atomic charge is assumed only for voltage/current diagnostics. Peak current uses512 quadrature samples, kinetic peak uses cell endpoints."
+    },
+    "A": {
+      "pulse_kinetic_J_exact_nodal": 3.0384816564650838e+26,
+      "fluence_K_J_m2_exact_nodal": 19983032.029771417,
+      "fluence_K_J_m2_smooth": 19953251.145019997,
+      "peak_K_W_m2_smooth_exact_cell_endpoint": 470465.07020164997,
+      "whole_receiver_peak_K_W": 7.153566504249972e+24,
+      "pulse_interval_s_at_reference_rate": 648690.3901793147,
+      "mean_K_W_m2_this_stage": 30.80519201810219,
+      "arrival_1_50_99_percent_energy_s": [
+        81.92641247879453,
+        130.1424946339856,
+        316.5377035305833
+      ],
+      "fully_stripped_charge_fluence_C_m2": 36.55130092276413,
+      "fully_stripped_peak_current_A_m2_quadrature_sample": 0.5852965930020446,
+      "fully_stripped_sum_local_peak_currents_A": 8.899615227452375e+18,
+      "fully_stripped_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 126349.48800437312,
+        "0.1": 322110.51545339235,
+        "0.5": 721321.6982826772,
+        "0.9": 1336682.299193109,
+        "0.99": 1837187.9410670444
+      },
+      "singly_ionized_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 329638.7619072893,
+        "0.1": 1943480.1073361214,
+        "0.5": 5151413.896096378,
+        "0.9": 9356776.094351761,
+        "0.99": 12860315.58746931
+      },
+      "species_fraction_of_K": {
+        "n14": 0.5719894828154792,
+        "n15": 0.2333510001203145,
+        "o15": 0.15380310219689397,
+        "p": 0.04085638926408679,
+        "c12": 1.6428068330156213e-08,
+        "he4": 6.805967907884733e-09,
+        "n13": 1.609801220489687e-09,
+        "c13": 3.873935228466414e-10
+      },
+      "shared_shell_ramp_ideal_limits": [
+        {
+          "V_over_Eperu_MeV_in_MV": 1.0,
+          "ideal_recovered_fraction_of_all_K": 0.5177765981079586,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.0,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.75,
+          "ideal_recovered_fraction_of_all_K": 0.8346103654767758,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.04085638926408679,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.875,
+          "ideal_recovered_fraction_of_all_K": 0.8942253895615725,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.04085639124293466,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 2.0,
+          "ideal_recovered_fraction_of_all_K": 0.7897837731889902,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.19465949343982886,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        }
+      ],
+      "sample_at_largest_quadrature_Kflux": {
+        "time_s": 122.15170277614483,
+        "velocity_m_s": 9005197.886165591,
+        "Kflux_W_m2": 469670.1078349852,
+        "fully_stripped_current_A_m2": 0.5852965930020446,
+        "fully_stripped_electron_density_m3": 405669485851.65753,
+        "total_ion_density_m3": 88359656963.63036,
+        "ion_inertial_length_c_over_omega_pi_m": 482.14861382809875,
+        "electron_inertial_length_m": 8.343398777382964,
+        "B_matching_peak_ram_pressure_T": 0.0005123422624219629,
+        "N14_gyroradius_at_that_B_m": 364.33574199701906
+      },
+      "scope": "Saved64-zone ballistic reconstruction and finite-flight nuclear daughters; atomic charge is assumed only for voltage/current diagnostics. Peak current uses512 quadrature samples, kinetic peak uses cell endpoints."
+    },
+    "B1": {
+      "pulse_kinetic_J_exact_nodal": 2.0957580320356454e+24,
+      "fluence_K_J_m2_exact_nodal": 137830.68195165938,
+      "fluence_K_J_m2_smooth": 137785.55323628456,
+      "peak_K_W_m2_smooth_exact_cell_endpoint": 2819.7718229753195,
+      "whole_receiver_peak_K_W": 4.287550030827641e+22,
+      "pulse_interval_s_at_reference_rate": 6774.3130579500075,
+      "mean_K_W_m2_this_stage": 20.346075059213266,
+      "arrival_1_50_99_percent_energy_s": [
+        119.24284990075304,
+        161.70278394950282,
+        366.7789895306326
+      ],
+      "fully_stripped_charge_fluence_C_m2": 0.3588292671202488,
+      "fully_stripped_peak_current_A_m2_quadrature_sample": 0.003927799643224405,
+      "fully_stripped_sum_local_peak_currents_A": 5.9723405079003784e+16,
+      "fully_stripped_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 92609.41842953759,
+        "0.1": 240718.25029663174,
+        "0.5": 476897.20676574286,
+        "0.9": 763427.5453163177,
+        "0.99": 943285.4218512176
+      },
+      "singly_ionized_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 224868.56361232026,
+        "0.1": 730452.55105577,
+        "0.5": 2905538.700565929,
+        "0.9": 5343992.8172142245,
+        "0.99": 6602997.952958524
+      },
+      "species_fraction_of_K": {
+        "n15": 0.5043277433904553,
+        "c12": 0.34647613580992853,
+        "he4": 0.11549905285737377,
+        "p": 0.03362009764304326,
+        "o16": 5.41955451538996e-05,
+        "n13": 1.7931615872869733e-05,
+        "c13": 4.8428315772417366e-06,
+        "n14": 2.1364395693204275e-10
+      },
+      "shared_shell_ramp_ideal_limits": [
+        {
+          "V_over_Eperu_MeV_in_MV": 1.0,
+          "ideal_recovered_fraction_of_all_K": 0.49999962745775617,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.0,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.75,
+          "ideal_recovered_fraction_of_all_K": 0.8161641771757475,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.03362009764304327,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.875,
+          "ideal_recovered_fraction_of_all_K": 0.8744435143291961,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.033638029294508036,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 2.0,
+          "ideal_recovered_fraction_of_all_K": 0.9327397486143755,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.03363802929775111,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        }
+      ],
+      "sample_at_largest_quadrature_Kflux": {
+        "time_s": 132.3311003174667,
+        "velocity_m_s": 8312485.173720531,
+        "Kflux_W_m2": 2812.8708825478366,
+        "fully_stripped_current_A_m2": 0.003927799643224405,
+        "fully_stripped_electron_density_m3": 2949225965.9425273,
+        "total_ion_density_m3": 737306412.7962983,
+        "ion_inertial_length_c_over_omega_pi_m": 5720.980374573987,
+        "electron_inertial_length_m": 97.85322596521279,
+        "B_matching_peak_ram_pressure_T": 4.1280357338404815e-05,
+        "N14_gyroradius_at_that_B_m": 4174.035467672505
+      },
+      "scope": "Saved64-zone ballistic reconstruction and finite-flight nuclear daughters; atomic charge is assumed only for voltage/current diagnostics. Peak current uses512 quadrature samples, kinetic peak uses cell endpoints."
+    },
+    "B2": {
+      "pulse_kinetic_J_exact_nodal": 4.489032433698501e+26,
+      "fluence_K_J_m2_exact_nodal": 29522797.583593283,
+      "fluence_K_J_m2_smooth": 29471128.37212224,
+      "peak_K_W_m2_smooth_exact_cell_endpoint": 488515.81760896934,
+      "whole_receiver_peak_K_W": 7.428033686211707e+24,
+      "pulse_interval_s_at_reference_rate": 1133368.9623012526,
+      "mean_K_W_m2_this_stage": 26.04870837793954,
+      "arrival_1_50_99_percent_energy_s": [
+        62.52724988550641,
+        105.4536838872486,
+        272.24256154992327
+      ],
+      "fully_stripped_charge_fluence_C_m2": 37.71364724371076,
+      "fully_stripped_peak_current_A_m2_quadrature_sample": 0.37422867025478374,
+      "fully_stripped_sum_local_peak_currents_A": 5.690262359577911e+18,
+      "fully_stripped_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 166690.6041790274,
+        "0.1": 445483.450489999,
+        "0.5": 1037008.9799952415,
+        "0.9": 2318214.157862019,
+        "0.99": 3144367.136871171
+      },
+      "singly_ionized_Eperq_V_energy_weighted_quantiles": {
+        "0.01": 712342.4765085138,
+        "0.1": 2416598.9515097234,
+        "0.5": 7228644.166981229,
+        "0.9": 13909284.947172113,
+        "0.99": 18866202.82122703
+      },
+      "species_fraction_of_K": {
+        "n14": 0.4496351995846637,
+        "c12": 0.23523653853665902,
+        "o14": 0.18177580175052532,
+        "n13": 0.07816188309112915,
+        "p": 0.04593083031892696,
+        "c13": 0.009259745260637694,
+        "n15": 7.99640364279172e-10,
+        "o15": 5.825335961085941e-10
+      },
+      "shared_shell_ramp_ideal_limits": [
+        {
+          "V_over_Eperu_MeV_in_MV": 1.0,
+          "ideal_recovered_fraction_of_all_K": 0.5385994832157256,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.0,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.75,
+          "ideal_recovered_fraction_of_all_K": 0.8621701425693976,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.045930830318926946,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 1.875,
+          "ideal_recovered_fraction_of_all_K": 0.6500804969323358,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.3058685151605813,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        },
+        {
+          "V_over_Eperu_MeV_in_MV": 2.0,
+          "ideal_recovered_fraction_of_all_K": 0.6934191961064389,
+          "kinetic_fraction_needing_reflected_or_separate_route": 0.30586851574313095,
+          "scope": "Kinematic shell-following retarder; each accepted ion must be collected or routed before reacceleration. No extraction, waveform, grid or electron losses included."
+        }
+      ],
+      "sample_at_largest_quadrature_Kflux": {
+        "time_s": 93.60647805110419,
+        "velocity_m_s": 11751326.94887726,
+        "Kflux_W_m2": 486687.9728560929,
+        "fully_stripped_current_A_m2": 0.36796226477144256,
+        "fully_stripped_electron_density_m3": 195436636613.15433,
+        "total_ion_density_m3": 37355921129.07028,
+        "ion_inertial_length_c_over_omega_pi_m": 688.4276003125677,
+        "electron_inertial_length_m": 12.02060101101917,
+        "B_matching_peak_ram_pressure_T": 0.00045690644710232167,
+        "N14_gyroradius_at_that_B_m": 533.1241090922935
+      },
+      "scope": "Saved64-zone ballistic reconstruction and finite-flight nuclear daughters; atomic charge is assumed only for voltage/current diagnostics. Peak current uses512 quadrature samples, kinetic peak uses cell endpoints."
+    }
+  },
+  "electrical_cases": [
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.0,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 0.0,
+      "direct_delivered_MeV_per_He": 0.0,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 26.752556181267305,
+      "total_gross_electric_MeV_per_He": 10.701022472506923,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 6.876444912166493,
+      "increment_vs_same_heat_baseline_MeV_per_He": 0.0,
+      "increment_W_m2": 0.0,
+      "global_waste_MeV_per_He": 17.581364732896553,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 9.855693095494141,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 16.614438329803406,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 12.789860769462976,
+      "increment_vs_same_heat_baseline_MeV_per_He": 5.913415857296483,
+      "increment_W_m2": 23.566956422310827,
+      "global_waste_MeV_per_He": 11.667948875600072,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 8.870123785944728,
+      "storage_loss_MeV_per_He_rejected_separately": 0.9855693095494139,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 15.628869020253994,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 11.804291459913564,
+      "increment_vs_same_heat_baseline_MeV_per_He": 4.927846547747071,
+      "increment_W_m2": 19.6391303519257,
+      "global_waste_MeV_per_He": 12.653518185149483,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 13.797970333691795,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 18.979804672722,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 15.15522711238157,
+      "increment_vs_same_heat_baseline_MeV_per_He": 8.278782200215078,
+      "increment_W_m2": 32.99373899123517,
+      "global_waste_MeV_per_He": 9.302582532681477,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 12.418173300322616,
+      "storage_loss_MeV_per_He_rejected_separately": 1.3797970333691791,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 17.60000763935282,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 13.775430079012391,
+      "increment_vs_same_heat_baseline_MeV_per_He": 6.898985166845899,
+      "increment_W_m2": 27.494782492695975,
+      "global_waste_MeV_per_He": 10.682379566050656,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 15.769108952790626,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 20.1624878441813,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 16.33791028384087,
+      "increment_vs_same_heat_baseline_MeV_per_He": 9.461465371674377,
+      "increment_W_m2": 37.707130275697345,
+      "global_waste_MeV_per_He": 8.119899361222178,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 14.192198057511565,
+      "storage_loss_MeV_per_He_rejected_separately": 1.5769108952790623,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 18.585576948902236,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 14.760999388561807,
+      "increment_vs_same_heat_baseline_MeV_per_He": 7.884554476395314,
+      "increment_W_m2": 31.42260856308112,
+      "global_waste_MeV_per_He": 9.69681025650124,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 16.75467826234004,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 20.753829429910947,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 16.929251869570518,
+      "increment_vs_same_heat_baseline_MeV_per_He": 10.052806957404025,
+      "increment_W_m2": 40.063825917928426,
+      "global_waste_MeV_per_He": 7.52855777549253,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.4,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 15.079210436106036,
+      "storage_loss_MeV_per_He_rejected_separately": 1.6754678262340037,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 19.078361603676942,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 15.253784043336513,
+      "increment_vs_same_heat_baseline_MeV_per_He": 8.37733913117002,
+      "increment_W_m2": 33.38652159827369,
+      "global_waste_MeV_per_He": 9.204025601726535,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.0,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 0.0,
+      "direct_delivered_MeV_per_He": 0.0,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 26.752556181267305,
+      "total_gross_electric_MeV_per_He": 16.05153370876038,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 12.226956148419951,
+      "increment_vs_same_heat_baseline_MeV_per_He": -3.552713678800501e-15,
+      "increment_W_m2": -1.4158762121546014e-14,
+      "global_waste_MeV_per_He": 12.230853496643096,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 9.855693095494141,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 19.99381094695804,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 16.16923338661761,
+      "increment_vs_same_heat_baseline_MeV_per_He": 3.9422772381976543,
+      "increment_W_m2": 15.71130428154055,
+      "global_waste_MeV_per_He": 8.288576258445438,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 8.870123785944728,
+      "storage_loss_MeV_per_He_rejected_separately": 0.9855693095494139,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 19.008241637408624,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 15.183664077068194,
+      "increment_vs_same_heat_baseline_MeV_per_He": 2.956707928648239,
+      "increment_W_m2": 11.783478211155403,
+      "global_waste_MeV_per_He": 9.274145567994854,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 13.797970333691795,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 21.570721842237102,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.746144281896672,
+      "increment_vs_same_heat_baseline_MeV_per_He": 5.519188133476717,
+      "increment_W_m2": 21.995825994156775,
+      "global_waste_MeV_per_He": 6.711665363166375,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 12.418173300322616,
+      "storage_loss_MeV_per_He_rejected_separately": 1.3797970333691791,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 20.190924808867923,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 16.366347248527493,
+      "increment_vs_same_heat_baseline_MeV_per_He": 4.139391100107538,
+      "increment_W_m2": 16.496869495617585,
+      "global_waste_MeV_per_He": 8.091462396535555,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 15.769108952790626,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 22.359177289876634,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 18.534599729536204,
+      "increment_vs_same_heat_baseline_MeV_per_He": 6.307643581116249,
+      "increment_W_m2": 25.138086850464884,
+      "global_waste_MeV_per_He": 5.923209915526844,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 14.192198057511565,
+      "storage_loss_MeV_per_He_rejected_separately": 1.5769108952790623,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 20.78226639459757,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 16.95768883425714,
+      "increment_vs_same_heat_baseline_MeV_per_He": 4.730732685837186,
+      "increment_W_m2": 18.853565137848662,
+      "global_waste_MeV_per_He": 7.500120810805907,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 16.75467826234004,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 22.753405013696398,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 18.928827453355968,
+      "increment_vs_same_heat_baseline_MeV_per_He": 6.701871304936013,
+      "increment_W_m2": 26.709217278618937,
+      "global_waste_MeV_per_He": 5.52898219170708,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.6,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 15.079210436106036,
+      "storage_loss_MeV_per_He_rejected_separately": 1.6754678262340037,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 21.077937187462396,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.253359627121966,
+      "increment_vs_same_heat_baseline_MeV_per_He": 5.0264034787020115,
+      "increment_W_m2": 20.03191295896421,
+      "global_waste_MeV_per_He": 7.204450017941081,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.0,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 0.0,
+      "direct_delivered_MeV_per_He": 0.0,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 26.752556181267305,
+      "total_gross_electric_MeV_per_He": 17.389161517823748,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 13.564583957483318,
+      "increment_vs_same_heat_baseline_MeV_per_He": 0.0,
+      "increment_W_m2": 0.0,
+      "global_waste_MeV_per_He": 10.89322568757973,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 9.855693095494141,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 20.838654101246696,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.014076540906267,
+      "increment_vs_same_heat_baseline_MeV_per_He": 3.4494925834229484,
+      "increment_W_m2": 13.747391246347982,
+      "global_waste_MeV_per_He": 7.443733104156781,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 8.870123785944728,
+      "storage_loss_MeV_per_He_rejected_separately": 0.9855693095494139,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 19.853084791697285,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 16.028507231356855,
+      "increment_vs_same_heat_baseline_MeV_per_He": 2.4639232738735366,
+      "increment_W_m2": 9.819565175962852,
+      "global_waste_MeV_per_He": 8.429302413706193,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 13.797970333691795,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 22.218451134615876,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 18.393873574275446,
+      "increment_vs_same_heat_baseline_MeV_per_He": 4.829289616792128,
+      "increment_W_m2": 19.246347744887178,
+      "global_waste_MeV_per_He": 6.0639360707876016,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 12.418173300322616,
+      "storage_loss_MeV_per_He_rejected_separately": 1.3797970333691791,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 20.838654101246696,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.014076540906267,
+      "increment_vs_same_heat_baseline_MeV_per_He": 3.4494925834229484,
+      "increment_W_m2": 13.747391246347982,
+      "global_waste_MeV_per_He": 7.443733104156781,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 15.769108952790626,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 22.90834965130047,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 19.08377209096004,
+      "increment_vs_same_heat_baseline_MeV_per_He": 5.519188133476721,
+      "increment_W_m2": 21.995825994156792,
+      "global_waste_MeV_per_He": 5.374037554103008,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 14.192198057511565,
+      "storage_loss_MeV_per_He_rejected_separately": 1.5769108952790623,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 21.331438756021406,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.506861195680976,
+      "increment_vs_same_heat_baseline_MeV_per_He": 3.942277238197658,
+      "increment_W_m2": 15.711304281540563,
+      "global_waste_MeV_per_He": 6.9509484493820715,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 16.75467826234004,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 23.253298909642762,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 19.428721349302332,
+      "increment_vs_same_heat_baseline_MeV_per_He": 5.864137391819014,
+      "increment_W_m2": 23.37056511879158,
+      "global_waste_MeV_per_He": 5.029088295760715,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.65,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 15.079210436106036,
+      "storage_loss_MeV_per_He_rejected_separately": 1.6754678262340037,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 21.57783108340876,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.75325352306833,
+      "increment_vs_same_heat_baseline_MeV_per_He": 4.188669565585013,
+      "increment_W_m2": 16.69326079913685,
+      "global_waste_MeV_per_He": 6.704556121994717,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.0,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 0.0,
+      "direct_delivered_MeV_per_He": 0.0,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 26.752556181267305,
+      "total_gross_electric_MeV_per_He": 18.72678932688711,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 14.902211766546682,
+      "increment_vs_same_heat_baseline_MeV_per_He": -3.552713678800501e-15,
+      "increment_W_m2": -1.4158762121546014e-14,
+      "global_waste_MeV_per_He": 9.555597878516366,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 9.855693095494141,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 21.683497255535354,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.858919695194924,
+      "increment_vs_same_heat_baseline_MeV_per_He": 2.956707928648239,
+      "increment_W_m2": 11.783478211155403,
+      "global_waste_MeV_per_He": 6.5988899498681235,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.5,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 9.855693095494141,
+      "direct_delivered_MeV_per_He": 8.870123785944728,
+      "storage_loss_MeV_per_He_rejected_separately": 0.9855693095494139,
+      "heat_engine_input_MeV_per_He": 16.896863085773163,
+      "total_gross_electric_MeV_per_He": 20.69792794598594,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 16.87335038564551,
+      "increment_vs_same_heat_baseline_MeV_per_He": 1.9711386190988236,
+      "increment_W_m2": 7.85565214077026,
+      "global_waste_MeV_per_He": 7.584459259417539,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 13.797970333691795,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 22.866180426994653,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 19.041602866654223,
+      "increment_vs_same_heat_baseline_MeV_per_He": 4.139391100107538,
+      "increment_W_m2": 16.496869495617585,
+      "global_waste_MeV_per_He": 5.416206778408824,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.7,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 13.797970333691795,
+      "direct_delivered_MeV_per_He": 12.418173300322616,
+      "storage_loss_MeV_per_He_rejected_separately": 1.3797970333691791,
+      "heat_engine_input_MeV_per_He": 12.95458584757551,
+      "total_gross_electric_MeV_per_He": 21.486383393625474,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 17.661805833285044,
+      "increment_vs_same_heat_baseline_MeV_per_He": 2.7595940667383587,
+      "increment_W_m2": 10.997912997078387,
+      "global_waste_MeV_per_He": 6.796003811778004,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 15.769108952790626,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 23.4575220127243,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 19.63294445238387,
+      "increment_vs_same_heat_baseline_MeV_per_He": 4.730732685837186,
+      "increment_W_m2": 18.853565137848662,
+      "global_waste_MeV_per_He": 4.824865192679177,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.8,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 15.769108952790626,
+      "direct_delivered_MeV_per_He": 14.192198057511565,
+      "storage_loss_MeV_per_He_rejected_separately": 1.5769108952790623,
+      "heat_engine_input_MeV_per_He": 10.98344722847668,
+      "total_gross_electric_MeV_per_He": 21.88061111744524,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 18.05603355710481,
+      "increment_vs_same_heat_baseline_MeV_per_He": 3.1538217905581263,
+      "increment_W_m2": 12.56904342523245,
+      "global_waste_MeV_per_He": 6.401776087958236,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 1.0,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 16.75467826234004,
+      "storage_loss_MeV_per_He_rejected_separately": 0.0,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 23.753192805589126,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 19.928615245248697,
+      "increment_vs_same_heat_baseline_MeV_per_He": 5.0264034787020115,
+      "increment_W_m2": 20.03191295896421,
+      "global_waste_MeV_per_He": 4.529194399814351,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    },
+    {
+      "eta_heat": 0.7,
+      "eta_direct_gross_of_captured_K": 0.85,
+      "all_direct_energy_storage_roundtrip_efficiency": 0.9,
+      "direct_before_storage_MeV_per_He": 16.75467826234004,
+      "direct_delivered_MeV_per_He": 15.079210436106036,
+      "storage_loss_MeV_per_He_rejected_separately": 1.6754678262340037,
+      "heat_engine_input_MeV_per_He": 9.997877918927266,
+      "total_gross_electric_MeV_per_He": 22.07772497935512,
+      "driver_electric_MeV_per_He": 3.8245775603404293,
+      "pre_new_aux_net_MeV_per_He": 18.25314741901469,
+      "increment_vs_same_heat_baseline_MeV_per_He": 3.3509356524680065,
+      "increment_W_m2": 13.354608639309468,
+      "global_waste_MeV_per_He": 6.204662226048356,
+      "global_identity_residual_MeV_per_He": 8.881784197001252e-16
+    }
+  ],
+  "storage": [
+    {
+      "gross_recovery_fraction": 0.5,
+      "captured_fraction": 0.99,
+      "largest_recovered_pulse_J": 2.5707238429651853e+26,
+      "largest_pulse_J_m2": 16906752.352566224,
+      "steady_export_window_lower_bound_J": 2.514652193500982e+26,
+      "sum_stage_sufficient_capacity_J": 6.307217319854736e+26,
+      "sum_stage_sufficient_capacity_J_m2": 41480364.19874782,
+      "mean_gross_direct_W_m2": 39.278260703851394,
+      "peak_gross_direct_W_m2": 314898.3466019423,
+      "added_store_mass_by_specific_energy_J_kg": {
+        "10000.0": {
+          "lower_bound_kg": 2.514652193500982e+22,
+          "sum_stage_sufficient_kg": 6.307217319854737e+22
+        },
+        "100000.0": {
+          "lower_bound_kg": 2.514652193500982e+21,
+          "sum_stage_sufficient_kg": 6.307217319854736e+21
+        },
+        "1000000.0": {
+          "lower_bound_kg": 2.5146521935009818e+20,
+          "sum_stage_sufficient_kg": 6.307217319854737e+20
+        }
+      },
+      "driver_store_is_separate": true
+    },
+    {
+      "gross_recovery_fraction": 0.7,
+      "captured_fraction": 0.99,
+      "largest_recovered_pulse_J": 3.599013380151259e+26,
+      "largest_pulse_J_m2": 23669453.293592706,
+      "steady_export_window_lower_bound_J": 3.5205130709013744e+26,
+      "sum_stage_sufficient_capacity_J": 8.830104247796631e+26,
+      "sum_stage_sufficient_capacity_J_m2": 58072509.87824695,
+      "mean_gross_direct_W_m2": 54.98956498539195,
+      "peak_gross_direct_W_m2": 440857.6852427192,
+      "added_store_mass_by_specific_energy_J_kg": {
+        "10000.0": {
+          "lower_bound_kg": 3.5205130709013742e+22,
+          "sum_stage_sufficient_kg": 8.83010424779663e+22
+        },
+        "100000.0": {
+          "lower_bound_kg": 3.520513070901374e+21,
+          "sum_stage_sufficient_kg": 8.830104247796631e+21
+        },
+        "1000000.0": {
+          "lower_bound_kg": 3.5205130709013745e+20,
+          "sum_stage_sufficient_kg": 8.830104247796631e+20
+        }
+      },
+      "driver_store_is_separate": true
+    },
+    {
+      "gross_recovery_fraction": 0.8,
+      "captured_fraction": 0.99,
+      "largest_recovered_pulse_J": 4.113158148744297e+26,
+      "largest_pulse_J_m2": 27050803.764105957,
+      "steady_export_window_lower_bound_J": 4.0234435096015715e+26,
+      "sum_stage_sufficient_capacity_J": 1.009154771176758e+27,
+      "sum_stage_sufficient_capacity_J_m2": 66368582.71799652,
+      "mean_gross_direct_W_m2": 62.84521712616223,
+      "peak_gross_direct_W_m2": 503837.3545631077,
+      "added_store_mass_by_specific_energy_J_kg": {
+        "10000.0": {
+          "lower_bound_kg": 4.023443509601572e+22,
+          "sum_stage_sufficient_kg": 1.009154771176758e+23
+        },
+        "100000.0": {
+          "lower_bound_kg": 4.0234435096015714e+21,
+          "sum_stage_sufficient_kg": 1.0091547711767579e+22
+        },
+        "1000000.0": {
+          "lower_bound_kg": 4.023443509601571e+20,
+          "sum_stage_sufficient_kg": 1.0091547711767579e+21
+        }
+      },
+      "driver_store_is_separate": true
+    },
+    {
+      "gross_recovery_fraction": 0.85,
+      "captured_fraction": 0.99,
+      "largest_recovered_pulse_J": 4.370230533040815e+26,
+      "largest_pulse_J_m2": 28741478.999362577,
+      "steady_export_window_lower_bound_J": 4.2749087289516694e+26,
+      "sum_stage_sufficient_capacity_J": 1.0722269443753053e+27,
+      "sum_stage_sufficient_capacity_J_m2": 70516619.1378713,
+      "mean_gross_direct_W_m2": 66.77304319654738,
+      "peak_gross_direct_W_m2": 535327.189223302,
+      "added_store_mass_by_specific_energy_J_kg": {
+        "10000.0": {
+          "lower_bound_kg": 4.274908728951669e+22,
+          "sum_stage_sufficient_kg": 1.0722269443753052e+23
+        },
+        "100000.0": {
+          "lower_bound_kg": 4.2749087289516695e+21,
+          "sum_stage_sufficient_kg": 1.0722269443753052e+22
+        },
+        "1000000.0": {
+          "lower_bound_kg": 4.2749087289516694e+20,
+          "sum_stage_sufficient_kg": 1.0722269443753053e+21
+        }
+      },
+      "driver_store_is_separate": true
+    }
+  ],
+  "converter_rating_mass": [
+    {
+      "complete_input_peak_W_kg": 10.0,
+      "converter_kg": 9.57625297678243e+23,
+      "converter_kg_m2": 62979.669320388464
+    },
+    {
+      "complete_input_peak_W_kg": 100.0,
+      "converter_kg": 9.576252976782429e+22,
+      "converter_kg_m2": 6297.966932038847
+    },
+    {
+      "complete_input_peak_W_kg": 1000.0,
+      "converter_kg": 9.57625297678243e+21,
+      "converter_kg_m2": 629.7966932038846
+    },
+    {
+      "complete_input_peak_W_kg": 10000.0,
+      "converter_kg": 9.57625297678243e+20,
+      "converter_kg_m2": 62.97966932038847
+    }
+  ],
+  "converter_only_break_even": [
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 40.08557672349598,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 80.17115344699197,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 160.34230689398393,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 240.51346034097588,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 53.44743563132802,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 106.89487126265604,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 213.78974252531208,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.5,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 320.6846137879681,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 28.632554802497122,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 57.265109604994244,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 114.53021920998849,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 171.79532881498275,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 38.176739736662824,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 76.35347947332565,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 152.7069589466513,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.7,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 229.06043841997695,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 25.053485452184983,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 50.106970904369966,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 100.21394180873993,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 150.32091271310992,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 33.40464726957998,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 66.80929453915996,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 133.61858907831993,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.8,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 200.4278836174799,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 23.579751013821163,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 47.159502027642326,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 94.31900405528465,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 1.0,
+      "converter_only_min_input_peak_rating_W_kg": 141.47850608292697,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.001,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 31.439668018428208,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.002,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 62.879336036856415,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.004,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 125.75867207371283,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    },
+    {
+      "baseline_specific_W_kg": 0.006,
+      "eta_direct_gross": 0.85,
+      "storage_roundtrip": 0.9,
+      "converter_only_min_input_peak_rating_W_kg": 188.63800811056925,
+      "scope": "Incremental mass break-even, same rate: DeltaM < DeltaP/specific. Omits added storage/auxiliaries and radiator/other mass savings; whole-plant coupling is separate."
+    }
+  ],
+  "electrostatic_benchmark": {
+    "N14_charge": 7,
+    "mass_u": 14,
+    "voltage_V": 1000000.0,
+    "planar_zero_injection_Child_Langmuir_jd2_A": 38.654215176243156,
+    "scope": "Scale diagnostic only; finite-injection retarding multicomponent sheath requires its own Poisson/kinetic solution."
+  },
+  "matched_60pct_thermal_reference": {
+    "case": "working_200K_60pct_IR11_bypass1",
+    "specific_W_kg": 0.0053949931029369895,
+    "ordinary_auxiliary_fraction": 0.1,
+    "rows": [
+      {
+        "eta_direct_gross": 0.5,
+        "all_output_storage_roundtrip": 1.0,
+        "increment_W_m2_after_ordinary_aux": 14.140173853386495,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 2620.980895358087,
+        "converter_only_min_input_peak_rating_W_kg": 240.2904555005693
+      },
+      {
+        "eta_direct_gross": 0.5,
+        "all_output_storage_roundtrip": 0.9,
+        "increment_W_m2_after_ordinary_aux": 10.605130390039863,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 1965.7356715185638,
+        "converter_only_min_input_peak_rating_W_kg": 320.3872740007593
+      },
+      {
+        "eta_direct_gross": 0.7,
+        "all_output_storage_roundtrip": 1.0,
+        "increment_W_m2_after_ordinary_aux": 19.796243394741097,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 3669.373253501323,
+        "converter_only_min_input_peak_rating_W_kg": 171.63603964326373
+      },
+      {
+        "eta_direct_gross": 0.7,
+        "all_output_storage_roundtrip": 0.9,
+        "increment_W_m2_after_ordinary_aux": 14.847182546055826,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 2752.0299401259927,
+        "converter_only_min_input_peak_rating_W_kg": 228.84805285768493
+      },
+      {
+        "eta_direct_gross": 0.8,
+        "all_output_storage_roundtrip": 1.0,
+        "increment_W_m2_after_ordinary_aux": 22.624278165418396,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 4193.56943257294,
+        "converter_only_min_input_peak_rating_W_kg": 150.1815346878558
+      },
+      {
+        "eta_direct_gross": 0.8,
+        "all_output_storage_roundtrip": 0.9,
+        "increment_W_m2_after_ordinary_aux": 16.968208624063795,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 3145.1770744297046,
+        "converter_only_min_input_peak_rating_W_kg": 200.2420462504744
+      },
+      {
+        "eta_direct_gross": 0.85,
+        "all_output_storage_roundtrip": 1.0,
+        "increment_W_m2_after_ordinary_aux": 24.038295550757045,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 4455.667522108749,
+        "converter_only_min_input_peak_rating_W_kg": 141.34732676504075
+      },
+      {
+        "eta_direct_gross": 0.85,
+        "all_output_storage_roundtrip": 0.9,
+        "increment_W_m2_after_ordinary_aux": 18.02872166306779,
+        "total_extra_mass_allowance_kg_m2_ignoring_massloads": 3341.7506415815624,
+        "converter_only_min_input_peak_rating_W_kg": 188.4631023533876
+      }
+    ],
+    "scope": "Scalar marginal comparison only; new mass-driven support and replacement, storage, mass reserves, and saved radiator/engine mass require the coupled plant calculation."
+  },
+  "silica_before_converter": [
+    {
+      "thickness_nm": 10.0,
+      "C13_K_fraction_removed_before_converter": 0.0020062506091240687,
+      "C13_K_fraction_remaining_upper_bound_for_converter": 0.9979937493908759,
+      "scope": "Projectile energy removal only. Scattering, charge equilibration, electron current and film heat retention are separate."
+    },
+    {
+      "thickness_nm": 30.0,
+      "C13_K_fraction_removed_before_converter": 0.006014646940813167,
+      "C13_K_fraction_remaining_upper_bound_for_converter": 0.9939853530591868,
+      "scope": "Projectile energy removal only. Scattering, charge equilibration, electron current and film heat retention are separate."
+    },
+    {
+      "thickness_nm": 100.0,
+      "C13_K_fraction_removed_before_converter": 0.019999755163383547,
+      "C13_K_fraction_remaining_upper_bound_for_converter": 0.9800002448366164,
+      "scope": "Projectile energy removal only. Scattering, charge equilibration, electron current and film heat retention are separate."
+    },
+    {
+      "thickness_nm": 300.0,
+      "C13_K_fraction_removed_before_converter": 0.05954706737135733,
+      "C13_K_fraction_remaining_upper_bound_for_converter": 0.9404529326286427,
+      "scope": "Projectile energy removal only. Scattering, charge equilibration, electron current and film heat retention are separate."
+    },
+    {
+      "thickness_nm": 1000.0,
+      "C13_K_fraction_removed_before_converter": 0.19200565721899393,
+      "C13_K_fraction_remaining_upper_bound_for_converter": 0.8079943427810061,
+      "scope": "Projectile energy removal only. Scattering, charge equilibration, electron current and film heat retention are separate."
+    },
+    {
+      "thickness_nm": 3000.0,
+      "C13_K_fraction_removed_before_converter": 0.49900523850111844,
+      "C13_K_fraction_remaining_upper_bound_for_converter": 0.5009947614988816,
+      "scope": "Projectile energy removal only. Scattering, charge equilibration, electron current and film heat retention are separate."
+    },
+    {
+      "thickness_nm": 10000.0,
+      "C13_K_fraction_removed_before_converter": 0.8996588793211928,
+      "C13_K_fraction_remaining_upper_bound_for_converter": 0.10034112067880718,
+      "scope": "Projectile energy removal only. Scattering, charge equilibration, electron current and film heat retention are separate."
+    }
+  ],
+  "sources": {
+    "plasma_converter_experiment": "https://doi.org/10.13182/FST83-A20820",
+    "inductive_ICF_theory": "https://doi.org/10.13182/FST92-A30054",
+    "traveling_wave_deceleration_experiment": "https://doi.org/10.1585/pfr.10.3405013"
+  },
+  "checks": {
+    "weighted_nodal_stage_K_matches_cycle_relative": 4.1866360156461724e-08,
+    "all_electrical_global_residual_abs_MeV": 8.881784197001252e-16,
+    "sum_individual_mean_equals_cycle_relative": 4.186635993441712e-08,
+    "prepared_energy_debited_once": true,
+    "driver_store_not_reused_for_output_without_schedule": true
+  }
+}

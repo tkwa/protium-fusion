@@ -1,0 +1,734 @@
+{
+  "scope": "Thermal evaporation and first-flight plume screen; no sputtering model.\n\nGraphite equilibrium partial pressures come from NIST-JANAF C1/C2/C3 tables.\nSource temperature histories are reconstructed from the saved receiver inputs,\nkeeping microsecond prompt heating separate from slow debris/decay heating.\n",
+  "radius_m": 1100000000.0,
+  "area_m2": 1.5205308443374598e+19,
+  "source_tables": {
+    "T_K": [
+      1000.0,
+      1100.0,
+      1200.0,
+      1300.0,
+      1400.0,
+      1500.0,
+      1600.0,
+      1700.0,
+      1800.0,
+      1900.0,
+      2000.0,
+      2100.0
+    ],
+    "log10_Kf_C1_C2_C3": [
+      [
+        -29.286,
+        -25.869,
+        -23.023,
+        -20.615,
+        -18.552,
+        -16.765,
+        -15.202,
+        -13.823,
+        -12.598,
+        -11.503,
+        -10.517,
+        -9.626
+      ],
+      [
+        -33.64,
+        -29.652,
+        -26.332,
+        -23.526,
+        -21.124,
+        -19.044,
+        -17.227,
+        -15.625,
+        -14.203,
+        -12.933,
+        -11.791,
+        -10.76
+      ],
+      [
+        -31.4,
+        -27.544,
+        -24.338,
+        -21.633,
+        -19.32,
+        -17.322,
+        -15.578,
+        -14.044,
+        -12.685,
+        -11.472,
+        -10.384,
+        -9.402
+      ]
+    ],
+    "formation_enthalpy_kJ_mol_C1_C2_C3": [
+      [
+        719.475,
+        719.36,
+        719.188,
+        718.968,
+        718.709,
+        718.415,
+        718.092,
+        717.744,
+        717.373,
+        716.984,
+        716.577,
+        716.156
+      ],
+      [
+        840.132,
+        839.353,
+        838.484,
+        837.548,
+        836.559,
+        835.528,
+        834.465,
+        833.375,
+        832.266,
+        831.14,
+        830.0,
+        828.849
+      ],
+      [
+        813.156,
+        811.105,
+        808.974,
+        806.781,
+        804.538,
+        802.255,
+        799.94,
+        797.595,
+        795.226,
+        792.834,
+        790.421,
+        787.989
+      ]
+    ],
+    "interpolation": "logPlinear1/T; hlinearT; p\u00b01bar; idealgasactivity; puregraphiteactivity1"
+  },
+  "primary_sources": [
+    {
+      "url": "https://janaf.nist.gov/tables/C-003.html",
+      "use": "C gas logKf and formation enthalpy versus graphite; standardpressure1bar."
+    },
+    {
+      "url": "https://janaf.nist.gov/tables/C-113.html",
+      "use": "C2 gas logKf and formation enthalpy versus graphite."
+    },
+    {
+      "url": "https://janaf.nist.gov/tables/C-138.html",
+      "use": "C3 gas logKf and formation enthalpy versus graphite."
+    },
+    {
+      "url": "https://doi.org/10.1063/1.1743248",
+      "use": "Thorn/Winslow1957 equilibrium vapor and evaporation coefficients; individual C/C2/C3 coefficients .37/.34/.08 around2400K are a sensitivity here, not measured at1000\u20132000K."
+    },
+    {
+      "url": "https://arxiv.org/abs/2002.07835",
+      "use": "Long etal2020 measured evolving nanoparticle sublimation initially about400times bulk; motivates a rough/damaged-surface sensitivity, not an upperbound for irradiated receiver."
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/articlelanding/1973/f1/f19736901628",
+      "use": "Nagai etal1973 silica effusion1823\u20131983K: Gibbsreaction182050\u221258.29T cal/mol; vaporizationcoefficient.022\u00b1.008. SimpleSiO/O2 approximation here omits atomicO and other species."
+    },
+    {
+      "url": "https://doi.org/10.3847/0004-637X/824/2/103",
+      "use": "Fegley etal2016 thermochemical vapor calculation gives1.54Pa total at2000K, predominantlySiO/O2/O/SiO2."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6716270/",
+      "use": "Plante/Sessoms1973 tungsten Langmuir data2600\u20133100K,log10P(atm)=7.871\u221245385/T; lowerT extrapolation labeled."
+    }
+  ],
+  "source_access_note": "NISTHTMLtablesretrievedthroughwebtool; directtxtdownloadreturned403 andwasnotretried. Numericcolumnsaboveareexplicittranscription.",
+  "graphite_properties": [
+    {
+      "T_K": 1000.0,
+      "partial_P_Pa": [
+        5.176068319505661e-25,
+        2.2908676527677699e-29,
+        3.981071705534985e-27
+      ],
+      "total_P_Pa": 5.216108123326288e-25,
+      "mass_flux_kg_m2_s_alpha1": 2.515077163012124e-28,
+      "mass_flux_kg_m2_s_bulk_coefficients": 9.209857192976658e-29,
+      "latent_W_m2_alpha1": 1.4942197994967284e-20
+    },
+    {
+      "T_K": 1200.0,
+      "partial_P_Pa": [
+        9.48418463300898e-19,
+        4.655860935229582e-22,
+        4.5919801283686755e-20
+      ],
+      "total_P_Pa": 9.948038506781076e-19,
+      "mass_flux_kg_m2_s_alpha1": 4.502339459179095e-22,
+      "mass_flux_kg_m2_s_bulk_coefficients": 1.5648201163119817e-22,
+      "latent_W_m2_alpha1": 2.5649355352617138e-14
+    },
+    {
+      "T_K": 1400.0,
+      "partial_P_Pa": [
+        2.8054336379517163e-14,
+        7.516228940182076e-17,
+        4.78630092322638e-15
+      ],
+      "total_P_Pa": 3.291579959214536e-14,
+      "mass_flux_kg_m2_s_alpha1": 1.477132873421912e-17,
+      "mass_flux_kg_m2_s_bulk_coefficients": 4.489846398745015e-18,
+      "latent_W_m2_alpha1": 7.568080586341806e-10
+    },
+    {
+      "T_K": 1600.0,
+      "partial_P_Pa": [
+        6.28058358813318e-11,
+        5.929253245799995e-13,
+        2.6424087573219503e-11
+      ],
+      "total_P_Pa": 8.98228487791313e-11,
+      "mass_flux_kg_m2_s_alpha1": 4.1474673540140455e-14,
+      "mass_flux_kg_m2_s_bulk_coefficients": 1.0304845007075662e-14,
+      "latent_W_m2_alpha1": 1.819612170550296e-06
+    },
+    {
+      "T_K": 1800.0,
+      "partial_P_Pa": [
+        2.52348077248057e-08,
+        6.266138646723363e-10,
+        2.065380155810527e-08
+      ],
+      "total_P_Pa": 4.6515223147583307e-08,
+      "mass_flux_kg_m2_s_alpha1": 2.2120364976839493e-11,
+      "mass_flux_kg_m2_s_bulk_coefficients": 4.467377250360261e-12,
+      "latent_W_m2_alpha1": 0.0008318009913189002
+    },
+    {
+      "T_K": 1854.0,
+      "partial_P_Pa": [
+        1.0185230779172217e-07,
+        3.1609347720379084e-09,
+        9.688841351204585e-08
+      ],
+      "total_P_Pa": 2.019016560758059e-07,
+      "mass_flux_kg_m2_s_alpha1": 9.653656113294992e-11,
+      "mass_flux_kg_m2_s_bulk_coefficients": 1.853359442530458e-11,
+      "latent_W_m2_alpha1": 0.0034982377623132433
+    },
+    {
+      "T_K": 1900.0,
+      "partial_P_Pa": [
+        3.1405086938762166e-07,
+        1.1668096170609631e-08,
+        3.3728730865886924e-07
+      ],
+      "total_P_Pa": 6.630062742171005e-07,
+      "mass_flux_kg_m2_s_alpha1": 3.182021668136544e-10,
+      "mass_flux_kg_m2_s_bulk_coefficients": 5.86295449595887e-11,
+      "latent_W_m2_alpha1": 0.011191519341844931
+    },
+    {
+      "T_K": 1965.326,
+      "partial_P_Pa": [
+        1.4206215187518336e-06,
+        6.701698856817432e-08,
+        1.783554965794669e-06
+      ],
+      "total_P_Pa": 3.271193473114677e-06,
+      "mass_flux_kg_m2_s_alpha1": 1.5748974408638472e-09,
+      "mass_flux_kg_m2_s_bulk_coefficients": 2.753281460791312e-10,
+      "latent_W_m2_alpha1": 0.05331779581020959
+    },
+    {
+      "T_K": 2000.0,
+      "partial_P_Pa": [
+        3.040885025676283e-06,
+        1.6180800376430644e-07,
+        4.1304750199016105e-06
+      ],
+      "total_P_Pa": 7.3331680493422004e-06,
+      "mass_flux_kg_m2_s_alpha1": 3.5342131115538277e-09,
+      "mass_flux_kg_m2_s_bulk_coefficients": 6.019015084431762e-10,
+      "latent_W_m2_alpha1": 0.11740210893835298
+    },
+    {
+      "T_K": 2100.0,
+      "partial_P_Pa": [
+        2.3659196974857613e-05,
+        1.7378008287493761e-06,
+        3.9627803425544015e-05
+      ],
+      "total_P_Pa": 6.502480122915101e-05,
+      "mass_flux_kg_m2_s_alpha1": 3.135204668398654e-08,
+      "mass_flux_kg_m2_s_bulk_coefficients": 4.989795618579558e-09,
+      "latent_W_m2_alpha1": 0.991491779550827
+    }
+  ],
+  "pulse_cases": {
+    "c12": {
+      "mean_interval_s": 1133368.9623012526,
+      "background_K": 1111.7263005624711,
+      "slow": {
+        "mass_kg_m2_by_Cn": [
+          3.270955590090982e-16,
+          1.0337959731217085e-18,
+          8.439350438285852e-17
+        ],
+        "total_mass_kg_m2": 4.125228593650784e-16,
+        "total_mass_kg": 6272.537316588859,
+        "latent_J_m2": 2.149652814502846e-08,
+        "mass_weighted_T_by_Cn_K": [
+          1374.1928103407622,
+          1376.8689923979805,
+          1376.3283256451768
+        ],
+        "peak_T_K": 1386.9975131739398,
+        "peak_equilibrium_P_Pa": 1.826407272259008e-14,
+        "peak_mass_flux_kg_m2_s": 8.187830884193115e-18
+      },
+      "prompt": {
+        "mass_kg_m2_by_Cn": [
+          9.461321888814295e-22,
+          5.194048539603143e-24,
+          3.638018093427897e-22
+        ],
+        "total_mass_kg_m2": 1.3151280467638224e-21,
+        "total_mass_kg": 0.019996927593576692,
+        "latent_J_m2": 6.489497295277555e-14,
+        "mass_weighted_T_by_Cn_K": [
+          1451.0017638556972,
+          1456.2566587620227,
+          1454.9903169315526
+        ],
+        "peak_T_K": 1483.9554684604511,
+        "peak_equilibrium_P_Pa": 1.1633448860757583e-12,
+        "peak_mass_flux_kg_m2_s": 5.270370317146086e-16
+      },
+      "total_mass_kg_m2_by_Cn": [
+        3.2844698219550126e-16,
+        1.0341641729905246e-18,
+        8.444895772376987e-17
+      ],
+      "total_mass_kg_m2": 4.139301040922617e-16,
+      "total_mass_kg": 6293.934906720993,
+      "annual_gross_evaporation_kg_m2": 1.1525497068826445e-14,
+      "annual_gross_evaporation_kg": 175248.73789471595,
+      "assumed_bulk_coefficients_sensitivity_mass_kg": 1955.9031614555126,
+      "all_species_400x_surface_enhancement_mass_kg": 2517573.962688397,
+      "latent_J_m2": 2.1496593040001412e-08,
+      "late_window_constant_upper_T_K": 1112.1047718436248,
+      "late_window_s": 933369.0873012526,
+      "late_window_mass_upper_kg": 21.37759320453995,
+      "late_window_logic": "Pastpositiveheatcontributionsdecay becausekerneldecreases; futuret^-4/decayforcing boundedbycurrentflux timesL/k. ConstantworstB1backgroundovercounts. Latentfigure excludes negligiblelatewindow.",
+      "thermal_grid_dt_s": 0.25,
+      "thermal_end_s": 199999.875,
+      "thermal_scope": "Finitecooledslabslowresponse; exactfastpromptconvolution; separatelyintegrated0-.1spromptandslowhistorydoublecountsnegligiblebackground. Assumedpropertiesanddiffusionmodelretained."
+    },
+    "c13": {
+      "mean_interval_s": 15885706.54029858,
+      "background_K": 1111.7263005624711,
+      "slow": {
+        "mass_kg_m2_by_Cn": [
+          7.521063829676644e-17,
+          1.9334892638766014e-19,
+          1.6646668675694432e-17
+        ],
+        "total_mass_kg_m2": 9.205065589884853e-17,
+        "total_mass_kg": 1399.6586153569313,
+        "latent_J_m2": 4.880344519000293e-09,
+        "mass_weighted_T_by_Cn_K": [
+          1346.6142243095069,
+          1350.4949485039706,
+          1349.7715823307756
+        ],
+        "peak_T_K": 1363.5135140554862,
+        "peak_equilibrium_P_Pa": 6.136120484615835e-15,
+        "peak_mass_flux_kg_m2_s": 2.7471375957246736e-18
+      },
+      "prompt": {
+        "mass_kg_m2_by_Cn": [
+          2.170922201572451e-18,
+          3.9158882287830096e-20,
+          1.940696423101688e-18
+        ],
+        "total_mass_kg_m2": 4.150777506961969e-18,
+        "total_mass_kg": 63.113852273178196,
+        "latent_J_m2": 1.7412899175425982e-10,
+        "mass_weighted_T_by_Cn_K": [
+          1653.8330986071508,
+          1662.1749615053177,
+          1659.8024975020733
+        ],
+        "peak_T_K": 1713.2233852178451,
+        "peak_equilibrium_P_Pa": 3.657413954958778e-09,
+        "peak_mass_flux_kg_m2_s": 1.7197838293533364e-12
+      },
+      "total_mass_kg_m2_by_Cn": [
+        9.99311479877035e-17,
+        2.385625521061645e-19,
+        1.950646802622917e-17
+      ],
+      "total_mass_kg_m2": 1.1967617856603882e-16,
+      "total_mass_kg": 1819.7132084209961,
+      "annual_gross_evaporation_kg_m2": 2.3774158002572806e-16,
+      "annual_gross_evaporation_kg": 3614.9340541064207,
+      "assumed_bulk_coefficients_sensitivity_mass_kg": 587.1705243360389,
+      "all_species_400x_surface_enhancement_mass_kg": 727885.2833683986,
+      "latent_J_m2": 5.054473510754553e-09,
+      "late_window_constant_upper_T_K": 1112.0120261073657,
+      "late_window_s": 15685706.66529858,
+      "late_window_mass_upper_kg": 356.9407407908868,
+      "late_window_logic": "Pastpositiveheatcontributionsdecay becausekerneldecreases; futuret^-4/decayforcing boundedbycurrentflux timesL/k. ConstantworstB1backgroundovercounts. Latentfigure excludes negligiblelatewindow.",
+      "thermal_grid_dt_s": 0.25,
+      "thermal_end_s": 199999.875,
+      "thermal_scope": "Finitecooledslabslowresponse; exactfastpromptconvolution; separatelyintegrated0-.1spromptandslowhistorydoublecountsnegligiblebackground. Assumedpropertiesanddiffusionmodelretained."
+    },
+    "n14": {
+      "mean_interval_s": 648690.3901793147,
+      "background_K": 1111.7263005624711,
+      "slow": {
+        "mass_kg_m2_by_Cn": [
+          1.4925404581276412e-18,
+          1.4545087288642119e-21,
+          1.5717418333407174e-19
+        ],
+        "total_mass_kg_m2": 1.6511691501905772e-18,
+        "total_mass_kg": 25.106536220832442,
+        "latent_J_m2": 9.293971846835086e-11,
+        "mass_weighted_T_by_Cn_K": [
+          1221.9856075221398,
+          1249.3328421628446,
+          1244.7556194416586
+        ],
+        "peak_T_K": 1274.3654588472384,
+        "peak_equilibrium_P_Pa": 6.888094174924157e-17,
+        "peak_mass_flux_kg_m2_s": 3.0877588830905394e-20
+      },
+      "prompt": {
+        "mass_kg_m2_by_Cn": [
+          1.4757436582266875e-23,
+          3.695145437192209e-26,
+          3.195841150139073e-24
+        ],
+        "total_mass_kg_m2": 1.799022918677787e-23,
+        "total_mass_kg": 0.0002735469837519577,
+        "latent_J_m2": 9.560042141663907e-16,
+        "mass_weighted_T_by_Cn_K": [
+          1341.7067455659567,
+          1348.7028378257212,
+          1347.4633084622126
+        ],
+        "peak_T_K": 1371.9525787054713,
+        "peak_equilibrium_P_Pa": 9.117799265973597e-15,
+        "peak_mass_flux_kg_m2_s": 4.083697040786726e-18
+      },
+      "total_mass_kg_m2_by_Cn": [
+        2.133755846755977e-18,
+        1.6265412879763316e-21,
+        1.8329238188889174e-19
+      ],
+      "total_mass_kg_m2": 2.3186747699328448e-18,
+      "total_mass_kg": 35.25616505669954,
+      "annual_gross_evaporation_kg_m2": 1.127992830283892e-16,
+      "annual_gross_evaporation_kg": 1715.1478906381674,
+      "assumed_bulk_coefficients_sensitivity_mass_kg": 12.235804120556434,
+      "all_species_400x_surface_enhancement_mass_kg": 14102.466022679815,
+      "latent_J_m2": 9.294067447256503e-11,
+      "late_window_constant_upper_T_K": 1111.9263123015198,
+      "late_window_s": 448690.51517931465,
+      "late_window_mass_upper_kg": 10.14935528888335,
+      "late_window_logic": "Pastpositiveheatcontributionsdecay becausekerneldecreases; futuret^-4/decayforcing boundedbycurrentflux timesL/k. ConstantworstB1backgroundovercounts. Latentfigure excludes negligiblelatewindow.",
+      "thermal_grid_dt_s": 0.25,
+      "thermal_end_s": 199999.875,
+      "thermal_scope": "Finitecooledslabslowresponse; exactfastpromptconvolution; separatelyintegrated0-.1spromptandslowhistorydoublecountsnegligiblebackground. Assumedpropertiesanddiffusionmodelretained."
+    },
+    "n15": {
+      "mean_interval_s": 6774.3130579500075,
+      "background_K": 1007.0912934190922,
+      "slow": {
+        "mass_kg_m2_by_Cn": [
+          9.112972464730262e-23,
+          6.3171909598093896e-27,
+          1.3131590382478614e-24
+        ],
+        "total_mass_kg_m2": 9.244920087651029e-23,
+        "total_mass_kg": 0.0014057186146708362,
+        "latent_J_m2": 5.4887173452072435e-15,
+        "mass_weighted_T_by_Cn_K": [
+          1007.1110112310323,
+          1007.1110312514927,
+          1007.1110266126202
+        ],
+        "peak_T_K": 1008.1133728795267,
+        "peak_equilibrium_P_Pa": 1.047519586738869e-24,
+        "peak_mass_flux_kg_m2_s": 5.03311771577821e-28
+      },
+      "prompt": {
+        "mass_kg_m2_by_Cn": [
+          7.550985605088853e-29,
+          8.240101696829663e-33,
+          1.5029682833913398e-30
+        ],
+        "total_mass_kg_m2": 7.70210644359767e-29,
+        "total_mass_kg": 1.1711290413860556e-09,
+        "latent_J_m2": 4.557193005655221e-21,
+        "mass_weighted_T_by_Cn_K": [
+          1031.3290234684212,
+          1052.8169997124737,
+          1047.3751335600289
+        ],
+        "peak_T_K": 1110.7330639222132,
+        "peak_equilibrium_P_Pa": 2.958562603965427e-21,
+        "peak_mass_flux_kg_m2_s": 1.3685277959295422e-24
+      },
+      "total_mass_kg_m2_by_Cn": [
+        9.112980015715868e-23,
+        6.3171991999110865e-27,
+        1.3131605412161448e-24
+      ],
+      "total_mass_kg_m2": 9.244927789757473e-23,
+      "total_mass_kg": 0.0014057197857998778,
+      "annual_gross_evaporation_kg_m2": 4.306676274366585e-19,
+      "annual_gross_evaporation_kg": 6.54843411175073,
+      "assumed_bulk_coefficients_sensitivity_mass_kg": 0.0005143230058882753,
+      "all_species_400x_surface_enhancement_mass_kg": 0.5622879143199511,
+      "latent_J_m2": 5.488721902400249e-15,
+      "late_window_constant_upper_T_K": 1007.0932275049737,
+      "late_window_s": 0.0,
+      "late_window_mass_upper_kg": 0.0,
+      "late_window_logic": "Pastpositiveheatcontributionsdecay becausekerneldecreases; futuret^-4/decayforcing boundedbycurrentflux timesL/k. ConstantworstB1backgroundovercounts. Latentfigure excludes negligiblelatewindow.",
+      "thermal_grid_dt_s": 0.25,
+      "thermal_end_s": 199999.875,
+      "thermal_scope": "Finitecooledslabslowresponse; exactfastpromptconvolution; separatelyintegrated0-.1spromptandslowhistorydoublecountsnegligiblebackground. Assumedpropertiesanddiffusionmodelretained."
+    }
+  },
+  "annual_gross_evaporation_kg": 180585.3682735723,
+  "average_gross_evaporation_kg_s": 0.005722405007781717,
+  "annual_gross_evaporation_kg_m2": 1.1876468599508e-14,
+  "material_C_allowance_kg_s": 3548.5592217010985,
+  "loss_fraction_cases": [
+    {
+      "irreversible_escape_fraction": 0.0,
+      "fresh_C_kg_s": 0.0,
+      "fraction_material_budget": 0.0,
+      "annual_irreversible_kg_m2": 0.0
+    },
+    {
+      "irreversible_escape_fraction": 1e-06,
+      "fresh_C_kg_s": 5.7224050077817165e-09,
+      "fraction_material_budget": 1.6125995510477985e-12,
+      "annual_irreversible_kg_m2": 1.1876468599508e-20
+    },
+    {
+      "irreversible_escape_fraction": 0.001,
+      "fresh_C_kg_s": 5.722405007781717e-06,
+      "fraction_material_budget": 1.6125995510477986e-09,
+      "annual_irreversible_kg_m2": 1.1876468599508001e-17
+    },
+    {
+      "irreversible_escape_fraction": 0.01,
+      "fresh_C_kg_s": 5.722405007781717e-05,
+      "fraction_material_budget": 1.6125995510477985e-08,
+      "annual_irreversible_kg_m2": 1.1876468599508002e-16
+    },
+    {
+      "irreversible_escape_fraction": 1.0,
+      "fresh_C_kg_s": 0.005722405007781717,
+      "fraction_material_budget": 1.6125995510477985e-06,
+      "annual_irreversible_kg_m2": 1.1876468599508e-14
+    }
+  ],
+  "diffuse_firstflight_plumes_at1700K": {
+    "1": {
+      "thermal_gas_mean_speed_m_s": 1731.121103179873,
+      "mean_first_wall_return_s": 847235.1610598279,
+      "return_time_quantiles_s": {
+        "0.01": 101399.37815684489,
+        "0.5": 743259.1468326163,
+        "0.9": 1451847.8450119996,
+        "0.99": 2731037.3639159566
+      },
+      "survival_at_delays": {
+        "6774.31305795": 0.999955366602986,
+        "86400.0": 0.9927396609598718,
+        "604800.0": 0.6491189927185491,
+        "2592000.0": 0.01363570418904577
+      },
+      "radial_column_per_emitted_surface_mass": {
+        "6774.31305795": 1.0168817611409127,
+        "86400.0": 1.239122731285691,
+        "604800.0": 2.65541294567051,
+        "2592000.0": 0.08856031380419094
+      },
+      "scope": "Diffusecosinelaw emission and fluxMaxwell speeds, nointermolecularcollisions, firstwallhitsticks. Spheregravity cancels inside; magneticfieldsdo notremove neutrals."
+    },
+    "2": {
+      "thermal_gas_mean_speed_m_s": 1224.0874711136253,
+      "mean_first_wall_return_s": 1198171.455290162,
+      "return_time_quantiles_s": {
+        "0.01": 143400.3758056083,
+        "0.5": 1051127.1658085415,
+        "0.9": 2053222.912918121,
+        "0.99": 3862270.079397612
+      },
+      "survival_at_delays": {
+        "6774.31305795": 0.999977683301493,
+        "86400.0": 0.9963698304799358,
+        "604800.0": 0.8221372882984422,
+        "2592000.0": 0.04550235692271371
+      },
+      "radial_column_per_emitted_surface_mass": {
+        "6774.31305795": 1.0119089383506992,
+        "86400.0": 1.163166542973137,
+        "604800.0": 3.158166537643626,
+        "2592000.0": 0.16787668786029294
+      },
+      "scope": "Diffusecosinelaw emission and fluxMaxwell speeds, nointermolecularcollisions, firstwallhitsticks. Spheregravity cancels inside; magneticfieldsdo notremove neutrals."
+    },
+    "3": {
+      "thermal_gas_mean_speed_m_s": 999.4632349207418,
+      "mean_first_wall_return_s": 1467454.3449144224,
+      "return_time_quantiles_s": {
+        "0.01": 175628.87482354522,
+        "0.5": 1287362.6055043875,
+        "0.9": 2514674.232420168,
+        "0.99": 4730295.47167141
+      },
+      "survival_at_delays": {
+        "6774.31305795": 0.9999851222009952,
+        "86400.0": 0.9975798869866239,
+        "604800.0": 0.881414516189111,
+        "2592000.0": 0.09161933217844606
+      },
+      "radial_column_per_emitted_surface_mass": {
+        "6774.31305795": 1.009713430594977,
+        "86400.0": 1.1312359147384723,
+        "604800.0": 2.7791095084963997,
+        "2592000.0": 0.27558266260026865
+      },
+      "scope": "Diffusecosinelaw emission and fluxMaxwell speeds, nointermolecularcollisions, firstwallhitsticks. Spheregravity cancels inside; magneticfieldsdo notremove neutrals."
+    }
+  },
+  "interaction_column_screens": [
+    {
+      "assumed_effective_interaction_cross_section_m2": 1e-20,
+      "max_single_pulse_atom_column_m2": 62263115867.68026,
+      "Poisson_encounter_optical_depth_screen": 6.226311586768025e-10,
+      "scope": "Factor3spatialcolumnscreen, allcarboncountedasatoms; crosssections areparametersnot measuredvalues; nofuel-grainshielding credit."
+    },
+    {
+      "assumed_effective_interaction_cross_section_m2": 1e-19,
+      "max_single_pulse_atom_column_m2": 62263115867.68026,
+      "Poisson_encounter_optical_depth_screen": 6.226311586768026e-09,
+      "scope": "Factor3spatialcolumnscreen, allcarboncountedasatoms; crosssections areparametersnot measuredvalues; nofuel-grainshielding credit."
+    },
+    {
+      "assumed_effective_interaction_cross_section_m2": 1e-18,
+      "max_single_pulse_atom_column_m2": 62263115867.68026,
+      "Poisson_encounter_optical_depth_screen": 6.226311586768026e-08,
+      "scope": "Factor3spatialcolumnscreen, allcarboncountedasatoms; crosssections areparametersnot measuredvalues; nofuel-grainshielding credit."
+    }
+  ],
+  "condensation_area_screens": [
+    {
+      "cold_condensing_area_fraction": 1.0,
+      "pumping_speed_m3_s": 6.580557581671217e+21,
+      "well_mixed_clearing_time_s": 847235.1610598281,
+      "average_condensation_mass_kg_s": 0.005722405007781717,
+      "scope": "Noactiveionization; molecularflow andunitsticking. Actualnearwallcapturecanbequicker withshortgapgeometry."
+    },
+    {
+      "cold_condensing_area_fraction": 0.1,
+      "pumping_speed_m3_s": 6.580557581671219e+20,
+      "well_mixed_clearing_time_s": 8472351.61059828,
+      "average_condensation_mass_kg_s": 0.005722405007781717,
+      "scope": "Noactiveionization; molecularflow andunitsticking. Actualnearwallcapturecanbequicker withshortgapgeometry."
+    },
+    {
+      "cold_condensing_area_fraction": 0.01,
+      "pumping_speed_m3_s": 6.580557581671218e+19,
+      "well_mixed_clearing_time_s": 84723516.1059828,
+      "average_condensation_mass_kg_s": 0.005722405007781717,
+      "scope": "Noactiveionization; molecularflow andunitsticking. Actualnearwallcapturecanbequicker withshortgapgeometry."
+    },
+    {
+      "cold_condensing_area_fraction": 0.001,
+      "pumping_speed_m3_s": 6.580557581671218e+18,
+      "well_mixed_clearing_time_s": 847235161.059828,
+      "average_condensation_mass_kg_s": 0.005722405007781717,
+      "scope": "Noactiveionization; molecularflow andunitsticking. Actualnearwallcapturecanbequicker withshortgapgeometry."
+    }
+  ],
+  "alternative_membrane_materials": [
+    {
+      "T_K": 1000.0,
+      "silica_approx_total_P_Pa": 1.7811202448954618e-13,
+      "silica_approx_flux_kg_m2_s_alpha022": 3.4219748186235683e-18,
+      "silica_scope": "1823\u20131983Kmeasurement; outsidethisrangeextrapolation; SiO/O2only andequilibriumstoichiometry approximateopenvacuumcomposition.",
+      "tungsten_P_Pa": 3.102534449187109e-33,
+      "tungsten_flux_kg_m2_s_alpha1": 5.820088537750636e-36,
+      "tungsten_scope": "Extrapolates2600\u20133100Kprimaryfit; noirradiationorchemicalenhancement."
+    },
+    {
+      "T_K": 1500.0,
+      "silica_approx_total_P_Pa": 0.00012361509444733918,
+      "silica_approx_flux_kg_m2_s_alpha022": 1.9391412496313463e-09,
+      "silica_scope": "1823\u20131983Kmeasurement; outsidethisrangeextrapolation; SiO/O2only andequilibriumstoichiometry approximateopenvacuumcomposition.",
+      "tungsten_P_Pa": 4.169173280124461e-18,
+      "tungsten_flux_kg_m2_s_alpha1": 6.385829152649243e-21,
+      "tungsten_scope": "Extrapolates2600\u20133100Kprimaryfit; noirradiationorchemicalenhancement."
+    },
+    {
+      "T_K": 1800.0,
+      "silica_approx_total_P_Pa": 0.10944542028478274,
+      "silica_approx_flux_kg_m2_s_alpha022": 1.5672739318595733e-06,
+      "silica_scope": "1823\u20131983Kmeasurement; outsidethisrangeextrapolation; SiO/O2only andequilibriumstoichiometry approximateopenvacuumcomposition.",
+      "tungsten_P_Pa": 4.600740346386689e-13,
+      "tungsten_flux_kg_m2_s_alpha1": 6.432865185737548e-16,
+      "tungsten_scope": "Extrapolates2600\u20133100Kprimaryfit; noirradiationorchemicalenhancement."
+    },
+    {
+      "T_K": 1854.0,
+      "silica_approx_total_P_Pa": 0.2940293697467946,
+      "silica_approx_flux_kg_m2_s_alpha022": 4.14877055791792e-06,
+      "silica_scope": "1823\u20131983Kmeasurement; outsidethisrangeextrapolation; SiO/O2only andequilibriumstoichiometry approximateopenvacuumcomposition.",
+      "tungsten_P_Pa": 2.495817564640816e-12,
+      "tungsten_flux_kg_m2_s_alpha1": 3.4385152187489362e-15,
+      "tungsten_scope": "Extrapolates2600\u20133100Kprimaryfit; noirradiationorchemicalenhancement."
+    },
+    {
+      "T_K": 1965.326,
+      "silica_approx_total_P_Pa": 1.9001139508180194,
+      "silica_approx_flux_kg_m2_s_alpha022": 2.6040295974099282e-05,
+      "silica_scope": "1823\u20131983Kmeasurement; outsidethisrangeextrapolation; SiO/O2only andequilibriumstoichiometry approximateopenvacuumcomposition.",
+      "tungsten_P_Pa": 6.079329495291959e-11,
+      "tungsten_flux_kg_m2_s_alpha1": 8.134883946836155e-14,
+      "tungsten_scope": "Extrapolates2600\u20133100Kprimaryfit; noirradiationorchemicalenhancement."
+    },
+    {
+      "T_K": 2000.0,
+      "silica_approx_total_P_Pa": 3.2565716476846776,
+      "silica_approx_flux_kg_m2_s_alpha022": 4.424143539278398e-05,
+      "silica_scope": "1823\u20131983Kmeasurement; outsidethisrangeextrapolation; SiO/O2only andequilibriumstoichiometry approximateopenvacuumcomposition.",
+      "tungsten_P_Pa": 1.5283281501301466e-10,
+      "tungsten_flux_kg_m2_s_alpha1": 2.0272840035144142e-13,
+      "tungsten_scope": "Extrapolates2600\u20133100Kprimaryfit; noirradiationorchemicalenhancement."
+    }
+  ],
+  "limitations": [
+    "Eachstageis integratedfor200ks; its longermeaninterval is boundedbyconstantterminaluppertemperature. OverlappinglowB1backgroundwindows deliberatelyovercount ratherthan resetthewall.",
+    "Noimpactdrivensputtering,desorption,fragmentation,thermalstress,dustorchemicalerosionmodel. These can exceed equilibrium evaporation.",
+    "Bulk JANAFphaseequilibriumisnotanupperboundfor a metastable irradiated/nanostructured surface;400xsensitivityisillustrative.",
+    "Uniformwallthermalhistoryandconstantpropertiesare retained; sourcegeometrycouldcreatehotspots.",
+    "Promptsurfaceabsorptionandenergyarrivalmodelremainreducedapproximations; realphotondepthcanreducepeakskinheating.",
+    "Condensation coefficient, grain collisioncrosssections and pulse contamination tolerance remainengineeringinputs.",
+    "Silica/Wcomparisonsrequire actualmembranetemperature; athinfilmcanbe muchhotterthanmassivegraphite.",
+    "The factor3singlepulsecolumnis ascreen,notarigorousalltimesbound; analyticdiffusespherecolumnfactorsareprovided separately.",
+    "Microscopicvacuumcollisionratesdo notdirectlyequate to bulkfuelmixing or ignitionfailure."
+  ],
+  "inputs_sha256": {
+    "collector-inputs.json": "168515d97c33cb68b21557dfb00031ec950d8c097adfaa3611c8bd8c80be2721",
+    "station-inputs.json": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "collector-periodic.json": "c9a991daaab0816f1846e721de4e7d6157a847a4eedc49a7667de37214fda30b"
+  }
+}

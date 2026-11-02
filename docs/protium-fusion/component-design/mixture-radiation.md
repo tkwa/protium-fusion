@@ -1,0 +1,24 @@
+# ✨ Finite-depth photon screen for the richer carbon-13 pulses
+
+This bounded calculation uses the exact escaped-energy accumulator and sampled temperature/radius histories of the completed C13 H2/H4 runs at constant grey opacities 0.001 and 0.01 m²/kg. It introduces no new hydro result. Radius is 1.1×10⁹ m. The source traces and their hashes are in `mixture-radiation.json`.
+
+The same grey history supports different conditional spectra. One assigns each escaped-energy bin a Planck shape at the outer-cell temperature. Another assigns the flux-equivalent temperature T_eff=[L/(4πr_outer²σ)]¹ᐟ⁴, as if a blackbody photosphere lay exactly at that radius. The latter is much softer. A scattering atmosphere, unresolved outer temperature gradient and spectral thermalization can change its color temperature. Neither construction is a frequency-dependent escaping-spectrum solution.
+
+NIST elemental attenuation and energy-transfer coefficients determine depth profiles. Alumina uses mass-weighted Al/O coefficients; carbon uses its elemental table. For each assigned spectrum, the integrated no-conduction surface sensible-heat equivalent is ∫F_E(μ_en/ρ)_E dE/c_p. The sub-keV tail is deposited at the surface and convolved with the actual radial-ray arrival bins. Constant properties are carbon k=100 W/m/K, ρ=2000 kg/m³, c_p=1000 J/kg/K, and oxide k=10, ρ=3900, c_p=1224. Changing oxide k to 5 increases the surface-tail term by √2; it does not change the no-conduction resolved-energy term.
+
+| Mixture and grey opacity | Photon fluence | Outer-temperature Planck: carbon / oxide rise | Flux-equivalent Planck: carbon / oxide rise |
+|---|---:|---:|---:|
+| C13 H2, 0.001 | 63.16 kJ/m² | about 39 / 143 K | about 338 / 1032 K |
+| C13 H4, 0.001 | 61.19 kJ/m² | about 40 / 147 K | about 334 / 1013 K |
+| C13 H2, 0.01 | 6.409 kJ/m² | about 4 / 15 K | about 95 / 242 K |
+| C13 H4, 0.01 | 6.159 kJ/m² | about 4 / 15 K | about 92 / 232 K |
+
+These values add the no-conduction resolved maximum to the separately maximized soft-tail conduction term. They deliberately do not claim a precise physical peak. Within each homogeneous first-interaction deposition model the full-energy all-surface conduction solution supplies another bound, and the tighter bound is saved separately. For example, at opacity 0.01 the oxide full-surface bound is approximately160 K, tighter than the above242 K adiabatic-depth construction. A phase change would precede any extrapolated temperature outside the material's range.
+
+The saved depth profile also evaluates a 50 μm oxide layer followed by carbon, with uncollided transmission into the backing. For the H4/0.001 outer-temperature proxy, roughly14% of the incident photon energy transfers within the first 50 μm of oxide; the softer flux-equivalent proxy gives approximately 50%. Electron escape, fluorescence, multiple photon scattering, layered conduction and temperature-dependent material properties remain uncomputed. The bounds apply to the stated first-interaction model, rather than claiming to contain every possible secondary-transport effect.
+
+The harder proxy has fluence-weighted kT≈13 keV, while the flux-equivalent proxy is about 2.6–2.7 keV at opacity0.001. At opacity0.01 the latter is about 1.5 keV. Quarter-, half- and double-outer-temperature sensitivities are also saved. They are explicit model alternatives rather than80% credible intervals: a narrow interval for color temperature would require a photospheric transport calculation or external evidence.
+
+Graphite remains a live baseline. Its H4 flux-equivalent prompt rise of approximately 334 K plus the separate material-arrival scale of approximately 430 K at this radius fits within the old1000 K total-rise allowance even when their noncoincident maxima are conservatively added. A thin oxide is a separate stopping/isotope-handling choice; its softer-photon surface dose is more demanding. This calculation neither establishes a mandatory larger radius nor qualifies the hard-spectrum assumption as the physical answer. The opacity sensitivities already reduce escaped energy enough to change the receiver comparison materially.
+
+The code verifies spectral normalization, exact grey-accumulator reconstruction, transfer-versus-interaction inequalities and decreasing depth profiles:104 checks pass across four traces. `mixture_radiation.py` imports the frozen primary-data tables from `receiver_radiation.py` and `membrane-receiver/spectral_proxy.py`; NumPy and SciPy are required. Pass the four source stems printed in the JSON plus `--output mixture-radiation.json`. Primary source links are [NIST carbon](https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z06.html), [aluminum](https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z13.html), [oxygen](https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z08.html), and [coefficient definitions](https://physics.nist.gov/PhysRefData/XrayMassCoef/chap3.html).

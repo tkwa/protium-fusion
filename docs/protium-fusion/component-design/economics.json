@@ -1,0 +1,399 @@
+{
+  "scope": "Energy and material economics from an explicitly selected plant ledger.\n\nAll cost ranges are declared scenarios, not inferred probability intervals.\nThe script does not alter reactor output or double-charge existing auxiliaries.\n",
+  "assumptions": {
+    "year_s": 31557600.0,
+    "operating_fresh_C_H_ceiling": 0.007,
+    "resource_C_H_mass_ratio": 0.007,
+    "standard_methane_decomposition_G_J_mol": 50768.0,
+    "carbon_molar_mass_kg_mol": 0.0120107,
+    "hydrogen_atomic_mass_g_mol": 1.00794,
+    "methane_chemical_efficiencies": [
+      0.5,
+      0.99
+    ],
+    "whole_plant_embodied_J_kg_scenarios": [
+      1000000.0,
+      2000000.0,
+      10000000.0,
+      100000000.0,
+      1000000000.0
+    ],
+    "whole_plant_refurbishment_J_kg_scenarios": [
+      2000000.0,
+      10000000.0,
+      100000000.0,
+      1000000000.0
+    ],
+    "lifetimes_years": [
+      20.0,
+      100.0,
+      1000.0
+    ],
+    "construction_years": [
+      5.0,
+      20.0,
+      100.0
+    ],
+    "nominal_solar_irradiance_W_m2_at_au": 1361.0,
+    "nominal_solar_luminosity_W": 3.828e+26,
+    "comparison_solar_efficiency": 0.3,
+    "comparison_solar_complete_kg_m2": 1.0,
+    "comparison_solar_delivery_efficiency": 1.0
+  },
+  "primary_sources": {
+    "methane": "https://janaf.nist.gov/tables/C-067.html",
+    "graphite": "https://janaf.nist.gov/tables/C-002.html",
+    "nominal_solar": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+    "manufacturing_theory": "https://nanosystems.contact.ms/molecular_manufacturing_systems/"
+  },
+  "cases": {
+    "median_carbon64_sigma5000": {
+      "scope": "Conditional 64-zone median-carbon-rate mixture comparison, fixed reference hot profiles; does not include later source-profile or spatial convergence updates.",
+      "specific_power_W_kg": 0.006557015915382994,
+      "installed_kg_per_net_W": 152.508399080436,
+      "net_J_per_consumed_H_kg": 267329913957721.78,
+      "net_GWh_per_consumed_H_kg": 74.2583094327005,
+      "mass_fraction": {
+        "receiver": 0.6235772650563175,
+        "insulation": 0.01247154530112635,
+        "processing_structure_thermal_service": 0.12471545301126352,
+        "peak_driver_hardware": 0.0232848905869561,
+        "two_pulse_storage": 0.011139525714892939,
+        "average_driver_conditioning": 0.00019326587171648678,
+        "working_inventory": 4.993610425698795e-09,
+        "inflight_fuel_inventory": 1.7975507029345223e-12,
+        "fresh_feed_buffer": 6.359887050073484e-11,
+        "thermal_electric_converter": 0.0009229172214606275,
+        "incremental_heat_exchangers": 8.487353646449751e-05,
+        "incremental_pump_hardware": 0.0,
+        "radiator_panels": 0.002244878154013825,
+        "replacement_factory_capacity": 0.00031688087814028945,
+        "ten_year_spares": 0.001,
+        "support_streams": 4.849960864091217e-05,
+        "installed_reserve": 0.2
+      },
+      "receiver_C_kg": 7.602654221687298e+22,
+      "resource_H_kg_accessed_for_receiver_at_chosen_C_H": 1.0860934602410426e+25,
+      "methane_H_byproduct_kg": 2.552064174846594e+22,
+      "methane_H_byproduct_years_of_reactor_H_consumption": 270429446.34323454,
+      "whole_plant_embodied_scenarios": [
+        {
+          "J_kg": 1000000.0,
+          "energy_J": 1.2192000330545526e+29,
+          "equivalent_export_years": 4.832699542437829
+        },
+        {
+          "J_kg": 2000000.0,
+          "energy_J": 2.4384000661091052e+29,
+          "equivalent_export_years": 9.665399084875657
+        },
+        {
+          "J_kg": 10000000.0,
+          "energy_J": 1.2192000330545526e+30,
+          "equivalent_export_years": 48.32699542437828
+        },
+        {
+          "J_kg": 100000000.0,
+          "energy_J": 1.2192000330545526e+31,
+          "equivalent_export_years": 483.2699542437828
+        },
+        {
+          "J_kg": 1000000000.0,
+          "energy_J": 1.2192000330545526e+32,
+          "equivalent_export_years": 4832.699542437828
+        }
+      ],
+      "methane_chemical_step": [
+        {
+          "efficiency": 0.5,
+          "supplied_J_kg_C": 8453795.36579883,
+          "receiver_chemical_step_J": 6.427128302707098e+29,
+          "receiver_chemical_step_equivalent_export_years": 25.476032780169735,
+          "operating_fresh_C_chemical_W": 9066529648.791563,
+          "example_days_if_external_construction_power_1e24W": 7.438805905910994
+        },
+        {
+          "efficiency": 0.99,
+          "supplied_J_kg_C": 4269593.619090318,
+          "receiver_chemical_step_J": 3.2460243953066155e+29,
+          "receiver_chemical_step_equivalent_export_years": 12.866683222307948,
+          "operating_fresh_C_chemical_W": 4579055378.177557,
+          "example_days_if_external_construction_power_1e24W": 3.7569726797530274
+        }
+      ],
+      "lifetimes": [
+        {
+          "years": 20.0,
+          "fresh_H_kg": 1887415893021843.8,
+          "fresh_C_kg": 676898135486.5532,
+          "receiver_C_per_consumed_H": 40280757.67400201,
+          "receiver_C_over_operating_007_budget": 5754393953.428858,
+          "maximum_average_embodied_J_kg_for_energy_payback": 4138473.709025807,
+          "delivered_kWh_per_installed_kg": 1.1495760302849465
+        },
+        {
+          "years": 100.0,
+          "fresh_H_kg": 9437079465109218.0,
+          "fresh_C_kg": 3384490677432.766,
+          "receiver_C_per_consumed_H": 8056151.534800402,
+          "receiver_C_over_operating_007_budget": 1150878790.6857717,
+          "maximum_average_embodied_J_kg_for_energy_payback": 20692368.54512904,
+          "delivered_kWh_per_installed_kg": 5.747880151424733
+        },
+        {
+          "years": 1000.0,
+          "fresh_H_kg": 9.43707946510922e+16,
+          "fresh_C_kg": 33844906774327.664,
+          "receiver_C_per_consumed_H": 805615.1534800401,
+          "receiver_C_over_operating_007_budget": 115087879.06857716,
+          "maximum_average_embodied_J_kg_for_energy_payback": 206923685.45129037,
+          "delivered_kWh_per_installed_kg": 57.47880151424732
+        }
+      ],
+      "refurbishment_scenarios": [
+        {
+          "J_kg": 2000000.0,
+          "W": 7.726823542059933e+17,
+          "fraction_of_reference_export": 0.0009665399084875658,
+          "incremental_W_above_included_refurbishment": 0.0
+        },
+        {
+          "J_kg": 10000000.0,
+          "W": 3.8634117710299663e+18,
+          "fraction_of_reference_export": 0.004832699542437828,
+          "incremental_W_above_included_refurbishment": 3.090729416823973e+18
+        },
+        {
+          "J_kg": 100000000.0,
+          "W": 3.863411771029966e+19,
+          "fraction_of_reference_export": 0.04832699542437828,
+          "incremental_W_above_included_refurbishment": 3.786143535609367e+19
+        },
+        {
+          "J_kg": 1000000000.0,
+          "W": 3.863411771029967e+20,
+          "fraction_of_reference_export": 0.48326995424378283,
+          "incremental_W_above_included_refurbishment": 3.855684947487907e+20
+        }
+      ],
+      "refurbishment_J_kg_consuming_10pct_export": 206923685.45129037,
+      "H_processing_at_1GJ_kg_W": 3713056400994887.0,
+      "H_processing_at_1GJ_kg_fraction_export": 4.644621654023184e-06,
+      "source_electric_fraction_of_export": 0.2947466869236632,
+      "construction_scenarios": [
+        {
+          "years": 5.0,
+          "mean_installed_kg_s": 772682354205993.2,
+          "mean_receiver_C_kg_s": 481827149193050.1,
+          "mean_H_resource_access_kg_s_at_chosen_abundance": 6.883244988472143e+16,
+          "throughput_vs_installed_routine_factory": 2000.0,
+          "factory_kg_if_repair_productivity_also_applies_to_construction": 7.726823542059932e+22,
+          "scope": "Construction-period throughput illustration; repair productivity is not a demonstrated new-build factory specification."
+        },
+        {
+          "years": 20.0,
+          "mean_installed_kg_s": 193170588551498.3,
+          "mean_receiver_C_kg_s": 120456787298262.53,
+          "mean_H_resource_access_kg_s_at_chosen_abundance": 1.7208112471180358e+16,
+          "throughput_vs_installed_routine_factory": 500.0,
+          "factory_kg_if_repair_productivity_also_applies_to_construction": 1.931705885514983e+22,
+          "scope": "Construction-period throughput illustration; repair productivity is not a demonstrated new-build factory specification."
+        },
+        {
+          "years": 100.0,
+          "mean_installed_kg_s": 38634117710299.664,
+          "mean_receiver_C_kg_s": 24091357459652.504,
+          "mean_H_resource_access_kg_s_at_chosen_abundance": 3441622494236071.5,
+          "throughput_vs_installed_routine_factory": 100.0,
+          "factory_kg_if_repair_productivity_also_applies_to_construction": 3.863411771029966e+21,
+          "scope": "Construction-period throughput illustration; repair productivity is not a demonstrated new-build factory specification."
+        }
+      ],
+      "direct_solar_mass_parity_distance_au": 249.53793167480976,
+      "solar_specific_power_at_5au_W_kg": 16.332,
+      "export_fraction_of_nominal_solar_luminosity": 2.088378793305688e-06,
+      "validation": {
+        "specific_power_identity": true,
+        "receiver_areal_mass_identity": true,
+        "mass_ledger_identity": true,
+        "existing_refurbishment_reproduced": true,
+        "payback_energy_identity": true
+      }
+    },
+    "median_carbon64_sigma2000": {
+      "scope": "Conditional 64-zone median-carbon-rate mixture comparison, fixed reference hot profiles; does not include later source-profile or spatial convergence updates.",
+      "specific_power_W_kg": 0.012355126433353403,
+      "installed_kg_per_net_W": 80.93806286760774,
+      "net_J_per_consumed_H_kg": 267547152158213.3,
+      "net_GWh_per_consumed_H_kg": 74.31865337728148,
+      "mass_fraction": {
+        "receiver": 0.46928998777335584,
+        "insulation": 0.02346449938866779,
+        "processing_structure_thermal_service": 0.23464499388667792,
+        "peak_driver_hardware": 0.04380919026076771,
+        "two_pulse_storage": 0.02095838069910615,
+        "average_driver_conditioning": 0.0003638675714393502,
+        "working_inventory": 9.401623174208038e-09,
+        "inflight_fuel_inventory": 3.3843037211214214e-12,
+        "fresh_feed_buffer": 1.1973953988801426e-10,
+        "thermal_electric_converter": 0.0017376141344205504,
+        "incremental_heat_exchangers": 0.00015979489077641015,
+        "incremental_pump_hardware": 0.0,
+        "radiator_panels": 0.00422360988960452,
+        "replacement_factory_capacity": 0.00031688087814028945,
+        "ten_year_spares": 0.001,
+        "support_streams": 3.1171102296489425e-05,
+        "installed_reserve": 0.20000000000000004
+      },
+      "receiver_C_kg": 3.04106168867492e+22,
+      "resource_H_kg_accessed_for_receiver_at_chosen_C_H": 4.344373840964171e+24,
+      "methane_H_byproduct_kg": 1.0208256699386378e+22,
+      "methane_H_byproduct_years_of_reactor_H_consumption": 108097789.3673719,
+      "whole_plant_embodied_scenarios": [
+        {
+          "J_kg": 1000000.0,
+          "energy_J": 6.48013332460782e+28,
+          "equivalent_export_years": 2.56477244364615
+        },
+        {
+          "J_kg": 2000000.0,
+          "energy_J": 1.296026664921564e+29,
+          "equivalent_export_years": 5.1295448872923
+        },
+        {
+          "J_kg": 10000000.0,
+          "energy_J": 6.48013332460782e+29,
+          "equivalent_export_years": 25.647724436461502
+        },
+        {
+          "J_kg": 100000000.0,
+          "energy_J": 6.480133324607821e+30,
+          "equivalent_export_years": 256.477244364615
+        },
+        {
+          "J_kg": 1000000000.0,
+          "energy_J": 6.480133324607821e+31,
+          "equivalent_export_years": 2564.77244364615
+        }
+      ],
+      "methane_chemical_step": [
+        {
+          "efficiency": 0.5,
+          "supplied_J_kg_C": 8453795.36579883,
+          "receiver_chemical_step_J": 2.57085132108284e+29,
+          "receiver_chemical_step_equivalent_export_years": 10.175174328567719,
+          "operating_fresh_C_chemical_W": 9072735372.393429,
+          "example_days_if_external_construction_power_1e24W": 2.975522362364398
+        },
+        {
+          "efficiency": 0.99,
+          "supplied_J_kg_C": 4269593.619090318,
+          "receiver_chemical_step_J": 1.2984097581226464e+29,
+          "receiver_chemical_step_equivalent_export_years": 5.138976933620061,
+          "operating_fresh_C_chemical_W": 4582189582.016883,
+          "example_days_if_external_construction_power_1e24W": 1.5027890719012111
+        }
+      ],
+      "lifetimes": [
+        {
+          "years": 20.0,
+          "fresh_H_kg": 1888707763429550.0,
+          "fresh_C_kg": 677361448672.322,
+          "receiver_C_per_consumed_H": 16101282.302948257,
+          "receiver_C_over_operating_007_budget": 2300183186.1354656,
+          "maximum_average_embodied_J_kg_for_energy_payback": 7797962.758663867,
+          "delivered_kWh_per_installed_kg": 2.1661007662955187
+        },
+        {
+          "years": 100.0,
+          "fresh_H_kg": 9443538817147750.0,
+          "fresh_C_kg": 3386807243361.61,
+          "receiver_C_per_consumed_H": 3220256.4605896515,
+          "receiver_C_over_operating_007_budget": 460036637.2270931,
+          "maximum_average_embodied_J_kg_for_energy_payback": 38989813.79331934,
+          "delivered_kWh_per_installed_kg": 10.830503831477593
+        },
+        {
+          "years": 1000.0,
+          "fresh_H_kg": 9.44353881714775e+16,
+          "fresh_C_kg": 33868072433616.1,
+          "receiver_C_per_consumed_H": 322025.6460589651,
+          "receiver_C_over_operating_007_budget": 46003663.722709306,
+          "maximum_average_embodied_J_kg_for_energy_payback": 389898137.9331934,
+          "delivered_kWh_per_installed_kg": 108.30503831477594
+        }
+      ],
+      "refurbishment_scenarios": [
+        {
+          "J_kg": 2000000.0,
+          "W": 4.10686067673576e+17,
+          "fraction_of_reference_export": 0.0005129544887292301,
+          "incremental_W_above_included_refurbishment": 0.0
+        },
+        {
+          "J_kg": 10000000.0,
+          "W": 2.05343033836788e+18,
+          "fraction_of_reference_export": 0.00256477244364615,
+          "incremental_W_above_included_refurbishment": 1.642744270694304e+18
+        },
+        {
+          "J_kg": 100000000.0,
+          "W": 2.05343033836788e+19,
+          "fraction_of_reference_export": 0.025647724436461503,
+          "incremental_W_above_included_refurbishment": 2.0123617316005224e+19
+        },
+        {
+          "J_kg": 1000000000.0,
+          "W": 2.05343033836788e+20,
+          "fraction_of_reference_export": 0.256477244364615,
+          "incremental_W_above_included_refurbishment": 2.0493234776911443e+20
+        }
+      ],
+      "refurbishment_J_kg_consuming_10pct_export": 389898137.9331933,
+      "H_processing_at_1GJ_kg_W": 3715597858711929.5,
+      "H_processing_at_1GJ_kg_fraction_export": 4.640850396351611e-06,
+      "source_electric_fraction_of_export": 0.2945073637264187,
+      "construction_scenarios": [
+        {
+          "years": 5.0,
+          "mean_installed_kg_s": 410686067673575.94,
+          "mean_receiver_C_kg_s": 192730859677220.06,
+          "mean_H_resource_access_kg_s_at_chosen_abundance": 2.7532979953888576e+16,
+          "throughput_vs_installed_routine_factory": 1999.9999999999998,
+          "factory_kg_if_repair_productivity_also_applies_to_construction": 4.106860676735759e+22,
+          "scope": "Construction-period throughput illustration; repair productivity is not a demonstrated new-build factory specification."
+        },
+        {
+          "years": 20.0,
+          "mean_installed_kg_s": 102671516918393.98,
+          "mean_receiver_C_kg_s": 48182714919305.016,
+          "mean_H_resource_access_kg_s_at_chosen_abundance": 6883244988472144.0,
+          "throughput_vs_installed_routine_factory": 499.99999999999994,
+          "factory_kg_if_repair_productivity_also_applies_to_construction": 1.0267151691839397e+22,
+          "scope": "Construction-period throughput illustration; repair productivity is not a demonstrated new-build factory specification."
+        },
+        {
+          "years": 100.0,
+          "mean_installed_kg_s": 20534303383678.797,
+          "mean_receiver_C_kg_s": 9636542983861.002,
+          "mean_H_resource_access_kg_s_at_chosen_abundance": 1376648997694428.8,
+          "throughput_vs_installed_routine_factory": 99.99999999999999,
+          "factory_kg_if_repair_productivity_also_applies_to_construction": 2.0534303383678794e+21,
+          "scope": "Construction-period throughput illustration; repair productivity is not a demonstrated new-build factory specification."
+        }
+      ],
+      "direct_solar_mass_parity_distance_au": 181.78836890418552,
+      "solar_specific_power_at_5au_W_kg": 16.332,
+      "export_fraction_of_nominal_solar_luminosity": 2.0915064401911273e-06,
+      "validation": {
+        "specific_power_identity": true,
+        "receiver_areal_mass_identity": true,
+        "mass_ledger_identity": true,
+        "existing_refurbishment_reproduced": true,
+        "payback_energy_identity": true
+      }
+    }
+  },
+  "input_sha256": "f83d097e24f8f25aec63a82aa1b7b18f5971ce2985009903fc7cbb7efcb3ea57",
+  "code_sha256": "90d2c325cf185429b92816751a8b692f54520fee718bba442341c50d8bda79f4"
+}

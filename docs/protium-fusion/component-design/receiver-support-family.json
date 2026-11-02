@@ -1,0 +1,240 @@
+{
+  "scope": "Support consequences of receiver mass changes at the same archived pulse rate.\nThis is a support parameter study, not a new selected plant performance claim.\n",
+  "input_sha256": {
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/plant-scan-003.json": "b17ad09c4acb782c063e88a8611e0d418dcf00040ca7889d4f1bc42d20443d53",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/A-H3-fixed_energy-z64-k0p001-t1.receiver.json": "6063ea15b45a202d933cb743921659e67d4c461c524c8c8c0e6e3e53e772ae96",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json": "230f1b22fc32cd7e1203f12e5780446b641b4518c527e8efbe295e2fa627e48d",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/B1-H2-fixed_energy-z64-k0p001-t1.receiver.json": "089c5d410d91f4f396e38db4146355845c1f6e4d8040a853148e57aa3bc79e5e",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/B2-H2p5-fixed_energy-z64-k0p001-t1.receiver.json": "6cf2b1642d131b55d2776d5509bc57a77bf6deef432fc545a8df54b3ed477b91",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json": "f92988f64f7c658e34ce6f6bd37f396059f5e8a30c14866653a534093659a0d2",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver-results/C13-H4-fixed_energy-z64-k0p001-t1.receiver.json": "7c0dc3bb540b10b0ffaf7d84525a73b2b21516433eeb49c06eaad1e965410bd1",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json": "cf9dea85fb758573a00ba17adcf69aeed7ac1eb5d42ad3906ee4fd296a1f9170",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/support_modes.py": "a9fddb5f9326040213d6129ab10900bbbc2cbfc0cea4e5f5cc616ee89436c50c",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/plant_compare.py": "803f41c8dff52d4c91e824de50f0ddddfa59ff3dd3a01270b72435828ad71884",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/cold-sink-redesign/station.py": "8437bd3df1c66b53940639d2ae98d71b8be9c913bee6c67b3bacb77b841ebea5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/material_cycle.py": "845b6fceeead8ac69da4bb4310bbbfedeaf8b7c91356275d4eb510580511405e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/sector-account.json": "fa1ab40f1dfe8b7179917fd8a6038ab6ba0c9deb4d2fbfcbc6b88e29e485d6db",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/support-topology.json": "606b052f6c7f74e81adb7d1e23fb25427efe12c610a48da5ab8550fe2392b679"
+  },
+  "code_sha256": "bd39585eaf17fc02e97b66991a832fadc0cde12c3e2fa1e738b931e425ed5a62",
+  "reference_cases": {
+    "A": "A-H3-fixed_energy-z64-k0p001-t1",
+    "B1": "B1-H2-fixed_energy-z64-k0p001-t1",
+    "B2": "B2-H2p5-fixed_energy-z64-k0p001-t1",
+    "C13": "C13-H4-fixed_energy-z64-k0p001-t1"
+  },
+  "reference_He_s": 4.473376366393096e+32,
+  "radius_m": 1100000000.0,
+  "solar_n2_s2": 3.171308690689553e-16,
+  "mass_threshold_for_positive_three_family_streams_kg": 5.059421203491357e+22,
+  "extensional_modulus_N_m": 100000000.0,
+  "rows": [
+    {
+      "receiver_sigma_kg_m2": 5000.0,
+      "mass_kg_at_same_rate99pct_capture_reference": 1.219039274101317e+23,
+      "total_installed_kg_m2": 8017.195301503327,
+      "self_coefficient_a_s2": 3.056436448961089e-15,
+      "a_over_solar_n2": 9.637776536652803,
+      "positive_three_family_stream_solution": true,
+      "axis_stream_kg_m2_diagnostic": [
+        0.20977799277038714,
+        0.11748523865174217,
+        0.08672098727886052
+      ],
+      "heaviest_local_stream_to_body_ratio": 2.61660075476833e-05,
+      "ratio_to_old_local_control_epsilon": 1.0002602377223035,
+      "static_support_pressure_upper_Pa": 0.03534470310617207,
+      "global_affine_control_cases": [
+        {
+          "active_attitude_response_days": 30.0,
+          "positive_growth_detected": false,
+          "largest_growth_per_s": -6.2823072931061966e-12,
+          "H_eigenvalues_in_units_a": [
+            3.159980030279111,
+            3.2102001603117922,
+            3.3693869726019825,
+            4.122890701179719,
+            4.3658785757626415,
+            9.257782468411161,
+            48.69863109908995,
+            48.7005212980651,
+            48.70218035386934
+          ]
+        },
+        {
+          "active_attitude_response_days": 100.0,
+          "positive_growth_detected": false,
+          "largest_growth_per_s": -1.8378405281206378e-10,
+          "H_eigenvalues_in_units_a": [
+            3.081611440049239,
+            3.0873185111982138,
+            3.359108401896415,
+            4.122890701179717,
+            4.3658785757626415,
+            4.393371497848191,
+            4.4576446451986,
+            4.515230902184516,
+            9.257782468411165
+          ]
+        },
+        {
+          "active_attitude_response_days": 300.0,
+          "positive_growth_detected": false,
+          "largest_growth_per_s": -1.4309549215555934e-10,
+          "H_eigenvalues_in_units_a": [
+            0.4252173430512551,
+            0.45124177869929943,
+            0.4832540613568139,
+            3.197849890053784,
+            3.275753511538778,
+            3.3733543507440653,
+            4.122890701179716,
+            4.365878575762641,
+            9.257782468411161
+          ]
+        }
+      ],
+      "illustrative_attitude_correction": {
+        "angle_rad": 1e-06,
+        "response_s": 8640000,
+        "body_angular_momentum_change_kg_m2_s": 1.1381462358507666e+28,
+        "per_axis_counterstream_maximum_net_L": [
+          2.339141995450878e+31,
+          1.3100261469116908e+31,
+          9.669875307319619e+30
+        ],
+        "required_differential_speed_fraction": [
+          0.0004865656886431919,
+          0.0008687965797735252,
+          0.001177001977460088
+        ]
+      },
+      "minimum_uniform_prestress_N_m_to_restore_nonnegative_family_densities": 0.0,
+      "scope": "Same archived source/storage/service budgets and rate.99% capture is retained only to obtain the comparison mass; photon qualification is separate. Negative diagnostic stream density invalidates this topology rather than representing negative material."
+    },
+    {
+      "receiver_sigma_kg_m2": 2000.0,
+      "mass_kg_at_same_rate99pct_capture_reference": 6.478493430391156e+22,
+      "total_installed_kg_m2": 4260.678732376538,
+      "self_coefficient_a_s2": 1.6243203870195224e-15,
+      "a_over_solar_n2": 5.121924560003456,
+      "positive_three_family_stream_solution": true,
+      "axis_stream_kg_m2_diagnostic": [
+        0.07456914386279212,
+        0.02552084706602677,
+        0.009171414800438317
+      ],
+      "heaviest_local_stream_to_body_ratio": 1.7501705372936825e-05,
+      "ratio_to_old_local_control_epsilon": 0.6690458964737814,
+      "static_support_pressure_upper_Pa": 0.012071714132726891,
+      "global_affine_control_cases": [
+        {
+          "active_attitude_response_days": 30.0,
+          "positive_growth_detected": false,
+          "largest_growth_per_s": -5.5055525876497835e-12,
+          "H_eigenvalues_in_units_a": [
+            13.777410437157556,
+            13.871593345523396,
+            14.171802921336285,
+            14.612835182791557,
+            15.118211217168325,
+            30.44860118594748,
+            91.63484352449204,
+            91.6387577857742,
+            91.64219443313253
+          ]
+        },
+        {
+          "active_attitude_response_days": 100.0,
+          "positive_growth_detected": false,
+          "largest_growth_per_s": -6.695733947625786e-11,
+          "H_eigenvalues_in_units_a": [
+            8.140813009064596,
+            8.185786599851518,
+            8.240665349782251,
+            13.843121814933525,
+            13.985714961444558,
+            14.178721287899267,
+            14.612835182791557,
+            15.118211217168326,
+            30.44860118594749
+          ]
+        },
+        {
+          "active_attitude_response_days": 300.0,
+          "positive_growth_detected": false,
+          "largest_growth_per_s": -2.8332775600800986e-11,
+          "H_eigenvalues_in_units_a": [
+            0.8694646291840078,
+            0.8897330143316747,
+            0.913468575870438,
+            13.80842728545144,
+            13.926315226323236,
+            14.175169946809161,
+            14.612835182791562,
+            15.118211217168332,
+            30.448601185947474
+          ]
+        }
+      ],
+      "illustrative_attitude_correction": {
+        "angle_rad": 1e-06,
+        "response_s": 8640000,
+        "body_angular_momentum_change_kg_m2_s": 6.048593403374458e+27,
+        "per_axis_counterstream_maximum_net_L": [
+          8.314876773808939e+30,
+          2.84571724341761e+30,
+          1.0226640666205004e+30
+        ],
+        "required_differential_speed_fraction": [
+          0.0007274423383431183,
+          0.0021255075209476197,
+          0.005914545744589094
+        ]
+      },
+      "minimum_uniform_prestress_N_m_to_restore_nonnegative_family_densities": 0.0,
+      "scope": "Same archived source/storage/service budgets and rate.99% capture is retained only to obtain the comparison mass; photon qualification is separate. Negative diagnostic stream density invalidates this topology rather than representing negative material."
+    },
+    {
+      "receiver_sigma_kg_m2": 1000.0,
+      "mass_kg_at_same_rate99pct_capture_reference": 4.574583051544053e+22,
+      "total_installed_kg_m2": 3008.543410072904,
+      "self_coefficient_a_s2": 1.1469624215221814e-15,
+      "a_over_solar_n2": 3.616684887502364,
+      "positive_three_family_stream_solution": false,
+      "axis_stream_kg_m2_diagnostic": [
+        0.04396591978866248,
+        0.009332017687130515,
+        -0.002212616346713473
+      ],
+      "heaviest_local_stream_to_body_ratio": 1.4613689681677913e-05,
+      "ratio_to_old_local_control_epsilon": 0.5586443666790631,
+      "static_support_pressure_upper_Pa": 0.006944291413043725,
+      "global_affine_control_cases": [],
+      "illustrative_attitude_correction": {
+        "angle_rad": 1e-06,
+        "response_s": 8640000,
+        "body_angular_momentum_change_kg_m2_s": 4.2710227564570246e+27,
+        "per_axis_counterstream_maximum_net_L": [
+          4.90244605681072e+30,
+          1.0405721871002094e+30,
+          -2.467191028032942e+29
+        ],
+        "required_differential_speed_fraction": [
+          0.0008712023971224547,
+          0.004104494440082239,
+          null
+        ]
+      },
+      "minimum_uniform_prestress_N_m_to_restore_nonnegative_family_densities": 221261.63467134733,
+      "scope": "Same archived source/storage/service budgets and rate.99% capture is retained only to obtain the comparison mass; photon qualification is separate. Negative diagnostic stream density invalidates this topology rather than representing negative material."
+    }
+  ],
+  "limitations": [
+    "The global9DOF model and local Fourier feedback screen are separate reductions; a full discrete network remains unclosed.",
+    "The attitude correction is an amplitude normalization, not a claimed required pointing tolerance. Startup angular momentum must be supplied during construction; internal wheels only redistribute it.",
+    "The prestress value is the algebraic minimum for the reference force construction; a positive margin and its membrane/guide rebalancing are required before using a below-threshold plant.",
+    "Fixed guide package mass is retained. Smaller support-stream mass is not credited as a free reduction of cryostats, conductor, controls, source or factory hardware."
+  ]
+}

@@ -1,0 +1,1879 @@
+{
+  "scope": "Preserve the four B1 source/recipe/rate controls and independently audit traces.",
+  "cases": {
+    "H2_carbon": {
+      "record": "component-design/b1-source-robustness/records/B1-H2-source128-carbon-median.json",
+      "initial": "component-design/b1-source-robustness/records/B1-H2-source128-carbon-median.initial.json",
+      "inputs": "component-design/b1-source-robustness/records/B1-H2-source128-carbon-median.inputs.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/source128/B1-H2-source128-carbon-median.npz",
+      "duration_s": 8.227795789289296e-05,
+      "initial_Y": {
+        "p": 0.11764705882352941,
+        "n15": 0.058823529411764705
+      },
+      "eos": "FastEOS",
+      "result_sha256": "af7576314952a5878063947ca5e06065949c481d3ad37803815edea840ed9a7d",
+      "initial_profile_sha256": "dae7ee697bbbb10cef6623e98d5d8c2d4cbb44a31a9ed328198b276627aaff44",
+      "input_record_sha256": "97e95b3e62570d7abdef5a87169b3d83622eef8836c447d4035629d4480f22f6",
+      "raw_trace_sha256": "f408d8dad44e5188fd810303ce936f24bc67903cb0b31bf92b62e11c03d2751d",
+      "h_per_catalyst": 2.0,
+      "gain": 8.082346462468358,
+      "target_yield": 0.8096945614251616,
+      "prepared_energy_J": 3.195016782566003e+23,
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged."
+      },
+      "peak_temperature_K": 542885862.9671212,
+      "energy_residual_fraction_initial": -1.3460298039727516e-06
+    },
+    "H2_low": {
+      "record": "component-design/b1-source-robustness/records/B1-H2-source128-carbon-median-rates-carbon-n15-low-updated-median.json",
+      "initial": "component-design/b1-source-robustness/records/B1-H2-source128-carbon-median-rates-carbon-n15-low-updated-median.initial.json",
+      "inputs": "component-design/b1-source-robustness/records/B1-H2-source128-carbon-median-rates-carbon-n15-low-updated-median.inputs.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/h2low/B1-H2-source128-carbon-median-rates-carbon-n15-low-updated-median.npz",
+      "duration_s": 8.227795789289296e-05,
+      "initial_Y": {
+        "p": 0.11764705882352941,
+        "n15": 0.058823529411764705
+      },
+      "eos": "FastEOS",
+      "result_sha256": "690283278e3fb413adbd39de35f186aca58a5e1237f6cb97b2832e64e4571f4c",
+      "initial_profile_sha256": "dae7ee697bbbb10cef6623e98d5d8c2d4cbb44a31a9ed328198b276627aaff44",
+      "input_record_sha256": "51065ca74248433e80593773a68d2b9629d5894b7e5cb13b6ae91f4c3d6015d4",
+      "raw_trace_sha256": "1a67a8f299fe57b879406b677cb92b5f1cf5aed71fe2163c27328034de85a962",
+      "h_per_catalyst": 2.0,
+      "gain": 8.259891599077756,
+      "target_yield": 0.8274145126865617,
+      "prepared_energy_J": 3.195016782566003e+23,
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31-plus-nacreii-n15-low",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "8ea157326095bca3024d34f3eb0cb23f0239387c5f919ee423ec96adeef437ee",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two measured carbon capture updates and one paired N15(p,alpha) evaluation sensitivity; all other physics unchanged.",
+        "carbon_kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "nitrogen15_evaluation": {
+          "data_sha256": "15661ce2f82ab1467a3f609ef6addc87eba19694ef9ada6b6071fec5fe0ed76c",
+          "doi": "10.1016/j.nuclphysa.2013.09.007",
+          "table": 35,
+          "curve": "low",
+          "temperature_range_GK": [
+            0.005000000000000002,
+            10.000000000000002
+          ],
+          "interpretation": "Adopted/low/high model evaluation limits; not assigned a Gaussian confidence level here.",
+          "reverse_policy": "Same forward/reverse factor preserves archived equilibrium ratio; no new Q or species."
+        },
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/source128/B1-H2-source128-carbon-median.json",
+        "baseline_record_sha256": "af7576314952a5878063947ca5e06065949c481d3ad37803815edea840ed9a7d",
+        "initial_profile_sha256": "dae7ee697bbbb10cef6623e98d5d8c2d4cbb44a31a9ed328198b276627aaff44",
+        "runner_sha256": "3498c48393b720f0c7f96093b5b99c73648cbd35acfc82566b75711229ff0e41"
+      },
+      "peak_temperature_K": 575417898.3094903,
+      "energy_residual_fraction_initial": -4.563728424119412e-07
+    },
+    "H1p5_carbon": {
+      "record": "component-design/b1-source-robustness/records/B1-H1p5-source128-carbon.json",
+      "initial": "component-design/b1-source-robustness/records/B1-H1p5-source128-carbon.initial.json",
+      "inputs": "component-design/b1-source-robustness/records/B1-H1p5-source128-carbon.inputs.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-carbon.npz",
+      "duration_s": 8.227795789289296e-05,
+      "initial_Y": {
+        "p": 0.09090909090909091,
+        "n15": 0.06060606060606061
+      },
+      "eos": "FastEOS",
+      "result_sha256": "10dd99f5d91e9b800510c3a6478b54836472668151445fc91f45edb2af301483",
+      "initial_profile_sha256": "be13812a2332227776e4ddc5de7f2752126f9c99fcd6d56232ebab1b10ecb261",
+      "input_record_sha256": "c8b30e4c4741df3f98d28c2c4eed05321c6599facfc67b98defe85359215f9ec",
+      "raw_trace_sha256": "026c817d2fd1bf129b20ce168f14194f4d50819e6f231e62be209d377d122543",
+      "h_per_catalyst": 1.5,
+      "gain": 8.013658093101654,
+      "target_yield": 0.7792843695883163,
+      "prepared_energy_J": 3.195016782566006e+23,
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two carbon proton-capture pairs only; 27 species, other 190 rates, EOS, opacity, hydro and weak-energy convention unchanged."
+      },
+      "peak_temperature_K": 598369494.5581466,
+      "energy_residual_fraction_initial": -1.1498480566824583e-06
+    },
+    "H1p5_low": {
+      "record": "component-design/b1-source-robustness/records/B1-H1p5-source128-low.json",
+      "initial": "component-design/b1-source-robustness/records/B1-H1p5-source128-low.initial.json",
+      "inputs": "component-design/b1-source-robustness/records/B1-H1p5-source128-low.inputs.json",
+      "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-low.npz",
+      "duration_s": 8.227795789289296e-05,
+      "initial_Y": {
+        "p": 0.09090909090909091,
+        "n15": 0.06060606060606061
+      },
+      "eos": "FastEOS",
+      "result_sha256": "6a4e46ee18a679451f1ae3c352bfa577ba47950209b522bbb3ab7eec71b1d277",
+      "initial_profile_sha256": "be13812a2332227776e4ddc5de7f2752126f9c99fcd6d56232ebab1b10ecb261",
+      "input_record_sha256": "c824db44cc61c822dab8ccf6923d6d669de0f827047596b230d10e49aaff95ed",
+      "raw_trace_sha256": "0e882398e02f010a1248480623487ca6b44eb9ef8772c5891a677b8997fc9369",
+      "h_per_catalyst": 1.5,
+      "gain": 8.17640821712588,
+      "target_yield": 0.7950530003764632,
+      "prepared_energy_J": 3.195016782566006e+23,
+      "rate_update": {
+        "revision": "luna2023-public-repository-2026-10-31-plus-nacreii-n15-low",
+        "mode": "updated",
+        "quantile": "median",
+        "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+        "kernel_sha256": "8ea157326095bca3024d34f3eb0cb23f0239387c5f919ee423ec96adeef437ee",
+        "source_doi": "10.1103/PhysRevLett.131.162701",
+        "temperature_range_GK": [
+          0.007000000000000003,
+          10.000000000000002
+        ],
+        "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+        "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+        "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+        "pairs": [
+          {
+            "forward": "C12_p_to_N13_reaclib",
+            "reverse": "N13_to_p_C12_reaclib",
+            "indices": [
+              62,
+              13
+            ]
+          },
+          {
+            "forward": "C13_p_to_N14_reaclib",
+            "reverse": "N14_to_p_C13_reaclib",
+            "indices": [
+              64,
+              15
+            ]
+          }
+        ],
+        "scope": "Two measured carbon capture updates and one paired N15(p,alpha) evaluation sensitivity; all other physics unchanged.",
+        "carbon_kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+        "nitrogen15_evaluation": {
+          "data_sha256": "15661ce2f82ab1467a3f609ef6addc87eba19694ef9ada6b6071fec5fe0ed76c",
+          "doi": "10.1016/j.nuclphysa.2013.09.007",
+          "table": 35,
+          "curve": "low",
+          "temperature_range_GK": [
+            0.005000000000000002,
+            10.000000000000002
+          ],
+          "interpretation": "Adopted/low/high model evaluation limits; not assigned a Gaussian confidence level here.",
+          "reverse_policy": "Same forward/reverse factor preserves archived equilibrium ratio; no new Q or species."
+        }
+      },
+      "peak_temperature_K": 646799629.8565428,
+      "energy_residual_fraction_initial": -5.585742285158698e-07
+    }
+  },
+  "trace_audits": [
+    {
+      "label": "H2_carbon",
+      "family": "B1-source-recipe-rate-robustness",
+      "stage": "B1",
+      "zones": 128,
+      "samples": 400,
+      "elapsed_s": 8.227795789289296e-05,
+      "initial_H_per_catalyst": 2.0,
+      "initial_energy_J": 3.195016782566003e+23,
+      "nuclear_gain": 8.082346462468358,
+      "opacity_m2_kg": 0.001,
+      "solver_saved_step_peak_temperature_K": 542885862.9671212,
+      "sampled_peak_temperature_K": 542883923.8067871,
+      "sampled_temperature_peak_fraction_of_solver_step_peak": 0.999996428051518,
+      "extrema": {
+        "pressure_max_Pa": {
+          "value": 2.9175175761885295e+19,
+          "time_s": 3.3723065587542005e-05,
+          "sample_index": 162
+        },
+        "pressure_massmean_Pa": {
+          "value": 5.150186621835198e+18,
+          "time_s": 3.523454075503357e-05,
+          "sample_index": 261
+        },
+        "pressure_volumemean_Pa": {
+          "value": 1.0541774414920335e+18,
+          "time_s": 3.741873716943956e-05,
+          "sample_index": 309
+        },
+        "density_max_kg_m3": {
+          "value": 2543140.6259961277,
+          "time_s": 3.36528628905696e-05,
+          "sample_index": 154
+        },
+        "density_massmean_kg_m3": {
+          "value": 568375.3371096654,
+          "time_s": 3.4283952884822e-05,
+          "sample_index": 207
+        },
+        "density_volumemean_kg_m3": {
+          "value": 129795.02406495156,
+          "time_s": 3.774242860189104e-05,
+          "sample_index": 322
+        },
+        "surface_radius_m": {
+          "value": 59.25184894067505,
+          "time_s": 3.774242860189104e-05,
+          "sample_index": 322
+        },
+        "half_mass_radius_m": {
+          "value": 25.382899734003967,
+          "time_s": 3.4283952884822e-05,
+          "sample_index": 207
+        },
+        "ninety_percent_mass_radius_m": {
+          "value": 36.565789069554,
+          "time_s": 3.6106308457118114e-05,
+          "sample_index": 287
+        },
+        "LTE_radiation_energy_J": {
+          "value": 2.2842494843891747e+24,
+          "time_s": 3.650632551148732e-05,
+          "sample_index": 295
+        },
+        "surface_radiative_luminosity_W": {
+          "value": 2.7387930047682522e+28,
+          "time_s": 3.9720451846042874e-05,
+          "sample_index": 335
+        },
+        "grey_center_to_surface_optical_depth": {
+          "value": 22900.95262890283,
+          "time_s": 3.7585717872369344e-05,
+          "sample_index": 312
+        },
+        "artificial_viscous_pressure_massmean_Pa": {
+          "value": 2.788366179200373e+17,
+          "time_s": 3.398930297217034e-05,
+          "sample_index": 184
+        },
+        "artificial_viscous_pressure_max_Pa": {
+          "value": 1.2331130422132621e+19,
+          "time_s": 3.3784153147321546e-05,
+          "sample_index": 167
+        },
+        "artificial_viscous_heating_W": {
+          "value": 2.1987242709383156e+29,
+          "time_s": 3.411014454914383e-05,
+          "sample_index": 196
+        }
+      },
+      "peak_cell_pressure_context": {
+        "time_s": 3.3723065587542005e-05,
+        "cell_index": 84,
+        "cell_mass_fraction": 0.010214328765869139,
+        "enclosed_mass_fraction_inner": 0.28262329101562494,
+        "enclosed_mass_fraction_outer": 0.2928376197814941,
+        "radius_inner_m": 21.013529223091584,
+        "radius_outer_m": 21.099143097265806,
+        "temperature_K": 540263840.9970076,
+        "density_kg_m3": 2421820.675410522,
+        "pressure_Pa": 2.9175175761885295e+19,
+        "mass_fraction_above_half_this_pressure_at_same_time": 0.039426803588867174
+      },
+      "pressure_partition_at_peak_massmean": {
+        "time_s": 3.523454075503357e-05,
+        "ion_fraction": 0.056884023255584115,
+        "electron_positron_fraction": 0.1708283575186563,
+        "LTE_radiation_fraction": 0.7722876192257596,
+        "grey_center_to_surface_optical_depth": 21513.154951420405,
+        "artificial_viscosity_over_thermodynamic_pressure": 0.03932430442781287
+      },
+      "initial_surface_radius_m": 191.18379771394194,
+      "final_surface_radius_m": 567.2541410938092,
+      "final_surface_velocity_m_s": 12465706.912530437,
+      "final_lumped_mass_rms_velocity_m_s": 6730315.9245248195,
+      "sampled_max_negative_mass_fraction": 1.5558927682065465e-22,
+      "initial_pressure_massmean_Pa": 2829332721323465.0,
+      "initial_pressure_volumemean_Pa": 575470379032600.1,
+      "net_escaped_radiation_J": 2.1619065482783162e+23,
+      "net_escaped_radiation_over_prepared_energy": 0.6766495124767488,
+      "net_escaped_radiation_over_prepared_plus_deposited_nuclear": 0.07450161863670075,
+      "sampled_luminosity_integral_over_actual_escape": 1.0006813936317898,
+      "maximum_sampled_energy_residual_fraction_initial": 1.36150442269101e-06,
+      "inventory": [
+        {
+          "isotope": "n",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.0861299720492774e-22,
+          "net_change_per_initial_catalyst": 3.0861299720492774e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.481760066604185e-21,
+          "sampled_peak_time_s": 3.766411341939384e-05,
+          "final_mass_fraction": 1.8153705717936924e-23
+        },
+        {
+          "isotope": "p",
+          "initial_nuclei_per_initial_catalyst": 2.0,
+          "final_nuclei_per_initial_catalyst": 1.18981837946275,
+          "net_change_per_initial_catalyst": -0.8101816205372501,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.0,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.06998931643898529
+        },
+        {
+          "isotope": "he4",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.809895084408176,
+          "net_change_per_initial_catalyst": 0.809895084408176,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.809895084408176,
+          "sampled_peak_time_s": 7.126411452090766e-05,
+          "final_mass_fraction": 0.190563549272512
+        },
+        {
+          "isotope": "c12",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.8096945614251613,
+          "net_change_per_initial_catalyst": 0.8096945614251613,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.8096945614251622,
+          "sampled_peak_time_s": 6.579172577329363e-05,
+          "final_mass_fraction": 0.5715491021824668
+        },
+        {
+          "isotope": "c13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.0967623191180823e-11,
+          "net_change_per_initial_catalyst": 1.0967623191180823e-11,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.0967623191180823e-11,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 8.387005969726511e-12
+        },
+        {
+          "isotope": "n13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.00020050929699596377,
+          "net_change_per_initial_catalyst": 0.00020050929699596377,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.00020050930204842062,
+          "sampled_peak_time_s": 5.8893756763696094e-05,
+          "final_mass_fraction": 0.0001533306388792664
+        },
+        {
+          "isotope": "n14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.40559857284674e-15,
+          "net_change_per_initial_catalyst": 6.40559857284674e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 6.40559857284674e-15,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 5.275198824697315e-15
+        },
+        {
+          "isotope": "n15",
+          "initial_nuclei_per_initial_catalyst": 1.0,
+          "final_nuclei_per_initial_catalyst": 0.19001891640665317,
+          "net_change_per_initial_catalyst": -0.8099810835933469,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.0,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.16766374977057633
+        },
+        {
+          "isotope": "o14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.3735804945078098e-08,
+          "net_change_per_initial_catalyst": 1.3735804945078098e-08,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.3735808395769204e-08,
+          "sampled_peak_time_s": 5.5444772258897326e-05,
+          "final_mass_fraction": 1.1311839366534904e-08
+        },
+        {
+          "isotope": "o15",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.71021174465567e-20,
+          "net_change_per_initial_catalyst": 6.71021174465567e-20,
+          "sampled_peak_nuclei_per_initial_catalyst": 6.710212705509872e-20,
+          "sampled_peak_time_s": 5.5444772258897326e-05,
+          "final_mass_fraction": 5.920775068813826e-20
+        },
+        {
+          "isotope": "o16",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 8.599883860904776e-05,
+          "net_change_per_initial_catalyst": 8.599883860904776e-05,
+          "sampled_peak_nuclei_per_initial_catalyst": 8.599883860904776e-05,
+          "sampled_peak_time_s": 7.333350522378693e-05,
+          "final_mass_fraction": 8.094008339675083e-05
+        },
+        {
+          "isotope": "o17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.1345572037666583e-16,
+          "net_change_per_initial_catalyst": 1.1345572037666583e-16,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.1345572037666583e-16,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 1.1345572037666583e-16
+        },
+        {
+          "isotope": "o18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -1.120782350596784e-25,
+          "net_change_per_initial_catalyst": -1.120782350596784e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.540658303827237e-26,
+          "sampled_peak_time_s": 4.2421935862882794e-05,
+          "final_mass_fraction": -1.1867107241613006e-25
+        },
+        {
+          "isotope": "f17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.250619262744665e-10,
+          "net_change_per_initial_catalyst": 2.250619262744665e-10,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.2506198887528252e-10,
+          "sampled_peak_time_s": 5.475497535793757e-05,
+          "final_mass_fraction": 2.250619262744665e-10
+        },
+        {
+          "isotope": "f18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 8.619128169055824e-22,
+          "net_change_per_initial_catalyst": 8.619128169055824e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 8.619128169055824e-22,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 9.12613570841205e-22
+        },
+        {
+          "isotope": "f19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.074245548347634e-11,
+          "net_change_per_initial_catalyst": 6.074245548347634e-11,
+          "sampled_peak_nuclei_per_initial_catalyst": 6.160131780950612e-11,
+          "sampled_peak_time_s": 3.601944471861366e-05,
+          "final_mass_fraction": 6.78886267168265e-11
+        },
+        {
+          "isotope": "ne18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 4.3979726066875883e-17,
+          "net_change_per_initial_catalyst": 4.3979726066875883e-17,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.3980291203963987e-17,
+          "sampled_peak_time_s": 4.99263970512193e-05,
+          "final_mass_fraction": 4.656676877669211e-17
+        },
+        {
+          "isotope": "ne19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -2.665993170817231e-25,
+          "net_change_per_initial_catalyst": -2.665993170817231e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.457672372555604e-27,
+          "sampled_peak_time_s": 4.2421935862882794e-05,
+          "final_mass_fraction": -2.9796394262074934e-25
+        },
+        {
+          "isotope": "ne20",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.1652436859647633e-15,
+          "net_change_per_initial_catalyst": 2.1652436859647633e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.1652436859647633e-15,
+          "sampled_peak_time_s": 6.919472381802841e-05,
+          "final_mass_fraction": 2.5473455128997216e-15
+        },
+        {
+          "isotope": "ne21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.6198200200177406e-24,
+          "net_change_per_initial_catalyst": 1.6198200200177406e-24,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.6331910405170595e-24,
+          "sampled_peak_time_s": 4.38015296648023e-05,
+          "final_mass_fraction": 2.000954142374856e-24
+        },
+        {
+          "isotope": "ne22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.758815870947368e-21,
+          "net_change_per_initial_catalyst": 1.758815870947368e-21,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.759859608157034e-21,
+          "sampled_peak_time_s": 4.076294521768315e-05,
+          "final_mass_fraction": 2.2761146565201228e-21
+        },
+        {
+          "isotope": "na21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 5.939967097696771e-22,
+          "net_change_per_initial_catalyst": 5.939967097696771e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.939972680056672e-22,
+          "sampled_peak_time_s": 5.061619395217905e-05,
+          "final_mass_fraction": 7.337606414801894e-22
+        },
+        {
+          "isotope": "na22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 5.934868674203121e-25,
+          "net_change_per_initial_catalyst": 5.934868674203121e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.935267178812998e-25,
+          "sampled_peak_time_s": 4.509781874450102e-05,
+          "final_mass_fraction": 7.680418284262862e-25
+        },
+        {
+          "isotope": "na23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.1238107820814512e-23,
+          "net_change_per_initial_catalyst": 1.1238107820814512e-23,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.1554695260005861e-23,
+          "sampled_peak_time_s": 4.2421935862882794e-05,
+          "final_mass_fraction": 1.5204498816396105e-23
+        },
+        {
+          "isotope": "mg22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -8.141446998027738e-25,
+          "net_change_per_initial_catalyst": -8.141446998027738e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.44129414201707e-26,
+          "sampled_peak_time_s": 4.2421935862882794e-05,
+          "final_mass_fraction": -1.0535990232741779e-24
+        },
+        {
+          "isotope": "mg23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.520031629334166e-25,
+          "net_change_per_initial_catalyst": 2.520031629334166e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.070556184721326e-25,
+          "sampled_peak_time_s": 4.38015296648023e-05,
+          "final_mass_fraction": 3.4094545573344593e-25
+        },
+        {
+          "isotope": "mg24",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -8.449508384213043e-25,
+          "net_change_per_initial_catalyst": -8.449508384213043e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.728586320526843e-26,
+          "sampled_peak_time_s": 4.179909543589962e-05,
+          "final_mass_fraction": -1.1928717718889002e-24
+        }
+      ],
+      "reaction_flows": null,
+      "provenance": {
+        "result": "/home/tkwa/src/protium-fusion/output/source128/B1-H2-source128-carbon-median.json",
+        "result_sha256": "af7576314952a5878063947ca5e06065949c481d3ad37803815edea840ed9a7d",
+        "trace": "/home/tkwa/src/protium-fusion/output/source128/B1-H2-source128-carbon-median.npz",
+        "trace_sha256": "f408d8dad44e5188fd810303ce936f24bc67903cb0b31bf92b62e11c03d2751d",
+        "FastEOS_sha256": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+        "electron_table_sha256": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+        "nuclear_module_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+        "pynucastro_version": "3.1.0",
+        "nuclear_array_sha256": {
+          "COEFF": "4e917d6b7616a59d4bff5a6eb5328e504d56cfe5f64b4601d978f24d70579126",
+          "RATE_INDEX": "24aba8e5283f476a40d49c6ffc3ee47ee9698a336240a31e9c5364cec2b47ee8",
+          "PREF": "ec0baa6d2f1432d1bbf210ba3043d01921a95b4eadf0db3bfc62ec89248762c0",
+          "DEXP": "f2403505cec514b9929eaeda7c2fc5d641418c6df78cca778cd2934a00d23e2a",
+          "REACT": "1837e6294e0f1d551c2cb1e05dbaeb247298a9e899794bc40024582fedbfeefc",
+          "STOICH": "830652ce3ef4e613808ca25f22f8b3282b640fca39807de348bb8863962fdd21",
+          "Q": "2200380ab333786a142ef31707857b7461704bb79e64fd4633d4b4dc39fe5ccd",
+          "QNU": "cc2065637bce281706a3bbbb6728cc17575dd84134fab5dc116938d3681b21b0",
+          "AA": "788901aafc937f1f4faf39bb0c3a0772d4ef307df0e2f84b5c3c3ea4a6c6311d",
+          "ZZ": "7dd436e84af96a014872bee48ea5d7240bcc3efaea855b0d4e1ac9d42a4f5470"
+        }
+      },
+      "checks": {
+        "count": 14,
+        "passed": 14,
+        "all_passed": true
+      }
+    },
+    {
+      "label": "H2_low",
+      "family": "B1-source-recipe-rate-robustness",
+      "stage": "B1",
+      "zones": 128,
+      "samples": 400,
+      "elapsed_s": 8.227795789289296e-05,
+      "initial_H_per_catalyst": 2.0,
+      "initial_energy_J": 3.195016782566003e+23,
+      "nuclear_gain": 8.259891599077756,
+      "opacity_m2_kg": 0.001,
+      "solver_saved_step_peak_temperature_K": 575417898.3094903,
+      "sampled_peak_temperature_K": 575415842.960646,
+      "sampled_temperature_peak_fraction_of_solver_step_peak": 0.9999964280762723,
+      "extrema": {
+        "pressure_max_Pa": {
+          "value": 3.4256328430617973e+19,
+          "time_s": 4.030551619407488e-05,
+          "sample_index": 316
+        },
+        "pressure_massmean_Pa": {
+          "value": 5.874510094397587e+18,
+          "time_s": 3.651298164236353e-05,
+          "sample_index": 233
+        },
+        "pressure_volumemean_Pa": {
+          "value": 1.2365351729327613e+18,
+          "time_s": 3.844837644907492e-05,
+          "sample_index": 284
+        },
+        "density_max_kg_m3": {
+          "value": 2692856.492655938,
+          "time_s": 3.565250149568178e-05,
+          "sample_index": 169
+        },
+        "density_massmean_kg_m3": {
+          "value": 678836.3050884106,
+          "time_s": 3.5716512909913545e-05,
+          "sample_index": 175
+        },
+        "density_volumemean_kg_m3": {
+          "value": 148666.13835470658,
+          "time_s": 3.878192361189853e-05,
+          "sample_index": 290
+        },
+        "surface_radius_m": {
+          "value": 56.63052239365401,
+          "time_s": 3.878192361189853e-05,
+          "sample_index": 290
+        },
+        "half_mass_radius_m": {
+          "value": 24.89722921495312,
+          "time_s": 3.572577401051314e-05,
+          "sample_index": 176
+        },
+        "ninety_percent_mass_radius_m": {
+          "value": 34.73691691448033,
+          "time_s": 3.722435463404823e-05,
+          "sample_index": 259
+        },
+        "LTE_radiation_energy_J": {
+          "value": 2.3026399724860917e+24,
+          "time_s": 3.77275593021084e-05,
+          "sample_index": 270
+        },
+        "surface_radiative_luminosity_W": {
+          "value": 2.6754525268701193e+28,
+          "time_s": 4.084107016569107e-05,
+          "sample_index": 329
+        },
+        "grey_center_to_surface_optical_depth": {
+          "value": 23115.498640095142,
+          "time_s": 4.025087404247834e-05,
+          "sample_index": 314
+        },
+        "artificial_viscous_pressure_massmean_Pa": {
+          "value": 3.6490157576196966e+17,
+          "time_s": 3.583003697830233e-05,
+          "sample_index": 185
+        },
+        "artificial_viscous_pressure_max_Pa": {
+          "value": 1.2845283115425753e+19,
+          "time_s": 3.5772513593875324e-05,
+          "sample_index": 180
+        },
+        "artificial_viscous_heating_W": {
+          "value": 2.872257074526686e+29,
+          "time_s": 3.5893889506422034e-05,
+          "sample_index": 190
+        }
+      },
+      "peak_cell_pressure_context": {
+        "time_s": 4.030551619407488e-05,
+        "cell_index": 0,
+        "cell_mass_fraction": 4.768371582031249e-07,
+        "enclosed_mass_fraction_inner": 0.0,
+        "enclosed_mass_fraction_outer": 4.768371582031249e-07,
+        "radius_inner_m": 0.0,
+        "radius_outer_m": 0.1874333201488251,
+        "temperature_K": 575415842.960646,
+        "density_kg_m3": 1955210.2282956378,
+        "pressure_Pa": 3.4256328430617973e+19,
+        "mass_fraction_above_half_this_pressure_at_same_time": 0.0016093254089355464
+      },
+      "pressure_partition_at_peak_massmean": {
+        "time_s": 3.651298164236353e-05,
+        "ion_fraction": 0.05941977216059872,
+        "electron_positron_fraction": 0.17846179624142863,
+        "LTE_radiation_fraction": 0.762118431597973,
+        "grey_center_to_surface_optical_depth": 21527.678960306155,
+        "artificial_viscosity_over_thermodynamic_pressure": 0.042699722971313796
+      },
+      "initial_surface_radius_m": 191.18379771394194,
+      "final_surface_radius_m": 562.5837402010816,
+      "final_surface_velocity_m_s": 12663045.260873549,
+      "final_lumped_mass_rms_velocity_m_s": 6821092.827506913,
+      "sampled_max_negative_mass_fraction": 2.8209625110549076e-24,
+      "initial_pressure_massmean_Pa": 2829332721323465.0,
+      "initial_pressure_volumemean_Pa": 575470379032600.1,
+      "net_escaped_radiation_J": 2.0301452503126744e+23,
+      "net_escaped_radiation_over_prepared_energy": 0.6354098862298341,
+      "net_escaped_radiation_over_prepared_plus_deposited_nuclear": 0.06861958149620039,
+      "sampled_luminosity_integral_over_actual_escape": 1.0006712584123736,
+      "maximum_sampled_energy_residual_fraction_initial": 5.073767749576208e-07,
+      "inventory": [
+        {
+          "isotope": "n",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.4375558705212097e-22,
+          "net_change_per_initial_catalyst": 3.4375558705212097e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.152665880012009e-21,
+          "sampled_peak_time_s": 4.0277684933382297e-05,
+          "final_mass_fraction": 2.022091688541888e-23
+        },
+        {
+          "isotope": "p",
+          "initial_nuclei_per_initial_catalyst": 2.0,
+          "final_nuclei_per_initial_catalyst": 1.1720316462948506,
+          "net_change_per_initial_catalyst": -0.8279683537051494,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.0,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.06894303801734415
+        },
+        {
+          "isotope": "he4",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.8276395749756089,
+          "net_change_per_initial_catalyst": 0.8276395749756089,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.8276395749756089,
+          "sampled_peak_time_s": 7.199501972041428e-05,
+          "final_mass_fraction": 0.1947387235236727
+        },
+        {
+          "isotope": "c12",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.8274145126865613,
+          "net_change_per_initial_catalyst": 0.8274145126865613,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.8274145126865614,
+          "sampled_peak_time_s": 7.061542591849478e-05,
+          "final_mass_fraction": 0.5840573030728669
+        },
+        {
+          "isotope": "c13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.1816229633430936e-11,
+          "net_change_per_initial_catalyst": 1.1816229633430936e-11,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.1816229633430936e-11,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 9.035940307917775e-12
+        },
+        {
+          "isotope": "n13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.00022504488612568093,
+          "net_change_per_initial_catalyst": 0.00022504488612568093,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.00022504489170886623,
+          "sampled_peak_time_s": 5.893486506224295e-05,
+          "final_mass_fraction": 0.000172093148213756
+        },
+        {
+          "isotope": "n14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 7.760087166127335e-15,
+          "net_change_per_initial_catalyst": 7.760087166127335e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.760087166127335e-15,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 6.390660019163687e-15
+        },
+        {
+          "isotope": "n15",
+          "initial_nuclei_per_initial_catalyst": 1.0,
+          "final_nuclei_per_initial_catalyst": 0.1722567263444628,
+          "net_change_per_initial_catalyst": -0.8277432736555372,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.0,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.15199122912746718
+        },
+        {
+          "isotope": "o14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.7460979003256646e-08,
+          "net_change_per_initial_catalyst": 1.7460979003256646e-08,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.7460983301834885e-08,
+          "sampled_peak_time_s": 5.617567745840394e-05,
+          "final_mass_fraction": 1.4379629767387825e-08
+        },
+        {
+          "isotope": "o15",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 7.382292595242492e-20,
+          "net_change_per_initial_catalyst": 7.382292595242492e-20,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.382293608410793e-20,
+          "sampled_peak_time_s": 5.686547435936369e-05,
+          "final_mass_fraction": 6.513787584037493e-20
+        },
+        {
+          "isotope": "o16",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.00010369824062702079,
+          "net_change_per_initial_catalyst": 0.00010369824062702079,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.00010369824062702079,
+          "sampled_peak_time_s": 7.337461352233379e-05,
+          "final_mass_fraction": 9.759834411954897e-05
+        },
+        {
+          "isotope": "o17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.4503204891244873e-16,
+          "net_change_per_initial_catalyst": 1.4503204891244873e-16,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.4503204891244873e-16,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 1.4503204891244873e-16
+        },
+        {
+          "isotope": "o18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.1681418840313918e-27,
+          "net_change_per_initial_catalyst": 2.1681418840313918e-27,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.2346608001499357e-27,
+          "sampled_peak_time_s": 5.065730225072591e-05,
+          "final_mass_fraction": 2.2956796419155913e-27
+        },
+        {
+          "isotope": "f17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.995605074216938e-10,
+          "net_change_per_initial_catalyst": 2.995605074216938e-10,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.995605894464174e-10,
+          "sampled_peak_time_s": 5.548588055744418e-05,
+          "final_mass_fraction": 2.995605074216938e-10
+        },
+        {
+          "isotope": "f18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.2903904402287343e-21,
+          "net_change_per_initial_catalyst": 1.2903904402287343e-21,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.2903904402287343e-21,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 1.3662957602421891e-21
+        },
+        {
+          "isotope": "f19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.98611851412887e-11,
+          "net_change_per_initial_catalyst": 6.98611851412887e-11,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.016987229347539e-11,
+          "sampled_peak_time_s": 3.7504876348866405e-05,
+          "final_mass_fraction": 7.808014809908737e-11
+        },
+        {
+          "isotope": "ne18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.900595234087413e-17,
+          "net_change_per_initial_catalyst": 6.900595234087413e-17,
+          "sampled_peak_nuclei_per_initial_catalyst": 6.900682243158888e-17,
+          "sampled_peak_time_s": 5.065730225072591e-05,
+          "final_mass_fraction": 7.306512600798438e-17
+        },
+        {
+          "isotope": "ne19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -4.580807248478641e-28,
+          "net_change_per_initial_catalyst": -4.580807248478641e-28,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.404551027931912e-28,
+          "sampled_peak_time_s": 4.345226295167212e-05,
+          "final_mass_fraction": -5.119725748299656e-28
+        },
+        {
+          "isotope": "ne20",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.5377585201771907e-15,
+          "net_change_per_initial_catalyst": 2.5377585201771907e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.5377585201771907e-15,
+          "sampled_peak_time_s": 6.854603521561552e-05,
+          "final_mass_fraction": 2.985598259031989e-15
+        },
+        {
+          "isotope": "ne21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.589315007928146e-27,
+          "net_change_per_initial_catalyst": 1.589315007928146e-27,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.589315007928146e-27,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 1.9632714803818273e-27
+        },
+        {
+          "isotope": "ne22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.425812678147991e-21,
+          "net_change_per_initial_catalyst": 2.425812678147991e-21,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.4258140070356715e-21,
+          "sampled_peak_time_s": 4.6564507305031374e-05,
+          "final_mass_fraction": 3.1392869952503414e-21
+        },
+        {
+          "isotope": "na21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 7.15077230434449e-22,
+          "net_change_per_initial_catalyst": 7.15077230434449e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.150778768061761e-22,
+          "sampled_peak_time_s": 5.2036896052645414e-05,
+          "final_mass_fraction": 8.833306964190251e-22
+        },
+        {
+          "isotope": "na22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 8.72591521156862e-27,
+          "net_change_per_initial_catalyst": 8.72591521156862e-27,
+          "sampled_peak_nuclei_per_initial_catalyst": 9.017382846981407e-27,
+          "sampled_peak_time_s": 4.6564507305031374e-05,
+          "final_mass_fraction": 1.1292360862029979e-26
+        },
+        {
+          "isotope": "na23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.5665535854445318e-23,
+          "net_change_per_initial_catalyst": 1.5665535854445318e-23,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.5666308980364794e-23,
+          "sampled_peak_time_s": 4.3924851434460576e-05,
+          "final_mass_fraction": 2.119454850895543e-23
+        },
+        {
+          "isotope": "mg22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 7.319931585881002e-26,
+          "net_change_per_initial_catalyst": 7.319931585881002e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.325204784909801e-26,
+          "sampled_peak_time_s": 4.9277708448806403e-05,
+          "final_mass_fraction": 9.472852640551884e-26
+        },
+        {
+          "isotope": "mg23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.692536154411128e-26,
+          "net_change_per_initial_catalyst": 3.692536154411128e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.856515592035838e-26,
+          "sampled_peak_time_s": 4.3924851434460576e-05,
+          "final_mass_fraction": 4.995784208909173e-26
+        },
+        {
+          "isotope": "mg24",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.569101109954822e-26,
+          "net_change_per_initial_catalyst": 3.569101109954822e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.588624541260788e-26,
+          "sampled_peak_time_s": 4.9967505349766154e-05,
+          "final_mass_fraction": 5.0387309787597476e-26
+        }
+      ],
+      "reaction_flows": null,
+      "provenance": {
+        "result": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/h2low/B1-H2-source128-carbon-median-rates-carbon-n15-low-updated-median.json",
+        "result_sha256": "690283278e3fb413adbd39de35f186aca58a5e1237f6cb97b2832e64e4571f4c",
+        "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/h2low/B1-H2-source128-carbon-median-rates-carbon-n15-low-updated-median.npz",
+        "trace_sha256": "1a67a8f299fe57b879406b677cb92b5f1cf5aed71fe2163c27328034de85a962",
+        "FastEOS_sha256": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+        "electron_table_sha256": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+        "nuclear_module_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+        "pynucastro_version": "3.1.0",
+        "nuclear_array_sha256": {
+          "COEFF": "4e917d6b7616a59d4bff5a6eb5328e504d56cfe5f64b4601d978f24d70579126",
+          "RATE_INDEX": "24aba8e5283f476a40d49c6ffc3ee47ee9698a336240a31e9c5364cec2b47ee8",
+          "PREF": "ec0baa6d2f1432d1bbf210ba3043d01921a95b4eadf0db3bfc62ec89248762c0",
+          "DEXP": "f2403505cec514b9929eaeda7c2fc5d641418c6df78cca778cd2934a00d23e2a",
+          "REACT": "1837e6294e0f1d551c2cb1e05dbaeb247298a9e899794bc40024582fedbfeefc",
+          "STOICH": "830652ce3ef4e613808ca25f22f8b3282b640fca39807de348bb8863962fdd21",
+          "Q": "2200380ab333786a142ef31707857b7461704bb79e64fd4633d4b4dc39fe5ccd",
+          "QNU": "cc2065637bce281706a3bbbb6728cc17575dd84134fab5dc116938d3681b21b0",
+          "AA": "788901aafc937f1f4faf39bb0c3a0772d4ef307df0e2f84b5c3c3ea4a6c6311d",
+          "ZZ": "7dd436e84af96a014872bee48ea5d7240bcc3efaea855b0d4e1ac9d42a4f5470"
+        }
+      },
+      "checks": {
+        "count": 14,
+        "passed": 14,
+        "all_passed": true
+      }
+    },
+    {
+      "label": "H1p5_carbon",
+      "family": "B1-source-recipe-rate-robustness",
+      "stage": "B1",
+      "zones": 128,
+      "samples": 400,
+      "elapsed_s": 8.227795789289296e-05,
+      "initial_H_per_catalyst": 1.4999999999999991,
+      "initial_energy_J": 3.195016782566006e+23,
+      "nuclear_gain": 8.013658093101654,
+      "opacity_m2_kg": 0.001,
+      "solver_saved_step_peak_temperature_K": 598369494.5581466,
+      "sampled_peak_temperature_K": 598366337.9416362,
+      "sampled_temperature_peak_fraction_of_solver_step_peak": 0.9999947246366349,
+      "extrema": {
+        "pressure_max_Pa": {
+          "value": 3.964565084014864e+19,
+          "time_s": 3.677705311575812e-05,
+          "sample_index": 308
+        },
+        "pressure_massmean_Pa": {
+          "value": 5.264098281663609e+18,
+          "time_s": 3.47738456113582e-05,
+          "sample_index": 262
+        },
+        "pressure_volumemean_Pa": {
+          "value": 1.0349572070187025e+18,
+          "time_s": 3.7144117095520673e-05,
+          "sample_index": 320
+        },
+        "density_max_kg_m3": {
+          "value": 2738493.5753339096,
+          "time_s": 3.3041318363634125e-05,
+          "sample_index": 148
+        },
+        "density_massmean_kg_m3": {
+          "value": 583810.4778948256,
+          "time_s": 3.4013994274323756e-05,
+          "sample_index": 220
+        },
+        "density_volumemean_kg_m3": {
+          "value": 129797.16934960289,
+          "time_s": 3.7541867023688784e-05,
+          "sample_index": 324
+        },
+        "surface_radius_m": {
+          "value": 59.251522501141125,
+          "time_s": 3.7541867023688784e-05,
+          "sample_index": 324
+        },
+        "half_mass_radius_m": {
+          "value": 24.92440712965089,
+          "time_s": 3.385392449968229e-05,
+          "sample_index": 209
+        },
+        "ninety_percent_mass_radius_m": {
+          "value": 36.39033449630955,
+          "time_s": 3.577293389256733e-05,
+          "sample_index": 290
+        },
+        "LTE_radiation_energy_J": {
+          "value": 2.2737422385401387e+24,
+          "time_s": 3.622113692246255e-05,
+          "sample_index": 298
+        },
+        "surface_radiative_luminosity_W": {
+          "value": 2.698948855929208e+28,
+          "time_s": 3.9600987750365685e-05,
+          "sample_index": 334
+        },
+        "grey_center_to_surface_optical_depth": {
+          "value": 25268.71391504036,
+          "time_s": 3.6732144598076344e-05,
+          "sample_index": 307
+        },
+        "artificial_viscous_pressure_massmean_Pa": {
+          "value": 2.6970730768993056e+17,
+          "time_s": 3.343014451628096e-05,
+          "sample_index": 182
+        },
+        "artificial_viscous_pressure_max_Pa": {
+          "value": 1.249092709378433e+19,
+          "time_s": 3.317708431992461e-05,
+          "sample_index": 160
+        },
+        "artificial_viscous_heating_W": {
+          "value": 1.9750713034798142e+29,
+          "time_s": 3.455672152848517e-05,
+          "sample_index": 252
+        }
+      },
+      "peak_cell_pressure_context": {
+        "time_s": 3.677705311575812e-05,
+        "cell_index": 0,
+        "cell_mass_fraction": 4.768371582031249e-07,
+        "enclosed_mass_fraction_inner": 0.0,
+        "enclosed_mass_fraction_outer": 4.768371582031249e-07,
+        "radius_inner_m": 0.0,
+        "radius_outer_m": 0.18010655671176143,
+        "temperature_K": 598366337.9416362,
+        "density_kg_m3": 2203663.5332317003,
+        "pressure_Pa": 3.964565084014864e+19,
+        "mass_fraction_above_half_this_pressure_at_same_time": 0.0010476112365722654
+      },
+      "pressure_partition_at_peak_massmean": {
+        "time_s": 3.47738456113582e-05,
+        "ion_fraction": 0.049997918088172916,
+        "electron_positron_fraction": 0.17016883631550472,
+        "LTE_radiation_fraction": 0.7798332455963223,
+        "grey_center_to_surface_optical_depth": 22889.40127540873,
+        "artificial_viscosity_over_thermodynamic_pressure": 0.03927793540130677
+      },
+      "initial_surface_radius_m": 191.18379771394194,
+      "final_surface_radius_m": 561.6214107369944,
+      "final_surface_velocity_m_s": 12274581.246984504,
+      "final_lumped_mass_rms_velocity_m_s": 6701647.32237567,
+      "sampled_max_negative_mass_fraction": 2.5060902372017e-23,
+      "initial_pressure_massmean_Pa": 2673708593405052.0,
+      "initial_pressure_volumemean_Pa": 544221585782505.06,
+      "net_escaped_radiation_J": 2.1666502976480808e+23,
+      "net_escaped_radiation_over_prepared_energy": 0.6781342462645796,
+      "net_escaped_radiation_over_prepared_plus_deposited_nuclear": 0.07523407691525362,
+      "sampled_luminosity_integral_over_actual_escape": 1.000598215593642,
+      "maximum_sampled_energy_residual_fraction_initial": 1.1566639934836251e-06,
+      "inventory": [
+        {
+          "isotope": "n",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 5.704982289583006e-22,
+          "net_change_per_initial_catalyst": 5.704982289583006e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 8.107290135152285e-21,
+          "sampled_peak_time_s": 3.680324107689095e-05,
+          "final_mass_fraction": 3.4575650239897015e-23
+        },
+        {
+          "isotope": "p",
+          "initial_nuclei_per_initial_catalyst": 1.4999999999999991,
+          "final_nuclei_per_initial_catalyst": 0.7203638126171998,
+          "net_change_per_initial_catalyst": -0.7796361873827993,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.4999999999999991,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.04365841288589091
+        },
+        {
+          "isotope": "he4",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.7794194332190005,
+          "net_change_per_initial_catalyst": 0.7794194332190005,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.7794194332190005,
+          "sampled_peak_time_s": 7.298291988090876e-05,
+          "final_mass_fraction": 0.18895016562884867
+        },
+        {
+          "isotope": "c12",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.7792843695883157,
+          "net_change_per_initial_catalyst": 0.7792843695883157,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.7792843695883157,
+          "sampled_peak_time_s": 7.298291988090876e-05,
+          "final_mass_fraction": 0.5667522687915024
+        },
+        {
+          "isotope": "c13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 7.475462772852646e-12,
+          "net_change_per_initial_catalyst": 7.475462772852646e-12,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.475462772852646e-12,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 5.889758548308146e-12
+        },
+        {
+          "isotope": "n13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.00013505689885574175,
+          "net_change_per_initial_catalyst": 0.00013505689885574175,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.0001350569023659659,
+          "sampled_peak_time_s": 5.7981578196898643e-05,
+          "final_mass_fraction": 0.0001064084657651299
+        },
+        {
+          "isotope": "n14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.213457291268754e-15,
+          "net_change_per_initial_catalyst": 3.213457291268754e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.213457291268754e-15,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 2.7265698228947007e-15
+        },
+        {
+          "isotope": "n15",
+          "initial_nuclei_per_initial_catalyst": 1.0,
+          "final_nuclei_per_initial_catalyst": 0.22049888321151254,
+          "net_change_per_initial_catalyst": -0.7795011167884874,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.0,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.20045353019228418
+        },
+        {
+          "isotope": "o14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.818519997260777e-09,
+          "net_change_per_initial_catalyst": 6.818519997260777e-09,
+          "sampled_peak_nuclei_per_initial_catalyst": 6.818521753785918e-09,
+          "sampled_peak_time_s": 5.440759083644483e-05,
+          "final_mass_fraction": 5.785410906766722e-09
+        },
+        {
+          "isotope": "o15",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.280585939500963e-20,
+          "net_change_per_initial_catalyst": 2.280585939500963e-20,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.280586271282705e-20,
+          "sampled_peak_time_s": 5.5112983078639656e-05,
+          "final_mass_fraction": 2.073259945000876e-20
+        },
+        {
+          "isotope": "o16",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 8.16832360816891e-05,
+          "net_change_per_initial_catalyst": 8.16832360816891e-05,
+          "sampled_peak_nuclei_per_initial_catalyst": 8.16832360816891e-05,
+          "sampled_peak_time_s": 7.514612275697291e-05,
+          "final_mass_fraction": 7.920798650345612e-05
+        },
+        {
+          "isotope": "o17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 7.407421443609642e-17,
+          "net_change_per_initial_catalyst": 7.407421443609642e-17,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.407421443609642e-17,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 7.631888760082663e-17
+        },
+        {
+          "isotope": "o18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 4.2744837876757495e-26,
+          "net_change_per_initial_catalyst": 4.2744837876757495e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.4246527366078387e-26,
+          "sampled_peak_time_s": 4.43910209972782e-05,
+          "final_mass_fraction": 4.6630732229190004e-26
+        },
+        {
+          "isotope": "f17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.4508718527833672e-10,
+          "net_change_per_initial_catalyst": 1.4508718527833672e-10,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.4508722669100314e-10,
+          "sampled_peak_time_s": 5.440759083644483e-05,
+          "final_mass_fraction": 1.4948376665040757e-10
+        },
+        {
+          "isotope": "f18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 4.251677047496806e-22,
+          "net_change_per_initial_catalyst": 4.251677047496806e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.251677047496806e-22,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 4.638193142723789e-22
+        },
+        {
+          "isotope": "f19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 9.415001936811862e-11,
+          "net_change_per_initial_catalyst": 9.415001936811862e-11,
+          "sampled_peak_nuclei_per_initial_catalyst": 9.472188652161654e-11,
+          "sampled_peak_time_s": 3.6154142339473934e-05,
+          "final_mass_fraction": 1.0841517381783359e-10
+        },
+        {
+          "isotope": "ne18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.1414708093903678e-17,
+          "net_change_per_initial_catalyst": 2.1414708093903678e-17,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.1414989993961668e-17,
+          "sampled_peak_time_s": 4.942281899160134e-05,
+          "final_mass_fraction": 2.336149973880402e-17
+        },
+        {
+          "isotope": "ne19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -8.824111192907451e-26,
+          "net_change_per_initial_catalyst": -8.824111192907451e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.793747411748837e-26,
+          "sampled_peak_time_s": 4.194614346957288e-05,
+          "final_mass_fraction": -1.0161097737287371e-25
+        },
+        {
+          "isotope": "ne20",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.171910287650572e-15,
+          "net_change_per_initial_catalyst": 2.171910287650572e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.171910287650572e-15,
+          "sampled_peak_time_s": 6.87035402782601e-05,
+          "final_mass_fraction": 2.6326185304855427e-15
+        },
+        {
+          "isotope": "ne21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.119796773558964e-28,
+          "net_change_per_initial_catalyst": 6.119796773558964e-28,
+          "sampled_peak_nuclei_per_initial_catalyst": 6.119796773558964e-28,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 7.788832257256865e-28
+        },
+        {
+          "isotope": "ne22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.85830988832367e-21,
+          "net_change_per_initial_catalyst": 2.85830988832367e-21,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.858310038794541e-21,
+          "sampled_peak_time_s": 4.7259616115537186e-05,
+          "final_mass_fraction": 3.811079851098228e-21
+        },
+        {
+          "isotope": "na21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.999626447600394e-22,
+          "net_change_per_initial_catalyst": 3.999626447600394e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.000737096805059e-22,
+          "sampled_peak_time_s": 4.241736573557264e-05,
+          "final_mass_fraction": 5.090433660582321e-22
+        },
+        {
+          "isotope": "na22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.587822397382994e-27,
+          "net_change_per_initial_catalyst": 2.587822397382994e-27,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.1472465619645494e-27,
+          "sampled_peak_time_s": 4.43910209972782e-05,
+          "final_mass_fraction": 3.450429863177326e-27
+        },
+        {
+          "isotope": "na23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.8061947475987348e-23,
+          "net_change_per_initial_catalyst": 1.8061947475987348e-23,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.8063449569122946e-23,
+          "sampled_peak_time_s": 4.241736573557264e-05,
+          "final_mass_fraction": 2.5177260118042975e-23
+        },
+        {
+          "isotope": "mg22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.8499966396522933e-26,
+          "net_change_per_initial_catalyst": 2.8499966396522933e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.8501180797563154e-26,
+          "sampled_peak_time_s": 4.796500835773202e-05,
+          "final_mass_fraction": 3.7999955195363925e-26
+        },
+        {
+          "isotope": "mg23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -4.6360583710199114e-26,
+          "net_change_per_initial_catalyst": -4.6360583710199114e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.8299365412758607e-25,
+          "sampled_peak_time_s": 4.131170890782939e-05,
+          "final_mass_fraction": -6.462384395967151e-26
+        },
+        {
+          "isotope": "mg24",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.4766331488380188e-25,
+          "net_change_per_initial_catalyst": 1.4766331488380188e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.7766215549289453e-25,
+          "sampled_peak_time_s": 4.3685628755083364e-05,
+          "final_mass_fraction": 2.1478300346734824e-25
+        }
+      ],
+      "reaction_flows": null,
+      "provenance": {
+        "result": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-carbon.json",
+        "result_sha256": "10dd99f5d91e9b800510c3a6478b54836472668151445fc91f45edb2af301483",
+        "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-carbon.npz",
+        "trace_sha256": "026c817d2fd1bf129b20ce168f14194f4d50819e6f231e62be209d377d122543",
+        "FastEOS_sha256": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+        "electron_table_sha256": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+        "nuclear_module_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+        "pynucastro_version": "3.1.0",
+        "nuclear_array_sha256": {
+          "COEFF": "4e917d6b7616a59d4bff5a6eb5328e504d56cfe5f64b4601d978f24d70579126",
+          "RATE_INDEX": "24aba8e5283f476a40d49c6ffc3ee47ee9698a336240a31e9c5364cec2b47ee8",
+          "PREF": "ec0baa6d2f1432d1bbf210ba3043d01921a95b4eadf0db3bfc62ec89248762c0",
+          "DEXP": "f2403505cec514b9929eaeda7c2fc5d641418c6df78cca778cd2934a00d23e2a",
+          "REACT": "1837e6294e0f1d551c2cb1e05dbaeb247298a9e899794bc40024582fedbfeefc",
+          "STOICH": "830652ce3ef4e613808ca25f22f8b3282b640fca39807de348bb8863962fdd21",
+          "Q": "2200380ab333786a142ef31707857b7461704bb79e64fd4633d4b4dc39fe5ccd",
+          "QNU": "cc2065637bce281706a3bbbb6728cc17575dd84134fab5dc116938d3681b21b0",
+          "AA": "788901aafc937f1f4faf39bb0c3a0772d4ef307df0e2f84b5c3c3ea4a6c6311d",
+          "ZZ": "7dd436e84af96a014872bee48ea5d7240bcc3efaea855b0d4e1ac9d42a4f5470"
+        }
+      },
+      "checks": {
+        "count": 14,
+        "passed": 14,
+        "all_passed": true
+      }
+    },
+    {
+      "label": "H1p5_low",
+      "family": "B1-source-recipe-rate-robustness",
+      "stage": "B1",
+      "zones": 128,
+      "samples": 400,
+      "elapsed_s": 8.227795789289296e-05,
+      "initial_H_per_catalyst": 1.4999999999999991,
+      "initial_energy_J": 3.195016782566006e+23,
+      "nuclear_gain": 8.17640821712588,
+      "opacity_m2_kg": 0.001,
+      "solver_saved_step_peak_temperature_K": 646799629.8565428,
+      "sampled_peak_temperature_K": 646790070.4779642,
+      "sampled_temperature_peak_fraction_of_solver_step_peak": 0.9999852204946673,
+      "extrema": {
+        "pressure_max_Pa": {
+          "value": 5.403160959837489e+19,
+          "time_s": 3.9040198443517605e-05,
+          "sample_index": 312
+        },
+        "pressure_massmean_Pa": {
+          "value": 5.940106987078011e+18,
+          "time_s": 3.5932939804294785e-05,
+          "sample_index": 240
+        },
+        "pressure_volumemean_Pa": {
+          "value": 1.1939605719351854e+18,
+          "time_s": 3.80203257178672e-05,
+          "sample_index": 294
+        },
+        "density_max_kg_m3": {
+          "value": 2892368.921611931,
+          "time_s": 3.4788294051689844e-05,
+          "sample_index": 161
+        },
+        "density_massmean_kg_m3": {
+          "value": 682688.8382353603,
+          "time_s": 3.485750150771055e-05,
+          "sample_index": 168
+        },
+        "density_volumemean_kg_m3": {
+          "value": 146247.66987017606,
+          "time_s": 3.8363069717795554e-05,
+          "sample_index": 300
+        },
+        "surface_radius_m": {
+          "value": 56.940979849896415,
+          "time_s": 3.8363069717795554e-05,
+          "sample_index": 300
+        },
+        "half_mass_radius_m": {
+          "value": 24.270517763953908,
+          "time_s": 3.507652388907738e-05,
+          "sample_index": 184
+        },
+        "ninety_percent_mass_radius_m": {
+          "value": 34.69118776737394,
+          "time_s": 3.6753186284532706e-05,
+          "sample_index": 268
+        },
+        "LTE_radiation_energy_J": {
+          "value": 2.2939479059812176e+24,
+          "time_s": 3.7227790477563805e-05,
+          "sample_index": 278
+        },
+        "surface_radiative_luminosity_W": {
+          "value": 2.6062490648395843e+28,
+          "time_s": 4.0397930846512446e-05,
+          "sample_index": 334
+        },
+        "grey_center_to_surface_optical_depth": {
+          "value": 26052.416065790363,
+          "time_s": 3.901861552977423e-05,
+          "sample_index": 311
+        },
+        "artificial_viscous_pressure_massmean_Pa": {
+          "value": 3.395681270882175e+17,
+          "time_s": 3.501389236375285e-05,
+          "sample_index": 180
+        },
+        "artificial_viscous_pressure_max_Pa": {
+          "value": 1.2815907718249738e+19,
+          "time_s": 3.492420508475425e-05,
+          "sample_index": 173
+        },
+        "artificial_viscous_heating_W": {
+          "value": 2.4021316547610803e+29,
+          "time_s": 3.501389236375285e-05,
+          "sample_index": 180
+        }
+      },
+      "peak_cell_pressure_context": {
+        "time_s": 3.9040198443517605e-05,
+        "cell_index": 0,
+        "cell_mass_fraction": 4.768371582031249e-07,
+        "enclosed_mass_fraction_inner": 0.0,
+        "enclosed_mass_fraction_outer": 4.768371582031249e-07,
+        "radius_inner_m": 0.0,
+        "radius_outer_m": 0.16714412224228062,
+        "temperature_K": 646790070.4779642,
+        "density_kg_m3": 2757150.8536469103,
+        "pressure_Pa": 5.403160959837489e+19,
+        "mass_fraction_above_half_this_pressure_at_same_time": 0.0008239746093749998
+      },
+      "pressure_partition_at_peak_massmean": {
+        "time_s": 3.5932939804294785e-05,
+        "ion_fraction": 0.05172758798752784,
+        "electron_positron_fraction": 0.1760691215406282,
+        "LTE_radiation_fraction": 0.772203290471844,
+        "grey_center_to_surface_optical_depth": 22930.659055971177,
+        "artificial_viscosity_over_thermodynamic_pressure": 0.03963852973763632
+      },
+      "initial_surface_radius_m": 191.18379771394194,
+      "final_surface_radius_m": 556.8476308732959,
+      "final_surface_velocity_m_s": 12425283.390256548,
+      "final_lumped_mass_rms_velocity_m_s": 6785612.6768980045,
+      "sampled_max_negative_mass_fraction": 2.7168077053988295e-23,
+      "initial_pressure_massmean_Pa": 2673708593405052.0,
+      "initial_pressure_volumemean_Pa": 544221585782505.06,
+      "net_escaped_radiation_J": 2.056540501971026e+23,
+      "net_escaped_radiation_over_prepared_energy": 0.6436712674539886,
+      "net_escaped_radiation_over_prepared_plus_deposited_nuclear": 0.07014414052031673,
+      "sampled_luminosity_integral_over_actual_escape": 1.0004701573534742,
+      "maximum_sampled_energy_residual_fraction_initial": 5.691347767116995e-07,
+      "inventory": [
+        {
+          "isotope": "n",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.497850186608957e-22,
+          "net_change_per_initial_catalyst": 6.497850186608957e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.1737667013456525e-20,
+          "sampled_peak_time_s": 3.906403344644663e-05,
+          "final_mass_fraction": 3.9380910221872476e-23
+        },
+        {
+          "isotope": "p",
+          "initial_nuclei_per_initial_catalyst": 1.4999999999999991,
+          "final_nuclei_per_initial_catalyst": 0.7045406114880662,
+          "net_change_per_initial_catalyst": -0.7954593885119329,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.4999999999999991,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.042699430999276755
+        },
+        {
+          "isotope": "he4",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.7952073809326156,
+          "net_change_per_initial_catalyst": 0.7952073809326156,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.7952073809326156,
+          "sampled_peak_time_s": 7.306127633623953e-05,
+          "final_mass_fraction": 0.19277754689275534
+        },
+        {
+          "isotope": "c12",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.7950530003764629,
+          "net_change_per_initial_catalyst": 0.7950530003764629,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.7950530003764629,
+          "sampled_peak_time_s": 7.23558840940447e-05,
+          "final_mass_fraction": 0.578220363910155
+        },
+        {
+          "isotope": "c13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 8.250500738726165e-12,
+          "net_change_per_initial_catalyst": 8.250500738726165e-12,
+          "sampled_peak_nuclei_per_initial_catalyst": 8.250500738726165e-12,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 6.500394521420617e-12
+        },
+        {
+          "isotope": "n13",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 0.00015437139937788958,
+          "net_change_per_initial_catalyst": 0.00015437139937788958,
+          "sampled_peak_nuclei_per_initial_catalyst": 0.00015437140336773805,
+          "sampled_peak_time_s": 5.820101310066839e-05,
+          "final_mass_fraction": 0.00012162595102500395
+        },
+        {
+          "isotope": "n14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 4.1774329491772425e-15,
+          "net_change_per_initial_catalyst": 4.1774329491772425e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.1774329491772425e-15,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 3.5444885629382675e-15
+        },
+        {
+          "isotope": "n15",
+          "initial_nuclei_per_initial_catalyst": 1.0,
+          "final_nuclei_per_initial_catalyst": 0.20469500149615696,
+          "net_change_per_initial_catalyst": -0.7953049985038431,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.0,
+          "sampled_peak_time_s": 0.0,
+          "final_mass_fraction": 0.18608636499650638
+        },
+        {
+          "isotope": "o14",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 9.256415005340955e-09,
+          "net_change_per_initial_catalyst": 9.256415005340955e-09,
+          "sampled_peak_nuclei_per_initial_catalyst": 9.2564173635316e-09,
+          "sampled_peak_time_s": 5.5332417982409404e-05,
+          "final_mass_fraction": 7.853927883319599e-09
+        },
+        {
+          "isotope": "o15",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.8384495478633363e-20,
+          "net_change_per_initial_catalyst": 2.8384495478633363e-20,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.8384499477816126e-20,
+          "sampled_peak_time_s": 5.603781022460424e-05,
+          "final_mass_fraction": 2.5804086798757607e-20
+        },
+        {
+          "isotope": "o16",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 9.761715996533622e-05,
+          "net_change_per_initial_catalyst": 9.761715996533622e-05,
+          "sampled_peak_nuclei_per_initial_catalyst": 9.761715996533622e-05,
+          "sampled_peak_time_s": 7.44720608206292e-05,
+          "final_mass_fraction": 9.46590642088109e-05
+        },
+        {
+          "isotope": "o17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 9.644739752906539e-17,
+          "net_change_per_initial_catalyst": 9.644739752906539e-17,
+          "sampled_peak_nuclei_per_initial_catalyst": 9.644739752906539e-17,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 9.93700459390371e-17
+        },
+        {
+          "isotope": "o18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 5.794535179300539e-26,
+          "net_change_per_initial_catalyst": 5.794535179300539e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.796111090379368e-26,
+          "sampled_peak_time_s": 4.611529268439692e-05,
+          "final_mass_fraction": 6.321311104691499e-26
+        },
+        {
+          "isotope": "f17",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.9549783609638243e-10,
+          "net_change_per_initial_catalyst": 1.9549783609638243e-10,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.954978912799228e-10,
+          "sampled_peak_time_s": 5.462702574021457e-05,
+          "final_mass_fraction": 2.01422012947788e-10
+        },
+        {
+          "isotope": "f18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 6.833991157134588e-22,
+          "net_change_per_initial_catalyst": 6.833991157134588e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 6.833991157134588e-22,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 7.455263080510461e-22
+        },
+        {
+          "isotope": "f19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.078713290875505e-10,
+          "net_change_per_initial_catalyst": 1.078713290875505e-10,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.0811817737940665e-10,
+          "sampled_peak_time_s": 3.872746179856326e-05,
+          "final_mass_fraction": 1.2421546985839153e-10
+        },
+        {
+          "isotope": "ne18",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.589986570982428e-17,
+          "net_change_per_initial_catalyst": 3.589986570982428e-17,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.5900331426913297e-17,
+          "sampled_peak_time_s": 4.9689280044850744e-05,
+          "final_mass_fraction": 3.916348986526286e-17
+        },
+        {
+          "isotope": "ne19",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.7637911880875353e-28,
+          "net_change_per_initial_catalyst": 1.7637911880875353e-28,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.7639163446579952e-28,
+          "sampled_peak_time_s": 4.611529268439692e-05,
+          "final_mass_fraction": 2.031032277191708e-28
+        },
+        {
+          "isotope": "ne20",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.5860656701988795e-15,
+          "net_change_per_initial_catalyst": 2.5860656701988795e-15,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.5860656701988795e-15,
+          "sampled_peak_time_s": 6.882892288307054e-05,
+          "final_mass_fraction": 3.1346250547865215e-15
+        },
+        {
+          "isotope": "ne21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 1.058277325758617e-25,
+          "net_change_per_initial_catalyst": 1.058277325758617e-25,
+          "sampled_peak_nuclei_per_initial_catalyst": 1.058277325758617e-25,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 1.3468984146018764e-25
+        },
+        {
+          "isotope": "ne22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.763171261554496e-21,
+          "net_change_per_initial_catalyst": 3.763171261554496e-21,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.763171332100377e-21,
+          "sampled_peak_time_s": 4.611529268439692e-05,
+          "final_mass_fraction": 5.017561682072663e-21
+        },
+        {
+          "isotope": "na21",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 5.18347786110082e-22,
+          "net_change_per_initial_catalyst": 5.18347786110082e-22,
+          "sampled_peak_nuclei_per_initial_catalyst": 5.18348267039305e-22,
+          "sampled_peak_time_s": 5.1100064529240406e-05,
+          "final_mass_fraction": 6.597153641401045e-22
+        },
+        {
+          "isotope": "na22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 7.260473583966087e-28,
+          "net_change_per_initial_catalyst": 7.260473583966087e-28,
+          "sampled_peak_nuclei_per_initial_catalyst": 7.260473583966087e-28,
+          "sampled_peak_time_s": 8.227795789289296e-05,
+          "final_mass_fraction": 9.68063144528812e-28
+        },
+        {
+          "isotope": "na23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 2.383669419230222e-23,
+          "net_change_per_initial_catalyst": 2.383669419230222e-23,
+          "sampled_peak_nuclei_per_initial_catalyst": 2.4029604556193702e-23,
+          "sampled_peak_time_s": 4.409134088658366e-05,
+          "final_mass_fraction": 3.322690705593644e-23
+        },
+        {
+          "isotope": "mg22",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 3.297107044767857e-26,
+          "net_change_per_initial_catalyst": 3.297107044767857e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 3.8571245207335275e-26,
+          "sampled_peak_time_s": 4.476420108650057e-05,
+          "final_mass_fraction": 4.396142726357144e-26
+        },
+        {
+          "isotope": "mg23",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": -1.557460193700074e-29,
+          "net_change_per_initial_catalyst": -1.557460193700074e-29,
+          "sampled_peak_nuclei_per_initial_catalyst": 9.490024048354602e-30,
+          "sampled_peak_time_s": 4.303164602974927e-05,
+          "final_mass_fraction": -2.171005118491013e-29
+        },
+        {
+          "isotope": "mg24",
+          "initial_nuclei_per_initial_catalyst": 0.0,
+          "final_nuclei_per_initial_catalyst": 4.959006719696562e-26,
+          "net_change_per_initial_catalyst": 4.959006719696562e-26,
+          "sampled_peak_nuclei_per_initial_catalyst": 4.959006719696562e-26,
+          "sampled_peak_time_s": 6.384415103822706e-05,
+          "final_mass_fraction": 7.213100683195002e-26
+        }
+      ],
+      "reaction_flows": null,
+      "provenance": {
+        "result": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-low.json",
+        "result_sha256": "6a4e46ee18a679451f1ae3c352bfa577ba47950209b522bbb3ab7eec71b1d277",
+        "trace": "/home/tkwa/src/protium-fusion/output/b1-source-robustness/B1-H1p5-source128-low.npz",
+        "trace_sha256": "0e882398e02f010a1248480623487ca6b44eb9ef8772c5891a677b8997fc9369",
+        "FastEOS_sha256": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+        "electron_table_sha256": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+        "nuclear_module_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+        "pynucastro_version": "3.1.0",
+        "nuclear_array_sha256": {
+          "COEFF": "4e917d6b7616a59d4bff5a6eb5328e504d56cfe5f64b4601d978f24d70579126",
+          "RATE_INDEX": "24aba8e5283f476a40d49c6ffc3ee47ee9698a336240a31e9c5364cec2b47ee8",
+          "PREF": "ec0baa6d2f1432d1bbf210ba3043d01921a95b4eadf0db3bfc62ec89248762c0",
+          "DEXP": "f2403505cec514b9929eaeda7c2fc5d641418c6df78cca778cd2934a00d23e2a",
+          "REACT": "1837e6294e0f1d551c2cb1e05dbaeb247298a9e899794bc40024582fedbfeefc",
+          "STOICH": "830652ce3ef4e613808ca25f22f8b3282b640fca39807de348bb8863962fdd21",
+          "Q": "2200380ab333786a142ef31707857b7461704bb79e64fd4633d4b4dc39fe5ccd",
+          "QNU": "cc2065637bce281706a3bbbb6728cc17575dd84134fab5dc116938d3681b21b0",
+          "AA": "788901aafc937f1f4faf39bb0c3a0772d4ef307df0e2f84b5c3c3ea4a6c6311d",
+          "ZZ": "7dd436e84af96a014872bee48ea5d7240bcc3efaea855b0d4e1ac9d42a4f5470"
+        }
+      },
+      "checks": {
+        "count": 14,
+        "passed": 14,
+        "all_passed": true
+      }
+    }
+  ],
+  "additional_checks": [
+    {
+      "name": "H2 bit-identical initial profiles across rate curves",
+      "passed": true
+    },
+    {
+      "name": "H2 equal prepared energies across rate curves",
+      "passed": true
+    },
+    {
+      "name": "H1p5 bit-identical initial profiles across rate curves",
+      "passed": true
+    },
+    {
+      "name": "H1p5 equal prepared energies across rate curves",
+      "passed": true
+    }
+  ],
+  "checks": {
+    "count": 60,
+    "passed": 60,
+    "all_passed": true
+  },
+  "qualification": "Source-shaped spherical128 profiles only; no3D cold assembly. Low is the NACREII evaluation low curve, not an assigned credible quantile. The inherited contact-construction scope strings describe64 original-rate preparation; actual mesh and nuclear revision are the top-level result metadata and this packet. No source retuning between rates.",
+  "code_sha256": "ce04018f5eab52754e9357f182e2a535845c6c78a81e41858d6426d48a04b871",
+  "diagnostics_sha256": "d067f959e256a8e78a3469e39ad843a2dc5a191dcc8f594874ccdcada1c3bd4b"
+}

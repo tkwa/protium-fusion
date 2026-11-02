@@ -1,0 +1,208 @@
+{
+  "buffer_parameters": {
+    "hot_T_K": 1000.0,
+    "cold_intercept_T_K": 300.0,
+    "source_plenum_void_depth_m": 3.8249999999999995e-05,
+    "channel_speeds_m_s": [
+      0.0062707458335570935,
+      0.004449953722323711
+    ],
+    "booster_inlet_speed_m_s": 0.001,
+    "source_series_speeds_m_s": [
+      0.0008624625282065778,
+      0.0008165122034148893
+    ],
+    "continuous_mean_PV_Pa_m_s": [
+      8.754436869374576e-07,
+      3.769030856166142e-07
+    ],
+    "outlet_effective_area_beta": 1.7359615063966513e-09,
+    "passive_species_outlet_speeds_m_s": [
+      1.4065645931906186e-06,
+      9.981503816758613e-07
+    ],
+    "cold_total_pressure_Pa": 0.0001,
+    "cold_partial_pressure_Pa": [
+      6.990425544452458e-05,
+      3.0095744555475422e-05
+    ],
+    "buffer_initialization": "Mean-flow equilibrium before the finite actual-dispatch record; actual precharge stock is explicitly recorded. Empty startup is separate."
+  },
+  "buffer_reference": {
+    "buffer_volume_per_wall_area_m": 0.5,
+    "booster_zero_flow_K0_each_species": 1000000.0,
+    "initial_condition": "mean",
+    "total_buffer_pressure_min_Pa": 0.6793578694293365,
+    "total_buffer_pressure_max_Pa": 1.690600537059894,
+    "total_buffer_pressure_exact_mean_Pa": 1.0046374174414292,
+    "peak_time_s": 12265500.0,
+    "extrema_scope": "Sampled exact bin endpoints; within-bin extrema are not searched. The independent25/50/100s refinement quantifies the small buffer discretization change.",
+    "total_source_pressure_discretized_max_Pa": 3.918789663074063,
+    "cold_outlet_PV_flow_min_Pa_m_s": 8.020837639132928e-07,
+    "cold_outlet_PV_flow_max_Pa_m_s": 2.2240597191195855e-06,
+    "cold_outlet_peak_over_continuous_mean": 1.7759136429790723,
+    "species": [
+      {
+        "species": "H2",
+        "buffer_pressure_min_Pa": 0.3041441873733899,
+        "buffer_pressure_max_Pa": 1.3144021287257246,
+        "buffer_pressure_exact_mean_Pa": 0.6269849264465666,
+        "source_pressure_discretized_max_Pa": 3.9187891342966386,
+        "source_pressure_exact_mean_Pa": 0.0010235904171279012,
+        "source_relaxation_s": 0.0443497528866997,
+        "buffer_slow_eigenmode_s": 355476.0317861134,
+        "initial_buffer_pressure_Pa": 0.6225261228470924,
+        "initial_source_pressure_Pa": 0.0010156737988521948,
+        "final_buffer_pressure_Pa": 0.6578410138154095,
+        "source_PV_Pa_m": 28.204419721715517,
+        "cold_out_PV_Pa_m": 28.186762313168554,
+        "mass_balance_residual_Pa_m": -6.858659473696349e-12
+      },
+      {
+        "species": "He",
+        "buffer_pressure_min_Pa": 0.3711392199109523,
+        "buffer_pressure_max_Pa": 0.38028407385356966,
+        "buffer_pressure_exact_mean_Pa": 0.37765249099486276,
+        "source_pressure_discretized_max_Pa": 0.027623271821072694,
+        "source_pressure_exact_mean_Pa": 0.0004620150928381054,
+        "source_relaxation_s": 0.046845595007677134,
+        "buffer_slow_eigenmode_s": 500926.5229140789,
+        "initial_buffer_pressure_Pa": 0.3776564513387426,
+        "initial_source_pressure_Pa": 0.0004619789454955158,
+        "final_buffer_pressure_Pa": 0.3797964598258563,
+        "source_PV_Pa_m": 12.04981914738122,
+        "cold_out_PV_Pa_m": 12.048749160801616,
+        "mass_balance_residual_Pa_m": -7.78629482937887e-12
+      }
+    ],
+    "source_discretization": {
+      "dt_s": 50.0,
+      "arrival_quantiles_per_stage_species": 1024,
+      "duration_s": 31968100.0,
+      "emitted_PV_Pa_m_by_species": [
+        28.204419721721447,
+        12.04981914738902
+      ],
+      "dispatched_total_PV_Pa_m_by_species": [
+        28.204421857049706,
+        12.049824814332052
+      ],
+      "not_yet_arrived_PV_Pa_m_by_species": [
+        2.1353282591007883e-06,
+        5.666943032167637e-06
+      ],
+      "time_bin_scope": "ceil-causal arrival followed by uniform source over one dt bin; no source is shifted earlier. This is adequate for multi-day buffer pressure; exact local peak is reported separately."
+    },
+    "initial_hot_buffer_gas_mass_kg_m2": 1.6636094756786077e-07,
+    "initial_hot_buffer_gas_mass_kg": 2529569520701.392
+  },
+  "global_cleanup_increment": {
+    "simultaneous_reference_partial_Pin_each_Pa": 1e-10,
+    "realized_g_H2_He": [
+      0.01,
+      0.01359546360457702
+    ],
+    "gas_PV_Pa_m_s": [
+      8.102510268849426e-10,
+      7.817176323302725e-10
+    ],
+    "ratio_to_primary_mean_PV": 0.0012711883753798545,
+    "separate_global_foreline_pressure_each_Pa": 0.001,
+    "required_booster_speed_each_m_s_at_buffer_upper_bound": [
+      8.116231574307853e-07,
+      7.830414426136953e-07
+    ],
+    "added_buffer_mean_partial_pressure_Pa": [
+      0.000576049639531298,
+      0.0007831661908677474
+    ],
+    "scope": "These are simultaneous species flows through the fixed H2-sized global geometry at the specified partial pressures. They enter through a distinct small booster; no direct pressure connection joins the primary pulse plenum to the global-cleanup foreline."
+  },
+  "retained_joint_port": {
+    "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+    "shared_mouth_area_fraction": 0.0001,
+    "net_molecular_transmission": 0.1,
+    "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+      0.008102510268849426,
+      0.005749841675624074
+    ],
+    "finite_active_area_possible": true,
+    "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+    "required_active_panel_area_fraction_Hgetter_Hecryo": [
+      6.248393143661026e-05,
+      4.8666935800053074e-05
+    ],
+    "required_active_panel_area_m2_Hgetter_Hecryo": [
+      950087450248329.5,
+      739995769833716.5
+    ],
+    "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+      0.001140795290981254,
+      0.0012105333331702286
+    ],
+    "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.00441535596498778,
+    "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.34439776526904686,
+    "hot_photon_leakage_into5K_sensitivity": [
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+        "additional5K_heat_W_m2": 0.0,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+        "additional5K_heat_W_m2": 5.670374419000001e-05,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+        "additional5K_heat_W_m2": 0.0005670374419000002,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+        "additional5K_heat_W_m2": 0.005670374419000001,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+      },
+      {
+        "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+        "additional5K_heat_W_m2": 0.05670374419000001,
+        "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+      }
+    ],
+    "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+      {
+        "kg_per_active_panel_m2": 1,
+        "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00011115086723666333
+      },
+      {
+        "kg_per_active_panel_m2": 10,
+        "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0011115086723666333
+      },
+      {
+        "kg_per_active_panel_m2": 100,
+        "Hgetter_Hecryo_total_kg_per_wall_m2": 0.011115086723666333
+      }
+    ],
+    "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+  },
+  "regeneration_reference": {
+    "active_bank_capture_period_s": 3600,
+    "alternating_isolated_bank_count": 2,
+    "cycling_heat_capacity_J_per_active_m2_K": 1000,
+    "constant_heat_capacity_scope": "Chosen integrated thermal-mass comparison over5\u201385K. Actual temperature-dependent solid heat capacity and adsorption heat should replace it.",
+    "He_load_kg_per_active_m2": 1.3421669791993474e-05,
+    "fraction_of_Day_low_load_graph_capacity": 0.19038792668853272,
+    "regeneration_heating_W_per_wall_m2": 0.0010814874622234016,
+    "reversible_cooldown_work_W_per_wall_m2": 0.0065787243112786845,
+    "electric_cooldown_work_W_per_wall_m2_at_etaCarnot0p5": 0.013157448622557369,
+    "thermal_source_rule": "Regeneration heat can be supplied from the200K waste reservoir. In that case its removal and later return cancel in the whole-station cold balance; only refrigeration work is an extra electrical load. If electrical heating is chosen instead, add the separately listed regeneration-heating power too. Regenerated He is isolated and compressed into product storage."
+  },
+  "helium_low_load_capacity_kg_m2": 7.049643338965924e-05,
+  "source_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/warm-mechanical-cleanup/buffer.json": "d7cda2cd5f068ca1ec5ab741ba5fa3bb68540c1d7831dbd4a92f01f15a13974e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/gas/joint-ports.json": "7958b0a2d165cff15b65656f0a9d04bd7e6499523efdde8313b89cd2086b0e52",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/gas/regeneration.json": "5b4404ecb57ea668b197ac3296b97cf48d5a25567ba2bbe92e2ca53808cbe17f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/gas/inputs.json": "b8ab5bbbe4d66b60ae15aff0751d1578733788b30c1eae71f053a34df5df2082"
+  },
+  "scope": "Snapshot of the frozen originalbuffer and retained activepanel reference for a new cross-interface correction; original files untouched."
+}

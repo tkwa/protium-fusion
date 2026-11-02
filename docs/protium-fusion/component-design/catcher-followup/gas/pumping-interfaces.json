@@ -1,0 +1,691 @@
+{
+  "family": "delivered-B1-C13H2-source128",
+  "gas_order": [
+    "H2",
+    "He"
+  ],
+  "temperature_K": 1000.0,
+  "station_net_W_m2": 45.63811531066469,
+  "mean_throughput_Pa_m3_s_per_wall_m2": [
+    8.754436869374576e-07,
+    3.769030856166142e-07
+  ],
+  "geometry": {
+    "candidate_geometric_plenum_depth_m": 5e-05,
+    "candidate_plenum_void_fraction": 0.75,
+    "plenum_void_equivalent_m": 3.75e-05,
+    "slit_void_equivalent_m": 7.5e-07,
+    "via_void_equivalent_m": 0.0013744467859455344,
+    "storage_volume_scope": "The pressure reservoir includes only volumes upstream of its closed valve, with their actual temperatures. Tabulated thicknesses are void-equivalent volumes per wall area, not automatically the geometric plenum depth.",
+    "slit_full_width_m": 1e-07,
+    "slit_pitch_m": 2e-05,
+    "slit_depth_m": 0.00015,
+    "slit_mouth_fraction": 0.004999999999999999,
+    "slit_hydraulic_transmission_fraction": 0.0017777777777777779,
+    "slit_effective_area_fraction": 8.888888888888888e-06,
+    "via_radius_m": 0.0005,
+    "via_pitch_m": 0.01,
+    "via_length_m": 0.175,
+    "via_effective_area_fraction": 5.9839860068377026e-05,
+    "series_effective_area_fraction": 7.739263049952978e-06,
+    "species_channel_speed_m3_s_per_wall_m2": [
+      0.0062707458335570935,
+      0.004449953722323711
+    ],
+    "scope": "Longducthydraulic-diameterClausingestimate; entrance/transition/actualslitgeometrynotnumericallysolved. Sharedgaschannelcollisionsandfinitepressuremaymodifyconductance."
+  },
+  "gas_thermodynamic_scales": {
+    "species": [
+      "H2",
+      "He"
+    ],
+    "sensible1000to300K_W_m2": [
+      2.1448370329967713e-06,
+      6.595803998290748e-07
+    ],
+    "He_refrigeration200to5K_reversible_W_m2": 5.114347701235377e-07,
+    "scope": "Ideal dilute-gas sensible and reversible cooling estimates; adsorption heat, solid hardware cycling, heat leaks and actual refrigerator efficiency are separate.",
+    "isothermal300K_compression_to1bar": [
+      {
+        "inlet_Pa": 0.001,
+        "reversible_W_m2": 6.9207240233813055e-06,
+        "electrical_W_m2_at_free_energy_efficiency0p5": 1.3841448046762611e-05
+      },
+      {
+        "inlet_Pa": 1.0,
+        "reversible_W_m2": 4.325452514613315e-06,
+        "electrical_W_m2_at_free_energy_efficiency0p5": 8.65090502922663e-06
+      },
+      {
+        "inlet_Pa": 1000.0,
+        "reversible_W_m2": 1.7301810058453264e-06,
+        "electrical_W_m2_at_free_energy_efficiency0p5": 3.4603620116906528e-06
+      }
+    ]
+  },
+  "stage_storage_and_prompt_release": [
+    {
+      "stage": "A",
+      "gas_atomic_mass_per_wall_area_kg_m2": [
+        9.688466941923352e-08,
+        1.1450236941722092e-14
+      ],
+      "full_release_thermal_PV_per_wall_area_Pa_m": [
+        0.39964474831503277,
+        2.3785162058116134e-08
+      ],
+      "peak_prompt_thermalized_PV_throughput_Pa_m3_s_per_wall_m2": 0.003950669798416908,
+      "channel_only_peak_source_pressure_Pa": 0.6300159392965661,
+      "storage_pressure_by_void_thickness_m": {
+        "5e-06": 79928.95442003896,
+        "3.75e-05": 10657.193922671864,
+        "3.825e-05": 10448.229335952807,
+        "5e-05": 7992.895442003897,
+        "0.0001": 3996.4477210019486,
+        "0.001": 399.64477210019487
+      }
+    },
+    {
+      "stage": "B1",
+      "gas_atomic_mass_per_wall_area_kg_m2": [
+        5.300845108437504e-10,
+        1.3967771127584308e-09
+      ],
+      "full_release_thermal_PV_per_wall_area_Pa_m": [
+        0.00218657391506558,
+        0.0029014744546439247
+      ],
+      "peak_prompt_thermalized_PV_throughput_Pa_m3_s_per_wall_m2": 4.322024110748688e-05,
+      "channel_only_peak_source_pressure_Pa": 0.008608017906221363,
+      "storage_pressure_by_void_thickness_m": {
+        "5e-06": 1017.6096739419011,
+        "3.75e-05": 135.68128985892017,
+        "3.825e-05": 133.02087241070603,
+        "5e-05": 101.7609673941901,
+        "0.0001": 50.88048369709505,
+        "0.001": 5.088048369709505
+      }
+    },
+    {
+      "stage": "B2",
+      "gas_atomic_mass_per_wall_area_kg_m2": [
+        2.0905544728240526e-08,
+        5.589972368904091e-18
+      ],
+      "full_release_thermal_PV_per_wall_area_Pa_m": [
+        0.08623439819104914,
+        1.1611846931333326e-11
+      ],
+      "peak_prompt_thermalized_PV_throughput_Pa_m3_s_per_wall_m2": 0.002820412798013466,
+      "channel_only_peak_source_pressure_Pa": 0.4497731008200632,
+      "storage_pressure_by_void_thickness_m": {
+        "5e-06": 17246.879640532203,
+        "3.75e-05": 2299.5839520709605,
+        "3.825e-05": 2254.494070657804,
+        "5e-05": 1724.6879640532202,
+        "0.0001": 862.3439820266101,
+        "0.001": 86.23439820266101
+      }
+    },
+    {
+      "stage": "C13",
+      "gas_atomic_mass_per_wall_area_kg_m2": [
+        3.05692109050693e-08,
+        7.259823886483213e-14
+      ],
+      "full_release_thermal_PV_per_wall_area_Pa_m": [
+        0.12609657102179567,
+        1.508056894649864e-07
+      ],
+      "peak_prompt_thermalized_PV_throughput_Pa_m3_s_per_wall_m2": 0.0020188447499960025,
+      "channel_only_peak_source_pressure_Pa": 0.3219465122436595,
+      "storage_pressure_by_void_thickness_m": {
+        "5e-06": 25219.34436549703,
+        "3.75e-05": 3362.5792487329377,
+        "3.825e-05": 3296.6463222871935,
+        "5e-05": 2521.934436549703,
+        "0.0001": 1260.9672182748516,
+        "0.001": 126.09672182748515
+      }
+    }
+  ],
+  "continuous_extraction_scenarios": [
+    {
+      "downstream_pump_speed_m3_s_per_wall_m2_each_species": 0.0001,
+      "channel_plus_pump_speed": [
+        9.843032507319218e-05,
+        9.780217544830479e-05
+      ],
+      "mean_species_source_pressure_Pa": [
+        0.008894044455166466,
+        0.0038537290595937056
+      ],
+      "mean_total_source_pressure_Pa": 0.01274777351476017,
+      "peak_pressure_by_stage_Pa": {
+        "A": 40.13671392346564,
+        "B1": 0.44081042898109013,
+        "B2": 28.65390108095472,
+        "C13": 20.510394012203683
+      },
+      "50um_equivalent_void_relaxation_s": [
+        0.5079735331852283,
+        0.5112360719054604
+      ],
+      "front_equivalent_open_fraction_for_f_0p001_species": [
+        1.2160287448930392e-10,
+        1.7026568912126226e-10
+      ],
+      "conditional_active_area_fraction_Hgetter_Hecryo": [
+        5.477225575051661e-06,
+        4.020288782350233e-06
+      ],
+      "conditional_active_area_m2": [
+        83282904282600.31,
+        61129730967074.19
+      ],
+      "black1000K_heat_per_wall_area_if_hot_view_equals_active_area_W_m2": [
+        0.310579197878655,
+        0.22796542668431422
+      ],
+      "black200K_to5K_He_heat_W_m2": 0.00036474468269490274,
+      "He5K_electric_refrigeration_if_only200K_view_etaCarnot0p5_W_m2": 0.028450085250202414,
+      "conditional_notes": [
+        "10m\u00b3/s/m\u00b2Hgetter at300K is a selected value within a primary CERN range;13m\u00b3/s/m\u00b2He is a primary low-load cryopanel graph scale, not certified present geometry.",
+        "S scales as sqrt(T/Tref), with Tref=300K for the selected H getter and273.15K for the Day helium data, only if net capture probability is maintained by precooling/shielding. Actual warm incidence and mixture poisoning require review.",
+        "The optical row assumes hot projected view equals active area. A physical manifold must supply its actual ratio; increasing sorberarea doesnot automatically create a hot aperture.",
+        "He cold duty assumes a200K intercept really blocks direct1000K photons; the first-intercept heat is separately listed and cannot disappear.",
+        "Front open fraction uses competition with the entire downstreamseries conductance. Pumpbasepressure and materialpermeation require additive backstreaming terms."
+      ]
+    },
+    {
+      "downstream_pump_speed_m3_s_per_wall_m2_each_species": 0.0005,
+      "channel_plus_pump_speed": [
+        0.00046307644591221355,
+        0.0004494944773175294
+      ],
+      "mean_species_source_pressure_Pa": [
+        0.0018904949596668052,
+        0.0008385043746607912
+      ],
+      "mean_total_source_pressure_Pa": 0.002728999334327596,
+      "peak_pressure_by_stage_Pa": {
+        "A": 8.531355536130382,
+        "B1": 0.09504850012119512,
+        "B2": 6.090598696846995,
+        "C13": 4.359636012235664
+      },
+      "50um_equivalent_void_relaxation_s": [
+        0.10797353318522837,
+        0.11123607190546032
+      ],
+      "front_equivalent_open_fraction_for_f_0p001_species": [
+        5.720942899390306e-10,
+        7.825335846146282e-10
+      ],
+      "conditional_active_area_fraction_Hgetter_Hecryo": [
+        2.7386127875258307e-05,
+        2.010144391175117e-05
+      ],
+      "conditional_active_area_m2": [
+        416414521413001.56,
+        305648654835370.94
+      ],
+      "black1000K_heat_per_wall_area_if_hot_view_equals_active_area_W_m2": [
+        1.5528959893932752,
+        1.139827133421571
+      ],
+      "black200K_to5K_He_heat_W_m2": 0.001823723413474514,
+      "He5K_electric_refrigeration_if_only200K_view_etaCarnot0p5_W_m2": 0.14225042625101209,
+      "conditional_notes": [
+        "10m\u00b3/s/m\u00b2Hgetter at300K is a selected value within a primary CERN range;13m\u00b3/s/m\u00b2He is a primary low-load cryopanel graph scale, not certified present geometry.",
+        "S scales as sqrt(T/Tref), with Tref=300K for the selected H getter and273.15K for the Day helium data, only if net capture probability is maintained by precooling/shielding. Actual warm incidence and mixture poisoning require review.",
+        "The optical row assumes hot projected view equals active area. A physical manifold must supply its actual ratio; increasing sorberarea doesnot automatically create a hot aperture.",
+        "He cold duty assumes a200K intercept really blocks direct1000K photons; the first-intercept heat is separately listed and cannot disappear.",
+        "Front open fraction uses competition with the entire downstreamseries conductance. Pumpbasepressure and materialpermeation require additive backstreaming terms."
+      ]
+    },
+    {
+      "downstream_pump_speed_m3_s_per_wall_m2_each_species": 0.001,
+      "channel_plus_pump_speed": [
+        0.0008624625282065778,
+        0.0008165122034148893
+      ],
+      "mean_species_source_pressure_Pa": [
+        0.0010150512727293477,
+        0.00046160128904417706
+      ],
+      "mean_total_source_pressure_Pa": 0.0014766525617735248,
+      "peak_pressure_by_stage_Pa": {
+        "A": 4.580685737713474,
+        "B1": 0.051828259013708244,
+        "B2": 3.2701858988335295,
+        "C13": 2.3407912622396623
+      },
+      "50um_equivalent_void_relaxation_s": [
+        0.057973533185228375,
+        0.061236071905460314
+      ],
+      "front_equivalent_open_fraction_for_f_0p001_species": [
+        1.065504177612394e-09,
+        1.42148180603447e-09
+      ],
+      "conditional_active_area_fraction_Hgetter_Hecryo": [
+        5.4772255750516614e-05,
+        4.020288782350234e-05
+      ],
+      "conditional_active_area_m2": [
+        832829042826003.1,
+        611297309670741.9
+      ],
+      "black1000K_heat_per_wall_area_if_hot_view_equals_active_area_W_m2": [
+        3.1057919787865504,
+        2.279654266843142
+      ],
+      "black200K_to5K_He_heat_W_m2": 0.003647446826949028,
+      "He5K_electric_refrigeration_if_only200K_view_etaCarnot0p5_W_m2": 0.28450085250202417,
+      "conditional_notes": [
+        "10m\u00b3/s/m\u00b2Hgetter at300K is a selected value within a primary CERN range;13m\u00b3/s/m\u00b2He is a primary low-load cryopanel graph scale, not certified present geometry.",
+        "S scales as sqrt(T/Tref), with Tref=300K for the selected H getter and273.15K for the Day helium data, only if net capture probability is maintained by precooling/shielding. Actual warm incidence and mixture poisoning require review.",
+        "The optical row assumes hot projected view equals active area. A physical manifold must supply its actual ratio; increasing sorberarea doesnot automatically create a hot aperture.",
+        "He cold duty assumes a200K intercept really blocks direct1000K photons; the first-intercept heat is separately listed and cannot disappear.",
+        "Front open fraction uses competition with the entire downstreamseries conductance. Pumpbasepressure and materialpermeation require additive backstreaming terms."
+      ]
+    },
+    {
+      "downstream_pump_speed_m3_s_per_wall_m2_each_species": 0.01,
+      "channel_plus_pump_speed": [
+        0.003854000239266346,
+        0.003079562611642821
+      ],
+      "mean_species_source_pressure_Pa": [
+        0.00022715195448563556,
+        0.00012238851198922426
+      ],
+      "mean_total_source_pressure_Pa": 0.0003495404664748598,
+      "peak_pressure_by_stage_Pa": {
+        "A": 1.0250829191382569,
+        "B1": 0.012930042016970048,
+        "B2": 0.7318143806214098,
+        "C13": 0.5238309872432596
+      },
+      "50um_equivalent_void_relaxation_s": [
+        0.012973533185228366,
+        0.016236071905460316
+      ],
+      "front_equivalent_open_fraction_for_f_0p001_species": [
+        4.761312197524107e-09,
+        5.3612698067293095e-09
+      ],
+      "conditional_active_area_fraction_Hgetter_Hecryo": [
+        0.0005477225575051661,
+        0.00040202887823502335
+      ],
+      "conditional_active_area_m2": [
+        8328290428260031.0,
+        6112973096707419.0
+      ],
+      "black1000K_heat_per_wall_area_if_hot_view_equals_active_area_W_m2": [
+        31.0579197878655,
+        22.79654266843142
+      ],
+      "black200K_to5K_He_heat_W_m2": 0.03647446826949027,
+      "He5K_electric_refrigeration_if_only200K_view_etaCarnot0p5_W_m2": 2.8450085250202415,
+      "conditional_notes": [
+        "10m\u00b3/s/m\u00b2Hgetter at300K is a selected value within a primary CERN range;13m\u00b3/s/m\u00b2He is a primary low-load cryopanel graph scale, not certified present geometry.",
+        "S scales as sqrt(T/Tref), with Tref=300K for the selected H getter and273.15K for the Day helium data, only if net capture probability is maintained by precooling/shielding. Actual warm incidence and mixture poisoning require review.",
+        "The optical row assumes hot projected view equals active area. A physical manifold must supply its actual ratio; increasing sorberarea doesnot automatically create a hot aperture.",
+        "He cold duty assumes a200K intercept really blocks direct1000K photons; the first-intercept heat is separately listed and cannot disappear.",
+        "Front open fraction uses competition with the entire downstreamseries conductance. Pumpbasepressure and materialpermeation require additive backstreaming terms."
+      ]
+    }
+  ],
+  "global_cleanup_optical_frontier": [
+    {
+      "effective_global_capture_g": 1e-05,
+      "optical_absorption_fraction_divided_by_g": 1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.5670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 44.2289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.02260964069242853,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 1.7635519740094254,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 1e-05,
+      "optical_absorption_fraction_divided_by_g": 0.1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.05670374419000001,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 4.42289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.02260964069242853,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 1.7635519740094254,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 1e-05,
+      "optical_absorption_fraction_divided_by_g": 0.01,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.005670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 0.442289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.02260964069242853,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 1.7635519740094254,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 1e-05,
+      "optical_absorption_fraction_divided_by_g": 0.001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.0005670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 0.044228920468200005,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.02260964069242853,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 1.7635519740094254,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 1e-05,
+      "optical_absorption_fraction_divided_by_g": 0.0001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 5.6703744190000004e-05,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 0.0044228920468200005,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.02260964069242853,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 1.7635519740094254,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.0001,
+      "optical_absorption_fraction_divided_by_g": 1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 5.670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 442.289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.0022609640692428535,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.17635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.0001,
+      "optical_absorption_fraction_divided_by_g": 0.1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.5670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 44.2289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.0022609640692428535,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.17635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.0001,
+      "optical_absorption_fraction_divided_by_g": 0.01,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.05670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 4.42289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.0022609640692428535,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.17635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.0001,
+      "optical_absorption_fraction_divided_by_g": 0.001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.005670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 0.442289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.0022609640692428535,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.17635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.0001,
+      "optical_absorption_fraction_divided_by_g": 0.0001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.0005670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 0.044228920468200005,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.0022609640692428535,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.17635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.001,
+      "optical_absorption_fraction_divided_by_g": 1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 56.70374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 4422.89204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.00022609640692428532,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.017635519740094256,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.001,
+      "optical_absorption_fraction_divided_by_g": 0.1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 5.670374419000001,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 442.28920468200005,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.00022609640692428532,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.017635519740094256,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.001,
+      "optical_absorption_fraction_divided_by_g": 0.01,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.5670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 44.2289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.00022609640692428532,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.017635519740094256,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.001,
+      "optical_absorption_fraction_divided_by_g": 0.001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.05670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 4.42289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.00022609640692428532,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.017635519740094256,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.001,
+      "optical_absorption_fraction_divided_by_g": 0.0001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.005670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 0.442289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 0.00022609640692428532,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.017635519740094256,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.01,
+      "optical_absorption_fraction_divided_by_g": 1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 567.0374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 44228.9204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428534e-05,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.0017635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.01,
+      "optical_absorption_fraction_divided_by_g": 0.1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 56.70374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 4422.89204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428534e-05,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.0017635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.01,
+      "optical_absorption_fraction_divided_by_g": 0.01,
+      "1000K_heat_into_first_cold_intercept_W_m2": 5.670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 442.289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428534e-05,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.0017635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.01,
+      "optical_absorption_fraction_divided_by_g": 0.001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.5670374418999999,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 44.228920468199995,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428534e-05,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.0017635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.01,
+      "optical_absorption_fraction_divided_by_g": 0.0001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.05670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 4.42289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428534e-05,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.0017635519740094258,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.1,
+      "optical_absorption_fraction_divided_by_g": 1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 5670.374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 442289.204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428533e-06,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.00017635519740094257,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.1,
+      "optical_absorption_fraction_divided_by_g": 0.1,
+      "1000K_heat_into_first_cold_intercept_W_m2": 567.0374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 44228.9204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428533e-06,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.00017635519740094257,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.1,
+      "optical_absorption_fraction_divided_by_g": 0.01,
+      "1000K_heat_into_first_cold_intercept_W_m2": 56.70374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 4422.89204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428533e-06,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.00017635519740094257,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.1,
+      "optical_absorption_fraction_divided_by_g": 0.001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 5.670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 442.289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428533e-06,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.00017635519740094257,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    },
+    {
+      "effective_global_capture_g": 0.1,
+      "optical_absorption_fraction_divided_by_g": 0.0001,
+      "1000K_heat_into_first_cold_intercept_W_m2": 0.5670374419,
+      "electric_if_all_heat_reaches5K_etaCarnot0p5_W_m2": 44.2289204682,
+      "maximum_direct5K_chi_for1W_m2_electric": 2.2609640692428533e-06,
+      "maximum_chi_for1W_m2_200K_intercept_heat": 0.00017635519740094257,
+      "scope": "chi joins optical coupling and actual net molecular capture; it is not an independently free viewfactor. A warm ioncleanup route has a different power account."
+    }
+  ],
+  "getter_regeneration_scenarios": [
+    {
+      "working_H_mass_per_getter_mass": 0.0001,
+      "cycle_s": 60,
+      "getter_inventory_kg": 1936224233494.3142,
+      "getter_inventory_per_wall_area_kg_m2": 1.2733870152683316e-07,
+      "sensible_regeneration_energy_J_kg_H": 2000000000.0,
+      "sensible_regeneration_W_m2": 0.00042446233842277723,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.0001,
+      "cycle_s": 3600,
+      "getter_inventory_kg": 116173454009658.84,
+      "getter_inventory_per_wall_area_kg_m2": 7.64032209160999e-06,
+      "sensible_regeneration_energy_J_kg_H": 2000000000.0,
+      "sensible_regeneration_W_m2": 0.00042446233842277723,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.0001,
+      "cycle_s": 86400,
+      "getter_inventory_kg": 2788162896231812.5,
+      "getter_inventory_per_wall_area_kg_m2": 0.00018336773019863976,
+      "sensible_regeneration_energy_J_kg_H": 2000000000.0,
+      "sensible_regeneration_W_m2": 0.00042446233842277723,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.001,
+      "cycle_s": 60,
+      "getter_inventory_kg": 193622423349.43143,
+      "getter_inventory_per_wall_area_kg_m2": 1.2733870152683317e-08,
+      "sensible_regeneration_energy_J_kg_H": 200000000.0,
+      "sensible_regeneration_W_m2": 4.244623384227773e-05,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.001,
+      "cycle_s": 3600,
+      "getter_inventory_kg": 11617345400965.885,
+      "getter_inventory_per_wall_area_kg_m2": 7.64032209160999e-07,
+      "sensible_regeneration_energy_J_kg_H": 200000000.0,
+      "sensible_regeneration_W_m2": 4.244623384227773e-05,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.001,
+      "cycle_s": 86400,
+      "getter_inventory_kg": 278816289623181.28,
+      "getter_inventory_per_wall_area_kg_m2": 1.833677301986398e-05,
+      "sensible_regeneration_energy_J_kg_H": 200000000.0,
+      "sensible_regeneration_W_m2": 4.244623384227773e-05,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.01,
+      "cycle_s": 60,
+      "getter_inventory_kg": 19362242334.943142,
+      "getter_inventory_per_wall_area_kg_m2": 1.2733870152683317e-09,
+      "sensible_regeneration_energy_J_kg_H": 20000000.0,
+      "sensible_regeneration_W_m2": 4.244623384227772e-06,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.01,
+      "cycle_s": 3600,
+      "getter_inventory_kg": 1161734540096.5884,
+      "getter_inventory_per_wall_area_kg_m2": 7.64032209160999e-08,
+      "sensible_regeneration_energy_J_kg_H": 20000000.0,
+      "sensible_regeneration_W_m2": 4.244623384227772e-06,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    {
+      "working_H_mass_per_getter_mass": 0.01,
+      "cycle_s": 86400,
+      "getter_inventory_kg": 27881628962318.125,
+      "getter_inventory_per_wall_area_kg_m2": 1.8336773019863977e-06,
+      "sensible_regeneration_energy_J_kg_H": 20000000.0,
+      "sensible_regeneration_W_m2": 4.244623384227772e-06,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    }
+  ],
+  "helium_sorber_capacity_scenarios": [
+    {
+      "cycle_s": 60,
+      "reference_capacity_PV_Pa_m3_m2": 40.0,
+      "reference_temperature_K": 273.15,
+      "He_capacity_kg_m2": 7.049643338965924e-05,
+      "active_area_m2_from_capacity": 2348104339615.432,
+      "active_area_fraction_from_capacity": 1.544266167542672e-07,
+      "scope": "Graph-scale loading associatedwith initialhighspeed, notultimatecapacity orlow-pressureequilibriumqualification. Measured6.5Kloadedbasepressure~1e-6Pa cannotbeignored. Isolatedregenerationat~85K sendsHe tostorage/compression."
+    },
+    {
+      "cycle_s": 3600,
+      "reference_capacity_PV_Pa_m3_m2": 40.0,
+      "reference_temperature_K": 273.15,
+      "He_capacity_kg_m2": 7.049643338965924e-05,
+      "active_area_m2_from_capacity": 140886260376925.94,
+      "active_area_fraction_from_capacity": 9.265597005256033e-06,
+      "scope": "Graph-scale loading associatedwith initialhighspeed, notultimatecapacity orlow-pressureequilibriumqualification. Measured6.5Kloadedbasepressure~1e-6Pa cannotbeignored. Isolatedregenerationat~85K sendsHe tostorage/compression."
+    },
+    {
+      "cycle_s": 86400,
+      "reference_capacity_PV_Pa_m3_m2": 40.0,
+      "reference_temperature_K": 273.15,
+      "He_capacity_kg_m2": 7.049643338965924e-05,
+      "active_area_m2_from_capacity": 3381270249046222.5,
+      "active_area_fraction_from_capacity": 0.00022237432812614478,
+      "scope": "Graph-scale loading associatedwith initialhighspeed, notultimatecapacity orlow-pressureequilibriumqualification. Measured6.5Kloadedbasepressure~1e-6Pa cannotbeignored. Isolatedregenerationat~85K sendsHe tostorage/compression."
+    }
+  ],
+  "source_sha256": {
+    "inputs.json": "b8ab5bbbe4d66b60ae15aff0751d1578733788b30c1eae71f053a34df5df2082"
+  },
+  "thermal_integration_rule": "Receiver1000K photons routed to a colder stage are an internal hot-to-cold bypass: debit engine heat and credit cold rejection once. Subsequent200K-to5K transfer is part of that staged exchange, not another source energy. Refrigerator work is an additional electrical debit and ultimate heat rejection.",
+  "code_sha256": "49b73ac4ba0e8975073c4a7bdbbf6de69cdde36c8719aa7e76cc33608085ae92",
+  "scope": [
+    "SpeciespressureisfromactualH/Hecounts; a1000Kthermalizedreleaseboundaryischosenonlyforthisgasresponse. Reflectedenergeticions/secondarygasareseparate.",
+    "Low-pressurecontinuousextractionandhigh-pressurestoragearealternativeinterfaces. A highpressureplenumcannotbefreelyjoinedtoanopencavitywithoutbackstream.",
+    "Gasgetters,cryosorption,ionpumpsandcompressorsallrequirephysicalrouting,temperaturecontrol,regenerationandcapacity. Ageneralservicemass/auxiliaryallocationisnotproofthesecomponentsfit."
+  ]
+}

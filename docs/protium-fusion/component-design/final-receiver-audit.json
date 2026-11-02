@@ -1,0 +1,119 @@
+{
+  "scope": "Independent exact-family plant balances and schedule-aware thermal carryover.\nNo hydrodynamics. Component response functions come from preserved audited kernels.\n",
+  "code_sha256": "74ea95cd4b33f5515abc7a747224bf7cfb5581c27906f0946de6d50bea744fd8",
+  "input_sha256": {
+    "/home/tkwa/src/protium-fusion/output/final-coupled-tradeoff-extended.json": "23d1031b371756d9805f78e46ad4fdc8de11595d1456e17eb5534a1ac3c21f46",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128_thin_thermal.py": "3484b73865c77908bc42c0dba6da4ce1f1d412fecabf953cbb6be5828a19f4b6",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma250/events.csv": "180864cf142aba583b88e0d5a76e5c1179aca809258fdbcc5fea8043ee95c0f6",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/events.csv": "36feead65d3b610ffdef9b1f9ca6c04edb66ecc5a01783970f5a49cafa3d5d9a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/selected-plant/point.json": "d13704b81aa56057642641e6c2a05c95c3c47381b32173183ecaf520ce8d511c"
+  },
+  "plant_ledger": {
+    "rows": 63,
+    "independent_identities": 1071,
+    "maximum_relative_error": 1.6606686402955308e-14,
+    "category_errors": {
+      "mass": 2.7487616593690504e-16,
+      "hot": 0,
+      "gross": 0,
+      "driver": 0,
+      "aux": 0,
+      "net": 0,
+      "cold_components": 2.7600964919139103e-16,
+      "radiator": 3.5189995276986534e-16,
+      "cold_source": 1.6606686402955308e-14,
+      "escape": 1.6557173005094917e-14,
+      "preparation_once": 0,
+      "receiver": 0,
+      "factory": 4.235366619876025e-16,
+      "cadence_n14": 2.220446049250313e-16,
+      "cadence_n15": 2.220446049250313e-16,
+      "cadence_c12": 2.2204460492503126e-16,
+      "cadence_c13": 2.2204460492503126e-16
+    },
+    "selected_point_matching_errors": {
+      "mass_kg": 0.0,
+      "net_W": 0.0,
+      "helium_per_s": 0.0,
+      "cold_rejection_W": 0.0,
+      "radiator_area_fraction": 0.0,
+      "sequential_occupancy_mass999": 0.0
+    }
+  },
+  "dispatch_thermal": [
+    {
+      "sigma_kg_m2": 250.0,
+      "maximum_actual_dispatch_lateness_s": 5009.305363286287,
+      "retained_bulk_lateness_bound_s": 86400.0,
+      "event_count": 4127,
+      "bounds": [
+        {
+          "basis": "observed370day_minimum",
+          "large_focus_minimum_s": 9911.14699559519,
+          "early_energy_cutoff_s": 4955.573497797595,
+          "old_big_background_K": 3.248581078229764e-17,
+          "old_B1_background_K": 1.1621975452350932e-10,
+          "late_tail_bound_K": 0.0019961517265759776,
+          "correction_to_saved_daily_guard_K": 0.0019827619588890736,
+          "Teff_allphase_front_K_by_skin_conductivity": {
+            "50.0": 1710.749445642022,
+            "4.0": 1740.05196198424
+          }
+        },
+        {
+          "basis": "serialized_main_window_guarantee",
+          "large_focus_minimum_s": 4144.998238046847,
+          "early_energy_cutoff_s": 2072.4991190234236,
+          "old_big_background_K": 3.1359777964258124e-06,
+          "old_B1_background_K": 1.1621975452350932e-10,
+          "late_tail_bound_K": 0.059558857124893526,
+          "correction_to_saved_daily_guard_K": 0.05954860333500301,
+          "Teff_allphase_front_K_by_skin_conductivity": {
+            "50.0": 1710.8070114833981,
+            "4.0": 1740.1095278256162
+          }
+        }
+      ]
+    },
+    {
+      "sigma_kg_m2": 350.0,
+      "maximum_actual_dispatch_lateness_s": 5010.857824806124,
+      "retained_bulk_lateness_bound_s": 86400.0,
+      "event_count": 4228,
+      "bounds": [
+        {
+          "basis": "observed370day_minimum",
+          "large_focus_minimum_s": 9911.14699559519,
+          "early_energy_cutoff_s": 4955.573497797595,
+          "old_big_background_K": 4.105937017210835e-08,
+          "old_B1_background_K": 5.5870044681771524e-06,
+          "late_tail_bound_K": 0.0027946124172063685,
+          "correction_to_saved_daily_guard_K": 0.00277590780181483,
+          "Teff_allphase_front_K_by_skin_conductivity": {
+            "50.0": 1639.0367571787979,
+            "4.0": 1668.339273521016
+          }
+        },
+        {
+          "basis": "serialized_main_window_guarantee",
+          "large_focus_minimum_s": 4144.998238046847,
+          "early_energy_cutoff_s": 2072.4991190234236,
+          "old_big_background_K": 0.016513551507185077,
+          "old_B1_background_K": 5.5870044681771524e-06,
+          "late_tail_bound_K": 0.08338239997485093,
+          "correction_to_saved_daily_guard_K": 0.0998772058072743,
+          "Teff_allphase_front_K_by_skin_conductivity": {
+            "50.0": 1639.1338584768032,
+            "4.0": 1668.4363748190212
+          }
+        }
+      ]
+    }
+  ],
+  "qualification": [
+    "Hot, precursor, and escaped preparation energy boundaries are kept distinct; preparation photons are debited once.",
+    "Large-pulse spacing comes from exact main-window serialization, with observed370day spacing separately reported; a one-day large-shot guard is unnecessary for this corrected bound.",
+    "The existing<=1day dispatch-lateness storage allowance exceeds actual audited lateness; no new cadence restriction is introduced.",
+    "Tail bounds use exact source128 profiles, worst-case full heat retention and the preserved localized carbon thermal properties. Radiative spectrum and material qualification remain separate."
+  ]
+}

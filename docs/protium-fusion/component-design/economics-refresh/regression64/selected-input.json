@@ -1,0 +1,374 @@
+{
+  "plant": {
+    "feasible": true,
+    "reasons": [],
+    "parameters": {
+      "heat_efficiency": 0.6,
+      "carnot_quality": 0.8,
+      "radiator_K": 200.0,
+      "receiver_K": 1000.0,
+      "routine_MJ_kg": 2.0,
+      "direct_solar_absorbed_W_m2": 0.0,
+      "environment_absorbed_W_m2": 11.0254,
+      "environment_basis": "whole_shell",
+      "emissivity": 0.9,
+      "escape_view_factor": 1.0,
+      "radiator_available_fraction": 0.9,
+      "bypass_W_m2": 1.0,
+      "hot_eligible_fraction": 1.0,
+      "hx_W_K_kg": 10.0,
+      "thermal_converter_We_kg": 10.0,
+      "pump_fraction_hot": 0.0,
+      "pump_We_kg": 10.0,
+      "radiator_kg_m2": 20.0,
+      "auxiliary_fraction": 0.1,
+      "include_incremental_hx": true,
+      "hx_internal_UA_per_hot_W_K": 0.029528234298350393
+    },
+    "engine": {
+      "valid": true,
+      "internal_hot_K": 911.6963119775493,
+      "internal_cold_K": 227.92407799438743,
+      "hot_approach_K": 88.30368802245073,
+      "cold_approach_K": 27.92407799438743,
+      "UA_per_hot_W_per_K": 0.02564911064067346,
+      "external_carnot": 0.8,
+      "internal_carnot": 0.7499999999999999,
+      "fraction_of_internal_carnot": 0.8,
+      "fraction_of_external_carnot": 0.7499999999999999
+    },
+    "mass_kg": 6.48013332460782e+22,
+    "net_W": 8.006286653051635e+20,
+    "net_W_kg": 0.012355126433353403,
+    "radius_m": 1100000000.0,
+    "area_m2": 1.5205308443374598e+19,
+    "helium_per_s": 4.469762340909191e+32,
+    "nuclear_non_neutrino_W": 1.7695023317551856e+21,
+    "nuclear_total_W": 1.9145896989660996e+21,
+    "neutrino_W": 1.4508736721091414e+20,
+    "net_fraction_of_nuclear_energy": 0.41817245007507986,
+    "net_fraction_of_non_neutrino_nuclear_energy": 0.452459796710758,
+    "prepared_pulse_W": 1.4147462252569498e+20,
+    "captured_pulse_W": 1.8918671847380717e+21,
+    "escaping_source_W": 1.910976954280882e+19,
+    "engine_hot_W": 1.876661876294697e+21,
+    "gross_electric_W": 1.1259971257768182e+21,
+    "driver_W": 2.3579103754282497e+20,
+    "ordinary_auxiliary_W": 8.902060882339933e+19,
+    "pump_W": 0.0,
+    "replacement_W": 4.1068606767357594e+17,
+    "support_W": 1.461280377568929e+17,
+    "cold_rejection_W": 9.497638969072132e+20,
+    "environment_absorbed_W": 1.676446077115823e+20,
+    "external_exchanger_minimum_UA_W_K": 4.813470810021654e+19,
+    "additional_internal_exchanger_UA_W_K": 5.541451158201168e+19,
+    "heat_exchanger_UA_W_K": 1.0354921968222822e+20,
+    "heat_exchanger_UA_W_K_per_shell_m2": 6.810070316419505,
+    "radiator_effective_emissivity_to_escape": 0.9,
+    "radiator_emission_W_m2": 81.6533916336,
+    "radiator_area_m2": 1.3684777597884703e+19,
+    "radiator_area_fraction": 0.8999999999242083,
+    "radiator_net_capacity_W_m2": 81.6533916336,
+    "max_environment_W_m2_at_available_area": 11.025400006188649,
+    "hot_engine_input_W_m2": 123.4214934398397,
+    "net_export_W_m2": 52.654549448092325,
+    "cold_rejection_W_m2": 62.46265246405135,
+    "factory_mass_per_repaired_kg_s": 99999999.99999999,
+    "routine_repaired_kg_s": 205343033836.788,
+    "mass_breakdown_kg": {
+      "receiver": 3.04106168867492e+22,
+      "insulation": 1.5205308443374597e+21,
+      "processing_structure_thermal_service": 1.52053084433746e+22,
+      "peak_driver_hardware": 2.838893937328852e+21,
+      "two_pulse_storage": 1.358131011980951e+21,
+      "average_driver_conditioning": 2.35791037542825e+19,
+      "working_inventory": 609237716365906.6,
+      "inflight_fuel_inventory": 219307393238.33173,
+      "fresh_feed_buffer": 7759281827015.286,
+      "thermal_electric_converter": 1.1259971257768182e+20,
+      "incremental_heat_exchangers": 1.0354921968222822e+19,
+      "incremental_pump_hardware": 0.0,
+      "radiator_panels": 2.7369555195769405e+20,
+      "replacement_factory_capacity": 2.0534303383678796e+19,
+      "ten_year_spares": 6.480133324607821e+19,
+      "support_streams": 2.0199289875624049e+18,
+      "installed_reserve": 1.2960266649215642e+22
+    },
+    "cold_heat_components_W": {
+      "engine_cold_rejection": 7.506647505178789e+20,
+      "hot_to_cold_bypass": 1.5205308443374598e+19,
+      "captured_source_ineligible_for_hot_engine": 0.0,
+      "driver_preparation_loss": 9.431641501712998e+19,
+      "ordinary_auxiliaries": 8.902060882339933e+19,
+      "external_heat_loop_pumps": 0.0,
+      "routine_refurbishment": 4.1068606767357594e+17,
+      "support_dissipation": 1.461280377568929e+17
+    },
+    "closure_relative_residuals": {
+      "mass": 0.0,
+      "electrical": 0.0,
+      "global_nuclear": 0.0,
+      "global_including_neutrinos": 0.0,
+      "cold_heat_components": 1.380048245956911e-16,
+      "radiator": -1.380048245956911e-16
+    },
+    "scope": "Conditional stationary heat/power/mass requirements. Hot eligibility, insulation, converter/HX/pump ratings and cold-sky view require hardware qualification. Original generic services retained; named HX and pump hardware are incremental allocations.",
+    "selected_cases": {
+      "A": "A-H3-fixed_energy-z64-k0p001-t1-rates-updated-median",
+      "B1": "B1-H2-fixed_energy-z64-k0p001-t1-rates-updated-median",
+      "B2": "B2-H2-fixed_energy-z64-k0p001-t1-rates-updated-median",
+      "C13": "C13-H4-fixed_energy-z64-k0p001-t1-rates-updated-median"
+    },
+    "receiver_areal_mass_kg_m2": 2000.0,
+    "sequential_occupancy_mass999": 0.7894309930213357,
+    "peak_source_electric_W": 2.838893937328852e+23,
+    "source_average_to_peak_ratio": 0.0008305736062992317,
+    "stored_electric_J": 1.358131011980951e+26,
+    "gross_fuel_kg_s": 45263585.91637417,
+    "recovered_H_kg_s": 3715597.8587119295,
+    "recovered_CNO_kg_s": 38609626.03600223,
+    "fresh_H_kg_s": 2992476.8731296896,
+    "fresh_C_kg_s": 1073.2144533683202,
+    "fresh_C_H_mass_ratio": 0.0003586375096178758,
+    "unused_007_C_allowance_kg_s": 19874.12365853951,
+    "pulse_interval_s": {
+      "n14": 727908.0753175464,
+      "n15": 6777.226092824971,
+      "c12": 935909.7448505863,
+      "c13": 11852440.552135542
+    },
+    "surface_proxies": {
+      "A": {
+        "material_K": 174.36031921857185,
+        "prompt_surface_K": 334.15600623719297
+      },
+      "B1": {
+        "material_K": 1.114069187616639,
+        "prompt_surface_K": 122.91644900974038
+      },
+      "B2": {
+        "material_K": 199.9196097094835,
+        "prompt_surface_K": 302.5097801429305
+      },
+      "C13": {
+        "material_K": 415.41438708349204,
+        "prompt_surface_K": 765.0553202551696
+      }
+    },
+    "max_material_plus_surface_prompt_rise_K": 1180.4697073386617,
+    "surface_proxy_scope": "Sum of separate maxima in constant-property carbon; prompt mathematical-surface deposition is an intentionally conservative reference, not a qualified physical temperature. Finite spectral penetration and delayed heat require separate treatment.",
+    "inventory_residence_assumptions_s": {
+      "retained_CNO": 15778800.0,
+      "local_H_loop": 3600.0
+    },
+    "unburned_H_processing_sensitivities": [
+      {
+        "J_per_kg": 1000000.0,
+        "W": 3715597858711.9297,
+        "fraction_net_export": 4.640850396351612e-09
+      },
+      {
+        "J_per_kg": 10000000.0,
+        "W": 37155978587119.3,
+        "fraction_net_export": 4.640850396351612e-08
+      },
+      {
+        "J_per_kg": 100000000.0,
+        "W": 371559785871192.94,
+        "fraction_net_export": 4.6408503963516113e-07
+      },
+      {
+        "J_per_kg": 1000000000.0,
+        "W": 3715597858711929.5,
+        "fraction_net_export": 4.640850396351611e-06
+      }
+    ],
+    "H_processing_J_kg_for_10pct_export": 21547774967840.95,
+    "processing_cost_scope": "These named H-processing loads are compared with the retained ordinary-auxiliary allowance; they are not additional debits on top of an allowance already intended to cover processing. New requirements exceeding that allowance must be added explicitly.",
+    "qualification": "Conditional integrated accounting point. Source formation, receiver recovery and guide/thermal hardware remain engineering candidates."
+  },
+  "cycle": {
+    "feasible": true,
+    "stage_attempts_per_He": {
+      "n14": 1.2313836563306413,
+      "n15": 1.3225678101636098,
+      "c12": 1.162938742392429,
+      "c13": 0.07562443391421363
+    },
+    "stage_pulse_data": {
+      "n14": {
+        "stage": "A",
+        "mass_kg": 11309733552923.254,
+        "attempts_per_pulse": 4.006400437490335e+38,
+        "pulses_per_He": 3.073541138843318e-39,
+        "input_counts": {
+          "p": 3.0000000000000004,
+          "n14": 1.0
+        },
+        "protons_per_catalyst": 3.0000000000000004,
+        "gross_fuel_kg_per_He": 3.476093134426623e-26
+      },
+      "n15": {
+        "stage": "B1",
+        "mass_kg": 113097335529.23254,
+        "attempts_per_pulse": 4.006400437490335e+36,
+        "pulses_per_He": 3.3011373446037382e-37,
+        "input_counts": {
+          "p": 2.0,
+          "n15": 1.0
+        },
+        "protons_per_catalyst": 2.0,
+        "gross_fuel_kg_per_He": 3.733498378907287e-26
+      },
+      "c12": {
+        "stage": "B2",
+        "mass_kg": 11309733552923.254,
+        "attempts_per_pulse": 4.864914816952549e+38,
+        "pulses_per_He": 2.3904606476150184e-39,
+        "input_counts": {
+          "p": 2.0,
+          "c12": 1.0
+        },
+        "protons_per_catalyst": 2.0,
+        "gross_fuel_kg_per_He": 2.703547299327422e-26
+      },
+      "c13": {
+        "stage": "C13",
+        "mass_kg": 11309733552923.254,
+        "attempts_per_pulse": 4.006400437490335e+38,
+        "pulses_per_He": 1.887590496610115e-40,
+        "input_counts": {
+          "p": 4.0,
+          "c13": 1.0
+        },
+        "protons_per_catalyst": 4.0,
+        "gross_fuel_kg_per_He": 2.1348145573690486e-27
+      }
+    },
+    "input_catalyst_matrix_F": [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "output_catalyst_matrix_M": [
+      [
+        4.439550353922246e-08,
+        0.7560155984054031,
+        0.1401085754446507,
+        3.7976877236960015e-08
+      ],
+      [
+        4.559788571770786e-09,
+        8.923261176668935e-05,
+        0.06056279464212747,
+        0.06709873340938276
+      ],
+      [
+        0.23266017637054262,
+        2.5952166831600282e-09,
+        0.799328627102664,
+        0.20257323040513192
+      ],
+      [
+        0.7673397746667051,
+        0.24380414054750435,
+        2.7018530820200315e-09,
+        0.7303279973562644
+      ]
+    ],
+    "states": [
+      "c12",
+      "c13",
+      "n14",
+      "n15"
+    ],
+    "stage_order": [
+      "n14",
+      "n15",
+      "c12",
+      "c13"
+    ],
+    "carbon_return": 1.0,
+    "hydrogen_return": 1.0,
+    "other_returns": {},
+    "fresh_carbon_C13_number_fraction": 0.0107,
+    "external_input_atoms_per_He": {
+      "c12": 0.00011909989398973191,
+      "n14": 0.0,
+      "c13": 1.2881520931059077e-06,
+      "n15": 0.0,
+      "p": 4.000480263640465
+    },
+    "ash_atoms_per_He": {
+      "ne21": 1.4455039823393516e-12,
+      "o16": 0.00012038771386077548,
+      "c12": 0.0,
+      "f19": 3.408269822091894e-11,
+      "p": 0.0,
+      "o17": 1.837330210067439e-10,
+      "na23": 1.451120913812459e-12,
+      "he4": 1.0,
+      "mg24": 5.666447968863945e-13,
+      "o18": 1.1506992401987893e-14,
+      "ne20": 5.348359691321637e-11,
+      "n14": 0.0,
+      "c13": 0.0,
+      "ne22": 2.516733946346287e-13,
+      "n15": 0.0
+    },
+    "returned_atoms_per_He": {
+      "c12": 1.1628196424984392,
+      "c13": 0.07562314576212052,
+      "n14": 1.2313836563306413,
+      "n15": 1.3225678101636098,
+      "p": 4.967181546120392
+    },
+    "fresh_carbon_kg_per_He": 2.4010548470235183e-30,
+    "fresh_hydrogen_kg_per_He": 6.694935088027504e-27,
+    "fresh_C_H_mass_ratio": 0.0003586375096178758,
+    "gross_H_input_atoms_per_He": 8.967661809760857,
+    "gross_H_output_atoms_per_He": 4.967181546120392,
+    "nuclear_H_consumed_atoms_per_He": 4.000480263640465,
+    "unreturned_H_atoms_per_He": 0.0,
+    "gross_fuel_kg_per_He": 1.0126620268398237e-25,
+    "returned_fuel_kg_per_He": 9.469233634042569e-26,
+    "nuclear_Q_MeV_per_He": 26.73504331672203,
+    "neutrino_MeV_per_He": 2.0259782287492745,
+    "H_nonnu_MeV_per_He": 24.709065087972757,
+    "U_prepared_MeV_per_He": 1.9755304039731623,
+    "escaped_prompt_MeV_per_He": 0.3450417771665718,
+    "bulk_kinetic_MeV_per_He": 19.641625549741846,
+    "hot_internal_MeV_per_He": 1.0307133264932637,
+    "delayed_decay_heat_MeV_per_He": 5.667214838544236,
+    "eta_driver": 0.6,
+    "eta_heat": 0.6,
+    "energy_capture_fraction": 0.99,
+    "preaux_net_MeV_per_He": 12.558099048927271,
+    "preaux_electric_J_per_He": 2.01202928636489e-12,
+    "baryon_residual_per_He": 0.0,
+    "mass_defect_Q_residual_MeV_per_He": 5.4143356464919634e-12,
+    "energy_partition_residual_MeV_per_He": -2.4424906541753444e-15,
+    "stationary_matrix_condition_number": 54348.76248679473
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "scope": "Frozen thermal reference resource context. Receiver mass treated as carbon; alternative catcher/absorber materials may change this. Upstream material acquisition is not included in station W/kg.",
+  "input_sha256": {
+    "thermal": "01722faeaf6101777ce8208024963e31995961d9e38a3a8f15ace5c43dea07fa",
+    "operating": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461"
+  },
+  "code_sha256": "d9cab3034813b626b199c0cc2bc89a40a6fbfd88046590f431291e85e1e9c89a",
+  "receiver_capital_C_kg": 7.602654221687298e+22,
+  "receiver_fraction_of_installed_mass": 0.6238891827179629,
+  "fresh_H_kg_s": 2534685.1583579276,
+  "operational_fresh_C_H_ceiling": 0.007,
+  "lifetime_rows": [
+    {
+      "life_years": 20.0,
+      "fresh_H_delivered_kg": 1599771607067922.8,
+      "receiver_capital_C_per_lifetime_fresh_H_kg_kg": 47523372.63705735,
+      "operational_C_ceiling_kg_at_0_007": 11198401249475.459,
+      "scope": "Comparison of stocks and lifetime flows; operational ceiling is not imposed on construction."
+    },
+    {
+      "life_years": 100.0,
+      "fresh_H_delivered_kg": 7998858035339613.0,
+      "receiver_capital_C_per_lifetime_fresh_H_kg_kg": 9504674.52741147,
+      "operational_C_ceiling_kg_at_0_007": 55992006247377.29,
+      "scope": "Comparison of stocks and lifetime flows; operational ceiling is not imposed on construction."
+    },
+    {
+      "life_years": 1000.0,
+      "fresh_H_delivered_kg": 7.998858035339614e+16,
+      "receiver_capital_C_per_lifetime_fresh_H_kg_kg": 950467.4527411469,
+      "operational_C_ceiling_kg_at_0_007": 559920062473773.0,
+      "scope": "Comparison of stocks and lifetime flows; operational ceiling is not imposed on construction."
+    }
+  ],
+  "methane_recipe": {
+    "stoichiometry": "CH4 -> C(graphite) + 2 H2",
+    "H_byproduct_mass_per_C_mass": 0.3356806847227889,
+    "stoichiometric_H_byproduct_kg": 2.552064174846594e+22,
+    "years_of_reference_H_feed_in_byproduct": 319053565.3428732,
+    "CH4_feed_kg": 1.0154718396533892e+23,
+    "standard298K_deltaG_J_kg_C": 4226897.68,
+    "work_at_50pct_efficiency_J": 6.427128298298449e+29,
+    "equivalent_years_reference_net_export_for_this_chemical_step": 30.978781073117663,
+    "scope": "Chemical step only, complete byproduct retained; not total factory, extraction, transport, installation or thermal-preparation cost. Standard-state JANAF value from manufacturing-efficiency/energy-examples.json."
+  }
+}

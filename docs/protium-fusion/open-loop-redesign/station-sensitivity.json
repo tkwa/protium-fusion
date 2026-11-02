@@ -1,0 +1,143 @@
+{
+  "title": "Open-loop station: source and service mass sensitivity",
+  "scope": "Static display of saved finite conditional allocations; no model evaluation.",
+  "station_sha256": "81657b2700d72fffe8e2d3f9cf78f3df421d26aad5a348d144ac9f3e59e7e9fc",
+  "assumptions_sha256": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+  "plot_code_sha256": "58132357fd99fe88845902b5f49278f1c7c4517175f5925443b49b933ff567e2",
+  "absorber_sigma_kg_m2": 5000,
+  "total_C_H_mass_budget": 0.007,
+  "fuel_process_C_H_mass_budget": 0.0056,
+  "omitted_infeasible_points": 8,
+  "points": [
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 1000.0,
+      "peak_source_rating_W_kg": 2.0,
+      "net_mW_kg": 1.0507650468533354,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 1000.0,
+      "peak_source_rating_W_kg": 10.0,
+      "net_mW_kg": 2.5554707550645466,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 1000.0,
+      "peak_source_rating_W_kg": 100.0,
+      "net_mW_kg": 3.4919209756267224,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 5000.0,
+      "peak_source_rating_W_kg": 2.0,
+      "net_mW_kg": 0.7972450645793812,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 5000.0,
+      "peak_source_rating_W_kg": 10.0,
+      "net_mW_kg": 1.6361703360772033,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 5000.0,
+      "peak_source_rating_W_kg": 100.0,
+      "net_mW_kg": 2.030187726991143,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 23873.2414637843,
+      "peak_source_rating_W_kg": 2.0,
+      "net_mW_kg": 0.2684107819136471,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 23873.2414637843,
+      "peak_source_rating_W_kg": 10.0,
+      "net_mW_kg": 0.451181214544407,
+      "feasible": true
+    },
+    {
+      "timing_basis": "mass999",
+      "service_sigma_kg_m2": 23873.2414637843,
+      "peak_source_rating_W_kg": 100.0,
+      "net_mW_kg": 0.5079688333138924,
+      "feasible": true
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 1000.0,
+      "peak_source_rating_W_kg": 2.0,
+      "net_mW_kg": null,
+      "feasible": false
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 1000.0,
+      "peak_source_rating_W_kg": 10.0,
+      "net_mW_kg": null,
+      "feasible": false
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 1000.0,
+      "peak_source_rating_W_kg": 100.0,
+      "net_mW_kg": 0.12887717463642934,
+      "feasible": true
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 5000.0,
+      "peak_source_rating_W_kg": 2.0,
+      "net_mW_kg": null,
+      "feasible": false
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 5000.0,
+      "peak_source_rating_W_kg": 10.0,
+      "net_mW_kg": null,
+      "feasible": false
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 5000.0,
+      "peak_source_rating_W_kg": 100.0,
+      "net_mW_kg": null,
+      "feasible": false
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 23873.2414637843,
+      "peak_source_rating_W_kg": 2.0,
+      "net_mW_kg": null,
+      "feasible": false
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 23873.2414637843,
+      "peak_source_rating_W_kg": 10.0,
+      "net_mW_kg": null,
+      "feasible": false
+    },
+    {
+      "timing_basis": "full_resolved",
+      "service_sigma_kg_m2": 23873.2414637843,
+      "peak_source_rating_W_kg": 100.0,
+      "net_mW_kg": null,
+      "feasible": false
+    }
+  ],
+  "output_sha256": {
+    "station-sensitivity.svg": "cde2d612b3928aaaf85755c215816f19e6625831bea59c81391420687e1dc0e8",
+    "station-sensitivity.png": "0dba8d35fbdf7a989c9f3cbbd4b87d82b924d6d1f620e952ef4ba261e3432b8b"
+  }
+}

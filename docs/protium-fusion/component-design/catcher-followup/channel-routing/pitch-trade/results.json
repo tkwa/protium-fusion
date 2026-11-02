@@ -1,0 +1,810 @@
+{
+  "scope": "Conditional channel-pitch/diffusivity trade; preserves all original PDE records.",
+  "inputs_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/channel-routing/pitch-trade/calculate.py": "76aa215e05f3c589664078aa2aca8e940165dcd0df2355e413390899e8d412e9",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/channel-routing/calculate.py": "ed6a7447ad8df439fc03130e6d80f986afc753be52d347ac887a519de421ca21",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/channel-routing/fine-candidates.json": "69e5e342c4b2b4d1a35921146536d138d01e364e1fa44b0c4f45aa9ddf1d8ae1",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-stopping.json": "592cd0140de66f1569a70536bc3d76a56b9c571eea4d8ebd9d4cdb39b633f7aa",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/geometry/results.json": "627d6073a91d47baf81ea086facf5e937d1f2850a155e9c95b7c6c7ed543e1e5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/gas/pumping-interfaces.json": "aaff4201ec4eae1e6c4dd98e0b1f4dccf9c0f61e8dde2957b50309dbaabc73ba",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/gas/joint-ports.json": "7958b0a2d165cff15b65656f0a9d04bd7e6499523efdde8313b89cd2086b0e52",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/gas/inputs.json": "b8ab5bbbe4d66b60ae15aff0751d1578733788b30c1eae71f053a34df5df2082",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/barrier-review/input-snapshot.json": "e124304b6498f081bd59849363ee4d6858315ca58d99f4fe80cdf402fb79b3f0"
+  },
+  "exact_similarity": [
+    {
+      "pitch_um": 5.0,
+      "eta_to_equal_20um_1e4": 625.0,
+      "eta_to_equal_20um_1e5": 6250.0,
+      "reference_front_fraction": {
+        "p": 0.002212793481395226,
+        "he4": 0.0018190368123738967
+      },
+      "stronger_reference_front_fraction": {
+        "p": 0.0010307227571838534,
+        "he4": 0.0008754847389445346
+      }
+    },
+    {
+      "pitch_um": 10.0,
+      "eta_to_equal_20um_1e4": 2500.0,
+      "eta_to_equal_20um_1e5": 25000.0,
+      "reference_front_fraction": {
+        "p": 0.002212793481395226,
+        "he4": 0.0018190368123738967
+      },
+      "stronger_reference_front_fraction": {
+        "p": 0.0010307227571838534,
+        "he4": 0.0008754847389445346
+      }
+    },
+    {
+      "pitch_um": 20.0,
+      "eta_to_equal_20um_1e4": 10000.0,
+      "eta_to_equal_20um_1e5": 100000.0,
+      "reference_front_fraction": {
+        "p": 0.002212793481395226,
+        "he4": 0.0018190368123738967
+      },
+      "stronger_reference_front_fraction": {
+        "p": 0.0010307227571838534,
+        "he4": 0.0008754847389445346
+      }
+    }
+  ],
+  "new_refinements": [
+    {
+      "pitch_um": 5.0,
+      "eta": 1000.0,
+      "cap_um": 0.1,
+      "depth_um": 150.0,
+      "versions": [
+        {
+          "stages": {
+            "A": {
+              "p": {
+                "front_fraction": 0.0015558381814759306,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.002084743336863648,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.084743336863648e-12
+              },
+              "he4": {
+                "front_fraction": 0.00126702701885019,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.002084394308349175,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0843943083491752e-12
+              }
+            },
+            "B1": {
+              "p": {
+                "front_fraction": 0.0026261427848271474,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.002085739546863103,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.085739546863103e-12
+              },
+              "he4": {
+                "front_fraction": 0.0014551895590519904,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020846985637602597,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0846985637602595e-12
+              }
+            },
+            "B2": {
+              "p": {
+                "front_fraction": 0.00020241836984066032,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020835778351253097,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0835778351253097e-12
+              },
+              "he4": {
+                "front_fraction": 4.0727395098928244e-06,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020834005004011615,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0834005004011617e-12
+              }
+            },
+            "C13": {
+              "p": {
+                "front_fraction": 0.00029603609030768723,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.002083697486173368,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0836974861733678e-12
+              },
+              "he4": {
+                "front_fraction": 0.0001397008877748105,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020835666667925554,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0835666667925555e-12
+              }
+            }
+          },
+          "flow_weighted_front_fraction": {
+            "p": 0.0017520058489305546,
+            "he4": 0.0014551894973974745
+          },
+          "depth_resolution_parameter": 320,
+          "half_pitch_cells": 128
+        },
+        {
+          "stages": {
+            "A": {
+              "p": {
+                "front_fraction": 0.001551113657828627,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020846591032388138,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0846591032388136e-12
+              },
+              "he4": {
+                "front_fraction": 0.0012634044530974017,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020843185174151857,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.084318517415186e-12
+              }
+            },
+            "B1": {
+              "p": {
+                "front_fraction": 0.002618210929709359,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.002085630325112162,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0856303251121618e-12
+              },
+              "he4": {
+                "front_fraction": 0.0014508350755975932,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020846170585217772,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0846170585217774e-12
+              }
+            },
+            "B2": {
+              "p": {
+                "front_fraction": 0.00020180485091591115,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.002083525398186889,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.083525398186889e-12
+              },
+              "he4": {
+                "front_fraction": 4.058810442802455e-06,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020833527197019926,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0833527197019926e-12
+              }
+            },
+            "C13": {
+              "p": {
+                "front_fraction": 0.0002950831574769967,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020836424249526544,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.083642424952654e-12
+              },
+              "he4": {
+                "front_fraction": 0.00013910388714470363,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0020835147466613355,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 2.0835147466613357e-12
+              }
+            }
+          },
+          "flow_weighted_front_fraction": {
+            "p": 0.0017466989421222841,
+            "he4": 0.0014508350141343254
+          },
+          "depth_resolution_parameter": 640,
+          "half_pitch_cells": 256
+        }
+      ],
+      "maximum_stage_species_absolute_refinement_difference": 7.931855117788295e-06
+    },
+    {
+      "pitch_um": 10.0,
+      "eta": 1000.0,
+      "cap_um": 0.1,
+      "depth_um": 150.0,
+      "versions": [
+        {
+          "stages": {
+            "A": {
+              "p": {
+                "front_fraction": 0.003639079430197634,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008309960500162321,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.309960500162321e-12
+              },
+              "he4": {
+                "front_fraction": 0.002826930930293517,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.00831524831469741,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.31524831469741e-12
+              }
+            },
+            "B1": {
+              "p": {
+                "front_fraction": 0.005946922899322078,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.00829516256176299,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.29516256176299e-12
+              },
+              "he4": {
+                "front_fraction": 0.0032583770659188453,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008312573269223958,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.312573269223958e-12
+              }
+            },
+            "B2": {
+              "p": {
+                "front_fraction": 0.0004678579547298591,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008330560377829211,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.330560377829211e-12
+              },
+              "he4": {
+                "front_fraction": 5.1728240075355934e-05,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008333235342892582,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.333235342892582e-12
+              }
+            },
+            "C13": {
+              "p": {
+                "front_fraction": 0.000702876473236523,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008329055310920359,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.329055310920359e-12
+              },
+              "he4": {
+                "front_fraction": 0.0008856400397903321,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008327598657649742,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.327598657649742e-12
+              }
+            }
+          },
+          "flow_weighted_front_fraction": {
+            "p": 0.004034032820804635,
+            "he4": 0.003258376947529574
+          },
+          "depth_resolution_parameter": 320,
+          "half_pitch_cells": 128
+        },
+        {
+          "stages": {
+            "A": {
+              "p": {
+                "front_fraction": 0.0036329420968800167,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008309719788440634,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.309719788440635e-12
+              },
+              "he4": {
+                "front_fraction": 0.002822254010916054,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.0083150197684457,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.315019768445699e-12
+              }
+            },
+            "B1": {
+              "p": {
+                "front_fraction": 0.005936941714152959,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008294889628444007,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.294889628444007e-12
+              },
+              "he4": {
+                "front_fraction": 0.003252890637449127,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008312337806896972,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.312337806896971e-12
+              }
+            },
+            "B2": {
+              "p": {
+                "front_fraction": 0.0004670645137350915,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008330363228863205,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.330363228863204e-12
+              },
+              "he4": {
+                "front_fraction": 5.1539888872250444e-05,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008333044604149655,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.333044604149655e-12
+              }
+            },
+            "C13": {
+              "p": {
+                "front_fraction": 0.0007016622075360546,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008328854644015438,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.328854644015439e-12
+              },
+              "he4": {
+                "front_fraction": 0.0008838073105373224,
+                "expected_exit_s_if_Dnormal_1um2_s": 0.008327397622998965,
+                "minimum_Dparallel_m2_s_for_mean_exit_below1s": 8.327397622998966e-12
+              }
+            }
+          },
+          "flow_weighted_front_fraction": {
+            "p": 0.004027244271505736,
+            "he4": 0.0032528905192534675
+          },
+          "depth_resolution_parameter": 640,
+          "half_pitch_cells": 256
+        }
+      ],
+      "maximum_stage_species_absolute_refinement_difference": 9.981185169118806e-06
+    }
+  ],
+  "geometry_and_pumping": [
+    {
+      "pitch_um": 20.0,
+      "slot_fraction": 0.005,
+      "downstream_speed_m_s": 0.001,
+      "slit_C_m_s_H2_He": [
+        0.007202231350088379,
+        0.0051109703783325106
+      ],
+      "via_C_m_s_H2_He": [
+        0.04848530806905375,
+        0.034406972128466703
+      ],
+      "channel_series_C_m_s_H2_He": [
+        0.0062707458335570935,
+        0.0044499537223237125
+      ],
+      "full_series_speed_m_s_H2_He": [
+        0.0008624625282065778,
+        0.0008165122034148893
+      ],
+      "mean_source_partial_pressure_Pa_H2_He": [
+        0.0010150512727293477,
+        0.00046160128904417706
+      ],
+      "mean_source_total_pressure_Pa": 0.0014766525617735248,
+      "immediate_release_peak_total_pressure_Pa": {
+        "A": 4.580402119673444,
+        "B1": 0.05801277046152206,
+        "B2": 3.269828863817393,
+        "C13": 2.3404094583604165
+      },
+      "equivalent_front_open_fraction_for_added_leak0p001_H2_He": [
+        1.065504177612394e-09,
+        1.42148180603447e-09
+      ],
+      "per_slit_cap_area_equivalent_transmission_for_added_leak0p001_H2_He": [
+        2.1310083552247878e-07,
+        2.84296361206894e-07
+      ],
+      "local_plenum_plus_slit_void_m3_m2": 3.825e-05,
+      "local_void_relaxation_s_H2_He": [
+        0.044349752886699706,
+        0.04684559500767714
+      ],
+      "added_physical_thickness_m_preserving350kg_m2": 0.0014238799126282953,
+      "unsupported_caps_mass_kg_m2": 1e-06,
+      "full_face_cap_mass_kg_m2": 0.00019999999999999998,
+      "unsupported_caps_replacement_each_event_W_m2_at2MJkg": 0.00026446993334356994,
+      "connected_hole_production_times_lifetime_relative_to20um_Sp0p001": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "pitch_um": 20.0,
+      "slot_fraction": 0.005,
+      "downstream_speed_m_s": 0.004,
+      "slit_C_m_s_H2_He": [
+        0.007202231350088379,
+        0.0051109703783325106
+      ],
+      "via_C_m_s_H2_He": [
+        0.04848530806905375,
+        0.034406972128466703
+      ],
+      "channel_series_C_m_s_H2_He": [
+        0.0062707458335570935,
+        0.0044499537223237125
+      ],
+      "full_series_speed_m_s_H2_He": [
+        0.0024421773978941237,
+        0.002106498505698319
+      ],
+      "mean_source_partial_pressure_Pa_H2_He": [
+        0.00035846850752625423,
+        0.00017892397483171637
+      ],
+      "mean_source_total_pressure_Pa": 0.0005373924823579707,
+      "immediate_release_peak_total_pressure_Pa": {
+        "A": 1.6175832351243469,
+        "B1": 0.021614896582087113,
+        "B2": 1.1547502123035909,
+        "C13": 0.8265229031583201
+      },
+      "equivalent_front_open_fraction_for_added_leak0p001_H2_He": [
+        3.01711684255746e-09,
+        3.6672437812511894e-09
+      ],
+      "per_slit_cap_area_equivalent_transmission_for_added_leak0p001_H2_He": [
+        6.03423368511492e-07,
+        7.334487562502379e-07
+      ],
+      "local_plenum_plus_slit_void_m3_m2": 3.825e-05,
+      "local_void_relaxation_s_H2_He": [
+        0.0156622528866997,
+        0.01815809500767714
+      ],
+      "added_physical_thickness_m_preserving350kg_m2": 0.0014238799126282953,
+      "unsupported_caps_mass_kg_m2": 1e-06,
+      "full_face_cap_mass_kg_m2": 0.00019999999999999998,
+      "unsupported_caps_replacement_each_event_W_m2_at2MJkg": 0.00026446993334356994,
+      "connected_hole_production_times_lifetime_relative_to20um_Sp0p001": [
+        2.8316330484205934,
+        2.5798738792737392
+      ]
+    },
+    {
+      "pitch_um": 10.0,
+      "slot_fraction": 0.01,
+      "downstream_speed_m_s": 0.001,
+      "slit_C_m_s_H2_He": [
+        0.014404462700176758,
+        0.010221940756665021
+      ],
+      "via_C_m_s_H2_He": [
+        0.04848530806905375,
+        0.034406972128466703
+      ],
+      "channel_series_C_m_s_H2_He": [
+        0.011105221136041506,
+        0.007880676628145771
+      ],
+      "full_series_speed_m_s_H2_He": [
+        0.0009173910175814427,
+        0.0008873959674614575
+      ],
+      "mean_source_partial_pressure_Pa_H2_He": [
+        0.0009542754072799049,
+        0.000424729319758808
+      ],
+      "mean_source_total_pressure_Pa": 0.001379004727038713,
+      "immediate_release_peak_total_pressure_Pa": {
+        "A": 4.306152024012755,
+        "B1": 0.05388481938164184,
+        "B2": 3.074048922043371,
+        "C13": 2.2002781793373605
+      },
+      "equivalent_front_open_fraction_for_added_leak0p001_H2_He": [
+        1.1333639778758997e-09,
+        1.5448847147895747e-09
+      ],
+      "per_slit_cap_area_equivalent_transmission_for_added_leak0p001_H2_He": [
+        1.1333639778758996e-07,
+        1.5448847147895747e-07
+      ],
+      "local_plenum_plus_slit_void_m3_m2": 3.9000000000000006e-05,
+      "local_void_relaxation_s_H2_He": [
+        0.042511861629970366,
+        0.043948813641294694
+      ],
+      "added_physical_thickness_m_preserving350kg_m2": 0.0014246358497445044,
+      "unsupported_caps_mass_kg_m2": 2e-06,
+      "full_face_cap_mass_kg_m2": 0.00019999999999999998,
+      "unsupported_caps_replacement_each_event_W_m2_at2MJkg": 0.0005289398666871399,
+      "connected_hole_production_times_lifetime_relative_to20um_Sp0p001": [
+        0.5318439860158819,
+        0.5434064327208533
+      ]
+    },
+    {
+      "pitch_um": 10.0,
+      "slot_fraction": 0.01,
+      "downstream_speed_m_s": 0.004,
+      "slit_C_m_s_H2_He": [
+        0.014404462700176758,
+        0.010221940756665021
+      ],
+      "via_C_m_s_H2_He": [
+        0.04848530806905375,
+        0.034406972128466703
+      ],
+      "channel_series_C_m_s_H2_He": [
+        0.011105221136041506,
+        0.007880676628145771
+      ],
+      "full_series_speed_m_s_H2_He": [
+        0.0029407636037963375,
+        0.0026532753562120027
+      ],
+      "mean_source_partial_pressure_Pa_H2_He": [
+        0.0002976926420768116,
+        0.00014205200554634739
+      ],
+      "mean_source_total_pressure_Pa": 0.000439744647623159,
+      "immediate_release_peak_total_pressure_Pa": {
+        "A": 1.3433331394636583,
+        "B1": 0.017486945502206884,
+        "B2": 0.9589702705295692,
+        "C13": 0.6863916241352643
+      },
+      "equivalent_front_open_fraction_for_added_leak0p001_H2_He": [
+        3.6330806298693623e-09,
+        4.619138121244414e-09
+      ],
+      "per_slit_cap_area_equivalent_transmission_for_added_leak0p001_H2_He": [
+        3.633080629869362e-07,
+        4.619138121244414e-07
+      ],
+      "local_plenum_plus_slit_void_m3_m2": 3.9000000000000006e-05,
+      "local_void_relaxation_s_H2_He": [
+        0.01326186162997036,
+        0.014698813641294687
+      ],
+      "added_physical_thickness_m_preserving350kg_m2": 0.0014246358497445044,
+      "unsupported_caps_mass_kg_m2": 2e-06,
+      "full_face_cap_mass_kg_m2": 0.00019999999999999998,
+      "unsupported_caps_replacement_each_event_W_m2_at2MJkg": 0.0005289398666871399,
+      "connected_hole_production_times_lifetime_relative_to20um_Sp0p001": [
+        1.7048645637459874,
+        1.6247616049798401
+      ]
+    },
+    {
+      "pitch_um": 5.0,
+      "slot_fraction": 0.02,
+      "downstream_speed_m_s": 0.001,
+      "slit_C_m_s_H2_He": [
+        0.028808925400353517,
+        0.020443881513330042
+      ],
+      "via_C_m_s_H2_He": [
+        0.04848530806905375,
+        0.034406972128466703
+      ],
+      "channel_series_C_m_s_H2_He": [
+        0.01807133029823472,
+        0.012824085948059291
+      ],
+      "full_series_speed_m_s_H2_He": [
+        0.0009475652728801744,
+        0.0009276624867816027
+      ],
+      "mean_source_partial_pressure_Pa_H2_He": [
+        0.0009238874745551834,
+        0.00040629333511612355
+      ],
+      "mean_source_total_pressure_Pa": 0.001330180809671307,
+      "immediate_release_peak_total_pressure_Pa": {
+        "A": 4.16902697618241,
+        "B1": 0.051820843841701714,
+        "B2": 2.97615895115636,
+        "C13": 2.1302125398258327
+      },
+      "equivalent_front_open_fraction_for_added_leak0p001_H2_He": [
+        1.1706418815826226e-09,
+        1.614985473071613e-09
+      ],
+      "per_slit_cap_area_equivalent_transmission_for_added_leak0p001_H2_He": [
+        5.853209407913113e-08,
+        8.074927365358066e-08
+      ],
+      "local_plenum_plus_slit_void_m3_m2": 4.05e-05,
+      "local_void_relaxation_s_H2_He": [
+        0.04274111890666711,
+        0.043658119819536066
+      ],
+      "added_physical_thickness_m_preserving350kg_m2": 0.0014261477239769782,
+      "unsupported_caps_mass_kg_m2": 4e-06,
+      "full_face_cap_mass_kg_m2": 0.00019999999999999998,
+      "unsupported_caps_replacement_each_event_W_m2_at2MJkg": 0.0010578797333742798,
+      "connected_hole_production_times_lifetime_relative_to20um_Sp0p001": [
+        0.2746685339624439,
+        0.28403203372278174
+      ]
+    },
+    {
+      "pitch_um": 5.0,
+      "slot_fraction": 0.02,
+      "downstream_speed_m_s": 0.004,
+      "slit_C_m_s_H2_He": [
+        0.028808925400353517,
+        0.020443881513330042
+      ],
+      "via_C_m_s_H2_He": [
+        0.04848530806905375,
+        0.034406972128466703
+      ],
+      "channel_series_C_m_s_H2_He": [
+        0.01807133029823472,
+        0.012824085948059291
+      ],
+      "full_series_speed_m_s_H2_He": [
+        0.0032750776784270367,
+        0.0030489825093977458
+      ],
+      "mean_source_partial_pressure_Pa_H2_He": [
+        0.00026730470935209025,
+        0.00012361602090366286
+      ],
+      "mean_source_total_pressure_Pa": 0.0003909207302557531,
+      "immediate_release_peak_total_pressure_Pa": {
+        "A": 1.2062080916333142,
+        "B1": 0.015422969962266768,
+        "B2": 0.8610802996425586,
+        "C13": 0.6163259846237366
+      },
+      "equivalent_front_open_fraction_for_added_leak0p001_H2_He": [
+        4.0460992034349275e-09,
+        5.308032318316708e-09
+      ],
+      "per_slit_cap_area_equivalent_transmission_for_added_leak0p001_H2_He": [
+        2.0230496017174638e-07,
+        2.654016159158354e-07
+      ],
+      "local_plenum_plus_slit_void_m3_m2": 4.05e-05,
+      "local_void_relaxation_s_H2_He": [
+        0.01236611890666711,
+        0.013283119819536065
+      ],
+      "added_physical_thickness_m_preserving350kg_m2": 0.0014261477239769782,
+      "unsupported_caps_mass_kg_m2": 4e-06,
+      "full_face_cap_mass_kg_m2": 0.00019999999999999998,
+      "unsupported_caps_replacement_each_event_W_m2_at2MJkg": 0.0010578797333742798,
+      "connected_hole_production_times_lifetime_relative_to20um_Sp0p001": [
+        0.9493391223724527,
+        0.933538560919856
+      ]
+    }
+  ],
+  "finite_slit_component": {
+    "incident_fraction_stopping_in100nm_cap_CSDA_H_He": {
+      "p": 0.000713596101422928,
+      "he4": 0.0008914869146260607
+    },
+    "scope": "Normal straight-CSDA component only. Over slit projections the stopped cap component can return directly, while transmitted projectiles need the previously proposed stopping floor and sealed extraction. This screen does not assign reflection, cap trapping or a floor capture efficiency. Whole-surface mobile front fraction is (1-fslot)*Fsolid + fslot*Fslot, before independent reflection; Fslot includes roof stops and eventual floor return.",
+    "floor_or_roof_front_return_sensitivities": [
+      {
+        "pitch_um": 20.0,
+        "slot_fraction": 0.005,
+        "extra_front_fraction_if_all_cap_stops_return": {
+          "p": 3.56798050711464e-06,
+          "he4": 4.457434573130303e-06
+        },
+        "additional_fraction_if_transmitted_floor_stream_returns_fraction": {
+          "0.001": 5e-06,
+          "0.01": 5e-05,
+          "0.1": 0.0005
+        }
+      },
+      {
+        "pitch_um": 10.0,
+        "slot_fraction": 0.01,
+        "extra_front_fraction_if_all_cap_stops_return": {
+          "p": 7.13596101422928e-06,
+          "he4": 8.914869146260606e-06
+        },
+        "additional_fraction_if_transmitted_floor_stream_returns_fraction": {
+          "0.001": 1e-05,
+          "0.01": 0.0001,
+          "0.1": 0.001
+        }
+      },
+      {
+        "pitch_um": 5.0,
+        "slot_fraction": 0.02,
+        "extra_front_fraction_if_all_cap_stops_return": {
+          "p": 1.427192202845856e-05,
+          "he4": 1.7829738292521213e-05
+        },
+        "additional_fraction_if_transmitted_floor_stream_returns_fraction": {
+          "0.001": 2e-05,
+          "0.01": 0.0002,
+          "0.1": 0.002
+        }
+      }
+    ]
+  },
+  "direct_cold_panel_comparison": [
+    {
+      "Sp_m_s": 0.001,
+      "same_downstream_shared_mouth_fraction": 0.0001,
+      "same_molecular_transmission": 0.1,
+      "port_C_H2_He_m_s": [
+        0.008102510268849427,
+        0.005749841675624074
+      ],
+      "active_area_fraction_Hgetter_Hecryo": [
+        6.248393143661026e-05,
+        4.8666935800053074e-05
+      ],
+      "panel_only_mass_kg_m2_receiver_at10kg_m2_active": 0.0011115086723666333,
+      "He_200K_to5K_heat_W_m2": 0.00441535596498778,
+      "He_refrigeration_W_m2_at0p5Carnot_200K_sink": 0.34439776526904686,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001
+    },
+    {
+      "Sp_m_s": 0.004,
+      "same_downstream_shared_mouth_fraction": 0.0001,
+      "same_molecular_transmission": 0.1,
+      "port_C_H2_He_m_s": [
+        0.008102510268849427,
+        0.005749841675624074
+      ],
+      "active_area_fraction_Hgetter_Hecryo": [
+        0.00043270362347302266,
+        0.000528414068788414
+      ],
+      "panel_only_mass_kg_m2_receiver_at10kg_m2_active": 0.009611176922614368,
+      "He_200K_to5K_heat_W_m2": 0.04794088989276046,
+      "He_refrigeration_W_m2_at0p5Carnot_200K_sink": 3.739389411635316,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001
+    }
+  ],
+  "warm_booster_requirement": {
+    "inlet_speed_m_s": 0.004,
+    "existing_downstream_line_speed_m_s": 0.001,
+    "ideal_pressure_ratio_at_equal_throughput": 4.0,
+    "extra_isothermal_work_W_m2_at1000K_reversible": 1.736121268958404e-06,
+    "extra_electric_W_m2_at50percent_free_energy_efficiency": 3.472242537916808e-06,
+    "minimum_unit_admission_area_fraction_H2_He": [
+      4.936741660640942e-06,
+      6.956713289963501e-06
+    ],
+    "immediate_release_peak_gas_work_W_m2_at50percent": {
+      "A": 0.010952904300453165,
+      "B1": 0.00013455511284216965,
+      "B2": 0.00781899095444972,
+      "C13": 0.005596513052938352
+    },
+    "scope": "Conditional warm booster between reduced-pressure source line and original downstream line. Same throughput; temperature unchanged. Thermodynamic gas-work floor only: moving surfaces, gas admission, seals, drive losses, hot compatibility, pump mass and peak throughput require apparatus. Existing downstream sorber/optical area can remain if its actual inlet state and load remain unchanged. No measured warm pumping speed or efficiency inferred."
+  },
+  "limits": [
+    "Already-mobile particles, constant diffusion tensor, mean projected depth with no straggling; zero-width mathematical channels and reflecting rear.",
+    "Physical slit width remains100nm. Finite cap over slits, direct floor impacts, surface damage, seals and finite sink backpressure are separate. Relative cap-leak and repair conditions refer only to the slit-supported area; the full face cap remains0.0002kg/m\u00b2.",
+    "Gas conductance uses inherited hydraulic-diameter/slender-channel approximation. Side-plenum distribution and doglegs add resistance. No lower chamber pressure is credited until effective apparatus speed is supplied.",
+    "The.001 added plenum-leak fraction is a comparison budget, additional to PDE front loss and primary reflection.",
+    "First-exit times scale inversely with actual Dnormal. Required anisotropy alone does not establish liberation, rate or hot irradiated material properties."
+  ],
+  "checks": [
+    {
+      "name": "exact_similarity_pitch5.0",
+      "pass": true
+    },
+    {
+      "name": "exact_similarity_pitch10.0",
+      "pass": true
+    },
+    {
+      "name": "grid_refinement_pitch5.0",
+      "pass": true
+    },
+    {
+      "name": "grid_refinement_pitch10.0",
+      "pass": true
+    },
+    {
+      "name": "series_pitch20.0_Sp0.001",
+      "pass": true
+    },
+    {
+      "name": "leak_partition_pitch20.0_Sp0.001",
+      "pass": true
+    },
+    {
+      "name": "series_pitch20.0_Sp0.004",
+      "pass": true
+    },
+    {
+      "name": "leak_partition_pitch20.0_Sp0.004",
+      "pass": true
+    },
+    {
+      "name": "series_pitch10.0_Sp0.001",
+      "pass": true
+    },
+    {
+      "name": "leak_partition_pitch10.0_Sp0.001",
+      "pass": true
+    },
+    {
+      "name": "series_pitch10.0_Sp0.004",
+      "pass": true
+    },
+    {
+      "name": "leak_partition_pitch10.0_Sp0.004",
+      "pass": true
+    },
+    {
+      "name": "series_pitch5.0_Sp0.001",
+      "pass": true
+    },
+    {
+      "name": "leak_partition_pitch5.0_Sp0.001",
+      "pass": true
+    },
+    {
+      "name": "series_pitch5.0_Sp0.004",
+      "pass": true
+    },
+    {
+      "name": "leak_partition_pitch5.0_Sp0.004",
+      "pass": true
+    },
+    {
+      "name": "cold_port_viable0.001",
+      "pass": true
+    },
+    {
+      "name": "cold_port_viable0.004",
+      "pass": true
+    }
+  ]
+}

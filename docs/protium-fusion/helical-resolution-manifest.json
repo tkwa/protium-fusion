@@ -1,0 +1,347 @@
+{
+  "scope": "Numerical resolution of the specified weak static-screened helical operator at one warm source state. Physical qualification and transport remain open.",
+  "upstream_git_commit": "897e0911",
+  "python": "3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:07:37) [GCC 12.3.0]",
+  "all_jobs_terminal": true,
+  "figure_visually_inspected": true,
+  "validation": {
+    "operator_regression": {
+      "passed": 28,
+      "total": 28,
+      "seconds": 1.1481842559296638
+    },
+    "resolution": {
+      "passed": 128,
+      "total": 128,
+      "seconds": 27.71274744695984
+    }
+  },
+  "source_operator_physically_qualified": false,
+  "runs": [
+    {
+      "output": "matched-aligned-warm-cut1-128-64-64.json",
+      "backend": "aligned",
+      "cut_factor": 1.0,
+      "quadrature": {
+        "nk": 128,
+        "nmu": 64,
+        "nphi": 64
+      },
+      "seconds": 153.86931824707426,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend aligned --cut 1 --nk 128 --nmu 64 --nphi 64"
+    },
+    {
+      "output": "matched-aligned-warm-cut1-96-48-48.json",
+      "backend": "aligned",
+      "cut_factor": 1.0,
+      "quadrature": {
+        "nk": 96,
+        "nmu": 48,
+        "nphi": 48
+      },
+      "seconds": 66.12047811690718,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend aligned --cut 1 --nk 96 --nmu 48 --nphi 48"
+    },
+    {
+      "output": "matched-moment-warm-cut1-256-192-32.json",
+      "backend": "moment",
+      "cut_factor": 1.0,
+      "quadrature": {
+        "nk": 256,
+        "nmu": 192,
+        "nphi": 32
+      },
+      "seconds": 7.549278091872111,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend moment --cut 1 --nk 256 --nmu 192 --nphi 32"
+    },
+    {
+      "output": "matched-moment-warm-cut1-256-64-32.json",
+      "backend": "moment",
+      "cut_factor": 1.0,
+      "quadrature": {
+        "nk": 256,
+        "nmu": 64,
+        "nphi": 32
+      },
+      "seconds": 2.495493173133582,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend moment --cut 1 --nk 256 --nmu 64 --nphi 32"
+    },
+    {
+      "output": "matched-moment-warm-cut1-384-192-32.json",
+      "backend": "moment",
+      "cut_factor": 1.0,
+      "quadrature": {
+        "nk": 384,
+        "nmu": 192,
+        "nphi": 32
+      },
+      "seconds": 12.019157772185281,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend moment --cut 1 --nk 384 --nmu 192 --nphi 32"
+    },
+    {
+      "output": "matched-moment-warm-cut2-512-192-32.json",
+      "backend": "moment",
+      "cut_factor": 2.0,
+      "quadrature": {
+        "nk": 512,
+        "nmu": 192,
+        "nphi": 32
+      },
+      "seconds": 30.381322372006252,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend moment --cut 2 --nk 512 --nmu 192 --nphi 32"
+    },
+    {
+      "output": "matched-moment-warm-cut2-768-192-32.json",
+      "backend": "moment",
+      "cut_factor": 2.0,
+      "quadrature": {
+        "nk": 768,
+        "nmu": 192,
+        "nphi": 32
+      },
+      "seconds": 101.62971157510765,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend moment --cut 2 --nk 768 --nmu 192 --nphi 32"
+    },
+    {
+      "output": "matched-moment-warm-cut4-1024-256-32.json",
+      "backend": "moment",
+      "cut_factor": 4.0,
+      "quadrature": {
+        "nk": 1024,
+        "nmu": 256,
+        "nphi": 32
+      },
+      "seconds": 366.41399658611044,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend moment --cut 4 --nk 1024 --nmu 256 --nphi 32"
+    },
+    {
+      "output": "matched-recurrent-warm-cut2-512-192-32.json",
+      "backend": "recurrent",
+      "cut_factor": 2.0,
+      "quadrature": {
+        "nk": 512,
+        "nmu": 192,
+        "nphi": 32
+      },
+      "seconds": 3.836264227051288,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend recurrent --cut 2 --nk 512 --nmu 192 --nphi 32"
+    },
+    {
+      "output": "matched-streaming-warm-cut2-512-192-32.json",
+      "backend": "streaming",
+      "cut_factor": 2.0,
+      "quadrature": {
+        "nk": 512,
+        "nmu": 192,
+        "nphi": 32
+      },
+      "seconds": 5.088214277056977,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend streaming --cut 2 --nk 512 --nmu 192 --nphi 32"
+    },
+    {
+      "output": "matched-streaming-warm-cut4-1536-256-32.json",
+      "backend": "streaming",
+      "cut_factor": 4.0,
+      "quadrature": {
+        "nk": 1536,
+        "nmu": 256,
+        "nphi": 32
+      },
+      "seconds": 35.76493073790334,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend streaming --cut 4 --nk 1536 --nmu 256 --nphi 32"
+    },
+    {
+      "output": "matched-streaming-warm-cut8-2048-384-32.json",
+      "backend": "streaming",
+      "cut_factor": 8.0,
+      "quadrature": {
+        "nk": 2048,
+        "nmu": 384,
+        "nphi": 32
+      },
+      "seconds": 124.40535203111358,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend streaming --cut 8 --nk 2048 --nmu 384 --nphi 32"
+    },
+    {
+      "output": "matched-streaming-warm-cut8-3072-512-48.json",
+      "backend": "streaming",
+      "cut_factor": 8.0,
+      "quadrature": {
+        "nk": 3072,
+        "nmu": 512,
+        "nphi": 48
+      },
+      "seconds": 346.9354716441594,
+      "terminal": true,
+      "command": "python resolved_helical_screen.py --backend streaming --cut 8 --nk 3072 --nmu 512 --nphi 48"
+    }
+  ],
+  "input_files": {
+    "finite_gyro_spectrum.py": {
+      "bytes": 3905,
+      "sha256": "1ce9216ae5019799fa9b0e5fbe56c10602969689f36b9bba639a707e0120383a"
+    },
+    "guiding_center_collisions.py": {
+      "bytes": 6704,
+      "sha256": "e697efa17a4bec0c319dbe7c726b21d76d7db493ebaaf47cad74c898a3980177"
+    },
+    "network-plant.json": {
+      "bytes": 870330,
+      "sha256": "28b61aeba0a42d293ecc0a839462ff87d332a991287747ec4a2602db8102049e"
+    },
+    "lepton_collision_screen.py": {
+      "bytes": 9821,
+      "sha256": "43d92df5bb5f396b865cad420e2aea74052c04ff0ff6b9a475c8535248577d65"
+    },
+    "electron_wall_orbits.py": {
+      "bytes": 8188,
+      "sha256": "06995115d8ca18c268c683e088a4127dc1fc8277bdfd1203db2b63ff5dc5f558"
+    },
+    "catalyst_penning.py": {
+      "bytes": 6224,
+      "sha256": "02a71bc8a94e7d2816e7f84ebbb28f1ab0ef9942f35ee18772b4ae40627f7324"
+    },
+    "nonneutral_screen.py": {
+      "bytes": 12486,
+      "sha256": "374d977d722ac2dd4fc5b05cf1cd90afc05cddd92febce80ab126167649ba29d"
+    },
+    "matched-helical-warm-cut1-96-64-64.json": {
+      "bytes": 9292,
+      "sha256": "ae7bd79e15e8fbc6e43d4ba2202bda77b898bb954e5d899f45246d6ed775b83d"
+    },
+    "matched-helical-warm-cut1-160-128-96.json": {
+      "bytes": 9289,
+      "sha256": "c0015c3f0ecf4921062419e36aca9d11a161c0db33a5d0fcc402953146b4e590"
+    },
+    "matched-helical-warm-cut2-96-64-64.json": {
+      "bytes": 9302,
+      "sha256": "54c47b17ea014355104ba3d3f777a7aa331d0491e32d71d1afa316081b15a3e2"
+    },
+    "matched-helical-warm-cut4-96-64-64.json": {
+      "bytes": 9281,
+      "sha256": "01eed039663fd4fb7927c05dc458dcb8249ab03363930215bad7f0d9ae8ea4f0"
+    }
+  },
+  "files": {
+    "aligned_helical_spectrum.py": {
+      "bytes": 3486,
+      "sha256": "eb177692833c18e0a92c36cf15fbb20b73d193d0a8173c3f26ecd137b8b48e35"
+    },
+    "moment_helical_spectrum.py": {
+      "bytes": 3175,
+      "sha256": "49305864e298e4679a1abca300a17bed025af357f6fd47a1d47df901fb41afdb"
+    },
+    "recurrent_helical_spectrum.py": {
+      "bytes": 3460,
+      "sha256": "e8e248b061eb484e971d496e3fcd9f134f6d60aebaa9872291804396ce4ca816"
+    },
+    "streaming_helical_spectrum.py": {
+      "bytes": 3582,
+      "sha256": "57076b116899c37b37279630e777530185b3c659fa3a522625b3b60f51c9e4c8"
+    },
+    "fast_bessel_grid.py": {
+      "bytes": 1715,
+      "sha256": "4b491862db8c266ad44105c5f8e2ae5561ac777f0c72a8c455064b54ab2ee7eb"
+    },
+    "resolved_helical_screen.py": {
+      "bytes": 4588,
+      "sha256": "5d35b64f47a9f68c6e24cac19554c537d683e1b5a3ad6db0557ae47c8ed2e132"
+    },
+    "validate_streaming_helical.py": {
+      "bytes": 4241,
+      "sha256": "c6aa89e3044ceb662ba39ebfb69c82edce37cc157774032db166961227d5f12e"
+    },
+    "validate_helical_resolution.py": {
+      "bytes": 6019,
+      "sha256": "4ee5791f8203ab6d1f165ad9928176e374fb3a5c15fb5bd62d6ff9b1c2fade1a"
+    },
+    "plot_helical_resolution.py": {
+      "bytes": 3795,
+      "sha256": "9568e97ec60f1cd8307f5b6911ef5338b026195e34f25655615ecace9b505003"
+    },
+    "matched-aligned-warm-cut1-128-64-64.json": {
+      "bytes": 9395,
+      "sha256": "f68ffb87b9d4ec299470e036ddc510c6fc017ad535c49e086124384f46d0072a"
+    },
+    "matched-aligned-warm-cut1-96-48-48.json": {
+      "bytes": 9395,
+      "sha256": "153f59d4319cc6a0efb57db798426c121f6fda5c03fe59b90f25a6488f973882"
+    },
+    "matched-moment-warm-cut1-256-192-32.json": {
+      "bytes": 9397,
+      "sha256": "e3a93d2b369ada0cdfda6d80a96b8e94a4f751c133fd92ecb2b9ea33bbde1ff4"
+    },
+    "matched-moment-warm-cut1-256-64-32.json": {
+      "bytes": 9400,
+      "sha256": "e06b8ba6eb43cfcfa4652c10a71c4425ef18dffcd2e6b23a5f1c74b24e6f6745"
+    },
+    "matched-moment-warm-cut1-384-192-32.json": {
+      "bytes": 9400,
+      "sha256": "5dc5e120206fd4c2a7cf5765bcd216ed7b6a1d49e09efb2adcc8b2ee783f917a"
+    },
+    "matched-moment-warm-cut2-512-192-32.json": {
+      "bytes": 9399,
+      "sha256": "4aafd95c5d0d31e0b9c18157ce7f1554ce57334c562c127270e4b4f6a2b931e2"
+    },
+    "matched-moment-warm-cut2-768-192-32.json": {
+      "bytes": 9400,
+      "sha256": "c21c7a2dba22655b7d8e17e56ca8a8e329d233c51d51b87c494ec978dc4b2896"
+    },
+    "matched-moment-warm-cut4-1024-256-32.json": {
+      "bytes": 9397,
+      "sha256": "8f4fb86b8968751feba036653acf16db8293970776ab878fc31ad5b4fb6d0648"
+    },
+    "matched-recurrent-warm-cut2-512-192-32.json": {
+      "bytes": 9437,
+      "sha256": "de49742f36001fcc9a63d8ae1ff92107470c179f026ceed7e4bfd37a3955b203"
+    },
+    "matched-streaming-warm-cut2-512-192-32.json": {
+      "bytes": 9446,
+      "sha256": "9ed4a729693962eaf90d1cd16928439281e34f097748e32e06a7b1c0fe03e3d4"
+    },
+    "matched-streaming-warm-cut4-1536-256-32.json": {
+      "bytes": 9452,
+      "sha256": "26fe863863cc00e9694451d3c405e638a145fbdc0e8e2243fc1c1accb7165d0c"
+    },
+    "matched-streaming-warm-cut8-2048-384-32.json": {
+      "bytes": 9460,
+      "sha256": "fc669b6feb5a02940cc5190b1e05a607c6111cb15dc47ceae8ac1e387dc9cd2f"
+    },
+    "matched-streaming-warm-cut8-3072-512-48.json": {
+      "bytes": 9457,
+      "sha256": "5c82839ff92542a71b9b2a86f3d6290a202319d6be575bc641f48f493db5f1c1"
+    },
+    "streaming-helical-validation.json": {
+      "bytes": 16665,
+      "sha256": "a86ed1871c707917bbf09ee54916e9c5936cbb6cea22c7a9d60cebce1c7a496c"
+    },
+    "helical-resolution-validation.json": {
+      "bytes": 27972,
+      "sha256": "57d1ed63e6d7591aa305af39cd2421325b25daac25ed65c3a7a6960f04bf07e5"
+    },
+    "helical-resolution-summary.png": {
+      "bytes": 213470,
+      "sha256": "fda85ace1cdb15a6e24f158f948caea03bb482dba0aead920545b0bf487b0b08"
+    },
+    "helical-resolution-summary.svg": {
+      "bytes": 128711,
+      "sha256": "90d7ca557ceb57a118d695a080ce6f929191789c706d31d847f38d058b58f706"
+    },
+    "HELICAL-RESOLUTION.md": {
+      "bytes": 8524,
+      "sha256": "ba0dbd1e98a8b63c859e42610c351091d1afc2839484bac6548b4f55e857c0f3"
+    }
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "scope": "Explicit refined B2 receiver sensitivity; all-surface baseline with unchanged material and scheduling assumptions.",
+  "resolution_status": "Completed B2128 with matched initial energy; A/B1/C13 remain64. Mesh convergence and pulse preparation remain separate questions.",
+  "radius_reference_m": 1000000000.0,
+  "material_properties": {
+    "k_W_m_K": 100.0,
+    "rho_kg_m3": 2000.0,
+    "cp_J_kg_K": 1000.0
+  },
+  "stages": {
+    "c12": {
+      "stage": "B2",
+      "source_sha256": {
+        "record": "a5da1309fc94a59fb5d2b0defdcae683dec4d008cd2ed2d3191589885ba10b81",
+        "initial": "dea8f53e9e362e859a05bd75e160510918d2693d43a8b325dd6f3a1ac79d39f2",
+        "raw_trace": "7740294f6f8bb3555da3a85c131a7cb39b34ada52999428c1748b3bfef7f7b17"
+      },
+      "source_success": true,
+      "source_termination": "final_time",
+      "source_zones": 128,
+      "material_peak_rise_K": 299.90638094287806,
+      "prompt_peak_rise_K": 488.9566986839693,
+      "prompt_only_peak_rise_K": 394.08645128171133,
+      "delayed_decay_peak_rise_K": 94.87024740225799,
+      "sum_separate_maxima_K": 788.8630796268474,
+      "received_energy_J": 7.760029067203605e+26,
+      "prompt_radiation_J": 2.7984637436236648e+23,
+      "delayed_decay_energy_J": {
+        "n13": 5.193818222661294e+24,
+        "o14": 2.7773036891351152e+26,
+        "o15": 3.666616970223785e+17
+      },
+      "ballistic": {
+        "peak_rise_K": 299.90638094287806,
+        "peak_flux_W_m2": 676650.6562907948,
+        "peak_time_s": 111.3895827635642,
+        "energy_quadrature_relative_error": -1.8352351854766802e-05,
+        "velocity_energy_normalization": 1.001016647305078,
+        "arrival_1_50_99_percent_energy_s": [
+          48.68100165734075,
+          98.19421020939443,
+          237.043726625268
+        ]
+      },
+      "timing_at_R1e9": {
+        "mass999": {
+          "incoming_s": 2897.7072912869485,
+          "outgoing_s": 980.6739918057941,
+          "occupied_s": 3878.3812830927427
+        },
+        "energy99": {
+          "incoming_s": 741.1736691977281,
+          "outgoing_s": 237.043726625268,
+          "occupied_s": 978.2173958229962
+        },
+        "full_resolved": {
+          "incoming_s": 49429.450472859484,
+          "outgoing_s": 21388.238414065025,
+          "occupied_s": 70817.6888869245
+        }
+      },
+      "source_rating": {
+        "peak_kinetic_electric_W": 3.058727656960988e+23,
+        "peak_total_prepared_electric_W": 3.1430039985401964e+23,
+        "initial_internal_reconstruction_relative_error": -1.887379141862766e-15,
+        "electric_storage_J": 6.790655059904756e+25,
+        "initial_kinetic_reconstruction_relative_error": -1.1102230246251565e-16,
+        "scope": "Total prepared kinetic plus exact per-cell internal energy in launch-time bins at 60% efficiency; switching/focusing and realizing the thermodynamic path remain engineering requirements."
+      },
+      "central_initial_shell_mass_fraction": 4.76837158203125e-07,
+      "central_outgoing_shell_mass_fraction": 4.76837158203125e-07,
+      "maximum_surface_radius_m": 679.3242617789306
+    },
+    "c13": {
+      "stage": "C13",
+      "source_sha256": {
+        "record": "541035f16ee1e44defabefe57df5c9e6d94a89b7611f7eb8e657873023627241",
+        "initial": "8b397cfcd7b46f7d3aee6ab2ad08277107ef6999444d3f5d9df83a114bf35a12",
+        "raw_trace": "3ed673fa2c6a32e47331c82ead9b285ed7983311c6422a33c63d96be385e38ea"
+      },
+      "source_success": true,
+      "source_termination": "final_time",
+      "source_zones": 64,
+      "material_peak_rise_K": 318.7601564080023,
+      "prompt_peak_rise_K": 728.9295384292714,
+      "prompt_only_peak_rise_K": 727.8105751660495,
+      "delayed_decay_peak_rise_K": 1.1189632632218853,
+      "sum_separate_maxima_K": 1047.6896948372737,
+      "received_energy_J": 5.5478250548013954e+26,
+      "prompt_radiation_J": 7.427778151749336e+23,
+      "delayed_decay_energy_J": {
+        "n13": 3.1302830364246717e+18,
+        "o14": 9.699800392949699e+18,
+        "o15": 4.3213251230069483e+24
+      },
+      "ballistic": {
+        "peak_rise_K": 318.7601564080023,
+        "peak_flux_W_m2": 847755.1850647868,
+        "peak_time_s": 89.56187148535238,
+        "energy_quadrature_relative_error": 7.299820866291107e-05,
+        "velocity_energy_normalization": 1.0013538125879553,
+        "arrival_1_50_99_percent_energy_s": [
+          53.727897338754616,
+          85.76213362717118,
+          244.16680641965112
+        ]
+      },
+      "timing_at_R1e9": {
+        "mass999": {
+          "incoming_s": 3219.2989122362883,
+          "outgoing_s": 1142.8345299752925,
+          "occupied_s": 4362.133442211581
+        },
+        "energy99": {
+          "incoming_s": 819.8015157942791,
+          "outgoing_s": 244.16680641965112,
+          "occupied_s": 1063.9683222139302
+        },
+        "full_resolved": {
+          "incoming_s": 27328.00862785134,
+          "outgoing_s": 9516.601743091378,
+          "occupied_s": 36844.61037094272
+        }
+      },
+      "source_rating": {
+        "peak_kinetic_electric_W": 2.245826857994114e+23,
+        "peak_total_prepared_electric_W": 2.3064979788492368e+23,
+        "initial_internal_reconstruction_relative_error": 1.3322676295501878e-15,
+        "electric_storage_J": 5.547110644201769e+25,
+        "initial_kinetic_reconstruction_relative_error": -1.1102230246251565e-16,
+        "scope": "Total prepared kinetic plus exact per-cell internal energy in launch-time bins at 60% efficiency; switching/focusing and realizing the thermodynamic path remain engineering requirements."
+      },
+      "central_initial_shell_mass_fraction": 3.814697265625e-06,
+      "central_outgoing_shell_mass_fraction": 3.814697265625e-06,
+      "maximum_surface_radius_m": 811.8841984105429
+    },
+    "n14": {
+      "stage": "A",
+      "source_sha256": {
+        "record": "75effd3fc01380a80ce2cd20e0cc9762fa569d0b2d0681f9304793704a3390e3",
+        "initial": "79c76b247dedb3f67c3a7294410fc921caf6d27db14d2a467ba231a751aeff09",
+        "raw_trace": "46217f1e130f675881aba204523ac5861a51517e087a3ab9a46593ca4286077c"
+      },
+      "source_success": true,
+      "source_termination": "final_time",
+      "source_zones": 64,
+      "material_peak_rise_K": 187.87976034648682,
+      "prompt_peak_rise_K": 332.68103316679856,
+      "prompt_only_peak_rise_K": 314.85830347407597,
+      "delayed_decay_peak_rise_K": 17.82272969272258,
+      "sum_separate_maxima_K": 520.5607935132854,
+      "received_energy_J": 3.9007294212115775e+26,
+      "prompt_radiation_J": 2.70929665516503e+23,
+      "delayed_decay_energy_J": {
+        "n13": 4.428797612223577e+17,
+        "o14": 1.817977616172132e+18,
+        "o15": 6.882981640300672e+25
+      },
+      "ballistic": {
+        "peak_rise_K": 187.87976034648682,
+        "peak_flux_W_m2": 626965.3326391265,
+        "peak_time_s": 116.23234212027576,
+        "energy_quadrature_relative_error": -5.370748194077901e-05,
+        "velocity_energy_normalization": 1.001492532947888,
+        "arrival_1_50_99_percent_energy_s": [
+          74.47852970467997,
+          118.31133197960361,
+          287.76152017672837
+        ]
+      },
+      "timing_at_R1e9": {
+        "mass999": {
+          "incoming_s": 3142.495782155741,
+          "outgoing_s": 1214.1218579676033,
+          "occupied_s": 4356.617640123344
+        },
+        "energy99": {
+          "incoming_s": 800.2161502274827,
+          "outgoing_s": 287.76152017672837,
+          "occupied_s": 1087.977670404211
+        },
+        "full_resolved": {
+          "incoming_s": 26676.044943230336,
+          "outgoing_s": 10219.109151413195,
+          "occupied_s": 36895.15409464353
+        }
+      },
+      "source_rating": {
+        "peak_kinetic_electric_W": 2.4149353692946532e+23,
+        "peak_total_prepared_electric_W": 2.480175795390554e+23,
+        "initial_internal_reconstruction_relative_error": -4.440892098500626e-16,
+        "electric_storage_J": 5.821938610862115e+25,
+        "initial_kinetic_reconstruction_relative_error": -1.1102230246251565e-16,
+        "scope": "Total prepared kinetic plus exact per-cell internal energy in launch-time bins at 60% efficiency; switching/focusing and realizing the thermodynamic path remain engineering requirements."
+      },
+      "central_initial_shell_mass_fraction": 3.814697265625e-06,
+      "central_outgoing_shell_mass_fraction": 3.814697265625e-06,
+      "maximum_surface_radius_m": 524.60283771598
+    },
+    "n15": {
+      "stage": "B1",
+      "source_sha256": {
+        "record": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+        "initial": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+        "raw_trace": "906322b40dd28f298231d41d4414c4310c20cd94fa90cf1bff8639ad747d1107"
+      },
+      "source_success": true,
+      "source_termination": "final_time",
+      "source_zones": 64,
+      "material_peak_rise_K": 1.2604704028617015,
+      "prompt_peak_rise_K": 125.40654726950874,
+      "prompt_only_peak_rise_K": 125.40654230664069,
+      "delayed_decay_peak_rise_K": 4.962868048323787e-06,
+      "sum_separate_maxima_K": 126.66701767237043,
+      "received_energy_J": 2.358594784642325e+24,
+      "prompt_radiation_J": 1.3653241812106099e+23,
+      "delayed_decay_energy_J": {
+        "n13": 4.243193286558798e+19,
+        "o14": 1243853665313456.5,
+        "o15": 570.2007887340059
+      },
+      "ballistic": {
+        "peak_rise_K": 1.2604704028617015,
+        "peak_flux_W_m2": 3753.5414259932504,
+        "peak_time_s": 158.1609260493864,
+        "energy_quadrature_relative_error": -6.100160393129883e-05,
+        "velocity_energy_normalization": 1.0003275286437143,
+        "arrival_1_50_99_percent_energy_s": [
+          108.40255560877107,
+          147.0024947969977,
+          333.4354089799976
+        ]
+      },
+      "timing_at_R1e9": {
+        "mass999": {
+          "incoming_s": 3447.6176932905123,
+          "outgoing_s": 1408.1246145219748,
+          "occupied_s": 4855.742307812487
+        },
+        "energy99": {
+          "incoming_s": 855.4449790485094,
+          "outgoing_s": 333.4354089799976,
+          "occupied_s": 1188.880388028507
+        },
+        "full_resolved": {
+          "incoming_s": 29284.235679375342,
+          "outgoing_s": 11970.854896680683,
+          "occupied_s": 41255.09057605603
+        }
+      },
+      "source_rating": {
+        "peak_kinetic_electric_W": 2.031734019356405e+21,
+        "peak_total_prepared_electric_W": 2.099892353539986e+21,
+        "initial_internal_reconstruction_relative_error": 2.220446049250313e-16,
+        "electric_storage_J": 5.325027970943342e+23,
+        "initial_kinetic_reconstruction_relative_error": -1.1102230246251565e-16,
+        "scope": "Total prepared kinetic plus exact per-cell internal energy in launch-time bins at 60% efficiency; switching/focusing and realizing the thermodynamic path remain engineering requirements."
+      },
+      "central_initial_shell_mass_fraction": 3.814697265625e-06,
+      "central_outgoing_shell_mass_fraction": 3.814697265625e-06,
+      "maximum_surface_radius_m": 404.4788422420268
+    }
+  },
+  "minimum_screened_absorber_sigma": 5000.0,
+  "peak_source_electric_W_at_R1e9": 3.1430039985401964e+23,
+  "peak_kinetic_source_electric_W_at_R1e9": 3.058727656960988e+23,
+  "occupied_s_per_He_at_R1e9": {
+    "mass999": 1.9221485961004523e-33,
+    "energy99": 4.707699231829558e-34,
+    "full_resolved": 1.6415593537874345e-32
+  },
+  "He_rate_at_80pct_occupancy_per_s": {
+    "mass999": 4.162009126781329e+32,
+    "energy99": 1.6993439058108546e+33,
+    "full_resolved": 4.873415013317831e+31
+  },
+  "timing_scope": {
+    "mass999": "Incoming plus outgoing 99.9% mass velocity quantile, leaving 0.1% slow mass on each leg for explicitly protected staging/cleanup; it cannot be discarded within the fuel-return budget.",
+    "energy99": "Incoming plus outgoing 99% kinetic-energy quantile; not a fuel-retention criterion.",
+    "full_resolved": "All resolved mass-weighted shell representative speeds. Central-shell subcell distribution reaches zero; this finite diagnostic also requires an active slow-core pickup.",
+    "literal_100_percent_ballistic_clearance": "No finite time for a continuous central profile whose velocity reaches zero."
+  },
+  "radius_scaling": {
+    "material_peak_rise": "R^-2.5 for ballistic kinetic plus residual internal heat",
+    "prompt_peak_rise": "R^-2; this interface field includes both prompt photons and the separate fixed-lifetime beta-decay heat maximum",
+    "occupied_time": "R",
+    "kinetic_source_peak": "R^-1",
+    "storage_energy": "independent of R",
+    "absorber_mass": "R^2"
+  },
+  "thermal_radius_screens": [
+    {
+      "allowed_rise_K": 500,
+      "minimum_R_m_in_surface_deposition_screen": 1412206911.2737675,
+      "per_stage_R_m": {
+        "c12": 1232180059.717694,
+        "c13": 1412206911.2737675,
+        "n14": 1018658139.0504005,
+        "n15": 504343986.23086756
+      }
+    },
+    {
+      "allowed_rise_K": 1000,
+      "minimum_R_m_in_surface_deposition_screen": 1021889065.3022054,
+      "per_stage_R_m": {
+        "c12": 897509900.0025558,
+        "c13": 1021889065.3022054,
+        "n14": 742139950.3388994,
+        "n15": 357093633.4291367
+      }
+    },
+    {
+      "allowed_rise_K": 1500,
+      "minimum_R_m_in_surface_deposition_screen": 846698268.3915647,
+      "per_stage_R_m": {
+        "c12": 746571300.386876,
+        "c13": 846698268.3915647,
+        "n14": 617407973.4970354,
+        "n15": 291821709.1017774
+      }
+    },
+    {
+      "allowed_rise_K": 2000,
+      "minimum_R_m_in_surface_deposition_screen": 741332428.788821,
+      "per_stage_R_m": {
+        "c12": 655507024.8808143,
+        "c13": 741332428.788821,
+        "n14": 542146795.3647026,
+        "n15": 252896234.91233838
+      }
+    }
+  ],
+  "absorber_screens": [
+    {
+      "sigma_kg_m2": 100.0,
+      "thickness_m": 0.05,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k100": 3.1250000000000004,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k200": 1.5625000000000002,
+      "uncollided_10MeV_fraction": 0.8220944400118526,
+      "uncollided_20MeV_fraction": 0.8542768136084795
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "thickness_m": 0.5,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k100": 312.5,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k200": 156.25,
+      "uncollided_10MeV_fraction": 0.1409993497946588,
+      "uncollided_20MeV_fraction": 0.20700755268115265
+    },
+    {
+      "sigma_kg_m2": 5000.0,
+      "thickness_m": 2.5,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k100": 7812.5,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k200": 3906.25,
+      "uncollided_10MeV_fraction": 5.5729551731018024e-05,
+      "uncollided_20MeV_fraction": 0.0003801289578694637
+    },
+    {
+      "sigma_kg_m2": 10000.0,
+      "thickness_m": 5.0,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k100": 31250.0,
+      "max_pulse_s_for_L_gt_4sqrt_alpha_t_at_k200": 15625.0,
+      "uncollided_10MeV_fraction": 3.1057829361402142e-09,
+      "uncollided_20MeV_fraction": 1.4449802461092448e-07
+    }
+  ],
+  "radiator_capacity_per_outer_m2_at5AU_W": {
+    "330": 591.6054491219409,
+    "450": 2079.0771191720687,
+    "600": 6600.3147223216
+  },
+  "finite_engine_40pct_at80pct_Carnot": [
+    {
+      "hot_K": 1000,
+      "radiator_K": 330,
+      "feasible": true,
+      "engine_hot_K": 837.7433044824352,
+      "engine_cold_K": 418.8716522412176,
+      "total_conductance_per_W_hot_K_inverse": 0.012914383029472542
+    },
+    {
+      "hot_K": 1000,
+      "radiator_K": 450,
+      "feasible": true,
+      "engine_hot_K": 952.2774424948338,
+      "engine_cold_K": 476.1387212474169,
+      "total_conductance_per_W_hot_K_inverse": 0.043908902300206644
+    },
+    {
+      "hot_K": 1000,
+      "radiator_K": 600,
+      "feasible": false
+    },
+    {
+      "hot_K": 1500,
+      "radiator_K": 330,
+      "feasible": true,
+      "engine_hot_K": 1099.1305169566047,
+      "engine_cold_K": 549.5652584783023,
+      "total_conductance_per_W_hot_K_inverse": 0.005227250273834125
+    },
+    {
+      "hot_K": 1500,
+      "radiator_K": 450,
+      "feasible": true,
+      "engine_hot_K": 1213.6646549690033,
+      "engine_cold_K": 606.8323274845017,
+      "total_conductance_per_W_hot_K_inverse": 0.007318150383367774
+    },
+    {
+      "hot_K": 1500,
+      "radiator_K": 600,
+      "feasible": true,
+      "engine_hot_K": 1356.8323274845018,
+      "engine_cold_K": 678.4161637422509,
+      "total_conductance_per_W_hot_K_inverse": 0.014636300766735548
+    },
+    {
+      "hot_K": 2000,
+      "radiator_K": 330,
+      "feasible": true,
+      "engine_hot_K": 1360.517729430774,
+      "engine_cold_K": 680.258864715387,
+      "total_conductance_per_W_hot_K_inverse": 0.0032767837537467643
+    },
+    {
+      "hot_K": 2000,
+      "radiator_K": 450,
+      "feasible": true,
+      "engine_hot_K": 1475.0518674431726,
+      "engine_cold_K": 737.5259337215863,
+      "total_conductance_per_W_hot_K_inverse": 0.003991718390927877
+    },
+    {
+      "hot_K": 2000,
+      "radiator_K": 600,
+      "feasible": true,
+      "engine_hot_K": 1618.219539958671,
+      "engine_cold_K": 809.1097699793355,
+      "total_conductance_per_W_hot_K_inverse": 0.0054886127875258305
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z06.html",
+      "use": "Graphite uncollided-photon attenuation: mu/rho .001959 and .001575 m2/kg at 10 and 20 MeV. Not a full energy-containment calculation."
+    }
+  ],
+  "limitations": [
+    "Hydro endpoint may retain pressure-driven acceleration; monotone terminal speeds alone do not prove ballistic convergence.",
+    "Surface deposition of photons is a conservative thermal approximation; real gamma penetration may lower skin temperature while demanding a thick absorber.",
+    "Fixed constant properties, no ablation, implantation, fatigue, radiative surface cooling or active cooling validation.",
+    "Delayed heat is uniformly spread over receiver area; decay location, charged-particle collection and gamma transport remain design tasks.",
+    "Peak and mean loads require distributed surface hardware; a central heat-engine/pumping layout is not granted.",
+    "Warm receiver cavity radiation requires protected cold feed trajectories; cold pellet preparation is not thermally automatic."
+  ],
+  "input_sha256": {
+    "process-scenarios.json": "15c7bdfa08360a0e72f4f3ebacfbd500334bff666ed889fb3b4a9fbfd5ce424c",
+    "collector.json": "a06cda8a531c2d88c915ffc143cdd91537ce523e15a28871759416dbe5117a87",
+    "collector-inputs-b2-128-energy-matched.json": "5c1e6144848aa58c1fa59da23a48bb01c3f8a0ffad6355658bde1f9a76297e66"
+  },
+  "code_sha256": {
+    "open-loop-redesign/collector.py": "898e62f27b8a7aedba98bd9a877efa8ad130528b5f7092371a89794f238293ba",
+    "collector_screen.py": "f18bfa4640caf348d3b62cf3863baa82182fb969f1579dd98e17e70a48bb5fc4",
+    "cycle_ledger.py": "2feb5939a5199d76594572effce0cbb06d2b26b54a9e7b44e6904f61c86b14d9",
+    "nuclear_screen.py": "952f6d0cf8ddcf781ceacc109a0a9113ac2280491a78f5409cd1300b10dd23ba",
+    "fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+    "electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+    "open-loop-redesign/collector-refined.py": "f27839b59248089aed36ae0f11e9fc7f26d8a711a71bd931b60aa1e251bc138b"
+  },
+  "wall_carbon_budget_scaling": "Net wall loss per area = reserved_fraction*0.007*fresh_H_kg_per_He*He_rate*year/(4*pi*R^2). Capital stock and gross internally recycled substrate are not fresh operating feed.",
+  "annual_surface_fuel_loading_at_R1e9_mass999_cap_kg_m2": {
+    "c12": 2.6613500505295375e-05,
+    "c13": 1.3823967907369554e-06,
+    "n14": 4.8216608785504234e-05,
+    "n15": 4.613540371379743e-05
+  },
+  "selected_wall_carbon_budget_at_R1e9_mass999_cap": {
+    "He_rate_s": 4.162009126781329e+32,
+    "fresh_H_kg_s": 2789188.224284287,
+    "fuel_C_H_mass_ratio": 0.005599999999999031,
+    "total_ongoing_C_H_mass_budget": 0.007,
+    "reserved_net_structural_C_H_mass_ratio": 0.0014000000000000002,
+    "maximum_net_wall_carbon_loss_kg_m2_year": 9.806182278957672e-09,
+    "maximum_fraction_lost_from_retired_Sigma5000_at_1e_4_per_year": 1.9612364557915344e-08,
+    "scope": "Entire structural reserve assigned here to wall loss only to obtain an upper allowance; coatings and other net carbon losses share the same reserve."
+  },
+  "scenario_input_sha256": {
+    "process-scenarios.json": "15c7bdfa08360a0e72f4f3ebacfbd500334bff666ed889fb3b4a9fbfd5ce424c",
+    "collector.json": "a06cda8a531c2d88c915ffc143cdd91537ce523e15a28871759416dbe5117a87",
+    "collector-inputs-b2-128-energy-matched.json": "5c1e6144848aa58c1fa59da23a48bb01c3f8a0ffad6355658bde1f9a76297e66"
+  },
+  "scenario_scope": "B2 pulse-level fields and per-helium stationary process weighting both refreshed for the specified refined family."
+}

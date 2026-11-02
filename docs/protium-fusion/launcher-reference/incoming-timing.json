@@ -1,0 +1,783 @@
+{
+  "scope": "Kinematic and conditional geometric screen, no discrete packets or angular hydrodynamics simulated.",
+  "radius_m": 1100000000.0,
+  "reference_launcher_count": 1000,
+  "sources": {
+    "open-loop-redesign/collector-inputs.json": {
+      "sha256": "168515d97c33cb68b21557dfb00031ec950d8c097adfaa3611c8bd8c80be2721"
+    },
+    "open-loop-redesign/collector.json": {
+      "sha256": "a06cda8a531c2d88c915ffc143cdd91537ce523e15a28871759416dbe5117a87"
+    },
+    "open-loop-redesign/operating-cases.json": {
+      "sha256": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461"
+    }
+  },
+  "stages": {
+    "B2": {
+      "source_cat": "c12",
+      "mass_kg": 11309733552923.254,
+      "reference_radius_m": 30,
+      "initial_internal_energy_J": 2.859836283766852e+24,
+      "initial_kinetic_energy_J": 3.7884094075661684e+25,
+      "hot_initial_outer_radius_m": 170.27867199748945,
+      "v_rms_m_s": 2588315.8051992776,
+      "fastest_speed_m_s": 4637562.517223942,
+      "mass_flight_quantiles_s": {
+        "0.01": 245.9838039404095,
+        "0.05": 296.57659000574455,
+        "0.5": 447.9377528819833,
+        "0.95": 864.325687738731,
+        "0.99": 1473.752722016731,
+        "0.999": 3182.7186225434693
+      },
+      "middle90_launch_window_s": 567.7490977329865,
+      "central_cell_centroid_flight_s": 27172.903638070246,
+      "ballistic_focus_times_from_hot_snapshot_s": {
+        "min": 2.66486143740228e-05,
+        "max": 3.6717277959072935e-05
+      },
+      "packing_density_backmaps": [
+        {
+          "max_density_kg_m3": 1000.0,
+          "lookback_s": 0.0004390562389292149,
+          "outer_radius_m": 2206.4294286089357,
+          "mean_density_kg_m3": 251.35853710487746
+        },
+        {
+          "max_density_kg_m3": 2000.0,
+          "lookback_s": 0.00034169154198294174,
+          "outer_radius_m": 1754.894559550031,
+          "mean_density_kg_m3": 499.58648524718257
+        }
+      ],
+      "count_comparisons": [
+        {
+          "launchers": 100,
+          "equal_area_cap_halfangle_deg": 11.478340954533579,
+          "typical_neighbor_angle_deg": 20.310825007719227,
+          "source_sector_radius_m": 218897236.1634565,
+          "footprint_radius_at_2000_density_backmap_m": 349.2196080398074,
+          "mass_per_launcher_kg": 113097335529.23254,
+          "peak_prepared_electric_W_per_launcher": 2.8388939373288515e+21,
+          "cone_average_transverse_energy_J_kg": 66547161827.28088,
+          "cone_energy_fraction_initial_kinetic": 0.019866666666666668,
+          "cone_energy_fraction_initial_internal": 0.2631726414696997,
+          "neighbor_pair_merger_energy_J_kg": 104136196746.38228
+        },
+        {
+          "launchers": 1000,
+          "equal_area_cap_halfangle_deg": 3.62430749400795,
+          "typical_neighbor_angle_deg": 6.422846818149976,
+          "source_sector_radius_m": 69535314.76882811,
+          "footprint_radius_at_2000_density_backmap_m": 110.9337687131049,
+          "mass_per_launcher_kg": 11309733552.923254,
+          "peak_prepared_electric_W_per_launcher": 2.8388939373288512e+20,
+          "cone_average_transverse_energy_J_kg": 6694912454.9727545,
+          "cone_energy_fraction_initial_kinetic": 0.001998666666666667,
+          "cone_energy_fraction_initial_internal": 0.026476227487455022,
+          "neighbor_pair_merger_energy_J_kg": 10512344044.225288
+        },
+        {
+          "launchers": 10000,
+          "equal_area_cap_halfangle_deg": 1.1459346897142422,
+          "typical_neighbor_angle_deg": 2.0310825007719226,
+          "source_sector_radius_m": 21998899.972497415,
+          "footprint_radius_at_2000_density_backmap_m": 35.096136252564584,
+          "mass_per_launcher_kg": 1130973355.2923255,
+          "peak_prepared_electric_W_per_launcher": 2.8388939373288514e+19,
+          "cone_average_transverse_energy_J_kg": 669893208.2197223,
+          "cone_energy_fraction_initial_kinetic": 0.0001999866666666667,
+          "cone_energy_fraction_initial_internal": 0.002649212382150353,
+          "neighbor_pair_merger_energy_J_kg": 1052225750.7994908
+        },
+        {
+          "launchers": 100000,
+          "equal_area_cap_halfangle_deg": 0.3623709311057509,
+          "typical_neighbor_angle_deg": 0.6422846818149975,
+          "source_sector_radius_m": 6956976.067232689,
+          "footprint_radius_at_2000_density_backmap_m": 11.09887222846038,
+          "mass_per_launcher_kg": 113097335.52923253,
+          "peak_prepared_electric_W_per_launcher": 2.8388939373288515e+18,
+          "cone_average_transverse_energy_J_kg": 66993340.44919668,
+          "cone_energy_fraction_initial_kinetic": 1.9999866666666668e-05,
+          "cone_energy_fraction_initial_internal": 0.0002649371345490838,
+          "neighbor_pair_merger_energy_J_kg": 105232492.65560557
+        }
+      ],
+      "timing_from_frozen_collector_at_R": {
+        "mass999": {
+          "incoming_s": 3201.0114445219147,
+          "outgoing_s": 1155.855158444254,
+          "occupied_s": 4356.866602966168
+        },
+        "energy99": {
+          "incoming_s": 815.1378512952097,
+          "outgoing_s": 272.2425310763723,
+          "occupied_s": 1087.3803823715818
+        },
+        "full_resolved": {
+          "incoming_s": 27172.903665431902,
+          "outgoing_s": 9771.873734366873,
+          "occupied_s": 36944.777399798775
+        }
+      },
+      "peak_prepared_electric_W": 2.8388939373288513e+23,
+      "snapshot_error_budget_examples": [
+        {
+          "allowed_position_error_m": 1.0,
+          "angle_rad": 9.090909090909091e-10,
+          "uncorrected_timing_s": 3.8635161829605597e-07,
+          "uncorrected_fractional_velocity_error": 9.090909090909091e-10
+        },
+        {
+          "allowed_position_error_m": 10.0,
+          "angle_rad": 9.09090909090909e-09,
+          "uncorrected_timing_s": 3.86351618296056e-06,
+          "uncorrected_fractional_velocity_error": 9.09090909090909e-09
+        },
+        {
+          "allowed_position_error_m": 30.0,
+          "angle_rad": 2.7272727272727272e-08,
+          "uncorrected_timing_s": 1.1590548548881678e-05,
+          "uncorrected_fractional_velocity_error": 2.7272727272727272e-08
+        }
+      ]
+    },
+    "C13": {
+      "source_cat": "c13",
+      "mass_kg": 11309733552923.254,
+      "reference_radius_m": 30,
+      "initial_internal_energy_J": 2.3342674990476664e+24,
+      "initial_kinetic_energy_J": 3.0948396366162948e+25,
+      "hot_initial_outer_radius_m": 170.72777864741835,
+      "v_rms_m_s": 2339418.318595478,
+      "fastest_speed_m_s": 4191148.4855696764,
+      "mass_flight_quantiles_s": {
+        "0.01": 272.18397829340523,
+        "0.05": 328.1708307034007,
+        "0.5": 495.56234500978405,
+        "0.95": 956.1807624669091,
+        "0.99": 1630.417525816797,
+        "0.999": 3520.991710528983
+      },
+      "middle90_launch_window_s": 628.0099317635083,
+      "central_cell_centroid_flight_s": 30060.809460301214,
+      "ballistic_focus_times_from_hot_snapshot_s": {
+        "min": 2.954658724484205e-05,
+        "max": 4.073532093535751e-05
+      },
+      "packing_density_backmaps": [
+        {
+          "max_density_kg_m3": 1000.0,
+          "lookback_s": 0.00048565642589255386,
+          "outer_radius_m": 2206.1859725341774,
+          "mean_density_kg_m3": 251.4417597117864
+        },
+        {
+          "max_density_kg_m3": 2000.0,
+          "lookback_s": 0.0003779349717997932,
+          "outer_radius_m": 1754.70936334994,
+          "mean_density_kg_m3": 499.7446845807621
+        }
+      ],
+      "count_comparisons": [
+        {
+          "launchers": 100,
+          "equal_area_cap_halfangle_deg": 11.478340954533579,
+          "typical_neighbor_angle_deg": 20.310825007719227,
+          "source_sector_radius_m": 218897236.1634565,
+          "footprint_radius_at_2000_density_backmap_m": 349.1827544613093,
+          "mass_per_launcher_kg": 113097335529.23254,
+          "peak_prepared_electric_W_per_launcher": 2.096816344408397e+21,
+          "cone_average_transverse_energy_J_kg": 54363922155.842255,
+          "cone_energy_fraction_initial_kinetic": 0.01986666666666666,
+          "cone_energy_fraction_initial_internal": 0.26339803588289684,
+          "neighbor_pair_merger_energy_J_kg": 85071277843.813
+        },
+        {
+          "launchers": 1000,
+          "equal_area_cap_halfangle_deg": 3.62430749400795,
+          "typical_neighbor_angle_deg": 6.422846818149976,
+          "source_sector_radius_m": 69535314.76882811,
+          "footprint_radius_at_2000_density_backmap_m": 110.92206173486187,
+          "mass_per_launcher_kg": 11309733552.923254,
+          "peak_prepared_electric_W_per_launcher": 2.096816344408397e+20,
+          "cone_average_transverse_energy_J_kg": 5469229484.000505,
+          "cone_energy_fraction_initial_kinetic": 0.001998666666666666,
+          "cone_energy_fraction_initial_internal": 0.02649890307305116,
+          "neighbor_pair_merger_energy_J_kg": 8587778014.92074
+        },
+        {
+          "launchers": 10000,
+          "equal_area_cap_halfangle_deg": 1.1459346897142422,
+          "typical_neighbor_angle_deg": 2.0310825007719226,
+          "source_sector_radius_m": 21998899.972497415,
+          "footprint_radius_at_2000_density_backmap_m": 35.09243251376359,
+          "mass_per_launcher_kg": 1130973355.2923255,
+          "peak_prepared_electric_W_per_launcher": 2.096816344408397e+19,
+          "cone_average_transverse_energy_J_kg": 547251321.0842134,
+          "cone_energy_fraction_initial_kinetic": 0.0001999866666666666,
+          "cone_energy_fraction_initial_internal": 0.002651481302152731,
+          "neighbor_pair_merger_energy_J_kg": 859587655.3729429
+        },
+        {
+          "launchers": 100000,
+          "equal_area_cap_halfangle_deg": 0.3623709311057509,
+          "typical_neighbor_angle_deg": 0.6422846818149975,
+          "source_sector_radius_m": 6956976.067232689,
+          "footprint_radius_at_2000_density_backmap_m": 11.097700950704219,
+          "mass_per_launcher_kg": 113097335.52923253,
+          "peak_prepared_electric_W_per_launcher": 2.0968163444083968e+18,
+          "cone_average_transverse_energy_J_kg": 54728415.83526296,
+          "cone_energy_fraction_initial_kinetic": 1.9999866666666658e-05,
+          "cone_energy_fraction_initial_internal": 0.0002651640401637492,
+          "neighbor_pair_merger_energy_J_kg": 85966867.43519887
+        }
+      ],
+      "timing_from_frozen_collector_at_R": {
+        "mass999": {
+          "incoming_s": 3541.2288034599173,
+          "outgoing_s": 1257.117982972822,
+          "occupied_s": 4798.3467864327395
+        },
+        "energy99": {
+          "incoming_s": 901.7816673737071,
+          "outgoing_s": 268.58348706161627,
+          "occupied_s": 1170.3651544353233
+        },
+        "full_resolved": {
+          "incoming_s": 30060.80949063648,
+          "outgoing_s": 10468.261917400516,
+          "occupied_s": 40529.071408036994
+        }
+      },
+      "peak_prepared_electric_W": 2.096816344408397e+23,
+      "snapshot_error_budget_examples": [
+        {
+          "allowed_position_error_m": 1.0,
+          "angle_rad": 9.090909090909091e-10,
+          "uncorrected_timing_s": 4.274566853013156e-07,
+          "uncorrected_fractional_velocity_error": 9.090909090909091e-10
+        },
+        {
+          "allowed_position_error_m": 10.0,
+          "angle_rad": 9.09090909090909e-09,
+          "uncorrected_timing_s": 4.274566853013156e-06,
+          "uncorrected_fractional_velocity_error": 9.09090909090909e-09
+        },
+        {
+          "allowed_position_error_m": 30.0,
+          "angle_rad": 2.7272727272727272e-08,
+          "uncorrected_timing_s": 1.2823700559039467e-05,
+          "uncorrected_fractional_velocity_error": 2.7272727272727272e-08
+        }
+      ]
+    },
+    "A": {
+      "source_cat": "n14",
+      "mass_kg": 11309733552923.254,
+      "reference_radius_m": 30,
+      "initial_internal_energy_J": 2.450026854879294e+24,
+      "initial_kinetic_energy_J": 3.2481604810293386e+25,
+      "hot_initial_outer_radius_m": 170.85535570682734,
+      "v_rms_m_s": 2396666.1949734534,
+      "fastest_speed_m_s": 4293643.349973005,
+      "mass_flight_quantiles_s": {
+        "0.01": 265.6865055837843,
+        "0.05": 320.3388776865264,
+        "0.5": 483.71900337000625,
+        "0.95": 933.3489656456952,
+        "0.99": 1591.5193826750447,
+        "0.999": 3436.990965761821
+      },
+      "middle90_launch_window_s": 613.0100879591688,
+      "central_cell_centroid_flight_s": 29343.649407924906,
+      "ballistic_focus_times_from_hot_snapshot_s": {
+        "min": 2.885833445614767e-05,
+        "max": 3.979262872588184e-05
+      },
+      "packing_density_backmaps": [
+        {
+          "max_density_kg_m3": 1000.0,
+          "lookback_s": 0.00047402570471280275,
+          "outer_radius_m": 2206.15267046322,
+          "mean_density_kg_m3": 251.4531464909094
+        },
+        {
+          "max_density_kg_m3": 2000.0,
+          "lookback_s": 0.0003688784156845253,
+          "outer_radius_m": 1754.6877121592674,
+          "mean_density_kg_m3": 499.7631839425947
+        }
+      ],
+      "count_comparisons": [
+        {
+          "launchers": 100,
+          "equal_area_cap_halfangle_deg": 11.478340954533579,
+          "typical_neighbor_angle_deg": 20.310825007719227,
+          "source_sector_radius_m": 218897236.1634565,
+          "footprint_radius_at_2000_density_backmap_m": 349.17844592876577,
+          "mass_per_launcher_kg": 113097335529.23254,
+          "peak_prepared_electric_W_per_launcher": 2.2547052685368673e+21,
+          "cone_average_transverse_energy_J_kg": 57057154577.943405,
+          "cone_energy_fraction_initial_kinetic": 0.01986666666666666,
+          "cone_energy_fraction_initial_internal": 0.263385364237686,
+          "neighbor_pair_merger_energy_J_kg": 89285777361.00633
+        },
+        {
+          "launchers": 1000,
+          "equal_area_cap_halfangle_deg": 3.62430749400795,
+          "typical_neighbor_angle_deg": 6.422846818149976,
+          "source_sector_radius_m": 69535314.76882811,
+          "footprint_radius_at_2000_density_backmap_m": 110.92069307817229,
+          "mass_per_launcher_kg": 11309733552.923254,
+          "peak_prepared_electric_W_per_launcher": 2.2547052685368672e+20,
+          "cone_average_transverse_energy_J_kg": 5740179510.895112,
+          "cone_energy_fraction_initial_kinetic": 0.0019986666666666664,
+          "cone_energy_fraction_initial_internal": 0.0264976282545162,
+          "neighbor_pair_merger_energy_J_kg": 9013223443.91848
+        },
+        {
+          "launchers": 10000,
+          "equal_area_cap_halfangle_deg": 1.1459346897142422,
+          "typical_neighbor_angle_deg": 2.0310825007719226,
+          "source_sector_radius_m": 21998899.972497415,
+          "footprint_radius_at_2000_density_backmap_m": 35.09199951160187,
+          "mass_per_launcher_kg": 1130973355.2923255,
+          "peak_prepared_electric_W_per_launcher": 2.2547052685368672e+19,
+          "cone_average_transverse_energy_J_kg": 574362591.6205189,
+          "cone_energy_fraction_initial_kinetic": 0.00019998666666666665,
+          "cone_energy_fraction_initial_internal": 0.002651353743759096,
+          "neighbor_pair_merger_energy_J_kg": 902172319.0852453
+        },
+        {
+          "launchers": 100000,
+          "equal_area_cap_halfangle_deg": 0.3623709311057509,
+          "typical_neighbor_angle_deg": 0.6422846818149975,
+          "source_sector_radius_m": 6956976.067232689,
+          "footprint_radius_at_2000_density_backmap_m": 11.097564017235731,
+          "mass_per_launcher_kg": 113097335.52923253,
+          "peak_prepared_electric_W_per_launcher": 2.2547052685368673e+18,
+          "cone_average_transverse_energy_J_kg": 57439705.56736197,
+          "cone_energy_fraction_initial_kinetic": 1.9999866666666665e-05,
+          "cone_energy_fraction_initial_internal": 0.0002651512835589844,
+          "neighbor_pair_merger_energy_J_kg": 90225735.1809667
+        }
+      ],
+      "timing_from_frozen_collector_at_R": {
+        "mass999": {
+          "incoming_s": 3456.745360371315,
+          "outgoing_s": 1335.5340437643638,
+          "occupied_s": 4792.279404135679
+        },
+        "energy99": {
+          "incoming_s": 880.2377652502311,
+          "outgoing_s": 316.53767219440124,
+          "occupied_s": 1196.7754374446322
+        },
+        "full_resolved": {
+          "incoming_s": 29343.649437553373,
+          "outgoing_s": 11241.020066554514,
+          "occupied_s": 40584.669504107886
+        }
+      },
+      "peak_prepared_electric_W": 2.2547052685368672e+23,
+      "snapshot_error_budget_examples": [
+        {
+          "allowed_position_error_m": 1.0,
+          "angle_rad": 9.090909090909091e-10,
+          "uncorrected_timing_s": 4.172462573625429e-07,
+          "uncorrected_fractional_velocity_error": 9.090909090909091e-10
+        },
+        {
+          "allowed_position_error_m": 10.0,
+          "angle_rad": 9.09090909090909e-09,
+          "uncorrected_timing_s": 4.172462573625429e-06,
+          "uncorrected_fractional_velocity_error": 9.09090909090909e-09
+        },
+        {
+          "allowed_position_error_m": 30.0,
+          "angle_rad": 2.7272727272727272e-08,
+          "uncorrected_timing_s": 1.2517387720876288e-05,
+          "uncorrected_fractional_velocity_error": 2.7272727272727272e-08
+        }
+      ]
+    },
+    "B1": {
+      "source_cat": "n15",
+      "mass_kg": 113097335529.23254,
+      "reference_radius_m": 30,
+      "initial_internal_energy_J": 2.745360140345695e+22,
+      "initial_kinetic_energy_J": 2.920480768531435e+23,
+      "hot_initial_outer_radius_m": 191.183797713942,
+      "v_rms_m_s": 2272563.2872659094,
+      "fastest_speed_m_s": 4107610.626826407,
+      "mass_flight_quantiles_s": {
+        "0.01": 277.7255708341526,
+        "0.05": 335.55143427668986,
+        "0.5": 511.61286361053976,
+        "0.95": 1011.701697112567,
+        "0.99": 1742.0862608339223,
+        "0.999": 3770.6470858579437
+      },
+      "middle90_launch_window_s": 676.1502628358771,
+      "central_cell_centroid_flight_s": 32212.659212945695,
+      "ballistic_focus_times_from_hot_snapshot_s": {
+        "min": 3.33580115212271e-05,
+        "max": 4.6543797619311614e-05
+      },
+      "packing_density_backmaps": [
+        {
+          "max_density_kg_m3": 1000.0,
+          "lookback_s": 7.591967819978204e-05,
+          "outer_radius_m": 503.0322746726078,
+          "mean_density_kg_m3": 212.11735986076553
+        },
+        {
+          "max_density_kg_m3": 2000.0,
+          "lookback_s": 5.232499077092599e-05,
+          "outer_radius_m": 406.11448585319124,
+          "mean_density_kg_m3": 403.1051269377385
+        }
+      ],
+      "count_comparisons": [
+        {
+          "launchers": 100,
+          "equal_area_cap_halfangle_deg": 11.478340954533579,
+          "typical_neighbor_angle_deg": 20.310825007719227,
+          "source_sector_radius_m": 218897236.1634565,
+          "footprint_radius_at_2000_density_backmap_m": 80.81576229018792,
+          "mass_per_launcher_kg": 1130973355.2923255,
+          "peak_prepared_electric_W_per_launcher": 1.9089930486727143e+19,
+          "cone_average_transverse_energy_J_kg": 51301136019.97977,
+          "cone_energy_fraction_initial_kinetic": 0.019866666666666657,
+          "cone_energy_fraction_initial_internal": 0.21133918673241392,
+          "neighbor_pair_merger_energy_J_kg": 80278482916.44894
+        },
+        {
+          "launchers": 1000,
+          "equal_area_cap_halfangle_deg": 3.62430749400795,
+          "typical_neighbor_angle_deg": 6.422846818149976,
+          "source_sector_radius_m": 69535314.76882811,
+          "footprint_radius_at_2000_density_backmap_m": 25.672089641802224,
+          "mass_per_launcher_kg": 113097335.52923255,
+          "peak_prepared_electric_W_per_launcher": 1.9089930486727142e+18,
+          "cone_average_transverse_energy_J_kg": 5161100865.365749,
+          "cone_energy_fraction_initial_kinetic": 0.001998666666666666,
+          "cone_energy_fraction_initial_internal": 0.021261573215562983,
+          "neighbor_pair_merger_energy_J_kg": 8103954802.780826
+        },
+        {
+          "launchers": 10000,
+          "equal_area_cap_halfangle_deg": 1.1459346897142422,
+          "typical_neighbor_angle_deg": 2.0310825007719226,
+          "source_sector_radius_m": 21998899.972497415,
+          "footprint_radius_at_2000_density_backmap_m": 8.121883592424155,
+          "mass_per_launcher_kg": 11309733.552923255,
+          "peak_prepared_electric_W_per_launcher": 1.9089930486727142e+17,
+          "cone_average_transverse_energy_J_kg": 516419959.17025274,
+          "cone_energy_fraction_initial_kinetic": 0.00019998666666666662,
+          "cone_energy_fraction_initial_internal": 0.0021274338669795144,
+          "neighbor_pair_merger_energy_J_kg": 811159708.1419159
+        },
+        {
+          "launchers": 100000,
+          "equal_area_cap_halfangle_deg": 0.3623709311057509,
+          "typical_neighbor_angle_deg": 0.6422846818149975,
+          "source_sector_radius_m": 6956976.067232689,
+          "footprint_radius_at_2000_density_backmap_m": 2.568480689670145,
+          "mass_per_launcher_kg": 1130973.3552923254,
+          "peak_prepared_electric_W_per_launcher": 1.9089930486727144e+16,
+          "cone_average_transverse_energy_J_kg": 51645094.64336205,
+          "cone_energy_fraction_initial_kinetic": 1.9999866666666665e-05,
+          "cone_energy_fraction_initial_internal": 0.00021275615215218363,
+          "neighbor_pair_merger_energy_J_kg": 81123616.26267913
+        }
+      ],
+      "timing_from_frozen_collector_at_R": {
+        "mass999": {
+          "incoming_s": 3792.379462619564,
+          "outgoing_s": 1548.9370759741723,
+          "occupied_s": 5341.3165385937355
+        },
+        "energy99": {
+          "incoming_s": 940.9894769533604,
+          "outgoing_s": 366.7789498779974,
+          "occupied_s": 1307.7684268313578
+        },
+        "full_resolved": {
+          "incoming_s": 32212.65924731288,
+          "outgoing_s": 13167.940386348751,
+          "occupied_s": 45380.59963366164
+        }
+      },
+      "peak_prepared_electric_W": 1.9089930486727144e+21,
+      "snapshot_error_budget_examples": [
+        {
+          "allowed_position_error_m": 1.0,
+          "angle_rad": 9.090909090909091e-10,
+          "uncorrected_timing_s": 4.400317498761879e-07,
+          "uncorrected_fractional_velocity_error": 9.090909090909091e-10
+        },
+        {
+          "allowed_position_error_m": 10.0,
+          "angle_rad": 9.09090909090909e-09,
+          "uncorrected_timing_s": 4.400317498761879e-06,
+          "uncorrected_fractional_velocity_error": 9.09090909090909e-09
+        },
+        {
+          "allowed_position_error_m": 30.0,
+          "angle_rad": 2.7272727272727272e-08,
+          "uncorrected_timing_s": 1.3200952496285636e-05,
+          "uncorrected_fractional_velocity_error": 2.7272727272727272e-08
+        }
+      ]
+    }
+  },
+  "C13_illustrative_grains": [
+    {
+      "radius_m": 0.001,
+      "density_kg_m3": 1000,
+      "grain_mass_kg": 4.188790204786391e-06,
+      "physical_grains_per_shot": 2.6999999999999995e+18,
+      "physical_grains_per_launcher_at1000": 2699999999999999.5,
+      "middle90_mean_rate_per_launcher_s": 3869365557924.1255
+    },
+    {
+      "radius_m": 0.01,
+      "density_kg_m3": 1000,
+      "grain_mass_kg": 0.004188790204786391,
+      "physical_grains_per_shot": 2699999999999999.5,
+      "physical_grains_per_launcher_at1000": 2699999999999.9995,
+      "middle90_mean_rate_per_launcher_s": 3869365557.9241257
+    },
+    {
+      "radius_m": 0.1,
+      "density_kg_m3": 1000,
+      "grain_mass_kg": 4.188790204786391,
+      "physical_grains_per_shot": 2699999999999.9995,
+      "physical_grains_per_launcher_at1000": 2699999999.9999995,
+      "middle90_mean_rate_per_launcher_s": 3869365.5579241253
+    }
+  ],
+  "C13_illustrative_packet_bundles": [
+    {
+      "packets_per_launcher": 1,
+      "packets_per_shot": 1000,
+      "mass_per_packet_kg": 11309733552.923254,
+      "solid_equivalent_radius_at1000kg_m3_m": 139.2476650083833
+    },
+    {
+      "packets_per_launcher": 64,
+      "packets_per_shot": 64000,
+      "mass_per_packet_kg": 176714586.76442584,
+      "solid_equivalent_radius_at1000kg_m3_m": 34.811916252095834
+    },
+    {
+      "packets_per_launcher": 1000,
+      "packets_per_shot": 1000000,
+      "mass_per_packet_kg": 11309733.552923255,
+      "solid_equivalent_radius_at1000kg_m3_m": 13.924766500838334
+    },
+    {
+      "packets_per_launcher": 1000000.0,
+      "packets_per_shot": 1000000000.0,
+      "mass_per_packet_kg": 11309.733552923253,
+      "solid_equivalent_radius_at1000kg_m3_m": 1.3924766500838337
+    }
+  ],
+  "current_operating_case": {
+    "name": "high_source_rating_surface",
+    "pulse_intervals_s": {
+      "c12": 1133368.9623012526,
+      "c13": 15885706.54029858,
+      "n14": 648690.3901793147,
+      "n15": 6774.3130579500075
+    },
+    "all_stage_mean_interval_s": 6662.079348697861,
+    "sequential_occupancy": 0.7999999999999999
+  },
+  "example_opposing_shot_crossings": {
+    "incoming_speed_m_s": 2339418.318595478,
+    "outgoing_speed_m_s": 11660154.398995059,
+    "minimum_center_to_center_separation_s_to_avoid_this_pair": 564.5407272662624,
+    "cases": [
+      {
+        "shot_separation_s": 60.0,
+        "crossing_radius_m": 116909191.51147702,
+        "crossing_time_after_first_shot_s": 10.026384515247326,
+        "crossing_within_receiver": true
+      },
+      {
+        "shot_separation_s": 600.0,
+        "crossing_radius_m": 1169091915.1147702,
+        "crossing_time_after_first_shot_s": 100.26384515247325,
+        "crossing_within_receiver": false
+      },
+      {
+        "shot_separation_s": 1800.0,
+        "crossing_radius_m": 3507275745.344311,
+        "crossing_time_after_first_shot_s": 300.79153545741974,
+        "crossing_within_receiver": false
+      },
+      {
+        "shot_separation_s": 6774.3130579500075,
+        "crossing_radius_m": 13199657710.84295,
+        "crossing_time_after_first_shot_s": 1132.0311257611286,
+        "crossing_within_receiver": false
+      }
+    ]
+  },
+  "validation": {
+    "passed": 36,
+    "total": 36,
+    "checks": [
+      {
+        "name": "B2 ordered initial radii and speeds",
+        "passed": true
+      },
+      {
+        "name": "B2 contact density 1000.0",
+        "passed": true
+      },
+      {
+        "name": "B2 contact density 2000.0",
+        "passed": true
+      },
+      {
+        "name": "B2 cap solid angle 100",
+        "passed": true
+      },
+      {
+        "name": "B2 cap solid angle 1000",
+        "passed": true
+      },
+      {
+        "name": "B2 cap solid angle 10000",
+        "passed": true
+      },
+      {
+        "name": "B2 cap solid angle 100000",
+        "passed": true
+      },
+      {
+        "name": "C13 ordered initial radii and speeds",
+        "passed": true
+      },
+      {
+        "name": "C13 contact density 1000.0",
+        "passed": true
+      },
+      {
+        "name": "C13 contact density 2000.0",
+        "passed": true
+      },
+      {
+        "name": "C13 cap solid angle 100",
+        "passed": true
+      },
+      {
+        "name": "C13 cap solid angle 1000",
+        "passed": true
+      },
+      {
+        "name": "C13 cap solid angle 10000",
+        "passed": true
+      },
+      {
+        "name": "C13 cap solid angle 100000",
+        "passed": true
+      },
+      {
+        "name": "A ordered initial radii and speeds",
+        "passed": true
+      },
+      {
+        "name": "A contact density 1000.0",
+        "passed": true
+      },
+      {
+        "name": "A contact density 2000.0",
+        "passed": true
+      },
+      {
+        "name": "A cap solid angle 100",
+        "passed": true
+      },
+      {
+        "name": "A cap solid angle 1000",
+        "passed": true
+      },
+      {
+        "name": "A cap solid angle 10000",
+        "passed": true
+      },
+      {
+        "name": "A cap solid angle 100000",
+        "passed": true
+      },
+      {
+        "name": "B1 ordered initial radii and speeds",
+        "passed": true
+      },
+      {
+        "name": "B1 contact density 1000.0",
+        "passed": true
+      },
+      {
+        "name": "B1 contact density 2000.0",
+        "passed": true
+      },
+      {
+        "name": "B1 cap solid angle 100",
+        "passed": true
+      },
+      {
+        "name": "B1 cap solid angle 1000",
+        "passed": true
+      },
+      {
+        "name": "B1 cap solid angle 10000",
+        "passed": true
+      },
+      {
+        "name": "B1 cap solid angle 100000",
+        "passed": true
+      },
+      {
+        "name": "opposing crossing 60.0",
+        "passed": true
+      },
+      {
+        "name": "opposing crossing 600.0",
+        "passed": true
+      },
+      {
+        "name": "opposing crossing 1800.0",
+        "passed": true
+      },
+      {
+        "name": "opposing crossing 6774.3130579500075",
+        "passed": true
+      },
+      {
+        "name": "uniform-density quantile 0.05",
+        "passed": true
+      },
+      {
+        "name": "uniform-density quantile 0.5",
+        "passed": true
+      },
+      {
+        "name": "uniform-density quantile 0.95",
+        "passed": true
+      },
+      {
+        "name": "uniform-density quantile 0.999",
+        "passed": true
+      }
+    ]
+  },
+  "code_sha256": "347fc925b632b633c7edb490703135a0dbb1c916d2125240ad7c69d664d0ed60"
+}

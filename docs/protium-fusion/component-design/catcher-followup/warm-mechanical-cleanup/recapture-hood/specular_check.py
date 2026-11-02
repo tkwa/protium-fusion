@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,math,hashlib
+import numpy as np
+P=Path(__file__).resolve().parent;d=json.loads((P/'results.json').read_text());rng=np.random.default_rng(901411);N=2000000;x=rng.random((N,2));mu=np.sqrt(rng.random(N));phi=rng.uniform(0,2*np.pi,N);r=np.sqrt(1-mu*mu)/mu*10;delta=np.column_stack([r*np.cos(phi),r*np.sin(phi)]);hits=np.abs(np.floor(x+delta)).sum(axis=1);rows=[]
+for s in [.1,.25,.5,1.]:
+ weights=(1-s)**hits;v=float(np.mean(weights));se=float(np.std(weights,ddof=1)/math.sqrt(N));mc=next(z for z in d['ray_transport'] if z['irreversible_sticking_probability']==s and (z['diffuse_fraction_among_unstuck']==0 or s==1));mse=math.sqrt(mc['escape_probability']*(1-mc['escape_probability'])/mc['rays']);z=abs(v-mc['escape_probability'])/math.sqrt(se*se+mse*mse);assert z<5;rows.append({'s':s,'independent_unfolded_weighted_probability':v,'weighted_sampling_standard_error':se,'analog_MC_probability':mc['escape_probability'],'difference_in_joint_standard_errors':z})
+out={'scope':'Independent exactunfoldedray squarecell count for fullyspecularunstuckpaths, weighted by(1-s)^Ncollisions.','code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'source_sha256':hashlib.sha256((P/'results.json').read_bytes()).hexdigest(),'rays':N,'checks_passed':len(rows),'rows':rows};(P/'specular-check.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(rows,indent=2))

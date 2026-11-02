@@ -1,0 +1,1543 @@
+{
+  "scope": "Conditional material-interface screen. Corrected64 pulse inputs; frozen data untouched. Primary atomic attenuation and equilibrium thermochemistry plus explicit reduced transport assumptions.",
+  "primary_sources": {
+    "Al_XCOM": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z13.html",
+    "Sn_XCOM": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z50.html",
+    "Al_gas": "https://janaf.nist.gov/tables/Al-005.html",
+    "Al_liquid": "https://janaf.nist.gov/tables/Al-004.html",
+    "AlO_gas": "https://janaf.nist.gov/tables/Al-074.html",
+    "AlO2_gas": "https://janaf.nist.gov/tables/Al-077.html",
+    "Al2O_gas": "https://janaf.nist.gov/tables/Al-092.html",
+    "Al2O2_gas": "https://janaf.nist.gov/tables/Al-094.html",
+    "Al2O3_alpha": "https://janaf.nist.gov/tables/Al-096.html",
+    "O_gas": "https://janaf.nist.gov/tables/O-001.html"
+  },
+  "material_parameters": {
+    "Al": {
+      "rho": 2375.0,
+      "cp": 1176.7675886977313,
+      "k": 80.0,
+      "scope": "JANAF liquid cp; rho,k are explicit engineering values"
+    },
+    "Al2O3": {
+      "rho": 3900.0,
+      "cp": 1223.724066038122,
+      "k": 10.0,
+      "scope": "JANAF alpha crystal1000K cp; density and conductivity are engineering values"
+    },
+    "Sn": {
+      "rho": 6700.0,
+      "cp": 250.0,
+      "k": 30.0,
+      "scope": "All thermophysical values are illustrative parameters pending qualification"
+    }
+  },
+  "flash": {
+    "C13": {
+      "total_prompt_J_m2": 48849.901200036744,
+      "Planck_shape_cases": {
+        "0.5": {
+          "temperature_multiplier": 0.5,
+          "below1keV_J_m2": 160.78114798660602,
+          "above1MeV_J_m2": 3.663947719325936e-24,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 16691.421402379416,
+              "resolved_uncollided_transmission_J_m2": 31481.754223640615,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 518.0425090338254,
+              "layer_mean_sensible_heat_equivalent_K": 59.72264169888049,
+              "unresolved_low_high_full_retention_J_m2": 160.78114798660602,
+              "below1keV_all_surface_conduction_peak_rise_K": 3.1182048412920382,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 16880.49225322603,
+              "resolved_uncollided_transmission_J_m2": 31189.049735416324,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 362.13996450604867,
+              "layer_mean_sensible_heat_equivalent_K": 35.370157922890726,
+              "unresolved_low_high_full_retention_J_m2": 160.78114798660602,
+              "below1keV_all_surface_conduction_peak_rise_K": 6.749206825628554,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 32839.17570800354,
+              "resolved_uncollided_transmission_J_m2": 10185.324951512011,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 4688.641994634216,
+              "layer_mean_sensible_heat_equivalent_K": 196.0547803462898,
+              "unresolved_low_high_full_retention_J_m2": 160.78114798660602,
+              "below1keV_all_surface_conduction_peak_rise_K": 6.577468214601702,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "1.0": {
+          "temperature_multiplier": 1.0,
+          "below1keV_J_m2": 22.851479213493782,
+          "above1MeV_J_m2": 5.241155830874676e-09,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 7755.030850819187,
+              "resolved_uncollided_transmission_J_m2": 40703.54806141801,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 133.8625071557515,
+              "layer_mean_sensible_heat_equivalent_K": 27.74784230186741,
+              "unresolved_low_high_full_retention_J_m2": 22.851479218734937,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.45006997140335336,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 7881.501382799119,
+              "resolved_uncollided_transmission_J_m2": 40453.463804544546,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 89.52484070487193,
+              "layer_mean_sensible_heat_equivalent_K": 16.514325790813995,
+              "unresolved_low_high_full_retention_J_m2": 22.851479218734937,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.9741551558066708,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 23486.418252178228,
+              "resolved_uncollided_transmission_J_m2": 19771.32557904937,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 1625.5208397098268,
+              "layer_mean_sensible_heat_equivalent_K": 140.21742240106406,
+              "unresolved_low_high_full_retention_J_m2": 22.851479218734937,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.9493670499291622,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "2.0": {
+          "temperature_multiplier": 2.0,
+          "below1keV_J_m2": 3.042198660697359,
+          "above1MeV_J_m2": 0.08506243244355617,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 2530.266624655071,
+              "resolved_uncollided_transmission_J_m2": 46071.3245783233,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 27.84490635050549,
+              "layer_mean_sensible_heat_equivalent_K": 9.05340554192519,
+              "unresolved_low_high_full_retention_J_m2": 3.1272610931409153,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.06035400477001056,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 2587.0260746547565,
+              "resolved_uncollided_transmission_J_m2": 45901.66026264377,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 18.134589916511977,
+              "layer_mean_sensible_heat_equivalent_K": 5.420666615553678,
+              "unresolved_low_high_full_retention_J_m2": 3.1272610931409153,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.130633387375215,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 13935.022429135339,
+              "resolved_uncollided_transmission_J_m2": 29752.93594096535,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 455.8645076780582,
+              "layer_mean_sensible_heat_equivalent_K": 83.19416375603187,
+              "unresolved_low_high_full_retention_J_m2": 3.1272610931409153,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.1273093232175778,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        }
+      }
+    },
+    "A": {
+      "total_prompt_J_m2": 17818.09731288648,
+      "Planck_shape_cases": {
+        "0.5": {
+          "temperature_multiplier": 0.5,
+          "below1keV_J_m2": 30.536470244485894,
+          "above1MeV_J_m2": 1.717105905608507e-27,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 4635.3406126900445,
+              "resolved_uncollided_transmission_J_m2": 12982.161050129116,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 116.83778668728112,
+              "layer_mean_sensible_heat_equivalent_K": 16.585453083372094,
+              "unresolved_low_high_full_retention_J_m2": 30.536470244485894,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.6126128011205846,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 4696.185197659393,
+              "resolved_uncollided_transmission_J_m2": 12877.460448285354,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 80.49943829552237,
+              "layer_mean_sensible_heat_equivalent_K": 9.840045514348686,
+              "unresolved_low_high_full_retention_J_m2": 30.536470244485894,
+              "below1keV_all_surface_conduction_peak_rise_K": 1.3259714192083902,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 11176.850160206162,
+              "resolved_uncollided_transmission_J_m2": 4209.885920329196,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 1162.667081730238,
+              "layer_mean_sensible_heat_equivalent_K": 66.72746364302186,
+              "unresolved_low_high_full_retention_J_m2": 30.536470244485894,
+              "below1keV_all_surface_conduction_peak_rise_K": 1.2922310856137171,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "1.0": {
+          "temperature_multiplier": 1.0,
+          "below1keV_J_m2": 4.260071492858079,
+          "above1MeV_J_m2": 8.547509927013551e-11,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 1886.5293350299328,
+              "resolved_uncollided_transmission_J_m2": 15810.408449218801,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 28.189694281705723,
+              "layer_mean_sensible_heat_equivalent_K": 6.75008513740829,
+              "unresolved_low_high_full_retention_J_m2": 4.2600714929435535,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.08684444002777617,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 1920.2867314837956,
+              "resolved_uncollided_transmission_J_m2": 15731.138245547407,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 18.699981780765373,
+              "layer_mean_sensible_heat_equivalent_K": 4.023629401970381,
+              "unresolved_low_high_full_retention_J_m2": 4.2600714929435535,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.1879706809641445,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 7357.272617466748,
+              "resolved_uncollided_transmission_J_m2": 8194.58343812287,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 375.755577106249,
+              "layer_mean_sensible_heat_equivalent_K": 43.92401562666715,
+              "unresolved_low_high_full_retention_J_m2": 4.2600714929435535,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.18318762652581094,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "2.0": {
+          "temperature_multiplier": 2.0,
+          "below1keV_J_m2": 0.5621054721314404,
+          "above1MeV_J_m2": 0.008480686840791046,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 562.1756905763144,
+              "resolved_uncollided_transmission_J_m2": 17177.8548385397,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 5.637765171803785,
+              "layer_mean_sensible_heat_equivalent_K": 2.01148940708691,
+              "unresolved_low_high_full_retention_J_m2": 0.5705861589722314,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.011546044364350303,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 576.9534850172645,
+              "resolved_uncollided_transmission_J_m2": 17123.99230197881,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 3.6567356944466822,
+              "layer_mean_sensible_heat_equivalent_K": 1.2089064449718783,
+              "unresolved_low_high_full_retention_J_m2": 0.5705861589722314,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.024990866668205804,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 3982.584522633594,
+              "resolved_uncollided_transmission_J_m2": 12097.59076488617,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 102.52877037017726,
+              "layer_mean_sensible_heat_equivalent_K": 23.776624015722952,
+              "unresolved_low_high_full_retention_J_m2": 0.5705861589722314,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.024354955391393627,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        }
+      }
+    },
+    "B1": {
+      "total_prompt_J_m2": 8979.260014981948,
+      "Planck_shape_cases": {
+        "0.5": {
+          "temperature_multiplier": 0.5,
+          "below1keV_J_m2": 269.1938795317865,
+          "above1MeV_J_m2": 2.543196953996733e-101,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 6123.737096423195,
+              "resolved_uncollided_transmission_J_m2": 2450.150645984518,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 357.42703047628936,
+              "layer_mean_sensible_heat_equivalent_K": 21.911001325249018,
+              "unresolved_low_high_full_retention_J_m2": 269.1938795317865,
+              "below1keV_all_surface_conduction_peak_rise_K": 4.4542607973216874,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 6169.592468722825,
+              "resolved_uncollided_transmission_J_m2": 2401.185323836481,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 272.2422156982103,
+              "layer_mean_sensible_heat_equivalent_K": 12.927316138953215,
+              "unresolved_low_high_full_retention_J_m2": 269.1938795317865,
+              "below1keV_all_surface_conduction_peak_rise_K": 9.641036720331892,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 8077.1485403417455,
+              "resolved_uncollided_transmission_J_m2": 288.01223599229286,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 2712.508001231333,
+              "layer_mean_sensible_heat_equivalent_K": 48.22178233039848,
+              "unresolved_low_high_full_retention_J_m2": 269.1938795317865,
+              "below1keV_all_surface_conduction_peak_rise_K": 9.39571333671274,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "1.0": {
+          "temperature_multiplier": 1.0,
+          "below1keV_J_m2": 44.37028825914128,
+          "above1MeV_J_m2": 2.5326541677865276e-47,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 4137.551211427785,
+              "resolved_uncollided_transmission_J_m2": 4684.80060191207,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 136.3200734254323,
+              "layer_mean_sensible_heat_equivalent_K": 14.804340658228474,
+              "unresolved_low_high_full_retention_J_m2": 44.37028825914128,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.7612746438213679,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 4181.785275477311,
+              "resolved_uncollided_transmission_J_m2": 4623.732802072301,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 95.69063925574015,
+              "layer_mean_sensible_heat_equivalent_K": 8.762209263475977,
+              "unresolved_low_high_full_retention_J_m2": 44.37028825914128,
+              "below1keV_all_surface_conduction_peak_rise_K": 1.6477429430608463,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 7135.7853822449015,
+              "resolved_uncollided_transmission_J_m2": 981.8812459898706,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 1200.2008648963454,
+              "layer_mean_sensible_heat_equivalent_K": 42.60170377459643,
+              "unresolved_low_high_full_retention_J_m2": 44.37028825914128,
+              "below1keV_all_surface_conduction_peak_rise_K": 1.6058148925977889,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "2.0": {
+          "temperature_multiplier": 2.0,
+          "below1keV_J_m2": 6.344102025925061,
+          "above1MeV_J_m2": 1.1112792500500421e-20,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 1998.2671540317858,
+              "resolved_uncollided_transmission_J_m2": 6892.971240737157,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 35.91255381274222,
+              "layer_mean_sensible_heat_equivalent_K": 7.149887980293243,
+              "unresolved_low_high_full_retention_J_m2": 6.344102025925061,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.11064140485304917,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 2029.339670136071,
+              "resolved_uncollided_transmission_J_m2": 6837.994730738182,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 24.0722868940815,
+              "layer_mean_sensible_heat_equivalent_K": 4.252131012244758,
+              "unresolved_low_high_full_retention_J_m2": 6.344102025925061,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.2394780852568739,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 5464.19055975984,
+              "resolved_uncollided_transmission_J_m2": 2387.5972487803874,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 424.69842577160387,
+              "layer_mean_sensible_heat_equivalent_K": 32.62203319259606,
+              "unresolved_low_high_full_retention_J_m2": 6.344102025925061,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.233384386427374,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        }
+      }
+    },
+    "B2": {
+      "total_prompt_J_m2": 23819.480417541494,
+      "Planck_shape_cases": {
+        "0.5": {
+          "temperature_multiplier": 0.5,
+          "below1keV_J_m2": 43.86518392383926,
+          "above1MeV_J_m2": 2.211497601331912e-22,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 6242.98170159519,
+              "resolved_uncollided_transmission_J_m2": 17308.525696110875,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 163.80830235125126,
+              "layer_mean_sensible_heat_equivalent_K": 22.337663780023323,
+              "unresolved_low_high_full_retention_J_m2": 43.86518392383926,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.9611917167272045,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 6322.8164995020215,
+              "resolved_uncollided_transmission_J_m2": 17171.96598385552,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 113.10594338388441,
+              "layer_mean_sensible_heat_equivalent_K": 13.248370648794674,
+              "unresolved_low_high_full_retention_J_m2": 43.86518392383926,
+              "below1keV_all_surface_conduction_peak_rise_K": 2.0804539872963734,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 14511.633642956338,
+              "resolved_uncollided_transmission_J_m2": 6186.960837177766,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 1601.3804495118848,
+              "layer_mean_sensible_heat_equivalent_K": 86.63661876391843,
+              "unresolved_low_high_full_retention_J_m2": 43.86518392383926,
+              "below1keV_all_surface_conduction_peak_rise_K": 2.0275152809691632,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "1.0": {
+          "temperature_multiplier": 1.0,
+          "below1keV_J_m2": 6.130771491021554,
+          "above1MeV_J_m2": 2.806580953720086e-08,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 2611.236748351855,
+              "resolved_uncollided_transmission_J_m2": 21046.70955000796,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 39.92083587678841,
+              "layer_mean_sensible_heat_equivalent_K": 9.343120214467561,
+              "unresolved_low_high_full_retention_J_m2": 6.1307715190873635,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.13651577950559107,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 2657.6527357029504,
+              "resolved_uncollided_transmission_J_m2": 20940.638331385053,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 26.512403834417047,
+              "layer_mean_sensible_heat_equivalent_K": 5.568652593531524,
+              "unresolved_low_high_full_retention_J_m2": 6.1307715190873635,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.29548194481776374,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 9642.254625948131,
+              "resolved_uncollided_transmission_J_m2": 11387.595156755397,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 523.1057840065556,
+              "layer_mean_sensible_heat_equivalent_K": 57.56569925939183,
+              "unresolved_low_high_full_retention_J_m2": 6.1307715190873635,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.28796318593282033,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        },
+        "2.0": {
+          "temperature_multiplier": 2.0,
+          "below1keV_J_m2": 0.8096278748776906,
+          "above1MeV_J_m2": 0.14146666023385615,
+          "rows": {
+            "Al": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.23750000000000002,
+              "resolved_transfer_J_m2": 790.3168991975188,
+              "resolved_uncollided_transmission_J_m2": 22925.142004504087,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 8.027451771375436,
+              "layer_mean_sensible_heat_equivalent_K": 2.827788710230225,
+              "unresolved_low_high_full_retention_J_m2": 0.9510945351115467,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.018166045395659018,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Al2O3": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.39,
+              "resolved_transfer_J_m2": 810.885271018001,
+              "resolved_uncollided_transmission_J_m2": 22853.12098079781,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 5.209804428755384,
+              "layer_mean_sensible_heat_equivalent_K": 1.6990701256221654,
+              "unresolved_low_high_full_retention_J_m2": 0.9510945351115467,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.03931954564224769,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            },
+            "Sn": {
+              "thickness_m": 0.0001,
+              "areal_mass_kg_m2": 0.67,
+              "resolved_transfer_J_m2": 5310.108963306457,
+              "resolved_uncollided_transmission_J_m2": 16255.846220423558,
+              "resolved_surface_sensible_heat_equivalent_K_no_conduction": 143.04597176318,
+              "layer_mean_sensible_heat_equivalent_K": 31.70214306451616,
+              "unresolved_low_high_full_retention_J_m2": 0.9510945351115467,
+              "below1keV_all_surface_conduction_peak_rise_K": 0.038319030421827306,
+              "scope": "mu_en first-interaction energy transfer with bulk local retention. Sensible equivalent precedes phase change; no secondary electron or repeated-fluorescence transport."
+            }
+          }
+        }
+      }
+    }
+  },
+  "Al_gas_properties": [
+    {
+      "T_K": 700.0,
+      "P_Pa": 2.805433637951716e-13,
+      "flux_kg_m2_s": 2.4097795145921143e-16,
+      "whole_sphere_gross_source_kg_s": 3664.1440799898614,
+      "equilibrium_radial_mass_column_kg_m2": 1.430629479331058e-09,
+      "first_wall_return_mean_s": 1978921.6823476485
+    },
+    {
+      "T_K": 750.0,
+      "P_Pa": 1.187590368250051e-11,
+      "flux_kg_m2_s": 9.855130128161118e-15,
+      "whole_sphere_gross_source_kg_s": 149850.29334828362,
+      "equilibrium_radial_mass_column_kg_m2": 5.652370395520647e-08,
+      "first_wall_return_mean_s": 1911819.9766735197
+    },
+    {
+      "T_K": 800.0,
+      "P_Pa": 3.147748314101311e-10,
+      "flux_kg_m2_s": 2.529189293239491e-13,
+      "whole_sphere_gross_source_kg_s": 3845710.3315387066,
+      "equilibrium_radial_mass_column_kg_m2": 1.404543592443121e-06,
+      "first_wall_return_mean_s": 1851111.7326507987
+    },
+    {
+      "T_K": 900.0,
+      "P_Pa": 7.294575102545679e-08,
+      "flux_kg_m2_s": 5.525926109844962e-11,
+      "whole_sphere_gross_source_kg_s": 840234109.3548975,
+      "equilibrium_radial_mass_column_kg_m2": 0.00028932282726890643,
+      "first_wall_return_mean_s": 1745244.878521812
+    },
+    {
+      "T_K": 933.45,
+      "P_Pa": 3.3431216296401284e-07,
+      "flux_kg_m2_s": 2.486754860906813e-10,
+      "whole_sphere_gross_source_kg_s": 3781187468.3149185,
+      "equilibrium_radial_mass_column_kg_m2": 0.0012784575939535105,
+      "first_wall_return_mean_s": 1713689.3467755697
+    },
+    {
+      "T_K": 1000.0,
+      "P_Pa": 5.105049999754065e-06,
+      "flux_kg_m2_s": 3.6688193518108704e-09,
+      "whole_sphere_gross_source_kg_s": 55785529867.30595,
+      "equilibrium_radial_mass_column_kg_m2": 0.018223223843240356,
+      "first_wall_return_mean_s": 1655684.667261841
+    },
+    {
+      "T_K": 1100.0,
+      "P_Pa": 0.000156675107010815,
+      "flux_kg_m2_s": 1.0735690571058056e-07,
+      "whole_sphere_gross_source_kg_s": 1632394864855.6611,
+      "equilibrium_radial_mass_column_kg_m2": 0.5084315879479878,
+      "first_wall_return_mean_s": 1578633.389821702
+    },
+    {
+      "T_K": 1200.0,
+      "P_Pa": 0.002691534803926914,
+      "flux_kg_m2_s": 1.7657763880049515e-06,
+      "whole_sphere_gross_source_kg_s": 26849174621643.19,
+      "equilibrium_radial_mass_column_kg_m2": 8.006523151290565,
+      "first_wall_return_mean_s": 1511426.4006245758
+    },
+    {
+      "T_K": 1400.0,
+      "P_Pa": 0.22908676527677746,
+      "flux_kg_m2_s": 0.00013914330358810755,
+      "whole_sphere_gross_source_kg_s": 2115716848887286.8,
+      "equilibrium_radial_mass_column_kg_m2": 584.1134063838317,
+      "first_wall_return_mean_s": 1399308.9410251135
+    }
+  ],
+  "Al_backed_surface_pulse_excess": {
+    "c12": {
+      "interval_s": 1133368.9623012526,
+      "background_K": 1111.7263005624711,
+      "slow_peak_K": 1387.2678126932901,
+      "slow_excess_Al_kg_m2_per_pulse": 0.017155795045221012,
+      "prompt_excess_using_old_all_surface_carbon_history_kg_m2_per_pulse": 8.389315315617929e-09,
+      "mean_excess_Al_source_kg_s": 230162719725.77014,
+      "oxide_excess_mass_kg_m2_same_thermal_history_plus10K": 4.94476815238094e-12,
+      "peak_Al_vapor_Pa": 0.17944491631232737,
+      "peak_Al_mass_flux_kg_m2_s": 0.00010949072524067257,
+      "slow_end_s": 199999.75,
+      "scope": "200ks excess integral, small late tail omitted; unchanged carbon temperature history is conditional, ignores evaporation heat feedback and altered material heat transfer. Prompt is a deliberately old all-surface upper reference, not the Planck flash model."
+    },
+    "c13": {
+      "interval_s": 15885706.54029858,
+      "background_K": 1111.7263005624711,
+      "slow_peak_K": 1364.3093253655654,
+      "slow_excess_Al_kg_m2_per_pulse": 0.009706516902901136,
+      "prompt_excess_using_old_all_surface_carbon_history_kg_m2_per_pulse": 1.8316528894580252e-07,
+      "mean_excess_Al_source_kg_s": 9290953986.197794,
+      "oxide_excess_mass_kg_m2_same_thermal_history_plus10K": 1.4143060558504706e-12,
+      "peak_Al_vapor_Pa": 0.1141999666677273,
+      "peak_Al_mass_flux_kg_m2_s": 7.026448726686967e-05,
+      "slow_end_s": 199999.75,
+      "scope": "200ks excess integral, small late tail omitted; unchanged carbon temperature history is conditional, ignores evaporation heat feedback and altered material heat transfer. Prompt is a deliberately old all-surface upper reference, not the Planck flash model."
+    },
+    "n14": {
+      "interval_s": 648690.3901793147,
+      "background_K": 1111.7263005624711,
+      "slow_peak_K": 1275.5765630645908,
+      "slow_excess_Al_kg_m2_per_pulse": 0.004169297761786699,
+      "prompt_excess_using_old_all_surface_carbon_history_kg_m2_per_pulse": 3.375841355580665e-09,
+      "mean_excess_Al_source_kg_s": 97728455285.76895,
+      "oxide_excess_mass_kg_m2_same_thermal_history_plus10K": 5.419998591601706e-14,
+      "peak_Al_vapor_Pa": 0.017053595024630375,
+      "peak_Al_mass_flux_kg_m2_s": 1.085148084401495e-05,
+      "slow_end_s": 199999.75,
+      "scope": "200ks excess integral, small late tail omitted; unchanged carbon temperature history is conditional, ignores evaporation heat feedback and altered material heat transfer. Prompt is a deliberately old all-surface upper reference, not the Planck flash model."
+    },
+    "n15": {
+      "interval_s": 6774.3130579500075,
+      "background_K": 1007.0912934190922,
+      "slow_peak_K": 1008.1088945369892,
+      "slow_excess_Al_kg_m2_per_pulse": 6.825111318042928e-07,
+      "prompt_excess_using_old_all_surface_carbon_history_kg_m2_per_pulse": 4.6414984003293354e-11,
+      "mean_excess_Al_source_kg_s": 1532036966.772509,
+      "oxide_excess_mass_kg_m2_same_thermal_history_plus10K": 7.168557977163954e-20,
+      "peak_Al_vapor_Pa": 6.911467947244767e-06,
+      "peak_Al_mass_flux_kg_m2_s": 4.947011308753255e-09,
+      "slow_end_s": 199999.75,
+      "scope": "200ks excess integral, small late tail omitted; unchanged carbon temperature history is conditional, ignores evaporation heat feedback and altered material heat transfer. Prompt is a deliberately old all-surface upper reference, not the Planck flash model."
+    }
+  },
+  "Al1000K_baseline_source_kg_s": 55785529867.30595,
+  "Al_diagnostic_baseline1000_plus_excess_on_amplified_background_kg_s": 394499695831.81537,
+  "Al_aggregate_scope": "The baseline1000 plus excess on conservative amplified backgrounds is a diagnostic, not an exact operating mean or a rigorously complete time-envelope integral. The1000K baseline alone establishes the open-cavity vapor concern.",
+  "packet_gas_acceptance": [
+    {
+      "grain_radius_m": 0.0001,
+      "allocated_gas_heating_J_kg": 1000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296294e-11,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.540510762230978e-09,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 659.1476070707434,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 19839.90005050408
+    },
+    {
+      "grain_radius_m": 0.0001,
+      "allocated_gas_heating_J_kg": 10000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296294e-10,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.5405107622309782e-08,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 686.013135862187,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 6273.927199242846
+    },
+    {
+      "grain_radius_m": 0.0001,
+      "allocated_gas_heating_J_kg": 100000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296295e-09,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.5405107622309785e-07,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 715.2238023939321,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 1983.9897555531675
+    },
+    {
+      "grain_radius_m": 0.001,
+      "allocated_gas_heating_J_kg": 1000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296294e-10,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.5405107622309782e-08,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 686.013135862187,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 6273.927199242846
+    },
+    {
+      "grain_radius_m": 0.001,
+      "allocated_gas_heating_J_kg": 10000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296295e-09,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.5405107622309785e-07,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 715.2238023939321,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 1983.9897555531675
+    },
+    {
+      "grain_radius_m": 0.001,
+      "allocated_gas_heating_J_kg": 100000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296295e-08,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.540510762230978e-06,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 747.1010595175546,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 627.3919309442796
+    },
+    {
+      "grain_radius_m": 0.01,
+      "allocated_gas_heating_J_kg": 1000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296295e-09,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.5405107622309785e-07,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 715.2238023939321,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 1983.9897555531675
+    },
+    {
+      "grain_radius_m": 0.01,
+      "allocated_gas_heating_J_kg": 10000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296295e-08,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.540510762230978e-06,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 747.1010595175546,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 627.3919309442796
+    },
+    {
+      "grain_radius_m": 0.01,
+      "allocated_gas_heating_J_kg": 100000.0,
+      "energy_retention_fraction": 1.0,
+      "allowed_radial_gas_column_kg_m2": 4.6296296296296297e-07,
+      "maximum_hot_area_escape_over_effective_cold_area_at1000K": 2.5405107622309785e-05,
+      "cold_Al_deposit_equilibrium_temperature_limit_K": 781.9839278166226,
+      "ideal_single_aperture_depth_over_radius_if_coldwalls_unitstick": 198.39648056706844
+    }
+  ],
+  "hydrogen_gas_return": [
+    {
+      "species": "H",
+      "T_K": 1000.0,
+      "postburn_protons_per_He": 1.8590484496438253,
+      "hydrogen_mass_flow_kg_s": 1176084.187881287,
+      "mean_speed_m_s": 4583.4379275335405,
+      "unit_first_return_capture_radial_column_kg_m2_if_all_released": 7.425137476315537e-08,
+      "escape_fraction_over_global_capture_fraction_limit_for_1cm_10kJkg": 0.6235075975895493,
+      "scope": "Neutral gas molecular-flow mean reference; effective global capture must actually exist. Multiply column by escape fraction / capture fraction. H2 does not condense at1000K."
+    },
+    {
+      "species": "H2",
+      "T_K": 1000.0,
+      "postburn_protons_per_He": 1.8590484496438253,
+      "hydrogen_mass_flow_kg_s": 1176084.187881287,
+      "mean_speed_m_s": 3240.9800397065824,
+      "unit_first_return_capture_radial_column_kg_m2_if_all_released": 1.0500730121490167e-07,
+      "escape_fraction_over_global_capture_fraction_limit_for_1cm_10kJkg": 0.44088645037690344,
+      "scope": "Neutral gas molecular-flow mean reference; effective global capture must actually exist. Multiply column by escape fraction / capture fraction. H2 does not condense at1000K."
+    }
+  ],
+  "dust_acceptance": [
+    {
+      "fuel_grain_radius_m": 0.001,
+      "dust_radius_m_for10kJkg_single_hit": 1.049934208245728e-06,
+      "allowed_fraction_grains_above_energy_budget": 0.001,
+      "critical_size_dust_radial_column_limit_kg_m2": 4.6222348085493035e-12,
+      "uniform_dust_source_kg_s_at100m_s_unit_first_return_capture": 1.5973296809476065,
+      "scope": "Poisson projected-area interception, one catastrophic-equivalent hit; a grain-damage fraction, not the probability an entire macropulse has any hit. Dust size/speed/energy-retention are assumptions; no source yield is inferred."
+    },
+    {
+      "fuel_grain_radius_m": 0.01,
+      "dust_radius_m_for10kJkg_single_hit": 1.049934208245728e-05,
+      "allowed_fraction_grains_above_energy_budget": 0.001,
+      "critical_size_dust_radial_column_limit_kg_m2": 4.6222348085493047e-11,
+      "uniform_dust_source_kg_s_at100m_s_unit_first_return_capture": 15.973296809476071,
+      "scope": "Poisson projected-area interception, one catastrophic-equivalent hit; a grain-damage fraction, not the probability an entire macropulse has any hit. Dust size/speed/energy-retention are assumptions; no source yield is inferred."
+    }
+  ],
+  "oxide_equilibrium": [
+    {
+      "temperature_K": 1000.0,
+      "partial_pressure_Pa": {
+        "Al": 5.512231781718768e-20,
+        "AlO": 2.7539148876592055e-23,
+        "AlO2": 3.954065938516554e-33,
+        "Al2O": 5.082458013981938e-26,
+        "Al2O2": 3.593105669585221e-31,
+        "O": 6.367568434960949e-20,
+        "O2": 1.638563809438959e-24
+      },
+      "total_pressure_Pa": 1.1882723070442659e-19,
+      "mass_flux_kg_m2_s": 7.487892880563795e-23,
+      "species_mass_flux": {
+        "Al": 3.961446534982221e-23,
+        "AlO": 2.4979251080192453e-26,
+        "AlO2": 4.2013374533868474e-36,
+        "Al2O": 5.881635680409793e-29,
+        "Al2O2": 4.609076186138787e-34,
+        "O": 3.523814300492348e-23,
+        "O2": 1.2823829901671976e-27
+      },
+      "congruent_flux_O_per_Al": 1.4999999999999896
+    },
+    {
+      "temperature_K": 1100.0,
+      "partial_pressure_Pa": {
+        "Al": 4.614327474458966e-17,
+        "AlO": 6.744954125440303e-20,
+        "AlO2": 1.0084411223723784e-28,
+        "Al2O": 2.8409536685321696e-22,
+        "Al2O2": 7.125098841798117e-27,
+        "O": 5.331262301065252e-17,
+        "O2": 4.559736205025891e-21
+      },
+      "total_pressure_Pa": 9.952819113529442e-17,
+      "mass_flux_kg_m2_s": 5.9810558223334e-20,
+      "species_mass_flux": {
+        "Al": 3.161829144683701e-20,
+        "AlO": 5.833262994499831e-23,
+        "AlO2": 1.0216399397696279e-31,
+        "Al2O": 3.1346721750703516e-25,
+        "Al2O2": 8.71441921371159e-30,
+        "O": 2.8130218173401225e-20,
+        "O2": 3.4024971166664695e-24
+      },
+      "congruent_flux_O_per_Al": 1.5000000000000047
+    },
+    {
+      "temperature_K": 1200.0,
+      "partial_pressure_Pa": {
+        "Al": 1.2529519779144746e-14,
+        "AlO": 4.447257456568949e-17,
+        "AlO2": 4.675669056093138e-25,
+        "Al2O": 3.717933581170588e-19,
+        "Al2O2": 2.667131104698085e-23,
+        "O": 1.448154374133906e-14,
+        "O2": 3.3363164804849164e-18
+      },
+      "total_pressure_Pa": 2.705924423202698e-14,
+      "mass_flux_kg_m2_s": 1.5575398849649845e-17,
+      "species_mass_flux": {
+        "Al": 8.219968081696621e-18,
+        "AlO": 3.6823964943977856e-20,
+        "AlO2": 4.53520371225224e-28,
+        "Al2O": 3.927673010366781e-22,
+        "Al2O2": 3.1231844852069924e-26,
+        "O": 7.315830417023173e-18,
+        "O2": 2.3835869996694087e-21
+      },
+      "congruent_flux_O_per_Al": 1.5000000000000133
+    },
+    {
+      "temperature_K": 1300.0,
+      "partial_pressure_Pa": {
+        "Al": 1.4309931839665584e-12,
+        "AlO": 1.0697363540784695e-14,
+        "AlO2": 5.842831471097337e-22,
+        "Al2O": 1.593091880293608e-16,
+        "Al2O2": 2.770350463010238e-20,
+        "O": 1.6550610185026231e-12,
+        "O2": 8.7455419709176e-16
+      },
+      "total_pressure_Pa": 3.097785457682875e-12,
+      "mass_flux_kg_m2_s": 1.7145496950492538e-15,
+      "species_mass_flux": {
+        "Al": 9.019702580218562e-16,
+        "AlO": 8.510086580055996e-18,
+        "AlO2": 5.444968127940616e-25,
+        "Al2O": 1.6169383749403657e-19,
+        "Al2O2": 3.116785638928737e-23,
+        "O": 8.033073233781658e-16,
+        "O2": 6.00301519328595e-19
+      },
+      "congruent_flux_O_per_Al": 1.4999999999999885
+    },
+    {
+      "temperature_K": 1400.0,
+      "partial_pressure_Pa": {
+        "Al": 8.275430851611999e-11,
+        "AlO": 1.165875160388447e-12,
+        "AlO2": 2.608109240704267e-19,
+        "Al2O": 2.839583927031699e-14,
+        "Al2O2": 1.0514484082436619e-17,
+        "O": 9.582408646150249e-11,
+        "O2": 1.0244354942320659e-13
+      },
+      "total_pressure_Pa": 1.7987512030199946e-10,
+      "mass_flux_kg_m2_s": 9.607057038355389e-14,
+      "species_mass_flux": {
+        "Al": 5.026352290220951e-14,
+        "AlO": 8.937518035311255e-16,
+        "AlO2": 2.3420999149829464e-22,
+        "Al2O": 2.7772502323535e-17,
+        "Al2O2": 1.1399028707162548e-20,
+        "O": 4.481775129378622e-14,
+        "O2": 6.776024846480098e-17
+      },
+      "congruent_flux_O_per_Al": 1.499999999999996
+    },
+    {
+      "temperature_K": 1500.0,
+      "partial_pressure_Pa": {
+        "Al": 2.7757543597203613e-09,
+        "AlO": 6.750466607753247e-11,
+        "AlO2": 5.110932756625677e-17,
+        "Al2O": 2.5092888141984896e-12,
+        "Al2O2": 1.7837432616943114e-15,
+        "O": 3.220240127074216e-09,
+        "O2": 6.3034962812994156e-12
+      },
+      "total_pressure_Pa": 6.072313772820197e-09,
+      "mass_flux_kg_m2_s": 3.1402359397960995e-12,
+      "species_mass_flux": {
+        "Al": 1.6287773796013418e-12,
+        "AlO": 4.999390530744177e-14,
+        "AlO2": 4.434025596296839e-20,
+        "Al2O": 2.370987920924836e-15,
+        "Al2O2": 1.8682311685653163e-18,
+        "O": 1.4550637469762395e-12,
+        "O2": 4.028007418727415e-15
+      },
+      "congruent_flux_O_per_Al": 1.4999999999999933
+    },
+    {
+      "temperature_K": 1600.0,
+      "partial_pressure_Pa": {
+        "Al": 5.980295264684138e-08,
+        "AlO": 2.3388857590589676e-09,
+        "AlO2": 5.1328687193506085e-15,
+        "Al2O": 1.2538348409247624e-10,
+        "Al2O2": 1.5732886546536383e-13,
+        "O": 6.958400533467509e-08,
+        "O2": 2.3011763130077596e-10
+      },
+      "total_pressure_Pa": 1.3208150731770288e-07,
+      "mass_flux_kg_m2_s": 6.635483070263807e-11,
+      "species_mass_flux": {
+        "Al": 3.3977307742195525e-11,
+        "AlO": 1.677173214192595e-12,
+        "AlO2": 4.3116532173409074e-18,
+        "Al2O": 1.1471089352402435e-13,
+        "Al2O2": 1.5954834988159757e-16,
+        "O": 3.0443096531803454e-11,
+        "O2": 1.423784609193708e-13
+      },
+      "congruent_flux_O_per_Al": 1.499999999999851
+    },
+    {
+      "temperature_K": 1700.0,
+      "partial_pressure_Pa": {
+        "Al": 8.945903526937823e-07,
+        "AlO": 5.311885278130686e-08,
+        "AlO2": 2.973858070260085e-13,
+        "Al2O": 3.917101205718839e-09,
+        "Al2O2": 8.099191633257664e-12,
+        "O": 1.0455237461676341e-06,
+        "O2": 5.469682956902256e-09
+      },
+      "total_pressure_Pa": 2.0026281323827844e-06,
+      "mass_flux_kg_m2_s": 9.805719034296941e-10,
+      "species_mass_flux": {
+        "Al": 4.93089867003752e-10,
+        "AlO": 3.695329131669354e-11,
+        "AlO2": 2.4234799732740744e-16,
+        "Al2O": 3.476679462954045e-12,
+        "Al2O2": 7.968216242016774e-15,
+        "O": 4.437606948142048e-10,
+        "O2": 3.28316026785049e-12
+      },
+      "congruent_flux_O_per_Al": 1.4999999999991005
+    },
+    {
+      "temperature_K": 1800.0,
+      "partial_pressure_Pa": {
+        "Al": 9.868947452398049e-06,
+        "AlO": 8.486442169759024e-07,
+        "AlO2": 1.0899008899245176e-11,
+        "Al2O": 8.269529183843635e-08,
+        "Al2O2": 2.661970809462265e-10,
+        "O": 1.1608600388577956e-05,
+        "O2": 9.101001632402474e-08
+      },
+      "total_pressure_Pa": 2.2500174462204213e-05,
+      "mass_flux_kg_m2_s": 1.0773155150314993e-08,
+      "species_mass_flux": {
+        "Al": 5.286410843867941e-09,
+        "AlO": 5.737441931144931e-10,
+        "AlO2": 8.63166174342863e-15,
+        "Al2O": 7.132944617007342e-11,
+        "Al2O2": 2.5451356463509546e-13,
+        "O": 4.788318181476565e-09,
+        "O2": 5.3089340459540636e-11
+      },
+      "congruent_flux_O_per_Al": 1.4999999999999944
+    },
+    {
+      "temperature_K": 1900.0,
+      "partial_pressure_Pa": {
+        "Al": 8.42079419522436e-05,
+        "AlO": 1.0085513388806235e-05,
+        "AlO2": 2.717248840273976e-10,
+        "Al2O": 1.2545824732776685e-06,
+        "Al2O2": 5.995637766148743e-09,
+        "O": 9.995644338787637e-05,
+        "O2": 1.1227435840004718e-06
+      },
+      "total_pressure_Pa": 0.0001966334921488545,
+      "mass_flux_kg_m2_s": 9.236745009510021e-08,
+      "species_mass_flux": {
+        "Al": 4.390384747993224e-08,
+        "AlO": 6.636668255696883e-09,
+        "AlO2": 2.0945767083442922e-13,
+        "Al2O": 1.0532870289510293e-09,
+        "Al2O2": 5.579592520145032e-12,
+        "O": 4.01303905986917e-08,
+        "O2": 6.374676816373868e-10
+      },
+      "congruent_flux_O_per_Al": 1.4999999999999967
+    },
+    {
+      "temperature_K": 2000.0,
+      "partial_pressure_Pa": {
+        "Al": 0.0005772285363339584,
+        "AlO": 9.320572480069089e-05,
+        "AlO2": 4.885173717098406e-09,
+        "Al2O": 1.4362693937053227e-05,
+        "Al2O2": 9.792223961477215e-08,
+        "O": 0.0006937381806835401,
+        "O2": 1.0752072574454802e-05
+      },
+      "total_pressure_Pa": 0.0013893900157430292,
+      "mass_flux_kg_m2_s": 6.423763019789675e-07,
+      "species_mass_flux": {
+        "Al": 2.9333178389415625e-07,
+        "AlO": 5.978007969916743e-08,
+        "AlO2": 3.670360076626243e-12,
+        "Al2O": 1.1752905074311496e-08,
+        "Al2O2": 8.88198912985017e-11,
+        "O": 2.7146884284070695e-07,
+        "O2": 5.950200219250218e-09
+      },
+      "congruent_flux_O_per_Al": 1.4999999999999982
+    }
+  ],
+  "oxide_scope": "Seven ideal-gas species Al,AlO,AlO2,Al2O,Al2O2,O,O2; alpha-Al2O3 activity1; congruent effusive O/Al flux3/2 and unit evaporation coefficients. No hydrogen/carbon reduction, radiation chemistry, sputtering, dissociation kinetics or defect enhancement. This is a thermal equilibrium reference, not irradiated service prediction.",
+  "source_tables": {
+    "XCOM_keV_cm2_g": {
+      "Al": [
+        [
+          1.0,
+          1185.0,
+          1183.0
+        ],
+        [
+          1.5,
+          402.2,
+          400.1
+        ],
+        [
+          1.5596,
+          362.1,
+          360.0
+        ],
+        [
+          1.5596,
+          3957.0,
+          3829.0
+        ],
+        [
+          2.0,
+          2263.0,
+          2204.0
+        ],
+        [
+          3.0,
+          788.0,
+          773.2
+        ],
+        [
+          4.0,
+          360.5,
+          354.5
+        ],
+        [
+          5.0,
+          193.4,
+          190.2
+        ],
+        [
+          6.0,
+          115.3,
+          113.3
+        ],
+        [
+          8.0,
+          50.33,
+          49.18
+        ],
+        [
+          10.0,
+          26.23,
+          25.43
+        ],
+        [
+          15.0,
+          7.955,
+          7.487
+        ],
+        [
+          20.0,
+          3.441,
+          3.094
+        ],
+        [
+          30.0,
+          1.128,
+          0.8778
+        ],
+        [
+          40.0,
+          0.5685,
+          0.3601
+        ],
+        [
+          50.0,
+          0.3681,
+          0.184
+        ],
+        [
+          60.0,
+          0.2778,
+          0.1099
+        ],
+        [
+          80.0,
+          0.2018,
+          0.05511
+        ],
+        [
+          100.0,
+          0.1704,
+          0.03794
+        ],
+        [
+          150.0,
+          0.1378,
+          0.02827
+        ],
+        [
+          200.0,
+          0.1223,
+          0.02745
+        ],
+        [
+          300.0,
+          0.1042,
+          0.02816
+        ],
+        [
+          400.0,
+          0.09276,
+          0.02862
+        ],
+        [
+          500.0,
+          0.08445,
+          0.02868
+        ],
+        [
+          600.0,
+          0.07802,
+          0.02851
+        ],
+        [
+          800.0,
+          0.06841,
+          0.02778
+        ],
+        [
+          1000.0,
+          0.06146,
+          0.02686
+        ]
+      ],
+      "Sn": [
+        [
+          1.0,
+          8157.0,
+          8144.0
+        ],
+        [
+          1.5,
+          3296.0,
+          3287.0
+        ],
+        [
+          2.0,
+          1665.0,
+          1657.0
+        ],
+        [
+          3.0,
+          614.3,
+          607.7
+        ],
+        [
+          3.9288,
+          311.4,
+          305.8
+        ],
+        [
+          3.9288,
+          928.5,
+          884.5
+        ],
+        [
+          4.0,
+          939.3,
+          894.5
+        ],
+        [
+          4.1561,
+          846.9,
+          807.4
+        ],
+        [
+          4.1561,
+          1145.0,
+          1084.0
+        ],
+        [
+          4.30764,
+          1060.0,
+          1002.0
+        ],
+        [
+          4.4647,
+          971.2,
+          922.1
+        ],
+        [
+          4.4647,
+          1117.0,
+          1059.0
+        ],
+        [
+          5.0,
+          847.1,
+          806.4
+        ],
+        [
+          6.0,
+          529.4,
+          506.5
+        ],
+        [
+          8.0,
+          250.0,
+          240.0
+        ],
+        [
+          10.0,
+          138.4,
+          132.7
+        ],
+        [
+          15.0,
+          46.64,
+          44.13
+        ],
+        [
+          20.0,
+          21.46,
+          19.9
+        ],
+        [
+          29.2001,
+          7.76,
+          6.876
+        ],
+        [
+          29.2001,
+          43.6,
+          15.14
+        ],
+        [
+          30.0,
+          41.21,
+          14.9
+        ],
+        [
+          40.0,
+          19.42,
+          9.835
+        ],
+        [
+          50.0,
+          10.7,
+          6.314
+        ],
+        [
+          60.0,
+          6.564,
+          4.211
+        ],
+        [
+          80.0,
+          3.029,
+          2.101
+        ],
+        [
+          100.0,
+          1.676,
+          1.189
+        ],
+        [
+          150.0,
+          0.6091,
+          0.4119
+        ],
+        [
+          200.0,
+          0.326,
+          0.199
+        ],
+        [
+          300.0,
+          0.1639,
+          0.08179
+        ],
+        [
+          400.0,
+          0.1156,
+          0.05138
+        ],
+        [
+          500.0,
+          0.09374,
+          0.0398
+        ],
+        [
+          600.0,
+          0.08113,
+          0.03417
+        ],
+        [
+          800.0,
+          0.06662,
+          0.02878
+        ],
+        [
+          1000.0,
+          0.058,
+          0.02601
+        ]
+      ]
+    },
+    "Al_vapor_T": [
+      500.0,
+      600.0,
+      700.0,
+      800.0,
+      900.0,
+      1000.0,
+      1100.0,
+      1200.0,
+      1300.0,
+      1400.0,
+      1500.0,
+      1600.0,
+      1700.0,
+      1800.0,
+      1900.0,
+      2000.0,
+      2100.0
+    ],
+    "Al_vapor_logKf": [
+      -27.348,
+      -21.629,
+      -17.552,
+      -14.502,
+      -12.137,
+      -10.292,
+      -8.805,
+      -7.57,
+      -6.529,
+      -5.64,
+      -4.872,
+      -4.203,
+      -3.614,
+      -3.093,
+      -2.628,
+      -2.211,
+      -1.836
+    ],
+    "oxide_T": [
+      1000.0,
+      1100.0,
+      1200.0,
+      1300.0,
+      1400.0,
+      1500.0,
+      1600.0,
+      1700.0,
+      1800.0,
+      1900.0,
+      2000.0
+    ],
+    "formation_G_kJ_mol": {
+      "Al": [
+        197.027,
+        185.422,
+        173.917,
+        162.503,
+        151.172,
+        139.921,
+        128.742,
+        117.631,
+        106.585,
+        95.6,
+        84.673
+      ],
+      "AlO": [
+        -15.315,
+        -21.704,
+        -27.988,
+        -34.182,
+        -40.296,
+        -46.343,
+        -52.331,
+        -58.269,
+        -64.164,
+        -70.023,
+        -75.85
+      ],
+      "AlO2": [
+        -102.421,
+        -102.681,
+        -102.885,
+        -103.034,
+        -103.133,
+        -103.185,
+        -103.191,
+        -103.153,
+        -103.074,
+        -102.953,
+        -102.794
+      ],
+      "Al2O": [
+        -230.375,
+        -235.573,
+        -240.587,
+        -245.433,
+        -250.124,
+        -254.67,
+        -259.082,
+        -263.368,
+        -267.534,
+        -271.587,
+        -275.532
+      ],
+      "Al2O2": [
+        -407.314,
+        -405.518,
+        -403.565,
+        -401.467,
+        -399.235,
+        -396.877,
+        -394.4,
+        -391.811,
+        -389.117,
+        -386.321,
+        -383.428
+      ],
+      "O": [
+        187.681,
+        181.165,
+        174.619,
+        168.047,
+        161.453,
+        154.84,
+        148.21,
+        141.564,
+        134.905,
+        128.234,
+        121.552
+      ],
+      "O2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Al2O3cr": [
+        -1361.437,
+        -1328.286,
+        -1295.228,
+        -1262.264,
+        -1229.393,
+        -1196.617,
+        -1163.934,
+        -1131.342,
+        -1098.841,
+        -1066.426,
+        -1034.096
+      ]
+    }
+  },
+  "checks": {
+    "count": 128,
+    "passed": 128,
+    "all_passed": true
+  },
+  "input_sha256": {
+    "membrane-receiver/pulse-loading.json": "6ff0345c6ff48ae89503d89a04b698d4b77643e76646081943dbabd28626689a",
+    "membrane-receiver/spectral_proxy.py": "a86343c64dc3ee7f39c4d9e20ef93603ff1e3feb65ac924f97cacf730081a7a4",
+    "membrane-receiver/plume.py": "70a0c1723b4fb4cc108eaca77830b0f098736f5f76c79602524b9cbbf1ce821e",
+    "membrane-receiver/results.json": "b80bd2410b5620d2feb41ccf6ca282f01d874ce116b9fb8109f077af441840ff",
+    "open-loop-redesign/collector-inputs.json": "168515d97c33cb68b21557dfb00031ec950d8c097adfaa3611c8bd8c80be2721",
+    "open-loop-redesign/station-inputs.json": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "open-loop-redesign/collector-periodic.json": "c9a991daaab0816f1846e721de4e7d6157a847a4eedc49a7667de37214fda30b"
+  },
+  "code_sha256": "12acde0032b1d80773a1785ee5e146ca85404115f2fac413ea9bfeb0762de3b2"
+}

@@ -1,0 +1,295 @@
+{
+  "scope": "B2-only sensitivity with other legacy traces still entropy-invalid. Not a consistent corrected cycle.",
+  "files": {
+    "A": {
+      "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-A-64-R30.json",
+      "sha256": "4d2d097f7840c0bfbe7d1f2fbcc7eefcaf32c73bb86220acc7e7b08955f1e51e"
+    },
+    "B1": {
+      "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-B1-64-R30.json",
+      "sha256": "6fd3eb320aa5a6f8ac5484f3c1d30dcf128f3d564b63d88f98673d9f0488ab5d"
+    },
+    "B2": {
+      "path": "/var/tmp/tkwa-chatgpt/protium-b2-completion/B2-64-compression-cap.json",
+      "sha256": "694374075c4214db4d35f3c50e0b654cb2796961abe909ac7fad58e41cf6839b"
+    },
+    "C13": {
+      "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-C13-64-R30.json",
+      "sha256": "0dd0f0ad149940bceca1f4a70b74488942a443f588e2b1d2d3de37792e895ce6"
+    },
+    "He": {
+      "path": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/reassessment-2049/small-stages/scaled-hot-He-64-R3.json",
+      "sha256": "17c56b9490d3dfd249260be7622b84b5bb7601e65c21061575ea5ee4fba1cad1"
+    }
+  },
+  "trace_audits": {
+    "B2": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/b2-completion/B2-64-compression-cap-independent-audit.json"
+  },
+  "cases": [
+    {
+      "independent": {
+        "loss_per_stage": 0,
+        "stage_attempts_per_net_helium": {
+          "c12": 1.1338106350945873,
+          "c13": 0.0812311546013874,
+          "n14": 1.853478686183641,
+          "n15": 1.6658367819914912
+        },
+        "factory_incoming_helium_per_net_helium": 1.0425882944186808,
+        "new_carbon_per_net_helium": 0.00012143099711195806,
+        "hydrogen_atoms_per_net_helium": 4.001942926588534,
+        "nuclear_Q_MeV_per_helium": 26.745705549067225,
+        "neutrino_MeV_per_helium": 2.027390817584209,
+        "escaped_radiation_MeV_per_helium": 0.27283745331448406,
+        "available_heat_MeV_per_helium": 24.445477278168532,
+        "closed_station_heat_MeV_per_helium": 24.718314731483016,
+        "fuel_preparation_MeV_per_helium": 3.225163812232708,
+        "factory_input_MeV_per_helium": 0.9274229171127324,
+        "final_bulk_kinetic_MeV_per_helium": 20.830463773267734,
+        "final_hot_internal_MeV_per_helium": 1.165854832879007,
+        "cold_decay_heat_MeV_per_helium": 5.674322484254497,
+        "selected_60driver_40heat_99capture_net_MeV_per_helium": 5.690344482923581,
+        "net_species_per_helium": {
+          "p": -4.001942926588534,
+          "he4": 1.0,
+          "c12": -7.947201924318748e-17,
+          "c13": 1.5460157736664698e-17,
+          "n14": 1.988810929009316e-16,
+          "n15": 9.139492814008947e-18,
+          "o16": 0.00012143261543791344,
+          "o17": 9.248294635829735e-11,
+          "o18": 1.724545275197518e-11,
+          "f19": 5.1759275340488335e-11,
+          "ne20": 8.767217728692197e-11,
+          "ne21": 2.1695065782778972e-12,
+          "ne22": 3.694331230121094e-13,
+          "na23": 2.133018537742787e-12,
+          "mg24": 8.03278564352812e-13
+        },
+        "baryon_residual": -1.4894489785081914e-15,
+        "nuclear_charge_change_per_net_helium": -2.000971463386155,
+        "mass_excess_Q_sum_minus_net_MeV": 7.105427357601002e-15,
+        "energy_partition_residual_MeV": -3.552713678800501e-15,
+        "balance_matrix_residual": 2.220446049250313e-16,
+        "balance_matrix_condition": 26184.51453895742
+      },
+      "difference_from_cycle_ledger": {
+        "cold_decay_heat_MeV_per_helium": 1.5543122344752192e-13,
+        "nuclear_Q_MeV_per_helium": -9.823253321883385e-12,
+        "final_bulk_kinetic_MeV_per_helium": -9.396927680427325e-12,
+        "new_carbon_per_net_helium": 1.3552527156068805e-20,
+        "available_heat_MeV_per_helium": -9.826806035562186e-12,
+        "final_hot_internal_MeV_per_helium": -5.804245972740318e-13,
+        "factory_input_MeV_per_helium": 2.220446049250313e-16,
+        "escaped_radiation_MeV_per_helium": 1.1102230246251565e-16,
+        "fuel_preparation_MeV_per_helium": 0.0,
+        "neutrino_MeV_per_helium": 4.440892098500626e-16,
+        "hydrogen_atoms_per_net_helium": 0.0,
+        "attempts_c12": 2.220446049250313e-16,
+        "attempts_c13": -1.3877787807814457e-17,
+        "attempts_n14": 0.0,
+        "attempts_n15": 0.0
+      }
+    },
+    {
+      "independent": {
+        "loss_per_stage": 1e-05,
+        "stage_attempts_per_net_helium": {
+          "c12": 1.1340125086285051,
+          "c13": 0.08124465311706573,
+          "n14": 1.8537728074249236,
+          "n15": 1.6660734182822914
+        },
+        "factory_incoming_helium_per_net_helium": 1.4492748328076905,
+        "new_carbon_per_net_helium": 0.00016879806629253372,
+        "hydrogen_atoms_per_net_helium": 4.0025992836038675,
+        "nuclear_Q_MeV_per_helium": 26.750432490939705,
+        "neutrino_MeV_per_helium": 2.027732437407897,
+        "escaped_radiation_MeV_per_helium": 0.27289319035239445,
+        "available_heat_MeV_per_helium": 24.449806863179415,
+        "closed_station_heat_MeV_per_helium": 24.72270005353181,
+        "fuel_preparation_MeV_per_helium": 3.5872907108518115,
+        "factory_input_MeV_per_helium": 1.2891864414131031,
+        "final_bulk_kinetic_MeV_per_helium": 21.160858584718376,
+        "final_hot_internal_MeV_per_helium": 1.2009401508044197,
+        "cold_decay_heat_MeV_per_helium": 5.675298838508427,
+        "selected_60driver_40heat_99capture_net_MeV_per_helium": 5.231938491276228,
+        "net_species_per_helium": {
+          "p": -4.0025992836038675,
+          "he4": 1.0000000000000002,
+          "c12": 1.1338550490717117e-05,
+          "c13": 8.124546557264243e-07,
+          "n14": 1.853791345346603e-05,
+          "n15": 1.6660900791899906e-05,
+          "o16": 0.00012145062064482164,
+          "o17": 9.249661633197842e-11,
+          "o18": 1.724831844984542e-11,
+          "f19": 5.1766676912317815e-11,
+          "ne20": 9.338722638929905e-11,
+          "ne21": 2.1698928561490585e-12,
+          "ne22": 3.6949917631313637e-13,
+          "na23": 2.1334085436479915e-12,
+          "mg24": 8.299499612327393e-13
+        },
+        "baryon_residual": -1.886338890326235e-15,
+        "nuclear_charge_change_per_net_helium": -2.0013083785715597,
+        "mass_excess_Q_sum_minus_net_MeV": 0.0,
+        "energy_partition_residual_MeV": -4.440892098500626e-15,
+        "balance_matrix_residual": 1.5265566601946942e-16,
+        "balance_matrix_condition": 26188.392925700766
+      },
+      "difference_from_cycle_ledger": {
+        "cold_decay_heat_MeV_per_helium": 1.5543122344752192e-13,
+        "nuclear_Q_MeV_per_helium": -9.99733629214461e-12,
+        "final_bulk_kinetic_MeV_per_helium": -9.560352509652148e-12,
+        "new_carbon_per_net_helium": -2.710505431213761e-20,
+        "available_heat_MeV_per_helium": -9.99733629214461e-12,
+        "final_hot_internal_MeV_per_helium": -5.970779426434092e-13,
+        "factory_input_MeV_per_helium": 0.0,
+        "escaped_radiation_MeV_per_helium": 0.0,
+        "fuel_preparation_MeV_per_helium": 4.440892098500626e-16,
+        "neutrino_MeV_per_helium": 4.440892098500626e-16,
+        "hydrogen_atoms_per_net_helium": 0.0,
+        "attempts_c12": 2.220446049250313e-16,
+        "attempts_c13": 1.3877787807814457e-17,
+        "attempts_n14": 2.220446049250313e-16,
+        "attempts_n15": 0.0
+      }
+    },
+    {
+      "independent": {
+        "loss_per_stage": 0.0001,
+        "stage_attempts_per_net_helium": {
+          "c12": 1.1358322509598893,
+          "c13": 0.08136633081969791,
+          "n14": 1.8564240608924822,
+          "n15": 1.668206506100108
+        },
+        "factory_incoming_helium_per_net_helium": 5.11523028610986,
+        "new_carbon_per_net_helium": 0.0005957744945198544,
+        "hydrogen_atoms_per_net_helium": 4.008515833117344,
+        "nuclear_Q_MeV_per_helium": 26.793042151081572,
+        "neutrino_MeV_per_helium": 2.0308118717526575,
+        "escaped_radiation_MeV_per_helium": 0.2733956154322122,
+        "available_heat_MeV_per_helium": 24.488834663896704,
+        "closed_station_heat_MeV_per_helium": 24.762230279328914,
+        "fuel_preparation_MeV_per_helium": 6.851576476725359,
+        "factory_input_MeV_per_helium": 4.550196677867479,
+        "final_bulk_kinetic_MeV_per_helium": 24.13910484833999,
+        "final_hot_internal_MeV_per_helium": 1.517206366603828,
+        "cold_decay_heat_MeV_per_helium": 5.684099925678244,
+        "selected_60driver_40heat_99capture_net_MeV_per_helium": 1.0997733475218947,
+        "net_species_per_helium": {
+          "p": -4.008515833117344,
+          "he4": 1.0,
+          "c12": 0.00011353500114707192,
+          "c13": 8.137446826641436e-06,
+          "n14": 0.00018566097218620232,
+          "n15": 0.00016683733434312884,
+          "o16": 0.00012161292325431051,
+          "o17": 9.261984008209493e-11,
+          "o18": 1.727415029253186e-11,
+          "f19": 5.1833396168164215e-11,
+          "ne20": 1.4490384616474325e-10,
+          "ne21": 2.173374868774419e-12,
+          "ne22": 3.7009459851660285e-13,
+          "na23": 2.1369241611112075e-12,
+          "mg24": 1.070371384279678e-12
+        },
+        "baryon_residual": -5.5564043977693105e-15,
+        "nuclear_charge_change_per_net_helium": -2.0043454040412856,
+        "mass_excess_Q_sum_minus_net_MeV": -3.552713678800501e-15,
+        "energy_partition_residual_MeV": 0.0,
+        "balance_matrix_residual": 2.220446049250313e-16,
+        "balance_matrix_condition": 26223.354408314583
+      },
+      "difference_from_cycle_ledger": {
+        "cold_decay_heat_MeV_per_helium": 1.5365486660812167e-13,
+        "nuclear_Q_MeV_per_helium": -1.1596057447604835e-11,
+        "final_bulk_kinetic_MeV_per_helium": -1.099564883588755e-11,
+        "new_carbon_per_net_helium": -3.2526065174565133e-19,
+        "available_heat_MeV_per_helium": -1.1596057447604835e-11,
+        "final_hot_internal_MeV_per_helium": -7.498446308318307e-13,
+        "factory_input_MeV_per_helium": -1.7763568394002505e-15,
+        "escaped_radiation_MeV_per_helium": -5.551115123125783e-17,
+        "fuel_preparation_MeV_per_helium": -1.7763568394002505e-15,
+        "neutrino_MeV_per_helium": -4.440892098500626e-16,
+        "hydrogen_atoms_per_net_helium": -8.881784197001252e-16,
+        "attempts_c12": -4.440892098500626e-16,
+        "attempts_c13": -2.7755575615628914e-17,
+        "attempts_n14": -4.440892098500626e-16,
+        "attempts_n15": -4.440892098500626e-16
+      }
+    },
+    {
+      "independent": {
+        "loss_per_stage": 0.001,
+        "stage_attempts_per_net_helium": {
+          "c12": 1.154319410312806,
+          "c13": 0.08260232556832782,
+          "n14": 1.8833552566897553,
+          "n15": 1.6898754689741076
+        },
+        "factory_incoming_helium_per_net_helium": 42.35582204769476,
+        "new_carbon_per_net_helium": 0.004933212594350105,
+        "hydrogen_atoms_per_net_helium": 4.068620421691624,
+        "nuclear_Q_MeV_per_helium": 27.225896339790147,
+        "neutrino_MeV_per_helium": 2.0620946457051024,
+        "escaped_radiation_MeV_per_helium": 0.27849950286419595,
+        "available_heat_MeV_per_helium": 24.88530219122085,
+        "closed_station_heat_MeV_per_helium": 25.163801694085045,
+        "fuel_preparation_MeV_per_helium": 40.011808463634566,
+        "factory_input_MeV_per_helium": 37.67715429999462,
+        "final_bulk_kinetic_MeV_per_helium": 54.39360658597815,
+        "final_hot_internal_MeV_per_helium": 4.729995261263688,
+        "cold_decay_heat_MeV_per_helium": 5.773508807613583,
+        "selected_60driver_40heat_99capture_net_MeV_per_helium": -40.87680581693398,
+        "net_species_per_helium": {
+          "p": -4.068620421691624,
+          "he4": 1.0,
+          "c12": 0.0011505367344529938,
+          "c13": 8.268501057893424e-05,
+          "n14": 0.0018852404971871916,
+          "n15": 0.0016915670360101824,
+          "o16": 0.00012326167356596526,
+          "o17": 9.387158963912619e-11,
+          "o18": 1.7536548590755465e-11,
+          "f19": 5.251116109932952e-11,
+          "ne20": 6.682352780615979e-10,
+          "ne21": 2.2087493946967697e-12,
+          "ne22": 3.7614362078305467e-13,
+          "na23": 2.172640019270854e-12,
+          "mg24": 3.5126921672194613e-12
+        },
+        "baryon_residual": -6.285150115098864e-15,
+        "nuclear_charge_change_per_net_helium": -2.035197336962404,
+        "mass_excess_Q_sum_minus_net_MeV": 7.105427357601002e-15,
+        "energy_partition_residual_MeV": 1.4210854715202004e-14,
+        "balance_matrix_residual": 2.4980018444257225e-16,
+        "balance_matrix_condition": 26578.602156815883
+      },
+      "difference_from_cycle_ledger": {
+        "cold_decay_heat_MeV_per_helium": 1.4210854715202004e-13,
+        "nuclear_Q_MeV_per_helium": -2.7750246545110713e-11,
+        "final_bulk_kinetic_MeV_per_helium": -2.5700330752442824e-11,
+        "new_carbon_per_net_helium": -1.474514954580286e-17,
+        "available_heat_MeV_per_helium": -2.7743141117753112e-11,
+        "final_hot_internal_MeV_per_helium": -2.305711177541525e-12,
+        "factory_input_MeV_per_helium": -1.1368683772161603e-13,
+        "escaped_radiation_MeV_per_helium": -7.216449660063518e-16,
+        "fuel_preparation_MeV_per_helium": -1.1368683772161603e-13,
+        "neutrino_MeV_per_helium": -5.773159728050814e-15,
+        "hydrogen_atoms_per_net_helium": -1.2434497875801753e-14,
+        "attempts_c12": -2.886579864025407e-15,
+        "attempts_c13": -2.3592239273284576e-16,
+        "attempts_n14": -5.329070518200751e-15,
+        "attempts_n15": -4.6629367034256575e-15
+      }
+    }
+  ],
+  "limits": [
+    "Cycle arithmetic only; does not establish acceptable viscosity, completed trajectories, separation, collection or plant operation.",
+    "Comparisons use original JSON through cycle_ledger; independent results can substitute raw-trace reconstruction.",
+    "Hot beta Q assigned entirely to neutrinos; cold O14/N13/O15 mean-neutrino convention inherited and not revalidated here."
+  ]
+}

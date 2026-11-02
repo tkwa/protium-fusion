@@ -1,0 +1,900 @@
+{
+  "scope": "Combine separated slow and prompt thermal requirements without simultaneous peaks.\nUses actual source128 profiles and explicit finite-depth photon proxy alternatives.\n",
+  "code_sha256": "ef3c981df8e8701f01a587f513360c008a59c54d4a2c6d31d0002672d4eebabb",
+  "input_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128-thin-thermal.json": "019e4a48ca9e4c5063be35f43edf7c3b735b536777438f32293236d8a06c8f1c",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128-prompt-proxy.json": "626b5cf25b46494a75108dbeb2b16a6265e9c5f70539771222c59a43bc0ca094",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/source128-prompt-radiance.json": "85fe3b366c242f60f26d47c71e9d9f4a69fd0a4865acb570c7da535a2cca661a"
+  },
+  "rows": [
+    {
+      "sigma_kg_m2": 500.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "outer_T",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 9.582399847762652,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 9.582399847762652,
+          "slow_reference_K": 180.3863084753014,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 180.3863084753014
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 38.13740815671505,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 38.13740815671505,
+          "slow_reference_K": 1.195999788091148,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 38.13740815671505
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 1.384361210550712,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 1.384361210550712,
+          "slow_reference_K": 245.36517078117367,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 245.36517078117367
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 54.21700215203538,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 54.21700215203538,
+          "slow_reference_K": 380.18445108093937,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 380.18445108093937
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1570.9790123868827,
+      "with_pickup_floor1000_K": 1571.2937150909797,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1583.3782989283025
+    },
+    {
+      "sigma_kg_m2": 500.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "surface_flux_equivalent_Teff",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 72.30104515520156,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 72.30104515520156,
+          "slow_reference_K": 180.3863084753014,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 180.3863084753014
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 54.4597665399238,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 54.4597665399238,
+          "slow_reference_K": 1.195999788091148,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 54.4597665399238
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 16.19499419057776,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 16.19499419057776,
+          "slow_reference_K": 245.36517078117367,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 245.36517078117367
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 248.8162510399811,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 248.8162510399811,
+          "slow_reference_K": 380.18445108093937,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 380.18445108093937
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1587.3013707700914,
+      "with_pickup_floor1000_K": 1587.6160734741884,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1599.7006573115111
+    },
+    {
+      "sigma_kg_m2": 500.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "outer_T_quarter",
+      "physical_scope": "Unconstrained shape sensitivity: some bins exceed blackbody radiance at assigned colour. Not an attainable thermal photosphere at saved area or an imposed design requirement.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 137.59608407958268,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 137.59608407958268,
+          "slow_reference_K": 180.3863084753014,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.4311265755508907,
+          "max_of_noncoincident_prompt_slow_K": 180.3863084753014
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 229.31899104438938,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 216.30198710741834,
+          "slow_reference_K": 1.195999788091148,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 1.0,
+          "max_of_noncoincident_prompt_slow_K": 216.30198710741834
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 19.04766215306866,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 19.04766215306866,
+          "slow_reference_K": 245.36517078117367,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.1572972775538655,
+          "max_of_noncoincident_prompt_slow_K": 245.36517078117367
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 700.1916837356052,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 700.1916837356052,
+          "slow_reference_K": 380.18445108093937,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.6397955984062496,
+          "max_of_noncoincident_prompt_slow_K": 700.1916837356052
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 2069.150823992252,
+      "with_pickup_floor1000_K": 2069.4655266963487,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 2081.550110533671
+    },
+    {
+      "sigma_kg_m2": 500.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "outer_T",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 10.71350222886106,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 10.71350222886106,
+          "slow_reference_K": 190.62911005397564,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 190.62911005397564
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 43.51864235271148,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 43.51864235271148,
+          "slow_reference_K": 1.247673572025097,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 43.51864235271148
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 1.5758648533374535,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 1.5758648533374535,
+          "slow_reference_K": 260.78546617631173,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 260.78546617631173
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 60.598952901815004,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 60.598952901815004,
+          "slow_reference_K": 404.7904429555504,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 404.7904429555504
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1600.96623845749,
+      "with_pickup_floor1000_K": 1601.280941161587,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1613.3655249989097
+    },
+    {
+      "sigma_kg_m2": 500.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "surface_flux_equivalent_Teff",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 83.18152485195114,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 83.18152485195114,
+          "slow_reference_K": 190.62911005397564,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 190.62911005397564
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 61.572494962495014,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 61.572494962495014,
+          "slow_reference_K": 1.247673572025097,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 61.572494962495014
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 19.10273216827855,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 19.10273216827855,
+          "slow_reference_K": 260.78546617631173,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 260.78546617631173
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 282.83169035252223,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 282.83169035252223,
+          "slow_reference_K": 404.7904429555504,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 404.7904429555504
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1619.0200910672736,
+      "with_pickup_floor1000_K": 1619.3347937713706,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1631.4193776086934
+    },
+    {
+      "sigma_kg_m2": 500.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "outer_T_quarter",
+      "physical_scope": "Unconstrained shape sensitivity: some bins exceed blackbody radiance at assigned colour. Not an attainable thermal photosphere at saved area or an imposed design requirement.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 177.8823307145882,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 177.8823307145882,
+          "slow_reference_K": 190.62911005397564,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.4311265755508907,
+          "max_of_noncoincident_prompt_slow_K": 190.62911005397564
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 327.96540193822227,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 327.96540193822227,
+          "slow_reference_K": 1.247673572025097,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 1.0,
+          "max_of_noncoincident_prompt_slow_K": 327.96540193822227
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 25.297393091753435,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 25.297393091753435,
+          "slow_reference_K": 260.78546617631173,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.1572972775538655,
+          "max_of_noncoincident_prompt_slow_K": 260.78546617631173
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 914.8868476986943,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 914.8868476986943,
+          "slow_reference_K": 404.7904429555504,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.6397955984062496,
+          "max_of_noncoincident_prompt_slow_K": 914.8868476986943
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 2395.509402786145,
+      "with_pickup_floor1000_K": 2395.824105490242,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 2407.9086893275644
+    },
+    {
+      "sigma_kg_m2": 750.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "outer_T",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 9.582399847762652,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 9.582399847762652,
+          "slow_reference_K": 188.87150096867694,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 188.87150096867694
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 38.13740815671505,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 38.13740815671505,
+          "slow_reference_K": 1.1959997894691432,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 38.13740815671505
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 1.384361210550712,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 1.384361210550712,
+          "slow_reference_K": 257.2398842763445,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 257.2398842763445
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 54.21700215203538,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 54.21700215203538,
+          "slow_reference_K": 392.5676537448853,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 392.5676537448853
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1532.5848675198013,
+      "with_pickup_floor1000_K": 1533.0569215759467,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1541.1133108008285
+    },
+    {
+      "sigma_kg_m2": 750.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "surface_flux_equivalent_Teff",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 72.30104515520156,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 72.30104515520156,
+          "slow_reference_K": 188.87150096867694,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 188.87150096867694
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 54.4597665399238,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 54.4597665399238,
+          "slow_reference_K": 1.1959997894691432,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 54.4597665399238
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 16.19499419057776,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 16.19499419057776,
+          "slow_reference_K": 257.2398842763445,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 257.2398842763445
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 248.8162510399811,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 248.8162510399811,
+          "slow_reference_K": 392.5676537448853,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 392.5676537448853
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1548.90722590301,
+      "with_pickup_floor1000_K": 1549.3792799591554,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1557.4356691840371
+    },
+    {
+      "sigma_kg_m2": 750.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "outer_T_quarter",
+      "physical_scope": "Unconstrained shape sensitivity: some bins exceed blackbody radiance at assigned colour. Not an attainable thermal photosphere at saved area or an imposed design requirement.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 137.59608407958268,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 137.59608407958268,
+          "slow_reference_K": 188.87150096867694,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.4311265755508907,
+          "max_of_noncoincident_prompt_slow_K": 188.87150096867694
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 229.31899104438938,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 216.30198710741834,
+          "slow_reference_K": 1.1959997894691432,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 1.0,
+          "max_of_noncoincident_prompt_slow_K": 216.30198710741834
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 19.04766215306866,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 19.04766215306866,
+          "slow_reference_K": 257.2398842763445,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.1572972775538655,
+          "max_of_noncoincident_prompt_slow_K": 257.2398842763445
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 700.1916837356052,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 700.1916837356052,
+          "slow_reference_K": 392.5676537448853,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.6397955984062496,
+          "max_of_noncoincident_prompt_slow_K": 700.1916837356052
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 2018.3734764612245,
+      "with_pickup_floor1000_K": 2018.84553051737,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 2026.9019197422517
+    },
+    {
+      "sigma_kg_m2": 750.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "outer_T",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 10.71350222886106,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 10.71350222886106,
+          "slow_reference_K": 199.11430254735117,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 199.11430254735117
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 43.51864235271148,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 43.51864235271148,
+          "slow_reference_K": 1.2476735734030924,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 43.51864235271148
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 1.5758648533374535,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 1.5758648533374535,
+          "slow_reference_K": 272.6601796714826,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 272.6601796714826
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 60.598952901815004,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 60.598952901815004,
+          "slow_reference_K": 417.17364561949637,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 417.17364561949637
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1562.5720935904087,
+      "with_pickup_floor1000_K": 1563.0441476465542,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1571.100536871436
+    },
+    {
+      "sigma_kg_m2": 750.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "surface_flux_equivalent_Teff",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 83.18152485195114,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 83.18152485195114,
+          "slow_reference_K": 199.11430254735117,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 199.11430254735117
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 61.572494962495014,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 61.572494962495014,
+          "slow_reference_K": 1.2476735734030924,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 61.572494962495014
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 19.10273216827855,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 19.10273216827855,
+          "slow_reference_K": 272.6601796714826,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 272.6601796714826
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 282.83169035252223,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 282.83169035252223,
+          "slow_reference_K": 417.17364561949637,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 417.17364561949637
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1580.6259462001922,
+      "with_pickup_floor1000_K": 1581.0980002563376,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1589.1543894812194
+    },
+    {
+      "sigma_kg_m2": 750.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "outer_T_quarter",
+      "physical_scope": "Unconstrained shape sensitivity: some bins exceed blackbody radiance at assigned colour. Not an attainable thermal photosphere at saved area or an imposed design requirement.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 177.8823307145882,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 177.8823307145882,
+          "slow_reference_K": 199.11430254735117,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.4311265755508907,
+          "max_of_noncoincident_prompt_slow_K": 199.11430254735117
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 327.96540193822227,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 327.96540193822227,
+          "slow_reference_K": 1.2476735734030924,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 1.0,
+          "max_of_noncoincident_prompt_slow_K": 327.96540193822227
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 25.297393091753435,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 25.297393091753435,
+          "slow_reference_K": 272.6601796714826,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.1572972775538655,
+          "max_of_noncoincident_prompt_slow_K": 272.6601796714826
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 914.8868476986943,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 914.8868476986943,
+          "slow_reference_K": 417.17364561949637,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.6397955984062496,
+          "max_of_noncoincident_prompt_slow_K": 914.8868476986943
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 2344.7320552551173,
+      "with_pickup_floor1000_K": 2345.2041093112625,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 2353.2604985361445
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "outer_T",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 9.582399847762652,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 9.582399847762652,
+          "slow_reference_K": 193.11409721536475,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 193.11409721536475
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 38.13740815671505,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 38.13740815671505,
+          "slow_reference_K": 1.195999790158141,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 38.13740815671505
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 1.384361210550712,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 1.384361210550712,
+          "slow_reference_K": 263.1778057649763,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 263.1778057649763
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 54.21700215203538,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 54.21700215203538,
+          "slow_reference_K": 398.87837050663984,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 398.87837050663984
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1513.5546791963436,
+      "with_pickup_floor1000_K": 1514.1840846045375,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1520.2263765231987
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "surface_flux_equivalent_Teff",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 72.30104515520156,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 72.30104515520156,
+          "slow_reference_K": 193.11409721536475,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 193.11409721536475
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 54.4597665399238,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 54.4597665399238,
+          "slow_reference_K": 1.195999790158141,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 54.4597665399238
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 16.19499419057776,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 16.19499419057776,
+          "slow_reference_K": 263.1778057649763,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 263.1778057649763
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 248.8162510399811,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 248.8162510399811,
+          "slow_reference_K": 398.87837050663984,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 398.87837050663984
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1529.8770375795523,
+      "with_pickup_floor1000_K": 1530.5064429877461,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1536.5487349064074
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 50.0,
+      "proxy": "outer_T_quarter",
+      "physical_scope": "Unconstrained shape sensitivity: some bins exceed blackbody radiance at assigned colour. Not an attainable thermal photosphere at saved area or an imposed design requirement.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 137.59608407958268,
+          "all_surface_prompt_reference_K": 355.076018463024,
+          "selected_prompt_reference_K": 137.59608407958268,
+          "slow_reference_K": 193.11409721536475,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.4311265755508907,
+          "max_of_noncoincident_prompt_slow_K": 193.11409721536475
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 229.31899104438938,
+          "all_surface_prompt_reference_K": 216.30198710741834,
+          "selected_prompt_reference_K": 216.30198710741834,
+          "slow_reference_K": 1.195999790158141,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 1.0,
+          "max_of_noncoincident_prompt_slow_K": 216.30198710741834
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 19.04766215306866,
+          "all_surface_prompt_reference_K": 178.29221977451917,
+          "selected_prompt_reference_K": 19.04766215306866,
+          "slow_reference_K": 263.1778057649763,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.1572972775538655,
+          "max_of_noncoincident_prompt_slow_K": 263.1778057649763
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 700.1916837356052,
+          "all_surface_prompt_reference_K": 905.5459857752815,
+          "selected_prompt_reference_K": 700.1916837356052,
+          "slow_reference_K": 398.87837050663984,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.0,
+          "prompt_fraction_energy_requiring_W_gt1": 0.6397955984062496,
+          "max_of_noncoincident_prompt_slow_K": 700.1916837356052
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1993.0325713760124,
+      "with_pickup_floor1000_K": 1993.6619767842062,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1999.7042687028675
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "outer_T",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 10.71350222886106,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 10.71350222886106,
+          "slow_reference_K": 203.35689879403898,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 203.35689879403898
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 43.51864235271148,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 43.51864235271148,
+          "slow_reference_K": 1.2476735740920901,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 43.51864235271148
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 1.5758648533374535,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 1.5758648533374535,
+          "slow_reference_K": 278.59810116011437,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 278.59810116011437
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 60.598952901815004,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 60.598952901815004,
+          "slow_reference_K": 423.4843623812509,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 423.4843623812509
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1543.5419052669513,
+      "with_pickup_floor1000_K": 1544.1713106751452,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1550.2136025938064
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "surface_flux_equivalent_Teff",
+      "physical_scope": "Thermally permitted diluted/blackbody shape at the saved source area; actual spectrum unresolved.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 83.18152485195114,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 83.18152485195114,
+          "slow_reference_K": 203.35689879403898,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 203.35689879403898
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 61.572494962495014,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 61.572494962495014,
+          "slow_reference_K": 1.2476735740920901,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 61.572494962495014
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 19.10273216827855,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 19.10273216827855,
+          "slow_reference_K": 278.59810116011437,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 278.59810116011437
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 282.83169035252223,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 282.83169035252223,
+          "slow_reference_K": 423.4843623812509,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.0,
+          "max_of_noncoincident_prompt_slow_K": 423.4843623812509
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 1561.5957578767348,
+      "with_pickup_floor1000_K": 1562.2251632849286,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 1568.2674552035899
+    },
+    {
+      "sigma_kg_m2": 1000.0,
+      "bulk_k_W_m_K": 50,
+      "cp_J_kg_K": 1800,
+      "skin_k_W_m_K": 4.0,
+      "proxy": "outer_T_quarter",
+      "physical_scope": "Unconstrained shape sensitivity: some bins exceed blackbody radiance at assigned colour. Not an attainable thermal photosphere at saved area or an imposed design requirement.",
+      "stages": {
+        "A": {
+          "prompt_depth_plus_soft_reference_K": 177.8823307145882,
+          "all_surface_prompt_reference_K": 1255.38330245962,
+          "selected_prompt_reference_K": 177.8823307145882,
+          "slow_reference_K": 203.35689879403898,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 10.242801578674241,
+          "prompt_fraction_energy_requiring_W_gt1": 0.4311265755508907,
+          "max_of_noncoincident_prompt_slow_K": 203.35689879403898
+        },
+        "B1": {
+          "prompt_depth_plus_soft_reference_K": 327.96540193822227,
+          "all_surface_prompt_reference_K": 764.7430093389034,
+          "selected_prompt_reference_K": 327.96540193822227,
+          "slow_reference_K": 1.2476735740920901,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 0.051673783933949176,
+          "prompt_fraction_energy_requiring_W_gt1": 1.0,
+          "max_of_noncoincident_prompt_slow_K": 327.96540193822227
+        },
+        "B2": {
+          "prompt_depth_plus_soft_reference_K": 25.297393091753435,
+          "all_surface_prompt_reference_K": 630.3581881768238,
+          "selected_prompt_reference_K": 25.297393091753435,
+          "slow_reference_K": 278.59810116011437,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 15.42029539513807,
+          "prompt_fraction_energy_requiring_W_gt1": 0.1572972775538655,
+          "max_of_noncoincident_prompt_slow_K": 278.59810116011437
+        },
+        "C13": {
+          "prompt_depth_plus_soft_reference_K": 914.8868476986943,
+          "all_surface_prompt_reference_K": 3201.588536089792,
+          "selected_prompt_reference_K": 914.8868476986943,
+          "slow_reference_K": 423.4843623812509,
+          "added100um_skin_resistance_K_on_slow_flux_upper": 24.605991874611032,
+          "prompt_fraction_energy_requiring_W_gt1": 0.6397955984062496,
+          "max_of_noncoincident_prompt_slow_K": 914.8868476986943
+        }
+      },
+      "periodic_all_phase_front_reference_K_bulk_floor1000": 2319.3911501699054,
+      "with_pickup_floor1000_K": 2320.0205555780994,
+      "with_pickup_floor1000_and_bounded1day_dispatch_lateness_K": 2326.0628474967607
+    }
+  ],
+  "limits": [
+    "Choose max(prompt,slow) within each individual pulse; independent big-pulse and B1 maxima plus storage/history form a conservative all-phase envelope, not a solved event-by-event surface history.",
+    "Photon shapes and local energy transfer are conditional proxies, not measured frequency-dependent transport. Their alternatives are not credible intervals.",
+    "The k4 skin adds the full100um resistance on a bound to K+U+delayed surface heat flux without changing bulk conductivity. Contact impedance remains a separate qualification.",
+    "The lower of the first-interaction depth proxy and all-surface reference is used within the respective homogeneous photon model; secondary transport and layered heat flow remain unsolved.",
+    "All source heat is retained in the backing for storage; no thin-receiver capture fraction is silently set to99%."
+  ]
+}

@@ -1,0 +1,2940 @@
+{
+  "scope": "Selected64 source and cadence damage sensitivity, not measured component lifetime or qualification. Planar CSDA path identified with depth; straggling/roughness/recoil cascades omitted. Ed sensitivities and stopping multipliers are scenarios, not credible intervals. Total ZBL elastic transfer is used as a conservative-leaning NRT damage-energy proxy, without recoil electronic partition or dynamic annealing; electronic excitation damage is separate.",
+  "code_sha256": "387baa444b1ba1dd400c3c58b6fbaa218263db5b9216317e41902cbb49281a24",
+  "input_sha256": {
+    "docs/protium-fusion/membrane-receiver/stopping.py": "cb76f89d72c27102f7c00c41d81568bdf2e1fadc23375d89d0036584c8cee77c",
+    "docs/protium-fusion/component-design/collection-stopping-data.json": "ade5dfd4c38ecd4b4adadc23bac93c50ebc0066f105265c73fbe5d020cb4f096",
+    "docs/protium-fusion/membrane-receiver/stopping-data.json": "050dddf04b50c5fbdd5692a09837e0ad458876c5097bb84f53462c60ec8ade5d",
+    "docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/receiver_stopping.py": "14749c3aec742a7c3665a44f164781ebbeea43fd6d85bcac923a9062e1586b08",
+    "docs/protium-fusion/mixture-design/current-rate128-sigma2000.json": "b34381f2ac61a6173b738a7dfc39b8a7e9d31b3a408e6bf770292d0764c6a91f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+    "docs/protium-fusion/mixture-design/current-rate128-receivers/A-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.receiver.json": "2bd1275a65101fa858159e457182164e338b18ca5eb88a4d1d5fd292082859fe",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/A-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.json": "ddee3f442a99da357ad00f711d0d34b4fa8287b04f2d83a353a357b988415dca",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/A-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.npz": "8460ffa4367aadafbfbff54b7428295bebaa7c38a310682db9d5f1fb6ff853e7",
+    "docs/protium-fusion/mixture-design/current-rate128-receivers/B1-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.receiver.json": "b9cf0365615054518083781d1a86c146ec8fd1f5d1020fb5f36ce4df8ccc84f6",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.json": "d1e9d2084422e926d323933b022ac1b57e265303107bbbf6ee2efb85a4277bdf",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.npz": "07a117ef0c35b851b7313a838fdfe7706b3e61d76f8b5d6c37c9b893056fc108",
+    "docs/protium-fusion/mixture-design/current-rate128-receivers/B2-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.receiver.json": "e29b4339d3125c207ddbf45c7ab266b44562355d1696ac558e5abbfe351ebebf",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B2-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.json": "3b672b05718e531caaf33e7d35f653c861c8d83c540f11597e169a3fb85f550e",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B2-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.npz": "acbe2a7bd9c6a5138ba258c9c036d1a7987896dc9f15fa860d48d95ea487fde0",
+    "docs/protium-fusion/mixture-design/current-rate128-receivers/C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median.receiver.json": "2c0a1c85532be973541b60141dbf4c2b3dc44cbb39a36a5bcafff2aae6309653",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median.json": "1cf933fd010560b8a5e937c751efaab418991de942c846b466eb1da99219882e",
+    "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median.npz": "2663e960f3ac1ff027b7b23869425082046471856cda1aca940862b20dbc6dca",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/mixture-radiation.json": "bb3de817ff001db46d8139cea6ff4bfd8b80ec06669a2498eaae34723e9b53d6"
+  },
+  "radius_m": 1100000000.0,
+  "area_m2": 1.5205308443374598e+19,
+  "selected_cases": {
+    "A": "A-H3-fixed_energy-z128-k0p001-t1-rates-updated-median",
+    "B1": "B1-H2-fixed_energy-z128-k0p001-t1-rates-updated-median",
+    "B2": "B2-H2-fixed_energy-z128-k0p001-t1-rates-updated-median",
+    "C13": "C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median"
+  },
+  "graphite": {
+    "density_kg_m3": 2000.0,
+    "cp_J_kg_K": 1800.0,
+    "bulk_k_W_m_K": 50.0,
+    "carbon_atomic_mass_u": 12.011
+  },
+  "NRT_formula": "0.8 * elastic_transfer / (2 * Ed * number_target_atoms)",
+  "stages": [
+    {
+      "stage": "A",
+      "case": "A-H3-fixed_energy-z128-k0p001-t1-rates-updated-median",
+      "period_s": 776380.2053886459,
+      "pulses_per_year": 40.6470950456583,
+      "CNO_fluence_m2": 2.634869560458392e+19,
+      "all_nuclei_fluence_m2": 8.413688549591043e+19,
+      "peak_kinetic_W_m2": 382468.1616740564,
+      "peak_kinetic_plus_advected_internal_W_m2": 389939.2709379458,
+      "prompt_fluence_J_m2": 19660.706248914084,
+      "energy_1_to_99_arrival_duration_s": 229.17497155556825,
+      "rows": [
+        {
+          "electronic_stopping_multiplier": 0.5,
+          "elastic_transfer_J_m2": 620935.5029276499,
+          "elastic_fraction_of_kinetic": 0.023969612797743536,
+          "unmodeled_kinetic_fraction": 6.861027327912017e-13,
+          "species": {
+            "p": {
+              "incident_number_m2": 5.778818816505115e+19,
+              "elastic_transfer_J_m2": 44459.215865653256
+            },
+            "he4": {
+              "incident_number_m2": 1726226221704.8506,
+              "elastic_transfer_J_m2": 0.006726316556129845
+            },
+            "c12": {
+              "incident_number_m2": 1177261954673.3523,
+              "elastic_transfer_J_m2": 0.017779110759885204
+            },
+            "c13": {
+              "incident_number_m2": 25734152059.40355,
+              "elastic_transfer_J_m2": 0.0003929741204524962
+            },
+            "n13": {
+              "incident_number_m2": 95373921876.59056,
+              "elastic_transfer_J_m2": 0.001627636582539921
+            },
+            "n14": {
+              "incident_number_m2": 5.090800030276835e+18,
+              "elastic_transfer_J_m2": 116556.56693254391
+            },
+            "n15": {
+              "incident_number_m2": 1.3161663701858691e+19,
+              "elastic_transfer_J_m2": 262092.74181711185
+            },
+            "o14": {
+              "incident_number_m2": 56768982216.82878,
+              "elastic_transfer_J_m2": 0.0012256364129797216
+            },
+            "o15": {
+              "incident_number_m2": 8.096230517148092e+18,
+              "elastic_transfer_J_m2": 197826.95055676816
+            },
+            "o16": {
+              "incident_number_m2": 161039109.42355034,
+              "elastic_transfer_J_m2": 3.898305531739334e-06
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 33695.26610517464,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.06990938970429214,
+                "25.0": 0.03355650705806022,
+                "40.0": 0.02097281691128764,
+                "60.0": 0.013981877940858428
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 241709.13067669523,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.12537174924527264,
+                "25.0": 0.06017843963773086,
+                "40.0": 0.037611524773581796,
+                "60.0": 0.025074349849054527
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 239214.60020690633,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.09926229195888629,
+                "25.0": 0.04764590014026542,
+                "40.0": 0.029778687587665893,
+                "60.0": 0.01985245839177726
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 94650.19059263339,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.013091724396481833,
+                "25.0": 0.006284027710311279,
+                "40.0": 0.00392751731894455,
+                "60.0": 0.002618344879296366
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 10857.656476857024,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0009010786684950507,
+                "25.0": 0.00043251776087762435,
+                "40.0": 0.0002703236005485152,
+                "60.0": 0.00018021573369901014
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 808.6588693832746,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 3.3555365232070844e-05,
+                "25.0": 1.610657531139401e-05,
+                "40.0": 1.0066609569621255e-05,
+                "60.0": 6.71107304641417e-06
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 620126.8440582666,
+              "fraction_elastic_transfer_in_skin": 0.9986976765451959,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.025732213582788366,
+                "25.0": 0.012351462519738414,
+                "40.0": 0.00771966407483651,
+                "60.0": 0.005146442716557673
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 620935.5029276499,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.012882884474010217,
+                "25.0": 0.006183784547524904,
+                "40.0": 0.003864865342203065,
+                "60.0": 0.0025765768948020434
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 1.0,
+          "elastic_transfer_J_m2": 356172.9756461135,
+          "elastic_fraction_of_kinetic": 0.013749138638400953,
+          "unmodeled_kinetic_fraction": 6.861027327912017e-13,
+          "species": {
+            "p": {
+              "incident_number_m2": 5.778818816505115e+19,
+              "elastic_transfer_J_m2": 25321.381281715087
+            },
+            "he4": {
+              "incident_number_m2": 1726226221704.8506,
+              "elastic_transfer_J_m2": 0.0039844680085316395
+            },
+            "c12": {
+              "incident_number_m2": 1177261954673.3523,
+              "elastic_transfer_J_m2": 0.010414300122831033
+            },
+            "c13": {
+              "incident_number_m2": 25734152059.40355,
+              "elastic_transfer_J_m2": 0.0002330631765014441
+            },
+            "n13": {
+              "incident_number_m2": 95373921876.59056,
+              "elastic_transfer_J_m2": 0.0009355391764294905
+            },
+            "n14": {
+              "incident_number_m2": 5.090800030276835e+18,
+              "elastic_transfer_J_m2": 65459.41600506989
+            },
+            "n15": {
+              "incident_number_m2": 1.3161663701858691e+19,
+              "elastic_transfer_J_m2": 151141.73476036833
+            },
+            "o14": {
+              "incident_number_m2": 56768982216.82878,
+              "elastic_transfer_J_m2": 0.0007113512610019638
+            },
+            "o15": {
+              "incident_number_m2": 8.096230517148092e+18,
+              "elastic_transfer_J_m2": 114250.42731796073
+            },
+            "o16": {
+              "incident_number_m2": 161039109.42355034,
+              "elastic_transfer_J_m2": 2.277712732011731e-06
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 40985.83766582396,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.08503553255206117,
+                "25.0": 0.04081705562498937,
+                "40.0": 0.02551065976561835,
+                "60.0": 0.017007106510412234
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 250984.62343586874,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.13018284077943937,
+                "25.0": 0.06248776357413088,
+                "40.0": 0.0390548522338318,
+                "60.0": 0.02603656815588787
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 52155.00227741478,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.021641760405507478,
+                "25.0": 0.010388044994643589,
+                "40.0": 0.006492528121652243,
+                "60.0": 0.004328352081101496
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 11580.688580792164,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0016018053663910444,
+                "25.0": 0.0007688665758677014,
+                "40.0": 0.00048054160991731334,
+                "60.0": 0.00032036107327820893
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 466.82368621387286,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 3.874177328156843e-05,
+                "25.0": 1.8596051175152846e-05,
+                "40.0": 1.1622531984470529e-05,
+                "60.0": 7.748354656313687e-06
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 356172.9756461135,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.01477942645050522,
+                "25.0": 0.007094124696242506,
+                "40.0": 0.004433827935151567,
+                "60.0": 0.0029558852901010444
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 356172.9756461135,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.00738971322525261,
+                "25.0": 0.003547062348121253,
+                "40.0": 0.0022169139675757834,
+                "60.0": 0.0014779426450505222
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 2.0,
+          "elastic_transfer_J_m2": 198821.27722324862,
+          "elastic_fraction_of_kinetic": 0.007674982358915595,
+          "unmodeled_kinetic_fraction": 6.861027327912017e-13,
+          "species": {
+            "p": {
+              "incident_number_m2": 5.778818816505115e+19,
+              "elastic_transfer_J_m2": 14035.772735851435
+            },
+            "he4": {
+              "incident_number_m2": 1726226221704.8506,
+              "elastic_transfer_J_m2": 0.0022989196601359836
+            },
+            "c12": {
+              "incident_number_m2": 1177261954673.3523,
+              "elastic_transfer_J_m2": 0.00593338880321975
+            },
+            "c13": {
+              "incident_number_m2": 25734152059.40355,
+              "elastic_transfer_J_m2": 0.00013411498944109002
+            },
+            "n13": {
+              "incident_number_m2": 95373921876.59056,
+              "elastic_transfer_J_m2": 0.0005223407452095367
+            },
+            "n14": {
+              "incident_number_m2": 5.090800030276835e+18,
+              "elastic_transfer_J_m2": 35961.471876842
+            },
+            "n15": {
+              "incident_number_m2": 1.3161663701858691e+19,
+              "elastic_transfer_J_m2": 84692.98497891775
+            },
+            "o14": {
+              "incident_number_m2": 56768982216.82878,
+              "elastic_transfer_J_m2": 0.0004004632728821682
+            },
+            "o15": {
+              "incident_number_m2": 8.096230517148092e+18,
+              "elastic_transfer_J_m2": 64131.03834111997
+            },
+            "o16": {
+              "incident_number_m2": 161039109.42355034,
+              "elastic_transfer_J_m2": 1.290008320760942e-06
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 58150.62604484491,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.12064824670113858,
+                "25.0": 0.05791115841654652,
+                "40.0": 0.03619447401034157,
+                "60.0": 0.024129649340227717
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 133887.3846174206,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.06944584825722949,
+                "25.0": 0.03333400716347015,
+                "40.0": 0.02083375447716885,
+                "60.0": 0.013889169651445899
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 6318.840119465982,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.002622007821585498,
+                "25.0": 0.001258563754361039,
+                "40.0": 0.0007866023464756495,
+                "60.0": 0.0005244015643170996
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 464.42644151710556,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 6.423804259358724e-05,
+                "25.0": 3.083426044492188e-05,
+                "40.0": 1.9271412778076174e-05,
+                "60.0": 1.2847608518717448e-05
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 198821.27722324862,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.008250104989537758,
+                "25.0": 0.003960050394978124,
+                "40.0": 0.0024750314968613276,
+                "60.0": 0.0016500209979075516
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 198821.27722324862,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.004125052494768879,
+                "25.0": 0.001980025197489062,
+                "40.0": 0.0012375157484306638,
+                "60.0": 0.0008250104989537758
+              }
+            }
+          ]
+        }
+      ],
+      "source_checks": {
+        "baryon_mass_relative": 2.6645352591003757e-15,
+        "smooth_kinetic_relative": 7.771561172376096e-15
+      }
+    },
+    {
+      "stage": "B1",
+      "case": "B1-H2-fixed_energy-z128-k0p001-t1-rates-updated-median",
+      "period_s": 7379.360120523614,
+      "pulses_per_year": 4276.46835018004,
+      "CNO_fluence_m2": 2.634869560310393e+17,
+      "all_nuclei_fluence_m2": 7.903958126489431e+17,
+      "peak_kinetic_W_m2": 2152.002961491612,
+      "peak_kinetic_plus_advected_internal_W_m2": 2223.189018558594,
+      "prompt_fluence_J_m2": 12800.827735548362,
+      "energy_1_to_99_arrival_duration_s": 248.97687213676016,
+      "rows": [
+        {
+          "electronic_stopping_multiplier": 0.5,
+          "elastic_transfer_J_m2": 5325.171886634236,
+          "elastic_fraction_of_kinetic": 0.0308174390550213,
+          "unmodeled_kinetic_fraction": 8.98200577262503e-16,
+          "species": {
+            "p": {
+              "incident_number_m2": 3.0877061169214874e+17,
+              "elastic_transfer_J_m2": 227.58341573728134
+            },
+            "he4": {
+              "incident_number_m2": 2.1813824491046355e+17,
+              "elastic_transfer_J_m2": 844.9590820113679
+            },
+            "c12": {
+              "incident_number_m2": 2.180983625255797e+17,
+              "elastic_transfer_J_m2": 3205.3896230860864
+            },
+            "c13": {
+              "incident_number_m2": 10485059030997.203,
+              "elastic_transfer_J_m2": 0.13844783753882678
+            },
+            "n13": {
+              "incident_number_m2": 29394805867989.86,
+              "elastic_transfer_J_m2": 0.4740694817980179
+            },
+            "n14": {
+              "incident_number_m2": 2314647935.519705,
+              "elastic_transfer_J_m2": 2.8397216810063083e-05
+            },
+            "n15": {
+              "incident_number_m2": 4.532354061398936e+16,
+              "elastic_transfer_J_m2": 1046.0320246684544
+            },
+            "o14": {
+              "incident_number_m2": 215372147.95061126,
+              "elastic_transfer_J_m2": 4.635156856670853e-06
+            },
+            "o16": {
+              "incident_number_m2": 25170448545457.633,
+              "elastic_transfer_J_m2": 0.5951891207710752
+            },
+            "o17": {
+              "incident_number_m2": 48005709.28005043,
+              "elastic_transfer_J_m2": 1.1049608071181228e-06
+            },
+            "f17": {
+              "incident_number_m2": 5258904.394634743,
+              "elastic_transfer_J_m2": 1.7283629650641862e-07
+            },
+            "f19": {
+              "incident_number_m2": 10032286.782396633,
+              "elastic_transfer_J_m2": 3.80767473369789e-07
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 340.03339264702447,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0007054856573868334,
+                "25.0": 0.00033863311554568003,
+                "40.0": 0.00021164569721605,
+                "60.0": 0.00014109713147736667
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 2442.5254651149467,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0012669098981915666,
+                "25.0": 0.000608116751131952,
+                "40.0": 0.00038007296945746994,
+                "60.0": 0.00025338197963831335
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 2095.543685139285,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0008695475481303455,
+                "25.0": 0.0004173828231025659,
+                "40.0": 0.00026086426443910367,
+                "60.0": 0.0001739095096260691
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 447.0693388377549,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 6.18372613254597e-05,
+                "25.0": 2.9681885436220653e-05,
+                "40.0": 1.855117839763791e-05,
+                "60.0": 1.236745226509194e-05
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 4.895225174550433e-06,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 4.062555296043228e-13,
+                "25.0": 1.9500265421007494e-13,
+                "40.0": 1.2187665888129684e-13,
+                "60.0": 8.125110592086456e-14
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 5325.171886634236,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.00022096843841686226,
+                "25.0": 0.0001060648504400939,
+                "40.0": 6.629053152505868e-05,
+                "60.0": 4.4193687683372454e-05
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 5325.171886634236,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.00011048421920843113,
+                "25.0": 5.303242522004695e-05,
+                "40.0": 3.314526576252934e-05,
+                "60.0": 2.2096843841686227e-05
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 1.0,
+          "elastic_transfer_J_m2": 3109.6089446409137,
+          "elastic_fraction_of_kinetic": 0.01799569782469308,
+          "unmodeled_kinetic_fraction": 8.98200577262503e-16,
+          "species": {
+            "p": {
+              "incident_number_m2": 3.0877061169214874e+17,
+              "elastic_transfer_J_m2": 130.30089828091684
+            },
+            "he4": {
+              "incident_number_m2": 2.1813824491046355e+17,
+              "elastic_transfer_J_m2": 500.99846448819915
+            },
+            "c12": {
+              "incident_number_m2": 2.180983625255797e+17,
+              "elastic_transfer_J_m2": 1884.9033453325828
+            },
+            "c13": {
+              "incident_number_m2": 10485059030997.203,
+              "elastic_transfer_J_m2": 0.08356079333373666
+            },
+            "n13": {
+              "incident_number_m2": 29394805867989.86,
+              "elastic_transfer_J_m2": 0.2743211265591759
+            },
+            "n14": {
+              "incident_number_m2": 2314647935.519705,
+              "elastic_transfer_J_m2": 1.7032992383969887e-05
+            },
+            "n15": {
+              "incident_number_m2": 4.532354061398936e+16,
+              "elastic_transfer_J_m2": 592.6994483864992
+            },
+            "o14": {
+              "incident_number_m2": 215372147.95061126,
+              "elastic_transfer_J_m2": 2.6913805343071067e-06
+            },
+            "o16": {
+              "incident_number_m2": 25170448545457.633,
+              "elastic_transfer_J_m2": 0.3488855214146118
+            },
+            "o17": {
+              "incident_number_m2": 48005709.28005043,
+              "elastic_transfer_J_m2": 6.559891731317085e-07
+            },
+            "f17": {
+              "incident_number_m2": 5258904.394634743,
+              "elastic_transfer_J_m2": 1.0349028661834804e-07
+            },
+            "f19": {
+              "incident_number_m2": 10032286.782396633,
+              "elastic_transfer_J_m2": 2.2755629553634646e-07
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 422.82150435288247,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0008772506271621715,
+                "25.0": 0.00042108030103784233,
+                "40.0": 0.0002631751881486515,
+                "60.0": 0.0001754501254324343
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 2391.3366467653163,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0012403588461881747,
+                "25.0": 0.0005953722461703238,
+                "40.0": 0.00037210765385645243,
+                "60.0": 0.0002480717692376349
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 293.70395216871384,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0001218726926551867,
+                "25.0": 5.849889247448962e-05,
+                "40.0": 3.6561807796556e-05,
+                "60.0": 2.4374538531037337e-05
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 1.746841354000935,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 2.4161774453666344e-07,
+                "25.0": 1.1597651737759845e-07,
+                "40.0": 7.248532336099903e-08,
+                "60.0": 4.8323548907332685e-08
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 3109.6089446409137,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.00012903347482717708,
+                "25.0": 6.193606791704499e-05,
+                "40.0": 3.871004244815312e-05,
+                "60.0": 2.5806694965435416e-05
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 3109.6089446409137,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 6.451673741358854e-05,
+                "25.0": 3.0968033958522496e-05,
+                "40.0": 1.935502122407656e-05,
+                "60.0": 1.2903347482717708e-05
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 2.0,
+          "elastic_transfer_J_m2": 1766.9634008046617,
+          "elastic_fraction_of_kinetic": 0.01022563929878476,
+          "unmodeled_kinetic_fraction": 8.98200577262503e-16,
+          "species": {
+            "p": {
+              "incident_number_m2": 3.0877061169214874e+17,
+              "elastic_transfer_J_m2": 72.49486608198374
+            },
+            "he4": {
+              "incident_number_m2": 2.1813824491046355e+17,
+              "elastic_transfer_J_m2": 289.255697877136
+            },
+            "c12": {
+              "incident_number_m2": 2.180983625255797e+17,
+              "elastic_transfer_J_m2": 1076.920110067468
+            },
+            "c13": {
+              "incident_number_m2": 10485059030997.203,
+              "elastic_transfer_J_m2": 0.04875879484773043
+            },
+            "n13": {
+              "incident_number_m2": 29394805867989.86,
+              "elastic_transfer_J_m2": 0.15391646313995225
+            },
+            "n14": {
+              "incident_number_m2": 2314647935.519705,
+              "elastic_transfer_J_m2": 9.847017669177366e-06
+            },
+            "n15": {
+              "incident_number_m2": 4.532354061398936e+16,
+              "elastic_transfer_J_m2": 327.8919894402747
+            },
+            "o14": {
+              "incident_number_m2": 215372147.95061126,
+              "elastic_transfer_J_m2": 1.515601909200453e-06
+            },
+            "o16": {
+              "incident_number_m2": 25170448545457.633,
+              "elastic_transfer_J_m2": 0.1980501488110059
+            },
+            "o17": {
+              "incident_number_m2": 48005709.28005043,
+              "elastic_transfer_J_m2": 3.7613482241198284e-07
+            },
+            "f17": {
+              "incident_number_m2": 5258904.394634743,
+              "elastic_transfer_J_m2": 6.01193512067296e-08
+            },
+            "f19": {
+              "incident_number_m2": 10032286.782396633,
+              "elastic_transfer_J_m2": 1.3212659660819064e-07
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 599.674956963602,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0012441780436283569,
+                "25.0": 0.0005972054609416113,
+                "40.0": 0.00037325341308850707,
+                "60.0": 0.00024883560872567136
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 1166.2450680887896,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.000604917918597525,
+                "25.0": 0.000290360600926812,
+                "40.0": 0.0001814753755792575,
+                "60.0": 0.000120983583719505
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 1.0433757522700944,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 4.329496128374971e-07,
+                "25.0": 2.0781581416199862e-07,
+                "40.0": 1.2988488385124913e-07,
+                "60.0": 8.658992256749943e-08
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 1766.9634008046617,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 7.33202893216529e-05,
+                "25.0": 3.519373887439339e-05,
+                "40.0": 2.1996086796495868e-05,
+                "60.0": 1.4664057864330578e-05
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 1766.9634008046617,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 3.666014466082645e-05,
+                "25.0": 1.7596869437196695e-05,
+                "40.0": 1.0998043398247934e-05,
+                "60.0": 7.332028932165289e-06
+              }
+            }
+          ]
+        }
+      ],
+      "source_checks": {
+        "baryon_mass_relative": -1.1102230246251565e-16,
+        "smooth_kinetic_relative": 8.881784197001252e-16
+      }
+    },
+    {
+      "stage": "B2",
+      "case": "B2-H2-fixed_energy-z128-k0p001-t1-rates-updated-median",
+      "period_s": 912538.7259351136,
+      "pulses_per_year": 34.58220358556478,
+      "CNO_fluence_m2": 3.1994844660525203e+19,
+      "all_nuclei_fluence_m2": 4.449107205315754e+19,
+      "peak_kinetic_W_m2": 457974.7002894077,
+      "peak_kinetic_plus_advected_internal_W_m2": 461410.37748359935,
+      "prompt_fluence_J_m2": 5583.948033306608,
+      "energy_1_to_99_arrival_duration_s": 222.89687022954647,
+      "rows": [
+        {
+          "electronic_stopping_multiplier": 0.5,
+          "elastic_transfer_J_m2": 635639.9267276181,
+          "elastic_fraction_of_kinetic": 0.02309748873013685,
+          "unmodeled_kinetic_fraction": 1.4347637359871432e-12,
+          "species": {
+            "p": {
+              "incident_number_m2": 1.249622739067885e+19,
+              "elastic_transfer_J_m2": 10787.927735935156
+            },
+            "he4": {
+              "incident_number_m2": 831748630.4388846,
+              "elastic_transfer_J_m2": 3.1928455003085047e-06
+            },
+            "c12": {
+              "incident_number_m2": 5.02151188817137e+18,
+              "elastic_transfer_J_m2": 94061.84855837261
+            },
+            "c13": {
+              "incident_number_m2": 3.093272008221716e+17,
+              "elastic_transfer_J_m2": 5805.197430134611
+            },
+            "n13": {
+              "incident_number_m2": 2.14387648782779e+18,
+              "elastic_transfer_J_m2": 43235.59189064396
+            },
+            "n14": {
+              "incident_number_m2": 1.9421514880194867e+19,
+              "elastic_transfer_J_m2": 363637.13903130754
+            },
+            "n15": {
+              "incident_number_m2": 54755202393.00186,
+              "elastic_transfer_J_m2": 0.0009999915991810429
+            },
+            "o14": {
+              "incident_number_m2": 5.098614123969541e+18,
+              "elastic_transfer_J_m2": 118112.2204581573
+            },
+            "o15": {
+              "incident_number_m2": 24533585288.096954,
+              "elastic_transfer_J_m2": 0.0005731616509967661
+            },
+            "o16": {
+              "incident_number_m2": 250464708.17821133,
+              "elastic_transfer_J_m2": 5.810398243487815e-06
+            },
+            "ne20": {
+              "incident_number_m2": 1046982625.0572941,
+              "elastic_transfer_J_m2": 4.0910407904574124e-05
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 36945.129628128954,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.07665205719956636,
+                "25.0": 0.036792987455791855,
+                "40.0": 0.022995617159869912,
+                "60.0": 0.015330411439913275
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 252218.83127313497,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.1308230102056298,
+                "25.0": 0.06279504489870232,
+                "40.0": 0.039246903061688945,
+                "60.0": 0.026164602041125966
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 228808.01178726612,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0949440696718151,
+                "25.0": 0.04557315344247125,
+                "40.0": 0.02848322090154453,
+                "60.0": 0.01898881393436302
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 105847.24781528645,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.014640467048691761,
+                "25.0": 0.007027424183372045,
+                "40.0": 0.0043921401146075284,
+                "60.0": 0.0029280934097383523
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 11422.603339151363,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0009479637000423001,
+                "25.0": 0.000455022576020304,
+                "40.0": 0.00028438911001268995,
+                "60.0": 0.00018959274000846
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 398.1028846502304,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 1.651931141813523e-05,
+                "25.0": 7.929269480704908e-06,
+                "40.0": 4.955793425440569e-06,
+                "60.0": 3.3038622836270457e-06
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 635241.8238429679,
+              "fraction_elastic_transfer_in_skin": 0.9993736974851474,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.026359410892251904,
+                "25.0": 0.012652517228280912,
+                "40.0": 0.00790782326767557,
+                "60.0": 0.00527188217845038
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 635639.9267276181,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.01318796510183502,
+                "25.0": 0.00633022324888081,
+                "40.0": 0.0039563895305505066,
+                "60.0": 0.0026375930203670042
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 1.0,
+          "elastic_transfer_J_m2": 364291.37604469375,
+          "elastic_fraction_of_kinetic": 0.0132373936860703,
+          "unmodeled_kinetic_fraction": 1.4347637359871432e-12,
+          "species": {
+            "p": {
+              "incident_number_m2": 1.249622739067885e+19,
+              "elastic_transfer_J_m2": 6063.510168286272
+            },
+            "he4": {
+              "incident_number_m2": 831748630.4388846,
+              "elastic_transfer_J_m2": 1.896315454665574e-06
+            },
+            "c12": {
+              "incident_number_m2": 5.02151188817137e+18,
+              "elastic_transfer_J_m2": 53567.05770511275
+            },
+            "c13": {
+              "incident_number_m2": 3.093272008221716e+17,
+              "elastic_transfer_J_m2": 3347.005810954436
+            },
+            "n13": {
+              "incident_number_m2": 2.14387648782779e+18,
+              "elastic_transfer_J_m2": 24367.581035911233
+            },
+            "n14": {
+              "incident_number_m2": 1.9421514880194867e+19,
+              "elastic_transfer_J_m2": 209025.90686774737
+            },
+            "n15": {
+              "incident_number_m2": 54755202393.00186,
+              "elastic_transfer_J_m2": 0.0005829069113975661
+            },
+            "o14": {
+              "incident_number_m2": 5.098614123969541e+18,
+              "elastic_transfer_J_m2": 67920.3135107172
+            },
+            "o15": {
+              "incident_number_m2": 24533585288.096954,
+              "elastic_transfer_J_m2": 0.00033298293725882616
+            },
+            "o16": {
+              "incident_number_m2": 250464708.17821133,
+              "elastic_transfer_J_m2": 3.41751885865008e-06
+            },
+            "ne20": {
+              "incident_number_m2": 1046982625.0572941,
+              "elastic_transfer_J_m2": 2.4760869269899606e-05
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 45080.244298683174,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.09353041928217178,
+                "25.0": 0.04489460125544245,
+                "40.0": 0.028059125784651535,
+                "60.0": 0.018706083856434356
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 248522.396160434,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.12890571177857602,
+                "25.0": 0.061874741653716495,
+                "40.0": 0.03867171353357281,
+                "60.0": 0.025781142355715204
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 57077.00077713939,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.02368414766647851,
+                "25.0": 0.011368390879909686,
+                "40.0": 0.007105244299943554,
+                "60.0": 0.004736829533295702
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 13377.185455570929,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0018502913104391596,
+                "25.0": 0.0008881398290107968,
+                "40.0": 0.0005550873931317479,
+                "60.0": 0.00037005826208783195
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 234.54935286624823,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 1.946528875983316e-05,
+                "25.0": 9.343338604719918e-06,
+                "40.0": 5.839586627949948e-06,
+                "60.0": 3.893057751966632e-06
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 364291.37604469375,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.015116300132089033,
+                "25.0": 0.007255824063402736,
+                "40.0": 0.0045348900396267105,
+                "60.0": 0.003023260026417807
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 364291.37604469375,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.007558150066044517,
+                "25.0": 0.003627912031701368,
+                "40.0": 0.0022674450198133553,
+                "60.0": 0.0015116300132089035
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 2.0,
+          "elastic_transfer_J_m2": 203297.86585549766,
+          "elastic_fraction_of_kinetic": 0.00738731153914817,
+          "unmodeled_kinetic_fraction": 1.4347637359871432e-12,
+          "species": {
+            "p": {
+              "incident_number_m2": 1.249622739067885e+19,
+              "elastic_transfer_J_m2": 3329.3614396744674
+            },
+            "he4": {
+              "incident_number_m2": 831748630.4388846,
+              "elastic_transfer_J_m2": 1.0960830076855644e-06
+            },
+            "c12": {
+              "incident_number_m2": 5.02151188817137e+18,
+              "elastic_transfer_J_m2": 29889.867486233947
+            },
+            "c13": {
+              "incident_number_m2": 3.093272008221716e+17,
+              "elastic_transfer_J_m2": 1886.2149138819666
+            },
+            "n13": {
+              "incident_number_m2": 2.14387648782779e+18,
+              "elastic_transfer_J_m2": 13413.99484684005
+            },
+            "n14": {
+              "incident_number_m2": 1.9421514880194867e+19,
+              "elastic_transfer_J_m2": 116792.04868064576
+            },
+            "n15": {
+              "incident_number_m2": 54755202393.00186,
+              "elastic_transfer_J_m2": 0.0003292102784518584
+            },
+            "o14": {
+              "incident_number_m2": 5.098614123969541e+18,
+              "elastic_transfer_J_m2": 37986.37795376902
+            },
+            "o15": {
+              "incident_number_m2": 24533585288.096954,
+              "elastic_transfer_J_m2": 0.00018770229887902294
+            },
+            "o16": {
+              "incident_number_m2": 250464708.17821133,
+              "elastic_transfer_J_m2": 1.944248791223685e-06
+            },
+            "ne20": {
+              "incident_number_m2": 1046982625.0572941,
+              "elastic_transfer_J_m2": 1.449953529882314e-05
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 62844.58754955267,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.13038706232779912,
+                "25.0": 0.06258578991734359,
+                "40.0": 0.03911611869833974,
+                "60.0": 0.026077412465559828
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 132639.74078248427,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.06879870973340488,
+                "25.0": 0.033023380672034336,
+                "40.0": 0.02063961292002146,
+                "60.0": 0.013759741946680974
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 7503.497135390382,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.003113582209119207,
+                "25.0": 0.0014945194603772191,
+                "40.0": 0.0009340746627357619,
+                "60.0": 0.0006227164418238413
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 310.04038807033794,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 4.288383665136588e-05,
+                "25.0": 2.058424159265562e-05,
+                "40.0": 1.2865150995409765e-05,
+                "60.0": 8.576767330273175e-06
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 203297.86585549766,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.008435861397135704,
+                "25.0": 0.004049213470625138,
+                "40.0": 0.002530758419140711,
+                "60.0": 0.0016871722794271405
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 203297.86585549766,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.004217930698567852,
+                "25.0": 0.002024606735312569,
+                "40.0": 0.0012653792095703555,
+                "60.0": 0.0008435861397135703
+              }
+            }
+          ]
+        }
+      ],
+      "source_checks": {
+        "baryon_mass_relative": 0.0,
+        "smooth_kinetic_relative": 2.220446049250313e-16
+      }
+    },
+    {
+      "stage": "C13",
+      "case": "C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median",
+      "period_s": 9303292.718376745,
+      "pulses_per_year": 3.392089333883308,
+      "CNO_fluence_m2": 2.6348695599796818e+19,
+      "all_nuclei_fluence_m2": 8.637137388392405e+19,
+      "peak_kinetic_W_m2": 1050668.3676255136,
+      "peak_kinetic_plus_advected_internal_W_m2": 1053804.0411213832,
+      "prompt_fluence_J_m2": 54273.997873419095,
+      "energy_1_to_99_arrival_duration_s": 164.7505276235284,
+      "rows": [
+        {
+          "electronic_stopping_multiplier": 0.5,
+          "elastic_transfer_J_m2": 702057.9847337877,
+          "elastic_fraction_of_kinetic": 0.0130421392785285,
+          "unmodeled_kinetic_fraction": 1.383319326753058e-12,
+          "species": {
+            "p": {
+              "incident_number_m2": 6.002267298452482e+19,
+              "elastic_transfer_J_m2": 52673.33068002365
+            },
+            "he4": {
+              "incident_number_m2": 5294766195232.794,
+              "elastic_transfer_J_m2": 0.022005426914310827
+            },
+            "c12": {
+              "incident_number_m2": 1010000210561.2676,
+              "elastic_transfer_J_m2": 0.01698891785131842
+            },
+            "c13": {
+              "incident_number_m2": 1.2877720959334456e+18,
+              "elastic_transfer_J_m2": 34234.24895853014
+            },
+            "n13": {
+              "incident_number_m2": 79190989210.28455,
+              "elastic_transfer_J_m2": 0.0015108252895572377
+            },
+            "n14": {
+              "incident_number_m2": 4.749753830053724e+18,
+              "elastic_transfer_J_m2": 118710.59145274761
+            },
+            "n15": {
+              "incident_number_m2": 1.0329025997759474e+19,
+              "elastic_transfer_J_m2": 228172.41829180942
+            },
+            "o14": {
+              "incident_number_m2": 1852152808705.6096,
+              "elastic_transfer_J_m2": 0.04350357404185184
+            },
+            "o15": {
+              "incident_number_m2": 9.982140646019015e+18,
+              "elastic_transfer_J_m2": 268267.30888921116
+            },
+            "o16": {
+              "incident_number_m2": 88481525957.44489,
+              "elastic_transfer_J_m2": 0.002268538137612494
+            },
+            "o17": {
+              "incident_number_m2": 205324023.44908535,
+              "elastic_transfer_J_m2": 5.524430035743639e-06
+            },
+            "f19": {
+              "incident_number_m2": 4761767823.204833,
+              "elastic_transfer_J_m2": 0.00017865919252332423
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 19098.801207747765,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.03962531509173026,
+                "25.0": 0.019020151244030524,
+                "40.0": 0.011887594527519078,
+                "60.0": 0.007925063018346052
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 133487.74020358693,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.06923855729102497,
+                "25.0": 0.033234507499691986,
+                "40.0": 0.02077156718730749,
+                "60.0": 0.013847711458204993
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 197388.08796481835,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.08190634685267201,
+                "25.0": 0.03931504648928256,
+                "40.0": 0.0245719040558016,
+                "60.0": 0.0163812693705344
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 260326.26195617468,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.036007531029333455,
+                "25.0": 0.01728361489408006,
+                "40.0": 0.010802259308800037,
+                "60.0": 0.007201506205866692
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 58711.56751596602,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.004872482491530991,
+                "25.0": 0.002338791595934876,
+                "40.0": 0.0014617447474592976,
+                "60.0": 0.0009744964983061983
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 28018.9981337341,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0011626505952147602,
+                "25.0": 0.000558072285703085,
+                "40.0": 0.0003487951785644281,
+                "60.0": 0.00023253011904295206
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 5026.527751759859,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 6.952539195671644e-05,
+                "25.0": 3.337218813922389e-05,
+                "40.0": 2.0857617587014935e-05,
+                "60.0": 1.3905078391343289e-05
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 669012.4588482938,
+              "fraction_elastic_transfer_in_skin": 0.9529304892130464,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.02776072612494934,
+                "25.0": 0.013325148539975682,
+                "40.0": 0.008328217837484803,
+                "60.0": 0.0055521452249898675
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 697031.4569820279,
+              "fraction_elastic_transfer_in_skin": 0.9928402954441635,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.014461688360082051,
+                "25.0": 0.006941610412839384,
+                "40.0": 0.004338506508024615,
+                "60.0": 0.00289233767201641
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 1.0,
+          "elastic_transfer_J_m2": 397577.88035456074,
+          "elastic_fraction_of_kinetic": 0.007385808868212665,
+          "unmodeled_kinetic_fraction": 1.383319326753058e-12,
+          "species": {
+            "p": {
+              "incident_number_m2": 6.002267298452482e+19,
+              "elastic_transfer_J_m2": 29552.122220036617
+            },
+            "he4": {
+              "incident_number_m2": 5294766195232.794,
+              "elastic_transfer_J_m2": 0.012912782776685129
+            },
+            "c12": {
+              "incident_number_m2": 1010000210561.2676,
+              "elastic_transfer_J_m2": 0.009806361460637363
+            },
+            "c13": {
+              "incident_number_m2": 1.2877720959334456e+18,
+              "elastic_transfer_J_m2": 18974.43179154256
+            },
+            "n13": {
+              "incident_number_m2": 79190989210.28455,
+              "elastic_transfer_J_m2": 0.0008568102422090878
+            },
+            "n14": {
+              "incident_number_m2": 4.749753830053724e+18,
+              "elastic_transfer_J_m2": 66060.96547347249
+            },
+            "n15": {
+              "incident_number_m2": 1.0329025997759474e+19,
+              "elastic_transfer_J_m2": 129916.81487527888
+            },
+            "o14": {
+              "incident_number_m2": 1852152808705.6096,
+              "elastic_transfer_J_m2": 0.024972651174117285
+            },
+            "o15": {
+              "incident_number_m2": 9.982140646019015e+18,
+              "elastic_transfer_J_m2": 153073.4960197409
+            },
+            "o16": {
+              "incident_number_m2": 88481525957.44489,
+              "elastic_transfer_J_m2": 0.0013157072489051683
+            },
+            "o17": {
+              "incident_number_m2": 205324023.44908535,
+              "elastic_transfer_J_m2": 3.2155573961181257e-06
+            },
+            "f19": {
+              "incident_number_m2": 4761767823.204833,
+              "elastic_transfer_J_m2": 0.00010696084698882516
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 22240.61684831812,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.046143809805797596,
+                "25.0": 0.02214902870678285,
+                "40.0": 0.01384314294173928,
+                "60.0": 0.00922876196115952
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 171315.21081866595,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.08885923172421409,
+                "25.0": 0.042652431227622765,
+                "40.0": 0.02665776951726423,
+                "60.0": 0.01777184634484282
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 125578.08806913247,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.052108729278126584,
+                "25.0": 0.02501219005350076,
+                "40.0": 0.015632618783437975,
+                "60.0": 0.010421745855625317
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 59697.94507261756,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.008257236874363437,
+                "25.0": 0.003963473699694449,
+                "40.0": 0.0024771710623090306,
+                "60.0": 0.0016514473748726873
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 15864.937602992926,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0013166337396594513,
+                "25.0": 0.0006319841950365365,
+                "40.0": 0.0003949901218978354,
+                "60.0": 0.00026332674793189023
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 2638.995686353417,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.00010950533958649724,
+                "25.0": 5.256256300151867e-05,
+                "40.0": 3.285160187594917e-05,
+                "60.0": 2.190106791729945e-05
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 242.0862564803101,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 3.348462935121551e-06,
+                "25.0": 1.6072622088583446e-06,
+                "40.0": 1.0045388805364652e-06,
+                "60.0": 6.696925870243102e-07
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 394696.798411727,
+              "fraction_elastic_transfer_in_skin": 0.9927534149025988,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.016377975594004498,
+                "25.0": 0.007861428285122159,
+                "40.0": 0.004913392678201349,
+                "60.0": 0.0032755951188008997
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 397335.7940980804,
+              "fraction_elastic_transfer_in_skin": 0.9993910972706419,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.008243740466795496,
+                "25.0": 0.003956995424061838,
+                "40.0": 0.002473122140038649,
+                "60.0": 0.0016487480933590993
+              }
+            }
+          ]
+        },
+        {
+          "electronic_stopping_multiplier": 2.0,
+          "elastic_transfer_J_m2": 219942.74297851612,
+          "elastic_fraction_of_kinetic": 0.00408587887269043,
+          "unmodeled_kinetic_fraction": 1.383319326753058e-12,
+          "species": {
+            "p": {
+              "incident_number_m2": 6.002267298452482e+19,
+              "elastic_transfer_J_m2": 16205.39328506268
+            },
+            "he4": {
+              "incident_number_m2": 5294766195232.794,
+              "elastic_transfer_J_m2": 0.007398296309547801
+            },
+            "c12": {
+              "incident_number_m2": 1010000210561.2676,
+              "elastic_transfer_J_m2": 0.00552725529530448
+            },
+            "c13": {
+              "incident_number_m2": 1.2877720959334456e+18,
+              "elastic_transfer_J_m2": 10374.647807966881
+            },
+            "n13": {
+              "incident_number_m2": 79190989210.28455,
+              "elastic_transfer_J_m2": 0.0004738017560839661
+            },
+            "n14": {
+              "incident_number_m2": 4.749753830053724e+18,
+              "elastic_transfer_J_m2": 36047.149404029304
+            },
+            "n15": {
+              "incident_number_m2": 1.0329025997759474e+19,
+              "elastic_transfer_J_m2": 72133.37835390265
+            },
+            "o14": {
+              "incident_number_m2": 1852152808705.6096,
+              "elastic_transfer_J_m2": 0.01394911726588058
+            },
+            "o15": {
+              "incident_number_m2": 9.982140646019015e+18,
+              "elastic_transfer_J_m2": 85182.14597392225
+            },
+            "o16": {
+              "incident_number_m2": 88481525957.44489,
+              "elastic_transfer_J_m2": 0.0007411582400912643
+            },
+            "o17": {
+              "incident_number_m2": 205324023.44908535,
+              "elastic_transfer_J_m2": 1.8168602857238955e-06
+            },
+            "f19": {
+              "incident_number_m2": 4761767823.204833,
+              "elastic_transfer_J_m2": 6.218660982579177e-05
+            }
+          },
+          "depth_bins": [
+            {
+              "depth_um": [
+                0.0,
+                1.0
+              ],
+              "elastic_transfer_J_m2": 30523.687420803857,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.06332914399465957,
+                "25.0": 0.03039798911743659,
+                "40.0": 0.01899874319839787,
+                "60.0": 0.012665828798931914
+              }
+            },
+            {
+              "depth_um": [
+                1.0,
+                5.0
+              ],
+              "elastic_transfer_J_m2": 145454.83104446932,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.07544574982817955,
+                "25.0": 0.036213959917526184,
+                "40.0": 0.022633724948453865,
+                "60.0": 0.01508914996563591
+              }
+            },
+            {
+              "depth_um": [
+                5.0,
+                10.0
+              ],
+              "elastic_transfer_J_m2": 30621.871497167944,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.012706570360882293,
+                "25.0": 0.006099153773223501,
+                "40.0": 0.0038119711082646884,
+                "60.0": 0.0025413140721764586
+              }
+            },
+            {
+              "depth_um": [
+                10.0,
+                25.0
+              ],
+              "elastic_transfer_J_m2": 11736.573288966407,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0016233668616639555,
+                "25.0": 0.0007792160935986987,
+                "40.0": 0.00048701005849918674,
+                "60.0": 0.0003246733723327911
+              }
+            },
+            {
+              "depth_um": [
+                25.0,
+                50.0
+              ],
+              "elastic_transfer_J_m2": 1469.4979703849822,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.000121953874423367,
+                "25.0": 5.853785972321616e-05,
+                "40.0": 3.65861623270101e-05,
+                "60.0": 2.43907748846734e-05
+              }
+            },
+            {
+              "depth_um": [
+                50.0,
+                100.0
+              ],
+              "elastic_transfer_J_m2": 136.28175672361976,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 5.6550225249082896e-06,
+                "25.0": 2.714410811955979e-06,
+                "40.0": 1.6965067574724869e-06,
+                "60.0": 1.131004504981658e-06
+              }
+            },
+            {
+              "depth_um": [
+                100.0,
+                250.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            },
+            {
+              "depth_um": [
+                250.0,
+                1000.0
+              ],
+              "elastic_transfer_J_m2": 0.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.0,
+                "25.0": 0.0,
+                "40.0": 0.0,
+                "60.0": 0.0
+              }
+            }
+          ],
+          "skins": [
+            {
+              "thickness_um": 50.0,
+              "elastic_transfer_J_m2": 219806.4612217925,
+              "fraction_elastic_transfer_in_skin": 0.9993803762066524,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.009120886897946658,
+                "25.0": 0.004378025711014395,
+                "40.0": 0.002736266069383997,
+                "60.0": 0.0018241773795893313
+              }
+            },
+            {
+              "thickness_um": 100.0,
+              "elastic_transfer_J_m2": 219942.74297851612,
+              "fraction_elastic_transfer_in_skin": 1.0,
+              "NRT_proxy_dpa_per_pulse": {
+                "12.0": 0.004563270960235783,
+                "25.0": 0.0021903700609131756,
+                "40.0": 0.0013689812880707346,
+                "60.0": 0.0009126541920471564
+              }
+            }
+          ]
+        }
+      ],
+      "source_checks": {
+        "baryon_mass_relative": 1.1102230246251565e-15,
+        "smooth_kinetic_relative": 2.4424906541753444e-15
+      }
+    }
+  ],
+  "annual_CNO_fluence_m2": 3.3936209237652726e+21,
+  "annual_all_nuclei_fluence_m2": 8.63160138609281e+21,
+  "annual": [
+    {
+      "electronic_stopping_multiplier": 0.5,
+      "elastic_transfer_J_m2_year": 72375426.19217472,
+      "skins": [
+        {
+          "thickness_um": 50.0,
+          "NRT_proxy_dpa_year": {
+            "12.0": 2.9966376413739026,
+            "25.0": 1.4383860678594729,
+            "40.0": 0.8989912924121706,
+            "60.0": 0.5993275282747804
+          }
+        },
+        {
+          "thickness_um": 100.0,
+          "NRT_proxy_dpa_year": {
+            "12.0": 1.5012583291836994,
+            "25.0": 0.7206039980081757,
+            "40.0": 0.45037749875510974,
+            "60.0": 0.3002516658367398
+          }
+        }
+      ],
+      "depth_bins": [
+        {
+          "depth_um": [
+            0.0,
+            1.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 4.149028967624288
+        },
+        {
+          "depth_um": [
+            1.0,
+            5.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 7.330996240342537
+        },
+        {
+          "depth_um": [
+            5.0,
+            10.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 5.430972084685376
+        },
+        {
+          "depth_um": [
+            10.0,
+            25.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.6840124947768895
+        },
+        {
+          "depth_um": [
+            25.0,
+            50.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.04124966475595967
+        },
+        {
+          "depth_um": [
+            50.0,
+            100.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0028219281568781407
+        },
+        {
+          "depth_um": [
+            100.0,
+            250.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0001132014434354084
+        },
+        {
+          "depth_um": [
+            250.0,
+            1000.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0
+        }
+      ]
+    },
+    {
+      "electronic_stopping_multiplier": 1.0,
+      "elastic_transfer_J_m2_year": 41722159.24515792,
+      "skins": [
+        {
+          "thickness_um": 50.0,
+          "NRT_proxy_dpa_year": {
+            "12.0": 1.7308588478176044,
+            "25.0": 0.8308122469524498,
+            "40.0": 0.5192576543452813,
+            "60.0": 0.3461717695635208
+          }
+        },
+        {
+          "thickness_um": 100.0,
+          "NRT_proxy_dpa_year": {
+            "12.0": 0.8656151498560094,
+            "25.0": 0.4154952719308844,
+            "40.0": 0.2596845449568028,
+            "60.0": 0.17312302997120188
+          }
+        }
+      ],
+      "depth_bins": [
+        {
+          "depth_um": [
+            0.0,
+            1.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 5.087517044286097
+        },
+        {
+          "depth_um": [
+            1.0,
+            5.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 7.37048240221577
+        },
+        {
+          "depth_um": [
+            5.0,
+            10.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 1.1504001053704498
+        },
+        {
+          "depth_um": [
+            10.0,
+            25.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.07590645193381432
+        },
+        {
+          "depth_um": [
+            25.0,
+            50.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0032227355445539185
+        },
+        {
+          "depth_um": [
+            50.0,
+            100.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0001782969093190209
+        },
+        {
+          "depth_um": [
+            100.0,
+            250.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 5.4519769954221165e-06
+        },
+        {
+          "depth_um": [
+            250.0,
+            1000.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0
+        }
+      ]
+    },
+    {
+      "electronic_stopping_multiplier": 2.0,
+      "elastic_transfer_J_m2_year": 23414424.029908307,
+      "skins": [
+        {
+          "thickness_um": 50.0,
+          "NRT_proxy_dpa_year": {
+            "12.0": 0.9715642377739278,
+            "25.0": 0.4663508341314853,
+            "40.0": 0.29146927133217837,
+            "60.0": 0.19431284755478553
+          }
+        },
+        {
+          "thickness_um": 100.0,
+          "NRT_proxy_dpa_year": {
+            "12.0": 0.4857917100577587,
+            "25.0": 0.23318002082772415,
+            "40.0": 0.14573751301732762,
+            "60.0": 0.09715834201155173
+          }
+        }
+      ],
+      "depth_bins": [
+        {
+          "depth_um": [
+            0.0,
+            1.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 7.175317835774744
+        },
+        {
+          "depth_um": [
+            1.0,
+            5.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 3.861510738086809
+        },
+        {
+          "depth_um": [
+            5.0,
+            10.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.12441832899768336
+        },
+        {
+          "depth_um": [
+            10.0,
+            25.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.004608342148265351
+        },
+        {
+          "depth_um": [
+            25.0,
+            50.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.00019856564959547883
+        },
+        {
+          "depth_um": [
+            50.0,
+            100.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 9.207523963013405e-06
+        },
+        {
+          "depth_um": [
+            100.0,
+            250.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0
+        },
+        {
+          "depth_um": [
+            250.0,
+            1000.0
+          ],
+          "NRT_proxy_dpa_year_Ed25": 0.0
+        }
+      ]
+    }
+  ],
+  "material_thermal": [
+    {
+      "thickness_um": 50.0,
+      "skin_k_W_m_K": 1.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 52.690202056069154,
+      "increment_above_bulk_k_skin_K": 51.63639801494777,
+      "skin_diffusion_time_s": 0.009,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 0.0,
+      "minimum_k_for_50K_skin_only_W_m_K": 1.0538040411213832
+    },
+    {
+      "thickness_um": 50.0,
+      "skin_k_W_m_K": 4.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 13.172550514017288,
+      "increment_above_bulk_k_skin_K": 12.118746472895905,
+      "skin_diffusion_time_s": 0.00225,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 3.4947151509111276e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 1.0538040411213832
+    },
+    {
+      "thickness_um": 50.0,
+      "skin_k_W_m_K": 10.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 5.269020205606916,
+      "increment_above_bulk_k_skin_K": 4.215216164485533,
+      "skin_diffusion_time_s": 0.0009,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 4.2447151509111276e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 1.0538040411213832
+    },
+    {
+      "thickness_um": 50.0,
+      "skin_k_W_m_K": 25.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 2.1076080822427663,
+      "increment_above_bulk_k_skin_K": 1.0538040411213832,
+      "skin_diffusion_time_s": 0.00035999999999999997,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 4.5447151509111274e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 1.0538040411213832
+    },
+    {
+      "thickness_um": 50.0,
+      "skin_k_W_m_K": 50.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 1.0538040411213832,
+      "increment_above_bulk_k_skin_K": 0.0,
+      "skin_diffusion_time_s": 0.00017999999999999998,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 4.644715150911128e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 1.0538040411213832
+    },
+    {
+      "thickness_um": 100.0,
+      "skin_k_W_m_K": 1.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 105.38040411213831,
+      "increment_above_bulk_k_skin_K": 103.27279602989555,
+      "skin_diffusion_time_s": 0.036,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 0.0,
+      "minimum_k_for_50K_skin_only_W_m_K": 2.1076080822427663
+    },
+    {
+      "thickness_um": 100.0,
+      "skin_k_W_m_K": 4.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 26.345101028034577,
+      "increment_above_bulk_k_skin_K": 24.23749294579181,
+      "skin_diffusion_time_s": 0.009,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 2.2447151509111277e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 2.1076080822427663
+    },
+    {
+      "thickness_um": 100.0,
+      "skin_k_W_m_K": 10.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 10.538040411213832,
+      "increment_above_bulk_k_skin_K": 8.430432328971065,
+      "skin_diffusion_time_s": 0.0036,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 3.7447151509111276e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 2.1076080822427663
+    },
+    {
+      "thickness_um": 100.0,
+      "skin_k_W_m_K": 25.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 4.215216164485533,
+      "increment_above_bulk_k_skin_K": 2.1076080822427663,
+      "skin_diffusion_time_s": 0.0014399999999999999,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 4.344715150911127e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 2.1076080822427663
+    },
+    {
+      "thickness_um": 100.0,
+      "skin_k_W_m_K": 50.0,
+      "material_K_plus_U_peak_W_m2": 1053804.0411213832,
+      "full_skin_resistance_rise_K": 2.1076080822427663,
+      "increment_above_bulk_k_skin_K": 0.0,
+      "skin_diffusion_time_s": 0.0007199999999999999,
+      "maximum_permitted_contact_resistance_for_50K_total_m2_K_W": 4.5447151509111274e-05,
+      "minimum_k_for_50K_skin_only_W_m_K": 2.1076080822427663
+    }
+  ],
+  "prompt_sensitivities": [
+    {
+      "spectrum_proxy": "outer_T",
+      "fluence_weighted_kT_keV": 13.324351614632846,
+      "skin_k_W_m_K": 1.0,
+      "resolved_no_conduction_rise_K": 21.805287005762388,
+      "soft_tail_half_space_peak_K": 6.706499932985279,
+      "sum_of_separate_maxima_K": 28.51178693874767,
+      "first50um_energy_transfer_J_m2": 1846.1650031283602
+    },
+    {
+      "spectrum_proxy": "outer_T",
+      "fluence_weighted_kT_keV": 13.324351614632846,
+      "skin_k_W_m_K": 4.0,
+      "resolved_no_conduction_rise_K": 21.805287005762388,
+      "soft_tail_half_space_peak_K": 3.3532499664926396,
+      "sum_of_separate_maxima_K": 25.15853697225503,
+      "first50um_energy_transfer_J_m2": 1846.1650031283602
+    },
+    {
+      "spectrum_proxy": "outer_T",
+      "fluence_weighted_kT_keV": 13.324351614632846,
+      "skin_k_W_m_K": 10.0,
+      "resolved_no_conduction_rise_K": 21.805287005762388,
+      "soft_tail_half_space_peak_K": 2.1207814916000083,
+      "sum_of_separate_maxima_K": 23.926068497362397,
+      "first50um_energy_transfer_J_m2": 1846.1650031283602
+    },
+    {
+      "spectrum_proxy": "outer_T",
+      "fluence_weighted_kT_keV": 13.324351614632846,
+      "skin_k_W_m_K": 50.0,
+      "resolved_no_conduction_rise_K": 21.805287005762388,
+      "soft_tail_half_space_peak_K": 0.9484423161282036,
+      "sum_of_separate_maxima_K": 22.753729321890592,
+      "first50um_energy_transfer_J_m2": 1846.1650031283602
+    },
+    {
+      "spectrum_proxy": "surface_flux_equivalent_Teff",
+      "fluence_weighted_kT_keV": 2.6914677093389088,
+      "skin_k_W_m_K": 1.0,
+      "resolved_no_conduction_rise_K": 180.40721877058263,
+      "soft_tail_half_space_peak_K": 70.50207493099255,
+      "sum_of_separate_maxima_K": 250.90929370157517,
+      "first50um_energy_transfer_J_m2": 11020.666972312947
+    },
+    {
+      "spectrum_proxy": "surface_flux_equivalent_Teff",
+      "fluence_weighted_kT_keV": 2.6914677093389088,
+      "skin_k_W_m_K": 4.0,
+      "resolved_no_conduction_rise_K": 180.40721877058263,
+      "soft_tail_half_space_peak_K": 35.251037465496275,
+      "sum_of_separate_maxima_K": 215.6582562360789,
+      "first50um_energy_transfer_J_m2": 11020.666972312947
+    },
+    {
+      "spectrum_proxy": "surface_flux_equivalent_Teff",
+      "fluence_weighted_kT_keV": 2.6914677093389088,
+      "skin_k_W_m_K": 10.0,
+      "resolved_no_conduction_rise_K": 180.40721877058263,
+      "soft_tail_half_space_peak_K": 22.29471365497949,
+      "sum_of_separate_maxima_K": 202.70193242556212,
+      "first50um_energy_transfer_J_m2": 11020.666972312947
+    },
+    {
+      "spectrum_proxy": "surface_flux_equivalent_Teff",
+      "fluence_weighted_kT_keV": 2.6914677093389088,
+      "skin_k_W_m_K": 50.0,
+      "resolved_no_conduction_rise_K": 180.40721877058263,
+      "soft_tail_half_space_peak_K": 9.970499054285387,
+      "sum_of_separate_maxima_K": 190.37771782486803,
+      "first50um_energy_transfer_J_m2": 11020.666972312947
+    },
+    {
+      "spectrum_proxy": "outer_T_quarter",
+      "fluence_weighted_kT_keV": 3.3310879036582115,
+      "skin_k_W_m_K": 1.0,
+      "resolved_no_conduction_rise_K": 335.23784249320363,
+      "soft_tail_half_space_peak_K": 259.751736882348,
+      "sum_of_separate_maxima_K": 594.9895793755516,
+      "first50um_energy_transfer_J_m2": 14792.002538409273
+    },
+    {
+      "spectrum_proxy": "outer_T_quarter",
+      "fluence_weighted_kT_keV": 3.3310879036582115,
+      "skin_k_W_m_K": 4.0,
+      "resolved_no_conduction_rise_K": 335.23784249320363,
+      "soft_tail_half_space_peak_K": 129.875868441174,
+      "sum_of_separate_maxima_K": 465.11371093437765,
+      "first50um_energy_transfer_J_m2": 14792.002538409273
+    },
+    {
+      "spectrum_proxy": "outer_T_quarter",
+      "fluence_weighted_kT_keV": 3.3310879036582115,
+      "skin_k_W_m_K": 10.0,
+      "resolved_no_conduction_rise_K": 335.23784249320363,
+      "soft_tail_half_space_peak_K": 82.1407114732984,
+      "sum_of_separate_maxima_K": 417.378553966502,
+      "first50um_energy_transfer_J_m2": 14792.002538409273
+    },
+    {
+      "spectrum_proxy": "outer_T_quarter",
+      "fluence_weighted_kT_keV": 3.3310879036582115,
+      "skin_k_W_m_K": 50.0,
+      "resolved_no_conduction_rise_K": 335.23784249320363,
+      "soft_tail_half_space_peak_K": 36.73444291489842,
+      "sum_of_separate_maxima_K": 371.97228540810204,
+      "first50um_energy_transfer_J_m2": 14792.002538409273
+    }
+  ],
+  "prompt_reference_case": "C13-H4-fixed_energy-z64-k0p001-t1",
+  "prompt_reference_matches_selected": false,
+  "selected_C13_prompt_fluence_relative_to_reference": 0.8869800731065012,
+  "prompt_scope": "Imported homogeneous first-interaction depth proxy. Resolved-depth no-conduction maximum scales inversely with cp and is independent of conductivity. Only the sub-keV surface tail is rescaled with effusivity. Treating the low-k skin as a half-space is conservative relative to an ideally contacted higher-k backing for surface heat. A true layered photon/electron transient and interfaces remain uncomputed. Material and prompt peaks occur at different times.",
+  "restoration": [
+    {
+      "thickness_um": 50.0,
+      "schedule": "annual",
+      "period_s": 31557600.0,
+      "recycled_kg_m2_year": 0.09999999999999999,
+      "recycled_kg_s_whole_station": 48182714919.30501,
+      "flow_fraction_of_baseline_routine_capacity": 0.23456382244330162,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.00633761756280579,
+        "3.1": 0.009823307222348974,
+        "10.0": 0.031688087814028945
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 0.3168808781402894,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 50.0,
+      "schedule": "quarterly",
+      "period_s": 7889400.0,
+      "recycled_kg_m2_year": 0.39999999999999997,
+      "recycled_kg_s_whole_station": 192730859677.22003,
+      "flow_fraction_of_baseline_routine_capacity": 0.9382552897732065,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.02535047025122316,
+        "3.1": 0.0392932288893959,
+        "10.0": 0.12675235125611578
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 1.2675235125611577,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 50.0,
+      "schedule": "monthly",
+      "period_s": 2629800.0,
+      "recycled_kg_m2_year": 1.2,
+      "recycled_kg_s_whole_station": 578192579031.66,
+      "flow_fraction_of_baseline_routine_capacity": 2.814765869319619,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.07605141075366947,
+        "3.1": 0.11787968666818768,
+        "10.0": 0.38025705376834734
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 3.802570537683473,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 50.0,
+      "schedule": "weekly",
+      "period_s": 604800.0,
+      "recycled_kg_m2_year": 5.217857142857142,
+      "recycled_kg_s_whole_station": 2514105232039.45,
+      "flow_fraction_of_baseline_routine_capacity": 12.239205163916557,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.33068783068783064,
+        "3.1": 0.5125661375661376,
+        "10.0": 1.6534391534391533
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 16.534391534391528,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 50.0,
+      "schedule": "daily",
+      "period_s": 86400.0,
+      "recycled_kg_m2_year": 36.525,
+      "recycled_kg_s_whole_station": 17598736624276.156,
+      "flow_fraction_of_baseline_routine_capacity": 85.67443614741592,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 2.314814814814815,
+        "3.1": 3.587962962962963,
+        "10.0": 11.574074074074073
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 115.74074074074072,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 100.0,
+      "schedule": "annual",
+      "period_s": 31557600.0,
+      "recycled_kg_m2_year": 0.19999999999999998,
+      "recycled_kg_s_whole_station": 96365429838.61002,
+      "flow_fraction_of_baseline_routine_capacity": 0.46912764488660325,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.01267523512561158,
+        "3.1": 0.01964661444469795,
+        "10.0": 0.06337617562805789
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 0.6337617562805788,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 100.0,
+      "schedule": "quarterly",
+      "period_s": 7889400.0,
+      "recycled_kg_m2_year": 0.7999999999999999,
+      "recycled_kg_s_whole_station": 385461719354.44006,
+      "flow_fraction_of_baseline_routine_capacity": 1.876510579546413,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.05070094050244632,
+        "3.1": 0.0785864577787918,
+        "10.0": 0.25350470251223156
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 2.5350470251223154,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 100.0,
+      "schedule": "monthly",
+      "period_s": 2629800.0,
+      "recycled_kg_m2_year": 2.4,
+      "recycled_kg_s_whole_station": 1156385158063.32,
+      "flow_fraction_of_baseline_routine_capacity": 5.629531738639238,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.15210282150733895,
+        "3.1": 0.23575937333637537,
+        "10.0": 0.7605141075366947
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 7.605141075366946,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 100.0,
+      "schedule": "weekly",
+      "period_s": 604800.0,
+      "recycled_kg_m2_year": 10.435714285714283,
+      "recycled_kg_s_whole_station": 5028210464078.9,
+      "flow_fraction_of_baseline_routine_capacity": 24.478410327833114,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 0.6613756613756613,
+        "3.1": 1.0251322751322751,
+        "10.0": 3.3068783068783065
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 33.068783068783056,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    },
+    {
+      "thickness_um": 100.0,
+      "schedule": "daily",
+      "period_s": 86400.0,
+      "recycled_kg_m2_year": 73.05,
+      "recycled_kg_s_whole_station": 35197473248552.31,
+      "flow_fraction_of_baseline_routine_capacity": 171.34887229483184,
+      "process_W_m2_at_MJ_kg": {
+        "2.0": 4.62962962962963,
+        "3.1": 7.175925925925926,
+        "10.0": 23.148148148148145
+      },
+      "factory_kg_m2_at_existing_capacity_coefficient": 231.48148148148144,
+      "fresh_carbon_required_if_closed_reuse_kg_s": 0.0
+    }
+  ],
+  "restoration_scope": "Gross internally recycled skin throughput. Full reworking is a sensitivity, not a prescribed action at each period. Existing factory capacity is held fixed; capacity above it must be reassigned/added. At 2 MJ/kg this is a chosen complete process cost, with no extra atomization energy. Retained matter is not fresh feed. No achieved annual skin life is inferred.",
+  "baseline_routine_capacity_kg_m2_year": 0.42632320260798884,
+  "baseline_factory_kg_m2": 1.3509367081400003,
+  "baseline_net_W_m2": 53.335082127667974,
+  "validation": {
+    "source_baryon_max_relative": 2.6645352591003757e-15,
+    "source_smooth_energy_max_relative": 7.771561172376096e-15,
+    "all_damage_nonnegative": true,
+    "all_damage_less_than_kinetic": true
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "primary-graphite-material-evidence-v1",
+  "scope": "Measured material properties and explicit ideal assembly bounds; no assigned engineering credible interval.",
+  "sources": [
+    {
+      "id": "roth1989",
+      "title": "Thermophysical properties of advanced carbon materials for tokamak limiters",
+      "authors": "E. P. Roth, R. D. Watson, M. Moss, W. D. Drotning",
+      "report": "SAND88-2057, April 1989",
+      "url": "https://www.osti.gov/servlets/purl/6188316",
+      "sha256": "e67ae5d89848e0931ab8185e894d91a914b4253fa7497ee722e52c53641e1174",
+      "raw_scratch_name": "ornl-6188316.pdf",
+      "read_scope": "Full report; printed pp. 10-14, Table I, Figures 12/14 and numerical appendix p.84 inspected. Figure12 and appendix p.84 visually checked.",
+      "method": "Laser-flash thermal diffusivity, measured density and common literature specific heat. All pyrolytic samples conduct parallel to deposition plane. Expansion correction omitted by authors.",
+      "uncertainty": "POCO calibration agreement within +/-5%; measured specific heats agreed within3% of common literature curve through700C. These are method checks, not an assigned total-conductivity confidence interval."
+    },
+    {
+      "id": "moore1974",
+      "title": "Thermal and Electrical Conductivities and Seebeck Coefficients of Unirradiated and Irradiated Graphites from 300 to 1000 K",
+      "authors": "J. P. Moore, R. S. Graves, D. L. McElroy",
+      "publication": "Nuclear Technology 22 (1974) 88-93",
+      "doi": "10.13182/NT74-A16277",
+      "url": "https://www.osti.gov/servlets/purl/4387457-kSLmOu/",
+      "sha256": "be5f7e8521884920d0d49b7ecd7294bf55517b0fb99f28baf74291cb47adffe4",
+      "raw_scratch_name": "moore-4387457.pdf",
+      "read_scope": "Full primary report; TableII and Figure5 visually checked.",
+      "method": "Guarded longitudinal heat flow on nearly isotropic AXF-5Q and H337 graphite.",
+      "reported_conductivity_uncertainty_percent": 5,
+      "uncertainty_convention": "Author uncertainty statement; confidence/credible level not specified."
+    },
+    {
+      "id": "swank2018",
+      "title": "High Temperature Annealing of Irradiated Nuclear Grade Graphite",
+      "authors": "W. David Swank, David T. Rohrbaugh, David L. Cottle, William E. Windes",
+      "report": "INL/CON-18-45742, HTR2018 proceedings, October2018",
+      "url": "https://www.osti.gov/servlets/purl/1484477",
+      "sha256": "a995b54a559a506bb1dbb5f47cd5cc8d1ff16b69e27c2b9602ad92c26df86d22",
+      "raw_scratch_name": "snead-annealing.pdf",
+      "read_scope": "Full primary paper, thermal-diffusivity section and Fig13 discussion. Scratch filename is historical; authors are Swank etal, not Snead.",
+      "materials": ["NBG-18", "IG-110", "PCEA"],
+      "irradiation_K_nominal": 873.15,
+      "irradiation_K_tolerance": 50,
+      "dose_range_dpa": [2, 4.5],
+      "anneal_onset_K_reported": 1273.15,
+      "highest_anneal_K": 2653.15,
+      "finding": "Thermal-diffusivity recovery starts near1000C; only lower-dose specimens fully recover by2380C. This is grade/dose-specific evidence, not a conductivity law for the proposed basal laminate."
+    }
+  ],
+  "roth_compression_annealed_basal": {
+    "source": "roth1989",
+    "location": "Printed appendix p.84 (PDF page83, 1-based), corresponding to Figure12",
+    "sample": "B.F.Goodrich extended/compression-annealed pyrolytic graphite; 3000C,1h treatment described in main text",
+    "density_kg_m3": 2240,
+    "columns": ["T_C", "k_W_m_K"],
+    "rows": [
+      [152.3,1150.841], [301.6,814.601], [450.3,611.605],
+      [601.8,522.666], [750.9,404.206], [901.0,395.811],
+      [1052.8,339.491], [1201.7,306.828], [1348.3,283.957],
+      [1491.8,261.551], [1737.0,270.108], [1981.0,201.688]
+    ],
+    "extraction": "Numerical table transcribed and visually checked; decimal precision reproduces source, not uncertainty."
+  },
+  "moore_unirradiated": {
+    "source": "moore1974",
+    "location": "TableII, PDF page14; original W/cmK multiplied by100",
+    "columns": ["T_K", "AXF5Q_k_W_m_K", "H337_k_W_m_K"],
+    "rows": [[300,null,167],[400,122,153],[500,111,135],[600,101,123],[700,93,109],[800,85,100],[900,79,92],[1000,74,85]],
+    "density_kg_m3": {"AXF5Q":1850,"H337":2000},
+    "irradiated_comparison": {
+      "irradiation_K": [823,923,1023],
+      "fast_neutron_fluence_m2": [2.6e25,5e25],
+      "fast_neutron_threshold_keV":50,
+      "conductivity_reduction_factor_near900K":2.5,
+      "scope":"Approximate author summary across tested irradiated specimens; not a transferable damage multiplier for the catcher."
+    }
+  },
+  "c_axis_evidence_gap": {
+    "retained_surface_model_k_W_m_K":4,
+    "note":"This review establishes high-temperature basal conductivity. The same grade's1000-1200K c-axis conductivity was not recovered from a full primary table, so it does not validate or change the archived surface-laminate k=4 assumption.",
+    "primary_coverage": [
+      {"doi":"10.1080/14786436608211993","authors":"R.Taylor1966","abstract_range_K":[100,900],"full_pdf_access":"HTTP403"},
+      {"doi":"10.1016/0008-6223(73)90058-4","authors":"Null,Lozier,Moore1973","abstract_range_K":[1500,2700],"also_room_temperature":true,"full_pdf_access":"HTTP403"},
+      {"doi":"10.1111/j.1151-2916.1963.tb11695.x","authors":"Vardi,Hoch1963","abstract_range_K":[1260,2200],"full_pdf_access":"not recovered"}
+    ]
+  },
+  "assembly_screen_inputs": {
+    "mass_per_area_kg_m2":350,
+    "archived_bulk_density_kg_m3":2000,
+    "peak_heat_flux_W_m2":881150,
+    "surface_laminate_thickness_m":0.00015,
+    "surface_laminate_k_W_m_K":4,
+    "post_resistance_m2_K_W":0.000004,
+    "plant_required_constant_k_for_1250K":325.14,
+    "plant_required_constant_k_for_1200K":933.64,
+    "plant_results_status":"Companion heat-spreading agent's finite-slab sweep; this packet reproduces only material/geometry arithmetic, not that transient solver."
+  }
+}

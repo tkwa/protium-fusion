@@ -1,0 +1,57 @@
+{
+  "scope": "Explicit variant selection, baseline and replay regression checks.",
+  "checks": [
+    {
+      "name": "reference exact capacity reproduction",
+      "passed": true
+    },
+    {
+      "name": "reference exact cycle reproduction",
+      "passed": true
+    },
+    {
+      "name": "source/replay cycle physical fields identical",
+      "passed": true
+    },
+    {
+      "name": "source/replay subtraction residual remains negligible",
+      "passed": true
+    },
+    {
+      "name": "source/replay full plant equality",
+      "passed": true
+    },
+    {
+      "name": "all integration checks pass",
+      "passed": true
+    },
+    {
+      "name": "missing stage rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong stage label rejected",
+      "passed": true
+    },
+    {
+      "name": "mismatched source hash rejected",
+      "passed": true
+    },
+    {
+      "name": "unadapted EOS rejected",
+      "passed": true
+    },
+    {
+      "name": "unfinished physical duration rejected",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "source_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/variant_integrate.py": "76eacaaf08052bdf78f13e48fc11eb4028e95fb6288faacbe712a60ca41b5634",
+    "/tmp/variant_reference003.json": "706b2ece0c05d764a0824ce98f4be4b8a671ee9b66177423e71b1814637ff2ff",
+    "/tmp/variant_source64.json": "2d5a6a00d2341c064874d4a2839559d4a3a92e263cec1dbed57e0a02f2e83d2a",
+    "/tmp/variant_source64_replay.json": "ddc35fcf3fa3321b03da348f10c3a3b82dc416464782c716f1b841f86382241a"
+  },
+  "code_sha256": "8864279184cb018e0abfe9677aae567ed735fca5513efb8c164ad1b18843a7f2"
+}

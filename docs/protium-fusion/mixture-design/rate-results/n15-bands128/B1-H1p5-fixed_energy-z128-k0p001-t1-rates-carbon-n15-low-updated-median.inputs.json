@@ -1,0 +1,93 @@
+{
+  "stage": "B1",
+  "hydrogen_per_catalyst": 1.5,
+  "initial_Y": {
+    "p": 0.09090909090909091,
+    "n15": 0.06060606060606061
+  },
+  "initial_counts": {
+    "n15": 1.0,
+    "p": 1.5
+  },
+  "constraint": "fixed_energy",
+  "held_fixed": [
+    "total pulse mass",
+    "enclosed-mass density profile",
+    "temperature profile",
+    "physical final time unless temperature guard",
+    "total prepared energy at stated reference multiplier"
+  ],
+  "velocity_scale": 0.9973328330484862,
+  "temperature_factor": 1.0,
+  "prepared_energy_factor": 1.0,
+  "reference_specific_internal_J_kg": 242743131613.04285,
+  "reference_specific_kinetic_J_kg": 2582271947314.418,
+  "new_specific_internal_J_kg": 256499462695.07526,
+  "specific_prepared_energy_J_kg": 2825015078927.461,
+  "initial_max_pressure_Pa": 7550179973146711.0,
+  "initial_mass_weighted_pressure_Pa": 2986332975375454.5,
+  "initial_electrons_per_baryon": 0.5151515151515151,
+  "initial_ions_per_baryon": 0.15151515151515152,
+  "duration_s": 8.227795789289296e-05,
+  "zones": 128,
+  "opacity_m2_kg": 0.001,
+  "profile_source": "reassessment-2049/small-stages/scaled-hot-B1-64-R30-initial.json",
+  "profile_source_sha256": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+  "baseline_source": "b2-completion/regression-B1-compression_cap.json",
+  "baseline_source_sha256": "940a31ddbcc94f8790212c4631773b86af912bd734d2428116a6c2b3639224b5",
+  "solver_source_sha256": "3af8f36fad063bde4ac5b3491c324c9add973a5459ecb1a9e913630564eb70cc",
+  "network_source_sha256": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+  "runner_source_sha256": "3498c48393b720f0c7f96093b5b99c73648cbd35acfc82566b75711229ff0e41",
+  "scope": "Full 27-isotope spherical hydro sensitivity; prescribed hot inflow; constant grey opacity. Source preparation, 3D merger and apparatus not simulated.",
+  "rate_update": {
+    "revision": "luna2023-public-repository-2026-10-31-plus-nacreii-n15-low",
+    "mode": "updated",
+    "quantile": "median",
+    "table_sha256": "9166934c7f82868daf7ff95054c78f6078994ab1c0a8e53040a37c1d651f4b99",
+    "kernel_sha256": "8ea157326095bca3024d34f3eb0cb23f0239387c5f919ee423ec96adeef437ee",
+    "source_doi": "10.1103/PhysRevLett.131.162701",
+    "temperature_range_GK": [
+      0.007000000000000003,
+      10.000000000000002
+    ],
+    "interpolation": "pchip in log(new/old) versus log(T9); frozen REACLIB shape supplies within-cell temperature dependence",
+    "outside_table": "Constant endpoint new/old ratio; relevant trajectories remain within table during burn.",
+    "reverse_policy": "Identical multiplicative factor for each forward/reverse pair, preserving the original library equilibrium ratio and Q.",
+    "pairs": [
+      {
+        "forward": "C12_p_to_N13_reaclib",
+        "reverse": "N13_to_p_C12_reaclib",
+        "indices": [
+          62,
+          13
+        ]
+      },
+      {
+        "forward": "C13_p_to_N14_reaclib",
+        "reverse": "N14_to_p_C13_reaclib",
+        "indices": [
+          64,
+          15
+        ]
+      }
+    ],
+    "scope": "Two measured carbon capture updates and one paired N15(p,alpha) evaluation sensitivity; all other physics unchanged.",
+    "carbon_kernel_sha256": "9e3252c7f70bb4fa6c931c4264f3df583fe2d6fe19b375c2e1f461e646aae865",
+    "nitrogen15_evaluation": {
+      "data_sha256": "15661ce2f82ab1467a3f609ef6addc87eba19694ef9ada6b6071fec5fe0ed76c",
+      "doi": "10.1016/j.nuclphysa.2013.09.007",
+      "table": 35,
+      "curve": "low",
+      "temperature_range_GK": [
+        0.005000000000000002,
+        10.000000000000002
+      ],
+      "interpretation": "Adopted/low/high model evaluation limits; not assigned a Gaussian confidence level here.",
+      "reverse_policy": "Same forward/reverse factor preserves archived equilibrium ratio; no new Q or species."
+    },
+    "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B1-H1p5-fixed_energy-z128-k0p001-t1.json",
+    "baseline_record_sha256": "6e0f76dc3142f2208bddaa802061d81d87f63484bf8caf17b91a27725277e40f",
+    "initial_profile_sha256": "ff078798e77f4cf301628570988e2496ca04b6f235739367fbb5800dd530b1af",
+    "runner_sha256": "3498c48393b720f0c7f96093b5b99c73648cbd35acfc82566b75711229ff0e41"
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "scope": "Geometric-optics sphere inside uniform 1000K cavity. Radiation only; room-temperature smooth unoxidized thick Al optical reference, no coating qualification.",
+  "parameters": {
+    "radius_receiver_m": 1100000000.0,
+    "speed_m_s": 2400000.0,
+    "flight_s": 458.3333333333333,
+    "core_density_kg_m3": 1000.0,
+    "wall_temperature_K": 1000.0
+  },
+  "primary_sources": {
+    "Al_table": "https://doi.org/10.1364/AO.34.004755",
+    "Al_public_table": "https://opg.optica.org/ao/abstract.cfm?uri=ao-34-22-4755",
+    "polyethylene": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6565414/"
+  },
+  "optics": {
+    "Al_reference_hemispherical_Planck_absorptivity": 0.021822326876419506,
+    "Al_reference_normal_Planck_absorptivity": 0.017151656067785764,
+    "unresolved_Planck_energy_fraction_zero_full_bound": 1.8600428386895877e-05,
+    "Al100nm_normal_material_transmission_upper_resolved": 1.9511415296424566e-05,
+    "table_E_n_k": [
+      [
+        0.0061993,
+        423.96,
+        483.7
+      ],
+      [
+        0.007,
+        397.93,
+        458.5
+      ],
+      [
+        0.008059,
+        364.04,
+        429.62
+      ],
+      [
+        0.009,
+        339.62,
+        408.92
+      ],
+      [
+        0.0099188,
+        318.81,
+        391.71
+      ],
+      [
+        0.012399,
+        274.38,
+        354.35
+      ],
+      [
+        0.015498,
+        233.56,
+        321.08
+      ],
+      [
+        0.018598,
+        202.63,
+        295.42
+      ],
+      [
+        0.021697,
+        177.93,
+        275.34
+      ],
+      [
+        0.024797,
+        157.3,
+        258.26
+      ],
+      [
+        0.027897,
+        140.05,
+        243.43
+      ],
+      [
+        0.030996,
+        125.14,
+        230.19
+      ],
+      [
+        0.037196,
+        102.1,
+        208.1
+      ],
+      [
+        0.04,
+        91.955,
+        199.99
+      ],
+      [
+        0.045,
+        75.748,
+        181.78
+      ],
+      [
+        0.05,
+        68.535,
+        164.81
+      ],
+      [
+        0.055,
+        63.554,
+        153.45
+      ],
+      [
+        0.06,
+        58.58,
+        144.23
+      ],
+      [
+        0.065,
+        54.413,
+        136.09
+      ],
+      [
+        0.07,
+        50.951,
+        129.49
+      ],
+      [
+        0.08,
+        43.775,
+        118.39
+      ],
+      [
+        0.09,
+        38.461,
+        108.96
+      ],
+      [
+        0.1,
+        33.519,
+        101.28
+      ],
+      [
+        0.12,
+        26.216,
+        88.197
+      ],
+      [
+        0.14,
+        20.837,
+        78.274
+      ],
+      [
+        0.16,
+        16.755,
+        69.857
+      ],
+      [
+        0.18,
+        14.088,
+        62.841
+      ],
+      [
+        0.2,
+        12.195,
+        57.156
+      ],
+      [
+        0.22,
+        10.742,
+        52.518
+      ],
+      [
+        0.24,
+        9.558,
+        48.593
+      ],
+      [
+        0.26,
+        8.5881,
+        45.257
+      ],
+      [
+        0.28,
+        7.7757,
+        42.367
+      ],
+      [
+        0.3,
+        7.0796,
+        39.826
+      ],
+      [
+        0.32,
+        6.4808,
+        37.595
+      ],
+      [
+        0.34,
+        5.9564,
+        35.608
+      ],
+      [
+        0.36,
+        5.4903,
+        33.814
+      ],
+      [
+        0.38,
+        5.0735,
+        32.183
+      ],
+      [
+        0.4,
+        4.7097,
+        30.737
+      ],
+      [
+        0.45,
+        3.938,
+        27.58
+      ],
+      [
+        0.5,
+        3.3372,
+        25.004
+      ],
+      [
+        0.6,
+        2.4738,
+        20.982
+      ],
+      [
+        0.7,
+        1.9205,
+        17.991
+      ],
+      [
+        0.8,
+        1.5782,
+        15.656
+      ],
+      [
+        0.9,
+        1.3899,
+        13.784
+      ],
+      [
+        1.0,
+        1.3157,
+        12.245
+      ],
+      [
+        1.1,
+        1.3281,
+        10.969
+      ],
+      [
+        1.2,
+        1.3998,
+        9.8914
+      ],
+      [
+        1.24,
+        1.4359,
+        9.4939
+      ],
+      [
+        1.28,
+        1.4867,
+        9.0655
+      ],
+      [
+        1.32,
+        1.6784,
+        8.597
+      ],
+      [
+        1.36,
+        1.9739,
+        8.3058
+      ],
+      [
+        1.4,
+        2.2802,
+        8.1134
+      ],
+      [
+        1.48,
+        2.6945,
+        8.1878
+      ],
+      [
+        1.52,
+        2.7668,
+        8.2573
+      ],
+      [
+        1.56,
+        2.7675,
+        8.3866
+      ],
+      [
+        1.6,
+        2.6154,
+        8.4914
+      ],
+      [
+        1.7,
+        2.1606,
+        8.3565
+      ],
+      [
+        1.8,
+        1.8301,
+        8.0601
+      ],
+      [
+        1.9,
+        1.5724,
+        7.7354
+      ],
+      [
+        2.0,
+        1.366,
+        7.4052
+      ],
+      [
+        2.2,
+        1.0728,
+        6.7839
+      ],
+      [
+        2.4,
+        0.8734,
+        6.2418
+      ],
+      [
+        2.6,
+        0.7278,
+        5.7781
+      ],
+      [
+        2.8,
+        0.6079,
+        5.3676
+      ],
+      [
+        3.0,
+        0.52135,
+        5.0008
+      ],
+      [
+        3.4,
+        0.39877,
+        4.3957
+      ],
+      [
+        3.8,
+        0.31474,
+        3.9165
+      ],
+      [
+        4.0,
+        0.28003,
+        3.7081
+      ],
+      [
+        5.0,
+        0.18137,
+        2.9029
+      ],
+      [
+        6.0,
+        0.12677,
+        2.3563
+      ]
+    ]
+  },
+  "polyethylene_enthalpy20to300_J_kg": {
+    "linear": 268991.9441077921,
+    "branched": 301823.62586440437
+  },
+  "cases": [
+    {
+      "radius_m": 0.0001,
+      "black_absorber_dose_J_kg": 779676482.6124998,
+      "optically_thick_Al_reference_dose_before_self_emission_J_kg": 17014355.061426982,
+      "allowed_Planck_absorptivity_polyethylene20to300K": {
+        "linear": 0.00034500456292649453,
+        "branched": 0.00038711392814243836
+      },
+      "allowed_absorptivity_for_explicit_30kJkg_budget": 3.847749761475111e-05,
+      "Al100nm_coating_mass_per_core_mass": 0.0081,
+      "polyethylene_reference_transit_limits": {
+        "linear": {
+          "time_to300K_s": 7.257804975574796,
+          "maximum_unshielded_path_m": 17418731.94137951,
+          "full_transit_at_or_below300K": false
+        },
+        "branched": {
+          "time_to300K_s": 8.14467844702521,
+          "maximum_unshielded_path_m": 19547228.272860505,
+          "full_transit_at_or_below300K": false
+        }
+      }
+    },
+    {
+      "radius_m": 0.001,
+      "black_absorber_dose_J_kg": 77967648.26124999,
+      "optically_thick_Al_reference_dose_before_self_emission_J_kg": 1701435.5061426982,
+      "allowed_Planck_absorptivity_polyethylene20to300K": {
+        "linear": 0.003450045629264945,
+        "branched": 0.0038711392814243834
+      },
+      "allowed_absorptivity_for_explicit_30kJkg_budget": 0.0003847749761475111,
+      "Al100nm_coating_mass_per_core_mass": 0.00081,
+      "polyethylene_reference_transit_limits": {
+        "linear": {
+          "time_to300K_s": 72.57804975574797,
+          "maximum_unshielded_path_m": 174187319.4137951,
+          "full_transit_at_or_below300K": false
+        },
+        "branched": {
+          "time_to300K_s": 81.4467844702521,
+          "maximum_unshielded_path_m": 195472282.72860503,
+          "full_transit_at_or_below300K": false
+        }
+      }
+    },
+    {
+      "radius_m": 0.01,
+      "black_absorber_dose_J_kg": 7796764.826124999,
+      "optically_thick_Al_reference_dose_before_self_emission_J_kg": 170143.55061426983,
+      "allowed_Planck_absorptivity_polyethylene20to300K": {
+        "linear": 0.03450045629264945,
+        "branched": 0.038711392814243836
+      },
+      "allowed_absorptivity_for_explicit_30kJkg_budget": 0.003847749761475111,
+      "Al100nm_coating_mass_per_core_mass": 8.099999999999999e-05,
+      "polyethylene_reference_transit_limits": {
+        "linear": {
+          "time_to300K_s": 725.7804975574796,
+          "maximum_unshielded_path_m": 1741873194.1379511,
+          "full_transit_at_or_below300K": true
+        },
+        "branched": {
+          "time_to300K_s": 814.467844702521,
+          "maximum_unshielded_path_m": 1954722827.2860503,
+          "full_transit_at_or_below300K": true
+        }
+      }
+    }
+  ],
+  "emission_assumption": "Same temperature-independent optical spectrum used for Kirchhoff emissivity. This is a conditional room-temperature optical reference; no cryogenic improvement granted.",
+  "unknowns": [
+    "Cryogenic film absorption, oxidation, roughness and size-scattering",
+    "Coating mechanical/electrical integrity and contamination by high-Z addition",
+    "Actual cryogenic nitrogen compound enthalpy, gas retention and phase stability",
+    "Nonuniform internal grain temperatures and thermal stress; energy acceptance is necessary but not sufficient"
+  ],
+  "checks": {
+    "passed": 6,
+    "count": 6,
+    "all_passed": true
+  },
+  "code_sha256": "77569dfa417b81cafdb70bbc93cc0f2679d57a17a915b05dd9496e46fd4750a9"
+}

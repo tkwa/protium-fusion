@@ -1,0 +1,330 @@
+{
+  "code_sha256": "367bbb489ea52541dd5bf22ba5dc71d02cf29c6cca6ab3e1bd54112d3c7d9261",
+  "material_cycle_sha256": "845b6fceeead8ac69da4bb4310bbbfedeaf8b7c91356275d4eb510580511405e",
+  "cycle_source_sha256": "b92b82f7b9d0ecee08e44490bc5a8088db79776fae81aa47a2abe201844465c1",
+  "mixture": {
+    "A": 3,
+    "B1": 2,
+    "B2": 2.5,
+    "C13": 4
+  },
+  "cycle": {
+    "H_nonnu_MeV_per_He": 24.69767340699365,
+    "U_prepared_MeV_per_He": 1.9604523887499474,
+    "delayed_decay_heat_MeV_per_He": 5.752647661431011,
+    "escaped_prompt_MeV_per_He": 0.3457871957038623,
+    "preaux_net_MeV_per_He": 12.567506074755117
+  },
+  "stages": {
+    "A": {
+      "attempts_per_He": 1.2661566432887101,
+      "attempts_per_pulse": 4.006400437490335e+38,
+      "max_final_bulk_speed_m_s": 15668302.296726348,
+      "max_final_bulk_Doppler_factor": 1.0537039152035843,
+      "max_endpoint_temperature_K": 114014546.29086998,
+      "hot_output": {
+        "p": 2.232660064458242,
+        "he4": 6.364352350076493e-08,
+        "c12": 4.2558590281022555e-08,
+        "c13": 2.1981898261555984e-16,
+        "n13": 5.473436578392733e-09,
+        "n14": 0.2326601648086804,
+        "n15": 1.1728290389555892e-07,
+        "o14": 1.5612994774424668e-08,
+        "o15": 0.7673396542559342,
+        "o16": 5.9455339583139696e-12,
+        "o17": 1.2842418663743603e-19,
+        "o18": 4.473652879274238e-25,
+        "f17": 9.73763217249577e-15,
+        "f18": 1.3440114310841283e-16,
+        "f19": 1.7186108660818868e-18,
+        "ne18": 1.8555428312503978e-16,
+        "ne19": 1.5042214597189538e-12,
+        "ne20": 3.4467347246386525e-22,
+        "ne21": 1.0474008383689645e-29,
+        "ne22": 2.3190432066327488e-26,
+        "na21": 1.976231348991609e-24,
+        "na22": 3.8582989847067925e-25,
+        "na23": 2.4783154678294208e-28,
+        "mg22": 6.687389729424858e-25,
+        "mg23": 6.4630138029629436e-24,
+        "mg24": 1.2342257682177282e-26
+      },
+      "source": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json",
+      "sha256": "230f1b22fc32cd7e1203f12e5780446b641b4518c527e8efbe295e2fa627e48d",
+      "D1p10_endpoint_thermal_tail_screen": {
+        "minimum_parent_A": 13,
+        "one_dimension_thermal_speed_sigma_over_c": 0.0009007511913609453,
+        "speed_margin_over_sigma": 47.47014942139398,
+        "Maxwell_speed_tail_probability_upper": 0.0,
+        "scope": "Triangle-inequality speed bound using global maximum endpoint bulk speed and temperature for every parent. Maxwellian nonrelativistic thermal assumption; excludes subsequent pressure acceleration or external fields."
+      }
+    },
+    "B1": {
+      "attempts_per_He": 1.3225666016882411,
+      "attempts_per_pulse": 4.006400437490335e+36,
+      "max_final_bulk_speed_m_s": 10287280.505750336,
+      "max_final_bulk_Doppler_factor": 1.034924163587481,
+      "max_endpoint_temperature_K": 38981689.77037213,
+      "hot_output": {
+        "n": 3.666576202835258e-22,
+        "p": 1.2436655695378054,
+        "he4": 0.7561055264515387,
+        "c12": 0.7559676522867468,
+        "c13": 6.8974118069852806e-12,
+        "n13": 0.0001378701683568476,
+        "n14": 1.70876349149624e-15,
+        "n15": 0.24380344785229133,
+        "o14": 4.01091591656887e-09,
+        "o15": 1.1252580580994765e-20,
+        "o16": 9.102551464288872e-05,
+        "o17": 6.417012138956301e-17,
+        "o18": 5.1854725326320895e-31,
+        "f17": 1.3877275228023063e-10,
+        "f18": 2.292697951365437e-22,
+        "f19": 2.1375156615779075e-11,
+        "ne18": 1.2844792502643617e-17,
+        "ne19": 1.9661443544407933e-29,
+        "ne20": 2.579188691963688e-16,
+        "ne21": 3.8554717915885207e-29,
+        "ne22": 9.481586614595198e-23,
+        "na21": 2.534827877023555e-23,
+        "na23": 5.772285440506918e-25,
+        "mg22": 1.1898398647013647e-27,
+        "mg23": 4.7422469676006384e-30,
+        "mg24": 2.587196422771726e-28
+      },
+      "source": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json",
+      "sha256": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+      "D1p10_endpoint_thermal_tail_screen": {
+        "minimum_parent_A": 13,
+        "one_dimension_thermal_speed_sigma_over_c": 0.0005266899651594051,
+        "speed_margin_over_sigma": 115.26316108284635,
+        "Maxwell_speed_tail_probability_upper": 0.0,
+        "scope": "Triangle-inequality speed bound using global maximum endpoint bulk speed and temperature for every parent. Maxwellian nonrelativistic thermal assumption; excludes subsequent pressure acceleration or external fields."
+      }
+    },
+    "B2": {
+      "attempts_per_He": 1.0941272268780435,
+      "attempts_per_pulse": 4.697159133609358e+38,
+      "max_final_bulk_speed_m_s": 18316823.052633088,
+      "max_final_bulk_Doppler_factor": 1.06308445161552,
+      "max_endpoint_temperature_K": 127863668.86473155,
+      "hot_output": {
+        "n": 7.333033837876454e-18,
+        "p": 0.7062215060940444,
+        "he4": 2.4716795198919613e-11,
+        "c12": 0.0860873405505261,
+        "c13": 1.2452809567544735e-09,
+        "n13": 0.03404683656231893,
+        "n14": 2.789017811292739e-07,
+        "n15": 1.5649051366821754e-15,
+        "o14": 0.8798655297168771,
+        "o15": 1.295285295385148e-08,
+        "o16": 6.179303936896997e-12,
+        "o17": 4.52557409035835e-21,
+        "f17": 1.548934066389702e-14,
+        "f18": 1.3398792119394658e-20,
+        "ne18": 1.226084275653924e-15,
+        "ne20": 2.8476501869352352e-11,
+        "ne21": 1.3805365552410334e-18,
+        "ne22": 4.028604556033251e-26,
+        "na21": 1.5432451358513145e-12,
+        "na22": 4.957799757031972e-18,
+        "na23": 1.6350473816378421e-18,
+        "mg22": 8.923634577575919e-13,
+        "mg23": 8.696559000503836e-13,
+        "mg24": 3.0076597724174684e-13
+      },
+      "source": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json",
+      "sha256": "f92988f64f7c658e34ce6f6bd37f396059f5e8a30c14866653a534093659a0d2",
+      "D1p10_endpoint_thermal_tail_screen": {
+        "minimum_parent_A": 13,
+        "one_dimension_thermal_speed_sigma_over_c": 0.0009538899966160327,
+        "speed_margin_over_sigma": 35.564142060588786,
+        "Maxwell_speed_tail_probability_upper": 6.363327661899217e-274,
+        "scope": "Triangle-inequality speed bound using global maximum endpoint bulk speed and temperature for every parent. Maxwellian nonrelativistic thermal assumption; excludes subsequent pressure acceleration or external fields."
+      }
+    },
+    "C13": {
+      "attempts_per_He": 0.04002784531978997,
+      "attempts_per_pulse": 4.006400437490335e+38,
+      "max_final_bulk_speed_m_s": 22953014.90988636,
+      "max_final_bulk_Doppler_factor": 1.0797323068167266,
+      "max_endpoint_temperature_K": 105583238.0396228,
+      "hot_output": {
+        "p": 2.3515685648867177,
+        "he4": 6.879152003626538e-08,
+        "c12": 3.676820005306838e-08,
+        "c13": 0.06477079451002174,
+        "n13": 4.36400723844356e-09,
+        "n14": 0.2220270889160359,
+        "n15": 1.253977301372891e-07,
+        "o14": 4.331175680505944e-08,
+        "o15": 0.7132019065545996,
+        "o16": 1.6066124389284802e-10,
+        "o17": 1.2533200490772153e-18,
+        "o18": 9.186193667494725e-25,
+        "f17": 4.630782147018776e-13,
+        "f18": 2.496087599533365e-16,
+        "f19": 2.1465599950014215e-17,
+        "ne18": 2.7039483210091695e-14,
+        "ne19": 1.649688100270549e-11,
+        "ne20": 8.432433589055004e-21,
+        "ne21": 6.149839561916061e-28,
+        "na21": 3.0292100588348187e-22,
+        "na22": 4.900727668873374e-23,
+        "na23": 8.12943790853229e-27,
+        "mg22": 5.121950011941e-22,
+        "mg23": 3.16113321552571e-21,
+        "mg24": 9.485272187295759e-26
+      },
+      "source": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json",
+      "sha256": "cf9dea85fb758573a00ba17adcf69aeed7ac1eb5d42ad3906ee4fd296a1f9170",
+      "D1p10_endpoint_thermal_tail_screen": {
+        "minimum_parent_A": 13,
+        "one_dimension_thermal_speed_sigma_over_c": 0.0008668065850548595,
+        "speed_margin_over_sigma": 21.296109475635287,
+        "Maxwell_speed_tail_probability_upper": 5.618869408699838e-98,
+        "scope": "Triangle-inequality speed bound using global maximum endpoint bulk speed and temperature for every parent. Maxwellian nonrelativistic thermal assumption; excludes subsequent pressure acceleration or external fields."
+      }
+    }
+  },
+  "parents": {
+    "n13": {
+      "decays_per_He": 0.037433920456847784,
+      "primary_gamma_MeV_per_He": 0.03818209949748585,
+      "mean_positron_kinetic_MeV_per_He": 0.01838905204858856,
+      "neutral_primary_nonnu_reference_MeV_per_He": 0.05657115154607441
+    },
+    "o14": {
+      "decays_per_He": 0.9626848588615844,
+      "primary_gamma_MeV_per_He": 3.196235691163816,
+      "mean_positron_kinetic_MeV_per_He": 0.7472539846492613,
+      "neutral_primary_nonnu_reference_MeV_per_He": 3.9434896758130775
+    },
+    "o15": {
+      "decays_per_He": 1.000120150664429,
+      "primary_gamma_MeV_per_He": 1.0211016933078616,
+      "mean_positron_kinetic_MeV_per_He": 0.7328253023390578,
+      "neutral_primary_nonnu_reference_MeV_per_He": 1.7539269956469195
+    }
+  },
+  "primary_photon_lines": [
+    {
+      "energy_MeV": 0.511,
+      "photons_per_He": 3.9959831792024727,
+      "MeV_per_He": 2.0419474045724635
+    },
+    {
+      "energy_MeV": 1.6352,
+      "photons_per_He": 0.0005005961266080238,
+      "MeV_per_He": 0.0008185747862294406
+    },
+    {
+      "energy_MeV": 2.312593,
+      "photons_per_He": 0.9567932275253515,
+      "MeV_per_He": 2.2126733204225353
+    },
+    {
+      "energy_MeV": 3.9475,
+      "photons_per_He": 2.0312650521979432e-05,
+      "MeV_per_He": 8.018418793551381e-05
+    }
+  ],
+  "primary_delayed_photon_MeV_per_He": 4.255519483969164,
+  "primary_delayed_photon_fraction_nonnu_nuclear": 0.1723044682728749,
+  "primary_delayed_photon_fraction_total_thermal_boundary": 0.15963310836535352,
+  "main_beta_kinetic_MeV_per_He": 1.4984683390369078,
+  "other_unstable_whole_Q_upper_MeV_per_He": 5.323957714645893e-10,
+  "other_unstable": [
+    {
+      "parent": "f17",
+      "decays_per_He": 1.8358402009034968e-10,
+      "whole_atomic_Q_MeV_per_He_upper": 5.067771151512617e-10
+    },
+    {
+      "parent": "f18",
+      "decays_per_He": 1.8017916425402922e-16,
+      "whole_atomic_Q_MeV_per_He_upper": 2.98361615008983e-16
+    },
+    {
+      "parent": "ne18",
+      "decays_per_He": 2.6757533217396662e-15,
+      "whole_atomic_Q_MeV_per_He_upper": 1.632320917871921e-14
+    },
+    {
+      "parent": "ne19",
+      "decays_per_He": 2.5649145952358715e-12,
+      "whole_atomic_Q_MeV_per_He_upper": 8.309028263181879e-12
+    },
+    {
+      "parent": "na21",
+      "decays_per_He": 1.6885065209301804e-12,
+      "whole_atomic_Q_MeV_per_He_upper": 5.988997549212685e-12
+    },
+    {
+      "parent": "na22",
+      "decays_per_He": 5.424466149754809e-18,
+      "whole_atomic_Q_MeV_per_He_upper": 1.542352563970875e-17
+    },
+    {
+      "parent": "mg22",
+      "decays_per_He": 9.763591554249665e-13,
+      "whole_atomic_Q_MeV_per_He_upper": 7.444471037705017e-12
+    },
+    {
+      "parent": "mg23",
+      "decays_per_He": 9.515141983949718e-13,
+      "whole_atomic_Q_MeV_per_He_upper": 3.859516191546144e-12
+    },
+    {
+      "parent": "n",
+      "decays_per_He": 8.023756906761463e-18,
+      "whole_atomic_Q_MeV_per_He_upper": 6.277362433589623e-18
+    }
+  ],
+  "decay_data": {
+    "n13": {
+      "beta_plus_probability": 0.99803,
+      "beta_mean_MeV": 0.49221,
+      "Q_atomic_MeV": 2.22047,
+      "half_life_s": 597.534,
+      "lines_MeV_per_decay": [],
+      "source": "https://www.lnhb.fr/nuclides/N-13_tables.pdf",
+      "evaluation": "LNHB updated2026; ground-state transition"
+    },
+    "o15": {
+      "beta_plus_probability": 0.999001,
+      "beta_mean_MeV": 0.73347,
+      "Q_atomic_MeV": 2.75418,
+      "half_life_s": 122.266,
+      "lines_MeV_per_decay": [],
+      "source": "https://www.lnhb.fr/nuclides/O-15_tables.pdf",
+      "evaluation": "LNHB updated2026; ground-state transition"
+    },
+    "o14": {
+      "beta_plus_probability": 0.99878,
+      "beta_mean_weighted_MeV": 0.7762186948,
+      "Q_atomic_MeV": 5.14304,
+      "half_life_s": 70.606,
+      "lines_MeV_per_decay": [
+        [
+          1.6352,
+          0.00052
+        ],
+        [
+          2.312593,
+          0.99388
+        ],
+        [
+          3.9475,
+          2.11e-05
+        ]
+      ],
+      "source": "https://www.nndc.bnl.gov/ensnds/14/N/ec_decay.pdf",
+      "evaluation": "ENSDF July1990 evaluation; gamma intensities perparent, including cascades"
+    }
+  },
+  "scope": "Neutral-atom decay branching, positrons assumed to slow beforeannihilation. In-flight annihilation can redistribute both positron kinetic and annihilation rest energy into a harder photon component; bounds must move both together. The saved beta kinetic energy is reported separately for that purpose. Stripped EC suppression changes dominant annihilation counts by at most~0.2%. No change to original nuclear/neutrino ledger or capture efficiency."
+}

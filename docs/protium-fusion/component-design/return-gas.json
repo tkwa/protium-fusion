@@ -1,0 +1,2433 @@
+{
+  "code_sha256": "0fcd604a731b069838be4378f2d92f743b2fce913176fdaf61ab9c0a49aca674",
+  "geometry": {
+    "R_m": 1100000000.0,
+    "area_m2": 1.5205308443374598e+19,
+    "He_rate_s": 3.78224727e+32
+  },
+  "scenarios": {
+    "closed_reference": {
+      "He_rate_s": 3.78224727e+32,
+      "unburned_H_atoms_per_He": 1.85904844964,
+      "rows": {
+        "300.0": {
+          "H": {
+            "mass_source_kg_s": 1176084.1886375803,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 2511.1544980325107,
+            "unit_capture_residence_s": 584060.7050724278,
+            "unit_capture_inventory_kg": 686904560440.1992,
+            "unit_capture_radial_column_kg_m2": 1.355259374707727e-07,
+            "unit_capture_pressure_Pa": 3.050959814423736e-10,
+            "unit_capture_number_density_m3": 73660039938.31248
+          },
+          "H2": {
+            "mass_source_kg_s": 1176084.1886375803,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 1775.6543741658893,
+            "unit_capture_residence_s": 825986.5703626197,
+            "unit_capture_inventory_kg": 971429745430.4592,
+            "unit_capture_radial_column_kg_m2": 1.9166261882449475e-07,
+            "unit_capture_pressure_Pa": 2.157354373906674e-10,
+            "unit_capture_number_density_m3": 52085513742.85267
+          },
+          "He": {
+            "mass_source_kg_s": 2513861.945054532,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 1259.7273923935868,
+            "unit_capture_residence_s": 1164273.0606023245,
+            "unit_capture_inventory_kg": 2926821740700.3525,
+            "unit_capture_radial_column_kg_m2": 5.774605135305205e-07,
+            "unit_capture_pressure_Pa": 3.2714677199184056e-10,
+            "unit_capture_number_density_m3": 78983814131.81784
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 7.129864510012933e-07,
+              "pressure_Pa": 6.322427534342142e-10,
+              "total_gas_source_kg_s": 3689946.1336921123,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1540050.7341627935,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0006493292576777496,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635.9166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0006493292576777496,
+                    "0.1": 6.493292576777496e-05,
+                    "0.01": 6.493292576777496e-06,
+                    "0.001": 6.493292576777495e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1540050.7341627935,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.006493292576777496,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.006493292576777496,
+                    "0.1": 0.0006493292576777496,
+                    "0.01": 6.493292576777496e-05,
+                    "0.001": 6.493292576777496e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1540050.7341627935,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.06493292576777496,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.06493292576777496,
+                    "0.1": 0.006493292576777496,
+                    "0.01": 0.0006493292576777496,
+                    "0.001": 6.493292576777496e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 154005.07341627934,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.006493292576777496,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.006493292576777496,
+                    "0.1": 0.0006493292576777496,
+                    "0.01": 6.493292576777496e-05,
+                    "0.001": 6.493292576777496e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 154005.07341627934,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.06493292576777496,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.06493292576777496,
+                    "0.1": 0.006493292576777496,
+                    "0.01": 0.0006493292576777496,
+                    "0.001": 6.493292576777496e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 154005.07341627934,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.6493292576777496,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635916.658821867,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.6493292576777496,
+                    "0.1": 0.06493292576777497,
+                    "0.01": 0.006493292576777496,
+                    "0.001": 0.0006493292576777496
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 655119726.956424,
+                "1e-19": 65511972.695642404,
+                "1e-18": 6551197.269564239
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 7.691231323550153e-07,
+              "pressure_Pa": 5.428822093825079e-10,
+              "total_gas_source_kg_s": 3689946.1336921123,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1661305.965886833,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0006019360795265569,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635.9166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0006019360795265569,
+                    "0.1": 6.0193607952655684e-05,
+                    "0.01": 6.019360795265568e-06,
+                    "0.001": 6.019360795265568e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1661305.965886833,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.006019360795265568,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.006019360795265568,
+                    "0.1": 0.0006019360795265569,
+                    "0.01": 6.0193607952655684e-05,
+                    "0.001": 6.019360795265568e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1661305.9658868331,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.06019360795265568,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.06019360795265568,
+                    "0.1": 0.006019360795265568,
+                    "0.01": 0.0006019360795265569,
+                    "0.001": 6.0193607952655684e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 166130.5965886833,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.006019360795265568,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.006019360795265568,
+                    "0.1": 0.0006019360795265569,
+                    "0.01": 6.0193607952655684e-05,
+                    "0.001": 6.019360795265568e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 166130.5965886833,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.06019360795265568,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.06019360795265568,
+                    "0.1": 0.006019360795265568,
+                    "0.01": 0.0006019360795265569,
+                    "0.001": 6.0193607952655684e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 166130.59658868331,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.6019360795265568,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635916.658821867,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.6019360795265568,
+                    "0.1": 0.060193607952655694,
+                    "0.01": 0.006019360795265568,
+                    "0.001": 0.0006019360795265569
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 762955007.2586071,
+                "1e-19": 76295500.72586071,
+                "1e-18": 7629550.072586072
+              }
+            }
+          }
+        },
+        "1000.0": {
+          "H": {
+            "mass_source_kg_s": 1176084.1886375803,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 4584.719879843228,
+            "unit_capture_residence_s": 319903.2231205407,
+            "unit_capture_inventory_kg": 376233122606.2679,
+            "unit_capture_radial_column_kg_m2": 7.423061307977684e-08,
+            "unit_capture_pressure_Pa": 5.570265041338852e-10,
+            "unit_capture_number_density_m3": 40345265460.94519
+          },
+          "H2": {
+            "mass_source_kg_s": 1176084.1886375803,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 3241.8865168779203,
+            "unit_capture_residence_s": 452411.4767839348,
+            "unit_capture_inventory_kg": 532073984603.7634,
+            "unit_capture_radial_column_kg_m2": 1.0497793976069005e-07,
+            "unit_capture_pressure_Pa": 3.938772183737066e-10,
+            "unit_capture_number_density_m3": 28528410796.205738
+          },
+          "He": {
+            "mass_source_kg_s": 2513861.945054532,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 2299.9370304037648,
+            "unit_capture_residence_s": 637698.6183874724,
+            "unit_capture_inventory_kg": 1603086289178.119,
+            "unit_capture_radial_column_kg_m2": 3.1628814932918325e-07,
+            "unit_capture_pressure_Pa": 5.972855554497678e-10,
+            "unit_capture_number_density_m3": 43261216677.79195
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 3.905187624089601e-07,
+              "pressure_Pa": 1.1543120595836531e-09,
+              "total_gas_source_kg_s": 3689946.1336921123,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 843520.5268033538,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0011855076055939603,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635.9166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0011855076055939603,
+                    "0.1": 0.00011855076055939603,
+                    "0.01": 1.1855076055939603e-05,
+                    "0.001": 1.1855076055939601e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 843520.5268033538,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.011855076055939603,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.011855076055939603,
+                    "0.1": 0.0011855076055939603,
+                    "0.01": 0.00011855076055939603,
+                    "0.001": 1.1855076055939603e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 843520.5268033538,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.11855076055939603,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.11855076055939603,
+                    "0.1": 0.011855076055939603,
+                    "0.01": 0.0011855076055939603,
+                    "0.001": 0.00011855076055939603
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 84352.05268033539,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.011855076055939603,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.011855076055939603,
+                    "0.1": 0.0011855076055939603,
+                    "0.01": 0.00011855076055939603,
+                    "0.001": 1.1855076055939603e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 84352.05268033539,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.11855076055939603,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.11855076055939603,
+                    "0.1": 0.011855076055939603,
+                    "0.01": 0.0011855076055939603,
+                    "0.001": 0.00011855076055939603
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 84352.05268033539,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 1.1855076055939604,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635916.658821867,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 1.0,
+                    "0.1": 0.11855076055939605,
+                    "0.01": 0.011855076055939603,
+                    "0.001": 0.0011855076055939603
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 1196079507.735529,
+                "1e-19": 119607950.7735529,
+                "1e-18": 11960795.077355288
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 4.212660890898733e-07,
+              "pressure_Pa": 9.911627738234743e-10,
+              "total_gas_source_kg_s": 3689946.1336921123,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 909934.7524341263,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0010989798964430627,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635.9166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0010989798964430627,
+                    "0.1": 0.00010989798964430626,
+                    "0.01": 1.0989798964430627e-05,
+                    "0.001": 1.0989798964430625e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 909934.7524341262,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.010989798964430628,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.010989798964430628,
+                    "0.1": 0.0010989798964430627,
+                    "0.01": 0.00010989798964430626,
+                    "0.001": 1.0989798964430627e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 909934.7524341262,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.10989798964430626,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.10989798964430626,
+                    "0.1": 0.010989798964430628,
+                    "0.01": 0.0010989798964430627,
+                    "0.001": 0.00010989798964430626
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 90993.47524341263,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.010989798964430628,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.010989798964430628,
+                    "0.1": 0.0010989798964430627,
+                    "0.01": 0.00010989798964430626,
+                    "0.001": 1.0989798964430627e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 90993.47524341263,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.10989798964430626,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.10989798964430626,
+                    "0.1": 0.010989798964430628,
+                    "0.01": 0.0010989798964430627,
+                    "0.001": 0.00010989798964430626
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 90993.47524341263,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 1.0989798964430628,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635916.658821867,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 1.0,
+                    "0.1": 0.10989798964430629,
+                    "0.01": 0.010989798964430628,
+                    "0.001": 0.0010989798964430627
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 1392958892.79019,
+                "1e-19": 139295889.279019,
+                "1e-18": 13929588.927901898
+              }
+            }
+          }
+        },
+        "2000.0": {
+          "H": {
+            "mass_source_kg_s": 1176084.1886375803,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 6483.7730337558405,
+            "unit_capture_residence_s": 226205.7383919674,
+            "unit_capture_inventory_kg": 266036992301.8817,
+            "unit_capture_radial_column_kg_m2": 5.248896988034503e-08,
+            "unit_capture_pressure_Pa": 7.877544367474132e-10,
+            "unit_capture_number_density_m3": 28528410796.205738
+          },
+          "H2": {
+            "mass_source_kg_s": 1176084.1886375803,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 4584.719879843228,
+            "unit_capture_residence_s": 319903.2231205407,
+            "unit_capture_inventory_kg": 376233122606.2679,
+            "unit_capture_radial_column_kg_m2": 7.423061307977684e-08,
+            "unit_capture_pressure_Pa": 5.570265041338852e-10,
+            "unit_capture_number_density_m3": 20172632730.472595
+          },
+          "He": {
+            "mass_source_kg_s": 2513861.945054532,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 3252.6021410011053,
+            "unit_capture_residence_s": 450921.0174150741,
+            "unit_capture_inventory_kg": 1133553185905.0266,
+            "unit_capture_radial_column_kg_m2": 2.236494951996089e-07,
+            "unit_capture_pressure_Pa": 8.446893331266089e-10,
+            "unit_capture_number_density_m3": 30590299675.247253
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 2.761384650799539e-07,
+              "pressure_Pa": 1.632443769874022e-09,
+              "total_gas_source_kg_s": 3689946.1336921123,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 596459.0845727006,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0016765609341274326,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635.9166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0016765609341274326,
+                    "0.1": 0.00016765609341274325,
+                    "0.01": 1.6765609341274327e-05,
+                    "0.001": 1.6765609341274326e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 596459.0845727004,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.016765609341274326,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.016765609341274326,
+                    "0.1": 0.0016765609341274329,
+                    "0.01": 0.00016765609341274325,
+                    "0.001": 1.6765609341274327e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 596459.0845727004,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.16765609341274326,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.16765609341274326,
+                    "0.1": 0.016765609341274326,
+                    "0.01": 0.0016765609341274326,
+                    "0.001": 0.00016765609341274325
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 59645.90845727005,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.016765609341274326,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.016765609341274326,
+                    "0.1": 0.0016765609341274329,
+                    "0.01": 0.00016765609341274325,
+                    "0.001": 1.6765609341274327e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 59645.90845727005,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.16765609341274326,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.16765609341274326,
+                    "0.1": 0.016765609341274326,
+                    "0.01": 0.0016765609341274326,
+                    "0.001": 0.00016765609341274325
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 59645.90845727004,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 1.6765609341274328,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635916.658821867,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 1.0,
+                    "0.1": 0.1676560934127433,
+                    "0.01": 0.016765609341274326,
+                    "0.001": 0.0016765609341274329
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 1691511861.5161204,
+                "1e-19": 169151186.15161204,
+                "1e-18": 16915118.615161203
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 2.9788010827938576e-07,
+              "pressure_Pa": 1.4017158372604941e-09,
+              "total_gas_source_kg_s": 3689946.1336921123,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 643421.0338834733,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0015541922743251583,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635.9166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0015541922743251583,
+                    "0.1": 0.0001554192274325158,
+                    "0.01": 1.5541922743251582e-05,
+                    "0.001": 1.5541922743251582e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 643421.0338834733,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.015541922743251583,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.015541922743251583,
+                    "0.1": 0.0015541922743251583,
+                    "0.01": 0.0001554192274325158,
+                    "0.001": 1.5541922743251582e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 643421.0338834733,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.15541922743251582,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.15541922743251582,
+                    "0.1": 0.015541922743251583,
+                    "0.01": 0.0015541922743251583,
+                    "0.001": 0.0001554192274325158
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 64342.10338834733,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.015541922743251583,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 6359.166588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.015541922743251583,
+                    "0.1": 0.0015541922743251583,
+                    "0.01": 0.0001554192274325158,
+                    "0.001": 1.5541922743251582e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 64342.10338834732,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.15541922743251582,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 63591.66588218669,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.15541922743251582,
+                    "0.1": 0.015541922743251583,
+                    "0.01": 0.0015541922743251583,
+                    "0.001": 0.0001554192274325158
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 64342.10338834732,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 1.5541922743251584,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 635916.658821867,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 1.0,
+                    "0.1": 0.15541922743251585,
+                    "0.01": 0.015541922743251583,
+                    "0.001": 0.0015541922743251583
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 1969941358.0120962,
+                "1e-19": 196994135.8012096,
+                "1e-18": 19699413.580120962
+              }
+            }
+          }
+        }
+      }
+    },
+    "A_H2_B1_H2_candidate": {
+      "He_rate_s": 3.78224727e+32,
+      "unburned_H_atoms_per_He": 3.817,
+      "rows": {
+        "300.0": {
+          "H": {
+            "mass_source_kg_s": 2414737.1462529395,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 2511.1544980325107,
+            "unit_capture_residence_s": 584060.7050724278,
+            "unit_capture_inventory_kg": 1410353080205.074,
+            "unit_capture_radial_column_kg_m2": 2.7826198043741887e-07,
+            "unit_capture_pressure_Pa": 6.264233518986838e-10,
+            "unit_capture_number_density_m3": 151238862278.7022
+          },
+          "H2": {
+            "mass_source_kg_s": 2414737.1462529395,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 1775.6543741658893,
+            "unit_capture_residence_s": 825986.5703626197,
+            "unit_capture_inventory_kg": 1994540453760.685,
+            "unit_capture_radial_column_kg_m2": 3.935218666273946e-07,
+            "unit_capture_pressure_Pa": 4.429482000211663e-10,
+            "unit_capture_number_density_m3": 106942025096.20868
+          },
+          "He": {
+            "mass_source_kg_s": 2513861.945054532,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 1259.7273923935868,
+            "unit_capture_residence_s": 1164273.0606023245,
+            "unit_capture_inventory_kg": 2926821740700.3525,
+            "unit_capture_radial_column_kg_m2": 5.774605135305205e-07,
+            "unit_capture_pressure_Pa": 3.2714677199184056e-10,
+            "unit_capture_number_density_m3": 78983814131.81784
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 8.557224939679394e-07,
+              "pressure_Pa": 9.535701238905244e-10,
+              "total_gas_source_kg_s": 4928599.0913074715,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1848360.586970749,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.000541019975782369,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476.0984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.000541019975782369,
+                    "0.1": 5.41019975782369e-05,
+                    "0.01": 5.41019975782369e-06,
+                    "0.001": 5.41019975782369e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1848360.586970749,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.00541019975782369,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.00541019975782369,
+                    "0.1": 0.0005410199757823691,
+                    "0.01": 5.41019975782369e-05,
+                    "0.001": 5.41019975782369e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1848360.586970749,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0541019975782369,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0541019975782369,
+                    "0.1": 0.00541019975782369,
+                    "0.01": 0.000541019975782369,
+                    "0.001": 5.41019975782369e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 184836.05869707488,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.00541019975782369,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.00541019975782369,
+                    "0.1": 0.0005410199757823691,
+                    "0.01": 5.41019975782369e-05,
+                    "0.001": 5.41019975782369e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 184836.0586970749,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0541019975782369,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0541019975782369,
+                    "0.1": 0.00541019975782369,
+                    "0.01": 0.000541019975782369,
+                    "0.001": 5.41019975782369e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 184836.05869707488,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.541019975782369,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476098.4152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.541019975782369,
+                    "0.1": 0.05410199757823691,
+                    "0.01": 0.00541019975782369,
+                    "0.001": 0.0005410199757823691
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 434362077.4423005,
+                "1e-19": 43436207.744230054,
+                "1e-18": 4343620.774423004
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 9.70982380157915e-07,
+              "pressure_Pa": 7.700949720130069e-10,
+              "total_gas_source_kg_s": 4928599.0913074715,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 2097321.9411410964,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0004767985211921861,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476.0984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0004767985211921861,
+                    "0.1": 4.7679852119218606e-05,
+                    "0.01": 4.767985211921861e-06,
+                    "0.001": 4.767985211921861e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 2097321.9411410964,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.004767985211921861,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.004767985211921861,
+                    "0.1": 0.00047679852119218615,
+                    "0.01": 4.7679852119218606e-05,
+                    "0.001": 4.767985211921861e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 2097321.9411410964,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.04767985211921861,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.04767985211921861,
+                    "0.1": 0.004767985211921861,
+                    "0.01": 0.0004767985211921861,
+                    "0.001": 4.7679852119218606e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 209732.19411410965,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.004767985211921861,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.004767985211921861,
+                    "0.1": 0.00047679852119218615,
+                    "0.01": 4.7679852119218606e-05,
+                    "0.001": 4.767985211921861e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 209732.19411410965,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.04767985211921861,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.04767985211921861,
+                    "0.1": 0.004767985211921861,
+                    "0.01": 0.0004767985211921861,
+                    "0.001": 4.7679852119218606e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 209732.19411410962,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.47679852119218613,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476098.4152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.47679852119218613,
+                    "0.1": 0.047679852119218616,
+                    "0.01": 0.004767985211921861,
+                    "0.001": 0.00047679852119218615
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 537848856.3784628,
+                "1e-19": 53784885.63784628,
+                "1e-18": 5378488.563784628
+              }
+            }
+          }
+        },
+        "1000.0": {
+          "H": {
+            "mass_source_kg_s": 2414737.1462529395,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 4584.719879843228,
+            "unit_capture_residence_s": 319903.2231205407,
+            "unit_capture_inventory_kg": 772482196075.2118,
+            "unit_capture_radial_column_kg_m2": 1.5241036358163555e-07,
+            "unit_capture_pressure_Pa": 1.1436873346096858e-09,
+            "unit_capture_number_density_m3": 82836936441.46236
+          },
+          "H2": {
+            "mass_source_kg_s": 2414737.1462529395,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 3241.8865168779203,
+            "unit_capture_residence_s": 452411.4767839348,
+            "unit_capture_inventory_kg": 1092454798381.3168,
+            "unit_capture_radial_column_kg_m2": 2.1554080322336342e-07,
+            "unit_capture_pressure_Pa": 8.087090698596768e-10,
+            "unit_capture_number_density_m3": 58574559490.477066
+          },
+          "He": {
+            "mass_source_kg_s": 2513861.945054532,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 2299.9370304037648,
+            "unit_capture_residence_s": 637698.6183874724,
+            "unit_capture_inventory_kg": 1603086289178.119,
+            "unit_capture_radial_column_kg_m2": 3.1628814932918325e-07,
+            "unit_capture_pressure_Pa": 5.972855554497678e-10,
+            "unit_capture_number_density_m3": 43261216677.79195
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 4.6869851291081883e-07,
+              "pressure_Pa": 1.7409728900594535e-09,
+              "total_gas_source_kg_s": 4928599.0913074715,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1012388.7878873687,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.000987762815989674,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476.0984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.000987762815989674,
+                    "0.1": 9.877628159896739e-05,
+                    "0.01": 9.877628159896739e-06,
+                    "0.001": 9.87762815989674e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1012388.7878873686,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.00987762815989674,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.00987762815989674,
+                    "0.1": 0.000987762815989674,
+                    "0.01": 9.877628159896739e-05,
+                    "0.001": 9.877628159896739e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1012388.7878873687,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0987762815989674,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0987762815989674,
+                    "0.1": 0.00987762815989674,
+                    "0.01": 0.000987762815989674,
+                    "0.001": 9.877628159896739e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 101238.87878873687,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.00987762815989674,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.00987762815989674,
+                    "0.1": 0.000987762815989674,
+                    "0.01": 9.877628159896739e-05,
+                    "0.001": 9.877628159896739e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 101238.87878873687,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0987762815989674,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0987762815989674,
+                    "0.1": 0.00987762815989674,
+                    "0.01": 0.000987762815989674,
+                    "0.001": 9.877628159896739e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 101238.87878873687,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.987762815989674,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476098.4152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.987762815989674,
+                    "0.1": 0.09877628159896741,
+                    "0.01": 0.00987762815989674,
+                    "0.001": 0.000987762815989674
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 793033026.466513,
+                "1e-19": 79303302.6466513,
+                "1e-18": 7930330.264665129
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 5.318289525525466e-07,
+              "pressure_Pa": 1.4059946253094446e-09,
+              "total_gas_source_kg_s": 4928599.0913074715,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1148750.5375135008,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0008705110181402178,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476.0984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0008705110181402178,
+                    "0.1": 8.705110181402178e-05,
+                    "0.01": 8.705110181402178e-06,
+                    "0.001": 8.705110181402177e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1148750.5375135008,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.008705110181402178,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.008705110181402178,
+                    "0.1": 0.0008705110181402179,
+                    "0.01": 8.705110181402178e-05,
+                    "0.001": 8.705110181402178e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1148750.5375135005,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.08705110181402179,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.08705110181402179,
+                    "0.1": 0.008705110181402178,
+                    "0.01": 0.0008705110181402178,
+                    "0.001": 8.705110181402178e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 114875.05375135007,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.008705110181402178,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.008705110181402178,
+                    "0.1": 0.0008705110181402179,
+                    "0.01": 8.705110181402178e-05,
+                    "0.001": 8.705110181402178e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 114875.05375135007,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.08705110181402179,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.08705110181402179,
+                    "0.1": 0.008705110181402178,
+                    "0.01": 0.0008705110181402178,
+                    "0.001": 8.705110181402178e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 114875.05375135006,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.8705110181402178,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476098.4152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.8705110181402178,
+                    "0.1": 0.0870511018140218,
+                    "0.01": 0.008705110181402178,
+                    "0.001": 0.0008705110181402179
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 981973170.5561349,
+                "1e-19": 98197317.05561349,
+                "1e-18": 9819731.705561347
+              }
+            }
+          }
+        },
+        "2000.0": {
+          "H": {
+            "mass_source_kg_s": 2414737.1462529395,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 6483.7730337558405,
+            "unit_capture_residence_s": 226205.7383919674,
+            "unit_capture_inventory_kg": 546227399190.6584,
+            "unit_capture_radial_column_kg_m2": 1.0777040161168171e-07,
+            "unit_capture_pressure_Pa": 1.6174181397193535e-09,
+            "unit_capture_number_density_m3": 58574559490.477066
+          },
+          "H2": {
+            "mass_source_kg_s": 2414737.1462529395,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 4584.719879843228,
+            "unit_capture_residence_s": 319903.2231205407,
+            "unit_capture_inventory_kg": 772482196075.2118,
+            "unit_capture_radial_column_kg_m2": 1.5241036358163555e-07,
+            "unit_capture_pressure_Pa": 1.1436873346096858e-09,
+            "unit_capture_number_density_m3": 41418468220.73118
+          },
+          "He": {
+            "mass_source_kg_s": 2513861.945054532,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 3252.6021410011053,
+            "unit_capture_residence_s": 450921.0174150741,
+            "unit_capture_inventory_kg": 1133553185905.0266,
+            "unit_capture_radial_column_kg_m2": 2.236494951996089e-07,
+            "unit_capture_pressure_Pa": 8.446893331266089e-10,
+            "unit_capture_number_density_m3": 30590299675.247253
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 3.3141989681129057e-07,
+              "pressure_Pa": 2.4621074728459625e-09,
+              "total_gas_source_kg_s": 4928599.0913074715,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 715866.9771123877,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0013969075707804368,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476.0984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0013969075707804368,
+                    "0.1": 0.0001396907570780437,
+                    "0.01": 1.3969075707804368e-05,
+                    "0.001": 1.3969075707804367e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 715866.9771123877,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.013969075707804368,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.013969075707804368,
+                    "0.1": 0.001396907570780437,
+                    "0.01": 0.0001396907570780437,
+                    "0.001": 1.3969075707804368e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 715866.9771123877,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.13969075707804368,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.13969075707804368,
+                    "0.1": 0.013969075707804368,
+                    "0.01": 0.0013969075707804368,
+                    "0.001": 0.0001396907570780437
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 71586.69771123875,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.013969075707804368,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.013969075707804368,
+                    "0.1": 0.001396907570780437,
+                    "0.01": 0.0001396907570780437,
+                    "0.001": 1.3969075707804368e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 71586.69771123877,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.13969075707804368,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.13969075707804368,
+                    "0.1": 0.013969075707804368,
+                    "0.01": 0.0013969075707804368,
+                    "0.001": 0.0001396907570780437
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 71586.69771123877,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 1.3969075707804368,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476098.4152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 1.0,
+                    "0.1": 0.1396907570780437,
+                    "0.01": 0.013969075707804368,
+                    "0.001": 0.001396907570780437
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 1121518061.4387243,
+                "1e-19": 112151806.14387241,
+                "1e-18": 11215180.614387242
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 3.7605985878124444e-07,
+              "pressure_Pa": 1.9883766677362945e-09,
+              "total_gas_source_kg_s": 4928599.0913074715,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 812289.294967488,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0012310884880491072,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476.0984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0012310884880491072,
+                    "0.1": 0.00012310884880491072,
+                    "0.01": 1.2310884880491071e-05,
+                    "0.001": 1.231088488049107e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 812289.294967488,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.012310884880491072,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.012310884880491072,
+                    "0.1": 0.0012310884880491072,
+                    "0.01": 0.00012310884880491072,
+                    "0.001": 1.2310884880491071e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 812289.2949674879,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.12310884880491071,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.12310884880491071,
+                    "0.1": 0.012310884880491072,
+                    "0.01": 0.0012310884880491072,
+                    "0.001": 0.00012310884880491072
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 81228.92949674881,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.012310884880491072,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 4760.984152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.012310884880491072,
+                    "0.1": 0.0012310884880491072,
+                    "0.01": 0.00012310884880491072,
+                    "0.001": 1.2310884880491071e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 81228.92949674881,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.12310884880491071,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 47609.84152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.12310884880491071,
+                    "0.1": 0.012310884880491072,
+                    "0.01": 0.0012310884880491072,
+                    "0.001": 0.00012310884880491072
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 81228.9294967488,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 1.231088488049107,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 476098.4152086245,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 1.0,
+                    "0.1": 0.12310884880491073,
+                    "0.01": 0.012310884880491072,
+                    "0.001": 0.0012310884880491072
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 1388719775.6869943,
+                "1e-19": 138871977.56869945,
+                "1e-18": 13887197.756869944
+              }
+            }
+          }
+        }
+      }
+    },
+    "provisional_A3_B1H2_B2H2p5_C13H4": {
+      "He_rate_s": 4.473e+32,
+      "unburned_H_atoms_per_He": 5.342413081602383,
+      "rows": {
+        "300.0": {
+          "H": {
+            "mass_source_kg_s": 3996999.9999999995,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 2511.1544980325107,
+            "unit_capture_residence_s": 584060.7050724278,
+            "unit_capture_inventory_kg": 2334490638174.4937,
+            "unit_capture_radial_column_kg_m2": 4.605938735544099e-07,
+            "unit_capture_pressure_Pa": 1.036888897586358e-09,
+            "unit_capture_number_density_m3": 250338523787.57092
+          },
+          "H2": {
+            "mass_source_kg_s": 3996999.9999999995,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 1775.6543741658893,
+            "unit_capture_residence_s": 825986.5703626197,
+            "unit_capture_inventory_kg": 3301468321739.3906,
+            "unit_capture_radial_column_kg_m2": 6.513781027266049e-07,
+            "unit_capture_pressure_Pa": 7.331911708203574e-10,
+            "unit_capture_number_density_m3": 177016067762.42123
+          },
+          "He": {
+            "mass_source_kg_s": 2972969.1576270005,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 300.0,
+            "mean_thermal_speed_m_s": 1259.7273923935868,
+            "unit_capture_residence_s": 1164273.0606023245,
+            "unit_capture_inventory_kg": 3461347900226.7026,
+            "unit_capture_radial_column_kg_m2": 6.829222662171474e-07,
+            "unit_capture_pressure_Pa": 3.868936657648782e-10,
+            "unit_capture_number_density_m3": 93408647132.5872
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 1.1435161397715574e-06,
+              "pressure_Pa": 1.4237825633512363e-09,
+              "total_gas_source_kg_s": 6969969.157627,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 2469994.8619065643,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.000404859141783036,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336.6583357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.000404859141783036,
+                    "0.1": 4.0485914178303596e-05,
+                    "0.01": 4.04859141783036e-06,
+                    "0.001": 4.0485914178303595e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 2469994.861906564,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0040485914178303595,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0040485914178303595,
+                    "0.1": 0.00040485914178303603,
+                    "0.01": 4.0485914178303596e-05,
+                    "0.001": 4.04859141783036e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 2469994.861906564,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0404859141783036,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0404859141783036,
+                    "0.1": 0.0040485914178303595,
+                    "0.01": 0.000404859141783036,
+                    "0.001": 4.0485914178303596e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 246999.4861906564,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0040485914178303595,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0040485914178303595,
+                    "0.1": 0.00040485914178303603,
+                    "0.01": 4.0485914178303596e-05,
+                    "0.001": 4.04859141783036e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 246999.48619065637,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0404859141783036,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0404859141783036,
+                    "0.1": 0.0040485914178303595,
+                    "0.01": 0.000404859141783036,
+                    "0.001": 4.0485914178303596e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 246999.48619065637,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.404859141783036,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336658.3357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.404859141783036,
+                    "0.1": 0.040485914178303606,
+                    "0.01": 0.0040485914178303595,
+                    "0.001": 0.00040485914178303603
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 290911485.1252897,
+                "1e-19": 29091148.512528975,
+                "1e-18": 2909114.8512528967
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 1.3343003689437524e-06,
+              "pressure_Pa": 1.1200848365852357e-09,
+              "total_gas_source_kg_s": 6969969.157627,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 2882088.7969185053,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0003469705725476564,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336.6583357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0003469705725476564,
+                    "0.1": 3.469705725476564e-05,
+                    "0.01": 3.469705725476564e-06,
+                    "0.001": 3.469705725476564e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 2882088.7969185053,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0034697057254765643,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0034697057254765643,
+                    "0.1": 0.0003469705725476564,
+                    "0.01": 3.469705725476564e-05,
+                    "0.001": 3.469705725476564e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 2882088.7969185053,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.03469705725476564,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.03469705725476564,
+                    "0.1": 0.0034697057254765643,
+                    "0.01": 0.0003469705725476564,
+                    "0.001": 3.469705725476564e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 288208.8796918505,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0034697057254765643,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0034697057254765643,
+                    "0.1": 0.0003469705725476564,
+                    "0.01": 3.469705725476564e-05,
+                    "0.001": 3.469705725476564e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 288208.8796918505,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.03469705725476564,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.03469705725476564,
+                    "0.1": 0.0034697057254765643,
+                    "0.01": 0.0003469705725476564,
+                    "0.001": 3.469705725476564e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 288208.8796918505,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.3469705725476564,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336658.3357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.3469705725476564,
+                    "0.1": 0.03469705725476564,
+                    "0.01": 0.0034697057254765643,
+                    "0.001": 0.0003469705725476564
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 369788686.0630498,
+                "1e-19": 36978868.60630497,
+                "1e-18": 3697886.8606304973
+              }
+            }
+          }
+        },
+        "1000.0": {
+          "H": {
+            "mass_source_kg_s": 3996999.9999999995,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 4584.719879843228,
+            "unit_capture_residence_s": 319903.2231205407,
+            "unit_capture_inventory_kg": 1278653182812.801,
+            "unit_capture_radial_column_kg_m2": 2.522776543944325e-07,
+            "unit_capture_pressure_Pa": 1.893091462782374e-09,
+            "unit_capture_number_density_m3": 137116056490.99622
+          },
+          "H2": {
+            "mass_source_kg_s": 3996999.9999999995,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 3241.8865168779203,
+            "unit_capture_residence_s": 452411.4767839348,
+            "unit_capture_inventory_kg": 1808288672705.3872,
+            "unit_capture_radial_column_kg_m2": 3.5677448032827877e-07,
+            "unit_capture_pressure_Pa": 1.3386178107397774e-09,
+            "unit_capture_number_density_m3": 96955693354.34113
+          },
+          "He": {
+            "mass_source_kg_s": 2972969.1576270005,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 1000.0,
+            "mean_thermal_speed_m_s": 2299.9370304037648,
+            "unit_capture_residence_s": 637698.6183874724,
+            "unit_capture_inventory_kg": 1895858324327.3057,
+            "unit_capture_radial_column_kg_m2": 3.740519302296798e-07,
+            "unit_capture_pressure_Pa": 7.063679603176266e-10,
+            "unit_capture_number_density_m3": 51162023100.55826
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 6.263295846241123e-07,
+              "pressure_Pa": 2.5994594231000007e-09,
+              "total_gas_source_kg_s": 6969969.157627,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1352871.9027880826,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0007391682818891705,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336.6583357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0007391682818891705,
+                    "0.1": 7.391682818891705e-05,
+                    "0.01": 7.3916828188917055e-06,
+                    "0.001": 7.391682818891705e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1352871.9027880826,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.007391682818891705,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.007391682818891705,
+                    "0.1": 0.0007391682818891707,
+                    "0.01": 7.391682818891705e-05,
+                    "0.001": 7.3916828188917055e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1352871.9027880824,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.07391682818891705,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.07391682818891705,
+                    "0.1": 0.007391682818891705,
+                    "0.01": 0.0007391682818891705,
+                    "0.001": 7.391682818891705e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 135287.19027880824,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.007391682818891705,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.007391682818891705,
+                    "0.1": 0.0007391682818891707,
+                    "0.01": 7.391682818891705e-05,
+                    "0.001": 7.3916828188917055e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 135287.19027880824,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.07391682818891705,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.07391682818891705,
+                    "0.1": 0.007391682818891705,
+                    "0.01": 0.0007391682818891705,
+                    "0.001": 7.391682818891705e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 135287.19027880824,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.7391682818891706,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336658.3357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.7391682818891706,
+                    "0.1": 0.07391682818891707,
+                    "0.01": 0.007391682818891705,
+                    "0.001": 0.0007391682818891707
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 531129275.468166,
+                "1e-19": 53112927.546816595,
+                "1e-18": 5311292.754681659
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 7.308264105579585e-07,
+              "pressure_Pa": 2.044985771057404e-09,
+              "total_gas_source_kg_s": 6969969.157627,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1578585.0468051906,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.000633478697916114,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336.6583357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.000633478697916114,
+                    "0.1": 6.33478697916114e-05,
+                    "0.01": 6.334786979161141e-06,
+                    "0.001": 6.33478697916114e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1578585.0468051904,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.00633478697916114,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.00633478697916114,
+                    "0.1": 0.0006334786979161142,
+                    "0.01": 6.33478697916114e-05,
+                    "0.001": 6.334786979161141e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1578585.0468051906,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0633478697916114,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0633478697916114,
+                    "0.1": 0.00633478697916114,
+                    "0.01": 0.000633478697916114,
+                    "0.001": 6.33478697916114e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 157858.50468051905,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.00633478697916114,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.00633478697916114,
+                    "0.1": 0.0006334786979161142,
+                    "0.01": 6.33478697916114e-05,
+                    "0.001": 6.334786979161141e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 157858.50468051905,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0633478697916114,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0633478697916114,
+                    "0.1": 0.00633478697916114,
+                    "0.01": 0.000633478697916114,
+                    "0.001": 6.33478697916114e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 157858.50468051905,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.6334786979161141,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336658.3357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.6334786979161141,
+                    "0.1": 0.06334786979161142,
+                    "0.01": 0.00633478697916114,
+                    "0.001": 0.0006334786979161142
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 675138682.889762,
+                "1e-19": 67513868.2889762,
+                "1e-18": 6751386.82889762
+              }
+            }
+          }
+        },
+        "2000.0": {
+          "H": {
+            "mass_source_kg_s": 3996999.9999999995,
+            "mass_kg": 1.67262192369e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 6483.7730337558405,
+            "unit_capture_residence_s": 226205.7383919674,
+            "unit_capture_inventory_kg": 904144336352.6936,
+            "unit_capture_radial_column_kg_m2": 1.7838724016413939e-07,
+            "unit_capture_pressure_Pa": 2.677235621479555e-09,
+            "unit_capture_number_density_m3": 96955693354.34113
+          },
+          "H2": {
+            "mass_source_kg_s": 3996999.9999999995,
+            "mass_kg": 3.34524384738e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 4584.719879843228,
+            "unit_capture_residence_s": 319903.2231205407,
+            "unit_capture_inventory_kg": 1278653182812.801,
+            "unit_capture_radial_column_kg_m2": 2.522776543944325e-07,
+            "unit_capture_pressure_Pa": 1.893091462782374e-09,
+            "unit_capture_number_density_m3": 68558028245.49811
+          },
+          "He": {
+            "mass_source_kg_s": 2972969.1576270005,
+            "mass_kg": 6.64647699e-27,
+            "temperature_K": 2000.0,
+            "mean_thermal_speed_m_s": 3252.6021410011053,
+            "unit_capture_residence_s": 450921.0174150741,
+            "unit_capture_inventory_kg": 1340574277300.803,
+            "unit_capture_radial_column_kg_m2": 2.6449465638132397e-07,
+            "unit_capture_pressure_Pa": 9.98955149507008e-10,
+            "unit_capture_number_density_m3": 36177013473.62754
+          },
+          "combinations": {
+            "atomic_H_plus_He": {
+              "radial_column_kg_m2": 4.428818965454634e-07,
+              "pressure_Pa": 3.676190770986563e-09,
+              "total_gas_source_kg_s": 6969969.157627,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 956624.8965382009,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.001045341809123684,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336.6583357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.001045341809123684,
+                    "0.1": 0.0001045341809123684,
+                    "0.01": 1.0453418091236839e-05,
+                    "0.001": 1.0453418091236839e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 956624.8965382009,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.01045341809123684,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.01045341809123684,
+                    "0.1": 0.001045341809123684,
+                    "0.01": 0.0001045341809123684,
+                    "0.001": 1.0453418091236839e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 956624.8965382009,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.10453418091236841,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.10453418091236841,
+                    "0.1": 0.01045341809123684,
+                    "0.01": 0.001045341809123684,
+                    "0.001": 0.0001045341809123684
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 95662.48965382008,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.01045341809123684,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.01045341809123684,
+                    "0.1": 0.001045341809123684,
+                    "0.01": 0.0001045341809123684,
+                    "0.001": 1.0453418091236839e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 95662.4896538201,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.10453418091236841,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.10453418091236841,
+                    "0.1": 0.01045341809123684,
+                    "0.01": 0.001045341809123684,
+                    "0.001": 0.0001045341809123684
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 95662.4896538201,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 1.0453418091236841,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336658.3357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 1.0,
+                    "0.1": 0.10453418091236842,
+                    "0.01": 0.01045341809123684,
+                    "0.001": 0.001045341809123684
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 751130224.740476,
+                "1e-19": 75113022.4740476,
+                "1e-18": 7511302.24740476
+              }
+            },
+            "H2_plus_He": {
+              "radial_column_kg_m2": 5.167723107757564e-07,
+              "pressure_Pa": 2.892046612289382e-09,
+              "total_gas_source_kg_s": 6969969.157627,
+              "acceptance": [
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296294e-10,
+                  "full_injection_unit_capture_heating_J_kg": 1116228.1912756339,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.0008958741660674173,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336.6583357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.0008958741660674173,
+                    "0.1": 8.958741660674172e-05,
+                    "0.01": 8.958741660674172e-06,
+                    "0.001": 8.958741660674172e-07
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 1116228.1912756339,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.008958741660674173,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.008958741660674173,
+                    "0.1": 0.0008958741660674174,
+                    "0.01": 8.958741660674172e-05,
+                    "0.001": 8.958741660674172e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.001,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 1116228.1912756339,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.08958741660674173,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.08958741660674173,
+                    "0.1": 0.008958741660674173,
+                    "0.01": 0.0008958741660674173,
+                    "0.001": 8.958741660674172e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 1000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-09,
+                  "full_injection_unit_capture_heating_J_kg": 111622.8191275634,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.008958741660674173,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 3366.5833571192506,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.008958741660674173,
+                    "0.1": 0.0008958741660674174,
+                    "0.01": 8.958741660674172e-05,
+                    "0.001": 8.958741660674172e-06
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 10000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296295e-08,
+                  "full_injection_unit_capture_heating_J_kg": 111622.81912756339,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.08958741660674173,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 33665.83357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.08958741660674173,
+                    "0.1": 0.008958741660674173,
+                    "0.01": 0.0008958741660674173,
+                    "0.001": 8.958741660674172e-05
+                  }
+                },
+                {
+                  "grain_radius_m": 0.01,
+                  "grain_density_kg_m3": 1000,
+                  "grain_velocity_m_s": 2400000.0,
+                  "allowed_gas_heating_J_kg": 100000.0,
+                  "full_kinetic_retention": true,
+                  "maximum_radial_column_kg_m2": 4.6296296296296297e-07,
+                  "full_injection_unit_capture_heating_J_kg": 111622.81912756337,
+                  "maximum_common_cavity_injection_fraction_over_effective_capture_fraction": 0.8958741660674173,
+                  "maximum_common_actual_residence_s_if_all_gas_injected": 336658.3357119251,
+                  "maximum_local_escape_fraction_by_global_capture": {
+                    "1.0": 0.8958741660674173,
+                    "0.1": 0.08958741660674174,
+                    "0.01": 0.008958741660674173,
+                    "0.001": 0.0008958741660674174
+                  }
+                }
+              ],
+              "thermal_gas_collision_mfp_m_for_cross_sections_m2": {
+                "1e-20": 954790281.8254095,
+                "1e-19": 95479028.18254097,
+                "1e-18": 9547902.818254095
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "equations": {
+    "Sigma": "4 Qmass R/(A vbar) * f/g",
+    "residence": "4 R/(3 vbar g)",
+    "pressure": "Sigma kT/(R m)",
+    "packet_heating": "3 Sigma vpacket^2/(8 rho_grain radius), full kinetic retention",
+    "eventual_port_escape": "fport/[fport+s(1-fport)], before downstream recovery"
+  },
+  "checks": {
+    "count": 27,
+    "passed": 27,
+    "all_passed": true
+  },
+  "assumptions": [
+    "Uniform steady injection over a sphere; gas thermalizes/reemits at selected wall temperature. g is area- and speed-weighted effective removal into the return system; f is fraction of total gas source injected into the central cavity.",
+    "A uniform Maxwellian is also a stationary collisional equilibrium: gas-gas collisions do not automatically alter these steady boundary balances. Heterogeneous sources, directional plumes, temperature gradients and selective traps require transport.",
+    "The mean collision cross-section values are diagnostic parameters, not measured species values or a credible interval.",
+    "He product also contributes cold-grain drag and must enter a separate return/product line. It is not a catalyst or fresh-H loss.",
+    "Local closed backplenums can contain long-lived gas inventory without exposing incoming packets; no global cryocondensation requirement is inferred.",
+    "Gas heating allocations 1, 10 and 100 kJ/kg and complete retention are chosen conservative tests. Material stopping/ablation may set stricter surface criteria."
+  ]
+}

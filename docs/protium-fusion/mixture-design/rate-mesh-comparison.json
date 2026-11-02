@@ -1,0 +1,423 @@
+{
+  "scope": "Exact-profile within-mesh rate comparisons; initial profiles are nested/refined baselines across meshes. Nonmonotone numerical changes are retained, not extrapolated away.",
+  "code_sha256": "e11bbd02a1edec6039614a0cda49bf7e8e5c262f9519cfa3ae1ed9f1922d1b8b",
+  "cases": {
+    "A-H1": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/A-H1-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "d57ef247bacc81ee8320e767c0fb2d2ae6419c09bcb40db1d9e252b15bd03b8d",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/control/A-H1-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 8.196339044267944,
+        "updated_gain": 8.196338836015052,
+        "old_target": 0.5393671923506786,
+        "updated_target": 0.5393671795276577,
+        "energy_residual_fraction_initial": -6.053957060652175e-08,
+        "physical_duration_s": 6.839495465719224e-05,
+        "requested_duration_s": 6.839495465719224e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/A-H1-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "ac668e2f55881146bb609f985a988239b7b555678477dcf9c2446ce4eb66d843",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/A-H1-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 8.71330215105218,
+        "updated_gain": 8.713302288671587,
+        "old_target": 0.5733863980246418,
+        "updated_target": 0.5733864080440104,
+        "energy_residual_fraction_initial": -4.0965962157645496e-08,
+        "physical_duration_s": 6.839495465719224e-05,
+        "requested_duration_s": 6.839495465719224e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "256": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/root256/A-H1-fixed_energy-z256-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "cd2a15cb8fe265b02ef4927deb4d0e162c2c7844844c7f5d26026ce1638bc031",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh256/A-H1-fixed_energy-z256-k0p001-t1.json",
+        "old_gain": 8.994967467632689,
+        "updated_gain": 8.994967462091115,
+        "old_target": 0.591921628192301,
+        "updated_target": 0.5919216288357326,
+        "energy_residual_fraction_initial": -4.424372529517282e-08,
+        "physical_duration_s": 6.839495465719224e-05,
+        "requested_duration_s": 6.839495465719224e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.06307248431274903,
+      "updated_256_over_128_gain_change": 0.03232588105955281
+    },
+    "C13-H1": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/C13-H1-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "d9f4724afc54d0ea473f1c04ebb16c024f62ec17a28c085a352e317d87734ca4",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H1-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 15.538979131684965,
+        "updated_gain": 15.37371227473147,
+        "old_target": 0.8166213800066037,
+        "updated_target": 0.7920602454078078,
+        "energy_residual_fraction_initial": -8.484530611793713e-07,
+        "physical_duration_s": 7.000357811304867e-05,
+        "requested_duration_s": 7.000357811304867e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H1-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "4fe402be0bc84f7d7979dfc0a4bdca7b8a38c2ab91486249715ce7174f2463bb",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/C13-H1-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 15.994263745557127,
+        "updated_gain": 15.863752004427518,
+        "old_target": 0.8419163512846065,
+        "updated_target": 0.8188933798681346,
+        "energy_residual_fraction_initial": -4.06039741949769e-07,
+        "physical_duration_s": 7.000357811304867e-05,
+        "requested_duration_s": 7.000357811304867e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.031875172433237564
+    },
+    "A-H3": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/A-H3-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "36ada83ae86db19e52ceb3d448d3e96ea24b6a84693539b2310a30696646bab7",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 10.288815379907804,
+        "updated_gain": 10.288815407427041,
+        "old_target": 0.7673396542559343,
+        "updated_target": 0.7673396573838039,
+        "energy_residual_fraction_initial": 3.041865045266409e-07,
+        "physical_duration_s": 6.839495465719224e-05,
+        "requested_duration_s": 6.839495465719224e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/A-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "ddee3f442a99da357ad00f711d0d34b4fa8287b04f2d83a353a357b988415dca",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/A-H3-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 10.817795887896269,
+        "updated_gain": 10.817795961777739,
+        "old_target": 0.8067910122057789,
+        "updated_target": 0.8067910188148444,
+        "energy_residual_fraction_initial": -7.869126384510619e-08,
+        "physical_duration_s": 6.839495465719224e-05,
+        "requested_duration_s": 6.839495465719224e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "256": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/root256/A-H3-fixed_energy-z256-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "21a1c5db1b37c20721823c2121ca4227fa04c06d62bfa617b41cdf82aba338ad",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh256/A-H3-fixed_energy-z256-k0p001-t1.json",
+        "old_gain": 11.131405649919428,
+        "updated_gain": 11.131405739242226,
+        "old_target": 0.830180022888176,
+        "updated_target": 0.830180030678412,
+        "energy_residual_fraction_initial": 1.0037769616997513e-07,
+        "physical_duration_s": 6.839495465719224e-05,
+        "requested_duration_s": 6.839495465719224e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.051413164043049076,
+      "updated_256_over_128_gain_change": 0.028990173097418026
+    },
+    "B1-H1": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/B1-H1-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "4d0091a0603b3548b579e450c3cebc04382c06900d2180785e1acd4c30e08645",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H1-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 6.381970498692948,
+        "updated_gain": 6.381945692709954,
+        "old_target": 0.6018693226514725,
+        "updated_target": 0.6018871694756622,
+        "energy_residual_fraction_initial": 2.1275977735122496e-06,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H1-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "f0044d19570262e9ac4fde74addb396ca4bf52c2647df5cce24ed43d02b129c6",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B1-H1-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 7.284268161373653,
+        "updated_gain": 7.284245940674598,
+        "old_target": 0.6869503860044506,
+        "updated_target": 0.6869792305786888,
+        "energy_residual_fraction_initial": 1.354869284751109e-07,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "256": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/root256/B1-H1-fixed_energy-z256-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "a7d0fd183c2fd0564fb504d1d52bd7b73da9b6aa92cfa9588bec0923adaa9c59",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh256/B1-H1-fixed_energy-z256-k0p001-t1.json",
+        "old_gain": 7.658060842128438,
+        "updated_gain": 7.658040696445205,
+        "old_target": 0.7221982050979167,
+        "updated_target": 0.7222314154160298,
+        "energy_residual_fraction_initial": -2.3957586405280816e-08,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.14138325385553419,
+      "updated_256_over_128_gain_change": 0.0513155045580449
+    },
+    "C13-H4": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/C13-H4-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "6542032bc00b5c715ec5cd4b99c34d21bf45286d8760e56dccc2e57ca6865da3",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 23.655667176983588,
+        "updated_gain": 23.86277750480907,
+        "old_target": 0.22202708891603593,
+        "updated_target": 0.2025731240086344,
+        "energy_residual_fraction_initial": 1.2408154954950898e-05,
+        "physical_duration_s": 7.000357811304867e-05,
+        "requested_duration_s": 7.000357811304867e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H4-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "1cf933fd010560b8a5e937c751efaab418991de942c846b466eb1da99219882e",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/tail_energy/C13-H4-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 24.392278604650084,
+        "updated_gain": 24.698571025671075,
+        "old_target": 0.20302035029385487,
+        "updated_target": 0.18026499720087186,
+        "energy_residual_fraction_initial": 2.0614944795730077e-06,
+        "physical_duration_s": 7.000357811304867e-05,
+        "requested_duration_s": 7.000357811304867e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.03502498905224116
+    },
+    "B2-H2": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/B2-H2-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "8ff58626a2d815ec2f4714557c8d9d5f5ff4a2b96091291ecb5cb6361962bcf3",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 10.555031337297976,
+        "updated_gain": 10.271885823467587,
+        "old_target": 0.8218844799338176,
+        "updated_target": 0.7993283841349944,
+        "energy_residual_fraction_initial": 1.8704687986033803e-06,
+        "physical_duration_s": 6.306272486811078e-05,
+        "requested_duration_s": 6.306272486811078e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B2-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "3b672b05718e531caaf33e7d35f653c861c8d83c540f11597e169a3fb85f550e",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B2-H2-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 11.101893708885152,
+        "updated_gain": 9.917629468867954,
+        "old_target": 0.8702644954280572,
+        "updated_target": 0.7663772841216453,
+        "energy_residual_fraction_initial": -3.031239131427425e-06,
+        "physical_duration_s": 6.306272486811078e-05,
+        "requested_duration_s": 6.306272486811078e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "256": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/root256/B2-H2-fixed_energy-z256-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "eab32605db6ce9f8ceac136d0dc8b8ffa334a9adbde3fe793fd510398a1e3a54",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh256/B2-H2-fixed_energy-z256-k0p001-t1.json",
+        "old_gain": 11.432726166604633,
+        "updated_gain": 9.867098791638684,
+        "old_target": 0.8985603882656609,
+        "updated_target": 0.7615635302310736,
+        "energy_residual_fraction_initial": -1.2654325173564244e-06,
+        "physical_duration_s": 6.306272486811078e-05,
+        "requested_duration_s": 6.306272486811078e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": -0.034487956806362075,
+      "updated_256_over_128_gain_change": -0.005095035803453718
+    },
+    "B2-H2p5": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/B2-H2p5-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "7e3af0e41bfd7ca925e49580236ed11343066bc74f33df4149b48c6be0f6ca5b",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 10.799858655586705,
+        "updated_gain": 9.350041564824517,
+        "old_target": 0.8798655297168775,
+        "updated_target": 0.7507858245728557,
+        "energy_residual_fraction_initial": -1.2739325506584147e-06,
+        "physical_duration_s": 6.306272486811078e-05,
+        "requested_duration_s": 6.306272486811078e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B2-H2p5-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "511016a00563e7236637a961cbced0393fb5bf39b9f727176b627f4892e6786d",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B2-H2p5-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 11.214629901612492,
+        "updated_gain": 8.071871807824694,
+        "old_target": 0.9167526720200333,
+        "updated_target": 0.6366414719921606,
+        "energy_residual_fraction_initial": -2.7036928816791853e-06,
+        "physical_duration_s": 6.306272486811078e-05,
+        "requested_duration_s": 6.306272486811078e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": -0.13670204010732778
+    },
+    "B1-H2": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/B1-H2-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "f7c2e6bb8be292f2666808ab4b3eac22fbee62f9af0fc5dc0bee706302116db7",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 7.545622604748697,
+        "updated_gain": 7.545425768955905,
+        "old_target": 0.7559676522867469,
+        "updated_target": 0.7560155984054038,
+        "energy_residual_fraction_initial": 9.353956597078961e-07,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H2-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "d1e9d2084422e926d323933b022ac1b57e265303107bbbf6ee2efb85a4277bdf",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B1-H2-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 8.262243642419905,
+        "updated_gain": 8.261904021669926,
+        "old_target": 0.8276575229435895,
+        "updated_target": 0.8277387457739295,
+        "energy_residual_fraction_initial": -8.390972396050293e-07,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "256": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/root256/B1-H2-fixed_energy-z256-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "85be974e1141f9a34aaf6f15cbcafae0b0421cf40b104d2f45020e2f9b78260c",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh256/B1-H2-fixed_energy-z256-k0p001-t1.json",
+        "old_gain": 8.611466002100418,
+        "updated_gain": 8.611063563188617,
+        "old_target": 0.8625953286248284,
+        "updated_target": 0.8626928837856076,
+        "energy_residual_fraction_initial": -2.2546252525424735e-07,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.09495531129095758,
+      "updated_256_over_128_gain_change": 0.042261389215233036
+    },
+    "C13-H3": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal64/C13-H3-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "d7c54bdd19061e8a5eb3d903048be93badf5c66b4b732f6ddb70cae0c0d523e4",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/C13-H3-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 23.576307915549982,
+        "updated_gain": 23.72964030978802,
+        "old_target": 0.31056638395325026,
+        "updated_target": 0.29211282969527713,
+        "energy_residual_fraction_initial": 2.8870395388465104e-06,
+        "physical_duration_s": 7.000357811304867e-05,
+        "requested_duration_s": 7.000357811304867e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/C13-H3-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "bc0c5870b755e3095db70518e6c954e43cb685401fab2804d9561dd43547d2cb",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/C13-H3-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 24.30036258100756,
+        "updated_gain": 24.54626562655022,
+        "old_target": 0.29987563166229914,
+        "updated_target": 0.2791228094660427,
+        "energy_residual_fraction_initial": 3.0275096290562967e-06,
+        "physical_duration_s": 7.000357811304867e-05,
+        "requested_duration_s": 7.000357811304867e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.03441372503338602
+    },
+    "B2-H1p5": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/extension64/B2-H1p5-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "061f60b1c4723642b51915998b159eba08e97ed4f225cdca5e1b6d059412d2e8",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H1p5-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 8.269255240962234,
+        "updated_gain": 8.344320119305106,
+        "old_target": 0.5985947811449795,
+        "updated_target": 0.6110440379952392,
+        "energy_residual_fraction_initial": 7.006719881051131e-07,
+        "physical_duration_s": 6.306272486811078e-05,
+        "requested_duration_s": 6.306272486811078e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      }
+    },
+    "B1-H1p5": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/extension64/B1-H1p5-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "b696810858e1f5e30c13dae55fe877614b6d3668c269cf015dcb265241d14b9c",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B1-H1p5-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 7.446739084967743,
+        "updated_gain": 7.446581669741516,
+        "old_target": 0.7241421462617098,
+        "updated_target": 0.7241858165168746,
+        "energy_residual_fraction_initial": 1.9563285976738872e-06,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "128": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/nominal128/B1-H1p5-fixed_energy-z128-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "f34c0a09418b967395c7e0825d3b66dab8c1cee7ca47963bfd8fb30f2f34584f",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/mesh/B1-H1p5-fixed_energy-z128-k0p001-t1.json",
+        "old_gain": 8.165560721659231,
+        "updated_gain": 8.165320655504889,
+        "old_target": 0.7939898309710247,
+        "updated_target": 0.7940524855261478,
+        "energy_residual_fraction_initial": -9.891766323888061e-08,
+        "physical_duration_s": 8.227795789289296e-05,
+        "requested_duration_s": 8.227795789289296e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      },
+      "updated_128_over_64_gain_change": 0.09651931821064985
+    },
+    "B2-H3": {
+      "64": {
+        "updated_record": "/home/tkwa/src/protium-fusion/output/mixture-rate-runs/extension64/B2-H3-fixed_energy-z64-k0p001-t1-rates-updated-median.json",
+        "updated_sha256": "fc42852fff525c52d0eb8b27ac3295b0ecd3ee9f3803848564b68bd4468905ff",
+        "baseline_record": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H3-fixed_energy-z64-k0p001-t1.json",
+        "old_gain": 10.490177083414354,
+        "updated_gain": 6.955147011019417,
+        "old_target": 0.8843365626133546,
+        "updated_target": 0.5674945417383573,
+        "energy_residual_fraction_initial": -1.2581122187163895e-06,
+        "physical_duration_s": 6.306272486811078e-05,
+        "requested_duration_s": 6.306272486811078e-05,
+        "same_initial_energy": true,
+        "completion": "final_time"
+      }
+    }
+  }
+}

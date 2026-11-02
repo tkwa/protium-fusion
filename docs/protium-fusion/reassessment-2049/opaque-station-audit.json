@@ -1,0 +1,71 @@
+{
+  "scope": "Independent arithmetic audit of the compact opaque station's selected row.\n\nA passing budget is conditional on the stated future component performance.\nThis checks arithmetic, rating, radiative view area and finite launch tails.\n",
+  "baseline": {
+    "net_W": 1e+21,
+    "mass_kg": 1e+24,
+    "net_mW_kg": 1.0,
+    "nuclear_heat_MeV_He": 24.722161221681848,
+    "prepared_MeV_He": 3.5896753503023056,
+    "preaux_electric_MeV_He": 5.228695032001883,
+    "throughput_He_s": 1.7818498874161433e+33,
+    "mean_collector_flux_W_m2": 636.7586905323764,
+    "waste_W": 5.976951445867514e+21,
+    "replacement_W": 3.168808781402895e+20,
+    "support_W": 2.655619591695592e+19,
+    "radiator_fraction_3K_only": 0.7858865537968136,
+    "radiator_fraction_with_full_site_luminosity": 0.8083744133181554,
+    "destination_AU": 5,
+    "external_flux_mean_W_m2": 13.61,
+    "radiator_fraction_if_only_panels_absorb": 0.8039660289149847,
+    "additional_solar_absorbed_W": 1.7102830406142833e+20,
+    "additional_panel_mass_from_reserve_kg": 5.651815541376532e+18,
+    "storage_max_pulse_J": 6.790655059904756e+25,
+    "storage_two_pulse_kg": 1.3581310119809513e+21,
+    "peak_source_kinetic_electric_W": 4.417917190691822e+23,
+    "sum_all_stage_peak_kinetic_electric_W": 1.2139560579869182e+24,
+    "peak_W_per_fixed_driver_kg": 1.7671668762767287,
+    "summed_peak_W_per_fixed_driver_kg": 4.855824231947673,
+    "unassigned_installed_reserve_kg": 3.193825462011689e+23,
+    "reserve_after_external_load_panels_kg": 3.193768943856275e+23
+  },
+  "B1_timing": {
+    "period_s": 1433.8971320507833,
+    "outgoing_99percent_energy_arrival_s": 331.9991660557534,
+    "available_incoming_window_after_previous_outgoing_99percent_energy_s": 1101.8979659950298,
+    "flight_mass_quantiles_50_90_95_99_99point9_s": [
+      465.1336774026085,
+      743.6928792898927,
+      920.0746382171158,
+      1587.5767826536728,
+      3458.276790845151
+    ],
+    "mass_fraction_flight_longer_than_window": 0.030517578125,
+    "mass_fraction_flight_longer_than_period": 0.012874603271484375,
+    "note": "Mass-bin screen, not a collision-free schedule. Energy-arrival percentile does not bound residual gas or mass clearance."
+  },
+  "checks": {
+    "count": 13,
+    "passed": [
+      "nuclear heat includes all nonneutrino output",
+      "prepared input",
+      "support",
+      "maintenance",
+      "independent throughput",
+      "global nuclear energy closure",
+      "electric conversion closure",
+      "mass closure",
+      "positive reserve",
+      "radiator area",
+      "radiator fits including full solar luminosity",
+      "max pulse electric energy",
+      "two pulse energy storage"
+    ]
+  },
+  "input_sha256": {
+    "opaque-station.json": "85d9feb0dd25c26985796b61a520bfdd340cf8973d02c0cab0e031b5acde4922",
+    "opaque-receiver-audit.json": "a5f9d22d0582620416aa39947fc734c543a4f22f9544feb7ec83f48cb77c21c5",
+    "small-stages/cycle-He3-check.json": "c667d99cd3f0f5b6ef50a9309d0de98c119ee7ba7a591a8b9c4b9cef2763aa1c",
+    "small-stages/scaled-hot-B1-64-R30-initial.json": "f7d5cc5962cfc0d341c07209e5f1ba0766341ed5cbfd283baa0dc2d195908f8e",
+    "opaque_station_audit.py": "f2aa66c006737d2558ad0478ca9f2294fe360dec57297d1806fef08347c25243"
+  }
+}

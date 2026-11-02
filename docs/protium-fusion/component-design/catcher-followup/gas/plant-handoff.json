@@ -1,0 +1,704 @@
+{
+  "status": "conditional_component_interface",
+  "chronology": "Existing final350 dispatch and He rate unchanged. No new lower-rate or warmer-cold-side schedule is silently substituted.",
+  "local_pump": {
+    "joint_port": {
+      "downstream_speed_target_m3_s_per_wall_m2_each_species": 0.001,
+      "shared_mouth_area_fraction": 0.0001,
+      "net_molecular_transmission": 0.1,
+      "mouth_conductance_H2_He_m3_s_per_wall_m2": [
+        0.008102510268849426,
+        0.005749841675624074
+      ],
+      "finite_active_area_possible": true,
+      "hot_to_cold_bypass_upper_W_m2": 5.670374419000001,
+      "required_active_panel_area_fraction_Hgetter_Hecryo": [
+        6.248393143661026e-05,
+        4.8666935800053074e-05
+      ],
+      "required_active_panel_area_m2_Hgetter_Hecryo": [
+        950087450248329.5,
+        739995769833716.5
+      ],
+      "active_panel_speed_before_port_H2_He_m3_s_per_wall_m2": [
+        0.001140795290981254,
+        0.0012105333331702286
+      ],
+      "He_200K_to5K_radiation_W_m2_if_full_200K_view": 0.00441535596498778,
+      "He_refrigeration_W_m2_etaCarnot0p5_at200K_sink": 0.34439776526904686,
+      "hot_photon_leakage_into5K_sensitivity": [
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0,
+          "additional5K_heat_W_m2": 0.0,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.0
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 1e-05,
+          "additional5K_heat_W_m2": 5.670374419000001e-05,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.004422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.0001,
+          "additional5K_heat_W_m2": 0.0005670374419000002,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.04422892046820001
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.001,
+          "additional5K_heat_W_m2": 0.005670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 0.44228920468200006
+        },
+        {
+          "fraction_of_admitted1000K_aperture_energy_reaching5K": 0.01,
+          "additional5K_heat_W_m2": 0.05670374419000001,
+          "additional_refrigeration_W_m2_etaCarnot0p5": 4.42289204682
+        }
+      ],
+      "active_hardware_mass_sensitivity_kg_per_wall_m2": [
+        {
+          "kg_per_active_panel_m2": 1,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.00011115086723666333
+        },
+        {
+          "kg_per_active_panel_m2": 10,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.0011115086723666333
+        },
+        {
+          "kg_per_active_panel_m2": 100,
+          "Hgetter_Hecryo_total_kg_per_wall_m2": 0.011115086723666333
+        }
+      ],
+      "scope": "Shared admission mouth, species-specific active capture areas in parallel, molecular entrance and panel resistances in series. Downstream regeneration and compression remain physically isolated from cavity."
+    },
+    "heat_bypass_hot_to_cold_W_m2": 5.670374419000001,
+    "named_electrical_W_m2": {
+      "He_200K_view_refrigeration": 0.34439776526904686,
+      "He_hot_photon_leakage_1e-4_refrigeration": 0.04422892046820001,
+      "He_5to85K_cycle_CA1000_3600s": 0.013157448622557369,
+      "H_getter_sensible_regeneration_if_electrically_heated": 4.244623384227773e-05,
+      "gas_300K_isothermal_compression_to1bar_50percent": 1.3841448046762611e-05,
+      "He_gas200to5K_refrigeration_50percent": 1.0228695402470753e-06
+    },
+    "sum_named_local_electrical_W_m2": 0.4018414449112335,
+    "regeneration": {
+      "active_bank_capture_period_s": 3600,
+      "alternating_isolated_bank_count": 2,
+      "cycling_heat_capacity_J_per_active_m2_K": 1000,
+      "constant_heat_capacity_scope": "Chosen integrated thermal-mass comparison over5\u201385K. Actual temperature-dependent solid heat capacity and adsorption heat should replace it.",
+      "He_load_kg_per_active_m2": 1.3421669791993474e-05,
+      "fraction_of_Day_low_load_graph_capacity": 0.19038792668853272,
+      "regeneration_heating_W_per_wall_m2": 0.0010814874622234016,
+      "reversible_cooldown_work_W_per_wall_m2": 0.0065787243112786845,
+      "electric_cooldown_work_W_per_wall_m2_at_etaCarnot0p5": 0.013157448622557369,
+      "thermal_source_rule": "Regeneration heat can be supplied from the200K waste reservoir. In that case its removal and later return cancel in the whole-station cold balance; only refrigeration work is an extra electrical load. If electrical heating is chosen instead, add the separately listed regeneration-heating power too. Regenerated He is isolated and compressed into product storage."
+    },
+    "getter_selected_capacity_scenario": {
+      "working_H_mass_per_getter_mass": 0.001,
+      "cycle_s": 3600,
+      "getter_inventory_kg": 11617345400965.885,
+      "getter_inventory_per_wall_area_kg_m2": 7.64032209160999e-07,
+      "sensible_regeneration_energy_J_kg_H": 200000000.0,
+      "sensible_regeneration_W_m2": 4.244623384227773e-05,
+      "scope": "Chosen capacity/heatcycle sensitivity;Cp400J/kg/K and500K swing. ActualTiZrVcapacity,hydrideembrittlement,equilibrium andcontaminantblocking mustset workingcapacity. Regenerationgas is routed to fuel storage, nevervented."
+    },
+    "hardware_mass_status": "Active-area and two-bank mass scales are provided, but total manifolds/refrigerator/control/repair mass is not engineered. A chosen service allocation is an acceptance target, not a result.",
+    "additional_unassigned_requirements": [
+      "loaded-sorber equilibrium and mixture poisoning",
+      "actual baffle molecular transmission and hot photon leakage",
+      "solid supports/conduction and valve heat leaks",
+      "refrigerator installed mass and efficiency",
+      "gas chemical separation/adsorption work",
+      "front damage, permeation and repairs"
+    ]
+  },
+  "cryogenic_efficiency_uncertainty": {
+    "central_fraction_of_Carnot": 0.3,
+    "subjective_80percent_interval": [
+      0.15,
+      0.5
+    ],
+    "criterion": "Electrical work to provide the specified5K loads with200K ultimate rejection, conditional on large industrial helium refrigeration and the separately stated optical/cycle loads.",
+    "basis": "CERN-ATS-2013-004 official indexed primary report gives230W/W at4.5K,28.5percentofCarnot. The central value and interval are research judgments for this future architecture, not a measured5K/200K apparatus or a consequence of manufacturing efficiency.",
+    "source": "https://cds.cern.ch/record/1507611/files/CERN-ATS-2013-004.pdf",
+    "access": "Official indexed fulltext passage checked; direct repository fetch reported blocked by parent.",
+    "cases": [
+      {
+        "fraction_of_Carnot": 0.15,
+        "named_local_electrical_W_m2": {
+          "He_200K_view_refrigeration": 1.147992550896823,
+          "He_hot_photon_leakage_1e-4_refrigeration": 0.14742973489400005,
+          "He_5to85K_cycle_CA1000_3600s": 0.043858162075191234,
+          "H_getter_sensible_regeneration_if_electrically_heated": 4.244623384227773e-05,
+          "gas_300K_isothermal_compression_to1bar_50percent": 1.3841448046762611e-05,
+          "He_gas200to5K_refrigeration_50percent": 3.409565134156918e-06
+        },
+        "sum_named_local_electrical_W_m2": 1.3393401451130373
+      },
+      {
+        "fraction_of_Carnot": 0.3,
+        "named_local_electrical_W_m2": {
+          "He_200K_view_refrigeration": 0.5739962754484115,
+          "He_hot_photon_leakage_1e-4_refrigeration": 0.07371486744700002,
+          "He_5to85K_cycle_CA1000_3600s": 0.021929081037595617,
+          "H_getter_sensible_regeneration_if_electrically_heated": 4.244623384227773e-05,
+          "gas_300K_isothermal_compression_to1bar_50percent": 1.3841448046762611e-05,
+          "He_gas200to5K_refrigeration_50percent": 1.704782567078459e-06
+        },
+        "sum_named_local_electrical_W_m2": 0.6696982163974632
+      },
+      {
+        "fraction_of_Carnot": 0.5,
+        "named_local_electrical_W_m2": {
+          "He_200K_view_refrigeration": 0.34439776526904686,
+          "He_hot_photon_leakage_1e-4_refrigeration": 0.04422892046820001,
+          "He_5to85K_cycle_CA1000_3600s": 0.013157448622557369,
+          "H_getter_sensible_regeneration_if_electrically_heated": 4.244623384227773e-05,
+          "gas_300K_isothermal_compression_to1bar_50percent": 1.3841448046762611e-05,
+          "He_gas200to5K_refrigeration_50percent": 1.0228695402470753e-06
+        },
+        "sum_named_local_electrical_W_m2": 0.4018414449112335
+      }
+    ]
+  },
+  "residual_cavity": {
+    "selected_ideal_mobile_routing": {
+      "routing_case": "cap0.1_eta100000.0",
+      "global_capture_g": 0.01,
+      "front_source_fractions_H_He": [
+        0.0010307227577661309,
+        0.0008754847395181036
+      ],
+      "mean_column_kg_m2": 6.016307038887179e-08,
+      "peak_column_kg_m2": 6.032688291085003e-08,
+      "mean_pressure_Pa": 1.6903955713771783e-10,
+      "peak_pressure_Pa": 1.696527997301532e-10,
+      "C13_capsule_rows": [
+        {
+          "radius_m": 0.01,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.001,
+          "velocity_m_s": 310314.21105393016,
+          "worst_encounter_column_kg_m2": 6.021630311857004e-08,
+          "gas_heat_J_kg_core_full_retention": 268.6776123250158,
+          "IR_plus_field_J_kg_core": 1642189.6935151957,
+          "total_bulk_energy_J_kg_core": 1642458.3711275207,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "uniform_arrival_delay_s_Cm1": 9.890521031014405e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 1.978104206202881e-05,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.05934312618608643
+        },
+        {
+          "radius_m": 0.01,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.01,
+          "velocity_m_s": 670603.3206895654,
+          "worst_encounter_column_kg_m2": 6.021598848494396e-08,
+          "gas_heat_J_kg_core_full_retention": 1254.750220025785,
+          "IR_plus_field_J_kg_core": 768721.7179894638,
+          "total_bulk_energy_J_kg_core": 769976.4682094896,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "uniform_arrival_delay_s_Cm1": 4.576704438192943e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 9.153408876385886e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.027460226629157657
+        },
+        {
+          "radius_m": 0.01,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.1,
+          "velocity_m_s": 1402097.537963065,
+          "worst_encounter_column_kg_m2": 6.021559669114928e-08,
+          "gas_heat_J_kg_core_full_retention": 5485.03633567113,
+          "IR_plus_field_J_kg_core": 376230.2800794492,
+          "total_bulk_energy_J_kg_core": 381715.3164151203,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "uniform_arrival_delay_s_Cm1": 2.188958429495978e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 4.377916858991956e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.013133750576975868
+        },
+        {
+          "radius_m": 0.01,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.5,
+          "velocity_m_s": 2206930.4609466936,
+          "worst_encounter_column_kg_m2": 6.021545535588649e-08,
+          "gas_heat_J_kg_core_full_retention": 13589.370337192204,
+          "IR_plus_field_J_kg_core": 245009.66347921177,
+          "total_bulk_energy_J_kg_core": 258599.03381640397,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            false,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 1.39067636034882e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 2.78135272069764e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.008344058162092919
+        },
+        {
+          "radius_m": 0.01,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.9,
+          "velocity_m_s": 3070249.597967388,
+          "worst_encounter_column_kg_m2": 6.021538605407782e-08,
+          "gas_heat_J_kg_core_full_retention": 26300.79660193043,
+          "IR_plus_field_J_kg_core": 180730.19868967865,
+          "total_bulk_energy_J_kg_core": 207030.99529160908,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 9.996328932850015e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 1.999265786570003e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.005997797359710008
+        },
+        {
+          "radius_m": 0.01,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.99,
+          "velocity_m_s": 4009953.0524809277,
+          "worst_encounter_column_kg_m2": 6.021535084217451e-08,
+          "gas_heat_J_kg_core_full_retention": 44864.192814423586,
+          "IR_plus_field_J_kg_core": 142223.07601899677,
+          "total_bulk_energy_J_kg_core": 187087.26883342036,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 7.653757173307287e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 1.5307514346614574e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.004592254303984372
+        },
+        {
+          "radius_m": 0.01,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.999,
+          "velocity_m_s": 4151468.5472757234,
+          "worst_encounter_column_kg_m2": 6.021534621369864e-08,
+          "gas_heat_J_kg_core_full_retention": 48086.675491787435,
+          "IR_plus_field_J_kg_core": 137934.3710553635,
+          "total_bulk_energy_J_kg_core": 186021.04654715094,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 7.392854897359207e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 1.4785709794718414e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.004435712938415525
+        },
+        {
+          "radius_m": 0.02,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.001,
+          "velocity_m_s": 310314.21105393016,
+          "worst_encounter_column_kg_m2": 6.021630311857004e-08,
+          "gas_heat_J_kg_core_full_retention": 134.3388061625079,
+          "IR_plus_field_J_kg_core": 829300.1150653717,
+          "total_bulk_energy_J_kg_core": 829434.4538715342,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "uniform_arrival_delay_s_Cm1": 4.945260515507202e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 9.890521031014405e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.029671563093043214
+        },
+        {
+          "radius_m": 0.02,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.01,
+          "velocity_m_s": 670603.3206895654,
+          "worst_encounter_column_kg_m2": 6.021598848494396e-08,
+          "gas_heat_J_kg_core_full_retention": 627.3751100128925,
+          "IR_plus_field_J_kg_core": 392566.12730250566,
+          "total_bulk_energy_J_kg_core": 393193.50241251854,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "uniform_arrival_delay_s_Cm1": 2.2883522190964715e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 4.576704438192943e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.013730113314578829
+        },
+        {
+          "radius_m": 0.02,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.1,
+          "velocity_m_s": 1402097.537963065,
+          "worst_encounter_column_kg_m2": 6.021559669114928e-08,
+          "gas_heat_J_kg_core_full_retention": 2742.518167835565,
+          "IR_plus_field_J_kg_core": 196320.40834749836,
+          "total_bulk_energy_J_kg_core": 199062.92651533394,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 1.094479214747989e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 2.188958429495978e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.006566875288487934
+        },
+        {
+          "radius_m": 0.02,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.5,
+          "velocity_m_s": 2206930.4609466936,
+          "worst_encounter_column_kg_m2": 6.021545535588649e-08,
+          "gas_heat_J_kg_core_full_retention": 6794.685168596102,
+          "IR_plus_field_J_kg_core": 130710.10004737967,
+          "total_bulk_energy_J_kg_core": 137504.78521597577,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 6.9533818017441e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 1.39067636034882e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.004172029081046459
+        },
+        {
+          "radius_m": 0.02,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.9,
+          "velocity_m_s": 3070249.597967388,
+          "worst_encounter_column_kg_m2": 6.021538605407782e-08,
+          "gas_heat_J_kg_core_full_retention": 13150.398300965215,
+          "IR_plus_field_J_kg_core": 98570.3676526131,
+          "total_bulk_energy_J_kg_core": 111720.76595357832,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 4.998164466425008e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 9.996328932850015e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.002998898679855004
+        },
+        {
+          "radius_m": 0.02,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.99,
+          "velocity_m_s": 4009953.0524809277,
+          "worst_encounter_column_kg_m2": 6.021535084217451e-08,
+          "gas_heat_J_kg_core_full_retention": 22432.096407211793,
+          "IR_plus_field_J_kg_core": 79316.80631727216,
+          "total_bulk_energy_J_kg_core": 101748.90272448395,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 3.8268785866536434e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 7.653757173307287e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.002296127151992186
+        },
+        {
+          "radius_m": 0.02,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.999,
+          "velocity_m_s": 4151468.5472757234,
+          "worst_encounter_column_kg_m2": 6.021534621369864e-08,
+          "gas_heat_J_kg_core_full_retention": 24043.337745893718,
+          "IR_plus_field_J_kg_core": 77172.45383545553,
+          "total_bulk_energy_J_kg_core": 101215.79158134924,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 3.6964274486796035e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 7.392854897359207e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.0022178564692077623
+        },
+        {
+          "radius_m": 0.05,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.001,
+          "velocity_m_s": 310314.21105393016,
+          "worst_encounter_column_kg_m2": 6.021630311857004e-08,
+          "gas_heat_J_kg_core_full_retention": 53.735522465003164,
+          "IR_plus_field_J_kg_core": 341566.36799547717,
+          "total_bulk_energy_J_kg_core": 341620.1035179422,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            false,
+            false
+          ],
+          "uniform_arrival_delay_s_Cm1": 1.978104206202881e-06,
+          "near_launch_layer_arrival_delay_s_Cm1": 3.956208412405762e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.011868625237217285
+        },
+        {
+          "radius_m": 0.05,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.01,
+          "velocity_m_s": 670603.3206895654,
+          "worst_encounter_column_kg_m2": 6.021598848494396e-08,
+          "gas_heat_J_kg_core_full_retention": 250.95004400515697,
+          "IR_plus_field_J_kg_core": 166872.7728903308,
+          "total_bulk_energy_J_kg_core": 167123.72293433594,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 9.153408876385883e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 1.8306817752771767e-06,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.00549204532583153
+        },
+        {
+          "radius_m": 0.05,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.1,
+          "velocity_m_s": 1402097.537963065,
+          "worst_encounter_column_kg_m2": 6.021559669114928e-08,
+          "gas_heat_J_kg_core_full_retention": 1097.0072671342257,
+          "IR_plus_field_J_kg_core": 88374.48530832786,
+          "total_bulk_energy_J_kg_core": 89471.49257546208,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 4.377916858991956e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 8.755833717983912e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.002626750115395173
+        },
+        {
+          "radius_m": 0.05,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.5,
+          "velocity_m_s": 2206930.4609466936,
+          "worst_encounter_column_kg_m2": 6.021545535588649e-08,
+          "gas_heat_J_kg_core_full_retention": 2717.8740674384408,
+          "IR_plus_field_J_kg_core": 62130.36198828039,
+          "total_bulk_energy_J_kg_core": 64848.23605571883,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 2.7813527206976394e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 5.562705441395279e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.0016688116324185837
+        },
+        {
+          "radius_m": 0.05,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.9,
+          "velocity_m_s": 3070249.597967388,
+          "worst_encounter_column_kg_m2": 6.021538605407782e-08,
+          "gas_heat_J_kg_core_full_retention": 5260.159320386086,
+          "IR_plus_field_J_kg_core": 49274.46903037377,
+          "total_bulk_energy_J_kg_core": 54534.62835075986,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 1.9992657865700028e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 3.9985315731400055e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.0011995594719420015
+        },
+        {
+          "radius_m": 0.05,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.99,
+          "velocity_m_s": 4009953.0524809277,
+          "worst_encounter_column_kg_m2": 6.021535084217451e-08,
+          "gas_heat_J_kg_core_full_retention": 8972.838562884717,
+          "IR_plus_field_J_kg_core": 41573.04449623739,
+          "total_bulk_energy_J_kg_core": 50545.883059122105,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 1.530751434661457e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 3.061502869322914e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.0009184508607968743
+        },
+        {
+          "radius_m": 0.05,
+          "fill_fraction": 0.8,
+          "mass_velocity_quantile": 0.999,
+          "velocity_m_s": 4151468.5472757234,
+          "worst_encounter_column_kg_m2": 6.021534621369864e-08,
+          "gas_heat_J_kg_core_full_retention": 9617.335098357487,
+          "IR_plus_field_J_kg_core": 40715.30350351074,
+          "total_bulk_energy_J_kg_core": 50332.638601868224,
+          "enthalpy20to300_material_cases_J_kg": [
+            251066.66666666666,
+            281866.6666666667
+          ],
+          "within300K_material_cases": [
+            true,
+            true
+          ],
+          "uniform_arrival_delay_s_Cm1": 1.4785709794718414e-07,
+          "near_launch_layer_arrival_delay_s_Cm1": 2.957141958943683e-07,
+          "coherent_crossflow3000m_s_displacement_m_Cm1": 0.0008871425876831048
+        }
+      ]
+    },
+    "global_capture_g": 0.01,
+    "cleanup_credit": "Must come from a separate physical global cleanup device. The retained gas barrier does not provide this capture. The warm-ion packet currently owns that device and its loads.",
+    "warm_cleanup_electrical_and_mass_included_here": false
+  },
+  "grain_size_changes": [
+    {
+      "radius_m": 0.02,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 0,
+      "added_peak_driver_mass_kg": 0.0,
+      "added_source_fraction_of_existing_total": 0.0,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 20.78368953039368,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    },
+    {
+      "radius_m": 0.02,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 0.1,
+      "added_peak_driver_mass_kg": 2.8576569264254734e+20,
+      "added_source_fraction_of_existing_total": 0.008558739326942549,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 20.607316877015602,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    },
+    {
+      "radius_m": 0.02,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 0.5,
+      "added_peak_driver_mass_kg": 1.4288284632127365e+21,
+      "added_source_fraction_of_existing_total": 0.04279369663471274,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 19.93077786859134,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    },
+    {
+      "radius_m": 0.02,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 1,
+      "added_peak_driver_mass_kg": 2.857656926425473e+21,
+      "added_source_fraction_of_existing_total": 0.08558739326942548,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 19.145109513293235,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    },
+    {
+      "radius_m": 0.05,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 0,
+      "added_peak_driver_mass_kg": 0.0,
+      "added_source_fraction_of_existing_total": 0.0,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 20.78368953039368,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    },
+    {
+      "radius_m": 0.05,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 0.1,
+      "added_peak_driver_mass_kg": 1.1430627705701893e+21,
+      "added_source_fraction_of_existing_total": 0.034234957307770195,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 20.095713632128582,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    },
+    {
+      "radius_m": 0.05,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 0.5,
+      "added_peak_driver_mass_kg": 5.715313852850946e+21,
+      "added_source_fraction_of_existing_total": 0.17117478653885096,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 17.74601858687148,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    },
+    {
+      "radius_m": 0.05,
+      "fraction_of_peak_driver_mass_that_scales_with_acceleration_length": 1,
+      "added_peak_driver_mass_kg": 1.1430627705701892e+22,
+      "added_source_fraction_of_existing_total": 0.3423495730777019,
+      "fixed_rate_net_mW_kg_if_only_this_mass_changes": 15.4830678589493,
+      "scope": "Conditional fixed-rate arithmetic, without new installed reserve, structural feedback, revised source efficiency, repair duty or cold-tube thermal loads. Not a reoptimized station rating."
+    }
+  ],
+  "energy_rules": [
+    "Debit the single hot-to-cold bypass from engine input and credit cold rejection once.",
+    "Do not count200K-to5K radiation as a second independent heat source; add refrigerator electrical work once.",
+    "He bank regeneration heat is drawn from the200K waste reservoir and later returned; only cooling work is added. H getter sensible heating is conservatively charged electrically in this named example.",
+    "The local named electrical sum excludes global chamber cleanup, repair and unquantified component losses. It is not a complete installed apparatus power guarantee.",
+    "Changes to grain size affect source hardware and kinematics separately; orbital support guides are not scaled."
+  ],
+  "source_sha256": {
+    "joint-ports.json": "7958b0a2d165cff15b65656f0a9d04bd7e6499523efdde8313b89cd2086b0e52",
+    "regeneration.json": "5b4404ecb57ea668b197ac3296b97cf48d5a25567ba2bbe92e2ca53808cbe17f",
+    "pumping-interfaces.json": "aaff4201ec4eae1e6c4dd98e0b1f4dccf9c0f61e8dde2957b50309dbaabc73ba",
+    "routed-pellets.json": "4bf042c4a08f76b0734d3daac4e80f3f03a09d99343d30a97449dd6cdddafa75",
+    "collision-screen.json": "5647241769eedd68235be14792da5ed098d19228d2a7a237ab62b61322fb6c01",
+    "source-size.json": "271ba7c5bc3dba4e21cd18136a260339e00ee9ca2a5f02690b9579bd5b6bf965"
+  },
+  "code_sha256": "dd0956570625b44d2edecf6ff52d543027b0b48c06146768beb4e6f89a5352e5"
+}

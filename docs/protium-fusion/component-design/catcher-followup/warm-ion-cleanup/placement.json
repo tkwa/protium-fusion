@@ -1,0 +1,347 @@
+{
+  "scope": "Actual outgoing blackout duty, magnetic volume and H/H2 extension requirements.",
+  "code_sha256": "9b1ecac2a3d20afa8ea03d54e2209c7201e0ca86c58f47bdd8c7715dbca97e9e",
+  "sources_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/events.csv": "36feead65d3b610ffdef9b1f9ca6c04edb66ecc5a01783970f5a49cafa3d5d9a",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-family-dispatch/sigma350/schedule.json": "523e9448fae19a6f24f2144dd27340eea70f9bb5cfcc0094b6791b13d4df35ac",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/warm-ion-cleanup/screen.json": "eff145760768055b690abb32d945f55a045cc44f699cfcfb9ccabd4005a1b7f5"
+  },
+  "horizon_s": 31968000.0,
+  "dispatch_events": 4228,
+  "blackout_scope": "Close1s beforefocus through actual99.9%main outgoing capture end, plus recovery time. Incoming launch is not globally blacked out. Omittedslowtails and localsourceapertures remain separate. Offintervals are clipped and unioned across exact370day schedule.",
+  "duties": [
+    {
+      "pre_focus_guard_s": 1.0,
+      "post_main_capture_recovery_s": 0.0,
+      "blackout_s": 6447047.081508042,
+      "live_fraction": 0.7983281068096834
+    },
+    {
+      "pre_focus_guard_s": 1.0,
+      "post_main_capture_recovery_s": 1.0,
+      "blackout_s": 6451274.081508042,
+      "live_fraction": 0.7981958808337074
+    },
+    {
+      "pre_focus_guard_s": 1.0,
+      "post_main_capture_recovery_s": 10.0,
+      "blackout_s": 6489317.081508042,
+      "live_fraction": 0.7970058470499236
+    },
+    {
+      "pre_focus_guard_s": 1.0,
+      "post_main_capture_recovery_s": 100.0,
+      "blackout_s": 6869747.081508042,
+      "live_fraction": 0.7851055092120858
+    }
+  ],
+  "selected_actual_duty": {
+    "duty": 0.7970058470499236,
+    "He_electron_density_m3": 7.566190838400571e+16,
+    "B_T": 0.2038231872994329,
+    "electron_column_m2": 756619083840057.1,
+    "electron_refresh_W_m2_at1keV_0p1s_no_recovery": 0.9661603093354163,
+    "self_potential_V": 342.2779824009086,
+    "field_volume_sensitivities": [
+      {
+        "effective_field_volume_per_shell_area_m": 0.01,
+        "field_energy_J_m2": 165.2978928172523,
+        "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 24.794683922587843,
+        "mass_fraction_of_existing_plant": 0.011291548942006567
+      },
+      {
+        "effective_field_volume_per_shell_area_m": 0.05,
+        "field_energy_J_m2": 826.4894640862615,
+        "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 123.97341961293922,
+        "mass_fraction_of_existing_plant": 0.056457744710032835
+      },
+      {
+        "effective_field_volume_per_shell_area_m": 0.2,
+        "field_energy_J_m2": 3305.957856345046,
+        "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 495.8936784517569,
+        "mass_fraction_of_existing_plant": 0.22583097884013134
+      },
+      {
+        "effective_field_volume_per_shell_area_m": 0.3,
+        "field_energy_J_m2": 4958.936784517568,
+        "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 743.8405176776353,
+        "mass_fraction_of_existing_plant": 0.33874646826019694
+      },
+      {
+        "effective_field_volume_per_shell_area_m": 0.5,
+        "field_energy_J_m2": 8264.894640862614,
+        "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 1239.734196129392,
+        "mass_fraction_of_existing_plant": 0.5645774471003283
+      }
+    ]
+  },
+  "duty_sensitivities": [
+    {
+      "duty": 1.0,
+      "He_electron_density_m3": 5.924052747512144e+16,
+      "B_T": 0.2,
+      "electron_column_m2": 592405274751214.4,
+      "electron_refresh_W_m2_at1keV_0p1s_no_recovery": 0.9491378890647457,
+      "self_potential_V": 267.9912343426496,
+      "field_volume_sensitivities": [
+        {
+          "effective_field_volume_per_shell_area_m": 0.01,
+          "field_energy_J_m2": 159.15494300525526,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 23.87324145078829,
+          "mass_fraction_of_existing_plant": 0.010871922186527352
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.05,
+          "field_energy_J_m2": 795.7747150262765,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 119.36620725394147,
+          "mass_fraction_of_existing_plant": 0.05435961093263677
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.2,
+          "field_energy_J_m2": 3183.098860105106,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 477.4648290157659,
+          "mass_fraction_of_existing_plant": 0.21743844373054708
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.3,
+          "field_energy_J_m2": 4774.648290157657,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 716.1972435236486,
+          "mass_fraction_of_existing_plant": 0.3261576655958205
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.5,
+          "field_energy_J_m2": 7957.747150262764,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 1193.6620725394146,
+          "mass_fraction_of_existing_plant": 0.5435961093263676
+        }
+      ]
+    },
+    {
+      "duty": 0.8,
+      "He_electron_density_m3": 7.535382694333274e+16,
+      "B_T": 0.20308009713649308,
+      "electron_column_m2": 753538269433327.4,
+      "electron_refresh_W_m2_at1keV_0p1s_no_recovery": 0.9658411264886987,
+      "self_potential_V": 340.88428911215993,
+      "field_volume_sensitivities": [
+        {
+          "effective_field_volume_per_shell_area_m": 0.01,
+          "field_energy_J_m2": 164.09481741446996,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 24.614222612170494,
+          "mass_fraction_of_existing_plant": 0.011209366498177959
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.05,
+          "field_energy_J_m2": 820.4740870723498,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 123.07111306085247,
+          "mass_fraction_of_existing_plant": 0.05604683249088979
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.2,
+          "field_energy_J_m2": 3281.896348289399,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 492.2844522434099,
+          "mass_fraction_of_existing_plant": 0.22418732996355917
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.3,
+          "field_energy_J_m2": 4922.8445224340985,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 738.4266783651148,
+          "mass_fraction_of_existing_plant": 0.33628099494533875
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.5,
+          "field_energy_J_m2": 8204.740870723499,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 1230.7111306085249,
+          "mass_fraction_of_existing_plant": 0.560468324908898
+        }
+      ]
+    },
+    {
+      "duty": 0.7970058470499236,
+      "He_electron_density_m3": 7.566190838400571e+16,
+      "B_T": 0.2038231872994329,
+      "electron_column_m2": 756619083840057.1,
+      "electron_refresh_W_m2_at1keV_0p1s_no_recovery": 0.9661603093354163,
+      "self_potential_V": 342.2779824009086,
+      "field_volume_sensitivities": [
+        {
+          "effective_field_volume_per_shell_area_m": 0.01,
+          "field_energy_J_m2": 165.2978928172523,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 24.794683922587843,
+          "mass_fraction_of_existing_plant": 0.011291548942006567
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.05,
+          "field_energy_J_m2": 826.4894640862615,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 123.97341961293922,
+          "mass_fraction_of_existing_plant": 0.056457744710032835
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.2,
+          "field_energy_J_m2": 3305.957856345046,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 495.8936784517569,
+          "mass_fraction_of_existing_plant": 0.22583097884013134
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.3,
+          "field_energy_J_m2": 4958.936784517568,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 743.8405176776353,
+          "mass_fraction_of_existing_plant": 0.33874646826019694
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.5,
+          "field_energy_J_m2": 8264.894640862614,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 1239.734196129392,
+          "mass_fraction_of_existing_plant": 0.5645774471003283
+        }
+      ]
+    },
+    {
+      "duty": 0.5,
+      "He_electron_density_m3": 1.2726849156244282e+17,
+      "B_T": 0.32829788535026,
+      "electron_column_m2": 1272684915624428.2,
+      "electron_refresh_W_m2_at1keV_0p1s_no_recovery": 1.0195330171288601,
+      "self_potential_V": 575.734916625609,
+      "field_volume_sensitivities": [
+        {
+          "effective_field_volume_per_shell_area_m": 0.01,
+          "field_energy_J_m2": 428.8410105604552,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 64.32615158406827,
+          "mass_fraction_of_existing_plant": 0.029294258847185624
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.05,
+          "field_energy_J_m2": 2144.2050528022764,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 321.63075792034147,
+          "mass_fraction_of_existing_plant": 0.14647129423592817
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.2,
+          "field_energy_J_m2": 8576.820211209106,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 1286.5230316813659,
+          "mass_fraction_of_existing_plant": 0.5858851769437127
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.3,
+          "field_energy_J_m2": 12865.230316813657,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 1929.7845475220486,
+          "mass_fraction_of_existing_plant": 0.878827765415569
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.5,
+          "field_energy_J_m2": 21442.05052802276,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 3216.3075792034138,
+          "mass_fraction_of_existing_plant": 1.4647129423592813
+        }
+      ]
+    },
+    {
+      "duty": 0.25,
+      "He_electron_density_m3": 2.9840142625311885e+17,
+      "B_T": 0.7410692617950071,
+      "electron_column_m2": 2984014262531188.5,
+      "electron_refresh_W_m2_at1keV_0p1s_no_recovery": 1.195229481737553,
+      "self_potential_V": 1349.903013351191,
+      "field_volume_sensitivities": [
+        {
+          "effective_field_volume_per_shell_area_m": 0.01,
+          "field_energy_J_m2": 2185.1323159723647,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 327.7698473958547,
+          "mass_fraction_of_existing_plant": 0.1492670479341217
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.05,
+          "field_energy_J_m2": 10925.661579861824,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 1638.8492369792737,
+          "mass_fraction_of_existing_plant": 0.7463352396706087
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.2,
+          "field_energy_J_m2": 43702.646319447296,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 6555.396947917095,
+          "mass_fraction_of_existing_plant": 2.9853409586824347
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.3,
+          "field_energy_J_m2": 65553.96947917093,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 9833.09542187564,
+          "mass_fraction_of_existing_plant": 4.478011438023651
+        },
+        {
+          "effective_field_volume_per_shell_area_m": 0.5,
+          "field_energy_J_m2": 109256.61579861822,
+          "ideal_magnet_mass_kg_m2_at_BH100kJ_m3": 16388.492369792733,
+          "mass_fraction_of_existing_plant": 7.463352396706085
+        }
+      ]
+    }
+  ],
+  "H_extension": [
+    {
+      "species": "H",
+      "NIST_BEB_constants": {
+        "B_eV": 13.6057,
+        "U_eV": 13.6057,
+        "N": 1.0,
+        "Q": 0.5668,
+        "mass_u": 1.00782503223
+      },
+      "cross_section_at100eV_m2": 5.459795097137051e-21,
+      "mean_speed_1000K_m_s": 4583.4719638341285,
+      "same_cloud_g_if_eta05": 0.007968135879419231,
+      "required_net_transfer_eta_for_g001": 0.6274993393265819,
+      "scope": "Electron ionization and neutral access only. H2 fragmentation,H/H2 chemistry,reflection,hot trapping and eventual transfer remain distinct; this is not a qualifiedH pump."
+    },
+    {
+      "species": "H2",
+      "NIST_BEB_constants": {
+        "B_eV": 15.43,
+        "U_eV": 15.98,
+        "N": 2.0,
+        "Q": 1.0,
+        "mass_u": 2.01565006446
+      },
+      "cross_section_at100eV_m2": 9.689775125783501e-21,
+      "mean_speed_1000K_m_s": 3241.0041070055345,
+      "same_cloud_g_if_eta05": 0.01822360140616888,
+      "required_net_transfer_eta_for_g001": 0.2743694777206578,
+      "scope": "Electron ionization and neutral access only. H2 fragmentation,H/H2 chemistry,reflection,hot trapping and eventual transfer remain distinct; this is not a qualifiedH pump."
+    }
+  ],
+  "H_primary_sources": [
+    "https://physics.nist.gov/cgi-bin/Ionization/table.pl?ionization=H2",
+    "https://physics.nist.gov/cgi-bin/Ionization/ion_data.php?differential=Y&id=HI&initial=&ision=I",
+    "https://pml.nist.gov/PhysRefData/Ionization/intro.html"
+  ],
+  "placement": "Candidate warm1cm shallowcell array on chamber-facing side of existing150um collectionskin, with retractable/shielded front grids during prompt/outgoing main windows. C=.5 is molecular admission, not opaque primary-interceptionfraction. The actual exposedsurface optical/particlegeometry and primaryheat/gasreturn maps are unclosed. Cooler magnets behindbacking/insulation use0.2\u20130.5m fieldvolume sensitivities; nearfront cooledislands require their own insulation and pulseprotection ledger.",
+  "magnet_qualification": "Fieldenergy/permanentmagnetloadline lowerdiagnostics at assumedBHmax100kJ/m3,density7500. No1000K permanentmagnet or superconductingmaterial assumed. Realfringing/yokes/coercivity/thermalpath add requirements.",
+  "double_counting": "g acts only on residualatoms alreadyin cavity after localrouting. Any interceptionof newlydesorbedgas by thesamecells changes upstreamresidualfraction andmustnot also be credited as removalofthatgasfromthecavity.",
+  "checks": [
+    {
+      "duty": 1.0,
+      "positive_B": true,
+      "positive_mass": true
+    },
+    {
+      "duty": 0.8,
+      "positive_B": true,
+      "positive_mass": true
+    },
+    {
+      "duty": 0.7970058470499236,
+      "positive_B": true,
+      "positive_mass": true
+    },
+    {
+      "duty": 0.5,
+      "positive_B": true,
+      "positive_mass": true
+    },
+    {
+      "duty": 0.25,
+      "positive_B": true,
+      "positive_mass": true
+    }
+  ]
+}

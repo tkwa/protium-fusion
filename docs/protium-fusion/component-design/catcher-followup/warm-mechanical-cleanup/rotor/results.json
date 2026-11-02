@@ -1,0 +1,36 @@
+{
+  "scope": "Primary benchmark normalization and conditional design scaling; no new pump operating point.",
+  "primary_1994": {
+    "rotor_diameter_m": 0.26,
+    "rotor_mass_kg": 10,
+    "rotor_rpm": 27000,
+    "suspension_input_W": 13,
+    "motor_input_W": 35,
+    "total_input_W": 48,
+    "rotor_disk_area_m2": 0.05309291584566751,
+    "input_per_rotor_disk_W_m2": 904.075416379997
+  },
+  "conditional_target": {
+    "idle_input_W_m2_pumpface": 4,
+    "pumpface_fraction": 0.245,
+    "idle_W_m2_receiver": 0.98,
+    "same48W_module_required_area_m2": 12,
+    "same48W_module_equivalent_radius_m": 1.9544100476116797,
+    "rpm_at700m_s": 3420.2175833204396
+  },
+  "stress_scale": {
+    "density_kg_m3": 1800,
+    "rim_speed_m_s": 700,
+    "thin_ring_Pa": 882000000,
+    "ideal_disk_nu0p2_Pa": 352800000.0
+  },
+  "thermal": {
+    "black1000K_to300K_W_m2_viewed": 56244.443862061,
+    "scope": "Multiply by emissivity/view factor/cooled area ratio. Heat bypass is separate from electrical idle input."
+  },
+  "nasa190lbf_N": 845.1621068994949,
+  "source_sha256": {
+    "nasa2003.pdf": "a7685d4a612af4c97a26e50b24331bd1762c57e8c0d4b9d06bcf64948770cb03",
+    "ismb1994.pdf": "a41a1d5af32ba6fbcab4fc87de3658b23174b027a57d46408c325b74bed43438"
+  }
+}

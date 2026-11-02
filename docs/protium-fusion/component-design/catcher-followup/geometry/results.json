@@ -1,0 +1,778 @@
+{
+  "scope": "Catcher geometry, thermal-resistance and recycled-throughput requirements.\nNo assumed effective irradiated barrier permeability, repair speed or capture.\n",
+  "inputs_sha256": {
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/geometry/temperature-histories.json": "f7e67d3466af3bfeda6b0eb48a4ed2e9294e3a8e586228496d6f320217fe8d3f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-spectra.json": "c4a065e110afc72fd03a5aaff7af1161594a04554d9a874abceba1f023b0513e",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-stopping.json": "592cd0140de66f1569a70536bc3d76a56b9c571eea4d8ebd9d4cdb39b633f7aa",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/surface-charged-flux.json": "c4d336d4056b8f8be3ca86994acd526c59fffee40dafb7f2e7c7df854c15c8c0",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/catcher-followup/stopping/stopping-results.json": "746f9c0b23f68684f816604e9617494ab8109142f05f484e22b4c0457d78a232",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/final-receiver-thermal-input.json": "e3a4eaa2b73cae6384caf0f187bb91eb8859dfd3a6134b8605c21862965487b4",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/mixture-design/selected-plant/point.json": "d13704b81aa56057642641e6c2a05c95c3c47381b32173183ecaf520ce8d511c"
+  },
+  "code_sha256": "101aba2a2d7d4fecae9b4640d302712501cb7fa558bba4efbe8bb343d0b12e24",
+  "geometry": {
+    "rho_kg_m3": 2000.0,
+    "active_depth_m": 0.00015,
+    "cap_thickness_m": 1e-07,
+    "slot_full_width_m": 1e-07,
+    "slot_pitch_m": 2e-05,
+    "slot_projected_fraction": 0.004999999999999999,
+    "plenum_height_m": 5e-05,
+    "thermal_post_area_fraction": 0.25,
+    "post_conductivity_W_m_K": 50.0,
+    "gas_via_radius_m": 0.0005,
+    "gas_via_pitch_m": 0.01,
+    "gas_via_fraction": 0.007853981633974482,
+    "retained_graphite_sigma_kg_m2": 350.0,
+    "additional_physical_depth_m_preserving_mass": 0.0014238799126282953,
+    "active_solid_kg_m2": 0.2985,
+    "dogleg_stopping_pad_kg_m2_at_two_via_areas_200um": 0.006283185307179586,
+    "cap_full_area_kg_m2": 0.00019999999999999998,
+    "plenum_post_kg_m2": 0.025,
+    "gas_void_column_kg_m2_equivalent": 2.8477598252565905,
+    "new_mass_scope": "Active carbon, posts and vias substitute inside the350kg/m\u00b2 stock. Added gas seals, compressors, valves and rework tools remain service hardware; no zero hardware-mass credit is claimed.",
+    "skin_and_post_extra_resistance_m2_K_W": 4.15e-05,
+    "cap_diffusion_time_width2_over_alpha_k4_s": 9e-09
+  },
+  "stages": [
+    {
+      "stage": "A",
+      "period_s": 810808.9541603646,
+      "pulses_year": 38.9211291242825,
+      "incident_mass_kg_m2": 7.43801652892562e-07,
+      "groups": {
+        "H": {
+          "number_m2": 5.789230257871965e+19,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 0.0,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.02917120704656086
+        },
+        "He": {
+          "number_m2": 1722752275061.6694,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 0.0,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.01716955883667317
+        }
+      },
+      "maximum_primary_CSDA_depth_um_by_stopping_multiplier": {
+        "1.0": 34.74535028915158,
+        "0.5": 69.35334933163331,
+        "2.0": 17.394468329523427
+      },
+      "all_charged_sampled_peak_number_m2_s": 8.055845522705801e+17,
+      "prompt_radial_peak_W_m2": 3354066245.9233236,
+      "cap_lateral_rise_K_if_all_incident_flux_absorbed_k4": 10.481457018510385,
+      "NRT_proxy_events_m2_Ed25": 3.4230656653021885e+22,
+      "NRT_proxy_cap0to100nm_dpa_Ed25": 0.029485451415488407
+    },
+    {
+      "stage": "B1",
+      "period_s": 7698.198541942018,
+      "pulses_year": 4099.348675935681,
+      "incident_mass_kg_m2": 7.43801652892562e-09,
+      "groups": {
+        "H": {
+          "number_m2": 3.167458079592399e+17,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 0.0,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.016582132229018918
+        },
+        "He": {
+          "number_m2": 2.101529392802899e+17,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 0.0,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.013762819032770232
+        }
+      },
+      "maximum_primary_CSDA_depth_um_by_stopping_multiplier": {
+        "1.0": 10.918135781599746,
+        "0.5": 21.731775372717454,
+        "2.0": 5.476749599622249
+      },
+      "all_charged_sampled_peak_number_m2_s": 6613242791379638.0,
+      "prompt_radial_peak_W_m2": 1848266128.7666132,
+      "cap_lateral_rise_K_if_all_incident_flux_absorbed_k4": 5.775831652395666,
+      "NRT_proxy_events_m2_Ed25": 2.7661768465634768e+20,
+      "NRT_proxy_cap0to100nm_dpa_Ed25": 0.0003192679939241859
+    },
+    {
+      "stage": "B2",
+      "period_s": 988255.983544817,
+      "pulses_year": 31.93261718163822,
+      "incident_mass_kg_m2": 7.43801652892562e-07,
+      "groups": {
+        "H": {
+          "number_m2": 1.249186407132431e+19,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 0.0,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.06605732819508997
+        },
+        "He": {
+          "number_m2": 841042658.8908614,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 0.0,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.012646144959758378
+        }
+      },
+      "maximum_primary_CSDA_depth_um_by_stopping_multiplier": {
+        "1.0": 30.74121852519134,
+        "0.5": 61.35032402304569,
+        "2.0": 15.39174700707758
+      },
+      "all_charged_sampled_peak_number_m2_s": 6.37868710968063e+17,
+      "prompt_radial_peak_W_m2": 2053346935.9430113,
+      "cap_lateral_rise_K_if_all_incident_flux_absorbed_k4": 6.41670917482191,
+      "NRT_proxy_events_m2_Ed25": 3.6106283086014147e+22,
+      "NRT_proxy_cap0to100nm_dpa_Ed25": 0.03164125664507092
+    },
+    {
+      "stage": "C13",
+      "period_s": 11207481.3144339,
+      "pulses_year": 2.8157619999203183,
+      "incident_mass_kg_m2": 7.43801652892562e-07,
+      "groups": {
+        "H": {
+          "number_m2": 1.8266274921691996e+19,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 0.09270285572438428,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.12281739248974968
+        },
+        "He": {
+          "number_m2": 10922811624459.68,
+          "fraction_beyond_depth_mean_projected_proxy": {
+            "50": 1.7402403453783395e-08,
+            "100": 0.0,
+            "150": 0.0
+          },
+          "rear_before_front_absorbing_slab_150um": 0.017387276817378068
+        }
+      },
+      "maximum_primary_CSDA_depth_um_by_stopping_multiplier": {
+        "1.0": 89.63631464570138,
+        "0.5": 179.06785527865281,
+        "2.0": 44.848386224105056
+      },
+      "all_charged_sampled_peak_number_m2_s": 5.7586254649089517e+17,
+      "prompt_radial_peak_W_m2": 8334276447.503893,
+      "cap_lateral_rise_K_if_all_incident_flux_absorbed_k4": 26.04461389844966,
+      "NRT_proxy_events_m2_Ed25": 3.960098725672661e+22,
+      "NRT_proxy_cap0to100nm_dpa_Ed25": 0.01968293030055893
+    }
+  ],
+  "thermal_profiles": [
+    {
+      "stage": "A",
+      "selection": "warmest_background",
+      "maximum_K_backing": 1342.8016561309923,
+      "maximum_K_with150um_k4_and_postgap": 1353.1477480132246,
+      "peak_material_plus_decay_W_m2": 395058.0109840957,
+      "max_added_K": 16.39490745583997,
+      "csv_sha256": "b6ac5642f0d685ddaaea405d2f479a3aadf52663de19a46fdd6938a10970838b"
+    },
+    {
+      "stage": "B1",
+      "selection": "warmest_background",
+      "maximum_K_backing": 1190.4461505327877,
+      "maximum_K_with150um_k4_and_postgap": 1190.4461522384256,
+      "peak_material_plus_decay_W_m2": 2058.2424657386123,
+      "max_added_K": 0.08541706232815241,
+      "csv_sha256": "717d28f82e61f0cdc0262c15cf6fc67a4fb1a4b3b8b6db1e6e5a6472888d4254"
+    },
+    {
+      "stage": "B1",
+      "selection": "ordinary_midyear",
+      "maximum_K_backing": 1075.3675250761103,
+      "maximum_K_with150um_k4_and_postgap": 1075.3675256988934,
+      "peak_material_plus_decay_W_m2": 2058.2176617626315,
+      "max_added_K": 0.0854160329631492,
+      "csv_sha256": "40f60004a509d61e4de818ae8a5da8585f60db261d7adb87ea6be3180ea4a846"
+    },
+    {
+      "stage": "B2",
+      "selection": "warmest_background",
+      "maximum_K_backing": 1380.254876801203,
+      "maximum_K_with150um_k4_and_postgap": 1394.4606032005106,
+      "peak_material_plus_decay_W_m2": 529155.7034659113,
+      "max_added_K": 21.959961693835318,
+      "csv_sha256": "e914032717bb1cd82d3755d06a3c1a9e0fe86621137c1be9aa0aa344fef036e2"
+    },
+    {
+      "stage": "C13",
+      "selection": "warmest_background",
+      "maximum_K_backing": 1455.1345137671844,
+      "maximum_K_with150um_k4_and_postgap": 1480.3152194020645,
+      "peak_material_plus_decay_W_m2": 881150.7852335251,
+      "max_added_K": 36.56775758719129,
+      "csv_sha256": "eed598fd78699c4b5eb61d48d4d494c5488fd4b8ad8424efc5243b35d056dd72"
+    },
+    {
+      "stage": "C13",
+      "selection": "event_1",
+      "maximum_K_backing": 1470.8488352630166,
+      "maximum_K_with150um_k4_and_postgap": 1496.0295408978964,
+      "peak_material_plus_decay_W_m2": 881150.7852335251,
+      "max_added_K": 36.56775758719129,
+      "csv_sha256": "4463c1ba9136274573cafe502140c5b4d0a3bb7185889069281a2503e4f8af3f"
+    },
+    {
+      "stage": "C13",
+      "selection": "event_3",
+      "maximum_K_backing": 1439.4201922715508,
+      "maximum_K_with150um_k4_and_postgap": 1464.6008979064309,
+      "peak_material_plus_decay_W_m2": 881150.7852335251,
+      "max_added_K": 36.56775758719129,
+      "csv_sha256": "a3646cdbb154d4c10ad5e98723dee237a9122a163677c542b175322ac79d262a"
+    }
+  ],
+  "routine_full_layer_rework_sensitivities": [
+    {
+      "depth_um": 0.1,
+      "schedule": "annual",
+      "handled_kg_m2_year": 0.00019999999999999998,
+      "mean_handled_kg_m2_s": 6.3376175628057895e-12,
+      "electric_W_m2_at10kJkg_handling": 6.33761756280579e-08,
+      "electric_W_m2_at2MJkg": 1.2675235125611579e-05,
+      "fraction_selected_net_power_at2MJkg": 2.77733535649524e-07
+    },
+    {
+      "depth_um": 0.1,
+      "schedule": "monthly",
+      "handled_kg_m2_year": 0.0024,
+      "mean_handled_kg_m2_s": 7.605141075366947e-11,
+      "electric_W_m2_at10kJkg_handling": 7.605141075366947e-07,
+      "electric_W_m2_at2MJkg": 0.00015210282150733895,
+      "fraction_selected_net_power_at2MJkg": 3.3328024277942883e-06
+    },
+    {
+      "depth_um": 0.1,
+      "schedule": "each_pulse",
+      "handled_kg_m2_year": 0.8346036368483042,
+      "mean_handled_kg_m2_s": 2.644699333435699e-08,
+      "electric_W_m2_at10kJkg_handling": 0.0002644699333435699,
+      "electric_W_m2_at2MJkg": 0.052893986668713984,
+      "fraction_selected_net_power_at2MJkg": 0.0011589870946391546
+    },
+    {
+      "depth_um": 1,
+      "schedule": "annual",
+      "handled_kg_m2_year": 0.002,
+      "mean_handled_kg_m2_s": 6.33761756280579e-11,
+      "electric_W_m2_at10kJkg_handling": 6.33761756280579e-07,
+      "electric_W_m2_at2MJkg": 0.0001267523512561158,
+      "fraction_selected_net_power_at2MJkg": 2.7773353564952403e-06
+    },
+    {
+      "depth_um": 1,
+      "schedule": "monthly",
+      "handled_kg_m2_year": 0.024,
+      "mean_handled_kg_m2_s": 7.605141075366948e-10,
+      "electric_W_m2_at10kJkg_handling": 7.605141075366948e-06,
+      "electric_W_m2_at2MJkg": 0.0015210282150733897,
+      "fraction_selected_net_power_at2MJkg": 3.3328024277942887e-05
+    },
+    {
+      "depth_um": 1,
+      "schedule": "each_pulse",
+      "handled_kg_m2_year": 8.346036368483043,
+      "mean_handled_kg_m2_s": 2.6446993334356996e-07,
+      "electric_W_m2_at10kJkg_handling": 0.0026446993334356995,
+      "electric_W_m2_at2MJkg": 0.5289398666871399,
+      "fraction_selected_net_power_at2MJkg": 0.011589870946391547
+    },
+    {
+      "depth_um": 10,
+      "schedule": "annual",
+      "handled_kg_m2_year": 0.02,
+      "mean_handled_kg_m2_s": 6.33761756280579e-10,
+      "electric_W_m2_at10kJkg_handling": 6.33761756280579e-06,
+      "electric_W_m2_at2MJkg": 0.001267523512561158,
+      "fraction_selected_net_power_at2MJkg": 2.7773353564952404e-05
+    },
+    {
+      "depth_um": 10,
+      "schedule": "monthly",
+      "handled_kg_m2_year": 0.24,
+      "mean_handled_kg_m2_s": 7.605141075366948e-09,
+      "electric_W_m2_at10kJkg_handling": 7.605141075366947e-05,
+      "electric_W_m2_at2MJkg": 0.015210282150733896,
+      "fraction_selected_net_power_at2MJkg": 0.00033328024277942887
+    },
+    {
+      "depth_um": 10,
+      "schedule": "each_pulse",
+      "handled_kg_m2_year": 83.46036368483043,
+      "mean_handled_kg_m2_s": 2.6446993334356992e-06,
+      "electric_W_m2_at10kJkg_handling": 0.026446993334356992,
+      "electric_W_m2_at2MJkg": 5.289398666871398,
+      "fraction_selected_net_power_at2MJkg": 0.11589870946391545
+    },
+    {
+      "depth_um": 50,
+      "schedule": "annual",
+      "handled_kg_m2_year": 0.09999999999999999,
+      "mean_handled_kg_m2_s": 3.168808781402895e-09,
+      "electric_W_m2_at10kJkg_handling": 3.168808781402895e-05,
+      "electric_W_m2_at2MJkg": 0.00633761756280579,
+      "fraction_selected_net_power_at2MJkg": 0.00013886676782476202
+    },
+    {
+      "depth_um": 50,
+      "schedule": "monthly",
+      "handled_kg_m2_year": 1.2,
+      "mean_handled_kg_m2_s": 3.802570537683474e-08,
+      "electric_W_m2_at10kJkg_handling": 0.0003802570537683474,
+      "electric_W_m2_at2MJkg": 0.07605141075366949,
+      "fraction_selected_net_power_at2MJkg": 0.0016664012138971444
+    },
+    {
+      "depth_um": 50,
+      "schedule": "each_pulse",
+      "handled_kg_m2_year": 417.3018184241521,
+      "mean_handled_kg_m2_s": 1.3223496667178495e-05,
+      "electric_W_m2_at10kJkg_handling": 0.13223496667178494,
+      "electric_W_m2_at2MJkg": 26.44699333435699,
+      "fraction_selected_net_power_at2MJkg": 0.5794935473195773
+    },
+    {
+      "depth_um": 100,
+      "schedule": "annual",
+      "handled_kg_m2_year": 0.19999999999999998,
+      "mean_handled_kg_m2_s": 6.33761756280579e-09,
+      "electric_W_m2_at10kJkg_handling": 6.33761756280579e-05,
+      "electric_W_m2_at2MJkg": 0.01267523512561158,
+      "fraction_selected_net_power_at2MJkg": 0.00027773353564952404
+    },
+    {
+      "depth_um": 100,
+      "schedule": "monthly",
+      "handled_kg_m2_year": 2.4,
+      "mean_handled_kg_m2_s": 7.605141075366948e-08,
+      "electric_W_m2_at10kJkg_handling": 0.0007605141075366948,
+      "electric_W_m2_at2MJkg": 0.15210282150733898,
+      "fraction_selected_net_power_at2MJkg": 0.003332802427794289
+    },
+    {
+      "depth_um": 100,
+      "schedule": "each_pulse",
+      "handled_kg_m2_year": 834.6036368483042,
+      "mean_handled_kg_m2_s": 2.644699333435699e-05,
+      "electric_W_m2_at10kJkg_handling": 0.2644699333435699,
+      "electric_W_m2_at2MJkg": 52.89398666871398,
+      "fraction_selected_net_power_at2MJkg": 1.1589870946391545
+    },
+    {
+      "depth_um": 150,
+      "schedule": "annual",
+      "handled_kg_m2_year": 0.3,
+      "mean_handled_kg_m2_s": 9.506426344208685e-09,
+      "electric_W_m2_at10kJkg_handling": 9.506426344208685e-05,
+      "electric_W_m2_at2MJkg": 0.019012852688417372,
+      "fraction_selected_net_power_at2MJkg": 0.0004166003034742861
+    },
+    {
+      "depth_um": 150,
+      "schedule": "monthly",
+      "handled_kg_m2_year": 3.5999999999999996,
+      "mean_handled_kg_m2_s": 1.1407711613050421e-07,
+      "electric_W_m2_at10kJkg_handling": 0.001140771161305042,
+      "electric_W_m2_at2MJkg": 0.22815423226100842,
+      "fraction_selected_net_power_at2MJkg": 0.0049992036416914324
+    },
+    {
+      "depth_um": 150,
+      "schedule": "each_pulse",
+      "handled_kg_m2_year": 1251.9054552724563,
+      "mean_handled_kg_m2_s": 3.9670490001535486e-05,
+      "electric_W_m2_at10kJkg_handling": 0.39670490001535486,
+      "electric_W_m2_at2MJkg": 79.34098000307097,
+      "fraction_selected_net_power_at2MJkg": 1.7384806419587318
+    }
+  ],
+  "molecular_conductance_estimate": {
+    "beta_slot": 8.888888888888888e-06,
+    "beta_via": 5.983986006837702e-05,
+    "beta_series": 7.739263049952978e-06,
+    "rows": [
+      {
+        "species": "H2",
+        "mean_speed_1000K_m_s": 3253.659878093185,
+        "slot_C_over_area_m_s": 0.007230355284651522,
+        "via_C_over_area_m_s": 0.04867463795379721,
+        "series_C_over_area_m_s": 0.0062952324179102745
+      },
+      {
+        "species": "He",
+        "mean_speed_1000K_m_s": 2300.6849634742866,
+        "slot_C_over_area_m_s": 0.0051126332521650815,
+        "via_C_over_area_m_s": 0.034418166568930104,
+        "series_C_over_area_m_s": 0.004451401531849741
+      }
+    ],
+    "scope": "Diffuse molecular flow; hydraulic-diameter slit approximation plus long circular via. Side plenum, bends, surface accommodation, entrance distribution and pump speed add resistance. No pressure or collection efficiency is assigned."
+  },
+  "open_cell_sensitivity": [
+    {
+      "length_over_diameter": 10,
+      "single_return_molecular_transmission": 0.13333333333333333,
+      "return_capture_probability": 1.0,
+      "eventual_front_escape": 0.13333333333333333
+    },
+    {
+      "length_over_diameter": 10,
+      "single_return_molecular_transmission": 0.13333333333333333,
+      "return_capture_probability": 0.1,
+      "eventual_front_escape": 0.6060606060606061
+    },
+    {
+      "length_over_diameter": 10,
+      "single_return_molecular_transmission": 0.13333333333333333,
+      "return_capture_probability": 0.01,
+      "eventual_front_escape": 0.9389671361502349
+    },
+    {
+      "length_over_diameter": 100,
+      "single_return_molecular_transmission": 0.013333333333333334,
+      "return_capture_probability": 1.0,
+      "eventual_front_escape": 0.013333333333333334
+    },
+    {
+      "length_over_diameter": 100,
+      "single_return_molecular_transmission": 0.013333333333333334,
+      "return_capture_probability": 0.1,
+      "eventual_front_escape": 0.11904761904761904
+    },
+    {
+      "length_over_diameter": 100,
+      "single_return_molecular_transmission": 0.013333333333333334,
+      "return_capture_probability": 0.01,
+      "eventual_front_escape": 0.5747126436781609
+    },
+    {
+      "length_over_diameter": 1000,
+      "single_return_molecular_transmission": 0.0013333333333333333,
+      "return_capture_probability": 1.0,
+      "eventual_front_escape": 0.0013333333333333333
+    },
+    {
+      "length_over_diameter": 1000,
+      "single_return_molecular_transmission": 0.0013333333333333333,
+      "return_capture_probability": 0.1,
+      "eventual_front_escape": 0.013175230566534912
+    },
+    {
+      "length_over_diameter": 1000,
+      "single_return_molecular_transmission": 0.0013333333333333333,
+      "return_capture_probability": 0.01,
+      "eventual_front_escape": 0.1177856301531213
+    },
+    {
+      "length_over_diameter": 2000,
+      "single_return_molecular_transmission": 0.0006666666666666666,
+      "return_capture_probability": 1.0,
+      "eventual_front_escape": 0.0006666666666666666
+    },
+    {
+      "length_over_diameter": 2000,
+      "single_return_molecular_transmission": 0.0006666666666666666,
+      "return_capture_probability": 0.1,
+      "eventual_front_escape": 0.006626905235255136
+    },
+    {
+      "length_over_diameter": 2000,
+      "single_return_molecular_transmission": 0.0006666666666666666,
+      "return_capture_probability": 0.01,
+      "eventual_front_escape": 0.06253908692933083
+    }
+  ],
+  "connected_hole_acceptance_curve": [
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 7.902581679020989e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 0.00790258167902099,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.7902581679020989,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 7.90258167902099e-07,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 7.90258167902099e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.007902581679020991,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 7.902581679020991e-09,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 7.902581679020989e-07,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "A",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 7.90258167902099e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 0.009626438835686105,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 0.9626438835686103,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 96.26438835686105,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 9.626438835686107e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 0.009626438835686106,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.9626438835686107,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 9.626438835686106e-07,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 9.626438835686106e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B1",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.009626438835686106,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 9.98042013067883e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 0.00998042013067883,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.9980420130678831,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 9.980420130678834e-07,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 9.980420130678833e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.009980420130678834,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 9.980420130678834e-09,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 9.980420130678834e-07,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "B2",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 9.980420130678835e-05,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 0.00011055064724158905,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 0.011055064724158905,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 0.1,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 1.1055064724158905,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 1.1055064724158909e-06,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 0.00011055064724158908,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 1.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.01105506472415891,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-08,
+      "required_mean_open_lifetime_s_upper": 1.1055064724158908e-08,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 1e-06,
+      "required_mean_open_lifetime_s_upper": 1.1055064724158907e-06,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    },
+    {
+      "stage": "C13",
+      "effective_connected_hole_radius_nm": 10.0,
+      "global_connected_open_fraction": 0.0001,
+      "required_mean_open_lifetime_s_upper": 0.00011055064724158908,
+      "assumption": "Only hits above slit mouths create through-connected apertures; effective hole area includes probability of such damage.64-point sampled incident peak is a resolved-profile estimate, not an unresolved-structure upper bound. Bulk permeation and seals are separate."
+    }
+  ],
+  "net_electric_flux_W_m2": 45.63811531066469,
+  "checks": {
+    "all_nominal_primary_ranges_below150um": true,
+    "mass_preserved_by_added_thickness": true,
+    "thermal_resistance_positive": true,
+    "history_minimum_positive": true,
+    "flow_series_smaller_than_components": true
+  },
+  "limits": [
+    "NIST projected depths are mean-range proxies, not stochastic retention distributions. Range straggling, defects and channel-aligned transmission remain qualifications.",
+    "The0.5% slits require a second stopping floor in the sealed plenum; full backing retains energetic particles, while selective extraction from that floor is separate.",
+    "Finite100nm cap/sidechannel first-passage probabilities are supplied by the parent channel-routing packet; geometry has no assumed isotropic retention credit.",
+    "The source-energy-conserving temperature histories omit old nonuniform tails bounded separately at about0.1K. Microsecond prompt limits remain separate from material-pulse thermal resistance.",
+    "A2MJ/kg dissipation is a declared rework scenario, not a universal thermodynamic cost. Recycled matter remains installed stock; energy and equipment throughput remain chargeable.",
+    "NRT counts are total-elastic-energy proxies without recoil partition, recombination, annealing or a mapping to through-connected holes. No probabilistic material-property interval can presently be justified."
+  ]
+}

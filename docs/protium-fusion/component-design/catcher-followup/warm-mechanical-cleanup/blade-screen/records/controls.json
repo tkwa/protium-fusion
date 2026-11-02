@@ -1,0 +1,1156 @@
+{
+  "scope": "Collisionless 2D-position/3D-velocity moving-blade test particles.\nStatic channel in rotor frame: 0 < y=x+s*z < gap; 0 < z < L.\nThermal reservoirs at1000K are stationary in lab, flux Maxwellian at axial ends.\nSpecular energy and direct event histories are checked, no fitted surface data.\n",
+  "mode": "controls",
+  "n_per_direction": 100000,
+  "code_sha256": "de0cb9d5ccfbf8538818b9ba56336d5efd8c06f6208bc6f9f84e3e55552207a0",
+  "cases": [
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 0.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "7afaec9db2d1f347e46eee3af2a29726de4d4a78c6306b0bc2f3f7f859f918eb",
+        "reflection_count_sha256": "f20e9c68a7828ecfb708ac84f90af32da8dd7804e03238776a718f23276611e5",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.08534,
+        "maximum_reflections": 1075,
+        "mean_flight_pitch_over_speed_s": 0.0017386340006075082,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 58181,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 0.0,
+        "seed": 1100000
+      },
+      "reverse": {
+        "outcome_sha256": "be87f6dbe42cdf682276fbecab3636fbfcaa008cf454d635dd77872b50d940aa",
+        "reflection_count_sha256": "908137053d42f9db0e9e0978bb5701e042f60dc1894701cced420d3674e7a19f",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.05749,
+        "maximum_reflections": 536,
+        "mean_flight_pitch_over_speed_s": 0.001730751140260541,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 56440,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 0.0,
+        "seed": 1100001
+      },
+      "K0": 1.0,
+      "K0_conservative_interval_from_marginal95": [
+        0.999961586887417,
+        1.0000384145882069
+      ],
+      "net_long_cascade_capture": 0.0,
+      "net_capture_normal95": [
+        0.0,
+        0.0
+      ],
+      "single_row_zero_backpressure_face_capture": 0.65,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 0.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.5,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "816915ad4d2086eb5d01c5a460f99021ce1db8595381699e417a5f1b439d1b5e",
+        "reflection_count_sha256": "7e8c2d2531ea4dc39a7f0205d9abcefa002277425423685dbd2429e00a59acfd",
+        "n": 100000,
+        "transmitted": 63435,
+        "returned": 36565,
+        "unresolved": 0,
+        "T": 0.63435,
+        "T_wilson95": [
+          0.631359885082341,
+          0.6373297933143078
+        ],
+        "T_wilson80": [
+          0.6323960171275369,
+          0.6362995698848872
+        ],
+        "mean_reflections": 3.06773,
+        "maximum_reflections": 43,
+        "mean_flight_pitch_over_speed_s": 0.001736915896234687,
+        "explicit_iterations": 44,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": -1.7606358032542323e-23,
+        "mean_total_lab_energy_change_per_incident_J": -1.7606358032542323e-23,
+        "seed": 1100002
+      },
+      "reverse": {
+        "outcome_sha256": "54b4ad003cb1be8c63b442fceffe08473ec985ad17c072706bdf4e6248462358",
+        "reflection_count_sha256": "f03a09dc6a1356935236216a145f578ec6e0e3dc18d339b491d28eb24eabc13a",
+        "n": 100000,
+        "transmitted": 63495,
+        "returned": 36505,
+        "unresolved": 0,
+        "T": 0.63495,
+        "T_wilson95": [
+          0.6319609018550696,
+          0.6379287304458443
+        ],
+        "T_wilson80": [
+          0.6329966871986067,
+          0.6368988801056482
+        ],
+        "mean_reflections": 3.07042,
+        "maximum_reflections": 47,
+        "mean_flight_pitch_over_speed_s": 0.001736714879280934,
+        "explicit_iterations": 48,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": -1.2149053549207605e-22,
+        "mean_total_lab_energy_change_per_incident_J": -1.2149053549207605e-22,
+        "seed": 1100003
+      },
+      "K0": 0.9990550437042286,
+      "K0_conservative_interval_from_marginal95": [
+        0.9897028538612576,
+        1.0084956069963795
+      ],
+      "net_long_cascade_capture": -0.0003900000000000292,
+      "net_capture_normal95": [
+        -0.0031334563786564865,
+        0.002353456378656428
+      ],
+      "single_row_zero_backpressure_face_capture": 0.4123275,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 0.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 1.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "1038cb02ebf681f13bc672005401f02d26e232f09f9b2a16ce3f19364138e5a1",
+        "reflection_count_sha256": "a33c894c2dc2ae69fc13d6f2b0f27fd0d9fcaca44a34975e4f3bccfd02d1dfbd",
+        "n": 100000,
+        "transmitted": 45317,
+        "returned": 54683,
+        "unresolved": 0,
+        "T": 0.45317,
+        "T_wilson95": [
+          0.4500865048081088,
+          0.4562570929640159
+        ],
+        "T_wilson80": [
+          0.4511533817629853,
+          0.45518815645962846
+        ],
+        "mean_reflections": 3.09881,
+        "maximum_reflections": 39,
+        "mean_flight_pitch_over_speed_s": 0.0017514451552589371,
+        "explicit_iterations": 40,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 1.423590153163511e-23,
+        "mean_total_lab_energy_change_per_incident_J": 1.423590153163511e-23,
+        "seed": 1100004
+      },
+      "reverse": {
+        "outcome_sha256": "fccf33193814ed858c2b02fa097d9d0faacef6ace89528cd40159d55b98cece6",
+        "reflection_count_sha256": "78c0a3098636b8f4a9dfe4f081961d32c43dd409951caf911ea7422cf5b23824",
+        "n": 100000,
+        "transmitted": 45127,
+        "returned": 54873,
+        "unresolved": 0,
+        "T": 0.45127,
+        "T_wilson95": [
+          0.44818770822794557,
+          0.4543560355140069
+        ],
+        "T_wilson80": [
+          0.4492541521437096,
+          0.4532874484881069
+        ],
+        "mean_reflections": 3.08582,
+        "maximum_reflections": 44,
+        "mean_flight_pitch_over_speed_s": 0.0017434919432121139,
+        "explicit_iterations": 45,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": -2.7116809517854425e-23,
+        "mean_total_lab_energy_change_per_incident_J": -2.7116809517854425e-23,
+        "seed": 1100005
+      },
+      "K0": 1.0042103397079354,
+      "K0_conservative_interval_from_marginal95": [
+        0.9906031165601926,
+        1.0180044757764002
+      ],
+      "net_long_cascade_capture": 0.0012350000000000084,
+      "net_capture_normal95": [
+        -0.0016006565131922302,
+        0.004070656513192247
+      ],
+      "single_row_zero_backpressure_face_capture": 0.2945605,
+      "conditional_identical_thermalized_stages_for1e8": 4385,
+      "conditional_identical_thermalized_stages_for1e9": 4933
+    },
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 0.0,
+        "theta": 45,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "b4ce9ee3c2ca7d0e1d0375042dbbfcd6c841ab86e66c8a1559160ae57382b7bb",
+        "reflection_count_sha256": "67fe118e4b543a36ecf01d102686a156485ac56774ddfe8c500bcde33674fdbf",
+        "n": 100000,
+        "transmitted": 70593,
+        "returned": 29407,
+        "unresolved": 0,
+        "T": 0.70593,
+        "T_wilson95": [
+          0.7030982005104511,
+          0.7087459786650003
+        ],
+        "T_wilson80": [
+          0.7040801599385368,
+          0.7077730758892898
+        ],
+        "mean_reflections": 4.31781,
+        "maximum_reflections": 574,
+        "mean_flight_pitch_over_speed_s": 0.0017269618107655354,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 102898,
+        "max_specular_relative_energy_error": 1.1186027291581134e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 5.057067915599105e-36,
+        "mean_total_lab_energy_change_per_incident_J": 5.057067915599105e-36,
+        "seed": 1100006
+      },
+      "reverse": {
+        "outcome_sha256": "965eddf2e2e2122adece82c13bb6cd5bb44ff3f1e104fb3bc464373fbb6e730f",
+        "reflection_count_sha256": "347e28d846f4b6608dbe2cf26564e8ec74064bae9b654eb91218f4e9b7bdfacf",
+        "n": 100000,
+        "transmitted": 70696,
+        "returned": 29304,
+        "unresolved": 0,
+        "T": 0.70696,
+        "T_wilson95": [
+          0.70413105481724,
+          0.7097730452271996
+        ],
+        "T_wilson80": [
+          0.7051120352904369,
+          0.7088011667050326
+        ],
+        "mean_reflections": 4.38632,
+        "maximum_reflections": 1968,
+        "mean_flight_pitch_over_speed_s": 0.0017467548878743074,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 106470,
+        "max_specular_relative_energy_error": 1.1786306010609975e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 5.021802144678955e-36,
+        "mean_total_lab_energy_change_per_incident_J": 5.021802144678955e-36,
+        "seed": 1100007
+      },
+      "K0": 0.9985430575987325,
+      "K0_conservative_interval_from_marginal95": [
+        0.9905958041635522,
+        1.006554069467875
+      ],
+      "net_long_cascade_capture": -0.0006695000000000562,
+      "net_capture_normal95": [
+        -0.003264038303255445,
+        0.0019250383032553325
+      ],
+      "single_row_zero_backpressure_face_capture": 0.4588545,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 0.0,
+        "theta": 45,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.5,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "8262382607f9dffbff820bc73dca8f7407905270737aca59c76fc20a2c1de7dc",
+        "reflection_count_sha256": "57292f590132a7e71609d430d2cb5d6f7d0e45da2294debb704e65e7474f434f",
+        "n": 100000,
+        "transmitted": 36486,
+        "returned": 63514,
+        "unresolved": 0,
+        "T": 0.36486,
+        "T_wilson95": [
+          0.3618816071709359,
+          0.3678487751251331
+        ],
+        "T_wilson80": [
+          0.36291133900564304,
+          0.36681309993102224
+        ],
+        "mean_reflections": 4.35442,
+        "maximum_reflections": 78,
+        "mean_flight_pitch_over_speed_s": 0.001739361981944551,
+        "explicit_iterations": 79,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 1.121805252978208e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 1.8749900898535265e-23,
+        "mean_total_lab_energy_change_per_incident_J": 1.8749900898535265e-23,
+        "seed": 1100008
+      },
+      "reverse": {
+        "outcome_sha256": "017bd146423df0266f985257afab3498689c1c126951b682e87608e8323379d3",
+        "reflection_count_sha256": "0a7defea37842a5bc3fabaa59332cfd78bdd6c859811f3974e42e778b7de1003",
+        "n": 100000,
+        "transmitted": 36677,
+        "returned": 63323,
+        "unresolved": 0,
+        "T": 0.36677,
+        "T_wilson95": [
+          0.3637882360199205,
+          0.36976199953805844
+        ],
+        "T_wilson80": [
+          0.36481915126011083,
+          0.3687252249388821
+        ],
+        "mean_reflections": 4.36901,
+        "maximum_reflections": 67,
+        "mean_flight_pitch_over_speed_s": 0.001747591862209119,
+        "explicit_iterations": 68,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 1.1331365181577263e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": -9.453246213387532e-23,
+        "mean_total_lab_energy_change_per_incident_J": -9.453246213387532e-23,
+        "seed": 1100009
+      },
+      "K0": 0.9947923766938409,
+      "K0_conservative_interval_from_marginal95": [
+        0.9786879333815605,
+        1.0111618208154214
+      ],
+      "net_long_cascade_capture": -0.0012414999999999787,
+      "net_capture_normal95": [
+        -0.003985690960534438,
+        0.0015026909605344802
+      ],
+      "single_row_zero_backpressure_face_capture": 0.237159,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 0.0,
+        "theta": 45,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 1.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "b39eb522d94552ca583e48c09e238cfe047516da44702ca4d42beda8a58aec2e",
+        "reflection_count_sha256": "998697f12e5aa423e2c5b88435081f0ed8936e105e2e387aa78f394e37077fb8",
+        "n": 100000,
+        "transmitted": 23603,
+        "returned": 76397,
+        "unresolved": 0,
+        "T": 0.23603,
+        "T_wilson95": [
+          0.2334082681233053,
+          0.23867201169535177
+        ],
+        "T_wilson80": [
+          0.23431343523216044,
+          0.23775523537692297
+        ],
+        "mean_reflections": 4.33756,
+        "maximum_reflections": 94,
+        "mean_flight_pitch_over_speed_s": 0.0017316098231864418,
+        "explicit_iterations": 95,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": -9.460541830535594e-23,
+        "mean_total_lab_energy_change_per_incident_J": -9.460541830535594e-23,
+        "seed": 1100010
+      },
+      "reverse": {
+        "outcome_sha256": "fb3c976c3821effef5d479d5691e62cbff57790b726f3615b975a1a5da66f4d7",
+        "reflection_count_sha256": "23cbca639b8927f822aec3041320649c89013a63e50d0e012fd012be69ca6b4d",
+        "n": 100000,
+        "transmitted": 23677,
+        "returned": 76323,
+        "unresolved": 0,
+        "T": 0.23677,
+        "T_wilson95": [
+          0.23414539431603576,
+          0.23941482865121472
+        ],
+        "T_wilson80": [
+          0.2350515625145413,
+          0.23849708378780005
+        ],
+        "mean_reflections": 4.3099,
+        "maximum_reflections": 83,
+        "mean_flight_pitch_over_speed_s": 0.0017254110182340788,
+        "explicit_iterations": 84,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": -5.593331351024634e-23,
+        "mean_total_lab_energy_change_per_incident_J": -5.593331351024634e-23,
+        "seed": 1100011
+      },
+      "K0": 0.9968746040461206,
+      "K0_conservative_interval_from_marginal95": [
+        0.9749114933199902,
+        1.0193325065929173
+      ],
+      "net_long_cascade_capture": -0.000481000000000012,
+      "net_capture_normal95": [
+        -0.0029016554462155007,
+        0.0019396554462154769
+      ],
+      "single_row_zero_backpressure_face_capture": 0.1534195,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 0.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "7afaec9db2d1f347e46eee3af2a29726de4d4a78c6306b0bc2f3f7f859f918eb",
+        "reflection_count_sha256": "dc336d3c828b21ed80c730b8c7626819913470a2783b8a957117d27df1913610",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.06976,
+        "maximum_reflections": 898,
+        "mean_flight_pitch_over_speed_s": 0.00122902005700612,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 56871,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 0.0,
+        "seed": 1100012
+      },
+      "reverse": {
+        "outcome_sha256": "be87f6dbe42cdf682276fbecab3636fbfcaa008cf454d635dd77872b50d940aa",
+        "reflection_count_sha256": "6791024dd9c847866377e3bf7fef56fc1e1aa1e43a4c7e816dc7f0962452fdb9",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.09152,
+        "maximum_reflections": 467,
+        "mean_flight_pitch_over_speed_s": 0.001232809895563277,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 58296,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 0.0,
+        "seed": 1100013
+      },
+      "K0": 1.0,
+      "K0_conservative_interval_from_marginal95": [
+        0.999961586887417,
+        1.0000384145882069
+      ],
+      "net_long_cascade_capture": 0.0,
+      "net_capture_normal95": [
+        0.0,
+        0.0
+      ],
+      "single_row_zero_backpressure_face_capture": 0.65,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 0.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.5,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "3efcae70d8a7d62ff561ff0cb84dd7f44c528b1bc2ddf606e052c274fab25cfe",
+        "reflection_count_sha256": "b76507ed27eb43d2d349154f70b7297fdb4f553f36c099c9c83c883585f43f4d",
+        "n": 100000,
+        "transmitted": 63410,
+        "returned": 36590,
+        "unresolved": 0,
+        "T": 0.6341,
+        "T_wilson95": [
+          0.6311094629010002,
+          0.637080234702205
+        ],
+        "T_wilson80": [
+          0.6321457388950645,
+          0.6360498563290969
+        ],
+        "mean_reflections": 3.09867,
+        "maximum_reflections": 37,
+        "mean_flight_pitch_over_speed_s": 0.0012406771315232668,
+        "explicit_iterations": 38,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 9.501418882741772e-24,
+        "mean_total_lab_energy_change_per_incident_J": 9.501418882741772e-24,
+        "seed": 1100014
+      },
+      "reverse": {
+        "outcome_sha256": "7d5f7d6cfde7d7b6f851b866892597c0eb627fc1967e093ad2350a9cf065538a",
+        "reflection_count_sha256": "f065ad0a5dba53723b3911d7133565c5bf53d67284e6909b6b9fe4de3ec8590c",
+        "n": 100000,
+        "transmitted": 63505,
+        "returned": 36495,
+        "unresolved": 0,
+        "T": 0.63505,
+        "T_wilson95": [
+          0.6320610718029994,
+          0.6380285528152919
+        ],
+        "T_wilson80": [
+          0.6330967991947828,
+          0.6369987648247774
+        ],
+        "mean_reflections": 3.0875,
+        "maximum_reflections": 41,
+        "mean_flight_pitch_over_speed_s": 0.0012347624637276669,
+        "explicit_iterations": 42,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 2.1772090584436234e-23,
+        "mean_total_lab_energy_change_per_incident_J": 2.1772090584436234e-23,
+        "seed": 1100015
+      },
+      "K0": 0.9985040547988348,
+      "K0_conservative_interval_from_marginal95": [
+        0.9891555168122785,
+        1.007940946093845
+      ],
+      "net_long_cascade_capture": -0.0006175000000000042,
+      "net_capture_normal95": [
+        -0.0033610750279562105,
+        0.002126075027956202
+      ],
+      "single_row_zero_backpressure_face_capture": 0.412165,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 0.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 1.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "da0189c1b8d8c527cf07a0c7e2fcaa6d415527605353a6ea3148af633daced20",
+        "reflection_count_sha256": "f7398629b7f56f8dbc4296852d57a44cf9b7f1fdc7bcc7088e81cbb187038915",
+        "n": 100000,
+        "transmitted": 45123,
+        "returned": 54877,
+        "unresolved": 0,
+        "T": 0.45123,
+        "T_wilson95": [
+          0.4481477340507907,
+          0.4543160127642108
+        ],
+        "T_wilson80": [
+          0.4492141686811456,
+          0.45324743326454897
+        ],
+        "mean_reflections": 3.07108,
+        "maximum_reflections": 43,
+        "mean_flight_pitch_over_speed_s": 0.0012301026361205539,
+        "explicit_iterations": 44,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 1.7043523460190754e-22,
+        "mean_total_lab_energy_change_per_incident_J": 1.7043523460190754e-22,
+        "seed": 1100016
+      },
+      "reverse": {
+        "outcome_sha256": "e2ef51e110e9a3c968b1b03ed5c82d5fdd7619e8c0b5cf07c9bf166fb82c572b",
+        "reflection_count_sha256": "8e78e4be0857a27aa4d8a888e931fe8960acfd122b0c7dba9469666dfdaea478",
+        "n": 100000,
+        "transmitted": 45022,
+        "returned": 54978,
+        "unresolved": 0,
+        "T": 0.45022,
+        "T_wilson95": [
+          0.4471383927463801,
+          0.45330543166310877
+        ],
+        "T_wilson80": [
+          0.44820459061201023,
+          0.4522370445091026
+        ],
+        "mean_reflections": 3.07887,
+        "maximum_reflections": 38,
+        "mean_flight_pitch_over_speed_s": 0.0012320263446452023,
+        "explicit_iterations": 39,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 1.0808785175192139e-23,
+        "mean_total_lab_energy_change_per_incident_J": 1.0808785175192139e-23,
+        "seed": 1100017
+      },
+      "K0": 1.0022433476966817,
+      "K0_conservative_interval_from_marginal95": [
+        0.9886220255658635,
+        1.0160523456143966
+      ],
+      "net_long_cascade_capture": 0.0006565000000000071,
+      "net_capture_normal95": [
+        -0.0021783296200449894,
+        0.0034913296200450037
+      ],
+      "single_row_zero_backpressure_face_capture": 0.29329950000000005,
+      "conditional_identical_thermalized_stages_for1e8": 8221,
+      "conditional_identical_thermalized_stages_for1e9": 9249
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 0.0,
+        "theta": 45,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "632f6baa5c86b06136c9788376c8a3aa118c1a8e049c5d6dcb8970f6b2d71fa8",
+        "reflection_count_sha256": "2f6ab35d7e0d13724d79f523839c223e0310643ae6e7c10ba602d0634b86c0dd",
+        "n": 100000,
+        "transmitted": 70765,
+        "returned": 29235,
+        "unresolved": 0,
+        "T": 0.70765,
+        "T_wilson95": [
+          0.7048229766727881,
+          0.7104610703615563
+        ],
+        "T_wilson80": [
+          0.7058032979676877,
+          0.7094898813633871
+        ],
+        "mean_reflections": 4.30268,
+        "maximum_reflections": 586,
+        "mean_flight_pitch_over_speed_s": 0.001226963220952341,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 101857,
+        "max_specular_relative_energy_error": 1.1118190393114806e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 5.027000885994902e-36,
+        "mean_total_lab_energy_change_per_incident_J": 5.027000885994902e-36,
+        "seed": 1100018
+      },
+      "reverse": {
+        "outcome_sha256": "839c27411892c3e39984b8fa3b55762caab0559a2d806bb2335d1bb6ed07f492",
+        "reflection_count_sha256": "b6927a3deb95f658195f783b30621bd822c659f9814299d9b5d5367b06a4ecfd",
+        "n": 100000,
+        "transmitted": 70791,
+        "returned": 29209,
+        "unresolved": 0,
+        "T": 0.70791,
+        "T_wilson95": [
+          0.705083702882857,
+          0.7107203241766687
+        ],
+        "T_wilson80": [
+          0.7060637750882246,
+          0.7097493957026435
+        ],
+        "mean_reflections": 4.313,
+        "maximum_reflections": 772,
+        "mean_flight_pitch_over_speed_s": 0.0012274125618648931,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 102320,
+        "max_specular_relative_energy_error": 1.1502939279825796e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 5.0296429270978104e-36,
+        "mean_total_lab_energy_change_per_incident_J": 5.0296429270978104e-36,
+        "seed": 1100019
+      },
+      "K0": 0.999632721673659,
+      "K0_conservative_interval_from_marginal95": [
+        0.9917022951176859,
+        1.0076265661179133
+      ],
+      "net_long_cascade_capture": -0.00016900000000002468,
+      "net_capture_normal95": [
+        -0.0027600783120837083,
+        0.002422078312083659
+      ],
+      "single_row_zero_backpressure_face_capture": 0.4599725,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 0.0,
+        "theta": 45,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.5,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "faebaa863d0d70d98d985dc2d1ee48e3d126d5043e240969588bb4b1f9da9ec8",
+        "reflection_count_sha256": "241b0046b3581e5bac3c6834c2833bb11724154f14fe3ff3ed53f229725d04b1",
+        "n": 100000,
+        "transmitted": 36573,
+        "returned": 63427,
+        "unresolved": 0,
+        "T": 0.36573,
+        "T_wilson95": [
+          0.36275006534726867,
+          0.3687202501099845
+        ],
+        "T_wilson80": [
+          0.36378033839130625,
+          0.36768407196851344
+        ],
+        "mean_reflections": 4.37019,
+        "maximum_reflections": 68,
+        "mean_flight_pitch_over_speed_s": 0.0012396380374783604,
+        "explicit_iterations": 69,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 1.1308274356111826e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": -3.7493830150850514e-23,
+        "mean_total_lab_energy_change_per_incident_J": -3.7493830150850514e-23,
+        "seed": 1100020
+      },
+      "reverse": {
+        "outcome_sha256": "4a4b5bb70d1ee3dc0dea96884edd472df85fc590fd4918fdfd6389e80a988d45",
+        "reflection_count_sha256": "f4910991272d7eb7f0071ed7188a46207161d9aeee62e539d22978ae19728efd",
+        "n": 100000,
+        "transmitted": 36717,
+        "returned": 63283,
+        "unresolved": 0,
+        "T": 0.36717,
+        "T_wilson95": [
+          0.3641875364207132,
+          0.3701626684067757
+        ],
+        "T_wilson80": [
+          0.3652186972790484,
+          0.36912566578116507
+        ],
+        "mean_reflections": 4.34755,
+        "maximum_reflections": 68,
+        "mean_flight_pitch_over_speed_s": 0.001236010310115979,
+        "explicit_iterations": 69,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 1.161057564028939e-15,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 4.4323470154310475e-23,
+        "mean_total_lab_energy_change_per_incident_J": 4.4323470154310475e-23,
+        "seed": 1100021
+      },
+      "K0": 0.9960781109567776,
+      "K0_conservative_interval_from_marginal95": [
+        0.9799747416685433,
+        1.0124460977819818
+      ],
+      "net_long_cascade_capture": -0.0009359999999999979,
+      "net_capture_normal95": [
+        -0.0036811986159963938,
+        0.0018091986159963977
+      ],
+      "single_row_zero_backpressure_face_capture": 0.2377245,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 0.0,
+        "theta": 45,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 1.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "1d41617de57cf08f3daac74c8d1afdc917ceffb7556f89663e88848e893b2a91",
+        "reflection_count_sha256": "770a029f602f1110931a2b6899ab8394d5c7672696ff4bae33e545f9301db74b",
+        "n": 100000,
+        "transmitted": 24034,
+        "returned": 75966,
+        "unresolved": 0,
+        "T": 0.24034,
+        "T_wilson95": [
+          0.23770168467044925,
+          0.24299826402717736
+        ],
+        "T_wilson80": [
+          0.23861262896549645,
+          0.24207590007323754
+        ],
+        "mean_reflections": 4.39795,
+        "maximum_reflections": 74,
+        "mean_flight_pitch_over_speed_s": 0.0012459486368334542,
+        "explicit_iterations": 75,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 1.0713333318610865e-22,
+        "mean_total_lab_energy_change_per_incident_J": 1.0713333318610865e-22,
+        "seed": 1100022
+      },
+      "reverse": {
+        "outcome_sha256": "1b75e5460ab13bf2b7d3b8b1c00ab35b49954024fdf89965a4551f2a41e74904",
+        "reflection_count_sha256": "5c812c2c00c5dbb0f5caf43548b4576bf3bb9dd8a6c6727b761e21240d7d38a4",
+        "n": 100000,
+        "transmitted": 23508,
+        "returned": 76492,
+        "unresolved": 0,
+        "T": 0.23508,
+        "T_wilson95": [
+          0.2324619737186009,
+          0.23771837908497012
+        ],
+        "T_wilson80": [
+          0.2333658500212355,
+          0.23680285179244936
+        ],
+        "mean_reflections": 4.32995,
+        "maximum_reflections": 81,
+        "mean_flight_pitch_over_speed_s": 0.0012251277838994273,
+        "explicit_iterations": 82,
+        "skipped_specular_cycles": 0,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 0.0,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 0.0,
+        "mean_wall_heat_to_gas_per_incident_J": 1.394625481986513e-23,
+        "mean_total_lab_energy_change_per_incident_J": 1.394625481986513e-23,
+        "seed": 1100023
+      },
+      "K0": 1.022375361579037,
+      "K0_conservative_interval_from_marginal95": [
+        0.9999297723020613,
+        1.0453247907175167
+      ],
+      "net_long_cascade_capture": 0.0034189999999999915,
+      "net_capture_normal95": [
+        0.0009937752385213922,
+        0.005844224761478591
+      ],
+      "single_row_zero_backpressure_face_capture": 0.156221,
+      "conditional_identical_thermalized_stages_for1e8": 833,
+      "conditional_identical_thermalized_stages_for1e9": 937
+    },
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 700.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "7afaec9db2d1f347e46eee3af2a29726de4d4a78c6306b0bc2f3f7f859f918eb",
+        "reflection_count_sha256": "e52823f3e22ed3764229a3c1855aa7a1e2cbf0802927dc13f4e5e11ddb7d0806",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.38625,
+        "maximum_reflections": 687,
+        "mean_flight_pitch_over_speed_s": 0.0017321603106467598,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 67248,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 3.1044424636708056e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 3.2534503445662015e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 3.2534503445662015e-21,
+        "seed": 1100024
+      },
+      "reverse": {
+        "outcome_sha256": "be87f6dbe42cdf682276fbecab3636fbfcaa008cf454d635dd77872b50d940aa",
+        "reflection_count_sha256": "1aa6ec87bbd7ffa69ec9807d406515470ab66bc338c8aacc772b50cb493ae410",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.46428,
+        "maximum_reflections": 1314,
+        "mean_flight_pitch_over_speed_s": 0.0017489085807201362,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 70694,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 3.110384857889008e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 3.2540464617269645e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 3.2540464617269645e-21,
+        "seed": 1100025
+      },
+      "K0": 1.0,
+      "K0_conservative_interval_from_marginal95": [
+        0.999961586887417,
+        1.0000384145882069
+      ],
+      "net_long_cascade_capture": 0.0,
+      "net_capture_normal95": [
+        0.0,
+        0.0
+      ],
+      "single_row_zero_backpressure_face_capture": 0.65,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 700.0,
+        "theta": 0,
+        "L_pitch": 2.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "7afaec9db2d1f347e46eee3af2a29726de4d4a78c6306b0bc2f3f7f859f918eb",
+        "reflection_count_sha256": "a8d14f368aa9d63cdc3a92b44491d0a3b749142300310d0ed6d383589d39a494",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.34497,
+        "maximum_reflections": 5258,
+        "mean_flight_pitch_over_speed_s": 0.001249822699654854,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 67340,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 2.425271499443416e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 1.6282569093922528e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 1.6282569093922522e-21,
+        "seed": 1100026
+      },
+      "reverse": {
+        "outcome_sha256": "be87f6dbe42cdf682276fbecab3636fbfcaa008cf454d635dd77872b50d940aa",
+        "reflection_count_sha256": "cd9ba4bc093cb06c37fb9cf5a0b4204f34c340594d7c4bd6b9b298b32ae629a7",
+        "n": 100000,
+        "transmitted": 100000,
+        "returned": 0,
+        "unresolved": 0,
+        "T": 1.0,
+        "T_wilson95": [
+          0.999961586887417,
+          1.0
+        ],
+        "T_wilson80": [
+          0.9999835765255832,
+          0.9999999999999999
+        ],
+        "mean_reflections": 3.24656,
+        "maximum_reflections": 969,
+        "mean_flight_pitch_over_speed_s": 0.0012340018322919185,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 62940,
+        "max_specular_relative_energy_error": 0.0,
+        "max_work_heat_energy_closure_relative_error": 2.4504100285353655e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 1.6283921212554453e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 0.0,
+        "mean_total_lab_energy_change_per_incident_J": 1.6283921212554457e-21,
+        "seed": 1100027
+      },
+      "K0": 1.0,
+      "K0_conservative_interval_from_marginal95": [
+        0.999961586887417,
+        1.0000384145882069
+      ],
+      "net_long_cascade_capture": 0.0,
+      "net_capture_normal95": [
+        0.0,
+        0.0
+      ],
+      "single_row_zero_backpressure_face_capture": 0.65,
+      "conditional_identical_thermalized_stages_for1e8": null,
+      "conditional_identical_thermalized_stages_for1e9": null
+    }
+  ]
+}

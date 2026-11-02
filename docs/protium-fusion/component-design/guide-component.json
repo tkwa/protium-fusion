@@ -1,0 +1,168 @@
+{
+  "scope": "Candidate support guide, independently from source launch/recovery. Scalar susceptibility lower scale, ideal quadrupole, static transverse confinement and material-ripple bounds; not a qualified10km/s bearing.",
+  "input_sha256": "606b052f6c7f74e81adb7d1e23fb25427efe12c610a48da5ab8550fe2392b679",
+  "code_sha256": "bd1a643a39c94ad8284d24151cff2b25a2ec6c9462f27434178d13aff8e6a421",
+  "parameters": {
+    "graphite_density_kg_m3": 2200.0,
+    "susceptibility_magnitude_assumed": 8.5e-05,
+    "gradient_T_m": 8.0,
+    "bore_radius_m": 0.25,
+    "longitudinal_carrier_fill_fraction": 0.5,
+    "equatorial_speed_m_s": 10000.0,
+    "total_bore_length_per_receiver_area_m_m2": 0.006
+  },
+  "confinement": {
+    "centripetal_acceleration_m_s2": 0.09090909090909091,
+    "transverse_omega_rad_s": 1.4027593670560299,
+    "equilibrium_offset_m": 0.046199891964555775,
+    "heaviest_family_each_counterstream_kg_m": 104.82310265066734,
+    "carrier_radius_m_at_fill_fraction": 0.17416353306373172,
+    "available_transverse_margin_m": 0.0296365749717125,
+    "bore_edge_T": 2.0
+  },
+  "fault_recapture": [
+    {
+      "failed_contiguous_guide_length_m": 100.0,
+      "transit_s": 0.01,
+      "tangent_departure_m": 4.5454545454545455e-06,
+      "transverse_velocity_m_s": 0.0009090909090909091,
+      "linear_recapture_oscillation_amplitude_m": 0.0006480892523538889,
+      "within_reference_margin": true,
+      "scope": "Complete local guide field loss; immediate ideal return to same quadrupole at next segment. End fields, real geometry and scattering excluded."
+    },
+    {
+      "failed_contiguous_guide_length_m": 1000.0,
+      "transit_s": 0.1,
+      "tangent_departure_m": 0.00045454545454545465,
+      "transverse_velocity_m_s": 0.009090909090909092,
+      "linear_recapture_oscillation_amplitude_m": 0.0064966540123518775,
+      "within_reference_margin": true,
+      "scope": "Complete local guide field loss; immediate ideal return to same quadrupole at next segment. End fields, real geometry and scattering excluded."
+    },
+    {
+      "failed_contiguous_guide_length_m": 3000.0,
+      "transit_s": 0.3,
+      "tangent_departure_m": 0.00409090909090909,
+      "transverse_velocity_m_s": 0.02727272727272727,
+      "linear_recapture_oscillation_amplitude_m": 0.019867930271261797,
+      "within_reference_margin": true,
+      "scope": "Complete local guide field loss; immediate ideal return to same quadrupole at next segment. End fields, real geometry and scattering excluded."
+    },
+    {
+      "failed_contiguous_guide_length_m": 10000.0,
+      "transit_s": 1.0,
+      "tangent_departure_m": 0.045454545454545456,
+      "transverse_velocity_m_s": 0.09090909090909091,
+      "linear_recapture_oscillation_amplitude_m": 0.0791587385010355,
+      "within_reference_margin": false,
+      "scope": "Complete local guide field loss; immediate ideal return to same quadrupole at next segment. End fields, real geometry and scattering excluded."
+    }
+  ],
+  "coil_current_and_mass": {
+    "ideal_sheet_amplitude_A_m": 3183098.8618379068,
+    "sum_absolute_axial_current_A": 3183098.8618379068,
+    "rows": [
+      {
+        "engineering_operating_current_A_m2": 10000000.0,
+        "conductor_kg_per_bore_m": 2546.4790894703256,
+        "conductor_kg_m2_receiver": 15.278874536821954,
+        "finite_cos2theta_winding_outer_radius_m": 0.8931017021676718,
+        "finite_winding_conductor_kg_m2_receiver": 70.57254243982011,
+        "sampled_peak_winding_field_T": 2.5776477610155126,
+        "scope": "Complete conductor cross-section density8000. End turns, insulation, cryostat, redundancy and field-peak margins additional. Je is a requirement at65K and actual coil field/angle, not its77K self-field rating."
+      },
+      {
+        "engineering_operating_current_A_m2": 30000000.0,
+        "conductor_kg_per_bore_m": 848.8263631567752,
+        "conductor_kg_m2_receiver": 5.092958178940651,
+        "finite_cos2theta_winding_outer_radius_m": 0.38217327278445073,
+        "finite_winding_conductor_kg_m2_receiver": 8.021415401354705,
+        "sampled_peak_winding_field_T": 2.1241004396206056,
+        "scope": "Complete conductor cross-section density8000. End turns, insulation, cryostat, redundancy and field-peak margins additional. Je is a requirement at65K and actual coil field/angle, not its77K self-field rating."
+      },
+      {
+        "engineering_operating_current_A_m2": 100000000.0,
+        "conductor_kg_per_bore_m": 254.64790894703253,
+        "conductor_kg_m2_receiver": 1.5278874536821951,
+        "finite_cos2theta_winding_outer_radius_m": 0.28394622519728974,
+        "finite_winding_conductor_kg_m2_receiver": 1.7400440451638377,
+        "sampled_peak_winding_field_T": 2.033252622100689,
+        "scope": "Complete conductor cross-section density8000. End turns, insulation, cryostat, redundancy and field-peak margins additional. Je is a requirement at65K and actual coil field/angle, not its77K self-field rating."
+      }
+    ],
+    "field_energy_inside_J_per_bore_m": 156250.0,
+    "field_energy_inside_and_outside_J_per_bore_m": 312500.0,
+    "field_energy_J_m2_receiver": 1875.0
+  },
+  "cryogenic_radiation": [
+    {
+      "effective_radial_emissivity": 0.003,
+      "radiative_heat_at65K_W_m2_receiver": 0.00692159675350695,
+      "cryocooler_COP": 0.07222222222222222,
+      "electric_W_m2_receiver": 0.09583749351009624,
+      "reference_outer_cryostat_radius_m": 0.4321732727844507,
+      "scope": "Inner+outer65K coil surfaces behind200K shields. Supports, leads, joints and AC losses additional; no zero-cost refrigeration."
+    },
+    {
+      "effective_radial_emissivity": 0.01,
+      "radiative_heat_at65K_W_m2_receiver": 0.023071989178356494,
+      "cryocooler_COP": 0.07222222222222222,
+      "electric_W_m2_receiver": 0.31945831170032074,
+      "reference_outer_cryostat_radius_m": 0.4321732727844507,
+      "scope": "Inner+outer65K coil surfaces behind200K shields. Supports, leads, joints and AC losses additional; no zero-cost refrigeration."
+    },
+    {
+      "effective_radial_emissivity": 0.03,
+      "radiative_heat_at65K_W_m2_receiver": 0.06921596753506948,
+      "cryocooler_COP": 0.07222222222222222,
+      "electric_W_m2_receiver": 0.958374935100962,
+      "reference_outer_cryostat_radius_m": 0.4321732727844507,
+      "scope": "Inner+outer65K coil surfaces behind200K shields. Supports, leads, joints and AC losses additional; no zero-cost refrigeration."
+    }
+  ],
+  "eddy_ripple_diagnostic": [
+    {
+      "conducting_domain_radius_m": 1e-05,
+      "ripple_period_m": 100.0,
+      "B_ripple_amplitude_T": 0.001,
+      "conductivity_S_m": 100000.0,
+      "skin_depth_m": 0.15915494309189532,
+      "eddy_W_kg": 8.972367637353965e-11,
+      "below_skin_depth": true
+    },
+    {
+      "conducting_domain_radius_m": 0.0001,
+      "ripple_period_m": 100.0,
+      "B_ripple_amplitude_T": 0.001,
+      "conductivity_S_m": 100000.0,
+      "skin_depth_m": 0.15915494309189532,
+      "eddy_W_kg": 8.972367637353965e-09,
+      "below_skin_depth": true
+    },
+    {
+      "conducting_domain_radius_m": 0.001,
+      "ripple_period_m": 100.0,
+      "B_ripple_amplitude_T": 0.001,
+      "conductivity_S_m": 100000.0,
+      "skin_depth_m": 0.15915494309189532,
+      "eddy_W_kg": 8.972367637353964e-07,
+      "below_skin_depth": true
+    },
+    {
+      "conducting_domain_radius_m": 0.01,
+      "ripple_period_m": 100.0,
+      "B_ripple_amplitude_T": 0.001,
+      "conductivity_S_m": 100000.0,
+      "skin_depth_m": 0.15915494309189532,
+      "eddy_W_kg": 8.972367637353964e-05,
+      "below_skin_depth": true
+    }
+  ],
+  "sources": {
+    "susceptibility_and_levitation": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10304365/",
+    "insulating_diamagnetic_composite_experiment": "https://arxiv.org/abs/2312.01660",
+    "eddy_damping_patterning_experiment": "https://arxiv.org/abs/2211.08764",
+    "REBCO_manufacturer": "https://superpower-inc.com/specification.aspx",
+    "REBCO_field_temperature_measurements": "https://arxiv.org/abs/1512.01930"
+  }
+}

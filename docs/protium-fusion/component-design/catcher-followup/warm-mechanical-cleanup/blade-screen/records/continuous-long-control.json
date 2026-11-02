@@ -1,0 +1,169 @@
+{
+  "scope": "A single long specular corridor; no interstage thermalization. This tests why multiplying short-channel K factors needs additional physical reservoirs/stators.",
+  "cases": [
+    {
+      "parameters": {
+        "gas": "He",
+        "u": 700.0,
+        "theta": 45.0,
+        "L_pitch": 60.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "e0b5a83c104c8258c4d776b3aecb7ee919656658f11e8662d376338ac4438052",
+        "reflection_count_sha256": "1fa92b499dc0784d7d694557b3f6a81ab8eb9ee6543b3fc639cc33f642f251e1",
+        "n": 1000000,
+        "transmitted": 839461,
+        "returned": 160539,
+        "unresolved": 0,
+        "T": 0.839461,
+        "T_wilson95": [
+          0.8387401832050198,
+          0.8401792087540935
+        ],
+        "T_wilson80": [
+          0.8389899782882559,
+          0.8399309066694527
+        ],
+        "mean_reflections": 109.391497,
+        "maximum_reflections": 113260,
+        "mean_flight_pitch_over_speed_s": 0.05096544985821528,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 53102229,
+        "max_specular_relative_energy_error": 1.1527524991815887e-15,
+        "max_work_heat_energy_closure_relative_error": 3.456765396266786e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": -1.7259546231859432e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 3.978138950451458e-36,
+        "mean_total_lab_energy_change_per_incident_J": -1.725954623185938e-21,
+        "seed": 1500000
+      },
+      "reverse": {
+        "outcome_sha256": "abedb656cfbf1e56dddaff4df51be25264f4c861e4f8ad2966a560d84609b7ee",
+        "reflection_count_sha256": "56aafbcc20217ccdd33f00c3962040c8614220c2d394d182b72c16155a9bcd83",
+        "n": 1000000,
+        "transmitted": 541839,
+        "returned": 458161,
+        "unresolved": 0,
+        "T": 0.541839,
+        "T_wilson95": [
+          0.5408622960956713,
+          0.5428153824599722
+        ],
+        "T_wilson80": [
+          0.5412004033219803,
+          0.542477459247639
+        ],
+        "mean_reflections": 140.065429,
+        "maximum_reflections": 344906,
+        "mean_flight_pitch_over_speed_s": 0.04745702505788433,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 68778218,
+        "max_specular_relative_energy_error": 1.1597629348885464e-15,
+        "max_work_heat_energy_closure_relative_error": 3.469738564665881e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 7.369806395597556e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 6.3627095332361e-36,
+        "mean_total_lab_energy_change_per_incident_J": 7.36980639559756e-21,
+        "seed": 1500001
+      },
+      "K0": 1.5492812440595825,
+      "K0_conservative_interval_from_marginal95": [
+        1.545166571006063,
+        1.5534068742064377
+      ],
+      "net_long_cascade_capture": 0.19345430000000005,
+      "net_capture_normal95": [
+        0.19266585799908847,
+        0.1942427420009116
+      ],
+      "single_row_zero_backpressure_face_capture": 0.54564965,
+      "conditional_identical_thermalized_stages_for1e8": 43,
+      "conditional_identical_thermalized_stages_for1e9": 48
+    },
+    {
+      "parameters": {
+        "gas": "H2",
+        "u": 700.0,
+        "theta": 45.0,
+        "L_pitch": 60.0,
+        "open_fraction": 0.65,
+        "alpha": 0.0,
+        "T": 1000.0
+      },
+      "forward": {
+        "outcome_sha256": "017760116efd738e931930c8537cdee2903e5dd790d79a207a5a8bb82b4ebf62",
+        "reflection_count_sha256": "6743cb19c484c901497e2720008ec99199b4f14dea58291d7bc2f2582c837882",
+        "n": 1000000,
+        "transmitted": 804737,
+        "returned": 195263,
+        "unresolved": 0,
+        "T": 0.804737,
+        "T_wilson95": [
+          0.8039588943214329,
+          0.8055127644182878
+        ],
+        "T_wilson80": [
+          0.8042284887577185,
+          0.8052445102594212
+        ],
+        "mean_reflections": 116.697645,
+        "maximum_reflections": 651100,
+        "mean_flight_pitch_over_speed_s": 0.03696268931676011,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 56788886,
+        "max_specular_relative_energy_error": 1.1485171742066872e-15,
+        "max_work_heat_energy_closure_relative_error": 3.635957577384349e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": -1.7043002228873627e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 4.255827343050286e-36,
+        "mean_total_lab_energy_change_per_incident_J": -1.7043002228873578e-21,
+        "seed": 1500002
+      },
+      "reverse": {
+        "outcome_sha256": "d7fa8c9b8da38cd382c76e510c326809b8c7f11c2b40bc3841f12f64d52f3bae",
+        "reflection_count_sha256": "7cc3492b62aea5d93c681f9a8cec3d039658b6f5281dc57f1a324009f12f186b",
+        "n": 1000000,
+        "transmitted": 591552,
+        "returned": 408448,
+        "unresolved": 0,
+        "T": 0.591552,
+        "T_wilson95": [
+          0.5905882361200855,
+          0.5925150604961406
+        ],
+        "T_wilson80": [
+          0.5909219075988342,
+          0.5921817916763347
+        ],
+        "mean_reflections": 139.325674,
+        "maximum_reflections": 137984,
+        "mean_flight_pitch_over_speed_s": 0.0350855402296155,
+        "explicit_iterations": 5,
+        "skipped_specular_cycles": 68345747,
+        "max_specular_relative_energy_error": 1.1528141667652778e-15,
+        "max_work_heat_energy_closure_relative_error": 3.327528177662549e-16,
+        "max_negative_collision_time_roundoff_s": 0.0,
+        "mean_wall_mechanical_work_per_incident_J": 4.5245665442535514e-21,
+        "mean_wall_heat_to_gas_per_incident_J": 6.204286155357913e-36,
+        "mean_total_lab_energy_change_per_incident_J": 4.524566544253556e-21,
+        "seed": 1500003
+      },
+      "K0": 1.3603825192037218,
+      "K0_conservative_interval_from_marginal95": [
+        1.356858159264746,
+        1.3639160334621045
+      ],
+      "net_long_cascade_capture": 0.13857025000000006,
+      "net_capture_normal95": [
+        0.13776577277823523,
+        0.13937472722176486
+      ],
+      "single_row_zero_backpressure_face_capture": 0.52307905,
+      "conditional_identical_thermalized_stages_for1e8": 60,
+      "conditional_identical_thermalized_stages_for1e9": 68
+    }
+  ]
+}

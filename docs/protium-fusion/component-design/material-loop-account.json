@@ -1,0 +1,589 @@
+{
+  "scope": "Historical maximum-loss budget-boundary arithmetic, ideal separation bounds and unused illustrative allocations. Current perfect-eventual-return and retained-reservoir accounting is in material-reservoir.json. No achieved or required physical loss/purity/hardware rate implied.",
+  "station": {
+    "helium_per_s": 3.782247267560003e+32,
+    "area_m2": 1.5205308443374598e+19,
+    "net_W": 6.574287265461322e+20,
+    "net_W_kg": 0.0053949931029369895,
+    "gross_baryonic_fuel_kg_s": 44820550.66566686,
+    "fuel_fresh_C_H": 0.0056,
+    "structural_C_H": 0.0014,
+    "total_C_H": 0.007,
+    "CNO_return_budget_boundary": 0.9996276069128843,
+    "CNO_output_kg_s": 41143376.49913288,
+    "CNO_processing_loss_kg_s_at_budget_boundary": 15321.50898887351,
+    "fresh_C_kg_s": 14194.236886807286,
+    "fresh_H_kg_s": 2534685.1583579276,
+    "net_structure_C_allowance_kg_s": 3548.559221698208
+  },
+  "stage_flows": {
+    "c12": {
+      "stage": "B2",
+      "pulse_interval_s": 1133368.9623012526,
+      "input_kg_s": {
+        "c12": 8553311.104791284,
+        "p": 1436706.8395029383
+      },
+      "cold_output_kg_s": {
+        "p": 212463.6812926902,
+        "he4": 0.00013526138235233788,
+        "c12": 1006293.6622596068,
+        "c13": 560424.3834079611,
+        "n14": 8203276.227373563,
+        "n15": 0.02694066343490516,
+        "o16": 0.00021942651155483744,
+        "o17": 1.643991509926979e-07,
+        "o18": 1.0671943205041052e-08,
+        "f19": 1.4219734230698486e-15,
+        "ne20": 0.0009181702696756693,
+        "ne21": 2.8632908678151684e-05,
+        "ne22": 5.1074023614790064e-06,
+        "na23": 3.082736464466488e-05,
+        "mg24": 1.1086168349752536e-05
+      },
+      "cold_number_fraction_by_element": {
+        "h": {
+          "p": 1.0
+        },
+        "he": {
+          "he4": 1.0
+        },
+        "c": {
+          "c12": 0.6605252167153907,
+          "c13": 0.3394747832846093
+        },
+        "n": {
+          "n14": 0.9999999969341569,
+          "n15": 3.0658430721398514e-09
+        },
+        "o": {
+          "o16": 0.9992523775038902,
+          "o17": 0.0007044348737891367,
+          "o18": 4.318762232066482e-05
+        },
+        "f": {
+          "f19": 1.0
+        },
+        "ne": {
+          "ne20": 0.9664130843600257,
+          "ne21": 0.028699797145977306,
+          "ne22": 0.004887118493997
+        },
+        "na": {
+          "na23": 1.0
+        },
+        "mg": {
+          "mg24": 1.0
+        }
+      },
+      "cold_elements_kg_s": {
+        "h": 212463.6812926902,
+        "he": 0.00013526138235233788,
+        "c": 1566718.0456675678,
+        "n": 8203276.254314226,
+        "o": 0.00021960158264903518,
+        "f": 1.4219734230698486e-15,
+        "ne": 0.0009519105807153001,
+        "na": 3.082736464466488e-05,
+        "mg": 1.1086168349752536e-05
+      },
+      "ideal_300K_atomic_all_species_separation_W": 2273356196863.4004,
+      "ideal_300K_atomic_isotope_separation_W": 202887500992.29886,
+      "single_pulse_input_kg": {
+        "c12": 9694057331077.078,
+        "p": 1628318939818.5576
+      }
+    },
+    "c13": {
+      "stage": "C13",
+      "pulse_interval_s": 15885706.54029858,
+      "input_kg_s": {
+        "c13": 661261.4666629072,
+        "p": 51251.07075621304
+      },
+      "cold_output_kg_s": {
+        "p": 6158.698577445858,
+        "he4": 0.019549542349716082,
+        "c12": 0.1614743910821256,
+        "c13": 100361.4798552396,
+        "n14": 581516.3748575378,
+        "n15": 24108.710398909574,
+        "o16": 0.10318465016340692,
+        "o17": 0.00028792545900491905,
+        "o18": 0.00023666883405274158,
+        "f19": 4.854986434519676e-06,
+        "ne20": 4.9892055380268097e-11,
+        "ne21": 2.0718562290239363e-12,
+        "ne22": 1.0294406082049284e-13,
+        "na23": 2.1764534526437745e-15,
+        "mg24": 1.1961860277101552e-18
+      },
+      "cold_number_fraction_by_element": {
+        "h": {
+          "p": 1.0
+        },
+        "he": {
+          "he4": 1.0
+        },
+        "c": {
+          "c12": 1.7434520581190103e-06,
+          "c13": 0.9999982565479418
+        },
+        "n": {
+          "n14": 0.9627394078210298,
+          "n15": 0.037260592178970105
+        },
+        "o": {
+          "o16": 0.9953578591360315,
+          "o17": 0.0026133610127989427,
+          "o18": 0.0020287798511696205
+        },
+        "f": {
+          "f19": 1.0
+        },
+        "ne": {
+          "ne20": 0.9602257826491472,
+          "ne21": 0.03797303997164966,
+          "ne22": 0.0018011773792032555
+        },
+        "na": {
+          "na23": 1.0
+        },
+        "mg": {
+          "mg24": 1.0
+        }
+      },
+      "cold_elements_kg_s": {
+        "h": 6158.698577445858,
+        "he": 0.019549542349716082,
+        "c": 100361.64132963067,
+        "n": 605625.0852564473,
+        "o": 0.10370924445646458,
+        "f": 4.854986434519676e-06,
+        "ne": 5.206685567011253e-11,
+        "na": 2.1764534526437745e-15,
+        "mg": 1.1961860277101552e-18
+      },
+      "ideal_300K_atomic_all_species_separation_W": 119551170047.2739,
+      "ideal_300K_atomic_isotope_separation_W": 17122688088.313932,
+      "single_pulse_input_kg": {
+        "c13": 10504605605814.375,
+        "p": 814159469909.2788
+      }
+    },
+    "n14": {
+      "stage": "A",
+      "pulse_interval_s": 648690.3901793147,
+      "input_kg_s": {
+        "n14": 16275975.751266627,
+        "p": 1171409.6330381525
+      },
+      "cold_output_kg_s": {
+        "p": 539589.4928945597,
+        "he4": 0.19477512943200168,
+        "c12": 0.4427663787460537,
+        "c13": 0.060754944669968766,
+        "n14": 7497246.461320878,
+        "n15": 9403784.23803251,
+        "o16": 6.828101445257688e-05,
+        "o17": 2.723739988244759e-08,
+        "o18": 9.241775225930323e-08,
+        "f19": 2.9121407384565668e-05,
+        "ne20": 6.883422284967286e-15,
+        "ne21": 1.2138692013066109e-17,
+        "ne22": 1.2122449779156753e-16,
+        "na23": 1.1891270940364832e-16,
+        "mg24": 1.0102652466307642e-20
+      },
+      "cold_number_fraction_by_element": {
+        "h": {
+          "p": 1.0
+        },
+        "he": {
+          "he4": 1.0
+        },
+        "c": {
+          "c12": 0.8876037193890342,
+          "c13": 0.11239628061096596
+        },
+        "n": {
+          "n14": 0.46063270454978583,
+          "n15": 0.5393672954502142
+        },
+        "o": {
+          "o16": 0.9984243729040714,
+          "o17": 0.00037474516861618216,
+          "o18": 0.0012008819273123458
+        },
+        "f": {
+          "f19": 1.0
+        },
+        "ne": {
+          "ne20": 0.9826178438193262,
+          "ne21": 0.0016501594442544676,
+          "ne22": 0.01573199673641944
+        },
+        "na": {
+          "na23": 1.0
+        },
+        "mg": {
+          "mg24": 1.0
+        }
+      },
+      "cold_elements_kg_s": {
+        "h": 539589.4928945597,
+        "he": 0.19477512943200168,
+        "c": 0.5035213234160224,
+        "n": 16901030.69935339,
+        "o": 6.840066960471862e-05,
+        "f": 2.9121407384565668e-05,
+        "ne": 7.016785474771919e-15,
+        "na": 1.1891270940364832e-16,
+        "mg": 1.0102652466307642e-20
+      },
+      "ideal_300K_atomic_all_species_separation_W": 4640169533418.07,
+      "ideal_300K_atomic_isotope_separation_W": 2000580906619.9197,
+      "single_pulse_input_kg": {
+        "n14": 10558069060638.213,
+        "p": 759882171915.3269
+      }
+    },
+    "n15": {
+      "stage": "B1",
+      "pulse_interval_s": 6774.3130579500075,
+      "input_kg_s": {
+        "n15": 15651700.904309997,
+        "p": 1051604.0963512794
+      },
+      "cold_output_kg_s": {
+        "p": 418512.81350018067,
+        "he4": 2513862.5162796215,
+        "c12": 7536168.185582529,
+        "c13": 557.3921095682317,
+        "n14": 0.006508483868487281,
+        "n15": 6229638.685489715,
+        "o16": 1216.2504550195047,
+        "o17": 0.0007544239080394008,
+        "o18": 2.8810315797517686e-11,
+        "f19": 0.0006039808711865878,
+        "ne20": 2.2489069034106105e-09,
+        "ne21": 7.505246093374378e-17,
+        "ne22": 1.6180300438878984e-15,
+        "na23": 9.627358727399167e-18,
+        "mg24": 1.2401227265197497e-21
+      },
+      "cold_number_fraction_by_element": {
+        "h": {
+          "p": 1.0
+        },
+        "he": {
+          "he4": 1.0
+        },
+        "c": {
+          "c12": 0.9999317494076623,
+          "c13": 6.825059233759575e-05
+        },
+        "n": {
+          "n14": 1.119149233581338e-09,
+          "n15": 0.9999999988808508
+        },
+        "o": {
+          "o16": 0.9999994163568731,
+          "o17": 5.836431058251561e-07,
+          "o18": 2.1050113772378623e-14
+        },
+        "f": {
+          "f19": 1.0
+        },
+        "ne": {
+          "ne20": 0.9999993141433261,
+          "ne21": 3.178095516064308e-08,
+          "ne22": 6.540757187125566e-07
+        },
+        "na": {
+          "na23": 1.0
+        },
+        "mg": {
+          "mg24": 1.0
+        }
+      },
+      "cold_elements_kg_s": {
+        "h": 418512.81350018067,
+        "he": 2513862.5162796215,
+        "c": 7536725.577692097,
+        "n": 6229638.691998199,
+        "o": 1216.2512094434417,
+        "f": 0.0006039808711865878,
+        "ne": 2.2489085964931155e-09,
+        "na": 9.627358727399167e-18,
+        "mg": 1.2401227265197497e-21
+      },
+      "ideal_300K_atomic_all_species_separation_W": 7109781932970.843,
+      "ideal_300K_atomic_isotope_separation_W": 1132559370.398044,
+      "single_pulse_input_kg": {
+        "n15": 106029521815.19516,
+        "p": 7123895361.70619
+      }
+    }
+  },
+  "combined_cold_output_kg_s": {
+    "p": 1176724.6862648763,
+    "he4": 2513862.7307395553,
+    "c12": 8542462.452082904,
+    "c13": 661343.3161277137,
+    "n14": 16282039.070060462,
+    "n15": 15657531.660861798,
+    "o16": 1216.3539273771942,
+    "o17": 0.001042541003595195,
+    "o18": 0.0002367719525585217,
+    "f19": 0.000637957265007095,
+    "ne20": 0.0009181725684815115,
+    "ne21": 2.8632910750095104e-05,
+    "ne22": 5.107402466162322e-06,
+    "na23": 3.0827364646969874e-05,
+    "mg24": 1.1086168349753744e-05
+  },
+  "separation_floors": {
+    "temperature_K": 300,
+    "atomic_species_fixed_stage_batch_W": 14142858833299.586,
+    "isotopes_within_elements_fixed_stage_batch_W": 2221723655070.93,
+    "atomic_species_globally_mixed_W": 19268574307741.67,
+    "at50pct_minimum_free_energy_efficiency_electric_W": 28285717666599.17,
+    "meaning": "Ideal atomic mixture entropy change at the stated T; molecular chemistry, compression, irreversibility and hardware are separate."
+  },
+  "illustrative_unused_serial_loss_allocation": {
+    "catcher_escape": 0.00015,
+    "chemical_transfer": 5e-05,
+    "isotope_system_leak": 5e-05,
+    "assay_purge": 2e-05,
+    "storage_transfer": 2e-05,
+    "launch_transfer": 3e-05,
+    "unallocated": 5.2446466053512886e-05
+  },
+  "impurity_extra_loss_bounds": [
+    {
+      "extra_nonquartet_probability_per_impurity": 1,
+      "impurity_for_50ppm_extra_nonquartet_diversion": 5e-05
+    },
+    {
+      "extra_nonquartet_probability_per_impurity": 0.1,
+      "impurity_for_50ppm_extra_nonquartet_diversion": 0.0005
+    },
+    {
+      "extra_nonquartet_probability_per_impurity": 0.01,
+      "impurity_for_50ppm_extra_nonquartet_diversion": 0.005
+    },
+    {
+      "extra_nonquartet_probability_per_impurity": 0.001,
+      "impurity_for_50ppm_extra_nonquartet_diversion": 0.05
+    }
+  ],
+  "inert_impurity_energy_sensitivity": [
+    {
+      "wrong_inert_fraction": 0.0001,
+      "prepared_multiplier": 1.000100010001,
+      "preaux_MeV_He": 12.226709973990726,
+      "preaux_relative_loss": 2.013374598230168e-05
+    },
+    {
+      "wrong_inert_fraction": 0.001,
+      "prepared_multiplier": 1.001001001001001,
+      "preaux_MeV_He": 12.22449218634004,
+      "preaux_relative_loss": 0.00020151884491982565
+    },
+    {
+      "wrong_inert_fraction": 0.01,
+      "prepared_multiplier": 1.0101010101010102,
+      "preaux_MeV_He": 12.202092531068082,
+      "preaux_relative_loss": 0.0020335083441912587
+    },
+    {
+      "wrong_inert_fraction": 0.03,
+      "prepared_multiplier": 1.0309278350515465,
+      "preaux_MeV_He": 12.150827340651858,
+      "preaux_relative_loss": 0.006226309053863292
+    },
+    {
+      "wrong_inert_fraction": 0.05,
+      "prepared_multiplier": 1.0526315789473684,
+      "preaux_MeV_He": 12.097403615902317,
+      "preaux_relative_loss": 0.010595648740784846
+    }
+  ],
+  "decay_inventory": {
+    "n13": {
+      "network_half_life_s": 597.9978026337243,
+      "birth_kg_s": 560837.1003693452,
+      "wall_arrival_kg_s": 494695.6307672679,
+      "fraction_surviving_to_wall": 0.8820665224206474,
+      "mean_radioactive_inventory_after_wall_kg": 426788001.83873284,
+      "additional_hold_s_for_remaining_fraction": {
+        "0.01": 3973.011402499753,
+        "0.001": 5959.51710374963,
+        "0.0001": 7946.022804999506,
+        "1e-05": 9932.528506249384
+      },
+      "fraction_remaining_after_3h": 3.6586249668514525e-06
+    },
+    "o14": {
+      "network_half_life_s": 70.59978360562287,
+      "birth_kg_s": 8201472.718050574,
+      "wall_arrival_kg_s": 1857386.7062657813,
+      "fraction_surviving_to_wall": 0.22646989999465214,
+      "mean_radioactive_inventory_after_wall_kg": 189182187.00448745,
+      "additional_hold_s_for_remaining_fraction": {
+        "0.01": 469.0548093049737,
+        "0.001": 703.5822139574605,
+        "0.0001": 938.1096186099473,
+        "1e-05": 1172.6370232624342
+      },
+      "fraction_remaining_after_3h": 8.91137053890483e-47
+    },
+    "o15": {
+      "network_half_life_s": 121.99951623253882,
+      "birth_kg_s": 9427823.06201077,
+      "wall_arrival_kg_s": 3132248.3498588237,
+      "fraction_surviving_to_wall": 0.3322345285074512,
+      "mean_radioactive_inventory_after_wall_kg": 551301071.5765245,
+      "additional_hold_s_for_remaining_fraction": {
+        "0.01": 810.5472410710751,
+        "0.001": 1215.8208616066127,
+        "0.0001": 1621.0944821421501,
+        "1e-05": 2026.3681026776878
+      },
+      "fraction_remaining_after_3h": 2.2456255280167297e-27
+    }
+  },
+  "rotor_equilibrium_examples": [
+    {
+      "T_K": 100,
+      "tip_speed_m_s": 300,
+      "one_u_radial_equilibrium_factor": 1.0556139700120855,
+      "ideal_countercurrent_equilibrium_steps_50to99pct": 84.90211607351347,
+      "scope": "Equilibrium radial factor; not a measured stage factor or real cascade length."
+    },
+    {
+      "T_K": 100,
+      "tip_speed_m_s": 700,
+      "one_u_radial_equilibrium_factor": 1.3426795342611177,
+      "ideal_countercurrent_equilibrium_steps_50to99pct": 15.594266217584137,
+      "scope": "Equilibrium radial factor; not a measured stage factor or real cascade length."
+    },
+    {
+      "T_K": 100,
+      "tip_speed_m_s": 1000,
+      "one_u_radial_equilibrium_factor": 1.8246018064946141,
+      "ideal_countercurrent_equilibrium_steps_50to99pct": 7.641190446616224,
+      "scope": "Equilibrium radial factor; not a measured stage factor or real cascade length."
+    },
+    {
+      "T_K": 300,
+      "tip_speed_m_s": 300,
+      "one_u_radial_equilibrium_factor": 1.018204572506249,
+      "ideal_countercurrent_equilibrium_steps_50to99pct": 254.70634822054123,
+      "scope": "Equilibrium radial factor; not a measured stage factor or real cascade length."
+    },
+    {
+      "T_K": 300,
+      "tip_speed_m_s": 700,
+      "one_u_radial_equilibrium_factor": 1.1032081369618147,
+      "ideal_countercurrent_equilibrium_steps_50to99pct": 46.78279865275236,
+      "scope": "Equilibrium radial factor; not a measured stage factor or real cascade length."
+    },
+    {
+      "T_K": 300,
+      "tip_speed_m_s": 1000,
+      "one_u_radial_equilibrium_factor": 1.2219573092623173,
+      "ideal_countercurrent_equilibrium_steps_50to99pct": 22.923571339848667,
+      "scope": "Equilibrium radial factor; not a measured stage factor or real cascade length."
+    }
+  ],
+  "mass_selector_gaussian_acceptance": [
+    {
+      "equal_abundance_wrong_cut_fraction": 0.01,
+      "sigma_mass_u_max": 0.21492916239199664,
+      "mass_resolution_m_over_FWHM_at14": 27.66145203163874,
+      "sigma_r_over_radius_at14": 0.00767604151399988
+    },
+    {
+      "equal_abundance_wrong_cut_fraction": 0.001,
+      "sigma_mass_u_max": 0.161800133602269,
+      "mass_resolution_m_over_FWHM_at14": 36.74442402081635,
+      "sigma_r_over_radius_at14": 0.005778576200081036
+    },
+    {
+      "equal_abundance_wrong_cut_fraction": 0.0001,
+      "sigma_mass_u_max": 0.1344441472511334,
+      "mass_resolution_m_over_FWHM_at14": 44.220985719825656,
+      "sigma_r_over_radius_at14": 0.004801576687540479
+    },
+    {
+      "equal_abundance_wrong_cut_fraction": 1e-05,
+      "sigma_mass_u_max": 0.11723629611157838,
+      "mass_resolution_m_over_FWHM_at14": 50.7117071495348,
+      "sigma_r_over_radius_at14": 0.004187010575413513
+    }
+  ],
+  "gross_processing_cost_scan": [
+    {
+      "specific_electric_J_kg_gross": 2000000.0,
+      "W": 89641101331333.73,
+      "W_m2": 5.895381975654234e-06,
+      "fraction_of_current_export": 1.3635105633772995e-07
+    },
+    {
+      "specific_electric_J_kg_gross": 100000000.0,
+      "W": 4482055066566686.5,
+      "W_m2": 0.0002947690987827117,
+      "fraction_of_current_export": 6.817552816886498e-06
+    },
+    {
+      "specific_electric_J_kg_gross": 1000000000.0,
+      "W": 4.482055066566686e+16,
+      "W_m2": 0.0029476909878271163,
+      "fraction_of_current_export": 6.817552816886497e-05
+    },
+    {
+      "specific_electric_J_kg_gross": 10000000000.0,
+      "W": 4.482055066566686e+17,
+      "W_m2": 0.029476909878271163,
+      "fraction_of_current_export": 0.0006817552816886497
+    },
+    {
+      "specific_electric_J_kg_gross": 100000000000.0,
+      "W": 4.482055066566686e+18,
+      "W_m2": 0.2947690987827116,
+      "fraction_of_current_export": 0.006817552816886497
+    }
+  ],
+  "frozen_one_day_working_inventory_kg": 3872495577513.617,
+  "sources": {
+    "TUNL_half_lives": "https://nucldata.tunl.duke.edu/nucldata/HalfLife.shtml",
+    "light_isotope_centrifuge_simulation": "https://doi.org/10.1016/S0168-9002(00)00266-7"
+  },
+  "source_sha256": {
+    "open-loop-redesign/station-inputs.json": "f4750bfb8541a000cdaddf5a92cdbfa4533a4f9d9b48c6b17edfac47e2fde37d",
+    "open-loop-redesign/operating-cases.json": "03381963071a68c24ad40adbcd554db2ad9093bb931a1a082b3cb6a64338d461",
+    "cold-sink-redesign/cases.json": "01722faeaf6101777ce8208024963e31995961d9e38a3a8f15ace5c43dea07fa",
+    "membrane-receiver/pulse-loading.json": "6ff0345c6ff48ae89503d89a04b698d4b77643e76646081943dbabd28626689a"
+  },
+  "code_sha256": "1892cfa5561b2f1335db21845cde1d2ae4f59b240bcf062f196c0d46e490f8a3",
+  "checks": [
+    {
+      "name": "allocated serial survival exactly matches target",
+      "passed": true
+    },
+    {
+      "name": "flow equals frozen baryonic stream within atomic mass offset",
+      "passed": true
+    },
+    {
+      "name": "process return finite",
+      "passed": true
+    },
+    {
+      "name": "all reported physical material outputs nonnegative",
+      "passed": true
+    }
+  ]
+}

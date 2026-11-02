@@ -1,0 +1,65 @@
+{
+  "scope": "Original-rate B1 source audit. Launch timing is a straight-flight proxy; no finite circuit, lateral merger or contact sequence is certified. Point-contact cold E allocation is not a unique physical inverse trajectory.",
+  "source_map_sha256": "131ba4efda758e6191b6849aa355169469d26e18d58a88c3bd7653d087fb372e",
+  "code_sha256": "20bd3c9ee0e26faefa923545ed53af16ccecc279a56e41edeaf0141054571a67",
+  "trace_checks": {
+    "count": 14,
+    "passed": 14,
+    "all_passed": true
+  },
+  "gain_ratio_to_reference": 0.996756814562362,
+  "target_yield_ratio": 0.9965419775208919,
+  "peak_temperature_K": 526660135.13866,
+  "reference_hot_launch_bins": {
+    "first_launch_s": -32380.520860782,
+    "last_launch_s": -296.11988794900196,
+    "window_s": 32084.400972833,
+    "peak_electrical_W": 1.8886093076281735e+21,
+    "minimum_bin_s": 11.222855815030641,
+    "source_energy_J": 5.325027970943341e+23
+  },
+  "mapped_hot_launch_bins": {
+    "first_launch_s": -32175.866577873578,
+    "last_launch_s": -294.24832437583774,
+    "window_s": 31881.61825349774,
+    "peak_electrical_W": 1.9137217256248487e+21,
+    "minimum_bin_s": 11.151924111402877,
+    "source_energy_J": 5.32502797094334e+23
+  },
+  "mapped_vs_reference_hot_peak_power_ratio": 1.0132967776316917,
+  "cold_energy_point_contact_proxy": {
+    "first_launch_s": -1201.4957571291795,
+    "last_launch_s": -294.4880743926052,
+    "window_s": 907.0076827365743,
+    "peak_electrical_W": 2.1722918687135813e+21,
+    "minimum_bin_s": 8.097050452958683,
+    "source_energy_J": 5.32434040862703e+23,
+    "peak_vs_reference_hot_ratio": 1.1502071179780815,
+    "nonseed_mass_fraction": 0.999176025390625,
+    "energy_speed_monotone_by_shell": true,
+    "scope": "Each nonseed parcel receives its mapped hot internal+radial kinetic energy as cold kinetic energy. Launch time=\u2212R/sqrt(2E/m), midpoint bins. Contact offsets~microseconds neglected against minute flights. Neither longitudinal phase-space nor actual source waveform is solved."
+  },
+  "contact_nuclear": {
+    "T_K": 12842407.67998336,
+    "rho_g_cm3": 4.452733285163035,
+    "n15_pa_cm3_mol_s": 1.20645581357565e-15,
+    "n15_pg_cm3_mol_s": 5.616910120835275e-19,
+    "n15_consumption_per_s": 6.322972962884973e-16,
+    "lifetime_s": 1581534518445468.0,
+    "burn_fraction_10us": 6.322972962884974e-21,
+    "burn_fraction_100us": 6.322972962884974e-20,
+    "burn_fraction_1ms": 6.322972962884974e-19,
+    "scope": "Homogeneous reference composition, bare original rates at the FEOS contact state; no screening or nonthermal tails. This is an immediate-contact premature-burn screen."
+  },
+  "focused_collision_power_scenarios_W": {
+    "1e-05": 1.4006032421454132e+27,
+    "0.0001": 1.4006032421454133e+26,
+    "0.001": 1.4006032421454135e+25
+  },
+  "collision_power_scope": "Local conversion of stored stream KE during assumed10/100/1000us merger intervals. These are not additional external electrical loads or demonstrated merger durations.",
+  "additional_checks": {
+    "count": 6,
+    "passed": 6,
+    "all_passed": true
+  }
+}

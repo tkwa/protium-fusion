@@ -1,0 +1,979 @@
+{
+  "scope": "Common-temperature nonneutral source, prompt product extraction, separate closed D reactor; no complete plant.",
+  "source_evaluation": "PADF-2 C13 EVAL-MAR26, distributed 2026-04-23",
+  "source_sha256": "71ad1931f8b240cbe44b763b85be367e63ba22e6f1c22aede20425e3b858c513",
+  "cases": [
+    {
+      "ion_temperature_MeV": 0.1,
+      "pn_sigma_v_m3_s": 4.8041931762183163e-35,
+      "mean_reacting_Ecm_MeV": 3.116684155492338,
+      "mean_pair_kinetic_removed_MeV_per_pn": 3.266684155492338,
+      "pn_neutron_kinetic_MeV": 0.1164973343167052,
+      "N13_extracted_kinetic_MeV": 0.1473690851738164,
+      "pd_per_pn": 0.4526450307366551,
+      "raw_C12_residual_per_pn": 0.44821282843403865,
+      "B10_per_pn": 1.0827192712163972e-08,
+      "N14_per_pn": 178610783.7731222,
+      "inelastic_per_pn": 0.006756166515832283,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 5.551115123125783e-15,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 4.719752713619889,
+      "recoverable_ion_MeV_per_pn": 7.031140984987415,
+      "heat_MeV_per_pn": 10.348095921630788,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.616484723854228e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 1.3090054673007074
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 4.848820002515625
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -8930539183.80729
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -8930539182.664824
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -41080480262.969284
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 303.0848930719203,
+        "optimistic_net_W_kg_field_mass_only": -4.359655927920373e-06
+      }
+    },
+    {
+      "ion_temperature_MeV": 0.2,
+      "pn_sigma_v_m3_s": 1.2844281873926701e-28,
+      "mean_reacting_Ecm_MeV": 3.2568238132542833,
+      "mean_pair_kinetic_removed_MeV_per_pn": 3.556823813254283,
+      "pn_neutron_kinetic_MeV": 0.25737641312311543,
+      "N13_extracted_kinetic_MeV": 0.29662966412935143,
+      "pd_per_pn": 0.35817451326874855,
+      "raw_C12_residual_per_pn": 0.32688796630125744,
+      "B10_per_pn": 3.1581648007607786e-05,
+      "N14_per_pn": 321.38221624220097,
+      "inelastic_per_pn": 0.05942182146451665,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 5.96627898197255e-08,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 5.055481361555309,
+      "recoverable_ion_MeV_per_pn": 7.2987848355813325,
+      "heat_MeV_per_pn": 10.416180718972251,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.6555645743210334e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 0.9163673099247376
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 4.707978331091219
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -16064.404412861357
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -16063.187656942298
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -73913.20902115417
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 810314584.6872526,
+        "optimistic_net_W_kg_field_mass_only": -2.096662508773323e-05
+      }
+    },
+    {
+      "ion_temperature_MeV": 0.3,
+      "pn_sigma_v_m3_s": 1.8023315138368727e-26,
+      "mean_reacting_Ecm_MeV": 3.4358316345657776,
+      "mean_pair_kinetic_removed_MeV_per_pn": 3.8858316345657773,
+      "pn_neutron_kinetic_MeV": 0.4343254130659664,
+      "N13_extracted_kinetic_MeV": 0.44868848549799467,
+      "pd_per_pn": 0.4180426241474316,
+      "raw_C12_residual_per_pn": 0.35847102043381013,
+      "B10_per_pn": 0.0005776629877425921,
+      "N14_per_pn": 3.191729760619751,
+      "inelastic_per_pn": 0.16400251684129327,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 1.457496828605187e-05,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 6.142954270435332,
+      "recoverable_ion_MeV_per_pn": 7.68024254131371,
+      "heat_MeV_per_pn": 11.122195922119925,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.6271428648906294e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -0.617602183187806
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 3.9896135196386933
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -155.625757660736
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -154.18292519954224
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -730.2410939100848
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 113704722960.66081,
+        "optimistic_net_W_kg_field_mass_only": -2.8501664800297772e-05
+      }
+    },
+    {
+      "ion_temperature_MeV": 0.4,
+      "pn_sigma_v_m3_s": 2.2146011509088713e-25,
+      "mean_reacting_Ecm_MeV": 3.6437457652396943,
+      "mean_pair_kinetic_removed_MeV_per_pn": 4.243745765239694,
+      "pn_neutron_kinetic_MeV": 0.6380996654475897,
+      "N13_extracted_kinetic_MeV": 0.6028283637902885,
+      "pd_per_pn": 0.4785991126160756,
+      "raw_C12_residual_per_pn": 0.394719550627291,
+      "B10_per_pn": 0.002800757391358619,
+      "N14_per_pn": 0.28140682882282775,
+      "inelastic_per_pn": 0.29489580614659316,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.00023270788611995386,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 7.3962753642415,
+      "recoverable_ion_MeV_per_pn": 8.105475371553538,
+      "heat_MeV_per_pn": 11.950284185686293,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.5987211554602254e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -2.3932902049481566
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 3.1539163182329695
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -11.056462992476348
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -9.35350754101892
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -62.21382851102989
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 1397138142451.8826,
+        "optimistic_net_W_kg_field_mass_only": -2.4880884250254438e-05
+      }
+    },
+    {
+      "ion_temperature_MeV": 0.5,
+      "pn_sigma_v_m3_s": 1.0310037150919788e-24,
+      "mean_reacting_Ecm_MeV": 3.864636343246341,
+      "mean_pair_kinetic_removed_MeV_per_pn": 4.614636343246341,
+      "pn_neutron_kinetic_MeV": 0.8539161495473662,
+      "N13_extracted_kinetic_MeV": 0.7579024576971582,
+      "pd_per_pn": 0.5271508102123553,
+      "raw_C12_residual_per_pn": 0.4219802279446961,
+      "B10_per_pn": 0.007634741895020743,
+      "N14_per_pn": 0.060310333993771024,
+      "inelastic_per_pn": 0.42480279744068433,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.0012322808528562046,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 8.650684382398483,
+      "recoverable_ion_MeV_per_pn": 8.550758499406246,
+      "heat_MeV_per_pn": 12.759410075990587,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.5791812302268227e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -4.159891744958859
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 2.3281215418400034
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -1.069132252599585
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 0.8947624199612485
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -13.299245912582103
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 6504352328966.484,
+        "optimistic_net_W_kg_field_mass_only": -1.1200714676564542e-05
+      }
+    },
+    {
+      "ion_temperature_MeV": 0.6,
+      "pn_sigma_v_m3_s": 2.9444092849697488e-24,
+      "mean_reacting_Ecm_MeV": 4.084826643734493,
+      "mean_pair_kinetic_removed_MeV_per_pn": 4.984826643734493,
+      "pn_neutron_kinetic_MeV": 1.0690827713290136,
+      "N13_extracted_kinetic_MeV": 0.9129261364036634,
+      "pd_per_pn": 0.565118534121589,
+      "raw_C12_residual_per_pn": 0.4417053164713104,
+      "B10_per_pn": 0.015255520655930653,
+      "N14_per_pn": 0.020391969192157643,
+      "inelastic_per_pn": 0.539623714059876,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.003751057458823759,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 9.843373673180983,
+      "recoverable_ion_MeV_per_pn": 9.006117951920528,
+      "heat_MeV_per_pn": 13.496739914258825,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.5578649481540197e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -5.822300505853139
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 1.5602297490325991
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -0.22214474337181578
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 1.9908099148925729
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -6.6386929160277095
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 18575563899316.277,
+        "optimistic_net_W_kg_field_mass_only": -6.6464278166900774e-06
+      }
+    },
+    {
+      "ion_temperature_MeV": 0.8,
+      "pn_sigma_v_m3_s": 1.1343818679834156e-23,
+      "mean_reacting_Ecm_MeV": 4.4891063653982055,
+      "mean_pair_kinetic_removed_MeV_per_pn": 5.689106365398206,
+      "pn_neutron_kinetic_MeV": 1.4659141524206907,
+      "N13_extracted_kinetic_MeV": 1.2203744769756988,
+      "pd_per_pn": 0.6220063052219745,
+      "raw_C12_residual_per_pn": 0.47239544351238466,
+      "B10_per_pn": 0.03721827583412453,
+      "N14_per_pn": 0.004774807506078042,
+      "inelastic_per_pn": 0.7166384735682828,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.01522063046373101,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 12.032514984558004,
+      "recoverable_ion_MeV_per_pn": 9.942187008587583,
+      "heat_MeV_per_pn": 14.749812168968814,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.5365486660812167e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -8.819449313456154
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 0.20493692496235028
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -1.8947172420477782
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": 0.7783868520041883
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -9.45347224328424
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 71565400172171.34,
+        "optimistic_net_W_kg_field_mass_only": -0.0002184025759213024
+      }
+    },
+    {
+      "ion_temperature_MeV": 1.0,
+      "pn_sigma_v_m3_s": 2.5966016167709798e-23,
+      "mean_reacting_Ecm_MeV": 4.827897044843876,
+      "mean_pair_kinetic_removed_MeV_per_pn": 6.327897044843876,
+      "pn_neutron_kinetic_MeV": 1.801971255224316,
+      "N13_extracted_kinetic_MeV": 1.5231080536177442,
+      "pd_per_pn": 0.6684450577176757,
+      "raw_C12_residual_per_pn": 0.5058912336492206,
+      "B10_per_pn": 0.06482595182824884,
+      "N14_per_pn": 0.0018683279450069554,
+      "inelastic_per_pn": 0.8427918312321334,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.035926196835436075,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 14.084219211696572,
+      "recoverable_ion_MeV_per_pn": 10.93135569058008,
+      "heat_MeV_per_pn": 15.812347714114907,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.5152323840084136e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -11.568024988601906
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -1.0048605798294759
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -4.3395745684922655
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -1.2318537902031745
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -16.344544927678307
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 163813296947584.0,
+        "optimistic_net_W_kg_field_mass_only": -0.0011450028074255552
+      }
+    },
+    {
+      "ion_temperature_MeV": 1.2,
+      "pn_sigma_v_m3_s": 4.517792259142411e-23,
+      "mean_reacting_Ecm_MeV": 5.108225386185496,
+      "mean_pair_kinetic_removed_MeV_per_pn": 6.908225386185496,
+      "pn_neutron_kinetic_MeV": 2.0837749091307,
+      "N13_extracted_kinetic_MeV": 1.8216327410529796,
+      "pd_per_pn": 0.7131605948821476,
+      "raw_C12_residual_per_pn": 0.5487759360214107,
+      "B10_per_pn": 0.09533599017513773,
+      "N14_per_pn": 0.000970366462702241,
+      "inelastic_per_pn": 0.9411244619218991,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.06505214309430474,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 16.1402496498177,
+      "recoverable_ion_MeV_per_pn": 12.000853645460376,
+      "heat_MeV_per_pn": 16.798880197355757,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.4992451724538114e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -14.280144793960346
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -2.174957556597068
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -6.990275388489066
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -3.444674190345448
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -24.32541958330026
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 285016553989023.7,
+        "optimistic_net_W_kg_field_mass_only": -0.0032090361939023045
+      }
+    },
+    {
+      "ion_temperature_MeV": 1.5,
+      "pn_sigma_v_m3_s": 7.784484411746883e-23,
+      "mean_reacting_Ecm_MeV": 5.450216712799357,
+      "mean_pair_kinetic_removed_MeV_per_pn": 7.700216712799357,
+      "pn_neutron_kinetic_MeV": 2.433630753993611,
+      "N13_extracted_kinetic_MeV": 2.2637682228039293,
+      "pd_per_pn": 0.7829438934302333,
+      "raw_C12_residual_per_pn": 0.6322871173803812,
+      "B10_per_pn": 0.1434219858150121,
+      "N14_per_pn": 0.0005038343120643153,
+      "inelastic_per_pn": 1.0630855413000095,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.12202782768189513,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 19.410585869464033,
+      "recoverable_ion_MeV_per_pn": 13.797007891139387,
+      "heat_MeV_per_pn": 18.27306217132311,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.4637180356658064e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -18.542759452727793
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -3.984820050629768
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -11.181111056983589
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -6.936164135486774
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -37.087758679857345
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 491104237280386.7,
+        "optimistic_net_W_kg_field_mass_only": -0.008844410416588858
+      }
+    },
+    {
+      "ion_temperature_MeV": 2.0,
+      "pn_sigma_v_m3_s": 1.2990324514092436e-22,
+      "mean_reacting_Ecm_MeV": 5.897096628917557,
+      "mean_pair_kinetic_removed_MeV_per_pn": 8.897096628917556,
+      "pn_neutron_kinetic_MeV": 2.9024809652878134,
+      "N13_extracted_kinetic_MeV": 2.991797927627926,
+      "pd_per_pn": 0.9093407803608525,
+      "raw_C12_residual_per_pn": 0.8144229723128014,
+      "B10_per_pn": 0.22396123169121768,
+      "N14_per_pn": 0.0003167893233476015,
+      "inelastic_per_pn": 1.233708061652171,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.24533322167066007,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 25.651516394895527,
+      "recoverable_ion_MeV_per_pn": 17.38740547759501,
+      "heat_MeV_per_pn": 20.923595110299047,
+      "neutron_capture_substitution_valid": true,
+      "energy_closure_MeV": -1.3997691894473974e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -26.589433596732125
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -7.350796300560479
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -18.564697351288743
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -12.980275898494675
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -58.93474113391049
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 819528060572794.6,
+        "optimistic_net_W_kg_field_mass_only": -0.024505408524497084
+      }
+    },
+    {
+      "ion_temperature_MeV": 3.0,
+      "pn_sigma_v_m3_s": 1.991464411392932e-22,
+      "mean_reacting_Ecm_MeV": 6.597019693975606,
+      "mean_pair_kinetic_removed_MeV_per_pn": 11.097019693975607,
+      "pn_neutron_kinetic_MeV": 3.6602995445636903,
+      "N13_extracted_kinetic_MeV": 4.433902413410101,
+      "pd_per_pn": 1.1869660700347182,
+      "raw_C12_residual_per_pn": 1.278064586975991,
+      "B10_per_pn": 0.36997435352279445,
+      "N14_per_pn": 0.0005036659896217059,
+      "inelastic_per_pn": 1.5005171160094943,
+      "assumed_excitation_MeV": 3.5,
+      "knockout_neutron_per_pn": 0.5724277959129254,
+      "assumed_knockout_neutron_energy_share": 0.5,
+      "thermal_preparation_MeV_per_pn": 41.812420440925806,
+      "recoverable_ion_MeV_per_pn": 27.08512265683823,
+      "heat_MeV_per_pn": 27.386781977086226,
+      "neutron_capture_substitution_valid": false,
+      "energy_closure_MeV": -1.2825296380469808e-12,
+      "limits": [
+        "prompt product extraction and cold catalyst return",
+        "no additional Coulomb loss for a single common thermal ion population",
+        "specified ion-heating and recovery efficiencies; no actual converter",
+        "rotation, electrostatic-potential circulation, confinement and electron loads absent",
+        "deuterium reactor confinement, startup and auxiliaries absent",
+        "independent PADF production channels reconciled only in a reduced network",
+        "all neutrons needed for capture are retained; no parasitic captures",
+        "B10/N14 restoration remains a net-cost parameter",
+        "higher nuclear channels and neutron spectra require a consistent evaluation",
+        "nonrelativistic Maxwellian kinematics; relativistic corrections unmodeled"
+      ],
+      "energy_cases": [
+        {
+          "ion_heating_efficiency": 0.5,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -47.21011279358918
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 0,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -15.850797462894825
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -34.37469843851564
+        },
+        {
+          "ion_heating_efficiency": 0.95,
+          "ion_direct_recovery_fraction": 0.95,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 50,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -25.309693355996192
+        },
+        {
+          "ion_heating_efficiency": 0.8,
+          "ion_direct_recovery_fraction": 0.9,
+          "heat_conversion_efficiency": 0.4,
+          "net_side_restoration_cost_MeV": 230,
+          "other_net_load_MeV_per_pn": 0.0,
+          "net_MeV_per_pn": -101.06074195075055
+        }
+      ],
+      "field_mass_only": {
+        "B_T": 100,
+        "plasma_fill_fraction": 0.2,
+        "pn_rate_per_plasma_m3_s": 1256366586529893.8,
+        "optimistic_net_W_kg_field_mass_only": -0.06956095239992095
+      }
+    }
+  ]
+}

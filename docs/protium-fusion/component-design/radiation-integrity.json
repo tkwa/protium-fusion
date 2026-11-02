@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "scope": "Read-only AST parsing, JSON loading, result/code hashes, saved numerical check status, source hashes and relative Markdown links. No hydro rerun; validation does not qualify the physical approximations.",
+  "result_pairs": [
+    {
+      "code": "packet_radiation.py",
+      "result": "packet-radiation.json",
+      "code_sha256": "77569dfa417b81cafdb70bbc93cc0f2679d57a17a915b05dd9496e46fd4750a9",
+      "result_sha256": "0ed83e07dac6dcf3397516a90da158ecae856abbd7ac3f6bf8b3dca5ff9cde5b",
+      "numerical_check_count": 6
+    },
+    {
+      "code": "receiver_radiation.py",
+      "result": "receiver-radiation.json",
+      "code_sha256": "12acde0032b1d80773a1785ee5e146ca85404115f2fac413ea9bfeb0762de3b2",
+      "result_sha256": "ba53e84d4fd998a1d23f4b0c42958156330822a38b011ccf70aa685153ceb084",
+      "numerical_check_count": 128
+    },
+    {
+      "code": "opacity_interface.py",
+      "result": "opacity-interface.json",
+      "code_sha256": "1a56c047831130c6fdb6c9ed1e59674ad05dffd5b6a27e48565d4bf1c8f3619f",
+      "result_sha256": "c1a6a4bfbc9418d1f161c3b1b2b0fc1ea18f5df2fe5cd61a2e5434ff3683f4a7",
+      "numerical_check_count": 147
+    },
+    {
+      "code": "coulomb_initial.py",
+      "result": "coulomb-initial.json",
+      "code_sha256": "3b5f00c86b0baab7cff893cf21f8cbe621dae1ea4834d9e822415f4b4dbdda37",
+      "result_sha256": "2f851d918e457935fca2b09cbdaec9d5f6a3d65568dc1dd6e68558edeb18d7f3",
+      "numerical_check_count": 8
+    },
+    {
+      "code": "return_gas.py",
+      "result": "return-gas.json",
+      "code_sha256": "0fcd604a731b069838be4378f2d92f743b2fce913176fdaf61ab9c0a49aca674",
+      "result_sha256": "e0f926fd4a07bc6285d6fdda74dee420028e854321683039b6f70fb600dbdc8c",
+      "numerical_check_count": 27
+    },
+    {
+      "code": "mixture_radiation.py",
+      "result": "mixture-radiation.json",
+      "code_sha256": "85b9a90a90477d2662538cddbc10678c05bbc3d08e4e85bd3e4aee5a002c62f9",
+      "result_sha256": "bb3de817ff001db46d8139cea6ff4bfd8b80ec06669a2498eaae34723e9b53d6",
+      "numerical_check_count": 104
+    }
+  ],
+  "numerical_checks_passed": 420,
+  "source_hash_checks": 34,
+  "unique_source_paths": [
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/receiver_radiation.py",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/membrane-receiver/plume.py",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/membrane-receiver/pulse-loading.json",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/membrane-receiver/results.json",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/membrane-receiver/spectral_proxy.py",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/open-loop-redesign/collector-inputs.json",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/open-loop-redesign/collector-periodic.json",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/open-loop-redesign/station-inputs.json",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H2-fixed_energy-z64-k0p001-t1.json",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H2-fixed_energy-z64-k0p001-t1.npz",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.npz",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p01-t1.json",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p01-t1.npz",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H4-fixed_energy-z64-k0p01-t1.json",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H4-fixed_energy-z64-k0p01-t1.npz",
+    "/var/tmp/tkwa-chatgpt/protium-b2-completion/B2-64-compression-cap.json",
+    "/var/tmp/tkwa-chatgpt/protium-b2-completion/B2-64-compression-cap.npz",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.json",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-A-compression_cap.npz",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.json",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-B1-compression_cap.npz",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.json",
+    "/var/tmp/tkwa-chatgpt/protium-b2-regression/regression-C13-compression_cap.npz"
+  ],
+  "documents": [
+    {
+      "path": "radiation-interface.md",
+      "sha256": "ea400a39ede174493e36d197193c28f5680f170dc2657aafd60607bf83c1586d"
+    },
+    {
+      "path": "risk-register-review.md",
+      "sha256": "155bc90be232d70f333a284c638b283c1efa9e3f68b459c43392b96f313f82c7"
+    },
+    {
+      "path": "return-gas.md",
+      "sha256": "0cb024f5b2c5ae1ac8684a2cba092c2684e0f0ed845e5ad065023599fa049d65"
+    },
+    {
+      "path": "mixture-radiation.md",
+      "sha256": "d804a36b324232807470735fbf563edcb88519a7102284a3dc130f6cc4fd586d"
+    }
+  ],
+  "relative_links": [
+    {
+      "from": "radiation-interface.md",
+      "target": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/launcher-reference/ports-and-shielding.md"
+    },
+    {
+      "from": "radiation-interface.md",
+      "target": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/return-gas.md"
+    },
+    {
+      "from": "radiation-interface.md",
+      "target": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/mixture-radiation.md"
+    }
+  ]
+}

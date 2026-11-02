@@ -1,0 +1,97 @@
+{
+  "scope": "Independent finite-volume check of the two slab kernels and grid refinement.\nNo hydrodynamics; does not modify the receiver-thickness packet.\n",
+  "source_sha256": "7042bfb18287a1173f5804afd0ace9b572c4ee7edfc237382a13214c54cd4158",
+  "code_sha256": "5c750f92a59a1bfc97f478ee08268145c6a691dc87d9609d4a7fb0f006324949",
+  "finite_volume_checks": [
+    {
+      "cells": 128,
+      "boundary": "D",
+      "max_front_step_relative_difference": 0.003822058553510921
+    },
+    {
+      "cells": 128,
+      "boundary": "N",
+      "max_front_step_relative_difference": 0.0039322599663720315
+    },
+    {
+      "cells": 512,
+      "boundary": "D",
+      "max_front_step_relative_difference": 0.00023844702116937455
+    },
+    {
+      "cells": 512,
+      "boundary": "N",
+      "max_front_step_relative_difference": 0.00024532216404526963
+    },
+    {
+      "cells": 1024,
+      "boundary": "D",
+      "max_front_step_relative_difference": 5.960642144442474e-05
+    },
+    {
+      "cells": 1024,
+      "boundary": "N",
+      "max_front_step_relative_difference": 6.132505337208549e-05
+    }
+  ],
+  "back_kernel_energy_integral": 1.0000000000000002,
+  "pulse_grid_refinement": [
+    {
+      "stage": "A",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "slow_front_peak_K": [
+        203.77518507230278,
+        203.66274293354763,
+        203.74676704250507
+      ],
+      "finest_over_reference_relative": 0.00041256494804664534
+    },
+    {
+      "stage": "B1",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "slow_front_peak_K": [
+        1.1741686194569096,
+        1.174133680720464,
+        1.174080223552118
+      ],
+      "finest_over_reference_relative": -4.5529030658020275e-05
+    },
+    {
+      "stage": "B2",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "slow_front_peak_K": [
+        296.9964187022946,
+        296.9729312714134,
+        296.96094893526464
+      ],
+      "finest_over_reference_relative": -4.034824351661914e-05
+    },
+    {
+      "stage": "C13",
+      "dt_s": [
+        0.5,
+        0.25,
+        0.125
+      ],
+      "slow_front_peak_K": [
+        450.13664093539677,
+        450.0101123387864,
+        449.9632915868787
+      ],
+      "finest_over_reference_relative": -0.00010404377729289482
+    }
+  ],
+  "passed": true
+}

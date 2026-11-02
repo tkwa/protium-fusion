@@ -1,0 +1,819 @@
+{
+  "scope": "Exact source spectra + NIST mean projected-depth proxies. Conditional mobile graphite reference at1000K; D multipliers are scenarios. Strip sides perfectly absorbing up tofront; buried cap adds losses and invalidates direct transfer of strip efficiency.",
+  "surface_spectra_sha256": "c4a065e110afc72fd03a5aaff7af1161594a04554d9a874abceba1f023b0513e",
+  "surface_stopping_sha256": "592cd0140de66f1569a70536bc3d76a56b9c571eea4d8ebd9d4cdb39b633f7aa",
+  "code_sha256": "6de52534eae975303605b7e8752a315d616be46c7003ea0ec21cb1929cc49adf",
+  "kernel_sha256": "41dcd1e50225a4e403b642fe3f4975a52f3b0fc692f8e2b07e8e17628277056e",
+  "stages": {
+    "A": {
+      "projected_depth_um_quantiles": {
+        "0.001": 0.07699191604474548,
+        "0.01": 0.2880442755447388,
+        "0.1": 0.869874364222522,
+        "0.5": 2.220474023444012,
+        "0.9": 4.75896437009663,
+        "0.99": 7.661013575430034,
+        "0.999": 10.079876481798633
+      },
+      "constant1000K_mobile_cases": [
+        {
+          "diffusivity_multiplier": 1e-06,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.8025352447222832,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 2.3629421324911507e-08,
+          "release_time_after_ignition_s": {
+            "0.5": 93057.57782761003,
+            "0.9": 3284568.4038013746,
+            "0.99": 332709453.41715664
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 92871.44205925817,
+            "0.9": 3284403.091491051,
+            "0.99": 332709289.11668545
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 4.0465735855179586e-21
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.003452416009726584
+            },
+            {
+              "time_after_ignition_s": 810808.9541603646,
+              "fraction_of_incident_mobile_population_released": 0.8025352447222832
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.48669601620056013
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 0.001,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9935932843715272,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 2.3629421324911507e-08,
+          "release_time_after_ignition_s": {
+            "0.5": 342.75764590065205,
+            "0.9": 3459.125075070245,
+            "0.99": 332877.66246337787
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 92.87144205925811,
+            "0.9": 3284.4030914910495,
+            "0.99": 332709.28911669186
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 1.3184367560873036e-22
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.09152183794654868
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.5805975449699363
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.8007111175521063
+            },
+            {
+              "time_after_ignition_s": 810808.9541603646,
+              "fraction_of_incident_mobile_population_released": 0.9935932843715272
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.9803612764295722
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 1.0,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9997973735807748,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 2.3629421324911507e-08,
+          "release_time_after_ignition_s": {
+            "0.5": 185.58666532724365,
+            "0.9": 354.41429507402535,
+            "0.99": 1006.273692494009
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 0.09287144205960124,
+            "0.9": 3.284403091491053,
+            "0.99": 332.70928911669785
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 0.00489827076456815
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.574369791282221
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.9268444257393114
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.9899045231172285
+            },
+            {
+              "time_after_ignition_s": 810808.9541603646,
+              "fraction_of_incident_mobile_population_released": 0.9997973735807748
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.99937860119875
+            }
+          ]
+        }
+      ],
+      "optimistic_strip_cases": [
+        {
+          "pitch_m": 2e-05,
+          "front_fraction_by_anisotropy": {
+            "1": 0.6022837394611658,
+            "10": 0.29788931302867755,
+            "100": 0.07241270310513377,
+            "1000": 0.008569470569531766,
+            "10000.0": 0.0009578848799550795,
+            "1000000.0": 3.19872507489743e-05
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 156.46501545069393,
+            "0.01": 856.9552280280919,
+            "0.001": 9515.52640752538
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 2.3503171322831452e-05,
+            "99.99999999999999": 0.0006059980155622558,
+            "1000.0": 0.04360327710674465
+          }
+        },
+        {
+          "pitch_m": 0.0001,
+          "front_fraction_by_anisotropy": {
+            "1": 0.8680254813937263,
+            "10": 0.7016282349054302,
+            "100": 0.4221143156569531,
+            "1000": 0.14044410995464673,
+            "10000.0": 0.02117658091321224,
+            "1000000.0": 0.0003148278875433855
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 3911.6253862674266,
+            "0.01": 21423.88070070229,
+            "0.001": 237888.16018813176
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 2.3503171322831452e-05,
+            "99.99999999999999": 0.0006059980155622558,
+            "1000.0": 0.04360327710674465
+          }
+        }
+      ],
+      "eventual_rear_fraction_isotropic_175mm_slab": 1.4716764717148432e-05,
+      "period_s": 810808.9541603646
+    },
+    "B1": {
+      "projected_depth_um_quantiles": {
+        "0.001": 0.071699008239331,
+        "0.01": 0.26560599159195863,
+        "0.1": 0.8158464555018714,
+        "0.5": 1.9416000253648726,
+        "0.9": 3.4842152228148113,
+        "0.99": 4.543729334892423,
+        "0.999": 5.264405375491399
+      },
+      "constant1000K_mobile_cases": [
+        {
+          "diffusivity_multiplier": 1e-06,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.13123534682935467,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 1.1009223141209265e-05,
+          "release_time_after_ignition_s": {
+            "0.5": 65452.675679085696,
+            "0.9": 2118295.8423512448,
+            "0.99": 213785286.93756607
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 65250.67496401114,
+            "0.9": 2118107.926300389,
+            "0.99": 213785099.78218678
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 5.106632216882153e-21
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.0038802387131181898
+            },
+            {
+              "time_after_ignition_s": 7698.198541942018,
+              "fraction_of_incident_mobile_population_released": 0.13123534682935467
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.5517389000227315
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 0.001,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9467045402515288,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 1.1009223141209265e-05,
+          "release_time_after_ignition_s": {
+            "0.5": 325.7291389639313,
+            "0.9": 2322.970642057646,
+            "0.99": 213974.53060199233
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 65.25067496401115,
+            "0.9": 2118.107926300388,
+            "0.99": 213785.09978219253
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 5.141153446432401e-29
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.08876319103298971
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.62019006271868
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.8346530061292319
+            },
+            {
+              "time_after_ignition_s": 7698.198541942018,
+              "fraction_of_incident_mobile_population_released": 0.9467045402515288
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.9842537689151732
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 1.0,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9983017710024875,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 1.1009223141209265e-05,
+          "release_time_after_ignition_s": {
+            "0.5": 200.01532536239392,
+            "0.9": 367.11434915222907,
+            "0.99": 976.9745276130112
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 0.06525067496401167,
+            "0.9": 2.11810792630039,
+            "0.99": 213.78509978219455
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 9.693451666015764e-09
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.499904813609512
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.9211215022378618
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.9903802668755521
+            },
+            {
+              "time_after_ignition_s": 7698.198541942018,
+              "fraction_of_incident_mobile_population_released": 0.9983017710024875
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.9995018722152405
+            }
+          ]
+        }
+      ],
+      "optimistic_strip_cases": [
+        {
+          "pitch_m": 2e-05,
+          "front_fraction_by_anisotropy": {
+            "1": 0.6453639639467061,
+            "10": 0.3393799116796894,
+            "100": 0.08462081146445158,
+            "1000": 0.009816065238170694,
+            "10000.0": 0.0010897650053960071,
+            "1000000.0": 2.6244518056331484e-05
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 186.13856417737998,
+            "0.01": 981.6752992590926,
+            "0.001": 11019.6429537596
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 1.7629672822594998e-05,
+            "99.99999999999999": 0.0006621048329062587,
+            "1000.0": 0.04962760590912896
+          }
+        },
+        {
+          "pitch_m": 0.0001,
+          "front_fraction_by_anisotropy": {
+            "1": 0.886898529734622,
+            "10": 0.7378829667551419,
+            "100": 0.4690104443637079,
+            "1000": 0.16392765837615703,
+            "10000.0": 0.024428358253148597,
+            "1000000.0": 0.0003347169259937578
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 4653.464104429411,
+            "0.01": 24541.882481477307,
+            "0.001": 275491.07384399045
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 1.7629672822594998e-05,
+            "99.99999999999999": 0.0006621048329062587,
+            "1000.0": 0.04962760590912896
+          }
+        }
+      ],
+      "eventual_rear_fraction_isotropic_175mm_slab": 1.1796702028088772e-05,
+      "period_s": 7698.198541942018
+    },
+    "B2": {
+      "projected_depth_um_quantiles": {
+        "0.001": 0.5271182917186179,
+        "0.01": 0.7015336634540825,
+        "0.1": 1.072696841061506,
+        "0.5": 1.7552008256637854,
+        "0.9": 2.9251035529422023,
+        "0.99": 4.281044748343259,
+        "0.999": 5.366751418151653
+      },
+      "constant1000K_mobile_cases": [
+        {
+          "diffusivity_multiplier": 1e-06,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.8658278922763156,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 7.662829589726177e-11,
+          "release_time_after_ignition_s": {
+            "0.5": 57721.41025576582,
+            "0.9": 1790674.6874562441,
+            "0.99": 180503046.68229514
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 57512.725012236246,
+            "0.9": 1790476.0293021775,
+            "0.99": 180502848.4038932
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 5.9801542833955404e-21
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.0004642804039001597
+            },
+            {
+              "time_after_ignition_s": 988255.983544817,
+              "fraction_of_incident_mobile_population_released": 0.8658278922763156
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.5769895489121414
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 0.001,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9957256966931749,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 7.662829589726177e-11,
+          "release_time_after_ignition_s": {
+            "0.5": 298.15773225793953,
+            "0.9": 1990.203923234117,
+            "0.99": 180701.15002797355
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 57.512725012236245,
+            "0.9": 1790.476029302177,
+            "0.99": 180502.84840389274
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 2.1342093526599098e-27
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.0639700404925217
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.6921171846962543
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.8509998960433507
+            },
+            {
+              "time_after_ignition_s": 988255.983544817,
+              "fraction_of_incident_mobile_population_released": 0.9957256966931749
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.9855301242169667
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 1.0,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9998648335827045,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 7.662829589726177e-11,
+          "release_time_after_ignition_s": {
+            "0.5": 211.46331657044877,
+            "0.9": 297.9122719798996,
+            "0.99": 464.1098504235165
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 0.05751272501223622,
+            "0.9": 1.7904760293021822,
+            "0.99": 180.5028484038902
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 3.659364660252953e-06
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.4111186591958199
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.9817682318675373
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.9952364957867852
+            },
+            {
+              "time_after_ignition_s": 988255.983544817,
+              "fraction_of_incident_mobile_population_released": 0.9998648335827045
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.9995423825785315
+            }
+          ]
+        }
+      ],
+      "optimistic_strip_cases": [
+        {
+          "pitch_m": 2e-05,
+          "front_fraction_by_anisotropy": {
+            "1": 0.6579488373651555,
+            "10": 0.34583365163519386,
+            "100": 0.06821846662750461,
+            "1000": 0.001656364926272301,
+            "10000.0": 3.8975157643702165e-06,
+            "1000000.0": 8.012937765778175e-08
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 131.99411595257916,
+            "0.01": 404.2231320888988,
+            "0.001": 1242.1498955166062
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 6.147109343457261e-08,
+            "99.99999999999999": 1.7947262608594919e-06,
+            "1000.0": 0.011362504152371698
+          }
+        },
+        {
+          "pitch_m": 0.0001,
+          "front_fraction_by_anisotropy": {
+            "1": 0.8928062417646652,
+            "10": 0.7488501316763195,
+            "100": 0.48063596989335916,
+            "1000": 0.15549381002344356,
+            "10000.0": 0.010182284017155815,
+            "1000000.0": 9.059346409950618e-07
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 3299.852898814475,
+            "0.01": 10105.578302222499,
+            "0.001": 31053.747387914893
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 6.147109343457261e-08,
+            "99.99999999999999": 1.7947262608594919e-06,
+            "1000.0": 0.011362504152371698
+          }
+        }
+      ],
+      "eventual_rear_fraction_isotropic_175mm_slab": 1.0839552822650039e-05,
+      "period_s": 988255.983544817
+    },
+    "C13": {
+      "projected_depth_um_quantiles": {
+        "0.001": 0.21789849469492653,
+        "0.01": 0.39487833626118296,
+        "0.1": 0.858037171556501,
+        "0.5": 1.994987834219659,
+        "0.9": 5.112663011247195,
+        "0.99": 10.705893718458363,
+        "0.999": 17.612663274840003
+      },
+      "constant1000K_mobile_cases": [
+        {
+          "diffusivity_multiplier": 1e-06,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9450090728833884,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 0.0,
+          "release_time_after_ignition_s": {
+            "0.5": 84050.81937891933,
+            "0.9": 3336970.814535875,
+            "0.99": 341167180.2389077
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 83854.08700228517,
+            "0.9": 3336806.2515371274,
+            "0.99": 341167017.64093673
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.0
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 5.494712418741127e-21
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.0029818834340016127
+            },
+            {
+              "time_after_ignition_s": 11207481.3144339,
+              "fraction_of_incident_mobile_population_released": 0.9450090728833884
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.5046802421025766
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 0.001,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9982550589688929,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 0.0,
+          "release_time_after_ignition_s": {
+            "0.5": 343.00499037493984,
+            "0.9": 3502.6369775145486,
+            "0.99": 341329.8145345542
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 83.85408700228513,
+            "0.9": 3336.8062515371275,
+            "0.99": 341167.0176409366
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 1.7322159879354927e-21
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.0761073624383918
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.5886404083988963
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.8044485702854594
+            },
+            {
+              "time_after_ignition_s": 11207481.3144339,
+              "fraction_of_incident_mobile_population_released": 0.9982550589688929
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.9801166370117609
+            }
+          ]
+        },
+        {
+          "diffusivity_multiplier": 1.0,
+          "mobile_fraction_released_at_next_same_stage_ignition": 0.9999448199278295,
+          "incident_fraction_not_yet_arrived_at_next_same_stage_ignition": 0.0,
+          "release_time_after_ignition_s": {
+            "0.5": 198.00604904338226,
+            "0.9": 354.52573943798444,
+            "0.99": 755.6244358197764
+          },
+          "single_age_ensemble_post_implantation_release_time_s": {
+            "0.5": 0.08385408700229939,
+            "0.9": 3.336806251537118,
+            "0.99": 341.1670176409359
+          },
+          "release_curve": [
+            {
+              "time_after_ignition_s": 100.0,
+              "fraction_of_incident_mobile_population_released": 0.019425587993058706
+            },
+            {
+              "time_after_ignition_s": 200.0,
+              "fraction_of_incident_mobile_population_released": 0.5087439194661854
+            },
+            {
+              "time_after_ignition_s": 400.0,
+              "fraction_of_incident_mobile_population_released": 0.933515292723391
+            },
+            {
+              "time_after_ignition_s": 1000.0,
+              "fraction_of_incident_mobile_population_released": 0.9931923668487255
+            },
+            {
+              "time_after_ignition_s": 11207481.3144339,
+              "fraction_of_incident_mobile_population_released": 0.9999448199278295
+            },
+            {
+              "time_after_ignition_s": 86400.0,
+              "fraction_of_incident_mobile_population_released": 0.999370936664491
+            }
+          ]
+        }
+      ],
+      "optimistic_strip_cases": [
+        {
+          "pitch_m": 2e-05,
+          "front_fraction_by_anisotropy": {
+            "1": 0.6093050704285141,
+            "10": 0.3118654300564767,
+            "100": 0.07633887724123026,
+            "1000": 0.005863571167511196,
+            "10000.0": 0.0001456439811920508,
+            "1000000.0": 8.061572606996198e-07
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 160.5815705888904,
+            "0.01": 672.2280054491969,
+            "0.001": 3217.520501547684
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 5.273952330552437e-07,
+            "99.99999999999999": 2.6926946314917106e-05,
+            "1000.0": 0.039796936780258016
+          }
+        },
+        {
+          "pitch_m": 0.0001,
+          "front_fraction_by_anisotropy": {
+            "1": 0.8690031440551804,
+            "10": 0.7059163043092946,
+            "100": 0.43423487184000603,
+            "1000": 0.1503628026067405,
+            "10000.0": 0.01899350812194022,
+            "1000000.0": 1.6752041227393337e-05
+          },
+          "required_anisotropy_for_front_fraction": {
+            "0.05": 4014.5392647223166,
+            "0.01": 16805.70013623002,
+            "0.001": 80438.012538692
+          },
+          "isotropic_normal_diffusion_cap_front_loss_lower_bound_by_cap_nm": {
+            "10.0": 5.273952330552437e-07,
+            "99.99999999999999": 2.6926946314917106e-05,
+            "1000.0": 0.039796936780258016
+          }
+        }
+      ],
+      "eventual_rear_fraction_isotropic_175mm_slab": 1.4903380129181204e-05,
+      "period_s": 11207481.3144339
+    }
+  },
+  "checks": [
+    {
+      "name": "A packet counts",
+      "passed": true
+    },
+    {
+      "name": "A fraction 1e-06",
+      "passed": true
+    },
+    {
+      "name": "A fraction 0.001",
+      "passed": true
+    },
+    {
+      "name": "A fraction 1.0",
+      "passed": true
+    },
+    {
+      "name": "A monotone D",
+      "passed": true
+    },
+    {
+      "name": "B1 packet counts",
+      "passed": true
+    },
+    {
+      "name": "B1 fraction 1e-06",
+      "passed": true
+    },
+    {
+      "name": "B1 fraction 0.001",
+      "passed": true
+    },
+    {
+      "name": "B1 fraction 1.0",
+      "passed": true
+    },
+    {
+      "name": "B1 monotone D",
+      "passed": true
+    },
+    {
+      "name": "B2 packet counts",
+      "passed": true
+    },
+    {
+      "name": "B2 fraction 1e-06",
+      "passed": true
+    },
+    {
+      "name": "B2 fraction 0.001",
+      "passed": true
+    },
+    {
+      "name": "B2 fraction 1.0",
+      "passed": true
+    },
+    {
+      "name": "B2 monotone D",
+      "passed": true
+    },
+    {
+      "name": "C13 packet counts",
+      "passed": true
+    },
+    {
+      "name": "C13 fraction 1e-06",
+      "passed": true
+    },
+    {
+      "name": "C13 fraction 0.001",
+      "passed": true
+    },
+    {
+      "name": "C13 fraction 1.0",
+      "passed": true
+    },
+    {
+      "name": "C13 monotone D",
+      "passed": true
+    }
+  ]
+}

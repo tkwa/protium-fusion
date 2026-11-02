@@ -1,0 +1,285 @@
+{
+  "scope": "Primary short-time chemisorption evidence plus explicitly assumed long-time capture probability. S is a scenario, not a calibrated irradiated-graphite property.",
+  "MD_amorphous_C_thermal_incidence": [
+    {
+      "T_K": 1000,
+      "P_chem": 0.247,
+      "authors_sampling_error": 0.018
+    },
+    {
+      "T_K": 1250,
+      "P_chem": 0.295,
+      "authors_sampling_error": 0.016
+    },
+    {
+      "T_K": 1500,
+      "P_chem": 0.299,
+      "authors_sampling_error": 0.02
+    }
+  ],
+  "MD_source": "Bossion etal A&A692,A249(2024),TableA.1, https://arxiv.org/abs/2411.06125",
+  "basal_graphene_DFT_source": "Lehtinen etal PRL91,017202(2003), https://doi.org/10.1103/PhysRevLett.91.017202",
+  "isolated_adatom_kinetic_diagnostics": [
+    {
+      "T_K": 1000,
+      "E_ads_assumed_desorption_barrier_eV": 1.4,
+      "migration_barrier_eV": 0.47,
+      "attempt_rate_s": 10000000000000.0,
+      "hop_length_m": 1.42e-10,
+      "isolated_adatom_residence_s": 1.1368141207481518e-06,
+      "expected_hops_before_desorption_equal_prefactors": 48640.016362583905,
+      "RMS_distance_m_in_2D_random_walk": 3.1317364032356584e-08,
+      "scope": "Illustrative transition-state estimate using static clean-graphene DFT energies; no measured kinetic prefactor or damaged-surface trap network."
+    },
+    {
+      "T_K": 1250,
+      "E_ads_assumed_desorption_barrier_eV": 1.4,
+      "migration_barrier_eV": 0.47,
+      "attempt_rate_s": 10000000000000.0,
+      "hop_length_m": 1.42e-10,
+      "isolated_adatom_residence_s": 4.411147374163003e-08,
+      "expected_hops_before_desorption_equal_prefactors": 5618.171209862423,
+      "RMS_distance_m_in_2D_random_walk": 1.064353344879725e-08,
+      "scope": "Illustrative transition-state estimate using static clean-graphene DFT energies; no measured kinetic prefactor or damaged-surface trap network."
+    },
+    {
+      "T_K": 1500,
+      "E_ads_assumed_desorption_barrier_eV": 1.4,
+      "migration_barrier_eV": 0.47,
+      "attempt_rate_s": 10000000000000.0,
+      "hop_length_m": 1.42e-10,
+      "isolated_adatom_residence_s": 5.055835941998625e-09,
+      "expected_hops_before_desorption_equal_prefactors": 1332.4854482749556,
+      "RMS_distance_m_in_2D_random_walk": 5.183457975041006e-09,
+      "scope": "Illustrative transition-state estimate using static clean-graphene DFT energies; no measured kinetic prefactor or damaged-surface trap network."
+    }
+  ],
+  "repeated_global_flight_scenarios": [
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 4.864443814888068e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 1.7644747695628858e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 7.311517544544918e-08,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 2.1449024690029475e-08,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 4.773789569774208e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 1.6738205244490256e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 6.404975093406315e-08,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_calculated",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 1.2383600178643446e-08,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 7.332255185736298e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 2.6596214842962527e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 1.1020769171495708e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 3.233046335762299e-08,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 7.195610569385558e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 2.5229768679455124e-07,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 9.654323007988306e-08,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "physical_fit_experimental_CO_proxy",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 1.8666001722548965e-08,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 0.00014837797118880095,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 5.3820990946647896e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 2.2301997532596878e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 6.542500825571371e-06,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 0.00014561278497604655,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 5.105580473389351e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 1.953681131984249e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_temperature_flux_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 3.7773146128169797e-06,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 0.00010578456326057946,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 3.8371127303649693e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 1.5899981984673113e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 1.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 4.664409325184822e-06,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.1,
+      "steady_C_column_kg_m2": 0.00010381315191490069,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.25,
+      "steady_C_column_kg_m2": 3.639971595797093e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 0.5,
+      "steady_C_column_kg_m2": 1.392857063899435e-05,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    },
+    {
+      "source_diagnostic": "RES_only_T_ge1200_extrapolation",
+      "initial_mean_eV": 3.0,
+      "per_encounter_permanent_capture_probability": 1.0,
+      "steady_C_column_kg_m2": 2.6929979795060576e-06,
+      "formula": "initial-flight column + (1-s)/s times1000K thermal single-flight column; cosine re-emission, no chemical conversion."
+    }
+  ],
+  "input_sha256": "2d51b239cb741ae66ca79cb0074024bb5f6e1f514b3c07802f9ef8193b93d8af",
+  "code_sha256": "1f23f5b22a9bc4f9c411832c7f3db0f960b5cf2bde40feae398229d40c065556"
+}

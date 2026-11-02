@@ -1,0 +1,18 @@
+{
+  "package": "geant4-pybind",
+  "version": "0.1.3",
+  "Geant4_version": "11.4.1",
+  "Geant4_version_number": 1141,
+  "Python": "CPython3.10.20",
+  "isolated_runtime": "/tmp/protium-python-interpreters/cpython-3.10.20-linux-x86_64-gnu/bin/python3.10",
+  "wheel_binary_sha256": "4f4095c61bdeb5840c8d8f9b7bcbf185cf5c170b210ae87a266f44d64e1b0b02",
+  "wheel_binary_bytes": 77930521,
+  "native_source_policy": "Upstream installed Geant4 binary, no patched transport models. Standard Geant4 parameter disables optional3gamma in-flight branch. Python supplies geometry/source/scoring.",
+  "sources": [
+    "https://pypi.org/project/geant4-pybind/0.1.3/",
+    "https://github.com/HaarigerHarald/geant4_pybind",
+    "https://geant4.web.cern.ch/documentation/dev/plg_html/PhysicsListGuide/electromagnetic/Opt4.html",
+    "https://github.com/Geant4/geant4/blob/v11.4.1/source/physics_lists/constructors/electromagnetic/src/G4EmStandardPhysics_option4.cc",
+    "https://github.com/Geant4/geant4/blob/v11.4.1/source/processes/electromagnetic/standard/src/G4eplusTo3GammaOKVIModel.cc"
+  ]
+}

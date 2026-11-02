@@ -1,0 +1,790 @@
+{
+  "scope": "Independent saved-trace energy audit and matched nonideal/control comparison.\nNo hydrodynamic integration. Optionally archive numerically unchanged result records\nwith the inherited solver's generic no-Coulomb limitation corrected in metadata.\n",
+  "code_sha256": "bdbc4ba54ad37cb26717ef027ce4e6ba7883932f1eb40f54d7146a771c92a94b",
+  "EOS_module_sha256": "821a82e58148b916b7d25f881f6578087f984ed34f5dd257a6b128142843c45c",
+  "algebra_validation": {
+    "passed": true,
+    "checks": {
+      "density_energy_derivative_relative": 5.029576755077869e-11,
+      "density_pressure_derivative_relative": 2.1832202712346316e-11,
+      "composition_derivative_relative": 1.3881229499190795e-11,
+      "thermodynamic_identity_relative": 3.313267261070092e-16,
+      "archived_composition_identity_relative": 2.220446049250313e-16,
+      "independent_SI_energy_relative": 4.6077130999577776e-10
+    },
+    "scope": "Finite differences of added free-energy term, exact Maxwell/composition identities, and independent SI normalization. Does not certify the source electron spline EOS or accuracy of strong-coupling approximation."
+  },
+  "cases": [
+    {
+      "stage": "A",
+      "H_per_catalyst": 1,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/control/A-H1-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/A-H1-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "de047f1cf49d4ca9768534400cb1656bde74da0cf3d1970d08f4b138fa27b1ce",
+      "stress_sha256": "3f5fe2c4443fbc8ca1ed7cc7f9c43a9bd95c1fa3ae55225d8332e67808c79c29",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 3.4931631665172685e+25,
+          "stress": 3.493163166517267e+25,
+          "relative_change": -4.440892098500626e-16
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 8.196339044267944,
+          "stress": 8.238940263493735,
+          "relative_change": 0.005197591143522029
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.5393671923506786,
+          "stress": 0.5421706011268064,
+          "relative_change": 0.00519758861103492
+        },
+        "peak_temperature_K": {
+          "control": 1144863831.5682194,
+          "stress": 1148212498.297492,
+          "relative_change": 0.0029249476111805617
+        },
+        "radiation_escaped_J": {
+          "control": 2.70929665516503e+23,
+          "stress": 2.7771098849590114e+23,
+          "relative_change": 0.025029828189800263
+        },
+        "final_kinetic_J": {
+          "control": 3.0384816564650838e+26,
+          "stress": 3.0547971337473474e+26,
+          "relative_change": 0.005369615198284494
+        },
+        "final_internal_J": {
+          "control": 1.7124028145268731e+25,
+          "stress": 1.6973837421772156e+25,
+          "relative_change": -0.008770758972273196
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": 4.440892098500626e-16,
+          "initial_kinetic_relative": 2.220446049250313e-16,
+          "final_internal_relative": 6.661338147750939e-16,
+          "final_kinetic_relative": 2.220446049250313e-16,
+          "final_nuclear_relative": 0.0,
+          "final_radiation_relative": -1.1102230246251565e-16,
+          "final_record_energy_residual_difference": -2.1439379779068753e-11,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 3.3372307184365013e-07,
+        "minimum_pressure_Pa": 506391362657401.8,
+        "minimum_isothermal_dp_drho_m2_s2": 11729692901.473684,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 19365625866.777927,
+        "minimum_cv_J_kg_K": 7759.986764698116,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 5631446770541534.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 193656258667781.25,
+            "minimum_cv_erg_g_K": 77599867.6469812,
+            "minimum_specific_energy_erg_g": 119916960961624.22,
+            "charge_weighted_Z_two_thirds": 3.3268924962701005,
+            "strength": 1.0,
+            "coefficient_cgs": 56629258718487.73
+          },
+          {
+            "state_calls": 50540,
+            "minimum_pressure_dyn_cm2": 5063913626573495.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 193656249334067.2,
+            "minimum_cv_erg_g_K": 77599866.01322103,
+            "minimum_specific_energy_erg_g": 119916958905025.1,
+            "charge_weighted_Z_two_thirds": 3.3268924962701005,
+            "strength": 1.0,
+            "coefficient_cgs": 56629258718487.73
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.0025822445135468175,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": -0.00033432007144701826,
+          "dynamic_moment_over_frozen_min_max": [
+            1.0,
+            1.1676829878591246
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "a3f08abab64685075891aa245050317eab8a7857b527000eeec8ce09bb23fcc4"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/A-H1-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "a1206385345eedcca7660e3386440e10fa54ee964c48bb63d76a29049bf33e8c"
+    },
+    {
+      "stage": "A",
+      "H_per_catalyst": 3,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/A-H3-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/A-H3-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "230f1b22fc32cd7e1203f12e5780446b641b4518c527e8efbe295e2fa627e48d",
+      "stress_sha256": "92c63f84f02c92098d938bb8588aa2a9e6cc4e6b34299968e82d76506558646b",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 3.4931631665172676e+25,
+          "stress": 3.4931631665172676e+25,
+          "relative_change": 0.0
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 10.288815379907804,
+          "stress": 10.279400862983756,
+          "relative_change": -0.0009150243809830094
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.7673396542559343,
+          "stress": 0.7666375170016823,
+          "relative_change": -0.0009150279805790751
+        },
+        "peak_temperature_K": {
+          "control": 1186132202.5168076,
+          "stress": 1191140104.8877997,
+          "relative_change": 0.004222044018673543
+        },
+        "radiation_escaped_J": {
+          "control": 3.3485091273558184e+23,
+          "stress": 3.42638511799079e+23,
+          "relative_change": 0.023256914547062024
+        },
+        "final_kinetic_J": {
+          "control": 3.755338215706925e+26,
+          "stress": 3.7531741975546046e+26,
+          "relative_change": -0.0005762511997638997
+        },
+        "final_internal_J": {
+          "control": 1.8468076798139947e+25,
+          "stress": 1.834782754357378e+25,
+          "relative_change": -0.00651119528473465
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": -2.220446049250313e-16,
+          "initial_kinetic_relative": 2.220446049250313e-16,
+          "final_internal_relative": 2.220446049250313e-16,
+          "final_kinetic_relative": 0.0,
+          "final_nuclear_relative": 0.0,
+          "final_radiation_relative": 2.220446049250313e-16,
+          "final_record_energy_residual_difference": 1.935383593406782e-12,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 4.465750247373279e-07,
+        "minimum_pressure_Pa": 332702879203244.44,
+        "minimum_isothermal_dp_drho_m2_s2": 15443187782.28801,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 24892077986.869102,
+        "minimum_cv_J_kg_K": 9600.607321479487,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 7332654415110693.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 248920779868690.56,
+            "minimum_cv_erg_g_K": 96006073.21479541,
+            "minimum_specific_energy_erg_g": 170758261031103.62,
+            "charge_weighted_Z_two_thirds": 2.8615139970160803,
+            "strength": 1.0,
+            "coefficient_cgs": 48707740525211.59
+          },
+          {
+            "state_calls": 56894,
+            "minimum_pressure_dyn_cm2": 3327028792032442.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 248920766640388.12,
+            "minimum_cv_erg_g_K": 96006070.78531684,
+            "minimum_specific_energy_erg_g": 170758255972800.16,
+            "charge_weighted_Z_two_thirds": 2.8615139970160803,
+            "strength": 1.0,
+            "coefficient_cgs": 48707740525211.59
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.003190632630717689,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": -0.0003804003534593574,
+          "dynamic_moment_over_frozen_min_max": [
+            0.9999999999999999,
+            1.1879414120093748
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "b6c33bd7cfce14a4335c6c631aa445df12a127f356ff9fdb2bb86adee98e8dca"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/A-H3-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "10594f6b7a687b07c3518c2802897a90f55a61b79e91d4f40385ef650689ee5b"
+    },
+    {
+      "stage": "B1",
+      "H_per_catalyst": 1,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H1-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/B1-H1-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "606bc31c3af9be00fc070f22f1337c958b3a2e038b26e2932db173a83abdf681",
+      "stress_sha256": "f19ee69f1cbe5ec4358a3ec895fb54bf0419c4eace638ce8cf334ad69f926213",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 3.195016782566005e+23,
+          "stress": 3.1950167825660044e+23,
+          "relative_change": -2.220446049250313e-16
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 6.381970498692948,
+          "stress": 6.502044782065959,
+          "relative_change": 0.018814609593949427
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.6018693226514725,
+          "stress": 0.6131899078156564,
+          "relative_change": 0.01880904166092434
+        },
+        "peak_temperature_K": {
+          "control": 459603563.8390775,
+          "stress": 483675777.76682544,
+          "relative_change": 0.05237603844207017
+        },
+        "radiation_escaped_J": {
+          "control": 1.3653241812106099e+23,
+          "stress": 1.4243163389729907e+23,
+          "relative_change": 0.04320743642734981
+        },
+        "final_kinetic_J": {
+          "control": 2.0957580320356454e+24,
+          "stress": 2.1302838130346925e+24,
+          "relative_change": 0.016474125577136345
+        },
+        "final_internal_J": {
+          "control": 1.2626190130889958e+23,
+          "stress": 1.2420087080877215e+23,
+          "relative_change": -0.01632345528430712
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": -4.440892098500626e-16,
+          "initial_kinetic_relative": 2.220446049250313e-16,
+          "final_internal_relative": 2.220446049250313e-16,
+          "final_kinetic_relative": 0.0,
+          "final_nuclear_relative": 0.0,
+          "final_radiation_relative": 2.220446049250313e-16,
+          "final_record_energy_residual_difference": -1.5580415062849958e-11,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 1.4276484665565192e-06,
+        "minimum_pressure_Pa": 5297406427982.386,
+        "minimum_isothermal_dp_drho_m2_s2": 14777586550.818857,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 25076416710.444324,
+        "minimum_cv_J_kg_K": 8026.130551566612,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 52974064279824.164,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 250764167104445.2,
+            "minimum_cv_erg_g_K": 80261305.5156661,
+            "minimum_specific_energy_erg_g": 218025299800676.84,
+            "charge_weighted_Z_two_thirds": 3.3268924962701005,
+            "strength": 1.0,
+            "coefficient_cgs": 56629258718487.73
+          },
+          {
+            "state_calls": 26762,
+            "minimum_pressure_dyn_cm2": 52974033271537.14,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 250764163618248.0,
+            "minimum_cv_erg_g_K": 80261304.44368722,
+            "minimum_specific_energy_erg_g": 218025296740941.94,
+            "charge_weighted_Z_two_thirds": 3.3268924962701005,
+            "strength": 1.0,
+            "coefficient_cgs": 56629258718487.73
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.0005079530642768368,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": 5.896971583939192e-05,
+          "dynamic_moment_over_frozen_min_max": [
+            0.8702848294102072,
+            1.0000000000000002
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "6d2d0131a34ba6b43210a83d634cbd0e53c3228d9d8163d09519748550554aa1"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/B1-H1-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "baec576ca8b0486190e9579c3bedb2669a9e75775a09e780c0a4987707735e40"
+    },
+    {
+      "stage": "B1",
+      "H_per_catalyst": 2,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B1-H2-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/B1-H2-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "aa5f6b5c36de72ba9d7f9a5775d19db281486c43c6fb999034b33173601696fd",
+      "stress_sha256": "8de604bbb2ce7d0a5d32cb808f84fa0c1ae96e838e3fa561186244dd67dc1322",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 3.1950167825660044e+23,
+          "stress": 3.195016782566003e+23,
+          "relative_change": -4.440892098500626e-16
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 7.545622604748697,
+          "stress": 7.559049340194713,
+          "relative_change": 0.0017794072337471434
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.7559676522867469,
+          "stress": 0.757278973109539,
+          "relative_change": 0.0017346255740247063
+        },
+        "peak_temperature_K": {
+          "control": 484471180.25466996,
+          "stress": 495878209.0142826,
+          "relative_change": 0.02354531956599848
+        },
+        "radiation_escaped_J": {
+          "control": 1.619370607795823e+23,
+          "stress": 1.668125265471656e+23,
+          "relative_change": 0.030107164747293025
+        },
+        "final_kinetic_J": {
+          "control": 2.4283144354011805e+24,
+          "stress": 2.4317325488091185e+24,
+          "relative_change": 0.0014076074161184504
+        },
+        "final_internal_J": {
+          "control": 1.4008964794450904e+23,
+          "stress": 1.360859253667134e+23,
+          "relative_change": -0.028579717606125765
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": 0.0,
+          "initial_kinetic_relative": 2.220446049250313e-16,
+          "final_internal_relative": 4.440892098500626e-16,
+          "final_kinetic_relative": 2.220446049250313e-16,
+          "final_nuclear_relative": 0.0,
+          "final_radiation_relative": 0.0,
+          "final_record_energy_residual_difference": -7.57463643699747e-12,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 1.2078949738203448e-06,
+        "minimum_pressure_Pa": 6005438674829.843,
+        "minimum_isothermal_dp_drho_m2_s2": 16784488111.870178,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 28416303189.78756,
+        "minimum_cv_J_kg_K": 9035.044127888677,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 60054386748297.77,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 284163031897871.9,
+            "minimum_cv_erg_g_K": 90350441.27888629,
+            "minimum_specific_energy_erg_g": 248143469784123.3,
+            "charge_weighted_Z_two_thirds": 3.0683488855734224,
+            "strength": 1.0,
+            "coefficient_cgs": 52228415277778.766
+          },
+          {
+            "state_calls": 30005,
+            "minimum_pressure_dyn_cm2": 60054351528865.625,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 284163025715072.5,
+            "minimum_cv_erg_g_K": 90350439.37977028,
+            "minimum_specific_energy_erg_g": 248143464349166.78,
+            "charge_weighted_Z_two_thirds": 3.0683488855734224,
+            "strength": 1.0,
+            "coefficient_cgs": 52228415277778.766
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.0005863103266322943,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": 6.513098568549844e-05,
+          "dynamic_moment_over_frozen_min_max": [
+            0.8687679651475456,
+            1.0000000000000002
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "2817224fd1f28bc582630b8ac5bbe66db758a550f1099d9a213bf536fbb7777e"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/B1-H2-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "0c60f1c6d43f1bc35b6d0f722fb67a3ce10aa8d2905fa258bcb9e1adb1b7da66"
+    },
+    {
+      "stage": "B2",
+      "H_per_catalyst": 2,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/B2-H2-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/B2-H2-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "96132fe9689d6dfe8d16869cb3e804216948eebc55472340c0670118a178e823",
+      "stress_sha256": "25146b8467d52773f786505eb4445aa0bb69422c14c3e6116b1cd8ff1ad7cfcd",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 4.074393035942853e+25,
+          "stress": 4.0743930359428546e+25,
+          "relative_change": 4.440892098500626e-16
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 10.555031337297976,
+          "stress": 10.506094443799636,
+          "relative_change": -0.0046363570068629345
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.8218844799338176,
+          "stress": 0.8174496908494179,
+          "relative_change": -0.005395878852411107
+        },
+        "peak_temperature_K": {
+          "control": 1647110239.016083,
+          "stress": 1650189015.7943964,
+          "relative_change": 0.0018691989797552377
+        },
+        "radiation_escaped_J": {
+          "control": 3.621825467096395e+23,
+          "stress": 3.787615975388532e+23,
+          "relative_change": 0.045775399670225037
+        },
+        "final_kinetic_J": {
+          "control": 4.489032433698501e+26,
+          "stress": 4.469118903440333e+26,
+          "relative_change": -0.0044360406284169596
+        },
+        "final_internal_J": {
+          "control": 2.153197829995447e+25,
+          "stress": 2.1512864562468563e+25,
+          "relative_change": -0.0008876907277000079
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": 2.220446049250313e-16,
+          "initial_kinetic_relative": 2.220446049250313e-16,
+          "final_internal_relative": 0.0,
+          "final_kinetic_relative": 2.220446049250313e-16,
+          "final_nuclear_relative": 2.220446049250313e-16,
+          "final_radiation_relative": -2.220446049250313e-16,
+          "final_record_energy_residual_difference": 6.890598322295272e-12,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 9.874087307792934e-07,
+        "minimum_pressure_Pa": 445393446965531.2,
+        "minimum_isothermal_dp_drho_m2_s2": 14768314196.655207,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 23702457018.192963,
+        "minimum_cv_J_kg_K": 9151.720735653107,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 7067759540377410.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 237024570181927.16,
+            "minimum_cv_erg_g_K": 91517207.35653155,
+            "minimum_specific_energy_erg_g": 164321056743589.03,
+            "charge_weighted_Z_two_thirds": 2.7264454366709705,
+            "strength": 1.0,
+            "coefficient_cgs": 46408648367261.71
+          },
+          {
+            "state_calls": 69249,
+            "minimum_pressure_dyn_cm2": 4453934469654848.5,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 237024557192581.25,
+            "minimum_cv_erg_g_K": 91517205.32700403,
+            "minimum_specific_energy_erg_g": 164321052504415.44,
+            "charge_weighted_Z_two_thirds": 2.7264454366709705,
+            "strength": 1.0,
+            "coefficient_cgs": 46408648367261.71
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.008415074261194743,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": -0.0008511354620867634,
+          "dynamic_moment_over_frozen_min_max": [
+            0.9999999999999999,
+            1.460432183643585
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "57cd1a76bd2302358de0a780b2de30092143a26fcfd762bf153ca65fe6357a0e"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/B2-H2-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "292573aa250ebc23f5b204ed6b81c6eca8bc3c882b147b9ca13ff51668d2622a"
+    },
+    {
+      "stage": "B2",
+      "H_per_catalyst": 2.5,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/refine/B2-H2p5-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/B2-H2p5-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "f92988f64f7c658e34ce6f6bd37f396059f5e8a30c14866653a534093659a0d2",
+      "stress_sha256": "d30b1d73fcf0055e07339633edd725141908ff4be20a3fe87c9723c7f47c9253",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 4.074393035942854e+25,
+          "stress": 4.074393035942853e+25,
+          "relative_change": -2.220446049250313e-16
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 10.799858655586705,
+          "stress": 10.761762687982968,
+          "relative_change": -0.0035274505730712447
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.8798655297168775,
+          "stress": 0.8764569489753569,
+          "relative_change": -0.0038739791779517363
+        },
+        "peak_temperature_K": {
+          "control": 1646071782.5941658,
+          "stress": 1660138228.7920094,
+          "relative_change": 0.008545463415742027
+        },
+        "radiation_escaped_J": {
+          "control": 3.401909380400152e+23,
+          "stress": 3.6494845774845066e+23,
+          "relative_change": 0.07277536506725912
+        },
+        "final_kinetic_J": {
+          "control": 4.592263781261857e+26,
+          "stress": 4.5822363909944025e+26,
+          "relative_change": -0.0021835396974299037
+        },
+        "final_internal_J": {
+          "control": 2.1206162819358336e+25,
+          "stress": 2.0631903783296143e+25,
+          "relative_change": -0.027079818303477943
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": 8.881784197001252e-16,
+          "initial_kinetic_relative": -1.1102230246251565e-16,
+          "final_internal_relative": 2.220446049250313e-16,
+          "final_kinetic_relative": 2.220446049250313e-16,
+          "final_nuclear_relative": 2.220446049250313e-16,
+          "final_radiation_relative": 0.0,
+          "final_record_energy_residual_difference": -1.1061797245404928e-11,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 1.793239642999822e-06,
+        "minimum_pressure_Pa": 439524068180371.9,
+        "minimum_isothermal_dp_drho_m2_s2": 15756822722.750685,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 25169222728.983685,
+        "minimum_cv_J_kg_K": 9641.23746852387,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 7523621356235484.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 251692227289835.38,
+            "minimum_cv_erg_g_K": 96412374.68523829,
+            "minimum_specific_energy_erg_g": 177719755241188.06,
+            "charge_weighted_Z_two_thirds": 2.624889822749149,
+            "strength": 1.0,
+            "coefficient_cgs": 44680002448723.2
+          },
+          {
+            "state_calls": 71941,
+            "minimum_pressure_dyn_cm2": 4395240681803122.5,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 251692213221976.12,
+            "minimum_cv_erg_g_K": 96412372.32383381,
+            "minimum_specific_energy_erg_g": 177719750242790.5,
+            "charge_weighted_Z_two_thirds": 2.624889822749149,
+            "strength": 1.0,
+            "coefficient_cgs": 44680002448723.2
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.008848029557860645,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": -0.0008858233639487371,
+          "dynamic_moment_over_frozen_min_max": [
+            1.0,
+            1.4566437742677727
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "111e87697b070fdeb2a4c3bfbf88c32f4e0ea0331ff5a87cba2c1cc454c764c9"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/B2-H2p5-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "52d3ed1db596c90d106a3bcad1541105893936897be6903820c9da1cf91107f8"
+    },
+    {
+      "stage": "C13",
+      "H_per_catalyst": 1,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H1-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/C13-H1-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "c89a15098a8972951649e13f91ec30f1912a50ff971742aa7628aaef655d6cfd",
+      "stress_sha256": "e60cf3c9b1c24c07351facadb78f8e243e99fb63e73b92b83fdb5041e2486f0c",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 3.328266386521061e+25,
+          "stress": 3.3282663865210615e+25,
+          "relative_change": 2.220446049250313e-16
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 15.538979131684965,
+          "stress": 15.541640211630565,
+          "relative_change": 0.0001712519157821557
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.8166213800066037,
+          "stress": 0.816750423330311,
+          "relative_change": 0.00015802099585759954
+        },
+        "peak_temperature_K": {
+          "control": 1598249832.8532538,
+          "stress": 1599803887.7143254,
+          "relative_change": 0.0009723478952581299
+        },
+        "radiation_escaped_J": {
+          "control": 7.427778151749336e+23,
+          "stress": 7.482664411934191e+23,
+          "relative_change": 0.007389324110592677
+        },
+        "final_kinetic_J": {
+          "control": 5.1933815009397675e+26,
+          "stress": 5.195776328587407e+26,
+          "relative_change": 0.00046113070014319746
+        },
+        "final_internal_J": {
+          "control": 3.0380239617897443e+25,
+          "stress": 3.0223851004132135e+25,
+          "relative_change": -0.005147708370054405
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": 1.3322676295501878e-15,
+          "initial_kinetic_relative": -1.1102230246251565e-16,
+          "final_internal_relative": 2.220446049250313e-16,
+          "final_kinetic_relative": 2.220446049250313e-16,
+          "final_nuclear_relative": 2.220446049250313e-16,
+          "final_radiation_relative": 2.220446049250313e-16,
+          "final_record_energy_residual_difference": -2.91794099314091e-11,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 3.828271608163902e-06,
+        "minimum_pressure_Pa": 218294947909665.12,
+        "minimum_isothermal_dp_drho_m2_s2": 11592473920.243769,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 18988750784.055305,
+        "minimum_cv_J_kg_K": 7526.285696498204,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 5584584271025718.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 189887507840550.88,
+            "minimum_cv_erg_g_K": 75262856.96498245,
+            "minimum_specific_energy_erg_g": 126295423026561.73,
+            "charge_weighted_Z_two_thirds": 2.9730804990525375,
+            "strength": 1.0,
+            "coefficient_cgs": 50606788455140.945
+          },
+          {
+            "state_calls": 73011,
+            "minimum_pressure_dyn_cm2": 2182949479096409.5,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 189887499073412.62,
+            "minimum_cv_erg_g_K": 75262855.50893427,
+            "minimum_specific_energy_erg_g": 126295420729599.42,
+            "charge_weighted_Z_two_thirds": 2.9730804990525375,
+            "strength": 1.0,
+            "coefficient_cgs": 50606788455140.945
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.0037972339825550227,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": -0.00036465959652617343,
+          "dynamic_moment_over_frozen_min_max": [
+            1.0,
+            1.2319397863293697
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "556eec8878c53c84ddeb31367c097a5579b1dd0a75be3190fa425d34242bbd19"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/C13-H1-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "ec70cc73206915a40cf4e81e852c1e0369209c7443169ed7f6e8b14e58ec590a"
+    },
+    {
+      "stage": "C13",
+      "H_per_catalyst": 4,
+      "control_path": "/home/tkwa/src/protium-fusion/output/mixture-runs/grid/C13-H4-fixed_energy-z64-k0p001-t1.json",
+      "stress_path": "/home/tkwa/src/protium-fusion/output/nonideal-runs/C13-H4-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "control_sha256": "cf9dea85fb758573a00ba17adcf69aeed7ac1eb5d42ad3906ee4fd296a1f9170",
+      "stress_sha256": "7059fc168bcf6a38a298427a9b257d1a8fdbb76a7dedc0150c194799688ad45f",
+      "comparison": {
+        "initial_energy_J": {
+          "control": 3.3282663865210615e+25,
+          "stress": 3.3282663865210615e+25,
+          "relative_change": 0.0
+        },
+        "deposited_nuclear_over_initial_energy": {
+          "control": 23.655667176983588,
+          "stress": 23.59033596364538,
+          "relative_change": -0.0027617573771825388
+        },
+        "desired_product_per_initial_catalyst": {
+          "control": 0.22202708891603593,
+          "stress": 0.22470438939276277,
+          "relative_change": 0.012058440660541736
+        },
+        "peak_temperature_K": {
+          "control": 1513479761.088568,
+          "stress": 1515421720.122412,
+          "relative_change": 0.0012831086901665678
+        },
+        "radiation_escaped_J": {
+          "control": 9.304074613875848e+23,
+          "stress": 9.462100275088936e+23,
+          "relative_change": 0.016984565125629292
+        },
+        "final_kinetic_J": {
+          "control": 7.82500187024297e+26,
+          "stress": 7.803577028273875e+26,
+          "relative_change": -0.00273799831928101
+        },
+        "final_internal_J": {
+          "control": 3.717573998726095e+25,
+          "stress": 3.7127963108787577e+25,
+          "relative_change": -0.0012851628102021895
+        }
+      },
+      "audit": {
+        "checks": {
+          "initial_internal_relative": 4.440892098500626e-16,
+          "initial_kinetic_relative": 2.220446049250313e-16,
+          "final_internal_relative": 2.220446049250313e-16,
+          "final_kinetic_relative": 0.0,
+          "final_nuclear_relative": 2.220446049250313e-16,
+          "final_radiation_relative": 2.220446049250313e-16,
+          "final_record_energy_residual_difference": -1.572815305719682e-11,
+          "physical_duration_relative": 0.0
+        },
+        "saved_trace_energy_residual_max_abs_initial": 3.333633247559753e-06,
+        "minimum_pressure_Pa": 148416247575365.28,
+        "minimum_isothermal_dp_drho_m2_s2": 17180165973.004326,
+        "minimum_adiabatic_sound_speed_squared_m2_s2": 27335568879.379494,
+        "minimum_cv_J_kg_K": 10331.446001291004,
+        "source_diagnostic_minima": [
+          {
+            "state_calls": 2,
+            "minimum_pressure_dyn_cm2": 8152208358470830.0,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 273355688793794.06,
+            "minimum_cv_erg_g_K": 103314460.01290911,
+            "minimum_specific_energy_erg_g": 201687243820156.66,
+            "charge_weighted_Z_two_thirds": 2.3811563493367767,
+            "strength": 1.0,
+            "coefficient_cgs": 40531252244230.79
+          },
+          {
+            "state_calls": 105011,
+            "minimum_pressure_dyn_cm2": 1484162475753651.8,
+            "minimum_adiabatic_sound_speed_squared_cm2_s2": 273355674146713.6,
+            "minimum_cv_erg_g_K": 103314456.94706544,
+            "minimum_specific_energy_erg_g": 201687237138381.0,
+            "charge_weighted_Z_two_thirds": 2.3811563493367767,
+            "strength": 1.0,
+            "coefficient_cgs": 40531252244230.79
+          }
+        ],
+        "frozen_moment_omission_energy_scale": {
+          "largest_abs_if_replaced_by_instantaneous_true_moment_over_prepared": 0.006048249882859873,
+          "final_if_replaced_by_instantaneous_true_moment_over_prepared": -0.0005184996486326291,
+          "dynamic_moment_over_frozen_min_max": [
+            0.9999999999999998,
+            1.4267149346658143
+          ],
+          "scope": "Postprocessed strong-coupling energy difference only; not a corrected trajectory or a complete reaction-screening sensitivity."
+        },
+        "source_trace_sha256": "a3a9d7092cacb37e2718e98b0b08db8c1fd525a88f72a3a1ec0636c17711b9e0"
+      },
+      "archived_record": "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/component-design/nonideal_records/C13-H4-fixed_energy-z64-k0p001-t1-coulomb1.json",
+      "archived_record_sha256": "f673459369efb194cb4ae8bd899e0e8e86ecbed7687e41a443dfcd4005b8d53c"
+    }
+  ],
+  "missing": [],
+  "all_complete": true,
+  "interpretation": "A hydrodynamic free-energy stress at matched total initial energy and physical duration. Frozen charge moment and unchanged nuclear screening prevent interpreting this as a complete physically self-consistent Coulomb plasma calculation."
+}

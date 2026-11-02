@@ -1,0 +1,149 @@
+{
+  "case": "C13-H2-fixed_energy-z64-k0p03-t1",
+  "stage": "C13",
+  "source_paths": {
+    "record": "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.json",
+    "initial": "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.initial.json",
+    "inputs": "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.inputs.json",
+    "trace": "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.npz"
+  },
+  "input_sha256": {
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.json": "2ddfe6f538597d1330a80ac14cba7e337a1fa902a790025b14ca7b7b6c35b90a",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.initial.json": "9b3e68647430f0c704ddedbd70878f3f14797b362bd93dd557725f44b5eb991b",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.inputs.json": "dcbf3f517e4d52b24f9245233ae28eb983b6b4e9b3794b07c986a3de75921593",
+    "/home/tkwa/src/protium-fusion/output/mixture-runs/opacity/C13-H2-fixed_energy-z64-k0p03-t1.npz": "bce5b3c78c0c530196dc0acab532e84490697403a6d1c1a31c35c2f3e7d0d68f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/fast_eos.py": "85b9740919bff096a27a95439a007f7a94a983431fc6b3e4f7caceb180b31041",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/electron-eos.npz": "7fadfe3365e2db20189da182a75474ff1532bc185f5e277f731995ce0652510f",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/pulse_model.py": "69596156a457eecda91c19188684d70a848197bfb7f1f07a1cada5545ad581c5",
+    "/home/tkwa/.codex/worktrees/protium-fusion/website/docs/protium-fusion/nuclear_screen.py": "952f6d0cf8ddcf781ceacc109a0a9113ac2280491a78f5409cd1300b10dd23ba"
+  },
+  "code_sha256": "5f57f692ae694e8dadb123872c1f5c01223e96b405caafc2b15603fb361a7a8c",
+  "radius_m": 1000000000.0,
+  "thermal_points": 65536,
+  "source_success": true,
+  "source_termination": "final_time",
+  "source_elapsed_s": 7.000357811304867e-05,
+  "requested_physical_duration_s": 7.000357811304867e-05,
+  "completed_requested_duration": true,
+  "source_hydro_energy_residual_fraction_initial": 6.071844987745776e-07,
+  "source_zones": 64,
+  "initial_Y": {
+    "p": 0.13333333333333333,
+    "c13": 0.06666666666666667
+  },
+  "hydrogen_per_catalyst": 2.0,
+  "warnings": [],
+  "source_rating": {
+    "peak_kinetic_electric_W": 2.2103929355074645e+23,
+    "peak_total_prepared_electric_W": 2.2791976920002565e+23,
+    "peak_total_exact_local_halfcell_allocation_W": 2.2802925472710065e+23,
+    "electric_storage_J": 5.547110644201769e+25,
+    "initial_electrons_per_baryon_min_max": [
+      0.5333333333333333,
+      0.5333333333333333
+    ],
+    "initial_ions_per_baryon_min_max": [
+      0.2,
+      0.2
+    ],
+    "scope": "60% preparation efficiency. Actual initial composition and EOS; launch-time bins retain historical centroid allocation for comparison, with exact half-cell kinetic allocation separately reported. No switching/focusing overhead is inferred."
+  },
+  "prompt": {
+    "energy_J": 3.2530329387463615e+22,
+    "emission_time_surface_screen": {
+      "peak_surface_rise_K": 30.483349357858607,
+      "peak_flux_W_m2": 236965278.55216935,
+      "fluence_J_m2": 2588.681361211191,
+      "duration_s": 7.000357811304867e-05
+    },
+    "radial_ray_arrival_surface_screen": {
+      "peak_surface_rise_K": 31.38346315396308,
+      "peak_flux_W_m2": 249887013.64174217,
+      "fluence_J_m2": 2588.681361211191,
+      "duration_s": 6.744713443730038e-05
+    },
+    "scope": "Named mass-weighted radiation accumulator, no renormalization. Surface-deposition thermal upper reference; spectrum-dependent depth, angular smearing and material phase changes are separate."
+  },
+  "usable_ballistic": true,
+  "timing_at_radius": {
+    "mass999": {
+      "incoming_s": 3236.4102303143127,
+      "outgoing_s": 902.2106258470395,
+      "occupied_s": 4138.620856161352,
+      "finite_radius_incoming_s": 3236.410199884692,
+      "finite_radius_outgoing_s": 902.2105846147548,
+      "omitted_slow_mass_on_each_leg": 0.001
+    },
+    "energy99": {
+      "incoming_s": 824.158950403499,
+      "outgoing_s": 202.57189217990208,
+      "occupied_s": 1026.7308425834012,
+      "finite_radius_incoming_s": 824.1589206451417,
+      "finite_radius_outgoing_s": 202.57185020951195,
+      "omitted_slow_mass_on_each_leg": null
+    },
+    "full_resolved": {
+      "incoming_s": 27473.26331243275,
+      "outgoing_s": 7517.201731468714,
+      "occupied_s": 34990.465043901466
+    }
+  },
+  "ballistic": {
+    "mass_kg": 11309733552923.256,
+    "mass_fluence_kg_m2": 9e-07,
+    "kinetic_J_exact_nodal": 7.21421550983544e+26,
+    "kinetic_J_smooth_mass_conserving": 7.205431212852477e+26,
+    "smooth_vs_nodal_kinetic_relative": -0.001217637173575925,
+    "kinetic_fluence_J_m2_exact_nodal": 57408902.946026415,
+    "kinetic_fluence_J_m2_smooth": 57338999.73170512,
+    "momentum_fluence_Pa_s": 9.46104038388575,
+    "peak_kinetic_flux_W_m2": 1336223.1986178816,
+    "peak_momentum_flux_Pa": 0.18749904718554347,
+    "peak_mass_flux_kg_m2_s": 1.3685673781388355e-08,
+    "kinetic_peak_arrival_s": 70.09942308774812,
+    "arrival_1_50_99_percent_energy_s": [
+      46.845045068939584,
+      74.85916398504607,
+      202.5719202130901
+    ],
+    "maximum_speed_m_s": 21570628.75311857,
+    "maximum_MeV_u": 2.4112060061596665,
+    "endpoint_internal_J": 3.957449787574252e+25,
+    "internal_to_kinetic_ratio": 0.05485627345314118,
+    "minimum_nonzero_nodal_speed_m_s": 177370.96608059586,
+    "literal_full_clearance": "Infinite for uniform central-cell dm/dv extending to zero. Full_resolved is a finite shell-representative diagnostic; the retained slow core needs its own route."
+  },
+  "thermal": {
+    "properties": {
+      "k_W_m_K": 100.0,
+      "rho_kg_m3": 2000.0,
+      "cp_J_kg_K": 1000.0
+    },
+    "kinetic_only_peak_rise_K": 464.23971140966785,
+    "kinetic_plus_advected_endpoint_internal_peak_rise_K": 476.8228829530899,
+    "material_peak_time_s": 79.29038844766521,
+    "grid_duration_s": 1620.5753617047208,
+    "grid_points": 65536,
+    "scope": "Semi-infinite constant-property carbon, no surface radiation/cooling. Actual mass-conserving velocity histogram; per-cell residual internal energy advected as an upper scenario. Subsequent pressure acceleration or radiation changes its partition. Delayed nuclear decay is not included in this material or prompt screen."
+  },
+  "energy_channels_J": {
+    "prepared": 3.328266386521061e+25,
+    "outgoing_kinetic_nodal": 7.21421550983544e+26,
+    "endpoint_internal": 3.957449787574252e+25,
+    "escaped_prompt_radiation": 3.2530329387463615e+22,
+    "future_decay": "Separate nuclear ledger required; no fixed-stage beta inventory assumed."
+  },
+  "checks": {
+    "physical_duration_relative_to_requested": 0.0,
+    "trace_endpoint_relative_to_record": 0.0,
+    "initial_mass_relative": 2.220446049250313e-16,
+    "initial_internal_relative": 8.881784197001252e-16,
+    "initial_kinetic_relative": -1.1102230246251565e-16,
+    "prompt_accumulator_relative": -1.1102230246251565e-16,
+    "minimum_prompt_increment_fraction": 5.120932865992258e-10,
+    "final_kinetic_nodal_relative": 0.0,
+    "final_internal_relative": 0.0,
+    "thermal_grid_kinetic_relative_vs_smooth": -0.00024124098299460606
+  },
+  "scope": "Cached generalized receiver requirements, conditional on ballistic continuation of this actual mixture. Complete mass retained; no mass normalization to nodal kinetic energy. Not a validated apparatus or permanent matter-loss calculation."
+}

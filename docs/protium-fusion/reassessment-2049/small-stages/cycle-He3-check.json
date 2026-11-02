@@ -1,0 +1,2285 @@
+{
+  "scope": "Existing steady-state isotope accounting applied to small prescribed hot inflows with ideal separation and the named helium factory; B2 variants are explicitly conditional. No engineered driver or collection demonstrated.",
+  "factory_source": "scaled-hot-He-64-R3.json",
+  "factory_sha256": "17c56b9490d3dfd249260be7622b84b5bb7601e65c21061575ea5ee4fba1cad1",
+  "ledger_code_sha256": "2feb5939a5199d76594572effce0cbb06d2b26b54a9e7b44e6904f61c86b14d9",
+  "input_hashes": {
+    "scaled-hot-B2-64-R30-norad.json": "2113bd27c7b45ffa1aaf5d526695dfa14703414ee35bbe305e6b3e0bce6e66d1",
+    "scaled-hot-B2-64-R30-tight.json": "83e60fc80f668c84115b2b19b10c78e5ab8729ea2eff2bea8618345792e4fcf1",
+    "scaled-hot-A-64-R30.json": "4d2d097f7840c0bfbe7d1f2fbcc7eefcaf32c73bb86220acc7e7b08955f1e51e",
+    "scaled-hot-C13-64-R30.json": "0dd0f0ad149940bceca1f4a70b74488942a443f588e2b1d2d3de37792e895ce6",
+    "scaled-hot-B1-64-R30.json": "6fd3eb320aa5a6f8ac5484f3c1d30dcf128f3d564b63d88f98673d9f0488ab5d"
+  },
+  "variants": [
+    {
+      "B2_input": "scaled-hot-B2-64-R30-tight.json",
+      "B2_success": false,
+      "B2_termination": "solver_failure",
+      "scope": "Conditional freeze at failed radiating solver endpoint; not a completed radiating pulse.",
+      "cases": [
+        {
+          "collection_loss_per_stage": 0.0,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1392594583298261,
+            "c13": 0.07936364459841662,
+            "n14": 1.8535885359714452,
+            "n15": 1.6658367811583166
+          },
+          "new_carbon_per_net_helium": 0.00012143077915970805,
+          "hydrogen_atoms_per_net_helium": 4.001942923217945,
+          "ash_nuclei_per_net_helium": {
+            "o16": 0.00012143241834215924,
+            "o17": 9.197386805332394e-11,
+            "o18": 1.6849060433858973e-11,
+            "f19": 5.175162826555945e-11,
+            "ne20": 7.844247721341956e-11,
+            "ne21": 1.8685828845842293e-12,
+            "na23": 1.8311894193528404e-12
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.0004854949785838462,
+          "nuclear_Q_MeV_per_helium": 26.745705523507393,
+          "neutrino_MeV_per_helium": 2.0279324873050117,
+          "escaped_radiation_MeV_per_helium": 0.26772249876469073,
+          "available_heat_MeV_per_helium": 24.45005053743769,
+          "fuel_preparation_MeV_per_helium": 3.227265721289359,
+          "factory_input_MeV_per_helium": 0.9274212525137724,
+          "final_bulk_kinetic_MeV_per_helium": 18.769786223172837,
+          "final_hot_internal_MeV_per_helium": 3.2291362845825495,
+          "cold_decay_heat_MeV_per_helium": 5.678393750971665,
+          "baryon_residual_per_hydrogen": -2.581477175402818e-15,
+          "mass_defect_energy_relative_residual": 1.6860697984520289e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -10.444178305104906,
+              "net_fraction_hydrogen_rest_energy": -0.002779957373479756
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -5.0654021029559715,
+              "net_fraction_hydrogen_rest_energy": -0.0013482728381676047
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 0.31337409919295744,
+              "net_fraction_hydrogen_rest_energy": 8.341169714454507e-05
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 8.616568976811072,
+              "net_fraction_hydrogen_rest_energy": 0.0022934972729711793
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.07118737733927,
+              "net_fraction_hydrogen_rest_energy": 0.004543887689134216
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 18.455053190275628,
+              "net_fraction_hydrogen_rest_energy": 0.004912235285105323
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 7.821288588462094,
+              "net_fraction_hydrogen_rest_energy": 0.002081815174582073
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 14.892041176053946,
+              "net_fraction_hydrogen_rest_energy": 0.003963857994774006
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.312490467020965,
+              "net_fraction_hydrogen_rest_energy": 0.004608116035664473
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 19.141732781735023,
+              "net_fraction_hydrogen_rest_energy": 0.005095010792926992
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-tight.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30253099152521074,
+                "he4": 4.132034549578309e-11,
+                "c12": 0.12186968937909554,
+                "c13": 0.058791614940229296,
+                "n14": 0.8193386930975072,
+                "n15": 2.4463272754624644e-09,
+                "o16": 1.6596404863875974e-11,
+                "o17": 1.1669764742506876e-14,
+                "o18": 7.152392346102202e-16,
+                "f19": 4.3604861802466184e-21,
+                "ne20": 5.602277977456642e-11,
+                "ne21": 1.6401731580896992e-12,
+                "ne22": 2.7496005937632615e-13,
+                "na23": 1.6073276212645392e-12,
+                "mg24": 5.707623767681399e-13
+              },
+              "Q_hot_MeV": 5.497448555855954,
+              "Q_cold_MeV": 4.345521406959063,
+              "Q_total_MeV": 9.842969962815015,
+              "nu_MeV": 0.9018127600978252,
+              "nu_hot_MeV": 3.107659678890642e-07,
+              "nu_cold_MeV": 0.9018124493318573,
+              "final_kinetic_fraction": 0.6533908645264298,
+              "radiated_MeV": 0.00014148029025199305,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 9.04749902056224e-19
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        },
+        {
+          "collection_loss_per_stage": 1e-05,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1394624082036569,
+            "c13": 0.07937684011452602,
+            "n14": 1.8538828808831531,
+            "n15": 1.6660736019782052
+          },
+          "new_carbon_per_net_helium": 0.00016883478519375724,
+          "hydrogen_atoms_per_net_helium": 4.002599707067401,
+          "ash_nuclei_per_net_helium": {
+            "c12": 1.1393049664373717e-05,
+            "c13": 7.937763389270023e-07,
+            "n14": 1.8539014198953204e-05,
+            "n15": 1.6660902628757372e-05,
+            "o16": 0.00012145043755642642,
+            "o17": 9.198746319841705e-11,
+            "o18": 1.685186181686641e-11,
+            "f19": 5.1759034293525715e-11,
+            "ne20": 8.416033538672121e-11,
+            "ne21": 1.868915757536506e-12,
+            "na23": 1.831525863618606e-12
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.000649504630210417,
+          "nuclear_Q_MeV_per_helium": 26.75043563184581,
+          "neutrino_MeV_per_helium": 2.0282744101639643,
+          "escaped_radiation_MeV_per_helium": 0.2677773678970899,
+          "available_heat_MeV_per_helium": 24.454383853784755,
+          "fuel_preparation_MeV_per_helium": 3.5896753503023056,
+          "factory_input_MeV_per_helium": 1.289466880109118,
+          "final_bulk_kinetic_MeV_per_helium": 19.10007130767021,
+          "final_hot_internal_MeV_per_helium": 3.2646165062188355,
+          "cold_decay_heat_MeV_per_helium": 5.6793713901980185,
+          "baryon_residual_per_hydrogen": -2.4763404451206443e-15,
+          "mass_defect_energy_relative_residual": 1.9452578768954868e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -12.713545320380545,
+              "net_fraction_hydrogen_rest_energy": -0.003383446126323451
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -6.7307530698767035,
+              "net_fraction_hydrogen_rest_energy": -0.0017912501845576744
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -0.7479608193728602,
+              "net_fraction_hydrogen_rest_energy": -0.00019905424279189726
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 7.665256941853256,
+              "net_fraction_hydrogen_rest_energy": 0.0020399489877628444
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 16.658099622869386,
+              "net_fraction_hydrogen_rest_energy": 0.004433207356452837
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 18.060302583073742,
+              "net_fraction_hydrogen_rest_energy": 0.004806374561545294
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 6.892067703695224,
+              "net_fraction_hydrogen_rest_energy": 0.001834180725107808
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 14.482707424507002,
+              "net_fraction_hydrogen_rest_energy": 0.003854271888705343
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.17496393723373,
+              "net_fraction_hydrogen_rest_energy": 0.004570760062499943
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 19.02436629225893,
+              "net_fraction_hydrogen_rest_energy": 0.005062940101697395
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-tight.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30253099152521074,
+                "he4": 4.132034549578309e-11,
+                "c12": 0.12186968937909554,
+                "c13": 0.058791614940229296,
+                "n14": 0.8193386930975072,
+                "n15": 2.4463272754624644e-09,
+                "o16": 1.6596404863875974e-11,
+                "o17": 1.1669764742506876e-14,
+                "o18": 7.152392346102202e-16,
+                "f19": 4.3604861802466184e-21,
+                "ne20": 5.602277977456642e-11,
+                "ne21": 1.6401731580896992e-12,
+                "ne22": 2.7496005937632615e-13,
+                "na23": 1.6073276212645392e-12,
+                "mg24": 5.707623767681399e-13
+              },
+              "Q_hot_MeV": 5.497448555855954,
+              "Q_cold_MeV": 4.345521406959063,
+              "Q_total_MeV": 9.842969962815015,
+              "nu_MeV": 0.9018127600978252,
+              "nu_hot_MeV": 3.107659678890642e-07,
+              "nu_cold_MeV": 0.9018124493318573,
+              "final_kinetic_fraction": 0.6533908645264298,
+              "radiated_MeV": 0.00014148029025199305,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 9.04749902056224e-19
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        },
+        {
+          "collection_loss_per_stage": 0.0001,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1412918551711757,
+            "c13": 0.07949578667981703,
+            "n14": 1.8565361538799134,
+            "n15": 1.6682083558847984
+          },
+          "new_carbon_per_net_helium": 0.0005961447113937389,
+          "hydrogen_atoms_per_net_helium": 4.008520111501148,
+          "ash_nuclei_per_net_helium": {
+            "c12": 0.00011408097914396357,
+            "c13": 7.950373705350954e-06,
+            "n14": 0.00018567218260642473,
+            "n15": 0.00016683751934041185,
+            "o16": 0.00012161286663699665,
+            "o17": 9.211001258689708e-11,
+            "o18": 1.687711394677274e-11,
+            "f19": 5.1825793802510027e-11,
+            "ne20": 1.3570234192105143e-10
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.002125500472015766,
+          "nuclear_Q_MeV_per_helium": 26.7930738882594,
+          "neutrino_MeV_per_helium": 2.031356579935553,
+          "escaped_radiation_MeV_per_helium": 0.2682719700674383,
+          "available_heat_MeV_per_helium": 24.49344533825641,
+          "fuel_preparation_MeV_per_helium": 6.85651384649955,
+          "factory_input_MeV_per_helium": 4.553024189963304,
+          "final_bulk_kinetic_MeV_per_helium": 22.077332219830314,
+          "final_hot_internal_MeV_per_helium": 3.5844428936997654,
+          "cold_decay_heat_MeV_per_helium": 5.688184071225878,
+          "baryon_residual_per_hydrogen": -2.0559455387792277e-15,
+          "mass_defect_energy_relative_residual": 2.9787711380197005e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -33.17010863609462,
+              "net_fraction_hydrogen_rest_energy": -0.008814497855922561
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -21.742585558595366,
+              "net_fraction_hydrogen_rest_energy": -0.005777791562006055
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -10.315062481096117,
+              "net_fraction_hydrogen_rest_energy": -0.0027410852680895517
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -0.9100747256693289,
+              "net_fraction_hydrogen_rest_energy": -0.00024183977828195889
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 12.934437614043466,
+              "net_fraction_hydrogen_rest_energy": 0.003437148001755041
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 14.501935573281264,
+              "net_fraction_hydrogen_rest_energy": 0.0038536889167229732
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -1.4841295931639884,
+              "net_fraction_hydrogen_rest_energy": -0.00039438692409406075
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 10.792884787311005,
+              "net_fraction_hydrogen_rest_energy": 0.0028680599409750063
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 15.935270172185668,
+              "net_fraction_hydrogen_rest_energy": 0.004234577773237433
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.966399479669747,
+              "net_fraction_hydrogen_rest_energy": 0.004774322310173861
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-tight.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30253099152521074,
+                "he4": 4.132034549578309e-11,
+                "c12": 0.12186968937909554,
+                "c13": 0.058791614940229296,
+                "n14": 0.8193386930975072,
+                "n15": 2.4463272754624644e-09,
+                "o16": 1.6596404863875974e-11,
+                "o17": 1.1669764742506876e-14,
+                "o18": 7.152392346102202e-16,
+                "f19": 4.3604861802466184e-21,
+                "ne20": 5.602277977456642e-11,
+                "ne21": 1.6401731580896992e-12,
+                "ne22": 2.7496005937632615e-13,
+                "na23": 1.6073276212645392e-12,
+                "mg24": 5.707623767681399e-13
+              },
+              "Q_hot_MeV": 5.497448555855954,
+              "Q_cold_MeV": 4.345521406959063,
+              "Q_total_MeV": 9.842969962815015,
+              "nu_MeV": 0.9018127600978252,
+              "nu_hot_MeV": 3.107659678890642e-07,
+              "nu_cold_MeV": 0.9018124493318573,
+              "final_kinetic_fraction": 0.6533908645264298,
+              "radiated_MeV": 0.00014148029025199305,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 9.04749902056224e-19
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        },
+        {
+          "collection_loss_per_stage": 0.001,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1598778325623207,
+            "c13": 0.0807040537548393,
+            "n14": 1.8834882036547465,
+            "n15": 1.689894519779929
+          },
+          "new_carbon_per_net_helium": 0.004937025908480763,
+          "hydrogen_atoms_per_net_helium": 4.068664610428455,
+          "ash_nuclei_per_net_helium": {
+            "c12": 0.0011560969035575147,
+            "c13": 8.07848385934131e-05,
+            "n14": 0.0018853735772318115,
+            "n15": 0.0016915861058859401,
+            "o16": 0.00012326292270996647,
+            "o17": 9.335492781302888e-11,
+            "f19": 5.250397627732722e-11,
+            "ne20": 6.592983192619383e-10
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.016876448791546712,
+          "nuclear_Q_MeV_per_helium": 27.22622399115038,
+          "neutrino_MeV_per_helium": 2.0626675300782162,
+          "escaped_radiation_MeV_per_helium": 0.2732964465467615,
+          "available_heat_MeV_per_helium": 24.890260014525403,
+          "fuel_preparation_MeV_per_helium": 40.04310019631561,
+          "factory_input_MeV_per_helium": 37.706278288095135,
+          "final_bulk_kinetic_MeV_per_helium": 52.322206863591056,
+          "final_hot_internal_MeV_per_helium": 6.833441510022169,
+          "cold_decay_heat_MeV_per_helium": 5.777711837227804,
+          "baryon_residual_per_hydrogen": -6.425821516746006e-15,
+          "mass_defect_energy_relative_residual": 2.785529846213784e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -240.98065722443437,
+              "net_fraction_hydrogen_rest_energy": -0.06309065591567856
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -174.24215689724164,
+              "net_fraction_hydrogen_rest_energy": -0.045617984835070416
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -107.50365657004899,
+              "net_fraction_hydrogen_rest_energy": -0.028145313754462296
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -88.02364850679669,
+              "net_fraction_hydrogen_rest_energy": -0.023045292449396827
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": -24.892844213416367,
+              "net_fraction_hydrogen_rest_energy": -0.006517144932377583
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": -21.646176202874308,
+              "net_fraction_hydrogen_rest_energy": -0.005667141381533336
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -86.57477382461255,
+              "net_fraction_hydrogen_rest_energy": -0.02266596551464835
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": -26.690637541774294,
+              "net_fraction_hydrogen_rest_energy": -0.006987821548473358
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 3.3416876054624183,
+              "net_fraction_hydrogen_rest_energy": 0.0008748804378003002
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 7.218913283366966,
+              "net_fraction_hydrogen_rest_energy": 0.0018899690095120479
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-tight.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30253099152521074,
+                "he4": 4.132034549578309e-11,
+                "c12": 0.12186968937909554,
+                "c13": 0.058791614940229296,
+                "n14": 0.8193386930975072,
+                "n15": 2.4463272754624644e-09,
+                "o16": 1.6596404863875974e-11,
+                "o17": 1.1669764742506876e-14,
+                "o18": 7.152392346102202e-16,
+                "f19": 4.3604861802466184e-21,
+                "ne20": 5.602277977456642e-11,
+                "ne21": 1.6401731580896992e-12,
+                "ne22": 2.7496005937632615e-13,
+                "na23": 1.6073276212645392e-12,
+                "mg24": 5.707623767681399e-13
+              },
+              "Q_hot_MeV": 5.497448555855954,
+              "Q_cold_MeV": 4.345521406959063,
+              "Q_total_MeV": 9.842969962815015,
+              "nu_MeV": 0.9018127600978252,
+              "nu_hot_MeV": 3.107659678890642e-07,
+              "nu_cold_MeV": 0.9018124493318573,
+              "final_kinetic_fraction": 0.6533908645264298,
+              "radiated_MeV": 0.00014148029025199305,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 9.04749902056224e-19
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        }
+      ]
+    },
+    {
+      "B2_input": "scaled-hot-B2-64-R30-norad.json",
+      "B2_success": false,
+      "B2_termination": "solver_failure",
+      "scope": "Radiation-off endpoint control; read B2_success and B2_termination. Not a completed radiating solution.",
+      "cases": [
+        {
+          "collection_loss_per_stage": 0.0,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1392757887407419,
+            "c13": 0.0793572768441735,
+            "n14": 1.8535889105618217,
+            "n15": 1.66583678115708
+          },
+          "new_carbon_per_net_helium": 0.00012143077877710515,
+          "hydrogen_atoms_per_net_helium": 4.001942923210344,
+          "ash_nuclei_per_net_helium": {
+            "o16": 0.00012143241771430893,
+            "o17": 9.197212158326204e-11,
+            "o18": 1.6847704976942517e-11,
+            "f19": 5.175160218599813e-11,
+            "ne20": 7.855780919352473e-11,
+            "ne21": 1.8721692963937697e-12,
+            "na23": 1.835007540451539e-12
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.00048549497667808996,
+          "nuclear_Q_MeV_per_helium": 26.745705523446787,
+          "neutrino_MeV_per_helium": 2.0279343277235795,
+          "escaped_radiation_MeV_per_helium": 0.2675612897757029,
+          "available_heat_MeV_per_helium": 24.450209905947506,
+          "fuel_preparation_MeV_per_helium": 3.227271715567628,
+          "factory_input_MeV_per_helium": 0.9274212495916627,
+          "final_bulk_kinetic_MeV_per_helium": 18.67475768861446,
+          "final_hot_internal_MeV_per_helium": 3.324316293399458,
+          "cold_decay_heat_MeV_per_helium": 5.678407639501213,
+          "baryon_residual_per_hydrogen": -1.018091616129071e-15,
+          "mass_defect_energy_relative_residual": 2.507962748735242e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -10.444152121844798,
+              "net_fraction_hydrogen_rest_energy": -0.0027799504042103963
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -5.065365929232083,
+              "net_fraction_hydrogen_rest_energy": -0.0013482632097046691
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 0.31342026338062823,
+              "net_fraction_hydrogen_rest_energy": 8.342398480105687e-05
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 8.616664749835167,
+              "net_fraction_hydrogen_rest_energy": 0.0022935227651604386
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.07131594715261,
+              "net_fraction_hydrogen_rest_energy": 0.004543921910944711
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 18.455190028228365,
+              "net_fraction_hydrogen_rest_energy": 0.004912271707671275
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 7.78332333882641,
+              "net_fraction_hydrogen_rest_energy": 0.002071709853460924
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 14.854100455068092,
+              "net_fraction_hydrogen_rest_energy": 0.003953759202518632
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.274554241743814,
+              "net_fraction_hydrogen_rest_energy": 0.004598018440046209
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 19.108564519464604,
+              "net_fraction_hydrogen_rest_energy": 0.005086182299916853
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-norad.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30255060127321687,
+                "he4": 4.140347982423304e-11,
+                "c12": 0.12188227652564766,
+                "c13": 0.05878605038140098,
+                "n14": 0.8193316705228088,
+                "n15": 2.433055776246245e-09,
+                "o16": 1.662613175038821e-11,
+                "o17": 1.1654009159126141e-14,
+                "o18": 7.114606750597906e-16,
+                "f19": 0.0,
+                "ne20": 5.61232094970984e-11,
+                "ne21": 1.643297622904253e-12,
+                "ne22": 2.7540230594822376e-13,
+                "na23": 1.6106559398470382e-12,
+                "mg24": 5.716691701850586e-13
+              },
+              "Q_hot_MeV": 5.497391590448387,
+              "Q_cold_MeV": 4.345472935336618,
+              "Q_total_MeV": 9.842864525785005,
+              "nu_MeV": 0.9018014489047209,
+              "nu_hot_MeV": 2.996188349931797e-07,
+              "nu_cold_MeV": 0.901801149285886,
+              "final_kinetic_fraction": 0.6395228459985935,
+              "radiated_MeV": 0.0,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 1.3392295530546782e-21
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        },
+        {
+          "collection_loss_per_stage": 1e-05,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1394787418088859,
+            "c13": 0.07937047132117725,
+            "n14": 1.8538832561111425,
+            "n15": 1.6660736024937517
+          },
+          "new_carbon_per_net_helium": 0.00016883488825469625,
+          "hydrogen_atoms_per_net_helium": 4.002599708245132,
+          "ash_nuclei_per_net_helium": {
+            "c12": 1.1393213001268557e-05,
+            "c13": 7.937126503470555e-07,
+            "n14": 1.8539017951404564e-05,
+            "n15": 1.6660902633988857e-05,
+            "o16": 0.00012145043696779218,
+            "o17": 9.198571646494402e-11,
+            "o18": 1.685050613870171e-11,
+            "f19": 5.1759008225662923e-11,
+            "ne20": 8.427570038082169e-11,
+            "ne21": 1.872502808704992e-12,
+            "na23": 1.8353446653664195e-12
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.0006495049242535027,
+          "nuclear_Q_MeV_per_helium": 26.750435640613517,
+          "neutrino_MeV_per_helium": 2.0282762514779606,
+          "escaped_radiation_MeV_per_helium": 0.26761613030991144,
+          "available_heat_MeV_per_helium": 24.454543258825645,
+          "fuel_preparation_MeV_per_helium": 3.589682136399559,
+          "factory_input_MeV_per_helium": 1.2894676672316732,
+          "final_bulk_kinetic_MeV_per_helium": 19.005026564783545,
+          "final_hot_internal_MeV_per_helium": 3.359813547713398,
+          "cold_decay_heat_MeV_per_helium": 5.679385282728261,
+          "baryon_residual_per_hydrogen": -6.773927785743488e-16,
+          "mass_defect_energy_relative_residual": 3.22556649276899e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -12.713524084573645,
+              "net_fraction_hydrogen_rest_energy": -0.0033834404738587974
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -6.73072052390771,
+              "net_fraction_hydrogen_rest_energy": -0.0017912415225966938
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -0.7479169632417815,
+              "net_fraction_hydrogen_rest_energy": -0.00019904257133459218
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 7.665350655325778,
+              "net_fraction_hydrogen_rest_energy": 0.002039973927057617
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 16.658227313142305,
+              "net_fraction_hydrogen_rest_energy": 0.004433241337263404
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 18.060438582903565,
+              "net_fraction_hydrogen_rest_energy": 0.0048064107536621055
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": 6.854093662671637,
+              "net_fraction_hydrogen_rest_energy": 0.0018240747219758781
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 14.444759050726903,
+              "net_fraction_hydrogen_rest_energy": 0.003844172715782963
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.137020653026575,
+              "net_fraction_hydrogen_rest_energy": 0.00456066224385091
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 18.99119186430991,
+              "net_fraction_hydrogen_rest_energy": 0.0050541114149845025
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-norad.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30255060127321687,
+                "he4": 4.140347982423304e-11,
+                "c12": 0.12188227652564766,
+                "c13": 0.05878605038140098,
+                "n14": 0.8193316705228088,
+                "n15": 2.433055776246245e-09,
+                "o16": 1.662613175038821e-11,
+                "o17": 1.1654009159126141e-14,
+                "o18": 7.114606750597906e-16,
+                "f19": 0.0,
+                "ne20": 5.61232094970984e-11,
+                "ne21": 1.643297622904253e-12,
+                "ne22": 2.7540230594822376e-13,
+                "na23": 1.6106559398470382e-12,
+                "mg24": 5.716691701850586e-13
+              },
+              "Q_hot_MeV": 5.497391590448387,
+              "Q_cold_MeV": 4.345472935336618,
+              "Q_total_MeV": 9.842864525785005,
+              "nu_MeV": 0.9018014489047209,
+              "nu_hot_MeV": 2.996188349931797e-07,
+              "nu_cold_MeV": 0.901801149285886,
+              "final_kinetic_fraction": 0.6395228459985935,
+              "radiated_MeV": 0.0,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 1.3392295530546782e-21
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        },
+        {
+          "collection_loss_per_stage": 0.0001,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1413082175770106,
+            "c13": 0.07948940852020946,
+            "n14": 1.8565365348647542,
+            "n15": 1.6682083610662954
+          },
+          "new_carbon_per_net_helium": 0.0005961457484295351,
+          "hydrogen_atoms_per_net_helium": 4.008520123384221,
+          "ash_nuclei_per_net_helium": {
+            "c12": 0.00011408261544450093,
+            "c13": 7.949735825565282e-06,
+            "n14": 0.0001856722207084317,
+            "n15": 0.00016683751985827557,
+            "o16": 0.00012161286640243928,
+            "o17": 9.210826347942449e-11,
+            "o18": 1.6875756274327073e-11,
+            "f19": 5.182576784033669e-11,
+            "ne20": 1.3581800469416264e-10
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.0021255034301182873,
+          "nuclear_Q_MeV_per_helium": 26.79307397675565,
+          "neutrino_MeV_per_helium": 2.031358429331746,
+          "escaped_radiation_MeV_per_helium": 0.2681104746899076,
+          "available_heat_MeV_per_helium": 24.493605072733992,
+          "fuel_preparation_MeV_per_helium": 6.856527781786764,
+          "factory_input_MeV_per_helium": 4.5530321102701965,
+          "final_bulk_kinetic_MeV_per_helium": 21.982141381026192,
+          "final_hot_internal_MeV_per_helium": 3.679793473645085,
+          "cold_decay_heat_MeV_per_helium": 5.688197999849484,
+          "baryon_residual_per_hydrogen": -2.6803479124593845e-15,
+          "mass_defect_energy_relative_residual": 1.0846631128671639e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -33.17013207010346,
+              "net_fraction_hydrogen_rest_energy": -0.00881450405705629
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -21.74258576712552,
+              "net_fraction_hydrogen_rest_energy": -0.005777791600292064
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -10.31503946414758,
+              "net_fraction_hydrogen_rest_energy": -0.002741079143527841
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -0.9099996077913559,
+              "net_fraction_hydrogen_rest_energy": -0.0002418198160273867
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 12.934557362769114,
+              "net_fraction_hydrogen_rest_energy": 0.0034371798131342213
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 14.502064005495152,
+              "net_fraction_hydrogen_rest_energy": 0.003853723034384297
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -1.5221829117371009,
+              "net_fraction_hydrogen_rest_energy": -0.0004044990662904702
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": 10.754867416097332,
+              "net_fraction_hydrogen_rest_energy": 0.0028579573416210617
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 15.897263252437405,
+              "net_fraction_hydrogen_rest_energy": 0.004224477947164963
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 17.93316946883817,
+              "net_fraction_hydrogen_rest_energy": 0.004765491880010442
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-norad.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30255060127321687,
+                "he4": 4.140347982423304e-11,
+                "c12": 0.12188227652564766,
+                "c13": 0.05878605038140098,
+                "n14": 0.8193316705228088,
+                "n15": 2.433055776246245e-09,
+                "o16": 1.662613175038821e-11,
+                "o17": 1.1654009159126141e-14,
+                "o18": 7.114606750597906e-16,
+                "f19": 0.0,
+                "ne20": 5.61232094970984e-11,
+                "ne21": 1.643297622904253e-12,
+                "ne22": 2.7540230594822376e-13,
+                "na23": 1.6106559398470382e-12,
+                "mg24": 5.716691701850586e-13
+              },
+              "Q_hot_MeV": 5.497391590448387,
+              "Q_cold_MeV": 4.345472935336618,
+              "Q_total_MeV": 9.842864525785005,
+              "nu_MeV": 0.9018014489047209,
+              "nu_hot_MeV": 2.996188349931797e-07,
+              "nu_cold_MeV": 0.901801149285886,
+              "final_kinetic_fraction": 0.6395228459985935,
+              "radiated_MeV": 0.0,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 1.3392295530546782e-21
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        },
+        {
+          "collection_loss_per_stage": 0.001,
+          "auxiliary_input_multiplier": 1.0,
+          "mixed_carbon_stage": false,
+          "carbon13_stationarity_residual_per_carbon_stage": 0.0,
+          "stage_attempts_per_net_helium": {
+            "c12": 1.1598944881955497,
+            "c13": 0.08069758049424278,
+            "n14": 1.8834886440691907,
+            "n15": 1.6898945731339277
+          },
+          "new_carbon_per_net_helium": 0.004937036588119078,
+          "hydrogen_atoms_per_net_helium": 4.068664733161558,
+          "ash_nuclei_per_net_helium": {
+            "c12": 0.0011561135651726785,
+            "c13": 8.077835885310868e-05,
+            "n14": 0.001885374018087202,
+            "n15": 0.0016915861592932248,
+            "o16": 0.00012326292613114913,
+            "o17": 9.335315463448781e-11,
+            "f19": 5.2503951412983833e-11,
+            "ne20": 6.594170258517546e-10
+          },
+          "ash_baryon_fraction_of_net_fuel": 0.016876478447867438,
+          "nuclear_Q_MeV_per_helium": 27.226224904743823,
+          "neutrino_MeV_per_helium": 2.0626694626641857,
+          "escaped_radiation_MeV_per_helium": 0.2731323323671141,
+          "available_heat_MeV_per_helium": 24.890423109712522,
+          "fuel_preparation_MeV_per_helium": 40.04318794025126,
+          "factory_input_MeV_per_helium": 37.70635985327664,
+          "final_bulk_kinetic_MeV_per_helium": 52.22553285947397,
+          "final_hot_internal_MeV_per_helium": 6.930352054882116,
+          "cold_decay_heat_MeV_per_helium": 5.777726135607691,
+          "baryon_residual_per_hydrogen": -6.1269533166076994e-15,
+          "mass_defect_energy_relative_residual": 2.1852190090469062e-13,
+          "net_energy_cases": [
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.15,
+              "net_MeV_per_helium_before_other_auxiliaries": -240.98114184835623,
+              "net_fraction_hydrogen_rest_energy": -0.06309078089092036
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.2,
+              "net_MeV_per_helium_before_other_auxiliaries": -174.24249528127075,
+              "net_fraction_hydrogen_rest_energy": -0.045618072050615376
+            },
+            {
+              "recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -107.50384871418537,
+              "net_fraction_hydrogen_rest_energy": -0.02814536321031041
+            },
+            {
+              "recovery_efficiency": 0.7,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -88.02376539919624,
+              "net_fraction_hydrogen_rest_energy": -0.02304532235758575
+            },
+            {
+              "recovery_efficiency": 0.85,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": -24.8928064880333,
+              "net_fraction_hydrogen_rest_energy": -0.006517134858979433
+            },
+            {
+              "recovery_efficiency": 0.9,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": -21.646125935535103,
+              "net_fraction_hydrogen_rest_energy": -0.005667128050191987
+            }
+          ],
+          "component_recovery_cases": [
+            {
+              "kinetic_recovery_efficiency": 0.8,
+              "thermal_recovery_efficiency": 0.4,
+              "driver_efficiency": 0.3,
+              "net_MeV_per_helium_before_other_auxiliaries": -86.61363557039577,
+              "net_fraction_hydrogen_rest_energy": -0.022676139145263743
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.5,
+              "net_MeV_per_helium_before_other_auxiliaries": -26.729357211731042,
+              "net_fraction_hydrogen_rest_energy": -0.006997958455444875
+            },
+            {
+              "kinetic_recovery_efficiency": 0.9,
+              "thermal_recovery_efficiency": 0.5,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 3.303033743457405,
+              "net_fraction_hydrogen_rest_energy": 0.0008647605226923655
+            },
+            {
+              "kinetic_recovery_efficiency": 0.95,
+              "thermal_recovery_efficiency": 0.6,
+              "driver_efficiency": 0.8,
+              "net_MeV_per_helium_before_other_auxiliaries": 7.185118205480087,
+              "net_fraction_hydrogen_rest_energy": 0.00188112113213642
+            }
+          ],
+          "stage_data": [
+            {
+              "source": "scaled-hot-B2-64-R30-norad.json",
+              "cat": "c12",
+              "protons_input": 2,
+              "fuel_input": {
+                "c12": 1.0,
+                "p": 2
+              },
+              "cold_output": {
+                "p": 0.30255060127321687,
+                "he4": 4.140347982423304e-11,
+                "c12": 0.12188227652564766,
+                "c13": 0.05878605038140098,
+                "n14": 0.8193316705228088,
+                "n15": 2.433055776246245e-09,
+                "o16": 1.662613175038821e-11,
+                "o17": 1.1654009159126141e-14,
+                "o18": 7.114606750597906e-16,
+                "f19": 0.0,
+                "ne20": 5.61232094970984e-11,
+                "ne21": 1.643297622904253e-12,
+                "ne22": 2.7540230594822376e-13,
+                "na23": 1.6106559398470382e-12,
+                "mg24": 5.716691701850586e-13
+              },
+              "Q_hot_MeV": 5.497391590448387,
+              "Q_cold_MeV": 4.345472935336618,
+              "Q_total_MeV": 9.842864525785005,
+              "nu_MeV": 0.9018014489047209,
+              "nu_hot_MeV": 2.996188349931797e-07,
+              "nu_cold_MeV": 0.901801149285886,
+              "final_kinetic_fraction": 0.6395228459985935,
+              "radiated_MeV": 0.0,
+              "input_MeV": 0.5227298331749001,
+              "clipped_negative_mass_fraction": 1.3392295530546782e-21
+            },
+            {
+              "source": "scaled-hot-C13-64-R30.json",
+              "cat": "c13",
+              "protons_input": 1,
+              "fuel_input": {
+                "c13": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.12353060937930618,
+                "he4": 8.109370430614936e-08,
+                "c12": 2.1868094161121955e-07,
+                "c13": 0.1552004504460125,
+                "n14": 0.8131294819600688,
+                "n15": 0.03166974448054984,
+                "o16": 1.0394458692917643e-07,
+                "o17": 2.7147893554154516e-10,
+                "o18": 2.1218868941310545e-10,
+                "f19": 4.172294473045799e-12,
+                "ne20": 3.174518723714083e-17,
+                "ne21": 1.2716776851234606e-18,
+                "ne22": 5.907966175628965e-20,
+                "na23": 1.147700512681535e-21,
+                "mg24": 5.504177402269335e-25
+              },
+              "Q_hot_MeV": 6.609801868555223,
+              "Q_cold_MeV": 0.08722376535672055,
+              "Q_total_MeV": 6.697025633911944,
+              "nu_MeV": 0.03166980220085529,
+              "nu_hot_MeV": 2.2587648330043765e-08,
+              "nu_cold_MeV": 0.03166977961320696,
+              "final_kinetic_fraction": 0.9459687370091138,
+              "radiated_MeV": 0.004167742852428317,
+              "input_MeV": 0.42700449309627764,
+              "clipped_negative_mass_fraction": 1.591089511409167e-24
+            },
+            {
+              "source": "scaled-hot-A-64-R30.json",
+              "cat": "n14",
+              "protons_input": 1,
+              "fuel_input": {
+                "n14": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.4615998237690989,
+                "he4": 4.177716676598369e-08,
+                "c12": 3.166546226460701e-08,
+                "c13": 4.013896318402161e-09,
+                "n14": 0.4615998878625378,
+                "n15": 0.5384000764531145,
+                "o16": 3.66553622001966e-12,
+                "o17": 1.3794026508051807e-15,
+                "o18": 4.410561017386868e-15,
+                "f19": 1.3176755892342928e-12,
+                "ne20": 2.9217483676019207e-22,
+                "ne21": 1.0497680320713967e-24,
+                "ne22": 1.5742260133546803e-23,
+                "na23": 8.172240880074944e-24,
+                "mg24": 1.2314673654110125e-24
+              },
+              "Q_hot_MeV": 3.9285920494894526,
+              "Q_cold_MeV": 1.4828407875033653,
+              "Q_total_MeV": 5.411432836992818,
+              "nu_MeV": 0.5384003474602755,
+              "nu_hot_MeV": 3.4538905353988435e-07,
+              "nu_cold_MeV": 0.538400002071222,
+              "final_kinetic_fraction": 0.9481309821858915,
+              "radiated_MeV": 0.0008258189011890874,
+              "input_MeV": 0.48017159063714415,
+              "clipped_negative_mass_fraction": 3.3151033071705995e-25
+            },
+            {
+              "source": "scaled-hot-B1-64-R30.json",
+              "cat": "n15",
+              "protons_input": 1,
+              "fuel_input": {
+                "n15": 1.0,
+                "p": 1
+              },
+              "cold_output": {
+                "p": 0.3993690667879516,
+                "he4": 0.600517546227831,
+                "c12": 0.6004770494359098,
+                "c13": 4.049639029142709e-05,
+                "n14": 4.310349244267146e-10,
+                "n15": 0.3994095640531796,
+                "o16": 7.288961791476849e-05,
+                "o17": 4.2268521957644126e-11,
+                "o18": 1.495387451992631e-18,
+                "f19": 2.940148239164373e-11,
+                "ne20": 1.0259540176279167e-16,
+                "ne21": 2.951516076170033e-24,
+                "ne22": 6.276094299296196e-23,
+                "na23": 6.119595177662336e-25,
+                "mg24": 4.305002354644917e-29
+              },
+              "Q_hot_MeV": 2.982828519112445,
+              "Q_cold_MeV": 8.992337762343889e-05,
+              "Q_total_MeV": 2.9829184424900683,
+              "nu_MeV": 2.859102392052617e-05,
+              "nu_hot_MeV": 4.55581318415717e-12,
+              "nu_cold_MeV": 2.8591019364712986e-05,
+              "final_kinetic_fraction": 0.9437415802762886,
+              "radiated_MeV": 0.15947351531026346,
+              "input_MeV": 0.46846748881428335,
+              "clipped_negative_mass_fraction": 1.318187002317302e-26
+            }
+          ],
+          "factory_data": {
+            "source": "/tmp/protium-small-stages/scaled-hot-He-64-R3.json",
+            "input_he4_atoms": 8585.84973536391,
+            "cold_output": {
+              "p": 3.028078251017085e-13,
+              "he4": 8582.84967096158,
+              "c12": 1.0,
+              "c13": 5.106937400815328e-15,
+              "n14": 7.90947468866296e-22,
+              "n15": 7.526490790141856e-14,
+              "o16": 1.5949266841725036e-05,
+              "o17": 6.079043360325455e-20,
+              "o18": 1.4031832567651805e-22,
+              "f19": 5.0231100491255205e-15,
+              "ne20": 1.2037987524514747e-07,
+              "ne21": 0.0,
+              "ne22": 5.833842366026839e-15,
+              "na23": 2.1595912800696217e-13,
+              "mg24": 5.603151933891506e-10
+            },
+            "Q_total_MeV": 7.274980191141384,
+            "Q_hot_MeV": 7.274980191141367,
+            "Q_cold_MeV": 1.6874200354160873e-14,
+            "nu_hot_MeV": 3.2458068860322184e-21,
+            "nu_cold_MeV": 9.463226902713623e-15,
+            "final_kinetic_fraction": 0.9035786100986596,
+            "nu_MeV": 9.46323014852051e-15,
+            "radiated_MeV": 0.3538877964067704,
+            "input_MeV": 7637.447926559134,
+            "clipped_negative_mass_fraction": 4.54824780545884e-24
+          }
+        }
+      ]
+    }
+  ]
+}

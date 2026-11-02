@@ -1,0 +1,45 @@
+{
+  "code_sha256": "3893fcdeaccbf8efda3528f3a380338c14ae2824da48cf7f4e6aac71ad6b18c8",
+  "family_source_sha256": "3bfb25a43b8af328ddc010749b6bb04706474fc9f75e34b7c95504f38dfe4b2d",
+  "family": "delivered-B1-C13H2-source128",
+  "operations": [
+    {
+      "parent_script": "source128_thin_thermal.py",
+      "parent_sha256": "3484b73865c77908bc42c0dba6da4ce1f1d412fecabf953cbb6be5828a19f4b6",
+      "substitutions": {
+        "P/'source-family-carbon-median128/integration.json'": "P/'final-receiver-thermal-input.json'",
+        "for k,cp in[(50.,1800.),(25.,1800.),(100.,1800.)]:": "for k,cp in[(50.,1800.)]:",
+        "for sigma in[500.,750.,1000.]:": "for sigma in[200.,250.,350.,500.]:",
+        "P/'source128-thin-thermal.json'": "P/'final-receiver-thermal.json'",
+        "source128 carbon median, exact prescribed source profile remap": "delivered-B1/C13-CH2 source128 carbon median, exact archived hot source family"
+      }
+    },
+    {
+      "parent_script": "source128_prompt_proxy.py",
+      "parent_sha256": "1d4b32e084d2468b501802897c92df966dae12ac827eeec2ec0d802659d49ab9",
+      "substitutions": {
+        "P/'source-family-carbon-median128/integration.json'": "P/'final-receiver-thermal-input.json'",
+        "/output/source128-prompt-proxy": "/output/final-receiver-prompt-proxy",
+        "P/'source128-prompt-proxy.json'": "P/'final-receiver-prompt-proxy.json'"
+      }
+    },
+    {
+      "parent_script": "source128_prompt_radiance.py",
+      "parent_sha256": "97067eaf19236354bd79619b3e202bde05bdb57b6dd862f4ca900fca3f37c9ca",
+      "substitutions": {
+        "P/'source-family-carbon-median128/integration.json'": "P/'final-receiver-thermal-input.json'",
+        "P/'source128-prompt-radiance.json'": "P/'final-receiver-prompt-radiance.json'"
+      }
+    },
+    {
+      "parent_script": "source128_thermal_combine.py",
+      "parent_sha256": "ef3c981df8e8701f01a587f513360c008a59c54d4a2c6d31d0002672d4eebabb",
+      "substitutions": {
+        "P/'source128-thin-thermal.json'": "P/'final-receiver-thermal.json'",
+        "P/'source128-prompt-proxy.json'": "P/'final-receiver-prompt-proxy.json'",
+        "P/'source128-prompt-radiance.json'": "P/'final-receiver-prompt-radiance.json'",
+        "P/'source128-thermal-combined.json'": "P/'final-receiver-combined.json'"
+      }
+    }
+  ]
+}

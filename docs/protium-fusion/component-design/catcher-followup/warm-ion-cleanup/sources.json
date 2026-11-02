@@ -1,0 +1,72 @@
+{
+  "retrieved": "2026-10-31",
+  "sources": [
+    {
+      "name": "NASA1977",
+      "url": "https://ntrs.nasa.gov/api/citations/19770011041/downloads/19770011041.pdf",
+      "access": "Full report; Table4-1 PDFp24 visually checked; pp2-1..2-8,3-1,4-1..4-6 read.",
+      "raw_pdf_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/nasa1977.pdf",
+      "pdf_sha256": "42d6133a5d4f8fd48df7f37a32b16584ad316479a974c159f01608abdb6ef12d",
+      "text_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/nasa1977.txt",
+      "text_sha256": "816c0997449b42e29fefc38b5e788ee6351d21587bd59642f2ffe8fb822e4886"
+    },
+    {
+      "name": "CERN JUAS",
+      "url": "https://indico.cern.ch/event/471931/contributions/1149644/attachments/1226014/1794773/JUAS_Vacuum_Technology.pdf",
+      "access": "Full text; slides163\u2013176 on Penning/noble gas pumping.",
+      "raw_pdf_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/cern-vacuum.pdf",
+      "pdf_sha256": "f5a406ae5872861b6aa422de8a292ae8624bee3016d6a5e372802eb301476fce",
+      "text_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/cern-vacuum.txt",
+      "text_sha256": "76ed8b93178cc2025bda97862df86208300e3a6604d0a51faf462445e95690d6"
+    },
+    {
+      "name": "Nguyen-Manh and Dudarev",
+      "url": "https://arxiv.org/pdf/1408.0630",
+      "access": "Full primary author manuscript; page4 visually checked; trap formation and occupancy distinctions retained.",
+      "raw_pdf_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/W-traps-2014.pdf",
+      "pdf_sha256": "33b15e3ec772604c4761d15a1486b7c198422f43a65bd0be36e59cd87056223f",
+      "text_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/W-traps-2014.txt",
+      "text_sha256": "d012e40febaa0b13300108d36710fb57fe563d2c3e67afe60d32ffc8aa0f025d"
+    },
+    {
+      "name": "Brandenburg et al2023",
+      "url": "https://par.nsf.gov/servlets/purl/10489755",
+      "access": "Full primary paper; Figure1 PDFp3 visually checked; supports separate stopping/secondary-screen order comparison.",
+      "raw_pdf_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/C13-alpha-2023.pdf",
+      "pdf_sha256": "4f08dee3c9f22d464d7a62bdab5c3ee67b3be04b4289009400f3e2ff546c8f69",
+      "text_path": "/home/tkwa/src/protium-fusion/output/catcher-followup/warm-ion-cleanup/C13-alpha-2023.txt",
+      "text_sha256": "a9f57c3800576bfb9798377df5808694c9236cae7143367bfa7002e9fd1fd866"
+    }
+  ],
+  "ionization_reference": {
+    "url": "https://www.nist.gov/publications/cross-sections-singly-differential-and-total-ionization-helium-electron-impact",
+    "access": "Primary publication record and abstract read; sigma3.5e-21m2 scale also in NASA Table2-1, not a newly extracted full fit."
+  },
+  "additional_sources": [
+    {
+      "name": "NIST H2 BEB",
+      "url": "https://physics.nist.gov/cgi-bin/Ionization/table.pl?ionization=H2",
+      "access": "Official orbital-parameter table; used in placement.py."
+    },
+    {
+      "name": "NIST atomic H BEB",
+      "url": "https://physics.nist.gov/cgi-bin/Ionization/ion_data.php?differential=Y&id=HI&initial=&ision=I",
+      "access": "Official orbital-parameter table; used in placement.py."
+    },
+    {
+      "name": "Senatore et al2016",
+      "url": "https://arxiv.org/abs/1512.01930",
+      "access": "Primary author abstract and measurement range checked. No numerical operating Je inferred from abstract;30/100A/mm2 are requirements."
+    },
+    {
+      "name": "NIST graphite X-ray coefficients",
+      "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z06.html",
+      "access": "Full official HTML table checked; minimum energy-absorption coefficient through20MeV=.001198m2/kg."
+    },
+    {
+      "name": "Chang and Bestul1973 polyethylene calorimetry",
+      "url": "https://nvlpubs.nist.gov/nistpubs/jres/77A/jresv77An4p395_A1b.pdf",
+      "access": "Uses the separately archived guide-buffer-materials.py/json interpolation of measured Table1; no new material measurement or new PDF inspection claimed in this continuation."
+    }
+  ]
+}
