@@ -7,7 +7,7 @@ sys.path[:0]=[str(ROOT/'b2-completion'),str(ROOT)]
 from radial_completion import simulate,initial
 from fast_eos import FastEOS
 ap=argparse.ArgumentParser();ap.add_argument('--stage',default='C13',choices=['C13','B2','A']);ap.add_argument('--factor',type=float,required=True);ap.add_argument('--out',type=Path,required=True);a=ap.parse_args()
-src={'C13':ROOT/'reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json','B2':ROOT/'b2-completion/B2-64-compression-cap.initial.json','A':ROOT/'reassessment-2049/small-stages/scaled-hot-A-64-R30-initial.json'}[a.stage]
+src={'C13':ROOT/'inputs/pulse-profiles/scaled-hot-C13-64-R30-initial.json','B2':ROOT/'b2-completion/B2-64-compression-cap.initial.json','A':ROOT/'inputs/pulse-profiles/scaled-hot-A-64-R30-initial.json'}[a.stage]
 p=json.loads(src.read_text());m=np.array(p['mass_fraction_of_total']);r=np.r_[0.,p['outer_radius_m']];rho=1.1309733552923255e13*m/(4*np.pi/3*np.diff(r**3));v=np.array(p['velocity_m_s']);T=np.array(p['T_K']);nm=np.r_[.5*(m[:-1]+m[1:]),.5*m[-1]]
 y,_,_=initial(a.stage)
 import pulse_model as pm

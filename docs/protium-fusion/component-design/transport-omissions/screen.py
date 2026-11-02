@@ -9,7 +9,7 @@ import argparse,json,sys,hashlib,time,math,warnings
 from pathlib import Path
 import numpy as np
 from scipy.special import kv
-ap=argparse.ArgumentParser();ap.add_argument('--research-root',type=Path,required=True);ap.add_argument('--sources',type=Path,required=True);ap.add_argument('--out-dir',type=Path,required=True);ap.add_argument('--case',default='all');a=ap.parse_args();r=a.research_root.resolve();sys.path.insert(0,str(r));sys.path.insert(0,str(r/'phase-two/pulse-transport'))
+ap=argparse.ArgumentParser();ap.add_argument('--research-root',type=Path,required=True);ap.add_argument('--sources',type=Path,required=True);ap.add_argument('--out-dir',type=Path,required=True);ap.add_argument('--case',default='all');a=ap.parse_args();r=a.research_root.resolve();sys.path.insert(0,str(r));sys.path.insert(0,str(r/'transport/pulse'))
 import pulse_model as pm
 from fast_eos import FastEOS
 from microphysics import conductivity_envelope,weighted_quantile
@@ -102,7 +102,7 @@ def case(key,entry):
    'maximum_diffusion_length_over_minimum_zone_width':float(np.max(ldif/width.min(axis=1))),'max_effective_heat_mfp_m':float(mfp.max()),'max_mfp_over_L_T':float(np.max(mfp/LT)),'max_mfp_over_zone_width':float(np.max(mfp/width)),'max_mfp_over_L_T_state':{'cell':int(idx[0]),'time_s':float(times[idx[1]]),'rho_kg_m3':float(rho[idx]),'T_K':float(T[idx]),'T_over_TF':float(theta_deg[idx]),'Gamma':float(Gamma[idx]),'mean_free_path_m':float(mfp[idx]),'L_T_m':float(LT[idx])},
    'largest_local_temperature_integral_cell':jmax,'largest_face_power_state':{'face':int(cidx[0]),'time_s':float(times[cidx[1]]),'power_W':float(power[cidx]),'adjacent_T_K':[float(T[cidx[0],cidx[1]]),float(T[cidx[0]+1,cidx[1]])]},'discrete_energy_closure_relative':closure,'minimum_entropy_production_W_K':entropy_min},
   'checks':{'positive_finite_neutrino_components':True,'positive_EOS_heat_capacity':True,'conduction_energy_conservation':closure<1e-12,'conduction_nonnegative_entropy':entropy_min>=-1e-6},
-  'source_sha256':{str(p):sha(p) for p in [record,trace,Path(nu.__file__),r/'phase-two/pulse-transport/microphysics.py',r/'fast_eos.py',r/'electron-eos.npz']},'code_sha256':sha(__file__),'pynucastro_version':pynucastro.__version__}
+  'source_sha256':{str(p):sha(p) for p in [record,trace,Path(nu.__file__),r/'transport/pulse/microphysics.py',r/'fast_eos.py',r/'electron-eos.npz']},'code_sha256':sha(__file__),'pynucastro_version':pynucastro.__version__}
  (a.out_dir/(key+'.json')).write_text(json.dumps(out,indent=2,allow_nan=False)+'\n')
  # Compact moments preserve every microphysical input consumed by this screen.
  np.savez_compressed(a.out_dir/(key+'.diagnostic.npz'),time_s=times,mass_kg=m,T_K=T,rho_kg_m3=rho,Ye=ye,Yi=yi,Z2Y=z2,dominant_Z=pm.ZZ[dom],radius_bounds_m=rb,neutrino_components_W_kg=q,neutrino_mid_components_W_kg=qm,conductive_face_power_W=power,conductivity_envelope_W_m_K=kenv,cv_total_J_m3_K=cvtotal,cv_electron_J_m3_K=cve)

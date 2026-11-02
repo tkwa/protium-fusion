@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,hashlib,json
 import numpy as np
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--scratch',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--mode',default='compression_cap');a=p.parse_args()
-old_dir=a.root/'reassessment-2049/small-stages';rows=[];checks=[];hashes={}
+old_dir=a.root/'inputs/pulse-profiles';rows=[];checks=[];hashes={}
 def hashed(path):
  hashes[str(path)]=hashlib.sha256(path.read_bytes()).hexdigest()
 def check(stage,name,value,limit,passed):

@@ -2,7 +2,7 @@
 
 29 October 2026. This calculation tests whether a set of explicit engineering requirements can fit below one Jupiter mass at Thomas's preferred 1 mW/kg. It does not establish that those requirements can all be built together. The driver and processing masses are allowances, not outputs of detailed component designs.
 
-A later [economic and replacement ledger](ECONOMICS.md) adds explicit replacement manufacture and spares. At replacement of 0.01%/year and 100 MJ/kg, it retains 1 mW/kg with 31.75% more pulse throughput and 0.035765 Jupiter masses. The original allocation below remains the zero-explicit-replacement reference.
+A later [economic and replacement ledger](https://github.com/tkwa/protium-fusion/blob/v0.1/docs/protium-fusion/ECONOMICS.md) adds explicit replacement manufacture and spares. At replacement of 0.01%/year and 100 MJ/kg, it retains 1 mW/kg with 31.75% more pulse throughput and 0.035765 Jupiter masses. The original allocation below remains the zero-explicit-replacement reference.
 
 ## Closed nuclear and material cycle
 

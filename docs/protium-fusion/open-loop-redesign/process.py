@@ -18,10 +18,10 @@ from cycle_ledger import stage, nuc, MU, MEV
 STATES = ['c12', 'c13', 'n14', 'n15']
 PROTONS = {'c12': 2, 'c13': 1, 'n14': 1, 'n15': 1}
 LEGACY_PATHS = {
-    'c12': 'reassessment-2049/small-stages/scaled-hot-B2-64-R30-tight.json',
-    'c13': 'reassessment-2049/small-stages/scaled-hot-C13-64-R30.json',
-    'n14': 'reassessment-2049/small-stages/scaled-hot-A-64-R30.json',
-    'n15': 'reassessment-2049/small-stages/scaled-hot-B1-64-R30.json',
+    'c12': 'inputs/pulse-profiles/scaled-hot-B2-64-R30-tight.json',
+    'c13': 'inputs/pulse-profiles/scaled-hot-C13-64-R30.json',
+    'n14': 'inputs/pulse-profiles/scaled-hot-A-64-R30.json',
+    'n15': 'inputs/pulse-profiles/scaled-hot-B1-64-R30.json',
 }
 MASS_MEV_PER_U = 931.49410242
 M_H_U = 1.00782503223

@@ -1,6 +1,6 @@
 # Membrane and receiver assessment ✨
 
-This checkpoint assesses a barrier on the cavity-facing side of the Moravec absorber: pulse center → supported thin film → energy receiver and collection space. Its purpose is to keep slow receiver material out of subsequent incoming fuel. The reference retains a 1.1×10⁹ m receiver radius, 0.007 fresh C:H mass budget and the provisional [1,000 launcher complexes](../launcher-reference/README.md). Geometry, energy accounting and lifetime have distinct requirements.
+This checkpoint assesses a barrier on the cavity-facing side of the reactor absorber: pulse center → supported thin film → energy receiver and collection space. Its purpose is to keep slow receiver material out of subsequent incoming fuel. The reference retains a 1.1×10⁹ m receiver radius, 0.007 fresh C:H mass budget and the provisional [1,000 launcher complexes](../launcher-reference/README.md). Geometry, energy accounting and lifetime have distinct requirements.
 
 ## Outgoing pulse and stopping
 

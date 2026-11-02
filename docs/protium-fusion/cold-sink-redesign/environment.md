@@ -4,7 +4,7 @@
 
 ## What the canon fixes
 
-The [Solar Dyson swarm article](../../slop-requests/articles/solar-dyson-swarm.json) describes independently orbiting collectors in layered families, roughly 90% solar-energy capture, power consumed at multiple space installations, and radiator orientations chosen to limit heating of neighbours. It includes a commissioning correction of radiator-fin orientation and protected terrestrial sightlines. The [approved brief](../../slop-requests/briefs/solar-dyson-swarm.json) explicitly leaves orbital radii unspecified. The [engineering notes](../../solar-dyson-swarm/engineering-notes.json) label 0.4 AU as an illustrative earlier calculation, rather than an adopted radius.
+The illustrative Dyson-swarm environment assumes independently orbiting collectors in layered families, roughly 90% solar-energy capture, and radiator orientations chosen to limit heating of neighbours. Collector orbital radii remain unspecified; a 0.4 AU example is an illustrative calculation rather than an adopted radius.
 
 Consequently, there is no canonical warm enclosing shell at the 5 AU reactor, nor a specified angular infrared sky. An inner source viewed from outside, a more extensive swarm surrounding the site, and local protected radiator directions should be treated separately. The accepted zero-sunlight condition does not require changing that canon.
 

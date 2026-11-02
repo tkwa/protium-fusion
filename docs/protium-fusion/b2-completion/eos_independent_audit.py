@@ -12,7 +12,7 @@ import numpy as np
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent
-sys.path[:0]=[str(ROOT),str(ROOT/'phase-two/pulse-transport')]
+sys.path[:0]=[str(ROOT),str(ROOT/'transport/pulse')]
 import pynucastro as pn
 from fast_eos import FastEOS, KB_CGS, NA, ARAD_CGS
 from microphysics import coulomb, E, MU, KB, HB, ME, C
@@ -20,7 +20,7 @@ import radial_pulse as rp
 
 
 def main():
-    old=ROOT/'reassessment-2049/small-stages'
+    old=ROOT/'inputs/pulse-profiles'
     record_path=old/'scaled-hot-B2-64-R30-tight.json'
     trace_path=old/'scaled-hot-B2-64-R30-tight-compact.npz'
     record=json.loads(record_path.read_text())
@@ -90,7 +90,7 @@ def main():
     e_yi=1.5*KB_CGS*NA*temperature
     e_ye=(therm.e+rho*therm.de_drho-e_yi*yi)/ye
     rhs=dict(zone=nz-1,T_K=float(temperature[-1]),rho_cgs=float(rho[-1]),rho_dot_cgs_s=float(rho_dot[-1]),volume_dot_cm3_s=float(volume_dot[-1]),outer_minus_inner_velocity_cm_s=float(np.diff(velocity)[-1]),legacy_q_cgs=float(q[-1]),q_over_physical_pressure=float(q[-1]/therm.p[-1]),adiabatic_Tdot_K_s=float(adiabatic[-1]),legacy_viscous_Tdot_K_s=float(viscous[-1]),radiative_Tdot_K_s=float(-qrad[-1]/therm.c_v[-1]),floor_diagnostic_nuclear_Tdot_K_s=float((qtot[-1]-qnu[-1])/therm.c_v[-1]),floor_diagnostic_composition_Tdot_K_s=float((-e_yi[-1]*dy[-1].sum()-e_ye[-1]*(dy[-1]@zz))/therm.c_v[-1]),compression_only_q_cgs=float(corrected_q[-1]),compression_only_work_nonnegative_all_cells=True)
-    inputs=[record_path,trace_path,ROOT/'radial_pulse.py',ROOT/'pulse_model.py',ROOT/'fast_eos.py',ROOT/'electron-eos.npz',ROOT/'phase-two/pulse-transport/microphysics.py',Path(__file__)]
+    inputs=[record_path,trace_path,ROOT/'radial_pulse.py',ROOT/'pulse_model.py',ROOT/'fast_eos.py',ROOT/'electron-eos.npz',ROOT/'transport/pulse/microphysics.py',Path(__file__)]
     out=dict(scope=__doc__,visited_saved_cell_states=visited,max_thermal_identity_residual=maximum,source_EOS_spot_checks=spot,cold_endpoint_scales=cold,outer_endpoint_rhs=rhs,input_sha256={str(x.relative_to(ROOT)):hashlib.sha256(x.read_bytes()).hexdigest() for x in inputs},limitations=['The old endpoint is affected by negative artificial viscous dissipation; its cold-state numbers are diagnostics, not a corrected trajectory.','Ideal source EOS assumes complete ionization; source agreement is not validation of dense cold matter.','Coulomb estimate retains only the ion-ion rigid-background term. Atomic upper is an isolated-atom scale. Neither bounds trajectory changes or opacity.'])
     (HERE/'eos-independent-audit.json').write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps({k:out[k] for k in ('visited_saved_cell_states','max_thermal_identity_residual','cold_endpoint_scales','outer_endpoint_rhs')},indent=2))

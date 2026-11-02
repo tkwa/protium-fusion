@@ -26,7 +26,7 @@ def cache_inputs(process):
     result={'scope':'Reduced corrected pulse inputs; no hydro rerun required. Radiation integral explicitly selects radiated_energy/uunit, not NV-5.', 'stages':{}}
     for cat,s in process['selected']['stage_pulse_data'].items():
         path=Path(s['source']);d=json.loads(path.read_text());stage=d['stage']
-        initial=Path(d.get('initial_profile_path',ROOT/'reassessment-2049/small-stages'/f'scaled-hot-{stage}-64-R30-initial.json'))
+        initial=Path(d.get('initial_profile_path',ROOT/'inputs/pulse-profiles'/f'scaled-hot-{stage}-64-R30-initial.json'))
         trpath=path.with_suffix('.npz')
         if not trpath.exists():
             directory='protium-b2-completion' if stage=='B2' else 'protium-b2-regression'

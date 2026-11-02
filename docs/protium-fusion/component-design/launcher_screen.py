@@ -41,7 +41,7 @@ class Table:
 
 def main():
  stages={};checks=[]
- for stage,path in [('B2',ROOT/'b2-completion/B2-64-compression-cap.initial.json'),('C13',ROOT/'reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json')]:
+ for stage,path in [('B2',ROOT/'b2-completion/B2-64-compression-cap.initial.json'),('C13',ROOT/'inputs/pulse-profiles/scaled-hot-C13-64-R30-initial.json')]:
   d=json.loads(path.read_text());m=np.array(d['mass_fraction_of_total']);v=np.array(d['velocity_m_s']);r=np.array(d['outer_radius_m']);nm=np.r_[.5*(m[:-1]+m[1:]),.5*m[-1]];k=float(.5*nm@(v*v));u=math.sqrt(2*k)
   stages[stage]={'profile_sha256':digest(path),'specific_kinetic_J_kg':k,'rms_speed_m_s':u,'angular_mergers':[]}
   tab=Table('C14H28_EOS_09-18-20.txt' if stage=='B2' else 'C18H18_EOS_09-18-20.txt',14)
