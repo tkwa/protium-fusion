@@ -9,7 +9,7 @@ from radial_completion import simulate,initial
 from fast_eos import FastEOS
 import pulse_model as pm
 ap=argparse.ArgumentParser();ap.add_argument('--N',type=int,default=2000);ap.add_argument('--out',type=Path,required=True);a=ap.parse_args();a.out=a.out.resolve();a.out.mkdir(parents=True,exist_ok=True)
-src=ROOT/'reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json';entropy=P/'launcher-feos.json';p=json.loads(src.read_text());j=json.loads(entropy.read_text());row=next(r for r in j['stages']['C13']['local_speed_entropy']['fixed_N_profiles'] if r['effective_parallel_directions']==a.N)
+src=ROOT/'inputs/pulse-profiles/scaled-hot-C13-64-R30-initial.json';entropy=P/'launcher-feos.json';p=json.loads(src.read_text());j=json.loads(entropy.read_text());row=next(r for r in j['stages']['C13']['local_speed_entropy']['fixed_N_profiles'] if r['effective_parallel_directions']==a.N)
 m=np.array(p['mass_fraction_of_total']);r=np.r_[0.,p['outer_radius_m']];M=4*np.pi/3*1e8*30**3;rho=M*m/(4*np.pi/3*np.diff(r**3));v=np.array(p['velocity_m_s']);T=np.array(p['T_K']);mapped=T.copy();mapped[row['active_cell_indices']]=row['mapped_T_K'];nm=np.r_[.5*(m[:-1]+m[1:]),.5*m[-1]]
 y,target,cats=initial('C13');e=FastEOS();ye=pm.ZZ@y;yi=sum(y);U=float(m@e.state(rho/1000,T,ye,yi).e)*1e-4;K=float(.5*nm@(v*v));Un=float(m@e.state(rho/1000,mapped,ye,yi).e)*1e-4;scale=float(np.sqrt((K+U-Un)/K));assert np.isfinite(scale)
 p['T_K']=mapped.tolist();p['velocity_m_s']=(v*scale).tolist();p['description']='Local-speed FEOS contact-entropy mapping, C13N%d, then FastEOS totalpreparedenergy restored by uniformvelocityrescale. Inner0.1%%seed retainsreferenceT. No delivered3Dassembly.'%a.N

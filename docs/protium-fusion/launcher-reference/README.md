@@ -1,6 +1,6 @@
-# Moravec's 1,000-launcher reference ✨
+# 1,000-launcher reference ✨
 
-Use **1,000 launcher complexes** as the provisional Moravec reference. Thomas selected this working count on 30 October 2026 in the companion article discussion, and it was relayed to this research task. A launcher can emit many packets; participation, channel count and firing sequence remain design variables. The count has not been qualified by a discrete-source implosion simulation.
+Use **1,000 launcher complexes** as the provisional reactor reference. A launcher can emit many packets; participation, channel count and firing sequence remain design variables. The count has not been qualified by a discrete-source implosion simulation.
 
 The existing receiver radius is 1.1×10⁹ m. An equal allocation gives each complex about 1.13×10¹⁰ kg of fuel and catalyst per large event, 2.84×10²⁰ W peak electrical preparation power and 4.22×10¹⁸ kg of the existing source, conditioning and storage equipment. These are divisions of the total station account. Ports, shielding, mounts and independent controls must receive explicit allocations from existing services or additional mass and power.
 
@@ -30,3 +30,5 @@ Report central estimates and subjective 80% credible intervals for uncertain tol
 - [Incoming timing](incoming-timing.md): packet count, distinct source directions, preparation and arrival tolerances.
 
 The receiver comparison uses this same reference in the adjacent [membrane assessment](../membrane-receiver/README.md). It does not grant a smaller receiver, a higher source rating or faster pulse cadence merely by choosing a launcher count.
+
+[Driver physics and cold-compression studies](driver-physics/README.md) retain the first-contact, neutralization, source-timing and numerical-failure research. Their earlier pulse sizes and material assumptions are recorded alongside the current launcher reference.

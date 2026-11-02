@@ -13,7 +13,7 @@ import pulse_model as pm
 from fast_eos import FastEOS
 
 CATS={'A':'n14','B1':'n15','B2':'c12','C13':'c13'}
-PROFILES={s:ROOT/f'reassessment-2049/small-stages/scaled-hot-{s}-64-R30-initial.json' for s in ['A','B1','C13']}
+PROFILES={s:ROOT/f'inputs/pulse-profiles/scaled-hot-{s}-64-R30-initial.json' for s in ['A','B1','C13']}
 PROFILES['B2']=ROOT/'b2-completion/B2-64-compression-cap.initial.json'
 BASELINES=json.loads((ROOT/'open-loop-redesign/corrected-stage-map.json').read_text())
 

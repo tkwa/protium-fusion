@@ -2,7 +2,7 @@
 import argparse,json,hashlib,sys
 from pathlib import Path
 import numpy as np
-ap=argparse.ArgumentParser();ap.add_argument('--research-root',type=Path,required=True);ap.add_argument('--sources',type=Path,required=True);ap.add_argument('--results',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();sys.path.insert(0,str(a.research_root/'phase-two/pulse-transport'))
+ap=argparse.ArgumentParser();ap.add_argument('--research-root',type=Path,required=True);ap.add_argument('--sources',type=Path,required=True);ap.add_argument('--results',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();sys.path.insert(0,str(a.research_root/'transport/pulse'))
 from microphysics import conductivity_envelope
 from pynucastro.neutrino_cooling.sneut5_mod import sneut5
 checks=[]

@@ -1,6 +1,6 @@
 # Shaded receiver and improved energy conversion ✨
 
-The working Moravec design now uses **60% heat-to-electric conversion**, a **1,000 K hot receiver** and a **200 K radiator**, with **zero direct solar heating** under Thomas's Dyson-shading premise. Infrared heating remains an explicit environmental input. The former 40% conversion and directly illuminated radiator are retained as historical comparisons.
+The working reactor design now uses **60% heat-to-electric conversion**, a **1,000 K hot receiver** and a **200 K radiator**, with **zero direct solar heating** under Thomas's Dyson-shading premise. Infrared heating remains an explicit environmental input. The former 40% conversion and directly illuminated radiator are retained as historical comparisons.
 
 At the existing 1.1×10⁹ m radius and pulse rate, the revised conditional account exports **6.574×10²⁰ W from 1.219×10²³ kg, or about 5.4 mW/kg**. It uses an illustrative **11.0254 W/m² absorbed infrared background**, **1 W/m² heat bypass around the engine**, and the separate **2 MJ/kg routine refurbishment sensitivity**. Radiators occupy **79.9% of the outer sphere**, within a specified 90% available area. The pulse preparation, source storage, 0.007 fresh C:H budget, source count reference and required material return remain as before.
 

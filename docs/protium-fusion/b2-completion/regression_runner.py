@@ -14,7 +14,7 @@ a=p.parse_args()
 sys.path.insert(0,str(a.root));sys.path.insert(0,str(a.model_directory))
 from radial_completion import simulate
 s=a.stage;radius=3 if s=='He' else 30
-old_dir=a.root/'reassessment-2049/small-stages'
+old_dir=a.root/'inputs/pulse-profiles'
 name=f'scaled-hot-{s}-64-R{radius}'
 old_path=old_dir/(name+'.json');initial_path=old_dir/(name+'-initial.json');inputs_path=old_dir/(name+'-inputs.json')
 old=json.loads(old_path.read_text());initial=json.loads(initial_path.read_text());inputs=json.loads(inputs_path.read_text())

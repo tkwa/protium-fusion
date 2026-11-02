@@ -1,6 +1,6 @@
 # Evidence on discrete incoming directions ✨
 
-The reference count is 1,000 launcher complexes. The supporting Moravec pulse calculation starts from a spherical converging profile, so its radial-zone count provides no estimate of the required number of source directions. Multiple packets from one source can refine the time and radial profile while retaining essentially the same incoming direction. Spatially distributed outlets within a complex must be represented explicitly when they add distinct directions.
+The reference count is 1,000 launcher complexes. The supporting pulse calculation starts from a spherical converging profile, so its radial-zone count provides no estimate of the required number of source directions. Multiple packets from one source can refine the time and radial profile while retaining essentially the same incoming direction. Spatially distributed outlets within a complex must be represented explicitly when they add distinct directions.
 
 Related plasma-liner research gives useful physical checks, with substantially different fuel, scale, velocity and preparation conditions:
 
@@ -8,9 +8,9 @@ Related plasma-liner research gives useful physical checks, with substantially d
 - Samulyak, Zhang and Kim (2015) simulated compression of a target by merging jets. Leading-edge nonuniformity and the oblique shocks between streams produced target distortion and disruption. Their result makes target compression and its angular structure necessary checks alongside the vacuum-implosion comparison. [Primary paper](https://arxiv.org/abs/1512.01518).
 - Lajoie et al. (2024) measured an argon liner made by 36 pulsed jets. The observations indicated kinetic interpenetration during early merging and a transition toward collisional behavior near stagnation. A model that forces every early crossing to form a fluid shock can therefore misrepresent the merger. [Primary experimental report, LANL](https://laro.lanl.gov/esploro/outputs/journalArticle/Formation-of-a-spherical-plasma-liner/9916500393103761).
 
-None of these results selects a numerical minimum for Moravec. They support testing both fluid and kinetic regimes, angular pressure variations, shock heating, mixing and compression performance. The evidence permits useful designs with fewer than 1,000 jets in other regimes and also permits poor compression despite a large number of jets.
+None of these results selects a numerical minimum for this reactor. They support testing both fluid and kinetic regimes, angular pressure variations, shock heating, mixing and compression performance. The evidence permits useful designs with fewer than 1,000 jets in other regimes and also permits poor compression despite a large number of jets.
 
-Cassibry et al. (2013) report a peak-pressure scaling linear in jet count alongside density, jet radius, velocity and other parameters. Increasing count with the other individual-jet properties fixed increases total payload and driver energy. It cannot be applied as a free pressure gain in a comparison at fixed total Moravec pulse mass and energy. [Primary scaling study](https://arxiv.org/abs/1303.0172).
+Cassibry et al. (2013) report a peak-pressure scaling linear in jet count alongside density, jet radius, velocity and other parameters. Increasing count with the other individual-jet properties fixed increases total payload and driver energy. It cannot be applied as a free pressure gain in a comparison at fixed total pulse mass and energy. [Primary scaling study](https://arxiv.org/abs/1303.0172).
 
 ## Proposed comparison criterion
 

@@ -44,7 +44,7 @@ def shock(j,rho0,q):
 
 sys.path.insert(0,str(P));from launcher_screen import Table
 checks=[];out={};sources={}
-for stage,j,rho0,path,table in [('B2',1,944.2,ROOT/'b2-completion/B2-64-compression-cap.initial.json','C14H28_EOS_09-18-20.txt'),('C13',2,1129.15,ROOT/'reassessment-2049/small-stages/scaled-hot-C13-64-R30-initial.json','C18H18_EOS_09-18-20.txt')]:
+for stage,j,rho0,path,table in [('B2',1,944.2,ROOT/'b2-completion/B2-64-compression-cap.initial.json','C14H28_EOS_09-18-20.txt'),('C13',2,1129.15,ROOT/'inputs/pulse-profiles/scaled-hot-C13-64-R30-initial.json','C18H18_EOS_09-18-20.txt')]:
  d=json.loads(path.read_text());sources[str(path.relative_to(ROOT))]=hashlib.sha256(path.read_bytes()).hexdigest();m=np.array(d['mass_fraction_of_total']);r=np.r_[0,d['outer_radius_m']];rho=1.1309733552923255e13*m/(4*np.pi/3*np.diff(r**3));T=np.array(d['T_K']);v=np.array(d['velocity_m_s']);nm=np.r_[.5*(m[:-1]+m[1:]),.5*m[-1]];K=float(.5*nm@(v*v));S=np.array([state(j,rr,tt)['entropy_J_kg_K'] for rr,tt in zip(rho,T)]);meanS=float(m@S)
  qmatch=math.exp(brentq(lambda x:shock(j,rho0,math.exp(x))['entropy_J_kg_K']-meanS,math.log(1e7),math.log(1e11)))
  nmatch=brentq(lambda n:K*(2/n-4/(3*n*n))-qmatch,100,1e6)
