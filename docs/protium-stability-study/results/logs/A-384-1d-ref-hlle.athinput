@@ -1,0 +1,60 @@
+<job>
+problem_id = pulse
+<output1>
+file_type = hst
+dt = 0.005
+data_format = %24.16e
+<output2>
+file_type = vtk
+variable = cons
+dt = 0.1
+<time>
+cfl_number = 0.3
+nlim = -1
+tlim = 1.1
+integrator = rk2
+xorder = 2
+ncycle_out = 100
+<mesh>
+nx1 = 384
+x1min = 0
+x1max = 24.0
+ix1_bc = reflecting
+ox1_bc = outflow
+nx2 = 1
+x2min = 0
+x2max = 3.141592653589793
+ix2_bc = reflecting
+ox2_bc = reflecting
+nx3 = 1
+x3min = 0
+x3max = 6.283185307179586
+ix3_bc = periodic
+ox3_bc = periodic
+num_threads = 1
+<meshblock>
+nx1 = 384
+nx2 = 1
+nx3 = 1
+<hydro>
+gamma = 1.6666666666666667
+dfloor = 1e-14
+pfloor = 1e-18
+efloor = 1e-18
+sfloor = 0
+<problem>
+eos_path = /var/tmp/tkwa-chatgpt/protium-stability/inputs-yi2/eos.bin
+profile = /var/tmp/tkwa-chatgpt/protium-stability/inputs-yi2/profile.txt
+rates = /var/tmp/tkwa-chatgpt/protium-stability/inputs-yi2/rates.txt
+burn = 1
+test = 0
+ideal = 0
+amplitude = 0.0
+ell = 2
+perturbation = 5
+divisions = 8
+angular_family = 0
+phase_table = /var/tmp/tkwa-chatgpt/protium-stability/phase-reference.bin
+reference_time = 0.36666666666666664
+ambient = 1e-09
+source_accuracy = 0.02

@@ -1,0 +1,157 @@
+{
+  "scope": "Replay the inherited linear buffer model on the selected large-N15 calendar.\n\nAll primary pump, conduit and cold-panel speeds scale 16-fold; buffer volume\nstays 0.5 m3/m2 at 1000 K. This is a capacity screen, with apparatus mass and\nsurface qualification remaining acceptance requirements of the plant account.\n",
+  "cases": [
+    {
+      "buffer_volume_per_wall_area_m": 0.5,
+      "booster_zero_flow_K0_each_species": 1000000.0,
+      "initial_condition": "mean",
+      "total_buffer_pressure_min_Pa": 0.33949021162791093,
+      "total_buffer_pressure_max_Pa": 2.068431291559454,
+      "total_buffer_pressure_exact_mean_Pa": 1.0113014618759306,
+      "peak_time_s": 18255550.0,
+      "extrema_scope": "Sampled exact bin endpoints; within-bin extrema are not searched. The independent25/50/100s refinement quantifies the small buffer discretization change.",
+      "total_source_pressure_discretized_max_Pa": 0.24953320997539052,
+      "cold_outlet_PV_flow_min_Pa_m_s": 6.526543502865175e-06,
+      "cold_outlet_PV_flow_max_Pa_m_s": 4.2023205062216205e-05,
+      "cold_outlet_peak_over_continuous_mean": 2.0742297787958393,
+      "species": [
+        {
+          "species": "H2",
+          "buffer_pressure_min_Pa": 0.1701229643321256,
+          "buffer_pressure_max_Pa": 1.4705290348675055,
+          "buffer_pressure_exact_mean_Pa": 0.6333653463584992,
+          "source_pressure_discretized_max_Pa": 0.24492531059426995,
+          "source_pressure_exact_mean_Pa": 0.0010321350022209862,
+          "source_relaxation_s": 0.002771859555418731,
+          "buffer_slow_eigenmode_s": 22244.645157211806,
+          "initial_buffer_pressure_Pa": 0.6330478039620244,
+          "initial_source_pressure_Pa": 0.0010317805895567697,
+          "final_buffer_pressure_Pa": 0.4891145300887938,
+          "source_PV_Pa_m": 455.03726494717415,
+          "cold_out_PV_Pa_m": 455.1092316234982,
+          "mass_balance_residual_Pa_m": 5.946171333093275e-11
+        },
+        {
+          "species": "He",
+          "buffer_pressure_min_Pa": 0.12827528902730803,
+          "buffer_pressure_max_Pa": 0.7433228014133428,
+          "buffer_pressure_exact_mean_Pa": 0.3779361155174314,
+          "source_pressure_discretized_max_Pa": 0.15127251170626885,
+          "source_pressure_exact_mean_Pa": 0.0004619863028454658,
+          "source_relaxation_s": 0.002927849687979821,
+          "buffer_slow_eigenmode_s": 31333.722749874123,
+          "initial_buffer_pressure_Pa": 0.37791285719614764,
+          "initial_source_pressure_Pa": 0.0004619792019013733,
+          "final_buffer_pressure_Pa": 0.3600954658413585,
+          "source_PV_Pa_m": 192.7849643901444,
+          "cold_out_PV_Pa_m": 192.79387310346965,
+          "mass_balance_residual_Pa_m": 9.084830110417386e-12
+        }
+      ],
+      "source_discretization": {
+        "dt_s": 50.0,
+        "arrival_quantiles_per_stage_species": 1024,
+        "duration_s": 31968100.0,
+        "emitted_PV_Pa_m_by_species": [
+          455.0372649471165,
+          192.7849643901355
+        ],
+        "dispatched_total_PV_Pa_m_by_species": [
+          455.03726494711924,
+          192.78496439013836
+        ],
+        "not_yet_arrived_PV_Pa_m_by_species": [
+          2.7284841053187847e-12,
+          2.8421709430404007e-12
+        ],
+        "time_bin_scope": "ceil-causal arrival followed by uniform source over one dt bin; no source is shifted earlier. This is adequate for multi-day buffer pressure; exact local peak is reported separately."
+      }
+    },
+    {
+      "buffer_volume_per_wall_area_m": 0.5,
+      "booster_zero_flow_K0_each_species": 1000000.0,
+      "initial_condition": "mean",
+      "total_buffer_pressure_min_Pa": 0.33916325817714554,
+      "total_buffer_pressure_max_Pa": 2.0686612632555854,
+      "total_buffer_pressure_exact_mean_Pa": 1.0113023737112974,
+      "peak_time_s": 18255550.0,
+      "extrema_scope": "Sampled exact bin endpoints; within-bin extrema are not searched. The independent25/50/100s refinement quantifies the small buffer discretization change.",
+      "total_source_pressure_discretized_max_Pa": 0.262274339816892,
+      "cold_outlet_PV_flow_min_Pa_m_s": 6.5200708392575135e-06,
+      "cold_outlet_PV_flow_max_Pa_m_s": 4.202116900846841e-05,
+      "cold_outlet_peak_over_continuous_mean": 2.074129280908811,
+      "species": [
+        {
+          "species": "H2",
+          "buffer_pressure_min_Pa": 0.16993042254609442,
+          "buffer_pressure_max_Pa": 1.4706205826757848,
+          "buffer_pressure_exact_mean_Pa": 0.6333659487894683,
+          "source_pressure_discretized_max_Pa": 0.26076323075678837,
+          "source_pressure_exact_mean_Pa": 0.001032136616155653,
+          "source_relaxation_s": 0.002771859555418731,
+          "buffer_slow_eigenmode_s": 22244.645157211806,
+          "initial_buffer_pressure_Pa": 0.6330478039620244,
+          "initial_source_pressure_Pa": 0.0010317805895567697,
+          "final_buffer_pressure_Pa": 0.48967240475978746,
+          "source_PV_Pa_m": 455.03726494722576,
+          "cold_out_PV_Pa_m": 455.10895268616537,
+          "mass_balance_residual_Pa_m": 1.0839427966313764e-10
+        },
+        {
+          "species": "He",
+          "buffer_pressure_min_Pa": 0.12817474118387023,
+          "buffer_pressure_max_Pa": 0.7433355048454584,
+          "buffer_pressure_exact_mean_Pa": 0.37793642492182905,
+          "source_pressure_discretized_max_Pa": 0.1605425982826497,
+          "source_pressure_exact_mean_Pa": 0.00046198702513863203,
+          "source_relaxation_s": 0.002927849687979821,
+          "buffer_slow_eigenmode_s": 31333.722749874123,
+          "initial_buffer_pressure_Pa": 0.37791285719614764,
+          "initial_source_pressure_Pa": 0.0004619792019013733,
+          "final_buffer_pressure_Pa": 0.3603828798333476,
+          "source_PV_Pa_m": 192.7849643900747,
+          "cold_out_PV_Pa_m": 192.79372939647072,
+          "mass_balance_residual_Pa_m": -5.7712657569597425e-11
+        }
+      ],
+      "source_discretization": {
+        "dt_s": 25.0,
+        "arrival_quantiles_per_stage_species": 2048,
+        "duration_s": 31968050.0,
+        "emitted_PV_Pa_m_by_species": [
+          455.0372649471166,
+          192.78496439013549
+        ],
+        "dispatched_total_PV_Pa_m_by_species": [
+          455.03726494711924,
+          192.78496439013836
+        ],
+        "not_yet_arrived_PV_Pa_m_by_species": [
+          2.6147972675971687e-12,
+          2.8705926524708048e-12
+        ],
+        "time_bin_scope": "ceil-causal arrival followed by uniform source over one dt bin; no source is shifted earlier. This is adequate for multi-day buffer pressure; exact local peak is reported separately."
+      }
+    }
+  ],
+  "checks": [
+    "independent_integral_V0.5_K1000000.0_mean_0",
+    "mass_V0.5_K1000000.0_mean_0",
+    "stable_V0.5_K1000000.0_mean_0",
+    "independent_integral_V0.5_K1000000.0_mean_1",
+    "mass_V0.5_K1000000.0_mean_1",
+    "stable_V0.5_K1000000.0_mean_1",
+    "independent_integral_V0.5_K1000000.0_mean_0",
+    "mass_V0.5_K1000000.0_mean_0",
+    "stable_V0.5_K1000000.0_mean_0",
+    "independent_integral_V0.5_K1000000.0_mean_1",
+    "mass_V0.5_K1000000.0_mean_1",
+    "stable_V0.5_K1000000.0_mean_1"
+  ],
+  "input_files_sha256": {
+    "docs/protium-fusion/component-design/catcher-followup/warm-mechanical-cleanup/buffer.py": "c60efd1d979911b969d2cf72b00621cf445f7fa5552a76c5830d6ced8c61653a",
+    "docs/protium-fusion/second-generation/publication-inputs.json": "345583ddfab68272a9bf4ff1592ad7e4860c17d2555266686d503e9c5ed57d43",
+    "docs/protium-fusion/second-generation/publication-events.csv": "dbe9409c893d06c170c54b9c4135af659fb58478d875d2017597996d57432a19",
+    "public/blog/ordinary-hydrogen-fusion/plasma-simulation/data/n15.npz": "e5dd41249c4007461f77f4f290082ba3f848b00113acd890a83a66aa6b63b10a"
+  }
+}

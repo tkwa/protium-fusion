@@ -1,0 +1,287 @@
+{
+  "scope": "Extended-pool absorption, oxygen flows, charge and allocated-work comparisons.\n\nRepeated passes use prescribed host-pulse baths. Pure oxygen pulse hydrodynamics\nand isotope sorting hardware are still qualifications, not inferred successes.\n",
+  "states": [
+    "o16",
+    "o17",
+    "o18",
+    "f19"
+  ],
+  "policy": {
+    "o16": "n14",
+    "o17": "c12",
+    "o18": "c12",
+    "f19": "c12"
+  },
+  "transient_matrix": [
+    [
+      0.9944487586534333,
+      1.2837198803928739e-08,
+      0.005635569934318745,
+      0.9756590588955804
+    ],
+    [
+      0.005204049572905527,
+      0.03184004779388719,
+      4.0471567801279125e-06,
+      0.0007000207718961857
+    ],
+    [
+      0.00034719010519981564,
+      2.4288532092713717e-06,
+      0.012973735463220724,
+      1.901510314372861e-05
+    ],
+    [
+      4.822726336540634e-12,
+      1.321827710575352e-06,
+      8.35429751988966e-05,
+      0.02343050071966185
+    ]
+  ],
+  "attempts_per_introduced_O16": {
+    "o16": 180.20542819097363,
+    "o17": 0.9686397797601559,
+    "o18": 0.06339030341048466,
+    "f19": 6.734859663788984e-06
+  },
+  "final_nuclei_per_introduced_O16": {
+    "n14": 0.6156728281869445,
+    "n15": 0.3704072859903347,
+    "ne20": 1.2036118546227825e-07,
+    "ne21": 5.426336090132131e-09,
+    "ne22": 3.127299345376907e-10,
+    "c12": 0.008972325102058696,
+    "c13": 0.0049474340901445625,
+    "b11": 5.324605446617233e-10,
+    "na23": 1.6620203734707983e-16,
+    "mg24": 2.161854790038155e-20
+  },
+  "quartet_return_probability": 0.9999998733694824,
+  "beyond_F_quarantine_fraction": 1.261002516531717e-07,
+  "hot_integrated_ledger": {
+    "net_protons": -2.5973609984556973,
+    "net_alpha": 1.0624612458202796,
+    "net_neutrons": -1.0723411690259478e-09,
+    "total_Q_MeV": 5.553614673493127,
+    "weak_Q_MeV": 5.959723769669344e-06,
+    "net_nuclear_charge": -1.5059728300812347e-06
+  },
+  "cold_integrated_ledger": {
+    "net_protons": 2.480290089037008e-09,
+    "net_alpha": 1.2752660951821384e-08,
+    "net_neutrons": 3.024e-321,
+    "total_Q_MeV": 4.249131978592086,
+    "weak_Q_MeV": 4.249131978592084,
+    "net_nuclear_charge": -1.4863563548110525
+  },
+  "total_reaction_ledger": {
+    "net_protons": -2.597360995975407,
+    "net_alpha": 1.0624612585729405,
+    "net_neutrons": -1.0723411690259478e-09,
+    "total_Q_MeV": 9.802746652085212,
+    "weak_Q_MeV": 4.249137938315854,
+    "net_nuclear_charge": -1.4863578607838825
+  },
+  "radioactive_residence_nucleus_s_per_O16": 757.1903067681263,
+  "allocated_prepared_MeV_per_O16": 98.60627380908109,
+  "allocated_net_MeV_per_O16_bounds": [
+    -107.502147899568,
+    -105.18332830489283
+  ],
+  "replacement_carbon_shadow_energy_J_kg": [
+    864365037303623.9,
+    845720697403324.6
+  ],
+  "inventory": {
+    "catalyst_kg": 554403499504883.6,
+    "catalyst_nuclei": 2.441523136492863e+40,
+    "O_at1pct_mass_share_kg": 5544034995048.836,
+    "O_at1pct_number_share_kg": 6486791280246.661,
+    "actual_O_production_kg_s": 1158.4051212796485,
+    "O1pct_mass_inventory_net_residence_years": 151.65667393898417,
+    "O1pct_number_inventory_net_residence_years": 177.44570353130462,
+    "gross_attempt_flow_if1pct_mass_throughput_kg_s": 351359.7355343141,
+    "corresponding_net_O_conversion_kg_s": 1938.6705475981937
+  },
+  "flows": {
+    "actual_oxygen_production": {
+      "new_O16_nuclei_s": 4.3600491874135615e+28,
+      "new_O16_kg_s": 1158.4051212796485,
+      "repeated_heavy_nucleus_passes_s": 7.902042620414015e+30,
+      "O16_mass_equivalent_pass_kg_s": 209946.40763417128,
+      "host_attempts_s": {
+        "n14": 7.857045307515675e+30,
+        "n15": 0.0,
+        "c12": 4.4997312898339055e+28,
+        "c13": 0.0
+      },
+      "small_shot_serial_calendar_fraction": 0.010372104642423585,
+      "large_shot_serial_calendar_fraction": 0.00010372104642423585,
+      "allocated_prepared_W": 6.888209227386359e+17,
+      "allocated_driver_electric_W": 1.1480348712310597e+18,
+      "allocated_incremental_net_W_bounds": [
+        -7.509636644006943e+17,
+        -7.347653902831555e+17
+      ],
+      "selective_sort_100eV_at50pct_W": 253209360945989.3,
+      "processing_mass_kg_at1e8_kg_per_kg_s": 20994640763417.13
+    },
+    "one_percent_catalyst_number_throughput": {
+      "new_O16_nuclei_s": 1.5473439909833849e+31,
+      "new_O16_kg_s": 411108.023439467,
+      "repeated_heavy_nucleus_passes_s": 2.8043670242274374e+33,
+      "O16_mass_equivalent_pass_kg_s": 74508176.01303117,
+      "host_attempts_s": {
+        "n14": 2.7883978645389094e+33,
+        "n15": 0.0,
+        "c12": 1.5969159688528046e+31,
+        "c13": 0.0
+      },
+      "small_shot_serial_calendar_fraction": 3.6809708107503276,
+      "large_shot_serial_calendar_fraction": 0.036809708107503274,
+      "allocated_prepared_W": 2.4445662648487933e+20,
+      "allocated_driver_electric_W": 4.0742771080813216e+20,
+      "allocated_incremental_net_W_bounds": [
+        -2.6651055151205545e+20,
+        -2.6076192321849626e+20
+      ],
+      "selective_sort_100eV_at50pct_W": 8.986182638754624e+16,
+      "processing_mass_kg_at1e8_kg_per_kg_s": 7450817601303117.0
+    },
+    "one_percent_catalyst_mass_throughput": {
+      "new_O16_nuclei_s": 1.3224611159470226e+31,
+      "new_O16_kg_s": 351359.7355343141,
+      "repeated_heavy_nucleus_passes_s": 2.3967950022721683e+33,
+      "O16_mass_equivalent_pass_kg_s": 63679547.77447314,
+      "host_attempts_s": {
+        "n14": 2.3831467166514605e+33,
+        "n15": 0.0,
+        "c12": 1.3648285620707705e+31,
+        "c13": 0.0
+      },
+      "small_shot_serial_calendar_fraction": 3.1459977836341153,
+      "large_shot_serial_calendar_fraction": 0.03145997783634115,
+      "allocated_prepared_W": 2.08928580164247e+20,
+      "allocated_driver_electric_W": 3.4821430027374494e+20,
+      "allocated_incremental_net_W_bounds": [
+        -2.2777730318408162e+20,
+        -2.228641504316459e+20
+      ],
+      "selective_sort_100eV_at50pct_W": 7.68017789825689e+16,
+      "processing_mass_kg_at1e8_kg_per_kg_s": 6367954777447314.0
+    }
+  },
+  "mixed_host_capacity": {
+    "n14": {
+      "O16_leaves_O16_probability": 0.005551241346566704,
+      "new_O16_conversion_per_He_at1pct_admixture": 6.608216804895848e-05
+    },
+    "n15": {
+      "O16_leaves_O16_probability": 2.541431184832632e-06,
+      "new_O16_conversion_per_He_at1pct_admixture": 3.186412205985273e-08
+    },
+    "c12": {
+      "O16_leaves_O16_probability": 0.0007215977462153855,
+      "new_O16_conversion_per_He_at1pct_admixture": 8.557744406395093e-06
+    },
+    "c13": {
+      "O16_leaves_O16_probability": 0.0006321831466525873,
+      "new_O16_conversion_per_He_at1pct_admixture": 6.170285547391123e-07
+    }
+  },
+  "all_hosts_1pct_conversion_per_He": 7.528880513215253e-05,
+  "uniform_admixture_to_balance_original_O_source": 0.013951449756614737,
+  "charge": {
+    "small_equivalent_O_H2_shot_mass_kg": 113097335529.23254,
+    "O_H2_nuclei_per_small_shot": 3.783822635407538e+36,
+    "fully_stripped_positive_charge_C": 6.062352213650259e+18,
+    "launch_grain_charge_C_at_0p002656_Ckg": 300386523.1656416,
+    "circuit": "The ion charge and local electron return are equal and opposite. Grain acceleration charge is a distinct earlier delivery circuit."
+  },
+  "terminal_loss": {
+    "old_baseline_heavy_ash_beyond_F_per_He": 4.2097894286175593e-11,
+    "added_recycle_quarantine_per_He": 1.3245418886830564e-11,
+    "eventual_material_loss_fraction_for_0p007_budget": 0.0005536399444405981,
+    "enlarged_network_baseline_quarantine_per_He": 1.4991683756185306e-10,
+    "baseline_plus_O_return_quarantine_per_He": 1.632179549493334e-10
+  },
+  "qualifications": [
+    "A tracer follows actual saved temperature, density and n/p/alpha abundance histories; bulk oxygen-only shots need their own radiation hydrodynamics.",
+    "Equivalent host preparation is an allocated-work comparison. Piggybacking trades fuel displacement and altered hydro for the separate-shot debit.",
+    "Cold map includes branching and long lived states. The radioactive-residence inventory exposes their storage cost.",
+    "Beyond-F inventory is an operational quarantine boundary; physical return is tested separately. No assumption that every alpha capture or every temporary Ne isotope is irreversible.",
+    "Frozen REACLIB oxygen/fluorine rates remain separate from newly read 2025/2026 measurements. Updated oxygen/F19 tables and enlarged-network coupled burns are acceptance gates."
+  ],
+  "watched_reactions_per_restored_input_O16": {
+    "N15_p_to_O16_reaclib": 1.0672605235278807e-05,
+    "O16_p_to_F17_reaclib": 23.473953416177434,
+    "O17_p_to_He4_N14_reaclib": 0.9341905071508542,
+    "O17_p_to_F18_reaclib": 0.0036077756448611624,
+    "F17_p_to_Ne18_reaclib": 0.06256577533256699,
+    "F18_p_to_He4_O15_reaclib": 0.0036042989640615807,
+    "O18_p_to_He4_N15_reaclib": 0.06221570602360963,
+    "O18_p_to_F19_reaclib": 0.0003521953674542367,
+    "F19_p_to_He4_O16_reaclib": 0.00035340721186303046,
+    "F19_p_to_Ne20_reaclib": 6.939992310631308e-08,
+    "C12_He4_to_O16_reaclib": 1.9922253416693611e-19,
+    "O15_He4_to_Ne19_reaclib": 1.863322110969749e-14,
+    "O14_He4_to_p_F17_reaclib": 2.2412953391878372e-13,
+    "Ne18_He4_to_p_Na21_reaclib": 6.022599778362687e-13,
+    "O16_He4_to_Ne20_reaclib": 7.143315314459185e-11,
+    "F18_p_to_Ne19_reaclib": 1.3482290282001487e-06,
+    "N13_He4_to_p_O16_reaclib": 2.738115686658378e-13
+  },
+  "return_threshold_MeV": {
+    "Ne20_gamma_alpha_O16": 4.729845970003225,
+    "Ne20_p_alpha_F17": 4.129577006001455,
+    "Ne22_p_alpha_F19": 1.6732157060023383
+  },
+  "large_N15_16x_source_comparison": {
+    "O16_nuclei_s": 7.513623746936466e+29,
+    "O16_kg_s": 19962.665221634357,
+    "equivalent_repeated_O_pass_kg_s": 3617982.8395924163,
+    "allocated_incremental_net_W_bounds": [
+      -1.2941272401733302e+19,
+      -1.2662129364952277e+19
+    ],
+    "qualification": "Uses the unchanged N14/C12 return baths and the new large-N15 quartet oxygen source. Mixed-pulse hydro feedback remains open."
+  },
+  "quarantined_return_probes": [
+    {
+      "stage": "n14",
+      "isotope": "ne20",
+      "cold_quartet_probability": 3.2347945832593744e-14,
+      "cold_extended_pool_probability": 3.4892567565837484e-14
+    },
+    {
+      "stage": "n14",
+      "isotope": "ne21",
+      "cold_quartet_probability": 3.405099919461858e-12,
+      "cold_extended_pool_probability": 1.0610941990263986e-11
+    },
+    {
+      "stage": "n14",
+      "isotope": "ne22",
+      "cold_quartet_probability": 6.331049134371795e-15,
+      "cold_extended_pool_probability": 5.022060899837403e-11
+    },
+    {
+      "stage": "c13",
+      "isotope": "ne20",
+      "cold_quartet_probability": 1.3604252235367546e-08,
+      "cold_extended_pool_probability": 1.4391512301094612e-08
+    },
+    {
+      "stage": "c13",
+      "isotope": "ne21",
+      "cold_quartet_probability": 1.29119195505248e-08,
+      "cold_extended_pool_probability": 6.259312417107187e-07
+    },
+    {
+      "stage": "c13",
+      "isotope": "ne22",
+      "cold_quartet_probability": 6.927464059474383e-09,
+      "cold_extended_pool_probability": 3.917669340143478e-08
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+diff --git a/configure.py b/configure.py
+index 8e7a158..6138dfb 100755
+--- a/configure.py
++++ b/configure.py
+@@ -101,7 +101,7 @@ parser.add_argument(
+ parser.add_argument('--eos',
+                     default='adiabatic',
+                     choices=['adiabatic', 'isothermal', 'general/eos_table',
+-                             'general/hydrogen', 'general/ideal'],
++                             'general/hydrogen', 'general/ideal', 'general/pulse_eos'],
+                     help='select equation of state')
+ 
+ # --flux=[name] argument
+@@ -428,7 +428,7 @@ if args['eos'][:8] == 'general/':
+     if args['s'] or args['g']:
+         raise SystemExit('### CONFIGURE ERROR: '
+                          + 'General EOS is incompatible with relativity')
+-    if args['flux'] not in ['hllc', 'hlld']:
++    if args['flux'] not in (['hllc', 'hlld'] if args['b'] else ['hllc', 'hlle']):
+         raise SystemExit('### CONFIGURE ERROR: '
+                          + 'General EOS is incompatible with flux ' + args['flux'])
+ 
+diff --git a/src/eos/general/general_hydro.cpp b/src/eos/general/general_hydro.cpp
+index c5862c2..7ee9115 100644
+--- a/src/eos/general/general_hydro.cpp
++++ b/src/eos/general/general_hydro.cpp
+@@ -28,6 +28,7 @@
+ #include "../../mesh/mesh.hpp"
+ #include "../../parameter_input.hpp"
+ #include "../eos.hpp"
++#include "pulse_eos.hpp"
+ 
+ // EquationOfState constructor
+ 
+@@ -106,6 +107,10 @@ void EquationOfState::ConservedToPrimitive(
+         u_e = (u_e - ke > energy_floor_) ?  u_e : energy_floor_ + ke;
+         // MSBC: if ke >> energy_floor_ then u_e - ke may still be zero at this point due
+         //       to floating point errors/catastrophic cancellation
++        if(pulse::mode==0 && u_d>1e-5 && u_e-ke < .8*pulse::minimum_energy(u_d)) {
++          std::fprintf(stderr,"Cold-energy violation cell i=%d j=%d k=%d x1=%.17g x2=%.17g rho=%.17g internal=%.17g kinetic=%.17g floor=%.17g\n",i,j,k,pco->x1v(i),pco->x2v(j),u_d,u_e-ke,ke,pulse::minimum_energy(u_d));
++          throw std::runtime_error("Cold-energy violation in cell update");
++        }
+         w_p = PresFromRhoEg(u_d, u_e - ke);
+       }
+     }
+diff --git a/src/hydro/rsolvers/hydro/hllc.cpp b/src/hydro/rsolvers/hydro/hllc.cpp
+index 4e5885f..ca0e118 100644
+--- a/src/hydro/rsolvers/hydro/hllc.cpp
++++ b/src/hydro/rsolvers/hydro/hllc.cpp
+@@ -87,8 +87,10 @@ void Hydro::RiemannSolver(const int k, const int j, const int il, const int iu,
+ 
+     Real ql, qr;
+     if (GENERAL_EOS) {
+-      Real gl = pmy_block->peos->AsqFromRhoP(rhol, pmid) * rhol / pmid;
+-      Real gr = pmy_block->peos->AsqFromRhoP(rhor, pmid) * rhor / pmid;
++      // The rarefaction branch uses q=1 and needs no middle-state EOS call.
++      // PVRS may estimate negative middle pressure there (strong rarefaction).
++      Real gl = (pmid > wli[IPR]) ? pmy_block->peos->AsqFromRhoP(rhol, pmid) * rhol / pmid : 1.;
++      Real gr = (pmid > wri[IPR]) ? pmy_block->peos->AsqFromRhoP(rhor, pmid) * rhor / pmid : 1.;
+       ql = (pmid <= wli[IPR]) ? 1.0 :
+            std::sqrt(1.0 + (gl + 1) / (2 * gl) * (pmid / wli[IPR]-1.0));
+       qr = (pmid <= wri[IPR]) ? 1.0 :
+diff --git a/src/reconstruct/plm.cpp b/src/reconstruct/plm.cpp
+index ebb437a..2e2a745 100644
+--- a/src/reconstruct/plm.cpp
++++ b/src/reconstruct/plm.cpp
+@@ -16,6 +16,20 @@
+ #include "../coordinates/coordinates.hpp"
+ #include "../eos/eos.hpp"
+ #include "reconstruction.hpp"
++#include "../eos/general/pulse_eos.hpp"
++
++namespace {
++// Preserve the cell state and conservation; reduce only inadmissible face slopes.
++void PulseAdmissibleFace(AthenaArray<Real> &face,int fi,
++                         const AthenaArray<Real> &center,int ci) {
++  if(pulse::mode==1)return;
++  double fraction=pulse::admissible_face_fraction(face(IDN,fi),face(IPR,fi),center(IDN,ci),center(IPR,ci));
++  if(fraction==1.)return;
++  pulse::face_limited.fetch_add(1,std::memory_order_relaxed);
++  for(int n=0;n<NHYDRO;++n)face(n,fi)=fraction==0.?center(n,ci):center(n,ci)+fraction*(face(n,fi)-center(n,ci));
++}
++}
++
+ 
+ //----------------------------------------------------------------------------------------
+ //! \fn Reconstruction::PiecewiseLinearX1(const int k, const int j,
+@@ -163,6 +177,10 @@ void Reconstruction::PiecewiseLinearX1(
+       pmy_block_->peos->ApplyPrimitiveFloors(wr, k, j, i);
+     }
+   }
++  for(int i=il;i<=iu;++i) {
++    PulseAdmissibleFace(wl,i+1,wc,i);
++    PulseAdmissibleFace(wr,i,wc,i);
++  }
+   return;
+ }
+ 
+@@ -315,6 +333,10 @@ void Reconstruction::PiecewiseLinearX2(
+       pmy_block_->peos->ApplyPrimitiveFloors(wr, k, j, i);
+     }
+   }
++  for(int i=il;i<=iu;++i) {
++    PulseAdmissibleFace(wl,i,wc,i);
++    PulseAdmissibleFace(wr,i,wc,i);
++  }
+   return;
+ }
+ 
+@@ -459,5 +481,9 @@ void Reconstruction::PiecewiseLinearX3(
+       pmy_block_->peos->ApplyPrimitiveFloors(wr, k, j, i);
+     }
+   }
++  for(int i=il;i<=iu;++i) {
++    PulseAdmissibleFace(wl,i,wc,i);
++    PulseAdmissibleFace(wr,i,wc,i);
++  }
+   return;
+ }

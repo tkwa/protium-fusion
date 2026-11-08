@@ -1,0 +1,152 @@
+{
+  "name": "A-timing-initial-check",
+  "config": {
+    "name": "A-timing-initial-check",
+    "nr": 384,
+    "nt": 64,
+    "ell": 2,
+    "perturbation": 3,
+    "timing_us": 3.0,
+    "amplitude": 0.1,
+    "test": 0,
+    "burn": 1,
+    "source_accuracy": 0.02,
+    "ambient": 1e-09,
+    "cfl": 0.3,
+    "tlim": 0.001,
+    "rmax": 24.0,
+    "cores": "6",
+    "inputs": "/var/tmp/tkwa-chatgpt/protium-stability/inputs-yi2",
+    "base": "/var/tmp/tkwa-chatgpt/protium-stability",
+    "output_interval": 0.001,
+    "xorder": 2,
+    "binary_sha256": "fd76c6a0e52b02414963a3177f543c3ca906edb8971b6a473515861915aa7fdc",
+    "started_utc": "2026-10-31T03:49:29.310706+00:00",
+    "source_hashes": {
+      "pulse_eos.hpp": "f4af87abb0d272b38ec8106cb6a8da153628fd96310097425548f9b16deba16e",
+      "pulse_eos.cpp": "947e7a32af8ab60fb73d1958f648cab89d69b829bf21573207c3037c1bb9db26",
+      "pulse.cpp": "16c8008521e866f01a0fd3356415656afb1deee1c616aecd7b3fdf507e664640"
+    }
+  },
+  "execution": {
+    "returncode": 0,
+    "elapsed_wall_s": 0.2885191501118243,
+    "reached_time_limit": true,
+    "fatal_error": false
+  },
+  "final_time_us": 0.03,
+  "conversion": 4.2189638276516e-18,
+  "reference_clock_offset_us": 0.0,
+  "reference_clock_final_time_us": 0.03,
+  "initial_product_fraction": 0.0,
+  "output_fraction_produced_in_last_2us": 1.0,
+  "gain": 6.403400139956608e-17,
+  "initial_energy_J": 3.497432100316874e+25,
+  "nuclear_output_J": 2239545720.0657806,
+  "initial_mass_kg": 11309733552923.264,
+  "final_fuel_mass_change": -6.328271240363392e-15,
+  "energy_residual_fraction_input": -2.4424906541753444e-15,
+  "maximum_energy_residual_fraction_input": 2.4424906541753444e-15,
+  "history": {
+    "time": [
+      0.0,
+      0.001
+    ],
+    "fuel_mass": [
+      4.188790204786394,
+      4.188790204786367
+    ],
+    "product_mass": [
+      0.0,
+      1.7672354355615137e-17
+    ],
+    "fuel_rho": [
+      0.08154478995053362,
+      0.08176057399065853
+    ],
+    "fuel_r2": [
+      35.659680101965776,
+      35.6024853882652
+    ],
+    "theta_ke": [
+      0.0,
+      1.5882686049397737e-08
+    ],
+    "E_minus_nuclear": [
+      12.95345222339583,
+      12.953452223395798
+    ]
+  },
+  "snapshots": [
+    {
+      "time_us": 0.0,
+      "fuel_mass": 4.188790206110161,
+      "product_mass": 0.0,
+      "density_rms": 0.2525387837794912,
+      "vr_scatter_m_s": 151040.53670348134,
+      "theta_ke": 0.0,
+      "fuel_mean_density_kg_m3": 1946738.46444786,
+      "radii": {
+        "0.25": {
+          "mean_m": 58.408044831341584,
+          "rms_fraction": 0.09467439670576548,
+          "mode_fraction": -0.09467438970476846
+        },
+        "0.5": {
+          "mean_m": 78.97863800994546,
+          "rms_fraction": 0.08636419944195156,
+          "mode_fraction": -0.0863641542049641
+        },
+        "0.75": {
+          "mean_m": 101.74616789612475,
+          "rms_fraction": 0.08039010549847854,
+          "mode_fraction": -0.0803899987407635
+        },
+        "0.9": {
+          "mean_m": 123.11167666670245,
+          "rms_fraction": 0.07709422556890695,
+          "mode_fraction": -0.07709422359429759
+        }
+      },
+      "max_density_kg_m3": 7923570.275306702,
+      "theta_ke_fraction_input": 0.0,
+      "reference_clock_time_us": 0.0
+    },
+    {
+      "time_us": 0.03,
+      "fuel_mass": 4.188790206796692,
+      "product_mass": 1.767235440100164e-17,
+      "density_rms": 0.25181362833987536,
+      "vr_scatter_m_s": 151120.33012673707,
+      "theta_ke": 1.588268629421676e-08,
+      "fuel_mean_density_kg_m3": 1951889.9281135662,
+      "radii": {
+        "0.25": {
+          "mean_m": 58.3526851001574,
+          "rms_fraction": 0.0947628544463345,
+          "mode_fraction": -0.09476284516056005
+        },
+        "0.5": {
+          "mean_m": 78.91064296922826,
+          "rms_fraction": 0.08643881315586881,
+          "mode_fraction": -0.08643877896029646
+        },
+        "0.75": {
+          "mean_m": 101.66524260261846,
+          "rms_fraction": 0.08045504934056283,
+          "mode_fraction": -0.08045493512802314
+        },
+        "0.9": {
+          "mean_m": 123.02166956750743,
+          "rms_fraction": 0.07714486674516204,
+          "mode_fraction": -0.07714486441038054
+        }
+      },
+      "max_density_kg_m3": 7955731.451511383,
+      "theta_ke_fraction_input": 1.2261353977536817e-09,
+      "reference_clock_time_us": 0.03
+    }
+  ],
+  "maximum_EOS_outside_fuel_fraction": 0.0,
+  "peak_temperature_K": 39135661.92056875
+}

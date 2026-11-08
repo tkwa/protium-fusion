@@ -1,0 +1,57 @@
+<job>
+problem_id = pulse
+<output1>
+file_type = hst
+dt = 0.005
+data_format = %24.16e
+<output2>
+file_type = vtk
+variable = cons
+dt = 0.025
+<time>
+cfl_number = 0.3
+nlim = -1
+tlim = 1.4
+integrator = rk2
+xorder = 2
+ncycle_out = 100
+<mesh>
+nx1 = 384
+x1min = 0
+x1max = 24.0
+ix1_bc = reflecting
+ox1_bc = outflow
+nx2 = 64
+x2min = 0
+x2max = 3.141592653589793
+ix2_bc = polar_wedge
+ox2_bc = polar_wedge
+nx3 = 1
+x3min = 0
+x3max = 6.283185307179586
+ix3_bc = periodic
+ox3_bc = periodic
+num_threads = 1
+<meshblock>
+nx1 = 384
+nx2 = 64
+nx3 = 1
+<hydro>
+gamma = 1.6666666666666667
+dfloor = 1e-14
+pfloor = 1e-18
+efloor = 1e-18
+sfloor = 0
+<problem>
+eos_path = /var/tmp/tkwa-chatgpt/protium-stability/inputs-yi2/eos.bin
+profile = /var/tmp/tkwa-chatgpt/protium-stability/inputs-yi2/profile.txt
+rates = /var/tmp/tkwa-chatgpt/protium-stability/inputs-yi2/rates.txt
+burn = 1
+test = 0
+ideal = 0
+amplitude = 0.0
+ell = 2
+perturbation = 0
+divisions = 8
+ambient = 1e-09
+source_accuracy = 0.01
